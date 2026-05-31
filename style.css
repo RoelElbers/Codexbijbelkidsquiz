@@ -318,17 +318,26 @@ height: 22%;
     overflow: hidden;
 }
 
-/* Verticaal centreren van het inhoud-blok in het quizvak: door een
-   min-height op het vak + flex-column met justify-content: center wordt
-   de witruimte boven de titel en onder de bijbelpassage netjes in
-   balans verdeeld, ongeacht of de feedback al getoond is. De resultaat-
-   zone reserveert al een vaste hoogte (#resultaat min-height), dus de
-   vraag en antwoordknoppen verspringen niet zodra de feedback verschijnt. */
+/* Het quizvak omsluit zijn eigen inhoud en wordt door de overlay
+   (align-items: center) verticaal netjes in het scherm gecentreerd. We zetten
+   bewust GEEN vaste min-height meer: die maakte het vak altijd bijna
+   schermvullend, en in combinatie met justify-content: center + overflow:
+   hidden werd een lange vraag (vraag + antwoorden + bijbeltekst) aan boven- én
+   onderkant afgekapt — waardoor de "Lees het na in: ..."-regel onder de
+   schermrand wegviel.
+
+   Nu: max-height (95vh, in de regel hierboven) begrenst het vak, en
+   overflow-y: auto laat de inhoud BINNEN het vak scrollen zodra die toch te
+   hoog wordt. Zo blijft élke vraag, hoe lang ook, volledig zichtbaar.
+   justify-content: flex-start (i.p.v. center) voorkomt de bekende flexbox-bug
+   waarbij de bovenkant onbereikbaar wordt zodra de inhoud overloopt en je moet
+   scrollen. De #resultaat-zone houdt zijn eigen min-height, dus de vraag en
+   antwoordknoppen verspringen nog steeds niet zodra de feedback verschijnt. */
 #quiz-scherm .quiz-box {
-    min-height: 92vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-y: auto;
 }
 
 /* Vraag is dé blikvanger van het quizscherm: nu nog groter en met flink
