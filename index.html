@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijbelkidsquiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <button id="fullscreen-btn" class="fullscreen-button">⛶</button>
+
+        <!-- Avatar-frame linksboven: één doorzichtige plaat (avatarframe.png)
+             met de ronde gouden lijst plus het brede naamvak rechts en het
+             kleine naamvak eronder. De wrapper legt het frame over de
+             ingebakken ronde lijst én de oude "David / Geloofzoeker"-tekst.
+             De avatarfoto en de twee namen liggen er als kinderen bovenop en
+             zijn in % van deze wrapper geplaatst, zodat alles meeschaalt.
+             Positie/grootte fijnafstellen via de CSS-variabelen in style.css. -->
+        <div id="avatar-frame" class="avatar-frame">
+
+            <!-- Het frame zelf (onderste laag binnen de wrapper). -->
+            <img class="avatar-frame-img" src="images/avatarframe.png" alt="">
+
+            <!-- Avatarfoto, rond bijgesneden in de ronde opening. Standaard
+                 Mozes; verandert via het Nieuw-spel-keuzescherm. -->
+            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.png" alt="Avatar">
+
+            <!-- Naam van de gekozen Bijbelfiguur op het brede vak rechts. -->
+            <div id="avatar-figuurnaam" class="avatar-figuurnaam">Mozes</div>
+
+            <!-- Voornaam van de speler op het kleine vak eronder. -->
+            <div id="speler-voornaam" class="speler-voornaam"></div>
+
+        </div>
+
+        <!-- Prijzenkast: trofeeën per evangelie. -->
+        <img id="trofee-matteus" class="trofee trofee-matteus" src="images/matteus-schaduw.png" alt="Matteüs trofee">
+        <img id="trofee-marcus" class="trofee trofee-marcus" src="images/marcus-schaduw.png" alt="Marcus trofee">
+        <img id="trofee-lucas" class="trofee trofee-lucas" src="images/lucas-schaduw.png" alt="Lucas trofee">
+        <img id="trofee-johannes" class="trofee trofee-johannes" src="images/johannes-schaduw.png" alt="Johannes trofee">
+
+        <!-- Prijzenkast: Bijbelschatkisten per niveau. -->
+        <img id="kist-brons" class="kist kist-brons" src="images/kist-brons-schaduw.png" alt="Bronzen schatkist">
+        <img id="kist-zilver" class="kist kist-zilver" src="images/kist-zilver-schaduw.png" alt="Zilveren schatkist">
+        <img id="kist-goud" class="kist kist-goud" src="images/kist-goud-schaduw.png" alt="Gouden schatkist">
+
+        <div class="boek-zone matteus" onclick="openBoek('Matteüs')"></div>
+        <div class="boek-zone marcus" onclick="openBoek('Marcus')"></div>
+        <div class="boek-zone lucas" onclick="openBoek('Lucas')"></div>
+        <div class="boek-zone johannes" onclick="openBoek('Johannes')"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "NIEUW SPEL"-knop
+             in het MENU-paneel links in de achtergrondafbeelding. Werkt
+             op dezelfde manier als de boek-zones: doorzichtig, absoluut
+             gepositioneerd, en triggert nieuwSpel() bij klikken. -->
+        <div class="nieuw-spel-zone" onclick="nieuwSpel()"></div>
+
+        <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
+             Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
+             als de andere overlays. Pas op "Start" worden de schildpunten gewist
+             en de keuzes opgeslagen; "Terug" sluit zonder wijzigingen. -->
+        <div id="nieuw-spel-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Nieuw spel</h2>
+                <p class="quiz-question">Kies je avatar</p>
+
+                <div class="avatar-keuze">
+                    <button type="button" class="avatar-keuze-btn" data-avatar="mozes">
+                        <img src="images/Avatars/avatar-mozes.png" alt="Mozes">
+                        <span>Mozes</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="esther">
+                        <img src="images/Avatars/avatar-esther.png" alt="Esther">
+                        <span>Esther</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="judith">
+                        <img src="images/Avatars/avatar-judith.png" alt="Judith">
+                        <span>Judith</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="samuel">
+                        <img src="images/Avatars/avatar-samuel.png" alt="Samuel">
+                        <span>Samuel</span>
+                    </button>
+                </div>
+
+                <div class="speler-naam-rij">
+                    <label for="speler-naam-invoer" class="speler-naam-label">Naam:</label>
+                    <input id="speler-naam-invoer" class="speler-naam-invoer"
+                           type="text" autocomplete="off"
+                           placeholder="Typ je volledige naam">
+                </div>
+
+                <button type="button" class="answer-btn niveau-btn niveau-expert" onclick="bevestigNieuwSpel()">Start</button>
+                <button type="button" class="answer-btn niveau-terug" onclick="annuleerNieuwSpel()">Terug</button>
+            </div>
+        </div>
+
+        <div id="niveau-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 id="niveau-boek-titel" class="quiz-title"></h2>
+                <p class="quiz-question">Kies je niveau</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesNiveau('beginner')">Beginner</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesNiveau('advanced')">Advanced</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesNiveau('expert')">Expert</button>
+                <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug</button>
+            </div>
+        </div>
+
+        <div id="quiz-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 id="quiz-title" class="quiz-title">Matteüs Quiz</h2>
+                <div id="score-balk">
+                    XP: <span id="xp">0</span>
+                </div>
+                <p id="quiz-question" class="quiz-question"></p>
+                <button id="antwoord-1" class="answer-btn"></button>
+                <button id="antwoord-2" class="answer-btn"></button>
+                <button id="antwoord-3" class="answer-btn"></button>
+                <button id="antwoord-4" class="answer-btn"></button>
+                <div id="resultaat"></div>
+            </div>
+        </div>
+
+        <div id="level-hud">
+            <div class="xp-paneel">
+                <div class="xp-balk">
+                    <div id="xp-vulling"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="level-nummer">1</div>
+
+        <!-- TIJDELIJK testknopje: cycleert ALLE vier de trofeeën tegelijk door
+             geen/brons/zilver/goud, zodat je in één oogopslag ziet of ze
+             allemaal goed in hun vakje vallen. Mag later weer verwijderd
+             worden, inclusief de bijbehorende CSS en JS. -->
+        <button id="trofee-test-btn" onclick="testWisselTrofeeAlles()">Trofeeën: geen</button>
+
+        <!-- TIJDELIJK testknopjes: per kist toggelen tussen vergrendeld (schaduw)
+             en verdiend (gekleurd), zodat je kunt zien of de gekleurde versie
+             netjes over de schaduwversie valt. Mag later weer verwijderd worden. -->
+        <div id="kist-test-panel">
+            <button class="kist-test-btn" onclick="testWisselKist('brons')">Brons: vergrendeld</button>
+            <button class="kist-test-btn" onclick="testWisselKist('zilver')">Zilver: vergrendeld</button>
+            <button class="kist-test-btn" onclick="testWisselKist('goud')">Goud: vergrendeld</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

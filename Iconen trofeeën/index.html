@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijbelkidsquiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <button id="fullscreen-btn" class="fullscreen-button">⛶</button>
+
+        <div class="boek-zone matteus" onclick="openBoek('Matteüs')"></div>
+        <div class="boek-zone marcus" onclick="openBoek('Marcus')"></div>
+        <div class="boek-zone lucas" onclick="openBoek('Lucas')"></div>
+        <div class="boek-zone johannes" onclick="openBoek('Johannes')"></div>
+
+        <div id="quiz-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 id="quiz-title" class="quiz-title">Matteüs Quiz</h2>
+                <div id="score-balk">
+                    XP: <span id="xp">0</span>
+                </div>
+                <p id="quiz-question" class="quiz-question"></p>
+                <button id="antwoord-1" class="answer-btn"></button>
+                <button id="antwoord-2" class="answer-btn"></button>
+                <button id="antwoord-3" class="answer-btn"></button>
+                <button id="antwoord-4" class="answer-btn"></button>
+                <div id="resultaat"></div>
+            </div>
+        </div>
+
+        <div id="level-hud">
+            <div class="xp-paneel">
+                <div class="xp-balk">
+                    <div id="xp-vulling"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="level-container-wrapper">
+            <img id="level-paneel-afbeelding" src="images/Schild zonder cijfer.png" alt="Level schild">
+            <div id="level-nummer">1</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

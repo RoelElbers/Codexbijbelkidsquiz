@@ -1,0 +1,1130 @@
+/* Cinzel lokaal geladen uit de projectmap, zodat het ook offline werkt. */
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/cinzel-700.woff2") format("woff2");
+}
+
+body {
+
+    margin: 0;
+    background: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+#game-container {
+    position: relative;
+
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+
+    overflow: hidden;
+
+    background-image: url("images/startschermeindversie.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* =========================
+   TITELS
+========================= */
+
+h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+
+    animation: glowPulse 3s infinite ease-in-out;
+}
+
+p {
+    font-size: 22px;
+    color: #f8e6b0;
+}
+
+/* =========================
+   ANIMATIES
+========================= */
+
+@keyframes glowPulse {
+    0% {
+        text-shadow: 0 0 10px gold;
+    }
+
+    50% {
+        text-shadow:
+            0 0 20px gold,
+            0 0 40px rgba(255, 215, 0, 0.8);
+    }
+
+    100% {
+        text-shadow: 0 0 10px gold;
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes quizFade {
+    from {
+        transform: scale(0.92);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* =========================
+   KNOPPEN
+========================= */
+
+button {
+    margin-top: 10px;
+    padding: 16px 34px;
+
+    font-size: 20px;
+
+    border-radius: 14px;
+    border: 2px solid #d6a84f;
+
+    background: linear-gradient(#c6922e, #6f4310);
+
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 0 20px rgba(255, 190, 80, 0.5);
+
+    transition: 0.3s;
+
+    animation: floating 4s infinite ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.08) translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 210, 100, 0.8),
+        0 0 40px rgba(255, 220, 120, 0.5);
+}
+
+/* =========================
+   FULLSCREEN BUTTON
+========================= */
+
+.fullscreen-button {
+    position: fixed;
+
+    top: 18px;
+    right: 18px;
+
+    z-index: 10;
+
+    width: 54px;
+    height: 54px;
+
+    border-radius: 50%;
+
+    font-size: 26px;
+
+    padding: 0;
+}
+
+:fullscreen .fullscreen-button {
+    display: none;
+}
+
+/* =========================
+   BOEKEN
+========================= */
+
+.boek-zone {
+    position: absolute;
+
+   bottom: 8.2%;
+width: 8%;
+height: 22%;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    border-radius: 50%;
+}
+
+.boek-zone::before {
+    content: "";
+
+    position: absolute;
+
+    inset: -25%;
+
+    border-radius: 50%;
+
+    background: radial-gradient(
+        ellipse at center,
+        rgba(190, 240, 255, 0.55) 0%,
+        rgba(120, 220, 255, 0.28) 35%,
+        rgba(80, 180, 255, 0.10) 58%,
+        rgba(80, 180, 255, 0) 78%
+    );
+
+    opacity: 0;
+
+    filter: blur(10px);
+
+    transition: 0.3s;
+
+    pointer-events: none;
+}
+
+/* Glow correcties boeken */
+
+/* Uniforme glow: gecentreerd op het embleem, schaalt mee in % */
+.boek-zone::before {
+    transform: translateY(-12%);
+}
+
+.boek-zone:hover {
+    transform:
+        translateY(-12px)
+        scale(1.04);
+}
+
+.boek-zone:hover::before {
+    opacity: 1;
+}
+
+/* =========================
+   POSITIES BOEKEN
+========================= */
+
+.matteus {
+    left: 22.5%;
+}
+
+.marcus {
+    left: 34.8%;
+}
+
+.lucas {
+    left: 47.2%;
+}
+
+.johannes {
+    left: 60.6%;
+}
+
+/* =========================
+   QUIZ OVERLAY
+========================= */
+
+.quiz-overlay {
+    position: fixed;
+
+    inset: 0;
+
+    /* Warme, zonnige radial met een tikje rood en wat meer geel: gedempt
+       maar uitnodigend. Volledig dekkend zodat het drukke startscherm niet
+       meer doorschemert. */
+    background: radial-gradient(ellipse at 50% 40%, #f6dca8 0%, #ecc488 55%, #d9a86a 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+/* =========================
+   QUIZ BOX
+========================= */
+
+.quiz-box {
+    width: 650px;
+
+    padding: 50px;
+
+    border-radius: 35px;
+
+    background: rgba(10, 20, 55, 0.82);
+
+    border: 2px solid rgba(255, 215, 120, 0.35);
+
+    box-shadow:
+        0 0 40px rgba(0,0,0,0.6),
+        0 0 25px rgba(255,215,120,0.15);
+
+    text-align: center;
+
+    animation: quizFade 0.35s ease;
+}
+
+.quiz-title {
+    font-size: 4rem;
+
+    color: #ffd86b;
+
+    margin-bottom: 30px;
+
+    text-shadow:
+        0 0 12px rgba(255,215,120,0.4);
+}
+
+.quiz-question {
+    font-size: 2.3rem;
+
+    color: white;
+
+    margin-bottom: 40px;
+}
+
+/* =========================
+   RUIMERE QUIZ- EN NIVEAU-VAKKEN
+   Het quizscherm en het niveaukeuze-scherm krijgen een breder, royaler
+   vak (vergelijkbaar met het avatar-keuzescherm) zodat langere vragen
+   en hele zinnen comfortabel passen. Stijl (donkerblauw vak met gouden
+   rand, gouden titel, XP-regel) blijft hetzelfde — alleen ruimer.
+========================= */
+#quiz-scherm .quiz-box,
+#niveau-scherm .quiz-box {
+    width: 1200px;
+    max-width: 88vw;
+    max-height: 95vh;
+    padding: 40px 56px;
+    overflow: hidden;
+}
+
+/* Verticaal centreren van het inhoud-blok in het quizvak: door een
+   min-height op het vak + flex-column met justify-content: center wordt
+   de witruimte boven de titel en onder de bijbelpassage netjes in
+   balans verdeeld, ongeacht of de feedback al getoond is. De resultaat-
+   zone reserveert al een vaste hoogte (#resultaat min-height), dus de
+   vraag en antwoordknoppen verspringen niet zodra de feedback verschijnt. */
+#quiz-scherm .quiz-box {
+    min-height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Vraag is dé blikvanger van het quizscherm: nu nog groter en met flink
+   meer witruimte er omheen, zodat het vraag+antwoorden-blok prettig de
+   bovenste twee derde van het vak vult i.p.v. bovenin te plakken.
+   clamp(...) schaalt mee met de viewport-hoogte, zodat het op kleinere
+   schermen netjes binnen het kader past zonder scrollen.
+   Niveau- en avatar-scherm hebben eigen overrides verderop in dit bestand
+   en worden door deze regels niet beïnvloed. */
+#quiz-scherm .quiz-question {
+    font-size: clamp(2.8rem, 5vh, 3.6rem);
+    line-height: 1.35;
+    margin: clamp(20px, 2.8vh, 32px) auto clamp(30px, 4.2vh, 46px);
+    max-width: 1000px;
+}
+
+/* =========================
+   ANTWOORD KNOPPEN
+========================= */
+
+.answer-btn {
+    width: 100%;
+
+    margin-top: 22px;
+
+    padding: 22px;
+
+    font-size: 2rem;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(120,80,20,0.95),
+            rgba(60,35,5,0.95)
+        );
+
+    border: 2px solid rgba(255,215,120,0.25);
+
+    border-radius: 20px;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+
+    box-shadow:
+        inset 0 0 12px rgba(255,215,120,0.08),
+        0 0 12px rgba(0,0,0,0.35);
+}
+
+.answer-btn:hover {
+    transform: scale(1.03);
+
+    border-color: rgba(255,215,120,0.65);
+
+    box-shadow:
+        0 0 18px rgba(255,215,120,0.35),
+        inset 0 0 15px rgba(255,215,120,0.12);
+}
+
+/* =========================
+   ANTWOORDKNOPPEN — quiz-scherm-stijl
+   Sfeervolle blauwe/gouden look die past bij de rest van het spel.
+   Beperkt tot #quiz-scherm zodat de niveaukeuze-knoppen (brons/zilver/goud)
+   hun eigen kleuren behouden.
+========================= */
+
+#quiz-scherm .answer-btn {
+    /* In het bredere quizvak: comfortabel max-cap zodat hele zinnen ruim
+       passen, maar korte antwoorden niet absurd uitgerekt worden. Display
+       block + auto-marges centreren elke knop in het brede vak. Iets
+       hogere knoppen met grotere tekst voor meer aanwezigheid en
+       fijn-aantikbaarheid (vooral voor kinderen); padding/margin/font
+       clampen mee met viewport-hoogte zodat alles op grote schermen
+       ademend aanvoelt en op kleinere compact blijft — altijd zonder
+       scrollen. */
+    width: 100%;
+    max-width: 820px;
+    display: block;
+    margin: clamp(15px, 2.2vh, 22px) auto 0;
+    padding: clamp(15px, 2.4vh, 22px) 32px;
+
+    font-size: clamp(1.3rem, 2.1vh, 1.5rem);
+    font-weight: 500;
+
+    color: #f4c75e;
+    text-shadow: none;
+
+    background: linear-gradient(to bottom, #2a4778, #1a3060);
+    border: 2px solid #d4a648;
+    border-radius: 6px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(244, 199, 94, 0.4),
+        0 2px 4px rgba(0, 0, 0, 0.3);
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+    animation: none;
+}
+
+#quiz-scherm .answer-btn:hover {
+    background: linear-gradient(to bottom, #355688, #234074);
+    border-color: #f4c75e;
+
+    box-shadow:
+        inset 0 1px 0 rgba(244, 199, 94, 0.55),
+        0 2px 6px rgba(0, 0, 0, 0.35),
+        0 0 14px rgba(244, 199, 94, 0.35);
+
+    transform: none;
+}
+
+/* Juist antwoord — groen oplichten */
+#quiz-scherm .answer-btn.answer-correct,
+#quiz-scherm .answer-btn.answer-correct:hover {
+    background: linear-gradient(to bottom, #3d6b2a, #2a4d1a);
+    border-color: #8fc850;
+    color: #d8f0a8;
+
+    box-shadow:
+        inset 0 1px 0 rgba(216, 240, 168, 0.35),
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 0 12px rgba(143, 200, 80, 0.5);
+
+    transform: none;
+}
+
+/* Fout antwoord — rood oplichten */
+#quiz-scherm .answer-btn.answer-wrong,
+#quiz-scherm .answer-btn.answer-wrong:hover {
+    background: linear-gradient(to bottom, #6b2a2a, #4d1a1a);
+    border-color: #c85050;
+    color: #f0d8d8;
+
+    box-shadow:
+        inset 0 1px 0 rgba(240, 216, 216, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.3),
+        0 0 12px rgba(200, 80, 80, 0.5);
+
+    transform: none;
+}
+
+#resultaat {
+    /* Vaste, comfortabele zone onderin het quizvak voor zowel de
+       feedbacktekst (✅/❌) als de bijbelpassage ("Lees het na in: ...").
+       Door de min-height blijft die ruimte gereserveerd, dus de
+       antwoordknoppen en de hele lay-out verspringen niet zodra de
+       feedback verschijnt. Schaalt mee met viewport-hoogte. */
+    margin-top: clamp(28px, 3.6vh, 42px);
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    min-height: clamp(110px, 13vh, 140px);
+}
+
+.bijbelplaats {
+    margin-top: 10px;
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    color: #f8e6b0;
+    text-shadow: 0 0 6px rgba(255, 215, 120, 0.35);
+}
+
+#score-balk {
+    margin-bottom: 25px;
+
+    font-size: 28px;
+
+    color: #ffd86b;
+
+    text-shadow:
+        0 0 10px rgba(255,215,120,0.4);
+}
+
+/* =========================
+   LEVEL HUD (Definitieve Koppeling & Uitlijning)
+========================= */
+
+/* Level-nummer gecentreerd midden op het lege schild (linksin het paneel).
+   left/top + translate centreert het cijfer precies; in % dus schaalt mee. */
+#level-nummer {
+    position: absolute;
+    left: 78.1%;
+    top: 84.9%;
+    transform: translate(-50%, -50%);
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffd86b;
+    text-shadow:
+        0 0 8px rgba(255, 215, 120, 0.9),
+        0 0 16px rgba(255, 190, 80, 0.5);
+    z-index: 20;
+    /* Puur decoratief: het getal op het schild hoeft geen klikken te vangen.
+       Zo kan een klik op andere knoppen er nooit door geblokkeerd worden. */
+    pointer-events: none;
+}
+
+/* XP-balk in de gleuf rechts in het paneel. */
+#level-hud {
+    position: absolute;
+    left: 83.6%;
+    bottom: 15%;
+    width: 12%;
+    display: flex;
+    align-items: center;
+    z-index: 20;
+    /* Puur decoratief: de XP-balk hoeft geen klikken te vangen. Zo kan een
+       onverwacht uitgerekte HUD nooit klikken op andere knoppen blokkeren. */
+    pointer-events: none;
+}
+
+.xp-paneel {
+    width: 100%;
+}
+
+.xp-balk {
+    width: 100%;        
+    box-sizing: border-box;
+    height: 10px;        /* Slanke balk die precies binnen de gouden randen valt */
+    border-radius: 20px;
+    overflow: hidden;
+    background: rgba(3, 10, 24, 0.95);
+    border: none;
+}
+
+#xp-vulling {
+    width: 0%;          /* Begint leeg, wordt gevuld via JavaScript */
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(to right, #006bd6, #36dfff);
+    box-shadow:
+        inset 0 0 6px rgba(255,255,255,0.55),
+        0 0 14px rgba(80,210,255,0.95);
+    transition: width 0.35s ease; /* Zorgt voor het vloeiende animatie-effect */
+}
+
+/* =========================
+   TROFEEËN IN DE PRIJZENKAST
+   Positionering in % zodat ze met het 16:9 game-container meeschalen.
+   Originele plaatjes zijn 428x676 px (aspect ~0.633). We zetten alleen
+   een width in %; height: auto behoudt de aspect ratio. Start met een
+   redelijke schatting voor het eerste evangelie-vakje; finetunen kan later.
+========================= */
+
+.trofee {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.trofee-matteus {
+    width: 4.3%;
+    top: 23.2%;
+    left: 73.6%;
+}
+
+.trofee-marcus {
+    width: 4.3%;
+    top: 24.3%;
+    left: 79%;
+}
+
+.trofee-lucas {
+    width: 4.3%;
+    top: 24.8%;
+    left: 84.5%;
+}
+
+.trofee-johannes {
+    width: 4.3%;
+    top: 24.8%;
+    left: 90%;
+}
+
+/* =========================
+   BIJBELSCHATKISTEN IN DE PRIJZENKAST
+   Zelfde aanpak als de trofeeën: gedeelde basis-class, per kist alleen
+   width/top/left. Beginwaarden voor de drie kisten onder elkaar; later
+   fijn afstellen via de inspector.
+========================= */
+
+.kist {
+    position: absolute;
+    height: auto;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.kist-brons {
+    width: 6%;
+    top: 48.4%;
+    left: 73.5%;
+}
+
+.kist-zilver {
+    width: 6%;
+    top: 48.5%;
+    left: 80.7%;
+}
+
+.kist-goud {
+    width: 6%;
+    top: 48.9%;
+    left: 88.5%;
+}
+
+/* =========================
+   AVATAR-FRAME (linksboven op het startscherm)
+   Eén doorzichtige plaat (avatarframe.png) met de ronde gouden lijst, een
+   breed naamvak rechts en een klein naamvak eronder. De wrapper .avatar-frame
+   wordt over de ingebakken ronde lijst én de oude "David/Geloofzoeker"-tekst
+   gelegd. Omdat het frame de wrapper exact vult, zijn de posities van de
+   avatarfoto en de namen uitgedrukt in % van de wrapper en komen ze precies
+   overeen met de plekken op de plaat (opgemeten uit avatarframe.png).
+
+   Drie hoofdwaardes regelen het geheel; pas die aan om het frame te plaatsen
+   en te schalen. De avatarfoto en de namen schalen dan vanzelf mee.
+========================= */
+
+.avatar-frame {
+    /* ===== Frame plaatsen/schalen (hoofdwaardes) ===== */
+    /* De hoek linksboven is nu leeg, dus het frame hoeft niets te bedekken en
+       is kleiner gemaakt zodat het hele frame (ronde lijst + beide naamvakken)
+       binnen het scherm in de hoek past. avatarframe.png heeft brede
+       transparante randen; daarom staan left/top licht negatief (die
+       doorzichtige rand valt buiten beeld, het zichtbare frame staat netjes
+       in de hoek). */
+    --frame-left: -0.5%;   /* horizontale positie t.o.v. game-container */
+    --frame-top: -5.5%;    /* verticale positie                         */
+    --frame-width: 26%;    /* breedte; hoogte volgt uit de beeldratio    */
+    /* ================================================= */
+
+    position: absolute;
+    left: var(--frame-left);
+    top: var(--frame-top);
+    width: var(--frame-width);
+    /* avatarframe.png is 1536x1024 → vaste verhouding 3:2. */
+    aspect-ratio: 1536 / 1024;
+
+    z-index: 5;            /* boven de achtergrond, onder de kinderen      */
+    pointer-events: none;
+}
+
+/* De plaat zelf: onderste laag binnen de wrapper, vult hem volledig. */
+.avatar-frame-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.avatar-portret {
+    /* ===== Avatarfoto in de ronde opening ===== */
+    /* Opgemeten ronde opening: midden ~(19.5%, 38.3%), diameter 23.4% van de
+       breedte en 35.2% van de hoogte van het frame (in pixels vierkant). */
+    --avatar-left: 11.9%;    /* % van de wrapperbreedte */
+    --avatar-top: 26.7%;     /* % van de wrapperhoogte  */
+    --avatar-breedte: 26.4%; /* % van de wrapperbreedte */
+    --avatar-hoogte: 37.2%;  /* % van de wrapperhoogte  */
+    /* ========================================== */
+
+    position: absolute;
+    left: var(--avatar-left);
+    top: var(--avatar-top);
+    width: var(--avatar-breedte);
+    height: var(--avatar-hoogte);
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 3;            /* bovenop het frame */
+    pointer-events: none;
+}
+
+/* De twee namen liggen bovenop de twee donkere vakken van avatarframe.png.
+   Geen losse achtergrond meer: het vak komt uit de frameplaat. Posities zijn
+   in % van de wrapper (= van de frameplaat), opgemeten uit avatarframe.png. */
+
+.avatar-figuurnaam {
+    /* ===== Figuurnaam op het brede vak rechts ===== */
+    /* Opgemeten platte donkere binnenvlak van het brede vak (scanlijn door het
+       midden). De box dekt precies dit vak, zodat de flex-centrering de naam
+       horizontaal in het echte midden zet — voor elke naamlengte. */
+    --fig-left: 41.1%;        /* % van de wrapperbreedte */
+    --fig-top: 30.3%;         /* % van de wrapperhoogte  */
+    --fig-breedte: 47%;       /* % van de wrapperbreedte (vak loopt tot ~89%) */
+    --fig-hoogte: 34.6%;      /* % van de wrapperhoogte  */
+    --fig-padding-x: 4%;      /* binnenmarge; laat lange namen over 2 regels breken */
+    --fig-padding-y: 2%;
+    --fig-lettergrootte: 1.3rem;   /* zelfde grootte voor alle namen */
+    /* ============================================== */
+
+    position: absolute;
+    left: var(--fig-left);
+    top: var(--fig-top);
+    width: var(--fig-breedte);
+    height: var(--fig-hoogte);
+    padding: var(--fig-padding-y) var(--fig-padding-x);
+    box-sizing: border-box;
+
+    /* Tekst gecentreerd; korte namen op één regel verticaal in het midden,
+       lange namen ("Maria Magdalena") breken netjes over twee regels. */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffd86b;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: var(--fig-lettergrootte);
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+    z-index: 3;            /* bovenop het frame */
+    pointer-events: none;
+}
+
+.speler-voornaam {
+    /* ===== Spelernaam op het kleine vak eronder ===== */
+    /* Opgemeten donker binnenvlak van het kleine vak. De breedte is meteen de
+       maximale breedte; een lange voornaam krimpt via JS (pasVoornaamGrootteAan). */
+    --speler-left: 13.6%;     /* % van de wrapperbreedte */
+    --speler-top: 63%;        /* % van de wrapperhoogte  */
+    --speler-breedte: 23.5%;  /* % van de wrapperbreedte (= max. breedte; vak loopt ~13.6%–37%) */
+    --speler-hoogte: 20.3%;   /* % van de wrapperhoogte  */
+    --speler-padding-x: 6%;
+    --speler-padding-y: 2%;
+    --speler-lettergrootte: 0.8rem;  /* basisgrootte; JS krimpt indien nodig */
+    /* ================================================ */
+
+    position: absolute;
+    left: var(--speler-left);
+    top: var(--speler-top);
+    width: var(--speler-breedte);
+    height: var(--speler-hoogte);
+    padding: var(--speler-padding-y) var(--speler-padding-x);
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffd86b;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: var(--speler-lettergrootte);
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: center;
+    /* Voornaam blijft op één regel; past hij niet, dan krimpt JS de letters
+       (pasVoornaamGrootteAan) tot hij binnen het vak valt. */
+    white-space: nowrap;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+    z-index: 3;            /* bovenop het frame */
+    pointer-events: none;
+}
+
+/* =========================
+   NIEUW SPEL ZONE
+   Onzichtbare klik-zone over de geschilderde "NIEUW SPEL"-rij in het
+   MENU-paneel links in de achtergrondafbeelding (startscherm.png).
+   Zelfde aanpak als .boek-zone: absoluut gepositioneerd in % zodat hij
+   meeschaalt met het 16:9 game-container, volledig transparant, cursor
+   pointer, en bovenop met pointer-events: auto.
+   Positie is een eerste schatting op basis van de afbeelding; eventueel
+   fijnafstellen via de inspector.
+========================= */
+
+.nieuw-spel-zone {
+    position: absolute;
+    left: 3.5%;
+    top: 31.5%;
+    width: 17%;
+    height: 9%;
+
+    background: transparent;
+
+    cursor: pointer;
+
+    /* Boven alle decoratieve elementen in #game-container (.trofee/.kist=5,
+       #level-hud/#level-nummer=20, test-knopjes=30), maar onder de
+       quiz-overlays (z-index: 999) zodat hij vanzelf "uit" gaat tijdens
+       een quiz. */
+    z-index: 100;
+    pointer-events: auto;
+}
+
+/* =========================
+   TIJDELIJK TESTKNOPJE (later verwijderen)
+   Hiermee wissel je snel tussen geen/brons/zilver/goud voor Matteüs,
+   zodat je kunt zien of alle vier de trofeeën netjes in het vakje vallen.
+========================= */
+
+#trofee-test-btn {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    z-index: 30;
+
+    width: auto;
+    margin: 0;
+    padding: 6px 10px;
+
+    font-size: 12px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 215, 120, 0.45);
+
+    background: rgba(0, 0, 0, 0.55);
+    color: #f8e6b0;
+
+    box-shadow: none;
+    animation: none;
+    opacity: 0.55;
+}
+
+#trofee-test-btn:hover {
+    opacity: 1;
+    transform: none;
+    box-shadow: 0 0 8px rgba(255, 215, 120, 0.4);
+}
+
+/* TIJDELIJK — kist-testknopjes rechtsonder, naast het trofee-knopje (later weg). */
+#kist-test-panel {
+    position: absolute;
+    right: 14px;
+    bottom: 56px;
+    z-index: 30;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    opacity: 0.55;
+}
+
+#kist-test-panel:hover {
+    opacity: 1;
+}
+
+.kist-test-btn {
+    margin: 0;
+    padding: 5px 9px;
+
+    font-size: 11px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255, 215, 120, 0.45);
+
+    background: rgba(0, 0, 0, 0.55);
+    color: #f8e6b0;
+
+    box-shadow: none;
+    animation: none;
+}
+
+.kist-test-btn:hover {
+    transform: none;
+    box-shadow: 0 0 8px rgba(255, 215, 120, 0.4);
+}
+
+/* =========================
+   NIVEAUKNOPPEN (trofee-thema)
+========================= */
+
+/* Niveauknoppen in het bredere niveaukeuze-vak: gecentreerd met een nette
+   max-width, zodat de korte labels niet over de hele brede box uitgerekt
+   worden. Kleuren/effecten van .niveau-beginner / -advanced / -expert /
+   -terug blijven ongewijzigd door dit te scopen op #niveau-scherm. */
+#niveau-scherm .answer-btn {
+    width: 100%;
+    max-width: 640px;
+    display: block;
+    margin: 14px auto 0;
+}
+
+/* Beginner = brons — metaalachtige glans, witte tekst voor leesbaarheid. */
+.niveau-beginner {
+    background: linear-gradient(180deg, #f4c48d 0%, #e0974f 42%, #b86c30 60%, #8f5220 100%);
+    border-color: #6f3f18;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.45),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Gevorderd = zilver — metaalachtige glans, donkere tekst op licht oppervlak. */
+.niveau-advanced {
+    background: linear-gradient(180deg, #ffffff 0%, #dde3ec 42%, #b9c2cf 60%, #8e98a6 100%);
+    border-color: #6f7886;
+    color: #2a2a2a;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.6),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Expert = goud — metaalachtige glans, donkere tekst op licht oppervlak. */
+.niveau-expert {
+    background: linear-gradient(180deg, #fff4c2 0%, #f5d24f 42%, #e0b62e 60%, #b8870f 100%);
+    border-color: #8a6207;
+    color: #3a2a00;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.55),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Terug — fris groenblauw, duidelijk geen medaille en geen bruin. */
+.niveau-terug {
+    background: linear-gradient(180deg, #4cbfa9 0%, #2d8f7d 100%);
+    border-color: #1f6b5e;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.35),
+        0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   AVATAR-KEUZE in het Nieuw-spel-scherm
+   De vier avatars staan op één rij naast elkaar in een quiz-box die bijna
+   de volle schermbreedte gebruikt. Daardoor blijven de ronde portretten
+   groot zonder dat het naamveld of de knoppen in de knel komen — alles
+   past zonder scrollen op het scherm. De kaart-stijl blijft hetzelfde:
+   donkerblauw vak met gouden rand, naam onder de avatar.
+========================= */
+
+/* Quiz-box bijna over de volle schermbreedte; benut de lege ruimte links
+   en rechts. max-height + overflow:hidden als laatste vangnet. */
+#nieuw-spel-scherm .quiz-box {
+    width: 96vw;
+    max-width: 96vw;
+    max-height: 95vh;
+    padding: 22px 28px;
+    overflow: hidden;
+}
+
+/* Strakkere titel/subtitel-marges om verticale ruimte vrij te maken. */
+#nieuw-spel-scherm .quiz-title {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+
+#nieuw-spel-scherm .quiz-question {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+/* Eén rij van vier gelijke kolommen — de avatars vullen de breedte van
+   de brede quiz-box. */
+.avatar-keuze {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: start;
+    gap: 18px;
+    margin: 4px 0 14px;
+}
+
+/* Knop vult zijn kolom; eigen styling — niet overerven van .answer-btn. */
+.avatar-keuze-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    background: rgba(10, 20, 55, 0.72);
+    border: 2px solid rgba(255, 215, 120, 0.4);
+    border-radius: 22px;
+
+    color: #ffd86b;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(255, 215, 120, 0.35);
+
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    animation: none;
+    box-shadow:
+        inset 0 1px 0 rgba(255, 215, 120, 0.25),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Avatar vult de kolombreedte, met aspect-ratio 1 zodat hij rond blijft.
+   min() kapt de breedte op het kleinste van: kolom (100%), 440px cap voor
+   superbrede monitors, en 56vh zodat de cirkel ook op zeer lage viewports
+   netjes rond blijft (i.p.v. een ovale max-height-uitsnijding). */
+.avatar-keuze-btn img {
+    width: min(100%, 440px, 56vh);
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid rgba(255, 215, 120, 0.45);
+}
+
+.avatar-keuze-btn:hover {
+    border-color: #ffd86b;
+    transform: scale(1.04);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 215, 120, 0.4),
+        0 0 14px rgba(255, 215, 120, 0.45);
+}
+
+.avatar-keuze-btn.avatar-gekozen {
+    border-color: #ffd86b;
+    background: rgba(40, 60, 110, 0.85);
+    box-shadow:
+        inset 0 1px 0 rgba(255, 215, 120, 0.5),
+        0 0 18px rgba(255, 215, 120, 0.6);
+}
+
+.avatar-keuze-btn.avatar-gekozen img {
+    border-color: #ffd86b;
+}
+
+/* =========================
+   NAAM-INVOER in het Nieuw-spel-scherm — bescheiden, met duidelijk label
+   "Naam:" ervoor zodat het kind direct weet wat het moet doen.
+========================= */
+
+.speler-naam-rij {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 6px 0 12px;
+    flex-wrap: wrap;
+}
+
+.speler-naam-label {
+    color: #ffd86b;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-shadow: 0 0 6px rgba(255, 215, 120, 0.4);
+}
+
+.speler-naam-invoer {
+    display: inline-block;
+    width: 360px;
+    max-width: 60vw;
+    margin: 0;
+    padding: 10px 14px;
+
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1.1rem;
+    color: #2a1a0a;
+
+    background: #f6e9c8;
+    border: 2px solid #a87f3a;
+    border-radius: 10px;
+
+    text-align: center;
+    outline: none;
+
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.18),
+        0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* Start/Terug op het Nieuw-spel-scherm: ondergeschikt aan de grote avatars.
+   Niet over de volle breedte (override van .answer-btn width:100%), kleinere
+   hoogte, naast elkaar gecentreerd via inline-block + text-align:center op
+   .quiz-box. Behoudt de gouden/groenblauwe kleuren uit .niveau-expert /
+   .niveau-terug. */
+#nieuw-spel-scherm .answer-btn {
+    width: auto;
+    min-width: 160px;
+    margin: 6px 8px 0;
+    padding: 10px 26px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.speler-naam-invoer:focus {
+    border-color: #ffd86b;
+    box-shadow:
+        inset 0 2px 4px rgba(0, 0, 0, 0.18),
+        0 0 12px rgba(255, 215, 120, 0.55);
+}
+
+.speler-naam-invoer::placeholder {
+    color: rgba(70, 50, 20, 0.55);
+    font-weight: 400;
+}
