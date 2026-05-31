@@ -813,6 +813,21 @@ let huidigeXP = 0;
 // hebben geen effect omdat de sleutel daarna niet meer wordt geschreven.
 localStorage.removeItem("bijbelQuizXP");
 
+// Eenmalige opschoning: de trofee- en kist-standen die met de (inmiddels
+// verwijderde) testknopjes waren ingesteld, wissen. Zo begint de prijzenkast
+// op de vergrendelde schaduw-beginstand voor een speler die nog niets verdiend
+// heeft. Draait dankzij de vlag precies één keer per browser; daarna mag echte
+// voortgang gewoon weer worden opgeslagen en bewaard tussen sessies.
+if (!localStorage.getItem("prijzenkastOpgeruimd_v1")) {
+    ["matteus", "marcus", "lucas", "johannes"].forEach((boekKey) => {
+        localStorage.removeItem(`trofee_${boekKey}`);
+    });
+    ["brons", "zilver", "goud"].forEach((kistKey) => {
+        localStorage.removeItem(`kist_${kistKey}`);
+    });
+    localStorage.setItem("prijzenkastOpgeruimd_v1", "1");
+}
+
 // =========================
 // TROFEEËN
 // =========================
@@ -895,25 +910,6 @@ function toonKist(kistKey) {
     if (img && afbeeldingen && afbeeldingen[status]) {
         img.src = afbeeldingen[status];
     }
-
-    // Houd het bijbehorende testknopje in sync.
-    const testPanel = document.getElementById("kist-test-panel");
-    if (testPanel) {
-        const knoppen = testPanel.querySelectorAll(".kist-test-btn");
-        const knop = Array.from(knoppen).find((btn) => btn.getAttribute("onclick") === `testWisselKist('${kistKey}')`);
-        if (knop) {
-            const label = kistKey.charAt(0).toUpperCase() + kistKey.slice(1);
-            knop.innerHTML = `${label}: ${status}`;
-        }
-    }
-}
-
-// TIJDELIJK — toggelt één kist tussen vergrendeld en verdiend.
-// Mag later weer verwijderd worden, inclusief de bijbehorende HTML en CSS.
-function testWisselKist(kistKey) {
-    const huidig = getKistStatus(kistKey);
-    const volgende = huidig === "vergrendeld" ? "verdiend" : "vergrendeld";
-    setKistStatus(kistKey, volgende);
 }
 
 // Beginner → brons, Gevorderd → zilver, Expert → goud
@@ -956,36 +952,6 @@ function toonTrofee(boekKey) {
     if (img && afbeeldingen && afbeeldingen[niveau]) {
         img.src = afbeeldingen[niveau];
     }
-
-    // Houd het tijdelijke testknopje in sync (we hangen 'm aan Matteüs).
-    const testBtn = document.getElementById("trofee-test-btn");
-    if (testBtn && boekKey === "matteus") {
-        testBtn.innerHTML = `Trofeeën: ${niveau}`;
-    }
-}
-
-// TIJDELIJK — testknopje: cycleert één boek door geen → brons → zilver → goud → geen.
-// Mag later weer verwijderd worden, inclusief de bijbehorende HTML en CSS.
-function testWisselTrofee(boekKey) {
-    const huidig = getTrofeeNiveau(boekKey);
-    const volgende = trofeeVolgorde[(trofeeVolgorde.indexOf(huidig) + 1) % trofeeVolgorde.length];
-
-    localStorage.setItem(`trofee_${boekKey}`, volgende);
-    toonTrofee(boekKey);
-}
-
-// TIJDELIJK — cycleert ALLE vier de trofeeën tegelijk naar dezelfde volgende staat.
-// Handig om in één klik te checken of brons/zilver/goud/schaduw allemaal goed
-// in hun vakje vallen. Mag later weer verwijderd worden.
-function testWisselTrofeeAlles() {
-    // We baseren de volgende staat op Matteüs, zodat alle vier gelijk lopen.
-    const huidig = getTrofeeNiveau("matteus");
-    const volgende = trofeeVolgorde[(trofeeVolgorde.indexOf(huidig) + 1) % trofeeVolgorde.length];
-
-    alleBoekKeys.forEach((boekKey) => {
-        localStorage.setItem(`trofee_${boekKey}`, volgende);
-        toonTrofee(boekKey);
-    });
 }
 
 // =========================
