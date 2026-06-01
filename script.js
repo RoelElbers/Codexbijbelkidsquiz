@@ -249,7 +249,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus met het dochtertje van Jaïrus, dat was overleden?",
-                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij bad bij haar", "Hij ging weg"],
+                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij gaf haar medicijnen", "Hij ging weg"],
                 correct: "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op",
                 bijbelplaats: "Marcus 5:41-42"
             },
@@ -354,7 +354,7 @@ const vragenData = {
                 bijbelplaats: "Marcus 1:10, 1:18 en vele andere plaatsen"
             },
             {
-                vraag: "Wat is het allereerste woord van het Marcus-evangelie? Het begin van het ...",
+                vraag: "Waar begint het Marcus-evangelie mee?",
                 antwoorden: ["Het begin van het verhaal van Jezus", "Het begin van het evangelie van Jezus Christus de Zoon van God", "In den beginne", "Lang geleden"],
                 correct: "Het begin van het evangelie van Jezus Christus de Zoon van God",
                 bijbelplaats: "Marcus 1:1"
@@ -449,13 +449,13 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus toen hij twaalf jaar oud was, en zijn ouders hem na drie dagen zoeken terugvonden in Jeruzalem?",
-                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren en luisterde en stelde vragen", "Hij was verdwaald", "Hij speelde met andere kinderen"],
-                correct: "Hij zat in de tempel tussen de leraren en luisterde en stelde vragen",
+                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij was verdwaald", "Hij speelde met andere kinderen"],
+                correct: "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen",
                 bijbelplaats: "Lucas 2:41-47"
             },
             {
                 vraag: "Wat gebeurde er toen Simon (Petrus) op aanwijzing van Jezus zijn netten uitwierp na een nacht zonder vangst?",
-                antwoorden: ["Niets ze vingen niets", "Ze vingen zoveel vissen dat de netten dreigden te scheuren", "Ze vingen alleen kleine visjes", "Ze gingen vissen op een ander meer"],
+                antwoorden: ["Niets, ze vingen niets", "Ze vingen zoveel vissen dat de netten dreigden te scheuren", "Ze vingen alleen kleine visjes", "Ze vingen één heel grote vis"],
                 correct: "Ze vingen zoveel vissen dat de netten dreigden te scheuren",
                 bijbelplaats: "Lucas 5:1-7"
             },
@@ -487,8 +487,8 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed de vader in de gelijkenis van de verloren zoon toen hij zijn zoon zag terugkomen?",
-                antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet omhelsde hem en kuste hem", "Hij was streng", "Hij stuurde hem weg"],
-                correct: "Hij rende hem tegemoet omhelsde hem en kuste hem",
+                antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet, omhelsde hem en kuste hem", "Hij vroeg eerst waar al het geld was gebleven", "Hij stuurde hem weg"],
+                correct: "Hij rende hem tegemoet, omhelsde hem en kuste hem",
                 bijbelplaats: "Lucas 15:20"
             },
             {
@@ -499,7 +499,7 @@ const vragenData = {
             },
             {
                 vraag: "Hoe reageerde de oudste broer toen hij hoorde dat zijn jongere broer was teruggekomen?",
-                antwoorden: ["Hij was blij", "Hij was boos en wilde niet naar binnen gaan", "Hij was verbaasd", "Hij ging weg"],
+                antwoorden: ["Hij was blij", "Hij was boos en wilde niet naar binnen gaan", "Hij was verbaasd en kon het niet geloven dat hij terug was", "Hij ging weg"],
                 correct: "Hij was boos en wilde niet naar binnen gaan",
                 bijbelplaats: "Lucas 15:28"
             },
@@ -517,14 +517,14 @@ const vragenData = {
             },
             {
                 vraag: "Wat zei Jezus tegen één van de misdadigers die naast hem was gekruisigd en die om hem vroeg?",
-                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Ga weg van mij", "Wacht maar af", "Ik ken je niet"],
+                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Het is te laat voor jou", "Daar kan ik nu niets aan doen"],
                 correct: "Vandaag zul je met mij in het paradijs zijn",
                 bijbelplaats: "Lucas 23:43"
             },
             {
                 vraag: "Wat gebeurde er toen twee leerlingen op weg waren naar het dorp Emmaüs, na de opstanding?",
-                antwoorden: ["Ze ontmoetten engelen", "Jezus zelf kwam met hen meelopen maar ze herkenden hem pas toen hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
-                correct: "Jezus zelf kwam met hen meelopen maar ze herkenden hem pas toen hij het brood brak",
+                antwoorden: ["Ze ontmoetten engelen", "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
+                correct: "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak",
                 bijbelplaats: "Lucas 24:13-31"
             },
             {
@@ -536,7 +536,7 @@ const vragenData = {
         ],
         expert: [
             {
-                vraag: "Aan wie is het Lucas-evangelie opgedragen, in de eerste verzen?",
+                vraag: "Aan wie is het Lucas-evangelie opgedragen, zoals we in de eerste verzen lezen?",
                 antwoorden: ["Aan de gemeente van Rome", "Aan Theofilus", "Aan Petrus", "Aan Maria"],
                 correct: "Aan Theofilus",
                 bijbelplaats: "Lucas 1:1-4"
