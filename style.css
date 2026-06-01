@@ -519,13 +519,22 @@ height: 22%;
    LEVEL HUD (Definitieve Koppeling & Uitlijning)
 ========================= */
 
-/* Level-nummer gecentreerd midden op het lege schild (linksin het paneel).
-   left/top + translate centreert het cijfer precies; in % dus schaalt mee. */
+/* Level-nummer gecentreerd op het geschilderde schild (linksin het paneel).
+   Centrering is breedte-onafhankelijk: translate(-50%, -50%) legt het midden
+   van het cijfervak exact op (left, top), dus zowel 1 cijfer (5) als 2 cijfers
+   (12) staan gecentreerd. text-align + nowrap houden het vak symmetrisch en
+   voorkomen afbreken bij twee cijfers.
+     - left: horizontaal midden van het schild.
+     - top : verticale "sweet spot", bewust iets boven het exacte midden omdat
+             het schild onderaan spits toeloopt. Startwaarde — in DevTools bij
+             te stellen. */
 #level-nummer {
     position: absolute;
-    left: 78.1%;
+    left: 77.85%;
     top: 84.9%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: nowrap;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-size: 44px;
     font-weight: 700;
