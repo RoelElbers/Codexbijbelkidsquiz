@@ -593,28 +593,53 @@ height: 22%;
     z-index: 5;
 }
 
+/* Schaduw/silhouet-versie van een trofee, puur via CSS op de bestaande
+   trofee-afbeelding (geen aparte PNG). brightness(0) maakt het beeld volledig
+   zwart; opacity(0.35) laat het als een vaag donker silhouet zien, duidelijk
+   anders dan de zilveren/gekleurde versie. Waardes hier zijn een startpunt —
+   in DevTools bij te stellen. */
+.trofee.schaduw {
+    filter: brightness(0.45) opacity(0.85);
+}
+
+/* Verdiende trofeeën worden per niveau herkleurd uit dezelfde zilveren
+   basisafbeelding, puur via filters. Brons: warme, matte bronstint. Zilver:
+   lichte koele glans. Goud: volle amber gloed met diepte. Geldt globaal voor
+   alle vier de trofeeën. Startwaarden — in DevTools bij te stellen. */
+.trofee.brons {
+    filter: sepia(0.7) saturate(1.6) hue-rotate(-10deg) brightness(0.8);
+}
+
+.trofee.zilver {
+    filter: brightness(1.1) saturate(1.05) drop-shadow(0 0 6px rgba(210, 225, 255, 0.75));
+}
+
+.trofee.goud {
+    filter: sepia(0.95) saturate(2.9) hue-rotate(5deg) brightness(1.13) contrast(1.15) drop-shadow(0 0 9px rgba(255, 195, 60, 0.9));
+}
+
 .trofee-matteus {
     width: 4.3%;
     top: 23.2%;
-    left: 73.6%;
+    left: 73.3%;
 }
 
 .trofee-marcus {
     width: 4.3%;
     top: 24.3%;
-    left: 79%;
+    left: 78.8%;
 }
 
 .trofee-lucas {
     width: 4.3%;
     top: 24.8%;
-    left: 84.5%;
+    left: 84.2%;
 }
 
 .trofee-johannes {
     width: 4.3%;
     top: 24.8%;
-    left: 90%;
+    left: 89.7%;
 }
 
 /* =========================
@@ -887,6 +912,40 @@ height: 22%;
     box-shadow:
         inset 0 2px 3px rgba(255, 255, 255, 0.35),
         0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Vergrendeld niveau (alleen in het spel): grijs/gedimd met een slotje, zodat
+   het duidelijk niet-actief oogt. Overschrijft de gekleurde medaille-look. De
+   knop blijft klikbaar zodat een tik de hint toont; dankzij de guard in
+   kiesNiveau start de klik geen quiz. */
+.answer-btn.vergrendeld {
+    background: linear-gradient(180deg, #dadada 0%, #bcbcbc 50%, #9c9c9c 100%);
+    border-color: #7c7c7c;
+    color: #5a5a5a;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.3),
+        0 2px 4px rgba(0, 0, 0, 0.25);
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+/* Slotje achter het label van een vergrendelde knop. */
+.answer-btn.vergrendeld::after {
+    content: " 🔒";
+}
+
+/* Vriendelijke hint onder de niveauknoppen bij het aantikken van een
+   vergrendeld niveau. Reserveert altijd één regel hoogte zodat de knoppen niet
+   verspringen als de tekst verschijnt of weer leeg wordt. */
+.niveau-hint {
+    width: 100%;
+    max-width: 640px;
+    margin: 12px auto 0;
+    min-height: 1.3em;
+    color: #ffe6a8;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* =========================

@@ -836,30 +836,38 @@ if (!localStorage.getItem("prijzenkastOpgeruimd_v1")) {
 const trofeeVolgorde = ["geen", "brons", "zilver", "goud"];
 
 // Welke afbeelding hoort bij welke staat, per evangelie.
+// De "geen"-stand gebruikt nu de echte (zilveren) artwork als basis; het donkere
+// silhouet ontstaat via de CSS-klasse .schaduw (zie toonTrofee). Zo is er geen
+// aparte schaduw-PNG meer nodig.
+// Elke trofee haalt al zijn standen (geen/brons/zilver/goud) uit één
+// basisafbeelding: de zilveren render. De herkleuring per stand gebeurt puur
+// via globale CSS-filters (.trofee.brons/.zilver/.goud) en het silhouet via
+// .trofee.schaduw. Geen src-wissel meer per stand, dus de versies kunnen nooit
+// t.o.v. elkaar verschuiven.
 const trofeeAfbeeldingen = {
     matteus: {
-        geen: "images/matteus-schaduw.png",
-        brons: "images/matteus-brons.png",
+        geen: "images/matteus-zilver.png",
+        brons: "images/matteus-zilver.png",
         zilver: "images/matteus-zilver.png",
-        goud: "images/matteus-goud.png"
+        goud: "images/matteus-zilver.png"
     },
     marcus: {
-        geen: "images/marcus-schaduw.png",
-        brons: "images/marcus-brons.png",
+        geen: "images/marcus-zilver.png",
+        brons: "images/marcus-zilver.png",
         zilver: "images/marcus-zilver.png",
-        goud: "images/marcus-goud.png"
+        goud: "images/marcus-zilver.png"
     },
     lucas: {
-        geen: "images/lucas-schaduw.png",
-        brons: "images/lucas-brons.png",
+        geen: "images/lucas-zilver.png",
+        brons: "images/lucas-zilver.png",
         zilver: "images/lucas-zilver.png",
-        goud: "images/lucas-goud.png"
+        goud: "images/lucas-zilver.png"
     },
     johannes: {
-        geen: "images/johannes-schaduw.png",
-        brons: "images/johannes-brons.png",
+        geen: "images/johannes-zilver.png",
+        brons: "images/johannes-zilver.png",
         zilver: "images/johannes-zilver.png",
-        goud: "images/johannes-goud.png"
+        goud: "images/johannes-zilver.png"
     }
 };
 
@@ -944,6 +952,10 @@ function setTrofeeNiveau(boekKey, nieuwNiveau) {
 }
 
 // Toont de juiste afbeelding voor een boek op basis van het opgeslagen niveau.
+// Bij "geen" (nog niets verdiend) krijgt de trofee de CSS-klasse .schaduw,
+// die de zilveren basis-artwork tot een donker silhouet maakt. Zodra er een
+// trofee is verdiend (brons/zilver/goud) gaat de klasse eraf en zie je de
+// volle gekleurde versie.
 function toonTrofee(boekKey) {
     const niveau = getTrofeeNiveau(boekKey);
     const img = document.getElementById(`trofee-${boekKey}`);
@@ -951,7 +963,87 @@ function toonTrofee(boekKey) {
 
     if (img && afbeeldingen && afbeeldingen[niveau]) {
         img.src = afbeeldingen[niveau];
+        img.classList.toggle("schaduw", niveau === "geen");
+
+        // Niveau-klasse zetten voor de oplopende glans (brons mat, zilver
+        // glanzend, goud stralend). Eerst alle drie weghalen, dan de huidige
+        // toevoegen; bij "geen" blijft het bij .schaduw zonder niveau-klasse.
+        img.classList.remove("brons", "zilver", "goud");
+        if (niveau !== "geen") {
+            img.classList.add(niveau);
+        }
     }
+}
+
+// =========================
+// NIVEAU-VERGRENDELING (alleen in het spel, niet bij oefenen)
+// =========================
+//
+// De niveaus gaan per evangelieboek opklimmend open op basis van de bestaande
+// trofee-waarde (trofee_<boek>). Er wordt niets extra's bijgehouden.
+//   Beginner : altijd open.
+//   Gevorderd: open zodra er minstens brons is verdiend (Beginner gehaald).
+//   Expert   : open zodra er minstens zilver is verdiend (Gevorderd gehaald).
+// Omdat "nieuw spel" alle trofeeën op "geen" zet, staat daarna automatisch
+// per boek alleen Beginner open.
+
+// Minimale trofee-waarde die een niveau openzet (sleutels = interne niveaunamen).
+const niveauDrempel = {
+    beginner: "geen",
+    advanced: "brons",
+    expert: "zilver"
+};
+
+// Vriendelijke hint bij een nog vergrendeld niveau.
+const niveauSlotHint = {
+    advanced: "Verdien eerst brons bij Beginner om Gevorderd te openen.",
+    expert: "Verdien eerst zilver bij Gevorderd om Expert te openen."
+};
+
+// Welke knop-class hoort bij welk niveau (binnen #niveau-scherm).
+const niveauKnopClass = {
+    beginner: "niveau-beginner",
+    advanced: "niveau-advanced",
+    expert: "niveau-expert"
+};
+
+// Staat de vergrendeling aan voor de huidige niveaukeuze? In het spel: ja.
+// Een latere Oefenmodus opent het boek met { vergrendel: false } -> dan staat
+// alles open.
+let niveauVergrendelingActief = true;
+
+// Is een niveau open voor het opgegeven boek, op basis van de trofee-waarde?
+function isNiveauOpen(boekKey, niveau) {
+    const huidig = getTrofeeNiveau(boekKey);
+    return trofeeVolgorde.indexOf(huidig) >= trofeeVolgorde.indexOf(niveauDrempel[niveau]);
+}
+
+// Markeert in het niveau-scherm welke knoppen vergrendeld zijn (class
+// .vergrendeld + aria-disabled). Bij uitgeschakelde vergrendeling staat alles
+// open. Wist tevens een eventueel zichtbare hint.
+function werkNiveauSlotenBij() {
+    const boekKey = boekNaarKey[gekozenBoek];
+
+    Object.keys(niveauKnopClass).forEach((niveau) => {
+        const knop = document.querySelector(`#niveau-scherm .${niveauKnopClass[niveau]}`);
+        if (!knop) return;
+
+        const vergrendeld = niveauVergrendelingActief && boekKey
+            ? !isNiveauOpen(boekKey, niveau)
+            : false;
+
+        knop.classList.toggle("vergrendeld", vergrendeld);
+        knop.setAttribute("aria-disabled", vergrendeld ? "true" : "false");
+    });
+
+    const hint = document.getElementById("niveau-hint");
+    if (hint) hint.textContent = "";
+}
+
+// Toont de vriendelijke hint voor een vergrendeld niveau.
+function toonNiveauHint(niveau) {
+    const hint = document.getElementById("niveau-hint");
+    if (hint) hint.textContent = niveauSlotHint[niveau] || "";
 }
 
 // =========================
@@ -1112,11 +1204,18 @@ function bevestigNieuwSpel() {
     setGekozenAvatar(avatar);
     setSpelerNaam(naam);
 
-    // Verse start: alle verdiende schildpunten wissen.
+    // Verse start: alle verdiende schildpunten wissen (levels terug naar 0).
     alleBoekKeys.forEach((boekKey) => {
         niveauKeys.forEach((niveau) => {
             localStorage.removeItem(schildKey(boekKey, niveau));
         });
+    });
+
+    // Ook alle behaalde trofeeën wissen: stand terug naar "geen" en de trofee
+    // opnieuw tekenen, zodat elk evangelie weer als donker silhouet verschijnt.
+    alleBoekKeys.forEach((boekKey) => {
+        localStorage.removeItem(`trofee_${boekKey}`);
+        toonTrofee(boekKey);
     });
 
     updateSchildpuntenWeergave();
@@ -1147,9 +1246,13 @@ function toonLevelHud() {
     }
 }
 
-// Klik op een boek -> eerst het niveaukeuze-scherm tonen (nog niet de quiz)
-function openBoek(boekNaam) {
+// Klik op een boek -> eerst het niveaukeuze-scherm tonen (nog niet de quiz).
+// In het spel is { vergrendel: true } (standaard): niveaus gaan opklimmend open
+// op basis van de trofee-waarde. Een latere Oefenmodus roept dit aan met
+// { vergrendel: false } zodat alle niveaus open staan.
+function openBoek(boekNaam, { vergrendel = true } = {}) {
     gekozenBoek = boekNaam;
+    niveauVergrendelingActief = vergrendel;
 
     const niveauScherm = document.getElementById("niveau-scherm");
     const niveauTitel = document.getElementById("niveau-boek-titel");
@@ -1157,6 +1260,9 @@ function openBoek(boekNaam) {
     if (niveauTitel) {
         niveauTitel.innerHTML = boekNaam;
     }
+
+    // Sloten bijwerken vóór het tonen, zodat het scherm meteen klopt.
+    werkNiveauSlotenBij();
 
     niveauScherm.style.display = "flex";
 
@@ -1166,6 +1272,13 @@ function openBoek(boekNaam) {
 
 // Keuze van een niveau -> hier start pas de echte quiz
 function kiesNiveau(niveau) {
+    // In het spel: een nog vergrendeld niveau start niet, maar toont een hint.
+    const boekKey = boekNaarKey[gekozenBoek];
+    if (niveauVergrendelingActief && boekKey && !isNiveauOpen(boekKey, niveau)) {
+        toonNiveauHint(niveau);
+        return;
+    }
+
     gekozenNiveau = niveau;
     vragen = vragenData[gekozenBoek][niveau];
 
