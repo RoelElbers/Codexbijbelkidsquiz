@@ -54,12 +54,6 @@ const vragenData = {
                 bijbelplaats: "Matteüs 3:13-17"
             },
             {
-                vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
-                antwoorden: ["Een paard", "Een kameel", "Een ezel", "Een muildier"],
-                correct: "Een ezel",
-                bijbelplaats: "Matteüs 21:1-7"
-            },
-            {
                 vraag: "Wat was het beroep van Matteüs voordat hij Jezus volgde?",
                 antwoorden: ["Visser", "Timmerman", "Belastingontvanger", "Herder"],
                 correct: "Belastingontvanger",
@@ -79,8 +73,8 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus toen er een storm op het meer was en de leerlingen bang werden?",
-                antwoorden: ["Hij sliep verder", "Hij maakte de storm stil", "Hij sprong overboord", "Hij riep om hulp"],
-                correct: "Hij maakte de storm stil",
+                antwoorden: ["Hij sliep verder", "Hij maakte dat de storm ging liggen", "Hij sprong overboord", "Hij riep om hulp"],
+                correct: "Hij maakte dat de storm ging liggen",
                 bijbelplaats: "Matteüs 8:23-27"
             },
             {
@@ -94,6 +88,12 @@ const vragenData = {
                 antwoorden: ["7 dagen", "12 dagen", "40 dagen", "100 dagen"],
                 correct: "40 dagen",
                 bijbelplaats: "Matteüs 4:1-2"
+            },
+            {
+                vraag: "Welke leerling liep een stukje over het water naar Jezus toe, maar begon te zinken toen hij bang werd?",
+                antwoorden: ["Johannes", "Petrus", "Andreas", "Jakobus"],
+                correct: "Petrus",
+                bijbelplaats: "Matteüs 14:28-31"
             }
         ],
         advanced: [
@@ -153,7 +153,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat was de laatste opdracht die Jezus aan zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
-                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Blijf in Jeruzalem", "Schrijf een boek"],
+                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Houd het goede nieuws voor jezelf", "Schrijf een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
             }
@@ -1001,8 +1001,8 @@ const niveauDrempel = {
 
 // Vriendelijke hint bij een nog vergrendeld niveau.
 const niveauSlotHint = {
-    advanced: "Verdien eerst brons bij Beginner om Gevorderd te openen.",
-    expert: "Verdien eerst zilver bij Gevorderd om Expert te openen."
+    advanced: "Verdien eerst brons bij Beginner om Advanced te openen.",
+    expert: "Verdien eerst zilver bij Advanced om Expert te openen."
 };
 
 // Welke knop-class hoort bij welk niveau (binnen #niveau-scherm).
