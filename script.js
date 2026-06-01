@@ -808,6 +808,11 @@ let vragen = [];
 // sessies — elke nieuwe ronde/elk nieuw niveau begint weer op 0.
 let huidigeXP = 0;
 
+// Aantal goede antwoorden van de laatst VOLTOOIDE ronde. Bepaalt hoe vol de
+// XP-balk op het startscherm staat (één tiende per goed antwoord; 10 = vol).
+// Wordt in eindScherm() vastgelegd en bij "nieuw spel" weer op 0 gezet.
+let laatsteRondeGoed = 0;
+
 // Eenmalige opschoning: de oude bewaarde XP-waarde (testdata) wissen, zodat
 // een kind echt vanaf 0 schildpunten begint. Idempotent — verdere reloads
 // hebben geen effect omdat de sleutel daarna niet meer wordt geschreven.
@@ -1218,6 +1223,11 @@ function bevestigNieuwSpel() {
         toonTrofee(boekKey);
     });
 
+    // Verse start: de XP-balk hoort leeg te zijn, dus het laatste ronderesultaat
+    // wissen en de balk opnieuw tekenen.
+    laatsteRondeGoed = 0;
+    updateXPBalk();
+
     updateSchildpuntenWeergave();
     updateAvatarWeergave();
 
@@ -1435,6 +1445,11 @@ function eindScherm() {
     const alleGoed = score === vragen.length;
     const trofeeKleur = niveauNaarTrofee[gekozenNiveau]; // brons / zilver / goud
 
+    // Het aantal goede antwoorden van deze ronde vastleggen, zodat de XP-balk
+    // op het startscherm het ronderesultaat toont (terugNaarStartscherm reset
+    // straks score/huidigeXP, daarom hier bewaren).
+    laatsteRondeGoed = score;
+
     // Alleen bij 10/10 verdient de speler de trofee voor dit boek + niveau.
     // setTrofeeNiveau downgradet nooit, dus een al behaalde hogere trofee blijft.
     // Bij 10/10 verdient de speler bovendien één schildpunt voor deze
@@ -1483,14 +1498,13 @@ function updateXPBalk() {
     const xpVulling = document.getElementById("xp-vulling");
     const xpBoven = document.getElementById("xp");
 
-    const maxXP = 1000;
-
-    // Eén bron van waarheid: huidigeXP (momentscore van de lopende ronde).
-    const percentage = (huidigeXP / maxXP) * 100;
+    // De XP-balk op het startscherm toont het resultaat van de laatste ronde:
+    // één tiende per goed antwoord, 10 goed = vol. Begrensd op 0–100%.
+    const percentage = Math.min(laatsteRondeGoed, 10) * 10;
 
     if (xpVulling) xpVulling.style.width = percentage + "%";
 
-    // XP-teller bovenin de quiz (klein display)
+    // De kleine XP-teller in de quiz toont de live momentscore van de ronde.
     if (xpBoven) xpBoven.innerHTML = huidigeXP;
 }
 
