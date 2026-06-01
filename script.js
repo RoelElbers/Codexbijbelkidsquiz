@@ -249,8 +249,8 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus met het dochtertje van Jaïrus, dat was overleden?",
-                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koem' (Meisje, sta op) en ze stond op", "Hij bad bij haar", "Hij ging weg"],
-                correct: "Hij nam haar bij de hand en zei 'Talita koem' (Meisje, sta op) en ze stond op",
+                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij bad bij haar", "Hij ging weg"],
+                correct: "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op",
                 bijbelplaats: "Marcus 5:41-42"
             },
             {
@@ -266,7 +266,7 @@ const vragenData = {
                 bijbelplaats: "Marcus 11:7"
             },
             {
-                vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na zijn intocht?",
+                vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na zijn intocht, wat ophef veroorzaakte?",
                 antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij ging slapen"],
                 correct: "Hij joeg de geldwisselaars en duivenverkopers eruit",
                 bijbelplaats: "Marcus 11:15-17"
@@ -310,7 +310,7 @@ const vragenData = {
                 bijbelplaats: "Marcus 12:29-31"
             },
             {
-                vraag: "Wat deed Jezus met een vijgenboom die geen vruchten droeg, vlak voor zijn tempelreiniging?",
+                vraag: "Wat deed Jezus met een vijgenboom die geen vruchten droeg, vlak voor de tempelreiniging?",
                 antwoorden: ["Hij plukte er bladeren af", "Hij vervloekte hem waarna de boom verdorde", "Hij snoeide hem", "Hij liet hem met rust"],
                 correct: "Hij vervloekte hem waarna de boom verdorde",
                 bijbelplaats: "Marcus 11:12-14, 20-21"
@@ -322,7 +322,7 @@ const vragenData = {
                 bijbelplaats: "Marcus 12:41-44"
             },
             {
-                vraag: "Welke leerling sliep telkens in Getsemane terwijl Jezus aan het bidden was?",
+                vraag: "Welke leerling sprak Jezus rechtstreeks aan toen hij zijn leerlingen in Getsemane slapend aantrof?",
                 antwoorden: ["Judas", "Petrus", "Tomas", "Johannes"],
                 correct: "Petrus",
                 bijbelplaats: "Marcus 14:37"
@@ -378,10 +378,10 @@ const vragenData = {
                 bijbelplaats: "Marcus 4:3-9"
             },
             {
-                vraag: "Welke profeet wordt geciteerd aan het begin van het Marcus-evangelie: 'Ik zend mijn bode voor jou uit, hij zal een weg voor je banen'?",
-                antwoorden: ["Mozes", "Jesaja", "Daniël", "Maleachi"],
-                correct: "Jesaja",
-                bijbelplaats: "Marcus 1:2-3"
+                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel 'een stem roept in de woestijn, maak de weg van de Heer gereed' komt inderdaad uit Jesaja. Maar de andere regel — 'Ik zend mijn bode voor je uit, hij zal een weg voor je banen' — komt uit een ander Bijbelboek. Welk?",
+                antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
+                correct: "Maleachi",
+                bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
             },
             {
                 vraag: "Komen Lazarus en zijn zusters Marta en Maria voor in het Marcus-evangelie?",
@@ -391,8 +391,8 @@ const vragenData = {
             },
             {
                 vraag: "Welk Aramees woord sprak Jezus uit toen hij het dochtertje van Jaïrus opwekte uit de dood?",
-                antwoorden: ["Korban", "Talita koem (Meisje, sta op)", "Effata", "Maranata"],
-                correct: "Talita koem (Meisje, sta op)",
+                antwoorden: ["Korban", "Talita koemi (Meisje, sta op)", "Effata", "Maranata"],
+                correct: "Talita koemi (Meisje, sta op)",
                 bijbelplaats: "Marcus 5:41"
             },
             {
@@ -402,9 +402,9 @@ const vragenData = {
                 bijbelplaats: "Marcus 9:2 en 14:33"
             },
             {
-                vraag: "Wat riep Jezus aan het kruis in zijn eigen taal?",
-                antwoorden: ["Eli, Eli, lema sabachtani", "Eloï, Eloï, lema sabachtani (Mijn God, mijn God, waarom hebt U mij verlaten?)", "Het is volbracht", "Vader in uw handen beveel ik mijn geest"],
-                correct: "Eloï, Eloï, lema sabachtani (Mijn God, mijn God, waarom hebt U mij verlaten?)",
+                vraag: "Jezus riep aan het kruis in zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
+                antwoorden: ["Heer, ontferm U over ons", "Mijn God, mijn God, waarom hebt U mij verlaten?", "Geprezen zij Uw heilige naam", "Vergeef ons onze schulden"],
+                correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
             }
         ]
