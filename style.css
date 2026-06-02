@@ -493,6 +493,7 @@ height: 22%;
     font-weight: bold;
     text-align: center;
     min-height: clamp(110px, 13vh, 140px);
+    margin-bottom: 100px;
 }
 
 .bijbelplaats {
@@ -661,26 +662,27 @@ height: 22%;
 .kist {
     position: absolute;
     height: auto;
-    pointer-events: none;
+    pointer-events: auto;
+    cursor: pointer;
     z-index: 5;
 }
 
 .kist-brons {
     width: 6%;
-    top: 48.4%;
-    left: 73.5%;
+    top: 48.1%;
+    left: 73.1%;
 }
 
 .kist-zilver {
     width: 6%;
     top: 48.5%;
-    left: 80.7%;
+    left: 80.4%;
 }
 
 .kist-goud {
     width: 6%;
-    top: 48.9%;
-    left: 88.5%;
+    top: 48.6%;
+    left: 88.0%;
 }
 
 /* =========================
@@ -862,6 +864,55 @@ height: 22%;
        een quiz. */
     z-index: 100;
     pointer-events: auto;
+}
+
+.bijbeltraining-zone {
+    position: absolute;
+    left: 3.5%;
+    top: 41%;
+    width: 17%;
+    height: 9%;
+
+    /* Doorzichtig: dit is alleen een onzichtbare klik-zone over de
+       geschilderde "Bijbeltraining"-knop in het MENU-paneel. */
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+#resultaat .oefen-volgende {
+    display: block;
+    width: 260px;
+    max-width: 80%;
+    margin: 18px auto 0;
+
+    /* Warme goud-knop met donkere tekst: duidelijk "ga verder", los van de
+       blauwe antwoordknoppen. */
+    background: linear-gradient(180deg, #f3c969 0%, #d9a648 100%);
+    color: #2a2418;
+    border: 2px solid #b9852f;
+    font-weight: bold;
+    text-shadow: none;
+}
+
+.oefen-stop {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    z-index: 10;
+
+    padding: 10px 20px;
+    border-radius: 12px;
+
+    background: rgba(10, 20, 55, 0.9);
+    color: #ffd86b;
+    border: 2px solid rgba(255, 215, 120, 0.5);
+
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
 /* =========================

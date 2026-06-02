@@ -218,6 +218,54 @@ const vragenData = {
                 antwoorden: ["Petrus en Andreas", "Jakobus en Johannes", "Filippus en Bartolomeüs", "Tomas en Matteüs"],
                 correct: "Petrus en Andreas",
                 bijbelplaats: "Matteüs 4:18-20"
+            },
+            {
+                vraag: "Welke munt kregen de arbeiders in de wijngaard afgesproken als loon voor een hele dag werk?",
+                antwoorden: ["Een denarie", "Een talent", "Een penning", "Een pond"],
+                correct: "Een denarie",
+                bijbelplaats: "Matteüs 20:2"
+            },
+            {
+                vraag: "Hoe groot was de schuld van de dienaar in de gelijkenis van de onbarmhartige dienaar?",
+                antwoorden: ["Honderd denarie", "Duizend talenten", "Tienduizend talenten", "Honderd talenten"],
+                correct: "Tienduizend talenten",
+                bijbelplaats: "Matteüs 18:24"
+            },
+            {
+                vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
+                antwoorden: ["Bij zonsondergang", "Rond middernacht", "Tijdens de vierde nachtwaak (tegen de ochtend)", "Bij het eerste hanengekraai"],
+                correct: "Tijdens de vierde nachtwaak (tegen de ochtend)",
+                bijbelplaats: "Matteüs 14:25"
+            },
+            {
+                vraag: "Welke lengtemaat gebruikt Jezus in de Bergrede, als hij zegt dat niemand door bezorgdheid iets aan zijn leven kan toevoegen?",
+                antwoorden: ["Een el", "Een stadie", "Een mijl", "Een voet"],
+                correct: "Een el",
+                bijbelplaats: "Matteüs 6:27"
+            },
+            {
+                vraag: "Een denarie was een Romeinse zilveren munt. Hoeveel was die ongeveer waard?",
+                antwoorden: ["Het loon voor één dag werk", "Het loon voor één uur", "Het loon voor één jaar", "Niets, het was de kleinste munt"],
+                correct: "Het loon voor één dag werk",
+                bijbelplaats: "Matteüs 20:2"
+            },
+            {
+                vraag: "Een talent was de grootste geldmaat. Ongeveer hoeveel daglonen was één talent waard?",
+                antwoorden: ["Ongeveer 10 daglonen", "Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon"],
+                correct: "Ongeveer 6000 daglonen",
+                bijbelplaats: "Matteüs 25:15"
+            },
+            {
+                vraag: "Een 'el' was een oude lengtemaat. Waarop was die gebaseerd?",
+                antwoorden: ["De lengte van een onderarm, ongeveer 45 cm", "De lengte van een voet", "De lengte van een stap", "De hoogte van een man"],
+                correct: "De lengte van een onderarm, ongeveer 45 cm",
+                bijbelplaats: "Matteüs 6:27"
+            },
+            {
+                vraag: "In de gelijkenis van het zuurdesem mengt een vrouw zuurdesem door 'drie maten' (sata) meel. Wat valt op aan die hoeveelheid?",
+                antwoorden: ["Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken", "Het was maar een klein kopje", "Het was precies genoeg voor één broodje", "Het was te weinig om brood van te bakken"],
+                correct: "Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken",
+                bijbelplaats: "Matteüs 13:33"
             }
         ]
     },
@@ -406,6 +454,36 @@ const vragenData = {
                 antwoorden: ["Heer, ontferm U over ons", "Mijn God, mijn God, waarom hebt U mij verlaten?", "Geprezen zij Uw heilige naam", "Vergeef ons onze schulden"],
                 correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
+            },
+            {
+                vraag: "Met welke munt liet Jezus de strikvraag over belasting aan de keizer beantwoorden — de munt met de afbeelding van de keizer erop?",
+                antwoorden: ["Een denarie", "Een talent", "Een pond", "Een penning"],
+                correct: "Een denarie",
+                bijbelplaats: "Marcus 12:15-16"
+            },
+            {
+                vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe werden die kleinste munten genoemd?",
+                antwoorden: ["Denarie", "Talenten", "Penningen (lepta)", "Ponden"],
+                correct: "Penningen (lepta)",
+                bijbelplaats: "Marcus 12:42"
+            },
+            {
+                vraag: "Jezus roept op tot waakzaamheid en noemt vier momenten: 's avonds laat, middernacht, hanengekraai en 's morgens vroeg. In hoeveel van zulke 'nachtwaken' was de nacht verdeeld?",
+                antwoorden: ["Twee", "Drie", "Vier", "Zes"],
+                correct: "Vier",
+                bijbelplaats: "Marcus 13:35"
+            },
+            {
+                vraag: "De arme weduwe gaf twee penningen (lepta), de allerkleinste muntjes. Hoeveel waren die ongeveer waard?",
+                antwoorden: ["Bijna niets, een heel klein deel van een dagloon", "Ongeveer een dagloon", "Ongeveer tien daglonen", "Ongeveer honderd daglonen"],
+                correct: "Bijna niets, een heel klein deel van een dagloon",
+                bijbelplaats: "Marcus 12:42"
+            },
+            {
+                vraag: "De Romeinen verdeelden de nacht in vier 'nachtwaken'. Ongeveer hoe lang duurde één nachtwaak?",
+                antwoorden: ["Ongeveer 1 uur", "Ongeveer 3 uur", "Ongeveer 6 uur", "De hele nacht"],
+                correct: "Ongeveer 3 uur",
+                bijbelplaats: "Marcus 13:35"
             }
         ]
     },
@@ -594,6 +672,54 @@ const vragenData = {
                 antwoorden: ["5", "7", "10", "12"],
                 correct: "10",
                 bijbelplaats: "Lucas 17:11-19"
+            },
+            {
+                vraag: "Hoeveel geld gaf de barmhartige Samaritaan aan de waard om voor de gewonde man te zorgen?",
+                antwoorden: ["Eén denarie", "Twee denarie", "Tien denarie", "Honderd denarie"],
+                correct: "Twee denarie",
+                bijbelplaats: "Lucas 10:35"
+            },
+            {
+                vraag: "In de gelijkenis van de ponden geeft een edelman zijn dienaren geld om mee te handelen. Welke geldmaat deelde hij uit?",
+                antwoorden: ["Een talent", "Een pond (mina)", "Een denarie", "Een penning"],
+                correct: "Een pond (mina)",
+                bijbelplaats: "Lucas 19:13"
+            },
+            {
+                vraag: "Hoe ver lag het dorp Emmaüs van Jeruzalem, volgens Lucas?",
+                antwoorden: ["Tien stadiën", "Zestig stadiën", "Honderd stadiën", "Tweehonderd stadiën"],
+                correct: "Zestig stadiën",
+                bijbelplaats: "Lucas 24:13"
+            },
+            {
+                vraag: "In de gelijkenis van de onrechtvaardige rentmeester laat de rentmeester twee schuldenaren hun schuld verlagen. Waarin waren die schulden uitgedrukt?",
+                antwoorden: ["Goud en zilver", "Olie en tarwe", "Wijn en brood", "Geld en land"],
+                correct: "Olie en tarwe",
+                bijbelplaats: "Lucas 16:6-7"
+            },
+            {
+                vraag: "In de gelijkenis van de ponden deelt een edelman 'ponden' (mina) uit. Hoeveel daglonen was één pond waard?",
+                antwoorden: ["Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon", "Een halve dag"],
+                correct: "Ongeveer 100 daglonen",
+                bijbelplaats: "Lucas 19:13"
+            },
+            {
+                vraag: "Een 'stadie' was een afstandsmaat. Ongeveer hoe lang was één stadie?",
+                antwoorden: ["Ongeveer 10 meter", "Ongeveer 185 meter", "Ongeveer 1 kilometer", "Ongeveer 5 kilometer"],
+                correct: "Ongeveer 185 meter",
+                bijbelplaats: "Lucas 24:13"
+            },
+            {
+                vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand 'honderd vat (bato) olie' schuldig. Ongeveer hoeveel liter was één vat?",
+                antwoorden: ["Ongeveer 1 liter", "Ongeveer 22 liter", "Ongeveer 100 liter", "Ongeveer 1000 liter"],
+                correct: "Ongeveer 22 liter",
+                bijbelplaats: "Lucas 16:6"
+            },
+            {
+                vraag: "Een 'kor' was de grootste inhoudsmaat in de gelijkenissen. Hoe groot was die ongeveer?",
+                antwoorden: ["Ongeveer tien keer zo groot als een vat (zo'n 220 liter)", "Ongeveer even groot als een vat", "Kleiner dan een vat", "Ongeveer honderd keer zo groot als een vat"],
+                correct: "Ongeveer tien keer zo groot als een vat (zo'n 220 liter)",
+                bijbelplaats: "Lucas 16:7"
             }
         ]
     },
@@ -618,10 +744,10 @@ const vragenData = {
                 bijbelplaats: "Johannes 4:5-26"
             },
             {
-                vraag: "Wat vroeg Jezus aan de Samaritaanse vrouw bij de put?",
-                antwoorden: ["Om eten", "Om water te drinken", "Om geld", "Om de weg"],
-                correct: "Om water te drinken",
-                bijbelplaats: "Johannes 4:7"
+                vraag: "Wat deed Jezus voor de man die al vanaf zijn geboorte blind was?",
+                antwoorden: ["Hij gaf hem geld", "Hij genas hem zodat hij kon zien", "Hij stuurde hem naar de tempel", "Hij liep door"],
+                correct: "Hij genas hem zodat hij kon zien",
+                bijbelplaats: "Johannes 9:1-7"
             },
             {
                 vraag: "Van wie waren de vijf broden en twee vissen die Jezus gebruikte om de vijfduizend te voeden?",
@@ -636,15 +762,10 @@ const vragenData = {
                 bijbelplaats: "Johannes 11:1-44"
             },
             {
-                vraag: "Welke leerling sprong in het water om als eerste bij Jezus te komen, toen Jezus na zijn opstanding aan het meer verscheen?",
-                antwoorden: [
-                    "Petrus, die zijn bovenkleed aandeed en in het water sprong",
-                    "Johannes, die als eerste bij Jezus wilde zijn",
-                    "Andreas, die zijn broer Petrus volgde",
-                    "Tomas, die nog twijfelde"
-                ],
-                correct: "Petrus, die zijn bovenkleed aandeed en in het water sprong",
-                bijbelplaats: "Johannes 21:7"
+                vraag: "Wat zagen de leerlingen Jezus doen toen zij 's avonds in de boot het meer overstaken?",
+                antwoorden: ["Vissen vangen", "Over het water lopen", "Slapen aan de oever", "In een andere boot stappen"],
+                correct: "Over het water lopen",
+                bijbelplaats: "Johannes 6:16-21"
             },
             {
                 vraag: "Welke leerling protesteerde tegen het feit dat Jezus zijn voeten wilde wassen?",
@@ -673,15 +794,15 @@ const vragenData = {
                 bijbelplaats: "Johannes 1:1"
             },
             {
-                vraag: "Wie kwam er 's nachts bij Jezus om met hem te praten, omdat hij een leraar van de Joden was?",
+                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
                 antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
                 correct: "Nikodemus",
                 bijbelplaats: "Johannes 3:1-2"
             },
             {
-                vraag: "Wat zei Jezus dat hij kon geven aan de Samaritaanse vrouw, 'levend water' waarvan je nooit meer dorst krijgt?",
-                antwoorden: ["De Heilige Geest / eeuwig leven", "Een nieuwe bron", "Een wonderwater", "Wijn"],
-                correct: "De Heilige Geest / eeuwig leven",
+                vraag: "Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt?",
+                antwoorden: ["Eeuwig leven", "Een lang leven op aarde", "Grote rijkdom", "Genezing van ziekten"],
+                correct: "Eeuwig leven",
                 bijbelplaats: "Johannes 4:13-14"
             },
             {
@@ -703,7 +824,7 @@ const vragenData = {
                 bijbelplaats: "Johannes 13:34-35"
             },
             {
-                vraag: "Wat beloofde Jezus aan zijn leerlingen te sturen na zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
+                vraag: "Wat beloofde Jezus aan zijn leerlingen te zenden na zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
                 antwoorden: ["Engelen", "De Heilige Geest", "Een profeet", "Een nieuw boek"],
                 correct: "De Heilige Geest",
                 bijbelplaats: "Johannes 14:16-17, 14:26"
@@ -722,17 +843,17 @@ const vragenData = {
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Volg mij", "Heb je mij lief? ... Hoed mijn lammeren / Weid mijn schapen", "Vergeef mezelf", "Ga heen"],
+                antwoorden: ["Volg mij", "Heb je mij lief? ... Hoed mijn lammeren / Weid mijn schapen", "Vrees niet", "Blijf hier wachten"],
                 correct: "Heb je mij lief? ... Hoed mijn lammeren / Weid mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             }
         ],
         expert: [
             {
-                vraag: "Welke beroemde uitspraak van Jezus staat in Johannes 14:6?",
+                vraag: "Wat antwoordde Jezus toen Tomas vroeg hoe de leerlingen de weg naar de Vader konden kennen?",
                 antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood des levens", "Ik ben de wijnstok"],
                 correct: "Ik ben de weg, de waarheid en het leven",
-                bijbelplaats: "Johannes 14:6"
+                bijbelplaats: "Johannes 14:5-6"
             },
             {
                 vraag: "Hoeveel dagen lag Lazarus al in het graf toen Jezus kwam om hem op te wekken?",
@@ -753,16 +874,16 @@ const vragenData = {
                 bijbelplaats: "Johannes 2:1-11"
             },
             {
-                vraag: "Hoeveel watervaten waren er bij de bruiloft in Kana, en hoeveel maten konden ze ongeveer bevatten?",
-                antwoorden: ["3 vaten van 50 liter", "6 stenen vaten die elk twee tot drie metreten konden bevatten", "7 houten vaten", "12 grote vaten"],
-                correct: "6 stenen vaten die elk twee tot drie metreten konden bevatten",
+                vraag: "Hoeveel watervaten waren er bij de bruiloft in Kana, en hoeveel konden ze ongeveer bevatten?",
+                antwoorden: ["3 vaten van 50 liter", "6 stenen vaten van elk twee tot drie metreten (ongeveer 75 tot 115 liter)", "7 houten vaten", "12 grote vaten"],
+                correct: "6 stenen vaten van elk twee tot drie metreten (ongeveer 75 tot 115 liter)",
                 bijbelplaats: "Johannes 2:6"
             },
             {
-                vraag: "Welke broer van Simon Petrus bracht Petrus voor het eerst bij Jezus?",
-                antwoorden: ["Jakobus", "Johannes", "Andreas", "Filippus"],
-                correct: "Andreas",
-                bijbelplaats: "Johannes 1:40-42"
+                vraag: "Hoeveel vissen telde de wonderbaarlijke vangst toen de leerlingen na de opstanding het net binnenhaalden?",
+                antwoorden: ["99", "120", "153", "500"],
+                correct: "153",
+                bijbelplaats: "Johannes 21:11"
             },
             {
                 vraag: "Wat was de bijnaam (in het Aramees: Kefas) die Jezus aan Simon Petrus gaf, toen Andreas hem bij Jezus bracht?",
@@ -777,16 +898,22 @@ const vragenData = {
                 bijbelplaats: "Johannes 5:1-9"
             },
             {
-                vraag: "Hoeveel zuilengangen waren er bij het bad van Betesda?",
-                antwoorden: ["3", "5", "7", "12"],
-                correct: "5",
-                bijbelplaats: "Johannes 5:2"
+                vraag: "Natanaël was stomverbaasd over iets wat Jezus tegen hem zei, want ze hadden elkaar nog nooit ontmoet. Wat zei Jezus tegen hem?",
+                antwoorden: ["Dat hij hem onder de vijgenboom had zien zitten", "Dat hij hem in de tempel had zien bidden", "Dat hij hem op de markt had gezien", "Dat hij hem aan het werk had gezien"],
+                correct: "Dat hij hem onder de vijgenboom had zien zitten",
+                bijbelplaats: "Johannes 1:47-49"
             },
             {
                 vraag: "Volgens Johannes was er één leerling die 'de leerling van wie Jezus hield' werd genoemd. Wie wordt daarmee bedoeld, volgens de traditie?",
                 antwoorden: ["Petrus", "Johannes (de schrijver van het evangelie)", "Andreas", "Tomas"],
                 correct: "Johannes (de schrijver van het evangelie)",
                 bijbelplaats: "Johannes 13:23, 19:26"
+            },
+            {
+                vraag: "Hoe ver van de kant waren de leerlingen bij de wonderbaarlijke visvangst na de opstanding, volgens Johannes?",
+                antwoorden: ["Vijftig el", "Honderd el", "Tweehonderd el", "Vijfhonderd el"],
+                correct: "Tweehonderd el",
+                bijbelplaats: "Johannes 21:8"
             }
         ]
     }
@@ -799,6 +926,8 @@ let score = 0;
 // Onthouden welk boek en welk niveau er gekozen zijn
 let gekozenBoek = null;
 let gekozenNiveau = null;
+let gekozenModus = "boek"; // "boek" = evangelie-quiz, "kist" = schatkist-uitdaging
+let oefenModus = false;
 
 // De actieve vragenset (wordt gevuld zodra een niveau is gekozen)
 let vragen = [];
@@ -1223,6 +1352,13 @@ function bevestigNieuwSpel() {
         toonTrofee(boekKey);
     });
 
+    // Ook de verdiende schatkisten wissen: terug naar "vergrendeld" en opnieuw
+    // tekenen, zodat de prijzenkast bij een nieuw spel weer leeg is.
+    alleKistKeys.forEach((kistKey) => {
+        localStorage.removeItem(`kist_${kistKey}`);
+        toonKist(kistKey);
+    });
+
     // Verse start: de XP-balk hoort leeg te zijn, dus het laatste ronderesultaat
     // wissen en de balk opnieuw tekenen.
     laatsteRondeGoed = 0;
@@ -1260,7 +1396,8 @@ function toonLevelHud() {
 // In het spel is { vergrendel: true } (standaard): niveaus gaan opklimmend open
 // op basis van de trofee-waarde. Een latere Oefenmodus roept dit aan met
 // { vergrendel: false } zodat alle niveaus open staan.
-function openBoek(boekNaam, { vergrendel = true } = {}) {
+function openBoek(boekNaam, { vergrendel = true, oefen = false } = {}) {
+    oefenModus = oefen;
     gekozenBoek = boekNaam;
     niveauVergrendelingActief = vergrendel;
 
@@ -1280,6 +1417,19 @@ function openBoek(boekNaam, { vergrendel = true } = {}) {
     verbergLevelHud();
 }
 
+// Pakt willekeurig maximaal `aantal` vragen uit een pool, zonder de
+// oorspronkelijke vragenData te wijzigen. Husselt een kopie (Fisher-Yates)
+// en pakt er de eerste `aantal` uit. Is de pool kleiner dan `aantal`, dan
+// komen alle vragen terug, in willekeurige volgorde.
+function kiesWillekeurigeVragen(pool, aantal) {
+    const kopie = [...pool];
+    for (let i = kopie.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [kopie[i], kopie[j]] = [kopie[j], kopie[i]];
+    }
+    return kopie.slice(0, aantal);
+}
+
 // Keuze van een niveau -> hier start pas de echte quiz
 function kiesNiveau(niveau) {
     // In het spel: een nog vergrendeld niveau start niet, maar toont een hint.
@@ -1290,7 +1440,8 @@ function kiesNiveau(niveau) {
     }
 
     gekozenNiveau = niveau;
-    vragen = vragenData[gekozenBoek][niveau];
+    gekozenModus = "boek";
+    vragen = kiesWillekeurigeVragen(vragenData[gekozenBoek][niveau], 10);
 
     // Niveaukeuze sluiten
     document.getElementById("niveau-scherm").style.display = "none";
@@ -1316,6 +1467,54 @@ function kiesNiveau(niveau) {
     laadVraag();
 }
 
+// Combineert alle vragen van één niveau uit alle evangeliën tot één pool.
+// Doordat we de bestaande arrays hergebruiken, groeit deze pool vanzelf mee
+// zodra je ergens vragen toevoegt — geen aparte lijst om bij te houden.
+function alleVragenVoorNiveau(niveau) {
+    let pool = [];
+    for (const boek in vragenData) {
+        if (vragenData[boek][niveau]) {
+            pool = pool.concat(vragenData[boek][niveau]);
+        }
+    }
+    return pool;
+}
+
+// Start een schatkist-uitdaging: 10 willekeurige vragen uit de gecombineerde
+// pool van alle evangeliën op dit niveau. Bij 10/10 verdient de speler de kist.
+function openSchatkist(niveau) {
+    oefenModus = false;
+    gekozenModus = "kist";
+    gekozenBoek = null;
+    gekozenNiveau = niveau;
+
+    vragen = kiesWillekeurigeVragen(alleVragenVoorNiveau(niveau), 10);
+
+    document.getElementById("niveau-scherm").style.display = "none";
+    const quizScherm = document.getElementById("quiz-scherm");
+    quizScherm.style.display = "flex";
+
+    const kistKleur = niveauNaarTrofee[niveau]; // brons / zilver / goud
+    const kistTitels = {
+        brons: "Bronzen Schatkist",
+        zilver: "Zilveren Schatkist",
+        goud: "Gouden Schatkist"
+    };
+    const quizTitle = document.getElementById("quiz-title");
+    if (quizTitle) {
+        quizTitle.innerHTML = kistTitels[kistKleur] || "Schatkist";
+    }
+
+    verbergLevelHud();
+
+    huidigeVraag = 0;
+    score = 0;
+    huidigeXP = 0;
+
+    updateXPBalk();
+    laadVraag();
+}
+
 function laadVraag() {
     const vraagElement = document.getElementById("quiz-question");
     const antwoord1 = document.getElementById("antwoord-1");
@@ -1325,6 +1524,12 @@ function laadVraag() {
     const resultaat = document.getElementById("resultaat");
 
     resultaat.innerHTML = "";
+
+    const scoreBalk = document.getElementById("score-balk");
+    if (scoreBalk) scoreBalk.style.display = oefenModus ? "none" : "";
+
+    const stopKnop = document.getElementById("oefen-stop-knop");
+    if (stopKnop) stopKnop.style.display = oefenModus ? "block" : "none";
 
     // Reset visuele feedback en klikbaarheid van het vorige antwoord
     [antwoord1, antwoord2, antwoord3, antwoord4].forEach((knop) => {
@@ -1392,15 +1597,26 @@ function checkAntwoord(antwoord) {
         resultaat.innerHTML = melding;
     }
 
-    setTimeout(() => {
-        huidigeVraag++;
+    if (oefenModus) {
+        // Oefenmodus: geen timer. De feedback + bijbelplaats blijven staan
+        // tot het kind zelf op "Volgende" klikt, zodat het rustig kan nalezen.
+        const volgendeKnop = document.createElement("button");
+        volgendeKnop.className = "answer-btn oefen-volgende";
+        volgendeKnop.textContent = "Volgende →";
+        volgendeKnop.onclick = gaNaarVolgende;
+        resultaat.appendChild(volgendeKnop);
+    } else {
+        setTimeout(gaNaarVolgende, 2500);
+    }
+}
 
-        if (huidigeVraag < vragen.length) {
-            laadVraag();
-        } else {
-            eindScherm();
-        }
-    }, 2500);
+function gaNaarVolgende() {
+    huidigeVraag++;
+    if (huidigeVraag < vragen.length) {
+        laadVraag();
+    } else {
+        eindScherm();
+    }
 }
 
 function terugNaarStartscherm() {
@@ -1433,6 +1649,8 @@ function terugNaarStartscherm() {
     huidigeXP = 0;
     gekozenBoek = null;
     gekozenNiveau = null;
+    gekozenModus = "boek";
+    oefenModus = false;
     vragen = [];
 
     // FIX 5: HUD weer zichtbaar maken bij terugkeer naar het startscherm
@@ -1441,7 +1659,51 @@ function terugNaarStartscherm() {
     updateXPBalk();
 }
 
+// --- Bijbeltraining ---------------------------------------------------------
+// Opent het Bijbeltraining-kruispunt (Oefenen / Naslag & uitleg).
+function openBijbeltraining() {
+    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+}
+
+// Sluit het kruispunt en keert terug naar het startscherm.
+function sluitBijbeltraining() {
+    document.getElementById("bijbeltraining-scherm").style.display = "none";
+}
+
+// Placeholders — worden in de volgende stappen ingevuld.
+function startOefenen() {
+    document.getElementById("bijbeltraining-scherm").style.display = "none";
+    document.getElementById("oefen-boek-scherm").style.display = "flex";
+}
+function terugNaarBijbeltraining() {
+    document.getElementById("oefen-boek-scherm").style.display = "none";
+    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+}
+function kiesOefenBoek(boek) {
+    document.getElementById("oefen-boek-scherm").style.display = "none";
+    openBoek(boek, { vergrendel: false, oefen: true });
+}
+function openNaslag() {
+    // Stap 3: naslag- en uitleglijst.
+}
+
 function eindScherm() {
+    if (oefenModus) {
+        const stopKnop = document.getElementById("oefen-stop-knop");
+        if (stopKnop) stopKnop.style.display = "none";
+
+        const quizBox = document.querySelector("#quiz-scherm .quiz-box");
+        if (quizBox) {
+            quizBox.innerHTML = `
+                <h2 class="quiz-title">Goed geoefend!</h2>
+                <p class="quiz-question">Je had ${score} van de ${vragen.length} goed.</p>
+                <p class="quiz-question">In de oefenmodus telt het niet mee — je kunt zo vaak oefenen als je wilt.</p>
+                <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug</button>
+            `;
+        }
+        return;
+    }
+
     const alleGoed = score === vragen.length;
     const trofeeKleur = niveauNaarTrofee[gekozenNiveau]; // brons / zilver / goud
 
@@ -1466,6 +1728,12 @@ function eindScherm() {
         }
     }
 
+    // Bij 10/10 in de schatkist-modus verdient de speler de schatkist van dit
+    // niveau (brons/zilver/goud). setKistStatus werkt de prijzenkast meteen bij.
+    if (alleGoed && gekozenModus === "kist" && trofeeKleur) {
+        setKistStatus(trofeeKleur, "verdiend");
+    }
+
     const quizBox = document.querySelector("#quiz-scherm .quiz-box");
 
     const titel = alleGoed ? "Quiz voltooid!" : "Bijna gelukt!";
@@ -1474,10 +1742,18 @@ function eindScherm() {
 
     const xpRegel = `Je hebt dit level ${score * 100} XP verdiend.`;
 
-    // Trofee-bericht alleen bij perfect resultaat; anders aanmoediging om opnieuw te proberen.
-    const slotRegel = alleGoed
-        ? `Je verdient de ${trofeeKleur}en ${gekozenBoek}-trofee! 🏆`
-        : `Probeer het opnieuw om de ${trofeeKleur}en ${gekozenBoek}-trofee te halen!`;
+    // Slotbericht hangt af van de modus: een evangelie-trofee of een schatkist.
+    const kistNamen = { brons: "bronzen", zilver: "zilveren", goud: "gouden" };
+    let slotRegel;
+    if (gekozenModus === "kist") {
+        slotRegel = alleGoed
+            ? `Je verdient de ${kistNamen[trofeeKleur]} schatkist! 🏆`
+            : `Probeer het opnieuw om de ${kistNamen[trofeeKleur]} schatkist te verdienen!`;
+    } else {
+        slotRegel = alleGoed
+            ? `Je verdient de ${trofeeKleur}en ${gekozenBoek}-trofee! 🏆`
+            : `Probeer het opnieuw om de ${trofeeKleur}en ${gekozenBoek}-trofee te halen!`;
+    }
 
     quizBox.innerHTML = `
         <h2 class="quiz-title">${titel}</h2>

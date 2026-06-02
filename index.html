@@ -44,10 +44,12 @@
         <img id="trofee-lucas" class="trofee trofee-lucas schaduw" src="images/lucas-zilver.png" alt="Lucas trofee">
         <img id="trofee-johannes" class="trofee trofee-johannes schaduw" src="images/johannes-zilver.png" alt="Johannes trofee">
 
-        <!-- Prijzenkast: Bijbelschatkisten per niveau. -->
-        <img id="kist-brons" class="kist kist-brons" src="images/kist-brons-schaduw.png" alt="Bronzen schatkist">
-        <img id="kist-zilver" class="kist kist-zilver" src="images/kist-zilver-schaduw.png" alt="Zilveren schatkist">
-        <img id="kist-goud" class="kist kist-goud" src="images/kist-goud-schaduw.png" alt="Gouden schatkist">
+        <!-- Prijzenkast: Bijbelschatkisten per niveau. Klikbaar: start een
+             schatkist-uitdaging met vragen uit alle evangeliën op dat niveau.
+             Altijd speelbaar, ongeacht of de kist al verdiend is. -->
+        <img id="kist-brons" class="kist kist-brons" src="images/kist-brons-schaduw.png" alt="Bronzen schatkist" style="cursor: pointer;" onclick="openSchatkist('beginner')">
+        <img id="kist-zilver" class="kist kist-zilver" src="images/kist-zilver-schaduw.png" alt="Zilveren schatkist" style="cursor: pointer;" onclick="openSchatkist('advanced')">
+        <img id="kist-goud" class="kist kist-goud" src="images/kist-goud-schaduw.png" alt="Gouden schatkist" style="cursor: pointer;" onclick="openSchatkist('expert')">
 
         <div class="boek-zone matteus" onclick="openBoek('Matteüs')"></div>
         <div class="boek-zone marcus" onclick="openBoek('Marcus')"></div>
@@ -59,6 +61,11 @@
              op dezelfde manier als de boek-zones: doorzichtig, absoluut
              gepositioneerd, en triggert nieuwSpel() bij klikken. -->
         <div class="nieuw-spel-zone" onclick="nieuwSpel()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "BIJBELTRAINING"-knop
+             in het MENU-paneel. Zelfde patroon als .nieuw-spel-zone. Positie
+             staat in style.css (.bijbeltraining-zone) en wordt nog fijn afgesteld. -->
+        <div class="bijbeltraining-zone" onclick="openBijbeltraining()"></div>
 
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
              Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
@@ -124,6 +131,36 @@
                 <button id="antwoord-3" class="answer-btn"></button>
                 <button id="antwoord-4" class="answer-btn"></button>
                 <div id="resultaat"></div>
+            </div>
+
+        <!-- Alleen zichtbaar in de oefenmodus: stoppen en terug naar het start-
+             scherm. Staat buiten .quiz-box zodat hij niet meescrollt. -->
+        <button id="oefen-stop-knop" class="oefen-stop" style="display: none;" onclick="terugNaarStartscherm()">← Terug</button>
+        </div>
+
+        <!-- Bijbeltraining-kruispunt: twee keuzes (Oefenen / Naslag & uitleg).
+             Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
+        <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Bijbeltraining</h2>
+                <p class="quiz-question">Oefen en groei</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="startOefenen()">Oefenen</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="openNaslag()">Naslag &amp; uitleg</button>
+                <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Boekkeuze binnen Bijbeltraining > Oefenen. Zelfde overlay-opzet.
+             Elke knop opent het gekozen evangelie in oefenmodus. -->
+        <div id="oefen-boek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Oefenen</h2>
+                <p class="quiz-question">Kies een evangelie</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Matteüs')">Matteüs</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Marcus')">Marcus</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Lucas')">Lucas</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Johannes')">Johannes</button>
+                <button class="answer-btn niveau-terug" onclick="terugNaarBijbeltraining()">Terug</button>
             </div>
         </div>
 
