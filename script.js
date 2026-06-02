@@ -1,3 +1,52 @@
+// --- Geluid -----------------------------------------------------------------
+// Eenvoudig klikgeluid, in code opgewekt — geen geluidsbestand nodig, werkt ook
+// via file:///. De AAN/UIT-stand wordt onthouden in localStorage (standaard aan).
+let audioCtx = null;
+let geluidAan = (localStorage.getItem("geluidAan") !== "uit");
+
+function speelKlik() {
+    if (!geluidAan) return;
+    try {
+        if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === "suspended") audioCtx.resume();
+        const t = audioCtx.currentTime;
+        const duur = 0.05;
+        // Zachte, korte ruis door een laagdoorlaatfilter = een rustig "tok",
+        // zonder de scherpe hoge tik. Zachte aanzet en uitloop maken het vriendelijk.
+        const buffer = audioCtx.createBuffer(1, Math.floor(audioCtx.sampleRate * duur), audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+        for (let i = 0; i < data.length; i++) {
+            data[i] = Math.random() * 2 - 1;
+        }
+        const bron = audioCtx.createBufferSource();
+        bron.buffer = buffer;
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = "lowpass";
+        filter.frequency.value = 1100;
+        const gain = audioCtx.createGain();
+        gain.gain.setValueAtTime(0.0001, t);
+        gain.gain.exponentialRampToValueAtTime(0.10, t + 0.006);
+        gain.gain.exponentialRampToValueAtTime(0.0001, t + duur);
+        bron.connect(filter);
+        filter.connect(gain);
+        gain.connect(audioCtx.destination);
+        bron.start(t);
+        bron.stop(t + duur);
+    } catch (e) {
+        // Lukt audio niet, dan gewoon negeren.
+    }
+}
+
+// Eén luisteraar voor alle klikbare elementen, zodat we niet elke knop apart
+// hoeven aan te passen.
+document.addEventListener("click", (e) => {
+    if (e.target.closest("button, [onclick]")) {
+        speelKlik();
+    }
+});
+
 const fullscreenBtn = document.getElementById("fullscreen-btn");
 
 fullscreenBtn.addEventListener("click", () => {
@@ -1684,7 +1733,13 @@ function kiesOefenBoek(boek) {
     openBoek(boek, { vergrendel: false, oefen: true });
 }
 function openNaslag() {
-    // Stap 3: naslag- en uitleglijst.
+    document.getElementById("bijbeltraining-scherm").style.display = "none";
+    document.getElementById("naslag-scherm").style.display = "flex";
+}
+
+function sluitNaslag() {
+    document.getElementById("naslag-scherm").style.display = "none";
+    document.getElementById("bijbeltraining-scherm").style.display = "flex";
 }
 
 function eindScherm() {

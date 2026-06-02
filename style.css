@@ -915,6 +915,69 @@ height: 22%;
     cursor: pointer;
 }
 
+#naslag-scherm .quiz-box {
+    width: 900px;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow-y: auto;
+    text-align: left;
+}
+#naslag-scherm .quiz-title {
+    text-align: center;
+}
+.naslag-intro {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #f3ecd8;
+    margin: 0 0 20px;
+}
+#naslag-scherm .naslag-terug {
+    display: inline-block;
+    width: auto;
+    padding: 10px 24px;
+    margin: 0 0 24px;
+    font-size: 1.1rem;
+}
+.naslag-kop {
+    color: #ffd86b;
+    font-size: 1.9rem;
+    margin: 26px 0 12px;
+    border-bottom: 2px solid rgba(255, 215, 120, 0.3);
+    padding-bottom: 6px;
+}
+.naslag-item {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #f3ecd8;
+    margin: 0 0 14px;
+}
+.naslag-term {
+    color: #ffd86b;
+    font-weight: bold;
+}
+.naslag-bron {
+    color: rgba(243, 236, 216, 0.6);
+    font-style: italic;
+    font-size: 0.95em;
+}
+.naslag-kadertje {
+    background: rgba(255, 215, 120, 0.08);
+    border: 1px solid rgba(255, 215, 120, 0.35);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin: 0 0 26px;
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #f3ecd8;
+}
+.naslag-noot {
+    font-style: italic;
+    color: rgba(243, 236, 216, 0.75);
+    font-size: 1.05rem;
+    margin: 0 0 14px;
+}
+
 /* =========================
    NIVEAUKNOPPEN (trofee-thema)
 ========================= */
