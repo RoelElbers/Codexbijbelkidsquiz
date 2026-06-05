@@ -57,6 +57,13 @@
         <img id="kist-zilver" class="kist kist-zilver" src="images/kist-zilver-schaduw.png" alt="Zilveren schatkist" style="cursor: pointer;" onclick="openSchatkist('advanced')">
         <img id="kist-goud" class="kist kist-goud" src="images/kist-goud-schaduw.png" alt="Gouden schatkist" style="cursor: pointer;" onclick="openSchatkist('expert')">
 
+        <!-- Verborgen schat: de diamanten kist in de "VERBORGEN SCHAT"-plek
+             onder de drie schatkisten. Voorlopig statisch en gewoon zichtbaar
+             om grootte/positie te kunnen controleren. De onthul-logica (schaduw-
+             /vergrendelde staat tot alle drie de kisten behaald zijn, daarna de
+             volle kist) volgt later en raakt de win-logica niet aan. -->
+        <img id="kist-diamant" class="kist-diamant vergrendeld" src="images/kist-diamant.png" alt="Verborgen diamanten schatkist">
+
         <div class="boek-zone matteus" onclick="openBoek('Matteüs')"></div>
         <div class="boek-zone marcus" onclick="openBoek('Marcus')"></div>
         <div class="boek-zone lucas" onclick="openBoek('Lucas')"></div>

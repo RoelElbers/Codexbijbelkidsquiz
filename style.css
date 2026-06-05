@@ -796,6 +796,32 @@ height: 22%;
 }
 
 /* =========================
+   VERBORGEN SCHAT — de diamanten kist
+   Voorlopig statisch en zichtbaar om grootte/positie te controleren. Eigen
+   class (niet .kist), zodat hij niet klikbaar is en losstaat van de drie
+   schatkisten. Posities in % zodat hij met het 16:9-veld meeschaalt.
+========================= */
+.kist-diamant {
+    position: absolute;
+    height: auto;
+    z-index: 5;
+    pointer-events: none;          /* niet klikbaar */
+
+    width: 4.8%;
+    top: 66.2%;
+    left: 80.9%;
+}
+
+/* Vergrendelde/verborgen staat: zelfde CSS-filtertruc als de trofee-schaduw
+   (puur een filter op dezelfde afbeelding, geen aparte -schaduw.png). Maakt de
+   diamanten kist tot een donker silhouet zolang nog niet alle drie de kisten
+   (brons/zilver/goud) verdiend zijn. Wordt door werkVerborgenSchatBij() gezet/
+   weggehaald. Waardes als startpunt — in DevTools bij te stellen. */
+.kist-diamant.vergrendeld {
+    filter: brightness(0.4) opacity(0.85);
+}
+
+/* =========================
    AVATAR-FRAME (linksboven op het startscherm)
    Eén doorzichtige plaat (avatarframe.png) met de ronde gouden lijst, een
    breed naamvak rechts en een klein naamvak eronder. De wrapper .avatar-frame

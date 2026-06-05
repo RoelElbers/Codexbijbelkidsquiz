@@ -1103,6 +1103,22 @@ function toonKist(kistKey) {
     }
 }
 
+// Verborgen schat: de diamanten kist. Leest met getKistStatus() de drie kisten
+// uit. Zijn brons, zilver én goud allemaal "verdiend" -> volle diamanten kist
+// (filter eraf: class .vergrendeld weg). Anders -> vergrendelde/schaduw-staat
+// (class .vergrendeld erop, die de CSS-filtertruc toepast). Verandert niets aan
+// de win-logica of de bestaande kist-schaduw-afbeeldingen; leest alleen uit.
+function werkVerborgenSchatBij() {
+    const img = document.getElementById("kist-diamant");
+    if (!img) return;
+
+    const alleVerdiend = alleKistKeys.every(
+        (kistKey) => getKistStatus(kistKey) === "verdiend"
+    );
+
+    img.classList.toggle("vergrendeld", !alleVerdiend);
+}
+
 // Beginner → brons, Gevorderd → zilver, Expert → goud
 const niveauNaarTrofee = {
     beginner: "brons",
@@ -1408,6 +1424,9 @@ function bevestigNieuwSpel() {
         toonKist(kistKey);
     });
 
+    // De verborgen diamanten kist hoort dan ook weer vergrendeld te zijn.
+    werkVerborgenSchatBij();
+
     // Verse start: de XP-balk hoort leeg te zijn, dus het laatste ronderesultaat
     // wissen en de balk opnieuw tekenen.
     laatsteRondeGoed = 0;
@@ -1706,6 +1725,10 @@ function terugNaarStartscherm() {
     toonLevelHud();
 
     updateXPBalk();
+
+    // Verborgen schat verversen: net een kist verdiend in deze ronde kan de
+    // diamanten kist onthullen zodra alle drie behaald zijn.
+    werkVerborgenSchatBij();
 }
 
 // --- Bijbeltraining ---------------------------------------------------------
@@ -1972,6 +1995,9 @@ alleBoekKeys.forEach(toonTrofee);
 
 // Toon meteen de juiste schatkist per niveau.
 alleKistKeys.forEach(toonKist);
+
+// Verborgen schat (diamanten kist) meteen in de juiste staat zetten.
+werkVerborgenSchatBij();
 
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.
