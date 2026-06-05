@@ -1829,6 +1829,25 @@ function sluitNaslag() {
     document.getElementById("bijbeltraining-scherm").style.display = "flex";
 }
 
+// --- Naslag-onderwerpen (vanuit het Naslag-tussenmenu) -----------------------
+// Elk onderwerp is een eigen scherm; "← Terug" keert terug naar het tussenmenu.
+function openMaten() {
+    document.getElementById("naslag-scherm").style.display = "none";
+    document.getElementById("maten-scherm").style.display = "flex";
+}
+function sluitMaten() {
+    document.getElementById("maten-scherm").style.display = "none";
+    document.getElementById("naslag-scherm").style.display = "flex";
+}
+function openWoordenboek() {
+    document.getElementById("naslag-scherm").style.display = "none";
+    document.getElementById("woordenboek-scherm").style.display = "flex";
+}
+function sluitWoordenboek() {
+    document.getElementById("woordenboek-scherm").style.display = "none";
+    document.getElementById("naslag-scherm").style.display = "flex";
+}
+
 // =========================
 // SCHATKAMER (TROFEEËNKAMER) — config-gedreven en herbruikbaar
 // Eigen scherm dat de verdiende trofeeën van één vitrine toont. Zelfde aan/uit-

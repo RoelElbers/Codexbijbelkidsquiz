@@ -187,11 +187,37 @@
             </div>
         </div>
 
-        <!-- Naslag & uitleg: rustig leesscherm met maten, munten en woorden. -->
+        <!-- Naslag & uitleg: tussenmenu met drie keuzes. Zelfde overlay-/quiz-box-
+             opzet als de andere Bijbeltraining-schermen. openNaslag()/sluitNaslag()
+             blijven ongewijzigd: ze openen/sluiten dit tussenmenu. -->
         <div id="naslag-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box naslag-box">
+            <div class="quiz-box">
                 <h2 class="quiz-title">Naslag &amp; uitleg</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitNaslag()">← Terug</button>
+                <p class="quiz-question">Kies een onderwerp</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="openWoordenboek()">Woordenboek</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="openMaten()">Maten, geld &amp; tijd</button>
+                <!-- Verborgen Schat: vergrendeld. In stap 2 krijgt deze de diamant/
+                     blauw-witte stijl en de vlag-logica (verborgenschat_voltooid). -->
+                <button class="answer-btn niveau-btn vergrendeld">Verborgen Schat</button>
+                <button class="answer-btn niveau-terug" onclick="sluitNaslag()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Woordenboek: voorlopig een placeholder; inhoud volgt later. -->
+        <div id="woordenboek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Woordenboek</h2>
+                <p class="quiz-question">Inhoud volgt later.</p>
+                <button class="answer-btn niveau-terug" onclick="sluitWoordenboek()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Maten, geld & tijd: het rustige leesscherm met maten, munten en tijd.
+             De tekst is ongewijzigd verplaatst vanuit het oude Naslag-scherm. -->
+        <div id="maten-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title">Maten, geld &amp; tijd</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
 
                 <div class="naslag-kadertje">
                     Sommige maten kennen we vrij precies, andere niet — dan zeggen we dat er eerlijk bij. En oud geld omrekenen naar euro's van nu is eigenlijk niet te doen, want toen was alles anders. Daarom rekenen we vaak in "daglonen": wat een gewone arbeider op één dag verdiende.
@@ -221,7 +247,7 @@
                 <p class="naslag-item"><span class="naslag-term">Uren</span> — in de Bijbel begon de dag bij zonsopgang, rond zes uur 's ochtends, en werd het daglicht verdeeld in twaalf uren tot zonsondergang. Het "derde uur" is dus ongeveer negen uur 's ochtends, het "zesde uur" rond het middaguur, en het "negende uur" ongeveer drie uur 's middags. Bijzonder: die uren waren niet altijd even lang als die van ons. Omdat de dag altijd in twaalf stukken werd verdeeld, was een uur in de zomer (veel daglicht) langer dan in de winter.</p>
                 <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends: de avond, middernacht, het hanengekraai en de vroege ochtend. In het Oude Testament kende men er nog maar drie, van zo'n vier uur. Wachters losten elkaar per wacht af — vandaar de naam.</p>
 
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitNaslag()">← Terug</button>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
             </div>
         </div>
 
