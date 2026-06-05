@@ -196,9 +196,13 @@
                 <p class="quiz-question">Kies een onderwerp</p>
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="openWoordenboek()">Woordenboek</button>
                 <button class="answer-btn niveau-btn niveau-advanced" onclick="openMaten()">Maten, geld &amp; tijd</button>
-                <!-- Verborgen Schat: vergrendeld. In stap 2 krijgt deze de diamant/
-                     blauw-witte stijl en de vlag-logica (verborgenschat_voltooid). -->
-                <button class="answer-btn niveau-btn vergrendeld">Verborgen Schat</button>
+                <!-- Verborgen Schat: diamant/blauw-witte knop. Standaard vergrendeld
+                     (slotje + hint, niet klikbaar). Zodra de vlag verborgenschat_voltooid
+                     op "waar" staat, haalt werkVerborgenSchatNaslagKnopBij() de
+                     'vergrendeld'-class weg en wordt het de actieve diamantstijl die de
+                     naslagpagina opent. -->
+                <button id="verborgenschat-knop" class="answer-btn niveau-btn naslag-diamant vergrendeld" onclick="openVerborgenSchatNaslag()">Verborgen Schat</button>
+                <p id="verborgenschat-hint" class="naslag-slot-hint">Speel eerst de Verborgen Schat om te ontgrendelen</p>
                 <button class="answer-btn niveau-terug" onclick="sluitNaslag()">Terug</button>
             </div>
         </div>
@@ -209,6 +213,16 @@
                 <h2 class="quiz-title">Woordenboek</h2>
                 <p class="quiz-question">Inhoud volgt later.</p>
                 <button class="answer-btn niveau-terug" onclick="sluitWoordenboek()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Verborgen Schat (naslag): placeholder; pas bereikbaar als de knop in
+             het tussenmenu ontgrendeld is. Inhoud volgt later. -->
+        <div id="verborgenschat-naslag-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Verborgen Schat</h2>
+                <p class="quiz-question">Inhoud volgt later.</p>
+                <button class="answer-btn niveau-terug" onclick="sluitVerborgenSchatNaslag()">← Terug</button>
             </div>
         </div>
 

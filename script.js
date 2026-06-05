@@ -1822,6 +1822,8 @@ function kiesOefenBoek(boek) {
 function openNaslag() {
     document.getElementById("bijbeltraining-scherm").style.display = "none";
     document.getElementById("naslag-scherm").style.display = "flex";
+    // Verborgen Schat-knop in de juiste (on)vergrendelde staat zetten.
+    werkVerborgenSchatNaslagKnopBij();
 }
 
 function sluitNaslag() {
@@ -1845,6 +1847,38 @@ function openWoordenboek() {
 }
 function sluitWoordenboek() {
     document.getElementById("woordenboek-scherm").style.display = "none";
+    document.getElementById("naslag-scherm").style.display = "flex";
+}
+
+// --- Verborgen Schat (naslag) ------------------------------------------------
+// De vlag "verborgenschat_voltooid" bepaalt of het Verborgen Schat-onderwerp
+// ontgrendeld is. Die vlag wordt later gezet als de speler de Verborgen Schat
+// heeft gespeeld; voor nu staat hij niet en blijft de knop dus vergrendeld.
+function isVerborgenSchatOntgrendeld() {
+    return localStorage.getItem("verborgenschat_voltooid") === "waar";
+}
+
+// Zet de Verborgen Schat-knop in het tussenmenu in de juiste staat: vergrendeld
+// (slotje + hint, niet klikbaar) of actief (volle diamantstijl, geen hint).
+function werkVerborgenSchatNaslagKnopBij() {
+    const knop = document.getElementById("verborgenschat-knop");
+    const hint = document.getElementById("verborgenschat-hint");
+    if (!knop) return;
+
+    const ontgrendeld = isVerborgenSchatOntgrendeld();
+    knop.classList.toggle("vergrendeld", !ontgrendeld);
+    if (hint) hint.style.display = ontgrendeld ? "none" : "";
+}
+
+// Opent de Verborgen Schat-naslagpagina — alleen als die ontgrendeld is. Bij een
+// vergrendelde knop doet een klik bewust niets.
+function openVerborgenSchatNaslag() {
+    if (!isVerborgenSchatOntgrendeld()) return;
+    document.getElementById("naslag-scherm").style.display = "none";
+    document.getElementById("verborgenschat-naslag-scherm").style.display = "flex";
+}
+function sluitVerborgenSchatNaslag() {
+    document.getElementById("verborgenschat-naslag-scherm").style.display = "none";
     document.getElementById("naslag-scherm").style.display = "flex";
 }
 

@@ -1259,6 +1259,40 @@ height: 22%;
     content: " 🔒";
 }
 
+/* Verborgen Schat-knop: ijzig diamant/blauw-witte stijl, passend bij de game
+   (zelfde knopbasis, goud-op-blauw sfeer). Dit is de ACTIEVE (ontgrendelde) look. */
+.naslag-diamant {
+    background: linear-gradient(180deg, #ffffff 0%, #dbeafe 35%, #a9c7ee 60%, #7da6d9 100%);
+    border-color: #5b7fb0;
+    color: #1c2e4a;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.7),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* Vergrendelde diamant: gedempte, koele variant (geen volle glans). Overschrijft
+   de algemene grijze .vergrendeld-look zodat de knop in het diamantthema blijft.
+   Slotje (🔒) en cursor: not-allowed komen van .answer-btn.vergrendeld. */
+.naslag-diamant.vergrendeld {
+    background: linear-gradient(180deg, #eef2f7 0%, #cdd8e6 50%, #aab8cb 100%);
+    border-color: #8694a8;
+    color: #5d6b7e;
+    opacity: 0.9;
+}
+
+/* Klein neutraal hintje onder de vergrendelde Verborgen Schat-knop. Verklapt
+   niets over de inhoud. Wordt verborgen zodra de knop ontgrendeld is. */
+.naslag-slot-hint {
+    width: 100%;
+    max-width: 640px;
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+    color: #e8d4a0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0.9;
+}
+
 /* Vriendelijke hint onder de niveauknoppen bij het aantikken van een
    vergrendeld niveau. Reserveert altijd één regel hoogte zodat de knoppen niet
    verspringen als de tekst verschijnt of weer leeg wordt. */
