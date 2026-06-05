@@ -821,6 +821,14 @@ height: 22%;
     filter: brightness(0.4) opacity(0.85);
 }
 
+/* Zodra de kist onthuld is (niet vergrendeld) wordt hij klikbaar: een klik
+   opent de Verborgen Schat-quiz. Vergrendeld blijft niet-klikbaar (de basis-
+   regel houdt pointer-events: none). */
+.kist-diamant:not(.vergrendeld) {
+    pointer-events: auto;
+    cursor: pointer;
+}
+
 /* =========================
    AVATAR-FRAME (linksboven op het startscherm)
    Eén doorzichtige plaat (avatarframe.png) met de ronde gouden lijst, een

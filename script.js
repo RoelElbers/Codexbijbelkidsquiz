@@ -1583,6 +1583,70 @@ function openSchatkist(niveau) {
     laadVraag();
 }
 
+// =========================
+// VERBORGEN SCHAT — speelbaar met (voorlopig) één testvraag
+// Hergebruikt volledig de bestaande quiz-machinerie (laadVraag/checkAntwoord/
+// gaNaarVolgende/terugNaarStartscherm). Nog géén beloning-/trofee-/10-goed-
+// logica; dat komt later. Raakt de win-logica niet aan.
+// =========================
+
+// De testvraag. Bewust ZONDER bijbelplaats, zodat er na het antwoord geen
+// Bijbelplaats-regel verschijnt: de eerlijkheid zit in de vraagtekst, de
+// achtergrond komt later in de Bijbeltraining.
+const verborgenSchatVragen = [
+    {
+        vraag: "Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?",
+        antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
+        correct: "Marcus"
+    }
+];
+
+// Kleine herbruikbare hulp: gehusselde kopie (Fisher-Yates), origineel blijft
+// ongemoeid. Gebruikt voor de antwoordvolgorde van de Verborgen Schat-vraag.
+function husselArray(bron) {
+    const kopie = [...bron];
+    for (let i = kopie.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [kopie[i], kopie[j]] = [kopie[j], kopie[i]];
+    }
+    return kopie;
+}
+
+// Start de Verborgen Schat-quiz. Zelfde startstramien als openSchatkist, maar
+// met de eigen modus "verborgen" en de testvraag (antwoorden gehusseld).
+function openVerborgenSchat() {
+    // Alleen spelen als de kist onthuld is (niet vergrendeld).
+    const img = document.getElementById("kist-diamant");
+    if (img && img.classList.contains("vergrendeld")) return;
+
+    oefenModus = false;
+    gekozenModus = "verborgen";
+    gekozenBoek = null;
+    gekozenNiveau = null;
+
+    // Vraag overnemen met gehusselde antwoorden (origineel blijft intact).
+    vragen = verborgenSchatVragen.map((v) => ({
+        ...v,
+        antwoorden: husselArray(v.antwoorden)
+    }));
+
+    document.getElementById("niveau-scherm").style.display = "none";
+    const quizScherm = document.getElementById("quiz-scherm");
+    quizScherm.style.display = "flex";
+
+    const quizTitle = document.getElementById("quiz-title");
+    if (quizTitle) quizTitle.innerHTML = "Verborgen Schat";
+
+    verbergLevelHud();
+
+    huidigeVraag = 0;
+    score = 0;
+    huidigeXP = 0;
+
+    updateXPBalk();
+    laadVraag();
+}
+
 function laadVraag() {
     const vraagElement = document.getElementById("quiz-question");
     const antwoord1 = document.getElementById("antwoord-1");
@@ -1899,6 +1963,20 @@ function eindScherm() {
                 <p class="quiz-question">Je had ${score} van de ${vragen.length} goed.</p>
                 <p class="quiz-question">In de oefenmodus telt het niet mee — je kunt zo vaak oefenen als je wilt.</p>
                 <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug</button>
+            `;
+        }
+        return;
+    }
+
+    // Verborgen Schat: voorlopig geen beloning-/10-goed-logica. Een eenvoudig
+    // slot met de score en een Terug-knop, los van de trofee-/kist-afhandeling.
+    if (gekozenModus === "verborgen") {
+        const quizBox = document.querySelector("#quiz-scherm .quiz-box");
+        if (quizBox) {
+            quizBox.innerHTML = `
+                <h2 class="quiz-title">Verborgen Schat</h2>
+                <p class="quiz-question">Je had er ${score} van de ${vragen.length} goed.</p>
+                <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug naar startscherm</button>
             `;
         }
         return;
