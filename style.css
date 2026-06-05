@@ -589,6 +589,116 @@ height: 22%;
 }
 
 /* =========================
+   SCHATKAMER (TROFEEËNKAMER) — eigen, herbruikbaar scherm
+   Komt als volledige overlay over het startscherm. De .schatkamer-vitrine
+   heeft dezelfde 16:9-verhouding als #game-container, met de schatkamer-
+   achtergrond. Alle sokkel-/trofee-/naamplaat-opmaak komt hier later bij en
+   blijft binnen .schatkamer-vitrine, zodat de game-opmaak ongemoeid blijft en
+   er later meer vitrines naast kunnen.
+   STAP 1: alleen achtergrond + Terug-knop.
+========================= */
+
+.schatkamer-overlay {
+    position: fixed;
+    inset: 0;
+
+    /* Donkere rand rond de vitrine, net als in het losse testbestand. */
+    background: #1a120a;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Boven het startscherm en de overige overlays. */
+    z-index: 1000;
+}
+
+.schatkamer-vitrine {
+    position: relative;
+
+    /* Zelfde 16:9-doos als de game, zodat de %-posities kloppen. */
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+
+    /* Fallback-achtergrond; bouwVitrine() zet de echte achtergrond uit het
+       config-object inline (config.achtergrond). */
+    background-image: url("images/scahtkamer2.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+/* De houder waarin bouwVitrine() per nis een sokkel + naamplaat plaatst.
+   Niet zelf gepositioneerd, zodat de absolute kinderen t.o.v. de vitrine
+   uitlijnen (de %-posities blijven daardoor kloppen). */
+
+/* ---- Sokkel-trofee (eigen klasse, los van de prijzenkast-.trofee) ----
+   Generieke opmaak. De vitrine-specifieke waarden (left + height) en de
+   gedeelde --trofee-bodem zet bouwVitrine() inline uit de config; de var()-
+   fallbacks houden de weergave correct mocht een waarde ontbreken. */
+.schatkamer-vitrine .sk-trofee {
+    position: absolute;
+    bottom: var(--trofee-bodem, 30%);
+    width: auto;                            /* de (inline) hoogte bepaalt de schaal */
+    transform: translateX(-50%);            /* zet middelpunt op de left-waarde */
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Lege nis: trofee verbergen, de lege sokkel uit de achtergrond blijft staan. */
+.schatkamer-vitrine .sk-trofee[hidden] { display: none; }
+
+/* ---- Naam op de naamplaat ----
+   Idem: left + font-size komen inline uit de config; de gedeelde --naam-*
+   waarden zet bouwVitrine() inline (met var()-fallbacks hier). */
+.schatkamer-vitrine .sk-naam {
+    position: absolute;
+    top: var(--naam-midden, 84%);
+    width: var(--naam-breedte, 15%);
+    height: var(--naam-hoogte, 8%);
+    transform: translate(-50%, -50%);       /* box gecentreerd op (left, midden) */
+    display: flex;                          /* tekst horiz. én vert. centreren */
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    color: #f6e7bf;                         /* crème / licht goud */
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .75),
+                 0 0 2px rgba(0, 0, 0, .5);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* Terug-knop linksboven in de vitrine; zelfde groene look als .niveau-terug. */
+.schatkamer-terug {
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    z-index: 10;
+
+    padding: 8px 22px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+    border: 2px solid #1f6b5e;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #4cbfa9 0%, #2d8f7d 100%);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.35),
+        0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
    TROFEEËN IN DE PRIJZENKAST
    Positionering in % zodat ze met het 16:9 game-container meeschalen.
    Originele plaatjes zijn 428x676 px (aspect ~0.633). We zetten alleen
@@ -880,6 +990,58 @@ height: 22%;
     cursor: pointer;
     z-index: 100;
     pointer-events: auto;
+}
+
+.schatkamer-menu-zone {
+    position: absolute;
+    left: 3.5%;
+    top: 50.5%;
+    width: 17%;
+    height: 9%;
+
+    /* Doorzichtig: onzichtbare klik-zone over de geschilderde "Schatkamer"-knop.
+       Hoofd-ingang naar de schatkamer. */
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+.instellingen-zone {
+    position: absolute;
+    left: 3.5%;
+    top: 64%;
+    width: 17%;
+    height: 9%;
+
+    /* Doorzichtig: onzichtbare klik-zone over de geschilderde "Instellingen"-knop. */
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+}
+
+/* Onzichtbare klik-zone over het trofee-vak van de prijzenkast (rechtsboven).
+   Opent de schatkamer. Ligt boven de schatkisten, dus de hoogte stopt ruim
+   vóór de kisten zodat die klikbaar blijven. Posities in % voor het 16:9-veld;
+   later fijn af te stellen. */
+.schatkamer-zone {
+    position: absolute;
+    left: 71%;
+    top: 17%;
+    width: 24%;
+    height: 22%;
+
+    background: transparent;
+
+    cursor: pointer;
+    z-index: 100;
+    pointer-events: auto;
+}
+.geluid-uit {
+    opacity: 0.55;
 }
 
 #resultaat .oefen-volgende {

@@ -44,6 +44,12 @@
         <img id="trofee-lucas" class="trofee trofee-lucas schaduw" src="images/lucas-zilver.png" alt="Lucas trofee">
         <img id="trofee-johannes" class="trofee trofee-johannes schaduw" src="images/johannes-zilver.png" alt="Johannes trofee">
 
+        <!-- Onzichtbare klik-zone over het trofee-vak ("DE VIER EVANGELIËN")
+             van de geschilderde prijzenkast. Klik opent de schatkamer. Ligt
+             bewust alleen over de trofee-plank, niet over de schatkisten
+             eronder, zodat die hun eigen klik houden. -->
+        <div class="schatkamer-zone" onclick="openSchatkamer()"></div>
+
         <!-- Prijzenkast: Bijbelschatkisten per niveau. Klikbaar: start een
              schatkist-uitdaging met vragen uit alle evangeliën op dat niveau.
              Altijd speelbaar, ongeacht of de kist al verdiend is. -->
@@ -66,6 +72,16 @@
              in het MENU-paneel. Zelfde patroon als .nieuw-spel-zone. Positie
              staat in style.css (.bijbeltraining-zone) en wordt nog fijn afgesteld. -->
         <div class="bijbeltraining-zone" onclick="openBijbeltraining()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "SCHATKAMER"-knop in het
+             MENU-paneel. Dit is de hoofd-ingang naar de schatkamer (de plank in
+             de prijzenkast rechts is een tweede ingang). Zelfde patroon als de
+             andere menu-zones. -->
+        <div class="schatkamer-menu-zone" onclick="openSchatkamer()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "INSTELLINGEN"-knop.
+             Zelfde patroon als .bijbeltraining-zone. -->
+        <div class="instellingen-zone" onclick="openInstellingen()"></div>
 
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
              Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
@@ -199,6 +215,33 @@
                 <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends: de avond, middernacht, het hanengekraai en de vroege ochtend. In het Oude Testament kende men er nog maar drie, van zo'n vier uur. Wachters losten elkaar per wacht af — vandaar de naam.</p>
 
                 <button class="answer-btn niveau-terug naslag-terug" onclick="sluitNaslag()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Instellingen: voorlopig alleen geluid aan/uit. -->
+        <div id="instellingen-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Instellingen</h2>
+                <p class="quiz-question">Geluid</p>
+                <button id="geluid-knop" class="answer-btn niveau-btn niveau-beginner" onclick="wisselGeluid()">Geluid: aan</button>
+                <button class="answer-btn niveau-terug" onclick="sluitInstellingen()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Schatkamer (trofeeënkamer): eigen, op zichzelf staand scherm dat als
+             overlay over het startscherm komt. De inhoud van de vitrine (de vier
+             sokkels + naamplaatjes) wordt nu config-gedreven opgebouwd door
+             bouwVitrine() in script.js, op basis van het config-object van de
+             actieve vitrine. De achtergrond, posities, namen, localStorage-
+             sleutels en afbeeldingsnamen staan dáár; hier blijft alleen het lege
+             omhulsel met de Terug-knop. Een tweede vitrine = puur een extra
+             config-object, geen nieuwe HTML/CSS. -->
+        <div id="schatkamer-scherm" class="schatkamer-overlay" style="display: none;">
+            <div class="schatkamer-vitrine">
+                <!-- Hierin plaatst bouwVitrine() per nis een sokkel + naamplaat. -->
+                <div class="sk-nissen"></div>
+
+                <button class="schatkamer-terug" onclick="sluitSchatkamer()">Terug</button>
             </div>
         </div>
 

@@ -1742,6 +1742,128 @@ function sluitNaslag() {
     document.getElementById("bijbeltraining-scherm").style.display = "flex";
 }
 
+// =========================
+// SCHATKAMER (TROFEEËNKAMER) — config-gedreven en herbruikbaar
+// Eigen scherm dat de verdiende trofeeën van één vitrine toont. Zelfde aan/uit-
+// patroon als de andere overlays. De win-logica (trofee_<boek>) blijft
+// ongemoeid; dit scherm leest die data alleen uit localStorage.
+//
+// Eén vitrine = één config-object (hieronder). bouwVitrine() bouwt de inhoud
+// volledig uit dat object op. Een tweede vitrine is dus puur een extra config-
+// object met dezelfde vorm; er is geen nieuwe code nodig.
+//
+// Vorm van een config-object:
+//   achtergrond  : pad naar de achtergrondafbeelding van de vitrine
+//   trofeeBodem  : verticale bodem van de trofeeën (% van de vitrinehoogte)
+//   naamMidden   : verticaal midden van de naamplaten (% vanaf boven)
+//   naamBreedte  : breedte van het naamvak (%)
+//   naamHoogte   : hoogte van het naamvak (%)
+//   nissen[]     : per nis (links → rechts):
+//       x          : horizontaal midden van de nis (%)
+//       trofeeHoogte: hoogte van de trofee (% van de vitrinehoogte)
+//       naamX      : horizontaal midden van de naamplaat (%)
+//       naamGrootte: lettergrootte van de naam (CSS-waarde)
+//       naam       : tekst op de naamplaat
+//       sleutel    : localStorage-sleutel met de stand (geen/brons/zilver/goud)
+//       basis      : basisnaam van de afbeelding; -<stand>.png volgt daaruit
+// =========================
+const evangelienVitrine = {
+    achtergrond: "images/scahtkamer2.png",
+    trofeeBodem: "30%",
+    naamMidden:  "84%",
+    naamBreedte: "15%",
+    naamHoogte:  "8%",
+    nissen: [
+        { x: "19.5%", trofeeHoogte: "37%", naamX: "18.8%", naamGrootte: "clamp(8px, 1.45vw, 17px)", naam: "Matteüs",  sleutel: "trofee_matteus",  basis: "matteus"  },
+        { x: "40.5%", trofeeHoogte: "42%", naamX: "39.3%", naamGrootte: "clamp(9px, 1.65vw, 19px)", naam: "Marcus",   sleutel: "trofee_marcus",   basis: "marcus"   },
+        { x: "59.5%", trofeeHoogte: "37%", naamX: "60.1%", naamGrootte: "clamp(9px, 1.65vw, 19px)", naam: "Lucas",    sleutel: "trofee_lucas",    basis: "lucas"    },
+        { x: "79%",   trofeeHoogte: "42%", naamX: "80.6%", naamGrootte: "clamp(7px, 1.25vw, 14px)", naam: "Johannes", sleutel: "trofee_johannes", basis: "johannes" }
+    ]
+};
+
+// Welke vitrine de schatkamer nu toont. Later eventueel wisselbaar.
+const actieveVitrine = evangelienVitrine;
+
+// Leest een trofee-stand rechtstreeks uit localStorage op de gegeven sleutel.
+// Onbekende/ontbrekende waarde -> "geen". Verandert niets aan de win-logica;
+// gebruikt alleen dezelfde volgorde-lijst (trofeeVolgorde) ter validatie.
+function leesTrofeeStand(sleutel) {
+    const stand = localStorage.getItem(sleutel);
+    return trofeeVolgorde.includes(stand) ? stand : "geen";
+}
+
+// Bouwt de inhoud van een vitrine-element volledig op uit een config-object.
+// Per nis: stand uit localStorage -> "geen" = lege sokkel (trofee verbergen),
+// brons/zilver/goud = het bijbehorende plaatje op de sokkel.
+function bouwVitrine(vitrineEl, config) {
+    if (!vitrineEl) return;
+
+    // Achtergrond + gedeelde maten als inline CSS-variabelen (per vitrine).
+    vitrineEl.style.backgroundImage = `url("${config.achtergrond}")`;
+    vitrineEl.style.setProperty("--trofee-bodem", config.trofeeBodem);
+    vitrineEl.style.setProperty("--naam-midden",  config.naamMidden);
+    vitrineEl.style.setProperty("--naam-breedte", config.naamBreedte);
+    vitrineEl.style.setProperty("--naam-hoogte",  config.naamHoogte);
+
+    const houder = vitrineEl.querySelector(".sk-nissen");
+    if (!houder) return;
+    houder.innerHTML = "";                       // schoon herbouwen bij elk openen
+
+    config.nissen.forEach((nis) => {
+        const niveau = leesTrofeeStand(nis.sleutel); // "geen"|"brons"|"zilver"|"goud"
+
+        // Sokkel-trofee. Positie (left) en hoogte komen inline uit de config.
+        const img = document.createElement("img");
+        img.className = "sk-trofee";
+        img.alt = nis.naam;
+        img.style.left = nis.x;
+        img.style.height = nis.trofeeHoogte;
+        if (niveau === "geen") {
+            img.hidden = true;                   // lege sokkel uit de achtergrond blijft staan
+        } else {
+            img.src = `images/${nis.basis}-${niveau}.png`;
+        }
+        houder.appendChild(img);
+
+        // Naamplaat. Horizontale positie en lettergrootte inline uit de config.
+        const naam = document.createElement("div");
+        naam.className = "sk-naam";
+        naam.textContent = nis.naam;
+        naam.style.left = nis.naamX;
+        naam.style.fontSize = nis.naamGrootte;
+        houder.appendChild(naam);
+    });
+}
+
+function openSchatkamer() {
+    // Vitrine (her)opbouwen uit de config zodat de standen actueel zijn.
+    const vitrineEl = document.querySelector("#schatkamer-scherm .schatkamer-vitrine");
+    bouwVitrine(vitrineEl, actieveVitrine);
+    document.getElementById("schatkamer-scherm").style.display = "flex";
+}
+function sluitSchatkamer() {
+    document.getElementById("schatkamer-scherm").style.display = "none";
+}
+
+function openInstellingen() {
+    werkGeluidKnopBij();
+    document.getElementById("instellingen-scherm").style.display = "flex";
+}
+function sluitInstellingen() {
+    document.getElementById("instellingen-scherm").style.display = "none";
+}
+function wisselGeluid() {
+    geluidAan = !geluidAan;
+    localStorage.setItem("geluidAan", geluidAan ? "aan" : "uit");
+    werkGeluidKnopBij();
+}
+function werkGeluidKnopBij() {
+    const knop = document.getElementById("geluid-knop");
+    if (!knop) return;
+    knop.textContent = geluidAan ? "Geluid: aan" : "Geluid: uit";
+    knop.classList.toggle("geluid-uit", !geluidAan);
+}
+
 function eindScherm() {
     if (oefenModus) {
         const stopKnop = document.getElementById("oefen-stop-knop");

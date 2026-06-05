@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vitrine evangeliën — plaatsingstest</title>
+  <style>
+    /* ============================================================
+       LOS TESTBESTAND — alleen visuele plaatsing, geen spel-logica.
+       Raakt index.html / script.js / style.css NIET aan.
+       ============================================================ */
+
+    /* Cinzel lokaal geladen uit de projectmap (zelfde font als de game). */
+    @font-face {
+      font-family: 'Cinzel';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url("fonts/cinzel-700.woff2") format("woff2");
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: #1a120a;                 /* donkere rand rond de vitrine */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    /* De vitrine schaalt mee; 16:9 verhouding houdt de %-posities kloppend. */
+    .vitrine {
+      position: relative;
+      width: min(96vw, 1100px);
+      aspect-ratio: 16 / 9;
+      background-image: url("images/scahtkamer2.png");
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .6);
+      border-radius: 6px;
+      overflow: hidden;
+
+      /* --------------------------------------------------------
+         BIJSTELLEN GEBEURT HIER (alles in % van de vitrine).
+         De vier nissen, van links naar rechts.
+         --x = horizontaal middelpunt van de nis.
+         -------------------------------------------------------- */
+      --nis1-x: 19.5%;
+      --nis2-x: 40.5%;
+      --nis3-x: 59.5%;
+      --nis4-x: 79%;
+
+      /* Trofee: bodem t.o.v. onderkant vitrine + hoogte (in % van hoogte). */
+      --trofee-bodem: 30%;   /* hoger getal = trofee staat hoger */
+      --trofee-hoogte: 42%;  /* standaardhoogte van de trofeeën */
+
+      /* Per trofee een eigen hoogte (vormen verschillen).
+         Standaard gelijk aan --trofee-hoogte; pas hier per trofee aan. */
+      --trofee1-hoogte: 37%;                  /* Matteüs (engel met vleugels): iets kleiner */
+      --trofee2-hoogte: var(--trofee-hoogte); /* Marcus */
+      --trofee3-hoogte: 37%;                  /* Lucas (stier): kleiner, horens vrij van de lijst */
+      --trofee4-hoogte: var(--trofee-hoogte); /* Johannes */
+
+      /* Naamplaat-tekst: box ter grootte van het plaatje, gecentreerd op de plaat.
+         --naam-midden = verticaal midden van de naamplaat (vanaf bovenkant). */
+      --naam-midden: 84%;
+      --naam-breedte: 15%;
+      --naam-hoogte: 8%;
+
+      /* Per naam een eigen horizontale positie (standaard = de nis-x).
+         Hiermee schuif je elke naam los van de trofee. */
+      --naam1-x: 18.8%;   /* Matteüs: ~1/3 letter naar links */
+      --naam2-x: 39.3%;   /* Marcus: ~1 letter naar links */
+      --naam3-x: 60.1%;   /* Lucas: ~halve letter naar rechts */
+      --naam4-x: 80.6%;   /* Johannes: ~1/2 letter naar links */
+
+      /* Per naam een eigen lettergrootte (standaard = --naam-grootte). */
+      --naam-grootte: clamp(9px, 1.65vw, 19px);
+      --naam1-grootte: clamp(8px, 1.45vw, 17px);/* Matteüs: iets kleiner, past in het vak */
+      --naam2-grootte: var(--naam-grootte);     /* Marcus */
+      --naam3-grootte: var(--naam-grootte);     /* Lucas */
+      --naam4-grootte: clamp(7px, 1.25vw, 14px);/* Johannes: een stuk kleiner */
+    }
+
+    /* ---- Trofee (placeholder) ---- */
+    .trofee {
+      position: absolute;
+      bottom: var(--trofee-bodem);
+      height: var(--trofee-hoogte);          /* fallback; per nis overschreven */
+      width: auto;
+      transform: translateX(-50%);          /* zet middelpunt op de --x */
+      filter: drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .trofee.nis1 { left: var(--nis1-x); height: var(--trofee1-hoogte); }
+    .trofee.nis2 { left: var(--nis2-x); height: var(--trofee2-hoogte); }
+    .trofee.nis3 { left: var(--nis3-x); height: var(--trofee3-hoogte); }
+    .trofee.nis4 { left: var(--nis4-x); height: var(--trofee4-hoogte); }
+
+    /* ---- Naam op de naamplaat ---- */
+    .naam {
+      position: absolute;
+      top: var(--naam-midden);
+      width: var(--naam-breedte);
+      height: var(--naam-hoogte);
+      transform: translate(-50%, -50%);      /* box gecentreerd op (x, midden) */
+      display: flex;                         /* tekst horiz. én vert. centreren */
+      align-items: center;
+      justify-content: center;
+      font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+      color: #f6e7bf;                        /* crème / licht goud */
+      font-weight: 700;
+      font-size: var(--naam-grootte);        /* fallback; per naam overschreven */
+      letter-spacing: .5px;
+      line-height: 1;                        /* zuivere verticale centrering */
+      text-align: center;
+      white-space: nowrap;
+      text-shadow: 0 1px 2px rgba(0, 0, 0, .75),
+                   0 0 2px rgba(0, 0, 0, .5); /* donker schaduwtje voor contrast */
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .naam.nis1 { left: var(--naam1-x); font-size: var(--naam1-grootte); }
+    .naam.nis2 { left: var(--naam2-x); font-size: var(--naam2-grootte); }
+    .naam.nis3 { left: var(--naam3-x); font-size: var(--naam3-grootte); }
+    .naam.nis4 { left: var(--naam4-x); font-size: var(--naam4-grootte); }
+
+    /* ---- Hulpmiddel: uitlijn-lijnen (alleen voor het testen) ---- */
+    .hulplijn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      border-left: 1px dashed rgba(255, 80, 80, .7);
+      transform: translateX(-50%);
+      display: none;                         /* standaard uit */
+    }
+    .hulplijn.nis1 { left: var(--nis1-x); }
+    .hulplijn.nis2 { left: var(--nis2-x); }
+    .hulplijn.nis3 { left: var(--nis3-x); }
+    .hulplijn.nis4 { left: var(--nis4-x); }
+
+    body.toon-hulplijnen .hulplijn { display: block; }
+
+    .bediening {
+      position: fixed;
+      top: 12px;
+      left: 12px;
+      color: #e8d4a0;
+      font-size: 14px;
+      background: rgba(0, 0, 0, .45);
+      padding: 6px 10px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+    .bediening label { cursor: pointer; }
+
+    /* Testpaneel: toestand per evangelist kiezen (alleen voor het testen). */
+    .testpaneel {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      color: #e8d4a0;
+      font-size: 14px;
+      background: rgba(0, 0, 0, .55);
+      padding: 10px 12px;
+      border-radius: 6px;
+      z-index: 10;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 6px 10px;
+      align-items: center;
+    }
+    .testpaneel h2 {
+      grid-column: 1 / -1;
+      margin: 0 0 2px;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: .5px;
+    }
+    .testpaneel select {
+      font-size: 13px;
+      padding: 1px 4px;
+    }
+
+    /* Lege nis: trofee verbergen, lege sokkel uit de achtergrond blijft staan. */
+    .trofee[hidden] { display: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Test-hulpje: hulplijnen aan/uit. Verwijder dit blok gerust. -->
+  <div class="bediening">
+    <label>
+      <input type="checkbox" id="hulplijn-toggle">
+      Toon uitlijn-hulplijnen
+    </label>
+  </div>
+
+  <!-- Testpaneel: toestand per evangelist kiezen. Verwijder dit blok gerust. -->
+  <div class="testpaneel" id="testpaneel">
+    <h2>Toestand per evangelist</h2>
+    <!-- rijen worden door JavaScript ingevuld -->
+  </div>
+
+  <div class="vitrine">
+
+    <!-- Trofeeën: src wordt door render() gezet op basis van de toestand. -->
+    <img class="trofee nis1" data-key="matteus"  alt="Matteüs">
+    <img class="trofee nis2" data-key="marcus"   alt="Marcus">
+    <img class="trofee nis3" data-key="lucas"    alt="Lucas">
+    <img class="trofee nis4" data-key="johannes" alt="Johannes">
+
+    <!-- Namen op de naamplaten -->
+    <div class="naam nis1">Matteüs</div>
+    <div class="naam nis2">Marcus</div>
+    <div class="naam nis3">Lucas</div>
+    <div class="naam nis4">Johannes</div>
+
+    <!-- Hulplijnen door het midden van elke nis -->
+    <div class="hulplijn nis1"></div>
+    <div class="hulplijn nis2"></div>
+    <div class="hulplijn nis3"></div>
+    <div class="hulplijn nis4"></div>
+
+  </div>
+
+  <script>
+    // Test-hulplijnen aan/uit.
+    document.getElementById("hulplijn-toggle").addEventListener("change", function (e) {
+      document.body.classList.toggle("toon-hulplijnen", e.target.checked);
+    });
+
+    // ====================== Win-logica (testversie) ======================
+    // De vier evangelisten: 'key' = deel van de bestandsnaam, 'naam' = weergave.
+    const evangelisten = [
+      { key: "matteus",  naam: "Matteüs" },
+      { key: "marcus",   naam: "Marcus" },
+      { key: "lucas",    naam: "Lucas" },
+      { key: "johannes", naam: "Johannes" }
+    ];
+
+    // Mogelijke toestanden per nis.
+    const toestanden = ["leeg", "brons", "zilver", "goud"];
+
+    // Huidige toestand per evangelist (start: alles goud, zoals het er nu uitzag).
+    const toestand = {
+      matteus:  "goud",
+      marcus:   "goud",
+      lucas:    "goud",
+      johannes: "goud"
+    };
+
+    // Toont per nis de juiste afbeelding, of laat de nis leeg.
+    function render() {
+      evangelisten.forEach(function (ev) {
+        const img = document.querySelector('.trofee[data-key="' + ev.key + '"]');
+        const stand = toestand[ev.key];
+        if (stand === "leeg") {
+          img.hidden = true;                 // lege sokkel uit de achtergrond blijft
+          img.removeAttribute("src");
+        } else {
+          img.hidden = false;
+          img.src = "images/" + ev.key + "-" + stand + ".png";  // alleen bestand wisselt
+        }
+      });
+    }
+
+    // Bouwt het testpaneel: per evangelist een keuzemenu (leeg/brons/zilver/goud).
+    function bouwTestpaneel() {
+      const paneel = document.getElementById("testpaneel");
+      evangelisten.forEach(function (ev) {
+        const label = document.createElement("label");
+        label.textContent = ev.naam;
+
+        const select = document.createElement("select");
+        toestanden.forEach(function (stand) {
+          const optie = document.createElement("option");
+          optie.value = stand;
+          optie.textContent = stand.charAt(0).toUpperCase() + stand.slice(1);
+          if (stand === toestand[ev.key]) optie.selected = true;
+          select.appendChild(optie);
+        });
+
+        select.addEventListener("change", function (e) {
+          toestand[ev.key] = e.target.value;
+          render();
+        });
+
+        paneel.appendChild(label);
+        paneel.appendChild(select);
+      });
+    }
+
+    bouwTestpaneel();
+    render();
+  </script>
+
+</body>
+</html>
