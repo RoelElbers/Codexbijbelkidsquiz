@@ -968,6 +968,317 @@ const vragenData = {
     }
 };
 
+// === Extra evangelievragen (uit woordenboek-vragen-bijbelkidsquiz.md) =========
+// Toegevoegd aan de bestaande pools, in exact hetzelfde objectformaat
+// ({ vraag, antwoorden, correct, bijbelplaats }). Mapping: kopje -> boek,
+// [Gevorderd] -> advanced. De pool-, hussel-, win- en scorelogica blijft
+// ongemoeid; de niveaus worden alleen groter en de bestaande pool-trekking
+// (10 uit de pool) pakt dat vanzelf op.
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "Voordat Matteüs leerling van Jezus werd, had hij een beroep waar veel mensen op neerkeken. Wat was hij?",
+        antwoorden: ["Tollenaar (belastingontvanger voor de Romeinen)", "Schriftgeleerde", "Visser", "Soldaat"],
+        correct: "Tollenaar (belastingontvanger voor de Romeinen)",
+        bijbelplaats: "Matteüs 9:9"
+    },
+    {
+        vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
+        antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
+        correct: "De Bergrede",
+        bijbelplaats: "Matteüs 5"
+    },
+    {
+        vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
+        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De wetten van de Romeinse keizer", "De regels van koning Herodes", "De afspraken tussen de tempelwachters"],
+        correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
+        bijbelplaats: "Matteüs 5:17"
+    },
+    {
+        vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
+        antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een tempelpriester"],
+        correct: "Iemand die niet bij het Joodse volk hoorde",
+        bijbelplaats: "Matteüs 8 (de Romeinse hoofdman)"
+    },
+    {
+        vraag: 'In Jezus\' tijd betaalde je met een muntje dat een "denarie" heette. Hoeveel was één denarie ongeveer waard?',
+        antwoorden: ["Ongeveer een dagloon", "Ongeveer een maandloon", "Bijna niets, een fooi", "Genoeg om een huis te kopen"],
+        correct: "Ongeveer een dagloon",
+        bijbelplaats: "Matteüs 20:2"
+    }
+);
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van zijn eigen opstanding. Over welke profeet ging het?",
+        antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
+        correct: "Jona",
+        bijbelplaats: "Matteüs 12:39-40"
+    }
+);
+vragenData["Marcus"].beginner.push(
+    {
+        vraag: 'Wat betekent het woord "Messias"?',
+        antwoorden: ['De beloofde redder ("de gezalfde")', "De koning van de Romeinen", "De leider van de tempel", "Een hemelse engel"],
+        correct: 'De beloofde redder ("de gezalfde")',
+        bijbelplaats: "Marcus 8:29"
+    },
+    {
+        vraag: 'Wat betekent het woord "evangelie"?',
+        antwoorden: ["Goed nieuws", "Heilig boek", "Lange reis", "Oude wet"],
+        correct: "Goed nieuws",
+        bijbelplaats: "Marcus 1:1"
+    },
+    {
+        vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
+        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Een lang gebed opzeggen", "Veel geld geven aan de tempel", "Naar een ander land verhuizen"],
+        correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
+        bijbelplaats: "Marcus 1:4"
+    },
+    {
+        vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
+        antwoorden: ["Daar waar God de koning is en alles goed en eerlijk gaat", "Het land Israël op de kaart", "Het paleis van koning Herodes", "De stad Rome"],
+        correct: "Daar waar God de koning is en alles goed en eerlijk gaat",
+        bijbelplaats: "Marcus 1:15"
+    },
+    {
+        vraag: 'Wat is een "wonder" in de Bijbel?',
+        antwoorden: ["Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Een grappig verhaal", "Een streng bevel", "Een oude wet"],
+        correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
+        bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
+    }
+);
+vragenData["Marcus"].advanced.push(
+    {
+        vraag: "Bij de doop van Jezus daalde de Heilige Geest op hem neer. In de gedaante van welk dier?",
+        antwoorden: ["Een duif", "Een arend", "Een lam", "Een leeuw"],
+        correct: "Een duif",
+        bijbelplaats: "Marcus 1:10"
+    },
+    {
+        vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Wat zei hij erover?",
+        antwoorden: ["De sabbat is er voor de mens, en niet de mens voor de sabbat", "Op de sabbat mag je nooit iemand helpen", "De sabbat is de belangrijkste regel van allemaal", "De sabbat geldt alleen voor priesters"],
+        correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
+        bijbelplaats: "Marcus 2:27"
+    },
+    {
+        vraag: 'Wat was een "schriftgeleerde"?',
+        antwoorden: ["Een kenner van de heilige boeken, die ze aan anderen uitlegde", "Een soldaat van de keizer", "Een bouwer van de tempel", "Een belastingontvanger"],
+        correct: "Een kenner van de heilige boeken, die ze aan anderen uitlegde",
+        bijbelplaats: "Marcus 12:28"
+    }
+);
+vragenData["Marcus"].expert.push(
+    {
+        vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
+        antwoorden: ["Christus", "Rabbi", "Profeet", "Immanuël"],
+        correct: "Christus",
+        bijbelplaats: "Johannes 1:41"
+    }
+);
+vragenData["Lucas"].beginner.push(
+    {
+        vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
+        antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lied", "Een gebed", "Een wet"],
+        correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
+        bijbelplaats: "Lucas 15 (o.a. de verloren zoon)"
+    },
+    {
+        vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
+        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Een berg beklimmen", "Een schat verstoppen", "Een brief verscheuren"],
+        correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
+        bijbelplaats: "Lucas 15:18"
+    }
+);
+vragenData["Lucas"].advanced.push(
+    {
+        vraag: "Uit zijn vele leerlingen koos Jezus een kleinere, bijzondere groep die hij eropuit stuurde. Hoe noemde hij die?",
+        antwoorden: ["Apostelen", "Profeten", "Schriftgeleerden", "Farizeeën"],
+        correct: "Apostelen",
+        bijbelplaats: "Lucas 6:13"
+    },
+    {
+        vraag: "Wat was een synagoge?",
+        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "Het paleis van de koning", "De markt in Jeruzalem", "Het huis van de hogepriester"],
+        correct: "Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren",
+        bijbelplaats: "Lucas 4:16"
+    },
+    {
+        vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
+        antwoorden: ["Dat God hen lang geleden uit de slavernij in Egypte had bevrijd", "Het begin van de oogst", "De bouw van de tempel", "De geboorte van koning David"],
+        correct: "Dat God hen lang geleden uit de slavernij in Egypte had bevrijd",
+        bijbelplaats: "Lucas 22 (het Laatste Avondmaal was een Pesachmaaltijd)"
+    }
+);
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "In een beroemde gelijkenis verbrast een jongen al het geld van zijn vader, maar als hij berouwvol terugkomt, ontvangt zijn vader hem met open armen. Hoe heet die gelijkenis?",
+        antwoorden: ["De verloren zoon", "De barmhartige Samaritaan", "De rijke dwaas", "Het verloren schaap"],
+        correct: "De verloren zoon",
+        bijbelplaats: "Lucas 15:11-32"
+    },
+    {
+        vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
+        antwoorden: ["Het nieuwe verbond", "De grote belofte", "De heilige wet", "Het laatste gebod"],
+        correct: "Het nieuwe verbond",
+        bijbelplaats: "Lucas 22:20"
+    }
+);
+vragenData["Johannes"].beginner.push(
+    {
+        vraag: 'Wat is een "discipel"?',
+        antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een koning"],
+        correct: "Een leerling van Jezus die met hem meeging en van hem leerde",
+        bijbelplaats: "Johannes 1:35-40"
+    },
+    {
+        vraag: 'Wat betekent het woord "opstanding"?',
+        antwoorden: ["Weer levend worden na de dood", "Omhooggaan naar de hemel", "Een lange reis maken", "Een groot feest vieren"],
+        correct: "Weer levend worden na de dood",
+        bijbelplaats: "Johannes 20 (het lege graf)"
+    },
+    {
+        vraag: "Wat was de tempel?",
+        antwoorden: ["Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden", "Een gewoon woonhuis", "De markt van Jeruzalem", "Een Romeins fort"],
+        correct: "Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden",
+        bijbelplaats: "Johannes 2:13-22"
+    }
+);
+vragenData["Johannes"].advanced.push(
+    {
+        vraag: "Een man genaamd Nicodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
+        antwoorden: ["De Farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
+        correct: "De Farizeeën",
+        bijbelplaats: "Johannes 3:1"
+    }
+);
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
+        antwoorden: ["Tekenen", "Toverkunsten", "Dromen", "Raadsels"],
+        correct: "Tekenen",
+        bijbelplaats: "Johannes 2:11"
+    }
+);
+
+// === Thema "Maten, geld & tijd" — verdeeld over de evangelieboeken ============
+// Veldnamen aangepast aan de bestaande structuur (opties->antwoorden,
+// antwoord->correct) en niveau "gevorderd"->advanced. Elke vraag is op het
+// evangelie in zijn bijbelplaats geplaatst. Pool-/hussel-/win-/scorelogica
+// blijft ongemoeid; de niveaus worden alleen groter.
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "Een denarie was het loon voor hoeveel werk?",
+        antwoorden: ["Eén hele dag werken", "Eén uur werken", "Eén week werken", "Eén maand werken"],
+        correct: "Eén hele dag werken",
+        bijbelplaats: "Matteüs 20:1-16 (de arbeiders in de wijngaard)"
+    },
+    {
+        vraag: 'Een "el" is ongeveer zo lang als…',
+        antwoorden: ["De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)", "Je voet", "Je hand", "Een grote stap"],
+        correct: "De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)",
+        bijbelplaats: "Matteüs 6:27"
+    },
+    {
+        vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
+        antwoorden: ["Anderhalve kilometer (zo'n 1.500 meter)", "Honderd meter", "Tien kilometer", "Een halve kilometer"],
+        correct: "Anderhalve kilometer (zo'n 1.500 meter)",
+        bijbelplaats: "Matteüs 5:41"
+    },
+    {
+        vraag: "Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop. Wat was een korenmaat?",
+        antwoorden: ["Een bak of mand voor graan (zo'n 9 liter)", "Een muntstuk", "Een lengtemaat", "Een soort lamp"],
+        correct: "Een bak of mand voor graan (zo'n 9 liter)",
+        bijbelplaats: "Matteüs 5:15"
+    }
+);
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Hoeveel denarie zaten er in één talent?",
+        antwoorden: ["Zesduizend", "Honderd", "Duizend", "Zestig"],
+        correct: "Zesduizend",
+        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
+    },
+    {
+        vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
+        antwoorden: ["Vijftien tot twintig jaar", "Honderd dagen", "Ongeveer een jaar", "Een paar maanden"],
+        correct: "Vijftien tot twintig jaar",
+        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
+    },
+    {
+        vraag: "In de gelijkenis van het zuurdeeg verstopte een vrouw gist in drie maten (seah) meel. Waar was dat genoeg voor?",
+        antwoorden: ["Brood voor een heleboel mensen", "Eén klein broodje", "Eén gezin voor één dag", "Te weinig voor brood"],
+        correct: "Brood voor een heleboel mensen",
+        bijbelplaats: "Matteüs 13:33 (de gelijkenis van het zuurdeeg)"
+    }
+);
+vragenData["Marcus"].beginner.push(
+    {
+        vraag: "Welk muntje was het allerkleinste dat in de Bijbel voorkomt?",
+        antwoorden: ["Penning", "Denarie", "Talent", "Pond"],
+        correct: "Penning",
+        bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
+    }
+);
+vragenData["Marcus"].advanced.push(
+    {
+        vraag: 'De dag begon bij zonsopgang. Hoe laat was ongeveer het "derde uur"?',
+        antwoorden: ["Ongeveer negen uur 's ochtends", "Ongeveer drie uur 's nachts", "Rond het middaguur", "Drie uur 's middags"],
+        correct: "Ongeveer negen uur 's ochtends",
+        bijbelplaats: "Marcus 15:25"
+    },
+    {
+        vraag: 'De Romeinen verdeelden de nacht in vier "wachten". Jezus noemde ze toen hij zei: waak dan! Welke vier waren dat?',
+        antwoorden: ["De avond, middernacht, het hanengekraai en de vroege ochtend", "Zonsopgang, ochtend, middag en avond", "Lente, zomer, herfst en winter", "Het eerste, tweede, derde en vierde uur"],
+        correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
+        bijbelplaats: "Marcus 13:35"
+    }
+);
+vragenData["Marcus"].expert.push(
+    {
+        vraag: 'Volgens Marcus stierf Jezus op het "negende uur". Hoe laat was dat ongeveer?',
+        antwoorden: ["Ongeveer drie uur 's middags", "Ongeveer negen uur 's ochtends", "Rond middernacht", "Bij zonsopgang"],
+        correct: "Ongeveer drie uur 's middags",
+        bijbelplaats: "Marcus 15:33-34"
+    }
+);
+vragenData["Lucas"].advanced.push(
+    {
+        vraag: "De arme weduwe gaf twee penningen. Hoeveel was dat samen ongeveer in geld van nu?",
+        antwoorden: ["Een paar euro (zo'n 2 à 3 euro)", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
+        correct: "Een paar euro (zo'n 2 à 3 euro)",
+        bijbelplaats: "Lucas 21:1-4"
+    }
+);
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Emmaüs lag ongeveer zestig stadiën van Jeruzalem. Hoeveel kilometer is dat ongeveer?",
+        antwoorden: ["Bijna elf kilometer", "Ongeveer 2 kilometer", "Ongeveer 50 kilometer", "Ongeveer 100 kilometer"],
+        correct: "Bijna elf kilometer",
+        bijbelplaats: "Lucas 24:13 (de Emmaüsgangers)"
+    }
+);
+vragenData["Johannes"].beginner.push(
+    {
+        vraag: "Waar veranderde Jezus op de bruiloft in Kana het water in wijn?",
+        antwoorden: ["In grote stenen kruiken", "In een beker", "In een put", "In leren zakken"],
+        correct: "In grote stenen kruiken",
+        bijbelplaats: "Johannes 2:1-11"
+    }
+);
+vragenData["Johannes"].expert.push(
+    {
+        vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
+        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Honderd daglonen", "Een afstand", "Een tijdsmaat"],
+        correct: "Een gewicht (ongeveer 300 gram)",
+        bijbelplaats: "Johannes 12:3 (de zalving in Betanië)"
+    },
+    {
+        vraag: "De stenen kruiken in Kana hielden elk twee of drie metreet. Hoeveel liter was dat ongeveer per kruik?",
+        antwoorden: ["Zo'n 80 tot 120 liter", "Ongeveer 5 liter", "Ongeveer 10 liter", "Meer dan 500 liter"],
+        correct: "Zo'n 80 tot 120 liter",
+        bijbelplaats: "Johannes 2:6"
+    }
+);
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -1509,7 +1820,14 @@ function kiesNiveau(niveau) {
 
     gekozenNiveau = niveau;
     gekozenModus = "boek";
-    vragen = kiesWillekeurigeVragen(vragenData[gekozenBoek][niveau], 10);
+    // 10 willekeurige vragen uit de pool, elk met gehusselde antwoordopties
+    // (zelfde aanpak als de Verborgen Schat). Het juiste antwoord wordt op
+    // tekstwaarde herkend (huidig.correct), dus husselen blijft veilig. Map naar
+    // nieuwe objecten zodat vragenData niet gemuteerd wordt.
+    vragen = kiesWillekeurigeVragen(vragenData[gekozenBoek][niveau], 10).map((v) => ({
+        ...v,
+        antwoorden: husselArray(v.antwoorden)
+    }));
 
     // Niveaukeuze sluiten
     document.getElementById("niveau-scherm").style.display = "none";
@@ -1590,14 +1908,81 @@ function openSchatkist(niveau) {
 // logica; dat komt later. Raakt de win-logica niet aan.
 // =========================
 
-// De testvraag. Bewust ZONDER bijbelplaats, zodat er na het antwoord geen
-// Bijbelplaats-regel verschijnt: de eerlijkheid zit in de vraagtekst, de
-// achtergrond komt later in de Bijbeltraining.
+// De Verborgen Schat-vragen. Bij elke start worden zowel de vraagvolgorde als de
+// antwoordvolgorde gehusseld (zie openVerborgenSchat). De bron staat in
+// 'bijbelplaats' en verschijnt na het antwoorden via checkAntwoord().
 const verborgenSchatVragen = [
     {
         vraag: "Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?",
         antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
-        correct: "Marcus"
+        correct: "Marcus",
+        bijbelplaats: "Marcus 14 / Lucas 22"
+    },
+    {
+        vraag: 'Wat betekent het woord "apocalyps" eigenlijk?',
+        antwoorden: ["Een grote ramp", "Onthulling of openbaring", "Het einde van de wereld", "Een droom of visioen"],
+        correct: "Onthulling of openbaring",
+        bijbelplaats: "Openbaring 1:1"
+    },
+    {
+        vraag: 'Jezus noemt zichzelf "de Alfa en de Omega". Wat bedoelt hij daarmee?',
+        antwoorden: ["Dat hij uit Griekenland kwam", "Dat hij de wijste van allemaal is", "Dat hij er is vanaf het begin tot het einde van alles", "Dat hij twee namen had"],
+        correct: "Dat hij er is vanaf het begin tot het einde van alles",
+        bijbelplaats: "Openbaring 22:13"
+    },
+    {
+        vraag: 'In Openbaring wordt Jezus "het Lam" genoemd. Waarom juist een lam?',
+        antwoorden: ["Omdat hij zichzelf opofferde, zoals een offerlam", "Omdat hij geboren werd in een stal", "Omdat hij veel van schapen hield", "Omdat hij verlegen en stil was"],
+        correct: "Omdat hij zichzelf opofferde, zoals een offerlam",
+        bijbelplaats: "Openbaring 5:6-12"
+    },
+    {
+        vraag: "Het getal zeven komt overal voor in Openbaring (zeven gemeenten, zegels, bazuinen). Waar staat zeven symbolisch voor?",
+        antwoorden: ["Geluk", "Het aantal apostelen", "Volheid of compleetheid", "De zeven dagen van de week"],
+        correct: "Volheid of compleetheid",
+        bijbelplaats: "Genesis 2:2-3"
+    },
+    {
+        vraag: "Hoe eindigt de Bijbel, in het boek Openbaring?",
+        antwoorden: ["Met de schepping van de wereld", "Met een nieuwe hemel en een nieuwe aarde, waar God bij de mensen woont", "Met de dood van Jezus aan het kruis", "Met de tien geboden"],
+        correct: "Met een nieuwe hemel en een nieuwe aarde, waar God bij de mensen woont",
+        bijbelplaats: "Openbaring 21:1-4"
+    },
+    {
+        vraag: 'In Openbaring en in het boek Daniël komt de geheimzinnige uitdrukking "een tijd, tijden en een halve tijd" voor. Welke tijdsduur wordt daarmee bedoeld?',
+        antwoorden: ["Zeven jaar", "Drieënhalf jaar", "Drie en een halve dag", "Duizend jaar"],
+        correct: "Drieënhalf jaar",
+        bijbelplaats: "Openbaring 12:14"
+    },
+    {
+        vraag: "In Openbaring ziet Johannes vier levende wezens rond Gods troon: een leeuw, een rund, een mens en een arend. Uit het visioen van welke profeet komt dit beeld oorspronkelijk?",
+        antwoorden: ["Jesaja", "Ezechiël", "Daniël", "Jeremia"],
+        correct: "Ezechiël",
+        bijbelplaats: "Ezechiël 1:10 · Openbaring 4:7"
+    },
+    {
+        vraag: "Helemaal aan het begin van de Bijbel, in het paradijs, staat een bijzondere boom. Aan het einde van Openbaring staat diezelfde boom er weer. Welke boom is dat?",
+        antwoorden: ["De olijfboom", "De vijgenboom", "De boom des levens", "De boom van kennis van goed en kwaad"],
+        correct: "De boom des levens",
+        bijbelplaats: "Genesis 2:9 · Openbaring 22:2"
+    },
+    {
+        vraag: "Johannes schrijft Openbaring als een brief. Aan hoeveel gemeenten richt hij zich aan het begin?",
+        antwoorden: ["Eén", "Drie", "Zeven", "Twaalf"],
+        correct: "Zeven",
+        bijbelplaats: "Openbaring 1:4, 11"
+    },
+    {
+        vraag: "Aan het einde van Openbaring ziet Johannes een schitterende stad uit de hemel neerdalen, waar God voorgoed bij de mensen woont. Hoe heet die stad?",
+        antwoorden: ["Het hemelse Babylon", "Het nieuwe Eden", "De gouden tempel", "Het nieuwe Jeruzalem"],
+        correct: "Het nieuwe Jeruzalem",
+        bijbelplaats: "Openbaring 21:2"
+    },
+    {
+        vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke?",
+        antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
+        correct: "De sandwich-techniek",
+        bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25"
     }
 ];
 
@@ -1624,8 +2009,10 @@ function openVerborgenSchat() {
     gekozenBoek = null;
     gekozenNiveau = null;
 
-    // Vraag overnemen met gehusselde antwoorden (origineel blijft intact).
-    vragen = verborgenSchatVragen.map((v) => ({
+    // Trek 10 willekeurige vragen uit de pool (bij een kleinere pool: alles),
+    // elk met gehusselde antwoorden (origineel blijft intact). Bij opnieuw spelen
+    // levert dit vanzelf een nieuwe willekeurige set op.
+    vragen = kiesWillekeurigeVragen(verborgenSchatVragen, 10).map((v) => ({
         ...v,
         antwoorden: husselArray(v.antwoorden)
     }));
@@ -2024,11 +2411,24 @@ function eindScherm() {
     // Verborgen Schat: voorlopig geen beloning-/10-goed-logica. Een eenvoudig
     // slot met de score en een Terug-knop, los van de trofee-/kist-afhandeling.
     if (gekozenModus === "verborgen") {
+        // Winvoorwaarde: alle vragen goed (6/6). Dan is de Verborgen Schat ontdekt
+        // en zetten we de vlag, zodat de naslagpagina ontgrendelt. Idempotent —
+        // opnieuw spelen mag en houdt de vlag gewoon op "waar".
+        const allesGoed = score === vragen.length;
+        if (allesGoed) {
+            localStorage.setItem("verborgenschat_voltooid", "waar");
+        }
+
+        const slotRegel = allesGoed
+            ? "Je hebt de Verborgen Schat ontdekt! 💎"
+            : "Nog niet alles goed — probeer het opnieuw om de Verborgen Schat te ontdekken.";
+
         const quizBox = document.querySelector("#quiz-scherm .quiz-box");
         if (quizBox) {
             quizBox.innerHTML = `
                 <h2 class="quiz-title">Verborgen Schat</h2>
                 <p class="quiz-question">Je had er ${score} van de ${vragen.length} goed.</p>
+                <p class="quiz-question">${slotRegel}</p>
                 <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug naar startscherm</button>
             `;
         }

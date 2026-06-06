@@ -1111,19 +1111,23 @@ height: 22%;
     cursor: pointer;
 }
 
-/* Het tekstvak van Maten, geld & tijd: breder, links uitgelijnd, en — cruciaal —
-   begrensd in hoogte met interne scroll. Zo blijft het vak binnen het scherm en
-   is de hele lange tekst bereikbaar, ook al centreert de overlay het verticaal.
-   (Deze regels stonden vóór de ombouw op #naslag-scherm; ze horen bij de tekst,
-   die nu in #maten-scherm staat.) */
-#maten-scherm .quiz-box {
+/* Het tekstvak van de leesschermen (Maten, geld & tijd en Woordenboek): breder,
+   links uitgelijnd, en — cruciaal — begrensd in hoogte met interne scroll. Zo
+   blijft het vak binnen het scherm en is de hele lange tekst bereikbaar, ook al
+   centreert de overlay het verticaal. (Deze regels stonden vóór de ombouw op
+   #naslag-scherm; ze horen bij de tekst, die nu in deze schermen staat.) */
+#maten-scherm .quiz-box,
+#woordenboek-scherm .quiz-box,
+#verborgenschat-naslag-scherm .quiz-box {
     width: 900px;
     max-width: 90vw;
     max-height: 90vh;
     overflow-y: auto;
     text-align: left;
 }
-#maten-scherm .quiz-title {
+#maten-scherm .quiz-title,
+#woordenboek-scherm .quiz-title,
+#verborgenschat-naslag-scherm .quiz-title {
     text-align: center;
 }
 .naslag-intro {
@@ -1132,7 +1136,9 @@ height: 22%;
     color: #f3ecd8;
     margin: 0 0 20px;
 }
-#maten-scherm .naslag-terug {
+#maten-scherm .naslag-terug,
+#woordenboek-scherm .naslag-terug,
+#verborgenschat-naslag-scherm .naslag-terug {
     display: inline-block;
     width: auto;
     padding: 10px 24px;
