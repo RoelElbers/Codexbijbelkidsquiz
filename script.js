@@ -1295,7 +1295,13 @@ vragenData["Marcus"].expert.push(
         ],
         correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
         bijbelplaats: "Marcus 10:25-27",
-        uitleg: "Veel mensen horen wel eens dat het 'oog van de naald' een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als alle bagage eraf ging. Maar daar is eigenlijk geen bewijs voor: zo'n poort is nooit teruggevonden, en de oudste christelijke uitleggers kenden dit verhaal niet — het dook pas veel later op. Jezus bedoelde waarschijnlijk juist een onmogelijk beeld: een enorme kameel door een piepklein naaldgaatje. Dat kán niet, en dat is precies het punt — daarom zegt hij erachteraan: 'Bij mensen is dit onmogelijk, maar bij God is alles mogelijk.'"
+        uitleg: `Veel mensen hebben geleerd dat het "oog van de naald" een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als hij eerst alle bagage aflegde. Het klinkt mooi en praktisch, en het wordt al tientallen jaren zo verteld. Maar als we eerlijk zijn, klopt deze uitleg historisch waarschijnlijk niet.
+
+Er is namelijk geen enkel bewijs voor zo'n poort. Archeologen hebben nooit een poort gevonden die "Oog van de Naald" heette, en de oudste christelijke uitleggers — zoals Origenes, Chrysostomus en Augustinus — bespreken deze tekst uitgebreid, maar géén van hen noemt een poortje. De uitleg duikt pas veel later op; het lijkt dus eerder iets dat later in preken is verteld dan een echte herinnering uit Jezus' tijd.
+
+Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+
+En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
     }
 );
 vragenData["Lucas"].advanced.push(
@@ -2177,9 +2183,11 @@ function checkAntwoord(antwoord) {
     // Toon ná het antwoorden, onder het resultaat: eerst de bijbelplaats, dan
     // (optioneel) de uitleg. Elk deel verschijnt alleen als het veld bestaat, dus
     // bestaande vragen zonder die velden gedragen zich precies zoals voorheen.
+    // Na het antwoorden tonen we alleen de bijbelplaats; de (soms lange) uitleg
+    // blijft in de data, maar verschijnt NIET in de quiz — die houden we snel.
+    // De uitleg is wél te lezen op de Vragen & uitleg-pagina.
     let extra = "";
     if (huidig.bijbelplaats) extra += `<div class="bijbelplaats">Lees het na in: ${huidig.bijbelplaats}</div>`;
-    if (huidig.uitleg) extra += `<div class="uitleg">${huidig.uitleg}</div>`;
     resultaat.innerHTML = melding + extra;
 
     if (oefenModus) {
@@ -2414,7 +2422,10 @@ function openVuDetail(index) {
         html += `<div class="bijbelplaats">Lees het na in: ${q.bijbelplaats}</div>`;
     }
     if (q.uitleg) {
-        html += `<div class="uitleg">${q.uitleg}</div>`;
+        // Splits de uitleg op lege/nieuwe regels in alinea's, zodat langere
+        // teksten met nette witregels tussen de alinea's verschijnen.
+        const alineas = q.uitleg.split(/\n+/).filter((a) => a.trim() !== "");
+        html += `<div class="uitleg">` + alineas.map((a) => `<p>${a}</p>`).join("") + `</div>`;
     } else {
         html += `<div class="vu-geen-uitleg">Nog geen extra uitleg bij deze vraag.</div>`;
     }

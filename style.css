@@ -1146,6 +1146,14 @@ height: 22%;
 #vu-detail-scherm .quiz-title {
     text-align: center;
 }
+
+/* Evangelie-keuze (Vragen & uitleg): begrens de hoogte en laat intern scrollen,
+   zodat de Terug-knop bereikbaar blijft als er veel meer boeken bijkomen. Alleen
+   het scroll-gedrag van de naslag-schermen; de menu-opmaak (gecentreerd) blijft. */
+#vu-boek-scherm .quiz-box {
+    max-height: 90vh;
+    overflow-y: auto;
+}
 .naslag-intro {
     text-align: center;
     font-size: 1.3rem;
@@ -1209,6 +1217,13 @@ height: 22%;
 #vu-detail .uitleg {
     font-size: 20px;
     margin-top: 14px;
+}
+/* Nette witregels tussen de alinea's van een langere uitleg. */
+#vu-detail .uitleg p {
+    margin: 0 0 0.9em;
+}
+#vu-detail .uitleg p:last-child {
+    margin-bottom: 0;
 }
 /* Rustig zinnetje als een vraag (nog) geen uitleg heeft. */
 .vu-geen-uitleg {
