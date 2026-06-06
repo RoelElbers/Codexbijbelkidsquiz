@@ -269,12 +269,6 @@ const vragenData = {
                 bijbelplaats: "Matteüs 4:18-20"
             },
             {
-                vraag: "Welke munt kregen de arbeiders in de wijngaard afgesproken als loon voor een hele dag werk?",
-                antwoorden: ["Een denarie", "Een talent", "Een penning", "Een pond"],
-                correct: "Een denarie",
-                bijbelplaats: "Matteüs 20:2"
-            },
-            {
                 vraag: "Hoe groot was de schuld van de dienaar in de gelijkenis van de onbarmhartige dienaar?",
                 antwoorden: ["Honderd denarie", "Duizend talenten", "Tienduizend talenten", "Honderd talenten"],
                 correct: "Tienduizend talenten",
@@ -360,7 +354,8 @@ const vragenData = {
                 vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
                 antwoorden: ["Een paard", "Een kameel", "Een veulen van een ezel", "Een muildier"],
                 correct: "Een veulen van een ezel",
-                bijbelplaats: "Marcus 11:7"
+                bijbelplaats: "Marcus 11:7",
+                uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet hij zien wat voor koning hij wilde zijn."
             },
             {
                 vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na zijn intocht, wat ophef veroorzaakte?",
@@ -1183,13 +1178,6 @@ vragenData["Matteüs"].beginner.push(
         bijbelplaats: "Matteüs 14:13-21"
     },
     {
-        vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
-        antwoorden: ["Een ezel", "Een paard", "Een kameel", "Een os"],
-        correct: "Een ezel",
-        bijbelplaats: "Matteüs 21:1-9",
-        uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet hij zien wat voor koning hij wilde zijn."
-    },
-    {
         vraag: "Wat zei Jezus toen mensen de kinderen bij hem wilden weghouden?",
         antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
         correct: "Laat de kinderen bij mij komen",
@@ -1262,22 +1250,10 @@ vragenData["Matteüs"].advanced.push(
 );
 vragenData["Matteüs"].expert.push(
     {
-        vraag: "Hoeveel denarie zaten er in één talent?",
-        antwoorden: ["Zesduizend", "Honderd", "Duizend", "Zestig"],
-        correct: "Zesduizend",
-        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
-    },
-    {
         vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
         antwoorden: ["Vijftien tot twintig jaar", "Honderd dagen", "Ongeveer een jaar", "Een paar maanden"],
         correct: "Vijftien tot twintig jaar",
         bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
-    },
-    {
-        vraag: "In de gelijkenis van het zuurdeeg verstopte een vrouw gist in drie maten (seah) meel. Waar was dat genoeg voor?",
-        antwoorden: ["Brood voor een heleboel mensen", "Eén klein broodje", "Eén gezin voor één dag", "Te weinig voor brood"],
-        correct: "Brood voor een heleboel mensen",
-        bijbelplaats: "Matteüs 13:33 (de gelijkenis van het zuurdeeg)"
     }
 );
 vragenData["Marcus"].beginner.push(
@@ -1346,6 +1322,13 @@ vragenData["Johannes"].expert.push(
         antwoorden: ["Zo'n 80 tot 120 liter", "Ongeveer 5 liter", "Ongeveer 10 liter", "Meer dan 500 liter"],
         correct: "Zo'n 80 tot 120 liter",
         bijbelplaats: "Johannes 2:6"
+    },
+    {
+        vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
+        antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Eén denarie", "Een paar penningen"],
+        correct: "Driehonderd denarie (bijna een jaarloon)",
+        bijbelplaats: "Johannes 12:5",
+        uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
     }
 );
 
