@@ -169,6 +169,7 @@
                 <p class="quiz-question">Oefen en groei</p>
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="startOefenen()">Oefenen</button>
                 <button class="answer-btn niveau-btn niveau-advanced" onclick="openNaslag()">Naslag &amp; uitleg</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
                 <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
             </div>
         </div>
@@ -184,6 +185,52 @@
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Lucas')">Lucas</button>
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek('Johannes')">Johannes</button>
                 <button class="answer-btn niveau-terug" onclick="terugNaarBijbeltraining()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg (read-only): evangelie kiezen. Leest straks rechtstreeks
+             uit vragenData; raakt de quizlogica niet aan. -->
+        <div id="vu-boek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Vragen &amp; uitleg</h2>
+                <p class="quiz-question">Kies een evangelie</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek('Matteüs')">Matteüs</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek('Marcus')">Marcus</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek('Lucas')">Lucas</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek('Johannes')">Johannes</button>
+                <button class="answer-btn niveau-terug" onclick="sluitVuBoek()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: niveau kiezen. Alle niveaus zijn hier open (read-only,
+             geen vergrendeling). De boektitel wordt door JS ingevuld. -->
+        <div id="vu-niveau-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title" id="vu-niveau-titel">Vragen &amp; uitleg</h2>
+                <p class="quiz-question">Kies een niveau</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuNiveau('beginner')">Beginner</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesVuNiveau('advanced')">Advanced</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesVuNiveau('expert')">Expert</button>
+                <button class="answer-btn niveau-terug" onclick="terugVuNiveau()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: genummerde, scrollbare lijst van alle vragen van het
+             gekozen boek + niveau. Wordt door bouwVuLijst() gevuld uit vragenData. -->
+        <div id="vu-lijst-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="vu-lijst-titel">Vragen &amp; uitleg</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuLijst()">← Terug</button>
+                <div id="vu-lijst" class="vu-lijst"></div>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: uitlegpagina van één vraag. Wordt door openVuDetail()
+             gevuld uit vragenData (vraag, juiste antwoord, bijbelplaats, uitleg). -->
+        <div id="vu-detail-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuDetail()">← Terug</button>
+                <div id="vu-detail"></div>
             </div>
         </div>
 

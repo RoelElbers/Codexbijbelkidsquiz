@@ -2336,6 +2336,106 @@ function sluitVerborgenSchatNaslag() {
 }
 
 // =========================
+// VRAGEN & UITLEG (read-only browser)
+// Toont de bestaande vragen per boek + niveau, met hun antwoord/bijbelplaats/
+// uitleg. Leest RECHTSTREEKS uit vragenData; eigen statusvariabelen (vuBoek/
+// vuNiveau), losstaand van de quiz. Raakt quiz-/pool-/win-/scorelogica niet aan.
+// =========================
+let vuBoek = null;
+let vuNiveau = null;
+
+// Bijbeltraining -> evangelie-keuze
+function openVraagUitleg() {
+    document.getElementById("bijbeltraining-scherm").style.display = "none";
+    document.getElementById("vu-boek-scherm").style.display = "flex";
+}
+// Evangelie-keuze -> terug naar Bijbeltraining
+function sluitVuBoek() {
+    document.getElementById("vu-boek-scherm").style.display = "none";
+    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+}
+// Evangelie gekozen -> niveau-keuze (titel toont het boek)
+function kiesVuBoek(boek) {
+    vuBoek = boek;
+    const titel = document.getElementById("vu-niveau-titel");
+    if (titel) titel.textContent = boek;
+    document.getElementById("vu-boek-scherm").style.display = "none";
+    document.getElementById("vu-niveau-scherm").style.display = "flex";
+}
+// Niveau-keuze -> terug naar evangelie-keuze
+function terugVuNiveau() {
+    document.getElementById("vu-niveau-scherm").style.display = "none";
+    document.getElementById("vu-boek-scherm").style.display = "flex";
+}
+// Niveau gekozen -> de lijst bouwen en tonen.
+function kiesVuNiveau(niveau) {
+    vuNiveau = niveau;
+    bouwVuLijst();
+    document.getElementById("vu-niveau-scherm").style.display = "none";
+    document.getElementById("vu-lijst-scherm").style.display = "flex";
+}
+// Lijst -> terug naar niveau-keuze
+function terugVuLijst() {
+    document.getElementById("vu-lijst-scherm").style.display = "none";
+    document.getElementById("vu-niveau-scherm").style.display = "flex";
+}
+// Bouwt de genummerde lijst rechtstreeks uit vragenData[vuBoek][vuNiveau].
+// Read-only: leest alleen; kopieert niets. Een 💡-teken markeert vragen met uitleg.
+function bouwVuLijst() {
+    const titel = document.getElementById("vu-lijst-titel");
+    if (titel) titel.textContent = `${vuBoek} – ${niveauLabels[vuNiveau]}`;
+
+    const houder = document.getElementById("vu-lijst");
+    if (!houder) return;
+    houder.innerHTML = "";
+
+    const pool = (vragenData[vuBoek] && vragenData[vuBoek][vuNiveau]) || [];
+    pool.forEach((q, i) => {
+        const rij = document.createElement("button");
+        rij.type = "button";
+        rij.className = "vu-item";
+        rij.onclick = () => openVuDetail(i);
+        const merk = q.uitleg ? ' <span class="vu-merk">💡 uitleg</span>' : "";
+        rij.innerHTML = `<span class="vu-nr">${i + 1}.</span><span class="vu-vraag">${q.vraag}</span>${merk}`;
+        houder.appendChild(rij);
+    });
+}
+// Opent de uitlegpagina voor één vraag uit de huidige lijst. Read-only: leest
+// rechtstreeks uit vragenData. Toont vraag, juist antwoord, bijbelplaats en
+// (optioneel) de uitleg.
+function openVuDetail(index) {
+    const pool = (vragenData[vuBoek] && vragenData[vuBoek][vuNiveau]) || [];
+    const q = pool[index];
+    if (!q) return;
+
+    let html = `<h3 class="naslag-kop">${q.vraag}</h3>`;
+    html += `<p class="naslag-item"><span class="naslag-term">Juiste antwoord:</span> ${q.correct}</p>`;
+    if (q.bijbelplaats) {
+        html += `<div class="bijbelplaats">Lees het na in: ${q.bijbelplaats}</div>`;
+    }
+    if (q.uitleg) {
+        html += `<div class="uitleg">${q.uitleg}</div>`;
+    } else {
+        html += `<div class="vu-geen-uitleg">Nog geen extra uitleg bij deze vraag.</div>`;
+    }
+
+    const houder = document.getElementById("vu-detail");
+    if (houder) houder.innerHTML = html;
+
+    document.getElementById("vu-lijst-scherm").style.display = "none";
+    document.getElementById("vu-detail-scherm").style.display = "flex";
+
+    // Bovenaan beginnen (anders blijft de scrollpositie van een vorige vraag staan).
+    const box = document.querySelector("#vu-detail-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
+}
+// Uitlegpagina -> terug naar de lijst
+function terugVuDetail() {
+    document.getElementById("vu-detail-scherm").style.display = "none";
+    document.getElementById("vu-lijst-scherm").style.display = "flex";
+}
+
+// =========================
 // SCHATKAMER (TROFEEËNKAMER) — config-gedreven en herbruikbaar
 // Eigen scherm dat de verdiende trofeeën van één vitrine toont. Zelfde aan/uit-
 // patroon als de andere overlays. De win-logica (trofee_<boek>) blijft
