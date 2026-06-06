@@ -1284,6 +1284,18 @@ vragenData["Marcus"].expert.push(
         antwoorden: ["Ongeveer drie uur 's middags", "Ongeveer negen uur 's ochtends", "Rond middernacht", "Bij zonsopgang"],
         correct: "Ongeveer drie uur 's middags",
         bijbelplaats: "Marcus 15:33-34"
+    },
+    {
+        vraag: "Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde hij daarmee?",
+        antwoorden: [
+            "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
+            "Dat een rijke nooit gered kan worden",
+            "Dat je eerst je bagage moet afleggen bij een klein stadspoortje",
+            "Dat alleen arme mensen in de hemel komen"
+        ],
+        correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
+        bijbelplaats: "Marcus 10:25-27",
+        uitleg: "Veel mensen horen wel eens dat het 'oog van de naald' een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als alle bagage eraf ging. Maar daar is eigenlijk geen bewijs voor: zo'n poort is nooit teruggevonden, en de oudste christelijke uitleggers kenden dit verhaal niet — het dook pas veel later op. Jezus bedoelde waarschijnlijk juist een onmogelijk beeld: een enorme kameel door een piepklein naaldgaatje. Dat kán niet, en dat is precies het punt — daarom zegt hij erachteraan: 'Bij mensen is dit onmogelijk, maar bij God is alles mogelijk.'"
     }
 );
 vragenData["Lucas"].advanced.push(
