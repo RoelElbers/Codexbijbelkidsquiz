@@ -2422,9 +2422,10 @@ function openVuDetail(index) {
         html += `<div class="bijbelplaats">Lees het na in: ${q.bijbelplaats}</div>`;
     }
     if (q.uitleg) {
-        // Splits de uitleg op lege/nieuwe regels in alinea's, zodat langere
-        // teksten met nette witregels tussen de alinea's verschijnen.
-        const alineas = q.uitleg.split(/\n+/).filter((a) => a.trim() !== "");
+        // Splits de uitleg op LEGE regels (blanco regel = nieuwe alinea), zodat
+        // langere teksten met nette witregels tussen de alinea's verschijnen.
+        // Een losse regelafbreking bínnen een alinea splitst dus niet.
+        const alineas = q.uitleg.split(/\n\s*\n/).filter((a) => a.trim() !== "");
         html += `<div class="uitleg">` + alineas.map((a) => `<p>${a}</p>`).join("") + `</div>`;
     } else {
         html += `<div class="vu-geen-uitleg">Nog geen extra uitleg bij deze vraag.</div>`;
