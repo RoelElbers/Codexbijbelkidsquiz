@@ -505,6 +505,18 @@ height: 22%;
     text-shadow: 0 0 6px rgba(255, 215, 120, 0.35);
 }
 
+/* Optionele uitleg onder de bijbelplaats: zelfde crème-gouden familie, maar iets
+   kleiner en niet-cursief zodat de bronregel de primaire regel blijft. Verschijnt
+   alleen bij vragen met een 'uitleg'-veld. */
+.uitleg {
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.4;
+    color: #f8e6b0;
+    text-shadow: 0 0 6px rgba(255, 215, 120, 0.35);
+}
+
 #score-balk {
     margin-bottom: 25px;
 
