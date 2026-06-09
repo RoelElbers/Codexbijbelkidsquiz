@@ -1423,6 +1423,47 @@ vragenData["Johannes"].expert.push(
     }
 );
 
+// === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
+// "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
+vragenData["Matteüs"].beginner.push(
+    {
+        vraag: "Jezus zei dat zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
+        antwoorden: ["zout", "suiker", "peper", "meel"],
+        correct: "zout",
+        bijbelplaats: "Matteüs 5:13"
+    },
+    {
+        vraag: "Jezus zei tegen zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
+        antwoorden: ["het licht", "het vuur", "de wind", "het water"],
+        correct: "het licht",
+        bijbelplaats: "Matteüs 5:14"
+    }
+);
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "Jezus riep zijn eerste leerlingen, die vissers waren, en zei dat ze voortaan 'vissers van ___' zouden zijn. Waarvan?",
+        antwoorden: ["mensen", "vissen", "vogels", "schapen"],
+        correct: "mensen",
+        bijbelplaats: "Matteüs 4:19"
+    }
+);
+vragenData["Johannes"].beginner.push(
+    {
+        vraag: "In de Bijbel worden de mensen die bij Jezus horen vergeleken met dieren die hun herder volgen. Met welke dieren?",
+        antwoorden: ["schapen", "geiten", "koeien", "duiven"],
+        correct: "schapen",
+        bijbelplaats: "Johannes 10:27"
+    }
+);
+vragenData["Johannes"].advanced.push(
+    {
+        vraag: "Jezus zei: 'Ik ben de wijnstok, jullie zijn de ___.' Wat zijn de gelovigen volgens dit beeld?",
+        antwoorden: ["de ranken", "de bladeren", "de wortels", "de druiven"],
+        correct: "de ranken",
+        bijbelplaats: "Johannes 15:5"
+    }
+);
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
