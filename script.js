@@ -2939,6 +2939,19 @@ function gaNaarScherm1() {
     }
     const pijlLinks = document.getElementById("nt-pijl-naar-1");
     if (pijlLinks) pijlLinks.classList.remove("onthuld");
+    // De "binnenkort"-melding weer verbergen bij het verlaten van scherm 2.
+    const melding = document.getElementById("nt2-melding");
+    if (melding) melding.classList.remove("zichtbaar");
+}
+
+// Klik op een groep-tegel van scherm 2. Voorlopig nog geen vragen erachter: we
+// tonen een rustige melding. Later opent dit de quiz/onderdelen van die groep.
+function openNtGroep(groep) {
+    const melding = document.getElementById("nt2-melding");
+    if (melding) {
+        melding.textContent = `${groep} — binnenkort speelbaar.`;
+        melding.classList.add("zichtbaar");
+    }
 }
 
 // Hulp: staat er een schermvullende overlay open (quiz, keuze, naslag, schatkamer)?

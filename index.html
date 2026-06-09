@@ -109,9 +109,9 @@
             </svg>
         </button>
 
-        <!-- Scherm 2: overige boeken van het Nieuwe Testament. Voorlopig alleen een
-             rustige placeholder-titel. Vult de hele 16:9-box, met dezelfde
-             achtergrond als scherm 1 onder een kalme donkerblauwe sluier. -->
+        <!-- Scherm 2: overige boeken van het Nieuwe Testament. Titel + vier
+             groep-tegels (nog zonder vragen erachter). Vult de hele 16:9-box, met
+             dezelfde achtergrond als scherm 1 onder een kalme donkerblauwe sluier. -->
         <div id="nt-scherm-2" aria-hidden="true">
             <button class="nt-pijl nt-pijl-links" id="nt-pijl-naar-1" type="button"
                     onclick="gaNaarScherm1()" aria-label="Terug naar de evangeliën">
@@ -119,7 +119,34 @@
                     <path d="M15 5l-7 7 7 7"/>
                 </svg>
             </button>
-            <h2 class="nt-placeholder-titel">Nieuwe Testament — overige boeken</h2>
+            <div class="nt2-inhoud">
+                <h2 class="nt-placeholder-titel">Nieuwe Testament — overige boeken</h2>
+
+                <!-- Vier groep-tegels. Voorlopig zonder eigen vragen erachter; een
+                     klik toont een rustige "binnenkort"-melding (openNtGroep). De
+                     groepsindeling is de gangbare vierdeling van het NT na de
+                     evangeliën en is makkelijk te hernoemen. -->
+                <div class="nt2-tegels">
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Handelingen')">
+                        <span class="nt2-tegel-titel">Handelingen</span>
+                        <span class="nt2-tegel-sub">De jonge kerk</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Brieven van Paulus')">
+                        <span class="nt2-tegel-titel">Brieven van Paulus</span>
+                        <span class="nt2-tegel-sub">Romeinen t/m Filemon</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Algemene brieven')">
+                        <span class="nt2-tegel-titel">Algemene brieven</span>
+                        <span class="nt2-tegel-sub">Hebreeën t/m Judas</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Openbaring')">
+                        <span class="nt2-tegel-titel">Openbaring</span>
+                        <span class="nt2-tegel-sub">De Apocalyps</span>
+                    </button>
+                </div>
+
+                <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
+            </div>
         </div>
 
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.

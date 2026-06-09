@@ -1725,11 +1725,98 @@ height: 22%;
 
 .nt-placeholder-titel {
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: 3.4rem;
+    font-size: clamp(1.8rem, 4vh, 3rem);
     color: #ffd86b;
     text-align: center;
-    padding: 0 6%;
+    margin: 0;
+    padding: 0;
     text-shadow: 0 0 14px rgba(255, 215, 120, 0.45);
+}
+
+/* Inhoud van scherm 2: titel + 2x2 tegelraster, verticaal gecentreerd. De
+   horizontale padding houdt ruimte vrij voor de randpijlen links/rechts. */
+.nt2-inhoud {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(18px, 3.2vh, 34px);
+
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 clamp(72px, 8%, 120px);
+}
+
+.nt2-tegels {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(14px, 2.4vh, 24px);
+
+    width: 100%;
+    max-width: 820px;
+}
+
+/* Groep-tegel: zelfde diepblauw/goud-stijl als de quiz-knoppen. */
+.nt2-tegel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    min-height: clamp(88px, 15vh, 150px);
+    margin: 0;
+    padding: clamp(14px, 2.4vh, 24px) 20px;
+
+    background: linear-gradient(to bottom, #2a4778, #1a3060);
+    border: 2px solid #d4a648;
+    border-radius: 10px;
+    box-shadow:
+        inset 0 1px 0 rgba(244, 199, 94, 0.4),
+        0 2px 6px rgba(0, 0, 0, 0.35);
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+    animation: none;
+}
+
+.nt2-tegel:hover {
+    background: linear-gradient(to bottom, #355688, #234074);
+    border-color: #f4c75e;
+    transform: translateY(-3px);
+    box-shadow:
+        inset 0 1px 0 rgba(244, 199, 94, 0.55),
+        0 4px 10px rgba(0, 0, 0, 0.4),
+        0 0 16px rgba(244, 199, 94, 0.35);
+}
+
+.nt2-tegel-titel {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: clamp(1.25rem, 2.3vh, 1.7rem);
+    font-weight: 700;
+    color: #f4c75e;
+    text-shadow: 0 0 10px rgba(244, 199, 94, 0.3);
+}
+
+.nt2-tegel-sub {
+    font-size: clamp(0.85rem, 1.5vh, 1rem);
+    color: rgba(243, 236, 216, 0.78);
+    font-weight: 400;
+}
+
+/* Rustige "binnenkort"-melding onder de tegels; verschijnt na een klik. */
+.nt2-melding {
+    min-height: 1.4em;
+    margin: 0;
+    font-size: clamp(1rem, 1.8vh, 1.2rem);
+    font-style: italic;
+    text-align: center;
+    color: #ffd86b;
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.nt2-melding.zichtbaar {
+    opacity: 1;
 }
 
 /* Touch-vangnet: op apparaten zonder hover blijven de pijlen zacht zichtbaar en
