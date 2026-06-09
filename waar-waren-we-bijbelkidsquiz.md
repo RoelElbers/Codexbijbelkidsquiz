@@ -19,9 +19,12 @@
 - **Fullscreen-icoon** opgeschoond: het wankele teken vervangen door een inline-SVG.
   Het "kruisje over de &" uit de vorige notitie bleek de fullscreen-knop van de
   browser te zijn — géén fout in de pagina.
-- **Schermnavigatie (nieuw):** doorgang tussen scherm 1 (Evangeliën, het startscherm)
-  en scherm 2 (`#nt-scherm-2`, voorlopig lege placeholder). Randpijlen die bij hover
-  langs de rand onthullen, touch-vangnet, en pijltjestoetsen (→ vooruit, ← terug).
+- **Schermnavigatie:** doorgang tussen scherm 1 (Evangeliën, het startscherm) en
+  scherm 2 (`#nt-scherm-2`). Randpijlen die bij hover langs de rand onthullen,
+  touch-vangnet, en pijltjestoetsen (→ vooruit, ← terug).
+- **Scherm 2 gevuld met de vier groep-tegels** (diepblauw/goud-stijl): Handelingen,
+  Brieven van Paulus, Algemene brieven, Openbaring. Nog geen vragen erachter; een
+  klik toont een rustige "binnenkort speelbaar"-melding (`openNtGroep`).
 - **Vragentelling vastgelegd** in `vragentelling-bijbelkidsquiz.md`.
 
 ## Stand vragen (zie vragentelling-bijbelkidsquiz.md)
@@ -29,10 +32,14 @@ Matteüs 57 · Marcus 47 · Lucas 46 · Johannes 51 (samen 201) + Verborgen Scha
 = **213 speelbaar**.
 
 ## Nog te doen (openstaand)
-1. **Scherm 2 vullen:** de vier groep-tegels voor de overige NT-boeken (en t.z.t. een
-   eigen prijzenkast/achtergrond). De navigatie ernaartoe staat al.
-2. **Crazy / Insane-kist bouwen** (hoort bij Startscherm 2 — brieven van Paulus). De
-   6 vragen staan klaar in `spelstructuur-bijbelkidsquiz.md`, nog niet in `script.js`.
+1. **Scherm 2 verder afmaken "zoals het hoofdscherm":**
+   - eigen achtergrond/sfeerbeeld (nu nog de startscherm-afbeelding onder een
+     donkerblauwe sluier);
+   - prijzenkast / voortgang per groep, vergelijkbaar met de evangeliën;
+   - inhoud achter de tegels (niveaus + vragenpools per groep), zodra er vragen voor
+     Handelingen/brieven/Openbaring zijn.
+2. **Crazy / Insane-kist bouwen** (hoort bij de brieven van Paulus). De 6 vragen
+   staan klaar in `spelstructuur-bijbelkidsquiz.md`, nog niet in `script.js`.
 3. **Beeld startscherm 3** (Openbaring) nog te maken.
 4. **Placeholder-sjabloon opruimen?** In `script.js` (rond regel 74) staat een
    `Placeholdervraag …`-hulpfunctie. Nagaan of die nog ergens gebruikt wordt of weg kan.
