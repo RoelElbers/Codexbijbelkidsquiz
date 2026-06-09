@@ -1,18 +1,43 @@
 # Bijbelkidsquiz — waar waren we
-*Notitie voor de volgende sessie — 7 juni 2026*
+*Notitie voor de volgende sessie — bijgewerkt 9 juni 2026*
 
 ## Klaar deze sessie (staat in de code, gecommit)
-- De **quiz toont geen uitleg meer** na het beantwoorden — voor alle vragen. Zo blijft het spel snel.
-- De **Bijbelplaats blijft wél in de quiz** staan, als seintje dat er meer te lezen is op de uitlegpagina.
-- De **Vragen & uitleg-detailpagina** toont lange uitleg nu netjes in **alinea's** (nieuwe alinea bij een lege regel).
-- De **kameel / oog-van-de-naald-uitleg** (Marcus, Expert) is vervangen door de uitgebreide, bemoedigende tekst (poort-mythe ontkracht + nadruk op Gods genade en overgave).
-- Het boekenmenu van Vragen & uitleg **scrollt** al goed.
+- **Naslag "Maten, geld & tijd":** nachtwaken-tabel én uren-tabel toegevoegd, met
+  uitleg. Eerlijke nuance: de Romeins-Joodse telling begon het 1e uur om 6.00, maar
+  de tabel volgt de gangbare bijbelcommentaren (1e uur ≈ 7.00) zodat de bekende
+  voorbeelden (3e/6e/9e uur) kloppen.
+- **Vragenbank doorgelicht en ontdubbeld** over alle vier de evangeliën: dubbele/te
+  gelijkende vragen samengevoegd of verwijderd; de talent-vraag (Matteüs) van expert
+  naar gevorderd verplaatst.
+- **Twee al verwerkte draftbestanden verwijderd** (`matteus-beginner-10-nieuwe-vragen.js`,
+  `maten-geld-tijd-vragen.js`) — stonden al in `script.js`.
+- **Nieuwe vragen:** 9 Johannes "Ik ben"-vragen + 5 beeldspraak-vragen (zout, licht,
+  vissers van mensen, ranken, schapen) in Matteüs/Johannes.
+- **Terug-knop met bevestiging tijdens elke ronde** (evangelie, schatkist, Verborgen
+  Schat): afbreken slaat niets op en reset de rondestatus volledig. Centraal in de
+  gedeelde rondelogica.
+- **Fullscreen-icoon** opgeschoond: het wankele teken vervangen door een inline-SVG.
+  Het "kruisje over de &" uit de vorige notitie bleek de fullscreen-knop van de
+  browser te zijn — géén fout in de pagina.
+- **Schermnavigatie (nieuw):** doorgang tussen scherm 1 (Evangeliën, het startscherm)
+  en scherm 2 (`#nt-scherm-2`, voorlopig lege placeholder). Randpijlen die bij hover
+  langs de rand onthullen, touch-vangnet, en pijltjestoetsen (→ vooruit, ← terug).
+- **Vragentelling vastgelegd** in `vragentelling-bijbelkidsquiz.md`.
+
+## Stand vragen (zie vragentelling-bijbelkidsquiz.md)
+Matteüs 57 · Marcus 47 · Lucas 46 · Johannes 51 (samen 201) + Verborgen Schat 12
+= **213 speelbaar**.
 
 ## Nog te doen (openstaand)
-1. **Titel "Vragen & uitleg":** er valt een klein kruisje (×) over de "&". Door Claude Code laten nakijken en goed positioneren (hoort waarschijnlijk in een hoek, niet midden over de titel).
-2. **Review Matteüs/Johannes:** nagaan of de aanpassingen uit `aanpassingen-matteus-johannes.md` al zijn doorgevoerd (3 dubbele Matteüs-Expert weghalen, 1 Matteüs-Beginner ezel weg, uitleg bij Marcus-Beginner ezel, nieuwe denarie-vraag in Johannes-Expert).
-3. **Dubbelen-scan over de 4 evangeliën:** vragen die in meerdere evangeliën voorkomen opsporen (bijv. "Wie doopte Jezus", "Hoeveel leerlingen"). Optioneel, wanneer je wilt.
+1. **Scherm 2 vullen:** de vier groep-tegels voor de overige NT-boeken (en t.z.t. een
+   eigen prijzenkast/achtergrond). De navigatie ernaartoe staat al.
+2. **Crazy / Insane-kist bouwen** (hoort bij Startscherm 2 — brieven van Paulus). De
+   6 vragen staan klaar in `spelstructuur-bijbelkidsquiz.md`, nog niet in `script.js`.
+3. **Beeld startscherm 3** (Openbaring) nog te maken.
+4. **Placeholder-sjabloon opruimen?** In `script.js` (rond regel 74) staat een
+   `Placeholdervraag …`-hulpfunctie. Nagaan of die nog ergens gebruikt wordt of weg kan.
 
 ## Voor later
 - Hardware/videomachine: specs uitzoeken als je richting video/animatie gaat.
-- Uitbreiding naar Handelingen en de rest van het Nieuwe Testament (meer boeken in het menu).
+- Uitbreiding naar Handelingen en de rest van het Nieuwe Testament (meer boeken in
+  het menu).
