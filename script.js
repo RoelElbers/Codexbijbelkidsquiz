@@ -2862,3 +2862,90 @@ updateAvatarWeergave();
 document.querySelectorAll(".avatar-keuze-btn").forEach((knop) => {
     knop.addEventListener("click", () => markeerAvatarKeuze(knop.dataset.avatar));
 });
+
+// =========================
+// SCHERMNAVIGATIE — Evangeliën (scherm 1) <-> overige NT-boeken (scherm 2)
+// Voor nu alleen de doorgang; scherm 2 is een lege placeholder. De fade en de
+// achtergrond zitten in CSS (#nt-scherm-2 / .nt-pijl).
+// =========================
+
+// 1 = de Evangeliën (startscherm), 2 = de overige NT-boeken.
+let huidigNtScherm = 1;
+
+// Hoe dicht (in px) de muis bij de zijrand moet komen voordat de pijl onthult.
+const NT_RAND_PX = 80;
+
+function gaNaarScherm2() {
+    if (huidigNtScherm === 2) return;
+    huidigNtScherm = 2;
+    const scherm2 = document.getElementById("nt-scherm-2");
+    if (scherm2) {
+        scherm2.classList.add("zichtbaar");
+        scherm2.setAttribute("aria-hidden", "false");
+    }
+    // De rechterpijl hoort bij scherm 1; tijdens de overgang verbergen.
+    const pijlRechts = document.getElementById("nt-pijl-naar-2");
+    if (pijlRechts) pijlRechts.classList.remove("onthuld");
+}
+
+function gaNaarScherm1() {
+    if (huidigNtScherm === 1) return;
+    huidigNtScherm = 1;
+    const scherm2 = document.getElementById("nt-scherm-2");
+    if (scherm2) {
+        scherm2.classList.remove("zichtbaar");
+        scherm2.setAttribute("aria-hidden", "true");
+    }
+    const pijlLinks = document.getElementById("nt-pijl-naar-1");
+    if (pijlLinks) pijlLinks.classList.remove("onthuld");
+}
+
+// Hulp: staat er een schermvullende overlay open (quiz, keuze, naslag, schatkamer)?
+// Dan mogen de pijltjestoetsen niet van hoofdscherm wisselen.
+function eenOverlayOpen() {
+    const overlays = document.querySelectorAll(".quiz-overlay, .schatkamer-overlay");
+    return Array.from(overlays).some((o) => o.style.display && o.style.display !== "none");
+}
+
+(function initSchermnavigatie() {
+    const container = document.getElementById("game-container");
+    if (!container) return;
+
+    // Muis bij de zijrand -> de bijbehorende pijl onthullen. Alleen op echte
+    // hover-apparaten; op touch staan de pijlen via de CSS-media-query al zacht
+    // zichtbaar, en daar zou mousemove maar tot geflikker leiden.
+    if (window.matchMedia("(hover: hover)").matches) {
+        container.addEventListener("mousemove", (e) => {
+            const r = container.getBoundingClientRect();
+            const pijlRechts = document.getElementById("nt-pijl-naar-2");
+            const pijlLinks = document.getElementById("nt-pijl-naar-1");
+
+            if (huidigNtScherm === 1 && pijlRechts) {
+                const bijRand = e.clientX <= r.right && (r.right - e.clientX) <= NT_RAND_PX;
+                pijlRechts.classList.toggle("onthuld", bijRand);
+            } else if (huidigNtScherm === 2 && pijlLinks) {
+                const bijRand = e.clientX >= r.left && (e.clientX - r.left) <= NT_RAND_PX;
+                pijlLinks.classList.toggle("onthuld", bijRand);
+            }
+        });
+
+        // Verlaat de muis de game-container, dan de pijlen weer verbergen.
+        container.addEventListener("mouseleave", () => {
+            const pijlRechts = document.getElementById("nt-pijl-naar-2");
+            const pijlLinks = document.getElementById("nt-pijl-naar-1");
+            if (pijlRechts) pijlRechts.classList.remove("onthuld");
+            if (pijlLinks) pijlLinks.classList.remove("onthuld");
+        });
+    }
+
+    // Toetsenbord: -> vooruit op scherm 1, <- terug op scherm 2. Niet als er in een
+    // tekstveld wordt getypt of als er een overlay open staat.
+    document.addEventListener("keydown", (e) => {
+        if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        const tag = (e.target.tagName || "").toLowerCase();
+        if (tag === "input" || tag === "textarea") return;
+        if (eenOverlayOpen()) return;
+        if (e.key === "ArrowRight" && huidigNtScherm === 1) gaNaarScherm2();
+        else if (e.key === "ArrowLeft" && huidigNtScherm === 2) gaNaarScherm1();
+    });
+})();

@@ -94,6 +94,34 @@
              Zelfde patroon als .bijbeltraining-zone. -->
         <div class="instellingen-zone" onclick="openInstellingen()"></div>
 
+        <!-- ===== Schermnavigatie: Evangeliën (scherm 1, dit startscherm) <->
+             overige NT-boeken (scherm 2). Beide randpijlen én scherm 2 zitten
+             BINNEN #game-container, zodat ze met de 16:9-box meeschalen en de
+             gevoelige rand altijd op de juiste plek ligt. ===== -->
+
+        <!-- Randpijl rechts (hoort bij scherm 1): standaard onzichtbaar én niet-
+             klikbaar; JS onthult 'm zodra de muis binnen ~80px van de rechterrand
+             komt. Klik -> scherm 2. -->
+        <button class="nt-pijl nt-pijl-rechts" id="nt-pijl-naar-2" type="button"
+                onclick="gaNaarScherm2()" aria-label="Naar de overige boeken van het Nieuwe Testament">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+
+        <!-- Scherm 2: overige boeken van het Nieuwe Testament. Voorlopig alleen een
+             rustige placeholder-titel. Vult de hele 16:9-box, met dezelfde
+             achtergrond als scherm 1 onder een kalme donkerblauwe sluier. -->
+        <div id="nt-scherm-2" aria-hidden="true">
+            <button class="nt-pijl nt-pijl-links" id="nt-pijl-naar-1" type="button"
+                    onclick="gaNaarScherm1()" aria-label="Terug naar de evangeliën">
+                <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 5l-7 7 7 7"/>
+                </svg>
+            </button>
+            <h2 class="nt-placeholder-titel">Nieuwe Testament — overige boeken</h2>
+        </div>
+
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
              Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
              als de andere overlays. Pas op "Start" worden de schildpunten gewist
