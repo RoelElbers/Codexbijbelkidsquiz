@@ -12,7 +12,11 @@
 
     <div id="game-container">
 
-        <button id="fullscreen-btn" class="fullscreen-button">⛶</button>
+        <button id="fullscreen-btn" class="fullscreen-button" aria-label="Volledig scherm" title="Volledig scherm">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/>
+            </svg>
+        </button>
 
         <!-- Avatar-frame linksboven: één doorzichtige plaat (avatarframe.png)
              met de ronde gouden lijst plus het brede naamvak rechts en het
@@ -159,6 +163,23 @@
         <!-- Alleen zichtbaar in de oefenmodus: stoppen en terug naar het start-
              scherm. Staat buiten .quiz-box zodat hij niet meescrollt. -->
         <button id="oefen-stop-knop" class="oefen-stop" style="display: none;" onclick="terugNaarStartscherm()">← Terug</button>
+
+        <!-- Zichtbaar tijdens elke meetellende ronde (evangelie, schatkist,
+             Verborgen Schat): stopt de ronde na een bevestiging. Staat buiten
+             .quiz-box zodat hij niet meescrollt en het herschrijven van de
+             quiz-box overleeft. -->
+        <button id="ronde-stop-knop" class="ronde-stop" style="display: none;" onclick="vraagRondeStoppen()" aria-label="Stop deze ronde">← Terug</button>
+        </div>
+
+        <!-- Bevestiging bij het stoppen van een ronde. Eigen overlay bovenop de
+             quiz; staat ná #quiz-scherm in de DOM zodat hij erboven verschijnt. -->
+        <div id="ronde-stop-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Stoppen?</h2>
+                <p class="quiz-question">Wil je stoppen met deze ronde? Je voortgang van deze ronde gaat verloren.</p>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="bevestigRondeStoppen()">Stoppen</button>
+                <button class="answer-btn niveau-terug" onclick="annuleerRondeStoppen()">Doorgaan</button>
+            </div>
         </div>
 
         <!-- Bijbeltraining-kruispunt: twee keuzes (Oefenen / Naslag & uitleg).
@@ -375,8 +396,53 @@
                 <p class="naslag-item"><span class="naslag-term">Metreet</span> — een grote inhoudsmaat van ongeveer 39 liter. De stenen kruiken op de bruiloft in Kana hielden er elk twee of drie van — dus zo'n 80 tot 120 liter per kruik.</p>
 
                 <h3 class="naslag-kop">Tijd</h3>
-                <p class="naslag-item"><span class="naslag-term">Uren</span> — in de Bijbel begon de dag bij zonsopgang, rond zes uur 's ochtends, en werd het daglicht verdeeld in twaalf uren tot zonsondergang. Het "derde uur" is dus ongeveer negen uur 's ochtends, het "zesde uur" rond het middaguur, en het "negende uur" ongeveer drie uur 's middags. Bijzonder: die uren waren niet altijd even lang als die van ons. Omdat de dag altijd in twaalf stukken werd verdeeld, was een uur in de zomer (veel daglicht) langer dan in de winter.</p>
-                <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends: de avond, middernacht, het hanengekraai en de vroege ochtend. In het Oude Testament kende men er nog maar drie, van zo'n vier uur. Wachters losten elkaar per wacht af — vandaar de naam.</p>
+                <p class="naslag-item"><span class="naslag-term">Uren</span> — de tijdsaanduidingen in de Bijbel werken anders dan onze moderne klok. In de tijd van Jezus begon de dag bij zonsopgang, ongeveer om 6.00 uur. De tijd tot zonsondergang werd in twaalf uren verdeeld. De tabel laat zien rond welk tijdstip op onze klok elk Bijbels uur ongeveer uitkomt.</p>
+                <table class="naslag-tabel">
+                    <tr><th>Bijbels uur</th><th>Onze tijd (ongeveer)</th></tr>
+                    <tr><td>1e uur</td><td>07.00</td></tr>
+                    <tr><td>2e uur</td><td>08.00</td></tr>
+                    <tr><td>3e uur</td><td>09.00</td></tr>
+                    <tr><td>4e uur</td><td>10.00</td></tr>
+                    <tr><td>5e uur</td><td>11.00</td></tr>
+                    <tr><td>6e uur</td><td>12.00</td></tr>
+                    <tr><td>7e uur</td><td>13.00</td></tr>
+                    <tr><td>8e uur</td><td>14.00</td></tr>
+                    <tr><td>9e uur</td><td>15.00</td></tr>
+                    <tr><td>10e uur</td><td>16.00</td></tr>
+                    <tr><td>11e uur</td><td>17.00</td></tr>
+                    <tr><td>12e uur</td><td>18.00 (zonsondergang)</td></tr>
+                </table>
+                <p class="naslag-noot">Goed om te weten: bij de Romeinen en de Joden begon het eerste uur eigenlijk al bij zonsopgang, rond 6.00 uur. In de meeste bijbelcommentaren wordt het eerste uur echter rond 7.00 uur gerekend. Wij volgen hier die gangbare indeling — zo blijven de bekende voorbeelden hieronder (zoals het negende uur rond 15.00 uur) goed kloppen.</p>
+                <p class="naslag-item"><span class="naslag-term">Bekende voorbeelden</span></p>
+                <p class="naslag-item"><span class="naslag-term">Het derde uur</span> → ongeveer 9.00 uur. Bij Pinksteren zei Petrus: "Het is pas het derde uur van de dag" (Handelingen 2:15).</p>
+                <p class="naslag-item"><span class="naslag-term">Het zesde uur</span> → ongeveer 12.00 uur. Rond het middaguur sprak Jezus bij de put met de Samaritaanse vrouw (Johannes 4:6).</p>
+                <p class="naslag-item"><span class="naslag-term">Het negende uur</span> → ongeveer 15.00 uur. Rond dit uur stierf Jezus aan het kruis (Matteüs 27:46-50). Het was ook een vast uur van gebed: Petrus en Johannes gingen toen naar de tempel (Handelingen 3:1).</p>
+                <p class="naslag-item"><span class="naslag-term">Zomer en winter: niet elk uur even lang</span></p>
+                <p class="naslag-item">Er zit behoorlijk wat verschil tussen zomer en winter. Israël ligt ongeveer op dezelfde breedtegraad als Zuid-Spanje en Noord-Afrika. Daardoor zijn de verschillen kleiner dan in Nederland, maar nog steeds duidelijk merkbaar. Voor Jeruzalem gelden ongeveer deze tijden:</p>
+                <table class="naslag-tabel">
+                    <tr><th>Periode</th><th>Zonsopgang</th><th>Zonsondergang</th></tr>
+                    <tr><td>Winter (± 21 dec)</td><td>± 06.35</td><td>± 16.40</td></tr>
+                    <tr><td>Lente (± 21 mrt)</td><td>± 05.45</td><td>± 17.55</td></tr>
+                    <tr><td>Zomer (± 21 jun)</td><td>± 05.30</td><td>± 19.45</td></tr>
+                    <tr><td>Herfst (± 21 sep)</td><td>± 06.20</td><td>± 18.20</td></tr>
+                </table>
+                <p class="naslag-item">De daglengte varieert dus van ongeveer 10 uur in de winter tot ruim 14 uur in de zomer. En omdat men die daglengte altijd in twaalf gelijke delen verdeelde, duurde één "uur" in de winter ongeveer 50 minuten en in de zomer ongeveer 70 minuten. Daarom viel bijvoorbeeld het "negende uur" niet altijd precies op 15.00 uur volgens onze klok, maar ergens midden tot laat in de middag.</p>
+                <p class="naslag-item"><span class="naslag-term">Voorbeeld: het negende uur</span></p>
+                <table class="naslag-tabel">
+                    <tr><th></th><th>Winter (dag ± 10 uur)</th><th>Zomer (dag ± 14 uur)</th></tr>
+                    <tr><td>Zonsopgang</td><td>06.35</td><td>05.30</td></tr>
+                    <tr><td>Eén Bijbels uur</td><td>± 50 min</td><td>± 70 min</td></tr>
+                    <tr><td>Negende uur</td><td>± 14.05</td><td>± 15.55</td></tr>
+                </table>
+                <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends. Wachters losten elkaar per wacht af — vandaar de naam.</p>
+                <table class="naslag-tabel">
+                    <tr><th>Nachtwaak</th><th>Tijd</th></tr>
+                    <tr><td>1e</td><td>18.00 – 21.00 uur</td></tr>
+                    <tr><td>2e</td><td>21.00 – 24.00 uur</td></tr>
+                    <tr><td>3e</td><td>24.00 – 3.00 uur</td></tr>
+                    <tr><td>4e</td><td>3.00 – 6.00 uur</td></tr>
+                </table>
+                <p class="naslag-item">De vierde nachtwaak is op het einde van de nacht, vlak voor zonsopgang. Toen Jezus over het water naar de leerlingen liep, was het de vierde nachtwaak (Matteüs 14:25): het moet dus na 3.00 uur zijn geweest, ergens tot aan zonsopgang. In het Oude Testament kende men er nog maar drie, van zo'n vier uur.</p>
 
                 <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
             </div>

@@ -151,6 +151,10 @@ button:hover {
     font-size: 26px;
 
     padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 :fullscreen .fullscreen-button {
@@ -1123,6 +1127,28 @@ height: 22%;
     cursor: pointer;
 }
 
+/* Terug-knop tijdens een meetellende ronde. Zelfde look en plek als de oefen-
+   stopknop (goud op donkerblauw, linksboven), maar bewust niet groter — zodat
+   kinderen er niet per ongeluk op tikken. Hij vraagt eerst een bevestiging,
+   omdat hier wél voortgang verloren kan gaan. */
+.ronde-stop {
+    position: absolute;
+    top: 22px;
+    left: 22px;
+    z-index: 10;
+
+    padding: 10px 20px;
+    border-radius: 12px;
+
+    background: rgba(10, 20, 55, 0.9);
+    color: #ffd86b;
+    border: 2px solid rgba(255, 215, 120, 0.5);
+
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 /* Het tekstvak van de leesschermen (Maten, geld & tijd en Woordenboek): breder,
    links uitgelijnd, en — cruciaal — begrensd in hoogte met interne scroll. Zo
    blijft het vak binnen het scherm en is de hele lange tekst bereikbaar, ook al
@@ -1270,6 +1296,30 @@ height: 22%;
     color: rgba(243, 236, 216, 0.75);
     font-size: 1.05rem;
     margin: 0 0 14px;
+}
+
+/* Klein, rustig tabelletje binnen een naslagpagina (bv. de nachtwaken) —
+   overzichtelijker dan dezelfde rijtjes in een lopende zin. */
+.naslag-tabel {
+    border-collapse: collapse;
+    margin: 4px 0 16px;
+    font-size: 1.2rem;
+    color: #f3ecd8;
+}
+.naslag-tabel th,
+.naslag-tabel td {
+    text-align: left;
+    padding: 7px 26px 7px 0;
+    border-bottom: 1px solid rgba(255, 215, 120, 0.22);
+}
+.naslag-tabel th {
+    color: #ffd86b;
+    font-weight: bold;
+}
+.naslag-tabel td:first-child {
+    color: #ffd86b;
+    font-weight: bold;
+    white-space: nowrap;
 }
 
 /* =========================

@@ -276,9 +276,18 @@ const vragenData = {
             },
             {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
-                antwoorden: ["Bij zonsondergang", "Rond middernacht", "Tijdens de vierde nachtwaak (tegen de ochtend)", "Bij het eerste hanengekraai"],
-                correct: "Tijdens de vierde nachtwaak (tegen de ochtend)",
-                bijbelplaats: "Matteüs 14:25"
+                antwoorden: ["Bij zonsondergang", "Rond middernacht", "Tijdens de vierde nachtwaak (op het einde van de nacht)", "Bij het eerste hanengekraai"],
+                correct: "Tijdens de vierde nachtwaak (op het einde van de nacht)",
+                bijbelplaats: "Matteüs 14:25",
+                uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken' van elk ongeveer drie uur. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
+
+De vier nachtwaken waren:
+1e nachtwaak: 18.00 – 21.00 uur
+2e nachtwaak: 21.00 – 24.00 uur
+3e nachtwaak: 24.00 – 3.00 uur
+4e nachtwaak: 3.00 – 6.00 uur
+
+Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het einde van de nacht, vlak voordat het licht werd. We weten niet het precieze uur — het moet na 3.00 uur zijn geweest, ergens tot aan zonsopgang.`
             },
             {
                 vraag: "Welke lengtemaat gebruikt Jezus in de Bergrede, als hij zegt dat niemand door bezorgdheid iets aan zijn leven kan toevoegen?",
@@ -297,12 +306,6 @@ const vragenData = {
                 antwoorden: ["Ongeveer 10 daglonen", "Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon"],
                 correct: "Ongeveer 6000 daglonen",
                 bijbelplaats: "Matteüs 25:15"
-            },
-            {
-                vraag: "Een 'el' was een oude lengtemaat. Waarop was die gebaseerd?",
-                antwoorden: ["De lengte van een onderarm, ongeveer 45 cm", "De lengte van een voet", "De lengte van een stap", "De hoogte van een man"],
-                correct: "De lengte van een onderarm, ongeveer 45 cm",
-                bijbelplaats: "Matteüs 6:27"
             },
             {
                 vraag: "In de gelijkenis van het zuurdesem mengt een vrouw zuurdesem door 'drie maten' (sata) meel. Wat valt op aan die hoeveelheid?",
@@ -506,27 +509,15 @@ const vragenData = {
                 bijbelplaats: "Marcus 12:15-16"
             },
             {
-                vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe werden die kleinste munten genoemd?",
-                antwoorden: ["Denarie", "Talenten", "Penningen (lepta)", "Ponden"],
-                correct: "Penningen (lepta)",
+                vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten ze, en hoeveel stelden ze samen voor?",
+                antwoorden: ["Penningen (lepta) — samen bijna niets, een fractie van een dagloon", "Denarie — samen ongeveer een dagloon", "Talenten — samen een klein vermogen", "Ponden — samen ongeveer honderd daglonen"],
+                correct: "Penningen (lepta) — samen bijna niets, een fractie van een dagloon",
                 bijbelplaats: "Marcus 12:42"
             },
             {
-                vraag: "Jezus roept op tot waakzaamheid en noemt vier momenten: 's avonds laat, middernacht, hanengekraai en 's morgens vroeg. In hoeveel van zulke 'nachtwaken' was de nacht verdeeld?",
-                antwoorden: ["Twee", "Drie", "Vier", "Zes"],
-                correct: "Vier",
-                bijbelplaats: "Marcus 13:35"
-            },
-            {
-                vraag: "De arme weduwe gaf twee penningen (lepta), de allerkleinste muntjes. Hoeveel waren die ongeveer waard?",
-                antwoorden: ["Bijna niets, een heel klein deel van een dagloon", "Ongeveer een dagloon", "Ongeveer tien daglonen", "Ongeveer honderd daglonen"],
-                correct: "Bijna niets, een heel klein deel van een dagloon",
-                bijbelplaats: "Marcus 12:42"
-            },
-            {
-                vraag: "De Romeinen verdeelden de nacht in vier 'nachtwaken'. Ongeveer hoe lang duurde één nachtwaak?",
-                antwoorden: ["Ongeveer 1 uur", "Ongeveer 3 uur", "Ongeveer 6 uur", "De hele nacht"],
-                correct: "Ongeveer 3 uur",
+                vraag: "De Romeinen verdeelden de nacht in 'nachtwaken'. In hoeveel wachten, en hoe lang duurde elk ongeveer?",
+                antwoorden: ["Vier wachten van elk ongeveer drie uur", "Drie wachten van elk ongeveer vier uur", "Twee wachten van elk ongeveer zes uur", "Zes wachten van elk ongeveer twee uur"],
+                correct: "Vier wachten van elk ongeveer drie uur",
                 bijbelplaats: "Marcus 13:35"
             }
         ]
@@ -971,12 +962,6 @@ const vragenData = {
 // (10 uit de pool) pakt dat vanzelf op.
 vragenData["Matteüs"].advanced.push(
     {
-        vraag: "Voordat Matteüs leerling van Jezus werd, had hij een beroep waar veel mensen op neerkeken. Wat was hij?",
-        antwoorden: ["Tollenaar (belastingontvanger voor de Romeinen)", "Schriftgeleerde", "Visser", "Soldaat"],
-        correct: "Tollenaar (belastingontvanger voor de Romeinen)",
-        bijbelplaats: "Matteüs 9:9"
-    },
-    {
         vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
         antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
         correct: "De Bergrede",
@@ -993,12 +978,6 @@ vragenData["Matteüs"].advanced.push(
         antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een tempelpriester"],
         correct: "Iemand die niet bij het Joodse volk hoorde",
         bijbelplaats: "Matteüs 8 (de Romeinse hoofdman)"
-    },
-    {
-        vraag: 'In Jezus\' tijd betaalde je met een muntje dat een "denarie" heette. Hoeveel was één denarie ongeveer waard?',
-        antwoorden: ["Ongeveer een dagloon", "Ongeveer een maandloon", "Bijna niets, een fooi", "Genoeg om een huis te kopen"],
-        correct: "Ongeveer een dagloon",
-        bijbelplaats: "Matteüs 20:2"
     }
 );
 vragenData["Matteüs"].expert.push(
@@ -1104,12 +1083,6 @@ vragenData["Lucas"].advanced.push(
     }
 );
 vragenData["Lucas"].expert.push(
-    {
-        vraag: "In een beroemde gelijkenis verbrast een jongen al het geld van zijn vader, maar als hij berouwvol terugkomt, ontvangt zijn vader hem met open armen. Hoe heet die gelijkenis?",
-        antwoorden: ["De verloren zoon", "De barmhartige Samaritaan", "De rijke dwaas", "Het verloren schaap"],
-        correct: "De verloren zoon",
-        bijbelplaats: "Lucas 15:11-32"
-    },
     {
         vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
         antwoorden: ["Het nieuwe verbond", "De grote belofte", "De heilige wet", "Het laatste gebod"],
@@ -1224,12 +1197,6 @@ vragenData["Matteüs"].beginner.push(
 // blijft ongemoeid; de niveaus worden alleen groter.
 vragenData["Matteüs"].advanced.push(
     {
-        vraag: "Een denarie was het loon voor hoeveel werk?",
-        antwoorden: ["Eén hele dag werken", "Eén uur werken", "Eén week werken", "Eén maand werken"],
-        correct: "Eén hele dag werken",
-        bijbelplaats: "Matteüs 20:1-16 (de arbeiders in de wijngaard)"
-    },
-    {
         vraag: 'Een "el" is ongeveer zo lang als…',
         antwoorden: ["De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)", "Je voet", "Je hand", "Een grote stap"],
         correct: "De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)",
@@ -1248,7 +1215,7 @@ vragenData["Matteüs"].advanced.push(
         bijbelplaats: "Matteüs 5:15"
     }
 );
-vragenData["Matteüs"].expert.push(
+vragenData["Matteüs"].advanced.push(
     {
         vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
         antwoorden: ["Vijftien tot twintig jaar", "Honderd dagen", "Ongeveer een jaar", "Een paar maanden"],
@@ -1312,22 +1279,6 @@ vragenData["Lucas"].advanced.push(
         bijbelplaats: "Lucas 21:1-4"
     }
 );
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Emmaüs lag ongeveer zestig stadiën van Jeruzalem. Hoeveel kilometer is dat ongeveer?",
-        antwoorden: ["Bijna elf kilometer", "Ongeveer 2 kilometer", "Ongeveer 50 kilometer", "Ongeveer 100 kilometer"],
-        correct: "Bijna elf kilometer",
-        bijbelplaats: "Lucas 24:13 (de Emmaüsgangers)"
-    }
-);
-vragenData["Johannes"].beginner.push(
-    {
-        vraag: "Waar veranderde Jezus op de bruiloft in Kana het water in wijn?",
-        antwoorden: ["In grote stenen kruiken", "In een beker", "In een put", "In leren zakken"],
-        correct: "In grote stenen kruiken",
-        bijbelplaats: "Johannes 2:1-11"
-    }
-);
 vragenData["Johannes"].expert.push(
     {
         vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
@@ -1350,6 +1301,128 @@ vragenData["Johannes"].expert.push(
     }
 );
 
+// --- Uren van de dag: drie bekende momenten ---------------------------------
+// Horen bij de naslagtabel "Maten, geld & tijd". Elk bij het bijbelboek van de
+// gebeurtenis; het Pinkstervoorbeeld staat onder Lucas, omdat Lucas ook
+// Handelingen schreef.
+vragenData["Lucas"].expert.push(
+    {
+        vraag: 'Op het Pinksterfeest dachten spotters dat de leerlingen dronken waren. Petrus zei: dat kan niet, "het is pas het derde uur van de dag". Waarom was dat een goed weerwoord?',
+        antwoorden: [
+            "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
+            "Het was midden in de nacht en iedereen sliep",
+            "Op het derde uur mocht je geen wijn drinken",
+            "Het was al avond en alle wijn was op"
+        ],
+        correct: "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
+        bijbelplaats: "Handelingen 2:15",
+        uitleg: "De dag begon bij zonsopgang. Het 'derde uur' is dan ongeveer negen uur 's ochtends — veel te vroeg op de dag om dronken te zijn. Wat de mensen zagen, kwam niet door de wijn, maar door de heilige Geest."
+    }
+);
+vragenData["Johannes"].expert.push(
+    {
+        vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
+        antwoorden: [
+            "Rond het middaguur (ongeveer 12 uur)",
+            "Negen uur 's ochtends",
+            "Drie uur 's middags",
+            "Bij zonsondergang"
+        ],
+        correct: "Rond het middaguur (ongeveer 12 uur)",
+        bijbelplaats: "Johannes 4:6",
+        uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Een ongewone tijd om water te halen, en Jezus was moe van de reis."
+    }
+);
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: 'Op het "negende uur" gebeurde er iets belangrijks bij het kruis. Wat was dat uur ongeveer, en wat hoorde er nog meer bij?',
+        antwoorden: [
+            "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
+            "Ongeveer negen uur 's ochtends — het begin van de werkdag",
+            "Rond middernacht — het uur van de nachtwacht",
+            "Bij zonsopgang — het uur van het ochtendoffer"
+        ],
+        correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
+        bijbelplaats: "Matteüs 27:46-50",
+        uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: even verderop lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
+    }
+);
+
+// === Johannes — de "Ik ben"-uitspraken (9 extra vragen) =====================
+// Het juiste antwoord staat in 'correct' op tekstinhoud; de antwoordvolgorde
+// wordt bij het trekken gehusseld (husselArray in kiesNiveau), dus de positie
+// in de array doet er niet toe.
+vragenData["Johannes"].beginner.push(
+    {
+        vraag: "Jezus zei: 'Ik ben de weg, de waarheid en het ___.' Welk woord hoort op de open plek?",
+        antwoorden: ["het leven", "het licht", "de liefde", "de vrede"],
+        correct: "het leven",
+        bijbelplaats: "Johannes 14:6"
+    },
+    {
+        vraag: "Jezus noemde zichzelf 'de goede ___'. Hoe noemde Hij zich?",
+        antwoorden: ["herder", "koning", "leraar", "visser"],
+        correct: "herder",
+        bijbelplaats: "Johannes 10:11"
+    },
+    {
+        vraag: "Jezus zei: 'Ik ben het licht van de ___.' Wat zei Hij?",
+        antwoorden: ["wereld", "hemel", "nacht", "zon"],
+        correct: "wereld",
+        bijbelplaats: "Johannes 8:12"
+    }
+);
+vragenData["Johannes"].advanced.push(
+    {
+        vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat Híj de manier is om naar binnen te gaan. Hoe noemde Jezus zichzelf in dit beeld?",
+        antwoorden: ["de deur", "de muur", "het dak", "het raam"],
+        correct: "de deur",
+        bijbelplaats: "Johannes 10:7-9"
+    },
+    {
+        vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant?",
+        antwoorden: ["wijnstok", "olijfboom", "vijgenboom", "palmboom"],
+        correct: "wijnstok",
+        bijbelplaats: "Johannes 15:1"
+    },
+    {
+        vraag: "Jezus zei: 'Ik ben het ___ dat leven geeft.' Welk woord hoort hier?",
+        antwoorden: ["brood", "water", "wijn", "vis"],
+        correct: "brood",
+        bijbelplaats: "Johannes 6:35"
+    }
+);
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Jezus zei: 'Ik ben de opstanding en het leven.' Hij zei dit vlak voordat Hij een groot wonder deed. Wat deed Hij?",
+        antwoorden: [
+            "Hij wekte Lazarus op uit de dood",
+            "Hij liep over het water",
+            "Hij veranderde water in wijn",
+            "Hij gaf een blinde man zijn ogen terug"
+        ],
+        correct: "Hij wekte Lazarus op uit de dood",
+        bijbelplaats: "Johannes 11:25, 43-44"
+    },
+    {
+        vraag: "Jezus zei iets bijzonders over zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
+        antwoorden: ["Abraham", "Mozes", "David", "Noach"],
+        correct: "Abraham",
+        bijbelplaats: "Johannes 8:58"
+    },
+    {
+        vraag: "Jezus zei: 'Ik ben de goede herder.' Wat doet de goede herder volgens Hem voor zijn schapen?",
+        antwoorden: [
+            "Hij geeft zijn leven voor de schapen",
+            "Hij verkoopt ze",
+            "Hij laat ze alleen",
+            "Hij telt ze elke dag"
+        ],
+        correct: "Hij geeft zijn leven voor de schapen",
+        bijbelplaats: "Johannes 10:11"
+    }
+);
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -1362,6 +1435,15 @@ let oefenModus = false;
 
 // De actieve vragenset (wordt gevuld zodra een niveau is gekozen)
 let vragen = [];
+
+// Id van de lopende "ga naar de volgende vraag"-timer (de 2,5s feedbackpauze na
+// een antwoord in een meetellende ronde). Bewaard zodat we hem kunnen stoppen
+// bij het afbreken van een ronde. null = geen timer actief.
+let volgendeTimer = null;
+
+// Onthoudt of er net een antwoord was gegeven toen de speler het stop-venster
+// opende; zo kunnen we bij "Doorgaan" de onderbroken doorloop hervatten.
+let rondeStopPendingAdvance = false;
 
 // XP is een momentscore per ronde van 10 vragen: begint op 0, loopt op met
 // +100 per goed antwoord tot maximaal 1000. Wordt bewust NIET bewaard tussen
@@ -2121,6 +2203,12 @@ function laadVraag() {
     const stopKnop = document.getElementById("oefen-stop-knop");
     if (stopKnop) stopKnop.style.display = oefenModus ? "block" : "none";
 
+    // Terug-knop voor een meetellende ronde: zichtbaar in elke gewone ronde
+    // (evangelie, schatkist, Verborgen Schat), verborgen in de oefenmodus —
+    // die heeft hierboven al zijn eigen, directe stopknop.
+    const rondeStopKnop = document.getElementById("ronde-stop-knop");
+    if (rondeStopKnop) rondeStopKnop.style.display = oefenModus ? "none" : "block";
+
     // Reset visuele feedback en klikbaarheid van het vorige antwoord
     [antwoord1, antwoord2, antwoord3, antwoord4].forEach((knop) => {
         knop.classList.remove("answer-correct", "answer-wrong");
@@ -2199,11 +2287,12 @@ function checkAntwoord(antwoord) {
         volgendeKnop.onclick = gaNaarVolgende;
         resultaat.appendChild(volgendeKnop);
     } else {
-        setTimeout(gaNaarVolgende, 2500);
+        volgendeTimer = setTimeout(gaNaarVolgende, 2500);
     }
 }
 
 function gaNaarVolgende() {
+    volgendeTimer = null;
     huidigeVraag++;
     if (huidigeVraag < vragen.length) {
         laadVraag();
@@ -2215,6 +2304,18 @@ function gaNaarVolgende() {
 function terugNaarStartscherm() {
     document.getElementById("quiz-scherm").style.display = "none";
     document.getElementById("niveau-scherm").style.display = "none";
+
+    // Centrale opruiming van de rondestatus: een eventueel lopende feedback-timer
+    // stoppen en de ronde-Terug-knop + het stop-bevestigingsvenster verbergen. Zo
+    // loopt een afgebroken ronde niet alsnog door en begint een volgende ronde
+    // gegarandeerd schoon. Geldt voor álle rondes, want elke ronde eindigt hier.
+    clearTimeout(volgendeTimer);
+    volgendeTimer = null;
+    rondeStopPendingAdvance = false;
+    const rondeStopKnop = document.getElementById("ronde-stop-knop");
+    if (rondeStopKnop) rondeStopKnop.style.display = "none";
+    const rondeStopScherm = document.getElementById("ronde-stop-scherm");
+    if (rondeStopScherm) rondeStopScherm.style.display = "none";
 
     // eindScherm() heeft de quiz-box leeggeschreven met een eindbericht; zet de
     // originele structuur (titel, score-balk, vraag, antwoordknoppen, resultaat)
@@ -2254,6 +2355,45 @@ function terugNaarStartscherm() {
     // Verborgen schat verversen: net een kist verdiend in deze ronde kan de
     // diamanten kist onthullen zodra alle drie behaald zijn.
     werkVerborgenSchatBij();
+}
+
+// --- Ronde stoppen (met bevestiging) ----------------------------------------
+// Tijdens elke meetellende ronde (evangelie, schatkist, Verborgen Schat) kan de
+// speler met de Terug-knop linksboven stoppen. Eerst een korte bevestiging; pas
+// bij "Stoppen" gaat de ronde verloren. Werkt voor álle rondes tegelijk, omdat
+// het op de gedeelde quiz-machinerie aanhaakt en niet per evangelieboek bestaat.
+function vraagRondeStoppen() {
+    // Pauzeer een eventueel lopende "ga naar volgende"-timer, zodat de ronde niet
+    // achter het bevestigingsvenster doorloopt (en bijv. ongemerkt het eindscherm
+    // met beloning bereikt) terwijl de speler nog nadenkt.
+    if (volgendeTimer !== null) {
+        clearTimeout(volgendeTimer);
+        volgendeTimer = null;
+        rondeStopPendingAdvance = true;
+    }
+    const scherm = document.getElementById("ronde-stop-scherm");
+    if (scherm) scherm.style.display = "flex";
+}
+
+function annuleerRondeStoppen() {
+    // "Doorgaan": het venster sluiten en de ronde gewoon laten doorlopen. Was er
+    // net geantwoord (timer gepauzeerd), dan hervatten we de onderbroken doorloop.
+    const scherm = document.getElementById("ronde-stop-scherm");
+    if (scherm) scherm.style.display = "none";
+    if (rondeStopPendingAdvance) {
+        rondeStopPendingAdvance = false;
+        gaNaarVolgende();
+    }
+}
+
+function bevestigRondeStoppen() {
+    // "Stoppen": de ronde afbreken. terugNaarStartscherm() wist de timer, verbergt
+    // de knop en reset de volledige rondestatus. Er wordt bewust géén eindScherm()
+    // aangeroepen, dus geen XP/trofee/schatkist/Verborgen-Schat-unlock opgeslagen.
+    rondeStopPendingAdvance = false;
+    const scherm = document.getElementById("ronde-stop-scherm");
+    if (scherm) scherm.style.display = "none";
+    terugNaarStartscherm();
 }
 
 // --- Bijbeltraining ---------------------------------------------------------
@@ -2570,6 +2710,11 @@ function werkGeluidKnopBij() {
 }
 
 function eindScherm() {
+    // De ronde is afgelopen: de Terug-knop van de ronde verdwijnt. Het eindscherm
+    // heeft hieronder zijn eigen knop terug naar het startscherm.
+    const rondeStopKnop = document.getElementById("ronde-stop-knop");
+    if (rondeStopKnop) rondeStopKnop.style.display = "none";
+
     if (oefenModus) {
         const stopKnop = document.getElementById("oefen-stop-knop");
         if (stopKnop) stopKnop.style.display = "none";
