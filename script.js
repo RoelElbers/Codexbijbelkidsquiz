@@ -2629,6 +2629,143 @@ function terugVuDetail() {
 }
 
 // =========================
+// CATECHESE — data-gedreven uitleg-artikelen, los van de quiz.
+// Navigatie als "Vragen & uitleg": categorie -> artikel-lijst -> artikel-detail.
+// Categorieën en artikelen staan in config-arrays; inhoud toevoegen of hernoemen
+// kan dus zonder de layout aan te raken. Elk artikel heeft een 'id', zodat er
+// later vanuit de uitleg-bij-een-vraag naartoe gelinkt kan worden.
+// =========================
+
+// Categorieën — vrij aan te passen / te hernoemen / uit te breiden.
+const catecheseCategorieen = [
+    "Wie is God?",
+    "Wie is Jezus?",
+    "De Heilige Geest",
+    "De Bijbel",
+    "Het gebed",
+    "De christelijke feesten"
+];
+
+// Artikelen — elk hoort via 'categorie' bij precies één categorie hierboven (let
+// op de exacte schrijfwijze). 'tekst' mag meerdere alinea's bevatten, gescheiden
+// door een LEGE regel. 'id' is de sleutel voor latere "Meer hierover ->"-links.
+const catecheseArtikelen = [
+    {
+        id: "wie-is-god-drie-eenheid",
+        categorie: "Wie is God?",
+        titel: "Eén God, die zich laat kennen als Vader, Zoon en Geest",
+        tekst: `PLACEHOLDER — vervang deze tekst later door het echte artikel.
+
+Hier komt een rustige, kindvriendelijke uitleg over wie God is. Je mag zoveel
+alinea's gebruiken als je wilt: laat tussen twee alinea's een lege regel staan,
+dan verschijnt er netjes witruimte ertussen.
+
+Dit derde stukje is er vooral om het scrollen te kunnen testen. Vul gerust meer
+tekst in totdat het vak moet scrollen, zodat je ziet dat dat goed werkt.`
+    },
+    {
+        id: "wie-is-jezus-waar-god-mens",
+        categorie: "Wie is Jezus?",
+        titel: "Jezus: echt God en echt mens",
+        tekst: `PLACEHOLDER — vervang deze tekst later door het echte artikel.
+
+Hier komt de uitleg over wie Jezus is. Ook hier mag je meerdere alinea's
+gebruiken; een lege regel start telkens een nieuwe alinea.`
+    }
+];
+
+// Huidig gekozen categorie (voor de artikel-lijst en de Terug-knoppen).
+let catecheseCategorie = null;
+
+// Bijbeltraining -> Catechese-landing
+function openCatechese() {
+    document.getElementById("bijbeltraining-scherm").style.display = "none";
+    bouwCatecheseCategorieen();
+    document.getElementById("catechese-scherm").style.display = "flex";
+}
+// Catechese-landing -> terug naar Bijbeltraining
+function sluitCatechese() {
+    document.getElementById("catechese-scherm").style.display = "none";
+    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+}
+// Bouwt de categorie-knoppen uit de config-array (boekenkeuze-stijl).
+function bouwCatecheseCategorieen() {
+    const houder = document.getElementById("catechese-categorieen");
+    if (!houder) return;
+    houder.innerHTML = "";
+    catecheseCategorieen.forEach((categorie) => {
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "answer-btn niveau-btn catechese-knop";
+        knop.textContent = categorie;
+        knop.onclick = () => kiesCatecheseCategorie(categorie);
+        houder.appendChild(knop);
+    });
+}
+// Categorie gekozen -> artikel-lijst bouwen en tonen.
+function kiesCatecheseCategorie(categorie) {
+    catecheseCategorie = categorie;
+    bouwCatecheseLijst();
+    document.getElementById("catechese-scherm").style.display = "none";
+    document.getElementById("catechese-lijst-scherm").style.display = "flex";
+}
+// Artikel-lijst -> terug naar de categorieën.
+function terugCatecheseLijst() {
+    document.getElementById("catechese-lijst-scherm").style.display = "none";
+    document.getElementById("catechese-scherm").style.display = "flex";
+}
+// Bouwt de artikel-lijst van de huidige categorie (gefilterd uit catecheseArtikelen).
+function bouwCatecheseLijst() {
+    const titel = document.getElementById("catechese-lijst-titel");
+    if (titel) titel.textContent = catecheseCategorie;
+
+    const houder = document.getElementById("catechese-lijst");
+    if (!houder) return;
+    houder.innerHTML = "";
+
+    const artikelen = catecheseArtikelen.filter((a) => a.categorie === catecheseCategorie);
+    if (artikelen.length === 0) {
+        houder.innerHTML = `<div class="vu-geen-uitleg">Voor dit onderwerp komen binnenkort artikelen.</div>`;
+        return;
+    }
+    artikelen.forEach((a) => {
+        const rij = document.createElement("button");
+        rij.type = "button";
+        rij.className = "vu-item";
+        rij.onclick = () => openCatecheseArtikel(a.id);
+        rij.innerHTML = `<span class="vu-vraag">${a.titel}</span>`;
+        houder.appendChild(rij);
+    });
+}
+// Opent één artikel op 'id'. Geschikt voor latere deep-links vanuit een vraag-
+// uitleg ("Meer hierover ->"): roep gewoon openCatecheseArtikel(id) aan. De
+// categorie wordt meegezet, zodat de Terug-knop naar de juiste lijst gaat.
+function openCatecheseArtikel(id) {
+    const a = catecheseArtikelen.find((art) => art.id === id);
+    if (!a) return;
+    catecheseCategorie = a.categorie;
+
+    let html = `<h3 class="naslag-kop">${a.titel}</h3>`;
+    const alineas = (a.tekst || "").split(/\n\s*\n/).filter((s) => s.trim() !== "");
+    html += `<div class="uitleg">` + alineas.map((s) => `<p>${s}</p>`).join("") + `</div>`;
+
+    const houder = document.getElementById("catechese-artikel");
+    if (houder) houder.innerHTML = html;
+
+    document.getElementById("catechese-lijst-scherm").style.display = "none";
+    document.getElementById("catechese-artikel-scherm").style.display = "flex";
+
+    // Bovenaan beginnen, anders blijft de scrollpositie van een vorig artikel staan.
+    const box = document.querySelector("#catechese-artikel-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
+}
+// Artikel-detail -> terug naar de artikel-lijst.
+function terugCatecheseArtikel() {
+    document.getElementById("catechese-artikel-scherm").style.display = "none";
+    document.getElementById("catechese-lijst-scherm").style.display = "flex";
+}
+
+// =========================
 // SCHATKAMER (TROFEEËNKAMER) — config-gedreven en herbruikbaar
 // Eigen scherm dat de verdiende trofeeën van één vitrine toont. Zelfde aan/uit-
 // patroon als de andere overlays. De win-logica (trofee_<boek>) blijft

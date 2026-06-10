@@ -246,6 +246,7 @@
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="startOefenen()">Oefenen</button>
                 <button class="answer-btn niveau-btn niveau-advanced" onclick="openNaslag()">Naslag &amp; uitleg</button>
                 <button class="answer-btn niveau-btn niveau-expert" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
+                <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
                 <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
             </div>
         </div>
@@ -308,6 +309,42 @@
             <div class="quiz-box naslag-box">
                 <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuDetail()">← Terug</button>
                 <div id="vu-detail"></div>
+            </div>
+        </div>
+
+        <!-- ===== Catechese: data-gedreven uitleg-artikelen. Drie schermen,
+             zelfde opzet als "Vragen & uitleg": categorie -> artikel-lijst ->
+             artikel-detail. Categorieën en artikelen staan in config-arrays in
+             script.js; deze schermen worden door JS gevuld. ===== -->
+
+        <!-- Catechese (landing): de categorieën als knoppen, in de stijl van de
+             boekenkeuze. Wordt door bouwCatecheseCategorieen() gevuld. -->
+        <div id="catechese-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Catechese</h2>
+                <p class="quiz-question">Kies een onderwerp</p>
+                <div id="catechese-categorieen"></div>
+                <button class="answer-btn niveau-terug" onclick="sluitCatechese()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Catechese: scrollbare artikel-lijst van de gekozen categorie. Wordt
+             door bouwCatecheseLijst() gevuld (gefilterd op categorie). -->
+        <div id="catechese-lijst-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="catechese-lijst-titel">Catechese</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
+                <div id="catechese-lijst" class="vu-lijst"></div>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Catechese: één herbruikbaar, scrollbaar artikel-detail (titel + tekst).
+             Wordt door openCatecheseArtikel(id) gevuld uit catecheseArtikelen. -->
+        <div id="catechese-artikel-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseArtikel()">← Terug</button>
+                <div id="catechese-artikel"></div>
             </div>
         </div>
 
