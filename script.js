@@ -2177,6 +2177,19 @@ const verborgenSchatVragen = [
         antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
         correct: "De sandwich-techniek",
         bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25"
+    },
+    {
+        vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?",
+        antwoorden: [
+            "De blijde boodschap mag aan alle volken gebracht worden",
+            "De boodschap is alleen voor het volk Israël",
+            "Het getal staat voor 153 wonderen van Jezus",
+            "Het getal telt de jaren tot Jezus' terugkomst"
+        ],
+        correct: "De blijde boodschap mag aan alle volken gebracht worden",
+        bijbelplaats: "Johannes 21:11 (oude kerkelijke overlevering, o.a. Hiëronymus)",
+        reveal: "153 vissen, en het net scheurt niet! Volgens oude kerkelijke overlevering dacht men dat er precies zoveel soorten vissen waren. De verborgen boodschap: het goede nieuws is voor álle volken — en niemand gaat verloren.",
+        catecheseId: "verborgen-getallen-153"
     }
 ];
 
@@ -2319,7 +2332,12 @@ function checkAntwoord(antwoord) {
     if (huidig.bijbelplaats) extra += `<div class="bijbelplaats">Lees het na in: ${huidig.bijbelplaats}</div>`;
     resultaat.innerHTML = melding + extra;
 
-    if (oefenModus) {
+    if (gekozenModus === "verborgen") {
+        // Verborgen Schat: geen automatische doorloop. Toon een zelf-getempo'd
+        // onthullingsscherm met de verborgen boodschap; het kind klikt zelf
+        // "Volgende →". Alleen deze modus; de gewone quiz blijft snel.
+        toonVsReveal(antwoord === huidig.correct, huidig);
+    } else if (oefenModus) {
         // Oefenmodus: geen timer. De feedback + bijbelplaats blijven staan
         // tot het kind zelf op "Volgende" klikt, zodat het rustig kan nalezen.
         const volgendeKnop = document.createElement("button");
@@ -2339,6 +2357,74 @@ function gaNaarVolgende() {
         laadVraag();
     } else {
         eindScherm();
+    }
+}
+
+// --- Verborgen Schat: zelf-getempo'd onthullingsscherm -----------------------
+// Alleen in de Verborgen-Schat-modus. Toont na een antwoord een onthullingskaart
+// (goud/donkerblauw) met goed/fout, de "verborgen boodschap" (q.reveal) en een
+// link naar de Catechese. Het kind klikt zelf "Volgende →".
+function toonVsReveal(isGoed, q) {
+    const scherm = document.getElementById("vs-reveal-scherm");
+    const uitslag = document.getElementById("vs-reveal-uitslag");
+    const kop = document.getElementById("vs-reveal-kop");
+    const tekst = document.getElementById("vs-reveal-tekst");
+    const meerKnop = document.getElementById("vs-reveal-catechese");
+    const meerMelding = document.getElementById("vs-reveal-meer-melding");
+
+    if (uitslag) {
+        uitslag.textContent = isGoed ? "✅ Goed gedaan!" : "❌ Dat is niet goed.";
+        uitslag.classList.toggle("goed", isGoed);
+        uitslag.classList.toggle("fout", !isGoed);
+    }
+
+    // De boodschap-tekst, kop en Catechese-knop verschijnen alleen als er een
+    // reveal bij deze vraag hoort. Anders: enkel goed/fout + Volgende.
+    const heeftReveal = !!(q && q.reveal);
+    if (kop) kop.style.display = heeftReveal ? "" : "none";
+    if (tekst) {
+        tekst.textContent = heeftReveal ? q.reveal : "";
+        tekst.style.display = heeftReveal ? "" : "none";
+    }
+    if (meerKnop) {
+        meerKnop.style.display = heeftReveal ? "" : "none";
+        // De (optionele) catecheseId bewaren voor de latere deep-link.
+        meerKnop.dataset.catecheseId = (q && q.catecheseId) ? q.catecheseId : "";
+    }
+    if (meerMelding) {
+        meerMelding.textContent = "";
+        meerMelding.classList.remove("zichtbaar");
+    }
+
+    if (scherm) scherm.style.display = "flex";
+}
+
+// "Volgende →": de kaart sluiten en zelf doorgaan naar de volgende vraag.
+function vsRevealVolgende() {
+    const scherm = document.getElementById("vs-reveal-scherm");
+    if (scherm) scherm.style.display = "none";
+    gaNaarVolgende();
+}
+
+// "Meer ontdekken → Catechese": als er later een catecheseId aan de vraag hangt,
+// opent dit straks rechtstreeks het Catechese-artikel. Voorlopig (nog geen id)
+// een rustige placeholder-melding op de kaart.
+function vsRevealMeer() {
+    const meerKnop = document.getElementById("vs-reveal-catechese");
+    const id = meerKnop ? meerKnop.dataset.catecheseId : "";
+    if (id && typeof openCatecheseArtikel === "function" &&
+        catecheseArtikelen.some((a) => a.id === id)) {
+        const scherm = document.getElementById("vs-reveal-scherm");
+        if (scherm) scherm.style.display = "none";
+        // Open het artikel mét herkomst "vs-reveal": de onthullingskaart blijft
+        // eronder en de Terug-knop in het artikel keert ernaar terug.
+        openCatecheseArtikel(id, "vs-reveal");
+        return;
+    }
+    const meerMelding = document.getElementById("vs-reveal-meer-melding");
+    if (meerMelding) {
+        meerMelding.textContent = "Binnenkort kun je hier meer ontdekken in de Catechese.";
+        meerMelding.classList.add("zichtbaar");
     }
 }
 

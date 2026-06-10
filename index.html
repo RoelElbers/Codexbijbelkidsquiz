@@ -237,6 +237,23 @@
             </div>
         </div>
 
+        <!-- Verborgen Schat: zelf-getempo'd onthullingsscherm na elke beantwoorde
+             vraag (alléén deze modus). Eigen overlay bovenop de quiz; staat ná
+             #quiz-scherm in de DOM zodat de kaart erboven verschijnt. Wordt gevuld
+             door toonVsReveal(); "Volgende →" gaat zelf door. -->
+        <div id="vs-reveal-scherm" class="quiz-overlay" style="display: none;">
+            <div class="vs-reveal-kaart">
+                <div id="vs-reveal-uitslag" class="vs-reveal-uitslag"></div>
+                <h3 id="vs-reveal-kop" class="vs-reveal-kop">Verborgen boodschap</h3>
+                <p id="vs-reveal-tekst" class="vs-reveal-tekst"></p>
+                <p id="vs-reveal-meer-melding" class="vs-reveal-meer-melding" role="status" aria-live="polite"></p>
+                <div class="vs-reveal-knoppen">
+                    <button id="vs-reveal-catechese" type="button" class="answer-btn vs-reveal-meer" onclick="vsRevealMeer()">Meer ontdekken → Catechese</button>
+                    <button type="button" class="answer-btn vs-reveal-volgende" onclick="vsRevealVolgende()">Volgende →</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Bijbeltraining-kruispunt: twee keuzes (Oefenen / Naslag & uitleg).
              Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
         <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
