@@ -1161,7 +1161,9 @@ height: 22%;
 #woordenboek-scherm .quiz-box,
 #verborgenschat-naslag-scherm .quiz-box,
 #vu-lijst-scherm .quiz-box,
-#vu-detail-scherm .quiz-box {
+#vu-detail-scherm .quiz-box,
+#catechese-lijst-scherm .quiz-box,
+#catechese-artikel-scherm .quiz-box {
     width: 900px;
     max-width: 90vw;
     max-height: 90vh;
@@ -1172,14 +1174,17 @@ height: 22%;
 #woordenboek-scherm .quiz-title,
 #verborgenschat-naslag-scherm .quiz-title,
 #vu-lijst-scherm .quiz-title,
-#vu-detail-scherm .quiz-title {
+#vu-detail-scherm .quiz-title,
+#catechese-lijst-scherm .quiz-title {
     text-align: center;
 }
 
-/* Evangelie-keuze (Vragen & uitleg): begrens de hoogte en laat intern scrollen,
-   zodat de Terug-knop bereikbaar blijft als er veel meer boeken bijkomen. Alleen
-   het scroll-gedrag van de naslag-schermen; de menu-opmaak (gecentreerd) blijft. */
-#vu-boek-scherm .quiz-box {
+/* Evangelie-keuze (Vragen & uitleg) en Catechese-categorieën: begrens de hoogte
+   en laat intern scrollen, zodat de Terug-knop en het laatste item bereikbaar
+   blijven als er meer bijkomen. Alleen het scroll-gedrag; de menu-opmaak
+   (gecentreerd) blijft. */
+#vu-boek-scherm .quiz-box,
+#catechese-scherm .quiz-box {
     max-height: 90vh;
     overflow-y: auto;
 }

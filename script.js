@@ -2729,7 +2729,8 @@ const catecheseCategorieen = [
     "De Heilige Geest",
     "De Bijbel",
     "Het gebed",
-    "De christelijke feesten"
+    "De christelijke feesten",
+    "Verborgen getallen"
 ];
 
 // Artikelen — elk hoort via 'categorie' bij precies één categorie hierboven (let
@@ -2757,11 +2758,34 @@ tekst in totdat het vak moet scrollen, zodat je ziet dat dat goed werkt.`
 
 Hier komt de uitleg over wie Jezus is. Ook hier mag je meerdere alinea's
 gebruiken; een lege regel start telkens een nieuwe alinea.`
+    },
+    {
+        id: "verborgen-getallen-153",
+        categorie: "Verborgen getallen",
+        titel: "De 153 vissen",
+        tekst: `Na zijn opstanding liet Jezus zich aan zijn leerlingen zien bij het meer. Ze hadden de hele nacht gevist en niets gevangen. Op Jezus' woord gooiden ze het net nóg een keer uit — en nu zat het zó vol dat ze het bijna niet aan land kregen. Toen ze de vissen telden, waren het er precies honderddrieënvijftig. En het mooie: hoe vol het net ook zat, het scheurde niet (Johannes 21).
+
+Waarom zou Johannes zo'n precies getal opschrijven? Johannes is namelijk een schrijver die van verborgen lagen houdt: in zijn evangelie zit vaak een diepere betekenis onder de oppervlakte. En bij dit getal hebben uitleggers door de eeuwen heen iets bijzonders gezien.
+
+Volgens oude kerkelijke overlevering dacht men vroeger dat er precies 153 soorten vissen in de zee bestonden — élke soort die er was. Het beeld werd dan: het net van het evangelie haalt mensen binnen uit élk volk, uit de hele wereld. De blijde boodschap is niet voor één groep, maar voor iedereen.
+
+En dat het net niet scheurde? Ook dat lazen ze als een boodschap: in dat ene net is plaats voor allemaal, en er gaat niemand verloren.
+
+Sommige uitleggers, zoals Augustinus, keken naar het getal zelf. 153 is namelijk de optelsom van alle getallen van 1 tot en met 17 (1 + 2 + 3 + … + 17 = 153). En 17, zeiden zij, is 10 + 7: de tien geboden plus de zeven gaven van Gods Geest. Zo werd 153 een teken van álle mensen die bij God horen — door zijn wet én door zijn genade.
+
+Er zit zelfs nog een wiskundig wonder in: 153 is óók gelijk aan 1×1×1 + 5×5×5 + 3×3×3 (dat is 1 + 125 + 27). Een getal dat zó keurig in elkaar past, voelt niet zomaar gekozen.
+
+Belangrijk om te weten: deze betekenissen staan niet allemaal letterlijk in de Bijbel — het zijn uitleggingen die door de eeuwen heen zijn ontstaan. Maar ze laten prachtig zien hoe gelovigen in zo'n klein detail een grote boodschap ontdekten: het goede nieuws van Jezus is bestemd voor de hele wereld.`
     }
 ];
 
 // Huidig gekozen categorie (voor de artikel-lijst en de Terug-knoppen).
 let catecheseCategorie = null;
+
+// Vanwaar het artikel-detail is geopend: null = normaal (vanuit de lijst), of
+// "vs-reveal" = vanuit de Verborgen-Schat-onthullingskaart. Bepaalt waar de
+// Terug-knop in het artikel naartoe gaat, zodat een lopende VS-ronde niet breekt.
+let catecheseArtikelHerkomst = null;
 
 // Bijbeltraining -> Catechese-landing
 function openCatechese() {
@@ -2826,10 +2850,11 @@ function bouwCatecheseLijst() {
 // Opent één artikel op 'id'. Geschikt voor latere deep-links vanuit een vraag-
 // uitleg ("Meer hierover ->"): roep gewoon openCatecheseArtikel(id) aan. De
 // categorie wordt meegezet, zodat de Terug-knop naar de juiste lijst gaat.
-function openCatecheseArtikel(id) {
+function openCatecheseArtikel(id, herkomst) {
     const a = catecheseArtikelen.find((art) => art.id === id);
     if (!a) return;
     catecheseCategorie = a.categorie;
+    catecheseArtikelHerkomst = herkomst || null;
 
     let html = `<h3 class="naslag-kop">${a.titel}</h3>`;
     const alineas = (a.tekst || "").split(/\n\s*\n/).filter((s) => s.trim() !== "");
@@ -2845,10 +2870,17 @@ function openCatecheseArtikel(id) {
     const box = document.querySelector("#catechese-artikel-scherm .quiz-box");
     if (box) box.scrollTop = 0;
 }
-// Artikel-detail -> terug naar de artikel-lijst.
+// Artikel-detail -> terug. Normaal naar de artikel-lijst; maar als het artikel
+// vanuit de Verborgen-Schat-kaart werd geopend, keren we daar netjes naar terug,
+// zodat het kind de ronde gewoon kan vervolgen met "Volgende ->".
 function terugCatecheseArtikel() {
     document.getElementById("catechese-artikel-scherm").style.display = "none";
-    document.getElementById("catechese-lijst-scherm").style.display = "flex";
+    if (catecheseArtikelHerkomst === "vs-reveal") {
+        catecheseArtikelHerkomst = null;
+        document.getElementById("vs-reveal-scherm").style.display = "flex";
+    } else {
+        document.getElementById("catechese-lijst-scherm").style.display = "flex";
+    }
 }
 
 // =========================
