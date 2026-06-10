@@ -1,6 +1,6 @@
 # Bijbelkidsquiz — vragentelling
 
-*Momentopname van 9 juni 2026. Geteld direct uit `script.js` (de `vragenData`-pools
+*Momentopname van 11 juni 2026. Geteld direct uit `script.js` (de `vragenData`-pools
 + de aparte `verborgenSchatVragen`-array). Werk dit bij — of vraag Claude Code om
 opnieuw te tellen — zodra er vragen bij komen of weggaan.*
 
@@ -20,11 +20,11 @@ opnieuw te tellen — zodra er vragen bij komen of weggaan.*
 
 | Pool            | Aantal |
 |-----------------|:------:|
-| Verborgen Schat |   12   |
+| Verborgen Schat |   13   |
 
 ## Totaal
 
-- **Speelbaar in totaal: 213 vragen** (201 evangelie + 12 Verborgen Schat).
+- **Speelbaar in totaal: 214 vragen** (201 evangelie + 13 Verborgen Schat).
 
 ---
 
@@ -35,4 +35,4 @@ opnieuw te tellen — zodra er vragen bij komen of weggaan.*
   is nog niet gebouwd.
 - In `script.js` staat één `vraag:` die géén echte vraag is, maar een
   **placeholder-sjabloon** (`Placeholdervraag …`) uit een hulpfunctie. Die telt niet
-  mee in de 213.
+  mee in de 214.
