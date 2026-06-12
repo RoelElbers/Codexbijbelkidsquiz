@@ -1588,12 +1588,18 @@ const kistAfbeeldingen = {
 const alleKistKeys = ["brons", "zilver", "goud"];
 
 function getKistStatus(kistKey) {
+    if (demoNiveau) return "verdiend";       // demo-modus: alles behaald tonen
     const opgeslagen = localStorage.getItem(`kist_${kistKey}`);
     return kistVolgorde.includes(opgeslagen) ? opgeslagen : "vergrendeld";
 }
 
 function setKistStatus(kistKey, status) {
     if (!kistVolgorde.includes(status)) return;
+    // Demo-modus: niets opslaan, alleen de weergave verversen.
+    if (demoNiveau) {
+        toonKist(kistKey);
+        return;
+    }
     localStorage.setItem(`kist_${kistKey}`, status);
     toonKist(kistKey);
 }
@@ -1639,13 +1645,34 @@ const boekNaarKey = {
     "Johannes": "johannes"
 };
 
+// =========================
+// DEMO-MODUS (alleen-kijken)
+// Met ?demo=brons, ?demo=zilver of ?demo=goud in de URL toont het spel alle
+// trofeeën en kisten als behaald op dat niveau. Het is puur een weergavelaag:
+// de lees-functies (getTrofeeNiveau, leesTrofeeStand, getKistStatus) doen
+// alsof, en de schrijf-functies (setTrofeeNiveau, setKistStatus) slaan
+// niets op — localStorage blijft volledig onaangeroerd. Zonder geldige
+// parameter verandert er niets aan het normale gedrag.
+// =========================
+const demoNiveau = (() => {
+    const waarde = new URLSearchParams(window.location.search).get("demo");
+    return ["brons", "zilver", "goud"].includes(waarde) ? waarde : null;
+})();
+
 function getTrofeeNiveau(boekKey) {
+    if (demoNiveau) return demoNiveau;
     const opgeslagen = localStorage.getItem(`trofee_${boekKey}`);
     return trofeeVolgorde.includes(opgeslagen) ? opgeslagen : "geen";
 }
 
 // Werkt het opgeslagen niveau alleen bij als het nieuwe niveau hoger is.
 function setTrofeeNiveau(boekKey, nieuwNiveau) {
+    // Demo-modus: niets opslaan, alleen de weergave verversen.
+    if (demoNiveau) {
+        toonTrofee(boekKey);
+        return;
+    }
+
     const huidig = getTrofeeNiveau(boekKey);
 
     if (trofeeVolgorde.indexOf(nieuwNiveau) > trofeeVolgorde.indexOf(huidig)) {
@@ -3041,6 +3068,7 @@ const openbaringVitrine = {
 // Onbekende/ontbrekende waarde -> "geen". Verandert niets aan de win-logica;
 // gebruikt alleen dezelfde volgorde-lijst (trofeeVolgorde) ter validatie.
 function leesTrofeeStand(sleutel) {
+    if (demoNiveau) return demoNiveau;       // demo-modus: alles behaald tonen
     const stand = localStorage.getItem(sleutel);
     return trofeeVolgorde.includes(stand) ? stand : "geen";
 }
@@ -3164,16 +3192,64 @@ function bouwVitrine(vitrineEl, config) {
 //   x       : horizontaal midden (%)
 //   top     : bovenkant (%)
 //   breedte : breedte (%) — verder weg in het perspectief = kleiner
+//
+// nisTrofeeen[] (optioneel, per zone): EXPERIMENT — kleine trofee-weergaven
+// ín de geschilderde nissen van de kasten. Eén entry per nis, in dezelfde
+// volgorde als vitrine.nissen (zelfde index = zelfde boek). Per nis:
+//   x : horizontaal midden (%), top : bovenkant (%), hoogte : hoogte (%).
+// Behaald = trofee zichtbaar met niveau-filter; niet behaald = nis blijft
+// leeg/donker. Aan/uit via de vlag hieronder.
 // =========================
+
+// EXPERIMENT-VLAG: trofeeën in de geschilderde nissen van de zaal tonen.
+// true  = zaal met mini-trofeeën in de nissen (plus de munten),
+// false = alleen de voortgangsmunten, zoals voorheen.
+// Zo kan de maker beide varianten naast elkaar vergelijken.
+const ZAAL_NIS_TROFEEEN = true;
 const schatkamerZalen = {
     nt: {
         naam: "Schatkamer — Nieuwe Testament",
         achtergrond: "images/zaal-nt.png",
         zones: [
             { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "42%",   top: "12%", width: "16%",   height: "22%" } },
-            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "20%", width: "15%",   height: "52%" } },
-            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" } },
-            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" } },
+            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "20%", width: "15%",   height: "52%" },
+              // 2x2-kast links: [boven-links, boven-rechts, onder-links, onder-rechts]
+              nisTrofeeen: [
+                  { x: "6.8%",  top: "33%", hoogte: "12%" },
+                  { x: "13.2%", top: "33%", hoogte: "12%" },
+                  { x: "6.8%",  top: "54%", hoogte: "12%" },
+                  { x: "13.2%", top: "54%", hoogte: "12%" }
+              ] },
+            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" },
+              // 4x2-kast rechts, rij voor rij; de onderste rij zijn de twee
+              // vloernissen in de plint.
+              nisTrofeeen: [
+                  { x: "87.6%", top: "28.5%", hoogte: "9%" },
+                  { x: "94%",   top: "28.5%", hoogte: "9%" },
+                  { x: "87.6%", top: "42%",   hoogte: "9%" },
+                  { x: "94%",   top: "42%",   hoogte: "9%" },
+                  { x: "87.6%", top: "55.5%", hoogte: "9%" },
+                  { x: "94%",   top: "55.5%", hoogte: "9%" },
+                  { x: "87.6%", top: "69%",   hoogte: "9%" },
+                  { x: "94%",   top: "69%",   hoogte: "9%" }
+              ] },
+            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" },
+              // Galerij midden: bovenste rij 7 arcades, onderste rij 6.
+              nisTrofeeen: [
+                  { x: "31.1%", top: "43%", hoogte: "8.5%" },
+                  { x: "37.4%", top: "43%", hoogte: "8.5%" },
+                  { x: "43.7%", top: "43%", hoogte: "8.5%" },
+                  { x: "50%",   top: "43%", hoogte: "8.5%" },
+                  { x: "56.3%", top: "43%", hoogte: "8.5%" },
+                  { x: "62.6%", top: "43%", hoogte: "8.5%" },
+                  { x: "68.9%", top: "43%", hoogte: "8.5%" },
+                  { x: "31.7%", top: "58%", hoogte: "9.5%" },
+                  { x: "39%",   top: "58%", hoogte: "9.5%" },
+                  { x: "46.3%", top: "58%", hoogte: "9.5%" },
+                  { x: "53.7%", top: "58%", hoogte: "9.5%" },
+                  { x: "61%",   top: "58%", hoogte: "9.5%" },
+                  { x: "68.3%", top: "58%", hoogte: "9.5%" }
+              ] },
             { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "34%",   top: "75%", width: "27%",   height: "19%" } }
         ],
         kisten: [
@@ -3229,6 +3305,44 @@ function bouwZaal(zaalEl, zaal) {
             }
             kistenHouder.appendChild(img);
         });
+    }
+
+    // EXPERIMENT (vlag ZAAL_NIS_TROFEEEN): mini-trofeeën in de geschilderde
+    // nissen van de kasten. Behaald = trofee met niveau-filter; niet behaald
+    // = niets tonen, de geschilderde nis blijft leeg/donker. Boeken zonder
+    // eigen afbeelding vallen terug op een evangelisten-trofee als stand-in.
+    const nisHouder = zaalEl.querySelector(".sk-nis-trofeeen");
+    if (nisHouder) {
+        nisHouder.innerHTML = "";
+        if (ZAAL_NIS_TROFEEEN) {
+            zaal.zones.forEach((zone) => {
+                (zone.nisTrofeeen || []).forEach((nis, i) => {
+                    const vitrineNis = zone.vitrine.nissen[i];
+                    if (!vitrineNis) return;
+
+                    const stand = leesTrofeeStand(vitrineNis.sleutel);
+                    if (stand === "geen") return;        // nis blijft leeg
+
+                    const img = document.createElement("img");
+                    img.className = `zaal-nis-trofee ${stand}`;
+                    img.alt = vitrineNis.naam;
+                    img.style.left   = nis.x;
+                    img.style.top    = nis.top;
+                    img.style.height = nis.hoogte;
+                    img.src = `images/${vitrineNis.basis}-zilver.png`;
+
+                    // Eigen kunst ontbreekt nog -> evangelisten-trofee als
+                    // tijdelijke stand-in (één keer; daarna opgeven).
+                    img.addEventListener("error", () => {
+                        if (img.dataset.standin) { img.remove(); return; }
+                        img.dataset.standin = "1";
+                        img.src = `images/${alleBoekKeys[i % alleBoekKeys.length]}-zilver.png`;
+                    });
+
+                    nisHouder.appendChild(img);
+                });
+            });
+        }
     }
 
     const houder = zaalEl.querySelector(".sk-zones");

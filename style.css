@@ -728,21 +728,35 @@ height: 22%;
     filter: brightness(0.3) opacity(0.8);
 }
 
-.schatkamer-vitrine .sk-trofee.brons {
+.schatkamer-vitrine .sk-trofee.brons,
+.sk-zaal .zaal-nis-trofee.brons {
     filter: sepia(0.7) saturate(1.6) hue-rotate(-10deg) brightness(0.8)
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
 }
 
-.schatkamer-vitrine .sk-trofee.zilver {
+.schatkamer-vitrine .sk-trofee.zilver,
+.sk-zaal .zaal-nis-trofee.zilver {
     filter: brightness(1.1) saturate(1.05)
             drop-shadow(0 0 6px rgba(210, 225, 255, 0.75))
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
 }
 
-.schatkamer-vitrine .sk-trofee.goud {
+.schatkamer-vitrine .sk-trofee.goud,
+.sk-zaal .zaal-nis-trofee.goud {
     filter: sepia(0.95) saturate(2.9) hue-rotate(5deg) brightness(1.13) contrast(1.15)
             drop-shadow(0 0 9px rgba(255, 195, 60, 0.9))
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
+}
+
+/* EXPERIMENT (vlag ZAAL_NIS_TROFEEEN in script.js): mini-trofee in een
+   geschilderde nis van de zaal. Positie (x = midden) en hoogte komen inline
+   uit de config (zone.nisTrofeeen); decor, dus niet klikbaar. */
+.sk-zaal .zaal-nis-trofee {
+    position: absolute;
+    transform: translateX(-50%);     /* x uit de config = midden van de nis */
+    width: auto;
+    pointer-events: none;
+    user-select: none;
 }
 
 /* Generiek schaduwsilhouet voor trofeeën waarvan de kunst nog niet bestaat
