@@ -2907,6 +2907,23 @@ function terugCatecheseArtikel() {
 //       naam       : tekst op de naamplaat
 //       sleutel    : localStorage-sleutel met de stand (geen/brons/zilver/goud)
 //       basis      : basisnaam van de afbeelding; -<stand>.png volgt daaruit
+//
+// Optionele velden (gebruikt door de nieuwe NT-vitrines; de Evangeliën-vitrine
+// gebruikt ze niet en blijft daardoor exact zoals hij was):
+//   placeholderTitel : titel op het donkere placeholder-paneel zolang de
+//                      achtergrondafbeelding nog niet bestaat
+//   sfeer            : "altaar" geeft de vitrine een lichtinval-gloed (CSS)
+//   schaduwBijGeen   : true = bij stand "geen" een donker silhouet tonen in
+//                      plaats van de trofee te verbergen (voor vitrines zonder
+//                      geschilderde lege sokkels in de achtergrond)
+//   kleurViaFilter   : true = altijd de zilveren basisafbeelding laden en de
+//                      stand via CSS-filters kleuren (zoals de prijzenkast op
+//                      het startscherm). Nieuwe boeken hebben dan maar één
+//                      afbeelding nodig: images/<basis>-zilver.png
+//   per nis optioneel:
+//       bodem  : eigen bodem (%) — overschrijft trofeeBodem (voor twee rijen)
+//       naamY  : eigen verticaal midden van de naamplaat — overschrijft
+//                naamMidden (voor twee rijen)
 // =========================
 const evangelienVitrine = {
     achtergrond: "images/scahtkamer2.png",
@@ -2922,8 +2939,103 @@ const evangelienVitrine = {
     ]
 };
 
-// Welke vitrine de schatkamer nu toont. Later eventueel wisselbaar.
-const actieveVitrine = evangelienVitrine;
+// =========================
+// SLEUTELCONVENTIE NIEUWE NT-BOEKEN
+// Elke trofee bewaart zijn stand in localStorage onder `trofee_<boekkey>` met
+// als waarde geen/brons/zilver/goud — exact zoals de vier evangeliën.
+// De boekkey wordt zo gevormd:
+//   - kleine letters, geen spaties:        Handelingen  -> handelingen
+//   - diakritische tekens vereenvoudigd:   Matteüs -> matteus, dus ook
+//     1 Korintiërs -> 1korintiers, Efeziërs -> efeziers, Hebreeën -> hebreeen,
+//     1 Timoteüs -> 1timoteus
+//   - het cijfer van nummerboeken blijft vooraan staan, zonder spatie:
+//     1 Petrus -> trofee_1petrus, 2 Tessalonicenzen -> trofee_2tessalonicenzen
+// De boekkey is tegelijk de basisnaam van de trofee-afbeelding:
+// images/<boekkey>-zilver.png (zie kleurViaFilter hierboven).
+// =========================
+
+// --- Handelingen: één ereplek op een sokkel, centraal. ---
+const handelingenVitrine = {
+    achtergrond: "images/vitrine-handelingen.png",
+    placeholderTitel: "Handelingen",
+    schaduwBijGeen: true,
+    kleurViaFilter: true,
+    trofeeBodem: "24%",
+    naamMidden:  "84%",
+    naamBreedte: "24%",
+    naamHoogte:  "8%",
+    nissen: [
+        { x: "50%", trofeeHoogte: "50%", naamX: "50%", naamGrootte: "clamp(12px, 2vw, 24px)", naam: "Handelingen", sleutel: "trofee_handelingen", basis: "handelingen" }
+    ]
+};
+
+// --- Paulusbrieven: brede galerijwand, 13 nissen in twee rijen (7 boven,
+//     6 onder). De bovenste rij gebruikt de per-nis overrides bodem/naamY. ---
+const paulusbrievenVitrine = {
+    achtergrond: "images/vitrine-paulusbrieven.png",
+    placeholderTitel: "Paulusbrieven",
+    schaduwBijGeen: true,
+    kleurViaFilter: true,
+    trofeeBodem: "14%",                       // onderste rij
+    naamMidden:  "89%",                       // naamplaten onderste rij
+    naamBreedte: "12%",
+    naamHoogte:  "5%",
+    nissen: [
+        // Bovenste rij (7)
+        { x: "11%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "11%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Romeinen",          sleutel: "trofee_romeinen",          basis: "romeinen"          },
+        { x: "24%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "24%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Korintiërs",      sleutel: "trofee_1korintiers",       basis: "1korintiers"       },
+        { x: "37%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "37%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Korintiërs",      sleutel: "trofee_2korintiers",       basis: "2korintiers"       },
+        { x: "50%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "50%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Galaten",           sleutel: "trofee_galaten",           basis: "galaten"           },
+        { x: "63%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "63%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Efeziërs",          sleutel: "trofee_efeziers",          basis: "efeziers"          },
+        { x: "76%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "76%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Filippenzen",       sleutel: "trofee_filippenzen",       basis: "filippenzen"       },
+        { x: "89%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "89%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Kolossenzen",       sleutel: "trofee_kolossenzen",       basis: "kolossenzen"       },
+        // Onderste rij (6)
+        { x: "17.5%", trofeeHoogte: "24%", naamX: "17.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Tessalonicenzen", sleutel: "trofee_1tessalonicenzen", basis: "1tessalonicenzen" },
+        { x: "30.5%", trofeeHoogte: "24%", naamX: "30.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Tessalonicenzen", sleutel: "trofee_2tessalonicenzen", basis: "2tessalonicenzen" },
+        { x: "43.5%", trofeeHoogte: "24%", naamX: "43.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Timoteüs",        sleutel: "trofee_1timoteus",        basis: "1timoteus"        },
+        { x: "56.5%", trofeeHoogte: "24%", naamX: "56.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Timoteüs",        sleutel: "trofee_2timoteus",        basis: "2timoteus"        },
+        { x: "69.5%", trofeeHoogte: "24%", naamX: "69.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Titus",             sleutel: "trofee_titus",            basis: "titus"            },
+        { x: "82.5%", trofeeHoogte: "24%", naamX: "82.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Filemon",           sleutel: "trofee_filemon",          basis: "filemon"          }
+    ]
+};
+
+// --- Algemene brieven: acht nissen in één rij. ---
+const algemeneBrievenVitrine = {
+    achtergrond: "images/vitrine-algemenebrieven.png",
+    placeholderTitel: "Algemene brieven",
+    schaduwBijGeen: true,
+    kleurViaFilter: true,
+    trofeeBodem: "28%",
+    naamMidden:  "78%",
+    naamBreedte: "11%",
+    naamHoogte:  "6%",
+    nissen: [
+        { x: "11%",   trofeeHoogte: "30%", naamX: "11%",   naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Hebreeën",   sleutel: "trofee_hebreeen",   basis: "hebreeen"   },
+        { x: "22.1%", trofeeHoogte: "30%", naamX: "22.1%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Jakobus",    sleutel: "trofee_jakobus",    basis: "jakobus"    },
+        { x: "33.3%", trofeeHoogte: "30%", naamX: "33.3%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "1 Petrus",   sleutel: "trofee_1petrus",    basis: "1petrus"    },
+        { x: "44.4%", trofeeHoogte: "30%", naamX: "44.4%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "2 Petrus",   sleutel: "trofee_2petrus",    basis: "2petrus"    },
+        { x: "55.6%", trofeeHoogte: "30%", naamX: "55.6%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "1 Johannes", sleutel: "trofee_1johannes",  basis: "1johannes"  },
+        { x: "66.7%", trofeeHoogte: "30%", naamX: "66.7%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "2 Johannes", sleutel: "trofee_2johannes",  basis: "2johannes"  },
+        { x: "77.9%", trofeeHoogte: "30%", naamX: "77.9%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "3 Johannes", sleutel: "trofee_3johannes",  basis: "3johannes"  },
+        { x: "89%",   trofeeHoogte: "30%", naamX: "89%",   naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Judas",      sleutel: "trofee_judas",      basis: "judas"      }
+    ]
+};
+
+// --- Openbaring: ereplaats — verhoogd altaar met lichtinval (sfeer-klasse). ---
+const openbaringVitrine = {
+    achtergrond: "images/vitrine-openbaring.png",
+    placeholderTitel: "Openbaring",
+    sfeer: "altaar",
+    schaduwBijGeen: true,
+    kleurViaFilter: true,
+    trofeeBodem: "24%",
+    naamMidden:  "84%",
+    naamBreedte: "24%",
+    naamHoogte:  "8%",
+    nissen: [
+        { x: "50%", trofeeHoogte: "50%", naamX: "50%", naamGrootte: "clamp(12px, 2vw, 24px)", naam: "Openbaring", sleutel: "trofee_openbaring", basis: "openbaring" }
+    ]
+};
 
 // Leest een trofee-stand rechtstreeks uit localStorage op de gegeven sleutel.
 // Onbekende/ontbrekende waarde -> "geen". Verandert niets aan de win-logica;
@@ -2933,14 +3045,50 @@ function leesTrofeeStand(sleutel) {
     return trofeeVolgorde.includes(stand) ? stand : "geen";
 }
 
+// Zet een achtergrondafbeelding op een schatkamer-element, met een nette
+// terugval zolang het bestand nog niet bestaat: dan verschijnt het donkere
+// huisstijl-paneel (.sk-placeholder in CSS) met de titel erin. Zodra de
+// definitieve afbeelding in images/ wordt geplaatst, laadt hij vanzelf —
+// zonder codewijziging (zie ook afbeeldingen-takenlijst.md).
+function zetSchatkamerAchtergrond(el, pad, titel) {
+    el.dataset.placeholderTitel = titel || "";
+    el.classList.remove("sk-placeholder");
+    el.style.backgroundImage = `url("${pad}")`;
+
+    const proef = new Image();
+    proef.onerror = () => {
+        el.style.backgroundImage = "";           // terug naar de CSS-laag
+        el.classList.add("sk-placeholder");
+    };
+    proef.src = pad;
+}
+
+// Vervangt een trofee-afbeelding waarvan het bestand (nog) niet bestaat door
+// een generiek donker schaduwsilhouet (puur CSS, zie .sk-trofee-silhouet).
+// Positie en hoogte worden overgenomen, zodat het silhouet exact in de nis
+// staat waar straks de echte trofee komt.
+function vervangDoorSilhouet(img) {
+    const silhouet = document.createElement("div");
+    silhouet.className = "sk-trofee-silhouet";
+    silhouet.style.left = img.style.left;
+    silhouet.style.height = img.style.height;
+    if (img.style.bottom) silhouet.style.bottom = img.style.bottom;
+    img.replaceWith(silhouet);
+}
+
 // Bouwt de inhoud van een vitrine-element volledig op uit een config-object.
 // Per nis: stand uit localStorage -> "geen" = lege sokkel (trofee verbergen),
 // brons/zilver/goud = het bijbehorende plaatje op de sokkel.
+// Bij schaduwBijGeen toont "geen" een donker silhouet; bij kleurViaFilter
+// wordt altijd de zilveren basis geladen en kleurt CSS de stand (zie de
+// optionele velden in het commentaarblok hierboven).
 function bouwVitrine(vitrineEl, config) {
     if (!vitrineEl) return;
 
-    // Achtergrond + gedeelde maten als inline CSS-variabelen (per vitrine).
-    vitrineEl.style.backgroundImage = `url("${config.achtergrond}")`;
+    // Achtergrond (met placeholder-terugval) + gedeelde maten als inline
+    // CSS-variabelen (per vitrine). De sfeer-klasse stuurt extra gloed aan.
+    zetSchatkamerAchtergrond(vitrineEl, config.achtergrond, config.placeholderTitel || "");
+    vitrineEl.classList.toggle("sk-sfeer-altaar", config.sfeer === "altaar");
     vitrineEl.style.setProperty("--trofee-bodem", config.trofeeBodem);
     vitrineEl.style.setProperty("--naam-midden",  config.naamMidden);
     vitrineEl.style.setProperty("--naam-breedte", config.naamBreedte);
@@ -2953,37 +3101,181 @@ function bouwVitrine(vitrineEl, config) {
     config.nissen.forEach((nis) => {
         const niveau = leesTrofeeStand(nis.sleutel); // "geen"|"brons"|"zilver"|"goud"
 
-        // Sokkel-trofee. Positie (left) en hoogte komen inline uit de config.
+        // Sokkel-trofee. Positie (left) en hoogte komen inline uit de config;
+        // een optionele per-nis bodem maakt meerdere rijen mogelijk.
         const img = document.createElement("img");
         img.className = "sk-trofee";
         img.alt = nis.naam;
         img.style.left = nis.x;
         img.style.height = nis.trofeeHoogte;
-        if (niveau === "geen") {
+        if (nis.bodem) img.style.bottom = nis.bodem;
+
+        if (niveau === "geen" && !config.schaduwBijGeen) {
             img.hidden = true;                   // lege sokkel uit de achtergrond blijft staan
+        } else if (config.kleurViaFilter || niveau === "geen") {
+            // Eén basisafbeelding; de stand (of het silhouet) komt uit CSS.
+            img.src = `images/${nis.basis}-zilver.png`;
+            img.classList.add(niveau === "geen" ? "sk-schaduw" : niveau);
         } else {
             img.src = `images/${nis.basis}-${niveau}.png`;
         }
+
+        // Bestaat de afbeelding (nog) niet -> generiek schaduwsilhouet.
+        if (!img.hidden) {
+            img.addEventListener("error", () => vervangDoorSilhouet(img));
+        }
         houder.appendChild(img);
 
-        // Naamplaat. Horizontale positie en lettergrootte inline uit de config.
+        // Naamplaat. Horizontale positie en lettergrootte inline uit de config;
+        // optionele per-nis naamY voor een tweede rij naamplaten.
         const naam = document.createElement("div");
         naam.className = "sk-naam";
         naam.textContent = nis.naam;
         naam.style.left = nis.naamX;
         naam.style.fontSize = nis.naamGrootte;
+        if (nis.naamY) naam.style.top = nis.naamY;
         houder.appendChild(naam);
     });
 }
 
-function openSchatkamer() {
-    // Vitrine (her)opbouwen uit de config zodat de standen actueel zijn.
-    const vitrineEl = document.querySelector("#schatkamer-scherm .schatkamer-vitrine");
-    bouwVitrine(vitrineEl, actieveVitrine);
-    document.getElementById("schatkamer-scherm").style.display = "flex";
+// =========================
+// SCHATKAMER-ZALEN — de inzoombare overzichtszaal (nu: NT-vleugel)
+// Eén zaal = één achtergrondafbeelding met klikbare zones (zelfde principe als
+// de boek-zones op het startscherm). Elke zone koppelt een klikgebied aan een
+// vitrine-config; de voortgang per zone wordt rechtstreeks uit de nissen van
+// die vitrine gelezen. Een tweede vleugel (OT) is later puur een extra entry
+// in schatkamerZalen — geen nieuwe logica.
+//
+// Vorm van een zaal: { naam, achtergrond, zones: [ { id, naam, vitrine,
+//   klik: { left, top, width, height } (in % van de 16:9-zaal) } ] }
+// De klikgebieden zijn afgestemd op de placeholder-indeling en worden na het
+// aanleveren van de echte zaal-achtergrond bijgesteld (alleen %-waarden).
+// =========================
+const schatkamerZalen = {
+    nt: {
+        naam: "Schatkamer — Nieuwe Testament",
+        achtergrond: "images/zaal-nt.png",
+        zones: [
+            { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "40%", top: "11%", width: "20%", height: "27%" } },
+            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "4%",  top: "26%", width: "24%", height: "40%" } },
+            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "72%", top: "26%", width: "24%", height: "40%" } },
+            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "31%", top: "42%", width: "38%", height: "26%" } },
+            { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "42%", top: "72%", width: "16%", height: "24%" } }
+        ]
+    }
+};
+
+// Duur van de in-/uitzoom-overgang; gelijk aan de transities in style.css.
+const ZOOM_MS = 300;
+
+// Bouwt de overzichtszaal op: achtergrond (met placeholder-terugval) + per
+// zone een klikknop met naam, voortgangsmunten (één munt per boek, gekleurd
+// naar de stand) en een telling "behaald/totaal".
+function bouwZaal(zaalEl, zaal) {
+    if (!zaalEl) return;
+
+    zetSchatkamerAchtergrond(zaalEl, zaal.achtergrond, zaal.naam);
+
+    const houder = zaalEl.querySelector(".sk-zones");
+    if (!houder) return;
+    houder.innerHTML = "";                       // schoon herbouwen bij elk openen
+
+    zaal.zones.forEach((zone) => {
+        const standen = zone.vitrine.nissen.map((nis) => leesTrofeeStand(nis.sleutel));
+        const behaald = standen.filter((stand) => stand !== "geen").length;
+
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "zaal-zone";
+        knop.style.left   = zone.klik.left;
+        knop.style.top    = zone.klik.top;
+        knop.style.width  = zone.klik.width;
+        knop.style.height = zone.klik.height;
+        knop.setAttribute("aria-label",
+            `${zone.naam}: ${behaald} van ${standen.length} trofeeën behaald`);
+        knop.addEventListener("click", () => zoomNaarZone(zone));
+
+        const naam = document.createElement("span");
+        naam.className = "zaal-zone-naam";
+        naam.textContent = zone.naam;
+
+        // Voortgangsmunten: donker = nog niet behaald, brons/zilver/goud = de
+        // behaalde stand. Zo is de zaal in één oogopslag een voortgangskaart.
+        const munten = document.createElement("span");
+        munten.className = "zaal-zone-munten";
+        standen.forEach((stand) => {
+            const munt = document.createElement("span");
+            munt.className = `zaal-munt ${stand}`;
+            munten.appendChild(munt);
+        });
+
+        const telling = document.createElement("span");
+        telling.className = "zaal-zone-telling";
+        telling.textContent = `${behaald}/${standen.length}`;
+
+        knop.append(naam, munten, telling);
+        houder.appendChild(knop);
+    });
 }
+
+// Hoofd-ingang van de schatkamer: opent de overzichtszaal (NT-vleugel).
+function openSchatkamer() {
+    const zaal = schatkamerZalen.nt;
+    const zaalEl = document.querySelector("#zaal-scherm .sk-zaal");
+    bouwZaal(zaalEl, zaal);
+    if (zaalEl) {
+        zaalEl.classList.remove("zoomt");
+        zaalEl.style.transformOrigin = "";
+    }
+    document.getElementById("zaal-scherm").style.display = "flex";
+}
+
+// Sluit de overzichtszaal: terug naar het startscherm.
+function sluitZaal() {
+    document.getElementById("zaal-scherm").style.display = "none";
+}
+
+// Klik op een zone: de zaal zoomt op het klikgebied in (CSS-transitie op
+// transform-origin van de zone), daarna verschijnt het vitrine-detailscherm
+// er met een korte tegenbeweging overheen. De zoom is een illusie — de zaal
+// blijft eronder gewoon openstaan voor het uitzoomen straks.
+function zoomNaarZone(zone) {
+    const zaalEl = document.querySelector("#zaal-scherm .sk-zaal");
+    if (zaalEl) {
+        const cx = parseFloat(zone.klik.left) + parseFloat(zone.klik.width) / 2;
+        const cy = parseFloat(zone.klik.top) + parseFloat(zone.klik.height) / 2;
+        zaalEl.style.transformOrigin = `${cx}% ${cy}%`;
+        zaalEl.classList.add("zoomt");
+    }
+
+    setTimeout(() => {
+        openVitrineScherm(zone.vitrine);
+        // Zaal eronder weer rustig klaarzetten voor het uitzoomen.
+        if (zaalEl) zaalEl.classList.remove("zoomt");
+    }, ZOOM_MS);
+}
+
+// Opent het vitrine-detailscherm met de gegeven config (her)opgebouwd, met
+// een korte inzoom-binnenkomst. "over-zaal" maakt de overlay-achtergrond
+// transparant zodat de zaal eronder zichtbaar blijft tijdens de overgang.
+function openVitrineScherm(config) {
+    const scherm = document.getElementById("schatkamer-scherm");
+    const vitrineEl = scherm ? scherm.querySelector(".schatkamer-vitrine") : null;
+    bouwVitrine(vitrineEl, config);
+    scherm.classList.add("over-zaal", "zoom-entree");
+    scherm.style.display = "flex";
+    setTimeout(() => scherm.classList.remove("zoom-entree"), ZOOM_MS + 50);
+}
+
+// Terug-knop in een vitrine: korte uitzoom, daarna komt de zaal eronder weer
+// tevoorschijn (die stond nog open).
 function sluitSchatkamer() {
-    document.getElementById("schatkamer-scherm").style.display = "none";
+    const scherm = document.getElementById("schatkamer-scherm");
+    scherm.classList.add("zoom-exit");
+    setTimeout(() => {
+        scherm.classList.remove("zoom-exit");
+        scherm.style.display = "none";
+    }, ZOOM_MS - 40);
 }
 
 function openInstellingen() {

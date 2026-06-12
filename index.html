@@ -567,13 +567,29 @@
             </div>
         </div>
 
-        <!-- Schatkamer (trofeeënkamer): eigen, op zichzelf staand scherm dat als
-             overlay over het startscherm komt. De inhoud van de vitrine (de vier
-             sokkels + naamplaatjes) wordt nu config-gedreven opgebouwd door
-             bouwVitrine() in script.js, op basis van het config-object van de
-             actieve vitrine. De achtergrond, posities, namen, localStorage-
+        <!-- Schatkamer: overzichtszaal (NT-vleugel). De speler komt hier binnen
+             via openSchatkamer(). De zaal is één achtergrondafbeelding met
+             klikbare zones (zelfde principe als de boek-zones op het start-
+             scherm); bouwZaal() in script.js plaatst per zone een klikknop met
+             naam + voortgangsmunten in .sk-zones, op basis van de config in
+             schatkamerZalen. Klikken zoomt in naar het vitrine-detailscherm
+             hieronder; dit scherm blijft daarbij openstaan voor de uitzoom. -->
+        <div id="zaal-scherm" class="schatkamer-overlay" style="display: none;">
+            <div class="sk-zaal">
+                <!-- Hierin plaatst bouwZaal() de klikbare zones. -->
+                <div class="sk-zones"></div>
+
+                <button class="schatkamer-terug" onclick="sluitZaal()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Schatkamer (trofeeënkamer): het vitrine-detailscherm. Komt als
+             overlay over de overzichtszaal (en het startscherm). De inhoud van
+             de vitrine (sokkels + naamplaatjes) wordt config-gedreven opgebouwd
+             door bouwVitrine() in script.js, op basis van het config-object van
+             de aangeklikte zone. De achtergrond, posities, namen, localStorage-
              sleutels en afbeeldingsnamen staan dáár; hier blijft alleen het lege
-             omhulsel met de Terug-knop. Een tweede vitrine = puur een extra
+             omhulsel met de Terug-knop. Een nieuwe vitrine = puur een extra
              config-object, geen nieuwe HTML/CSS. -->
         <div id="schatkamer-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="schatkamer-vitrine">
