@@ -576,6 +576,10 @@
              hieronder; dit scherm blijft daarbij openstaan voor de uitzoom. -->
         <div id="zaal-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="sk-zaal">
+                <!-- Hierin plaatst bouwZaal() de vier schatkisten als decor
+                     (vóór .sk-zones in de DOM, dus de klikzones liggen erboven). -->
+                <div class="sk-kisten"></div>
+
                 <!-- Hierin plaatst bouwZaal() de klikbare zones. -->
                 <div class="sk-zones"></div>
 

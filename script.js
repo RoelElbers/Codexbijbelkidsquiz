@@ -3156,6 +3156,14 @@ function bouwVitrine(vitrineEl, config) {
 //     onderste twee nissen zitten op vloerniveau in de plint van de kast —
 //     tel ze niet over het hoofd; daarom loopt deze zone door tot ~81%.
 //   - Altaar centraal achterin (Openbaring), sokkel vooraan (Handelingen).
+//
+// kisten[] (optioneel): de vier schatkisten als decor in de zaal, met
+// dezelfde lock/unlock-weergave als op het startscherm (schaduw-PNG voor
+// brons/zilver/goud, filterklasse .vergrendeld voor de diamant). Per kist:
+//   kist    : "brons" | "zilver" | "goud" | "diamant"
+//   x       : horizontaal midden (%)
+//   top     : bovenkant (%)
+//   breedte : breedte (%) — verder weg in het perspectief = kleiner
 // =========================
 const schatkamerZalen = {
     nt: {
@@ -3167,6 +3175,16 @@ const schatkamerZalen = {
             { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" } },
             { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" } },
             { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "34%",   top: "75%", width: "27%",   height: "19%" } }
+        ],
+        kisten: [
+            // Diamant: aan de voet van de altaartrappen, centraal op het
+            // verlichte bordes — ver weg, dus klein.
+            { kist: "diamant", x: "50%",   top: "28.5%", breedte: "3.4%" },
+            // Trio op de open vloer rechtsvoor, diagonaal mee met het
+            // vloerperspectief: brons achteraan (kleinst), goud vooraan.
+            { kist: "brons",   x: "66%",   top: "73%",   breedte: "4.6%" },
+            { kist: "zilver",  x: "72.5%", top: "78%",   breedte: "5.4%" },
+            { kist: "goud",    x: "79.5%", top: "84%",   breedte: "6.2%" }
         ]
     }
 };
@@ -3181,6 +3199,37 @@ function bouwZaal(zaalEl, zaal) {
     if (!zaalEl) return;
 
     zetSchatkamerAchtergrond(zaalEl, zaal.achtergrond, zaal.naam);
+
+    // Schatkisten als decor (onder de zones in de DOM, dus de klikgebieden
+    // blijven gewoon bovenop werken). Zelfde lock/unlock-weergave als het
+    // startscherm: brons/zilver/goud wisselen schaduw-/volle PNG op basis van
+    // kist_<key>, de diamant krijgt .vergrendeld zolang niet alle drie de
+    // kisten verdiend zijn (zelfde regel als werkVerborgenSchatBij).
+    const kistenHouder = zaalEl.querySelector(".sk-kisten");
+    if (kistenHouder) {
+        kistenHouder.innerHTML = "";
+        (zaal.kisten || []).forEach((k) => {
+            const img = document.createElement("img");
+            img.className = "zaal-kist";
+            img.style.left  = k.x;
+            img.style.top   = k.top;
+            img.style.width = k.breedte;
+
+            if (k.kist === "diamant") {
+                img.src = "images/kist-diamant.png";
+                img.alt = "Verborgen diamanten schatkist";
+                const alleVerdiend = alleKistKeys.every(
+                    (kistKey) => getKistStatus(kistKey) === "verdiend"
+                );
+                img.classList.toggle("vergrendeld", !alleVerdiend);
+            } else {
+                const status = getKistStatus(k.kist);
+                img.src = kistAfbeeldingen[k.kist][status];
+                img.alt = `${k.kist[0].toUpperCase()}${k.kist.slice(1)} schatkist`;
+            }
+            kistenHouder.appendChild(img);
+        });
+    }
 
     const houder = zaalEl.querySelector(".sk-zones");
     if (!houder) return;

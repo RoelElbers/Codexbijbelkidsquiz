@@ -839,6 +839,25 @@ height: 22%;
     opacity: 0;
 }
 
+/* Schatkisten als decor in de zaal. Positie (x = midden) en breedte komen
+   inline uit de config (schatkamerZalen...kisten); niet klikbaar, de
+   klikzones liggen eroverheen. Brons/zilver/goud wisselen schaduw-/volle PNG
+   in script.js; de diamant gebruikt dezelfde filtertruc als .kist-diamant op
+   het startscherm. */
+.sk-zaal .zaal-kist {
+    position: absolute;
+    transform: translateX(-50%);     /* x uit de config = midden van de kist */
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.sk-zaal .zaal-kist.vergrendeld {
+    filter: brightness(0.4) opacity(0.85)
+            drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+}
+
 /* Eén klikbare zone in de zaal. Positie/grootte komen inline uit de config. */
 .zaal-zone {
     position: absolute;
