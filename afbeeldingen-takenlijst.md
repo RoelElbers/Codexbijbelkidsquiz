@@ -18,6 +18,11 @@ Evangeliën-vitrine) en het startscherm.
 
 ## 1. Zaal-achtergrond (1 bestand)
 
+> ✅ **Aangeleverd** (12 juni 2026). De klikzones in `script.js` zijn op de
+> geschilderde architectuur uitgelijnd. Let op bij de Algemene-brievenwand
+> rechts: die heeft 4 rijen × 2 kolommen = 8 nissen, waarvan de onderste
+> twee op vloerniveau in de plint zitten.
+
 | Bestand | Afmetingen | Omschrijving |
 |---|---|---|
 | `zaal-nt.png` | 1920 × 1080 (16:9) | De overzichtszaal van de NT-vleugel: één gotische schatkamerzaal waarin vijf vitrinezones herkenbaar zijn. Indeling (in % van het beeld, links-boven-breedte-hoogte): **Evangeliën** — vitrinekast met 4 nissen op de linkerwand (4, 26, 24, 40). **Algemene brieven** — kast met 8 nissen op de rechterwand (72, 26, 24, 40). **Paulusbrieven** — brede galerijwand met 13 nissen in twee rijen, midden (31, 42, 38, 26). **Openbaring** — verhoogd altaar/ereplaats centraal achterin met lichtinval van boven (40, 11, 20, 27). **Handelingen** — sokkel vooraan in het midden (42, 72, 16, 24). Nissen donker/leeg schilderen; de trofeeën en voortgang komen er digitaal overheen. |

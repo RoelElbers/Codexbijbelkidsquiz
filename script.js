@@ -3148,19 +3148,25 @@ function bouwVitrine(vitrineEl, config) {
 //
 // Vorm van een zaal: { naam, achtergrond, zones: [ { id, naam, vitrine,
 //   klik: { left, top, width, height } (in % van de 16:9-zaal) } ] }
-// De klikgebieden zijn afgestemd op de placeholder-indeling en worden na het
-// aanleveren van de echte zaal-achtergrond bijgesteld (alleen %-waarden).
+// De klikgebieden zijn uitgelijnd op de geschilderde architectuur van
+// zaal-nt.png:
+//   - Evangeliënkast links: 2x2 nissen (4).
+//   - Paulusgalerij midden: twee rijen arcades, 7 boven en 6 onder (13).
+//   - Algemene-brievenwand rechts: 4 rijen x 2 kolommen (8). LET OP: de
+//     onderste twee nissen zitten op vloerniveau in de plint van de kast —
+//     tel ze niet over het hoofd; daarom loopt deze zone door tot ~81%.
+//   - Altaar centraal achterin (Openbaring), sokkel vooraan (Handelingen).
 // =========================
 const schatkamerZalen = {
     nt: {
         naam: "Schatkamer — Nieuwe Testament",
         achtergrond: "images/zaal-nt.png",
         zones: [
-            { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "40%", top: "11%", width: "20%", height: "27%" } },
-            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "4%",  top: "26%", width: "24%", height: "40%" } },
-            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "72%", top: "26%", width: "24%", height: "40%" } },
-            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "31%", top: "42%", width: "38%", height: "26%" } },
-            { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "42%", top: "72%", width: "16%", height: "24%" } }
+            { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "42%",   top: "12%", width: "16%",   height: "22%" } },
+            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "20%", width: "15%",   height: "52%" } },
+            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" } },
+            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" } },
+            { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "34%",   top: "75%", width: "27%",   height: "19%" } }
         ]
     }
 };
