@@ -3209,7 +3209,10 @@ const ZAAL_NIS_TROFEEEN = true;
 const schatkamerZalen = {
     nt: {
         naam: "Schatkamer — Nieuwe Testament",
-        achtergrond: "images/zaal-nt.png",
+        // Nieuwe correcte zaal (8/4/4 nissen). De oude staat als
+        // images/zaal-nt-oud.png. Posities van zones/kisten/munten worden in
+        // een aparte stap op deze nieuwe architectuur uitgelijnd.
+        achtergrond: "images/schatkamer.png",
         zones: [
             { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "42%",   top: "12%", width: "16%",   height: "22%" } },
             { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "20%", width: "15%",   height: "52%" },
