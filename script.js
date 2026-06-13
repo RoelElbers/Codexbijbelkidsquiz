@@ -2967,18 +2967,20 @@ const evangelienVitrine = {
 };
 
 // =========================
-// SLEUTELCONVENTIE NIEUWE NT-BOEKEN
-// Elke trofee bewaart zijn stand in localStorage onder `trofee_<boekkey>` met
-// als waarde geen/brons/zilver/goud — exact zoals de vier evangeliën.
-// De boekkey wordt zo gevormd:
-//   - kleine letters, geen spaties:        Handelingen  -> handelingen
-//   - diakritische tekens vereenvoudigd:   Matteüs -> matteus, dus ook
-//     1 Korintiërs -> 1korintiers, Efeziërs -> efeziers, Hebreeën -> hebreeen,
-//     1 Timoteüs -> 1timoteus
-//   - het cijfer van nummerboeken blijft vooraan staan, zonder spatie:
-//     1 Petrus -> trofee_1petrus, 2 Tessalonicenzen -> trofee_2tessalonicenzen
-// De boekkey is tegelijk de basisnaam van de trofee-afbeelding:
-// images/<boekkey>-zilver.png (zie kleurViaFilter hierboven).
+// SLEUTELCONVENTIE NT-BOEKEN — GEBUNDELD SCHEMA
+// Bron: images/trofee-overzicht.md. De NT-zaal toont 14 trofeeën, waarbij
+// dubbele en korte boeken zijn gebundeld tot één trofee (zodat elke
+// vragenpool genoeg stof heeft). Elke trofee bewaart zijn stand in
+// localStorage onder `trofee_<sleutel>` met waarde geen/brons/zilver/goud.
+// De sleutel is kleine letters, geen spaties; bundels koppelen met een
+// liggend streepje in de bestandsnaam en een underscore in de sleutel:
+//   Korintiërs            -> korintiers-zilver.png         / trofee_korintiers
+//   Kolossenzen & Filemon -> kolossenzen-filemon-zilver.png/ trofee_kolossenzen_filemon
+//   Tessalonicenzen       -> tessalonicenzen-zilver.png    / trofee_tessalonicenzen
+//   Timoteüs & Titus      -> timoteus-titus-zilver.png     / trofee_timoteus_titus
+//   Petrus & Judas        -> petrus-judas-zilver.png       / trofee_petrus_judas
+//   Brieven van Johannes  -> johannesbrieven-zilver.png    / trofee_johannesbrieven
+// De `basis` in de config = de bestandsnaam zonder "-zilver.png".
 // =========================
 
 // --- Handelingen: één ereplek op een sokkel, centraal. ---
@@ -2996,8 +2998,9 @@ const handelingenVitrine = {
     ]
 };
 
-// --- Paulusbrieven: brede galerijwand, 13 nissen in twee rijen (7 boven,
-//     6 onder). De bovenste rij gebruikt de per-nis overrides bodem/naamY. ---
+// --- Paulusbrieven: gebundeld tot 8 trofeeën (zie trofee-overzicht.md),
+//     in twee rijen van 4. Posities zijn voorlopig/benaderend — exact
+//     uitlijnen op de geschilderde nissen gebeurt later in DevTools. ---
 const paulusbrievenVitrine = {
     achtergrond: "images/vitrine-paulusbrieven.png",
     placeholderTitel: "Paulusbrieven",
@@ -3005,28 +3008,24 @@ const paulusbrievenVitrine = {
     kleurViaFilter: true,
     trofeeBodem: "14%",                       // onderste rij
     naamMidden:  "89%",                       // naamplaten onderste rij
-    naamBreedte: "12%",
+    naamBreedte: "16%",
     naamHoogte:  "5%",
     nissen: [
-        // Bovenste rij (7)
-        { x: "11%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "11%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Romeinen",          sleutel: "trofee_romeinen",          basis: "romeinen"          },
-        { x: "24%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "24%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Korintiërs",      sleutel: "trofee_1korintiers",       basis: "1korintiers"       },
-        { x: "37%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "37%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Korintiërs",      sleutel: "trofee_2korintiers",       basis: "2korintiers"       },
-        { x: "50%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "50%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Galaten",           sleutel: "trofee_galaten",           basis: "galaten"           },
-        { x: "63%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "63%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Efeziërs",          sleutel: "trofee_efeziers",          basis: "efeziers"          },
-        { x: "76%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "76%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Filippenzen",       sleutel: "trofee_filippenzen",       basis: "filippenzen"       },
-        { x: "89%", bodem: "56%", naamY: "47%", trofeeHoogte: "24%", naamX: "89%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Kolossenzen",       sleutel: "trofee_kolossenzen",       basis: "kolossenzen"       },
-        // Onderste rij (6)
-        { x: "17.5%", trofeeHoogte: "24%", naamX: "17.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Tessalonicenzen", sleutel: "trofee_1tessalonicenzen", basis: "1tessalonicenzen" },
-        { x: "30.5%", trofeeHoogte: "24%", naamX: "30.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Tessalonicenzen", sleutel: "trofee_2tessalonicenzen", basis: "2tessalonicenzen" },
-        { x: "43.5%", trofeeHoogte: "24%", naamX: "43.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "1 Timoteüs",        sleutel: "trofee_1timoteus",        basis: "1timoteus"        },
-        { x: "56.5%", trofeeHoogte: "24%", naamX: "56.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "2 Timoteüs",        sleutel: "trofee_2timoteus",        basis: "2timoteus"        },
-        { x: "69.5%", trofeeHoogte: "24%", naamX: "69.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Titus",             sleutel: "trofee_titus",            basis: "titus"            },
-        { x: "82.5%", trofeeHoogte: "24%", naamX: "82.5%", naamGrootte: "clamp(6px, 0.95vw, 11px)", naam: "Filemon",           sleutel: "trofee_filemon",          basis: "filemon"          }
+        // Bovenste rij (4)
+        { x: "17%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "17%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Romeinen",            sleutel: "trofee_romeinen",            basis: "romeinen"            },
+        { x: "39%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "39%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Korintiërs",          sleutel: "trofee_korintiers",          basis: "korintiers"          },
+        { x: "61%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "61%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Galaten",             sleutel: "trofee_galaten",             basis: "galaten"             },
+        { x: "83%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "83%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Efeziërs",            sleutel: "trofee_efeziers",            basis: "efeziers"            },
+        // Onderste rij (4)
+        { x: "17%", trofeeHoogte: "26%", naamX: "17%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Filippenzen",          sleutel: "trofee_filippenzen",         basis: "filippenzen"         },
+        { x: "39%", trofeeHoogte: "26%", naamX: "39%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Kolossenzen & Filemon", sleutel: "trofee_kolossenzen_filemon", basis: "kolossenzen-filemon" },
+        { x: "61%", trofeeHoogte: "26%", naamX: "61%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Tessalonicenzen",      sleutel: "trofee_tessalonicenzen",     basis: "tessalonicenzen"     },
+        { x: "83%", trofeeHoogte: "26%", naamX: "83%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Timoteüs & Titus",      sleutel: "trofee_timoteus_titus",      basis: "timoteus-titus"      }
     ]
 };
 
-// --- Algemene brieven: acht nissen in één rij. ---
+// --- Algemene brieven: gebundeld tot 4 trofeeën (zie trofee-overzicht.md),
+//     één rij. Posities voorlopig/benaderend — later finetunen in DevTools. ---
 const algemeneBrievenVitrine = {
     achtergrond: "images/vitrine-algemenebrieven.png",
     placeholderTitel: "Algemene brieven",
@@ -3034,17 +3033,13 @@ const algemeneBrievenVitrine = {
     kleurViaFilter: true,
     trofeeBodem: "28%",
     naamMidden:  "78%",
-    naamBreedte: "11%",
+    naamBreedte: "20%",
     naamHoogte:  "6%",
     nissen: [
-        { x: "11%",   trofeeHoogte: "30%", naamX: "11%",   naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Hebreeën",   sleutel: "trofee_hebreeen",   basis: "hebreeen"   },
-        { x: "22.1%", trofeeHoogte: "30%", naamX: "22.1%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Jakobus",    sleutel: "trofee_jakobus",    basis: "jakobus"    },
-        { x: "33.3%", trofeeHoogte: "30%", naamX: "33.3%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "1 Petrus",   sleutel: "trofee_1petrus",    basis: "1petrus"    },
-        { x: "44.4%", trofeeHoogte: "30%", naamX: "44.4%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "2 Petrus",   sleutel: "trofee_2petrus",    basis: "2petrus"    },
-        { x: "55.6%", trofeeHoogte: "30%", naamX: "55.6%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "1 Johannes", sleutel: "trofee_1johannes",  basis: "1johannes"  },
-        { x: "66.7%", trofeeHoogte: "30%", naamX: "66.7%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "2 Johannes", sleutel: "trofee_2johannes",  basis: "2johannes"  },
-        { x: "77.9%", trofeeHoogte: "30%", naamX: "77.9%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "3 Johannes", sleutel: "trofee_3johannes",  basis: "3johannes"  },
-        { x: "89%",   trofeeHoogte: "30%", naamX: "89%",   naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Judas",      sleutel: "trofee_judas",      basis: "judas"      }
+        { x: "15.5%", trofeeHoogte: "34%", naamX: "15.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Hebreeën",            sleutel: "trofee_hebreeen",       basis: "hebreeen"       },
+        { x: "38.5%", trofeeHoogte: "34%", naamX: "38.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Jakobus",             sleutel: "trofee_jakobus",        basis: "jakobus"        },
+        { x: "61.5%", trofeeHoogte: "34%", naamX: "61.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Petrus & Judas",       sleutel: "trofee_petrus_judas",   basis: "petrus-judas"   },
+        { x: "84.5%", trofeeHoogte: "34%", naamX: "84.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Brieven van Johannes", sleutel: "trofee_johannesbrieven", basis: "johannesbrieven" }
     ]
 };
 
@@ -3224,34 +3219,26 @@ const schatkamerZalen = {
                   { x: "13.2%", top: "54%", hoogte: "12%" }
               ] },
             { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" },
-              // 4x2-kast rechts, rij voor rij; de onderste rij zijn de twee
-              // vloernissen in de plint.
+              // Rechterkast 2x2 (4 gebundelde trofeeën). Posities voorlopig/
+              // benaderend — later in DevTools op de nissen uitlijnen.
               nisTrofeeen: [
-                  { x: "87.6%", top: "28.5%", hoogte: "9%" },
-                  { x: "94%",   top: "28.5%", hoogte: "9%" },
-                  { x: "87.6%", top: "42%",   hoogte: "9%" },
-                  { x: "94%",   top: "42%",   hoogte: "9%" },
-                  { x: "87.6%", top: "55.5%", hoogte: "9%" },
-                  { x: "94%",   top: "55.5%", hoogte: "9%" },
-                  { x: "87.6%", top: "69%",   hoogte: "9%" },
-                  { x: "94%",   top: "69%",   hoogte: "9%" }
+                  { x: "87.6%", top: "33%", hoogte: "10%" },
+                  { x: "94%",   top: "33%", hoogte: "10%" },
+                  { x: "87.6%", top: "55%", hoogte: "10%" },
+                  { x: "94%",   top: "55%", hoogte: "10%" }
               ] },
             { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" },
-              // Galerij midden: bovenste rij 7 arcades, onderste rij 6.
+              // Middenwand 2x4 (8 gebundelde trofeeën). Posities voorlopig/
+              // benaderend — later in DevTools op de nissen uitlijnen.
               nisTrofeeen: [
-                  { x: "31.1%", top: "43%", hoogte: "8.5%" },
-                  { x: "37.4%", top: "43%", hoogte: "8.5%" },
-                  { x: "43.7%", top: "43%", hoogte: "8.5%" },
-                  { x: "50%",   top: "43%", hoogte: "8.5%" },
-                  { x: "56.3%", top: "43%", hoogte: "8.5%" },
-                  { x: "62.6%", top: "43%", hoogte: "8.5%" },
-                  { x: "68.9%", top: "43%", hoogte: "8.5%" },
-                  { x: "31.7%", top: "58%", hoogte: "9.5%" },
-                  { x: "39%",   top: "58%", hoogte: "9.5%" },
-                  { x: "46.3%", top: "58%", hoogte: "9.5%" },
-                  { x: "53.7%", top: "58%", hoogte: "9.5%" },
-                  { x: "61%",   top: "58%", hoogte: "9.5%" },
-                  { x: "68.3%", top: "58%", hoogte: "9.5%" }
+                  { x: "34%",   top: "40%", hoogte: "9%" },
+                  { x: "44.7%", top: "40%", hoogte: "9%" },
+                  { x: "55.3%", top: "40%", hoogte: "9%" },
+                  { x: "66%",   top: "40%", hoogte: "9%" },
+                  { x: "34%",   top: "56%", hoogte: "9%" },
+                  { x: "44.7%", top: "56%", hoogte: "9%" },
+                  { x: "55.3%", top: "56%", hoogte: "9%" },
+                  { x: "66%",   top: "56%", hoogte: "9%" }
               ] },
             { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "34%",   top: "75%", width: "27%",   height: "19%" } }
         ],
