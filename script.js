@@ -3241,36 +3241,35 @@ const schatkamerZalen = {
             { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "28%", width: "16%",   height: "40%" },
               // Linkerkast 2x2: [boven-links, boven-rechts, onder-links, onder-rechts]
               nisTrofeeen: [
-                  { x: "7%",    top: "32%", hoogte: "14%" },
-                  { x: "13.5%", top: "32%", hoogte: "14%" },
-                  { x: "7%",    top: "49%", hoogte: "14%" },
-                  { x: "13.5%", top: "49%", hoogte: "14%" }
+                  { x: "7.18%",  top: "38.53%", hoogte: "14%" },
+                  { x: "13.81%", top: "38.42%", hoogte: "14%" },
+                  { x: "6.82%",  top: "57.6%",  hoogte: "14%" },
+                  { x: "13.81%", top: "57.05%", hoogte: "14%" }
               ] },
             { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "81.5%", top: "28%", width: "16%",   height: "40%" },
               // Rechterkast 2x2.
               nisTrofeeen: [
-                  { x: "86.5%", top: "32%", hoogte: "14%" },
-                  { x: "93%",   top: "32%", hoogte: "14%" },
-                  { x: "86.5%", top: "49%", hoogte: "14%" },
-                  { x: "93%",   top: "49%", hoogte: "14%" }
+                  { x: "85.95%", top: "38.53%", hoogte: "14%" },
+                  { x: "93.24%", top: "38.31%", hoogte: "14%" },
+                  { x: "85.95%", top: "57.93%", hoogte: "14%" },
+                  { x: "93.06%", top: "58.57%", hoogte: "14%" }
               ] },
             { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "29%",   top: "36%", width: "42%",   height: "30%" },
-              // Middenwand 2x4 (bovenste rij 4, onderste rij 4). Nis-centra op
-              // x 35/45/55/65; bovenrij-bodem ~49%, onderrij-bodem ~62,5%.
+              // Middenwand 2x4 (bovenste rij 4, onderste rij 4).
               nisTrofeeen: [
-                  { x: "35%", top: "40%", hoogte: "10%" },
-                  { x: "45%", top: "40%", hoogte: "10%" },
-                  { x: "55%", top: "40%", hoogte: "10%" },
-                  { x: "65%", top: "40%", hoogte: "10%" },
-                  { x: "35%", top: "55.5%", hoogte: "10.5%" },
-                  { x: "45%", top: "55.5%", hoogte: "10.5%" },
-                  { x: "55%", top: "55.5%", hoogte: "10.5%" },
-                  { x: "65%", top: "55.5%", hoogte: "10.5%" }
+                  { x: "36.78%", top: "45.33%", hoogte: "10%" },
+                  { x: "45.49%", top: "45.33%", hoogte: "10%" },
+                  { x: "54.14%", top: "45.44%", hoogte: "10%" },
+                  { x: "63.16%", top: "45.55%", hoogte: "10%" },
+                  { x: "36.77%", top: "58.66%", hoogte: "10.5%" },
+                  { x: "45.49%", top: "58.77%", hoogte: "10.5%" },
+                  { x: "54.57%", top: "59.1%",  hoogte: "10.5%" },
+                  { x: "63.1%",  top: "59.09%", hoogte: "10.5%" }
               ] },
             { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "44%",   top: "29%", width: "12%",   height: "12%" },
               // Kleinere ere-nis boven de Paulus-galerij.
               nisTrofeeen: [
-                  { x: "50%", top: "28%", hoogte: "8%" }
+                  { x: "49.94%", top: "31.7%", hoogte: "8%" }
               ] }
         ],
         kisten: [
