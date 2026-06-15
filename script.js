@@ -3201,6 +3201,27 @@ function bouwVitrine(vitrineEl, config) {
 // false = alleen de voortgangsmunten, zoals voorheen.
 // Zo kan de maker beide varianten naast elkaar vergelijken.
 const ZAAL_NIS_TROFEEEN = true;
+
+// =========================
+// AFSTELMODUS — live trofeeposities slepen/bijschuiven (?afstel=aan)
+// Alleen actief met ?afstel=aan in de URL. Dan worden alle trofeeën getoond
+// en kun je ze met de muis slepen, met pijltjes bijschuiven en met +/-/scroll
+// schalen. Wijzigingen worden meteen in localStorage bewaard; bouwZaal past die
+// overrides toe — óók in de normale modus — zodat je het resultaat direct ziet.
+// Met "Exporteer posities" krijg je de bijgewerkte config om in script.js te
+// plakken (de browser kan zelf niet naar het bestand schrijven). Buiten
+// afstelmodus is deze hele laag onzichtbaar en gebeurt er niets.
+// =========================
+const afstelModus = new URLSearchParams(window.location.search).get("afstel") === "aan";
+const AFSTEL_OPSLAG = "afstel_zaalposities_v1";
+
+function leesAfstelPosities() {
+    try { return JSON.parse(localStorage.getItem(AFSTEL_OPSLAG)) || {}; }
+    catch (e) { return {}; }
+}
+function schrijfAfstelPosities(map) {
+    localStorage.setItem(AFSTEL_OPSLAG, JSON.stringify(map));
+}
 const schatkamerZalen = {
     nt: {
         naam: "Schatkamer — Nieuwe Testament",
@@ -3315,21 +3336,30 @@ function bouwZaal(zaalEl, zaal) {
     if (nisHouder) {
         nisHouder.innerHTML = "";
         if (ZAAL_NIS_TROFEEEN) {
+            const afstelPos = leesAfstelPosities();
             zaal.zones.forEach((zone) => {
                 (zone.nisTrofeeen || []).forEach((nis, i) => {
                     const vitrineNis = zone.vitrine.nissen[i];
                     if (!vitrineNis) return;
 
-                    const stand = leesTrofeeStand(vitrineNis.sleutel);
+                    // In afstelmodus alle trofeeën tonen (zoals demo=goud) zodat
+                    // je alles tegelijk kunt plaatsen; anders alleen de behaalde.
+                    const stand = afstelModus ? "goud" : leesTrofeeStand(vitrineNis.sleutel);
                     if (stand === "geen") return;        // nis blijft leeg
+
+                    // Opgeslagen afstel-positie overrulet de config (ook normaal).
+                    const sleutel = `${zone.id}:${i}`;
+                    const pos = afstelPos[sleutel] || nis;
 
                     const img = document.createElement("img");
                     img.className = `zaal-nis-trofee ${stand}`;
                     img.alt = vitrineNis.naam;
-                    img.style.left   = nis.x;
-                    img.style.top    = nis.top;
-                    img.style.height = nis.hoogte;
+                    img.style.left   = pos.x;
+                    img.style.top    = pos.top;
+                    img.style.height = pos.hoogte;
                     img.src = `images/${vitrineNis.basis}-zilver.png`;
+                    img.dataset.afstelKey = sleutel;       // "zoneId:index"
+                    img.dataset.afstelNaam = vitrineNis.naam;
 
                     // Eigen kunst ontbreekt nog -> evangelisten-trofee als
                     // tijdelijke stand-in (één keer; daarna opgeven).
@@ -3371,6 +3401,134 @@ function bouwZaal(zaalEl, zaal) {
     });
 }
 
+// Afstel-UI: slepen, pijltjes-bijschuiven, schalen, opslaan en exporteren.
+// Wordt alleen aangeroepen in afstelmodus. De handlers worden via delegatie op
+// de (blijvende) zaal-container gezet, zodat ze ook na een herbouw van de
+// trofeeën blijven werken; de eenmalige setup draait dankzij een vlag één keer.
+function initAfstel(zaalEl) {
+    if (!zaalEl) return;
+    zaalEl.classList.add("afstel");               // CSS: klikzones uit, trofeeën pakbaar
+    if (zaalEl.dataset.afstelKlaar) return;
+    zaalEl.dataset.afstelKlaar = "1";
+
+    const overrides = leesAfstelPosities();
+    let sel = null;
+    const SCHAAL_STAP = 0.2;                       // %-stap voor hoogte (+/-/scroll)
+
+    // --- bedieningspaneel ---
+    const paneel = document.createElement("div");
+    paneel.id = "afstel-paneel";
+    paneel.innerHTML =
+        '<strong>Afstelmodus</strong>' +
+        '<div id="afstel-info">Klik een trofee om te selecteren.</div>' +
+        '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% ' +
+        '(Shift = 1%) &middot; + / &minus; of scroll = grootte</div>' +
+        '<div class="afstel-knoppen">' +
+        '<button type="button" id="afstel-export">Exporteer posities</button>' +
+        '<button type="button" id="afstel-reset">Reset</button></div>' +
+        '<textarea id="afstel-uitvoer" readonly style="display:none"></textarea>';
+    document.body.appendChild(paneel);
+    const infoEl = paneel.querySelector("#afstel-info");
+    const uitvoerEl = paneel.querySelector("#afstel-uitvoer");
+
+    function toonInfo() {
+        if (!sel) { infoEl.textContent = "Klik een trofee om te selecteren."; return; }
+        infoEl.innerHTML = "<b>" + sel.dataset.afstelNaam + "</b><br>x: " +
+            parseFloat(sel.style.left).toFixed(1) + "% &middot; y: " +
+            parseFloat(sel.style.top).toFixed(1) + "% &middot; h: " +
+            parseFloat(sel.style.height).toFixed(1) + "%";
+    }
+    function bewaar(img) {
+        overrides[img.dataset.afstelKey] = { x: img.style.left, top: img.style.top, hoogte: img.style.height };
+        schrijfAfstelPosities(overrides);
+    }
+    function selecteer(img) {
+        if (sel) sel.classList.remove("afstel-geselecteerd");
+        sel = img;
+        if (sel) sel.classList.add("afstel-geselecteerd");
+        toonInfo();
+    }
+
+    // --- slepen (delegatie op de zaal) ---
+    zaalEl.addEventListener("pointerdown", (e) => {
+        const img = e.target.closest(".zaal-nis-trofee");
+        if (!img) { selecteer(null); return; }
+        e.preventDefault();
+        selecteer(img);
+        const r = zaalEl.getBoundingClientRect();
+        const startX = parseFloat(img.style.left), startY = parseFloat(img.style.top);
+        const muisX = e.clientX, muisY = e.clientY;
+        let gesleept = false;
+        function beweeg(ev) {
+            gesleept = true;
+            const dx = (ev.clientX - muisX) / r.width * 100;
+            const dy = (ev.clientY - muisY) / r.height * 100;
+            img.style.left = (startX + dx).toFixed(2) + "%";
+            img.style.top  = (startY + dy).toFixed(2) + "%";
+            toonInfo();
+        }
+        function los() {
+            document.removeEventListener("pointermove", beweeg);
+            document.removeEventListener("pointerup", los);
+            if (gesleept) bewaar(img);
+        }
+        document.addEventListener("pointermove", beweeg);
+        document.addEventListener("pointerup", los);
+    });
+
+    // --- scrollwiel = grootte ---
+    zaalEl.addEventListener("wheel", (e) => {
+        const img = e.target.closest(".zaal-nis-trofee");
+        if (!img) return;
+        e.preventDefault();
+        selecteer(img);
+        const h = Math.max(1, parseFloat(img.style.height) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
+        img.style.height = h.toFixed(2) + "%";
+        bewaar(img); toonInfo();
+    }, { passive: false });
+
+    // --- toetsenbord: pijltjes verplaatsen, +/- schalen ---
+    document.addEventListener("keydown", (e) => {
+        if (!sel || !zaalEl.classList.contains("afstel")) return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        const x = parseFloat(sel.style.left), y = parseFloat(sel.style.top), h = parseFloat(sel.style.height);
+        if (e.key === "ArrowLeft")       sel.style.left = (x - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowRight") sel.style.left = (x + stap).toFixed(2) + "%";
+        else if (e.key === "ArrowUp")    sel.style.top  = (y - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowDown")  sel.style.top  = (y + stap).toFixed(2) + "%";
+        else if (e.key === "+" || e.key === "=") sel.style.height = (h + SCHAAL_STAP).toFixed(2) + "%";
+        else if (e.key === "-" || e.key === "_") sel.style.height = Math.max(1, h - SCHAAL_STAP).toFixed(2) + "%";
+        else raak = false;
+        if (raak) { e.preventDefault(); bewaar(sel); toonInfo(); }
+    });
+
+    // --- exporteren: bijgewerkte nisTrofeeen-arrays om in script.js te plakken ---
+    paneel.querySelector("#afstel-export").addEventListener("click", () => {
+        let uit = "// Afstel-export — vervang per zone de nisTrofeeen-array in schatkamerZalen.\n\n";
+        schatkamerZalen.nt.zones.forEach((zone) => {
+            if (!zone.nisTrofeeen) return;
+            uit += "// " + zone.id + "\nnisTrofeeen: [\n";
+            zone.nisTrofeeen.forEach((nis, i) => {
+                const p = overrides[zone.id + ":" + i] || nis;
+                uit += '    { x: "' + p.x + '", top: "' + p.top + '", hoogte: "' + p.hoogte + '" },\n';
+            });
+            uit += "],\n\n";
+        });
+        uitvoerEl.value = uit;
+        uitvoerEl.style.display = "block";
+        uitvoerEl.select();
+    });
+
+    // --- reset: alle afstel-overrides wissen ---
+    paneel.querySelector("#afstel-reset").addEventListener("click", () => {
+        localStorage.removeItem(AFSTEL_OPSLAG);
+        location.reload();
+    });
+
+    toonInfo();
+}
+
 // Hoofd-ingang van de schatkamer: opent de overzichtszaal (NT-vleugel).
 function openSchatkamer() {
     const zaal = schatkamerZalen.nt;
@@ -3381,6 +3539,7 @@ function openSchatkamer() {
         zaalEl.style.transformOrigin = "";
     }
     document.getElementById("zaal-scherm").style.display = "flex";
+    if (afstelModus) initAfstel(zaalEl);
 }
 
 // Sluit de overzichtszaal: terug naar het startscherm.
@@ -3703,3 +3862,6 @@ function eenOverlayOpen() {
         else if (e.key === "ArrowLeft" && huidigNtScherm === 2) gaNaarScherm1();
     });
 })();
+
+// Afstelmodus (?afstel=aan): open meteen de zaal en activeer de afstel-UI.
+if (afstelModus) openSchatkamer();

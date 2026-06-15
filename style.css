@@ -759,6 +759,70 @@ height: 22%;
     user-select: none;
 }
 
+/* =========================
+   AFSTELMODUS (?afstel=aan) — alleen actief als .sk-zaal de klasse .afstel
+   heeft (gezet door initAfstel). Buiten afstelmodus is deze hele laag dood:
+   geen .afstel-klasse, geen #afstel-paneel in de DOM.
+========================= */
+
+/* Klikzones uit zodat je de trofeeën kunt pakken; trofeeën worden sleepbaar. */
+.sk-zaal.afstel .zaal-zone { pointer-events: none; }
+.sk-zaal.afstel .zaal-nis-trofee {
+    pointer-events: auto;
+    cursor: move;
+    touch-action: none;              /* slepen niet door scroll onderbroken */
+}
+
+/* Geselecteerde trofee duidelijk gemarkeerd. */
+.sk-zaal .zaal-nis-trofee.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+
+/* Bedieningspaneel linksboven. */
+#afstel-paneel {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 3000;
+    max-width: 330px;
+    padding: 10px 12px;
+    background: rgba(8, 14, 30, 0.93);
+    color: #e8eefc;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.45;
+    border: 1px solid #36dfff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+#afstel-paneel strong { color: #36dfff; letter-spacing: 0.5px; }
+#afstel-paneel #afstel-info { margin-top: 6px; }
+#afstel-paneel .afstel-hint { margin-top: 6px; font-size: 11px; opacity: 0.7; }
+#afstel-paneel .afstel-knoppen { margin-top: 8px; display: flex; gap: 6px; }
+#afstel-paneel button {
+    font: 11px ui-monospace, Menlo, Consolas, monospace;
+    padding: 5px 9px;
+    color: #08101e;
+    background: #36dfff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#afstel-paneel button:hover { background: #6fe9ff; }
+#afstel-paneel #afstel-uitvoer {
+    width: 306px;
+    height: 150px;
+    margin-top: 8px;
+    font: 10px ui-monospace, Menlo, Consolas, monospace;
+    color: #d8e2f4;
+    background: #06101f;
+    border: 1px solid #2a466e;
+    border-radius: 5px;
+    resize: vertical;
+}
+
 /* Generiek schaduwsilhouet voor trofeeën waarvan de kunst nog niet bestaat
    (vervangDoorSilhouet in script.js). Zelfde beeldverhouding als de echte
    trofee-renders (428x676); de kelkvorm komt uit een clip-path. */
