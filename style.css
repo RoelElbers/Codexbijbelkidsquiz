@@ -765,16 +765,19 @@ height: 22%;
    geen .afstel-klasse, geen #afstel-paneel in de DOM.
 ========================= */
 
-/* Klikzones uit zodat je de trofeeën kunt pakken; trofeeën worden sleepbaar. */
+/* Klikzones uit zodat je de trofeeën/kisten kunt pakken; beide worden
+   sleepbaar (kisten zijn normaal niet klikbaar). */
 .sk-zaal.afstel .zaal-zone { pointer-events: none; }
-.sk-zaal.afstel .zaal-nis-trofee {
+.sk-zaal.afstel .zaal-nis-trofee,
+.sk-zaal.afstel .zaal-kist {
     pointer-events: auto;
     cursor: move;
     touch-action: none;              /* slepen niet door scroll onderbroken */
 }
 
-/* Geselecteerde trofee duidelijk gemarkeerd. */
-.sk-zaal .zaal-nis-trofee.afstel-geselecteerd {
+/* Geselecteerde trofee of kist duidelijk gemarkeerd. */
+.sk-zaal .zaal-nis-trofee.afstel-geselecteerd,
+.sk-zaal .zaal-kist.afstel-geselecteerd {
     outline: 3px solid #36dfff;
     outline-offset: 1px;
     box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);

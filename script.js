@@ -3294,32 +3294,43 @@ const ZOOM_MS = 300;
 function bouwZaal(zaalEl, zaal) {
     if (!zaalEl) return;
 
+    // Opgeslagen afstel-posities (trofeeën én kisten) overrulen de config,
+    // ook in de normale modus. Eén keer lezen voor beide lussen hieronder.
+    const afstelPos = leesAfstelPosities();
+
     zetSchatkamerAchtergrond(zaalEl, zaal.achtergrond, zaal.naam);
 
     // Schatkisten als decor (onder de zones in de DOM, dus de klikgebieden
     // blijven gewoon bovenop werken). Zelfde lock/unlock-weergave als het
     // startscherm: brons/zilver/goud wisselen schaduw-/volle PNG op basis van
     // kist_<key>, de diamant krijgt .vergrendeld zolang niet alle drie de
-    // kisten verdiend zijn (zelfde regel als werkVerborgenSchatBij).
+    // kisten verdiend zijn (zelfde regel als werkVerborgenSchatBij). In
+    // afstelmodus worden ze altijd onthuld getoond zodat je ze kunt plaatsen.
+    const kistAfstelNaam = { brons: "Bronzen kist", zilver: "Zilveren kist", goud: "Gouden kist", diamant: "Verborgen Schat" };
     const kistenHouder = zaalEl.querySelector(".sk-kisten");
     if (kistenHouder) {
         kistenHouder.innerHTML = "";
         (zaal.kisten || []).forEach((k) => {
+            const sleutel = `kist:${k.kist}`;
+            const pos = afstelPos[sleutel] || k;     // override of config
+
             const img = document.createElement("img");
             img.className = "zaal-kist";
-            img.style.left  = k.x;
-            img.style.top   = k.top;
-            img.style.width = k.breedte;
+            img.style.left  = pos.x;
+            img.style.top   = pos.top;
+            img.style.width = pos.breedte;
+            img.dataset.afstelKey = sleutel;         // "kist:<naam>"
+            img.dataset.afstelNaam = kistAfstelNaam[k.kist] || k.kist;
 
             if (k.kist === "diamant") {
                 img.src = "images/kist-diamant.png";
                 img.alt = "Verborgen diamanten schatkist";
-                const alleVerdiend = alleKistKeys.every(
+                const alleVerdiend = afstelModus || alleKistKeys.every(
                     (kistKey) => getKistStatus(kistKey) === "verdiend"
                 );
                 img.classList.toggle("vergrendeld", !alleVerdiend);
             } else {
-                const status = getKistStatus(k.kist);
+                const status = afstelModus ? "verdiend" : getKistStatus(k.kist);
                 img.src = kistAfbeeldingen[k.kist][status];
                 img.alt = `${k.kist[0].toUpperCase()}${k.kist.slice(1)} schatkist`;
             }
@@ -3335,7 +3346,6 @@ function bouwZaal(zaalEl, zaal) {
     if (nisHouder) {
         nisHouder.innerHTML = "";
         if (ZAAL_NIS_TROFEEEN) {
-            const afstelPos = leesAfstelPosities();
             zaal.zones.forEach((zone) => {
                 (zone.nisTrofeeen || []).forEach((nis, i) => {
                     const vitrineNis = zone.vitrine.nissen[i];
@@ -3412,14 +3422,19 @@ function initAfstel(zaalEl) {
 
     const overrides = leesAfstelPosities();
     let sel = null;
-    const SCHAAL_STAP = 0.2;                       // %-stap voor hoogte (+/-/scroll)
+    const SCHAAL_STAP = 0.2;                       // %-stap voor schalen (+/-/scroll)
+    const AFSTEL_KIES = ".zaal-nis-trofee, .zaal-kist";  // selecteerbare elementen
+
+    // Trofeeën schalen via hun hoogte, kisten via hun breedte.
+    const isKist   = (img) => img.classList.contains("zaal-kist");
+    const maatProp = (img) => isKist(img) ? "width" : "height";
 
     // --- bedieningspaneel ---
     const paneel = document.createElement("div");
     paneel.id = "afstel-paneel";
     paneel.innerHTML =
         '<strong>Afstelmodus</strong>' +
-        '<div id="afstel-info">Klik een trofee om te selecteren.</div>' +
+        '<div id="afstel-info">Klik een trofee of kist om te selecteren.</div>' +
         '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% ' +
         '(Shift = 1%) &middot; + / &minus; of scroll = grootte</div>' +
         '<div class="afstel-knoppen">' +
@@ -3431,14 +3446,17 @@ function initAfstel(zaalEl) {
     const uitvoerEl = paneel.querySelector("#afstel-uitvoer");
 
     function toonInfo() {
-        if (!sel) { infoEl.textContent = "Klik een trofee om te selecteren."; return; }
+        if (!sel) { infoEl.textContent = "Klik een trofee of kist om te selecteren."; return; }
+        const k = isKist(sel);
         infoEl.innerHTML = "<b>" + sel.dataset.afstelNaam + "</b><br>x: " +
             parseFloat(sel.style.left).toFixed(1) + "% &middot; y: " +
-            parseFloat(sel.style.top).toFixed(1) + "% &middot; h: " +
-            parseFloat(sel.style.height).toFixed(1) + "%";
+            parseFloat(sel.style.top).toFixed(1) + "% &middot; " +
+            (k ? "b" : "h") + ": " + parseFloat(sel.style[maatProp(sel)]).toFixed(1) + "%";
     }
     function bewaar(img) {
-        overrides[img.dataset.afstelKey] = { x: img.style.left, top: img.style.top, hoogte: img.style.height };
+        overrides[img.dataset.afstelKey] = isKist(img)
+            ? { x: img.style.left, top: img.style.top, breedte: img.style.width }
+            : { x: img.style.left, top: img.style.top, hoogte: img.style.height };
         schrijfAfstelPosities(overrides);
     }
     function selecteer(img) {
@@ -3450,7 +3468,7 @@ function initAfstel(zaalEl) {
 
     // --- slepen (delegatie op de zaal) ---
     zaalEl.addEventListener("pointerdown", (e) => {
-        const img = e.target.closest(".zaal-nis-trofee");
+        const img = e.target.closest(AFSTEL_KIES);
         if (!img) { selecteer(null); return; }
         e.preventDefault();
         selecteer(img);
@@ -3475,14 +3493,15 @@ function initAfstel(zaalEl) {
         document.addEventListener("pointerup", los);
     });
 
-    // --- scrollwiel = grootte ---
+    // --- scrollwiel = grootte (trofee: hoogte, kist: breedte) ---
     zaalEl.addEventListener("wheel", (e) => {
-        const img = e.target.closest(".zaal-nis-trofee");
+        const img = e.target.closest(AFSTEL_KIES);
         if (!img) return;
         e.preventDefault();
         selecteer(img);
-        const h = Math.max(1, parseFloat(img.style.height) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
-        img.style.height = h.toFixed(2) + "%";
+        const prop = maatProp(img);
+        const v = Math.max(1, parseFloat(img.style[prop]) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
+        img.style[prop] = v.toFixed(2) + "%";
         bewaar(img); toonInfo();
     }, { passive: false });
 
@@ -3490,21 +3509,23 @@ function initAfstel(zaalEl) {
     document.addEventListener("keydown", (e) => {
         if (!sel || !zaalEl.classList.contains("afstel")) return;
         const stap = e.shiftKey ? 1 : 0.1;
+        const prop = maatProp(sel);
         let raak = true;
-        const x = parseFloat(sel.style.left), y = parseFloat(sel.style.top), h = parseFloat(sel.style.height);
+        const x = parseFloat(sel.style.left), y = parseFloat(sel.style.top), maat = parseFloat(sel.style[prop]);
         if (e.key === "ArrowLeft")       sel.style.left = (x - stap).toFixed(2) + "%";
         else if (e.key === "ArrowRight") sel.style.left = (x + stap).toFixed(2) + "%";
         else if (e.key === "ArrowUp")    sel.style.top  = (y - stap).toFixed(2) + "%";
         else if (e.key === "ArrowDown")  sel.style.top  = (y + stap).toFixed(2) + "%";
-        else if (e.key === "+" || e.key === "=") sel.style.height = (h + SCHAAL_STAP).toFixed(2) + "%";
-        else if (e.key === "-" || e.key === "_") sel.style.height = Math.max(1, h - SCHAAL_STAP).toFixed(2) + "%";
+        else if (e.key === "+" || e.key === "=") sel.style[prop] = (maat + SCHAAL_STAP).toFixed(2) + "%";
+        else if (e.key === "-" || e.key === "_") sel.style[prop] = Math.max(1, maat - SCHAAL_STAP).toFixed(2) + "%";
         else raak = false;
         if (raak) { e.preventDefault(); bewaar(sel); toonInfo(); }
     });
 
-    // --- exporteren: bijgewerkte nisTrofeeen-arrays om in script.js te plakken ---
+    // --- exporteren: bijgewerkte nisTrofeeen-arrays + kisten om te plakken ---
     paneel.querySelector("#afstel-export").addEventListener("click", () => {
-        let uit = "// Afstel-export — vervang per zone de nisTrofeeen-array in schatkamerZalen.\n\n";
+        let uit = "// Afstel-export — vervang per zone de nisTrofeeen-array en de\n" +
+                  "// kisten-array in schatkamerZalen.\n\n";
         schatkamerZalen.nt.zones.forEach((zone) => {
             if (!zone.nisTrofeeen) return;
             uit += "// " + zone.id + "\nnisTrofeeen: [\n";
@@ -3514,6 +3535,12 @@ function initAfstel(zaalEl) {
             });
             uit += "],\n\n";
         });
+        uit += "// kisten\nkisten: [\n";
+        (schatkamerZalen.nt.kisten || []).forEach((k) => {
+            const p = overrides["kist:" + k.kist] || k;
+            uit += '    { kist: "' + k.kist + '", x: "' + p.x + '", top: "' + p.top + '", breedte: "' + p.breedte + '" },\n';
+        });
+        uit += "],\n";
         uitvoerEl.value = uit;
         uitvoerEl.style.display = "block";
         uitvoerEl.select();
