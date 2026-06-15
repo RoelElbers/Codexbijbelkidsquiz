@@ -3208,49 +3208,58 @@ const schatkamerZalen = {
         // images/zaal-nt-oud.png. Posities van zones/kisten/munten worden in
         // een aparte stap op deze nieuwe architectuur uitgelijnd.
         achtergrond: "images/schatkamer.png",
+        // Posities uitgelijnd op de geschilderde nissen van images/schatkamer.png
+        // (x = horizontaal midden, top = bovenkant img, hoogte/breedte in % van
+        // de 16:9-zaal). Per nis één trofee, voet op de nisbodem.
         zones: [
-            { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "42%",   top: "12%", width: "16%",   height: "22%" } },
-            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "20%", width: "15%",   height: "52%" },
-              // 2x2-kast links: [boven-links, boven-rechts, onder-links, onder-rechts]
+            { id: "openbaring",      naam: "Openbaring",       vitrine: openbaringVitrine,      klik: { left: "43%",   top: "10%", width: "14%",   height: "20%" },
+              // Grote ere-nis bovenin, onder het roosvenster.
               nisTrofeeen: [
-                  { x: "6.8%",  top: "33%", hoogte: "12%" },
-                  { x: "13.2%", top: "33%", hoogte: "12%" },
-                  { x: "6.8%",  top: "54%", hoogte: "12%" },
-                  { x: "13.2%", top: "54%", hoogte: "12%" }
+                  { x: "50%", top: "12%", hoogte: "15%" }
               ] },
-            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "83.5%", top: "19%", width: "14.5%", height: "62%" },
-              // Rechterkast 2x2 (4 gebundelde trofeeën). Posities voorlopig/
-              // benaderend — later in DevTools op de nissen uitlijnen.
+            { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "28%", width: "16%",   height: "40%" },
+              // Linkerkast 2x2: [boven-links, boven-rechts, onder-links, onder-rechts]
               nisTrofeeen: [
-                  { x: "87.6%", top: "33%", hoogte: "10%" },
-                  { x: "94%",   top: "33%", hoogte: "10%" },
-                  { x: "87.6%", top: "55%", hoogte: "10%" },
-                  { x: "94%",   top: "55%", hoogte: "10%" }
+                  { x: "7%",    top: "32%", hoogte: "14%" },
+                  { x: "13.5%", top: "32%", hoogte: "14%" },
+                  { x: "7%",    top: "48%", hoogte: "14%" },
+                  { x: "13.5%", top: "48%", hoogte: "14%" }
               ] },
-            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "27%",   top: "34%", width: "46%",   height: "38%" },
-              // Middenwand 2x4 (8 gebundelde trofeeën). Posities voorlopig/
-              // benaderend — later in DevTools op de nissen uitlijnen.
+            { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "81.5%", top: "28%", width: "16%",   height: "40%" },
+              // Rechterkast 2x2.
               nisTrofeeen: [
-                  { x: "34%",   top: "40%", hoogte: "9%" },
-                  { x: "44.7%", top: "40%", hoogte: "9%" },
-                  { x: "55.3%", top: "40%", hoogte: "9%" },
-                  { x: "66%",   top: "40%", hoogte: "9%" },
-                  { x: "34%",   top: "56%", hoogte: "9%" },
-                  { x: "44.7%", top: "56%", hoogte: "9%" },
-                  { x: "55.3%", top: "56%", hoogte: "9%" },
-                  { x: "66%",   top: "56%", hoogte: "9%" }
+                  { x: "86.5%", top: "32%", hoogte: "14%" },
+                  { x: "93%",   top: "32%", hoogte: "14%" },
+                  { x: "86.5%", top: "48%", hoogte: "14%" },
+                  { x: "93%",   top: "48%", hoogte: "14%" }
               ] },
-            { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "34%",   top: "75%", width: "27%",   height: "19%" } }
+            { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "29%",   top: "36%", width: "42%",   height: "30%" },
+              // Middenwand 2x4 (bovenste rij 4, onderste rij 4).
+              nisTrofeeen: [
+                  { x: "34%",   top: "36.5%", hoogte: "12.5%" },
+                  { x: "44.7%", top: "36.5%", hoogte: "12.5%" },
+                  { x: "55.3%", top: "36.5%", hoogte: "12.5%" },
+                  { x: "66%",   top: "36.5%", hoogte: "12.5%" },
+                  { x: "34%",   top: "49.5%", hoogte: "12.5%" },
+                  { x: "44.7%", top: "49.5%", hoogte: "12.5%" },
+                  { x: "55.3%", top: "49.5%", hoogte: "12.5%" },
+                  { x: "66%",   top: "49.5%", hoogte: "12.5%" }
+              ] },
+            { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "44%",   top: "29%", width: "12%",   height: "12%" },
+              // Kleinere ere-nis boven de Paulus-galerij.
+              nisTrofeeen: [
+                  { x: "50%", top: "29%", hoogte: "10%" }
+              ] }
         ],
         kisten: [
-            // Diamant: aan de voet van de altaartrappen, centraal op het
-            // verlichte bordes — ver weg, dus klein.
-            { kist: "diamant", x: "50%",   top: "28.5%", breedte: "3.4%" },
-            // Trio op de open vloer rechtsvoor, diagonaal mee met het
-            // vloerperspectief: brons achteraan (kleinst), goud vooraan.
-            { kist: "brons",   x: "66%",   top: "73%",   breedte: "4.6%" },
-            { kist: "zilver",  x: "72.5%", top: "78%",   breedte: "5.4%" },
-            { kist: "goud",    x: "79.5%", top: "84%",   breedte: "6.2%" }
+            // Drie niveaukisten op de drie ronde plateaus vooraan (voet op het
+            // plateau-oppervlak; middelste plateau ligt iets lager/dichterbij).
+            { kist: "brons",   x: "38%", top: "72%", breedte: "8%" },
+            { kist: "zilver",  x: "50%", top: "75%", breedte: "8%" },
+            { kist: "goud",    x: "62%", top: "72%", breedte: "8%" },
+            // Diamanten Verborgen Schat op het verhoogde ronde plateau centraal
+            // erachter; klein genoeg om de onderste Paulus-nissen niet te raken.
+            { kist: "diamant", x: "50%", top: "63.5%", breedte: "6%" }
         ]
     }
 };
@@ -3354,25 +3363,9 @@ function bouwZaal(zaalEl, zaal) {
             `${zone.naam}: ${behaald} van ${standen.length} trofeeën behaald`);
         knop.addEventListener("click", () => zoomNaarZone(zone));
 
-        const naam = document.createElement("span");
-        naam.className = "zaal-zone-naam";
-        naam.textContent = zone.naam;
-
-        // Voortgangsmunten: donker = nog niet behaald, brons/zilver/goud = de
-        // behaalde stand. Zo is de zaal in één oogopslag een voortgangskaart.
-        const munten = document.createElement("span");
-        munten.className = "zaal-zone-munten";
-        standen.forEach((stand) => {
-            const munt = document.createElement("span");
-            munt.className = `zaal-munt ${stand}`;
-            munten.appendChild(munt);
-        });
-
-        const telling = document.createElement("span");
-        telling.className = "zaal-zone-telling";
-        telling.textContent = `${behaald}/${standen.length}`;
-
-        knop.append(naam, munten, telling);
+        // De overzichtszaal toont alleen de trofeeën in hun nissen; de zone is
+        // hier puur een onzichtbaar klikgebied om in te zoomen. Naam, munten en
+        // telling verhuizen naar het zoom-/detailscherm.
         houder.appendChild(knop);
     });
 }

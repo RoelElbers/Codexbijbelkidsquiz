@@ -872,95 +872,25 @@ height: 22%;
             drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
 }
 
-/* Eén klikbare zone in de zaal. Positie/grootte komen inline uit de config. */
+/* Eén klikbare zone in de zaal. Positie/grootte komen inline uit de config.
+   De overzichtszaal toont alleen de trofeeën in hun nissen, dus de zone is een
+   onzichtbaar klikgebied: geen paneel, geen naam, geen munten/telling (die
+   verhuizen naar het zoom-/detailscherm). Een zachte gloed bij hover geeft aan
+   dat de zone klikbaar is. */
 .zaal-zone {
     position: absolute;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 6%;
-    padding: 2%;
-
-    background: rgba(10, 20, 55, 0.25);
-    border: 1px solid rgba(217, 184, 101, 0.20);
+    background: transparent;
+    border: 0;
     border-radius: 10px;
     cursor: pointer;
 
-    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-}
-
-/* In placeholder-modus zijn de zones duidelijke panelen in de huisstijl. */
-.sk-placeholder .zaal-zone {
-    background: linear-gradient(180deg, rgba(36, 64, 122, 0.85) 0%, rgba(14, 28, 58, 0.92) 100%);
-    border: 2px solid rgba(217, 184, 101, 0.35);
-    box-shadow:
-        inset 0 1px 2px rgba(255, 255, 255, 0.12),
-        0 4px 10px rgba(0, 0, 0, 0.45);
+    transition: box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .zaal-zone:hover {
-    transform: translateY(-3px) scale(1.02);
-    background: rgba(30, 50, 110, 0.45);
-    box-shadow: 0 0 18px rgba(120, 200, 255, 0.35);
-}
-
-.zaal-zone-naam {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-weight: 700;
-    font-size: clamp(9px, 1.3vw, 18px);
-    letter-spacing: 1px;
-    color: #f6e7bf;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
-    text-align: center;
-    pointer-events: none;
-}
-
-/* Voortgangsmunten: één munt per boek. Donker = nog niet behaald;
-   brons/zilver/goud tonen de behaalde stand met een eigen gloed. Zo leest de
-   zaal als voortgangskaart ("de Paulusmuur is nog donker"). */
-.zaal-zone-munten {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: clamp(2px, 0.35vw, 6px);
-    max-width: 90%;
-    pointer-events: none;
-}
-
-.zaal-munt {
-    width: clamp(6px, 0.85vw, 12px);
-    aspect-ratio: 1;
-    border-radius: 50%;
-}
-
-.zaal-munt.geen {
-    background: #0d1530;
-    border: 1px solid rgba(120, 140, 190, 0.35);
-}
-
-.zaal-munt.brons {
-    background: radial-gradient(circle at 35% 30%, #e0a060 0%, #8a5a22 100%);
-    box-shadow: 0 0 5px rgba(224, 160, 96, 0.6);
-}
-
-.zaal-munt.zilver {
-    background: radial-gradient(circle at 35% 30%, #f0f4ff 0%, #9aa6b8 100%);
-    box-shadow: 0 0 6px rgba(210, 225, 255, 0.75);
-}
-
-.zaal-munt.goud {
-    background: radial-gradient(circle at 35% 30%, #ffe9a0 0%, #c8920a 100%);
-    box-shadow: 0 0 7px rgba(255, 195, 60, 0.85);
-}
-
-.zaal-zone-telling {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: clamp(8px, 1vw, 14px);
-    color: rgba(246, 231, 191, 0.85);
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
-    pointer-events: none;
+    background: rgba(120, 200, 255, 0.08);
+    box-shadow: 0 0 18px rgba(120, 200, 255, 0.25);
 }
 
 /* =========================
