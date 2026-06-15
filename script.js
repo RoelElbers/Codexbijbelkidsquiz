@@ -3243,44 +3243,44 @@ const schatkamerZalen = {
               nisTrofeeen: [
                   { x: "7.18%",  top: "38.53%", hoogte: "14%" },
                   { x: "13.81%", top: "38.42%", hoogte: "14%" },
-                  { x: "6.82%",  top: "57.6%",  hoogte: "14%" },
-                  { x: "13.81%", top: "57.05%", hoogte: "14%" }
+                  { x: "6.76%",  top: "58.58%", hoogte: "14%" },
+                  { x: "13.63%", top: "58.14%", hoogte: "14%" }
               ] },
             { id: "algemenebrieven", naam: "Algemene brieven", vitrine: algemeneBrievenVitrine, klik: { left: "81.5%", top: "28%", width: "16%",   height: "40%" },
               // Rechterkast 2x2.
               nisTrofeeen: [
-                  { x: "85.95%", top: "38.53%", hoogte: "14%" },
+                  { x: "86.01%", top: "38.75%", hoogte: "13.6%" },
                   { x: "93.24%", top: "38.31%", hoogte: "14%" },
-                  { x: "85.95%", top: "57.93%", hoogte: "14%" },
-                  { x: "93.06%", top: "58.57%", hoogte: "14%" }
+                  { x: "86.13%", top: "59.13%", hoogte: "12.8%" },
+                  { x: "93.06%", top: "58.57%", hoogte: "14.2%" }
               ] },
             { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "29%",   top: "36%", width: "42%",   height: "30%" },
               // Middenwand 2x4 (bovenste rij 4, onderste rij 4).
               nisTrofeeen: [
-                  { x: "36.78%", top: "45.33%", hoogte: "10%" },
-                  { x: "45.49%", top: "45.33%", hoogte: "10%" },
-                  { x: "54.14%", top: "45.44%", hoogte: "10%" },
-                  { x: "63.16%", top: "45.55%", hoogte: "10%" },
-                  { x: "36.77%", top: "58.66%", hoogte: "10.5%" },
-                  { x: "45.49%", top: "58.77%", hoogte: "10.5%" },
-                  { x: "54.57%", top: "59.1%",  hoogte: "10.5%" },
-                  { x: "63.1%",  top: "59.09%", hoogte: "10.5%" }
+                  { x: "36.78%", top: "45.33%", hoogte: "10.2%" },
+                  { x: "45.49%", top: "45%",    hoogte: "10.6%" },
+                  { x: "54.32%", top: "43.59%", hoogte: "12%" },
+                  { x: "63.16%", top: "46.09%", hoogte: "9.4%" },
+                  { x: "36.77%", top: "59.75%", hoogte: "9.5%" },
+                  { x: "45.37%", top: "59.64%", hoogte: "9.7%" },
+                  { x: "54.63%", top: "60.41%", hoogte: "8.9%" },
+                  { x: "63.04%", top: "60.07%", hoogte: "9.3%" }
               ] },
             { id: "handelingen",     naam: "Handelingen",      vitrine: handelingenVitrine,     klik: { left: "44%",   top: "29%", width: "12%",   height: "12%" },
               // Kleinere ere-nis boven de Paulus-galerij.
               nisTrofeeen: [
-                  { x: "49.94%", top: "31.7%", hoogte: "8%" }
+                  { x: "49.94%", top: "31.92%", hoogte: "7.6%" }
               ] }
         ],
         kisten: [
             // Drie niveaukisten op de drie ronde plateaus vooraan (voet op het
             // plateau-oppervlak; middelste plateau ligt iets lager/dichterbij).
-            { kist: "brons",   x: "38%", top: "72%", breedte: "8%" },
-            { kist: "zilver",  x: "50%", top: "75%", breedte: "8%" },
-            { kist: "goud",    x: "62%", top: "72%", breedte: "8%" },
+            { kist: "brons",   x: "31.08%", top: "77.44%", breedte: "8%" },
+            { kist: "zilver",  x: "49.81%", top: "77.39%", breedte: "8%" },
+            { kist: "goud",    x: "68.36%", top: "77.44%", breedte: "8%" },
             // Diamanten Verborgen Schat op het verhoogde ronde plateau centraal
             // erachter; klein genoeg om de onderste Paulus-nissen niet te raken.
-            { kist: "diamant", x: "50%", top: "63.5%", breedte: "6%" }
+            { kist: "diamant", x: "49.82%", top: "66.33%", breedte: "6%" }
         ]
     }
 };
