@@ -1451,10 +1451,14 @@ height: 22%;
     text-align: center;
 }
 
-/* Evangelie-keuze (Vragen & uitleg) en Catechese-categorieën: begrens de hoogte
-   en laat intern scrollen, zodat de Terug-knop en het laatste item bereikbaar
-   blijven als er meer bijkomen. Alleen het scroll-gedrag; de menu-opmaak
+/* Bijbeltraining-kruispunt, Evangelie-keuze (Vragen & uitleg) en Catechese-
+   categorieën: begrens de hoogte en laat intern scrollen, zodat de Terug-knop en
+   het laatste item bereikbaar blijven als er meer bijkomen (bijv. de extra
+   menuknoppen in Bijbeltraining). Alleen het scroll-gedrag; de menu-opmaak
    (gecentreerd) blijft. */
+#bijbeltraining-scherm .quiz-box,
+#naslag-scherm .quiz-box,
+#oefen-boek-scherm .quiz-box,
 #vu-boek-scherm .quiz-box,
 #catechese-scherm .quiz-box {
     max-height: 90vh;
