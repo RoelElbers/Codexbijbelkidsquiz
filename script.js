@@ -3511,6 +3511,13 @@ function initAfstel(zaalEl) {
     let vitSel = null;                            // geselecteerde vitrine-trofee
     let labelSel = null;                          // geselecteerd vitrine-naamlabel
 
+    // Scherm-2-afstel (NT-boeken): aparte overlay, eigen positiemodel.
+    const nt2El = document.getElementById("nt-scherm-2");
+    const nt2Houder = document.getElementById("nt2-boeken");
+    const nt2Zichtbaar = () => !!nt2El && nt2El.classList.contains("zichtbaar");
+    if (nt2El) nt2El.classList.add("afstel");     // CSS: lagen pakbaar op scherm 2
+    let boekSel = null;                           // geselecteerde scherm-2-laag
+
     // Trofeeën schalen via hun hoogte, kisten via hun breedte.
     const isKist   = (img) => img.classList.contains("zaal-kist");
     const maatProp = (img) => isKist(img) ? "width" : "height";
@@ -3545,6 +3552,20 @@ function initAfstel(zaalEl) {
         knop.addEventListener("click", () => openVitrineScherm(zone.vitrine));
         vitrineKnoppen.appendChild(knop);
     });
+    // Knop om scherm 2 (de NT-boeken) af te stellen: verlaat de Schatkamer en
+    // toon scherm 2.
+    const nt2Knop = document.createElement("button");
+    nt2Knop.type = "button";
+    nt2Knop.textContent = "NT-boeken (scherm 2)";
+    nt2Knop.addEventListener("click", () => {
+        ["zaal-scherm", "schatkamer-scherm"].forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) el.style.display = "none";
+        });
+        huidigNtScherm = 2;
+        if (nt2El) { nt2El.classList.add("zichtbaar"); nt2El.setAttribute("aria-hidden", "false"); }
+    });
+    vitrineKnoppen.appendChild(nt2Knop);
     paneel.appendChild(vitrineKnoppen);
 
     function toonInfo() {
@@ -3564,6 +3585,7 @@ function initAfstel(zaalEl) {
     function selecteer(img) {
         if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }     // vitrine-trofee loslaten
         if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // vitrine-label loslaten
+        if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; }   // scherm-2-laag loslaten
         if (sel) sel.classList.remove("afstel-geselecteerd");
         sel = img;
         if (sel) sel.classList.add("afstel-geselecteerd");
@@ -3613,7 +3635,7 @@ function initAfstel(zaalEl) {
     // Ligt de vitrine erbovenop, dan neemt de vitrine-keydown (hieronder) de
     // toetsen over; de zaal blijft verder exact hetzelfde werken.
     document.addEventListener("keydown", (e) => {
-        if (!sel || !zaalEl.classList.contains("afstel") || vitrineOpen()) return;
+        if (!sel || !zaalEl.classList.contains("afstel") || vitrineOpen() || nt2Zichtbaar()) return;
         const stap = e.shiftKey ? 1 : 0.1;
         const prop = maatProp(sel);
         let raak = true;
@@ -3652,6 +3674,7 @@ function initAfstel(zaalEl) {
     function vitSelecteer(img) {
         if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; } // zaal-selectie loslaten
         if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // label-selectie loslaten
+        if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; } // scherm-2-laag loslaten
         if (vitSel) vitSel.classList.remove("afstel-geselecteerd");
         vitSel = img;
         if (vitSel) vitSel.classList.add("afstel-geselecteerd");
@@ -3746,6 +3769,7 @@ function initAfstel(zaalEl) {
     function labelSelecteer(div) {
         if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }           // zaal loslaten
         if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }   // trofee loslaten
+        if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; } // scherm-2-laag loslaten
         if (labelSel) labelSel.classList.remove("afstel-geselecteerd");
         labelSel = div;
         if (labelSel) labelSel.classList.add("afstel-geselecteerd");
@@ -3809,6 +3833,126 @@ function initAfstel(zaalEl) {
         if (raak) { e.preventDefault(); labelBewaar(); labelInfo(); }
     });
 
+    // ===== Scherm-2 NT-boeken: zelfde afstelmodus, gedeelde x per stapel =====
+    // Horizontaal slepen/nudgen verschuift de hele stapel (gedeelde x); verticaal
+    // is per laag (bodem). Schalen: het boek per boek (hoogte); plateau/bord/naam
+    // delen hun maat over alle boeken. Schrijft rechtstreeks naar ntScherm2.
+    const FONT_STAP_NT2 = 1;                        // px-stap voor de naam
+    function nt2Laag(el) {
+        if (el.classList.contains("nt2-plateau")) return { klasse: "nt2-plateau", bodemVeld: "plateauBodem", prop: "width",    gedeeld: true,  sizeVeld: "plateauBreedte" };
+        if (el.classList.contains("nt2-boek"))    return { klasse: "nt2-boek",    bodemVeld: "boekBodem",    prop: "height",   gedeeld: false, sizeVeld: "boekHoogte" };
+        if (el.classList.contains("nt2-bord"))    return { klasse: "nt2-bord",    bodemVeld: "bordBodem",    prop: "width",    gedeeld: true,  sizeVeld: "bordBreedte" };
+        return { klasse: "nt2-naam", bodemVeld: "naamBodem", prop: "fontSize", gedeeld: true, sizeVeld: "naamGrootte" };
+    }
+    function nt2FontPx(el) {
+        return parseFloat(el.style.fontSize) || parseFloat(getComputedStyle(el).fontSize) || 12;
+    }
+    function nt2Stapel(el) {                        // alle lagen van hetzelfde boek (gedeelde x)
+        return nt2Houder ? nt2Houder.querySelectorAll('[data-boek-index="' + el.dataset.boekIndex + '"]') : [];
+    }
+    function nt2ZetX(el, waarde) { nt2Stapel(el).forEach((s) => s.style.left = waarde); }
+    function nt2ZetSize(el, info, waarde) {
+        if (info.gedeeld) nt2Houder.querySelectorAll("." + info.klasse).forEach((s) => s.style[info.prop] = waarde);
+        else el.style[info.prop] = waarde;
+    }
+    function boekInfo() {
+        if (!boekSel) return;
+        const info = nt2Laag(boekSel);
+        const maat = info.prop === "fontSize"
+            ? "grootte: " + boekSel.style.fontSize
+            : (info.prop === "height" ? "h: " : "b: ") + parseFloat(boekSel.style[info.prop]).toFixed(1) + "%";
+        infoEl.innerHTML = "<b>" + boekSel.dataset.afstelNaam + "</b> (scherm 2)<br>x: " +
+            parseFloat(boekSel.style.left).toFixed(1) + "% &middot; bodem: " +
+            parseFloat(boekSel.style.bottom).toFixed(1) + "% &middot; " + maat;
+    }
+    function boekBewaar(el) {                        // inline -> config (voor de export)
+        const b = ntScherm2.boeken[+el.dataset.boekIndex]; if (!b) return;
+        const info = nt2Laag(el);
+        b.x = el.style.left;                        // gedeelde x van de stapel
+        b[info.bodemVeld] = el.style.bottom;        // per-laag bodem
+        if (info.gedeeld) ntScherm2[info.sizeVeld] = el.style[info.prop]; // gedeelde maat
+        else b[info.sizeVeld] = el.style[info.prop];                      // boekhoogte per boek
+    }
+    function boekSelecteer(el) {
+        if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }
+        if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }
+        if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; }
+        if (boekSel) boekSel.classList.remove("afstel-geselecteerd");
+        boekSel = el;
+        if (boekSel) boekSel.classList.add("afstel-geselecteerd");
+        boekInfo();
+    }
+
+    if (nt2El) {
+        // --- slepen (delegatie op scherm 2) ---
+        nt2El.addEventListener("pointerdown", (e) => {
+            const el = e.target.closest(".nt2-plateau, .nt2-boek, .nt2-bord, .nt2-naam");
+            if (!el) { boekSelecteer(null); return; }
+            e.preventDefault();
+            boekSelecteer(el);
+            const r = nt2Houder.getBoundingClientRect();
+            const startX = parseFloat(el.style.left);
+            const startB = parseFloat(el.style.bottom);
+            const muisX = e.clientX, muisY = e.clientY;
+            let gesleept = false;
+            function beweeg(ev) {
+                gesleept = true;
+                const dx = (ev.clientX - muisX) / r.width * 100;
+                const dy = (ev.clientY - muisY) / r.height * 100;
+                nt2ZetX(el, (startX + dx).toFixed(2) + "%");          // horizontaal: hele stapel
+                el.style.bottom = (startB - dy).toFixed(2) + "%";     // verticaal: alleen deze laag
+                boekInfo();
+            }
+            function los() {
+                document.removeEventListener("pointermove", beweeg);
+                document.removeEventListener("pointerup", los);
+                if (gesleept) boekBewaar(el);
+            }
+            document.addEventListener("pointermove", beweeg);
+            document.addEventListener("pointerup", los);
+        });
+
+        // --- scrollwiel = schalen (boek: hoogte; plateau/bord: breedte; naam: px) ---
+        nt2El.addEventListener("wheel", (e) => {
+            const el = e.target.closest(".nt2-plateau, .nt2-boek, .nt2-bord, .nt2-naam");
+            if (!el) return;
+            e.preventDefault();
+            boekSelecteer(el);
+            const info = nt2Laag(el);
+            if (info.prop === "fontSize") {
+                const v = Math.max(1, nt2FontPx(el) + (e.deltaY < 0 ? FONT_STAP_NT2 : -FONT_STAP_NT2));
+                nt2ZetSize(el, info, v.toFixed(1) + "px");
+            } else {
+                const v = Math.max(1, parseFloat(el.style[info.prop]) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
+                nt2ZetSize(el, info, v.toFixed(2) + "%");
+            }
+            boekBewaar(el); boekInfo();
+        }, { passive: false });
+    }
+
+    // --- toetsenbord voor scherm 2 (alleen als scherm 2 zichtbaar is) ---
+    document.addEventListener("keydown", (e) => {
+        if (!boekSel || !nt2Zichtbaar()) return;
+        const info = nt2Laag(boekSel);
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        const x = parseFloat(boekSel.style.left), b = parseFloat(boekSel.style.bottom);
+        if (e.key === "ArrowLeft")        nt2ZetX(boekSel, (x - stap).toFixed(2) + "%");
+        else if (e.key === "ArrowRight")  nt2ZetX(boekSel, (x + stap).toFixed(2) + "%");
+        else if (e.key === "ArrowUp")     boekSel.style.bottom = (b + stap).toFixed(2) + "%";
+        else if (e.key === "ArrowDown")   boekSel.style.bottom = (b - stap).toFixed(2) + "%";
+        else if (e.key === "+" || e.key === "=") {
+            if (info.prop === "fontSize") nt2ZetSize(boekSel, info, (nt2FontPx(boekSel) + FONT_STAP_NT2).toFixed(1) + "px");
+            else nt2ZetSize(boekSel, info, (parseFloat(boekSel.style[info.prop]) + SCHAAL_STAP).toFixed(2) + "%");
+        }
+        else if (e.key === "-" || e.key === "_") {
+            if (info.prop === "fontSize") nt2ZetSize(boekSel, info, Math.max(1, nt2FontPx(boekSel) - FONT_STAP_NT2).toFixed(1) + "px");
+            else nt2ZetSize(boekSel, info, Math.max(1, parseFloat(boekSel.style[info.prop]) - SCHAAL_STAP).toFixed(2) + "%");
+        }
+        else raak = false;
+        if (raak) { e.preventDefault(); boekBewaar(boekSel); boekInfo(); }
+    });
+
     // Zet een afgestelde px-lettergrootte om naar een MEESCHALENDE cqi-waarde:
     // 1cqi = 1% van de vitrine-doosbreedte (container). Omdat de naamborden óók
     // in % van de doos staan, blijft de verhouding tekst↔bord constant op elk
@@ -3822,6 +3966,14 @@ function initAfstel(zaalEl) {
         const doosBreedte = vitrineEl ? vitrineEl.getBoundingClientRect().width : window.innerWidth;
         const cqi = (px / doosBreedte * 100).toFixed(2);
         return cqi + "cqi";
+    }
+
+    // Idem voor scherm 2: cqi t.o.v. de scherm-2-container (#nt2-boeken).
+    function grootteVoorExportNt2(waarde) {
+        const m = /^\s*([\d.]+)px\s*$/.exec(waarde || "");
+        if (!m) return waarde;
+        const breedte = nt2Houder ? nt2Houder.getBoundingClientRect().width : window.innerWidth;
+        return (parseFloat(m[1]) / breedte * 100).toFixed(2) + "cqi";
     }
 
     // --- exporteren: bijgewerkte nisTrofeeen-arrays + kisten om te plakken ---
@@ -3860,6 +4012,20 @@ function initAfstel(zaalEl) {
             });
             uit += "],\n";
         }
+
+        // NT-scherm 2 — vervang ntScherm2.boeken (+ de gedeelde maten erboven).
+        uit += "\n// NT-scherm 2 — gedeelde maten in ntScherm2:\n";
+        uit += '//   plateauBreedte: "' + ntScherm2.plateauBreedte + '", bordBreedte: "' + ntScherm2.bordBreedte +
+               '", naamBreedte: "' + ntScherm2.naamBreedte + '", naamHoogte: "' + ntScherm2.naamHoogte +
+               '", naamGrootte: "' + grootteVoorExportNt2(ntScherm2.naamGrootte) + '"\n';
+        uit += "// vervang ntScherm2.boeken:\nboeken: [\n";
+        ntScherm2.boeken.forEach((b) => {
+            uit += '    { naam: "' + b.naam + '", groep: "' + b.groep + '", boek: "' + b.boek + '",\n' +
+                   '      x: "' + b.x + '", boekHoogte: "' + b.boekHoogte + '", boekBodem: "' + b.boekBodem +
+                   '", plateauBodem: "' + b.plateauBodem + '", bordBodem: "' + b.bordBodem +
+                   '", naamBodem: "' + b.naamBodem + '" },\n';
+        });
+        uit += "],\n";
 
         uitvoerEl.value = uit;
         uitvoerEl.style.display = "block";
@@ -4167,22 +4333,23 @@ function openNtGroep(groep) {
 const ntScherm2 = {
     plateauBron: "images/stenen_plateau.png",
     bordBron:    "images/naambordje.png",
-    // Gedeelde maten (% van de 16:9-box); per boek alleen x + naam + bestand.
+    // Gedeelde maten (size) voor plateau/bord/naam — gelden voor alle boeken.
     plateauBreedte: "13%",
-    plateauBodem:   "6%",
-    boekHoogte:     "21%",
-    boekBodem:      "10%",
     bordBreedte:    "12%",
-    bordBodem:      "3.4%",
-    naamBodem:      "4.6%",
     naamBreedte:    "11%",
     naamHoogte:     "4%",
     naamGrootte:    "1.1cqi",
+    // Per boek: één gedeelde x (hele stapel), eigen boekgrootte (de afbeeldingen
+    // verschillen) en een eigen bodem per laag. Afstelbaar via ?afstel=aan.
     boeken: [
-        { x: "22.5%", boek: "images/handelingenboek.png",      naam: "Handelingen",        groep: "Handelingen" },
-        { x: "34.8%", boek: "images/brievenvanpaulusboek.png", naam: "Brieven van Paulus", groep: "Brieven van Paulus" },
-        { x: "47.2%", boek: "images/algemenebrievenboek.png",  naam: "Algemene brieven",   groep: "Algemene brieven" },
-        { x: "60.6%", boek: "images/apocalypseboek.png",       naam: "Openbaring",         groep: "Openbaring" }
+        { naam: "Handelingen",        groep: "Handelingen",        boek: "images/handelingenboek.png",
+          x: "22.5%", boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+        { naam: "Brieven van Paulus", groep: "Brieven van Paulus", boek: "images/brievenvanpaulusboek.png",
+          x: "34.8%", boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+        { naam: "Algemene brieven",   groep: "Algemene brieven",   boek: "images/algemenebrievenboek.png",
+          x: "47.2%", boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+        { naam: "Openbaring",         groep: "Openbaring",         boek: "images/apocalypseboek.png",
+          x: "60.6%", boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" }
     ]
 };
 
@@ -4191,33 +4358,31 @@ function bouwNtScherm2() {
     if (!houder) return;
     houder.innerHTML = "";
 
-    ntScherm2.boeken.forEach((b) => {
-        // 1) Stenen plateau (achterste laag).
+    ntScherm2.boeken.forEach((b, i) => {
+        // 1) Stenen plateau (achterste laag). Eigen bodem, gedeelde breedte.
         const plateau = document.createElement("img");
         plateau.className = "nt2-plateau";
         plateau.alt = "";
         plateau.src = ntScherm2.plateauBron;
         plateau.style.left = b.x;
-        plateau.style.bottom = ntScherm2.plateauBodem;
+        plateau.style.bottom = b.plateauBodem;
         plateau.style.width = ntScherm2.plateauBreedte;
-        houder.appendChild(plateau);
 
-        // 2) Het boek (klikbaar; behoudt de bestaande openNtGroep-actie).
+        // 2) Het boek (klikbaar buiten afstel; eigen hoogte + bodem per boek).
         const knop = document.createElement("button");
         knop.type = "button";
         knop.className = "nt2-boek";
         knop.style.left = b.x;
-        knop.style.bottom = ntScherm2.boekBodem;
-        knop.style.height = ntScherm2.boekHoogte;
+        knop.style.bottom = b.boekBodem;
+        knop.style.height = b.boekHoogte;
         knop.setAttribute("aria-label", b.naam);
-        knop.addEventListener("click", () => openNtGroep(b.groep));
+        if (!afstelModus) knop.addEventListener("click", () => openNtGroep(b.groep));
 
         const boekImg = document.createElement("img");
         boekImg.className = "nt2-boek-img";
         boekImg.alt = b.naam;
         boekImg.src = b.boek;
         knop.appendChild(boekImg);
-        houder.appendChild(knop);
 
         // 3) Naambordje + de naam er in code overheen.
         const bord = document.createElement("img");
@@ -4225,19 +4390,29 @@ function bouwNtScherm2() {
         bord.alt = "";
         bord.src = ntScherm2.bordBron;
         bord.style.left = b.x;
-        bord.style.bottom = ntScherm2.bordBodem;
+        bord.style.bottom = b.bordBodem;
         bord.style.width = ntScherm2.bordBreedte;
-        houder.appendChild(bord);
 
         const naam = document.createElement("div");
         naam.className = "nt2-naam";
         naam.textContent = b.naam;
         naam.style.left = b.x;
-        naam.style.bottom = ntScherm2.naamBodem;
+        naam.style.bottom = b.naamBodem;
         naam.style.width = ntScherm2.naamBreedte;
         naam.style.height = ntScherm2.naamHoogte;
         naam.style.fontSize = ntScherm2.naamGrootte;
-        houder.appendChild(naam);
+
+        // In afstelmodus elk element stempelen (selectie + koppeling naar de
+        // config) zodat het scherm-2-spoor in initAfstel ze kan plaatsen.
+        if (afstelModus) {
+            [["plateau", plateau], ["boek", knop], ["bord", bord], ["naam", naam]].forEach(([laag, el]) => {
+                el.dataset.boekIndex = i;
+                el.dataset.laag = laag;
+                el.dataset.afstelNaam = b.naam + " — " + laag;
+            });
+        }
+
+        houder.append(plateau, knop, bord, naam);
     });
 }
 
@@ -4285,6 +4460,7 @@ function eenOverlayOpen() {
     // tekstveld wordt getypt of als er een overlay open staat.
     document.addEventListener("keydown", (e) => {
         if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+        if (afstelModus) return;                 // pijltjes zijn in afstel voor nudgen; navigeer met de pijlknoppen
         const tag = (e.target.tagName || "").toLowerCase();
         if (tag === "input" || tag === "textarea") return;
         if (eenOverlayOpen()) return;

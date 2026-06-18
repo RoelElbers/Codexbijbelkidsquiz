@@ -2358,6 +2358,30 @@ height: 22%;
                  0 0 2px rgba(0, 0, 0, .5);
 }
 
+/* Afstelmodus (?afstel=aan): op scherm 2 zijn alle vier de lagen sleepbaar/
+   schaalbaar. De hover-lift van het boek staat dan uit zodat slepen rustig
+   blijft; buiten afstel verandert er niets. */
+#nt-scherm-2.afstel .nt2-plateau,
+#nt-scherm-2.afstel .nt2-bord,
+#nt-scherm-2.afstel .nt2-naam,
+#nt-scherm-2.afstel .nt2-boek {
+    pointer-events: auto;
+    cursor: move;
+    touch-action: none;
+}
+#nt-scherm-2.afstel .nt2-boek:hover {
+    transform: translateX(-50%);
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.5));
+}
+#nt-scherm-2 .nt2-plateau.afstel-geselecteerd,
+#nt-scherm-2 .nt2-bord.afstel-geselecteerd,
+#nt-scherm-2 .nt2-naam.afstel-geselecteerd,
+#nt-scherm-2 .nt2-boek.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+
 /* Touch-vangnet: op apparaten zonder hover blijven de pijlen zacht zichtbaar en
    klikbaar, zodat een tablet-speler altijd verder kan. Op desktop (hover)
    verandert er niets — daar blijft de pijl verborgen tot de muis bij de rand komt. */
