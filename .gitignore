@@ -1,3 +1,6 @@
 # Ruwe trofee-aanleveringen (vóór bijsnijden naar 428x676 + transparant).
 # Alleen werkmateriaal; de verwerkte versies staan los in images/.
 images/origineel-trofee-aanlevering/
+
+# Backup van de oude boek-PNG's (staan al in de git-historie).
+images/_oud-boeken/
