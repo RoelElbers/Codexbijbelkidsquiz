@@ -2151,10 +2151,10 @@ height: 22%;
     align-items: center;
     justify-content: center;
 
-    background-image:
-        linear-gradient(rgba(6, 14, 38, 0.86), rgba(6, 14, 38, 0.86)),
-        url("images/startschermeindversie.png");
-    background-size: cover, 100% 100%;
+    /* Dezelfde lege stage als het startscherm, zodat scherm 2 qua sfeer één
+       geheel is; de vier NT-boeken komen er als losse elementen overheen. */
+    background-image: url("images/startschermleeg.png");
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -2251,20 +2251,111 @@ height: 22%;
     font-weight: 400;
 }
 
-/* Rustige "binnenkort"-melding onder de tegels; verschijnt na een klik. */
+/* Rustige "binnenkort"-melding; verschijnt onderaan na een klik op een boek. */
 .nt2-melding {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 6;
+
     min-height: 1.4em;
     margin: 0;
     font-size: clamp(1rem, 1.8vh, 1.2rem);
     font-style: italic;
     text-align: center;
     color: #ffd86b;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
 
     opacity: 0;
     transition: opacity 0.25s ease;
 }
 .nt2-melding.zichtbaar {
     opacity: 1;
+}
+
+/* =========================
+   NT-SCHERM 2 — vier groepen als boeken op stenen plateaus
+   Config-gestuurd opgebouwd door bouwNtScherm2(). Per positie drie beeldlagen
+   (plateau onder, klikbaar boek, naambordje) + de naam in code op het bordje.
+   Maten/posities komen inline uit de config; de container is een cqi-context
+   zodat de namen meeschalen met de doos (geen overflow), net als de vitrines.
+========================= */
+.nt2-boeken {
+    position: absolute;
+    inset: 0;
+    z-index: 1;                       /* boven de achtergrond, onder de pijlen (z-index 5) */
+    pointer-events: none;            /* alleen de boek-knoppen vangen klikken */
+    container-type: inline-size;     /* cqi voor de naamplaatjes */
+}
+
+/* Gedeelde basis: gecentreerd op de inline 'left', verankerd aan de onderkant.
+   Breedte/hoogte/bottom zet bouwNtScherm2() inline uit de config. */
+.nt2-plateau,
+.nt2-bord {
+    position: absolute;
+    transform: translateX(-50%);
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+}
+.nt2-plateau { z-index: 1; filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45)); }
+.nt2-bord    { z-index: 3; }
+
+/* De klikbare boek-knop (enige laag met pointer-events). Hoogte komt inline; de
+   afbeelding erin schaalt op die hoogte, breedte volgt uit de verhouding. */
+.nt2-boek {
+    position: absolute;
+    transform: translateX(-50%);
+    width: auto;
+    z-index: 2;
+
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    pointer-events: auto;
+
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+.nt2-boek-img {
+    display: block;
+    height: 100%;
+    width: auto;
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.5));
+}
+.nt2-boek:hover {
+    transform: translateX(-50%) translateY(-10px) scale(1.04);
+    filter: drop-shadow(0 0 16px rgba(255, 215, 120, 0.55));
+}
+
+/* Naam in code op het bordje: gouden Cinzel, cqi-geschaald zodat lange namen
+   ("Brieven van Paulus", "Algemene brieven") binnen het bord blijven. */
+.nt2-naam {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+    user-select: none;
+
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    color: #f6e7bf;
+    letter-spacing: .5px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .75),
+                 0 0 2px rgba(0, 0, 0, .5);
 }
 
 /* Touch-vangnet: op apparaten zonder hover blijven de pijlen zacht zichtbaar en

@@ -119,34 +119,12 @@
                     <path d="M15 5l-7 7 7 7"/>
                 </svg>
             </button>
-            <div class="nt2-inhoud">
-                <h2 class="nt-placeholder-titel">Nieuwe Testament — overige boeken</h2>
+            <!-- Vier NT-groepen als boeken op stenen plateaus (zoals de
+                 evangeliën op het startscherm). bouwNtScherm2() in script.js
+                 vult dit config-gestuurd; de klik blijft openNtGroep() aanroepen. -->
+            <div class="nt2-boeken" id="nt2-boeken"></div>
 
-                <!-- Vier groep-tegels. Voorlopig zonder eigen vragen erachter; een
-                     klik toont een rustige "binnenkort"-melding (openNtGroep). De
-                     groepsindeling is de gangbare vierdeling van het NT na de
-                     evangeliën en is makkelijk te hernoemen. -->
-                <div class="nt2-tegels">
-                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Handelingen')">
-                        <span class="nt2-tegel-titel">Handelingen</span>
-                        <span class="nt2-tegel-sub">De jonge kerk</span>
-                    </button>
-                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Brieven van Paulus')">
-                        <span class="nt2-tegel-titel">Brieven van Paulus</span>
-                        <span class="nt2-tegel-sub">Romeinen t/m Filemon</span>
-                    </button>
-                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Algemene brieven')">
-                        <span class="nt2-tegel-titel">Algemene brieven</span>
-                        <span class="nt2-tegel-sub">Hebreeën t/m Judas</span>
-                    </button>
-                    <button class="nt2-tegel" type="button" onclick="openNtGroep('Openbaring')">
-                        <span class="nt2-tegel-titel">Openbaring</span>
-                        <span class="nt2-tegel-sub">De Apocalyps</span>
-                    </button>
-                </div>
-
-                <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
-            </div>
+            <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
         </div>
 
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.

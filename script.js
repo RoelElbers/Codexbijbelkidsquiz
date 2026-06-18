@@ -4159,6 +4159,88 @@ function openNtGroep(groep) {
     }
 }
 
+// === NT-scherm 2: vier groepen als boeken op stenen plateaus ================
+// Config-gestuurd, in dezelfde stijl als de Schatkamer-vitrines. Per positie
+// drie beeldlagen (plateau, klikbaar boek, naambordje) + de naam in code op het
+// bordje. Maten/posities zijn ruwe startwaarden (evangelie-x'en als basis) en
+// worden later fijn afgesteld. De klik roept de bestaande openNtGroep() aan.
+const ntScherm2 = {
+    plateauBron: "images/stenen_plateau.png",
+    bordBron:    "images/naambordje.png",
+    // Gedeelde maten (% van de 16:9-box); per boek alleen x + naam + bestand.
+    plateauBreedte: "13%",
+    plateauBodem:   "6%",
+    boekHoogte:     "21%",
+    boekBodem:      "10%",
+    bordBreedte:    "12%",
+    bordBodem:      "3.4%",
+    naamBodem:      "4.6%",
+    naamBreedte:    "11%",
+    naamHoogte:     "4%",
+    naamGrootte:    "1.1cqi",
+    boeken: [
+        { x: "22.5%", boek: "images/handelingenboek.png",      naam: "Handelingen",        groep: "Handelingen" },
+        { x: "34.8%", boek: "images/brievenvanpaulusboek.png", naam: "Brieven van Paulus", groep: "Brieven van Paulus" },
+        { x: "47.2%", boek: "images/algemenebrievenboek.png",  naam: "Algemene brieven",   groep: "Algemene brieven" },
+        { x: "60.6%", boek: "images/apocalypseboek.png",       naam: "Openbaring",         groep: "Openbaring" }
+    ]
+};
+
+function bouwNtScherm2() {
+    const houder = document.getElementById("nt2-boeken");
+    if (!houder) return;
+    houder.innerHTML = "";
+
+    ntScherm2.boeken.forEach((b) => {
+        // 1) Stenen plateau (achterste laag).
+        const plateau = document.createElement("img");
+        plateau.className = "nt2-plateau";
+        plateau.alt = "";
+        plateau.src = ntScherm2.plateauBron;
+        plateau.style.left = b.x;
+        plateau.style.bottom = ntScherm2.plateauBodem;
+        plateau.style.width = ntScherm2.plateauBreedte;
+        houder.appendChild(plateau);
+
+        // 2) Het boek (klikbaar; behoudt de bestaande openNtGroep-actie).
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "nt2-boek";
+        knop.style.left = b.x;
+        knop.style.bottom = ntScherm2.boekBodem;
+        knop.style.height = ntScherm2.boekHoogte;
+        knop.setAttribute("aria-label", b.naam);
+        knop.addEventListener("click", () => openNtGroep(b.groep));
+
+        const boekImg = document.createElement("img");
+        boekImg.className = "nt2-boek-img";
+        boekImg.alt = b.naam;
+        boekImg.src = b.boek;
+        knop.appendChild(boekImg);
+        houder.appendChild(knop);
+
+        // 3) Naambordje + de naam er in code overheen.
+        const bord = document.createElement("img");
+        bord.className = "nt2-bord";
+        bord.alt = "";
+        bord.src = ntScherm2.bordBron;
+        bord.style.left = b.x;
+        bord.style.bottom = ntScherm2.bordBodem;
+        bord.style.width = ntScherm2.bordBreedte;
+        houder.appendChild(bord);
+
+        const naam = document.createElement("div");
+        naam.className = "nt2-naam";
+        naam.textContent = b.naam;
+        naam.style.left = b.x;
+        naam.style.bottom = ntScherm2.naamBodem;
+        naam.style.width = ntScherm2.naamBreedte;
+        naam.style.height = ntScherm2.naamHoogte;
+        naam.style.fontSize = ntScherm2.naamGrootte;
+        houder.appendChild(naam);
+    });
+}
+
 // Hulp: staat er een schermvullende overlay open (quiz, keuze, naslag, schatkamer)?
 // Dan mogen de pijltjestoetsen niet van hoofdscherm wisselen.
 function eenOverlayOpen() {
@@ -4169,6 +4251,8 @@ function eenOverlayOpen() {
 (function initSchermnavigatie() {
     const container = document.getElementById("game-container");
     if (!container) return;
+
+    bouwNtScherm2();                 // vier NT-boeken op plateaus opbouwen
 
     // Muis bij de zijrand -> de bijbehorende pijl onthullen. Alleen op echte
     // hover-apparaten; op touch staan de pijlen via de CSS-media-query al zacht
