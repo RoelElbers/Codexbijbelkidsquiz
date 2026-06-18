@@ -635,14 +635,27 @@ height: 22%;
 .schatkamer-vitrine {
     position: relative;
 
-    /* Zelfde 16:9-doos als de game, zodat de %-posities kloppen. */
-    width: min(100vw, calc(100vh * 16 / 9));
+    /* Verhouding per vitrine: bouwVitrine() zet --vitrine-verhouding uit
+       config.verhouding (standaard 16:9; de Evangeliën-vitrine is 3:4 staand).
+       De HOOGTE is de beperkende factor — even hoog als de 16:9 spel-box,
+       breedte volgt uit de verhouding — zodat het paneel zo groot mogelijk
+       binnen het spelscherm staat en de zaal ernaast zichtbaar blijft. */
+    --vitrine-verhouding: 16 / 9;
     height: min(100vh, calc(100vw * 9 / 16));
+    aspect-ratio: var(--vitrine-verhouding);
+    width: auto;
+    max-width: min(100vw, calc(100vh * 16 / 9));   /* nooit breder dan de spel-box */
+
+    /* Containercontext: naam-labels schalen met de doosbreedte (cqi), niet met
+       de viewport. Zo blijft de verhouding tekst↔naambord constant op elk
+       venster en lopen lange namen nooit buiten hun bord. */
+    container-type: inline-size;
 
     /* Fallback-achtergrond; bouwVitrine() zet de echte achtergrond uit het
-       config-object inline (config.achtergrond). */
+       config-object inline (config.achtergrond). Doos en kunst hebben nu
+       dezelfde verhouding, dus 'cover' vult zonder vervorming of lege balken. */
     background-image: url("images/scahtkamer2.png");
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -670,6 +683,19 @@ height: 22%;
 /* Lege nis: trofee verbergen, de lege sokkel uit de achtergrond blijft staan. */
 .schatkamer-vitrine .sk-trofee[hidden] { display: none; }
 
+/* Afstelmodus (?afstel=aan): in een open vitrine zijn de trofeeën sleepbaar.
+   Buiten afstelmodus blijft .sk-trofee pointer-events: none (zie hierboven). */
+.schatkamer-vitrine.afstel .sk-trofee {
+    pointer-events: auto;
+    cursor: move;
+    touch-action: none;                     /* slepen niet door scroll onderbroken */
+}
+.schatkamer-vitrine .sk-trofee.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+
 /* ---- Naam op de naamplaat ----
    Idem: left + font-size komen inline uit de config; de gedeelde --naam-*
    waarden zet bouwVitrine() inline (met var()-fallbacks hier). */
@@ -693,6 +719,18 @@ height: 22%;
                  0 0 2px rgba(0, 0, 0, .5);
     pointer-events: none;
     user-select: none;
+}
+
+/* Afstelmodus (?afstel=aan): in een open vitrine zijn ook de naam-labels
+   sleepbaar. Buiten afstelmodus blijft .sk-naam pointer-events: none (hierboven). */
+.schatkamer-vitrine.afstel .sk-naam {
+    pointer-events: auto;
+    cursor: move;
+}
+.schatkamer-vitrine .sk-naam.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
 }
 
 /* Terug-knop linksboven in de vitrine; zelfde groene look als .niveau-terug. */
@@ -804,6 +842,8 @@ height: 22%;
 #afstel-paneel #afstel-info { margin-top: 6px; }
 #afstel-paneel .afstel-hint { margin-top: 6px; font-size: 11px; opacity: 0.7; }
 #afstel-paneel .afstel-knoppen { margin-top: 8px; display: flex; gap: 6px; }
+#afstel-paneel .afstel-vitrines { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+#afstel-paneel .afstel-vitrines .afstel-hint { width: 100%; margin: 0 0 2px; }
 #afstel-paneel button {
     font: 11px ui-monospace, Menlo, Consolas, monospace;
     padding: 5px 9px;
@@ -947,28 +987,46 @@ height: 22%;
 .zaal-zone {
     position: absolute;
 
+    /* In RUST volledig onzichtbaar. LET OP: de globale button{}-regel zet een
+       goud-verloop via de background-SHORTHAND (background-image). Daarom hier
+       óók de shorthand 'background: transparent' (background-color alleen wist
+       dat verloop niet) plus background-image: none. animation:none stopt de
+       'floating' van die button-regel; appearance:none haalt native chrome weg.
+       Alleen de hitbox blijft actief. */
+    appearance: none;
+    -webkit-appearance: none;
     background: transparent;
-    border: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    animation: none;
+    margin: 0;
+    padding: 0;
     border-radius: 10px;
     cursor: pointer;
 
-    transition: box-shadow 0.2s ease, background 0.2s ease;
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* Goud verschijnt UITSLUITEND bij hover (lage alpha), nooit in rust. */
 .zaal-zone:hover {
-    background: rgba(120, 200, 255, 0.08);
-    box-shadow: 0 0 18px rgba(120, 200, 255, 0.25);
+    background: rgba(255, 210, 130, 0.10);
+    box-shadow: inset 0 0 25px rgba(255, 210, 130, 0.22);
 }
 
 /* =========================
-   SCHATKAMER — zoom-overgang vitrine-detailscherm
-   "over-zaal": de overlay-achtergrond wordt doorzichtig zodat de zaal eronder
-   zichtbaar blijft; het binnenkomen/vertrekken van de vitrine is de
-   tegenbeweging van de zaal-zoom (samen één inzoom-illusie).
+   SCHATKAMER — achtergrond vitrine-detailscherm
+   "over-zaal" (door openVitrineScherm gezet, nooit verwijderd) bepaalt de
+   achtergrond áchter het staande vitrine-paneel. Een ondoorzichtige, bijna-
+   zwarte radiale gradient met een subtiele kobaltblauwe gloed in het midden
+   laat de vitrine vrij "zweven"; de overzichtszaal schijnt er niet meer
+   doorheen. (Puur cosmetisch — geen JS hangt van deze klasse af.)
 ========================= */
 
 #schatkamer-scherm.over-zaal {
-    background: transparent;
+    background: radial-gradient(ellipse 65% 75% at 50% 45%,
+                rgba(32, 64, 150, 0.30), #05070d 70%);
 }
 
 #schatkamer-scherm.zoom-entree .schatkamer-vitrine {

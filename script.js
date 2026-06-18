@@ -2973,8 +2973,16 @@ function terugCatecheseArtikel() {
 //       sleutel    : localStorage-sleutel met de stand (geen/brons/zilver/goud)
 //       basis      : basisnaam van de afbeelding; -<stand>.png volgt daaruit
 //
-// Optionele velden (gebruikt door de nieuwe NT-vitrines; de Evangeliën-vitrine
-// gebruikt ze niet en blijft daardoor exact zoals hij was):
+// Optionele velden (gebruikt door de nieuwe NT-vitrines; alle vijf vitrines
+// tekenen nu hun boeknamen als losse .sk-naam-labels uit de config):
+//   verhouding       : aspect-ratio van de vitrine-doos (CSS-waarde, bv.
+//                      "3 / 4" voor staande kunst). Weggelaten = 16:9 liggend.
+//                      De doos krijgt deze verhouding zodat 'cover' de
+//                      achtergrond zonder vervorming vult.
+//   naamInAchtergrond: true = de boeknamen staan al in de achtergrondafbeelding
+//                      gebakken; bouwVitrine tekent dan geen losse naamplaten
+//                      (voorkomt dubbele namen). De naamX/naamGrootte-velden
+//                      blijven staan zodat losse labels later weer aan kunnen.
 //   placeholderTitel : titel op het donkere placeholder-paneel zolang de
 //                      achtergrondafbeelding nog niet bestaat
 //   sfeer            : "altaar" geeft de vitrine een lichtinval-gloed (CSS)
@@ -2990,17 +2998,24 @@ function terugCatecheseArtikel() {
 //       naamY  : eigen verticaal midden van de naamplaat — overschrijft
 //                naamMidden (voor twee rijen)
 // =========================
+// Naamloze 2x2-kunst (lege borden) -> de boeknamen komen nu als losse
+// .sk-naam-labels uit de config, net als bij de andere vier vitrines (i18n).
+// Geometrie overgenomen van algemeneBrievenVitrine (zelfde 3:4 2x2-opzet);
+// posities zijn ruw — fijn afstellen met ?afstel=aan.
 const evangelienVitrine = {
-    achtergrond: "images/scahtkamer2.png",
-    trofeeBodem: "30%",
-    naamMidden:  "84%",
-    naamBreedte: "15%",
-    naamHoogte:  "8%",
+    achtergrond: "images/vitrine-evangelien.png",
+    verhouding: "3 / 4",                     // staande 2x2-kunst i.p.v. de standaard 16:9
+    trofeeBodem: "12%",                      // onderste rij
+    naamMidden:  "94%",                      // naamplaten onderste rij
+    naamBreedte: "34%",
+    naamHoogte:  "5%",
     nissen: [
-        { x: "19.5%", trofeeHoogte: "37%", naamX: "18.8%", naamGrootte: "clamp(8px, 1.45vw, 17px)", naam: "Matteüs",  sleutel: "trofee_matteus",  basis: "matteus"  },
-        { x: "40.5%", trofeeHoogte: "42%", naamX: "39.3%", naamGrootte: "clamp(9px, 1.65vw, 19px)", naam: "Marcus",   sleutel: "trofee_marcus",   basis: "marcus"   },
-        { x: "59.5%", trofeeHoogte: "37%", naamX: "60.1%", naamGrootte: "clamp(9px, 1.65vw, 19px)", naam: "Lucas",    sleutel: "trofee_lucas",    basis: "lucas"    },
-        { x: "79%",   trofeeHoogte: "42%", naamX: "80.6%", naamGrootte: "clamp(7px, 1.25vw, 14px)", naam: "Johannes", sleutel: "trofee_johannes", basis: "johannes" }
+        // Bovenste rij (2) — trofee- én labelposities afgesteld.
+        { x: "31.18%", trofeeHoogte: "22%", bodem: "47.68%", naamX: "31.77%", naamY: "57.44%", naamGrootte: "1.98cqi", naam: "Matteüs",  sleutel: "trofee_matteus",  basis: "matteus"  },
+        { x: "68.1%",  trofeeHoogte: "22%", bodem: "47.35%", naamX: "68.38%", naamY: "57.33%", naamGrootte: "1.98cqi", naam: "Marcus",   sleutel: "trofee_marcus",   basis: "marcus"   },
+        // Onderste rij (2)
+        { x: "31.18%", trofeeHoogte: "22%", bodem: "11.67%", naamX: "31.33%", naamY: "93.23%", naamGrootte: "1.98cqi", naam: "Lucas",    sleutel: "trofee_lucas",    basis: "lucas"    },
+        { x: "67.81%", trofeeHoogte: "22%", bodem: "11.79%", naamX: "68.25%", naamY: "93.24%", naamGrootte: "1.98cqi", naam: "Johannes", sleutel: "trofee_johannes", basis: "johannes" }
     ]
 };
 
@@ -3021,18 +3036,18 @@ const evangelienVitrine = {
 // De `basis` in de config = de bestandsnaam zonder "-zilver.png".
 // =========================
 
-// --- Handelingen: één ereplek op een sokkel, centraal. ---
+// --- Handelingen: één ereplek op een sokkel, centraal. Lege niche toont de
+//     geschilderde sokkel (geen schaduwBijGeen); ruwe posities, fijn met afstel. ---
 const handelingenVitrine = {
     achtergrond: "images/vitrine-handelingen.png",
     placeholderTitel: "Handelingen",
-    schaduwBijGeen: true,
     kleurViaFilter: true,
-    trofeeBodem: "24%",
-    naamMidden:  "84%",
+    trofeeBodem: "37%",
+    naamMidden:  "88%",
     naamBreedte: "24%",
-    naamHoogte:  "8%",
+    naamHoogte:  "7%",
     nissen: [
-        { x: "50%", trofeeHoogte: "50%", naamX: "50%", naamGrootte: "clamp(12px, 2vw, 24px)", naam: "Handelingen", sleutel: "trofee_handelingen", basis: "handelingen" }
+        { x: "49.57%", trofeeHoogte: "42%", bodem: "26.22%", naamX: "49.7%", naamY: "90.83%", naamGrootte: "1.41cqi", naam: "Handelingen", sleutel: "trofee_handelingen", basis: "handelingen" }
     ]
 };
 
@@ -3042,58 +3057,61 @@ const handelingenVitrine = {
 const paulusbrievenVitrine = {
     achtergrond: "images/vitrine-paulusbrieven.png",
     placeholderTitel: "Paulusbrieven",
-    schaduwBijGeen: true,
     kleurViaFilter: true,
     trofeeBodem: "14%",                       // onderste rij
     naamMidden:  "89%",                       // naamplaten onderste rij
     naamBreedte: "16%",
     naamHoogte:  "5%",
     nissen: [
-        // Bovenste rij (4)
-        { x: "17%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "17%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Romeinen",            sleutel: "trofee_romeinen",            basis: "romeinen"            },
-        { x: "39%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "39%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Korintiërs",          sleutel: "trofee_korintiers",          basis: "korintiers"          },
-        { x: "61%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "61%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Galaten",             sleutel: "trofee_galaten",             basis: "galaten"             },
-        { x: "83%", bodem: "56%", naamY: "47%", trofeeHoogte: "26%", naamX: "83%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Efeziërs",            sleutel: "trofee_efeziers",            basis: "efeziers"            },
-        // Onderste rij (4)
-        { x: "17%", trofeeHoogte: "26%", naamX: "17%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Filippenzen",          sleutel: "trofee_filippenzen",         basis: "filippenzen"         },
-        { x: "39%", trofeeHoogte: "26%", naamX: "39%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Kolossenzen & Filemon", sleutel: "trofee_kolossenzen_filemon", basis: "kolossenzen-filemon" },
-        { x: "61%", trofeeHoogte: "26%", naamX: "61%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Tessalonicenzen",      sleutel: "trofee_tessalonicenzen",     basis: "tessalonicenzen"     },
-        { x: "83%", trofeeHoogte: "26%", naamX: "83%", naamGrootte: "clamp(6px, 1vw, 12px)", naam: "Timoteüs & Titus",      sleutel: "trofee_timoteus_titus",      basis: "timoteus-titus"      }
+        // Bovenste rij (4) — trofee- én labelposities afgesteld.
+        { x: "21.29%", trofeeHoogte: "26%", bodem: "57.09%", naamX: "21.6%",  naamY: "48.96%", naamGrootte: "0.78cqi", naam: "Romeinen",       sleutel: "trofee_romeinen",            basis: "romeinen"            },
+        { x: "39.55%", trofeeHoogte: "26%", bodem: "57.19%", naamX: "39.61%", naamY: "48.84%", naamGrootte: "0.83cqi", naam: "Korintiërs",     sleutel: "trofee_korintiers",          basis: "korintiers"          },
+        { x: "59.96%", trofeeHoogte: "26%", bodem: "56.87%", naamX: "60.08%", naamY: "48.96%", naamGrootte: "0.94cqi", naam: "Galaten",        sleutel: "trofee_galaten",             basis: "galaten"             },
+        { x: "78.1%",  trofeeHoogte: "26%", bodem: "57.2%",  naamX: "78.16%", naamY: "48.96%", naamGrootte: "0.89cqi", naam: "Efeziërs",       sleutel: "trofee_efeziers",            basis: "efeziers"            },
+        // Onderste rij (4). "Kolossenzen" = Kol + Filemon; "Timoteüs" = 1-2 Tim + Titus (korte labels).
+        { x: "21.52%", trofeeHoogte: "26%", bodem: "13.24%", naamX: "21.41%", naamY: "93.24%", naamGrootte: "0.83cqi", naam: "Filippenzen",    sleutel: "trofee_filippenzen",         basis: "filippenzen"         },
+        { x: "39.43%", trofeeHoogte: "26%", bodem: "13.56%", naamX: "39.49%", naamY: "93.46%", naamGrootte: "0.78cqi", naam: "Kolossenzen",    sleutel: "trofee_kolossenzen_filemon", basis: "kolossenzen-filemon" },
+        { x: "61.06%", trofeeHoogte: "26%", bodem: "13.67%", naamX: "59.78%", naamY: "93.24%", naamGrootte: "0.68cqi", naam: "Tessalonicenzen", sleutel: "trofee_tessalonicenzen",    basis: "tessalonicenzen"     },
+        { x: "78.04%", trofeeHoogte: "26%", bodem: "12.91%", naamX: "78.48%", naamY: "93.35%", naamGrootte: "0.78cqi", naam: "Timoteüs",       sleutel: "trofee_timoteus_titus",      basis: "timoteus-titus"      }
     ]
 };
 
 // --- Algemene brieven: gebundeld tot 4 trofeeën (zie trofee-overzicht.md),
-//     één rij. Posities voorlopig/benaderend — later finetunen in DevTools. ---
+//     2x2-raster op staande (3:4) kunst. Lege niche toont de geschilderde
+//     sokkel; posities ruw, fijn met afstel. "1-3 Johannes" = de drie
+//     Johannesbrieven (sleutel trofee_johannesbrieven, NIET trofee_johannes). ---
 const algemeneBrievenVitrine = {
     achtergrond: "images/vitrine-algemenebrieven.png",
+    verhouding: "3 / 4",                      // staande 2x2-kunst (zoals evangelienVitrine)
     placeholderTitel: "Algemene brieven",
-    schaduwBijGeen: true,
     kleurViaFilter: true,
-    trofeeBodem: "28%",
-    naamMidden:  "78%",
-    naamBreedte: "20%",
-    naamHoogte:  "6%",
+    trofeeBodem: "12%",                       // onderste rij
+    naamMidden:  "94%",                       // naamplaten onderste rij
+    naamBreedte: "34%",
+    naamHoogte:  "5%",
     nissen: [
-        { x: "15.5%", trofeeHoogte: "34%", naamX: "15.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Hebreeën",            sleutel: "trofee_hebreeen",       basis: "hebreeen"       },
-        { x: "38.5%", trofeeHoogte: "34%", naamX: "38.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Jakobus",             sleutel: "trofee_jakobus",        basis: "jakobus"        },
-        { x: "61.5%", trofeeHoogte: "34%", naamX: "61.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Petrus & Judas",       sleutel: "trofee_petrus_judas",   basis: "petrus-judas"   },
-        { x: "84.5%", trofeeHoogte: "34%", naamX: "84.5%", naamGrootte: "clamp(6px, 1.1vw, 13px)", naam: "Brieven van Johannes", sleutel: "trofee_johannesbrieven", basis: "johannesbrieven" }
+        // Bovenste rij (2) — trofee- én labelposities afgesteld.
+        { x: "31.32%", trofeeHoogte: "22%", bodem: "47.24%", naamX: "31.03%", naamY: "57.87%", naamGrootte: "1.98cqi", naam: "Hebreeën",      sleutel: "trofee_hebreeen",        basis: "hebreeen"        },
+        { x: "68.1%",  trofeeHoogte: "22%", bodem: "47.13%", naamX: "68.1%",  naamY: "57.87%", naamGrootte: "1.98cqi", naam: "Jakobus",       sleutel: "trofee_jakobus",         basis: "jakobus"         },
+        // Onderste rij (2)
+        { x: "30.74%", trofeeHoogte: "22%", bodem: "11.56%", naamX: "30.6%", naamY: "94.87%", naamGrootte: "1.48cqi", naam: "Petrus & Judas", sleutel: "trofee_petrus_judas",    basis: "petrus-judas"    },
+        { x: "67.37%", trofeeHoogte: "22%", bodem: "11.46%", naamX: "68.1%", naamY: "94.76%", naamGrootte: "1.60cqi", naam: "1-3 Johannes",   sleutel: "trofee_johannesbrieven", basis: "johannesbrieven" }
     ]
 };
 
-// --- Openbaring: ereplaats — verhoogd altaar met lichtinval (sfeer-klasse). ---
+// --- Openbaring: ereplaats — verhoogd altaar met lichtinval (sfeer-klasse).
+//     Lege niche toont de geschilderde sokkel; ruwe posities, fijn met afstel. ---
 const openbaringVitrine = {
     achtergrond: "images/vitrine-openbaring.png",
     placeholderTitel: "Openbaring",
     sfeer: "altaar",
-    schaduwBijGeen: true,
     kleurViaFilter: true,
-    trofeeBodem: "24%",
-    naamMidden:  "84%",
+    trofeeBodem: "28%",
+    naamMidden:  "89%",
     naamBreedte: "24%",
-    naamHoogte:  "8%",
+    naamHoogte:  "7%",
     nissen: [
-        { x: "50%", trofeeHoogte: "50%", naamX: "50%", naamGrootte: "clamp(12px, 2vw, 24px)", naam: "Openbaring", sleutel: "trofee_openbaring", basis: "openbaring" }
+        { x: "49.39%", trofeeHoogte: "44%", bodem: "23.21%", naamX: "49.63%", naamY: "89.87%", naamGrootte: "1.35cqi", naam: "Openbaring", sleutel: "trofee_openbaring", basis: "openbaring" }
     ]
 };
 
@@ -3143,6 +3161,9 @@ function vervangDoorSilhouet(img) {
 // Bij schaduwBijGeen toont "geen" een donker silhouet; bij kleurViaFilter
 // wordt altijd de zilveren basis geladen en kleurt CSS de stand (zie de
 // optionele velden in het commentaarblok hierboven).
+// De vitrine die nu in beeld is — gebruikt door de afstel-export (TAAK B).
+let actieveVitrineConfig = null;
+
 function bouwVitrine(vitrineEl, config) {
     if (!vitrineEl) return;
 
@@ -3154,13 +3175,19 @@ function bouwVitrine(vitrineEl, config) {
     vitrineEl.style.setProperty("--naam-midden",  config.naamMidden);
     vitrineEl.style.setProperty("--naam-breedte", config.naamBreedte);
     vitrineEl.style.setProperty("--naam-hoogte",  config.naamHoogte);
+    vitrineEl.style.setProperty("--vitrine-verhouding", config.verhouding || "16 / 9");
+    vitrineEl.classList.toggle("afstel", afstelModus);  // trofeeën sleepbaar in ?afstel=aan
+    actieveVitrineConfig = config;               // welke vitrine de afstel-export exporteert
 
     const houder = vitrineEl.querySelector(".sk-nissen");
     if (!houder) return;
     houder.innerHTML = "";                       // schoon herbouwen bij elk openen
 
-    config.nissen.forEach((nis) => {
-        const niveau = leesTrofeeStand(nis.sleutel); // "geen"|"brons"|"zilver"|"goud"
+    config.nissen.forEach((nis, i) => {
+        // In afstelmodus alle nissen als goud tonen (display-only, net als de
+        // zaal) zodat je elke trofee kunt positioneren; de stand in localStorage
+        // blijft ongemoeid.
+        const niveau = afstelModus ? "goud" : leesTrofeeStand(nis.sleutel); // "geen"|"brons"|"zilver"|"goud"
 
         // Sokkel-trofee. Positie (left) en hoogte komen inline uit de config;
         // een optionele per-nis bodem maakt meerdere rijen mogelijk.
@@ -3170,6 +3197,11 @@ function bouwVitrine(vitrineEl, config) {
         img.style.left = nis.x;
         img.style.height = nis.trofeeHoogte;
         if (nis.bodem) img.style.bottom = nis.bodem;
+        else if (afstelModus) img.style.bottom = config.trofeeBodem; // concreet startpunt voor verticaal slepen
+        if (afstelModus) {
+            img.dataset.afstelNaam = nis.naam;   // label in het afstel-paneel
+            img.dataset.nisIndex = i;            // koppeling terug naar config.nissen[i]
+        }
 
         if (niveau === "geen" && !config.schaduwBijGeen) {
             img.hidden = true;                   // lege sokkel uit de achtergrond blijft staan
@@ -3189,13 +3221,22 @@ function bouwVitrine(vitrineEl, config) {
 
         // Naamplaat. Horizontale positie en lettergrootte inline uit de config;
         // optionele per-nis naamY voor een tweede rij naamplaten.
-        const naam = document.createElement("div");
-        naam.className = "sk-naam";
-        naam.textContent = nis.naam;
-        naam.style.left = nis.naamX;
-        naam.style.fontSize = nis.naamGrootte;
-        if (nis.naamY) naam.style.top = nis.naamY;
-        houder.appendChild(naam);
+        // Bij naamInAchtergrond staan de namen al in de achtergrondafbeelding
+        // gebakken -> geen los label tekenen (anders dubbele namen).
+        if (!config.naamInAchtergrond) {
+            const naam = document.createElement("div");
+            naam.className = "sk-naam";
+            naam.textContent = nis.naam;
+            naam.style.left = nis.naamX;
+            naam.style.fontSize = nis.naamGrootte;
+            if (nis.naamY) naam.style.top = nis.naamY;
+            else if (afstelModus) naam.style.top = config.naamMidden; // concreet startpunt voor verticaal slepen
+            if (afstelModus) {
+                naam.dataset.afstelNaam = nis.naam;  // label in het afstel-paneel
+                naam.dataset.nisIndex = i;           // koppeling terug naar config.nissen[i]
+            }
+            houder.appendChild(naam);
+        }
     });
 }
 
@@ -3463,6 +3504,13 @@ function initAfstel(zaalEl) {
     const SCHAAL_STAP = 0.2;                       // %-stap voor schalen (+/-/scroll)
     const AFSTEL_KIES = ".zaal-nis-trofee, .zaal-kist";  // selecteerbare elementen
 
+    // Vitrine-afstel (parallel aan de zaal; ander scherm, eigen positiemodel).
+    const vitrineEl = document.querySelector("#schatkamer-scherm .schatkamer-vitrine");
+    const schermEl  = document.getElementById("schatkamer-scherm");
+    const vitrineOpen = () => !!schermEl && schermEl.style.display !== "none";
+    let vitSel = null;                            // geselecteerde vitrine-trofee
+    let labelSel = null;                          // geselecteerd vitrine-naamlabel
+
     // Trofeeën schalen via hun hoogte, kisten via hun breedte.
     const isKist   = (img) => img.classList.contains("zaal-kist");
     const maatProp = (img) => isKist(img) ? "width" : "height";
@@ -3483,6 +3531,22 @@ function initAfstel(zaalEl) {
     const infoEl = paneel.querySelector("#afstel-info");
     const uitvoerEl = paneel.querySelector("#afstel-uitvoer");
 
+    // De klikzones staan in afstelmodus uit (zodat je de zaal-trofeeën kunt
+    // pakken), dus knoppen om een vitrine te openen en daar de trofeeën af te
+    // stellen. "Terug" in de vitrine brengt je weer in de zaal.
+    const vitrineKnoppen = document.createElement("div");
+    vitrineKnoppen.className = "afstel-vitrines";
+    vitrineKnoppen.innerHTML = '<div class="afstel-hint">Open vitrine om af te stellen:</div>';
+    schatkamerZalen.nt.zones.forEach((zone) => {
+        if (!zone.vitrine) return;
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.textContent = zone.naam;
+        knop.addEventListener("click", () => openVitrineScherm(zone.vitrine));
+        vitrineKnoppen.appendChild(knop);
+    });
+    paneel.appendChild(vitrineKnoppen);
+
     function toonInfo() {
         if (!sel) { infoEl.textContent = "Klik een trofee of kist om te selecteren."; return; }
         const k = isKist(sel);
@@ -3498,6 +3562,8 @@ function initAfstel(zaalEl) {
         schrijfAfstelPosities(overrides);
     }
     function selecteer(img) {
+        if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }     // vitrine-trofee loslaten
+        if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // vitrine-label loslaten
         if (sel) sel.classList.remove("afstel-geselecteerd");
         sel = img;
         if (sel) sel.classList.add("afstel-geselecteerd");
@@ -3544,8 +3610,10 @@ function initAfstel(zaalEl) {
     }, { passive: false });
 
     // --- toetsenbord: pijltjes verplaatsen, +/- schalen ---
+    // Ligt de vitrine erbovenop, dan neemt de vitrine-keydown (hieronder) de
+    // toetsen over; de zaal blijft verder exact hetzelfde werken.
     document.addEventListener("keydown", (e) => {
-        if (!sel || !zaalEl.classList.contains("afstel")) return;
+        if (!sel || !zaalEl.classList.contains("afstel") || vitrineOpen()) return;
         const stap = e.shiftKey ? 1 : 0.1;
         const prop = maatProp(sel);
         let raak = true;
@@ -3559,6 +3627,202 @@ function initAfstel(zaalEl) {
         else raak = false;
         if (raak) { e.preventDefault(); bewaar(sel); toonInfo(); }
     });
+
+    // ===== Vitrine-trofeeën: zelfde afstelmodus, eigen positiemodel =====
+    // x = links (nis.x), verticaal = bottom (nis.bodem), grootte = height
+    // (nis.trofeeHoogte). We schrijven rechtstreeks naar het actieve config-
+    // object; de zaal-afstel hierboven blijft volledig ongemoeid.
+    function vitNis() {
+        if (!vitSel || !actieveVitrineConfig) return null;
+        return actieveVitrineConfig.nissen[+vitSel.dataset.nisIndex] || null;
+    }
+    function vitInfo() {
+        if (!vitSel) return;
+        infoEl.innerHTML = "<b>" + vitSel.dataset.afstelNaam + "</b> (vitrine)<br>x: " +
+            parseFloat(vitSel.style.left).toFixed(1) + "% &middot; bodem: " +
+            parseFloat(vitSel.style.bottom).toFixed(1) + "% &middot; h: " +
+            parseFloat(vitSel.style.height).toFixed(1) + "%";
+    }
+    function vitBewaar() {                         // inline -> config (voor de export)
+        const n = vitNis(); if (!n) return;
+        n.x = vitSel.style.left;
+        n.bodem = vitSel.style.bottom;
+        n.trofeeHoogte = vitSel.style.height;
+    }
+    function vitSelecteer(img) {
+        if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; } // zaal-selectie loslaten
+        if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // label-selectie loslaten
+        if (vitSel) vitSel.classList.remove("afstel-geselecteerd");
+        vitSel = img;
+        if (vitSel) vitSel.classList.add("afstel-geselecteerd");
+        vitInfo();
+    }
+
+    if (vitrineEl) {
+        // --- slepen (delegatie op de vitrine) ---
+        vitrineEl.addEventListener("pointerdown", (e) => {
+            const img = e.target.closest(".sk-trofee");
+            if (!img) { vitSelecteer(null); return; }
+            e.preventDefault();
+            vitSelecteer(img);
+            const r = vitrineEl.getBoundingClientRect();
+            const startX = parseFloat(img.style.left);
+            const startB = parseFloat(img.style.bottom);
+            const muisX = e.clientX, muisY = e.clientY;
+            let gesleept = false;
+            function beweeg(ev) {
+                gesleept = true;
+                const dx = (ev.clientX - muisX) / r.width * 100;
+                const dy = (ev.clientY - muisY) / r.height * 100;
+                img.style.left   = (startX + dx).toFixed(2) + "%";
+                img.style.bottom = (startB - dy).toFixed(2) + "%";   // omlaag slepen = bottom kleiner
+                vitInfo();
+            }
+            function los() {
+                document.removeEventListener("pointermove", beweeg);
+                document.removeEventListener("pointerup", los);
+                if (gesleept) vitBewaar();
+            }
+            document.addEventListener("pointermove", beweeg);
+            document.addEventListener("pointerup", los);
+        });
+
+        // --- scrollwiel = grootte (trofeeHoogte) ---
+        vitrineEl.addEventListener("wheel", (e) => {
+            const img = e.target.closest(".sk-trofee");
+            if (!img) return;
+            e.preventDefault();
+            vitSelecteer(img);
+            const v = Math.max(1, parseFloat(img.style.height) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
+            img.style.height = v.toFixed(2) + "%";
+            vitBewaar(); vitInfo();
+        }, { passive: false });
+    }
+
+    // --- toetsenbord voor de vitrine (alleen als de vitrine bovenop ligt) ---
+    document.addEventListener("keydown", (e) => {
+        if (!vitSel || !vitrineOpen()) return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        const x = parseFloat(vitSel.style.left), b = parseFloat(vitSel.style.bottom), h = parseFloat(vitSel.style.height);
+        if (e.key === "ArrowLeft")        vitSel.style.left   = (x - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowRight")  vitSel.style.left   = (x + stap).toFixed(2) + "%";
+        else if (e.key === "ArrowUp")     vitSel.style.bottom = (b + stap).toFixed(2) + "%";  // omhoog
+        else if (e.key === "ArrowDown")   vitSel.style.bottom = (b - stap).toFixed(2) + "%";  // omlaag
+        else if (e.key === "+" || e.key === "=") vitSel.style.height = (h + SCHAAL_STAP).toFixed(2) + "%";
+        else if (e.key === "-" || e.key === "_") vitSel.style.height = Math.max(1, h - SCHAAL_STAP).toFixed(2) + "%";
+        else raak = false;
+        if (raak) { e.preventDefault(); vitBewaar(); vitInfo(); }
+    });
+
+    // ===== Vitrine-labels (.sk-naam): zelfde afstelmodus, eigen positiemodel =====
+    // naamX = links (style.left), naamY = verticaal (style.top), grootte =
+    // fontSize. Schrijft rechtstreeks naar het config-object; het trofee-spoor
+    // hierboven en de zaal-afstel blijven volledig ongemoeid. Dit spoor reageert
+    // alleen op echte label-treffers (closest('.sk-naam')), dus het zit het
+    // trofee-spoor (closest('.sk-trofee')) niet in de weg.
+    const FONT_STAP = 1;                            // px-stap voor lettergrootte
+    function labelNis() {
+        if (!labelSel || !actieveVitrineConfig) return null;
+        return actieveVitrineConfig.nissen[+labelSel.dataset.nisIndex] || null;
+    }
+    function labelFontPx() {                        // huidige grootte in px (clamp -> computed)
+        return parseFloat(labelSel.style.fontSize) ||
+               parseFloat(getComputedStyle(labelSel).fontSize) || 12;
+    }
+    function labelInfo() {
+        if (!labelSel) return;
+        infoEl.innerHTML = "<b>" + labelSel.dataset.afstelNaam + "</b> (label)<br>naamX: " +
+            parseFloat(labelSel.style.left).toFixed(1) + "% &middot; naamY: " +
+            parseFloat(labelSel.style.top).toFixed(1) + "% &middot; grootte: " +
+            labelSel.style.fontSize;
+    }
+    function labelBewaar() {                        // inline -> config (voor de export)
+        const n = labelNis(); if (!n) return;
+        n.naamX = labelSel.style.left;
+        n.naamY = labelSel.style.top;
+        n.naamGrootte = labelSel.style.fontSize;   // clamp blijft tot je echt schaalt (dan px)
+    }
+    function labelSelecteer(div) {
+        if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }           // zaal loslaten
+        if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }   // trofee loslaten
+        if (labelSel) labelSel.classList.remove("afstel-geselecteerd");
+        labelSel = div;
+        if (labelSel) labelSel.classList.add("afstel-geselecteerd");
+        labelInfo();
+    }
+
+    if (vitrineEl) {
+        // --- slepen (delegatie op de vitrine; alleen labels) ---
+        vitrineEl.addEventListener("pointerdown", (e) => {
+            const div = e.target.closest(".sk-naam");
+            if (!div) return;                      // geen label -> trofee-spoor handelt het af
+            e.preventDefault();
+            labelSelecteer(div);
+            const r = vitrineEl.getBoundingClientRect();
+            const startX = parseFloat(div.style.left);
+            const startY = parseFloat(div.style.top);
+            const muisX = e.clientX, muisY = e.clientY;
+            let gesleept = false;
+            function beweeg(ev) {
+                gesleept = true;
+                const dx = (ev.clientX - muisX) / r.width * 100;
+                const dy = (ev.clientY - muisY) / r.height * 100;
+                div.style.left = (startX + dx).toFixed(2) + "%";
+                div.style.top  = (startY + dy).toFixed(2) + "%";   // omlaag slepen = top groter
+                labelInfo();
+            }
+            function los() {
+                document.removeEventListener("pointermove", beweeg);
+                document.removeEventListener("pointerup", los);
+                if (gesleept) labelBewaar();
+            }
+            document.addEventListener("pointermove", beweeg);
+            document.addEventListener("pointerup", los);
+        });
+
+        // --- scrollwiel = lettergrootte (naamGrootte, in px) ---
+        vitrineEl.addEventListener("wheel", (e) => {
+            const div = e.target.closest(".sk-naam");
+            if (!div) return;
+            e.preventDefault();
+            labelSelecteer(div);
+            const v = Math.max(1, labelFontPx() + (e.deltaY < 0 ? FONT_STAP : -FONT_STAP));
+            div.style.fontSize = v.toFixed(1) + "px";
+            labelBewaar(); labelInfo();
+        }, { passive: false });
+    }
+
+    // --- toetsenbord voor labels (alleen als de vitrine bovenop ligt) ---
+    document.addEventListener("keydown", (e) => {
+        if (!labelSel || !vitrineOpen()) return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        const x = parseFloat(labelSel.style.left), y = parseFloat(labelSel.style.top);
+        if (e.key === "ArrowLeft")        labelSel.style.left = (x - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowRight")  labelSel.style.left = (x + stap).toFixed(2) + "%";
+        else if (e.key === "ArrowUp")     labelSel.style.top  = (y - stap).toFixed(2) + "%";  // omhoog
+        else if (e.key === "ArrowDown")   labelSel.style.top  = (y + stap).toFixed(2) + "%";  // omlaag
+        else if (e.key === "+" || e.key === "=") labelSel.style.fontSize = (labelFontPx() + FONT_STAP).toFixed(1) + "px";
+        else if (e.key === "-" || e.key === "_") labelSel.style.fontSize = Math.max(1, labelFontPx() - FONT_STAP).toFixed(1) + "px";
+        else raak = false;
+        if (raak) { e.preventDefault(); labelBewaar(); labelInfo(); }
+    });
+
+    // Zet een afgestelde px-lettergrootte om naar een MEESCHALENDE cqi-waarde:
+    // 1cqi = 1% van de vitrine-doosbreedte (container). Omdat de naamborden óók
+    // in % van de doos staan, blijft de verhouding tekst↔bord constant op elk
+    // venster en kan lange tekst niet buiten het bord lopen. cqi wordt berekend
+    // uit de live doosbreedte, zodat de tekst nu even groot blijft als ingesteld.
+    // Reeds meeschalende waarden (cqi/clamp/vw) blijven ongewijzigd.
+    function grootteVoorExport(waarde) {
+        const m = /^\s*([\d.]+)px\s*$/.exec(waarde || "");
+        if (!m) return waarde;                     // al cqi/clamp -> laten staan
+        const px = parseFloat(m[1]);
+        const doosBreedte = vitrineEl ? vitrineEl.getBoundingClientRect().width : window.innerWidth;
+        const cqi = (px / doosBreedte * 100).toFixed(2);
+        return cqi + "cqi";
+    }
 
     // --- exporteren: bijgewerkte nisTrofeeen-arrays + kisten om te plakken ---
     paneel.querySelector("#afstel-export").addEventListener("click", () => {
@@ -3579,6 +3843,24 @@ function initAfstel(zaalEl) {
             uit += '    { kist: "' + k.kist + '", x: "' + p.x + '", top: "' + p.top + '", breedte: "' + p.breedte + '" },\n';
         });
         uit += "],\n";
+
+        // Vitrine-trofeeën van de nu geopende vitrine (indien er één afgesteld
+        // is). x/bodem/trofeeHoogte zijn bijgewerkt; de overige velden staan
+        // ongewijzigd, zodat dit direct in nissen[] te plakken is.
+        if (actieveVitrineConfig) {
+            uit += "\n// Vitrine — vervang nissen[] van de geopende vitrine " +
+                   "(bv. evangelienVitrine). Trofee- EN labelposities:\nnissen: [\n";
+            actieveVitrineConfig.nissen.forEach((n) => {
+                uit += '    { x: "' + n.x + '", trofeeHoogte: "' + n.trofeeHoogte + '"' +
+                       (n.bodem ? ', bodem: "' + n.bodem + '"' : "") +
+                       ', naamX: "' + n.naamX + '"' +
+                       (n.naamY ? ', naamY: "' + n.naamY + '"' : "") +
+                       ', naamGrootte: "' + grootteVoorExport(n.naamGrootte) + '"' +
+                       ', naam: "' + n.naam + '", sleutel: "' + n.sleutel + '", basis: "' + n.basis + '" },\n';
+            });
+            uit += "],\n";
+        }
+
         uitvoerEl.value = uit;
         uitvoerEl.style.display = "block";
         uitvoerEl.select();
