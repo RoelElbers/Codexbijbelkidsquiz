@@ -127,6 +127,29 @@
             <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
         </div>
 
+        <!-- Boekenplank-overlay: herbruikbare plank die over scherm 2 verschijnt
+             bij klik op een NT-groep (nu "Brieven van Paulus", later ook
+             "Algemene brieven"). Kind van #game-container, dus hij schaalt met de
+             16:9-box mee. Config-gestuurd gevuld door bouwBoekenplank() (stap 2);
+             hier in stap 1 alleen de lege schil: paneel, Terug-knop, titel,
+             subtitel en twee lege plank-rijen. -->
+        <div id="boekenplank" class="boekenplank" aria-hidden="true">
+            <div class="boekenplank-paneel">
+                <button class="boekenplank-terug" type="button"
+                        onclick="sluitBoekenplank()"
+                        aria-label="Terug naar de overige boeken van het Nieuwe Testament">‹ Terug</button>
+                <h2 class="boekenplank-titel" id="boekenplank-titel"></h2>
+                <p class="boekenplank-subtitel" id="boekenplank-subtitel"></p>
+                <!-- bouwBoekenplank() vult dit config-gestuurd met twee rijen
+                     van vier boeken (naamplaatje + plaatshouder-embleem). -->
+                <div class="boekenplank-planken" id="boekenplank-planken"></div>
+
+                <!-- Vriendelijke melding bij een nog niet speelbaar boek
+                     ("Binnenkort beschikbaar"); verschijnt onderaan het paneel. -->
+                <p class="boekenplank-melding" id="boekenplank-melding" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+
         <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
              Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
              als de andere overlays. Pas op "Start" worden de schildpunten gewist

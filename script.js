@@ -4321,11 +4321,159 @@ function gaNaarScherm1() {
 // Klik op een groep-tegel van scherm 2. Voorlopig nog geen vragen erachter: we
 // tonen een rustige melding. Later opent dit de quiz/onderdelen van die groep.
 function openNtGroep(groep) {
+    // "Brieven van Paulus" opent de boekenplank-overlay; de overige groepen
+    // tonen voorlopig nog de rustige "binnenkort"-melding.
+    if (groep === "Brieven van Paulus") {
+        openBoekenplank(boekenplanken.paulus);
+        return;
+    }
     const melding = document.getElementById("nt2-melding");
     if (melding) {
         melding.textContent = `${groep} — binnenkort speelbaar.`;
         melding.classList.add("zichtbaar");
     }
+}
+
+// === Boekenplank-overlay (herbruikbaar) =====================================
+// Config-gestuurde plank die over scherm 2 verschijnt bij klik op een NT-groep.
+// Eén config-object per groep; bouwBoekenplank() (stap 2) vult straks de boeken.
+// Stap 1: alleen titel/subtitel zetten + openen/sluiten. De plank is generiek,
+// zodat "Algemene brieven" later dezelfde overlay met een andere lijst gebruikt.
+// Eén boek = { id, naam, beschikbaar[, embleem] }:
+//   id        : interne slug, sluit aan op de trofee-/bestandsnamen
+//   naam      : weergavenaam op het naamplaatje (los van id/bestandsnaam)
+//   beschikbaar: true zodra er een vragenpool bestaat; tot dan "binnenkort" (stap 3)
+//   embleem   : optioneel pad naar de echte symboolafbeelding; ontbreekt die,
+//               dan tekent de builder een gouden plaatshouder.
+const boekenplanken = {
+    paulus: {
+        titel: "Brieven van Paulus",
+        subtitel: "Kies een brief",
+        // De acht gebundelde Paulusbrieven (zie trofee-overzicht.md), in twee
+        // rijen van vier. Nog geen vragenpools -> allemaal beschikbaar: false.
+        boeken: [
+            { id: "romeinen",            naam: "Romeinen",              beschikbaar: false },
+            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: false },
+            { id: "galaten",             naam: "Galaten",               beschikbaar: false },
+            { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false },
+            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false },
+            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false },
+            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false },
+            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false }
+        ]
+    }
+};
+
+function openBoekenplank(config) {
+    const overlay = document.getElementById("boekenplank");
+    if (!overlay) return;
+
+    const titel = document.getElementById("boekenplank-titel");
+    const subtitel = document.getElementById("boekenplank-subtitel");
+    if (titel) titel.textContent = config.titel || "";
+    if (subtitel) subtitel.textContent = config.subtitel || "";
+
+    // Eventuele "binnenkort"-melding van een vorige keer wissen bij het openen.
+    const melding = document.getElementById("boekenplank-melding");
+    if (melding) {
+        melding.textContent = "";
+        melding.classList.remove("zichtbaar");
+    }
+
+    bouwBoekenplank(config);
+
+    overlay.classList.add("zichtbaar");
+    overlay.setAttribute("aria-hidden", "false");
+}
+
+// Klik op een boek op de plank: speelbaar -> start de quiz-engine met de
+// weergavenaam (sleutel in vragenData); nog niet speelbaar -> vriendelijke
+// "binnenkort"-melding, zonder fout.
+function kiesPlankBoek(boek) {
+    if (boek.beschikbaar) {
+        sluitBoekenplank();
+        openBoek(boek.naam);
+    } else {
+        toonPlankMelding("Binnenkort beschikbaar");
+    }
+}
+
+function toonPlankMelding(tekst) {
+    const melding = document.getElementById("boekenplank-melding");
+    if (!melding) return;
+    melding.textContent = tekst;
+    melding.classList.add("zichtbaar");
+}
+
+// Vult de plank config-gestuurd: rijen van vier boeken, elk met een boek-cover
+// (plaatshouder-embleem of echte symboolafbeelding) en een gouden naamplaatje.
+// Generiek: "Algemene brieven" gebruikt later dezelfde builder met een andere
+// boekenlijst. Het klikgedrag + de beschikbaar-logica komen in stap 3.
+function bouwBoekenplank(config) {
+    const planken = document.getElementById("boekenplank-planken");
+    if (!planken) return;
+    planken.innerHTML = "";
+
+    const boeken = config.boeken || [];
+    const perRij = 4;
+
+    for (let start = 0; start < boeken.length; start += perRij) {
+        const rij = document.createElement("div");
+        rij.className = "boekenplank-rij";
+
+        boeken.slice(start, start + perRij).forEach((boek) => {
+            const knop = document.createElement("button");
+            knop.type = "button";
+            knop.className = "plank-boek";
+            knop.dataset.id = boek.id;
+            knop.setAttribute("aria-label", boek.naam);
+
+            const cover = document.createElement("div");
+            cover.className = "plank-boek-cover";
+
+            // Embleem: echte symboolafbeelding als boek.embleem bestaat, anders
+            // een code-getekende gouden plaatshouder (later 1-op-1 te vervangen
+            // door een <img> via het embleem-pad in de config).
+            let embleem;
+            if (boek.embleem) {
+                embleem = document.createElement("img");
+                embleem.className = "plank-embleem";
+                embleem.src = boek.embleem;
+                embleem.alt = "";
+            } else {
+                embleem = document.createElement("div");
+                embleem.className = "plank-embleem plank-embleem-plaatshouder";
+            }
+            cover.appendChild(embleem);
+
+            const naam = document.createElement("div");
+            naam.className = "plank-naam";
+            naam.textContent = boek.naam;
+
+            // Nog niet speelbaar: dimmen + een klein gouden slotje op de cover.
+            if (!boek.beschikbaar) {
+                knop.classList.add("vergrendeld");
+                const slot = document.createElement("span");
+                slot.className = "plank-slot";
+                slot.setAttribute("aria-hidden", "true");
+                slot.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5zm-3 8V7a3 3 0 0 1 6 0v3H9z"/></svg>';
+                cover.appendChild(slot);
+            }
+
+            knop.append(cover, naam);
+            knop.addEventListener("click", () => kiesPlankBoek(boek));
+            rij.appendChild(knop);
+        });
+
+        planken.appendChild(rij);
+    }
+}
+
+function sluitBoekenplank() {
+    const overlay = document.getElementById("boekenplank");
+    if (!overlay) return;
+    overlay.classList.remove("zichtbaar");
+    overlay.setAttribute("aria-hidden", "true");
 }
 
 // === NT-scherm 2: vier groepen als boeken op stenen plateaus ================
@@ -4430,7 +4578,10 @@ function bouwNtScherm2() {
 // Dan mogen de pijltjestoetsen niet van hoofdscherm wisselen.
 function eenOverlayOpen() {
     const overlays = document.querySelectorAll(".quiz-overlay, .schatkamer-overlay");
-    return Array.from(overlays).some((o) => o.style.display && o.style.display !== "none");
+    if (Array.from(overlays).some((o) => o.style.display && o.style.display !== "none")) return true;
+    // De boekenplank schakelt via een class (geen display), dus apart checken.
+    const plank = document.getElementById("boekenplank");
+    return !!(plank && plank.classList.contains("zichtbaar"));
 }
 
 (function initSchermnavigatie() {

@@ -2403,6 +2403,268 @@ height: 22%;
     box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
 }
 
+/* =========================
+   BOEKENPLANK-OVERLAY (herbruikbaar)
+   Verschijnt over scherm 2 bij klik op een NT-groep (nu "Brieven van Paulus").
+   Kind van #game-container (position:absolute; inset:0) zodat hij met de
+   16:9-box meeschaalt; container-type: inline-size geeft cqi-context voor de
+   naamplaatjes (zoals scherm 2). z-index boven scherm 2 (40), onder de
+   quiz/niveau-overlays (999) zodat een boek-klik straks de quiz eroverheen kan
+   openen. Fade via opacity; visibility schakelt mee zodat hij in ruststand geen
+   klikken vangt.
+========================= */
+.boekenplank {
+    position: absolute;
+    inset: 0;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    container-type: inline-size;
+
+    /* Rustige donkere sluier zodat scherm 2 eronder vervaagt maar zichtbaar blijft. */
+    background: rgba(6, 14, 36, 0.72);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+.boekenplank.zichtbaar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+
+/* Diepblauw paneel met gouden rand. */
+.boekenplank-paneel {
+    position: relative;
+    box-sizing: border-box;
+    width: 86%;
+    height: 86%;
+    padding: 4% 4% 3%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 1.4cqi;
+    border: 0.3cqi solid #d8a93f;
+    background: linear-gradient(180deg, #14264f 0%, #0d1a38 100%);
+    box-shadow:
+        inset 0 0 30px rgba(0, 0, 0, 0.55),
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* "‹ Terug"-knop linksboven, goud (zelfde gevoel als .schatkamer-terug). */
+.boekenplank-terug {
+    position: absolute;
+    top: 3%;
+    left: 2.5%;
+
+    padding: 0.5cqi 1.6cqi;
+    font-size: 2cqi;
+    font-weight: bold;
+    color: #1a120a;
+    cursor: pointer;
+
+    border: 0.18cqi solid #b07d1c;
+    border-radius: 0.9cqi;
+    background: linear-gradient(180deg, #f6d98a 0%, #d8a93f 100%);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.45),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+.boekenplank-terug:hover {
+    background: linear-gradient(180deg, #ffe6a3 0%, #e6b94c 100%);
+}
+
+/* Titel (goud) + subtitel (crème), Cinzel, cqi-geschaald met de box. */
+.boekenplank-titel {
+    margin: 0.6cqi 0 0.3cqi;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 4cqi;
+    color: #ffd86b;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(255, 215, 120, 0.4),
+                 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.boekenplank-subtitel {
+    margin: 0 0 2cqi;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 400;
+    font-size: 2.2cqi;
+    color: #f3ecd8;
+    text-align: center;
+}
+
+/* Twee plank-rijen; bouwBoekenplank() vult ze in stap 2 met vier boeken elk. */
+.boekenplank-planken {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2cqi;
+}
+/* Plank-rij: vier boeken op een subtiele houten/gouden richel. */
+.boekenplank-rij {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    gap: 2cqi;
+    border-bottom: 0.5cqi solid #9c6f23;
+    box-shadow: 0 0.4cqi 0.6cqi rgba(0, 0, 0, 0.45);
+    border-radius: 0.3cqi;
+}
+
+/* Eén boek op de plank: een boek-cover met embleem + een naamplaatje eronder.
+   Knop-reset zodat alleen de inhoud telt; cover staat op de richel, naam hangt
+   er net onder. */
+.plank-boek {
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.8cqi;
+
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+.plank-boek:hover {
+    transform: translateY(-0.8cqi);
+    filter: drop-shadow(0 0 1cqi rgba(255, 215, 120, 0.5));
+}
+
+/* De boek-cover: staand boekje, diepblauw met gouden rand. Hoogte-gestuurd
+   (aspect-ratio) zodat het nooit te breed wordt; het embleem zit gecentreerd. */
+.plank-boek-cover {
+    position: relative;          /* anker voor het slotje */
+    height: 66%;
+    aspect-ratio: 3 / 4;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.6cqi;
+    border: 0.22cqi solid #d8a93f;
+    background: linear-gradient(150deg, #1c3056 0%, #0e1c3a 100%);
+    box-shadow:
+        inset 0 0 1.2cqi rgba(0, 0, 0, 0.5),
+        0 0.5cqi 0.8cqi rgba(0, 0, 0, 0.45);
+}
+
+/* Embleem: code-getekende gouden plaatshouder-disc. Later vervangen door een
+   <img class="plank-embleem"> met dezelfde maat/positie. */
+.plank-embleem {
+    width: 55%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.plank-embleem-plaatshouder {
+    border-radius: 50%;
+    background: radial-gradient(circle at 38% 32%, #fff4cf 0%, #f4d57f 30%, #e1aa40 62%, #b07d1c 100%);
+    border: 0.18cqi solid #ffe6a3;
+    box-shadow:
+        inset 0 0 0.8cqi rgba(0, 0, 0, 0.35),
+        0 0.3cqi 0.5cqi rgba(0, 0, 0, 0.4);
+}
+
+/* Gouden naamplaatje onder het boek: donkere plaat met gouden rand en goud
+   Cinzel. Lange namen ("1 & 2 Tessalonicenzen") mogen netjes afbreken i.p.v.
+   buiten de plaat te lopen. */
+.plank-naam {
+    width: 100%;
+    min-height: 3cqi;
+    box-sizing: border-box;
+    padding: 0.4cqi 0.4cqi;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 0.5cqi;
+    border: 0.12cqi solid #b07d1c;
+    background: linear-gradient(180deg, #1a2c52 0%, #0e1c3a 100%);
+
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 1.5cqi;
+    letter-spacing: 0.02cqi;
+    line-height: 1.05;
+    text-align: center;
+    color: #ffd86b;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* Nog niet speelbaar boek: licht gedimd en ontkleurd. De cover dimt mee (incl.
+   het slotje, dat zo subtiel blijft); het naamplaatje iets minder sterk. */
+.plank-boek.vergrendeld .plank-boek-cover {
+    opacity: 0.6;
+    filter: grayscale(0.4);
+}
+.plank-boek.vergrendeld .plank-naam {
+    opacity: 0.7;
+}
+/* Vergrendelde boeken: rustige hover (geen gouden gloed die "speelbaar" suggereert). */
+.plank-boek.vergrendeld:hover {
+    transform: translateY(-0.4cqi);
+    filter: none;
+}
+
+/* Klein gouden slotje op de cover van een nog niet speelbaar boek. */
+.plank-slot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    color: #ffd86b;
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.7));
+    pointer-events: none;
+}
+.plank-slot svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* "Binnenkort beschikbaar"-melding onderaan het paneel; verschijnt na een klik
+   op een vergrendeld boek. */
+.boekenplank-melding {
+    min-height: 2.4cqi;
+    margin: 1.4cqi 0 0;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-style: italic;
+    font-size: 2cqi;
+    text-align: center;
+    color: #ffd86b;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.boekenplank-melding.zichtbaar {
+    opacity: 1;
+}
+
 /* Touch-vangnet: op apparaten zonder hover blijven de pijlen zacht zichtbaar en
    klikbaar, zodat een tablet-speler altijd verder kan. Op desktop (hover)
    verandert er niets — daar blijft de pijl verborgen tot de muis bij de rand komt. */
