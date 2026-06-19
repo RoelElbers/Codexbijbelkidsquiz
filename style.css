@@ -562,7 +562,10 @@ height: 22%;
     text-shadow:
         0 0 8px rgba(255, 215, 120, 0.9),
         0 0 16px rgba(255, 190, 80, 0.5);
-    z-index: 20;
+    /* 45 = boven scherm 2 (z-index 40) zodat het levelnummer op elk
+       carouselscherm op het schild blijft staan; onder de quiz/schatkamer-
+       overlays (999/1000) die het moeten kunnen afdekken. */
+    z-index: 45;
     /* Puur decoratief: het getal op het schild hoeft geen klikken te vangen.
        Zo kan een klik op andere knoppen er nooit door geblokkeerd worden. */
     pointer-events: none;
@@ -576,7 +579,9 @@ height: 22%;
     width: 12%;
     display: flex;
     align-items: center;
-    z-index: 20;
+    /* 45 = boven scherm 2 (z-index 40), zelfde laag als avatar en levelnummer,
+       onder de quiz/schatkamer-overlays (999/1000). */
+    z-index: 45;
     /* Puur decoratief: de XP-balk hoeft geen klikken te vangen. Zo kan een
        onverwacht uitgerekte HUD nooit klikken op andere knoppen blokkeren. */
     pointer-events: none;
@@ -1211,7 +1216,12 @@ height: 22%;
     /* avatarframe.png is 1536x1024 → vaste verhouding 3:2. */
     aspect-ratio: 1536 / 1024;
 
-    z-index: 5;            /* boven de achtergrond, onder de kinderen      */
+    /* 45 = boven scherm 2 (#nt-scherm-2, z-index 40) zodat de avatar op elk
+       carouselscherm zichtbaar blijft, maar ruim onder de quiz-overlays (999)
+       en schatkamer-overlays (1000) die hem moeten kunnen afdekken. De
+       kinderen (portret/namen) stapelen binnen deze wrapper via hun eigen
+       z-index, dus die blijven onveranderd. */
+    z-index: 45;
     pointer-events: none;
 }
 
@@ -2349,13 +2359,24 @@ height: 22%;
 
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-weight: 700;
-    color: #f6e7bf;
-    letter-spacing: .5px;
+    /* Relatief (cqi, zelfde container als font-size) i.p.v. vaste .5px, zodat de
+       letterafstand met de box meekrimpt en lange namen niet buiten het bord
+       lopen. 0.026cqi ≈ 0,5px in volledig scherm, dus de look blijft gelijk. */
+    letter-spacing: 0.026cqi;
     line-height: 1;
     text-align: center;
     white-space: nowrap;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .75),
-                 0 0 2px rgba(0, 0, 0, .5);
+
+    /* Gegraveerd-gouden tekst: een verticaal goud-verloop dat via background-clip
+       door de letters loopt (i.p.v. één platte kleur), met een dubbele
+       drop-shadow voor diepte/reliëf. drop-shadow (niet text-shadow) volgt de
+       transparante lettervorm correct. */
+    background: linear-gradient(#fff4cf 0%, #f4d57f 38%, #e1aa40 68%, #b07d1c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, .85)) drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
 }
 
 /* Afstelmodus (?afstel=aan): op scherm 2 zijn alle vier de lagen sleepbaar/

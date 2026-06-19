@@ -3841,7 +3841,7 @@ function initAfstel(zaalEl) {
     const FONT_STAP_NT2 = 1;                        // px-stap voor de naam
     function nt2Laag(el) {
         if (el.classList.contains("nt2-plateau")) return { klasse: "nt2-plateau", xVeld: "plateauX", bodemVeld: "plateauBodem", prop: "width",    gedeeld: true,  sizeVeld: "plateauBreedte" };
-        if (el.classList.contains("nt2-boek"))    return { klasse: "nt2-boek",    xVeld: "boekX",    bodemVeld: "boekBodem",    prop: "height",   gedeeld: false, sizeVeld: "boekHoogte" };
+        if (el.classList.contains("nt2-boek"))    return { klasse: "nt2-boek",    xVeld: "boekX",    bodemVeld: "boekBodem",    prop: "height",   gedeeld: true,  sizeVeld: "boekHoogte" };
         if (el.classList.contains("nt2-bord"))    return { klasse: "nt2-bord",    xVeld: "bordX",    bodemVeld: "bordBodem",    prop: "width",    gedeeld: true,  sizeVeld: "bordBreedte" };
         return { klasse: "nt2-naam", xVeld: "naamX", bodemVeld: "naamBodem", prop: "fontSize", gedeeld: true, sizeVeld: "naamGrootte" };
     }
@@ -3891,13 +3891,18 @@ function initAfstel(zaalEl) {
             const startX = parseFloat(el.style.left);
             const startB = parseFloat(el.style.bottom);
             const muisX = e.clientX, muisY = e.clientY;
+            // Het boek beweegt bewust alleen horizontaal (de hoogte/bodem is voor
+            // alle vier gelijk); plateau/bord/naam blijven in beide richtingen.
+            const alleenHorizontaal = el.classList.contains("nt2-boek");
             let gesleept = false;
             function beweeg(ev) {
                 gesleept = true;
                 const dx = (ev.clientX - muisX) / r.width * 100;
-                const dy = (ev.clientY - muisY) / r.height * 100;
                 el.style.left   = (startX + dx).toFixed(2) + "%";    // horizontaal: alleen deze laag
-                el.style.bottom = (startB - dy).toFixed(2) + "%";    // verticaal: alleen deze laag
+                if (!alleenHorizontaal) {
+                    const dy = (ev.clientY - muisY) / r.height * 100;
+                    el.style.bottom = (startB - dy).toFixed(2) + "%"; // verticaal: alleen deze laag
+                }
                 boekInfo();
             }
             function los() {
@@ -4012,14 +4017,14 @@ function initAfstel(zaalEl) {
 
         // NT-scherm 2 — vervang ntScherm2.boeken (+ de gedeelde maten erboven).
         uit += "\n// NT-scherm 2 — gedeelde maten in ntScherm2:\n";
-        uit += '//   plateauBreedte: "' + ntScherm2.plateauBreedte + '", bordBreedte: "' + ntScherm2.bordBreedte +
+        uit += '//   boekHoogte: "' + ntScherm2.boekHoogte + '", plateauBreedte: "' + ntScherm2.plateauBreedte + '", bordBreedte: "' + ntScherm2.bordBreedte +
                '", naamBreedte: "' + ntScherm2.naamBreedte + '", naamHoogte: "' + ntScherm2.naamHoogte +
                '", naamGrootte: "' + grootteVoorExportNt2(ntScherm2.naamGrootte) + '"\n';
         uit += "// vervang ntScherm2.boeken:\nboeken: [\n";
         ntScherm2.boeken.forEach((b) => {
             uit += '    { naam: "' + b.naam + '", groep: "' + b.groep + '", boek: "' + b.boek + '",\n' +
                    '      plateauX: "' + b.plateauX + '", boekX: "' + b.boekX + '", bordX: "' + b.bordX + '", naamX: "' + b.naamX + '",\n' +
-                   '      boekHoogte: "' + b.boekHoogte + '", boekBodem: "' + b.boekBodem +
+                   '      boekBodem: "' + b.boekBodem +
                    '", plateauBodem: "' + b.plateauBodem + '", bordBodem: "' + b.bordBodem +
                    '", naamBodem: "' + b.naamBodem + '" },\n';
         });
@@ -4331,28 +4336,30 @@ function openNtGroep(groep) {
 const ntScherm2 = {
     plateauBron: "images/stenen_plateau.png",
     bordBron:    "images/naambordje.png",
-    // Gedeelde maten (size) voor plateau/bord/naam — gelden voor alle boeken.
-    plateauBreedte: "13%",
+    // Gedeelde maten (size) voor boek/plateau/bord/naam — gelden voor alle boeken.
+    boekHoogte:     "21%",
+    plateauBreedte: "17.4%",
     bordBreedte:    "12%",
     naamBreedte:    "11%",
     naamHoogte:     "4%",
-    naamGrootte:    "1.1cqi",
+    naamGrootte:    "0.70cqi",
     // Per boek: eigen x PER LAAG (plateauX/boekX/bordX/naamX), zodat je het boek
     // los van het plateau kunt centreren — handig bij de schuin gerenderde covers.
-    // Plus eigen boekgrootte en een eigen bodem per laag. Afstelbaar via ?afstel=aan.
+    // De boekhoogte is gedeeld (zie boven); per laag wel een eigen bodem.
+    // Afstelbaar via ?afstel=aan.
     boeken: [
         { naam: "Handelingen",        groep: "Handelingen",        boek: "images/handelingenboek.png",
-          plateauX: "22.5%", boekX: "22.5%", bordX: "22.5%", naamX: "22.5%",
-          boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+          plateauX: "20.94%", boekX: "16.77%", bordX: "20.47%", naamX: "20.9%",
+          boekBodem: "10%", plateauBodem: "-0.58%", bordBodem: "2.3%", naamBodem: "5.52%" },
         { naam: "Brieven van Paulus", groep: "Brieven van Paulus", boek: "images/brievenvanpaulusboek.png",
-          plateauX: "34.8%", boekX: "34.8%", bordX: "34.8%", naamX: "34.8%",
-          boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+          plateauX: "35.85%", boekX: "31.51%", bordX: "35.85%", naamX: "35.95%",
+          boekBodem: "10%", plateauBodem: "-0.57%", bordBodem: "2.29%", naamBodem: "5.54%" },
         { naam: "Algemene brieven",   groep: "Algemene brieven",   boek: "images/algemenebrievenboek.png",
-          plateauX: "47.2%", boekX: "47.2%", bordX: "47.2%", naamX: "47.2%",
-          boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" },
+          plateauX: "50.64%", boekX: "46.1%", bordX: "50.9%", naamX: "50.85%",
+          boekBodem: "10%", plateauBodem: "-0.66%", bordBodem: "2.3%", naamBodem: "5.33%" },
         { naam: "Openbaring",         groep: "Openbaring",         boek: "images/apocalypseboek.png",
-          plateauX: "60.6%", boekX: "60.6%", bordX: "60.6%", naamX: "60.6%",
-          boekHoogte: "21%", boekBodem: "10%", plateauBodem: "6%", bordBodem: "3.4%", naamBodem: "4.6%" }
+          plateauX: "65.75%", boekX: "60.92%", bordX: "66.06%", naamX: "66.45%",
+          boekBodem: "10%", plateauBodem: "-0.4%", bordBodem: "2.57%", naamBodem: "5.79%" }
     ]
 };
 
@@ -4377,7 +4384,7 @@ function bouwNtScherm2() {
         knop.className = "nt2-boek";
         knop.style.left = b.boekX;
         knop.style.bottom = b.boekBodem;
-        knop.style.height = b.boekHoogte;
+        knop.style.height = ntScherm2.boekHoogte;   // gedeelde hoogte voor alle vier
         knop.setAttribute("aria-label", b.naam);
         if (!afstelModus) knop.addEventListener("click", () => openNtGroep(b.groep));
 
