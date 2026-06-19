@@ -4321,10 +4321,14 @@ function gaNaarScherm1() {
 // Klik op een groep-tegel van scherm 2. Voorlopig nog geen vragen erachter: we
 // tonen een rustige melding. Later opent dit de quiz/onderdelen van die groep.
 function openNtGroep(groep) {
-    // "Brieven van Paulus" opent de boekenplank-overlay; de overige groepen
-    // tonen voorlopig nog de rustige "binnenkort"-melding.
-    if (groep === "Brieven van Paulus") {
-        openBoekenplank(boekenplanken.paulus);
+    // Groepen met een boekenplank openen die overlay; de overige (Handelingen,
+    // Openbaring) tonen voorlopig nog de rustige "binnenkort"-melding.
+    const plankPerGroep = {
+        "Brieven van Paulus": boekenplanken.paulus,
+        "Algemene brieven": boekenplanken.algemeen
+    };
+    if (plankPerGroep[groep]) {
+        openBoekenplank(plankPerGroep[groep]);
         return;
     }
     const melding = document.getElementById("nt2-melding");
@@ -4360,6 +4364,19 @@ const boekenplanken = {
             { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false },
             { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false },
             { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false }
+        ]
+    },
+    algemeen: {
+        titel: "Algemene brieven",
+        subtitel: "Kies een brief",
+        // De vier gebundelde algemene brieven (zie trofee-overzicht.md). Nog geen
+        // vragenpools -> allemaal beschikbaar: false. "Brieven van Johannes"
+        // (1-3 Joh.) staat bewust los van het evangelie "Johannes".
+        boeken: [
+            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: false },
+            { id: "jakobus",         naam: "Jakobus",              beschikbaar: false },
+            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: false },
+            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: false }
         ]
     }
 };
