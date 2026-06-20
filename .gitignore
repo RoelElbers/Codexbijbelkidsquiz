@@ -4,3 +4,9 @@ images/origineel-trofee-aanlevering/
 
 # Backup van de oude boek-PNG's (staan al in de git-historie).
 images/_oud-boeken/
+
+# Windows-systeembestand; in elke map negeren.
+desktop.ini
+
+# Verdwaalde kopie in de repo-root; de echte staat in images/nt2-kast-paneel2.png.
+/nt2-kast-paneel2.png
