@@ -2764,12 +2764,6 @@ function terugVuDetail() {
 
 // Categorieën — vrij aan te passen / te hernoemen / uit te breiden.
 const catecheseCategorieen = [
-    "Wie is God?",
-    "Wie is Jezus?",
-    "De Heilige Geest",
-    "De Bijbel",
-    "Het gebed",
-    "De christelijke feesten",
     "Verborgen getallen",
     "Verborgen patronen"
 ];
@@ -2778,28 +2772,6 @@ const catecheseCategorieen = [
 // op de exacte schrijfwijze). 'tekst' mag meerdere alinea's bevatten, gescheiden
 // door een LEGE regel. 'id' is de sleutel voor latere "Meer hierover ->"-links.
 const catecheseArtikelen = [
-    {
-        id: "wie-is-god-drie-eenheid",
-        categorie: "Wie is God?",
-        titel: "Eén God, die zich laat kennen als Vader, Zoon en Geest",
-        tekst: `PLACEHOLDER — vervang deze tekst later door het echte artikel.
-
-Hier komt een rustige, kindvriendelijke uitleg over wie God is. Je mag zoveel
-alinea's gebruiken als je wilt: laat tussen twee alinea's een lege regel staan,
-dan verschijnt er netjes witruimte ertussen.
-
-Dit derde stukje is er vooral om het scrollen te kunnen testen. Vul gerust meer
-tekst in totdat het vak moet scrollen, zodat je ziet dat dat goed werkt.`
-    },
-    {
-        id: "wie-is-jezus-waar-god-mens",
-        categorie: "Wie is Jezus?",
-        titel: "Jezus: echt God en echt mens",
-        tekst: `PLACEHOLDER — vervang deze tekst later door het echte artikel.
-
-Hier komt de uitleg over wie Jezus is. Ook hier mag je meerdere alinea's
-gebruiken; een lege regel start telkens een nieuwe alinea.`
-    },
     {
         id: "verborgen-getallen-153",
         categorie: "Verborgen getallen",
@@ -2863,7 +2835,9 @@ function sluitCatechese() {
     document.getElementById("catechese-scherm").style.display = "none";
     document.getElementById("bijbeltraining-scherm").style.display = "flex";
 }
-// Bouwt de categorie-knoppen uit de config-array (boekenkeuze-stijl).
+// Bouwt de categorie-knoppen uit de config-array (boekenkeuze-stijl). Alle
+// categorieën in catecheseCategorieen hebben echte artikelen, dus ze zijn
+// allemaal gewoon klikbaar.
 function bouwCatecheseCategorieen() {
     const houder = document.getElementById("catechese-categorieen");
     if (!houder) return;
@@ -3518,6 +3492,11 @@ function initAfstel(zaalEl) {
     if (nt2El) nt2El.classList.add("afstel");     // CSS: lagen pakbaar op scherm 2
     let boekSel = null;                           // geselecteerde scherm-2-laag
 
+    // Kast-afstel (scherm-2-prijzenkast): eigen container/positiemodel.
+    const nt2KastEl = document.getElementById("nt2-kast");
+    if (nt2KastEl) nt2KastEl.classList.add("afstel");  // CSS: kast-trofeeën pakbaar
+    let kastSel = null;                           // geselecteerde kast-trofee
+
     // Trofeeën schalen via hun hoogte, kisten via hun breedte.
     const isKist   = (img) => img.classList.contains("zaal-kist");
     const maatProp = (img) => isKist(img) ? "width" : "height";
@@ -3566,6 +3545,20 @@ function initAfstel(zaalEl) {
         if (nt2El) { nt2El.classList.add("zichtbaar"); nt2El.setAttribute("aria-hidden", "false"); }
     });
     vitrineKnoppen.appendChild(nt2Knop);
+    // Knop om de scherm-2-kast af te stellen: zelfde navigatie als NT-boeken
+    // (de kast zit op scherm 2). Wissel tussen de panelen met de kast-pijltjes.
+    const kastKnop = document.createElement("button");
+    kastKnop.type = "button";
+    kastKnop.textContent = "Kast (scherm 2)";
+    kastKnop.addEventListener("click", () => {
+        ["zaal-scherm", "schatkamer-scherm"].forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) el.style.display = "none";
+        });
+        huidigNtScherm = 2;
+        if (nt2El) { nt2El.classList.add("zichtbaar"); nt2El.setAttribute("aria-hidden", "false"); }
+    });
+    vitrineKnoppen.appendChild(kastKnop);
     paneel.appendChild(vitrineKnoppen);
 
     function toonInfo() {
@@ -3586,6 +3579,7 @@ function initAfstel(zaalEl) {
         if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }     // vitrine-trofee loslaten
         if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // vitrine-label loslaten
         if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; }   // scherm-2-laag loslaten
+        if (kastSel) { kastSel.classList.remove("afstel-geselecteerd"); kastSel = null; }   // kast-trofee loslaten
         if (sel) sel.classList.remove("afstel-geselecteerd");
         sel = img;
         if (sel) sel.classList.add("afstel-geselecteerd");
@@ -3675,6 +3669,7 @@ function initAfstel(zaalEl) {
         if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; } // zaal-selectie loslaten
         if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; } // label-selectie loslaten
         if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; } // scherm-2-laag loslaten
+        if (kastSel) { kastSel.classList.remove("afstel-geselecteerd"); kastSel = null; } // kast-trofee loslaten
         if (vitSel) vitSel.classList.remove("afstel-geselecteerd");
         vitSel = img;
         if (vitSel) vitSel.classList.add("afstel-geselecteerd");
@@ -3770,6 +3765,7 @@ function initAfstel(zaalEl) {
         if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }           // zaal loslaten
         if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }   // trofee loslaten
         if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; } // scherm-2-laag loslaten
+        if (kastSel) { kastSel.classList.remove("afstel-geselecteerd"); kastSel = null; } // kast-trofee loslaten
         if (labelSel) labelSel.classList.remove("afstel-geselecteerd");
         labelSel = div;
         if (labelSel) labelSel.classList.add("afstel-geselecteerd");
@@ -3874,6 +3870,7 @@ function initAfstel(zaalEl) {
         if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }
         if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }
         if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; }
+        if (kastSel) { kastSel.classList.remove("afstel-geselecteerd"); kastSel = null; }
         if (boekSel) boekSel.classList.remove("afstel-geselecteerd");
         boekSel = el;
         if (boekSel) boekSel.classList.add("afstel-geselecteerd");
@@ -3955,6 +3952,105 @@ function initAfstel(zaalEl) {
         if (raak) { e.preventDefault(); boekBewaar(boekSel); boekInfo(); }
     });
 
+    // ===== Scherm-2-kast (NT-prijzenkast): zelfde afstelmodus, x/y + breedte =====
+    // Elk element (trofee én naambordje) is los: gecentreerd op x/y (% van het
+    // paneel), schalen = breedte. Schrijft per element rechtstreeks terug naar de
+    // nis in nt2Kast (trofee -> x/y/breedte, bordje -> labelX/labelY/labelBreedte).
+    // Reageert op .kast-nis (trofee) én .kast-label (bordje); stopt de bubble
+    // zodat het NT-boeken-spoor (op #nt-scherm-2) de selectie niet weer wist.
+    function kastNisVan(el) {
+        const p = +el.dataset.kastPaneel, g = +el.dataset.kastGroep, i = +el.dataset.kastNis;
+        const groep = nt2Kast.panelen[p] && nt2Kast.panelen[p].groepen[g];
+        return (groep && groep.nissen[i]) || null;
+    }
+    function kastInfo() {
+        if (!kastSel) return;
+        const soort = kastSel.dataset.kastType === "label" ? "bordje" : "trofee";
+        infoEl.innerHTML = "<b>" + kastSel.dataset.afstelNaam + "</b> (kast-" + soort + ")<br>x: " +
+            parseFloat(kastSel.style.left).toFixed(1) + "% &middot; y: " +
+            parseFloat(kastSel.style.top).toFixed(1) + "% &middot; b: " +
+            parseFloat(kastSel.style.width).toFixed(1) + "%";
+    }
+    function kastBewaar(el) {
+        const nis = kastNisVan(el); if (!nis) return;
+        const x = parseFloat(el.style.left).toFixed(2) + "%";
+        const y = parseFloat(el.style.top).toFixed(2) + "%";
+        const b = parseFloat(el.style.width).toFixed(2) + "%";
+        if (el.dataset.kastType === "label") {
+            nis.labelX = x; nis.labelY = y; nis.labelBreedte = b;
+        } else {
+            nis.x = x; nis.y = y; nis.breedte = b;
+        }
+    }
+    function kastSelecteer(wrap) {
+        if (sel) { sel.classList.remove("afstel-geselecteerd"); sel = null; }
+        if (vitSel) { vitSel.classList.remove("afstel-geselecteerd"); vitSel = null; }
+        if (labelSel) { labelSel.classList.remove("afstel-geselecteerd"); labelSel = null; }
+        if (boekSel) { boekSel.classList.remove("afstel-geselecteerd"); boekSel = null; }
+        if (kastSel) kastSel.classList.remove("afstel-geselecteerd");
+        kastSel = wrap;
+        if (kastSel) kastSel.classList.add("afstel-geselecteerd");
+        kastInfo();
+    }
+
+    if (nt2KastEl) {
+        // --- slepen (delegatie op de kast) ---
+        nt2KastEl.addEventListener("pointerdown", (e) => {
+            const wrap = e.target.closest(".kast-nis, .kast-label");
+            if (!wrap) { kastSelecteer(null); return; }   // lege kast -> deselecteren (bubble mag naar boeken)
+            e.preventDefault();
+            e.stopPropagation();                          // niet door naar het NT-boeken-spoor
+            kastSelecteer(wrap);
+            const r = nt2KastEl.getBoundingClientRect();
+            const startX = parseFloat(wrap.style.left), startY = parseFloat(wrap.style.top);
+            const muisX = e.clientX, muisY = e.clientY;
+            let gesleept = false;
+            function beweeg(ev) {
+                gesleept = true;
+                const dx = (ev.clientX - muisX) / r.width * 100;
+                const dy = (ev.clientY - muisY) / r.height * 100;
+                wrap.style.left = (startX + dx).toFixed(2) + "%";
+                wrap.style.top  = (startY + dy).toFixed(2) + "%";
+                kastInfo();
+            }
+            function los() {
+                document.removeEventListener("pointermove", beweeg);
+                document.removeEventListener("pointerup", los);
+                if (gesleept) kastBewaar(wrap);
+            }
+            document.addEventListener("pointermove", beweeg);
+            document.addEventListener("pointerup", los);
+        });
+
+        // --- scrollwiel = grootte (breedte) ---
+        nt2KastEl.addEventListener("wheel", (e) => {
+            const wrap = e.target.closest(".kast-nis, .kast-label");
+            if (!wrap) return;
+            e.preventDefault();
+            e.stopPropagation();
+            kastSelecteer(wrap);
+            const v = Math.max(1, parseFloat(wrap.style.width) + (e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP));
+            wrap.style.width = v.toFixed(2) + "%";
+            kastBewaar(wrap); kastInfo();
+        }, { passive: false });
+    }
+
+    // --- toetsenbord voor de kast (alleen als scherm 2 zichtbaar is) ---
+    document.addEventListener("keydown", (e) => {
+        if (!kastSel || !nt2Zichtbaar()) return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        const x = parseFloat(kastSel.style.left), y = parseFloat(kastSel.style.top), b = parseFloat(kastSel.style.width);
+        if (e.key === "ArrowLeft")        kastSel.style.left  = (x - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowRight")  kastSel.style.left  = (x + stap).toFixed(2) + "%";
+        else if (e.key === "ArrowUp")     kastSel.style.top   = (y - stap).toFixed(2) + "%";
+        else if (e.key === "ArrowDown")   kastSel.style.top   = (y + stap).toFixed(2) + "%";
+        else if (e.key === "+" || e.key === "=") kastSel.style.width = (b + SCHAAL_STAP).toFixed(2) + "%";
+        else if (e.key === "-" || e.key === "_") kastSel.style.width = Math.max(1, b - SCHAAL_STAP).toFixed(2) + "%";
+        else raak = false;
+        if (raak) { e.preventDefault(); kastBewaar(kastSel); kastInfo(); }
+    });
+
     // Zet een afgestelde px-lettergrootte om naar een MEESCHALENDE cqi-waarde:
     // 1cqi = 1% van de vitrine-doosbreedte (container). Omdat de naamborden óók
     // in % van de doos staan, blijft de verhouding tekst↔bord constant op elk
@@ -4029,6 +4125,22 @@ function initAfstel(zaalEl) {
                    '", naamBodem: "' + b.naamBodem + '" },\n';
         });
         uit += "],\n";
+
+        // NT-prijzenkast (scherm 2) — per groep het raster + offsets, of de
+        // enkele nis. Elk element heeft nu een eigen positie; vervang per groep
+        // de hele nissen[]-array (en laat het raster weg, het is enkel startwaarde).
+        uit += "\n// NT-kast (scherm 2) — vervang per groep de nissen[] in nt2Kast.panelen:\n";
+        nt2Kast.panelen.forEach((pan, p) => {
+            pan.groepen.forEach((groep) => {
+                uit += "// paneel " + (p + 1) + " — " + groep.zone + ":\nnissen: [\n";
+                groep.nissen.forEach((n) => {
+                    uit += '    { sleutel: "' + n.sleutel + '", basis: "' + n.basis + '", naam: "' + n.naam + '",\n' +
+                           '      x: "' + n.x + '", y: "' + n.y + '", breedte: "' + n.breedte + '",\n' +
+                           '      labelX: "' + n.labelX + '", labelY: "' + n.labelY + '", labelBreedte: "' + n.labelBreedte + '" },\n';
+                });
+                uit += "],\n";
+            });
+        });
 
         uitvoerEl.value = uit;
         uitvoerEl.style.display = "block";
@@ -4298,6 +4410,8 @@ function gaNaarScherm2() {
         scherm2.classList.add("zichtbaar");
         scherm2.setAttribute("aria-hidden", "false");
     }
+    huidigKastPaneel = 0;            // altijd op paneel 1 binnenkomen
+    bouwNtKast(nt2Kast);             // standen verversen bij binnenkomst (live uit localStorage)
     // De rechterpijl hoort bij scherm 1; tijdens de overgang verbergen.
     const pijlRechts = document.getElementById("nt-pijl-naar-2");
     if (pijlRechts) pijlRechts.classList.remove("onthuld");
@@ -4591,6 +4705,255 @@ function bouwNtScherm2() {
     });
 }
 
+// === NT-prijzenkast op scherm 2 (individuele trofeeën) ======================
+// Compacte, config-gestuurde kast-renderer voor de rechterkast op scherm 2.
+// Bedenkt de nissen NIET opnieuw, maar leest ze uit de bestaande NT-zaal-
+// vitrineconfigs (één bron van waarheid). Vier groepen onder elkaar, in
+// canonieke volgorde. Geen kisten/Verborgen Schat hier (die staan op scherm 1).
+// Herbruikbaar: dezelfde renderer zou later ook scherm 1 kunnen voeden.
+// Twee doorschuifbare panelen; één tegelijk in beeld (eigen carrousel binnen de
+// kast). Elk paneel = een achtergrond-PNG met geschilderde nissen + de groepen
+// die erin horen. De nissen komen uit de bestaande vitrineconfigs (één bron van
+// waarheid); de enkel-nissen (Handelingen/Openbaring) staan inline.
+// Leidt de kast-nissen af uit de vitrine-nissen: alleen sleutel/basis/naam (de
+// bron van waarheid). De POSITIE komt uit het raster van de groep, niet per
+// stuk. Maakt nieuwe objecten (geen mutatie van de gedeelde vitrineconfig).
+function kastNissen(vitrineNissen) {
+    return vitrineNissen.map((n) => ({ sleutel: n.sleutel, basis: n.basis, naam: n.naam }));
+}
+
+// ====== Afstelbare kast-getallen ======
+// Per groep een raster (oorsprong + kolom-/rijafstand + breedte) i.p.v. losse
+// posities. Zo stel je een groep af met een paar getallen; uitzonderingen nudge
+// je via `offsets` (per nis-index: { dx, dy } in % van het paneel, optioneel
+// `breedte`). Alle waarden zijn % van het PANEEL (de kast-rechthoek).
+//
+//   raster: { x0, y0, kolStap, rijStap, kolommen, breedte }
+//     x0/y0    = MIDDEN van de eerste nis (linksboven)
+//     kolStap  = horizontale afstand tussen nis-middens
+//     rijStap  = verticale afstand tussen rij-middens
+//     kolommen = aantal per rij (rijen volgen uit het aantal nissen)
+//     breedte  = trofeebreedte (% paneel); naambordje hangt er via CSS onder
+//   Enkele grote nissen (Handelingen/Openbaring) hebben geen raster maar een
+//   directe x/y/breedte per nis.
+const nt2Kast = {
+    panelen: [
+        {
+            achtergrond: "images/nt2-kast-paneel1.png",
+            groepen: [
+                { zone: "handelingen",
+                  nissen: [
+                      { sleutel: "trofee_handelingen", basis: "handelingen", naam: "Handelingen",
+                        x: "54.52%", y: "25.12%", breedte: "20.60%",
+                        labelX: "54.79%", labelY: "39.04%", labelBreedte: "27.30%" }
+                  ] },
+                { zone: "paulusbrieven",
+                  nissen: [
+                      { sleutel: "trofee_romeinen", basis: "romeinen", naam: "Romeinen",
+                        x: "19.50%", y: "60.35%", breedte: "17.60%",
+                        labelX: "19.49%", labelY: "71.49%", labelBreedte: "16.20%" },
+                      { sleutel: "trofee_korintiers", basis: "korintiers", naam: "Korintiërs",
+                        x: "41.69%", y: "60.56%", breedte: "17.00%",
+                        labelX: "41.69%", labelY: "71.49%", labelBreedte: "17.00%" },
+                      { sleutel: "trofee_galaten", basis: "galaten", naam: "Galaten",
+                        x: "65.49%", y: "60.13%", breedte: "17.80%",
+                        labelX: "65.23%", labelY: "71.49%", labelBreedte: "16.80%" },
+                      { sleutel: "trofee_efeziers", basis: "efeziers", naam: "Efeziërs",
+                        x: "87.70%", y: "63.98%", breedte: "11.40%",
+                        labelX: "87.69%", labelY: "71.92%", labelBreedte: "16.60%" },
+                      { sleutel: "trofee_filippenzen", basis: "filippenzen", naam: "Filippenzen",
+                        x: "18.96%", y: "86.62%", breedte: "11.20%",
+                        labelX: "19.50%", labelY: "94.36%", labelBreedte: "17.00%" },
+                      { sleutel: "trofee_kolossenzen_filemon", basis: "kolossenzen-filemon", naam: "Kolossenzen",
+                        x: "41.70%", y: "87.26%", breedte: "11.20%",
+                        labelX: "40.63%", labelY: "95.00%", labelBreedte: "15.40%" },
+                      { sleutel: "trofee_tessalonicenzen", basis: "tessalonicenzen", naam: "Tessalonicenzen",
+                        x: "65.23%", y: "87.48%", breedte: "11.60%",
+                        labelX: "64.70%", labelY: "95.22%", labelBreedte: "13.00%" },
+                      { sleutel: "trofee_timoteus_titus", basis: "timoteus-titus", naam: "Timoteüs",
+                        x: "87.96%", y: "87.48%", breedte: "10.60%",
+                        labelX: "87.96%", labelY: "95.00%", labelBreedte: "17.00%" }
+                  ] }
+            ]
+        },
+        {
+            achtergrond: "images/nt2-kast-paneel2.png",
+            groepen: [
+                { zone: "algemenebrieven",
+                  nissen: [
+                      { sleutel: "trofee_hebreeen", basis: "hebreeen", naam: "Hebreeën",
+                        x: "13.90%", y: "30.44%", breedte: "11.80%",
+                        labelX: "13.91%", labelY: "38.60%", labelBreedte: "18.40%" },
+                      { sleutel: "trofee_jakobus", basis: "jakobus", naam: "Jakobus",
+                        x: "36.37%", y: "30.02%", breedte: "12.60%",
+                        labelX: "37.17%", labelY: "38.60%", labelBreedte: "21.80%" },
+                      { sleutel: "trofee_petrus_judas", basis: "petrus-judas", naam: "Petrus & Judas",
+                        x: "57.76%", y: "29.15%", breedte: "13.60%",
+                        labelX: "58.31%", labelY: "38.60%", labelBreedte: "20.40%" },
+                      { sleutel: "trofee_johannesbrieven", basis: "johannesbrieven", naam: "1-3 Johannes",
+                        x: "79.98%", y: "27.24%", breedte: "16.60%",
+                        labelX: "80.51%", labelY: "38.39%", labelBreedte: "20.00%" }
+                  ] },
+                { zone: "openbaring",
+                  nissen: [
+                      { sleutel: "trofee_openbaring", basis: "openbaring", naam: "Openbaring",
+                        x: "47.87%", y: "69.33%", breedte: "24.40%",
+                        labelX: "48.14%", labelY: "85.81%", labelBreedte: "27.30%" }
+                  ] }
+            ]
+        }
+    ]
+};
+
+// Geeft ELK element een eigen positie (trofee + naambordje), als %-strings van
+// het paneel. Het raster dient alleen als STARTwaarde: hieruit worden trofee-
+// x/y/breedte berekend als die nog niet bestaan; het naambordje krijgt een
+// startpositie net onder de trofee. Daarna stelt de afstelmodus elk element los
+// bij en schrijft de waarden hierheen terug. Eén keer draaien bij het laden.
+function expandeerKastPosities(kast) {
+    kast.panelen.forEach((pan) => {
+        pan.groepen.forEach((groep) => {
+            groep.nissen.forEach((nis, i) => {
+                if (nis.x === undefined && groep.raster) {
+                    const r = groep.raster;
+                    const kol = i % r.kolommen, rij = Math.floor(i / r.kolommen);
+                    nis.x = (r.x0 + kol * r.kolStap).toFixed(2) + "%";
+                    nis.y = (r.y0 + rij * r.rijStap).toFixed(2) + "%";
+                    nis.breedte = r.breedte + "%";
+                }
+                if (nis.labelX === undefined) {              // startpositie van het naambordje
+                    const tx = parseFloat(nis.x), ty = parseFloat(nis.y), tb = parseFloat(nis.breedte);
+                    nis.labelX = tx.toFixed(2) + "%";
+                    nis.labelY = (ty + 12).toFixed(2) + "%";        // net onder de trofee
+                    nis.labelBreedte = (tb * 1.3).toFixed(2) + "%";
+                }
+            });
+        });
+    });
+}
+expandeerKastPosities(nt2Kast);
+
+// Welk kastpaneel nu in beeld is — eigen state, los van huidigNtScherm.
+let huidigKastPaneel = 0;
+
+// Bouwt het ACTIEVE kastpaneel op: paneel-PNG als achtergrond + per groep een
+// kopje-overlay en de trofeeën in hun nissen (absoluut geplaatst uit de config).
+// Werkt ook de 1/2-indicator en de pijl-zichtbaarheid bij.
+function bouwNtKast(kast) {
+    const houder = document.getElementById("nt2-kast");
+    const inhoud = document.getElementById("nt2-kast-inhoud");
+    if (!houder || !inhoud) return;
+
+    const aantal = kast.panelen.length;
+    huidigKastPaneel = Math.min(aantal - 1, Math.max(0, huidigKastPaneel));
+    const paneel = kast.panelen[huidigKastPaneel];
+
+    // Paneel-PNG als achtergrond (met nette placeholder-fallback als hij mist).
+    zetSchatkamerAchtergrond(houder, paneel.achtergrond, "");
+
+    inhoud.innerHTML = "";
+    paneel.groepen.forEach((groep, g) => {
+        // Geen groepskopjes (de namen staan al op de boeken + naamplaatjes). Per
+        // nis een LOSSE trofee + een LOS naambordje, elk met een eigen positie en
+        // — in afstelmodus — eigen stempel zodat ze los af te stellen zijn.
+        groep.nissen.forEach((nis, i) => {
+            const trofee = maakKastTrofee(nis, groep.zone);
+            const label  = maakKastLabel(nis, groep.zone);
+            if (afstelModus) {
+                stempelKast(trofee, "trofee", huidigKastPaneel, g, i, nis.naam);
+                if (label) stempelKast(label, "label", huidigKastPaneel, g, i, nis.naam + " (bordje)");
+            }
+            inhoud.appendChild(trofee);
+            if (label) inhoud.appendChild(label);
+        });
+    });
+
+    // 1/2-indicator + pijl-zichtbaarheid (links verborgen op paneel 1, rechts op het laatste).
+    const indicator = document.getElementById("nt2-kast-indicator");
+    if (indicator) indicator.textContent = `${huidigKastPaneel + 1} / ${aantal}`;
+    const pijlLinks = houder.querySelector(".kast-pijl-links");
+    const pijlRechts = houder.querySelector(".kast-pijl-rechts");
+    if (pijlLinks) pijlLinks.classList.toggle("verborgen", huidigKastPaneel === 0);
+    if (pijlRechts) pijlRechts.classList.toggle("verborgen", huidigKastPaneel === aantal - 1);
+}
+
+// Koppelt een element aan zijn nis in nt2Kast (voor het kast-afstelspoor).
+function stempelKast(el, type, p, g, i, naam) {
+    el.dataset.kastType = type;          // "trofee" of "label"
+    el.dataset.kastPaneel = p;
+    el.dataset.kastGroep = g;
+    el.dataset.kastNis = i;
+    el.dataset.afstelNaam = naam;
+}
+
+// Losse trofee, gecentreerd op nis.x/nis.y, breedte nis.breedte. Stand LIVE via
+// leesTrofeeStand(); states via de vitrine-filterrecepten. Klik (buiten afstel)
+// -> de zone in de Schatkamer. Silhouet als de kunst nog ontbreekt.
+function maakKastTrofee(nis, zone) {
+    const wrap = document.createElement("div");
+    wrap.className = "kast-nis";
+    wrap.style.left = nis.x;
+    wrap.style.top = nis.y;
+    wrap.style.width = nis.breedte;
+    wrap.title = nis.naam;
+
+    const stand = leesTrofeeStand(nis.sleutel);          // "geen"|"brons"|"zilver"|"goud"
+    const img = document.createElement("img");
+    img.className = "kast-trofee " + (stand === "geen" ? "sk-schaduw" : stand);
+    img.src = `images/${nis.basis}-zilver.png`;
+    img.alt = nis.naam;
+    img.addEventListener("error", () => {
+        const sil = document.createElement("div");
+        sil.className = "kast-trofee kast-trofee-silhouet";
+        img.replaceWith(sil);
+    }, { once: true });
+    wrap.appendChild(img);
+
+    if (!afstelModus) wrap.addEventListener("click", () => naarSchatkamerZone(zone));
+    return wrap;
+}
+
+// Los naambordje, gecentreerd op nis.labelX/nis.labelY, breedte nis.labelBreedte.
+// Eigen element (geen kind van de trofee) zodat het onafhankelijk te plaatsen en
+// af te stellen is. Ornate naambordje + goud-gradiënt-tekst (uit lang/nl.js).
+function maakKastLabel(nis, zone) {
+    const afk = (typeof NL !== "undefined" && NL.afkortingen[nis.basis]) || "";
+    if (!afk) return null;
+    const label = document.createElement("div");
+    label.className = "kast-label";
+    label.style.left = nis.labelX;
+    label.style.top = nis.labelY;
+    label.style.width = nis.labelBreedte;
+    label.title = nis.naam;
+
+    const tekst = document.createElement("span");
+    tekst.className = "kast-label-tekst";
+    tekst.textContent = afk;
+    label.appendChild(tekst);
+
+    if (!afstelModus) label.addEventListener("click", () => naarSchatkamerZone(zone));
+    return label;
+}
+
+// Doorschuiven tussen de kastpanelen. Eigen pijltjes + eigen state, dus botst
+// niet met de schermcarrousel (die op de ArrowLeft/Right-toetsen reageert).
+function kastPaneel(richting) {
+    const aantal = nt2Kast.panelen.length;
+    const nieuw = Math.min(aantal - 1, Math.max(0, huidigKastPaneel + richting));
+    if (nieuw === huidigKastPaneel) return;
+    huidigKastPaneel = nieuw;
+    bouwNtKast(nt2Kast);
+}
+
+// Klik op een kast-nis: open de Schatkamer-zaal en zoom meteen in op de
+// bijbehorende zone (kast = samenvatting, Schatkamer = detail).
+function naarSchatkamerZone(zoneId) {
+    const zone = schatkamerZalen.nt.zones.find((z) => z.id === zoneId);
+    if (!zone) return;
+    openSchatkamer();
+    zoomNaarZone(zone);
+}
+
 // Hulp: staat er een schermvullende overlay open (quiz, keuze, naslag, schatkamer)?
 // Dan mogen de pijltjestoetsen niet van hoofdscherm wisselen.
 function eenOverlayOpen() {
@@ -4606,6 +4969,7 @@ function eenOverlayOpen() {
     if (!container) return;
 
     bouwNtScherm2();                 // vier NT-boeken op plateaus opbouwen
+    bouwNtKast(nt2Kast);             // de NT-prijzenkast (individuele trofeeën) rechts
 
     // Muis bij de zijrand -> de bijbehorende pijl onthullen. Alleen op echte
     // hover-apparaten; op touch staan de pijlen via de CSS-media-query al zacht

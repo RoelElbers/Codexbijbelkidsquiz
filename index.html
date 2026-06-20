@@ -124,6 +124,28 @@
                  vult dit config-gestuurd; de klik blijft openNtGroep() aanroepen. -->
             <div class="nt2-boeken" id="nt2-boeken"></div>
 
+            <!-- NT-prijzenkast rechts: twee doorschuifbare panelen (paneel 1 =
+                 Handelingen + Paulus, paneel 2 = Algemene brieven + Openbaring),
+                 config-gestuurd gevuld door bouwNtKast(). Eigen pijltjes + 1/2-
+                 indicator (los van de schermcarrousel). Geen kisten/Verborgen
+                 Schat hier. -->
+            <div class="nt2-kast" id="nt2-kast">
+                <button class="kast-pijl kast-pijl-links" type="button"
+                        onclick="kastPaneel(-1)" aria-label="Vorig kastpaneel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M15 5l-7 7 7 7"/>
+                    </svg>
+                </button>
+                <div class="kast-inhoud" id="nt2-kast-inhoud"></div>
+                <button class="kast-pijl kast-pijl-rechts" type="button"
+                        onclick="kastPaneel(1)" aria-label="Volgend kastpaneel">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+                <div class="kast-indicator" id="nt2-kast-indicator"></div>
+            </div>
+
             <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
         </div>
 
@@ -622,6 +644,7 @@
 
     </div>
 
+    <script src="lang/nl.js"></script>
     <script src="script.js"></script>
 
 </body>

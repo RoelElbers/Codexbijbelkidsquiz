@@ -767,25 +767,29 @@ height: 22%;
    scherm. .sk-schaduw is het donkere "nog niet behaald"-silhouet.
 ========================= */
 
-.schatkamer-vitrine .sk-trofee.sk-schaduw {
+.schatkamer-vitrine .sk-trofee.sk-schaduw,
+.kast-trofee.sk-schaduw {
     filter: brightness(0.3) opacity(0.8);
 }
 
 .schatkamer-vitrine .sk-trofee.brons,
-.sk-zaal .zaal-nis-trofee.brons {
+.sk-zaal .zaal-nis-trofee.brons,
+.kast-trofee.brons {
     filter: sepia(0.7) saturate(1.6) hue-rotate(-10deg) brightness(0.8)
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
 }
 
 .schatkamer-vitrine .sk-trofee.zilver,
-.sk-zaal .zaal-nis-trofee.zilver {
+.sk-zaal .zaal-nis-trofee.zilver,
+.kast-trofee.zilver {
     filter: brightness(1.1) saturate(1.05)
             drop-shadow(0 0 6px rgba(210, 225, 255, 0.75))
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
 }
 
 .schatkamer-vitrine .sk-trofee.goud,
-.sk-zaal .zaal-nis-trofee.goud {
+.sk-zaal .zaal-nis-trofee.goud,
+.kast-trofee.goud {
     filter: sepia(0.95) saturate(2.9) hue-rotate(5deg) brightness(1.13) contrast(1.15)
             drop-shadow(0 0 9px rgba(255, 195, 60, 0.9))
             drop-shadow(0 6px 8px rgba(0, 0, 0, .45));
@@ -1432,6 +1436,18 @@ height: 22%;
     cursor: pointer;
     z-index: 100;
     pointer-events: auto;
+}
+
+/* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de
+   onzichtbare scherm-1-klikzones hebben z-index 100 (boven scherm 2's z-index
+   40) en prikken er doorheen. Twee daarvan liggen over scherm-2-content en
+   moeten daar uit: de schatkamer-zone (trofee-vak) over de BOVENSTE kast-
+   trofeeën, en de boek-zones over de scherm-2-boeken. De MENU-zones (nieuw spel/
+   bijbeltraining/schatkamer/instellingen) liggen links, botsen nergens mee en
+   blijven juist op elk carrouselscherm bruikbaar — die NIET uitzetten. */
+#game-container:has(#nt-scherm-2.zichtbaar) .schatkamer-zone,
+#game-container:has(#nt-scherm-2.zichtbaar) .boek-zone {
+    pointer-events: none;
 }
 .geluid-uit {
     opacity: 0.55;
@@ -2266,7 +2282,9 @@ height: 22%;
     position: absolute;
     bottom: 3%;
     left: 50%;
-    transform: translateX(-50%);
+    /* translateY(100%) = exact de eigen hoogte (één letterregel, min-height 1.4em)
+       omlaag, zodat de melding netjes onder de boeken/naambordjes valt. */
+    transform: translateX(-50%) translateY(100%);
     width: 100%;
     z-index: 6;
 
@@ -2684,6 +2702,193 @@ height: 22%;
 }
 .boekenplank-melding.zichtbaar {
     opacity: 1;
+}
+
+/* =========================
+   NT-PRIJZENKAST op scherm 2 (individuele trofeeën)
+   Ligt over de geschilderde (lege) prijzenkast rechts. Vier groepen onder
+   elkaar (Handelingen, Brieven van Paulus, Algemene brieven, Openbaring), elk
+   met een kopje + trofee-rij(en). Positie/maten zijn ruwe startwaarden — fijn
+   afstellen volgt later. container-type geeft cqi-context (relatief aan de
+   kast); alleen de trofeeën vangen klikken.
+========================= */
+.nt2-kast {
+    position: absolute;
+    /* Exact in de BINNENOPENING van de geschilderde kast: onder de boog en de
+       PRIJZENKAST-titel, zijkanten strak tegen de binnenrand. Geen aspect-ratio
+       -> het paneel vult deze rechthoek via background-size:100% 100%.
+       Eerste-gok-waarden (binnenvak ≈ x 72-95%, onder de boog ~17%); fijn
+       afstellen op screenshot. */
+    left: 72%;
+    /* Vanaf BOVEN ingekort (top omlaag, height met hetzelfde bedrag korter) zodat
+       de bovenrand niet meer over de onderkant van de geschilderde "PRIJZENKAST"-
+       titel valt (anders dekt hij de J-haak af -> J leest als I). De onderkant
+       blijft op ~67% staan, vrij van het level-schild. Nissen én trofeeën schalen
+       samen met de box, dus de trofeeën blijven in hun nissen. */
+    top: 16%;
+    width: 23%;
+    height: 51%;                  /* onderkant ~67% -> vrij van het level-schild */
+    z-index: 4;                   /* boven achtergrond/boeken (1), onder de pijlen (5) */
+
+    /* Het actieve paneel als achtergrond; bouwNtKast() wisselt de PNG. */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    container-type: inline-size;
+    pointer-events: none;         /* alleen de trofeeën + kast-pijltjes vangen klikken */
+}
+
+/* Trofee-overlay over het actieve paneel. STAP 1: ruwe flex; STAP 2 legt de
+   trofeeën in de geschilderde nissen. */
+/* Positioneer-context over het paneel: kopjes en nissen worden er absoluut in
+   geplaatst (x/y uit de config, als % van het paneel). */
+.kast-inhoud {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;        /* alleen de nissen vangen klikken */
+}
+
+/* Eigen doorschuif-pijltjes op de kast (los van de schermcarrousel). */
+.kast-pijl {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 6;
+
+    width: 9%;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    color: #ffd86b;
+    background: rgba(8, 14, 30, 0.6);
+    border: 0.15cqi solid #d8a93f;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.kast-pijl svg { width: 70%; height: 70%; }
+.kast-pijl-links  { left: 1%; }
+.kast-pijl-rechts { right: -5%; }   /* buiten de rechter nis-kolom (Ef.) */
+.kast-pijl:hover { background: rgba(20, 30, 56, 0.85); }
+.kast-pijl.verborgen { display: none; }
+
+/* 1/2-indicator in de gap onder de kast (vrij van de onderste naambordjes en
+   boven het level-schild). */
+.kast-indicator {
+    position: absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 6;
+
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 3cqi;
+    color: #ffd86b;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+}
+/* Eén nis: wrapper gecentreerd op nis.x/nis.y (% van het paneel), breedte
+   nis.breedte. Bevat de trofee + een afkorting-label dat er net onder hangt. */
+.kast-nis {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.15s ease;
+}
+.kast-nis:hover {
+    transform: translate(-50%, -50%) translateY(-0.6cqi) scale(1.04);
+}
+
+/* Afstelmodus (?afstel=aan): kast-trofeeën pakbaar; hover-lift uit zodat slepen
+   rustig blijft; geselecteerde trofee cyaan gemarkeerd. */
+.nt2-kast.afstel .kast-nis {
+    cursor: move;
+    touch-action: none;
+}
+.nt2-kast.afstel .kast-nis:hover {
+    transform: translate(-50%, -50%);
+}
+.kast-nis.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+.kast-trofee {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Naamplaatje: een ZELFSTANDIG element (geen kind van de trofee), gecentreerd op
+   nis.labelX/nis.labelY (% van het paneel), breedte nis.labelBreedte. Ornate
+   naambordje.png + goud-gradiënt-tekst, identiek aan de scherm-2-boeknamen. Zo
+   is het los selecteerbaar/sleepbaar in de afstelmodus. */
+.kast-label {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1800 / 874;    /* verhouding van naambordje.png; hoogte volgt breedte */
+    background: url("images/naambordje.png") center / 100% 100% no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0 9%;               /* binnen de gouden lijst van de plaat blijven */
+
+    cursor: pointer;
+    pointer-events: auto;
+    transition: transform 0.15s ease;
+}
+.kast-label:hover {
+    transform: translate(-50%, -50%) translateY(-0.4cqi) scale(1.03);
+}
+/* Afstelmodus: naamplaatjes net als trofeeën pakbaar + selecteerbaar. */
+.nt2-kast.afstel .kast-label {
+    cursor: move;
+    touch-action: none;
+}
+.nt2-kast.afstel .kast-label:hover {
+    transform: translate(-50%, -50%);
+}
+.kast-label.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+.kast-label-tekst {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 1.7cqi;
+    letter-spacing: 0.02cqi;
+    line-height: 1;
+    white-space: nowrap;
+
+    /* Gegraveerd-goud, identiek aan .nt2-naam (scherm-2-boeknamen). */
+    background: linear-gradient(#fff4cf 0%, #f4d57f 38%, #e1aa40 68%, #b07d1c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.85));
+}
+
+/* Silhouet wanneer de trofee-kunst nog niet bestaat (flex-variant van
+   .sk-trofee-silhouet; zelfde kelkvorm en beeldverhouding). */
+.kast-trofee-silhouet {
+    aspect-ratio: 428 / 676;
+    background: linear-gradient(180deg, rgba(26, 36, 66, 0.92) 0%, rgba(8, 12, 26, 0.95) 100%);
+    clip-path: polygon(
+        15% 0%, 85% 0%, 83% 14%, 72% 27%, 56% 35%, 54% 40%, 54% 62%,
+        62% 68%, 68% 74%, 76% 88%, 80% 100%,
+        20% 100%, 24% 88%, 32% 74%, 38% 68%, 46% 62%, 46% 40%, 44% 35%,
+        28% 27%, 17% 14%
+    );
+    opacity: 0.85;
 }
 
 /* Touch-vangnet: op apparaten zonder hover blijven de pijlen zacht zichtbaar en
