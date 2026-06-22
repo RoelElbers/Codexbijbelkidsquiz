@@ -12,7 +12,7 @@
 
 **Evangelie** — Het woord betekent "goed nieuws". Het zijn ook de vier boeken die het leven van Jezus vertellen: Matteüs, Marcus, Lucas en Johannes. Elke schrijver kreeg later zijn eigen symbool — de mens, de leeuw, de stier en de adelaar — precies de tekens die je in dit spel als trofee kunt verdienen.
 
-**Farizeeër** — Iemand uit een groep die het heel serieus nam om precies volgens Gods regels te leven, tot in de kleinste details. Op zich knap, maar in de evangeliën botsen de farizeeën vaak met Jezus: volgens hem ging het hun te veel om de regels en te weinig om de mensen daarachter.
+**Farizeeër** — Iemand uit een Joodse groep die het heel serieus nam om precies volgens Gods regels te leven, tot in de kleinste details. Op zich knap, maar in de evangeliën botsen de farizeeën vaak met Jezus: volgens hem ging het hun te veel om de regels en te weinig om de mensen daarachter.
 
 **Gelijkenis** — Een kort verhaaltje dat Jezus vertelde om iets groots uit te leggen met iets gewoons. Door over schapen, zaadjes of een verloren muntje te vertellen, maakte hij een diepe les ineens begrijpelijk. Het bekendste voorbeeld is misschien wel het verhaal van de verloren zoon.
 
