@@ -4472,14 +4472,14 @@ const boekenplanken = {
         // De acht gebundelde Paulusbrieven (zie trofee-overzicht.md), in twee
         // rijen van vier. Nog geen vragenpools -> allemaal beschikbaar: false.
         boeken: [
-            { id: "romeinen",            naam: "Romeinen",              beschikbaar: false },
-            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: false },
-            { id: "galaten",             naam: "Galaten",               beschikbaar: false },
-            { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false },
-            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false },
-            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false },
-            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false },
-            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false }
+            { id: "romeinen",            naam: "Romeinen",              beschikbaar: false, cover: "images/boek-romeinen.png" },
+            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: false, cover: "images/boek-korintiers.png" },
+            { id: "galaten",             naam: "Galaten",               beschikbaar: false, cover: "images/boek-galaten.png" },
+            { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false, cover: "images/boek-efeziers.png" },
+            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false, cover: "images/boek-filippenzen.png" },
+            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
+            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false, cover: "images/boek-tessalonicenzen.png" },
+            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false, cover: "images/boek-timoteus-titus.png" }
         ]
     },
     algemeen: {

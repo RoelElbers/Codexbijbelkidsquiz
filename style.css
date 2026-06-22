@@ -2523,6 +2523,10 @@ height: 22%;
 /* Twee plank-rijen; bouwBoekenplank() vult ze in stap 2 met vier boeken elk. */
 .boekenplank-planken {
     flex: 1;
+    min-height: 0;               /* wortel van de hoogte-cascade: planken mag niet
+                                    voorbij zijn flex-aandeel van het paneel groeien,
+                                    zodat de rijen erbinnen écht krimpen i.p.v. te
+                                    overflowen (anders valt rij 2 buiten het paneel). */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2533,6 +2537,10 @@ height: 22%;
 .boekenplank-rij {
     position: relative;
     flex: 1;
+    /* Sta toe dat rijen onder hun inhoud krimpen, zodat twee rijen de hoogte
+       eerlijk 50/50 delen. Zonder dit drukt een rij met een foto-cover (eigen
+       beeldhoogte) de volgende rij weg (min-height:auto van flexbox). */
+    min-height: 0;
     display: flex;
     align-items: flex-end;
     justify-content: space-evenly;
@@ -2556,6 +2564,7 @@ height: 22%;
 
     width: 20%;
     height: 100%;
+    min-height: 0;               /* mag onder zijn inhoud krimpen (foto-cover-img) */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2616,6 +2625,7 @@ height: 22%;
 .plank-boek-cover-foto {
     height: 72%;                 /* iets hoger: de cover-PNG is smaller/langer dan 3:4 */
     aspect-ratio: auto;          /* breedte volgt de afbeelding i.p.v. 3/4 te forceren */
+    min-height: 0;               /* niet opzwellen tot de intrinsieke beeldhoogte */
     border: none;
     background: none;
     box-shadow: none;
@@ -2624,6 +2634,9 @@ height: 22%;
 .plank-cover-img {
     height: 100%;
     width: auto;
+    max-width: 100%;             /* val terug op breedte als de hoogte de rem is */
+    min-height: 0;               /* replaced element is een flex-item: laat krimpen
+                                    i.p.v. vasthouden aan de intrinsieke beeldhoogte */
     object-fit: contain;
     filter: drop-shadow(0 0.5cqi 0.8cqi rgba(0, 0, 0, 0.45));
 }
