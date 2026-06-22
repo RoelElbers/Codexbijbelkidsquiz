@@ -2610,6 +2610,24 @@ height: 22%;
     pointer-events: none;
 }
 
+/* Volledige cover-afbeelding (groen boek incl. eigen rand/rug/embleem). Hier ís
+   de PNG het boek, dus de code-getekende blauwe omslag + rug worden uitgezet en
+   de afbeelding bepaalt zelf de breedte (eigen aspect-ratio). */
+.plank-boek-cover-foto {
+    height: 72%;                 /* iets hoger: de cover-PNG is smaller/langer dan 3:4 */
+    aspect-ratio: auto;          /* breedte volgt de afbeelding i.p.v. 3/4 te forceren */
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.plank-boek-cover-foto::before { content: none; }   /* geen blauwe code-rug */
+.plank-cover-img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0.5cqi 0.8cqi rgba(0, 0, 0, 0.45));
+}
+
 /* Embleem: code-getekende gouden plaatshouder-disc. Later vervangen door een
    <img class="plank-embleem"> met dezelfde maat/positie. */
 .plank-embleem {

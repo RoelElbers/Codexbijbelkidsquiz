@@ -4457,12 +4457,14 @@ function openNtGroep(groep) {
 // Eén config-object per groep; bouwBoekenplank() (stap 2) vult straks de boeken.
 // Stap 1: alleen titel/subtitel zetten + openen/sluiten. De plank is generiek,
 // zodat "Algemene brieven" later dezelfde overlay met een andere lijst gebruikt.
-// Eén boek = { id, naam, beschikbaar[, embleem] }:
+// Eén boek = { id, naam, beschikbaar[, cover | embleem] }:
 //   id        : interne slug, sluit aan op de trofee-/bestandsnamen
 //   naam      : weergavenaam op het naamplaatje (los van id/bestandsnaam)
 //   beschikbaar: true zodra er een vragenpool bestaat; tot dan "binnenkort" (stap 3)
-//   embleem   : optioneel pad naar de echte symboolafbeelding; ontbreekt die,
-//               dan tekent de builder een gouden plaatshouder.
+//   cover     : optioneel pad naar een VOLLEDIGE cover-afbeelding (boek incl. rug
+//               en embleem); die PNG ís dan het boek en vervangt de code-cover.
+//   embleem   : optioneel pad naar alleen het symbool, midden op de code-cover;
+//               ontbreken cover én embleem, dan tekent de builder een gouden disc.
 const boekenplanken = {
     paulus: {
         titel: "Brieven van Paulus",
@@ -4487,10 +4489,10 @@ const boekenplanken = {
         // vragenpools -> allemaal beschikbaar: false. "Brieven van Johannes"
         // (1-3 Joh.) staat bewust los van het evangelie "Johannes".
         boeken: [
-            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: false },
-            { id: "jakobus",         naam: "Jakobus",              beschikbaar: false },
-            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: false },
-            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: false }
+            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: false, cover: "images/boek-hebreeen.png" },
+            { id: "jakobus",         naam: "Jakobus",              beschikbaar: false, cover: "images/boek-jakobus.png" },
+            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: false, cover: "images/boek-petrus-judas.png" },
+            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: false, cover: "images/boek-johannesbrieven.png" }
         ]
     }
 };
@@ -4562,20 +4564,31 @@ function bouwBoekenplank(config) {
             const cover = document.createElement("div");
             cover.className = "plank-boek-cover";
 
-            // Embleem: echte symboolafbeelding als boek.embleem bestaat, anders
-            // een code-getekende gouden plaatshouder (later 1-op-1 te vervangen
-            // door een <img> via het embleem-pad in de config).
-            let embleem;
-            if (boek.embleem) {
-                embleem = document.createElement("img");
-                embleem.className = "plank-embleem";
-                embleem.src = boek.embleem;
-                embleem.alt = "";
+            // Drie cover-varianten, van "echtst" naar plaatshouder:
+            //   boek.cover  -> volledige cover-afbeelding (groen boek incl. embleem);
+            //                  de PNG ís het boek, dus geen code-getekende blauwe cover.
+            //   boek.embleem-> alleen het symbool, gecentreerd op de blauwe code-cover.
+            //   geen van beide -> code-getekende gouden plaatshouder-disc.
+            if (boek.cover) {
+                cover.classList.add("plank-boek-cover-foto");
+                const coverImg = document.createElement("img");
+                coverImg.className = "plank-cover-img";
+                coverImg.src = boek.cover;
+                coverImg.alt = "";
+                cover.appendChild(coverImg);
             } else {
-                embleem = document.createElement("div");
-                embleem.className = "plank-embleem plank-embleem-plaatshouder";
+                let embleem;
+                if (boek.embleem) {
+                    embleem = document.createElement("img");
+                    embleem.className = "plank-embleem";
+                    embleem.src = boek.embleem;
+                    embleem.alt = "";
+                } else {
+                    embleem = document.createElement("div");
+                    embleem.className = "plank-embleem plank-embleem-plaatshouder";
+                }
+                cover.appendChild(embleem);
             }
-            cover.appendChild(embleem);
 
             const naam = document.createElement("div");
             naam.className = "plank-naam";
