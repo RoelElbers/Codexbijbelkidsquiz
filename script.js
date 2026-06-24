@@ -1706,6 +1706,350 @@ vragenData["Romeinen"] = {
     ]
 };
 
+// =====================================================================
+// Vragenpool: Handelingen  (Beginner 14 · Gevorderd 21 · Expert 20)
+// Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
+// bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
+// =====================================================================
+vragenData["Handelingen"] = {
+    beginner: [
+        {
+            vraag: "Waarover gaat het boek Handelingen vooral?",
+            antwoorden: ["Over wat Jezus' volgelingen deden nadat hij naar de hemel ging", "Over de schepping van de wereld", "Over koning David", "Over de tien geboden"],
+            correct: "Over wat Jezus' volgelingen deden nadat hij naar de hemel ging",
+            bijbelplaats: "Handelingen 1:8"
+        },
+        {
+            vraag: "Wat gebeurde er met Jezus aan het begin van Handelingen?",
+            antwoorden: ["Hij werd geboren in Betlehem", "Hij werd gedoopt in de Jordaan", "Hij ging omhoog naar de hemel", "Hij liep over het water"],
+            correct: "Hij ging omhoog naar de hemel",
+            bijbelplaats: "Handelingen 1:9"
+        },
+        {
+            vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders. Wat?",
+            antwoorden: ["De heilige Geest", "Een nieuwe boot", "Een mooie mantel", "Een zak brood"],
+            correct: "De heilige Geest",
+            bijbelplaats: "Handelingen 2:1-4"
+        },
+        {
+            vraag: "Paulus was eerst fel tégen de christenen. Wat gebeurde er onderweg naar Damascus?",
+            antwoorden: ["Hij verdwaalde in de woestijn", "Hij viel in een diepe slaap", "Hij ontmoette Jezus in een fel licht en veranderde", "Hij werd tot koning gekroond"],
+            correct: "Hij ontmoette Jezus in een fel licht en veranderde",
+            bijbelplaats: "Handelingen 9:3-6"
+        },
+        {
+            vraag: "Na zijn opstanding verscheen Jezus nog een tijd aan zijn leerlingen voordat hij naar de hemel ging. Hoeveel dagen?",
+            antwoorden: ["Drie dagen", "Honderd dagen", "Veertig dagen", "Zeven dagen"],
+            correct: "Veertig dagen",
+            bijbelplaats: "Handelingen 1:3"
+        },
+        {
+            vraag: "Sommige leiders werden boos en zeiden dat de apostelen moesten stoppen met vertellen over Jezus. Wat deden Petrus en de anderen?",
+            antwoorden: ["Ze stopten meteen", "Ze verstopten zich voorgoed", "Ze bleven het toch doen", "Ze verhuisden naar een ander land"],
+            correct: "Ze bleven het toch doen",
+            bijbelplaats: "Handelingen 5:29,42"
+        },
+        {
+            vraag: "Nadat Jezus naar de hemel was gegaan, wachtten de leerlingen op de heilige Geest. Wat deden ze in die tijd vaak samen?",
+            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze hielden ruzie", "Ze reisden weg"],
+            correct: "Ze kwamen bij elkaar om te bidden",
+            bijbelplaats: "Handelingen 1:14"
+        },
+        {
+            vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
+            antwoorden: ["Dat hij meer moest eten", "Dat alle mensen erbij mogen horen", "Dat hij moest gaan reizen", "Dat hij moest gaan vissen"],
+            correct: "Dat alle mensen erbij mogen horen",
+            bijbelplaats: "Handelingen 10:9-15"
+        },
+        {
+            vraag: "In Samaria vertelde Filippus over Jezus en genas hij zieke mensen. Hoe reageerde de stad?",
+            antwoorden: ["Iedereen werd boos", "Niemand luisterde", "Er was grote blijdschap", "Ze stuurden hem weg"],
+            correct: "Er was grote blijdschap",
+            bijbelplaats: "Handelingen 8:5-8"
+        },
+        {
+            vraag: "Paulus mocht zich verdedigen voor koning Agrippa en andere belangrijke mensen. Waarover bleef hij vertellen?",
+            antwoorden: ["Over zijn reizen", "Over Jezus", "Over zichzelf", "Over het weer"],
+            correct: "Over Jezus",
+            bijbelplaats: "Handelingen 26:22-23"
+        },
+        {
+            vraag: "In de stad Lydda genas Petrus een man, Eneas, die al acht jaar verlamd op bed lag. Wat zei Petrus tegen hem?",
+            antwoorden: ["\"Kom morgen maar terug\"", "\"Jezus Christus geneest je, sta op\"", "\"Ik kan niets voor je doen\"", "\"Roep eerst een dokter\""],
+            correct: "\"Jezus Christus geneest je, sta op\"",
+            bijbelplaats: "Handelingen 9:33-34"
+        },
+        {
+            vraag: "Op het eiland Malta, na de schipbreuk, deed Paulus nog iets goeds voor de mensen daar. Wat?",
+            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij ging vissen"],
+            correct: "Hij genas veel zieke mensen",
+            bijbelplaats: "Handelingen 28:8-9"
+        },
+        {
+            vraag: "Toen Paulus en Barnabas door de heilige Geest werden uitgezonden, wat was hun taak?",
+            antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven wonen"],
+            correct: "Naar andere landen reizen om over Jezus te vertellen",
+            bijbelplaats: "Handelingen 13:2-4"
+        },
+        {
+            vraag: "Barnabas verkocht een stuk land en bracht het geld naar de apostelen om arme mensen te helpen. Wat voor man was hij daardoor?",
+            antwoorden: ["Behulpzaam en vrijgevig", "Hebberig en gierig", "Lui en onverschillig", "Streng en koud"],
+            correct: "Behulpzaam en vrijgevig",
+            bijbelplaats: "Handelingen 4:36-37"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Wie schreef het boek Handelingen? (dezelfde schrijver als het evangelie van Lucas)",
+            antwoorden: ["Petrus", "Lucas", "Tomas", "Markus"],
+            correct: "Lucas",
+            bijbelplaats: "Handelingen 1:1"
+        },
+        {
+            vraag: "Wat konden de leerlingen ineens doen toen ze de heilige Geest kregen?",
+            antwoorden: ["Onzichtbaar worden", "In andere talen spreken", "Vliegen als een vogel", "In de toekomst kijken"],
+            correct: "In andere talen spreken",
+            bijbelplaats: "Handelingen 2:4"
+        },
+        {
+            vraag: "Wie hield op de Pinksterdag een grote toespraak voor de menigte?",
+            antwoorden: ["Petrus", "Paulus", "Lucas", "Tomas"],
+            correct: "Petrus",
+            bijbelplaats: "Handelingen 2:14"
+        },
+        {
+            vraag: "Hoe heette Paulus eerst, voordat hij Paulus genoemd werd?",
+            antwoorden: ["Simon", "Saulus", "Silas", "Stefanus"],
+            correct: "Saulus",
+            bijbelplaats: "Handelingen 13:9"
+        },
+        {
+            vraag: "Petrus zat gevangen. Wat gebeurde er 's nachts in de gevangenis?",
+            antwoorden: ["Hij groef zelf een tunnel", "Hij bleef daar voorgoed", "Een engel hielp hem ontsnappen", "Hij maakte ruzie met de wachters"],
+            correct: "Een engel hielp hem ontsnappen",
+            bijbelplaats: "Handelingen 12:7-10"
+        },
+        {
+            vraag: "Wat deed Paulus in een groot deel van het boek Handelingen?",
+            antwoorden: ["Hij reisde naar veel steden om over Jezus te vertellen", "Hij bleef altijd thuis", "Hij bouwde een groot paleis", "Hij werd visser op zee"],
+            correct: "Hij reisde naar veel steden om over Jezus te vertellen",
+            bijbelplaats: "Handelingen 13–28"
+        },
+        {
+            vraag: "Toen Jezus omhoogging, zeiden twee mannen in witte kleren iets tegen de leerlingen. Wat?",
+            antwoorden: ["Dat ze Jezus nooit meer zouden zien", "Dat Jezus op een dag net zo terug zal komen", "Dat ze meteen moesten verhuizen", "Dat ze het geheim moesten houden"],
+            correct: "Dat Jezus op een dag net zo terug zal komen",
+            bijbelplaats: "Handelingen 1:10-11"
+        },
+        {
+            vraag: "Hoe leefden de allereerste christenen met elkaar?",
+            antwoorden: ["Ieder voor zich", "Ze woonden ver uit elkaar", "Ze deelden alles en kwamen vaak samen", "Ze spraken nooit af"],
+            correct: "Ze deelden alles en kwamen vaak samen",
+            bijbelplaats: "Handelingen 2:44-46"
+        },
+        {
+            vraag: "Bij de tempelpoort zat een man die niet kon lopen. Wat deed Petrus voor hem?",
+            antwoorden: ["Hij gaf hem goud", "Hij liep voorbij", "Hij riep de wachters", "Hij genas hem in de naam van Jezus"],
+            correct: "Hij genas hem in de naam van Jezus",
+            bijbelplaats: "Handelingen 3:6-8"
+        },
+        {
+            vraag: "Filippus ontmoette een man uit Ethiopië die uit de Bijbel zat te lezen, maar het niet begreep. Wat deed Filippus?",
+            antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij liet hem alleen", "Hij lachte hem uit", "Hij nam het boek mee"],
+            correct: "Hij legde uit dat het over Jezus ging en doopte hem",
+            bijbelplaats: "Handelingen 8:30-38"
+        },
+        {
+            vraag: "Cornelius was een Romeinse legerofficier. Wat leerde Petrus door hem?",
+            antwoorden: ["Dat alleen Joden erbij horen", "Dat het goede nieuws óók voor niet-Joden is", "Dat hij soldaat moest blijven", "Dat hij moest zwijgen"],
+            correct: "Dat het goede nieuws óók voor niet-Joden is",
+            bijbelplaats: "Handelingen 10:34-35"
+        },
+        {
+            vraag: "Na de aardbeving deed de gevangenbewaarder iets belangrijks. Wat?",
+            antwoorden: ["Hij liep boos weg", "Hij ging in Jezus geloven en liet zich dopen", "Hij sloot de deuren weer", "Hij riep de koning"],
+            correct: "Hij ging in Jezus geloven en liet zich dopen",
+            bijbelplaats: "Handelingen 16:30-34"
+        },
+        {
+            vraag: "Op zijn reis naar Rome kwam Paulus in een zware storm op zee. Wat gebeurde er met het schip en de mensen?",
+            antwoorden: ["Iedereen verdronk", "Het schip bleef heel", "Het schip verging, maar alle mensen kwamen veilig aan land", "Ze keerden om"],
+            correct: "Het schip verging, maar alle mensen kwamen veilig aan land",
+            bijbelplaats: "Handelingen 27:41-44"
+        },
+        {
+            vraag: "Na de schipbreuk kwamen Paulus en de anderen op een eiland terecht. Hoe heette dat eiland?",
+            antwoorden: ["Cyprus", "Malta", "Kreta", "Rhodos"],
+            correct: "Malta",
+            bijbelplaats: "Handelingen 28:1"
+        },
+        {
+            vraag: "Stefanus, een van de eerste christenen, werd aangevallen door boze mensen omdat hij over Jezus vertelde. Wat deed hij toen?",
+            antwoorden: ["Hij werd boos terug", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
+            correct: "Hij bad of God de mensen wilde vergeven",
+            bijbelplaats: "Handelingen 7:59-60"
+        },
+        {
+            vraag: "Een man, Simon, wilde de kracht van de heilige Geest met geld kopen. Wat zei Petrus tegen hem?",
+            antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave niet te koop is", "Dat het prima was", "Dat hij later terug moest komen"],
+            correct: "Dat Gods gave niet te koop is",
+            bijbelplaats: "Handelingen 8:18-20"
+        },
+        {
+            vraag: "Op het eiland Malta beet er een gevaarlijke slang in Paulus' hand. Wat gebeurde er met hem?",
+            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Hem overkwam niets, hij bleef ongedeerd", "Hij rende weg"],
+            correct: "Hem overkwam niets, hij bleef ongedeerd",
+            bijbelplaats: "Handelingen 28:3-6"
+        },
+        {
+            vraag: "Wie stuurde Filippus naar de eenzame weg door de woestijn, waar hij de man uit Ethiopië ontmoette?",
+            antwoorden: ["De keizer", "Petrus", "Een engel van de Heer", "Zijn vader"],
+            correct: "Een engel van de Heer",
+            bijbelplaats: "Handelingen 8:26"
+        },
+        {
+            vraag: "Cornelius kreeg bezoek van een engel, die zei dat hij iemand moest laten halen. Wie?",
+            antwoorden: ["Paulus", "Petrus", "Filippus", "Lucas"],
+            correct: "Petrus",
+            bijbelplaats: "Handelingen 10:3-5"
+        },
+        {
+            vraag: "Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij?",
+            antwoorden: ["Om naar huis te gaan", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om vrij te komen met geld"],
+            correct: "Om zijn zaak door de keizer in Rome te laten behandelen",
+            bijbelplaats: "Handelingen 25:11"
+        },
+        {
+            vraag: "Een wijze leraar, Gamaliel, gaf de leiders advies over de apostelen. Wat zei hij?",
+            antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Straf hen meteen", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
+            correct: "Laat hen met rust; als het van God komt, houd je het toch niet tegen",
+            bijbelplaats: "Handelingen 5:34-39"
+        }
+    ],
+    expert: [
+        {
+            vraag: "De leerlingen kozen iemand nieuw in de plaats van Judas. Hoe heette hij?",
+            antwoorden: ["Markus", "Mattias", "Silas", "Lucas"],
+            correct: "Mattias",
+            bijbelplaats: "Handelingen 1:23-26"
+        },
+        {
+            vraag: "Op de Pinksterdag was er ineens iets te horen en te zien. Wat?",
+            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Donker en stilte"],
+            correct: "Een geluid als harde wind en vlammetjes als van vuur",
+            bijbelplaats: "Handelingen 2:2-3"
+        },
+        {
+            vraag: "Hoeveel mensen gingen op de Pinksterdag in Jezus geloven en lieten zich dopen?",
+            antwoorden: ["Ongeveer tien", "Ongeveer drieduizend", "Ongeveer honderd", "Bijna niemand"],
+            correct: "Ongeveer drieduizend",
+            bijbelplaats: "Handelingen 2:41"
+        },
+        {
+            vraag: "In de stad Joppe maakte Petrus een vrouw weer levend die veel goeds had gedaan voor arme mensen. Hoe heette zij?",
+            antwoorden: ["Maria", "Lydia", "Tabita (ook Dorkas genoemd)", "Marta"],
+            correct: "Tabita (ook Dorkas genoemd)",
+            bijbelplaats: "Handelingen 9:36-41"
+        },
+        {
+            vraag: "Nadat Saulus Jezus had ontmoet, kon hij een tijdje niet zien. Wie hielp hem zodat hij weer kon zien?",
+            antwoorden: ["Petrus", "Ananias", "Barnabas", "Stefanus"],
+            correct: "Ananias",
+            bijbelplaats: "Handelingen 9:17-18"
+        },
+        {
+            vraag: "In welke stad werden de volgelingen van Jezus voor het eerst \"christenen\" genoemd?",
+            antwoorden: ["Jeruzalem", "Rome", "Antiochië", "Athene"],
+            correct: "Antiochië",
+            bijbelplaats: "Handelingen 11:26"
+        },
+        {
+            vraag: "Wie reisde in het begin samen met Paulus om over Jezus te vertellen?",
+            antwoorden: ["Petrus", "Johannes", "Tomas", "Barnabas"],
+            correct: "Barnabas",
+            bijbelplaats: "Handelingen 13:2-3"
+        },
+        {
+            vraag: "Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk?",
+            antwoorden: ["Ze was visser", "Ze verkocht kostbare purperen stof", "Ze was soldaat", "Ze was koningin"],
+            correct: "Ze verkocht kostbare purperen stof",
+            bijbelplaats: "Handelingen 16:14"
+        },
+        {
+            vraag: "Paulus en Silas zaten gevangen in Filippi. Wat deden ze midden in de nacht?",
+            antwoorden: ["Ze sliepen diep", "Ze baden en zongen liederen voor God", "Ze huilden de hele nacht", "Ze probeerden te vluchten"],
+            correct: "Ze baden en zongen liederen voor God",
+            bijbelplaats: "Handelingen 16:25"
+        },
+        {
+            vraag: "Wat gebeurde er toen Paulus en Silas in de gevangenis zongen?",
+            antwoorden: ["Het begon te regenen", "De wachters vielen in slaap", "Er kwam een aardbeving en de deuren sprongen open", "Er kwam een storm op zee"],
+            correct: "Er kwam een aardbeving en de deuren sprongen open",
+            bijbelplaats: "Handelingen 16:26"
+        },
+        {
+            vraag: "Waar is Paulus aan het eind van het boek Handelingen?",
+            antwoorden: ["In Jeruzalem", "In Egypte", "In Rome, waar hij blijft vertellen over Jezus", "Thuis op het platteland"],
+            correct: "In Rome, waar hij blijft vertellen over Jezus",
+            bijbelplaats: "Handelingen 28:30-31"
+        },
+        {
+            vraag: "De eerste christenen kozen zeven mensen uit om te helpen, zodat het eten eerlijk werd verdeeld onder arme mensen. Wie was een van hen?",
+            antwoorden: ["Petrus", "Paulus", "Stefanus", "Lucas"],
+            correct: "Stefanus",
+            bijbelplaats: "Handelingen 6:5"
+        },
+        {
+            vraag: "Op zijn reizen nam Paulus een jonge helper mee die in Jezus geloofde. Hoe heette deze jonge man?",
+            antwoorden: ["Tomas", "Timoteüs", "Judas", "Markus"],
+            correct: "Timoteüs",
+            bijbelplaats: "Handelingen 16:1-3"
+        },
+        {
+            vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
+            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze viel flauw", "Ze deed de deur op slot"],
+            correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
+            bijbelplaats: "Handelingen 12:13-14"
+        },
+        {
+            vraag: "In de stad Lystra genas Paulus een man die nooit had kunnen lopen. Wat dachten de mensen toen?",
+            antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat hij een dokter was", "Dat ze moesten vluchten"],
+            correct: "Dat Paulus en Barnabas goden waren",
+            bijbelplaats: "Handelingen 14:11"
+        },
+        {
+            vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
+            antwoorden: ["Hij praatte gewoon door", "Hij maakte hem weer levend", "Hij schrok en vluchtte", "Hij riep een dokter"],
+            correct: "Hij maakte hem weer levend",
+            bijbelplaats: "Handelingen 20:9-12"
+        },
+        {
+            vraag: "Vlak nadat Saulus in Jezus ging geloven, wilden boze mensen hem in Damascus kwaad doen. Hoe ontsnapte hij over de stadsmuur?",
+            antwoorden: ["Door de poort", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug"],
+            correct: "In een mand werd hij naar beneden gelaten",
+            bijbelplaats: "Handelingen 9:23-25"
+        },
+        {
+            vraag: "De christenen in Jeruzalem waren eerst bang voor Saulus. Wie nam het voor hem op en stelde hem aan de anderen voor?",
+            antwoorden: ["Petrus", "Barnabas", "Stefanus", "Lucas"],
+            correct: "Barnabas",
+            bijbelplaats: "Handelingen 9:26-27"
+        },
+        {
+            vraag: "Een gelovige man, Agabus, voorspelde iets dat zou gebeuren. Wat?",
+            antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een feest"],
+            correct: "Een grote hongersnood",
+            bijbelplaats: "Handelingen 11:28"
+        },
+        {
+            vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
+            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij hielp de slechte mensen"],
+            correct: "Hij waarschuwde Paulus en de soldaten",
+            bijbelplaats: "Handelingen 23:16"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -1885,7 +2229,8 @@ const boekNaarKey = {
     "Marcus": "marcus",
     "Lucas": "lucas",
     "Johannes": "johannes",
-    "Romeinen": "romeinen"
+    "Romeinen": "romeinen",
+    "Handelingen": "handelingen"
 };
 
 // =========================
@@ -4686,6 +5031,18 @@ function openNtGroep(groep) {
     };
     if (plankPerGroep[groep]) {
         openBoekenplank(plankPerGroep[groep]);
+        return;
+    }
+    // Enkel-boek-groepen (Handelingen, Openbaring) hebben geen plank: zodra er
+    // een vragenpool bestaat openen ze direct het niveaukeuze-scherm. De guard op
+    // vragenData zorgt dat een groep zonder pool gewoon op de "binnenkort"-melding
+    // terugvalt (bv. Openbaring tot zijn pool er is).
+    const directBoekPerGroep = {
+        "Handelingen": "Handelingen"
+    };
+    const direct = directBoekPerGroep[groep];
+    if (direct && vragenData[direct]) {
+        openBoek(direct);
         return;
     }
     const melding = document.getElementById("nt2-melding");
