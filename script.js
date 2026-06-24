@@ -1464,6 +1464,248 @@ vragenData["Johannes"].advanced.push(
     }
 );
 
+// =====================================================================
+// Vragenpool: Romeinen  (Beginner 10 · Gevorderd 14 · Expert 14)
+// Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
+// bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
+// =====================================================================
+vragenData["Romeinen"] = {
+    beginner: [
+        {
+            vraag: "Wie schreef de brief aan de Romeinen?",
+            antwoorden: ["Petrus", "Paulus", "Johannes", "Jakobus"],
+            correct: "Paulus",
+            bijbelplaats: "Romeinen 1:1"
+        },
+        {
+            vraag: "Aan wie schreef Paulus deze brief?",
+            antwoorden: ["De christenen in Korinte", "De christenen in Efeze", "De christenen in Rome", "De christenen in Jeruzalem"],
+            correct: "De christenen in Rome",
+            bijbelplaats: "Romeinen 1:7"
+        },
+        {
+            vraag: "Wat voor soort tekst is \"Romeinen\"?",
+            antwoorden: ["Een lied", "Een evangelie", "Een gebed", "Een brief"],
+            correct: "Een brief",
+            bijbelplaats: "Romeinen 1:1-7"
+        },
+        {
+            vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
+            antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
+            correct: "Nee, maar hij wilde er graag heen",
+            bijbelplaats: "Romeinen 1:10-13"
+        },
+        {
+            vraag: "Paulus schrijft dat álle mensen iets gemeen hebben. Wat?",
+            antwoorden: ["Ze zijn allemaal goed genoeg voor God", "Ze hebben allemaal gezondigd", "Ze hebben God niet nodig", "Ze maken nooit fouten"],
+            correct: "Ze hebben allemaal gezondigd",
+            bijbelplaats: "Romeinen 3:23"
+        },
+        {
+            vraag: "Wat noemt Paulus het grootste geschenk van God aan de mensen?",
+            antwoorden: ["Geld", "Een mooi huis", "Het eeuwige leven door Jezus Christus", "Veel land"],
+            correct: "Het eeuwige leven door Jezus Christus",
+            bijbelplaats: "Romeinen 6:23"
+        },
+        {
+            vraag: "In hoofdstuk 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat?",
+            antwoorden: ["Gods liefde is alleen voor sterke mensen", "Gods liefde stopt als je een fout maakt", "Je moet Gods liefde verdienen", "Niets kan ons scheiden van Gods liefde"],
+            correct: "Niets kan ons scheiden van Gods liefde",
+            bijbelplaats: "Romeinen 8:38-39"
+        },
+        {
+            vraag: "In hoofdstuk 12 schrijft Paulus over mensen die het je moeilijk maken. Wat zegt hij dat je moet doen?",
+            antwoorden: ["Zegen hen en wens hun het goede toe", "Pak ze flink terug", "Negeer ze voorgoed", "Vertel iedereen hoe slecht ze zijn"],
+            correct: "Zegen hen en wens hun het goede toe",
+            bijbelplaats: "Romeinen 12:14"
+        },
+        {
+            vraag: "Wat raadt Paulus de christenen aan over hoe ze met elkaar omgaan?",
+            antwoorden: ["Blijf bij elkaar uit de buurt", "Heb elkaar oprecht lief", "Wees streng voor elkaar", "Praat niet met elkaar"],
+            correct: "Heb elkaar oprecht lief",
+            bijbelplaats: "Romeinen 12:9-10"
+        },
+        {
+            vraag: "Voor wie is het goede nieuws (het evangelie) volgens Paulus?",
+            antwoorden: ["Alleen Joodse mensen", "Alleen Romeinse mensen", "Iedereen die gelooft", "Alleen rijke mensen"],
+            correct: "Iedereen die gelooft",
+            bijbelplaats: "Romeinen 1:16"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Waarmee heeft God ons hart gevuld, schrijft Paulus?",
+            antwoorden: ["Met geld", "Met zijn liefde, door de heilige Geest", "Met zorgen", "Met angst"],
+            correct: "Met zijn liefde, door de heilige Geest",
+            bijbelplaats: "Romeinen 5:5"
+        },
+        {
+            vraag: "Mogen we rustig verkeerde dingen blijven doen, omdat God toch vergeeft?",
+            antwoorden: ["Ja, het maakt niet uit", "Ja, hoe meer hoe beter", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
+            correct: "Nee, want we leven nu een nieuw leven",
+            bijbelplaats: "Romeinen 6:1-2"
+        },
+        {
+            vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wie helpt hem, zegt hij?",
+            antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand", "Jezus Christus, onze Heer", "De keizer"],
+            correct: "Jezus Christus, onze Heer",
+            bijbelplaats: "Romeinen 7:24-25"
+        },
+        {
+            vraag: "Hoe ver ging Gods liefde voor ons, schrijft Paulus?",
+            antwoorden: ["Hij gaf zelfs zijn eigen Zoon", "Hij gaf ons wat geld", "Hij gaf ons niets", "Hij gaf alleen aan rijke mensen"],
+            correct: "Hij gaf zelfs zijn eigen Zoon",
+            bijbelplaats: "Romeinen 8:32"
+        },
+        {
+            vraag: "Wat raadt Paulus aan als het even moeilijk is?",
+            antwoorden: ["Geef het meteen op", "Blijf hopen, wees geduldig en blijf bidden", "Word boos op iedereen", "Doe alsof er niets is"],
+            correct: "Blijf hopen, wees geduldig en blijf bidden",
+            bijbelplaats: "Romeinen 12:12"
+        },
+        {
+            vraag: "Waar moeten gelovigen volgens Paulus hun best voor doen?",
+            antwoorden: ["Voor ruzie", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te zijn"],
+            correct: "Voor dingen die vrede brengen en elkaar opbouwen",
+            bijbelplaats: "Romeinen 14:19"
+        },
+        {
+            vraag: "Waarvoor zijn de woorden uit de Bijbel volgens Paulus opgeschreven?",
+            antwoorden: ["Om ons te laten schrikken", "Om ons te bemoedigen en hoop te geven", "Om ons te vervelen", "Om ons in de war te brengen"],
+            correct: "Om ons te bemoedigen en hoop te geven",
+            bijbelplaats: "Romeinen 15:4"
+        },
+        {
+            vraag: "Waarom wilde Paulus zo graag naar de christenen in Rome toe?",
+            antwoorden: ["Om er vakantie te vieren", "Om er de baas te spelen", "Om elkaar in het geloof te bemoedigen", "Om er lekker uit te rusten"],
+            correct: "Om elkaar in het geloof te bemoedigen",
+            bijbelplaats: "Romeinen 1:11-12"
+        },
+        {
+            vraag: "Wat zegt Paulus tegen iemand die snel een ander veroordeelt?",
+            antwoorden: ["Jij hebt altijd gelijk", "Bedenk dat je zelf ook fouten maakt", "Veroordeel nog strenger", "Anderen zijn altijd slechter dan jij"],
+            correct: "Bedenk dat je zelf ook fouten maakt",
+            bijbelplaats: "Romeinen 2:1"
+        },
+        {
+            vraag: "Wat raadt Paulus aan om met je leven te doen?",
+            antwoorden: ["Hou alles voor jezelf", "Doe gewoon wat je maar wilt", "Geef jezelf aan God om het goede te doen", "Wacht af tot anderen iets doen"],
+            correct: "Geef jezelf aan God om het goede te doen",
+            bijbelplaats: "Romeinen 6:13"
+        },
+        {
+            vraag: "Wat doet Jezus volgens Paulus nu voor ons bij God?",
+            antwoorden: ["Hij is ons vergeten", "Hij komt voor ons op", "Hij klaagt ons aan", "Hij houdt zich afzijdig"],
+            correct: "Hij komt voor ons op",
+            bijbelplaats: "Romeinen 8:34"
+        },
+        {
+            vraag: "Hoe mag je God dienen, volgens Paulus?",
+            antwoorden: ["Met tegenzin", "Zo weinig mogelijk", "Met vuur en enthousiasme", "Alleen als anderen kijken"],
+            correct: "Met vuur en enthousiasme",
+            bijbelplaats: "Romeinen 12:11"
+        },
+        {
+            vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
+            antwoorden: ["Maak overal ruzie", "Probeer zoveel mogelijk met iedereen in vrede te leven", "Praat liever met niemand", "Vrede is niet belangrijk"],
+            correct: "Probeer zoveel mogelijk met iedereen in vrede te leven",
+            bijbelplaats: "Romeinen 12:18"
+        },
+        {
+            vraag: "Paulus zegt: laat de daden van het donker achter je en leef in het licht. Wat bedoelt hij?",
+            antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Wacht tot het weer donker is"],
+            correct: "Leef eerlijk en goed, alsof het klaarlichte dag is",
+            bijbelplaats: "Romeinen 13:12"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Paulus zegt dat Gods vergeving een geschenk is. Wat betekent \"een geschenk\"?",
+            antwoorden: ["Je moet er hard voor werken", "Je krijgt het zomaar, je hoeft het niet te verdienen", "Je moet het terugbetalen", "Alleen de sterkste krijgt het"],
+            correct: "Je krijgt het zomaar, je hoeft het niet te verdienen",
+            bijbelplaats: "Romeinen 3:24"
+        },
+        {
+            vraag: "Voor werk krijg je loon. Maar Gods vergeving is geen loon, zegt Paulus. Wat is het dan?",
+            antwoorden: ["Loon dat je hebt verdiend", "Iets wat je koopt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een prijs voor wie wint"],
+            correct: "Een geschenk dat je krijgt door op God te vertrouwen",
+            bijbelplaats: "Romeinen 4:4-5"
+        },
+        {
+            vraag: "Door één mens kwam het verkeerde in de wereld. Door wie komt het goede en het leven, zegt Paulus?",
+            antwoorden: ["Adam", "Mozes", "Jezus Christus", "Abraham"],
+            correct: "Jezus Christus",
+            bijbelplaats: "Romeinen 5:18-19"
+        },
+        {
+            vraag: "Paulus schrijft dat gelovigen God mogen aanspreken als \"Vader\". Wat zijn ze daardoor?",
+            antwoorden: ["Dienaren van de keizer", "Vreemden voor God", "Kinderen van God", "Gasten op bezoek"],
+            correct: "Kinderen van God",
+            bijbelplaats: "Romeinen 8:15-16"
+        },
+        {
+            vraag: "Wat raadt Paulus aan over hoe je over jezelf denkt?",
+            antwoorden: ["Denk dat je beter bent dan anderen", "Denk dat je alles alleen kunt", "Denk dat je nooit fouten maakt", "Denk niet te hoog van jezelf"],
+            correct: "Denk niet te hoog van jezelf",
+            bijbelplaats: "Romeinen 12:3"
+        },
+        {
+            vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat bedoelt hij?",
+            antwoorden: ["Ze moeten allemaal precies hetzelfde zijn", "Ze kunnen beter alleen zijn", "Ze horen bij elkaar en hebben elkaar nodig", "Alleen het sterkste deel telt"],
+            correct: "Ze horen bij elkaar en hebben elkaar nodig",
+            bijbelplaats: "Romeinen 12:4-5"
+        },
+        {
+            vraag: "Hoe kun je het kwaad volgens Paulus het beste aanpakken?",
+            antwoorden: ["Sla nog harder terug", "Loop altijd weg", "Overwin het kwade met het goede", "Doe net zo gemeen terug"],
+            correct: "Overwin het kwade met het goede",
+            bijbelplaats: "Romeinen 12:21"
+        },
+        {
+            vraag: "Waarom moet je een ander niet te snel veroordelen, zegt Paulus?",
+            antwoorden: ["Omdat jij altijd gelijk hebt", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat het toch niemand opvalt"],
+            correct: "Omdat we allemaal eens voor God zullen staan",
+            bijbelplaats: "Romeinen 14:10-12"
+        },
+        {
+            vraag: "Waar wilde Paulus het liefst het goede nieuws brengen?",
+            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "Nergens, hij bleef liever thuis"],
+            correct: "Op plekken waar mensen nog nooit van Christus hadden gehoord",
+            bijbelplaats: "Romeinen 15:20"
+        },
+        {
+            vraag: "Paulus wilde naar een ver land reizen en onderweg de christenen in Rome bezoeken. Naar welk land wilde hij?",
+            antwoorden: ["Spanje", "Egypte", "Griekenland", "Italië"],
+            correct: "Spanje",
+            bijbelplaats: "Romeinen 15:24,28"
+        },
+        {
+            vraag: "Paulus beveelt een vrouw aan die de gemeente diende. Hoe heette zij?",
+            antwoorden: ["Lydia", "Marta", "Febe", "Hanna"],
+            correct: "Febe",
+            bijbelplaats: "Romeinen 16:1-2"
+        },
+        {
+            vraag: "Welk echtpaar groet Paulus, dat samen met hem in het werk hielp?",
+            antwoorden: ["Maria en Jozef", "Zacharias en Elisabet", "Priscilla en Aquila", "Abraham en Sara"],
+            correct: "Priscilla en Aquila",
+            bijbelplaats: "Romeinen 16:3"
+        },
+        {
+            vraag: "Paulus zei deze brief hardop; iemand anders schreef hem op. Hoe heette die schrijver?",
+            antwoorden: ["Lucas", "Marcus", "Tertius", "Timoteüs"],
+            correct: "Tertius",
+            bijbelplaats: "Romeinen 16:22"
+        },
+        {
+            vraag: "Helemaal aan het eind zegt Paulus dat God iets met de gelovigen kan doen. Wat?",
+            antwoorden: ["Hij kan hen rijk maken", "Hij kan hen beroemd maken", "Hij kan hen de baas maken", "Hij kan hen sterk maken in het geloof"],
+            correct: "Hij kan hen sterk maken in het geloof",
+            bijbelplaats: "Romeinen 16:25"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -1642,7 +1884,8 @@ const boekNaarKey = {
     "Matteüs": "matteus",
     "Marcus": "marcus",
     "Lucas": "lucas",
-    "Johannes": "johannes"
+    "Johannes": "johannes",
+    "Romeinen": "romeinen"
 };
 
 // =========================
@@ -4470,9 +4713,10 @@ const boekenplanken = {
         titel: "Brieven van Paulus",
         subtitel: "Kies een brief",
         // De acht gebundelde Paulusbrieven (zie trofee-overzicht.md), in twee
-        // rijen van vier. Nog geen vragenpools -> allemaal beschikbaar: false.
+        // rijen van vier. Romeinen heeft als eerste een vragenpool en is
+        // ontgrendeld; de overige zeven blijven beschikbaar: false tot hun pool er is.
         boeken: [
-            { id: "romeinen",            naam: "Romeinen",              beschikbaar: false, cover: "images/boek-romeinen.png" },
+            { id: "romeinen",            naam: "Romeinen",              beschikbaar: true,  cover: "images/boek-romeinen.png" },
             { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: false, cover: "images/boek-korintiers.png" },
             { id: "galaten",             naam: "Galaten",               beschikbaar: false, cover: "images/boek-galaten.png" },
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false, cover: "images/boek-efeziers.png" },
