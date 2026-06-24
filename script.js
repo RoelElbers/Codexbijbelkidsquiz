@@ -2050,6 +2050,284 @@ vragenData["Handelingen"] = {
     ]
 };
 
+// =====================================================================
+// Vragenpool: 1 & 2 Korintiërs  (Beginner 17 · Gevorderd 15 · Expert 12)
+// De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
+// zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
+// =====================================================================
+vragenData["1 & 2 Korintiërs"] = {
+    beginner: [
+        {
+            vraag: "Wie schreef de brieven 1 en 2 Korintiërs?",
+            antwoorden: ["Petrus", "Paulus", "Johannes", "Lucas"],
+            correct: "Paulus",
+            bijbelplaats: "1 Korintiërs 1:1"
+        },
+        {
+            vraag: "Aan welke stad schreef Paulus deze brieven?",
+            antwoorden: ["Rome", "Efeze", "Korinte", "Athene"],
+            correct: "Korinte",
+            bijbelplaats: "1 Korintiërs 1:2"
+        },
+        {
+            vraag: "Hoeveel brieven aan de Korintiërs staan er in de Bijbel?",
+            antwoorden: ["Eén", "Twee", "Drie", "Vijf"],
+            correct: "Twee",
+            bijbelplaats: "1 & 2 Korintiërs"
+        },
+        {
+            vraag: "Paulus schrijft een beroemd stuk over de liefde. Wat zegt hij dat liefde is?",
+            antwoorden: ["Geduldig en vriendelijk", "Jaloers en opschepperig", "Snel boos", "Trots en onaardig"],
+            correct: "Geduldig en vriendelijk",
+            bijbelplaats: "1 Korintiërs 13:4-5"
+        },
+        {
+            vraag: "Paulus zegt dat de gemeente samen één lichaam vormt, met veel verschillende delen. Wat wil hij daarmee zeggen?",
+            antwoorden: ["Alleen het hoofd telt mee", "Iedereen hoort erbij en heeft elkaar nodig", "Iedereen moet precies hetzelfde zijn", "De sterkste is de baas"],
+            correct: "Iedereen hoort erbij en heeft elkaar nodig",
+            bijbelplaats: "1 Korintiërs 12:12"
+        },
+        {
+            vraag: "Paulus plantte en iemand anders gaf water. Maar wie liet alles écht groeien?",
+            antwoorden: ["Paulus zelf", "De keizer", "God", "Niemand"],
+            correct: "God",
+            bijbelplaats: "1 Korintiërs 3:6"
+        },
+        {
+            vraag: "Wat moeten de christenen volgens Paulus met alles doen?",
+            antwoorden: ["Alles met liefde doen", "Alles snel doen", "Alles alleen doen", "Alles voor zichzelf houden"],
+            correct: "Alles met liefde doen",
+            bijbelplaats: "1 Korintiërs 16:14"
+        },
+        {
+            vraag: "Paulus zegt dat wie bij Christus hoort, helemaal nieuw wordt. Hoe noemt hij dat?",
+            antwoorden: ["Nog precies dezelfde als vroeger", "Een nieuwe schepping", "Maar een beetje veranderd", "Helemaal niet veranderd"],
+            correct: "Een nieuwe schepping",
+            bijbelplaats: "2 Korintiërs 5:17"
+        },
+        {
+            vraag: "Paulus schrijft over het geven van geld om anderen te helpen. Hoe kun je dat het beste doen?",
+            antwoorden: ["Met tegenzin", "Mopperend", "Blij en van harte", "Alleen als anderen het zien"],
+            correct: "Blij en van harte",
+            bijbelplaats: "2 Korintiërs 9:7"
+        },
+        {
+            vraag: "Paulus maakte veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
+            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie", "Hij bleef veilig thuis", "Hij werd koning"],
+            correct: "Hij leed schipbreuk en was vaak in gevaar",
+            bijbelplaats: "2 Korintiërs 11:25-26"
+        },
+        {
+            vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie?",
+            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor niemand"],
+            correct: "Voor God, om hem eer te geven",
+            bijbelplaats: "1 Korintiërs 10:31"
+        },
+        {
+            vraag: "Over de gaven (talenten) in de gemeente zegt Paulus: er zijn er veel, maar...",
+            antwoorden: ["ze komen allemaal van dezelfde Geest", "alleen Paulus heeft ze", "ze zijn niet belangrijk", "je moet ze kopen"],
+            correct: "ze komen allemaal van dezelfde Geest",
+            bijbelplaats: "1 Korintiërs 12:4"
+        },
+        {
+            vraag: "De gemeenten in Macedonië waren zelf arm, maar deden toch iets bijzonders. Wat?",
+            antwoorden: ["Ze hielden alles voor zichzelf", "Ze gaven royaal om anderen te helpen", "Ze vroegen zelf om hulp", "Ze deden niets"],
+            correct: "Ze gaven royaal om anderen te helpen",
+            bijbelplaats: "2 Korintiërs 8:1-3"
+        },
+        {
+            vraag: "Paulus noemt de gelovigen \"gezanten\" (boodschappers) van Christus. Wat is hun taak?",
+            antwoorden: ["Oorlog voeren", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Alleen reizen"],
+            correct: "Namens Christus mensen oproepen om vrede met God te sluiten",
+            bijbelplaats: "2 Korintiërs 5:20"
+        },
+        {
+            vraag: "Wat raadt Paulus de gelovigen aan om te doen, om dichtbij God te blijven?",
+            antwoorden: ["Anderen veroordelen", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken", "Alleen aan zichzelf denken"],
+            correct: "Zichzelf eerlijk onderzoeken in het geloof",
+            bijbelplaats: "2 Korintiërs 13:5"
+        },
+        {
+            vraag: "Paulus noemt zichzelf en Apollos \"medewerkers\". Met wie werken ze samen?",
+            antwoorden: ["Met de keizer", "Met God", "Met de koning", "Met niemand"],
+            correct: "Met God",
+            bijbelplaats: "1 Korintiërs 3:9"
+        },
+        {
+            vraag: "Waar gaat 1 Korintiërs 15 vooral over, het hart van het geloof?",
+            antwoorden: ["Dat Paulus beroemd werd", "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan", "Over het weer in Korinte", "Over een grote reis"],
+            correct: "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan",
+            bijbelplaats: "1 Korintiërs 15:20-22"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Paulus vergelijkt het geloof met een wedstrijd. Wat moet je doen om de prijs te winnen?",
+            antwoorden: ["Stoppen halverwege", "Wachten op anderen", "Doorzetten, net als een hardloper die doorrent", "Opgeven"],
+            correct: "Doorzetten, net als een hardloper die doorrent",
+            bijbelplaats: "1 Korintiërs 9:24"
+        },
+        {
+            vraag: "Paulus zegt aan het eind: blijf waakzaam en sterk. Wat raadt hij aan?",
+            antwoorden: ["Geef snel op", "Sta vast in het geloof en wees moedig", "Doe maar wat", "Vertrouw op niemand"],
+            correct: "Sta vast in het geloof en wees moedig",
+            bijbelplaats: "1 Korintiërs 16:13"
+        },
+        {
+            vraag: "Paulus en de gelovigen spaarden geld op om iets goeds te doen. Waarvoor?",
+            antwoorden: ["Om een paleis te bouwen", "Om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een schip te kopen"],
+            correct: "Om arme gelovigen in Jeruzalem te helpen",
+            bijbelplaats: "1 Korintiërs 16:1-3"
+        },
+        {
+            vraag: "De mensen in Korinte kozen partij: \"ik ben van Paulus\", \"ik ben van Apollos\". Wat vond Paulus daarvan?",
+            antwoorden: ["Dat het goed was", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze voor hem moesten kiezen", "Dat het niet uitmaakte"],
+            correct: "Dat ze juist één moesten zijn, niet verdeeld",
+            bijbelplaats: "1 Korintiërs 1:12-13"
+        },
+        {
+            vraag: "Paulus zegt dat de gelovigen samen iets bijzonders zijn waarin Gods Geest woont. Wat?",
+            antwoorden: ["Een leeg huis", "Een gewone school", "Een tempel van God", "Een markt"],
+            correct: "Een tempel van God",
+            bijbelplaats: "1 Korintiërs 3:16"
+        },
+        {
+            vraag: "Paulus zegt: als je alles kunt, maar je hebt geen liefde, dan...",
+            antwoorden: ["ben je niets", "ben je de allerbeste", "ben je het belangrijkst", "heb je alles"],
+            correct: "ben je niets",
+            bijbelplaats: "1 Korintiërs 13:2"
+        },
+        {
+            vraag: "Een deel van het lichaam kan niet tegen een ander zeggen: \"ik heb je niet nodig.\" Wat leert Paulus daarmee?",
+            antwoorden: ["Alleen de sterkste telt", "Elke gelovige is nodig", "Je kunt beter alleen zijn", "Sommigen mogen weg"],
+            correct: "Elke gelovige is nodig",
+            bijbelplaats: "1 Korintiërs 12:21"
+        },
+        {
+            vraag: "Paulus zegt: kennis alleen maakt je trots, maar er is iets dat mensen echt opbouwt. Wat?",
+            antwoorden: ["Liefde", "Geld", "Macht", "Snelheid"],
+            correct: "Liefde",
+            bijbelplaats: "1 Korintiërs 8:1"
+        },
+        {
+            vraag: "Paulus zegt dat gelovigen leven door op God te vertrouwen, en niet door iets anders. Waardoor niet?",
+            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door heel slim te zijn"],
+            correct: "Door wat ze met hun ogen kunnen zien",
+            bijbelplaats: "2 Korintiërs 5:7"
+        },
+        {
+            vraag: "God zei tegen Paulus toen hij het moeilijk had: \"Mijn genade is genoeg.\" Wanneer is Gods kracht juist sterk?",
+            antwoorden: ["Juist als wij zwak zijn", "Alleen als wij sterk zijn", "Alleen bij belangrijke mensen", "Nooit"],
+            correct: "Juist als wij zwak zijn",
+            bijbelplaats: "2 Korintiërs 12:9"
+        },
+        {
+            vraag: "Welke gave noemt Paulus de allergrootste, die altijd zal blijven?",
+            antwoorden: ["Het spreken in talen", "Kennis", "De liefde", "Wonderen doen"],
+            correct: "De liefde",
+            bijbelplaats: "1 Korintiërs 13:13"
+        },
+        {
+            vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
+            antwoorden: ["Over zijn geld", "Over zijn eigen kracht", "Over de Heer / over wat God doet", "Over zijn reizen"],
+            correct: "Over de Heer / over wat God doet",
+            bijbelplaats: "2 Korintiërs 10:17"
+        },
+        {
+            vraag: "Zijn de gaven van de Geest er voor jezelf, of voor iets anders?",
+            antwoorden: ["Voor het goede van iedereen samen", "Alleen voor jezelf", "Om mee op te scheppen", "Om anderen jaloers te maken"],
+            correct: "Voor het goede van iedereen samen",
+            bijbelplaats: "1 Korintiërs 12:7"
+        },
+        {
+            vraag: "Wat zegt Paulus over de zwakste of minste delen van het lichaam?",
+            antwoorden: ["Ze tellen niet mee", "Ze mogen weg", "Ze zijn juist heel belangrijk en nodig", "Ze worden nooit gezien"],
+            correct: "Ze zijn juist heel belangrijk en nodig",
+            bijbelplaats: "1 Korintiërs 12:22"
+        },
+        {
+            vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van hem houden. Hoe bijzonder is dat?",
+            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Heel gewoon", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
+            correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
+            bijbelplaats: "1 Korintiërs 2:9"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Er was iets mis in de gemeente van Korinte. Wat?",
+            antwoorden: ["Ze maakten ruzie en waren verdeeld", "Ze sliepen te veel", "Ze woonden te ver weg", "Ze spraken een vreemde taal"],
+            correct: "Ze maakten ruzie en waren verdeeld",
+            bijbelplaats: "1 Korintiërs 1:10-11"
+        },
+        {
+            vraag: "Paulus zegt dat we nu nog niet alles begrijpen, maar later wel. Waarmee vergelijkt hij dat?",
+            antwoorden: ["Met een dichte deur", "Met kijken in een wazige spiegel", "Met een diepe slaap", "Met een lange reis"],
+            correct: "Met kijken in een wazige spiegel",
+            bijbelplaats: "1 Korintiërs 13:12"
+        },
+        {
+            vraag: "Paulus vergelijkt de schat van het goede nieuws met iets kostbaars in iets gewoons. Waarin zit die schat?",
+            antwoorden: ["In een gouden kist", "In een groot kasteel", "In kruiken van klei (gewone potten)", "In een diepe put"],
+            correct: "In kruiken van klei (gewone potten)",
+            bijbelplaats: "2 Korintiërs 4:7"
+        },
+        {
+            vraag: "Paulus eindigt 2 Korintiërs met een zegen. Wat wenst hij de gelovigen toe?",
+            antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Veel geld en macht", "Een lang leven vol roem", "Een grote reis"],
+            correct: "De genade van Jezus, de liefde van God en de verbondenheid van de Geest",
+            bijbelplaats: "2 Korintiërs 13:14"
+        },
+        {
+            vraag: "Paulus zegt dat de boodschap van het kruis voor sommige mensen dwaas lijkt, maar voor gelovigen is het...",
+            antwoorden: ["Gods kracht", "een grap", "onbelangrijk", "te moeilijk"],
+            correct: "Gods kracht",
+            bijbelplaats: "1 Korintiërs 1:18"
+        },
+        {
+            vraag: "Omdat Jezus is opgestaan, hoeft wie bij hem hoort niet bang te zijn voor de dood. Hoe spreekt Paulus de dood spottend toe?",
+            antwoorden: ["\"Dood, waar is je overwinning? Je hebt verloren!\"", "\"Dood, jij bent de sterkste van allemaal.\"", "\"Dood, jij wint het altijd.\"", "\"Dood, niemand kan jou verslaan.\""],
+            correct: "\"Dood, waar is je overwinning? Je hebt verloren!\"",
+            bijbelplaats: "1 Korintiërs 15:55-57"
+        },
+        {
+            vraag: "Paulus zegt dat ons lichaam zwakker wordt, maar dat er iets anders gebeurt van binnen. Wat?",
+            antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "We worden bang"],
+            correct: "Van binnen worden we elke dag vernieuwd",
+            bijbelplaats: "2 Korintiërs 4:16"
+        },
+        {
+            vraag: "Paulus had een \"doorn in zijn vlees\", iets moeilijks dat bleef. Wat vroeg hij God?",
+            antwoorden: ["Of het nog moeilijker mocht worden", "Of God het wilde weghalen", "Of iemand anders het mocht krijgen", "Of hij het voor altijd mocht houden"],
+            correct: "Of God het wilde weghalen",
+            bijbelplaats: "2 Korintiërs 12:8"
+        },
+        {
+            vraag: "Wat zegt Paulus over zwak en sterk zijn, dat verrassend klinkt?",
+            antwoorden: ["Alleen de sterkste telt", "Juist als ik zwak ben, ben ik sterk (door God)", "Zwak zijn is altijd slecht", "Sterk zijn is genoeg"],
+            correct: "Juist als ik zwak ben, ben ik sterk (door God)",
+            bijbelplaats: "2 Korintiërs 12:10"
+        },
+        {
+            vraag: "Hoeveel keer leed Paulus schipbreuk, schrijft hij in 2 Korintiërs?",
+            antwoorden: ["Nooit", "Eén keer", "Drie keer", "Tien keer"],
+            correct: "Drie keer",
+            bijbelplaats: "2 Korintiërs 11:25"
+        },
+        {
+            vraag: "Paulus schrijft dat de gelovigen zelf een soort \"brief\" zijn. Waarmee is die geschreven?",
+            antwoorden: ["Met gewone inkt", "Met een pen op papier", "Door Gods Geest, in hun hart", "Met verf op een muur"],
+            correct: "Door Gods Geest, in hun hart",
+            bijbelplaats: "2 Korintiërs 3:3"
+        },
+        {
+            vraag: "Aan het eind van het grote opstandingshoofdstuk bemoedigt Paulus de gelovigen. Wat zegt hij over hun werk voor God?",
+            antwoorden: ["Dat het zinloos is", "Dat het nooit voor niets is", "Dat alleen sterke mensen het mogen doen", "Dat ze er beter mee kunnen stoppen"],
+            correct: "Dat het nooit voor niets is",
+            bijbelplaats: "1 Korintiërs 15:58"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -2230,7 +2508,8 @@ const boekNaarKey = {
     "Lucas": "lucas",
     "Johannes": "johannes",
     "Romeinen": "romeinen",
-    "Handelingen": "handelingen"
+    "Handelingen": "handelingen",
+    "1 & 2 Korintiërs": "korintiers"
 };
 
 // =========================
@@ -5078,7 +5357,7 @@ const boekenplanken = {
         // ontgrendeld; de overige zeven blijven beschikbaar: false tot hun pool er is.
         boeken: [
             { id: "romeinen",            naam: "Romeinen",              beschikbaar: true,  cover: "images/boek-romeinen.png" },
-            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: false, cover: "images/boek-korintiers.png" },
+            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: true,  cover: "images/boek-korintiers.png" },
             { id: "galaten",             naam: "Galaten",               beschikbaar: false, cover: "images/boek-galaten.png" },
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false, cover: "images/boek-efeziers.png" },
             { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false, cover: "images/boek-filippenzen.png" },
