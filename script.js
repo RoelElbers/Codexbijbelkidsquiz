@@ -2328,6 +2328,241 @@ vragenData["1 & 2 Korintiërs"] = {
     ]
 };
 
+// =====================================================================
+// Vragenpool: Galaten  (Beginner 12 · Gevorderd 13 · Expert 12)
+// Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
+// =====================================================================
+vragenData["Galaten"] = {
+    beginner: [
+        {
+            vraag: "Wie schreef de brief aan de Galaten?",
+            antwoorden: ["Petrus", "Paulus", "Johannes", "Lucas"],
+            correct: "Paulus",
+            bijbelplaats: "Galaten 1:1"
+        },
+        {
+            vraag: "Aan wie schreef Paulus deze brief?",
+            antwoorden: ["De gemeenten in Galatië", "De stad Rome", "De koning van Egypte", "De gemeente in Korinte"],
+            correct: "De gemeenten in Galatië",
+            bijbelplaats: "Galaten 1:2"
+        },
+        {
+            vraag: "Paulus was vroeger, vóór hij in Jezus geloofde, iemand die de christenen juist...",
+            antwoorden: ["hielp", "vervolgde en kwaad deed", "niet kende", "uitnodigde"],
+            correct: "vervolgde en kwaad deed",
+            bijbelplaats: "Galaten 1:13"
+        },
+        {
+            vraag: "Wat is volgens Paulus het goede nieuws dat hij brengt?",
+            antwoorden: ["Dat je heel rijk moet worden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen", "Dat je alles alleen moet doen"],
+            correct: "Dat je bij God mág horen door op Jezus te vertrouwen",
+            bijbelplaats: "Galaten 1:11-12"
+        },
+        {
+            vraag: "Paulus zegt dat alle gelovigen samen iets zijn van God. Wat?",
+            antwoorden: ["Vreemden", "Dienaren van de keizer", "Kinderen van God", "Gasten op bezoek"],
+            correct: "Kinderen van God",
+            bijbelplaats: "Galaten 3:26"
+        },
+        {
+            vraag: "Paulus schrijft dat het bij God niet uitmaakt wie je bent. Wat bedoelt hij?",
+            antwoorden: ["Alleen rijke mensen tellen mee", "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij", "Alleen sterke mensen horen erbij", "Alleen mensen uit Galatië"],
+            correct: "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij",
+            bijbelplaats: "Galaten 3:28"
+        },
+        {
+            vraag: "Tot welke vrijheid heeft Christus ons volgens Paulus geroepen?",
+            antwoorden: ["Om vrij te leven en elkaar met liefde te dienen", "Om te doen waar je zelf zin in hebt, wat het ook is", "Om alleen voor jezelf te zorgen", "Om je niets van anderen aan te trekken"],
+            correct: "Om vrij te leven en elkaar met liefde te dienen",
+            bijbelplaats: "Galaten 5:13"
+        },
+        {
+            vraag: "Paulus zegt dat christenen elkaar moeten behandelen met...",
+            antwoorden: ["liefde en vriendelijkheid", "strengheid en kou", "onverschilligheid", "ruzie"],
+            correct: "liefde en vriendelijkheid",
+            bijbelplaats: "Galaten 5:22"
+        },
+        {
+            vraag: "Hoe wist Paulus zo zeker dat zijn boodschap klopte?",
+            antwoorden: ["Hij had het bedacht", "Hij had het uit een boek", "Hij had het van Jezus Christus zelf gekregen", "Iemand had het hem verteld in een droom"],
+            correct: "Hij had het van Jezus Christus zelf gekregen",
+            bijbelplaats: "Galaten 1:11-12"
+        },
+        {
+            vraag: "Paulus schrijft dat we vooral goed moeten doen aan andere mensen. Voor wie in het bijzonder?",
+            antwoorden: ["Alleen voor de sterkste mensen", "Alleen voor mensen die we niet kennen", "Voor iedereen, en zeker voor andere gelovigen", "Alleen voor onszelf"],
+            correct: "Voor iedereen, en zeker voor andere gelovigen",
+            bijbelplaats: "Galaten 6:10"
+        },
+        {
+            vraag: "Aan het begin van zijn brief wenst Paulus de Galaten iets toe. Wat?",
+            antwoorden: ["Genade en vrede van God", "Een lang en makkelijk leven", "Roem en aanzien", "Altijd je zin krijgen"],
+            correct: "Genade en vrede van God",
+            bijbelplaats: "Galaten 1:3"
+        },
+        {
+            vraag: "Paulus schrijft dat Jezus iets groots voor ons heeft gedaan. Wat?",
+            antwoorden: ["Hij liet ons alleen", "Hij gaf zichzelf, uit liefde voor ons", "Hij keek van een afstand toe", "Hij deed niets bijzonders"],
+            correct: "Hij gaf zichzelf, uit liefde voor ons",
+            bijbelplaats: "Galaten 1:4"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Paulus vat de hele wet samen in één gebod. Welk?",
+            antwoorden: ["Heb je naaste lief als jezelf", "Word de sterkste", "Zorg vooral voor jezelf", "Krijg altijd gelijk"],
+            correct: "Heb je naaste lief als jezelf",
+            bijbelplaats: "Galaten 5:14"
+        },
+        {
+            vraag: "Wat raadt Paulus aan als iemand anders het moeilijk heeft?",
+            antwoorden: ["Loop eromheen", "Help elkaar en draag elkaars lasten", "Lach hem uit", "Doe alsof je niets ziet"],
+            correct: "Help elkaar en draag elkaars lasten",
+            bijbelplaats: "Galaten 6:2"
+        },
+        {
+            vraag: "Paulus gebruikt het beeld van zaaien en oogsten. Wat bedoelt hij ongeveer?",
+            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet boer worden", "Je moet veel eten", "Het maakt niet uit wat je doet"],
+            correct: "Wat je doet, heeft gevolgen; doe daarom het goede",
+            bijbelplaats: "Galaten 6:7-9"
+        },
+        {
+            vraag: "Wat zegt Paulus dat je moet blijven doen, ook als het moeilijk wordt?",
+            antwoorden: ["Snel opgeven", "Niet moe worden van het goeddoen", "Alleen aan jezelf denken", "Wachten op anderen"],
+            correct: "Niet moe worden van het goeddoen",
+            bijbelplaats: "Galaten 6:9"
+        },
+        {
+            vraag: "Hoe noemt Paulus de boodschap die hij brengt?",
+            antwoorden: ["Een geheim", "Een verhaal", "Goed nieuws (het evangelie)", "Een lied"],
+            correct: "Goed nieuws (het evangelie)",
+            bijbelplaats: "Galaten 1:11"
+        },
+        {
+            vraag: "Paulus had de Galaten het evangelie verkondigd. Toch luisterden sommigen al snel naar een ánder evangelie. Wat vond Paulus daarvan?",
+            antwoorden: ["Hij was streng: er is maar één echt evangelie", "Hij vond het prima, het maakte niet uit", "Hij wist niet wat hij ervan moest denken", "Hij liet de Galaten zelf maar kiezen"],
+            correct: "Hij was streng: er is maar één echt evangelie",
+            bijbelplaats: "Galaten 1:6-7"
+        },
+        {
+            vraag: "Paulus zegt: wie op Jezus vertrouwt, leeft door geloof. Hij citeert: \"Wie rechtvaardig is, zal leven door...\"",
+            antwoorden: ["werk", "regels", "geloof", "geluk"],
+            correct: "geloof",
+            bijbelplaats: "Galaten 3:11"
+        },
+        {
+            vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
+            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Alleen mensen die heel oud worden horen erbij", "Alleen mensen die heel sterk zijn horen erbij", "Alleen Abraham zelf mocht bij God horen"],
+            correct: "Ook wij mogen bij God horen door te geloven, net als Abraham",
+            bijbelplaats: "Galaten 3:6-7"
+        },
+        {
+            vraag: "Omdat we kinderen van God zijn, mogen we God aanspreken met een bijzonder, vertrouwelijk woord. Welk?",
+            antwoorden: ["Meester", "Koning", "Abba, Vader", "Heer"],
+            correct: "Abba, Vader",
+            bijbelplaats: "Galaten 4:6"
+        },
+        {
+            vraag: "Wat is belangrijker dan alle regels, zegt Paulus — waar draait het echt om?",
+            antwoorden: ["Geloof dat zich laat zien in liefde", "Hoeveel je weet", "Hoe sterk je bent", "Waar je vandaan komt"],
+            correct: "Geloof dat zich laat zien in liefde",
+            bijbelplaats: "Galaten 5:6"
+        },
+        {
+            vraag: "Paulus zegt dat je je kunt laten leiden door de Geest, óf door je eigen verkeerde verlangens. Wat raadt hij aan?",
+            antwoorden: ["Doe altijd wat je zelf wilt", "Laat je leiden door de Geest", "Volg de menigte", "Denk nergens over na"],
+            correct: "Laat je leiden door de Geest",
+            bijbelplaats: "Galaten 5:16"
+        },
+        {
+            vraag: "Als iemand een fout maakt, hoe moet je hem volgens Paulus weer op weg helpen?",
+            antwoorden: ["Hard en streng", "Vriendelijk en zachtmoedig", "Door hem uit te lachen", "Door hem te negeren"],
+            correct: "Vriendelijk en zachtmoedig",
+            bijbelplaats: "Galaten 6:1"
+        },
+        {
+            vraag: "Wat zegt Paulus over opscheppen — waar mag je volgens hem alleen trots op zijn?",
+            antwoorden: ["Op je eigen kracht", "Op je eigen slimheid", "Op wat Jezus voor ons heeft gedaan", "Op je reizen"],
+            correct: "Op wat Jezus voor ons heeft gedaan",
+            bijbelplaats: "Galaten 6:14"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Paulus noemt negen mooie dingen die groeien als de Geest je leidt: de \"vrucht van de Geest\". Welke staat bovenaan?",
+            antwoorden: ["Trots", "Liefde", "Roem", "Macht"],
+            correct: "Liefde",
+            bijbelplaats: "Galaten 5:22"
+        },
+        {
+            vraag: "Welke horen óók bij de vrucht van de Geest?",
+            antwoorden: ["Blijdschap en vrede", "Boosheid en ruzie", "Angst en zorgen", "Trots en jaloezie"],
+            correct: "Blijdschap en vrede",
+            bijbelplaats: "Galaten 5:22"
+        },
+        {
+            vraag: "Paulus zegt dat hij zelf met Christus is \"gekruisigd\". Wat bedoelt hij daarmee?",
+            antwoorden: ["Zijn oude leven is voorbij; nu leeft Christus in hem", "Dat hij niet meer leeft", "Dat hij verdrietig is", "Dat hij weggaat"],
+            correct: "Zijn oude leven is voorbij; nu leeft Christus in hem",
+            bijbelplaats: "Galaten 2:20"
+        },
+        {
+            vraag: "Paulus is verbaasd en verdrietig dat de Galaten zo snel iets anders gingen geloven. Hoe spreekt hij hen aan?",
+            antwoorden: ["Bezorgd, als een ouder die van zijn kinderen houdt", "Onverschillig", "Spottend", "Trots"],
+            correct: "Bezorgd, als een ouder die van zijn kinderen houdt",
+            bijbelplaats: "Galaten 4:19-20"
+        },
+        {
+            vraag: "Wat zegt Paulus dat écht telt, belangrijker dan of je je aan bepaalde regels houdt?",
+            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Uit welk land je komt", "Hoe sterk je bent"],
+            correct: "Dat je een nieuwe schepping bent",
+            bijbelplaats: "Galaten 6:15"
+        },
+        {
+            vraag: "Paulus zegt dat de wet en het leven door de Geest niet hetzelfde zijn. Waardoor word je volgens hem echt veranderd van binnen?",
+            antwoorden: ["Door heel hard te werken", "Door regels op te volgen", "Door de heilige Geest", "Door beroemd te worden"],
+            correct: "Door de heilige Geest",
+            bijbelplaats: "Galaten 3:2-3"
+        },
+        {
+            vraag: "Paulus noemt ook dingen die juist NIET bij de Geest horen, maar bij het oude leven. Wat is daar een voorbeeld van?",
+            antwoorden: ["Elkaar vergeven", "Ruzie, jaloezie en woede", "Eerlijk zijn", "Voor elkaar zorgen"],
+            correct: "Ruzie, jaloezie en woede",
+            bijbelplaats: "Galaten 5:19-21"
+        },
+        {
+            vraag: "Christus heeft ons vrijgemaakt. Wat moeten we volgens Paulus met die vrijheid doen?",
+            antwoorden: ["Hem snel weer weggeven", "Stevig in die vrijheid blijven staan", "Er niets mee doen", "Hem verstoppen"],
+            correct: "Stevig in die vrijheid blijven staan",
+            bijbelplaats: "Galaten 5:1"
+        },
+        {
+            vraag: "Helemaal aan het eind wenst Paulus de Galaten iets toe. Wat?",
+            antwoorden: ["Roem en aanzien", "De genade van Jezus Christus", "Macht over anderen", "Een zorgeloos, makkelijk leven"],
+            correct: "De genade van Jezus Christus",
+            bijbelplaats: "Galaten 6:18"
+        },
+        {
+            vraag: "Paulus zegt dat hij niet probeert om bij mensen in de smaak te vallen. Bij wie wil hij het juist goed doen?",
+            antwoorden: ["Bij de koning", "Bij God", "Bij de mensen die het hardst roepen", "Bij iedereen behalve God"],
+            correct: "Bij God",
+            bijbelplaats: "Galaten 1:10"
+        },
+        {
+            vraag: "Paulus zegt dat je geen slaaf meer bent, maar een kind van God. Wat hoort daar volgens hem ook bij?",
+            antwoorden: ["Je bent erfgenaam: alles wat God belooft, is ook voor jou", "Je bent nu de baas over anderen", "Je hoeft niets meer te doen", "Je bent beter dan anderen"],
+            correct: "Je bent erfgenaam: alles wat God belooft, is ook voor jou",
+            bijbelplaats: "Galaten 4:7"
+        },
+        {
+            vraag: "Aan het eind schrijft Paulus iets opvallends over hóe hij dit deel van de brief schrijft. Wat?",
+            antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "In een andere taal"],
+            correct: "Met grote letters, met zijn eigen hand",
+            bijbelplaats: "Galaten 6:11"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -2509,7 +2744,8 @@ const boekNaarKey = {
     "Johannes": "johannes",
     "Romeinen": "romeinen",
     "Handelingen": "handelingen",
-    "1 & 2 Korintiërs": "korintiers"
+    "1 & 2 Korintiërs": "korintiers",
+    "Galaten": "galaten"
 };
 
 // =========================
@@ -5358,7 +5594,7 @@ const boekenplanken = {
         boeken: [
             { id: "romeinen",            naam: "Romeinen",              beschikbaar: true,  cover: "images/boek-romeinen.png" },
             { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: true,  cover: "images/boek-korintiers.png" },
-            { id: "galaten",             naam: "Galaten",               beschikbaar: false, cover: "images/boek-galaten.png" },
+            { id: "galaten",             naam: "Galaten",               beschikbaar: true,  cover: "images/boek-galaten.png" },
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: false, cover: "images/boek-efeziers.png" },
             { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false, cover: "images/boek-filippenzen.png" },
             { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
