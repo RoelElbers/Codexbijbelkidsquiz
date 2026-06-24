@@ -3110,6 +3110,10 @@ function terugNaarStartscherm() {
     // Verborgen schat verversen: net een kist verdiend in deze ronde kan de
     // diamanten kist onthullen zodra alle drie behaald zijn.
     werkVerborgenSchatBij();
+
+    // De NT-prijzenkast live verversen, zodat een zojuist verdiende trofee
+    // meteen zichtbaar is en niet pas na opnieuw scherm 2 binnenkomen.
+    if (typeof nt2Kast !== "undefined") bouwNtKast(nt2Kast);
 }
 
 // --- Ronde stoppen (met bevestiging) ----------------------------------------
