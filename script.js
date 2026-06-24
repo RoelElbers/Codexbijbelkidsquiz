@@ -1751,7 +1751,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Nadat Jezus naar de hemel was gegaan, wachtten de leerlingen op de heilige Geest. Wat deden ze in die tijd vaak samen?",
-            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze hielden ruzie", "Ze reisden weg"],
+            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze maakten ruzie", "Ze reisden weg"],
             correct: "Ze kwamen bij elkaar om te bidden",
             bijbelplaats: "Handelingen 1:14"
         },
