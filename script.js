@@ -2629,7 +2629,7 @@ function checkAntwoord(antwoord) {
         volgendeKnop.onclick = gaNaarVolgende;
         resultaat.appendChild(volgendeKnop);
     } else {
-        volgendeTimer = setTimeout(gaNaarVolgende, 2500);
+        volgendeTimer = setTimeout(gaNaarVolgende, 2000);
     }
 }
 
