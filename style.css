@@ -35,6 +35,33 @@ body {
     background-position: center;
 }
 
+/* Testversie-lint: rustig pill-label gecentreerd onder de titel op het
+   startscherm. Boven de achtergrond (z-index 35) maar onder scherm 2 (40) en de
+   quiz-overlays (999), zodat het alleen op het startscherm verschijnt. Op de
+   titel maakt meteen duidelijk dat het spel nog in test is. */
+.beta-lint {
+    position: absolute;
+    left: 50%;
+    top: 25.5%;                           /* net onder de "ONTDEK · LEER · GROEI"-plaquette */
+    transform: translateX(-50%);
+    z-index: 35;
+
+    padding: 0.35em 1.1em;
+    border-radius: 999px;
+    border: 1.5px solid #d8b24a;          /* gouden rand */
+    background: rgba(13, 26, 64, 0.92);   /* donkerblauw, in stijl van de game */
+
+    color: #f0d27a;                        /* gouden tekst */
+    font-size: clamp(9px, 1vw, 16px);      /* klein, schaalt mee met de venstergrootte */
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    pointer-events: none;                  /* vangt geen klikken op */
+    user-select: none;
+}
+
 /* =========================
    TITELS
 ========================= */

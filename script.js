@@ -1,3 +1,8 @@
+// --- Testversie -------------------------------------------------------------
+// Toont een rustig "TESTVERSIE"-lint op het startscherm zolang dit true is.
+// Bij de echte launch: op false zetten en het lint verdwijnt volledig.
+const BETA_MODUS = true;
+
 // --- Geluid -----------------------------------------------------------------
 // Eenvoudig klikgeluid, in code opgewekt — geen geluidsbestand nodig, werkt ook
 // via file:///. De AAN/UIT-stand wordt onthouden in localStorage (standaard aan).
@@ -6732,6 +6737,21 @@ function eenOverlayOpen() {
         else if (e.key === "ArrowLeft" && huidigNtScherm === 2) gaNaarScherm1();
     });
 })();
+
+// Testversie-lint: klein pill-label linksonder op het startscherm. Wordt in
+// #game-container gehangen zodat het meeschaalt; de dekkende quiz-overlays
+// (z-index 999) en scherm 2 (z-index 40) bedekken het vanzelf, dus het is
+// alleen op het startscherm zichtbaar. pointer-events:none in de CSS.
+if (BETA_MODUS) {
+    const container = document.getElementById("game-container");
+    if (container) {
+        const lint = document.createElement("div");
+        lint.className = "beta-lint";
+        lint.textContent = "TESTVERSIE";
+        lint.setAttribute("aria-hidden", "true");
+        container.appendChild(lint);
+    }
+}
 
 // Afstelmodus (?afstel=aan): open meteen de zaal en activeer de afstel-UI.
 if (afstelModus) openSchatkamer();
