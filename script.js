@@ -3119,6 +3119,238 @@ vragenData["Filippenzen"] = {
     ]
 };
 
+// =========================================================================
+// 1 & 2 Tessalonicenzen — vragenpool (36 vragen: beginner 11, advanced 16,
+// expert 9). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
+// vragenData["1 & 2 Tessalonicenzen"] met drie niveaus (beginner/advanced/
+// expert). Per vraag: vraag, antwoorden[], correct (exact gelijk aan één
+// antwoord), bijbelplaats. Niveau-indeling zoals goedgekeurd door Roel.
+// =========================================================================
+vragenData["1 & 2 Tessalonicenzen"] = {
+    beginner: [
+        {
+            vraag: "Aan welke gemeente schreef Paulus deze twee brieven?",
+            antwoorden: ["De gemeente in Tessalonica", "De gemeente in Filippi", "De gemeente in Korinte", "De gemeente in Berea"],
+            correct: "De gemeente in Tessalonica",
+            bijbelplaats: "1 Tessalonicenzen 1:1"
+        },
+        {
+            vraag: "Paulus zegt: bid…",
+            antwoorden: ["…zonder ophouden", "…alleen 's ochtends", "…alleen in de kerk", "…alleen als het moet"],
+            correct: "…zonder ophouden",
+            bijbelplaats: "1 Tessalonicenzen 5:17"
+        },
+        {
+            vraag: "Wie schreef de brieven aan de Tessalonicenzen?",
+            antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
+            correct: "Paulus",
+            bijbelplaats: "1 Tessalonicenzen 1:1"
+        },
+        {
+            vraag: "Wat voor soort teksten zijn 1 en 2 Tessalonicenzen?",
+            antwoorden: ["Brieven", "Liederen", "Evangeliën", "Gebeden"],
+            correct: "Brieven",
+            bijbelplaats: "1 Tessalonicenzen 1:1"
+        },
+        {
+            vraag: "Paulus zegt: wees altijd…",
+            antwoorden: ["…blij", "…stil", "…bang", "…streng"],
+            correct: "…blij",
+            bijbelplaats: "1 Tessalonicenzen 5:16"
+        },
+        {
+            vraag: "Hoe moeten de gelovigen elkaar volgens Paulus behandelen?",
+            antwoorden: ["Elkaar bemoedigen en opbouwen", "Elkaar met rust laten", "Elkaar streng straffen", "Elkaar ontwijken"],
+            correct: "Elkaar bemoedigen en opbouwen",
+            bijbelplaats: "1 Tessalonicenzen 5:11"
+        },
+        {
+            vraag: "In de tweede brief vraagt Paulus de Tessalonicenzen ergens voor te bidden. Waarvoor?",
+            antwoorden: ["Dat het goede nieuws zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat de keizer aftreedt", "Dat Paulus beroemd wordt"],
+            correct: "Dat het goede nieuws zich snel verspreidt",
+            bijbelplaats: "2 Tessalonicenzen 3:1"
+        },
+        {
+            vraag: "Wat wenst Paulus de Tessalonicenzen toe aan het begin van zijn brieven?",
+            antwoorden: ["Genade en vrede", "Geluk en gezondheid", "Kracht en roem", "Rust en stilte"],
+            correct: "Genade en vrede",
+            bijbelplaats: "1 Tessalonicenzen 1:1"
+        },
+        {
+            vraag: "Hoe spreekt Paulus de gelovigen telkens liefdevol aan?",
+            antwoorden: ["Als broeders en zusters", "Als leerlingen", "Als dienaren", "Als gasten"],
+            correct: "Als broeders en zusters",
+            bijbelplaats: "1 Tessalonicenzen 1:4"
+        },
+        {
+            vraag: "Paulus zegt: leef rustig en bemoei je met je eigen werk. Waarmee moeten de gelovigen hun brood verdienen?",
+            antwoorden: ["Met hun eigen handen", "Met bedelen", "Met lenen", "Met niksdoen"],
+            correct: "Met hun eigen handen",
+            bijbelplaats: "1 Tessalonicenzen 4:11"
+        },
+        {
+            vraag: "Paulus zegt dat de gelovigen bij het licht horen, niet bij de nacht. Hoe moeten ze daarom zijn?",
+            antwoorden: ["Wakker en helder van geest", "Slaperig", "Bang", "Stil"],
+            correct: "Wakker en helder van geest",
+            bijbelplaats: "1 Tessalonicenzen 5:6"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Hoe begint Paulus bijna elke keer als hij aan de Tessalonicenzen denkt?",
+            antwoorden: ["Met danken voor hen", "Met een waarschuwing", "Met een verwijt", "Met een vraag"],
+            correct: "Met danken voor hen",
+            bijbelplaats: "1 Tessalonicenzen 1:2"
+        },
+        {
+            vraag: "Wat belooft Paulus dat er ooit gaat gebeuren, tot troost van de gelovigen?",
+            antwoorden: ["Jezus komt terug", "De tempel wordt herbouwd", "Paulus komt op bezoek", "De keizer wordt gelovig"],
+            correct: "Jezus komt terug",
+            bijbelplaats: "1 Tessalonicenzen 4:16"
+        },
+        {
+            vraag: "Wat moeten de gelovigen volgens Paulus doen, wat er ook gebeurt?",
+            antwoorden: ["Dankbaar blijven", "Bang blijven", "Stil blijven", "Wachten en niets doen"],
+            correct: "Dankbaar blijven",
+            bijbelplaats: "1 Tessalonicenzen 5:18"
+        },
+        {
+            vraag: "Paulus prijst de Tessalonicenzen omdat hun geloof bekend is geworden. Tot waar?",
+            antwoorden: ["Tot in heel Macedonië en nog verder", "Alleen in hun eigen stad", "Alleen in Jeruzalem", "Nergens nog"],
+            correct: "Tot in heel Macedonië en nog verder",
+            bijbelplaats: "1 Tessalonicenzen 1:8"
+        },
+        {
+            vraag: "Wat raadt Paulus aan over werk: wie niet wil werken…",
+            antwoorden: ["…zou ook niet moeten eten", "…mag toch mee-eten", "…moet weggestuurd worden", "…moet dubbel betalen"],
+            correct: "…zou ook niet moeten eten",
+            bijbelplaats: "2 Tessalonicenzen 3:10"
+        },
+        {
+            vraag: "Hoe zal Jezus volgens Paulus terugkomen?",
+            antwoorden: ["Van de hemel, met een roep en een bazuin", "Stilletjes, zonder dat iemand het ziet", "Als een gewone reiziger", "In de tempel van Jeruzalem"],
+            correct: "Van de hemel, met een roep en een bazuin",
+            bijbelplaats: "1 Tessalonicenzen 4:16"
+        },
+        {
+            vraag: "Paulus werkte zelf hard, zodat hij niemand tot last zou zijn. Wat was zijn beroep?",
+            antwoorden: ["Tentenmaker", "Visser", "Timmerman", "Herder"],
+            correct: "Tentenmaker",
+            bijbelplaats: "Handelingen 18:3"
+        },
+        {
+            vraag: "Paulus zegt: vergeld kwaad niet met kwaad, maar…",
+            antwoorden: ["…doe altijd goed, voor elkaar en voor iedereen", "…laat het maar zo", "…vergeet het snel", "…blijf op je hoede"],
+            correct: "…doe altijd goed, voor elkaar en voor iedereen",
+            bijbelplaats: "1 Tessalonicenzen 5:15"
+        },
+        {
+            vraag: "Wat moeten de gelovigen volgens Paulus met alles doen voordat ze het aannemen?",
+            antwoorden: ["Alles onderzoeken en het goede vasthouden", "Alles meteen geloven", "Alles afwijzen", "Alles vergeten"],
+            correct: "Alles onderzoeken en het goede vasthouden",
+            bijbelplaats: "1 Tessalonicenzen 5:21"
+        },
+        {
+            vraag: "Paulus wil niet dat de gelovigen verdrietig zijn over gestorvenen zoals mensen \"zonder hoop\". Wat hebben de gelovigen wél?",
+            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "Niets bijzonders", "Alleen herinneringen", "Verdriet voor altijd"],
+            correct: "Hoop: bij de komst van Jezus zien ze elkaar weer",
+            bijbelplaats: "1 Tessalonicenzen 4:13"
+        },
+        {
+            vraag: "Waar kwamen de Tessalonicenzen vandaan vóór ze gingen geloven? Wat lieten ze achter?",
+            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun handel", "Hun familie"],
+            correct: "De afgoden, om de levende God te dienen",
+            bijbelplaats: "1 Tessalonicenzen 1:9"
+        },
+        {
+            vraag: "In welk land lag de stad Tessalonica?",
+            antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
+            correct: "Macedonië",
+            bijbelplaats: "Handelingen 17:1"
+        },
+        {
+            vraag: "Wat moeten de gelovigen volgens Paulus blijven doen, ook als ze het moeilijk hebben?",
+            antwoorden: ["Niet moe worden om goed te doen", "Terugslaan", "Wegrennen", "Klagen"],
+            correct: "Niet moe worden om goed te doen",
+            bijbelplaats: "2 Tessalonicenzen 3:13"
+        },
+        {
+            vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen?",
+            antwoorden: ["De wolken in, de Heer tegemoet", "De tempel in", "De berg op", "De hemelpoort door"],
+            correct: "De wolken in, de Heer tegemoet",
+            bijbelplaats: "1 Tessalonicenzen 4:17"
+        },
+        {
+            vraag: "Paulus schrijft dat hij dag en nacht werkte toen hij bij de Tessalonicenzen was. Waarom?",
+            antwoorden: ["Om niemand tot last te zijn", "Om rijk te worden", "Om beroemd te worden", "Om de keizer te plezieren"],
+            correct: "Om niemand tot last te zijn",
+            bijbelplaats: "1 Tessalonicenzen 2:9"
+        },
+        {
+            vraag: "Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun?",
+            antwoorden: ["Rust, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een eigen land", "Wraak met het zwaard"],
+            correct: "Rust, wanneer Jezus verschijnt",
+            bijbelplaats: "2 Tessalonicenzen 1:7"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Waarmee vergelijkt Paulus zijn zorg voor de Tessalonicenzen?",
+            antwoorden: ["Met een moeder die haar kinderen koestert", "Met een herder bij zijn schapen", "Met een tuinman bij zijn planten", "Met een leraar bij zijn leerlingen"],
+            correct: "Met een moeder die haar kinderen koestert",
+            bijbelplaats: "1 Tessalonicenzen 2:7"
+        },
+        {
+            vraag: "Hoe noemt Paulus de gelovigen, omdat ze niet bij het donker maar bij het licht horen?",
+            antwoorden: ["Kinderen van het licht", "Kinderen van de nacht", "Kinderen van de tempel", "Kinderen van de keizer"],
+            correct: "Kinderen van het licht",
+            bijbelplaats: "1 Tessalonicenzen 5:5"
+        },
+        {
+            vraag: "Paulus zegt dat de dag van de Heer komt als iets onverwachts. Waarmee vergelijkt hij dat?",
+            antwoorden: ["Met een dief in de nacht", "Met een storm op zee", "Met een bazuin in de morgen", "Met een ster aan de hemel"],
+            correct: "Met een dief in de nacht",
+            bijbelplaats: "1 Tessalonicenzen 5:2"
+        },
+        {
+            vraag: "Hoe noemt Paulus de Tessalonicenzen, als beeld van hoe trots hij op hen is bij de komst van Jezus?",
+            antwoorden: ["Zijn kroon om trots op te zijn", "Zijn leerlingen", "Zijn dienaren", "Zijn schapen"],
+            correct: "Zijn kroon om trots op te zijn",
+            bijbelplaats: "1 Tessalonicenzen 2:19"
+        },
+        {
+            vraag: "Paulus prijst de Tessalonicenzen om drie dingen: hun geloof, hun liefde en hun…",
+            antwoorden: ["…hoop", "…wijsheid", "…kennis", "…kracht"],
+            correct: "…hoop",
+            bijbelplaats: "1 Tessalonicenzen 1:3"
+        },
+        {
+            vraag: "Toen Paulus niet zelf kon komen, stuurde hij iemand om de Tessalonicenzen te bemoedigen. Wie?",
+            antwoorden: ["Timoteüs", "Lukas", "Markus", "Demas"],
+            correct: "Timoteüs",
+            bijbelplaats: "1 Tessalonicenzen 3:2"
+        },
+        {
+            vraag: "Wie noemt Paulus aan het begin als mede-afzenders, naast hemzelf?",
+            antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Markus", "Lukas en Titus"],
+            correct: "Silvanus en Timoteüs",
+            bijbelplaats: "1 Tessalonicenzen 1:1"
+        },
+        {
+            vraag: "Paulus gebruikt het beeld van een wapenrusting. Wat dragen de gelovigen als \"borstpantser\"?",
+            antwoorden: ["Geloof en liefde", "Goud en zilver", "Recht en wet", "Moed en kracht"],
+            correct: "Geloof en liefde",
+            bijbelplaats: "1 Tessalonicenzen 5:8"
+        },
+        {
+            vraag: "Aan het eind van zijn tweede brief doet Paulus iets met zijn eigen hand, als een soort handtekening. Wat?",
+            antwoorden: ["Hij schrijft de groet eigenhandig", "Hij tekent een vis", "Hij drukt een zegel in was", "Hij schrijft in het Hebreeuws"],
+            correct: "Hij schrijft de groet eigenhandig",
+            bijbelplaats: "2 Tessalonicenzen 3:17"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -3303,7 +3535,8 @@ const boekNaarKey = {
     "1 & 2 Korintiërs": "korintiers",
     "Galaten": "galaten",
     "Efeziërs": "efeziers",
-    "Filippenzen": "filippenzen"
+    "Filippenzen": "filippenzen",
+    "1 & 2 Tessalonicenzen": "tessalonicenzen"
 };
 
 // =========================
@@ -6192,7 +6425,7 @@ const boekenplanken = {
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: true,  cover: "images/boek-efeziers.png" },
             { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.png" },
             { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
-            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false, cover: "images/boek-tessalonicenzen.png" },
+            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: true,  cover: "images/boek-tessalonicenzen.png" },
             { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false, cover: "images/boek-timoteus-titus.png" }
         ]
     },
