@@ -3351,6 +3351,228 @@ vragenData["1 & 2 Tessalonicenzen"] = {
     ]
 };
 
+// =========================================================================
+// Timoteüs & Titus — vragenpool (34 vragen: beginner 11, advanced 12,
+// expert 11). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
+// (trofee_timoteus_titus). vragenData["Timoteüs & Titus"] met drie niveaus
+// (beginner/advanced/expert). Per vraag: vraag, antwoorden[], correct (exact
+// gelijk aan één antwoord), bijbelplaats. Neutraal taalgebruik (geen
+// "voorganger"; "gemeente" = plaatselijke groep, "leider"/"medewerker"
+// waar mogelijk). Niveau-indeling zoals goedgekeurd door Roel.
+// =========================================================================
+vragenData["Timoteüs & Titus"] = {
+    beginner: [
+        {
+            vraag: "Wat moet Timoteüs volgens Paulus zijn voor de andere gelovigen?",
+            antwoorden: ["Een goed voorbeeld", "Een strenge baas", "Een afstandelijke leider", "Een stille toehoorder"],
+            correct: "Een goed voorbeeld",
+            bijbelplaats: "1 Timoteüs 4:12"
+        },
+        {
+            vraag: "Wat schrijft Paulus over de hele Schrift?",
+            antwoorden: ["Ze is door God ingegeven en nuttig om van te leren", "Ze is moeilijk en saai", "Ze is alleen voor priesters", "Ze is verouderd"],
+            correct: "Ze is door God ingegeven en nuttig om van te leren",
+            bijbelplaats: "2 Timoteüs 3:16"
+        },
+        {
+            vraag: "Wie schreef de brieven aan Timoteüs en Titus?",
+            antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
+            correct: "Paulus",
+            bijbelplaats: "1 Timoteüs 1:1"
+        },
+        {
+            vraag: "Wat voor soort teksten zijn 1 en 2 Timoteüs en Titus?",
+            antwoorden: ["Brieven", "Liederen", "Evangeliën", "Gebeden"],
+            correct: "Brieven",
+            bijbelplaats: "1 Timoteüs 1:1"
+        },
+        {
+            vraag: "Hoe moeten de gelovigen volgens Paulus bidden — ook voor koningen en mensen met macht?",
+            antwoorden: ["Voor alle mensen", "Alleen voor vrienden", "Alleen voor gelovigen", "Voor niemand"],
+            correct: "Voor alle mensen",
+            bijbelplaats: "1 Timoteüs 2:1-2"
+        },
+        {
+            vraag: "Wat moeten Titus en de gelovigen volgens Paulus volop doen?",
+            antwoorden: ["Goede dingen doen voor anderen", "Veel bezit verzamelen", "Zich terugtrekken", "Anderen veroordelen"],
+            correct: "Goede dingen doen voor anderen",
+            bijbelplaats: "Titus 3:8"
+        },
+        {
+            vraag: "Paulus zegt dat er één God is en één \"middelaar\" tussen God en mensen. Wie is die middelaar?",
+            antwoorden: ["Jezus Christus", "Mozes", "Abraham", "De hogepriester"],
+            correct: "Jezus Christus",
+            bijbelplaats: "1 Timoteüs 2:5"
+        },
+        {
+            vraag: "Paulus vraagt om Markus naar hem toe te halen. Waarom?",
+            antwoorden: ["Omdat Markus nuttig is voor het werk", "Omdat Markus de weg goed kent", "Omdat Markus ziek is", "Omdat Markus sterk is"],
+            correct: "Omdat Markus nuttig is voor het werk",
+            bijbelplaats: "2 Timoteüs 4:11"
+        },
+        {
+            vraag: "Wat wil God volgens Paulus voor alle mensen?",
+            antwoorden: ["Dat ze gered worden", "Dat ze machtig worden", "Dat ze beroemd worden", "Dat ze sterk worden"],
+            correct: "Dat ze gered worden",
+            bijbelplaats: "1 Timoteüs 2:4"
+        },
+        {
+            vraag: "Paulus zegt dat Titus de mensen moet leren geen ruzie te zoeken. Hoe moeten ze tegen iedereen zijn?",
+            antwoorden: ["Vriendelijk en vredelievend", "Streng en hard", "Stil en afzijdig", "Slim en gehaaid"],
+            correct: "Vriendelijk en vredelievend",
+            bijbelplaats: "Titus 3:2"
+        },
+        {
+            vraag: "Wat moet Timoteüs volgens Paulus goed bewaren, als een kostbare schat die hem is toevertrouwd?",
+            antwoorden: ["Het geloof en het goede nieuws", "Zijn spullen", "Zijn brieven", "Zijn kleren"],
+            correct: "Het geloof en het goede nieuws",
+            bijbelplaats: "2 Timoteüs 1:14"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Aan wie schreef Paulus deze drie brieven?",
+            antwoorden: ["Aan twee jonge medewerkers, Timoteüs en Titus", "Aan hele gemeenten", "Aan koningen", "Aan kinderen"],
+            correct: "Aan twee jonge medewerkers, Timoteüs en Titus",
+            bijbelplaats: "1 Timoteüs 1:1"
+        },
+        {
+            vraag: "Timoteüs was nog jong. Wat zegt Paulus daarover?",
+            antwoorden: ["Laat niemand op je neerkijken om je jonge leeftijd", "Wacht tot je ouder bent", "Houd je stil", "Doe maar gewoon mee"],
+            correct: "Laat niemand op je neerkijken om je jonge leeftijd",
+            bijbelplaats: "1 Timoteüs 4:12"
+        },
+        {
+            vraag: "Waaraan moet Timoteüs volgens Paulus vasthouden, wat hij van jongs af aan kent?",
+            antwoorden: ["De heilige Schrift", "De wetten van Rome", "De verhalen van zijn vrienden", "De liederen van de tempel"],
+            correct: "De heilige Schrift",
+            bijbelplaats: "2 Timoteüs 3:15"
+        },
+        {
+            vraag: "Hoe moet Titus volgens Paulus zelf leven, zodat anderen het goede van hem leren?",
+            antwoorden: ["Door zelf het goede voorbeeld te geven", "Door streng te straffen", "Door veel te praten", "Door zich afzijdig te houden"],
+            correct: "Door zelf het goede voorbeeld te geven",
+            bijbelplaats: "Titus 2:7"
+        },
+        {
+            vraag: "Paulus noemt het geloof een soort wedstrijd. Wat moet Timoteüs doen?",
+            antwoorden: ["De goede strijd van het geloof strijden", "Zo hard mogelijk rennen", "Wachten op de finish", "Anderen verslaan"],
+            correct: "De goede strijd van het geloof strijden",
+            bijbelplaats: "1 Timoteüs 6:12"
+        },
+        {
+            vraag: "Wat zegt Paulus dat \"de wortel van alle kwaad\" is?",
+            antwoorden: ["De liefde voor geld", "Luiheid", "Onwetendheid", "Hoogmoed"],
+            correct: "De liefde voor geld",
+            bijbelplaats: "1 Timoteüs 6:10"
+        },
+        {
+            vraag: "Hoe moet een leider van de gemeente volgens Paulus zijn?",
+            antwoorden: ["Betrouwbaar en gastvrij, niet snel boos", "Streng en gevreesd", "Trots en machtig", "Stil en onzichtbaar"],
+            correct: "Betrouwbaar en gastvrij, niet snel boos",
+            bijbelplaats: "1 Timoteüs 3:2-3"
+        },
+        {
+            vraag: "Aan het eind van zijn leven schrijft Paulus een beroemde zin. Welke?",
+            antwoorden: ["\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"", "\"Ik heb alles gezien en gedaan\"", "\"Mijn werk is mislukt\"", "\"Ik begin nog maar net\""],
+            correct: "\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"",
+            bijbelplaats: "2 Timoteüs 4:7"
+        },
+        {
+            vraag: "Paulus voelt zich met Timoteüs en Titus verbonden alsof ze familie zijn. Hoe noemt hij hen daarom in zijn brieven?",
+            antwoorden: ["Mijn kind in het geloof", "Mijn leerling", "Mijn dienaar", "Mijn vriend"],
+            correct: "Mijn kind in het geloof",
+            bijbelplaats: "1 Timoteüs 1:2"
+        },
+        {
+            vraag: "Paulus schrijft: God gaf ons geen geest van angst, maar van…",
+            antwoorden: ["…kracht, liefde en bezonnenheid", "…macht en eer", "…regels en straf", "…stilte en rust"],
+            correct: "…kracht, liefde en bezonnenheid",
+            bijbelplaats: "2 Timoteüs 1:7"
+        },
+        {
+            vraag: "Paulus zegt tegen Timoteüs: schaam je niet voor…",
+            antwoorden: ["…het goede nieuws van Jezus", "…je eenvoudige kleren", "…je afkomst", "…je fouten"],
+            correct: "…het goede nieuws van Jezus",
+            bijbelplaats: "2 Timoteüs 1:8"
+        },
+        {
+            vraag: "Welke \"betrouwbare uitspraak\" geeft Paulus door — waarvoor kwam Christus in de wereld?",
+            antwoorden: ["Om zondaars te redden", "Om koning te worden", "Om de tempel te bouwen", "Om regels te geven"],
+            correct: "Om zondaars te redden",
+            bijbelplaats: "1 Timoteüs 1:15"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Wie waren volgens Paulus de oma en moeder die Timoteüs het geloof hadden meegegeven?",
+            antwoorden: ["Loïs en Eunike", "Maria en Marta", "Sara en Rebekka", "Ruth en Naomi"],
+            correct: "Loïs en Eunike",
+            bijbelplaats: "2 Timoteüs 1:5"
+        },
+        {
+            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch mee te nemen. Wat?",
+            antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
+            correct: "Zijn mantel en zijn boeken",
+            bijbelplaats: "2 Timoteüs 4:13"
+        },
+        {
+            vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie?",
+            antwoorden: ["Demas", "Lukas", "Timoteüs", "Titus"],
+            correct: "Demas",
+            bijbelplaats: "2 Timoteüs 4:10"
+        },
+        {
+            vraag: "Op welk eiland had Paulus Titus achtergelaten om de gemeenten te helpen?",
+            antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
+            correct: "Kreta",
+            bijbelplaats: "Titus 1:5"
+        },
+        {
+            vraag: "Paulus zegt tegen Timoteüs: \"wakker het vuur weer aan\" van de gave die God je gaf. Wat bedoelt hij?",
+            antwoorden: ["Gebruik de gaven die je van God kreeg", "Maak echt vuur", "Word eens flink boos", "Werk gewoon harder"],
+            correct: "Gebruik de gaven die je van God kreeg",
+            bijbelplaats: "2 Timoteüs 1:6"
+        },
+        {
+            vraag: "In welke stad had Paulus Timoteüs achtergelaten om de gemeente te helpen?",
+            antwoorden: ["Efeze", "Kreta", "Korinte", "Rome"],
+            correct: "Efeze",
+            bijbelplaats: "1 Timoteüs 1:3"
+        },
+        {
+            vraag: "Aan het einde van zijn laatste brief schrijft Paulus dat bijna iedereen weg is. Wie was nog wél bij hem?",
+            antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
+            correct: "Alleen Lukas",
+            bijbelplaats: "2 Timoteüs 4:11"
+        },
+        {
+            vraag: "Paulus noemt twee mannen die van de waarheid waren afgedwaald. Wie?",
+            antwoorden: ["Hymeneüs en Filetus", "Petrus en Andreas", "Jakobus en Johannes", "Paulus en Barnabas"],
+            correct: "Hymeneüs en Filetus",
+            bijbelplaats: "2 Timoteüs 2:17"
+        },
+        {
+            vraag: "Paulus schrijft dat er voor hem een \"krans\" klaarligt. Wat voor krans?",
+            antwoorden: ["De krans van de gerechtigheid", "Een krans van bloemen", "Een gouden kroon", "De lauwerkrans van de keizer"],
+            correct: "De krans van de gerechtigheid",
+            bijbelplaats: "2 Timoteüs 4:8"
+        },
+        {
+            vraag: "Paulus waarschuwt voor één man, een kopersmid, die hem veel kwaad deed. Hoe heette hij?",
+            antwoorden: ["Alexander", "Demas", "Lukas", "Titus"],
+            correct: "Alexander",
+            bijbelplaats: "2 Timoteüs 4:14"
+        },
+        {
+            vraag: "Op het eiland Kreta moest Titus in elke stad iets regelen. Wat?",
+            antwoorden: ["Geschikte leiders aanstellen voor de gemeenten", "Tempels bouwen", "Belasting innen", "Scholen openen"],
+            correct: "Geschikte leiders aanstellen voor de gemeenten",
+            bijbelplaats: "Titus 1:5"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -3536,7 +3758,8 @@ const boekNaarKey = {
     "Galaten": "galaten",
     "Efeziërs": "efeziers",
     "Filippenzen": "filippenzen",
-    "1 & 2 Tessalonicenzen": "tessalonicenzen"
+    "1 & 2 Tessalonicenzen": "tessalonicenzen",
+    "Timoteüs & Titus": "timoteus_titus"
 };
 
 // =========================
@@ -6426,7 +6649,7 @@ const boekenplanken = {
             { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.png" },
             { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
             { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: true,  cover: "images/boek-tessalonicenzen.png" },
-            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false, cover: "images/boek-timoteus-titus.png" }
+            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: true,  cover: "images/boek-timoteus-titus.png" }
         ]
     },
     algemeen: {
