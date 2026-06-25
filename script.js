@@ -4744,6 +4744,35 @@ const schatkamerZalen = {
 // Duur van de in-/uitzoom-overgang; gelijk aan de transities in style.css.
 const ZOOM_MS = 300;
 
+// Berekent het klikvak van een zone uit de bounding box van zijn trofeenissen,
+// zodat het klikgebied altijd op de (al fijngestelde) nissen ligt — één bron van
+// waarheid. Optioneel verfijnt zone.klikMarge { top, onder, zij } (in %) de rand.
+function berekenKlikvak(zone) {
+    const nissen = zone.nisTrofeeen || [];
+    if (!nissen.length) return zone.klik;            // terugval op handmatige klik
+    const num = (v) => parseFloat(v);                 // "12.5%" -> 12.5
+    // Halve trofeebreedte schatten uit de hoogte (trofee ~0,65x zo breed als hoog,
+    // omgerekend van een 16:9-zaal naar %-eenheden van de breedte).
+    const halveBreedte = (h) => (num(h) * 0.65 * (1080 / 1920)) / 2;
+
+    let links = Infinity, rechts = -Infinity, boven = Infinity, onder = -Infinity;
+    nissen.forEach((n) => {
+        const cx = num(n.x), top = num(n.top), hb = halveBreedte(n.hoogte);
+        links  = Math.min(links,  cx - hb);
+        rechts = Math.max(rechts, cx + hb);
+        boven  = Math.min(boven,  top);
+        onder  = Math.max(onder,  top + num(n.hoogte));
+    });
+    const m = zone.klikMarge || {};
+    const mTop = m.top ?? 3, mOnder = m.onder ?? 2, mZij = m.zij ?? 2.5;
+    return {
+        left:   `${(links  - mZij).toFixed(1)}%`,
+        top:    `${(boven  - mTop).toFixed(1)}%`,
+        width:  `${(rechts - links + 2 * mZij).toFixed(1)}%`,
+        height: `${(onder  - boven + mTop + mOnder).toFixed(1)}%`,
+    };
+}
+
 // Bouwt de overzichtszaal op: achtergrond (met placeholder-terugval) + per
 // zone een klikknop met naam, voortgangsmunten (één munt per boek, gekleurd
 // naar de stand) en een telling "behaald/totaal".
@@ -4844,17 +4873,23 @@ function bouwZaal(zaalEl, zaal) {
     if (!houder) return;
     houder.innerHTML = "";                       // schoon herbouwen bij elk openen
 
+    const toonZones = new URLSearchParams(location.search).get("zones") === "toon";
     zaal.zones.forEach((zone) => {
         const standen = zone.vitrine.nissen.map((nis) => leesTrofeeStand(nis.sleutel));
         const behaald = standen.filter((stand) => stand !== "geen").length;
+        const vak = berekenKlikvak(zone);             // <-- afgeleid van de trofeeën
 
         const knop = document.createElement("button");
         knop.type = "button";
         knop.className = "zaal-zone";
-        knop.style.left   = zone.klik.left;
-        knop.style.top    = zone.klik.top;
-        knop.style.width  = zone.klik.width;
-        knop.style.height = zone.klik.height;
+        knop.style.left   = vak.left;
+        knop.style.top    = vak.top;
+        knop.style.width  = vak.width;
+        knop.style.height = vak.height;
+        if (toonZones) {                              // debug: maak het vak zichtbaar
+            knop.style.background = "rgba(0,200,255,0.22)";
+            knop.style.outline = "2px solid #00c8ff";
+        }
         knop.setAttribute("aria-label",
             `${zone.naam}: ${behaald} van ${standen.length} trofeeën behaald`);
         knop.addEventListener("click", () => zoomNaarZone(zone));
