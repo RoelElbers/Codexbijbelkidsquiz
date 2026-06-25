@@ -3573,6 +3573,251 @@ vragenData["Timoteüs & Titus"] = {
     ]
 };
 
+// =========================================================================
+// Kolossenzen & Filemon — vragenpool (38 vragen: beginner 14, advanced 11,
+// expert 13). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
+// Formaat gelijk aan de andere boeken: vragenData["Kolossenzen & Filemon"] met
+// drie niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
+// correct (exact gelijk aan één antwoord), bijbelplaats. Niveau-indeling zoals
+// goedgekeurd door Roel. Filemon heeft één hoofdstuk; verzen als "Filemon 10".
+// =========================================================================
+vragenData["Kolossenzen & Filemon"] = {
+    beginner: [
+        {
+            vraag: "Aan welke gemeente schreef Paulus de brief aan de Kolossenzen?",
+            antwoorden: ["De gemeente in Kolosse", "De gemeente in Laodicea", "De gemeente in Filippi", "De gemeente in Efeze"],
+            correct: "De gemeente in Kolosse",
+            bijbelplaats: "Kolossenzen 1:2"
+        },
+        {
+            vraag: "Vanuit welke situatie schrijft Paulus ook deze brief?",
+            antwoorden: ["Vanuit de gevangenis", "Vanuit de tempel", "Vanuit een schip op zee", "Vanuit zijn werkplaats"],
+            correct: "Vanuit de gevangenis",
+            bijbelplaats: "Kolossenzen 4:18"
+        },
+        {
+            vraag: "Paulus zegt: zoek de dingen die \"boven\" zijn. Wat bedoelt hij?",
+            antwoorden: ["Richt je op God en de hemel", "Klim vaak een berg op", "Kijk zo veel mogelijk omhoog", "Ga hoog op een heuvel wonen"],
+            correct: "Richt je op God en de hemel",
+            bijbelplaats: "Kolossenzen 3:1-2"
+        },
+        {
+            vraag: "Paulus zegt: wat je ook doet, doe het…",
+            antwoorden: ["…van harte, voor de Heer", "…zo snel mogelijk", "…alleen als anderen kijken", "…alleen als je er zin in hebt"],
+            correct: "…van harte, voor de Heer",
+            bijbelplaats: "Kolossenzen 3:23"
+        },
+        {
+            vraag: "Hoe moeten de gelovigen elkaar behandelen als iemand iets verkeerd doet?",
+            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Het meteen vergeten", "De ander voortaan ontwijken"],
+            correct: "Elkaar vergeven, zoals de Heer hen vergaf",
+            bijbelplaats: "Kolossenzen 3:13"
+        },
+        {
+            vraag: "Wie schreef de brief aan de Kolossenzen?",
+            antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
+            correct: "Paulus",
+            bijbelplaats: "Kolossenzen 1:1"
+        },
+        {
+            vraag: "Wat voor soort tekst is de brief aan Filemon?",
+            antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een lied", "Een gebed"],
+            correct: "Een korte, persoonlijke brief",
+            bijbelplaats: "Filemon 1"
+        },
+        {
+            vraag: "Paulus zegt: doe alles in de naam van wie?",
+            antwoorden: ["De Heer Jezus", "De keizer", "Paulus zelf", "De tempel"],
+            correct: "De Heer Jezus",
+            bijbelplaats: "Kolossenzen 3:17"
+        },
+        {
+            vraag: "Wat moeten de gelovigen volgens Paulus laten \"heersen\" in hun hart?",
+            antwoorden: ["De vrede van Christus", "Hun eigen plannen", "De angst", "De regels"],
+            correct: "De vrede van Christus",
+            bijbelplaats: "Kolossenzen 3:15"
+        },
+        {
+            vraag: "Waaraan moeten de gelovigen trouw blijven, dankbaar en waakzaam?",
+            antwoorden: ["Aan het gebed", "Aan het werk", "Aan de regels", "Aan de tempel"],
+            correct: "Aan het gebed",
+            bijbelplaats: "Kolossenzen 4:2"
+        },
+        {
+            vraag: "Onesimus was bij Paulus in de gevangenis gaan geloven. Hoe noemt Paulus hem daarom?",
+            antwoorden: ["Zijn kind, dat in de gevangenis \"geboren\" werd", "Zijn dienaar", "Zijn leerling", "Zijn bewaker"],
+            correct: "Zijn kind, dat in de gevangenis \"geboren\" werd",
+            bijbelplaats: "Filemon 10"
+        },
+        {
+            vraag: "Hoe moeten de gelovigen volgens Paulus zingen tot God?",
+            antwoorden: ["Met psalmen en liederen, dankbaar in hun hart", "Alleen in het Latijn", "Zo hard mogelijk", "Alleen op feestdagen"],
+            correct: "Met psalmen en liederen, dankbaar in hun hart",
+            bijbelplaats: "Kolossenzen 3:16"
+        },
+        {
+            vraag: "Wat moeten de gelovigen volgens Paulus uit hun oude leven wegdoen?",
+            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Hun bezittingen", "Contact met niet-gelovigen"],
+            correct: "Slechte dingen zoals jaloezie en woede",
+            bijbelplaats: "Kolossenzen 3:8"
+        },
+        {
+            vraag: "Paulus schrijft dat in Christus \"de volheid van God\" woont. Wat bedoelt hij daarmee?",
+            antwoorden: ["God is volledig in Jezus aanwezig", "Jezus is een gewone profeet", "God woont vooral in de tempel", "Jezus werd pas later God"],
+            correct: "God is volledig in Jezus aanwezig",
+            bijbelplaats: "Kolossenzen 2:9"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Waarmee moeten de gelovigen zich \"kleden\", schrijft Paulus?",
+            antwoorden: ["Met goedheid, geduld en liefde", "Met mooie, dure kleren", "Met een ijzeren wapenrusting", "Met witte gewaden"],
+            correct: "Met goedheid, geduld en liefde",
+            bijbelplaats: "Kolossenzen 3:12"
+        },
+        {
+            vraag: "Paulus noemt Jezus \"het beeld van de onzichtbare God\". Wat bedoelt hij?",
+            antwoorden: ["In Jezus zie je hoe God is", "Jezus lijkt op een schilderij", "God is altijd onzichtbaar gebleven", "Jezus is door God gemaakt"],
+            correct: "In Jezus zie je hoe God is",
+            bijbelplaats: "Kolossenzen 1:15"
+        },
+        {
+            vraag: "Wat is volgens Paulus het allerbelangrijkste om \"over alles heen\" aan te trekken?",
+            antwoorden: ["De liefde", "De vrede", "Het geduld", "De vriendelijkheid"],
+            correct: "De liefde",
+            bijbelplaats: "Kolossenzen 3:14"
+        },
+        {
+            vraag: "Wat vraagt Paulus aan Filemon over Onesimus?",
+            antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem te vergeten"],
+            correct: "Om hem terug te ontvangen als een broeder",
+            bijbelplaats: "Filemon 17"
+        },
+        {
+            vraag: "De naam Onesimus betekent \"nuttig\". Welke woordgrap maakt Paulus daarmee?",
+            antwoorden: ["Vroeger was hij onbruikbaar, nu juist heel bruikbaar", "Hij was altijd al nuttig", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
+            correct: "Vroeger was hij onbruikbaar, nu juist heel bruikbaar",
+            bijbelplaats: "Filemon 11"
+        },
+        {
+            vraag: "Wat biedt Paulus aan over de schuld die Onesimus misschien nog had?",
+            antwoorden: ["Hij zal het zelf betalen", "Hij vergeet het wel", "Filemon moet het kwijtschelden", "Onesimus moet ervoor werken"],
+            correct: "Hij zal het zelf betalen",
+            bijbelplaats: "Filemon 18-19"
+        },
+        {
+            vraag: "Hoe noemt Paulus zichzelf in de brief aan Filemon — niet als koning, maar als?",
+            antwoorden: ["Een gevangene van Christus", "Een rechter", "Een soldaat", "Een koopman"],
+            correct: "Een gevangene van Christus",
+            bijbelplaats: "Filemon 1"
+        },
+        {
+            vraag: "Paulus noemt Christus het \"hoofd\". Waarvan is Hij het hoofd?",
+            antwoorden: ["Van de kerk, zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de engelen"],
+            correct: "Van de kerk, zijn lichaam",
+            bijbelplaats: "Kolossenzen 1:18"
+        },
+        {
+            vraag: "Paulus hoopt binnenkort zelf bij Filemon op bezoek te komen. Wat vraagt hij hem daarom alvast klaar te maken?",
+            antwoorden: ["Een logeerkamer", "Een maaltijd", "Een geschenk", "Een antwoordbrief"],
+            correct: "Een logeerkamer",
+            bijbelplaats: "Filemon 22"
+        },
+        {
+            vraag: "Paulus zegt dat God de gelovigen heeft overgebracht van het ene rijk naar het andere. Van welk naar welk?",
+            antwoorden: ["Van de duisternis naar het rijk van Gods Zoon", "Van Egypte naar het beloofde land", "Van Rome naar Jeruzalem", "Van de tempel naar de hemel"],
+            correct: "Van de duisternis naar het rijk van Gods Zoon",
+            bijbelplaats: "Kolossenzen 1:13"
+        },
+        {
+            vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan?",
+            antwoorden: ["Van heel de schepping", "Van de familie van Jozef", "Van de twaalf leerlingen", "Van de gemeente in Kolosse"],
+            correct: "Van heel de schepping",
+            bijbelplaats: "Kolossenzen 1:15"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Wie had het goede nieuws naar Kolosse gebracht, een trouwe medewerker van Paulus?",
+            antwoorden: ["Epafras", "Petrus", "Paulus zelf", "Apollos"],
+            correct: "Epafras",
+            bijbelplaats: "Kolossenzen 1:7"
+        },
+        {
+            vraag: "De brief aan Filemon gaat over een man die was weggelopen bij zijn meester. Hoe heette hij?",
+            antwoorden: ["Onesimus", "Epafroditus", "Tychikus", "Demas"],
+            correct: "Onesimus",
+            bijbelplaats: "Filemon 10"
+        },
+        {
+            vraag: "Waarmee vergelijkt Paulus het beginnen van een nieuw leven met Christus?",
+            antwoorden: ["Met het aantrekken van een nieuw mens", "Met het bouwen van een huis", "Met het planten van een boom", "Met het winnen van een wedstrijd"],
+            correct: "Met het aantrekken van een nieuw mens",
+            bijbelplaats: "Kolossenzen 3:10"
+        },
+        {
+            vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee?",
+            antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
+            correct: "Met bidden",
+            bijbelplaats: "Kolossenzen 4:12-13"
+        },
+        {
+            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
+            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zou weigeren", "Dat Filemon boos zou worden", "Dat Filemon niets zou doen"],
+            correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
+            bijbelplaats: "Filemon 21"
+        },
+        {
+            vraag: "Welke trouwe medewerker zou de Kolossenzen al het nieuws over Paulus komen vertellen?",
+            antwoorden: ["Tychikus", "Onesimus", "Lukas", "Demas"],
+            correct: "Tychikus",
+            bijbelplaats: "Kolossenzen 4:7"
+        },
+        {
+            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten lezen. Welke?",
+            antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
+            correct: "Laodicea",
+            bijbelplaats: "Kolossenzen 4:16"
+        },
+        {
+            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
+            antwoorden: ["Lukas", "Markus", "Demas", "Aristarchus"],
+            correct: "Lukas",
+            bijbelplaats: "Kolossenzen 4:14"
+        },
+        {
+            vraag: "Aan het einde vraagt Paulus aandacht voor één medewerker die zijn taak nog moet \"afmaken\". Hoe heet hij?",
+            antwoorden: ["Archippus", "Onesimus", "Tychikus", "Epafras"],
+            correct: "Archippus",
+            bijbelplaats: "Kolossenzen 4:17"
+        },
+        {
+            vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie?",
+            antwoorden: ["Aristarchus", "Lukas", "Tychikus", "Onesimus"],
+            correct: "Aristarchus",
+            bijbelplaats: "Kolossenzen 4:10"
+        },
+        {
+            vraag: "Paulus noemt Markus familie van een bekende medewerker. Van wie is Markus de neef?",
+            antwoorden: ["Van Barnabas", "Van Petrus", "Van Paulus", "Van Timoteüs"],
+            correct: "Van Barnabas",
+            bijbelplaats: "Kolossenzen 4:10"
+        },
+        {
+            vraag: "In de brief aan Filemon noemt Paulus naast Filemon ook een vrouw en nog iemand uit het huis. Wie worden er gegroet?",
+            antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lukas", "Priscilla en Aquila"],
+            correct: "Apfia en Archippus",
+            bijbelplaats: "Filemon 2"
+        },
+        {
+            vraag: "Paulus schrijft dat Christus er \"eerder dan alles\" was. Wat bedoelt hij daarmee?",
+            antwoorden: ["Christus bestond al voordat er iets gemaakt werd", "Christus kwam als eerste in Kolosse aan", "Christus was de eerste leerling van Johannes", "Christus sprak als eerste in de tempel"],
+            correct: "Christus bestond al voordat er iets gemaakt werd",
+            bijbelplaats: "Kolossenzen 1:17"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -3759,7 +4004,8 @@ const boekNaarKey = {
     "Efeziërs": "efeziers",
     "Filippenzen": "filippenzen",
     "1 & 2 Tessalonicenzen": "tessalonicenzen",
-    "Timoteüs & Titus": "timoteus_titus"
+    "Timoteüs & Titus": "timoteus_titus",
+    "Kolossenzen & Filemon": "kolossenzen_filemon"
 };
 
 // =========================
@@ -6647,7 +6893,7 @@ const boekenplanken = {
             { id: "galaten",             naam: "Galaten",               beschikbaar: true,  cover: "images/boek-galaten.png" },
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: true,  cover: "images/boek-efeziers.png" },
             { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.png" },
-            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
+            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: true,  cover: "images/boek-kolossenzen-filemon.png" },
             { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: true,  cover: "images/boek-tessalonicenzen.png" },
             { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: true,  cover: "images/boek-timoteus-titus.png" }
         ]
