@@ -2858,6 +2858,262 @@ vragenData["Efeziërs"] = {
     ]
 };
 
+// =========================================================================
+// Filippenzen — vragenpool (40 vragen: beginner 10, advanced 15, expert 15)
+// Formaat gelijk aan de andere boeken: vragenData["Filippenzen"] met drie
+// niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
+// correct (exact gelijk aan één antwoord) en bijbelplaats.
+// Niveau-indeling zoals goedgekeurd door Roel.
+// =========================================================================
+vragenData["Filippenzen"] = {
+    beginner: [
+        {
+            vraag: "Aan welke gemeente schreef Paulus deze brief?",
+            antwoorden: ["De gemeente in Korinte", "De gemeente in Filippi", "De gemeente in Efeze", "De gemeente in Rome"],
+            correct: "De gemeente in Filippi",
+            bijbelplaats: "Filippenzen 1:1"
+        },
+        {
+            vraag: "Wat voor soort tekst is Filippenzen?",
+            antwoorden: ["Een brief", "Een lied", "Een evangelie", "Een gebed"],
+            correct: "Een brief",
+            bijbelplaats: "Filippenzen 1:1"
+        },
+        {
+            vraag: "Bidt Paulus voor de gemeente in Filippi?",
+            antwoorden: ["Ja, en met blijdschap", "Nee, hij heeft geen tijd", "Alleen als ze erom vragen", "Nooit"],
+            correct: "Ja, en met blijdschap",
+            bijbelplaats: "Filippenzen 1:4"
+        },
+        {
+            vraag: "Twee vrouwen in Filippi hadden onenigheid. Wat vraagt Paulus hun?",
+            antwoorden: ["Om het weer eens te worden", "Om de gemeente te verlaten", "Om te zwijgen", "Om te kiezen wie gelijk heeft"],
+            correct: "Om het weer eens te worden",
+            bijbelplaats: "Filippenzen 4:2"
+        },
+        {
+            vraag: "Paulus zegt dat de gelovigen mogen schijnen \"als lichten\". Waar, volgens hem?",
+            antwoorden: ["In de wereld om hen heen", "Alleen in de kerk", "Alleen thuis", "Alleen op zondag"],
+            correct: "In de wereld om hen heen",
+            bijbelplaats: "Filippenzen 2:15"
+        },
+        {
+            vraag: "Wat wenst Paulus voor de gemeente in Filippi?",
+            antwoorden: ["Dat ze eensgezind zijn", "Dat ieder zijn eigen weg gaat", "Dat ze de stad verlaten", "Dat ze stil blijven"],
+            correct: "Dat ze eensgezind zijn",
+            bijbelplaats: "Filippenzen 2:2"
+        },
+        {
+            vraag: "Hoe kun je volgens Paulus het beste naar een ander kijken?",
+            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Niemand vertrouwen", "Een ander ontwijken"],
+            correct: "De ander belangrijker vinden dan jezelf",
+            bijbelplaats: "Filippenzen 2:3"
+        },
+        {
+            vraag: "Wat belooft Paulus dat God zal doen voor wie Hem vertrouwt?",
+            antwoorden: ["Geven wat je echt nodig hebt", "Al je wensen vervullen", "Je beroemd maken", "Je nooit laten werken"],
+            correct: "Geven wat je echt nodig hebt",
+            bijbelplaats: "Filippenzen 4:19"
+        },
+        {
+            vraag: "Als je bidt in plaats van je zorgen te maken, wat zal je hart dan bewaren?",
+            antwoorden: ["De vrede van God", "Een sterke muur", "Goede vrienden", "Veel geluk"],
+            correct: "De vrede van God",
+            bijbelplaats: "Filippenzen 4:7"
+        },
+        {
+            vraag: "In het lied schrijft Paulus dat élke knie zal buigen. Maar waar overal?",
+            antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In elke kerk", "In Jeruzalem en Filippi"],
+            correct: "In de hemel, op de aarde én onder de aarde",
+            bijbelplaats: "Filippenzen 2:10"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Waar was Paulus toen hij deze brief schreef?",
+            antwoorden: ["In de gevangenis", "Op reis met een schip", "In de tempel", "Thuis in Nazaret"],
+            correct: "In de gevangenis",
+            bijbelplaats: "Filippenzen 1:13"
+        },
+        {
+            vraag: "Paulus schrijft: \"Ik kan alles aan…\" Door wie, zegt hij?",
+            antwoorden: ["Door Christus, die hem kracht geeft", "Door zijn vrienden", "Door zijn eigen wilskracht", "Door de keizer"],
+            correct: "Door Christus, die hem kracht geeft",
+            bijbelplaats: "Filippenzen 4:13"
+        },
+        {
+            vraag: "Wat moet je volgens Paulus doen in plaats van je zorgen maken?",
+            antwoorden: ["Bidden en het aan God vertellen", "Wachten tot het overgaat", "Het voor je houden", "Boos worden"],
+            correct: "Bidden en het aan God vertellen",
+            bijbelplaats: "Filippenzen 4:6"
+        },
+        {
+            vraag: "Hoe schrijft Paulus over zijn tijd in de gevangenis?",
+            antwoorden: ["Hij blijft er blij en hoopvol onder", "Hij geeft alle moed op", "Hij neemt wraak", "Hij zwijgt erover"],
+            correct: "Hij blijft er blij en hoopvol onder",
+            bijbelplaats: "Filippenzen 1:18"
+        },
+        {
+            vraag: "In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan?",
+            antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rechter", "Die van een engel"],
+            correct: "Die van een dienaar",
+            bijbelplaats: "Filippenzen 2:7"
+        },
+        {
+            vraag: "Welke jonge medewerker prijst Paulus omdat die echt om de gemeente geeft?",
+            antwoorden: ["Timoteüs", "Petrus", "Barnabas", "Stefanus"],
+            correct: "Timoteüs",
+            bijbelplaats: "Filippenzen 2:20-22"
+        },
+        {
+            vraag: "Hoe noemt Paulus zichzelf helemaal aan het begin van de brief?",
+            antwoorden: ["Een dienaar van Christus Jezus", "Een koning", "Een rechter", "Een profeet"],
+            correct: "Een dienaar van Christus Jezus",
+            bijbelplaats: "Filippenzen 1:1"
+        },
+        {
+            vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom?",
+            antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij het kwijt is", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
+            correct: "Omdat het kennen van Christus het allerkostbaarst is",
+            bijbelplaats: "Filippenzen 3:8"
+        },
+        {
+            vraag: "Paulus schrijft dat het echte \"thuis\" van de gelovigen ergens anders is. Waar?",
+            antwoorden: ["In de hemel", "In Rome", "In Jeruzalem", "In Filippi"],
+            correct: "In de hemel",
+            bijbelplaats: "Filippenzen 3:20"
+        },
+        {
+            vraag: "De Filippenzen hadden Paulus geholpen toen hij in de gevangenis zat. Hoe reageert hij daarop?",
+            antwoorden: ["Hij bedankt hen hartelijk", "Hij stuurt het terug", "Hij weigert het", "Hij vraagt om meer"],
+            correct: "Hij bedankt hen hartelijk",
+            bijbelplaats: "Filippenzen 4:14-16"
+        },
+        {
+            vraag: "Paulus is ervan overtuigd dat God iets zal afmaken. Wat?",
+            antwoorden: ["Het goede werk dat Hij in hen begon", "De bouw van de tempel", "Hun reis naar Rome", "Hun straf"],
+            correct: "Het goede werk dat Hij in hen begon",
+            bijbelplaats: "Filippenzen 1:6"
+        },
+        {
+            vraag: "Toen Paulus in de gevangenis zat, gebeurde er iets onverwachts met het goede nieuws. Wat?",
+            antwoorden: ["Het werd juist méér bekend", "Het werd verboden", "Niemand hoorde er nog van", "Het werd vergeten"],
+            correct: "Het werd juist méér bekend",
+            bijbelplaats: "Filippenzen 1:12"
+        },
+        {
+            vraag: "In het lied schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat?",
+            antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een groot leger", "Een prachtig paleis"],
+            correct: "De hoogste naam, boven alle namen",
+            bijbelplaats: "Filippenzen 2:9"
+        },
+        {
+            vraag: "Paulus vertelt over zijn leven vóór hij Jezus volgde. Tot welke Joodse groep hoorde hij?",
+            antwoorden: ["De Farizeeën", "De Sadduceeën", "De Schriftgeleerden", "De Essenen"],
+            correct: "De Farizeeën",
+            bijbelplaats: "Filippenzen 3:5"
+        },
+        {
+            vraag: "Paulus vergelijkt het geloof met hardlopen. Wat doet hij volgens eigen zeggen?",
+            antwoorden: ["Hij strekt zich uit naar wat vóór hem ligt", "Hij kijkt steeds achterom", "Hij wacht bij de start", "Hij rust halverwege uit"],
+            correct: "Hij strekt zich uit naar wat vóór hem ligt",
+            bijbelplaats: "Filippenzen 3:13-14"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Welk gevoel komt in deze brief steeds weer terug?",
+            antwoorden: ["Blijdschap", "Boosheid", "Verdriet", "Twijfel"],
+            correct: "Blijdschap",
+            bijbelplaats: "Filippenzen 4:4"
+        },
+        {
+            vraag: "Paulus stuurt de brief mee met een vriend die heel ziek was geweest. Hoe heette hij?",
+            antwoorden: ["Epafroditus", "Judas", "Tomas", "Lukas"],
+            correct: "Epafroditus",
+            bijbelplaats: "Filippenzen 2:25-27"
+        },
+        {
+            vraag: "In welk gebied lag de stad Filippi?",
+            antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
+            correct: "Macedonië",
+            bijbelplaats: "Handelingen 16:12"
+        },
+        {
+            vraag: "Paulus vergelijkt het geloofsleven met een wedloop. Waar doet hij zijn best voor?",
+            antwoorden: ["Om de eindstreep en de prijs te bereiken", "Om de snelste te zijn", "Om anderen in te halen", "Om uit te rusten"],
+            correct: "Om de eindstreep en de prijs te bereiken",
+            bijbelplaats: "Filippenzen 3:14"
+        },
+        {
+            vraag: "Waar moeten gelovigen volgens Paulus hun gedachten op richten?",
+            antwoorden: ["Op alles wat waar, eerlijk en mooi is", "Op hun problemen", "Op wat anderen verkeerd doen", "Op het verleden"],
+            correct: "Op alles wat waar, eerlijk en mooi is",
+            bijbelplaats: "Filippenzen 4:8"
+        },
+        {
+            vraag: "Paulus schrijft: \"Het leven is voor mij Christus…\" Hoe vult hij die zin aan?",
+            antwoorden: ["…en het sterven is winst", "…en het sterven is verlies", "…en de dood is het einde", "…en het lijden is straf"],
+            correct: "…en het sterven is winst",
+            bijbelplaats: "Filippenzen 1:21"
+        },
+        {
+            vraag: "In het lied over Jezus schrijft Paulus dat uiteindelijk iedereen iets zal doen. Wat?",
+            antwoorden: ["Knielen en belijden dat Jezus Heer is", "Wegrennen", "Zwijgen van angst", "Een offer brengen"],
+            correct: "Knielen en belijden dat Jezus Heer is",
+            bijbelplaats: "Filippenzen 2:10-11"
+        },
+        {
+            vraag: "Paulus twijfelt tussen twee goede dingen. Tussen welke?",
+            antwoorden: ["Blijven leven om te helpen, óf bij Christus zijn", "Naar Rome of naar Jeruzalem", "Schrijven of reizen", "Werken of rusten"],
+            correct: "Blijven leven om te helpen, óf bij Christus zijn",
+            bijbelplaats: "Filippenzen 1:23-24"
+        },
+        {
+            vraag: "Wie noemt Paulus aan het begin als mede-afzender van de brief?",
+            antwoorden: ["Timoteüs", "Petrus", "Lukas", "Markus"],
+            correct: "Timoteüs",
+            bijbelplaats: "Filippenzen 1:1"
+        },
+        {
+            vraag: "Welk woord gebruikt Paulus zó vaak dat het bijna het thema van de brief wordt?",
+            antwoorden: ["Vreugde", "Dankbaarheid", "Geduld", "Hoop"],
+            correct: "Vreugde",
+            bijbelplaats: "Filippenzen 4:4"
+        },
+        {
+            vraag: "Wat wil Paulus dat de Filippenzen vasthouden, ook als hij er zelf niet bij is?",
+            antwoorden: ["Eensgezindheid", "Hun goede naam", "Hun gewoonten", "Hun bezittingen"],
+            correct: "Eensgezindheid",
+            bijbelplaats: "Filippenzen 1:27"
+        },
+        {
+            vraag: "Paulus noemt de twee vrouwen die ruzie hadden zelfs bij naam. Hoe heetten ze?",
+            antwoorden: ["Euodia en Syntyche", "Lydia en Priscilla", "Maria en Marta", "Febe en Junia"],
+            correct: "Euodia en Syntyche",
+            bijbelplaats: "Filippenzen 4:2"
+        },
+        {
+            vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond nu \"verlies\" is. Waarmee vergelijkt hij die oude dingen zelfs?",
+            antwoorden: ["Met vuilnis", "Met stof", "Met rook", "Met zand"],
+            correct: "Met vuilnis",
+            bijbelplaats: "Filippenzen 3:8"
+        },
+        {
+            vraag: "Hoe verraste Paulus' gevangenschap iedereen? Wié hoorden er juist dóór hem van Christus?",
+            antwoorden: ["Zelfs de soldaten van de keizerlijke wacht", "Alleen zijn medegevangenen", "Alleen zijn vrienden", "Niemand, hij zat afgezonderd"],
+            correct: "Zelfs de soldaten van de keizerlijke wacht",
+            bijbelplaats: "Filippenzen 1:13"
+        },
+        {
+            vraag: "Hoe noemt Paulus de Filippenzen liefkozend, als beeld van hoe trots en blij hij met hen is?",
+            antwoorden: ["Zijn blijdschap en erekrans", "Zijn leerlingen", "Zijn soldaten", "Zijn schapen"],
+            correct: "Zijn blijdschap en erekrans",
+            bijbelplaats: "Filippenzen 4:1"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -3041,7 +3297,8 @@ const boekNaarKey = {
     "Handelingen": "handelingen",
     "1 & 2 Korintiërs": "korintiers",
     "Galaten": "galaten",
-    "Efeziërs": "efeziers"
+    "Efeziërs": "efeziers",
+    "Filippenzen": "filippenzen"
 };
 
 // =========================
@@ -5928,7 +6185,7 @@ const boekenplanken = {
             { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: true,  cover: "images/boek-korintiers.png" },
             { id: "galaten",             naam: "Galaten",               beschikbaar: true,  cover: "images/boek-galaten.png" },
             { id: "efeziers",            naam: "Efeziërs",              beschikbaar: true,  cover: "images/boek-efeziers.png" },
-            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: false, cover: "images/boek-filippenzen.png" },
+            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.png" },
             { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: false, cover: "images/boek-kolossenzen-filemon.png" },
             { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: false, cover: "images/boek-tessalonicenzen.png" },
             { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: false, cover: "images/boek-timoteus-titus.png" }
