@@ -4711,6 +4711,7 @@ const schatkamerZalen = {
                   { x: "93.06%", top: "58.57%", hoogte: "14.2%" }
               ] },
             { id: "paulusbrieven",   naam: "Paulusbrieven",    vitrine: paulusbrievenVitrine,   klik: { left: "29%",   top: "36%", width: "42%",   height: "30%" },
+              klikMarge: { zij: 1.5 },
               // Middenwand 2x4 (bovenste rij 4, onderste rij 4).
               nisTrofeeen: [
                   { x: "36.78%", top: "45.33%", hoogte: "10.2%" },
