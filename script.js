@@ -3818,6 +3818,963 @@ vragenData["Kolossenzen & Filemon"] = {
     ]
 };
 
+// Hebreeën — vragenpool (eerste boek van de Algemene brieven).
+// Formaat gelijk aan de andere boeken: vragenData["Hebreeën"] met drie niveaus
+// (beginner/advanced/expert). 10 beginner, 16 advanced, 16 expert = 42 vragen.
+vragenData["Hebreeën"] = {
+    beginner: [
+        {
+            vraag: "Welke man bouwde volgens Hebreeën 11 door zijn geloof een ark?",
+            antwoorden: ["Noach", "Mozes", "Abraham", "Henoch"],
+            correct: "Noach",
+            bijbelplaats: "Hebreeën 11:7"
+        },
+        {
+            vraag: "Welke leider, die het volk Israël uit Egypte bracht, wordt in Hebreeën 11 geprezen om zijn geloof?",
+            antwoorden: ["Mozes", "Jozua", "Aäron", "Gideon"],
+            correct: "Mozes",
+            bijbelplaats: "Hebreeën 11:24-27"
+        },
+        {
+            vraag: "Jezus begrijpt precies hoe wij ons voelen, want Hij werd ook op de proef gesteld — maar zonder te …",
+            antwoorden: ["zondigen", "eten", "slapen", "bidden"],
+            correct: "zondigen",
+            bijbelplaats: "Hebreeën 4:15"
+        },
+        {
+            vraag: "Welke zoon van Adam bracht volgens Hebreeën door zijn geloof een offer dat God goedvond?",
+            antwoorden: ["Abel", "Set", "Henoch", "Kaïn"],
+            correct: "Abel",
+            bijbelplaats: "Hebreeën 11:4"
+        },
+        {
+            vraag: "Hebreeën noemt Jezus, die door God uit de dood is teruggebracht, de grote … van de schapen.",
+            antwoorden: ["herder", "koning", "vader", "vriend"],
+            correct: "herder",
+            bijbelplaats: "Hebreeën 13:20"
+        },
+        {
+            vraag: "Wat zijn de engelen volgens het begin van Hebreeën? Het zijn dienaren die God stuurt om …",
+            antwoorden: ["de gelovigen te helpen", "de hemelpoort te bewaken", "de sterren te besturen", "over de mensen te heersen"],
+            correct: "de gelovigen te helpen",
+            bijbelplaats: "Hebreeën 1:14"
+        },
+        {
+            vraag: "Hebreeën zegt dat Jezus zelf is verzocht en het moeilijk heeft gehad. Daarom kan Hij ons goed …",
+            antwoorden: ["helpen", "straffen", "vergeten", "negeren"],
+            correct: "helpen",
+            bijbelplaats: "Hebreeën 2:18"
+        },
+        {
+            vraag: "Welke koning van Israël wordt in Hebreeën 11 genoemd bij de geloofshelden?",
+            antwoorden: ["David", "Saul", "Salomo", "Achab"],
+            correct: "David",
+            bijbelplaats: "Hebreeën 11:32"
+        },
+        {
+            vraag: "Hebreeën begint zo: vroeger sprak God door de profeten, maar nu heeft Hij tot ons gesproken door zijn …",
+            antwoorden: ["Zoon", "engelen", "koningen", "boeken"],
+            correct: "Zoon",
+            bijbelplaats: "Hebreeën 1:1-2"
+        },
+        {
+            vraag: "Jezus is nu bij God in de hemel. Wat doet Hij daar volgens Hebreeën voortdurend voor ons?",
+            antwoorden: ["Hij pleit voor ons bij God", "Hij slaapt", "Hij is ons vergeten", "Hij telt onze fouten"],
+            correct: "Hij pleit voor ons bij God",
+            bijbelplaats: "Hebreeën 7:25"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "De brief aan de Hebreeën noemt Jezus onze grote …, die ons bij God vertegenwoordigt. Welk woord hoort hier?",
+            antwoorden: ["Hogepriester", "Engel", "Koning", "Profeet"],
+            correct: "Hogepriester",
+            bijbelplaats: "Hebreeën 4:14"
+        },
+        {
+            vraag: "Door het geloof vielen de muren van een stad om nadat het volk er zeven dagen omheen was getrokken. Welke stad?",
+            antwoorden: ["Jericho", "Jeruzalem", "Babylon", "Nineve"],
+            correct: "Jericho",
+            bijbelplaats: "Hebreeën 11:30"
+        },
+        {
+            vraag: "Hebreeën zegt: 'Jezus Christus is gisteren en vandaag dezelfde en …' Hoe gaat het verder?",
+            antwoorden: ["tot in eeuwigheid", "tot volgend jaar", "alleen op zondag", "soms wel, soms niet"],
+            correct: "tot in eeuwigheid",
+            bijbelplaats: "Hebreeën 13:8"
+        },
+        {
+            vraag: "Hebreeën vergelijkt het geloofsleven met een wedloop. Naar wie moeten we blijven kijken terwijl we de wedstrijd lopen?",
+            antwoorden: ["Jezus", "Mozes", "De engelen", "Onszelf"],
+            correct: "Jezus",
+            bijbelplaats: "Hebreeën 12:1-2"
+        },
+        {
+            vraag: "Wees gastvrij voor vreemdelingen, zegt Hebreeën, want sommige mensen hebben zonder het te weten … ontvangen.",
+            antwoorden: ["engelen", "koningen", "soldaten", "vijanden"],
+            correct: "engelen",
+            bijbelplaats: "Hebreeën 13:2"
+        },
+        {
+            vraag: "God voedt ons op zoals een … zijn kinderen opvoedt, omdat Hij van ons houdt.",
+            antwoorden: ["vader", "leraar", "koning", "herder"],
+            correct: "vader",
+            bijbelplaats: "Hebreeën 12:6-7"
+        },
+        {
+            vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
+            antwoorden: ["Eén keer, voor altijd", "Elk jaar opnieuw", "Elke dag", "Elke sabbat"],
+            correct: "Eén keer, voor altijd",
+            bijbelplaats: "Hebreeën 9:28; 10:10"
+        },
+        {
+            vraag: "Waarmee vergelijkt Hebreeën het woord van God, omdat het scherp is en diep in je hart kan kijken?",
+            antwoorden: ["Een tweesnijdend zwaard", "Een spiegel", "Een lamp", "Een sleutel"],
+            correct: "Een tweesnijdend zwaard",
+            bijbelplaats: "Hebreeën 4:12"
+        },
+        {
+            vraag: "Hebreeën noemt Jezus de middelaar van een … verbond tussen God en de mensen.",
+            antwoorden: ["nieuw", "oud", "gebroken", "klein"],
+            correct: "nieuw",
+            bijbelplaats: "Hebreeën 9:15"
+        },
+        {
+            vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel die iets gemeen hadden. Wat?",
+            antwoorden: ["Ze hadden een sterk geloof in God", "Ze waren allemaal koning", "Ze leefden in dezelfde stad", "Ze waren allemaal broers"],
+            correct: "Ze hadden een sterk geloof in God",
+            bijbelplaats: "Hebreeën 11"
+        },
+        {
+            vraag: "Door het geloof trok het volk dwars door een zee, alsof het droog land was. Welke zee?",
+            antwoorden: ["De Rode Zee", "De Dode Zee", "Het meer van Galilea", "De Middellandse Zee"],
+            correct: "De Rode Zee",
+            bijbelplaats: "Hebreeën 11:29"
+        },
+        {
+            vraag: "Hebreeën spoort aan: laten we elkaar aanmoedigen tot liefde en goede daden, en onze … niet verzuimen.",
+            antwoorden: ["samenkomsten", "maaltijden", "reizen", "wedstrijden"],
+            correct: "samenkomsten",
+            bijbelplaats: "Hebreeën 10:24-25"
+        },
+        {
+            vraag: "Nadat Jezus zijn werk had volbracht, ging Hij zitten aan de … van God.",
+            antwoorden: ["rechterhand", "linkerhand", "voorkant", "achterkant"],
+            correct: "rechterhand",
+            bijbelplaats: "Hebreeën 10:12"
+        },
+        {
+            vraag: "Mozes koos er volgens Hebreeën voor om slecht behandeld te worden samen met Gods volk, in plaats van te genieten van de … van Egypte.",
+            antwoorden: ["schatten", "paleizen", "feesten", "macht"],
+            correct: "schatten",
+            bijbelplaats: "Hebreeën 11:25-26"
+        },
+        {
+            vraag: "Wat laat de brief aan de Hebreeën vooral steeds zien over Jezus?",
+            antwoorden: ["Jezus is groter en belangrijker dan alles en iedereen", "Jezus was een gewone leraar", "Jezus leefde maar heel kort", "Jezus bleef altijd onbekend"],
+            correct: "Jezus is groter en belangrijker dan alles en iedereen",
+            bijbelplaats: "Hebreeën 1"
+        },
+        {
+            vraag: "Hebreeën noemt Jezus degene die ons geloof begint én …",
+            antwoorden: ["voltooit", "beproeft", "beschermt", "beloont"],
+            correct: "voltooit",
+            bijbelplaats: "Hebreeën 12:2"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Hoe omschrijft Hebreeën wat geloof is?",
+            antwoorden: ["Zeker zijn van de dingen waarop je hoopt", "Altijd gelijk hebben", "Nooit ergens aan twijfelen", "Heel veel kennis hebben"],
+            correct: "Zeker zijn van de dingen waarop je hoopt",
+            bijbelplaats: "Hebreeën 11:1"
+        },
+        {
+            vraag: "Welke man vertrok door zijn geloof naar een land dat God hem zou wijzen, zonder te weten waar hij heen ging?",
+            antwoorden: ["Abraham", "Jakob", "Jozef", "David"],
+            correct: "Abraham",
+            bijbelplaats: "Hebreeën 11:8"
+        },
+        {
+            vraag: "Aan het begin laat de brief zien dat Jezus hoger staat dan …",
+            antwoorden: ["de engelen", "de profeten", "de koningen", "de herders"],
+            correct: "de engelen",
+            bijbelplaats: "Hebreeën 1:4"
+        },
+        {
+            vraag: "De ouders van een baby verborgen hem drie maanden lang, omdat ze niet bang waren voor het bevel van de koning. Welke baby?",
+            antwoorden: ["Mozes", "Samuël", "Isaak", "Johannes"],
+            correct: "Mozes",
+            bijbelplaats: "Hebreeën 11:23"
+        },
+        {
+            vraag: "Hebreeën zegt dat het zonder iets onmogelijk is om God te behagen. Wat is dat?",
+            antwoorden: ["geloof", "geld", "kracht", "wijsheid"],
+            correct: "geloof",
+            bijbelplaats: "Hebreeën 11:6"
+        },
+        {
+            vraag: "Jezus wordt hogepriester genoemd 'naar de orde van' een geheimzinnige koning-priester uit de tijd van Abraham. Hoe heet hij?",
+            antwoorden: ["Melchisedek", "Aäron", "Levi", "Henoch"],
+            correct: "Melchisedek",
+            bijbelplaats: "Hebreeën 7:1-3"
+        },
+        {
+            vraag: "Over welke man zegt Hebreeën dat hij door zijn geloof de dood niet zag, maar door God werd weggenomen?",
+            antwoorden: ["Henoch", "Elia", "Mozes", "Abel"],
+            correct: "Henoch",
+            bijbelplaats: "Hebreeën 11:5"
+        },
+        {
+            vraag: "Welke vrouw in Jericho werd geprezen omdat ze door haar geloof de verkenners vriendelijk ontving?",
+            antwoorden: ["Rachab", "Ruth", "Sara", "Mirjam"],
+            correct: "Rachab",
+            bijbelplaats: "Hebreeën 11:31"
+        },
+        {
+            vraag: "Wat is bijzonder aan de brief aan de Hebreeën?",
+            antwoorden: ["We weten niet zeker wie hem geschreven heeft", "Hij is het kortste bijbelboek", "Hij noemt Jezus nergens", "Het is de langste brief uit de Bijbel"],
+            correct: "We weten niet zeker wie hem geschreven heeft",
+            bijbelplaats: "algemeen"
+        },
+        {
+            vraag: "Waarmee vergelijkt Hebreeën de hoop die wij hebben, omdat die ons stevig vasthoudt zodat we niet wegdrijven?",
+            antwoorden: ["Een anker", "Een ketting", "Een muur", "Een berg"],
+            correct: "Een anker",
+            bijbelplaats: "Hebreeën 6:19"
+        },
+        {
+            vraag: "Welke vrouw ontving door haar geloof de kracht om op hoge leeftijd nog een kind te krijgen?",
+            antwoorden: ["Sara", "Rachab", "Ruth", "Mirjam"],
+            correct: "Sara",
+            bijbelplaats: "Hebreeën 11:11"
+        },
+        {
+            vraag: "Aan welke groep gelovigen is de brief vooral gericht, zoals je aan de naam kunt zien?",
+            antwoorden: ["Joodse christenen", "Romeinse soldaten", "Griekse filosofen", "Egyptische priesters"],
+            correct: "Joodse christenen",
+            bijbelplaats: "naam van het boek"
+        },
+        {
+            vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God zijn als een fijn …",
+            antwoorden: ["offer", "lied", "feest", "cadeau"],
+            correct: "offer",
+            bijbelplaats: "Hebreeën 13:16"
+        },
+        {
+            vraag: "Welke sterke man, bekend om zijn lange haar, wordt in Hebreeën 11 genoemd als voorbeeld van geloof?",
+            antwoorden: ["Simson", "Goliat", "Saul", "Esau"],
+            correct: "Simson",
+            bijbelplaats: "Hebreeën 11:32"
+        },
+        {
+            vraag: "Volgens Hebreeën mogen we naar God toe gaan om hulp te krijgen wanneer we die nodig hebben. Hoe mogen we bij Hem komen?",
+            antwoorden: ["Met vertrouwen, zonder angst", "Alleen als we nooit fouten maken", "Alleen één keer per jaar", "Alleen als je priester bent"],
+            correct: "Met vertrouwen, zonder angst",
+            bijbelplaats: "Hebreeën 4:16"
+        },
+        {
+            vraag: "Hebreeën spoort aan: laten we stevig vasthouden aan onze …, want God houdt zich aan wat Hij beloofd heeft.",
+            antwoorden: ["hoop", "spullen", "vrienden", "plannen"],
+            correct: "hoop",
+            bijbelplaats: "Hebreeën 10:23"
+        }
+    ]
+};
+
+// Jakobus — vragenpool (Algemene brieven).
+// Formaat gelijk aan de andere boeken: vragenData["Jakobus"] met drie niveaus
+// (beginner/advanced/expert). 11 beginner, 14 advanced, 12 expert = 37 vragen.
+vragenData["Jakobus"] = {
+    beginner: [
+        {
+            vraag: "Waar komt volgens Jakobus elke goede gave vandaan?",
+            antwoorden: ["Van God, uit de hemel", "Van de koning", "Uit de zee", "Van jezelf"],
+            correct: "Van God, uit de hemel",
+            bijbelplaats: "Jakobus 1:17"
+        },
+        {
+            vraag: "Stel je voor dat iemand honger en kou heeft. Wat moet je volgens Jakobus doen?",
+            antwoorden: ["Hem echt helpen met wat hij nodig heeft", "Alleen vriendelijke woorden zeggen", "Wegkijken", "Hem uitlachen"],
+            correct: "Hem echt helpen met wat hij nodig heeft",
+            bijbelplaats: "Jakobus 2:15-16"
+        },
+        {
+            vraag: "Jakobus zegt: kom dicht bij God, dan komt God …",
+            antwoorden: ["dicht bij jou", "boos op jou", "ver bij je vandaan", "streng voor je"],
+            correct: "dicht bij jou",
+            bijbelplaats: "Jakobus 4:8"
+        },
+        {
+            vraag: "Wat zegt Jakobus over hoe we over andere mensen moeten praten?",
+            antwoorden: ["Spreek geen kwaad over elkaar", "Vertel elkaars geheimen door", "Lach om elkaars fouten", "Zeg altijd precies wat je denkt"],
+            correct: "Spreek geen kwaad over elkaar",
+            bijbelplaats: "Jakobus 4:11"
+        },
+        {
+            vraag: "Wat moet je volgens Jakobus doen als je ziek bent?",
+            antwoorden: ["De leiders van de gemeente vragen om voor je te bidden", "Het stil voor jezelf houden", "Meteen op reis gaan", "Tegen niemand iets zeggen"],
+            correct: "De leiders van de gemeente vragen om voor je te bidden",
+            bijbelplaats: "Jakobus 5:14"
+        },
+        {
+            vraag: "Jakobus zegt: laat je 'ja' gewoon 'ja' zijn en je 'nee' gewoon 'nee'. Wat bedoelt hij daarmee?",
+            antwoorden: ["Wees eerlijk en betrouwbaar", "Praat zo veel mogelijk", "Beloof altijd van alles", "Zeg liever helemaal niets"],
+            correct: "Wees eerlijk en betrouwbaar",
+            bijbelplaats: "Jakobus 5:12"
+        },
+        {
+            vraag: "Wat zegt Jakobus dat gelovigen voor elkaar moeten doen?",
+            antwoorden: ["Voor elkaar bidden", "Elkaar negeren", "Elkaar bevelen geven", "Elkaar met rust laten"],
+            correct: "Voor elkaar bidden",
+            bijbelplaats: "Jakobus 5:16"
+        },
+        {
+            vraag: "Jakobus zegt: wie weet wat goed is om te doen, maar het niet doet, …",
+            antwoorden: ["doet verkeerd", "doet niets verkeerds", "is juist heel wijs", "mag het zelf weten"],
+            correct: "doet verkeerd",
+            bijbelplaats: "Jakobus 4:17"
+        },
+        {
+            vraag: "Stel dat iemand bij God en het goede pad wegloopt. Wat moet je volgens Jakobus proberen te doen?",
+            antwoorden: ["Hem vol liefde weer terugbrengen", "Hem voorgoed wegsturen", "Hem uitlachen", "Net doen of je niets ziet"],
+            correct: "Hem vol liefde weer terugbrengen",
+            bijbelplaats: "Jakobus 5:19-20"
+        },
+        {
+            vraag: "Jakobus zegt: maak jezelf klein voor God. Wat zal God dan doen?",
+            antwoorden: ["Hij zal je groot maken", "Hij zal je vergeten", "Hij zal je wegsturen", "Hij zal je straffen"],
+            correct: "Hij zal je groot maken",
+            bijbelplaats: "Jakobus 4:10"
+        },
+        {
+            vraag: "Jakobus zegt: wees geduldig en verlies de moed niet, want er komt iemand terug. Wie?",
+            antwoorden: ["De Heer", "De koning", "De profeet", "De leraar"],
+            correct: "De Heer",
+            bijbelplaats: "Jakobus 5:7-8"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Jakobus zegt: geloof zonder … is dood. Wat hoort hier?",
+            antwoorden: ["daden", "woorden", "geld", "vrienden"],
+            correct: "daden",
+            bijbelplaats: "Jakobus 2:17, 26"
+        },
+        {
+            vraag: "Jakobus geeft een wijze raad: wees snel om te …, langzaam om te spreken en langzaam om boos te worden.",
+            antwoorden: ["luisteren", "rennen", "eten", "slapen"],
+            correct: "luisteren",
+            bijbelplaats: "Jakobus 1:19"
+        },
+        {
+            vraag: "Jakobus zegt: doe wat het woord van God zegt. Wees niet iemand die alleen maar … en het daarna vergeet.",
+            antwoorden: ["luistert", "slaapt", "eet", "zingt"],
+            correct: "luistert",
+            bijbelplaats: "Jakobus 1:22"
+        },
+        {
+            vraag: "Als je wijsheid nodig hebt, wat moet je dan volgens Jakobus doen?",
+            antwoorden: ["God erom vragen, want Hij geeft het graag", "Het zelf bedenken", "Het kopen", "Erover zwijgen"],
+            correct: "God erom vragen, want Hij geeft het graag",
+            bijbelplaats: "Jakobus 1:5"
+        },
+        {
+            vraag: "Jakobus waarschuwt: behandel een rijke bezoeker niet beter dan een arme. Welke fout maak je dan?",
+            antwoorden: ["Je bent partijdig en trekt mensen voor", "Je bent te gastvrij", "Je bent te stil", "Je bent te vrijgevig"],
+            correct: "Je bent partijdig en trekt mensen voor",
+            bijbelplaats: "Jakobus 2:1-4"
+        },
+        {
+            vraag: "Jakobus vergelijkt iemand die wel hoort maar niet doet met een man die in een … kijkt en meteen weer vergeet hoe hij eruitziet.",
+            antwoorden: ["spiegel", "boek", "put", "raam"],
+            correct: "spiegel",
+            bijbelplaats: "Jakobus 1:23-24"
+        },
+        {
+            vraag: "Jakobus zegt: onderwerp je aan God en … de duivel, dan zal hij van je wegvluchten.",
+            antwoorden: ["weersta", "volg", "zoek", "roep"],
+            correct: "weersta",
+            bijbelplaats: "Jakobus 4:7"
+        },
+        {
+            vraag: "Welke man uit het Oude Testament noemt Jakobus als voorbeeld van iemand die in groot lijden geduldig bleef?",
+            antwoorden: ["Job", "Mozes", "David", "Jona"],
+            correct: "Job",
+            bijbelplaats: "Jakobus 5:11"
+        },
+        {
+            vraag: "Waarmee vergelijkt Jakobus de boer die geduldig wacht, om ons te leren ook geduldig te zijn?",
+            antwoorden: ["Hij wacht tot de oogst rijp is", "Hij bouwt een huis", "Hij vangt vissen", "Hij hoedt schapen"],
+            correct: "Hij wacht tot de oogst rijp is",
+            bijbelplaats: "Jakobus 5:7"
+        },
+        {
+            vraag: "Jakobus zegt: wie God iets vraagt maar blijft twijfelen, lijkt op …",
+            antwoorden: ["een golf van de zee die heen en weer wordt geslingerd", "een sterke rots in de branding", "een rechte, vaste weg", "een rustige, stille vijver"],
+            correct: "een golf van de zee die heen en weer wordt geslingerd",
+            bijbelplaats: "Jakobus 1:6"
+        },
+        {
+            vraag: "Aan wat voor mensen geeft God volgens Jakobus zijn genade?",
+            antwoorden: ["Aan mensen die nederig zijn", "Aan mensen die trots zijn", "Aan mensen die sterk zijn", "Aan mensen die veel weten"],
+            correct: "Aan mensen die nederig zijn",
+            bijbelplaats: "Jakobus 4:6"
+        },
+        {
+            vraag: "De wijsheid die van God komt, is volgens Jakobus vooral …",
+            antwoorden: ["vredelievend en vriendelijk", "streng en hard", "slim en sluw", "stil en verborgen"],
+            correct: "vredelievend en vriendelijk",
+            bijbelplaats: "Jakobus 3:17"
+        },
+        {
+            vraag: "Waar komen ruzies en strijd tussen mensen volgens Jakobus vandaan?",
+            antwoorden: ["Uit de verkeerde verlangens in hun eigen hart", "Uit de lucht", "Alleen door de duivel", "Door de regering"],
+            correct: "Uit de verkeerde verlangens in hun eigen hart",
+            bijbelplaats: "Jakobus 4:1"
+        },
+        {
+            vraag: "Jakobus vraagt: ben je wijs? Laat het dan zien door …",
+            antwoorden: ["je goede daden en vriendelijkheid", "veel te praten", "slim te zijn", "streng te zijn"],
+            correct: "je goede daden en vriendelijkheid",
+            bijbelplaats: "Jakobus 3:13"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Welk klein lichaamsdeel kan volgens Jakobus veel goeds én veel kwaads doen, net zoals een klein vuurtje een hele bos in brand kan zetten?",
+            antwoorden: ["de tong", "het oog", "de hand", "de voet"],
+            correct: "de tong",
+            bijbelplaats: "Jakobus 3:5-6"
+        },
+        {
+            vraag: "Waarmee vergelijkt Jakobus de tong, om te laten zien dat iets kleins toch iets groots kan sturen?",
+            antwoorden: ["Met het roer van een schip", "Met een zwaard", "Met een ster", "Met een berg"],
+            correct: "Met het roer van een schip",
+            bijbelplaats: "Jakobus 3:4"
+        },
+        {
+            vraag: "Jakobus zegt: wees niet te zeker over morgen, want je weet niet wat er gebeurt. Waarmee vergelijkt hij ons leven?",
+            antwoorden: ["Met damp die even verschijnt en weer verdwijnt", "Met een sterke berg", "Met een diepe zee", "Met een oude boom"],
+            correct: "Met damp die even verschijnt en weer verdwijnt",
+            bijbelplaats: "Jakobus 4:14"
+        },
+        {
+            vraag: "Volgens de overlevering was Jakobus, de schrijver, een belangrijke leider van de eerste christenen. In welke stad leidde hij de gemeente?",
+            antwoorden: ["Jeruzalem", "Rome", "Antiochië", "Korinte"],
+            correct: "Jeruzalem",
+            bijbelplaats: "overlevering"
+        },
+        {
+            vraag: "'Heb je naaste lief als jezelf' noemt Jakobus de … wet — de allerbelangrijkste regel.",
+            antwoorden: ["koninklijke", "oude", "nieuwe", "gouden"],
+            correct: "koninklijke",
+            bijbelplaats: "Jakobus 2:8"
+        },
+        {
+            vraag: "Jakobus zegt dat het gebed van een gelovige veel kan doen. Welke profeet bad, en daarna regende het drieëneenhalf jaar niet?",
+            antwoorden: ["Elia", "Elisa", "Jesaja", "Jeremia"],
+            correct: "Elia",
+            bijbelplaats: "Jakobus 5:17"
+        },
+        {
+            vraag: "Wat is volgens Jakobus 'zuivere godsdienst' in de ogen van God?",
+            antwoorden: ["Zorgen voor weeskinderen en weduwen die het moeilijk hebben", "Veel bidden waar iedereen bij is", "Mooie kleren dragen naar de samenkomst", "Veel gebeden uit je hoofd kennen"],
+            correct: "Zorgen voor weeskinderen en weduwen die het moeilijk hebben",
+            bijbelplaats: "Jakobus 1:27"
+        },
+        {
+            vraag: "Wat ontvangt volgens Jakobus de mens die moeilijke tijden geduldig doorstaat en van God blijft houden?",
+            antwoorden: ["De kroon van het leven", "Roem bij alle mensen", "Een makkelijk leven", "Een lang leven op aarde"],
+            correct: "De kroon van het leven",
+            bijbelplaats: "Jakobus 1:12"
+        },
+        {
+            vraag: "Welke man uit het Oude Testament wordt door Jakobus 'een vriend van God' genoemd, omdat zijn geloof bleek uit wat hij deed?",
+            antwoorden: ["Abraham", "Noach", "Mozes", "Henoch"],
+            correct: "Abraham",
+            bijbelplaats: "Jakobus 2:23"
+        },
+        {
+            vraag: "Jakobus zegt: wie denkt dat hij godsdienstig is, maar zijn tong niet in bedwang houdt, bedriegt …",
+            antwoorden: ["zichzelf", "zijn vrienden", "de gemeente", "God"],
+            correct: "zichzelf",
+            bijbelplaats: "Jakobus 1:26"
+        },
+        {
+            vraag: "Jakobus zegt: je gelooft dat er één God is? Goed zo! Maar wie geloven dat ook, en beven van angst?",
+            antwoorden: ["De demonen", "De engelen", "De profeten", "De koningen"],
+            correct: "De demonen",
+            bijbelplaats: "Jakobus 2:19"
+        },
+        {
+            vraag: "Jakobus waarschuwt: mopper niet op elkaar. Wie staat er volgens hem al voor de deur?",
+            antwoorden: ["De Rechter", "De koning", "De leraar", "De herder"],
+            correct: "De Rechter",
+            bijbelplaats: "Jakobus 5:9"
+        }
+    ]
+};
+
+// Petrus & Judas — vragenpool (Algemene brieven).
+// Bundel uit 1 & 2 Petrus en Judas — gedeeld thema: waarschuwing tegen
+// dwaalleraars. Formaat gelijk aan de andere boeken: vragenData["Petrus & Judas"]
+// met drie niveaus. 10 beginner, 14 advanced, 11 expert = 35 vragen.
+vragenData["Petrus & Judas"] = {
+    beginner: [
+        {
+            vraag: "Petrus schrijft: geef al je zorgen aan God, want …",
+            antwoorden: ["Hij zorgt voor jou", "Hij is het te druk", "Hij luistert toch niet", "je moet ze zelf dragen"],
+            correct: "Hij zorgt voor jou",
+            bijbelplaats: "1 Petrus 5:7"
+        },
+        {
+            vraag: "Judas eindigt zijn brief met de aanmoediging: blijf in de … van God.",
+            antwoorden: ["liefde", "stad", "woestijn", "tempel"],
+            correct: "liefde",
+            bijbelplaats: "Judas 21"
+        },
+        {
+            vraag: "Petrus noemt de gelovigen samen een huis van levende stenen. Wie is de belangrijkste steen, de hoeksteen?",
+            antwoorden: ["Jezus", "Petrus", "Mozes", "Abraham"],
+            correct: "Jezus",
+            bijbelplaats: "1 Petrus 2:4-6"
+        },
+        {
+            vraag: "Petrus schrijft: wees gastvrij voor elkaar, en doe dat …",
+            antwoorden: ["zonder te mopperen", "alleen voor je vrienden", "alleen als je er iets voor terugkrijgt", "alleen als het je uitkomt"],
+            correct: "zonder te mopperen",
+            bijbelplaats: "1 Petrus 4:9"
+        },
+        {
+            vraag: "Petrus schrijft: trek tegenover elkaar … aan, als een kleed.",
+            antwoorden: ["nederigheid", "dure kleren", "een harnas", "een masker"],
+            correct: "nederigheid",
+            bijbelplaats: "1 Petrus 5:5"
+        },
+        {
+            vraag: "Judas schrijft: bouw jezelf op in je geloof, en …",
+            antwoorden: ["bid tot God", "wacht maar gewoon af", "ga op reis", "zwijg stil"],
+            correct: "bid tot God",
+            bijbelplaats: "Judas 20"
+        },
+        {
+            vraag: "Petrus schrijft over hoe gelovigen met elkaar moeten omgaan: leef met elkaar mee en heb elkaar lief als …",
+            antwoorden: ["één grote familie", "onbekende vreemden", "concurrenten", "gewone klasgenoten"],
+            correct: "één grote familie",
+            bijbelplaats: "1 Petrus 3:8"
+        },
+        {
+            vraag: "Petrus schrijft dat de gelovigen iets bijzonders doen, ook al hebben ze Jezus nooit met eigen ogen gezien. Wat?",
+            antwoorden: ["Ze houden van Hem", "Ze zijn bang voor Hem", "Ze vergeten Hem", "Ze twijfelen aan Hem"],
+            correct: "Ze houden van Hem",
+            bijbelplaats: "1 Petrus 1:8"
+        },
+        {
+            vraag: "Petrus schrijft over de Bijbel: de profeten spraken niet zomaar hun eigen woorden, maar werden geleid door …",
+            antwoorden: ["de heilige Geest", "de koning", "hun eigen dromen", "de sterren"],
+            correct: "de heilige Geest",
+            bijbelplaats: "2 Petrus 1:21"
+        },
+        {
+            vraag: "Judas vergelijkt dwaalleraars, die veel beloven maar niets geven, met wolken die geen … brengen.",
+            antwoorden: ["regen", "wind", "licht", "kou"],
+            correct: "regen",
+            bijbelplaats: "Judas 12"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Waarmee vergelijkt Petrus de duivel, die rondsluipt en zoekt wie hij kan pakken?",
+            antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
+            correct: "Een brullende leeuw",
+            bijbelplaats: "1 Petrus 5:8"
+        },
+        {
+            vraag: "In de tweede brief van Petrus staat een verhaal over een profeet die verkeerd bezig was. Wat deed zijn ezel om hem te waarschuwen?",
+            antwoorden: ["De ezel begon te praten", "De ezel vloog weg", "De ezel werd onzichtbaar", "De ezel veranderde in goud"],
+            correct: "De ezel begon te praten",
+            bijbelplaats: "2 Petrus 2:16"
+        },
+        {
+            vraag: "Waar kijken de gelovigen volgens Petrus naar uit, waar alles goed en eerlijk zal zijn?",
+            antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een sterke stad met hoge muren", "Een groot, vruchtbaar land", "Een rustig eiland in zee"],
+            correct: "Een nieuwe hemel en een nieuwe aarde",
+            bijbelplaats: "2 Petrus 3:13"
+        },
+        {
+            vraag: "Waarom wacht God nog met de terugkeer van Jezus, schrijft Petrus?",
+            antwoorden: ["Omdat Hij geduldig is en wil dat iedereen tot Hem komt", "Omdat Hij het vergeten is", "Omdat Hij het niet kan", "Omdat Hij te boos is"],
+            correct: "Omdat Hij geduldig is en wil dat iedereen tot Hem komt",
+            bijbelplaats: "2 Petrus 3:9"
+        },
+        {
+            vraag: "Petrus schrijft: heb elkaar vurig lief, want de liefde bedekt …",
+            antwoorden: ["veel zonden", "helemaal niets", "alleen kleine foutjes", "de waarheid"],
+            correct: "veel zonden",
+            bijbelplaats: "1 Petrus 4:8"
+        },
+        {
+            vraag: "Petrus schrijft: wees altijd klaar om aan anderen uit te leggen waarom je …",
+            antwoorden: ["hoopt en gelooft", "boos bent", "verdrietig bent", "gelijk hebt"],
+            correct: "hoopt en gelooft",
+            bijbelplaats: "1 Petrus 3:15"
+        },
+        {
+            vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: ‘Wees …, want Ik ben …’",
+            antwoorden: ["heilig", "sterk", "wijs", "streng"],
+            correct: "heilig",
+            bijbelplaats: "1 Petrus 1:16"
+        },
+        {
+            vraag: "Petrus zegt dat de dag van de Heer zal komen als een …",
+            antwoorden: ["dief in de nacht", "aangekondigde feestdag", "storm die je ziet aankomen", "koning met groot vertoon"],
+            correct: "dief in de nacht",
+            bijbelplaats: "2 Petrus 3:10"
+        },
+        {
+            vraag: "Judas vertelt over een aartsengel die met de duivel streed over het lichaam van Mozes. Hoe heet die aartsengel?",
+            antwoorden: ["Michaël", "Gabriël", "Rafaël", "Uriël"],
+            correct: "Michaël",
+            bijbelplaats: "Judas 9"
+        },
+        {
+            vraag: "Petrus schrijft dat Jezus ons een voorbeeld heeft nagelaten. Wat moeten we volgens hem doen?",
+            antwoorden: ["In zijn voetstappen volgen", "Beroemd worden", "Hem snel vergeten", "Zelf de baas spelen"],
+            correct: "In zijn voetstappen volgen",
+            bijbelplaats: "1 Petrus 2:21"
+        },
+        {
+            vraag: "Petrus schrijft: als iemand iets verkeerds tegen je doet, doe dan niet hetzelfde kwaad terug, maar …",
+            antwoorden: ["wens hem juist het goede", "doe het dubbel terug", "vertel het overal rond", "blijf voor altijd boos"],
+            correct: "wens hem juist het goede",
+            bijbelplaats: "1 Petrus 3:9"
+        },
+        {
+            vraag: "Petrus schrijft: jullie zijn niet vrijgekocht met goud of zilver, maar met het kostbare … van Christus, als van een lam zonder gebrek.",
+            antwoorden: ["bloed", "goud", "water", "brood"],
+            correct: "bloed",
+            bijbelplaats: "1 Petrus 1:18-19"
+        },
+        {
+            vraag: "In zijn tweede brief zegt Petrus: voeg bij je geloof steeds meer goede eigenschappen toe, en als kroon op alles …",
+            antwoorden: ["de liefde", "veel kennis", "grote roem", "een lang leven"],
+            correct: "de liefde",
+            bijbelplaats: "2 Petrus 1:5-7"
+        },
+        {
+            vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die zijn eigen broer doodde uit jaloezie. Wie?",
+            antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
+            correct: "Kaïn",
+            bijbelplaats: "Judas 11"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Judas schrijft dat de gelovigen moeten … voor het geloof dat ze van God gekregen hebben.",
+            antwoorden: ["opkomen", "weglopen", "zwijgen", "betalen"],
+            correct: "opkomen",
+            bijbelplaats: "Judas 3"
+        },
+        {
+            vraag: "Judas eindigt door God te prijzen, die machtig is om jou … te houden zodat je niet valt.",
+            antwoorden: ["staande", "stil", "klein", "verborgen"],
+            correct: "staande",
+            bijbelplaats: "Judas 24"
+        },
+        {
+            vraag: "Petrus noemt Jezus de … herder, die over alle gelovigen waakt.",
+            antwoorden: ["hoogste", "kleinste", "nieuwste", "laatste"],
+            correct: "hoogste",
+            bijbelplaats: "1 Petrus 5:4"
+        },
+        {
+            vraag: "Hoe noemt Petrus alle gelovigen samen?",
+            antwoorden: ["Een uitgekozen volk, een koninklijk priesterschap", "Een groep vreemden", "Een leger soldaten", "Een klas vol leerlingen"],
+            correct: "Een uitgekozen volk, een koninklijk priesterschap",
+            bijbelplaats: "1 Petrus 2:9"
+        },
+        {
+            vraag: "Petrus schrijft: bij de Heer is één dag als …",
+            antwoorden: ["duizend jaar", "één uur", "één minuut", "één week"],
+            correct: "duizend jaar",
+            bijbelplaats: "2 Petrus 3:8"
+        },
+        {
+            vraag: "Petrus schrijft dat hij met eigen ogen de glorie van Jezus zag, op een hoge berg. Wat hoorde hij daar?",
+            antwoorden: ["De stem van God uit de hemel", "Een engelenkoor", "Donder en bliksem", "Helemaal niets"],
+            correct: "De stem van God uit de hemel",
+            bijbelplaats: "2 Petrus 1:17-18"
+        },
+        {
+            vraag: "Petrus schrijft dat gelovigen opnieuw geboren zijn, en daardoor een levende … hebben.",
+            antwoorden: ["hoop", "zorg", "angst", "vraag"],
+            correct: "hoop",
+            bijbelplaats: "1 Petrus 1:3"
+        },
+        {
+            vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
+            antwoorden: ["“Waar blijft die beloofde terugkomst van Jezus?”", "“Er bestaat geen God!”", "“De wereld is plat!”", "“Wij zijn hier de baas!”"],
+            correct: "“Waar blijft die beloofde terugkomst van Jezus?”",
+            bijbelplaats: "2 Petrus 3:3-4"
+        },
+        {
+            vraag: "Petrus schrijft iets verrassends: zelfs de … verlangen ernaar om de geheimen van Gods redding beter te begrijpen.",
+            antwoorden: ["engelen", "koningen", "profeten", "sterren"],
+            correct: "engelen",
+            bijbelplaats: "1 Petrus 1:12"
+        },
+        {
+            vraag: "Petrus schrijft: groei steeds meer in de … van onze Heer Jezus Christus.",
+            antwoorden: ["genade en kennis", "rijkdom en macht", "snelheid en kracht", "roem en eer"],
+            correct: "genade en kennis",
+            bijbelplaats: "2 Petrus 3:18"
+        },
+        {
+            vraag: "Petrus bemoedigt gelovigen die het moeilijk hebben: na een korte tijd van verdriet zal God jullie zelf weer …",
+            antwoorden: ["sterk maken", "vergeten", "wegsturen", "alleen laten"],
+            correct: "sterk maken",
+            bijbelplaats: "1 Petrus 5:10"
+        }
+    ]
+};
+
+// Brieven van Johannes — vragenpool (Algemene brieven).
+// Bundel uit 1, 2 & 3 Johannes. Bewust "Brieven van Johannes" (niet "Johannes"),
+// om verwarring met het evangelie te voorkomen. Formaat gelijk aan de andere
+// boeken: vragenData["Brieven van Johannes"] met drie niveaus.
+// 14 beginner, 12 advanced, 11 expert = 37 vragen.
+vragenData["Brieven van Johannes"] = {
+    beginner: [
+        {
+            vraag: "Welke beroemde zin over God staat in de eerste brief van Johannes? God is …",
+            antwoorden: ["liefde", "ver weg", "streng", "onzichtbaar"],
+            correct: "liefde",
+            bijbelplaats: "1 Johannes 4:8"
+        },
+        {
+            vraag: "Johannes schrijft steeds opnieuw één belangrijke opdracht. Welke?",
+            antwoorden: ["Heb elkaar lief", "Denk aan jezelf", "Reis veel", "Blijf binnen"],
+            correct: "Heb elkaar lief",
+            bijbelplaats: "1 Johannes 3:11"
+        },
+        {
+            vraag: "Johannes zegt: als we onze fouten (zonden) eerlijk aan God vertellen, wat doet God dan?",
+            antwoorden: ["Hij vergeeft ze", "Hij onthoudt ze", "Hij vertelt ze door", "Hij lacht erom"],
+            correct: "Hij vergeeft ze",
+            bijbelplaats: "1 Johannes 1:9"
+        },
+        {
+            vraag: "God is …, en in Hem is helemaal geen duisternis, schrijft Johannes.",
+            antwoorden: ["licht", "ver", "oud", "stil"],
+            correct: "licht",
+            bijbelplaats: "1 Johannes 1:5"
+        },
+        {
+            vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden, maar met …",
+            antwoorden: ["daden en in waarheid", "dure cadeaus", "een luide stem", "veel beloften"],
+            correct: "daden en in waarheid",
+            bijbelplaats: "1 Johannes 3:18"
+        },
+        {
+            vraag: "Johannes zegt: je kunt niet zeggen dat je van God houdt, die je niet ziet, als je je … haat, die je wél ziet.",
+            antwoorden: ["broeder of zuster", "vijand", "koning", "leraar"],
+            correct: "broeder of zuster",
+            bijbelplaats: "1 Johannes 4:20"
+        },
+        {
+            vraag: "Wat verdrijft volgens Johannes de angst helemaal?",
+            antwoorden: ["De volmaakte liefde", "Veel geld", "Sterke muren", "Een groot leger"],
+            correct: "De volmaakte liefde",
+            bijbelplaats: "1 Johannes 4:18"
+        },
+        {
+            vraag: "Johannes schrijft: wie de Zoon (Jezus) heeft, heeft het …; wie de Zoon niet heeft, heeft het niet.",
+            antwoorden: ["leven", "een huis", "een boek", "een kroon"],
+            correct: "leven",
+            bijbelplaats: "1 Johannes 5:12"
+        },
+        {
+            vraag: "Wat zegt Johannes dat zijn allergrootste blijdschap is?",
+            antwoorden: ["Horen dat zijn ‘kinderen’ in de waarheid leven", "Veel brieven krijgen", "Beroemd worden", "Lang op reis gaan"],
+            correct: "Horen dat zijn ‘kinderen’ in de waarheid leven",
+            bijbelplaats: "3 Johannes 4"
+        },
+        {
+            vraag: "Wat is volgens Johannes het bewijs dat je God echt kent?",
+            antwoorden: ["Dat je doet wat God vraagt", "Dat je heel slim bent", "Dat je heel sterk bent", "Dat je nooit slaapt"],
+            correct: "Dat je doet wat God vraagt",
+            bijbelplaats: "1 Johannes 2:3"
+        },
+        {
+            vraag: "Johannes noemt de gelovigen aan wie hij schrijft vaak liefdevol …",
+            antwoorden: ["‘mijn kinderen’", "‘mijn soldaten’", "‘mijn dienaren’", "‘mijn leerlingen’"],
+            correct: "‘mijn kinderen’",
+            bijbelplaats: "1 Johannes 2:1"
+        },
+        {
+            vraag: "Johannes vergelijkt leven mét God met wandelen in het licht, en leven zonder God met wandelen in het …",
+            antwoorden: ["donker", "water", "vuur", "zand"],
+            correct: "donker",
+            bijbelplaats: "1 Johannes 1:6-7"
+        },
+        {
+            vraag: "Hoe liet God volgens Johannes zijn grote liefde aan ons zien?",
+            antwoorden: ["Hij stuurde zijn enige Zoon naar de wereld", "Hij bouwde een prachtige tempel", "Hij maakte de zon en de maan", "Hij gaf de mensen een koning"],
+            correct: "Hij stuurde zijn enige Zoon naar de wereld",
+            bijbelplaats: "1 Johannes 4:9"
+        },
+        {
+            vraag: "In de tweede en derde brief schrijft Johannes dat hij niet alles met pen en inkt wil opschrijven, omdat hij iets liever doet. Wat?",
+            antwoorden: ["Hen in het echt ontmoeten en spreken", "Een dik boek maken", "Alles geheimhouden", "Iemand anders laten schrijven"],
+            correct: "Hen in het echt ontmoeten en spreken",
+            bijbelplaats: "2 Johannes 12; 3 Johannes 13"
+        }
+    ],
+    advanced: [
+        {
+            vraag: "Waarom kunnen wij volgens Johannes liefhebben? Omdat God …",
+            antwoorden: ["ons eerst heeft liefgehad", "ons dat beveelt", "ons ervoor betaalt", "het ons op school leert"],
+            correct: "ons eerst heeft liefgehad",
+            bijbelplaats: "1 Johannes 4:19"
+        },
+        {
+            vraag: "Hoe mogen wij volgens Johannes genoemd worden, omdat God zo veel van ons houdt?",
+            antwoorden: ["kinderen van God", "dienaren van de koning", "vrienden van de wereld", "helden van het volk"],
+            correct: "kinderen van God",
+            bijbelplaats: "1 Johannes 3:1"
+        },
+        {
+            vraag: "Wat is volgens Johannes de overwinning waarmee we de wereld overwinnen?",
+            antwoorden: ["Ons geloof", "Onze kracht", "Onze slimheid", "Onze moed"],
+            correct: "Ons geloof",
+            bijbelplaats: "1 Johannes 5:4"
+        },
+        {
+            vraag: "Hoe weten we volgens Johannes dat we van de dood naar het leven zijn overgegaan?",
+            antwoorden: ["Omdat we van onze broeders en zusters houden", "Omdat we veel weten", "Omdat we sterk zijn", "Omdat we nooit bang zijn"],
+            correct: "Omdat we van onze broeders en zusters houden",
+            bijbelplaats: "1 Johannes 3:14"
+        },
+        {
+            vraag: "Johannes geeft een test om te weten of iemand de waarheid spreekt: erkent diegene dat Jezus echt … is geworden, een mens van vlees en bloed?",
+            antwoorden: ["mens", "koning", "engel", "profeet"],
+            correct: "mens",
+            bijbelplaats: "1 Johannes 4:2"
+        },
+        {
+            vraag: "Waarom heeft Johannes zijn brief geschreven, zegt hij zelf? Zodat de gelovigen zeker weten dat ze het … hebben.",
+            antwoorden: ["eeuwige leven", "laatste woord", "mooiste huis", "grootste gelijk"],
+            correct: "eeuwige leven",
+            bijbelplaats: "1 Johannes 5:13"
+        },
+        {
+            vraag: "Johannes waarschuwt voor iemand die tégen Christus ingaat en de mensen wil misleiden. Met welk woord noemt hij zo iemand?",
+            antwoorden: ["de antichrist", "de valse profeet", "de tegenstander", "de bedrieger"],
+            correct: "de antichrist",
+            bijbelplaats: "1 Johannes 2:18"
+        },
+        {
+            vraag: "Johannes sluit zijn eerste brief af met een korte, krachtige waarschuwing. Waarvoor moeten de gelovigen oppassen?",
+            antwoorden: ["Voor afgoden (nepgoden die mensen aanbidden)", "Voor wilde dieren", "Voor lange reizen", "Voor drukke steden"],
+            correct: "Voor afgoden (nepgoden die mensen aanbidden)",
+            bijbelplaats: "1 Johannes 5:21"
+        },
+        {
+            vraag: "Johannes schrijft dat iemand die zegt in het licht te leven, maar zijn broeder of zuster haat, in werkelijkheid nog steeds in het … is.",
+            antwoorden: ["donker", "licht", "midden", "begin"],
+            correct: "donker",
+            bijbelplaats: "1 Johannes 2:9"
+        },
+        {
+            vraag: "Johannes zegt: de wereld met al haar verkeerde verlangens gaat voorbij, maar wie de wil van God doet, blijft …",
+            antwoorden: ["leven, voor altijd", "sterk", "beroemd", "de baas"],
+            correct: "leven, voor altijd",
+            bijbelplaats: "1 Johannes 2:17"
+        },
+        {
+            vraag: "Hoe weten we volgens Johannes zeker dat God in ons blijft en wij in Hem? Omdat Hij ons zijn … heeft gegeven.",
+            antwoorden: ["Geest", "boek", "huis", "naam"],
+            correct: "Geest",
+            bijbelplaats: "1 Johannes 4:13"
+        },
+        {
+            vraag: "Johannes schrijft dat we vol vertrouwen tot God mogen bidden. Wat gebeurt er als we iets vragen dat bij zijn wil past?",
+            antwoorden: ["Dan luistert Hij naar ons", "Dan moeten we betalen", "Dan duurt het jaren", "Dan zwijgt Hij"],
+            correct: "Dan luistert Hij naar ons",
+            bijbelplaats: "1 Johannes 5:14"
+        }
+    ],
+    expert: [
+        {
+            vraag: "Johannes noemt Jezus onze … bij de Vader: iemand die voor ons opkomt wanneer we toch verkeerd doen.",
+            antwoorden: ["voorspraak (helper)", "rechter", "soldaat", "dienaar"],
+            correct: "voorspraak (helper)",
+            bijbelplaats: "1 Johannes 2:1"
+        },
+        {
+            vraag: "Johannes stelt iets geruststellends over de regels van God. Gods geboden zijn niet …",
+            antwoorden: ["zwaar (een last)", "nieuw", "geheim", "kort"],
+            correct: "zwaar (een last)",
+            bijbelplaats: "1 Johannes 5:3"
+        },
+        {
+            vraag: "In de derde brief prijst Johannes een man die gastvrij is voor rondreizende gelovigen. Hoe heet hij?",
+            antwoorden: ["Gajus", "Petrus", "Lucas", "Markus"],
+            correct: "Gajus",
+            bijbelplaats: "3 Johannes 1"
+        },
+        {
+            vraag: "In de derde brief noemt Johannes een man die graag de baas speelde en anderen niet wilde ontvangen. Hoe heet hij?",
+            antwoorden: ["Diotrefes", "Demetrius", "Gajus", "Timoteüs"],
+            correct: "Diotrefes",
+            bijbelplaats: "3 Johannes 9"
+        },
+        {
+            vraag: "Johannes waarschuwt de gelovigen: heb de … niet lief, met alle verkeerde dingen die daarbij horen.",
+            antwoorden: ["wereld", "buren", "gemeente", "waarheid"],
+            correct: "wereld",
+            bijbelplaats: "1 Johannes 2:15"
+        },
+        {
+            vraag: "Johannes zegt: als we beweren dat we nooit iets verkeerd doen, dan … we onszelf.",
+            antwoorden: ["bedriegen", "helpen", "prijzen", "verbeteren"],
+            correct: "bedriegen",
+            bijbelplaats: "1 Johannes 1:8"
+        },
+        {
+            vraag: "Wat maakt ons volgens Johannes helemaal schoon van elke zonde?",
+            antwoorden: ["Het bloed van Jezus", "Heel veel goede daden", "Een verre reis", "Mooie woorden"],
+            correct: "Het bloed van Jezus",
+            bijbelplaats: "1 Johannes 1:7"
+        },
+        {
+            vraag: "Johannes geeft een wijze raad: geloof niet zomaar iedereen die zegt namens God te spreken, maar … of het echt bij God past.",
+            antwoorden: ["onderzoek eerst", "lach erom", "zwijg maar", "doe meteen mee"],
+            correct: "onderzoek eerst",
+            bijbelplaats: "1 Johannes 4:1"
+        },
+        {
+            vraag: "Johannes belooft iets moois voor later: als Jezus verschijnt, zullen wij aan Hem … zijn.",
+            antwoorden: ["gelijk", "vreemd", "voorbij", "kwijt"],
+            correct: "gelijk",
+            bijbelplaats: "1 Johannes 3:2"
+        },
+        {
+            vraag: "De schrijver van de tweede en derde brief noemt zichzelf niet bij naam, maar met een titel. Welke?",
+            antwoorden: ["‘de oudste’", "‘de koning’", "‘de profeet’", "‘de herder’"],
+            correct: "‘de oudste’",
+            bijbelplaats: "2 Johannes 1; 3 Johannes 1"
+        },
+        {
+            vraag: "In de derde brief noemt Johannes nóg een goede man, over wie iedereen alleen maar goeds zegt. Hoe heet hij?",
+            antwoorden: ["Demetrius", "Diotrefes", "Gajus", "Theofilus"],
+            correct: "Demetrius",
+            bijbelplaats: "3 Johannes 12"
+        }
+    ]
+};
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
@@ -4005,7 +4962,11 @@ const boekNaarKey = {
     "Filippenzen": "filippenzen",
     "1 & 2 Tessalonicenzen": "tessalonicenzen",
     "Timoteüs & Titus": "timoteus_titus",
-    "Kolossenzen & Filemon": "kolossenzen_filemon"
+    "Kolossenzen & Filemon": "kolossenzen_filemon",
+    "Hebreeën": "hebreeen",
+    "Jakobus": "jakobus",
+    "Petrus & Judas": "petrus_judas",
+    "Brieven van Johannes": "johannesbrieven"
 };
 
 // =========================
@@ -6905,10 +7866,10 @@ const boekenplanken = {
         // vragenpools -> allemaal beschikbaar: false. "Brieven van Johannes"
         // (1-3 Joh.) staat bewust los van het evangelie "Johannes".
         boeken: [
-            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: false, cover: "images/boek-hebreeen.png" },
-            { id: "jakobus",         naam: "Jakobus",              beschikbaar: false, cover: "images/boek-jakobus.png" },
-            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: false, cover: "images/boek-petrus-judas.png" },
-            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: false, cover: "images/boek-johannesbrieven.png" }
+            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: true,  cover: "images/boek-hebreeen.png" },
+            { id: "jakobus",         naam: "Jakobus",              beschikbaar: true,  cover: "images/boek-jakobus.png" },
+            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: true,  cover: "images/boek-petrus-judas.png" },
+            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: true,  cover: "images/boek-johannesbrieven.png" }
         ]
     }
 };
