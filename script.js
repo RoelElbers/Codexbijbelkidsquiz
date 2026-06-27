@@ -5492,6 +5492,10 @@ const boekNaarKey = {
     "Openbaring": "openbaring"
 };
 
+// Alle boeken die schildpunten kunnen opleveren — afgeleid uit boekNaarKey,
+// zodat nieuwe boeken automatisch meetellen (één bron van waarheid).
+const schildBoekKeys = Object.values(boekNaarKey);
+
 // =========================
 // DEMO-MODUS (alleen-kijken)
 // Met ?demo=brons, ?demo=zilver of ?demo=goud in de URL toont het spel alle
@@ -5654,7 +5658,7 @@ function setSchildpuntVerdiend(boekKey, niveau) {
 
 function tellSchildpunten() {
     let totaal = 0;
-    alleBoekKeys.forEach((boekKey) => {
+    schildBoekKeys.forEach((boekKey) => {
         niveauKeys.forEach((niveau) => {
             if (isSchildpuntVerdiend(boekKey, niveau)) totaal++;
         });
@@ -5783,7 +5787,7 @@ function bevestigNieuwSpel() {
     setSpelerNaam(naam);
 
     // Verse start: alle verdiende schildpunten wissen (levels terug naar 0).
-    alleBoekKeys.forEach((boekKey) => {
+    schildBoekKeys.forEach((boekKey) => {
         niveauKeys.forEach((niveau) => {
             localStorage.removeItem(schildKey(boekKey, niveau));
         });
