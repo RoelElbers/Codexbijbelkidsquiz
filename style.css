@@ -272,6 +272,130 @@ height: 22%;
     left: 60.6%;
 }
 
+/* =========================================================================
+   FAKKEL-GLOED — decoratieve, "levende" gloed op de fakkels van het
+   startscherm. Volledig decoratief: de laag heeft pointer-events:none, dus de
+   klikvakken (.boek-zone, menu-zones) en de quizlogica blijven onaangeroerd.
+   De gloeden worden door script.js gebouwd uit het config-blok FAKKEL_GLOED en
+   met left/top in % van #game-container geplaatst — net als .boek-zone — zodat
+   ze in fullscreen én in het kleinere venster op hun plek blijven. Live
+   bijschuiven kan met ?afstel=aan (sleep de gloeden; de nieuwe config wordt in
+   de console gelogd).
+   ========================================================================= */
+.fakkel-laag {
+    position: absolute;
+    inset: 0;
+
+    z-index: 3;                 /* boven de achtergrond; scherm 2 (40) en de
+                                   quiz-overlays (999) bedekken 'm vanzelf. */
+    pointer-events: none;       /* puur decoratief — nooit in de weg */
+    overflow: hidden;
+}
+
+/* Eén gloed: gecentreerd op zijn (left%,top%)-punt binnen het toneel. De
+   centrering zit op deze wrapper; de flikker-animatie (scale) op het kind .vlam,
+   zodat het schalen de centrering niet verstoort. Grootte in % van de
+   container-BREEDTE, zodat de gloed proportioneel meeschaalt. */
+.fakkel-gloed {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    width: var(--fakkel-grootte, 9%);
+    aspect-ratio: 1 / 1;
+
+    pointer-events: none;
+}
+
+.fakkel-gloed > .vlam {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    /* Warm: lichte gele kern -> oranje -> doorzichtig aan de randen. */
+    background: radial-gradient(
+        circle at 50% 45%,
+        rgba(255, 240, 180, 0.85) 0%,
+        rgba(255, 190, 90, 0.55) 28%,
+        rgba(255, 140, 45, 0.30) 52%,
+        rgba(255, 120, 30, 0.10) 72%,
+        rgba(255, 120, 30, 0) 100%
+    );
+
+    mix-blend-mode: screen;     /* telt op bij het licht eronder: oogt als gloed */
+    transform-origin: 50% 60%;  /* schaalt vanuit de vlambasis */
+    will-change: opacity, transform;
+
+    /* Onregelmatige flikker; duur/vertraging komen per fakkel uit de config. */
+    animation: fakkelFlikker var(--fakkel-duur, 2.6s) ease-in-out
+               var(--fakkel-vertraging, 0s) infinite;
+}
+
+/* Alleen opacity + transform: scale, zoals gevraagd. De ongelijke stapjes geven
+   het levende, niet-mechanische vuurgevoel; per fakkel verschilt ook duur. De
+   swing is bewust ruimer (dieper dippen, hoger oplichten) dan een eerste,
+   te-subtiele versie, zodat de flikker ook tegen de lichte, warme achtergrond
+   met screen-blend zichtbaar is — maar nog steeds zacht en smaakvol. */
+@keyframes fakkelFlikker {
+    0%   { opacity: 0.45; transform: scale(1.00); }
+    18%  { opacity: 0.85; transform: scale(1.07); }
+    33%  { opacity: 0.55; transform: scale(1.02); }
+    50%  { opacity: 1.00; transform: scale(1.13); }
+    67%  { opacity: 0.60; transform: scale(1.04); }
+    83%  { opacity: 0.90; transform: scale(1.09); }
+    100% { opacity: 0.45; transform: scale(1.00); }
+}
+
+/* Toegankelijkheid: bij voorkeur voor minder beweging staat de flikkering uit
+   en blijft een rustige, stilstaande gloed over. */
+@media (prefers-reduced-motion: reduce) {
+    .fakkel-gloed > .vlam {
+        animation: none;
+        opacity: 0.7;
+        transform: scale(1.03);
+    }
+}
+
+/* Afstelmodus (?afstel=aan): de laag blijft als geheel door-klikbaar
+   (pointer-events:none), maar de losse gloeden worden pakbaar om ze op de
+   fakkels te schuiven. Een duidelijke omlijning + middenstip maken ook een
+   subtiele gloed precies vindbaar; de geselecteerde gloed licht cyaan op, exact
+   zoals de trofeeën in de Schatkamer-afstelmodus. */
+.fakkel-laag.afstel { pointer-events: none; }
+.fakkel-laag.afstel .fakkel-gloed {
+    pointer-events: auto;
+    cursor: grab;
+    outline: 1.5px dashed rgba(255, 220, 140, 0.9);
+    outline-offset: -1px;
+    border-radius: 50%;
+}
+.fakkel-laag.afstel .fakkel-gloed:active { cursor: grabbing; }
+
+/* Middenstip: pinpoint van de gloedpositie, ook als de gloed zelf subtiel is. */
+.fakkel-laag.afstel .fakkel-gloed::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    background: #ffe08a;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.55);
+    pointer-events: none;
+}
+
+/* Geselecteerde gloed: cyaan markering, identiek aan de trofee-selectie. */
+.fakkel-laag.afstel .fakkel-gloed.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+    box-shadow: 0 0 10px 3px rgba(54, 223, 255, 0.85);
+}
+.fakkel-laag.afstel .fakkel-gloed.afstel-geselecteerd::after {
+    background: #36dfff;
+}
+
 /* =========================
    QUIZ OVERLAY
 ========================= */

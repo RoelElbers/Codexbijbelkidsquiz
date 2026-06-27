@@ -7451,7 +7451,37 @@ function initAfstel(zaalEl) {
         if (nt2El) { nt2El.classList.add("zichtbaar"); nt2El.setAttribute("aria-hidden", "false"); }
     });
     vitrineKnoppen.appendChild(kastKnop);
+
+    // Knop om de fakkelgloeden op het startscherm af te stellen: verberg de
+    // Schatkamer-/scherm-2-overlays zodat het startscherm (met de gloeden)
+    // tevoorschijn komt. De gloed-besturing zit in initFakkelAfstel; die wordt
+    // pas actief als het startscherm zichtbaar is.
+    const fakkelKnop = document.createElement("button");
+    fakkelKnop.type = "button";
+    fakkelKnop.textContent = "Startscherm (fakkels)";
+    fakkelKnop.addEventListener("click", () => {
+        ["zaal-scherm", "schatkamer-scherm"].forEach((id) => {
+            const el = document.getElementById(id);
+            if (el) el.style.display = "none";
+        });
+        if (nt2El) { nt2El.classList.remove("zichtbaar"); nt2El.setAttribute("aria-hidden", "true"); }
+        huidigNtScherm = 1;
+        // Lopende selecties loslaten, zodat de pijltjes niet ook een nu
+        // verborgen trofee/kist verschuiven.
+        deselecteerAlles();
+        infoEl.innerHTML = "Startscherm — klik een <b>fakkelgloed</b> om te selecteren en versleep 'm.";
+    });
+    vitrineKnoppen.appendChild(fakkelKnop);
+
     paneel.appendChild(vitrineKnoppen);
+
+    // Laat alle afstel-selecties (zaal, vitrine, label, scherm-2, kast) los.
+    function deselecteerAlles() {
+        [sel, vitSel, labelSel, boekSel, kastSel].forEach((s) => {
+            if (s) s.classList.remove("afstel-geselecteerd");
+        });
+        sel = vitSel = labelSel = boekSel = kastSel = null;
+    }
 
     function toonInfo() {
         if (!sel) { infoEl.textContent = "Klik een trofee of kist om te selecteren."; return; }
@@ -8033,6 +8063,10 @@ function initAfstel(zaalEl) {
                 uit += "],\n";
             });
         });
+
+        // Fakkelgloeden van het startscherm meenemen in dezelfde export.
+        const fakkelTekst = bouwFakkelConfigTekst();
+        if (fakkelTekst) uit += "\n" + fakkelTekst + "\n";
 
         uitvoerEl.value = uit;
         uitvoerEl.style.display = "block";
@@ -8947,3 +8981,180 @@ if (BETA_MODUS) {
 
 // Afstelmodus (?afstel=aan): open meteen de zaal en activeer de afstel-UI.
 if (afstelModus) openSchatkamer();
+
+// =========================================================================
+// FAKKEL-GLOED — decoratieve, "levende" gloed op de fakkels van het
+// startscherm. Volledig additief en decoratief: de laag krijgt in de CSS
+// pointer-events:none, dus de klikvakken (.boek-zone, menu-zones) en de
+// quizlogica blijven onaangeroerd. De achtergrondafbeelding wordt niet geraakt;
+// dit is enkel een extra laag bovenop het toneel.
+//
+// Posities staan in % van #game-container (net als .boek-zone), zodat ze in
+// fullscreen én in het kleinere venster kloppen — nooit vaste vensterpixels.
+// Stel de waarden hieronder bij om de gloeden precies op de fakkels te leggen,
+// of sleep ze live met ?afstel=aan: bij loslaten wordt de bijgewerkte
+// FAKKEL_GLOED-config in de console gelogd, klaar om hier terug te plakken.
+// =========================================================================
+
+// --- CONFIG: één regel per fakkel. left/top/grootte in % van het toneel
+//     (#game-container); duur/vertraging (seconden) sturen de onregelmatige,
+//     niet-synchrone flikkering. Beginwaarden zijn schattingen op de branders;
+//     fijn bijschuiven met de getallen hieronder of met ?afstel=aan. ---
+const FAKKEL_GLOED = [
+    { left: 6.3,  top: 76.5, grootte: 7, duur: 2.4, vertraging: 0.0 },  // lantaarn linksonder
+    { left: 30.8, top: 52.0, grootte: 9, duur: 3.1, vertraging: 0.7 },  // brander links van de trap
+    { left: 56.4, top: 52.0, grootte: 9, duur: 2.7, vertraging: 1.3 },  // brander rechts van de trap
+    { left: 39.0, top: 33.0, grootte: 8, duur: 3.4, vertraging: 0.4 },  // fakkel links bij de poort
+    { left: 53.0, top: 33.0, grootte: 8, duur: 2.9, vertraging: 1.0 },  // fakkel rechts bij de poort
+];
+
+(function bouwFakkelGloed() {
+    const container = document.getElementById("game-container");
+    if (!container) return;
+
+    const laag = document.createElement("div");
+    laag.className = "fakkel-laag";
+    laag.setAttribute("aria-hidden", "true");
+
+    FAKKEL_GLOED.forEach((f, i) => {
+        const gloed = document.createElement("div");
+        gloed.className = "fakkel-gloed";
+        gloed.style.left = f.left + "%";
+        gloed.style.top = f.top + "%";
+        gloed.style.setProperty("--fakkel-grootte", f.grootte + "%");
+        gloed.style.setProperty("--fakkel-duur", f.duur + "s");
+        gloed.style.setProperty("--fakkel-vertraging", f.vertraging + "s");
+        gloed.dataset.index = i;
+
+        const vlam = document.createElement("div");
+        vlam.className = "vlam";
+        gloed.appendChild(vlam);
+        laag.appendChild(gloed);
+    });
+
+    container.appendChild(laag);
+
+    // Afstelmodus (?afstel=aan): de gloeden meedoen in de afstel-UI. De laag
+    // krijgt de klasse 'afstel' (CSS: markering + pakbaar); de besturing zit in
+    // initFakkelAfstel. Bereikbaar via de knop "Startscherm (fakkels)" in het
+    // afstelpaneel (de Schatkamer-overlays worden dan verborgen).
+    if (new URLSearchParams(location.search).get("afstel") === "aan") {
+        laag.classList.add("afstel");
+        initFakkelAfstel(laag, container);
+    }
+})();
+
+// Afstel-besturing voor de fakkelgloeden — exact dezelfde bediening als de
+// trofeeën: slepen = verplaatsen, pijltjes = fijn (Shift = grof), + / - of
+// scroll = grootte. Alleen actief als het startscherm zichtbaar is (anders ligt
+// een Schatkamer-/scherm-2-overlay eroverheen). Bij elke wijziging verschijnt —
+// licht vertraagd, dus zonder spam — een kant-en-klaar FAKKEL_GLOED-blok in de
+// console, net als "Exporteer posities" bij de trofeeën.
+function initFakkelAfstel(laag, container) {
+    const STAP_FIJN = 0.1;       // pijltjes (Shift = 1%)
+    const SCHAAL_STAP = 0.2;     // + / - of scroll = grootte (zoals de trofeeën)
+    let sel = null;
+    let logTimer = null;
+
+    const klem = (v) => Math.max(0, Math.min(100, v));
+
+    // Startscherm zichtbaar = geen Schatkamer-/scherm-2-overlay eroverheen.
+    function startschermZichtbaar() {
+        const verborgen = (id) => {
+            const el = document.getElementById(id);
+            return !el || el.style.display === "none";
+        };
+        const nt2 = document.getElementById("nt-scherm-2");
+        return verborgen("zaal-scherm") && verborgen("schatkamer-scherm") &&
+               !(nt2 && nt2.classList.contains("zichtbaar"));
+    }
+
+    function selecteer(g) {
+        if (sel) sel.classList.remove("afstel-geselecteerd");
+        sel = g;
+        if (sel) sel.classList.add("afstel-geselecteerd");
+    }
+
+    function wijzigGrootte(g, delta) {
+        const huidig = parseFloat(g.style.getPropertyValue("--fakkel-grootte")) || 8;
+        g.style.setProperty("--fakkel-grootte", Math.max(1, huidig + delta).toFixed(1) + "%");
+    }
+
+    // Debounce: meld de config kort na de laatste wijziging (drag-loslaten,
+    // toets of scroll), zodat de console niet volloopt.
+    function meldConfig() {
+        clearTimeout(logTimer);
+        logTimer = setTimeout(() => console.log(bouwFakkelConfigTekst()), 350);
+    }
+
+    // --- slepen = verplaatsen ---
+    laag.addEventListener("pointerdown", (e) => {
+        if (!startschermZichtbaar()) return;
+        const g = e.target.closest(".fakkel-gloed");
+        if (!g) return;
+        e.preventDefault();
+        selecteer(g);
+        const r = container.getBoundingClientRect();
+        const startL = parseFloat(g.style.left), startT = parseFloat(g.style.top);
+        const muisX = e.clientX, muisY = e.clientY;
+        let gesleept = false;
+        function beweeg(ev) {
+            gesleept = true;
+            const dx = (ev.clientX - muisX) / r.width * 100;
+            const dy = (ev.clientY - muisY) / r.height * 100;
+            g.style.left = klem(startL + dx).toFixed(1) + "%";
+            g.style.top  = klem(startT + dy).toFixed(1) + "%";
+        }
+        function los() {
+            document.removeEventListener("pointermove", beweeg);
+            document.removeEventListener("pointerup", los);
+            if (gesleept) meldConfig();
+        }
+        document.addEventListener("pointermove", beweeg);
+        document.addEventListener("pointerup", los);
+    });
+
+    // --- scrollwiel = grootte ---
+    laag.addEventListener("wheel", (e) => {
+        if (!startschermZichtbaar()) return;
+        const g = e.target.closest(".fakkel-gloed");
+        if (!g) return;
+        e.preventDefault();
+        selecteer(g);
+        wijzigGrootte(g, e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP);
+        meldConfig();
+    }, { passive: false });
+
+    // --- toetsenbord: pijltjes = verplaatsen, + / - = grootte ---
+    document.addEventListener("keydown", (e) => {
+        if (!sel || !startschermZichtbaar()) return;
+        const stap = e.shiftKey ? 1 : STAP_FIJN;
+        const x = parseFloat(sel.style.left), y = parseFloat(sel.style.top);
+        let raak = true;
+        if (e.key === "ArrowLeft")       sel.style.left = klem(x - stap).toFixed(1) + "%";
+        else if (e.key === "ArrowRight") sel.style.left = klem(x + stap).toFixed(1) + "%";
+        else if (e.key === "ArrowUp")    sel.style.top  = klem(y - stap).toFixed(1) + "%";
+        else if (e.key === "ArrowDown")  sel.style.top  = klem(y + stap).toFixed(1) + "%";
+        else if (e.key === "+" || e.key === "=") wijzigGrootte(sel,  SCHAAL_STAP);
+        else if (e.key === "-" || e.key === "_") wijzigGrootte(sel, -SCHAAL_STAP);
+        else raak = false;
+        if (raak) { e.preventDefault(); meldConfig(); }
+    });
+}
+
+// Bouwt de huidige gloed-posities als kant-en-klaar FAKKEL_GLOED-blok (string).
+// Gebruikt door de console-melding én door "Exporteer posities" in het paneel.
+function bouwFakkelConfigTekst() {
+    const laag = document.querySelector(".fakkel-laag");
+    if (!laag) return "";
+    const regels = [...laag.querySelectorAll(".fakkel-gloed")].map((g) => {
+        const left = parseFloat(g.style.left);
+        const top = parseFloat(g.style.top);
+        const grootte = parseFloat(g.style.getPropertyValue("--fakkel-grootte"));
+        const duur = parseFloat(g.style.getPropertyValue("--fakkel-duur"));
+        const vertraging = parseFloat(g.style.getPropertyValue("--fakkel-vertraging"));
+        return `    { left: ${left}, top: ${top}, grootte: ${grootte}, duur: ${duur}, vertraging: ${vertraging} },`;
+    });
+    return "// Fakkelgloed — vervang FAKKEL_GLOED in script.js:\nconst FAKKEL_GLOED = [\n" +
+           regels.join("\n") + "\n];";
+}
