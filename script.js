@@ -5793,9 +5793,10 @@ function bevestigNieuwSpel() {
         });
     });
 
-    // Ook alle behaalde trofeeën wissen: stand terug naar "geen" en de trofee
-    // opnieuw tekenen, zodat elk evangelie weer als donker silhouet verschijnt.
-    alleBoekKeys.forEach((boekKey) => {
+    // Ook alle behaalde trofeeën wissen voor ALLE boeken. De evangelie-trofeeën
+    // worden meteen opnieuw getekend; de NT-trofeeën in de Prijzenkast worden
+    // bij het openen van de Schatkamer opnieuw uit localStorage gelezen.
+    schildBoekKeys.forEach((boekKey) => {
         localStorage.removeItem(`trofee_${boekKey}`);
         toonTrofee(boekKey);
     });
