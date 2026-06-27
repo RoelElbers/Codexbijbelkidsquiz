@@ -3970,7 +3970,7 @@ vragenData["Kolossenzen & Filemon"] = {
 
 // Hebreeën — vragenpool (eerste boek van de Algemene brieven).
 // Formaat gelijk aan de andere boeken: vragenData["Hebreeën"] met drie niveaus
-// (beginner/advanced/expert). 10 beginner, 16 advanced, 16 expert = 42 vragen.
+// (beginner/advanced/expert). 17 beginner, 20 advanced, 16 expert = 53 vragen.
 vragenData["Hebreeën"] = {
     beginner: [
         {
@@ -4032,6 +4032,48 @@ vragenData["Hebreeën"] = {
             antwoorden: ["Hij pleit voor ons bij God", "Hij slaapt", "Hij is ons vergeten", "Hij telt onze fouten"],
             correct: "Hij pleit voor ons bij God",
             bijbelplaats: "Hebreeën 7:25"
+        },
+        {
+            vraag: "Hebreeën zegt dat we door geloof begrijpen dat de hele wereld is ontstaan. Door wat is alles volgens Hebreeën gemaakt?",
+            antwoorden: ["Door het woord van God", "Door een grote knal", "Door de zon", "Door toeval"],
+            correct: "Door het woord van God",
+            bijbelplaats: "Hebreeën 11:3"
+        },
+        {
+            vraag: "Hebreeën spoort aan: doe je best om met iedereen in … te leven.",
+            antwoorden: ["vrede", "ruzie", "afstand", "wantrouwen"],
+            correct: "vrede",
+            bijbelplaats: "Hebreeën 12:14"
+        },
+        {
+            vraag: "Hebreeën zegt dat God niet vergeet wat je doet. Wat onthoudt God volgens Hebreeën?",
+            antwoorden: ["Het goede dat je uit liefde voor anderen doet", "Alleen je fouten", "Hoe sterk je bent", "Hoe slim je bent"],
+            correct: "Het goede dat je uit liefde voor anderen doet",
+            bijbelplaats: "Hebreeën 6:10"
+        },
+        {
+            vraag: "Hebreeën zegt iets bemoedigends over Gods vergeving: als God onze fouten vergeeft, dan … Hij er niet meer aan.",
+            antwoorden: ["denkt", "twijfelt", "vraagt", "lacht"],
+            correct: "denkt",
+            bijbelplaats: "Hebreeën 10:17"
+        },
+        {
+            vraag: "Hebreeën belooft dat er voor Gods volk nog iets moois wacht: een tijd van … bij God.",
+            antwoorden: ["rust", "werk", "straf", "strijd"],
+            correct: "rust",
+            bijbelplaats: "Hebreeën 4:9"
+        },
+        {
+            vraag: "Hebreeën geeft een mooie belofte van God aan de gelovigen. Wat belooft God?",
+            antwoorden: ["Ik zal je nooit in de steek laten", "Ik zal je nooit laten werken", "Ik zal je altijd je zin geven", "Ik zal je nooit iets vragen"],
+            correct: "Ik zal je nooit in de steek laten",
+            bijbelplaats: "Hebreeën 13:5"
+        },
+        {
+            vraag: "Hebreeën zegt dat de gelovigen moeten blijven …, zodat ze ontvangen wat God beloofd heeft.",
+            antwoorden: ["volhouden", "twijfelen", "wachten zonder iets te doen", "opgeven"],
+            correct: "volhouden",
+            bijbelplaats: "Hebreeën 10:36"
         }
     ],
     advanced: [
@@ -4130,6 +4172,30 @@ vragenData["Hebreeën"] = {
             antwoorden: ["voltooit", "beproeft", "beschermt", "beloont"],
             correct: "voltooit",
             bijbelplaats: "Hebreeën 12:2"
+        },
+        {
+            vraag: "Hebreeën zegt dat wij, terwijl we geloven, worden omringd door een grote … van getuigen — al die geloofshelden die ons zijn voorgegaan.",
+            antwoorden: ["wolk", "muur", "rivier", "berg"],
+            correct: "wolk",
+            bijbelplaats: "Hebreeën 12:1"
+        },
+        {
+            vraag: "Hebreeën zegt: denk aan de mensen die het zwaar hebben. Aan wie moeten de gelovigen volgens Hebreeën speciaal denken?",
+            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Alleen aan sterke mensen", "Alleen aan belangrijke mensen", "Aan niemand in het bijzonder"],
+            correct: "Aan mensen die gevangenzitten en slecht behandeld worden",
+            bijbelplaats: "Hebreeën 13:3"
+        },
+        {
+            vraag: "Hebreeën zegt dat Jezus mens werd en stierf, zodat de mensen ergens niet meer bang voor hoeven te zijn. Waarvoor?",
+            antwoorden: ["de dood", "het donker", "de zee", "de koning"],
+            correct: "de dood",
+            bijbelplaats: "Hebreeën 2:14-15"
+        },
+        {
+            vraag: "Hebreeën zegt dat we God geen dieren meer hoeven te offeren. Wat mogen we Hem in plaats daarvan brengen?",
+            antwoorden: ["Een lofzang, woorden waarin we Hem danken", "Een groot bouwwerk", "Een lange reis", "Een zware straf"],
+            correct: "Een lofzang, woorden waarin we Hem danken",
+            bijbelplaats: "Hebreeën 13:15"
         }
     ],
     expert: [
