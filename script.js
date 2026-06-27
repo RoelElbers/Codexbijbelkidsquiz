@@ -3120,8 +3120,8 @@ vragenData["Filippenzen"] = {
 };
 
 // =========================================================================
-// 1 & 2 Tessalonicenzen — vragenpool (36 vragen: beginner 11, advanced 16,
-// expert 9). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
+// 1 & 2 Tessalonicenzen — vragenpool (40 vragen: beginner 11, advanced 16,
+// expert 13). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
 // vragenData["1 & 2 Tessalonicenzen"] met drie niveaus (beginner/advanced/
 // expert). Per vraag: vraag, antwoorden[], correct (exact gelijk aan één
 // antwoord), bijbelplaats. Niveau-indeling zoals goedgekeurd door Roel.
@@ -3347,6 +3347,30 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Hij schrijft de groet eigenhandig", "Hij tekent een vis", "Hij drukt een zegel in was", "Hij schrijft in het Hebreeuws"],
             correct: "Hij schrijft de groet eigenhandig",
             bijbelplaats: "2 Tessalonicenzen 3:17"
+        },
+        {
+            vraag: "Paulus beschrijft hoe de Heer zelf uit de hemel zal neerdalen. Welk geluid hoort daar volgens hem bij?",
+            antwoorden: ["Een bevel, de stem van een aartsengel en een trompet van God", "Het gezang van duizenden engelen", "Een donderslag uit een heldere hemel", "Het ruisen van een grote wind"],
+            correct: "Een bevel, de stem van een aartsengel en een trompet van God",
+            bijbelplaats: "1 Tessalonicenzen 4:16"
+        },
+        {
+            vraag: "In zijn tweede brief waarschuwt Paulus dat er vóór de dag van de Heer eerst iemand verschijnt die zich tegen God verzet en zich boven alles verheft. Hoe noemt Paulus deze figuur?",
+            antwoorden: ["De wetteloze mens", "De valse profeet", "De koning van het zuiden", "De engel van de afgrond"],
+            correct: "De wetteloze mens",
+            bijbelplaats: "2 Tessalonicenzen 2:3-4"
+        },
+        {
+            vraag: "Paulus bemoedigt de gelovigen: de Heer is trouw. Wat zal de Heer volgens Paulus voor hen doen?",
+            antwoorden: ["Hij zal hen sterk maken en beschermen tegen de boze", "Hij zal hen meteen naar de hemel brengen", "Hij zal hun vijanden onmiddellijk straffen", "Hij zal hun een teken aan de hemel geven"],
+            correct: "Hij zal hen sterk maken en beschermen tegen de boze",
+            bijbelplaats: "2 Tessalonicenzen 3:3"
+        },
+        {
+            vraag: "In zijn tweede brief spreekt Paulus mensen aan die niet willen werken. Wat doen deze mensen volgens hem juist wél?",
+            antwoorden: ["Ze bemoeien zich met andermans zaken", "Ze slapen de hele dag", "Ze reizen van stad naar stad", "Ze houden lange toespraken"],
+            correct: "Ze bemoeien zich met andermans zaken",
+            bijbelplaats: "2 Tessalonicenzen 3:11"
         }
     ]
 };
