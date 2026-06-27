@@ -29,7 +29,7 @@ body {
 
     overflow: hidden;
 
-    background-image: url("images/startschermeindversie.png");
+    background-image: url("images/startschermeindversie.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -686,7 +686,7 @@ height: 22%;
     /* Fallback-achtergrond; bouwVitrine() zet de echte achtergrond uit het
        config-object inline (config.achtergrond). Doos en kunst hebben nu
        dezelfde verhouding, dus 'cover' vult zonder vervorming of lege balken. */
-    background-image: url("images/scahtkamer2.png");
+    background-image: url("images/scahtkamer2.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2206,7 +2206,7 @@ height: 22%;
 
     /* Dezelfde lege stage als het startscherm, zodat scherm 2 qua sfeer één
        geheel is; de vier NT-boeken komen er als losse elementen overheen. */
-    background-image: url("images/startschermleeg.png");
+    background-image: url("images/startschermleeg.webp");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -2890,7 +2890,7 @@ height: 22%;
     position: absolute;
     transform: translate(-50%, -50%);
     aspect-ratio: 1800 / 874;    /* verhouding van naambordje.png; hoogte volgt breedte */
-    background: url("images/naambordje.png") center / 100% 100% no-repeat;
+    background: url("images/naambordje.webp") center / 100% 100% no-repeat;
 
     display: flex;
     align-items: center;

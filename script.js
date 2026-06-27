@@ -5367,28 +5367,28 @@ const trofeeVolgorde = ["geen", "brons", "zilver", "goud"];
 // t.o.v. elkaar verschuiven.
 const trofeeAfbeeldingen = {
     matteus: {
-        geen: "images/matteus-zilver.png",
-        brons: "images/matteus-zilver.png",
-        zilver: "images/matteus-zilver.png",
-        goud: "images/matteus-zilver.png"
+        geen: "images/matteus-zilver.webp",
+        brons: "images/matteus-zilver.webp",
+        zilver: "images/matteus-zilver.webp",
+        goud: "images/matteus-zilver.webp"
     },
     marcus: {
-        geen: "images/marcus-zilver.png",
-        brons: "images/marcus-zilver.png",
-        zilver: "images/marcus-zilver.png",
-        goud: "images/marcus-zilver.png"
+        geen: "images/marcus-zilver.webp",
+        brons: "images/marcus-zilver.webp",
+        zilver: "images/marcus-zilver.webp",
+        goud: "images/marcus-zilver.webp"
     },
     lucas: {
-        geen: "images/lucas-zilver.png",
-        brons: "images/lucas-zilver.png",
-        zilver: "images/lucas-zilver.png",
-        goud: "images/lucas-zilver.png"
+        geen: "images/lucas-zilver.webp",
+        brons: "images/lucas-zilver.webp",
+        zilver: "images/lucas-zilver.webp",
+        goud: "images/lucas-zilver.webp"
     },
     johannes: {
-        geen: "images/johannes-zilver.png",
-        brons: "images/johannes-zilver.png",
-        zilver: "images/johannes-zilver.png",
-        goud: "images/johannes-zilver.png"
+        geen: "images/johannes-zilver.webp",
+        brons: "images/johannes-zilver.webp",
+        zilver: "images/johannes-zilver.webp",
+        goud: "images/johannes-zilver.webp"
     }
 };
 
@@ -5405,16 +5405,16 @@ const kistVolgorde = ["vergrendeld", "verdiend"];
 // Welke afbeelding hoort bij welke kist-staat.
 const kistAfbeeldingen = {
     brons: {
-        vergrendeld: "images/kist-brons-schaduw.png",
-        verdiend: "images/kist-brons.png"
+        vergrendeld: "images/kist-brons-schaduw.webp",
+        verdiend: "images/kist-brons.webp"
     },
     zilver: {
-        vergrendeld: "images/kist-zilver-schaduw.png",
-        verdiend: "images/kist-zilver.png"
+        vergrendeld: "images/kist-zilver-schaduw.webp",
+        verdiend: "images/kist-zilver.webp"
     },
     goud: {
-        vergrendeld: "images/kist-goud-schaduw.png",
-        verdiend: "images/kist-goud.png"
+        vergrendeld: "images/kist-goud-schaduw.webp",
+        verdiend: "images/kist-goud.webp"
     }
 };
 
@@ -5716,7 +5716,7 @@ function updateAvatarWeergave() {
     const avatar = getGekozenAvatar();
 
     const img = document.getElementById("avatar-portret");
-    if (img) img.src = `images/Avatars/avatar-${avatar}.png`;
+    if (img) img.src = `images/Avatars/avatar-${avatar}.webp`;
 
     const figuurnaam = document.getElementById("avatar-figuurnaam");
     if (figuurnaam) figuurnaam.innerHTML = avatarNamen[avatar];
@@ -6828,7 +6828,7 @@ function terugCatecheseArtikel() {
 // Geometrie overgenomen van algemeneBrievenVitrine (zelfde 3:4 2x2-opzet);
 // posities zijn ruw — fijn afstellen met ?afstel=aan.
 const evangelienVitrine = {
-    achtergrond: "images/vitrine-evangelien.png",
+    achtergrond: "images/vitrine-evangelien.webp",
     verhouding: "3 / 4",                     // staande 2x2-kunst i.p.v. de standaard 16:9
     trofeeBodem: "12%",                      // onderste rij
     naamMidden:  "94%",                      // naamplaten onderste rij
@@ -6864,7 +6864,7 @@ const evangelienVitrine = {
 // --- Handelingen: één ereplek op een sokkel, centraal. Lege niche toont de
 //     geschilderde sokkel (geen schaduwBijGeen); ruwe posities, fijn met afstel. ---
 const handelingenVitrine = {
-    achtergrond: "images/vitrine-handelingen.png",
+    achtergrond: "images/vitrine-handelingen.webp",
     placeholderTitel: "Handelingen",
     kleurViaFilter: true,
     trofeeBodem: "37%",
@@ -6880,7 +6880,7 @@ const handelingenVitrine = {
 //     in twee rijen van 4. Posities zijn voorlopig/benaderend — exact
 //     uitlijnen op de geschilderde nissen gebeurt later in DevTools. ---
 const paulusbrievenVitrine = {
-    achtergrond: "images/vitrine-paulusbrieven.png",
+    achtergrond: "images/vitrine-paulusbrieven.webp",
     placeholderTitel: "Paulusbrieven",
     kleurViaFilter: true,
     trofeeBodem: "14%",                       // onderste rij
@@ -6906,7 +6906,7 @@ const paulusbrievenVitrine = {
 //     sokkel; posities ruw, fijn met afstel. "1-3 Johannes" = de drie
 //     Johannesbrieven (sleutel trofee_johannesbrieven, NIET trofee_johannes). ---
 const algemeneBrievenVitrine = {
-    achtergrond: "images/vitrine-algemenebrieven.png",
+    achtergrond: "images/vitrine-algemenebrieven.webp",
     verhouding: "3 / 4",                      // staande 2x2-kunst (zoals evangelienVitrine)
     placeholderTitel: "Algemene brieven",
     kleurViaFilter: true,
@@ -6927,7 +6927,7 @@ const algemeneBrievenVitrine = {
 // --- Openbaring: ereplaats — verhoogd altaar met lichtinval (sfeer-klasse).
 //     Lege niche toont de geschilderde sokkel; ruwe posities, fijn met afstel. ---
 const openbaringVitrine = {
-    achtergrond: "images/vitrine-openbaring.png",
+    achtergrond: "images/vitrine-openbaring.webp",
     placeholderTitel: "Openbaring",
     sfeer: "altaar",
     kleurViaFilter: true,
@@ -7032,10 +7032,10 @@ function bouwVitrine(vitrineEl, config) {
             img.hidden = true;                   // lege sokkel uit de achtergrond blijft staan
         } else if (config.kleurViaFilter || niveau === "geen") {
             // Eén basisafbeelding; de stand (of het silhouet) komt uit CSS.
-            img.src = `images/${nis.basis}-zilver.png`;
+            img.src = `images/${nis.basis}-zilver.webp`;
             img.classList.add(niveau === "geen" ? "sk-schaduw" : niveau);
         } else {
-            img.src = `images/${nis.basis}-${niveau}.png`;
+            img.src = `images/${nis.basis}-${niveau}.webp`;
         }
 
         // Bestaat de afbeelding (nog) niet -> generiek schaduwsilhouet.
@@ -7132,7 +7132,7 @@ const schatkamerZalen = {
         // Nieuwe correcte zaal (8/4/4 nissen). De oude staat als
         // images/zaal-nt-oud.png. Posities van zones/kisten/munten worden in
         // een aparte stap op deze nieuwe architectuur uitgelijnd.
-        achtergrond: "images/schatkamer.png",
+        achtergrond: "images/schatkamer.webp",
         // Posities uitgelijnd op de geschilderde nissen van images/schatkamer.png
         // (x = horizontaal midden, top = bovenkant img, hoogte/breedte in % van
         // de 16:9-zaal). Per nis één trofee, voet op de nisbodem.
@@ -7257,7 +7257,7 @@ function bouwZaal(zaalEl, zaal) {
             img.dataset.afstelNaam = kistAfstelNaam[k.kist] || k.kist;
 
             if (k.kist === "diamant") {
-                img.src = "images/kist-diamant.png";
+                img.src = "images/kist-diamant.webp";
                 img.alt = "Verborgen diamanten schatkist";
                 const alleVerdiend = afstelModus || alleKistKeys.every(
                     (kistKey) => getKistStatus(kistKey) === "verdiend"
@@ -7300,7 +7300,7 @@ function bouwZaal(zaalEl, zaal) {
                     img.style.left   = pos.x;
                     img.style.top    = pos.top;
                     img.style.height = pos.hoogte;
-                    img.src = `images/${vitrineNis.basis}-zilver.png`;
+                    img.src = `images/${vitrineNis.basis}-zilver.webp`;
                     img.dataset.afstelKey = sleutel;       // "zoneId:index"
                     img.dataset.afstelNaam = vitrineNis.naam;
 
@@ -7309,7 +7309,7 @@ function bouwZaal(zaalEl, zaal) {
                     img.addEventListener("error", () => {
                         if (img.dataset.standin) { img.remove(); return; }
                         img.dataset.standin = "1";
-                        img.src = `images/${alleBoekKeys[i % alleBoekKeys.length]}-zilver.png`;
+                        img.src = `images/${alleBoekKeys[i % alleBoekKeys.length]}-zilver.webp`;
                     });
 
                     nisHouder.appendChild(img);
@@ -8373,14 +8373,14 @@ const boekenplanken = {
         // rijen van vier. Romeinen heeft als eerste een vragenpool en is
         // ontgrendeld; de overige zeven blijven beschikbaar: false tot hun pool er is.
         boeken: [
-            { id: "romeinen",            naam: "Romeinen",              beschikbaar: true,  cover: "images/boek-romeinen.png" },
-            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: true,  cover: "images/boek-korintiers.png" },
-            { id: "galaten",             naam: "Galaten",               beschikbaar: true,  cover: "images/boek-galaten.png" },
-            { id: "efeziers",            naam: "Efeziërs",              beschikbaar: true,  cover: "images/boek-efeziers.png" },
-            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.png" },
-            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: true,  cover: "images/boek-kolossenzen-filemon.png" },
-            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: true,  cover: "images/boek-tessalonicenzen.png" },
-            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: true,  cover: "images/boek-timoteus-titus.png" }
+            { id: "romeinen",            naam: "Romeinen",              beschikbaar: true,  cover: "images/boek-romeinen.webp" },
+            { id: "korintiers",          naam: "1 & 2 Korintiërs",      beschikbaar: true,  cover: "images/boek-korintiers.webp" },
+            { id: "galaten",             naam: "Galaten",               beschikbaar: true,  cover: "images/boek-galaten.webp" },
+            { id: "efeziers",            naam: "Efeziërs",              beschikbaar: true,  cover: "images/boek-efeziers.webp" },
+            { id: "filippenzen",         naam: "Filippenzen",           beschikbaar: true,  cover: "images/boek-filippenzen.webp" },
+            { id: "kolossenzen-filemon", naam: "Kolossenzen & Filemon", beschikbaar: true,  cover: "images/boek-kolossenzen-filemon.webp" },
+            { id: "tessalonicenzen",     naam: "1 & 2 Tessalonicenzen", beschikbaar: true,  cover: "images/boek-tessalonicenzen.webp" },
+            { id: "timoteus-titus",      naam: "Timoteüs & Titus",      beschikbaar: true,  cover: "images/boek-timoteus-titus.webp" }
         ]
     },
     algemeen: {
@@ -8390,10 +8390,10 @@ const boekenplanken = {
         // vragenpools -> allemaal beschikbaar: false. "Brieven van Johannes"
         // (1-3 Joh.) staat bewust los van het evangelie "Johannes".
         boeken: [
-            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: true,  cover: "images/boek-hebreeen.png" },
-            { id: "jakobus",         naam: "Jakobus",              beschikbaar: true,  cover: "images/boek-jakobus.png" },
-            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: true,  cover: "images/boek-petrus-judas.png" },
-            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: true,  cover: "images/boek-johannesbrieven.png" }
+            { id: "hebreeen",        naam: "Hebreeën",             beschikbaar: true,  cover: "images/boek-hebreeen.webp" },
+            { id: "jakobus",         naam: "Jakobus",              beschikbaar: true,  cover: "images/boek-jakobus.webp" },
+            { id: "petrus-judas",    naam: "Petrus & Judas",       beschikbaar: true,  cover: "images/boek-petrus-judas.webp" },
+            { id: "johannesbrieven", naam: "Brieven van Johannes", beschikbaar: true,  cover: "images/boek-johannesbrieven.webp" }
         ]
     }
 };
@@ -8527,8 +8527,8 @@ function sluitBoekenplank() {
 // bordje. Maten/posities zijn ruwe startwaarden (evangelie-x'en als basis) en
 // worden later fijn afgesteld. De klik roept de bestaande openNtGroep() aan.
 const ntScherm2 = {
-    plateauBron: "images/stenen_plateau.png",
-    bordBron:    "images/naambordje.png",
+    plateauBron: "images/stenen_plateau.webp",
+    bordBron:    "images/naambordje.webp",
     // Gedeelde maten (size) voor boek/plateau/bord/naam — gelden voor alle boeken.
     boekHoogte:     "21%",
     plateauBreedte: "17.4%",
@@ -8541,16 +8541,16 @@ const ntScherm2 = {
     // De boekhoogte is gedeeld (zie boven); per laag wel een eigen bodem.
     // Afstelbaar via ?afstel=aan.
     boeken: [
-        { naam: "Handelingen",        groep: "Handelingen",        boek: "images/handelingenboek.png",
+        { naam: "Handelingen",        groep: "Handelingen",        boek: "images/handelingenboek.webp",
           plateauX: "20.94%", boekX: "16.77%", bordX: "20.47%", naamX: "20.9%",
           boekBodem: "10%", plateauBodem: "-0.58%", bordBodem: "2.3%", naamBodem: "5.52%" },
-        { naam: "Brieven van Paulus", groep: "Brieven van Paulus", boek: "images/brievenvanpaulusboek.png",
+        { naam: "Brieven van Paulus", groep: "Brieven van Paulus", boek: "images/brievenvanpaulusboek.webp",
           plateauX: "35.85%", boekX: "31.51%", bordX: "35.85%", naamX: "35.95%",
           boekBodem: "10%", plateauBodem: "-0.57%", bordBodem: "2.29%", naamBodem: "5.54%" },
-        { naam: "Algemene brieven",   groep: "Algemene brieven",   boek: "images/algemenebrievenboek.png",
+        { naam: "Algemene brieven",   groep: "Algemene brieven",   boek: "images/algemenebrievenboek.webp",
           plateauX: "50.64%", boekX: "46.1%", bordX: "50.9%", naamX: "50.85%",
           boekBodem: "10%", plateauBodem: "-0.66%", bordBodem: "2.3%", naamBodem: "5.33%" },
-        { naam: "Openbaring",         groep: "Openbaring",         boek: "images/apocalypseboek.png",
+        { naam: "Openbaring",         groep: "Openbaring",         boek: "images/apocalypseboek.webp",
           plateauX: "65.75%", boekX: "60.92%", bordX: "66.06%", naamX: "66.45%",
           boekBodem: "10%", plateauBodem: "-0.4%", bordBodem: "2.57%", naamBodem: "5.79%" }
     ]
@@ -8653,7 +8653,7 @@ function kastNissen(vitrineNissen) {
 const nt2Kast = {
     panelen: [
         {
-            achtergrond: "images/nt2-kast-paneel1.png",
+            achtergrond: "images/nt2-kast-paneel1.webp",
             groepen: [
                 { zone: "handelingen",
                   nissen: [
@@ -8691,7 +8691,7 @@ const nt2Kast = {
             ]
         },
         {
-            achtergrond: "images/nt2-kast-paneel2.png",
+            achtergrond: "images/nt2-kast-paneel2.webp",
             groepen: [
                 { zone: "algemenebrieven",
                   nissen: [
@@ -8814,7 +8814,7 @@ function maakKastTrofee(nis, zone) {
     const stand = leesTrofeeStand(nis.sleutel);          // "geen"|"brons"|"zilver"|"goud"
     const img = document.createElement("img");
     img.className = "kast-trofee " + (stand === "geen" ? "sk-schaduw" : stand);
-    img.src = `images/${nis.basis}-zilver.png`;
+    img.src = `images/${nis.basis}-zilver.webp`;
     img.alt = nis.naam;
     img.addEventListener("error", () => {
         const sil = document.createElement("div");
