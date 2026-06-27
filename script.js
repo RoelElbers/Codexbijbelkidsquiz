@@ -2864,7 +2864,7 @@ vragenData["Efeziërs"] = {
 };
 
 // =========================================================================
-// Filippenzen — vragenpool (40 vragen: beginner 10, advanced 15, expert 15)
+// Filippenzen — vragenpool (47 vragen: beginner 17, advanced 15, expert 15)
 // Formaat gelijk aan de andere boeken: vragenData["Filippenzen"] met drie
 // niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
 // correct (exact gelijk aan één antwoord) en bijbelplaats.
@@ -2931,6 +2931,48 @@ vragenData["Filippenzen"] = {
             antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In elke kerk", "In Jeruzalem en Filippi"],
             correct: "In de hemel, op de aarde én onder de aarde",
             bijbelplaats: "Filippenzen 2:10"
+        },
+        {
+            vraag: "Paulus schrijft dat hij alles aankan, dankzij iemand die hem steeds kracht geeft. Wie geeft hem die kracht?",
+            antwoorden: ["Christus", "De keizer", "Zijn vrienden in Filippi", "De engelen"],
+            correct: "Christus",
+            bijbelplaats: "Filippenzen 4:13"
+        },
+        {
+            vraag: "Hoe wil Paulus dat de gelovigen bekendstaan bij alle mensen om hen heen?",
+            antwoorden: ["Als vriendelijke mensen", "Als machtige mensen", "Als sterke mensen", "Als slimme mensen"],
+            correct: "Als vriendelijke mensen",
+            bijbelplaats: "Filippenzen 4:5"
+        },
+        {
+            vraag: "Paulus schrijft over de medewerkers die hem geholpen hebben. Waar staan hun namen volgens hem opgeschreven?",
+            antwoorden: ["In het boek van het leven", "Op een gedenksteen in de tempel", "In de brief aan de Romeinen", "Op de poort van de stad"],
+            correct: "In het boek van het leven",
+            bijbelplaats: "Filippenzen 4:3"
+        },
+        {
+            vraag: "Paulus vertelt waar hij voor bidt: hij hoopt dat één ding bij de gelovigen steeds groter wordt. Wat?",
+            antwoorden: ["Hun liefde", "Hun moed", "Hun aantal", "Hun kracht"],
+            correct: "Hun liefde",
+            bijbelplaats: "Filippenzen 1:9"
+        },
+        {
+            vraag: "Paulus schrijft een korte, bemoedigende zin: 'De Heer is …'. Welk woord hoort er volgens Paulus?",
+            antwoorden: ["dichtbij", "ver weg", "vergeten", "boos"],
+            correct: "dichtbij",
+            bijbelplaats: "Filippenzen 4:5"
+        },
+        {
+            vraag: "Wat doet Paulus telkens als hij aan de gelovigen in Filippi denkt?",
+            antwoorden: ["Hij dankt God voor hen", "Hij maakt zich zorgen om hen", "Hij wordt boos op hen", "Hij vergeet hen bijna"],
+            correct: "Hij dankt God voor hen",
+            bijbelplaats: "Filippenzen 1:3"
+        },
+        {
+            vraag: "Paulus zegt: probeer net zo te denken en te doen als iemand anders. Als wie moeten de gelovigen worden?",
+            antwoorden: ["Als Jezus Christus", "Als koning David", "Als de profeet Mozes", "Als de engelen"],
+            correct: "Als Jezus Christus",
+            bijbelplaats: "Filippenzen 2:5"
         }
     ],
     advanced: [
