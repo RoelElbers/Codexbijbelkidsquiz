@@ -4319,7 +4319,7 @@ vragenData["Jakobus"] = {
 // Petrus & Judas — vragenpool (Algemene brieven).
 // Bundel uit 1 & 2 Petrus en Judas — gedeeld thema: waarschuwing tegen
 // dwaalleraars. Formaat gelijk aan de andere boeken: vragenData["Petrus & Judas"]
-// met drie niveaus. 10 beginner, 14 advanced, 11 expert = 35 vragen.
+// met drie niveaus. 15 beginner, 18 advanced, 12 expert = 45 vragen.
 vragenData["Petrus & Judas"] = {
     beginner: [
         {
@@ -4381,6 +4381,36 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["regen", "wind", "licht", "kou"],
             correct: "regen",
             bijbelplaats: "Judas 12"
+        },
+        {
+            vraag: "Hoe noemen we de eerste vier boeken van het Nieuwe Testament, die vertellen over het leven van Jezus?",
+            antwoorden: ["De evangeliën", "De brieven", "De psalmen", "De profeten"],
+            correct: "De evangeliën",
+            bijbelplaats: "NT algemeen"
+        },
+        {
+            vraag: "Petrus en Judas schreven hun teksten als een brief. Wat is een brief in de Bijbel?",
+            antwoorden: ["Een geschreven boodschap aan gelovigen", "Een lied om te zingen", "Een lijst met wetten", "Een verhaal over de schepping"],
+            correct: "Een geschreven boodschap aan gelovigen",
+            bijbelplaats: "NT algemeen"
+        },
+        {
+            vraag: "Petrus schrijft dat iedereen een gave (talent) van God heeft gekregen. Wat moet je er volgens hem mee doen?",
+            antwoorden: ["Er anderen mee helpen", "Het voor jezelf houden", "Het verstoppen", "Het vergeten"],
+            correct: "Er anderen mee helpen",
+            bijbelplaats: "1 Petrus 4:10"
+        },
+        {
+            vraag: "Petrus schrijft dat Jezus onze fouten (zonden) heeft gedragen. Waar deed hij dat volgens Petrus?",
+            antwoorden: ["Aan het kruis", "In de tempel", "Op een berg", "In de woestijn"],
+            correct: "Aan het kruis",
+            bijbelplaats: "1 Petrus 2:24"
+        },
+        {
+            vraag: "In zijn tweede brief noemt Petrus een man die met zijn gezin door de ark gered werd, toen de grote watervloed kwam. Wie?",
+            antwoorden: ["Noach", "Mozes", "Abraham", "David"],
+            correct: "Noach",
+            bijbelplaats: "2 Petrus 2:5"
         }
     ],
     advanced: [
@@ -4467,6 +4497,30 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
             correct: "Kaïn",
             bijbelplaats: "Judas 11"
+        },
+        {
+            vraag: "Uit hoeveel boeken bestaat het Nieuwe Testament? (Een brief telt ook als een boek.)",
+            antwoorden: ["27", "12", "39", "66"],
+            correct: "27",
+            bijbelplaats: "NT algemeen"
+        },
+        {
+            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar …?",
+            antwoorden: ["melk", "speelgoed", "slaap", "muziek"],
+            correct: "melk",
+            bijbelplaats: "1 Petrus 2:2"
+        },
+        {
+            vraag: "Judas vergelijkt mensen die mooie praatjes hebben maar niets goeds doen met bomen. Wat hebben die bomen volgens hem niet?",
+            antwoorden: ["Vruchten", "Bladeren", "Wortels", "Schaduw"],
+            correct: "Vruchten",
+            bijbelplaats: "Judas 12"
+        },
+        {
+            vraag: "Petrus vergelijkt de gelovigen samen met een gebouw van God. Waarmee vergelijkt hij elke gelovige apart?",
+            antwoorden: ["Met levende stenen", "Met sterke pilaren", "Met houten balken", "Met hoge muren"],
+            correct: "Met levende stenen",
+            bijbelplaats: "1 Petrus 2:5"
         }
     ],
     expert: [
@@ -4535,6 +4589,12 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["sterk maken", "vergeten", "wegsturen", "alleen laten"],
             correct: "sterk maken",
             bijbelplaats: "1 Petrus 5:10"
+        },
+        {
+            vraag: "In welke taal is het Nieuwe Testament oorspronkelijk geschreven?",
+            antwoorden: ["Grieks", "Latijn", "Hebreeuws", "Nederlands"],
+            correct: "Grieks",
+            bijbelplaats: "NT algemeen"
         }
     ]
 };
