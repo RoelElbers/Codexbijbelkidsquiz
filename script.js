@@ -1470,7 +1470,7 @@ vragenData["Johannes"].advanced.push(
 );
 
 // =====================================================================
-// Vragenpool: Romeinen  (Beginner 10 · Gevorderd 14 · Expert 14)
+// Vragenpool: Romeinen  (Beginner 24 · Gevorderd 14 · Expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
 // =====================================================================
@@ -1535,6 +1535,90 @@ vragenData["Romeinen"] = {
             antwoorden: ["Alleen Joodse mensen", "Alleen Romeinse mensen", "Iedereen die gelooft", "Alleen rijke mensen"],
             correct: "Iedereen die gelooft",
             bijbelplaats: "Romeinen 1:16"
+        },
+        {
+            vraag: "Paulus schrijft dat je iets van God kunt herkennen in de wereld om je heen. Waarin kun je volgens hem iets van God zien?",
+            antwoorden: ["In de natuur die Hij gemaakt heeft", "In de gebouwen van de stad", "In de boeken van geleerden", "In de wetten van de keizer"],
+            correct: "In de natuur die Hij gemaakt heeft",
+            bijbelplaats: "Romeinen 1:20"
+        },
+        {
+            vraag: "Paulus zegt dat je door te geloven in Jezus iets moois krijgt in je verhouding met God. Wat?",
+            antwoorden: ["Vrede met God", "Macht over anderen", "Altijd gelijk hebben", "Een zorgeloos leven"],
+            correct: "Vrede met God",
+            bijbelplaats: "Romeinen 5:1"
+        },
+        {
+            vraag: "Paulus schrijft iets bemoedigends voor de mensen die van God houden. Wat doet God volgens hem met alles wat er in hun leven gebeurt?",
+            antwoorden: ["Hij laat het meewerken tot iets goeds", "Hij laat het zomaar gebeuren", "Hij straft hen ervoor", "Hij houdt zich erbuiten"],
+            correct: "Hij laat het meewerken tot iets goeds",
+            bijbelplaats: "Romeinen 8:28"
+        },
+        {
+            vraag: "Paulus schrijft bemoedigend: 'Als God vóór ons is, wie kan dan tégen ons zijn?' Wat wil hij hiermee duidelijk maken?",
+            antwoorden: ["Niemand is sterker dan God, dus we hoeven niet bang te zijn", "Dat we altijd onze zin zullen krijgen", "Dat we nooit meer verdrietig zullen zijn", "Dat we nooit meer hoeven te werken"],
+            correct: "Niemand is sterker dan God, dus we hoeven niet bang te zijn",
+            bijbelplaats: "Romeinen 8:31"
+        },
+        {
+            vraag: "Paulus legt eenvoudig uit hoe je gered wordt: geloof in je hart, en belijd met je mond dat Jezus … is.",
+            antwoorden: ["Heer", "koning van Rome", "een profeet", "een engel"],
+            correct: "Heer",
+            bijbelplaats: "Romeinen 10:9"
+        },
+        {
+            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal …?",
+            antwoorden: ["gered worden", "alles begrijpen", "nooit meer verdrietig zijn", "een teken zien"],
+            correct: "gered worden",
+            bijbelplaats: "Romeinen 10:13"
+        },
+        {
+            vraag: "Hoe ontstaat geloof volgens Paulus?",
+            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen", "Door slim te zijn"],
+            correct: "Door te luisteren naar het woord van God",
+            bijbelplaats: "Romeinen 10:17"
+        },
+        {
+            vraag: "Paulus geeft een mooie raad over meeleven: wees blij met wie blij zijn, en huil met wie verdriet hebben. Maar wat bedoelt hij daar eigenlijk mee?",
+            antwoorden: ["Leef mee met mensen die verdriet hebben", "Ga zelf ook meteen huilen", "Zeg tegen hen dat het wel meevalt", "Laat hen liever even alleen"],
+            correct: "Leef mee met mensen die verdriet hebben",
+            bijbelplaats: "Romeinen 12:15"
+        },
+        {
+            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar …?",
+            antwoorden: ["liefhebben", "gehoorzamen", "bewonderen", "volgen"],
+            correct: "liefhebben",
+            bijbelplaats: "Romeinen 13:8"
+        },
+        {
+            vraag: "Paulus herhaalt een bekende regel uit de Bijbel: heb je … lief als jezelf.",
+            antwoorden: ["naaste", "koning", "leraar", "baas"],
+            correct: "naaste",
+            bijbelplaats: "Romeinen 13:9"
+        },
+        {
+            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de …?",
+            antwoorden: ["hoop", "oorlog", "donkerte", "stilte"],
+            correct: "hoop",
+            bijbelplaats: "Romeinen 15:13"
+        },
+        {
+            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees …?",
+            antwoorden: ["gastvrij", "streng", "stil", "snel"],
+            correct: "gastvrij",
+            bijbelplaats: "Romeinen 12:13"
+        },
+        {
+            vraag: "Paulus zegt: doe niet zomaar mee met alles wat de mensen om je heen doen. Wat moet je volgens hem in plaats daarvan doen?",
+            antwoorden: ["Je van binnen laten vernieuwen door God", "Precies blijven zoals je altijd was", "Gewoon doen wat de meeste mensen doen", "Je nergens iets van aantrekken"],
+            correct: "Je van binnen laten vernieuwen door God",
+            bijbelplaats: "Romeinen 12:2"
+        },
+        {
+            vraag: "Paulus schrijft dat mensen die zich door Gods Geest laten leiden, Gods … zijn.",
+            antwoorden: ["kinderen", "dienaren", "soldaten", "gasten"],
+            correct: "kinderen",
+            bijbelplaats: "Romeinen 8:14"
         }
     ],
     advanced: [
