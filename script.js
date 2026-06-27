@@ -9001,11 +9001,11 @@ if (afstelModus) openSchatkamer();
 //     niet-synchrone flikkering. Beginwaarden zijn schattingen op de branders;
 //     fijn bijschuiven met de getallen hieronder of met ?afstel=aan. ---
 const FAKKEL_GLOED = [
-    { left: 7.0,  top: 86.1, grootte: 6, duur: 2.4, vertraging: 0.0 },  // lantaarn linksonder
-    { left: 27.0, top: 54.1, grootte: 8, duur: 3.1, vertraging: 0.7 },  // brander links-laag (onderaan de trap)
-    { left: 37.1, top: 41.6, grootte: 7, duur: 3.4, vertraging: 0.4 },  // brander links-hoog (boven de balustrade)
-    { left: 66.3, top: 57.1, grootte: 8, duur: 2.7, vertraging: 1.3 },  // brander rechts-laag (onderaan de trap)
-    { left: 58.1, top: 41.4, grootte: 7, duur: 2.9, vertraging: 1.0 },  // brander rechts-hoog (boven de balustrade)
+    { left: 6,    top: 86.7, grootte: 6, duur: 2.4, vertraging: 0.0 },  // lantaarn linksonder
+    { left: 28.1, top: 56.9, grootte: 8, duur: 3.1, vertraging: 0.7 },  // brander links-laag (onderaan de trap)
+    { left: 34.8, top: 44.9, grootte: 7, duur: 3.4, vertraging: 0.4 },  // brander links-hoog (boven de balustrade)
+    { left: 68.2, top: 57.0, grootte: 8, duur: 2.7, vertraging: 1.3 },  // brander rechts-laag (onderaan de trap)
+    { left: 61.9, top: 43.6, grootte: 7, duur: 2.9, vertraging: 1.0 },  // brander rechts-hoog (boven de balustrade)
 ];
 
 (function bouwFakkelGloed() {
