@@ -9158,3 +9158,291 @@ function bouwFakkelConfigTekst() {
     return "// Fakkelgloed — vervang FAKKEL_GLOED in script.js:\nconst FAKKEL_GLOED = [\n" +
            regels.join("\n") + "\n];";
 }
+
+// =========================================================================
+// WOLKENLAAG — trage, driftende wolken in de bovenste hemelband van het
+// startscherm. Zelfde opzet als de fakkelgloed: een decoratieve laag
+// (pointer-events:none) die config-gestuurd wordt opgebouwd, plus een eigen
+// afstelmodus. Puur cosmetisch; raakt de spel-/quizlogica niet.
+//
+// Posities/maten staan in % (breedte in % van het toneel, top in % van de
+// band-hoogte), zodat ze in fullscreen én in het kleinere venster kloppen. Stel
+// live af met ?wolken=aan: per wolk de PNG, driftsnelheid, hoogte en opacity,
+// en exporteer het bijgewerkte WOLKEN-blok om hier terug te plakken.
+// =========================================================================
+
+// --- CONFIG: één regel per wolk. png = welke images/wolk<N>.png (1..5),
+//     top = verticale positie (% van de toneelHOOGTE), breedte = % van het
+//     toneel, duur = driftsnelheid in seconden (groter = trager), vertraging
+//     schuift de startpositie in de cyclus (negatief = al onderweg), opacity
+//     0..1. Verschillende snelheden/opacity geven parallax/diepte.
+//
+//     De wolkenlaag beslaat nu het hele toneel (geen smalle band/masker meer):
+//     de voorgrondlaag (.voorgrond) dekt de wolken af behalve waar lucht is.
+//     Daarom driften de wolken over de VOLLE breedte — óók rechts boven de
+//     prijzenkast — en hoeven ze alleen verticaal in de open hemel (top ~2..28%)
+//     te blijven om mooi uit te komen; lager belanden ze toch achter de
+//     voorgrond. ---
+const WOLKEN = [
+    // Zeven wolken, verticaal gespreid over de hemel. De (negatieve) vertragingen
+    // zijn zo gekozen dat er al meerdere wolken in beeld staan op t=0 — zo is de
+    // hemel bij binnenkomst meteen gevuld i.p.v. leeg met één langzaam opkomende
+    // wolk. Verschillende duur/opacity geven parallax/diepte.
+    // Duur/vertraging horen bij de nieuwe, volledige oversteek (zie bouwWolken:
+    // elke wolk reist nu van buiten beeld links tot buiten beeld rechts). De duur
+    // is zó gekozen dat de schermsnelheid overeenkomt met de eerdere drift; de
+    // (negatieve) vertragingen zetten op t=0 meerdere wolken verspreid over de breedte.
+    // Verticaal gespreid over de HELE open hemel — boven én beneden. De
+    // herstelde voorgrond is transparant tot ~38% hoogte, dus lage wolken (top
+    // 15..22%) drijven zichtbaar in de stadband, achter de verre gebouwen; hoge
+    // wolken (negatieve top) schijnen langs de schone bovenrand (de laag is
+    // overflow:hidden, dus de wolk klipt daar netjes). Alle vijf PNG's (wolk1..5)
+    // in gebruik; wolk1 en wolk5 elk tweemaal voor rustige variatie.
+    { png: 1, top: -17, breedte: 26, duur: 50, vertraging: -30, opacity: 0.8  },
+    { png: 3, top:  -7, breedte: 20, duur: 62, vertraging:  -8, opacity: 0.7  },
+    { png: 5, top:   2, breedte: 22, duur: 56, vertraging: -45, opacity: 0.7  },
+    { png: 2, top:   8, breedte: 18, duur: 66, vertraging: -18, opacity: 0.72 },
+    { png: 1, top:  15, breedte: 16, duur: 48, vertraging: -22, opacity: 0.72 },
+    { png: 4, top:  18, breedte: 17, duur: 70, vertraging: -38, opacity: 0.7  },
+    { png: 5, top:  22, breedte: 20, duur: 54, vertraging: -52, opacity: 0.7  },
+];
+
+// Bouwt één wolken-laag (een .wolken-laag-div met .wolk-img's) uit een config.
+// Herbruikbaar per scherm via 'prefix' (uniek per scène), zodat scherm 1 en
+// scherm 2 elk hun eigen laag + keyframes hebben zonder naambotsing.
+//
+// VERHARDING tegen "stilvallende" wolken: elke wolk krijgt een EIGEN, letterlijk
+// genoemde @keyframes met VASTE begin-/eindwaarden (geen var() meer ín de
+// keyframe). Een var() binnen @keyframes wordt door sommige engines pas ná het
+// cascaderen gesubstitueerd en kan dan stilvallen; door de x0/x1-waarden hier in
+// JS uit te rekenen en als letterlijke percentages in de keyframe te gieten, is
+// de animatie volledig standaard CSS en kan ze niet meer door late substitutie
+// vastlopen. De keyframes komen in één <style> in <head>. Geeft de laag terug.
+function bouwWolkenLaag(config, prefix) {
+    const laag = document.createElement("div");
+    laag.className = "wolken-laag";
+    laag.setAttribute("aria-hidden", "true");
+
+    let keyframeCss = "";
+    config.forEach((w, i) => {
+        const img = document.createElement("img");
+        img.className = "wolk";
+        img.src = "images/wolk" + w.png + ".png";
+        img.alt = "";
+        img.style.setProperty("--wolk-top", w.top + "%");
+        img.style.setProperty("--wolk-breedte", w.breedte + "%");
+        img.style.setProperty("--wolk-duur", w.duur + "s");
+        img.style.setProperty("--wolk-vertraging", w.vertraging + "s");
+        img.style.setProperty("--wolk-opacity", w.opacity);
+
+        // Begin-/eindtranslatie voor de drift, berekend uit de breedte. translateX
+        // is relatief aan de eigen breedte van de wolk; door x0/x1 per wolk te
+        // bepalen maakt élke wolk dezelfde reis over het scherm: van net buiten
+        // de linkerrand (rechterrand van de wolk op −marge) tot net buiten de
+        // rechterrand (linkerrand van de wolk op 100%+marge). Zo komen wolken de
+        // hele breedte door — óók achter de prijzenkast — en springen ze pas
+        // buiten beeld terug (geen zichtbare plop). marge = 5% van het toneel.
+        const wFrac = w.breedte / 100;
+        const marge = 0.05;
+        const x0 = -100 - (100 * marge) / wFrac;   // linkerrand: wolk volledig links buiten beeld
+        const x1 = (100 * (1 + marge)) / wFrac;     // rechterrand: wolk volledig rechts buiten beeld
+        // --wolk-x0/x1 blijven als variabele staan (afstel/export leest ze niet,
+        // maar ze documenteren de reis en dienen als fallback voor de gedeelde
+        // keyframe in style.css). De daadwerkelijke drift loopt via de letterlijke
+        // keyframe hieronder.
+        img.style.setProperty("--wolk-x0", x0.toFixed(1) + "%");
+        img.style.setProperty("--wolk-x1", x1.toFixed(1) + "%");
+
+        const animName = "wolkDrift-" + prefix + i;
+        keyframeCss +=
+            "@keyframes " + animName + " { from { transform: translateX(" +
+            x0.toFixed(1) + "%); } to { transform: translateX(" +
+            x1.toFixed(1) + "%); } }\n";
+        img.style.animationName = animName;   // overschrijft de var()-keyframe uit style.css
+
+        img.dataset.index = i;
+        img.dataset.png = w.png;
+        laag.appendChild(img);
+    });
+
+    if (keyframeCss) {
+        const styleEl = document.createElement("style");
+        styleEl.className = "wolk-keyframes";
+        styleEl.dataset.prefix = prefix;
+        styleEl.textContent = keyframeCss;
+        document.head.appendChild(styleEl);
+    }
+
+    return laag;
+}
+
+(function bouwWolken() {
+    const container = document.getElementById("game-container");
+    if (!container) return;
+
+    const laag = bouwWolkenLaag(WOLKEN, "s1-");
+    container.appendChild(laag);
+
+    // Afstelmodus (?wolken=aan): bouw het bedieningspaneel rechtsboven.
+    if (new URLSearchParams(location.search).get("wolken") === "aan") {
+        initWolkenAfstel(laag);
+    }
+})();
+
+// --- Scherm 2 (#nt-scherm-2): dezelfde levende hemel als scherm 1 (Optie A) ---
+// Scherm 2 krijgt dezelfde drie-laags hemel als scherm 1, áchter de NT-inhoud:
+// een achtergrondplaat → een EIGEN wolken-laag (prefix "s2-", dus eigen
+// letterlijke keyframes, geen naambotsing met scherm 1) → een transparante
+// voorgrond. Alles in één wrapper (.nt2-hemel) met een eigen stapelcontext
+// (z-index 0), zodat de hemel volledig onder de NT-boeken (z-index 1) en pijlen
+// (z-index 5) blijft. Volgorde gegarandeerd door de append-volgorde + de
+// bestaande z-index van .wolken-laag (2) en .voorgrond (3).
+//
+// BELANGRIJK — eigen platen voor scherm 2 (NIET die van scherm 1):
+// De scherm-1-platen hebben de evangelie-boeken én de gevulde prijzenkast
+// INGEBAKKEN; die zouden achter de losse NT-boeken/NT-kast uit piepen
+// (boekendubbeling). Daarom gebruikt scherm 2 de LEGE stage:
+//   - bg  = startschermleeg.webp           (lege plateaus, lege kast)
+//   - voorgrond = voorgrond_scherm2_transparante_lucht.png
+//                 (diezelfde lege stage met de lucht weggesneden/transparant)
+// Beide zijn dezelfde scène, dus de cut-rand valt onzichtbaar weg en alleen de
+// driftende wolken komen in de open lucht erbij. Geen ingebakken boeken = geen
+// dubbeling. De gedeelde scherm-1-voorgrond blijft hierdoor onaangeroerd.
+(function bouwWolkenScherm2() {
+    const scherm2 = document.getElementById("nt-scherm-2");
+    if (!scherm2) return;
+
+    const hemel = document.createElement("div");
+    hemel.className = "nt2-hemel";
+    hemel.setAttribute("aria-hidden", "true");
+
+    const bg = document.createElement("img");
+    bg.className = "nt2-hemel-bg";
+    bg.src = "images/startschermleeg.webp";   // lege stage (geen ingebakken boeken)
+    bg.alt = "";
+
+    const laag = bouwWolkenLaag(WOLKEN, "s2-");
+
+    const voor = document.createElement("img");
+    voor.className = "voorgrond";          // hergebruikt de bestaande voorgrond-stijl (z-index 3)
+    voor.src = "images/voorgrond_scherm2_transparante_lucht.png";  // lege stage, lucht transparant
+    voor.alt = "";
+
+    hemel.appendChild(bg);
+    hemel.appendChild(laag);
+    hemel.appendChild(voor);
+
+    // Vooraan in #nt-scherm-2 zetten, vóór de NT-inhoud, zodat de hemel erachter ligt.
+    scherm2.insertBefore(hemel, scherm2.firstChild);
+})();
+
+// Afstel-besturing voor de wolken (?wolken=aan). Anders dan de fakkels (die je
+// sleept) bewegen de wolken, dus stellen we ze af via een paneel met schuiven:
+// per wolk de PNG (1..5), driftsnelheid, verticale positie en opacity. Elke
+// wijziging past meteen de live CSS-variabelen aan. "Exporteer instellingen"
+// drukt het bijgewerkte WOLKEN-blok af (in het paneel én in de console).
+function initWolkenAfstel(laag) {
+    const wolken = [...laag.querySelectorAll(".wolk")];
+
+    const paneel = document.createElement("div");
+    paneel.id = "wolken-paneel";
+
+    let html = "<strong>WOLKEN-AFSTELMODUS</strong>";
+    wolken.forEach((img, i) => {
+        const top = parseFloat(img.style.getPropertyValue("--wolk-top"));
+        const duur = parseFloat(img.style.getPropertyValue("--wolk-duur"));
+        const opac = parseFloat(img.style.getPropertyValue("--wolk-opacity"));
+        const png = img.dataset.png;
+
+        let pngKnoppen = "";
+        for (let n = 1; n <= 5; n++) {
+            pngKnoppen += '<button type="button" data-wolk="' + i + '" data-png="' + n +
+                '" class="' + (String(n) === String(png) ? "actief" : "") + '">' + n + "</button>";
+        }
+
+        html +=
+            '<div class="wolk-rij">' +
+            '<div class="wolk-kop">Wolk ' + (i + 1) + "</div>" +
+            '<label>PNG (wolk&lt;N&gt;.png)</label>' +
+            '<div class="wolk-png-keuze">' + pngKnoppen + "</div>" +
+            '<label>Driftsnelheid: <span id="w-duur-val-' + i + '">' + duur + "</span>s (groter = trager)</label>" +
+            '<input type="range" min="15" max="220" step="1" value="' + duur + '" data-wolk="' + i + '" data-veld="duur">' +
+            '<label>Verticale positie: <span id="w-top-val-' + i + '">' + top + "</span>% van de hoogte</label>" +
+            '<input type="range" min="0" max="100" step="1" value="' + top + '" data-wolk="' + i + '" data-veld="top">' +
+            '<label>Opacity: <span id="w-opac-val-' + i + '">' + opac + "</span></label>" +
+            '<input type="range" min="0" max="1" step="0.05" value="' + opac + '" data-wolk="' + i + '" data-veld="opacity">' +
+            "</div>";
+    });
+
+    html +=
+        '<div class="wolk-knoppen">' +
+        '<button type="button" class="hoofdknop" id="wolken-export">Exporteer instellingen</button>' +
+        "</div>" +
+        '<textarea id="wolken-uitvoer" readonly style="display:none"></textarea>';
+
+    paneel.innerHTML = html;
+    document.body.appendChild(paneel);
+
+    // PNG-keuze: wissel de bron en markeer de actieve knop.
+    paneel.querySelectorAll(".wolk-png-keuze button").forEach((knop) => {
+        knop.addEventListener("click", () => {
+            const i = +knop.dataset.wolk;
+            const n = knop.dataset.png;
+            const img = wolken[i];
+            img.src = "images/wolk" + n + ".png";
+            img.dataset.png = n;
+            // Actieve markering binnen deze rij verzetten.
+            knop.parentElement.querySelectorAll("button").forEach((b) => b.classList.remove("actief"));
+            knop.classList.add("actief");
+        });
+    });
+
+    // Schuiven: pas de live CSS-variabele direct aan en werk het labelgetal bij.
+    paneel.querySelectorAll('input[type="range"]').forEach((schuif) => {
+        schuif.addEventListener("input", () => {
+            const i = +schuif.dataset.wolk;
+            const veld = schuif.dataset.veld;
+            const img = wolken[i];
+            const v = schuif.value;
+            if (veld === "duur") {
+                img.style.setProperty("--wolk-duur", v + "s");
+                document.getElementById("w-duur-val-" + i).textContent = v;
+            } else if (veld === "top") {
+                img.style.setProperty("--wolk-top", v + "%");
+                document.getElementById("w-top-val-" + i).textContent = v;
+            } else if (veld === "opacity") {
+                img.style.setProperty("--wolk-opacity", v);
+                document.getElementById("w-opac-val-" + i).textContent = v;
+            }
+        });
+    });
+
+    // Exporteer: toon het kant-en-klare WOLKEN-blok in het paneel én de console.
+    paneel.querySelector("#wolken-export").addEventListener("click", () => {
+        const tekst = bouwWolkenConfigTekst(laag);
+        const uit = paneel.querySelector("#wolken-uitvoer");
+        uit.style.display = "block";
+        uit.value = tekst;
+        uit.select();
+        console.log(tekst);
+    });
+}
+
+// Bouwt de huidige wolk-instellingen als kant-en-klaar WOLKEN-blok (string),
+// gebruikt door "Exporteer instellingen". Leest per wolk de live waarden uit de
+// DOM (png + CSS-variabelen), zodat de export exact weergeeft wat je ziet.
+function bouwWolkenConfigTekst(laag) {
+    laag = laag || document.querySelector(".wolken-laag");
+    if (!laag) return "";
+    const regels = [...laag.querySelectorAll(".wolk")].map((img) => {
+        const png = img.dataset.png;
+        const top = parseFloat(img.style.getPropertyValue("--wolk-top"));
+        const breedte = parseFloat(img.style.getPropertyValue("--wolk-breedte"));
+        const duur = parseFloat(img.style.getPropertyValue("--wolk-duur"));
+        const vertraging = parseFloat(img.style.getPropertyValue("--wolk-vertraging"));
+        const opacity = parseFloat(img.style.getPropertyValue("--wolk-opacity"));
+        return `    { png: ${png}, top: ${top}, breedte: ${breedte}, duur: ${duur}, vertraging: ${vertraging}, opacity: ${opacity} },`;
+    });
+    return "// Wolken — vervang WOLKEN in script.js:\nconst WOLKEN = [\n" +
+           regels.join("\n") + "\n];";
+}

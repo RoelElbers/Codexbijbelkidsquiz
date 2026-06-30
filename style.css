@@ -29,7 +29,7 @@ body {
 
     overflow: hidden;
 
-    background-image: url("images/startschermeindversie.webp");
+    background-image: url("images/startschermzonderwolken.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -286,7 +286,8 @@ height: 22%;
     position: absolute;
     inset: 0;
 
-    z-index: 3;                 /* boven de achtergrond; scherm 2 (40) en de
+    z-index: 4;                 /* boven de voorgrond (3), zodat de gloed over de
+                                   architectuur schijnt; scherm 2 (40) en de
                                    quiz-overlays (999) bedekken 'm vanzelf. */
     pointer-events: none;       /* puur decoratief — nooit in de weg */
     overflow: hidden;
@@ -394,6 +395,173 @@ height: 22%;
 }
 .fakkel-laag.afstel .fakkel-gloed.afstel-geselecteerd::after {
     background: #36dfff;
+}
+
+/* =========================================================================
+   WOLKENLAAG — trage, driftende wolken over de hele hemel van het startscherm.
+   Net als de fakkelgloed puur decoratief: pointer-events:none, dus knoppen
+   eronder blijven werken. Ligt op z-index 2 (boven de achtergrond, onder de
+   voorgrond op 3 en de fakkels op 4), dus scherm 2 (40) en de quiz-overlays
+   (999) bedekken 'm vanzelf.
+
+   De panelen, banieren, titel en boeken zitten ín de achtergrondafbeelding
+   geschilderd; er bestaat dus geen echte laag "tussen" hen en de lucht. De
+   afscherming gebeurt nu door een VOORGRONDLAAG (.voorgrond, z-index 3): dat is
+   exact dezelfde scène, maar met alléén de lucht weggesneden (transparant). Die
+   ligt over de wolken en dekt ze af behalve waar lucht is. Daardoor mogen de
+   wolken over de VOLLE breedte én hoogte driften — óók rechts boven de
+   prijzenkast — zonder ooit architectuur of UI te bedekken. (Eerder deed een
+   fade-masker dit, maar dat maakte de rechterkant een dode hoek.)
+
+   Live afstellen met ?wolken=aan (eigen paneel, los van de trofee-afstelmodus).
+   ========================================================================= */
+.wolken-laag {
+    position: absolute;
+    inset: 0;                   /* volle breedte én hoogte van het toneel */
+
+    z-index: 2;                 /* boven de achtergrond, onder de voorgrond (3) */
+    pointer-events: none;       /* puur decoratief — nooit in de weg */
+    overflow: hidden;           /* wolken die uit beeld driften worden afgekapt */
+
+    /* GEEN fade-masker meer. De afscherming gebeurt nu door de voorgrondlaag
+       (.voorgrond, z-index 3): dat is dezelfde scène met alléén de lucht
+       weggesneden (transparant). Wolken driften dus over de hele hemel — óók
+       achter het logo, de banieren, de prijzenkast en het muzieknootje — maar
+       worden door de voorgrond afgedekt zodra ze buiten de open lucht komen.
+       Zo bedekken ze nooit architectuur of UI, en is de rechterkant niet langer
+       een dode hoek. */
+}
+
+/* Voorgrondlaag: de volledige startscherm-scène met de lucht eruit gesneden
+   (transparant). Ligt exact over de achtergrond en dekt de wolken eronder af,
+   behalve waar lucht is. Daardoor lijken de wolken áchter alles te drijven. */
+.voorgrond {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+
+    z-index: 3;                 /* boven de wolken (2), onder de fakkels (4) */
+    pointer-events: none;       /* puur decoratief — klikzones liggen erboven */
+}
+
+/* Eén wolk: absoluut in de band, traag horizontaal driftend. Alleen transform
+   (translateX) en opacity bewegen, dus de animatie blijft GPU-versneld. Breedte
+   in % van de container, verticale positie (top) in % van de band-hoogte. */
+.wolk {
+    position: absolute;
+    top: var(--wolk-top, 10%);
+    left: 0;
+
+    width: var(--wolk-breedte, 22%);
+    height: auto;
+
+    opacity: var(--wolk-opacity, 0.8);
+    will-change: transform;
+
+    /* Lange, lineaire, oneindige cyclus; duur (snelheid) en vertraging per wolk
+       uit de config, zodat ze met verschillende snelheden een parallax geven.
+       Bewust als losse longhand-properties (niet de 'animation'-shorthand): een
+       var() in de shorthand wordt door sommige engines pas ná het cascaderen
+       gesubstitueerd en kan dan stilvallen. Verticale positie loopt via 'top'
+       (hierboven), volledig los van deze translateX-drift, zodat de twee elkaar
+       nooit overschrijven. */
+    animation-name: wolkDrift;
+    animation-duration: var(--wolk-duur, 100s);
+    animation-timing-function: linear;
+    animation-delay: var(--wolk-vertraging, 0s);
+    animation-iteration-count: infinite;
+}
+
+/* FALLBACK-keyframe. Het hoofdpad loopt NIET meer via deze gedeelde keyframe:
+   script.js (bouwWolkenLaag) genereert per wolk een EIGEN keyframe met
+   letterlijke begin-/eindwaarden en zet animation-name daar inline op. Reden:
+   een var() binnen @keyframes wordt door sommige engines pas ná het cascaderen
+   gesubstitueerd en kan dan stilvallen — precies het "wolken stoppen"-euvel.
+   Letterlijke per-wolk keyframes zijn volledig standaard en kunnen niet
+   vastlopen. Deze var()-variant blijft alleen staan als vangnet voor het geval
+   het script de animation-name niet zou zetten.
+   De begin-/eindtranslatie staat NIET vast op een vaste %: translateX is
+   relatief aan de eigen breedte van de wolk (16–28% van het toneel), dus een
+   vaste % zou per wolk een andere afstand afleggen — daardoor kwamen wolken
+   vroeger niet verder dan ~82% en "ploppen" ze terug vóór de rechterkant.
+   Daarom rekent script.js per wolk --wolk-x0/--wolk-x1 uit zijn breedte uit, zó
+   dat élke wolk dezelfde reis maakt: net buiten beeld links binnen en pas
+   volledig buiten beeld rechts (voorbij de prijzenkast) eruit. */
+@keyframes wolkDrift {
+    from { transform: translateX(var(--wolk-x0, -120%)); }
+    to   { transform: translateX(var(--wolk-x1, 440%)); }
+}
+
+/* NB: bewust GEEN @media (prefers-reduced-motion: reduce)-uitschakeling meer.
+   Die regel zette de drift hard uit (animation:none), waardoor de wolken stil
+   bleven staan op systemen met "animatie-effecten uit" (bv. Windows) — precies
+   het gemelde euvel. De drift is traag, zacht en niet-flikkerend en is een
+   kernonderdeel van het startscherm; daarom laten we hem altijd lopen. Wil je de
+   OS-voorkeur tóch respecteren, dan kan hier een gedempte variant terugkomen. */
+
+/* Afstelpaneel voor de wolken (?wolken=aan). Zelfde look als #afstel-paneel,
+   maar rechtsboven zodat het de trofee-afstelmodus niet in de weg zit. */
+#wolken-paneel {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    z-index: 3000;
+    width: 300px;
+    max-height: 92vh;
+    overflow: auto;
+    padding: 10px 12px;
+    background: rgba(8, 14, 30, 0.93);
+    color: #e8eefc;
+    font-family: ui-monospace, Menlo, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.45;
+    border: 1px solid #36dfff;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+#wolken-paneel strong { color: #36dfff; letter-spacing: 0.5px; }
+#wolken-paneel .wolk-rij {
+    margin-top: 10px;
+    padding-top: 8px;
+    border-top: 1px solid #2a466e;
+}
+#wolken-paneel .wolk-kop { color: #36dfff; margin-bottom: 4px; }
+#wolken-paneel label { display: block; margin-top: 5px; }
+#wolken-paneel input[type="range"] { width: 100%; }
+#wolken-paneel .wolk-png-keuze { display: flex; gap: 4px; margin-top: 3px; }
+#wolken-paneel .wolk-png-keuze button {
+    flex: 1;
+    font: 11px ui-monospace, Menlo, Consolas, monospace;
+    padding: 4px 0;
+    color: #08101e;
+    background: #2a466e;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#wolken-paneel .wolk-png-keuze button.actief { background: #36dfff; }
+#wolken-paneel .wolk-knoppen { margin-top: 10px; display: flex; gap: 6px; }
+#wolken-paneel button.hoofdknop {
+    font: 11px ui-monospace, Menlo, Consolas, monospace;
+    padding: 6px 9px;
+    color: #08101e;
+    background: #36dfff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#wolken-paneel button.hoofdknop:hover { background: #6fe9ff; }
+#wolken-paneel #wolken-uitvoer {
+    width: 100%;
+    height: 150px;
+    margin-top: 8px;
+    font: 10px ui-monospace, Menlo, Consolas, monospace;
+    color: #d8e2f4;
+    background: #06101f;
+    border: 1px solid #2a466e;
+    border-radius: 5px;
+    resize: vertical;
 }
 
 /* =========================
@@ -2328,12 +2496,9 @@ height: 22%;
     align-items: center;
     justify-content: center;
 
-    /* Dezelfde lege stage als het startscherm, zodat scherm 2 qua sfeer één
-       geheel is; de vier NT-boeken komen er als losse elementen overheen. */
-    background-image: url("images/startschermleeg.webp");
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* Geen platte achtergrondplaat meer: scherm 2 krijgt dezelfde LEVENDE hemel
+       als scherm 1 via .nt2-hemel (door script.js ingevoegd) — wolkloze plaat +
+       eigen wolken-laag + transparante voorgrond. Zie bouwWolkenScherm2(). */
 
     opacity: 0;
     visibility: hidden;
@@ -2346,6 +2511,39 @@ height: 22%;
     visibility: visible;
     pointer-events: auto;
     transition: opacity 0.5s ease, visibility 0s;
+}
+
+/* Levende hemel achter de NT-inhoud van scherm 2 (Optie A — zelfde opzet als
+   scherm 1). Eigen stapelcontext (z-index 0) zodat de drie hemellagen
+   (achtergrond → wolken z-index 2 → voorgrond z-index 3) volledig ónder de
+   NT-boeken (z-index 1) en de pijlen (z-index 5) blijven. overflow:hidden klipt
+   de driftende wolken netjes aan de rand. De wolken-laag en .voorgrond hierin
+   hergebruiken exact de bestaande klassen van scherm 1. */
+.nt2-hemel {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+.nt2-hemel-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;                 /* onder de wolken (2) en de voorgrond (3) */
+    object-fit: fill;
+    pointer-events: none;
+}
+
+/* Scherm 2 staat tegen een lichtere, al licht bewolkte hemel (de lege stage),
+   waar de zilverig-koele wolken-PNG's anders wat wegvallen. Daarom hier ietsje
+   helderder. ALLEEN scherm 2 (deze scope): de wolk-PNG's en scherm 1 blijven
+   ongewijzigd. brightness schaalt alle kanalen gelijk, dus de koele blauwtint
+   blijft; de lichte contrast houdt de structuur vast (geen egaal wit).
+   Te zacht? Verhoog de brightness-waarde richting 1.40. */
+.nt2-hemel .wolk {
+    filter: brightness(1.25) contrast(1.04);
 }
 
 .nt-placeholder-titel {
