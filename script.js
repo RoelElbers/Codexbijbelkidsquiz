@@ -9299,15 +9299,16 @@ function bouwWolkenLaag(config, prefix) {
 // bestaande z-index van .wolken-laag (2) en .voorgrond (3).
 //
 // BELANGRIJK — eigen platen voor scherm 2 (NIET die van scherm 1):
-// De scherm-1-platen hebben de evangelie-boeken én de gevulde prijzenkast
-// INGEBAKKEN; die zouden achter de losse NT-boeken/NT-kast uit piepen
-// (boekendubbeling). Daarom gebruikt scherm 2 de LEGE stage:
-//   - bg  = startschermleeg.webp           (lege plateaus, lege kast)
+// Scherm 2 krijgt de DIEPBLAUWE AVONDHEMEL van scherm 1. De scherm-1-platen
+// hebben echter de evangelie-boeken + gevulde prijzenkast INGEBAKKEN; die
+// dubbelden achter de losse NT-boeken/NT-kast. Daarom:
+//   - bg  = startschermzonderwolken.png    (scherm 1's avondscène = avondhemel)
 //   - voorgrond = voorgrond_scherm2_transparante_lucht.png
-//                 (diezelfde lege stage met de lucht weggesneden/transparant)
-// Beide zijn dezelfde scène, dus de cut-rand valt onzichtbaar weg en alleen de
-// driftende wolken komen in de open lucht erbij. Geen ingebakken boeken = geen
-// dubbeling. De gedeelde scherm-1-voorgrond blijft hierdoor onaangeroerd.
+//                 (KOPIE van de avond-voorgrond met de 4 evangelie-boeken
+//                  weg-geïnpaint; lucht blijft transparant)
+// De gevulde kast hoeft niet gepoetst: de NT-kast (nt2-kast) dekt die af. De
+// gedeelde scherm-1-voorgrond (voorgrond_transparante_lucht.png) blijft
+// ONAANGEROERD — er is op een kopie gewerkt.
 (function bouwWolkenScherm2() {
     const scherm2 = document.getElementById("nt-scherm-2");
     if (!scherm2) return;
@@ -9318,14 +9319,14 @@ function bouwWolkenLaag(config, prefix) {
 
     const bg = document.createElement("img");
     bg.className = "nt2-hemel-bg";
-    bg.src = "images/startschermleeg.webp";   // lege stage (geen ingebakken boeken)
+    bg.src = "images/startschermzonderwolken.png";   // avondhemel (scherm 1's scène)
     bg.alt = "";
 
     const laag = bouwWolkenLaag(WOLKEN, "s2-");
 
     const voor = document.createElement("img");
     voor.className = "voorgrond";          // hergebruikt de bestaande voorgrond-stijl (z-index 3)
-    voor.src = "images/voorgrond_scherm2_transparante_lucht.png";  // lege stage, lucht transparant
+    voor.src = "images/voorgrond_scherm2_transparante_lucht.png";  // avondplaat, boeken weg-geïnpaint, lucht transparant
     voor.alt = "";
 
     hemel.appendChild(bg);
