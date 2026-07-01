@@ -9008,15 +9008,16 @@ const FAKKEL_GLOED = [
     { left: 61.9, top: 42.8, grootte: 6, duur: 2.9, vertraging: 1.0 },  // brander rechts-hoog (boven de balustrade)
 ];
 
-(function bouwFakkelGloed() {
-    const container = document.getElementById("game-container");
-    if (!container) return;
-
+// Gedeelde bouwer: maakt één .fakkel-laag uit een gloed-config en geeft 'm terug.
+// Bewust scherm-ONAFHANKELIJK — scherm 1 en scherm 2 delen dezelfde klassen,
+// keyframes en reduced-motion-regel (style.css). Per scherm verschilt alléén de
+// config die je hier meegeeft; er is geen gedupliceerde flikker-CSS of -logica.
+function bouwFakkelLaag(config) {
     const laag = document.createElement("div");
     laag.className = "fakkel-laag";
     laag.setAttribute("aria-hidden", "true");
 
-    FAKKEL_GLOED.forEach((f, i) => {
+    config.forEach((f, i) => {
         const gloed = document.createElement("div");
         gloed.className = "fakkel-gloed";
         gloed.style.left = f.left + "%";
@@ -9032,6 +9033,14 @@ const FAKKEL_GLOED = [
         laag.appendChild(gloed);
     });
 
+    return laag;
+}
+
+(function bouwFakkelGloed() {
+    const container = document.getElementById("game-container");
+    if (!container) return;
+
+    const laag = bouwFakkelLaag(FAKKEL_GLOED);
     container.appendChild(laag);
 
     // Afstelmodus (?afstel=aan): de gloeden meedoen in de afstel-UI. De laag
@@ -9145,7 +9154,9 @@ function initFakkelAfstel(laag, container) {
 // Bouwt de huidige gloed-posities als kant-en-klaar FAKKEL_GLOED-blok (string).
 // Gebruikt door de console-melding én door "Exporteer posities" in het paneel.
 function bouwFakkelConfigTekst() {
-    const laag = document.querySelector(".fakkel-laag");
+    // Alléén scherm 1's laag (directe kind van #game-container); scherm 2's
+    // gloedlaag zit ín #nt-scherm-2 en mag deze afstel-export niet kapen.
+    const laag = document.querySelector("#game-container > .fakkel-laag");
     if (!laag) return "";
     const regels = [...laag.querySelectorAll(".fakkel-gloed")].map((g) => {
         const left = parseFloat(g.style.left);
@@ -9332,6 +9343,19 @@ function bouwWolkenLaag(config, prefix) {
     hemel.appendChild(bg);
     hemel.appendChild(laag);
     hemel.appendChild(voor);
+
+    // Fakkel-gloed: scherm 2 staat op HETZELFDE lege podium als scherm 1 (zelfde
+    // branders/lantaarn in de architectuur), dus exact dezelfde vijf gloedpunten
+    // — identieke coördinaten, grootte, tempo én vertraging (incl. de lantaarn
+    // linksonder met eigen instellingen). De desync tussen de punten (per punt
+    // andere duur/vertraging) gaat één-op-één mee via dezelfde FAKKEL_GLOED-config.
+    // Ná de voorgrond geplaatst: op z-index 4 bínnen deze hemel (boven de
+    // architectuur), maar onder de NT-boeken (z-index 1) en pijlen (z-index 5) van
+    // scherm 2. Strikt gescoped: de laag zit ín #nt-scherm-2, erft pointer-events:
+    // none van .fakkel-laag, en is dus onzichtbaar/niet-klikbaar zodra scherm 2
+    // verborgen is (visibility:hidden) — geen overlay of klikvak op andere schermen.
+    const fakkels = bouwFakkelLaag(FAKKEL_GLOED);
+    hemel.appendChild(fakkels);
 
     // Vooraan in #nt-scherm-2 zetten, vóór de NT-inhoud, zodat de hemel erachter ligt.
     scherm2.insertBefore(hemel, scherm2.firstChild);

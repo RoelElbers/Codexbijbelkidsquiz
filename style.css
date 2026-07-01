@@ -273,8 +273,12 @@ height: 22%;
 }
 
 /* =========================================================================
-   FAKKEL-GLOED — decoratieve, "levende" gloed op de fakkels van het
-   startscherm. Volledig decoratief: de laag heeft pointer-events:none, dus de
+   FAKKEL-GLOED — decoratieve, "levende" gloed op de fakkels. GEDEELD systeem:
+   dezelfde klassen, keyframes en reduced-motion-regel bedienen zowel scherm 1
+   (startscherm, laag in #game-container) als scherm 2 (#nt-scherm-2, laag in
+   .nt2-hemel). Per scherm verschilt alléén de config met gloedposities in
+   script.js (bouwFakkelLaag); er is geen gedupliceerde flikker-CSS voor scherm 2.
+   Volledig decoratief: de laag heeft pointer-events:none, dus de
    klikvakken (.boek-zone, menu-zones) en de quizlogica blijven onaangeroerd.
    De gloeden worden door script.js gebouwd uit het config-blok FAKKEL_GLOED en
    met left/top in % van #game-container geplaatst — net als .boek-zone — zodat
@@ -347,7 +351,9 @@ height: 22%;
 }
 
 /* Toegankelijkheid: bij voorkeur voor minder beweging staat de flikkering uit
-   en blijft een rustige, stilstaande gloed over. */
+   en blijft een rustige, stilstaande gloed op gemiddelde intensiteit over (niet
+   helemaal niets). Generiek op .fakkel-gloed > .vlam, dus geldt automatisch voor
+   de gloed van BEIDE schermen (1 en 2). */
 @media (prefers-reduced-motion: reduce) {
     .fakkel-gloed > .vlam {
         animation: none;
