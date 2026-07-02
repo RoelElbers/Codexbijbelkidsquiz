@@ -12,6 +12,14 @@
 
     <div id="game-container">
 
+        <!-- Voorgrondlaag van het startscherm: dezelfde scène als de achtergrond,
+             maar met de lucht weggesneden (transparant). Ligt boven de
+             driftende wolkenlaag (zie script.js / .wolken-laag) en dekt die af
+             behalve waar lucht is, zodat de wolken áchter logo, banieren,
+             prijzenkast en muzieknootje door lijken te drijven. Puur decoratief.
+             Stacking via z-index in style.css (.voorgrond = 3). -->
+        <img class="voorgrond" src="images/voorgrond_transparante_lucht.png" alt="" aria-hidden="true">
+
         <button id="fullscreen-btn" class="fullscreen-button" aria-label="Volledig scherm" title="Volledig scherm">
             <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"/>
@@ -25,7 +33,9 @@
              De avatarfoto en de twee namen liggen er als kinderen bovenop en
              zijn in % van deze wrapper geplaatst, zodat alles meeschaalt.
              Positie/grootte fijnafstellen via de CSS-variabelen in style.css. -->
-        <div id="avatar-frame" class="avatar-frame">
+        <div id="avatar-frame" class="avatar-frame" role="button" tabindex="0"
+             title="Wissel van speler" onclick="openSpelerKiezer()"
+             style="cursor: pointer;">
 
             <!-- Het frame zelf (onderste laag binnen de wrapper). -->
             <img class="avatar-frame-img" src="images/avatarframe.webp" alt="">
@@ -209,6 +219,30 @@
 
                 <button type="button" class="answer-btn niveau-btn niveau-expert" onclick="bevestigNieuwSpel()">Start</button>
                 <button type="button" class="answer-btn niveau-terug" onclick="annuleerNieuwSpel()">Terug</button>
+
+                <!-- Ondergeschikt aan het hoofddoel (nieuw profiel maken): een
+                     route naar de bestaande spelers. Door nieuwSpel() verborgen
+                     wanneer er nog geen profielen zijn. -->
+                <button type="button" id="nieuw-spel-bestaand" class="speler-kiezer-link"
+                        onclick="kiesBestaandeSpeler()">of kies een bestaande speler</button>
+            </div>
+        </div>
+
+        <!-- "Wie speelt er?" — spelerkiezer. Opent via het klikbare profiel
+             linksboven of via "of kies een bestaande speler". De lijst met
+             profielen (avatar + voornaam) wordt door openSpelerKiezer() live
+             gevuld; "+ nieuw" opent het Nieuw-spel-scherm. -->
+        <div id="speler-kiezer-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Wie speelt er?</h2>
+                <p class="quiz-question">Kies je speler</p>
+
+                <div id="speler-kiezer-lijst" class="avatar-keuze"></div>
+
+                <button type="button" class="answer-btn niveau-btn niveau-beginner"
+                        onclick="nieuwProfielVanuitKiezer()">+ nieuw</button>
+                <button type="button" class="answer-btn niveau-terug"
+                        onclick="sluitSpelerKiezer()">Terug</button>
             </div>
         </div>
 

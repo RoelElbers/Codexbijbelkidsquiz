@@ -2359,6 +2359,27 @@ height: 22%;
     border-color: #ffd86b;
 }
 
+/* Bescheiden tekstlink onder de Start/Terug-knoppen in het Nieuw-spel-scherm:
+   route naar de bestaande spelers. Ondergeschikt aan het hoofddoel (nieuw
+   profiel), dus geen volle knop-look maar een rustige onderstreepte link. */
+.speler-kiezer-link {
+    display: block;
+    margin: 10px auto 0;
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    color: rgba(255, 215, 120, 0.85);
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.speler-kiezer-link:hover {
+    color: #ffd86b;
+}
+
 /* =========================
    NAAM-INVOER in het Nieuw-spel-scherm — bescheiden, met duidelijk label
    "Naam:" ervoor zodat het kind direct weet wat het moet doen.

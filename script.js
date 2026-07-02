@@ -5334,20 +5334,11 @@ let laatsteRondeGoed = 0;
 // hebben geen effect omdat de sleutel daarna niet meer wordt geschreven.
 localStorage.removeItem("bijbelQuizXP");
 
-// Eenmalige opschoning: de trofee- en kist-standen die met de (inmiddels
-// verwijderde) testknopjes waren ingesteld, wissen. Zo begint de prijzenkast
-// op de vergrendelde schaduw-beginstand voor een speler die nog niets verdiend
-// heeft. Draait dankzij de vlag precies één keer per browser; daarna mag echte
-// voortgang gewoon weer worden opgeslagen en bewaard tussen sessies.
-if (!localStorage.getItem("prijzenkastOpgeruimd_v1")) {
-    ["matteus", "marcus", "lucas", "johannes"].forEach((boekKey) => {
-        localStorage.removeItem(`trofee_${boekKey}`);
-    });
-    ["brons", "zilver", "goud"].forEach((kistKey) => {
-        localStorage.removeItem(`kist_${kistKey}`);
-    });
-    localStorage.setItem("prijzenkastOpgeruimd_v1", "1");
-}
+// (De oude eenmalige "prijzenkast opruimen"-opschoning is verwijderd. Die wiste
+// niet-geprefixte trofee-/kist-standen en werkte daarmee de profiel-migratie
+// tegen — die brengt bestaande voortgang juist behouden onder in een eerste
+// profiel. Het opruimen van test-/beginstanden loopt nu volledig via het
+// profielensysteem: een vers profiel heeft simpelweg nog geen voortgang.)
 
 // =========================
 // TROFEEËN
@@ -5422,7 +5413,7 @@ const alleKistKeys = ["brons", "zilver", "goud"];
 
 function getKistStatus(kistKey) {
     if (demoNiveau) return "verdiend";       // demo-modus: alles behaald tonen
-    const opgeslagen = localStorage.getItem(`kist_${kistKey}`);
+    const opgeslagen = localStorage.getItem(profielSleutel(`kist_${kistKey}`));
     return kistVolgorde.includes(opgeslagen) ? opgeslagen : "vergrendeld";
 }
 
@@ -5433,7 +5424,7 @@ function setKistStatus(kistKey, status) {
         toonKist(kistKey);
         return;
     }
-    localStorage.setItem(`kist_${kistKey}`, status);
+    localStorage.setItem(profielSleutel(`kist_${kistKey}`), status);
     toonKist(kistKey);
 }
 
@@ -5512,7 +5503,7 @@ const demoNiveau = (() => {
 
 function getTrofeeNiveau(boekKey) {
     if (demoNiveau) return demoNiveau;
-    const opgeslagen = localStorage.getItem(`trofee_${boekKey}`);
+    const opgeslagen = localStorage.getItem(profielSleutel(`trofee_${boekKey}`));
     return trofeeVolgorde.includes(opgeslagen) ? opgeslagen : "geen";
 }
 
@@ -5527,7 +5518,7 @@ function setTrofeeNiveau(boekKey, nieuwNiveau) {
     const huidig = getTrofeeNiveau(boekKey);
 
     if (trofeeVolgorde.indexOf(nieuwNiveau) > trofeeVolgorde.indexOf(huidig)) {
-        localStorage.setItem(`trofee_${boekKey}`, nieuwNiveau);
+        localStorage.setItem(profielSleutel(`trofee_${boekKey}`), nieuwNiveau);
     }
 
     toonTrofee(boekKey);
@@ -5645,7 +5636,7 @@ function toonNiveauHint(niveau) {
 const niveauKeys = ["beginner", "advanced", "expert"];
 
 function schildKey(boekKey, niveau) {
-    return `schildpunt_${boekKey}_${niveau}`;
+    return profielSleutel(`schildpunt_${boekKey}_${niveau}`);
 }
 
 function isSchildpuntVerdiend(boekKey, niveau) {
@@ -5691,23 +5682,168 @@ const avatarNamen = {
 
 const STANDAARD_AVATAR = "mozes";
 
+// =========================
+// PROFIELEN (meerdere spelers op één computer)
+// =========================
+//
+// Elk kind speelt onder een eigen profiel: { id, naam, avatar }. Alle
+// voortgang (trofeeën, kisten, schildpunten, verborgen schat) wordt per
+// profiel bewaard onder localStorage-sleutels met de prefix speler_<id>_… ,
+// zodat kinderen elkaars voortgang nooit overschrijven. Eén register
+// (bkq_profielen) somt alle profielen op; bkq_actiefProfiel onthoudt wie het
+// laatst speelde. Geluid (apparaatinstelling) en de trofee-afstelmodus
+// (dev-tool) blijven bewust GLOBAAL — dus niet per profiel.
+const PROFIELEN_KEY = "bkq_profielen";
+const ACTIEF_PROFIEL_KEY = "bkq_actiefProfiel";
+
+function leesProfielen() {
+    try {
+        const lijst = JSON.parse(localStorage.getItem(PROFIELEN_KEY));
+        return Array.isArray(lijst) ? lijst : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function bewaarProfielen(lijst) {
+    localStorage.setItem(PROFIELEN_KEY, JSON.stringify(lijst));
+}
+
+function getActiefProfielId() {
+    return localStorage.getItem(ACTIEF_PROFIEL_KEY) || "";
+}
+
+function setActiefProfielId(id) {
+    localStorage.setItem(ACTIEF_PROFIEL_KEY, id);
+}
+
+function getActiefProfiel() {
+    const id = getActiefProfielId();
+    return leesProfielen().find((p) => p.id === id) || null;
+}
+
+// Uniek, verborgen id per profiel. crypto.randomUUID waar beschikbaar; anders
+// een tijd+toeval-fallback die voor lokaal gebruik ruim uniek genoeg is.
+function nieuwProfielId() {
+    if (window.crypto && typeof crypto.randomUUID === "function") {
+        return crypto.randomUUID();
+    }
+    return "p" + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+}
+
+// Maakt een profiel aan, voegt het toe aan het register en zet het als actief.
+// Retourneert het nieuwe profiel-object.
+function maakProfiel(naam, avatar) {
+    const profiel = {
+        id: nieuwProfielId(),
+        naam: (naam || "").trim(),
+        avatar: avatarNamen[avatar] ? avatar : STANDAARD_AVATAR
+    };
+    const lijst = leesProfielen();
+    lijst.push(profiel);
+    bewaarProfielen(lijst);
+    setActiefProfielId(profiel.id);
+    return profiel;
+}
+
+// Werkt velden (naam/avatar) van het actieve profiel bij in het register.
+function updateActiefProfiel(velden) {
+    const id = getActiefProfielId();
+    const lijst = leesProfielen();
+    const p = lijst.find((x) => x.id === id);
+    if (!p) return;
+    Object.assign(p, velden);
+    bewaarProfielen(lijst);
+}
+
+// Sleutel voor voortgang van het ACTIEVE profiel. Zonder actief profiel valt
+// dit terug op een lege prefix; dat komt alleen voor vlak vóór het eerste
+// profiel bestaat en levert dan simpelweg "niets verdiend" op.
+function profielSleutel(sleutel) {
+    return `speler_${getActiefProfielId()}_${sleutel}`;
+}
+
+// Detecteert of er nog oude, niet-geprefixte voortgang in de browser staat —
+// gebruikt om te beslissen of we bij de allereerste keer een eerste profiel
+// vullen (bestaande browser) of het Nieuw-spel-scherm tonen (verse browser).
+function heeftOudeVoortgang() {
+    if (localStorage.getItem("bijbelQuizAvatar")) return true;
+    if (localStorage.getItem("bijbelQuizSpelerNaam")) return true;
+    if (localStorage.getItem("verborgenschat_voltooid")) return true;
+    for (const boekKey of schildBoekKeys) {
+        if (localStorage.getItem(`trofee_${boekKey}`)) return true;
+        for (const niveau of niveauKeys) {
+            if (localStorage.getItem(`schildpunt_${boekKey}_${niveau}`)) return true;
+        }
+    }
+    for (const kistKey of alleKistKeys) {
+        if (localStorage.getItem(`kist_${kistKey}`)) return true;
+    }
+    return false;
+}
+
+// Eenmalige migratie naar het profielensysteem. Draait alleen zolang er nog
+// geen profielenregister is. Bestaande (niet-geprefixte) voortgang + de losse
+// avatar/naam worden ondergebracht in een eerste profiel, zodat testvoortgang
+// niet verdwijnt. Bij een verse browser (geen oude voortgang) doen we niets —
+// dan toont de opstartlogica het Nieuw-spel-scherm om het eerste profiel te
+// maken. Idempotent: zodra bkq_profielen bestaat, doet dit niets meer.
+function migreerNaarProfielen() {
+    if (localStorage.getItem(PROFIELEN_KEY)) return;   // al gemigreerd
+    if (!heeftOudeVoortgang()) return;                 // verse browser
+
+    const oudeAvatar = localStorage.getItem("bijbelQuizAvatar");
+    const oudeNaam = localStorage.getItem("bijbelQuizSpelerNaam") || "";
+    const profiel = {
+        id: nieuwProfielId(),
+        naam: oudeNaam,
+        avatar: avatarNamen[oudeAvatar] ? oudeAvatar : STANDAARD_AVATAR
+    };
+    bewaarProfielen([profiel]);
+    setActiefProfielId(profiel.id);
+
+    // Bestaande voortgang overzetten naar speler_<id>_… (alleen als aanwezig).
+    const verhuis = (oudeSleutel) => {
+        const waarde = localStorage.getItem(oudeSleutel);
+        if (waarde !== null) {
+            localStorage.setItem(`speler_${profiel.id}_${oudeSleutel}`, waarde);
+            localStorage.removeItem(oudeSleutel);
+        }
+    };
+    schildBoekKeys.forEach((boekKey) => {
+        verhuis(`trofee_${boekKey}`);
+        niveauKeys.forEach((niveau) => verhuis(`schildpunt_${boekKey}_${niveau}`));
+    });
+    alleKistKeys.forEach((kistKey) => verhuis(`kist_${kistKey}`));
+    verhuis("verborgenschat_voltooid");
+
+    // De losse avatar/naam zijn nu onderdeel van het profiel geworden.
+    localStorage.removeItem("bijbelQuizAvatar");
+    localStorage.removeItem("bijbelQuizSpelerNaam");
+}
+migreerNaarProfielen();
+
+// Avatar + naam horen bij het ACTIEVE profiel. Zonder profiel valt de avatar
+// terug op de standaard en de naam op leeg (situatie vlak vóór het eerste
+// profiel bestaat).
 function getGekozenAvatar() {
-    const opgeslagen = localStorage.getItem("bijbelQuizAvatar");
-    return avatarNamen[opgeslagen] ? opgeslagen : STANDAARD_AVATAR;
+    const p = getActiefProfiel();
+    return p && avatarNamen[p.avatar] ? p.avatar : STANDAARD_AVATAR;
 }
 
 function setGekozenAvatar(avatar) {
     if (avatarNamen[avatar]) {
-        localStorage.setItem("bijbelQuizAvatar", avatar);
+        updateActiefProfiel({ avatar });
     }
 }
 
 function getSpelerNaam() {
-    return localStorage.getItem("bijbelQuizSpelerNaam") || "";
+    const p = getActiefProfiel();
+    return p ? (p.naam || "") : "";
 }
 
 function setSpelerNaam(naam) {
-    localStorage.setItem("bijbelQuizSpelerNaam", naam || "");
+    updateActiefProfiel({ naam: naam || "" });
 }
 
 function getSpelerVoornaam() {
@@ -5768,10 +5904,17 @@ function nieuwSpel() {
     const scherm = document.getElementById("nieuw-spel-scherm");
     if (!scherm) return;
 
-    // Begin met de huidige keuzes voorgeladen
-    markeerAvatarKeuze(getGekozenAvatar());
+    // Verse start: standaard-avatar geselecteerd en een leeg naamveld, zodat
+    // dit scherm een NIEUW profiel maakt en niet de huidige speler voorlaadt.
+    markeerAvatarKeuze(STANDAARD_AVATAR);
     const invoer = document.getElementById("speler-naam-invoer");
-    if (invoer) invoer.value = getSpelerNaam();
+    if (invoer) invoer.value = "";
+
+    // "of kies een bestaande speler" alleen tonen als er al profielen zijn.
+    const bestaandLink = document.getElementById("nieuw-spel-bestaand");
+    if (bestaandLink) {
+        bestaandLink.style.display = leesProfielen().length > 0 ? "block" : "none";
+    }
 
     scherm.style.display = "flex";
     verbergLevelHud();
@@ -5780,44 +5923,16 @@ function nieuwSpel() {
 function bevestigNieuwSpel() {
     const naamInvoer = document.getElementById("speler-naam-invoer");
     const naam = naamInvoer ? naamInvoer.value.trim() : "";
-    const avatar = gekozenAvatarTijdelijk || getGekozenAvatar();
+    const avatar = gekozenAvatarTijdelijk || STANDAARD_AVATAR;
 
-    // Avatar + volledige naam opslaan
-    setGekozenAvatar(avatar);
-    setSpelerNaam(naam);
+    // Een NIEUW profiel aanmaken en meteen actief maken. Een vers profiel heeft
+    // nog geen enkele voortgangssleutel, dus alle trofeeën/kisten/schildpunten
+    // staan automatisch op de beginstand — er wordt niets van een bestaande
+    // speler overschreven of gewist.
+    maakProfiel(naam, avatar);
 
-    // Verse start: alle verdiende schildpunten wissen (levels terug naar 0).
-    schildBoekKeys.forEach((boekKey) => {
-        niveauKeys.forEach((niveau) => {
-            localStorage.removeItem(schildKey(boekKey, niveau));
-        });
-    });
-
-    // Ook alle behaalde trofeeën wissen voor ALLE boeken. De evangelie-trofeeën
-    // worden meteen opnieuw getekend; de NT-trofeeën in de Prijzenkast worden
-    // bij het openen van de Schatkamer opnieuw uit localStorage gelezen.
-    schildBoekKeys.forEach((boekKey) => {
-        localStorage.removeItem(`trofee_${boekKey}`);
-        toonTrofee(boekKey);
-    });
-
-    // Ook de verdiende schatkisten wissen: terug naar "vergrendeld" en opnieuw
-    // tekenen, zodat de prijzenkast bij een nieuw spel weer leeg is.
-    alleKistKeys.forEach((kistKey) => {
-        localStorage.removeItem(`kist_${kistKey}`);
-        toonKist(kistKey);
-    });
-
-    // De verborgen diamanten kist hoort dan ook weer vergrendeld te zijn.
-    werkVerborgenSchatBij();
-
-    // Verse start: de XP-balk hoort leeg te zijn, dus het laatste ronderesultaat
-    // wissen en de balk opnieuw tekenen.
-    laatsteRondeGoed = 0;
-    updateXPBalk();
-
-    updateSchildpuntenWeergave();
-    updateAvatarWeergave();
+    // Alle weergave overzetten naar het (lege) nieuwe profiel.
+    laadProfielWeergave();
 
     const scherm = document.getElementById("nieuw-spel-scherm");
     if (scherm) scherm.style.display = "none";
@@ -5827,7 +5942,107 @@ function bevestigNieuwSpel() {
 function annuleerNieuwSpel() {
     const scherm = document.getElementById("nieuw-spel-scherm");
     if (scherm) scherm.style.display = "none";
+    // Bij het allereerste opstarten (nog geen profiel) mag dit scherm niet
+    // zomaar weg zonder keuze; dan direct opnieuw tonen zodat er altijd een
+    // speler ontstaat.
+    if (!getActiefProfiel()) {
+        nieuwSpel();
+        return;
+    }
     toonLevelHud();
+}
+
+// Vanuit het Nieuw-spel-scherm doorschakelen naar de spelerkiezer.
+function kiesBestaandeSpeler() {
+    const scherm = document.getElementById("nieuw-spel-scherm");
+    if (scherm) scherm.style.display = "none";
+    openSpelerKiezer();
+}
+
+// =========================
+// SPELERKIEZER — "Wie speelt er?"
+// =========================
+//
+// Herlaadt de volledige startscherm-weergave vanuit het ACTIEVE profiel:
+// XP-balk, schildpunten, evangelie-trofeeën, kisten, verborgen schat en de
+// avatar/naam linksboven. De NT-kast (scherm 2) leest zijn standen sowieso
+// opnieuw bij binnenkomst, dus die volgt vanzelf.
+function laadProfielWeergave() {
+    laatsteRondeGoed = 0;            // XP-balk is sessie-gebonden, niet bewaard
+    updateXPBalk();
+    updateSchildpuntenWeergave();
+    alleBoekKeys.forEach(toonTrofee);
+    alleKistKeys.forEach(toonKist);
+    werkVerborgenSchatBij();
+    updateAvatarWeergave();
+}
+
+// Opent "Wie speelt er?": alle profielen als aanklikbare avatar+naam, plus een
+// "+ nieuw"-knop. Bouwt de lijst live op uit het register.
+function openSpelerKiezer() {
+    const scherm = document.getElementById("speler-kiezer-scherm");
+    const lijst = document.getElementById("speler-kiezer-lijst");
+    if (!scherm || !lijst) return;
+
+    lijst.innerHTML = "";
+    const actiefId = getActiefProfielId();
+
+    leesProfielen().forEach((p) => {
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "avatar-keuze-btn" + (p.id === actiefId ? " avatar-gekozen" : "");
+        knop.addEventListener("click", () => kiesProfiel(p.id));
+
+        const avatar = avatarNamen[p.avatar] ? p.avatar : STANDAARD_AVATAR;
+        const img = document.createElement("img");
+        img.src = `images/Avatars/avatar-${avatar}.webp`;
+        img.alt = p.naam || avatarNamen[avatar];
+
+        const naam = document.createElement("span");
+        const voornaam = (p.naam || "").trim().split(/\s+/)[0];
+        naam.textContent = voornaam || avatarNamen[avatar];
+
+        knop.appendChild(img);
+        knop.appendChild(naam);
+        lijst.appendChild(knop);
+    });
+
+    scherm.style.display = "flex";
+    verbergLevelHud();
+}
+
+// Een bestaand profiel kiezen: actief maken, alle weergave verversen, sluiten.
+function kiesProfiel(id) {
+    if (!leesProfielen().some((p) => p.id === id)) return;
+    setActiefProfielId(id);
+    laadProfielWeergave();
+    const scherm = document.getElementById("speler-kiezer-scherm");
+    if (scherm) scherm.style.display = "none";
+    toonLevelHud();
+}
+
+function sluitSpelerKiezer() {
+    const scherm = document.getElementById("speler-kiezer-scherm");
+    if (scherm) scherm.style.display = "none";
+    toonLevelHud();
+}
+
+// "+ nieuw" in de spelerkiezer: sluit de kiezer en open het Nieuw-spel-scherm.
+function nieuwProfielVanuitKiezer() {
+    const scherm = document.getElementById("speler-kiezer-scherm");
+    if (scherm) scherm.style.display = "none";
+    nieuwSpel();
+}
+
+// Opstart: is er een actief profiel, dan direct het startscherm met dat
+// profiel. Is er nog geen enkel profiel (verse browser), dan het Nieuw-spel-
+// scherm om er een aan te maken.
+function initProfielOpstart() {
+    if (getActiefProfiel()) {
+        laadProfielWeergave();
+    } else {
+        nieuwSpel();
+    }
 }
 
 function verbergLevelHud() {
@@ -6479,7 +6694,7 @@ function sluitWoordenboek() {
 // ontgrendeld is. Die vlag wordt later gezet als de speler de Verborgen Schat
 // heeft gespeeld; voor nu staat hij niet en blijft de knop dus vergrendeld.
 function isVerborgenSchatOntgrendeld() {
-    return localStorage.getItem("verborgenschat_voltooid") === "waar";
+    return localStorage.getItem(profielSleutel("verborgenschat_voltooid")) === "waar";
 }
 
 // Zet de Verborgen Schat-knop in het tussenmenu in de juiste staat: vergrendeld
@@ -6950,7 +7165,10 @@ const openbaringVitrine = {
 // gebruikt alleen dezelfde volgorde-lijst (trofeeVolgorde) ter validatie.
 function leesTrofeeStand(sleutel) {
     if (demoNiveau) return demoNiveau;       // demo-modus: alles behaald tonen
-    const stand = localStorage.getItem(sleutel);
+    // De config levert de basissleutel (bv. "trofee_openbaring"); prefixen naar
+    // het actieve profiel zodat de NT-kast dezelfde per-profiel-stand toont als
+    // de rest van het spel.
+    const stand = localStorage.getItem(profielSleutel(sleutel));
     return trofeeVolgorde.includes(stand) ? stand : "geen";
 }
 
@@ -8192,7 +8410,7 @@ function eindScherm() {
         // opnieuw spelen mag en houdt de vlag gewoon op "waar".
         const allesGoed = score === vragen.length;
         if (allesGoed) {
-            localStorage.setItem("verborgenschat_voltooid", "waar");
+            localStorage.setItem(profielSleutel("verborgenschat_voltooid"), "waar");
         }
 
         const slotRegel = allesGoed
@@ -8309,6 +8527,10 @@ werkVerborgenSchatBij();
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.
 updateAvatarWeergave();
+
+// Profiel-opstart: toon het startscherm met het laatst actieve profiel, of het
+// Nieuw-spel-scherm als er nog geen enkel profiel bestaat.
+initProfielOpstart();
 
 // Klik-handlers voor de vier avatar-keuze-knoppen in het nieuw-spel-scherm.
 // Wijzigt alleen de visuele selectie; pas op "Start" wordt het opgeslagen.
