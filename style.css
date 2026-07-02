@@ -465,6 +465,11 @@ height: 22%;
     opacity: var(--wolk-opacity, 0.8);
     will-change: transform;
 
+    /* Wolken een tint lichter en witter: brightness tilt ze op, de lichte
+       saturate-verlaging trekt ze van blauwig-grijs richting neutraal wit.
+       Raakt drift/opacity/z-index niet — puur helderheid/tint. */
+    filter: brightness(1.25) contrast(1.04) brightness(1.12) saturate(0.9);
+
     /* Lange, lineaire, oneindige cyclus; duur (snelheid) en vertraging per wolk
        uit de config, zodat ze met verschillende snelheden een parallax geven.
        Bewust als losse longhand-properties (niet de 'animation'-shorthand): een
@@ -2549,7 +2554,7 @@ height: 22%;
    blijft; de lichte contrast houdt de structuur vast (geen egaal wit).
    Te zacht? Verhoog de brightness-waarde richting 1.40. */
 .nt2-hemel .wolk {
-    filter: brightness(1.25) contrast(1.04);
+    filter: brightness(1.25) contrast(1.04) brightness(1.12) saturate(0.9);
 }
 
 .nt-placeholder-titel {
