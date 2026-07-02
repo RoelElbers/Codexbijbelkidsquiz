@@ -233,16 +233,42 @@
              profielen (avatar + voornaam) wordt door openSpelerKiezer() live
              gevuld; "+ nieuw" opent het Nieuw-spel-scherm. -->
         <div id="speler-kiezer-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box">
+            <div class="quiz-box speler-kiezer-box">
                 <h2 class="quiz-title">Wie speelt er?</h2>
-                <p class="quiz-question">Kies je speler</p>
+                <p class="quiz-question" id="speler-kiezer-hint">Kies je speler</p>
 
+                <!-- De profiellijst scrollt intern bij veel spelers; de
+                     knoppenrij hieronder blijft altijd in beeld, zodat "+ nieuw"
+                     nooit uit beeld raakt. -->
                 <div id="speler-kiezer-lijst" class="avatar-keuze"></div>
 
-                <button type="button" class="answer-btn niveau-btn niveau-beginner"
-                        onclick="nieuwProfielVanuitKiezer()">+ nieuw</button>
-                <button type="button" class="answer-btn niveau-terug"
-                        onclick="sluitSpelerKiezer()">Terug</button>
+                <div class="speler-kiezer-knoppen">
+                    <button type="button" id="speler-kiezer-nieuw"
+                            class="answer-btn niveau-btn niveau-beginner"
+                            onclick="nieuwProfielVanuitKiezer()">+ nieuw</button>
+                    <button type="button" id="speler-kiezer-bewerk"
+                            class="answer-btn speler-kiezer-bewerk-knop"
+                            onclick="toggleKiezerBewerken()">✎ Bewerken</button>
+                    <button type="button" class="answer-btn niveau-terug"
+                            onclick="sluitSpelerKiezer()">Terug</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bevestiging bij het verwijderen van een speler. De tekst (met de
+             naam) wordt door vraagProfielVerwijderen() ingevuld. "Verwijderen"
+             is rood (waarschuwend); "Annuleren" is de neutrale, veilige tik en
+             staat als eerste. -->
+        <div id="verwijder-speler-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Verwijder speler</h2>
+                <p class="quiz-question" id="verwijder-speler-tekst"></p>
+                <div class="verwijder-knoppen">
+                    <button type="button" class="answer-btn niveau-terug"
+                            onclick="annuleerProfielVerwijderen()">Annuleren</button>
+                    <button type="button" class="answer-btn knop-gevaar"
+                            onclick="bevestigProfielVerwijderen()">Verwijderen</button>
+                </div>
             </div>
         </div>
 

@@ -5977,12 +5977,22 @@ function laadProfielWeergave() {
     updateAvatarWeergave();
 }
 
-// Opent "Wie speelt er?": alle profielen als aanklikbare avatar+naam, plus een
-// "+ nieuw"-knop. Bouwt de lijst live op uit het register.
-function openSpelerKiezer() {
+// Bewerk-modus van de kiezer: in deze stand betekent een tik op een profiel
+// "verwijderen" (met bevestiging) in plaats van "kiezen". Bewust een aparte
+// modus achter de Bewerken-knop, zodat niemand per ongeluk verwijdert tijdens
+// het gewone kiezen.
+let kiezerBewerkModus = false;
+
+// Opent "Wie speelt er?": alle profielen als aanklikbare avatar+naam, plus de
+// knoppen "+ nieuw", "Bewerken" en "Terug". Bouwt de lijst live op uit het
+// register. behoudModus = true laat de bewerk-modus staan (na een verwijdering);
+// standaard (vanuit het profiel of de link) openen we in de gewone kiesstand.
+function openSpelerKiezer(behoudModus) {
     const scherm = document.getElementById("speler-kiezer-scherm");
     const lijst = document.getElementById("speler-kiezer-lijst");
     if (!scherm || !lijst) return;
+
+    if (!behoudModus) kiezerBewerkModus = false;
 
     lijst.innerHTML = "";
     const actiefId = getActiefProfielId();
@@ -5990,8 +6000,13 @@ function openSpelerKiezer() {
     leesProfielen().forEach((p) => {
         const knop = document.createElement("button");
         knop.type = "button";
-        knop.className = "avatar-keuze-btn" + (p.id === actiefId ? " avatar-gekozen" : "");
-        knop.addEventListener("click", () => kiesProfiel(p.id));
+        knop.className = "avatar-keuze-btn"
+            + (p.id === actiefId && !kiezerBewerkModus ? " avatar-gekozen" : "")
+            + (kiezerBewerkModus ? " verwijder-modus" : "");
+        knop.addEventListener("click", () => {
+            if (kiezerBewerkModus) vraagProfielVerwijderen(p.id);
+            else kiesProfiel(p.id);
+        });
 
         const avatar = avatarNamen[p.avatar] ? p.avatar : STANDAARD_AVATAR;
         const img = document.createElement("img");
@@ -6004,11 +6019,43 @@ function openSpelerKiezer() {
 
         knop.appendChild(img);
         knop.appendChild(naam);
+
+        // In bewerk-modus een rood prullenbak-badge op de tegel als teken dat
+        // tikken hier verwijdert. De badge vangt zelf geen klik (pointer-events
+        // none in CSS); de tegel handelt de klik af.
+        if (kiezerBewerkModus) {
+            const badge = document.createElement("span");
+            badge.className = "verwijder-badge";
+            badge.textContent = "🗑";
+            badge.setAttribute("aria-hidden", "true");
+            knop.appendChild(badge);
+        }
+
         lijst.appendChild(knop);
     });
 
+    // Kop/hint en de knoppen naar de juiste modus zetten.
+    const hint = document.getElementById("speler-kiezer-hint");
+    if (hint) {
+        hint.textContent = kiezerBewerkModus
+            ? "Tik op een speler om die te verwijderen"
+            : "Kies je speler";
+    }
+    const bewerkKnop = document.getElementById("speler-kiezer-bewerk");
+    if (bewerkKnop) bewerkKnop.textContent = kiezerBewerkModus ? "Klaar" : "✎ Bewerken";
+    // "+ nieuw" is in bewerk-modus niet logisch; dan verbergen.
+    const nieuwKnop = document.getElementById("speler-kiezer-nieuw");
+    if (nieuwKnop) nieuwKnop.style.display = kiezerBewerkModus ? "none" : "block";
+
     scherm.style.display = "flex";
     verbergLevelHud();
+}
+
+// Wisselt tussen kiezen en bewerken (verwijderen). Herbouwt de lijst met behoud
+// van de nieuwe modus.
+function toggleKiezerBewerken() {
+    kiezerBewerkModus = !kiezerBewerkModus;
+    openSpelerKiezer(true);
 }
 
 // Een bestaand profiel kiezen: actief maken, alle weergave verversen, sluiten.
@@ -6032,6 +6079,81 @@ function nieuwProfielVanuitKiezer() {
     const scherm = document.getElementById("speler-kiezer-scherm");
     if (scherm) scherm.style.display = "none";
     nieuwSpel();
+}
+
+// =========================
+// SPELER VERWIJDEREN (met bevestiging)
+// =========================
+//
+// Alleen bereikbaar via de bewerk-modus van de kiezer. Toont eerst een
+// bevestigingsscherm met de naam erin; pas "Verwijderen" (rood) wist het
+// profiel én al zijn voortgang. "Annuleren" (neutraal) doet niets.
+let teVerwijderenProfielId = null;
+
+function vraagProfielVerwijderen(id) {
+    const p = leesProfielen().find((x) => x.id === id);
+    if (!p) return;
+    teVerwijderenProfielId = id;
+
+    const naam = (p.naam || "").trim().split(/\s+/)[0] || avatarNamen[p.avatar] || "deze speler";
+    const tekst = document.getElementById("verwijder-speler-tekst");
+    if (tekst) {
+        tekst.textContent = `Weet je zeker dat je ${naam} wilt verwijderen? `
+            + `Alle trofeeën van ${naam} gaan dan weg.`;
+    }
+    const scherm = document.getElementById("verwijder-speler-scherm");
+    if (scherm) scherm.style.display = "flex";
+}
+
+function annuleerProfielVerwijderen() {
+    teVerwijderenProfielId = null;
+    const scherm = document.getElementById("verwijder-speler-scherm");
+    if (scherm) scherm.style.display = "none";
+}
+
+function bevestigProfielVerwijderen() {
+    const id = teVerwijderenProfielId;
+    teVerwijderenProfielId = null;
+    const dialoog = document.getElementById("verwijder-speler-scherm");
+    if (dialoog) dialoog.style.display = "none";
+    if (!id) return;
+
+    // Alle voortgang-sleutels van dit profiel wissen (speler_<id>_…).
+    const prefix = `speler_${id}_`;
+    const teWissen = [];
+    for (let i = 0; i < localStorage.length; i++) {
+        const k = localStorage.key(i);
+        if (k && k.indexOf(prefix) === 0) teWissen.push(k);
+    }
+    teWissen.forEach((k) => localStorage.removeItem(k));
+
+    // Uit het register verwijderen.
+    const lijst = leesProfielen().filter((p) => p.id !== id);
+    bewaarProfielen(lijst);
+
+    // Was dit de actieve speler? Dan overschakelen naar een andere (of geen)
+    // en de startscherm-weergave meteen bijwerken.
+    if (getActiefProfielId() === id) {
+        if (lijst.length > 0) {
+            setActiefProfielId(lijst[0].id);
+            laadProfielWeergave();
+        } else {
+            setActiefProfielId("");
+        }
+    }
+
+    if (lijst.length === 0) {
+        // Geen spelers meer over → kiezer sluiten en een nieuw profiel laten
+        // aanmaken, zodat er altijd een speler ontstaat.
+        kiezerBewerkModus = false;
+        const kiezer = document.getElementById("speler-kiezer-scherm");
+        if (kiezer) kiezer.style.display = "none";
+        nieuwSpel();
+    } else {
+        // Kiezer opnieuw opbouwen; in bewerk-modus blijven zodat je desgewenst
+        // meer spelers kunt opruimen.
+        openSpelerKiezer(true);
+    }
 }
 
 // Opstart: is er een actief profiel, dan direct het startscherm met dat
