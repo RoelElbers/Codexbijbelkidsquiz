@@ -216,7 +216,13 @@ height: 22%;
     z-index: 5;
 }
 
-.boek-zone::before {
+/* Gedeelde boek-glow — scherm 1 (.boek-zone) én scherm 2 (.nt2-boek-glow) putten
+   uit deze ene bron voor de LOOK (koel-blauwe radiale halo, onzichtbaar tot hover).
+   De POSITIE (transform/z-index/inset-afwijking) staat per scherm apart.
+   NB scherm 2 hangt de glow aan een APARTE <div>, niet aan de <button>, omdat een
+   button z'n pseudo-element op de border-box klipt (zie .nt2-boek-glow). */
+.boek-zone::before,
+.nt2-boek-glow::before {
     content: "";
 
     position: absolute;
@@ -255,7 +261,8 @@ height: 22%;
         scale(1.04);
 }
 
-.boek-zone:hover::before {
+.boek-zone:hover::before,
+.nt2-boek-glow.aan::before {
     opacity: 1;
 }
 
@@ -2850,6 +2857,14 @@ height: 22%;
     margin: 0;
     border: none;
     background: transparent;
+    /* De generieke button-regel (button{}) lekt een gouden box-shadow door die op
+       de transparante knop vier lelijke rechthoek-vlakken tekent — hier uitzetten.
+       LET OP: de eveneens geërfde 'floating'-animatie NIET uitzetten. Die animeert
+       transform (translateY) en maskeert daarmee de translateX(-50%)-centrering;
+       de boekposities (boekX) zijn op díe staat afgesteld. animation:none zou de
+       centrering opnieuw activeren en de boeken naar links/onder van hun plateaus
+       schuiven. Floating stil zetten vergt een aparte her-uitlijning. */
+    box-shadow: none;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
@@ -2865,7 +2880,27 @@ height: 22%;
 }
 .nt2-boek:hover {
     transform: translateX(-50%) translateY(-10px) scale(1.04);
-    filter: drop-shadow(0 0 16px rgba(255, 215, 120, 0.55));
+    /* De generieke button:hover-regel zet op hover een gouden box-shadow terug die
+       de border-box (14px) volgt = een tweede, rechthoekig kader naast de ronde
+       glow-div. box-shadow:none op de rust-staat dekt hover niet af (button:hover
+       wint daar), dus hier expliciet ook uitzetten. */
+    box-shadow: none;
+}
+/* Glow-host op scherm 2: een APARTE <div> i.p.v. de <button>. Een button klipt zijn
+   pseudo-element op de border-box (14px), waardoor de glow als rechthoek oogde;
+   een div klipt niet → ronde waas zoals scherm 1. Kopieert exact de boekpositie
+   (left/bottom/hoogte krijgt hij inline vanuit bouwNtScherm2). aspect-ratio ≈
+   boek-cover (114:131) zodat de waas op het boek valt. z-index 2 = zelfde laag als
+   het boek; pointer-events uit zodat klikken naar de knop gaat. Oplichten via .aan.
+   BEWUST GEEN translateX(-50%): de <button> erft de floating-animatie, die zijn
+   translateX(-50%) onderdrukt, waardoor het boek feitelijk LINKS-uitgelijnd op boekX
+   staat. Een div kent die animatie niet; mét translateX zou de glow een halve
+   boekbreedte (~57px) naar links springen. Zonder translateX lijnt hij op het boek. */
+.nt2-boek-glow {
+    position: absolute;
+    aspect-ratio: 114 / 131;
+    z-index: 2;
+    pointer-events: none;
 }
 
 /* Naam in code op het bordje: gouden Cinzel, cqi-geschaald zodat lange namen

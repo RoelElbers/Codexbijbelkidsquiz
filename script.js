@@ -8925,7 +8925,7 @@ const ntScherm2 = {
     // Afstelbaar via ?afstel=aan.
     boeken: [
         { naam: "Handelingen",        groep: "Handelingen",        boek: "images/handelingenboek.webp",
-          plateauX: "20.94%", boekX: "16.77%", bordX: "20.47%", naamX: "20.9%",
+          plateauX: "20.94%", boekX: "16.77%", bordX: "20.47%", naamX: "20.4%",
           boekBodem: "10%", plateauBodem: "-0.58%", bordBodem: "2.3%", naamBodem: "5.52%" },
         { naam: "Brieven van Paulus", groep: "Brieven van Paulus", boek: "images/brievenvanpaulusboek.webp",
           plateauX: "35.85%", boekX: "31.51%", bordX: "35.85%", naamX: "35.95%",
@@ -8934,7 +8934,7 @@ const ntScherm2 = {
           plateauX: "50.64%", boekX: "46.1%", bordX: "50.9%", naamX: "50.85%",
           boekBodem: "10%", plateauBodem: "-0.66%", bordBodem: "2.3%", naamBodem: "5.33%" },
         { naam: "Openbaring",         groep: "Openbaring",         boek: "images/apocalypseboek.webp",
-          plateauX: "65.75%", boekX: "60.92%", bordX: "66.06%", naamX: "66.45%",
+          plateauX: "65.75%", boekX: "60.92%", bordX: "66.06%", naamX: "65.95%",
           boekBodem: "10%", plateauBodem: "-0.4%", bordBodem: "2.57%", naamBodem: "5.79%" }
     ]
 };
@@ -8970,6 +8970,21 @@ function bouwNtScherm2() {
         boekImg.src = b.boek;
         knop.appendChild(boekImg);
 
+        // 2b) Glow-host als APARTE <div> (geen <button>). Een <button> klipt zijn
+        // pseudo-element op de border-box, waardoor de radiale hover-glow een
+        // rechthoek werd; een <div> klipt niet, dus de glow waaiert rond uit zoals
+        // op scherm 1. Kopieert exact de boekpositie (left/bottom/hoogte) en laat de
+        // knop-positionering, -klik en -afstel volledig ongemoeid. Puur decoratief
+        // (pointer-events uit in CSS); licht op via een hover-koppeling op de knop.
+        const glow = document.createElement("div");
+        glow.className = "nt2-boek-glow";
+        glow.setAttribute("aria-hidden", "true");
+        glow.style.left = b.boekX;
+        glow.style.bottom = b.boekBodem;
+        glow.style.height = ntScherm2.boekHoogte;
+        knop.addEventListener("mouseenter", () => glow.classList.add("aan"));
+        knop.addEventListener("mouseleave", () => glow.classList.remove("aan"));
+
         // 3) Naambordje + de naam er in code overheen.
         const bord = document.createElement("img");
         bord.className = "nt2-bord";
@@ -8998,7 +9013,7 @@ function bouwNtScherm2() {
             });
         }
 
-        houder.append(plateau, knop, bord, naam);
+        houder.append(plateau, knop, glow, bord, naam);
     });
 }
 
