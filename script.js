@@ -5686,7 +5686,11 @@ const avatarNamen = {
     mozes: "Mozes",
     esther: "Esther",
     judith: "Judith",
-    samuel: "Samuel"
+    samuel: "Samuel",
+    jozef: "Jozef",
+    elia: "Elia",
+    ruth: "Ruth",
+    maria: "Maria"
 };
 
 const STANDAARD_AVATAR = "mozes";

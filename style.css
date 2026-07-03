@@ -2398,6 +2398,19 @@ height: 22%;
     margin: 4px 0 14px;
 }
 
+/* Met 8 avatars past het raster niet meer in het venster. Maak alléén het
+   keuze-raster van het nieuw-spel-scherm verticaal scrollbaar met een max-hoogte,
+   zodat de onderste rij bereikbaar/klikbaar blijft en de titel boven + Start/Terug
+   onder altijd zichtbaar blijven. (De spelerkiezer gebruikt ook .avatar-keuze,
+   maar die laten we ongemoeid.) */
+#nieuw-spel-scherm .avatar-keuze {
+    max-height: 52vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+    padding-right: 6px;
+}
+
 /* Knop vult zijn kolom; eigen styling — niet overerven van .answer-btn. */
 .avatar-keuze-btn {
     position: relative;      /* anker voor de verwijder-badge in bewerk-modus */
@@ -2439,6 +2452,15 @@ height: 22%;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid rgba(255, 215, 120, 0.45);
+}
+
+/* Elia's én Jozef's bronfoto's zijn portret met een hoog geplaatst gezicht; met de
+   standaard object-position (midden) vallen ze te hoog/scheef in de cirkel. Naar
+   boven verschuiven brengt hun gezicht richting het midden, net als de andere zes.
+   ALLEEN Elia en Jozef. */
+.avatar-keuze-btn[data-avatar="elia"] img,
+.avatar-keuze-btn[data-avatar="jozef"] img {
+    object-position: 50% 0%;
 }
 
 .avatar-keuze-btn:hover {
