@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bijbelkidsquiz</title>
-    <link rel="stylesheet" href="style.css?v=7">
+    <link rel="stylesheet" href="style.css?v=9">
 </head>
 
 <body>
@@ -103,6 +103,14 @@
         <!-- Onzichtbare klik-zone over de geschilderde "INSTELLINGEN"-knop.
              Zelfde patroon als .bijbeltraining-zone. -->
         <div class="instellingen-zone" onclick="openInstellingen()"></div>
+
+        <!-- Donatie-lantaarn (linksonder): onzichtbare klik-zone over de
+             geschilderde lantaarn, met warme hover-gloed (CSS). Klikgedrag zit in
+             script.js (initDonatieLantaarn), gestuurd door DONATIE_ACTIEF/DONATIE_URL.
+             Nog niet live: klik toont voorlopig een in-stijl melding. -->
+        <div class="donatie-zone" id="donatie-zone" role="button" tabindex="0"
+             aria-label="Steun dit project" title="Steun dit project"></div>
+        <div class="donatie-melding" id="donatie-melding" aria-live="polite"></div>
 
         <!-- ===== Schermnavigatie: Evangeliën (scherm 1, dit startscherm) <->
              overige NT-boeken (scherm 2). Beide randpijlen én scherm 2 zitten

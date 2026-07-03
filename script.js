@@ -3,6 +3,15 @@
 // Bij de echte launch: op false zetten en het lint verdwijnt volledig.
 const BETA_MODUS = true;
 
+// --- Donatie-lantaarn (linksonder op het startscherm) -----------------------
+// De lantaarn is klikbaar en voelt klikbaar (warme hover-gloed), maar donaties
+// staan nog UIT. Zodra de donatiepagina live is (bunq of Mollie): DONATIE_ACTIEF
+// op true en DONATIE_URL invullen — dat is de enige plek die je hoeft te wijzigen.
+// Uit  -> klik toont een in-stijl melding ("binnenkort mogelijk").
+// Aan  -> klik opent DONATIE_URL in een nieuwe tab (noopener, noreferrer).
+const DONATIE_ACTIEF = false;
+const DONATIE_URL = "";
+
 // --- Geluid -----------------------------------------------------------------
 // Eenvoudig klikgeluid, in code opgewekt — geen geluidsbestand nodig, werkt ook
 // via file:///. De AAN/UIT-stand wordt onthouden in localStorage (standaard aan).
@@ -9337,6 +9346,38 @@ if (BETA_MODUS) {
         container.appendChild(lint);
     }
 }
+
+// --- Donatie-lantaarn: klikgedrag ------------------------------------------
+// De klikzone (.donatie-zone) en de melding (.donatie-melding) staan in de HTML;
+// de hover-gloed zit in de CSS. Hier alleen het klikgedrag, gestuurd door de
+// vlaggen bovenaan. Uit -> in-stijl melding; aan -> DONATIE_URL in nieuwe tab.
+(function initDonatieLantaarn() {
+    const zone = document.getElementById("donatie-zone");
+    if (!zone) return;
+    const melding = document.getElementById("donatie-melding");
+    let verbergTimer = null;
+
+    function toonMelding(tekst) {
+        if (!melding) return;
+        melding.textContent = tekst;
+        melding.classList.add("zichtbaar");
+        clearTimeout(verbergTimer);
+        verbergTimer = setTimeout(() => melding.classList.remove("zichtbaar"), 3200);
+    }
+
+    function activeer() {
+        if (DONATIE_ACTIEF && DONATIE_URL) {
+            window.open(DONATIE_URL, "_blank", "noopener,noreferrer");
+        } else {
+            toonMelding("Steun dit project — binnenkort mogelijk!");
+        }
+    }
+
+    zone.addEventListener("click", activeer);
+    zone.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activeer(); }
+    });
+})();
 
 // Afstelmodus (?afstel=aan): open meteen de zaal en activeer de afstel-UI.
 if (afstelModus) openSchatkamer();
