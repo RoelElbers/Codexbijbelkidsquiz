@@ -9051,25 +9051,25 @@ const nt2Kast = {
                         labelX: "19.49%", labelY: "71.49%", labelBreedte: "16.20%" },
                       { sleutel: "trofee_korintiers", basis: "korintiers", naam: "Korintiërs",
                         x: "41.69%", y: "60.56%", breedte: "17.00%",
-                        labelX: "41.69%", labelY: "71.49%", labelBreedte: "17.00%" },
+                        labelX: "41.96%", labelY: "71.49%", labelBreedte: "17.00%" },
                       { sleutel: "trofee_galaten", basis: "galaten", naam: "Galaten",
                         x: "65.49%", y: "60.13%", breedte: "17.80%",
                         labelX: "65.23%", labelY: "71.49%", labelBreedte: "16.80%" },
                       { sleutel: "trofee_efeziers", basis: "efeziers", naam: "Efeziërs",
                         x: "87.70%", y: "63.98%", breedte: "11.40%",
-                        labelX: "87.69%", labelY: "71.92%", labelBreedte: "16.60%" },
+                        labelX: "88.49%", labelY: "71.52%", labelBreedte: "16.60%" },
                       { sleutel: "trofee_filippenzen", basis: "filippenzen", naam: "Filippenzen",
                         x: "18.96%", y: "86.62%", breedte: "11.20%",
                         labelX: "19.50%", labelY: "94.36%", labelBreedte: "17.00%" },
                       { sleutel: "trofee_kolossenzen_filemon", basis: "kolossenzen-filemon", naam: "Kolossenzen",
                         x: "41.70%", y: "87.26%", breedte: "11.20%",
-                        labelX: "40.63%", labelY: "95.00%", labelBreedte: "15.40%" },
+                        labelX: "41.96%", labelY: "94.36%", labelBreedte: "14.60%" },
                       { sleutel: "trofee_tessalonicenzen", basis: "tessalonicenzen", naam: "Tessalonicenzen",
                         x: "65.23%", y: "87.48%", breedte: "11.60%",
-                        labelX: "64.70%", labelY: "95.22%", labelBreedte: "13.00%" },
+                        labelX: "65.23%", labelY: "94.38%", labelBreedte: "13.00%" },
                       { sleutel: "trofee_timoteus_titus", basis: "timoteus-titus", naam: "Timoteüs",
                         x: "87.96%", y: "87.48%", breedte: "10.60%",
-                        labelX: "87.96%", labelY: "95.00%", labelBreedte: "17.00%" }
+                        labelX: "88.23%", labelY: "94.39%", labelBreedte: "17.00%" }
                   ] }
             ]
         },
@@ -9089,7 +9089,7 @@ const nt2Kast = {
                         labelX: "58.31%", labelY: "38.60%", labelBreedte: "20.40%" },
                       { sleutel: "trofee_johannesbrieven", basis: "johannesbrieven", naam: "1-3 Johannes",
                         x: "79.98%", y: "27.24%", breedte: "16.60%",
-                        labelX: "80.51%", labelY: "38.39%", labelBreedte: "20.00%" }
+                        labelX: "80.24%", labelY: "38.59%", labelBreedte: "20.00%" }
                   ] },
                 { zone: "openbaring",
                   nissen: [

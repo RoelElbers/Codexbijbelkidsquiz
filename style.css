@@ -207,6 +207,13 @@ height: 22%;
     transition: 0.3s;
 
     border-radius: 50%;
+
+    /* Boven de voorgrond (3) en de fakkel-laag (4) zodat de hover-glow
+       (.boek-zone::before) zichtbaar vóór die decoratieve lagen valt i.p.v.
+       eronder begraven te worden. Ruim onder de menu-klikzones (100) en de
+       quiz-overlays (999). De zone zelf is transparant, dus alleen de glow
+       komt naar voren — het geschilderde boek zit in de achtergrond. */
+    z-index: 5;
 }
 
 .boek-zone::before {
