@@ -264,15 +264,17 @@ height: 22%;
 ========================= */
 
 .matteus {
-    left: 22.5%;
+    left: 22.0%;        /* 0,5% naar links t.o.v. het origineel (22,5%) */
 }
 
 .marcus {
-    left: 34.8%;
+    left: 35.3%;        /* 0,5% naar rechts t.o.v. het origineel (34,8%) */
+    bottom: 9.7%;       /* 1,5% omhoog t.o.v. de gedeelde .boek-zone (8.2%) */
 }
 
 .lucas {
     left: 47.2%;
+    bottom: 9.7%;       /* 1,5% omhoog t.o.v. de gedeelde .boek-zone (8.2%) */
 }
 
 .johannes {
