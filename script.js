@@ -5859,10 +5859,11 @@ function setSpelerNaam(naam) {
     updateActiefProfiel({ naam: naam || "" });
 }
 
-function getSpelerVoornaam() {
-    const volledig = getSpelerNaam().trim();
-    if (!volledig) return "";
-    return volledig.split(/\s+/)[0];
+// De naam zoals die op het naambordje en in de spelerkiezer verschijnt: de
+// VOLLEDIGE ingevoerde naam, inclusief spaties ("Coole Kids" blijft "Coole
+// Kids"). Te lange namen worden op het bordje passend gekrompen, niet afgekapt.
+function getSpelerWeergaveNaam() {
+    return getSpelerNaam().trim();
 }
 
 function updateAvatarWeergave() {
@@ -5876,13 +5877,13 @@ function updateAvatarWeergave() {
 
     const voornaamEl = document.getElementById("speler-voornaam");
     if (voornaamEl) {
-        voornaamEl.innerHTML = getSpelerVoornaam();
+        voornaamEl.textContent = getSpelerWeergaveNaam();
         pasVoornaamGrootteAan(voornaamEl);
     }
 }
 
 // Laat de letters van het speler-naambordje automatisch iets krimpen wanneer
-// een voornaam te lang is voor de vaste breedte van het bordje, zodat hij
+// de naam te lang is voor de vaste breedte van het bordje, zodat hij
 // altijd binnen de plaat blijft passen. De basisgrootte komt uit style.css
 // (--speler-lettergrootte); we verkleinen alleen wanneer het echt nodig is.
 function pasVoornaamGrootteAan(el) {
@@ -6027,8 +6028,8 @@ function openSpelerKiezer(behoudModus) {
         img.alt = p.naam || avatarNamen[avatar];
 
         const naam = document.createElement("span");
-        const voornaam = (p.naam || "").trim().split(/\s+/)[0];
-        naam.textContent = voornaam || avatarNamen[avatar];
+        const naamTekst = (p.naam || "").trim();
+        naam.textContent = naamTekst || avatarNamen[avatar];
 
         knop.appendChild(img);
         knop.appendChild(naam);
@@ -6108,7 +6109,7 @@ function vraagProfielVerwijderen(id) {
     if (!p) return;
     teVerwijderenProfielId = id;
 
-    const naam = (p.naam || "").trim().split(/\s+/)[0] || avatarNamen[p.avatar] || "deze speler";
+    const naam = (p.naam || "").trim() || avatarNamen[p.avatar] || "deze speler";
     const tekst = document.getElementById("verwijder-speler-tekst");
     if (tekst) {
         tekst.textContent = `Weet je zeker dat je ${naam} wilt verwijderen? `
