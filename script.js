@@ -4568,7 +4568,7 @@ vragenData["Petrus & Judas"] = {
     beginner: [
         {
             vraag: "Petrus schrijft: geef al je zorgen aan God, want …",
-            antwoorden: ["Hij zorgt voor jou", "Hij is het te druk", "Hij luistert toch niet", "je moet ze zelf dragen"],
+            antwoorden: ["Hij heeft het te druk voor kleine dingen", "Hij zorgt voor jou", "je moet ze uiteindelijk zelf dragen", "Hij luistert toch niet naar klachten"],
             correct: "Hij zorgt voor jou",
             bijbelplaats: "1 Petrus 5:7"
         },
