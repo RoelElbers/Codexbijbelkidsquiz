@@ -333,13 +333,13 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         beginner: [
             {
                 vraag: "Wie doopte Jezus in de rivier de Jordaan?",
-                antwoorden: ["Petrus", "Mozes", "Johannes de Doper", "Elia"],
+                antwoorden: ["Jozef", "Johannes de Doper", "Mozes", "Zacharias"],
                 correct: "Johannes de Doper",
                 bijbelplaats: "Marcus 1:9"
             },
             {
                 vraag: "Met wie eet Jezus aan tafel, tot afkeer van de Farizeeën?",
-                antwoorden: ["Met koningen", "Met tollenaars en zondaars", "Met soldaten", "Met priesters"],
+                antwoorden: ["Met de Sadduceeën", "Met tollenaars en zondaars", "Met priesters", "Met soldaten"],
                 correct: "Met tollenaars en zondaars",
                 bijbelplaats: "Marcus 2:15-16"
             },
@@ -348,12 +348,6 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["7", "10", "12", "40"],
                 correct: "12",
                 bijbelplaats: "Marcus 3:13-19"
-            },
-            {
-                vraag: "Wat deed Jezus net voordat de storm begon op het meer?",
-                antwoorden: ["Hij sliep achter in de boot", "Hij stond op de voorplecht", "Hij was aan het eten", "Hij was niet aan boord"],
-                correct: "Hij sliep achter in de boot",
-                bijbelplaats: "Marcus 4:38"
             },
             {
                 vraag: "Wat deed Jezus met het dochtertje van Jaïrus, dat was overleden?",
@@ -408,7 +402,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deden de leerlingen toen Jezus over het water op hen toe kwam?",
-                antwoorden: ["Ze sprongen overboord van blijdschap", "Ze schreeuwden van angst, want ze dachten dat het een spook was", "Ze begrepen het meteen", "Ze sliepen door"],
+                antwoorden: ["Ze sprongen overboord en zwommen naar Jezus toe", "Ze schreeuwden van angst, want ze dachten dat het een spook was", "Ze roeiden zo hard mogelijk de andere kant op", "Ze schreeuwden naar hem en vroegen wie hij was"],
                 correct: "Ze schreeuwden van angst, want ze dachten dat het een spook was",
                 bijbelplaats: "Marcus 6:49-50"
             },
@@ -426,9 +420,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zag Jezus een arme weduwe in de tempel doen, wat hij prees als groter dan wat alle rijken gaven?",
-                antwoorden: ["Ze bad lang", "Ze gaf twee kleine geldstukjes alles wat ze had", "Ze zong een lied", "Ze maakte de tempel schoon"],
-                correct: "Ze gaf twee kleine geldstukjes alles wat ze had",
-                bijbelplaats: "Marcus 12:41-44"
+                antwoorden: ["Ze bad lang", "Ze gaf twee penningen, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
+                correct: "Ze gaf twee penningen, alles wat ze had",
+                bijbelplaats: "Marcus 12:41-44",
+                uitleg: "Twee penningen waren samen maar heel weinig waard — omgerekend zo'n anderhalf tot twee euro. Eén zo'n muntje was het allerkleinste dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
             },
             {
                 vraag: "Welke leerling sprak Jezus rechtstreeks aan toen hij zijn leerlingen in Getsemane slapend aantrof?",
@@ -449,16 +444,16 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 15:39"
             },
             {
-                vraag: "Wat zei Jezus tegen de wind en de golven toen hij de storm op het meer tot bedaren bracht?",
-                antwoorden: ["Wees stil! Zwijg!", "Ga weg!", "Help mij", "Wakker worden!"],
-                correct: "Wees stil! Zwijg!",
+                vraag: "Wat gebeurde er nadat Jezus de wind en de golven had toegesproken?",
+                antwoorden: ["De storm ging liggen, maar pas na een uur", "Het werd meteen helemaal stil op het meer", "De regen hield op, maar de wind bleef waaien", "De boot werd toch omvergeblazen en ze vielen in het water"],
+                correct: "Het werd meteen helemaal stil op het meer",
                 bijbelplaats: "Marcus 4:39"
             }
         ],
         expert: [
             {
                 vraag: "Wat is een opvallend woord dat in het evangelie van Marcus heel vaak voorkomt, en dat de snelheid van zijn verhaal aangeeft?",
-                antwoorden: ["Vrede", "Meteen (of terstond)", "Wacht", "Later"],
+                antwoorden: ["Vrede", "Meteen (of terstond)", "Wacht", "Dat mag je niet doen"],
                 correct: "Meteen (of terstond)",
                 bijbelplaats: "Marcus 1:10, 1:18 en vele andere plaatsen"
             },
@@ -469,10 +464,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 1:1"
             },
             {
-                vraag: "Hoeveel jaar had de vrouw die bloed verloor en die Jezus' kleed aanraakte al last van haar kwaal?",
-                antwoorden: ["5 jaar", "12 jaar", "18 jaar", "40 jaar"],
-                correct: "12 jaar",
-                bijbelplaats: "Marcus 5:25"
+                vraag: "Jezus wekte het dochtertje van Jaïrus op. Hoe oud was dit meisje?",
+                antwoorden: ["Vijf jaar", "Twaalf jaar", "Zestien jaar", "Acht jaar"],
+                correct: "Twaalf jaar",
+                bijbelplaats: "Marcus 5:42"
             },
             {
                 vraag: "Hoe noemde de bezetene in het gebied van de Gerasenen de demonen die in hem zaten?",
@@ -523,9 +518,9 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 12:15-16"
             },
             {
-                vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten ze, en hoeveel stelden ze samen voor?",
-                antwoorden: ["Penningen (lepta) — samen bijna niets, een fractie van een dagloon", "Denarie — samen ongeveer een dagloon", "Talenten — samen een klein vermogen", "Ponden — samen ongeveer honderd daglonen"],
-                correct: "Penningen (lepta) — samen bijna niets, een fractie van een dagloon",
+                vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten die muntjes?",
+                antwoorden: ["Denarie", "Penningen (lepta)", "Ponden", "Talenten"],
+                correct: "Penningen (lepta)",
                 bijbelplaats: "Marcus 12:42"
             },
             {
@@ -542,7 +537,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "In de Bijbel lezen we dat Jezus soms een hoge berg opging. Wat is de hoogste berg van Israël?",
-                antwoorden: ["De berg Tabor", "De berg Sinaï", "De berg Hermon", "De Olijfberg"],
+                antwoorden: ["De berg Tabor", "De berg Sinaï, in de woestijn van Egypte", "De berg Hermon", "De Olijfberg"],
                 correct: "De berg Hermon",
                 uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager. De berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit. En de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
             }
@@ -1041,19 +1036,19 @@ vragenData["Marcus"].beginner.push(
     },
     {
         vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
-        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Een lang gebed opzeggen", "Veel geld geven aan de tempel", "Naar een ander land verhuizen"],
+        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Veel gebeden opzeggen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
         correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
         bijbelplaats: "Marcus 1:4"
     },
     {
         vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
-        antwoorden: ["Daar waar God de koning is en alles goed en eerlijk gaat", "Het land Israël op de kaart", "Het paleis van koning Herodes", "De stad Rome"],
-        correct: "Daar waar God de koning is en alles goed en eerlijk gaat",
+        antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "De stad Rome"],
+        correct: "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft",
         bijbelplaats: "Marcus 1:15"
     },
     {
         vraag: 'Wat is een "wonder" in de Bijbel?',
-        antwoorden: ["Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Een grappig verhaal", "Een streng bevel", "Een oude wet"],
+        antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
         correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
         bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
     }
@@ -1061,19 +1056,19 @@ vragenData["Marcus"].beginner.push(
 vragenData["Marcus"].advanced.push(
     {
         vraag: "Bij de doop van Jezus daalde de Heilige Geest op hem neer. In de gedaante van welk dier?",
-        antwoorden: ["Een duif", "Een arend", "Een lam", "Een leeuw"],
+        antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
         correct: "Een duif",
         bijbelplaats: "Marcus 1:10"
     },
     {
-        vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Wat zei hij erover?",
-        antwoorden: ["De sabbat is er voor de mens, en niet de mens voor de sabbat", "Op de sabbat mag je nooit iemand helpen", "De sabbat is de belangrijkste regel van allemaal", "De sabbat geldt alleen voor priesters"],
+        vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
+        antwoorden: ["Op de sabbat mag je echt niemand helpen", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
         correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
         bijbelplaats: "Marcus 2:27"
     },
     {
         vraag: 'Wat was een "schriftgeleerde"?',
-        antwoorden: ["Een kenner van de heilige boeken, die ze aan anderen uitlegde", "Een soldaat van de keizer", "Een bouwer van de tempel", "Een belastingontvanger"],
+        antwoorden: ["Iemand die heel veel boeken gelezen had", "Een kenner van de heilige boeken, die ze aan anderen uitlegde", "Iemand die de belastingregels aan het volk kon uitleggen", "Iemand die de Romeinse wet uit zijn hoofd kende"],
         correct: "Een kenner van de heilige boeken, die ze aan anderen uitlegde",
         bijbelplaats: "Marcus 12:28"
     }
@@ -1272,14 +1267,8 @@ vragenData["Marcus"].beginner.push(
 );
 vragenData["Marcus"].advanced.push(
     {
-        vraag: 'De dag begon bij zonsopgang. Hoe laat was ongeveer het "derde uur"?',
-        antwoorden: ["Ongeveer negen uur 's ochtends", "Ongeveer drie uur 's nachts", "Rond het middaguur", "Drie uur 's middags"],
-        correct: "Ongeveer negen uur 's ochtends",
-        bijbelplaats: "Marcus 15:25"
-    },
-    {
-        vraag: 'De Romeinen verdeelden de nacht in vier "wachten". Jezus noemde ze toen hij zei: waak dan! Welke vier waren dat?',
-        antwoorden: ["De avond, middernacht, het hanengekraai en de vroege ochtend", "Zonsopgang, ochtend, middag en avond", "Lente, zomer, herfst en winter", "Het eerste, tweede, derde en vierde uur"],
+        vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
+        antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "Zonsopgang, ochtend, middag en avond", "Het eerste, tweede, derde en vierde uur"],
         correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
         bijbelplaats: "Marcus 13:35"
     }
