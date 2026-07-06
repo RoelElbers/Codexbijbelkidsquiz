@@ -963,6 +963,18 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Vijftig el", "Honderd el", "Tweehonderd el", "Vijfhonderd el"],
                 correct: "Tweehonderd el",
                 bijbelplaats: "Johannes 21:8"
+            },
+            {
+                vraag: "Wat is er zo bijzonder aan de Dode Zee?",
+                antwoorden: ["Het water stijgt en daalt enkele meters bij eb en vloed", "Er zit zoveel zout in dat er niets in kan leven", "Het is het diepste meer op aarde", "Het water is er zoet genoeg om zomaar op te drinken"],
+                correct: "Er zit zoveel zout in dat er niets in kan leven",
+                uitleg: "De Dode Zee zit boordevol zout — zoveel dat er bijna niets in kan leven. Dat komt doordat de Jordaan er wel ín stroomt, maar er nergens water uit weg kan. Het water verdampt in de hitte en het zout blijft achter, steeds meer. Daardoor is het water zo zwaar dat je er zomaar op blijft drijven. En omdat het een meer is en geen echte zee, merk je er ook niets van eb en vloed."
+            },
+            {
+                vraag: "Hoeveel grote rivieren en meren heeft Israël?",
+                antwoorden: ["2 rivieren en 3 meren", "1 rivier en 2 meren", "1 rivier en 3 meren", "3 rivieren en 1 meer"],
+                correct: "1 rivier en 3 meren",
+                uitleg: "Israël is een droog land, dus er is weinig water. Er is maar één grote rivier: de Jordaan. En er zijn drie meren: het Meer van Galilea en de Dode Zee zijn de bekende twee, en in het noorden ligt nog een klein meer, het Meer van Hula. De Jordaan verbindt het Meer van Galilea met de Dode Zee."
             }
         ]
     }
