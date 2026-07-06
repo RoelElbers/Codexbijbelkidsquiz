@@ -1325,12 +1325,6 @@ vragenData["Johannes"].expert.push(
         bijbelplaats: "Johannes 12:3 (de zalving in Betanië)"
     },
     {
-        vraag: "De stenen kruiken in Kana hielden elk twee of drie metreet. Hoeveel liter was dat ongeveer per kruik?",
-        antwoorden: ["Zo'n 80 tot 120 liter", "Ongeveer 5 liter", "Ongeveer 10 liter", "Meer dan 500 liter"],
-        correct: "Zo'n 80 tot 120 liter",
-        bijbelplaats: "Johannes 2:6"
-    },
-    {
         vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
         antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Eén denarie", "Een paar penningen"],
         correct: "Driehonderd denarie (bijna een jaarloon)",
@@ -1341,22 +1335,9 @@ vragenData["Johannes"].expert.push(
 
 // --- Uren van de dag: drie bekende momenten ---------------------------------
 // Horen bij de naslagtabel "Maten, geld & tijd". Elk bij het bijbelboek van de
-// gebeurtenis; het Pinkstervoorbeeld staat onder Lucas, omdat Lucas ook
-// Handelingen schreef.
-vragenData["Lucas"].expert.push(
-    {
-        vraag: 'Op het Pinksterfeest dachten spotters dat de leerlingen dronken waren. Petrus zei: dat kan niet, "het is pas het derde uur van de dag". Waarom was dat een goed weerwoord?',
-        antwoorden: [
-            "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
-            "Het was midden in de nacht en iedereen sliep",
-            "Op het derde uur mocht je geen wijn drinken",
-            "Het was al avond en alle wijn was op"
-        ],
-        correct: "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
-        bijbelplaats: "Handelingen 2:15",
-        uitleg: "De dag begon bij zonsopgang. Het 'derde uur' is dan ongeveer negen uur 's ochtends — veel te vroeg op de dag om dronken te zijn. Wat de mensen zagen, kwam niet door de wijn, maar door de heilige Geest."
-    }
-);
+// gebeurtenis. Het Pinkstervoorbeeld hoort bij Handelingen (Handelingen 2:15)
+// en staat als push ná de Handelingen-pool, omdat vragenData["Handelingen"]
+// hierboven nog niet bestaat.
 vragenData["Johannes"].expert.push(
     {
         vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
@@ -1923,7 +1904,7 @@ vragenData["Handelingen"] = {
     advanced: [
         {
             vraag: "Wie schreef het boek Handelingen? (dezelfde schrijver als het evangelie van Lucas)",
-            antwoorden: ["Petrus", "Lucas", "Tomas", "Markus"],
+            antwoorden: ["Petrus", "Lucas", "Tomas", "Marcus"],
             correct: "Lucas",
             bijbelplaats: "Handelingen 1:1"
         },
@@ -2051,7 +2032,7 @@ vragenData["Handelingen"] = {
     expert: [
         {
             vraag: "De leerlingen kozen iemand nieuw in de plaats van Judas. Hoe heette hij?",
-            antwoorden: ["Markus", "Mattias", "Silas", "Lucas"],
+            antwoorden: ["Marcus", "Mattias", "Silas", "Lucas"],
             correct: "Mattias",
             bijbelplaats: "Handelingen 1:23-26"
         },
@@ -2123,7 +2104,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op zijn reizen nam Paulus een jonge helper mee die in Jezus geloofde. Hoe heette deze jonge man?",
-            antwoorden: ["Tomas", "Timoteüs", "Judas", "Markus"],
+            antwoorden: ["Tomas", "Timoteüs", "Judas", "Marcus"],
             correct: "Timoteüs",
             bijbelplaats: "Handelingen 16:1-3"
         },
@@ -2171,6 +2152,24 @@ vragenData["Handelingen"] = {
         }
     ]
 };
+
+// --- Uren van de dag: Pinksteren (verplaatst vanuit de Lucas-pool) -----------
+// Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
+// Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: 'Op het Pinksterfeest dachten spotters dat de leerlingen dronken waren. Petrus zei: dat kan niet, "het is pas het derde uur van de dag". Waarom was dat een goed weerwoord?',
+        antwoorden: [
+            "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
+            "Het was midden in de nacht en iedereen sliep",
+            "Op het derde uur mocht je geen wijn drinken",
+            "Het was al avond en alle wijn was op"
+        ],
+        correct: "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
+        bijbelplaats: "Handelingen 2:15",
+        uitleg: "De dag begon bij zonsopgang. Het 'derde uur' is dan ongeveer negen uur 's ochtends — veel te vroeg op de dag om dronken te zijn. Wat de mensen zagen, kwam niet door de wijn, maar door de heilige Geest."
+    }
+);
 
 // =====================================================================
 // Vragenpool: 1 & 2 Korintiërs  (Beginner 17 · Gevorderd 15 · Expert 12)
@@ -3235,7 +3234,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Wie noemt Paulus aan het begin als mede-afzender van de brief?",
-            antwoorden: ["Timoteüs", "Petrus", "Lukas", "Markus"],
+            antwoorden: ["Timoteüs", "Petrus", "Lukas", "Marcus"],
             correct: "Timoteüs",
             bijbelplaats: "Filippenzen 1:1"
         },
@@ -3485,13 +3484,13 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Toen Paulus niet zelf kon komen, stuurde hij iemand om de Tessalonicenzen te bemoedigen. Wie?",
-            antwoorden: ["Timoteüs", "Lukas", "Markus", "Demas"],
+            antwoorden: ["Timoteüs", "Lukas", "Marcus", "Demas"],
             correct: "Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 3:2"
         },
         {
             vraag: "Wie noemt Paulus aan het begin als mede-afzenders, naast hemzelf?",
-            antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Markus", "Lukas en Titus"],
+            antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Marcus", "Lukas en Titus"],
             correct: "Silvanus en Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 1:1"
         },
@@ -3588,9 +3587,9 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 2:5"
         },
         {
-            vraag: "Paulus vraagt om Markus naar hem toe te halen. Waarom?",
-            antwoorden: ["Omdat Markus nuttig is voor het werk", "Omdat Markus de weg goed kent", "Omdat Markus ziek is", "Omdat Markus sterk is"],
-            correct: "Omdat Markus nuttig is voor het werk",
+            vraag: "Paulus vraagt om Marcus naar hem toe te halen. Waarom?",
+            antwoorden: ["Omdat Marcus nuttig is voor het werk", "Omdat Marcus de weg goed kent", "Omdat Marcus ziek is", "Omdat Marcus sterk is"],
+            correct: "Omdat Marcus nuttig is voor het werk",
             bijbelplaats: "2 Timoteüs 4:11"
         },
         {
@@ -3964,7 +3963,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
-            antwoorden: ["Lukas", "Markus", "Demas", "Aristarchus"],
+            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
             correct: "Lukas",
             bijbelplaats: "Kolossenzen 4:14"
         },
@@ -3981,7 +3980,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:10"
         },
         {
-            vraag: "Paulus noemt Markus familie van een bekende medewerker. Van wie is Markus de neef?",
+            vraag: "Paulus noemt Marcus familie van een bekende medewerker. Van wie is Marcus de neef?",
             antwoorden: ["Van Barnabas", "Van Petrus", "Van Paulus", "Van Timoteüs"],
             correct: "Van Barnabas",
             bijbelplaats: "Kolossenzen 4:10"
@@ -5029,7 +5028,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "In de derde brief prijst Johannes een man die gastvrij is voor rondreizende gelovigen. Hoe heet hij?",
-            antwoorden: ["Gajus", "Petrus", "Lucas", "Markus"],
+            antwoorden: ["Gajus", "Petrus", "Lucas", "Marcus"],
             correct: "Gajus",
             bijbelplaats: "3 Johannes 1"
         },
