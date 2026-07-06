@@ -136,7 +136,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus toen er een storm op het meer was en de leerlingen bang werden?",
-                antwoorden: ["Hij sliep verder", "Hij maakte dat de storm ging liggen", "Hij sprong overboord", "Hij riep om hulp"],
+                antwoorden: ["Hij sliep gewoon verder", "Hij maakte dat de storm ging liggen", "Hij verliet de boot en liep over het water naar de overkant", "Hij nam het stuur over en leidde de boot veilig naar de haven"],
                 correct: "Hij maakte dat de storm ging liggen",
                 bijbelplaats: "Matteüs 8:23-27"
             },
@@ -174,7 +174,7 @@ const vragenData = {
             },
             {
                 vraag: "In de gelijkenis van de zaaier: waar viel het zaad dat geen blijvende vrucht droeg, onder andere?",
-                antwoorden: ["In een rivier", "Op de rotsbodem en tussen de distels", "In een mand", "Op een berg"],
+                antwoorden: ["In een rivier", "Op het pad", "Op de rotsbodem en tussen de distels", "Op een berg"],
                 correct: "Op de rotsbodem en tussen de distels",
                 bijbelplaats: "Matteüs 13:3-8"
             },
@@ -186,7 +186,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat gebeurde er op het moment dat Jezus aan het kruis stierf?",
-                antwoorden: ["Het begon te sneeuwen", "Het werd donker en het voorhangsel van de tempel scheurde", "Er verscheen een regenboog", "De zon kwam op"],
+                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Er verscheen een regenboog", "De zon kwam op"],
                 correct: "Het werd donker en het voorhangsel van de tempel scheurde",
                 bijbelplaats: "Matteüs 27:45-51"
             },
@@ -198,7 +198,7 @@ const vragenData = {
             },
             {
                 vraag: "In de gelijkenis van de talenten: wat deed de dienaar die maar één talent had gekregen?",
-                antwoorden: ["Hij verdubbelde het", "Hij begroef het in de grond", "Hij gaf het weg", "Hij verloor het"],
+                antwoorden: ["Hij verdubbelde het", "Hij begroef het in de grond", "Hij gaf het weg", "Hij ging ermee gokken en had alles verloren"],
                 correct: "Hij begroef het in de grond",
                 bijbelplaats: "Matteüs 25:14-30"
             },
@@ -224,24 +224,24 @@ const vragenData = {
         expert: [
             {
                 vraag: "Wie verschenen er naast Jezus toen hij op de berg van gedaante veranderde?",
-                antwoorden: ["Abraham en David", "Mozes en Elia", "Petrus en Johannes", "Twee engelen"],
+                antwoorden: ["Mozes en Abraham", "Mozes en Elia", "Twee aartsengelen", "Elia en Abraham"],
                 correct: "Mozes en Elia",
                 bijbelplaats: "Matteüs 17:3"
             },
             {
                 vraag: "Wat vroeg de moeder van Jakobus en Johannes aan Jezus voor haar zonen?",
-                antwoorden: ["Of ze rijk mochten worden", "Of ze links en rechts van hem mochten zitten in zijn koninkrijk", "Of ze naar huis mochten", "Of ze meer brood kregen"],
+                antwoorden: ["Of ze wat meer mochten uitrusten, want ze was bang dat haar zonen te vermoeid waren", "Of ze links en rechts van hem mochten zitten in zijn koninkrijk", "Of ze naar huis mochten", "Of ze meer brood kregen"],
                 correct: "Of ze links en rechts van hem mochten zitten in zijn koninkrijk",
                 bijbelplaats: "Matteüs 20:20-21"
             },
             {
                 vraag: "Met welke maaltijd, een Joods feest, vierde Jezus het laatste avondmaal met zijn leerlingen?",
-                antwoorden: ["Het Loofhuttenfeest", "Het Pesach (Paasmaal)", "Het Wekenfeest", "Het Purimfeest"],
+                antwoorden: ["Het Loofhuttenfeest", "Het Pesach (Paasmaal)", "Het Wekenfeest", "De sabbatsmaaltijd"],
                 correct: "Het Pesach (Paasmaal)",
                 bijbelplaats: "Matteüs 26:17"
             },
             {
-                vraag: "Waarmee begint het evangelie van Matteüs, dat de afkomst van Jezus laat zien?",
+                vraag: "Waarmee begint het evangelie van Matteüs?",
                 antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met de schepping", "Met een brief", "Met een lied"],
                 correct: "Met een geslachtsregister vanaf Abraham",
                 bijbelplaats: "Matteüs 1:1-17"
@@ -290,8 +290,8 @@ const vragenData = {
             },
             {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
-                antwoorden: ["Bij zonsondergang", "Rond middernacht", "Tijdens de vierde nachtwaak (op het einde van de nacht)", "Bij het eerste hanengekraai"],
-                correct: "Tijdens de vierde nachtwaak (op het einde van de nacht)",
+                antwoorden: ["Bij zonsondergang", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht", "Bij het eerste hanengekraai"],
+                correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
                 bijbelplaats: "Matteüs 14:25",
                 uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken' van elk ongeveer drie uur. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
 
@@ -316,8 +316,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 20:2"
             },
             {
-                vraag: "Een talent was de grootste geldmaat. Ongeveer hoeveel daglonen was één talent waard?",
-                antwoorden: ["Ongeveer 10 daglonen", "Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon"],
+                vraag: "Ongeveer hoeveel daglonen was één talent waard?",
+                antwoorden: ["Ongeveer 10 daglonen", "Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Ongeveer 1000 daglonen"],
                 correct: "Ongeveer 6000 daglonen",
                 bijbelplaats: "Matteüs 25:15"
             },
@@ -1007,13 +1007,13 @@ vragenData["Matteüs"].advanced.push(
     },
     {
         vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
-        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De wetten van de Romeinse keizer", "De regels van koning Herodes", "De afspraken tussen de tempelwachters"],
+        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De regels van koning Herodes", "Regels opgesteld door de tempelwachters"],
         correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
         bijbelplaats: "Matteüs 5:17"
     },
     {
         vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
-        antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een tempelpriester"],
+        antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een gewone Jood, iemand zonder openbare religieuze functie"],
         correct: "Iemand die niet bij het Joodse volk hoorde",
         bijbelplaats: "Matteüs 8 (de Romeinse hoofdman)"
     }
@@ -1216,7 +1216,7 @@ vragenData["Matteüs"].beginner.push(
     },
     {
         vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
-        antwoorden: ["Hij is opgestaan, hij is hier niet", "Kom morgen maar terug", "Het graf is verplaatst", "Wacht hier op de soldaten"],
+        antwoorden: ["Wees niet bang, hij is naar Galilea gegaan", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
         correct: "Hij is opgestaan, hij is hier niet",
         bijbelplaats: "Matteüs 28:5-6"
     },
@@ -1236,27 +1236,28 @@ vragenData["Matteüs"].beginner.push(
 vragenData["Matteüs"].advanced.push(
     {
         vraag: 'Een "el" is ongeveer zo lang als…',
-        antwoorden: ["De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)", "Je voet", "Je hand", "Een grote stap"],
-        correct: "De afstand van je elleboog tot je vingertoppen (zo'n 45 cm)",
+        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "Eén grote stap (ongeveer 75 cm)", "De breedte van je hand (ongeveer 8 cm)"],
+        correct: "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)",
         bijbelplaats: "Matteüs 6:27"
     },
     {
         vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
-        antwoorden: ["Anderhalve kilometer (zo'n 1.500 meter)", "Honderd meter", "Tien kilometer", "Een halve kilometer"],
-        correct: "Anderhalve kilometer (zo'n 1.500 meter)",
+        antwoorden: ["Honderd meter", "Anderhalve kilometer", "Een halve kilometer", "Tien kilometer"],
+        correct: "Anderhalve kilometer",
         bijbelplaats: "Matteüs 5:41"
     },
     {
         vraag: "Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop. Wat was een korenmaat?",
-        antwoorden: ["Een bak of mand voor graan (zo'n 9 liter)", "Een muntstuk", "Een lengtemaat", "Een soort lamp"],
-        correct: "Een bak of mand voor graan (zo'n 9 liter)",
-        bijbelplaats: "Matteüs 5:15"
+        antwoorden: ["Een muntstuk", "Een bak of mand voor graan", "Een soort lamp", "Een lengtemaat"],
+        correct: "Een bak of mand voor graan",
+        bijbelplaats: "Matteüs 5:15",
+        uitleg: "Een korenmaat was een bak of mand om graan in te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
     }
 );
 vragenData["Matteüs"].advanced.push(
     {
         vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
-        antwoorden: ["Vijftien tot twintig jaar", "Honderd dagen", "Ongeveer een jaar", "Een paar maanden"],
+        antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
         correct: "Vijftien tot twintig jaar",
         bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
     }
@@ -1456,14 +1457,20 @@ vragenData["Matteüs"].beginner.push(
         antwoorden: ["het licht", "het vuur", "de wind", "het water"],
         correct: "het licht",
         bijbelplaats: "Matteüs 5:14"
+    },
+    {
+        vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde hij daarmee?",
+        antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze moesten stoppen met vissen"],
+        correct: "Dat ze mensen bij God zouden brengen",
+        bijbelplaats: "Matteüs 4:19"
     }
 );
 vragenData["Matteüs"].advanced.push(
     {
-        vraag: "Jezus riep zijn eerste leerlingen, die vissers waren, en zei dat ze voortaan 'vissers van ___' zouden zijn. Waarvan?",
-        antwoorden: ["mensen", "vissen", "vogels", "schapen"],
-        correct: "mensen",
-        bijbelplaats: "Matteüs 4:19"
+        vraag: "Jezus riep zijn eerste leerlingen bij het meer. Wat deden ze toen hij zei 'volg mij'?",
+        antwoorden: ["Ze vroegen eerst of ze hun boot mochten verkopen", "Ze lieten meteen hun netten achter en gingen mee", "Ze gingen eerst afscheid nemen van hun familie", "Ze zeiden dat ze de volgende dag zouden komen"],
+        correct: "Ze lieten meteen hun netten achter en gingen mee",
+        bijbelplaats: "Matteüs 4:18-22"
     }
 );
 vragenData["Johannes"].beginner.push(
