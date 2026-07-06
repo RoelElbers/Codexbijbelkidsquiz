@@ -533,6 +533,18 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Vier wachten van elk ongeveer drie uur", "Drie wachten van elk ongeveer vier uur", "Twee wachten van elk ongeveer zes uur", "Zes wachten van elk ongeveer twee uur"],
                 correct: "Vier wachten van elk ongeveer drie uur",
                 bijbelplaats: "Marcus 13:35"
+            },
+            {
+                vraag: "Hoe lang was Israël in de tijd van de Bijbel ongeveer van noord naar zuid?",
+                antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
+                correct: "Ongeveer 240 kilometer",
+                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van het noorden (de stad Dan) tot het zuiden (de stad Berseba) was het ongeveer 240 kilometer — in de Bijbel heet dat \"van Dan tot Berseba\". Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen. Daardoor kon Jezus in zijn leven veel verschillende plaatsen bezoeken."
+            },
+            {
+                vraag: "In de Bijbel lezen we dat Jezus soms een hoge berg opging. Wat is de hoogste berg van Israël?",
+                antwoorden: ["De berg Tabor", "De berg Sinaï", "De berg Hermon", "De Olijfberg"],
+                correct: "De berg Hermon",
+                uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager. De berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit. En de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
             }
         ]
     },
