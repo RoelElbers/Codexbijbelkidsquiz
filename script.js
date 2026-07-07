@@ -326,6 +326,13 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken", "Het was maar een klein kopje", "Het was precies genoeg voor één broodje", "Het was te weinig om brood van te bakken"],
                 correct: "Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken",
                 bijbelplaats: "Matteüs 13:33"
+            },
+            {
+                vraag: "Jozef was op aarde de vader van Jezus. Maar wie was Jozefs eigen vader — dus de opa van Jezus van vaderskant?",
+                antwoorden: ["Jakob", "Mattan", "Eleazar", "Achim"],
+                correct: "Jakob",
+                bijbelplaats: "Matteüs 1:16",
+                uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om zijn vader op aarde te zijn."
             }
         ]
     },
@@ -1850,7 +1857,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Nadat Jezus naar de hemel was gegaan, wachtten de leerlingen op de heilige Geest. Wat deden ze in die tijd vaak samen?",
-            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze maakten ruzie", "Ze reisden weg"],
+            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze maakten ruzie", "Ze namen de tijd om uit te rusten"],
             correct: "Ze kwamen bij elkaar om te bidden",
             bijbelplaats: "Handelingen 1:14"
         },
