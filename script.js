@@ -809,7 +809,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deed Jezus voor de man die al vanaf zijn geboorte blind was?",
-                antwoorden: ["Hij gaf hem geld", "Hij genas hem zodat hij kon zien", "Hij stuurde hem naar de tempel", "Hij liep door"],
+                antwoorden: ["Hij luisterde naar wat de man te zeggen had", "Hij genas hem zodat hij kon zien", "Hij stuurde hem naar de tempel", "Hij liep door"],
                 correct: "Hij genas hem zodat hij kon zien",
                 bijbelplaats: "Johannes 9:1-7"
             },
@@ -853,8 +853,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         advanced: [
             {
                 vraag: "Hoe begint het evangelie van Johannes?",
-                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord, het Woord was bij God en het Woord was God'", "Met een geslachtsregister", "Met een brief"],
-                correct: "Met de woorden 'In het begin was het Woord, het Woord was bij God en het Woord was God'",
+                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister", "Met een brief"],
+                correct: "Met de woorden 'In het begin was het Woord'",
                 bijbelplaats: "Johannes 1:1"
             },
             {
@@ -907,8 +907,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Volg mij", "Heb je mij lief? ... Hoed mijn lammeren / Weid mijn schapen", "Vrees niet", "Blijf hier wachten"],
-                correct: "Heb je mij lief? ... Hoed mijn lammeren / Weid mijn schapen",
+                antwoorden: ["Volg mij", "Heb je mij lief? Zorg voor mijn schapen", "Vrees niet", "Blijf hier wachten"],
+                correct: "Heb je mij lief? Zorg voor mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             }
         ],
@@ -932,16 +932,17 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Johannes 14:8"
             },
             {
-                vraag: "Het evangelie van Johannes beschrijft zeven wonderen die 'tekenen' worden genoemd. Welk teken was het eerste?",
+                vraag: "Het evangelie van Johannes beschrijft zeven bijzondere wonderen van Jezus. Welk wonder was het eerste?",
                 antwoorden: ["De genezing van de blindgeborene", "De bruiloft te Kana, water in wijn", "De opwekking van Lazarus", "De wonderbaarlijke visvangst"],
                 correct: "De bruiloft te Kana, water in wijn",
                 bijbelplaats: "Johannes 2:1-11"
             },
             {
-                vraag: "Hoeveel watervaten waren er bij de bruiloft in Kana, en hoeveel konden ze ongeveer bevatten?",
-                antwoorden: ["3 vaten van 50 liter", "6 stenen vaten van elk twee tot drie metreten (ongeveer 75 tot 115 liter)", "7 houten vaten", "12 grote vaten"],
-                correct: "6 stenen vaten van elk twee tot drie metreten (ongeveer 75 tot 115 liter)",
-                bijbelplaats: "Johannes 2:6"
+                vraag: "Hoeveel stenen watervaten stonden er bij de bruiloft in Kana?",
+                antwoorden: ["3", "6", "7", "12"],
+                correct: "6",
+                bijbelplaats: "Johannes 2:6",
+                uitleg: "Elk vat kon twee tot drie metreten bevatten — ongeveer 75 tot 115 liter per vat. Samen dus een enorme hoeveelheid wijn."
             },
             {
                 vraag: "Hoeveel vissen telde de wonderbaarlijke vangst toen de leerlingen na de opstanding het net binnenhaalden?",
@@ -969,21 +970,23 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Volgens Johannes was er één leerling die 'de leerling van wie Jezus hield' werd genoemd. Wie wordt daarmee bedoeld, volgens de traditie?",
-                antwoorden: ["Petrus", "Johannes (de schrijver van het evangelie)", "Andreas", "Tomas"],
-                correct: "Johannes (de schrijver van het evangelie)",
-                bijbelplaats: "Johannes 13:23, 19:26"
+                antwoorden: ["Petrus", "Johannes", "Andreas", "Tomas"],
+                correct: "Johannes",
+                bijbelplaats: "Johannes 13:23, 19:26",
+                uitleg: "Deze leerling wordt nooit bij naam genoemd. Volgens de traditie is het Johannes zelf, de schrijver van dit evangelie."
             },
             {
                 vraag: "Hoe ver van de kant waren de leerlingen bij de wonderbaarlijke visvangst na de opstanding, volgens Johannes?",
                 antwoorden: ["Vijftig el", "Honderd el", "Tweehonderd el", "Vijfhonderd el"],
                 correct: "Tweehonderd el",
-                bijbelplaats: "Johannes 21:8"
+                bijbelplaats: "Johannes 21:8",
+                uitleg: "Een 'el' was ongeveer een halve meter (de lengte van een onderarm). Tweehonderd el is dus zo'n honderd meter — ongeveer een voetbalveld."
             },
             {
                 vraag: "Wat is er zo bijzonder aan de Dode Zee?",
-                antwoorden: ["Het water stijgt en daalt enkele meters bij eb en vloed", "Er zit zoveel zout in dat er niets in kan leven", "Het is het diepste meer op aarde", "Het water is er zoet genoeg om zomaar op te drinken"],
-                correct: "Er zit zoveel zout in dat er niets in kan leven",
-                uitleg: "De Dode Zee zit boordevol zout — zoveel dat er bijna niets in kan leven. Dat komt doordat de Jordaan er wel ín stroomt, maar er nergens water uit weg kan. Het water verdampt in de hitte en het zout blijft achter, steeds meer. Daardoor is het water zo zwaar dat je er zomaar op blijft drijven. En omdat het een meer is en geen echte zee, merk je er ook niets van eb en vloed."
+                antwoorden: ["Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven", "Het is het grootste zoetwatermeer van Israël", "Het water stijgt en daalt sterk bij eb en vloed", "Er leven bijzonder veel verschillende vissoorten in"],
+                correct: "Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven",
+                uitleg: "De Dode Zee zit boordevol zout — zoveel dat er niets in kan leven, en dat je er zomaar op blijft drijven. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
             },
             {
                 vraag: "Hoeveel grote rivieren en meren heeft Israël?",
@@ -1162,7 +1165,7 @@ vragenData["Johannes"].advanced.push(
 vragenData["Johannes"].expert.push(
     {
         vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
-        antwoorden: ["Tekenen", "Toverkunsten", "Dromen", "Raadsels"],
+        antwoorden: ["Tekenen", "Krachten", "Wonderwerken", "Machtige daden"],
         correct: "Tekenen",
         bijbelplaats: "Johannes 2:11"
     }
@@ -1318,9 +1321,10 @@ vragenData["Lucas"].advanced.push(
 vragenData["Johannes"].expert.push(
     {
         vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
-        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Honderd daglonen", "Een afstand", "Een tijdsmaat"],
+        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een afstand", "Een tijdsmaat"],
         correct: "Een gewicht (ongeveer 300 gram)",
-        bijbelplaats: "Johannes 12:3 (de zalving in Betanië)"
+        bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
+        uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
     },
     {
         vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
@@ -1343,7 +1347,7 @@ vragenData["Johannes"].expert.push(
             "Rond het middaguur (ongeveer 12 uur)",
             "Negen uur 's ochtends",
             "Drie uur 's middags",
-            "Bij zonsondergang"
+            "Bij zonsondergang (rond 6 uur 's avonds)"
         ],
         correct: "Rond het middaguur (ongeveer 12 uur)",
         bijbelplaats: "Johannes 4:6",
@@ -1411,15 +1415,11 @@ vragenData["Johannes"].advanced.push(
 );
 vragenData["Johannes"].expert.push(
     {
-        vraag: "Jezus zei: 'Ik ben de opstanding en het leven.' Hij zei dit vlak voordat Hij een groot wonder deed. Wat deed Hij?",
-        antwoorden: [
-            "Hij wekte Lazarus op uit de dood",
-            "Hij liep over het water",
-            "Hij veranderde water in wijn",
-            "Hij gaf een blinde man zijn ogen terug"
-        ],
-        correct: "Hij wekte Lazarus op uit de dood",
-        bijbelplaats: "Johannes 11:25, 43-44"
+        vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes waarschijnlijk ontstaan?",
+        antwoorden: ["Als eerste", "Als tweede", "Als derde", "Als laatste"],
+        correct: "Als laatste",
+        bijbelplaats: "NT algemeen",
+        uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
     },
     {
         vraag: "Jezus zei iets bijzonders over zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
