@@ -634,7 +634,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat liet de vader doen toen de verloren zoon thuiskwam?",
-                antwoorden: ["Hij gaf hem werk", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf hem geld", "Hij stuurde hem weer weg"],
+                antwoorden: ["Hij gaf hem werk", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf iedereen de opdracht om hem te negeren", "Hij stuurde hem terug waar hij vandaan gekomen was"],
                 correct: "Hij liet het gemeste kalf slachten en hield een feestmaal",
                 bijbelplaats: "Lucas 15:23"
             },
@@ -684,20 +684,20 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Hoe heet de beroemde lofzang van Maria, waarin zij God prijst nadat de engel haar de geboorte van Jezus had aangekondigd?",
-                antwoorden: ["Het Benedictus", "Het Magnificat (Mijn ziel maakt groot de Heer)", "Het Nunc Dimittis", "Het Gloria"],
-                correct: "Het Magnificat (Mijn ziel maakt groot de Heer)",
+                antwoorden: ["Het Benedictus", "Het Magnificat", "Het Nunc Dimittis", "Het Gloria"],
+                correct: "Het Magnificat",
                 bijbelplaats: "Lucas 1:46-55"
             },
             {
                 vraag: "Hoe heet de lofzang van Zacharias, die hij uitsprak toen zijn tong weer losliet bij de geboorte van zijn zoon Johannes?",
-                antwoorden: ["Het Benedictus (Gezegend zij de Heer de God van Israël)", "Het Magnificat", "Het Te Deum", "Het Sanctus"],
-                correct: "Het Benedictus (Gezegend zij de Heer de God van Israël)",
+                antwoorden: ["Het Benedictus", "Het Magnificat", "Het Te Deum", "Het Sanctus"],
+                correct: "Het Benedictus",
                 bijbelplaats: "Lucas 1:67-79"
             },
             {
                 vraag: "Hoe heet de lofzang van Simeon, die hij uitsprak toen hij het kindje Jezus in zijn armen had?",
-                antwoorden: ["Het Magnificat", "Het Benedictus", "Het Nunc Dimittis (Nu laat U Heer uw dienaar in vrede heengaan)", "Het Te Deum"],
-                correct: "Het Nunc Dimittis (Nu laat U Heer uw dienaar in vrede heengaan)",
+                antwoorden: ["Het Magnificat", "Het Benedictus", "Het Nunc Dimittis", "Het Te Deum"],
+                correct: "Het Nunc Dimittis",
                 bijbelplaats: "Lucas 2:29-32"
             },
             {
@@ -714,15 +714,16 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Het geslachtsregister in Lucas gaat verder terug dan dat in Matteüs. Tot wie gaat het terug?",
-                antwoorden: ["Tot Abraham", "Tot David", "Tot Adam de zoon van God", "Tot Noach"],
-                correct: "Tot Adam de zoon van God",
+                antwoorden: ["Tot Abraham", "Tot David", "Tot Adam", "Tot Noach"],
+                correct: "Tot Adam",
                 bijbelplaats: "Lucas 3:23-38"
             },
             {
                 vraag: "Hoeveel andere leerlingen, naast de twaalf apostelen, zond Jezus uit, twee aan twee, om hem voor te gaan?",
-                antwoorden: ["24", "40", "70 (of 72)", "100"],
-                correct: "70 (of 72)",
-                bijbelplaats: "Lucas 10:1"
+                antwoorden: ["24", "40", "72", "100"],
+                correct: "72",
+                bijbelplaats: "Lucas 10:1",
+                uitleg: "Sommige heel oude handschriften zeggen \"zeventig\", andere \"tweeënzeventig\". Daarom staat het in de ene Bijbel net iets anders dan in de andere: in de Nieuwe Bijbelvertaling en in de katholieke traditie lees je 72, en in de Statenvertaling 70. De getallen liggen zó dicht bij elkaar dat beide goed zijn."
             },
             {
                 vraag: "Hoe heette de bedelaar in de gelijkenis over de rijke man, die in de schoot van Abraham terechtkwam?",
@@ -762,7 +763,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "In de gelijkenis van de ponden deelt een edelman 'ponden' (mina) uit. Hoeveel daglonen was één pond waard?",
-                antwoorden: ["Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon", "Een halve dag"],
+                antwoorden: ["Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon", "Ongeveer 1000 daglonen"],
                 correct: "Ongeveer 100 daglonen",
                 bijbelplaats: "Lucas 19:13"
             },
@@ -780,8 +781,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Een 'kor' was de grootste inhoudsmaat in de gelijkenissen. Hoe groot was die ongeveer?",
-                antwoorden: ["Ongeveer tien keer zo groot als een vat (zo'n 220 liter)", "Ongeveer even groot als een vat", "Kleiner dan een vat", "Ongeveer honderd keer zo groot als een vat"],
-                correct: "Ongeveer tien keer zo groot als een vat (zo'n 220 liter)",
+                antwoorden: ["Ongeveer tien keer zo groot als een vat", "Ongeveer even groot als een vat", "Kleiner dan een vat", "Ongeveer honderd keer zo groot als een vat"],
+                correct: "Ongeveer tien keer zo groot als een vat",
                 bijbelplaats: "Lucas 16:7"
             }
         ]
