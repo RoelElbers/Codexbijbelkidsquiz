@@ -7530,7 +7530,7 @@ const schatkamerZalen = {
             { id: "evangelien",      naam: "Evangeliën",       vitrine: evangelienVitrine,      klik: { left: "2.5%",  top: "28%", width: "16%",   height: "40%" },
               // Linkerkast 2x2: [boven-links, boven-rechts, onder-links, onder-rechts]
               nisTrofeeen: [
-                  { x: "7.18%",  top: "38.53%", hoogte: "14%" },
+                  { x: "6.82%",  top: "38.64%", hoogte: "14%" },
                   { x: "13.81%", top: "38.42%", hoogte: "14%" },
                   { x: "6.76%",  top: "58.58%", hoogte: "14%" },
                   { x: "13.63%", top: "58.14%", hoogte: "14%" }
