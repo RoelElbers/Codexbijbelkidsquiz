@@ -889,8 +889,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat beloofde Jezus aan zijn leerlingen te zenden na zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
-                antwoorden: ["Engelen", "De Heilige Geest", "Een profeet", "Een nieuw boek"],
-                correct: "De Heilige Geest",
+                antwoorden: ["Engelen", "De heilige Geest", "Een profeet", "Een nieuw boek"],
+                correct: "De heilige Geest",
                 bijbelplaats: "Johannes 14:16-17, 14:26"
             },
             {
@@ -1066,7 +1066,7 @@ vragenData["Marcus"].beginner.push(
 );
 vragenData["Marcus"].advanced.push(
     {
-        vraag: "Bij de doop van Jezus daalde de Heilige Geest op hem neer. In de gedaante van welk dier?",
+        vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
         antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
         correct: "Een duif",
         bijbelplaats: "Marcus 1:10"
@@ -1864,13 +1864,14 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
-            antwoorden: ["Dat hij meer moest eten", "Dat alle mensen erbij mogen horen", "Dat hij moest gaan reizen", "Dat hij moest gaan vissen"],
+            antwoorden: ["Dat hij meer moest eten", "Dat alle mensen erbij mogen horen", "Dat hij moest gaan reizen", "Dat hij alleen nog groenten mocht eten"],
             correct: "Dat alle mensen erbij mogen horen",
-            bijbelplaats: "Handelingen 10:9-15"
+            bijbelplaats: "Handelingen 10:9-15",
+            uitleg: "In het visioen zei God dat Petrus dieren die volgens de Joodse wet verboden waren om te eten, nu wél mocht eten. Kort daarna begreep Petrus waar het God echt om ging: net zoals Hij dat eten niet langer afkeurde, wilde God ook geen enkel mens buitensluiten — ook mensen die geen Jood waren, mogen erbij horen."
         },
         {
             vraag: "In Samaria vertelde Filippus over Jezus en genas hij zieke mensen. Hoe reageerde de stad?",
-            antwoorden: ["Iedereen werd boos", "Niemand luisterde", "Er was grote blijdschap", "Ze stuurden hem weg"],
+            antwoorden: ["De mensen werden boos", "Niemand luisterde", "Er was grote blijdschap", "Ze stuurden hem weg"],
             correct: "Er was grote blijdschap",
             bijbelplaats: "Handelingen 8:5-8"
         },
@@ -1888,7 +1889,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op het eiland Malta, na de schipbreuk, deed Paulus nog iets goeds voor de mensen daar. Wat?",
-            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij ging vissen"],
+            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
             correct: "Hij genas veel zieke mensen",
             bijbelplaats: "Handelingen 28:8-9"
         },
