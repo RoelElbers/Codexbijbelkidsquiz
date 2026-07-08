@@ -1908,7 +1908,7 @@ vragenData["Handelingen"] = {
     ],
     advanced: [
         {
-            vraag: "Wie schreef het boek Handelingen? (dezelfde schrijver als het evangelie van Lucas)",
+            vraag: "Wie schreef het boek Handelingen?",
             antwoorden: ["Petrus", "Lucas", "Tomas", "Marcus"],
             correct: "Lucas",
             bijbelplaats: "Handelingen 1:1"
@@ -1939,7 +1939,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Wat deed Paulus in een groot deel van het boek Handelingen?",
-            antwoorden: ["Hij reisde naar veel steden om over Jezus te vertellen", "Hij bleef altijd thuis", "Hij bouwde een groot paleis", "Hij werd visser op zee"],
+            antwoorden: ["Hij reisde naar veel steden om over Jezus te vertellen", "Hij bleef in Jeruzalem om de eerste gemeente te leiden", "Hij trok zich terug in de woestijn om te bidden en te vasten", "Hij werd leraar in één synagoge en bleef daar wonen"],
             correct: "Hij reisde naar veel steden om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13–28"
         },
@@ -1986,14 +1986,14 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 27:41-44"
         },
         {
-            vraag: "Na de schipbreuk kwamen Paulus en de anderen op een eiland terecht. Hoe heette dat eiland?",
-            antwoorden: ["Cyprus", "Malta", "Kreta", "Rhodos"],
-            correct: "Malta",
-            bijbelplaats: "Handelingen 28:1"
+            vraag: "In Athene vond Paulus een altaar met het opschrift 'voor een onbekende god'. Wat deed hij daarmee?",
+            antwoorden: ["Hij gebruikte het om te vertellen wie die onbekende God echt is", "Hij brak het altaar meteen af", "Hij liep er zwijgend aan voorbij", "Hij begon die onbekende god zelf te aanbidden"],
+            correct: "Hij gebruikte het om te vertellen wie die onbekende God echt is",
+            bijbelplaats: "Handelingen 17:22-23"
         },
         {
             vraag: "Stefanus, een van de eerste christenen, werd aangevallen door boze mensen omdat hij over Jezus vertelde. Wat deed hij toen?",
-            antwoorden: ["Hij werd boos terug", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
+            antwoorden: ["Hij werd boos", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
             correct: "Hij bad of God de mensen wilde vergeven",
             bijbelplaats: "Handelingen 7:59-60"
         },
@@ -2023,7 +2023,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij?",
-            antwoorden: ["Om naar huis te gaan", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om vrij te komen met geld"],
+            antwoorden: ["Om naar huis te gaan", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om voor geld vrijgekocht te kunnen worden"],
             correct: "Om zijn zaak door de keizer in Rome te laten behandelen",
             bijbelplaats: "Handelingen 25:11"
         },
