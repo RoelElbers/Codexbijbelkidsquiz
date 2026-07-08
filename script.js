@@ -1115,14 +1115,14 @@ vragenData["Lucas"].advanced.push(
     },
     {
         vraag: "Wat was een synagoge?",
-        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "Het paleis van de koning", "De markt in Jeruzalem", "Het huis van de hogepriester"],
+        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "Het paleis waar de koning woonde", "De grote markt waar handelaren verkochten", "Het huis waar de hogepriester offerde"],
         correct: "Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren",
         bijbelplaats: "Lucas 4:16"
     },
     {
         vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
-        antwoorden: ["Dat God hen lang geleden uit de slavernij in Egypte had bevrijd", "Het begin van de oogst", "De bouw van de tempel", "De geboorte van koning David"],
-        correct: "Dat God hen lang geleden uit de slavernij in Egypte had bevrijd",
+        antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De geboorte van koning David"],
+        correct: "De bevrijding uit de slavernij in Egypte",
         bijbelplaats: "Lucas 22 (het Laatste Avondmaal was een Pesachmaaltijd)"
     }
 );
@@ -1313,8 +1313,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
 vragenData["Lucas"].advanced.push(
     {
         vraag: "De arme weduwe gaf twee penningen. Hoeveel was dat samen ongeveer in geld van nu?",
-        antwoorden: ["Een paar euro (zo'n 2 à 3 euro)", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
-        correct: "Een paar euro (zo'n 2 à 3 euro)",
+        antwoorden: ["Ongeveer anderhalf tot twee euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
+        correct: "Ongeveer anderhalf tot twee euro",
         bijbelplaats: "Lucas 21:1-4"
     }
 );
