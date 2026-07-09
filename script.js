@@ -3074,7 +3074,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft een korte, bemoedigende zin: 'De Heer is …'. Welk woord hoort er volgens Paulus?",
-            antwoorden: ["dichtbij", "ver weg", "vergeten", "boos"],
+            antwoorden: ["dichtbij", "ver weg", "onbereikbaar", "boos"],
             correct: "dichtbij",
             bijbelplaats: "Filippenzen 4:5"
         },
@@ -3099,26 +3099,26 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:13"
         },
         {
-            vraag: "Paulus schrijft: \"Ik kan alles aan…\" Door wie, zegt hij?",
-            antwoorden: ["Door Christus, die hem kracht geeft", "Door zijn vrienden", "Door zijn eigen wilskracht", "Door de keizer"],
-            correct: "Door Christus, die hem kracht geeft",
-            bijbelplaats: "Filippenzen 4:13"
+            vraag: "Paulus schrijft hóe de gelovigen alles moeten doen. Namelijk: zónder wat?",
+            antwoorden: ["Zonder mopperen en ruzie", "Zonder ervoor betaald te worden", "Zonder erover na te denken", "Zonder het aan iemand te vragen"],
+            correct: "Zonder mopperen en ruzie",
+            bijbelplaats: "Filippenzen 2:14"
         },
         {
             vraag: "Wat moet je volgens Paulus doen in plaats van je zorgen maken?",
-            antwoorden: ["Bidden en het aan God vertellen", "Wachten tot het overgaat", "Het voor je houden", "Boos worden"],
-            correct: "Bidden en het aan God vertellen",
+            antwoorden: ["Bidden en je zorgen aan God vertellen", "Wachten tot het overgaat", "Het voor je houden", "Erover blijven piekeren"],
+            correct: "Bidden en je zorgen aan God vertellen",
             bijbelplaats: "Filippenzen 4:6"
         },
         {
             vraag: "Hoe schrijft Paulus over zijn tijd in de gevangenis?",
-            antwoorden: ["Hij blijft er blij en hoopvol onder", "Hij geeft alle moed op", "Hij neemt wraak", "Hij zwijgt erover"],
-            correct: "Hij blijft er blij en hoopvol onder",
+            antwoorden: ["Hij blijft blij, omdat het goede nieuws zich juist verspreidt", "Hij is dankbaar, maar wil zo snel mogelijk stoppen met schrijven", "Hij is blij dat hij niet hoeft te werken", "Hij zegt er eigenlijk niks over"],
+            correct: "Hij blijft blij, omdat het goede nieuws zich juist verspreidt",
             bijbelplaats: "Filippenzen 1:18"
         },
         {
             vraag: "In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan?",
-            antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rechter", "Die van een engel"],
+            antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rijke heerser", "Die van een legeraanvoerder"],
             correct: "Die van een dienaar",
             bijbelplaats: "Filippenzen 2:7"
         },
@@ -3129,10 +3129,10 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 2:20-22"
         },
         {
-            vraag: "Hoe noemt Paulus zichzelf helemaal aan het begin van de brief?",
-            antwoorden: ["Een dienaar van Christus Jezus", "Een koning", "Een rechter", "Een profeet"],
-            correct: "Een dienaar van Christus Jezus",
-            bijbelplaats: "Filippenzen 1:1"
+            vraag: "Paulus schrijft dat hij een geheim heeft geleerd: of hij nu veel heeft of weinig. Wat heeft hij geleerd?",
+            antwoorden: ["Tevreden zijn in elke situatie", "Altijd meer willen hebben", "Alleen blij zijn als hij rijk is", "Nooit iemand om hulp vragen"],
+            correct: "Tevreden zijn in elke situatie",
+            bijbelplaats: "Filippenzen 4:11-12"
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom?",
@@ -3154,7 +3154,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus is ervan overtuigd dat God iets zal afmaken. Wat?",
-            antwoorden: ["Het goede werk dat Hij in hen begon", "De bouw van de tempel", "Hun reis naar Rome", "Hun straf"],
+            antwoorden: ["Het goede werk dat Hij in hen begon", "De bouw van de tempel", "Het werk dat zij zelf begonnen waren", "De brief die Paulus aan het schrijven was"],
             correct: "Het goede werk dat Hij in hen begon",
             bijbelplaats: "Filippenzen 1:6"
         },
@@ -3178,18 +3178,12 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus vergelijkt het geloof met hardlopen. Wat doet hij volgens eigen zeggen?",
-            antwoorden: ["Hij strekt zich uit naar wat vóór hem ligt", "Hij kijkt steeds achterom", "Hij wacht bij de start", "Hij rust halverwege uit"],
+            antwoorden: ["Hij strekt zich uit naar wat vóór hem ligt", "Hij kijkt steeds achterom", "Hij loopt rustig in plaats van te rennen", "Hij rust halverwege uit"],
             correct: "Hij strekt zich uit naar wat vóór hem ligt",
             bijbelplaats: "Filippenzen 3:13-14"
         }
     ],
     expert: [
-        {
-            vraag: "Welk gevoel komt in deze brief steeds weer terug?",
-            antwoorden: ["Blijdschap", "Boosheid", "Verdriet", "Twijfel"],
-            correct: "Blijdschap",
-            bijbelplaats: "Filippenzen 4:4"
-        },
         {
             vraag: "Paulus stuurt de brief mee met een vriend die heel ziek was geweest. Hoe heette hij?",
             antwoorden: ["Epafroditus", "Judas", "Tomas", "Lukas"],
@@ -3201,12 +3195,6 @@ vragenData["Filippenzen"] = {
             antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
             correct: "Macedonië",
             bijbelplaats: "Handelingen 16:12"
-        },
-        {
-            vraag: "Paulus vergelijkt het geloofsleven met een wedloop. Waar doet hij zijn best voor?",
-            antwoorden: ["Om de eindstreep en de prijs te bereiken", "Om de snelste te zijn", "Om anderen in te halen", "Om uit te rusten"],
-            correct: "Om de eindstreep en de prijs te bereiken",
-            bijbelplaats: "Filippenzen 3:14"
         },
         {
             vraag: "Waar moeten gelovigen volgens Paulus hun gedachten op richten?",
@@ -3239,12 +3227,6 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:1"
         },
         {
-            vraag: "Welk woord gebruikt Paulus zó vaak dat het bijna het thema van de brief wordt?",
-            antwoorden: ["Vreugde", "Dankbaarheid", "Geduld", "Hoop"],
-            correct: "Vreugde",
-            bijbelplaats: "Filippenzen 4:4"
-        },
-        {
             vraag: "Wat wil Paulus dat de Filippenzen vasthouden, ook als hij er zelf niet bij is?",
             antwoorden: ["Eensgezindheid", "Hun goede naam", "Hun gewoonten", "Hun bezittingen"],
             correct: "Eensgezindheid",
@@ -3273,6 +3255,12 @@ vragenData["Filippenzen"] = {
             antwoorden: ["Zijn blijdschap en erekrans", "Zijn leerlingen", "Zijn soldaten", "Zijn schapen"],
             correct: "Zijn blijdschap en erekrans",
             bijbelplaats: "Filippenzen 4:1"
+        },
+        {
+            vraag: "Paulus zegt dat hij tevreden kan zijn, of hij nu veel heeft of weinig. Waardóór lukt hem dat?",
+            antwoorden: ["Door Christus, die hem kracht geeft", "Door zelf heel sterk en dapper te zijn", "Door precies te krijgen wat hij wil", "Door zich nergens meer druk om te maken"],
+            correct: "Door Christus, die hem kracht geeft",
+            bijbelplaats: "Filippenzen 4:13"
         }
     ]
 };
