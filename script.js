@@ -2072,38 +2072,38 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 11:26"
         },
         {
-            vraag: "Wie reisde in het begin samen met Paulus om over Jezus te vertellen?",
+            vraag: "Wie reisde in het begin samen met Paulus om mensen over Jezus te vertellen?",
             antwoorden: ["Petrus", "Johannes", "Tomas", "Barnabas"],
             correct: "Barnabas",
             bijbelplaats: "Handelingen 13:2-3"
         },
         {
             vraag: "Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk?",
-            antwoorden: ["Ze was visser", "Ze verkocht kostbare purperen stof", "Ze was soldaat", "Ze was koningin"],
+            antwoorden: ["Ze was kapster", "Ze verkocht kostbare purperen stof", "Ze werkte voor een rijke vrouw en hielp in de huishouding", "Ze was koningin"],
             correct: "Ze verkocht kostbare purperen stof",
             bijbelplaats: "Handelingen 16:14"
         },
         {
             vraag: "Paulus en Silas zaten gevangen in Filippi. Wat deden ze midden in de nacht?",
-            antwoorden: ["Ze sliepen diep", "Ze baden en zongen liederen voor God", "Ze huilden de hele nacht", "Ze probeerden te vluchten"],
+            antwoorden: ["Ze sliepen diep", "Ze baden en zongen liederen voor God", "Ze waren boos en schreeuwden zo hard dat de hele gevangenis hen kon horen", "Ze bedachten een plan om te vluchten"],
             correct: "Ze baden en zongen liederen voor God",
             bijbelplaats: "Handelingen 16:25"
         },
         {
             vraag: "Wat gebeurde er toen Paulus en Silas in de gevangenis zongen?",
-            antwoorden: ["Het begon te regenen", "De wachters vielen in slaap", "Er kwam een aardbeving en de deuren sprongen open", "Er kwam een storm op zee"],
+            antwoorden: ["Andere gevangenen begonnen mee te zingen", "De wachters vielen in slaap", "Er kwam een aardbeving en de deuren sprongen open", "Andere gevangenen werden boos en vroegen of ze wilden stoppen met zingen"],
             correct: "Er kwam een aardbeving en de deuren sprongen open",
             bijbelplaats: "Handelingen 16:26"
         },
         {
             vraag: "Waar is Paulus aan het eind van het boek Handelingen?",
-            antwoorden: ["In Jeruzalem", "In Egypte", "In Rome, waar hij blijft vertellen over Jezus", "Thuis op het platteland"],
-            correct: "In Rome, waar hij blijft vertellen over Jezus",
+            antwoorden: ["In Jeruzalem", "In Egypte", "In Rome, waar hij de mensen over Jezus vertelt", "Terug in zijn geboorteplaats Tarsus"],
+            correct: "In Rome, waar hij de mensen over Jezus vertelt",
             bijbelplaats: "Handelingen 28:30-31"
         },
         {
             vraag: "De eerste christenen kozen zeven mensen uit om te helpen, zodat het eten eerlijk werd verdeeld onder arme mensen. Wie was een van hen?",
-            antwoorden: ["Petrus", "Paulus", "Stefanus", "Lucas"],
+            antwoorden: ["Marcus", "Paulus", "Stefanus", "Lucas"],
             correct: "Stefanus",
             bijbelplaats: "Handelingen 6:5"
         },
@@ -2115,25 +2115,25 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
-            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze viel flauw", "Ze deed de deur op slot"],
+            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze viel flauw", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
             correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
             bijbelplaats: "Handelingen 12:13-14"
         },
         {
             vraag: "In de stad Lystra genas Paulus een man die nooit had kunnen lopen. Wat dachten de mensen toen?",
-            antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat hij een dokter was", "Dat ze moesten vluchten"],
+            antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat Paulus een goede dokter was", "Dat het niet echt was en dat het kwakzalvers waren"],
             correct: "Dat Paulus en Barnabas goden waren",
             bijbelplaats: "Handelingen 14:11"
         },
         {
             vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
-            antwoorden: ["Hij praatte gewoon door", "Hij maakte hem weer levend", "Hij schrok en vluchtte", "Hij riep een dokter"],
-            correct: "Hij maakte hem weer levend",
+            antwoorden: ["Hij praatte gewoon door en deed alsof er niks aan de hand was", "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven", "Hij schrok en vluchtte weg", "Hij riep een dokter"],
+            correct: "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven",
             bijbelplaats: "Handelingen 20:9-12"
         },
         {
             vraag: "Vlak nadat Saulus in Jezus ging geloven, wilden boze mensen hem in Damascus kwaad doen. Hoe ontsnapte hij over de stadsmuur?",
-            antwoorden: ["Door de poort", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug"],
+            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
             correct: "In een mand werd hij naar beneden gelaten",
             bijbelplaats: "Handelingen 9:23-25"
         },
@@ -2144,14 +2144,14 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:26-27"
         },
         {
-            vraag: "Een gelovige man, Agabus, voorspelde iets dat zou gebeuren. Wat?",
-            antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een feest"],
+            vraag: "De profeet Agabus kwam naar de gemeente in Antiochië en voorspelde dat er iets ergs zou komen over het hele Romeinse rijk. Wat voorspelde hij?",
+            antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een grote plaag"],
             correct: "Een grote hongersnood",
             bijbelplaats: "Handelingen 11:28"
         },
         {
             vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
-            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij hielp de slechte mensen"],
+            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
             correct: "Hij waarschuwde Paulus en de soldaten",
             bijbelplaats: "Handelingen 23:16"
         }
@@ -2163,16 +2163,16 @@ vragenData["Handelingen"] = {
 // Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
 vragenData["Handelingen"].expert.push(
     {
-        vraag: 'Op het Pinksterfeest dachten spotters dat de leerlingen dronken waren. Petrus zei: dat kan niet, "het is pas het derde uur van de dag". Waarom was dat een goed weerwoord?',
+        vraag: "Toen spotters dachten dat de leerlingen dronken waren, zei Petrus dat dat niet kon: 'het is pas het derde uur van de dag.' Hoe laat op de dag was dat ongeveer?",
         antwoorden: [
-            "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
-            "Het was midden in de nacht en iedereen sliep",
-            "Op het derde uur mocht je geen wijn drinken",
-            "Het was al avond en alle wijn was op"
+            "Ongeveer negen uur 's ochtends",
+            "Rond het middaguur",
+            "Drie uur 's middags",
+            "Vlak voor zonsondergang"
         ],
-        correct: "Het was pas ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn",
+        correct: "Ongeveer negen uur 's ochtends",
         bijbelplaats: "Handelingen 2:15",
-        uitleg: "De dag begon bij zonsopgang. Het 'derde uur' is dan ongeveer negen uur 's ochtends — veel te vroeg op de dag om dronken te zijn. Wat de mensen zagen, kwam niet door de wijn, maar door de heilige Geest."
+        uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord."
     }
 );
 
