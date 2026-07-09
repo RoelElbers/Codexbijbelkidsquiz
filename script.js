@@ -1723,44 +1723,32 @@ vragenData["Romeinen"] = {
             antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Blijf binnen tot het buiten weer licht wordt"],
             correct: "Leef eerlijk en goed, alsof het klaarlichte dag is",
             bijbelplaats: "Romeinen 13:12"
-        }
-    ],
-    expert: [
-        {
-            vraag: "Paulus zegt dat Gods vergeving een geschenk is. Wat betekent \"een geschenk\"?",
-            antwoorden: ["Je moet er hard voor werken", "Je krijgt het zomaar, je hoeft het niet te verdienen", "Je moet het terugbetalen", "Alleen de sterkste krijgt het"],
-            correct: "Je krijgt het zomaar, je hoeft het niet te verdienen",
-            bijbelplaats: "Romeinen 3:24"
-        },
-        {
-            vraag: "Voor werk krijg je loon. Maar Gods vergeving is geen loon, zegt Paulus. Wat is het dan?",
-            antwoorden: ["Loon dat je hebt verdiend", "Iets wat je koopt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een prijs voor wie wint"],
-            correct: "Een geschenk dat je krijgt door op God te vertrouwen",
-            bijbelplaats: "Romeinen 4:4-5"
-        },
-        {
-            vraag: "Door één mens kwam het verkeerde in de wereld. Door wie komt het goede en het leven, zegt Paulus?",
-            antwoorden: ["Adam", "Mozes", "Jezus Christus", "Abraham"],
-            correct: "Jezus Christus",
-            bijbelplaats: "Romeinen 5:18-19"
-        },
-        {
-            vraag: "Paulus schrijft dat gelovigen God mogen aanspreken als \"Vader\". Wat zijn ze daardoor?",
-            antwoorden: ["Dienaren van de keizer", "Vreemden voor God", "Kinderen van God", "Gasten op bezoek"],
-            correct: "Kinderen van God",
-            bijbelplaats: "Romeinen 8:15-16"
-        },
-        {
-            vraag: "Wat raadt Paulus aan over hoe je over jezelf denkt?",
-            antwoorden: ["Denk dat je beter bent dan anderen", "Denk dat je alles alleen kunt", "Denk dat je nooit fouten maakt", "Denk niet te hoog van jezelf"],
-            correct: "Denk niet te hoog van jezelf",
-            bijbelplaats: "Romeinen 12:3"
         },
         {
             vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat bedoelt hij?",
             antwoorden: ["Ze moeten allemaal precies hetzelfde zijn", "Ze kunnen beter alleen zijn", "Ze horen bij elkaar en hebben elkaar nodig", "Alleen het sterkste deel telt"],
             correct: "Ze horen bij elkaar en hebben elkaar nodig",
             bijbelplaats: "Romeinen 12:4-5"
+        }
+    ],
+    expert: [
+        {
+            vraag: "In hoofdstuk 11 vergelijkt Paulus Gods volk met een olijfboom. Wat bedoelt hij als hij zegt dat gelovigen uit andere volken als 'wilde takken' worden geënt?",
+            antwoorden: ["Ook mensen die geen Jood zijn, mogen bij Gods volk horen", "Alleen Joden kunnen echt bij God horen", "De oude takken, Israël, tellen niet meer mee", "Paulus had zich vergist, hij bedoelde iets anders"],
+            correct: "Ook mensen die geen Jood zijn, mogen bij Gods volk horen",
+            bijbelplaats: "Romeinen 11:17-24"
+        },
+        {
+            vraag: "Voor werk krijg je loon. Maar Gods vergeving is geen loon, zegt Paulus. Wat is het dan?",
+            antwoorden: ["Iets wat je krijgt nadat je er heel lang voor hebt gewerkt", "Iets wat je koopt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een prijs voor wie wint"],
+            correct: "Een geschenk dat je krijgt door op God te vertrouwen",
+            bijbelplaats: "Romeinen 4:4-5"
+        },
+        {
+            vraag: "Wat raadt Paulus aan over hoe je over jezelf denkt?",
+            antwoorden: ["Denk dat je beter bent dan anderen", "Denk dat je alles alleen kunt", "Denk dat je nooit fouten maakt", "Denk niet te hoog van jezelf"],
+            correct: "Denk niet te hoog van jezelf",
+            bijbelplaats: "Romeinen 12:3"
         },
         {
             vraag: "Hoe kun je het kwaad volgens Paulus het beste aanpakken?",
