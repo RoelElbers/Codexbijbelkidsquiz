@@ -1672,7 +1672,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waar moeten gelovigen volgens Paulus hun best voor doen?",
-            antwoorden: ["Om de Joodse wet te bestuderen en zich daaraan te houden", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te kunnen blijven spelen"],
+            antwoorden: ["Om afstand te houden van mensen die er anders over denken", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te kunnen blijven spelen"],
             correct: "Voor dingen die vrede brengen en elkaar opbouwen",
             bijbelplaats: "Romeinen 14:19"
         },
