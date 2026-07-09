@@ -2716,32 +2716,32 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat raadt Paulus aan over boos zijn?",
-            antwoorden: ["Blijf niet boos; maak het goed voor de dag voorbij is", "Blijf zo lang mogelijk boos", "Wees altijd boos", "Doe alsof je nooit boos bent"],
-            correct: "Blijf niet boos; maak het goed voor de dag voorbij is",
+            antwoorden: ["Blijf niet boos; maak het goed voordat de dag voorbij is", "Blijf net zo lang boos tot de ander toegeeft", "Doe gewoon iets vervelends terug", "Krop je boosheid op en hou je net zo lang in totdat je ontploft"],
+            correct: "Blijf niet boos; maak het goed voordat de dag voorbij is",
             bijbelplaats: "Efeziërs 4:26"
         },
         {
             vraag: "Wat zegt Paulus dat kinderen en hun ouders voor elkaar betekenen?",
-            antwoorden: ["Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen", "Ze gaan uit elkaars buurt", "Ze maken steeds ruzie", "Ze negeren elkaar"],
+            antwoorden: ["Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen", "Kinderen mogen altijd zelf bepalen wat ze doen", "Ouders moeten hun kinderen vooral streng straffen", "Kinderen en ouders kunnen elkaar beter mijden"],
             correct: "Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen",
             bijbelplaats: "Efeziërs 6:1-4"
         },
         {
-            vraag: "Paulus zegt dat we eerlijk en waar tegen elkaar moeten spreken. Wat hoort daar volgens hem bij?",
-            antwoorden: ["Geheimen verzinnen", "Niet liegen, maar de waarheid zeggen", "Mooie verhalen ophangen", "Maar niets zeggen"],
-            correct: "Niet liegen, maar de waarheid zeggen",
+            vraag: "Paulus schrijft dat gelovigen elkaar geen leugens moeten vertellen. Wat moet je in plaats daarvan doen?",
+            antwoorden: ["De waarheid zeggen en eerlijk zijn tegen elkaar", "Liever helemaal niets meer zeggen", "Elkaar alleen maar complimenten geven, ook als ze niet waar zijn", "Alle geheimen die je te horen krijgt aan iedereen doorvertellen"],
+            correct: "De waarheid zeggen en eerlijk zijn tegen elkaar",
             bijbelplaats: "Efeziërs 4:25"
         },
         {
             vraag: "Paulus zegt: leg je oude, verkeerde gewoonten af, net als oude kleren. Wat trek je daarvoor in de plaats aan?",
-            antwoorden: ["Nog oudere gewoonten", "Precies dezelfde gewoonten", "Een nieuw leven, zoals God het bedoeld heeft", "Niets nieuws"],
+            antwoorden: ["Een nieuw leven, zoals God het bedoeld heeft", "Precies dezelfde oude gewoonten weer", "Je trekt hele mooie nieuwe kleren aan", "Een verkleedkostuum om je anders voor te doen"],
             correct: "Een nieuw leven, zoals God het bedoeld heeft",
             bijbelplaats: "Efeziërs 4:22-24"
         },
         {
-            vraag: "Wat raadt Paulus aan om samen voor God te doen, vol dankbaarheid?",
-            antwoorden: ["Zingen en hem danken", "Mopperen", "Klagen", "Zwijgen"],
-            correct: "Zingen en hem danken",
+            vraag: "Wat raadt Paulus de gelovigen aan om samen te doen, vol dankbaarheid voor God?",
+            antwoorden: ["Samen zingen en God danken", "Samen mopperen en klagen", "Alleen aan onszelf denken", "Stil blijven en niets doen"],
+            correct: "Samen zingen en God danken",
             bijbelplaats: "Efeziërs 5:19-20"
         },
         {
@@ -2757,10 +2757,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:20"
         },
         {
-            vraag: "Waaruit deed God dit alles voor ons, volgens Paulus?",
-            antwoorden: ["Omdat het moest", "Uit zijn grote liefde en goedheid", "Omdat wij het vroegen", "Per ongeluk"],
-            correct: "Uit zijn grote liefde en goedheid",
-            bijbelplaats: "Efeziërs 2:4-7"
+            vraag: "Paulus schrijft dat we gered zijn \"uit genade\". Wat betekent dat?",
+            antwoorden: ["Het is een geschenk van God; je kunt het niet zelf verdienen", "Je moet er heel hard voor werken", "Alleen heel sterke mensen worden gered", "Je moet er veel geld voor betalen"],
+            correct: "Het is een geschenk van God; je kunt het niet zelf verdienen",
+            bijbelplaats: "Efeziërs 2:8-9"
         }
     ],
     advanced: [
@@ -2772,7 +2772,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Hoe moet je volgens Paulus met elkaar práten?",
-            antwoorden: ["Met lelijke woorden", "Met woorden die opbouwen en goeddoen", "Zo weinig mogelijk", "Met scheldwoorden"],
+            antwoorden: ["Je mag alleen met elkaar praten als het over God gaat", "Met woorden die opbouwen en goeddoen", "Zo weinig mogelijk", "Met scheldwoorden"],
             correct: "Met woorden die opbouwen en goeddoen",
             bijbelplaats: "Efeziërs 4:29"
         },
@@ -2790,19 +2790,19 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt: doe de wapenrusting van God aan. Waarvoor?",
-            antwoorden: ["Om staande te blijven tegen het kwaad", "Om oorlog te voeren tegen mensen", "Om indruk te maken", "Om te kunnen rennen"],
+            antwoorden: ["Om staande te blijven tegen het kwaad", "Om oorlog te voeren tegen mensen", "Om indruk te maken", "Gewoon zomaar, dan zie je er leuk uit"],
             correct: "Om staande te blijven tegen het kwaad",
             bijbelplaats: "Efeziërs 6:11"
         },
         {
-            vraag: "Paulus zegt: volg het voorbeeld van...",
-            antwoorden: ["de sterkste mensen", "God, en leef in liefde", "de koning", "jezelf"],
-            correct: "God, en leef in liefde",
+            vraag: "Paulus zegt: volg het voorbeeld van God en leef in...",
+            antwoorden: ["liefde", "angst", "rijkdom", "macht"],
+            correct: "liefde",
             bijbelplaats: "Efeziërs 5:1-2"
         },
         {
             vraag: "Iedereen in de gemeente kreeg eigen gaven. Waarvoor?",
-            antwoorden: ["Om de gemeente samen op te bouwen", "Om mee op te scheppen", "Om alleen zelf beter te worden", "Om anderen jaloers te maken"],
+            antwoorden: ["Om de gemeente samen op te bouwen", "Om over op te scheppen", "Om alleen zelf beter te worden", "Om anderen jaloers te maken"],
             correct: "Om de gemeente samen op te bouwen",
             bijbelplaats: "Efeziërs 4:11-12"
         },
@@ -2813,16 +2813,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 3:18-19"
         },
         {
-            vraag: "Hoe moeten gelovigen volgens Paulus met elkaar omgaan?",
-            antwoorden: ["Met ongeduld", "Met geduld en liefde, en elkaar verdragen", "Ieder voor zich", "Met strengheid"],
-            correct: "Met geduld en liefde, en elkaar verdragen",
-            bijbelplaats: "Efeziërs 4:2"
-        },
-        {
-            vraag: "Welk onderdeel van de wapenrusting is de \"gordel\"?",
-            antwoorden: ["De waarheid", "Om mee te slaan", "Om alle wapens bij elkaar te houden", "Wijsheid"],
-            correct: "De waarheid",
-            bijbelplaats: "Efeziërs 6:14"
+            vraag: "Paulus benadrukt de eenheid van de gelovigen. Hij zegt: er is één lichaam en één...?",
+            antwoorden: ["Geest", "hart", "stem", "huis"],
+            correct: "Geest",
+            bijbelplaats: "Efeziërs 4:4"
         },
         {
             vraag: "Wat raadt Paulus aan om te blijven doen, naast het aantrekken van de wapenrusting?",
@@ -2843,32 +2837,32 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:9"
         },
         {
-            vraag: "Paulus vergelijkt de gemeente met een gebouw. Wie is de belangrijkste steen (de hoeksteen)?",
+            vraag: "Paulus vergelijkt de gemeente met een gebouw. De hoeksteen is de allerbelangrijkste steen, waar het hele gebouw op rust en stevig blijft staan. Wie is die hoeksteen?",
             antwoorden: ["Paulus", "Jezus Christus", "Petrus", "De koning"],
             correct: "Jezus Christus",
             bijbelplaats: "Efeziërs 2:20"
         },
         {
-            vraag: "Samen groeien de gelovigen uit tot iets bijzonders. Wat?",
-            antwoorden: ["Een tempel waarin God door zijn Geest woont", "Een gewone markt", "Een leeg huis", "Een hoge muur"],
-            correct: "Een tempel waarin God door zijn Geest woont",
+            vraag: "De gelovigen groeien samen uit tot één bijzonder gebouw. Wat voor gebouw worden ze, zegt Paulus?",
+            antwoorden: ["Een tempel waarin God woont", "Een paleis voor de koning", "Een fort tegen de vijand", "Een school om les te krijgen"],
+            correct: "Een tempel waarin God woont",
             bijbelplaats: "Efeziërs 2:21-22"
         },
         {
-            vraag: "Paulus zegt: houd vast aan de waarheid. Maar hóe moet je dat doen?",
-            antwoorden: ["Met geweld", "In liefde", "In het geheim", "Heel streng"],
-            correct: "In liefde",
+            vraag: "Paulus zegt dat we elkaar de waarheid mogen zeggen — maar wél in liefde. Wat betekent dat?",
+            antwoorden: ["Eerlijk zijn, maar altijd vriendelijk en met zorg voor de ander", "Gewoon alles zeggen wat je vindt, ook als het hard aankomt", "Alleen zorgen dat je nooit meer liegt", "De waarheid maar beter voor jezelf houden"],
+            correct: "Eerlijk zijn, maar altijd vriendelijk en met zorg voor de ander",
             bijbelplaats: "Efeziërs 4:15"
         },
         {
             vraag: "Wat bedoelt Paulus met \"leef als kinderen van het licht\"?",
-            antwoorden: ["Doe wat goed, eerlijk en waar is", "Slaap overdag", "Blijf binnen", "Wacht tot het donker is"],
+            antwoorden: ["Doe wat goed, eerlijk en waar is", "Slaap overdag", "Blijf binnen", "Alleen naar buiten gaan als het licht is"],
             correct: "Doe wat goed, eerlijk en waar is",
             bijbelplaats: "Efeziërs 5:9"
         },
         {
             vraag: "Paulus knielt en bidt dat God de gelovigen van binnen sterk maakt. Waardoor?",
-            antwoorden: ["Door alles voor hen makkelijk te maken", "Door zijn Geest", "Door hen beroemd te maken", "Door hen de baas te maken"],
+            antwoorden: ["Door alles voor hen makkelijk te maken", "Door zijn Geest", "Door hun spieren sterk te maken", "Door alleen nog maar gezond voedsel te eten"],
             correct: "Door zijn Geest",
             bijbelplaats: "Efeziërs 3:16"
         },
@@ -2880,7 +2874,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus bidt dat Christus in hun hart woont. Wat gebeurt er dan, zegt hij?",
-            antwoorden: ["Ze staan vast geworteld in de liefde", "Ze worden bang", "Ze willen weg", "Ze worden trots"],
+            antwoorden: ["Ze staan vast geworteld in de liefde", "Ze weten meteen alle antwoorden op elke vraag", "Ze krijgen altijd hun zin", "Ze hoeven nooit meer iets moeilijks te doen"],
             correct: "Ze staan vast geworteld in de liefde",
             bijbelplaats: "Efeziërs 3:17"
         },
@@ -2912,7 +2906,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Joden en niet-Joden waren vroeger gescheiden. Wat is er door Christus gebeurd?",
-            antwoorden: ["De muur tussen hen is afgebroken; ze horen nu samen bij elkaar", "De muur werd hoger", "Ze gingen verder uit elkaar", "Er veranderde niets"],
+            antwoorden: ["De muur tussen hen is afgebroken; ze horen nu samen bij elkaar", "De muur werd nog hoger dan eerst", "Ze mochten alleen op vaste dagen bij elkaar komen", "Ze bleven twee aparte groepen naast elkaar"],
             correct: "De muur tussen hen is afgebroken; ze horen nu samen bij elkaar",
             bijbelplaats: "Efeziërs 2:14"
         },
@@ -2924,7 +2918,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat zegt Paulus dat God kan doen?",
-            antwoorden: ["Veel meer dan wij ooit kunnen vragen of bedenken", "Niet zoveel", "Alleen kleine dingen", "Niets bijzonders"],
+            antwoorden: ["Veel meer dan wij ooit kunnen vragen of bedenken", "Precies dat wat wij Hem vragen, niet meer", "Alleen wat wij zelf eerst verdiend hebben", "Alleen dingen die wij kunnen begrijpen"],
             correct: "Veel meer dan wij ooit kunnen vragen of bedenken",
             bijbelplaats: "Efeziërs 3:20"
         },
@@ -2942,13 +2936,13 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Vroeger waren de gelovigen ver van God. Wat is er veranderd?",
-            antwoorden: ["Ze zijn dichtbij gekomen, door Christus", "Ze zijn nog verder weg", "Er veranderde niets", "Ze verdwaalden"],
-            correct: "Ze zijn dichtbij gekomen, door Christus",
+            antwoorden: ["Ze zijn dichtbij gekomen, door het bloed van Christus", "Ze moesten zelf de lange weg terug afleggen", "Ze kwamen pas dichtbij na veel goede daden", "Ze waren verdwaald en vonden de weg niet terug"],
+            correct: "Ze zijn dichtbij gekomen, door het bloed van Christus",
             bijbelplaats: "Efeziërs 2:13"
         },
         {
             vraag: "Hoe beschrijft Paulus God?",
-            antwoorden: ["Rijk aan genade en vol grote liefde", "Streng en ver weg", "Onverschillig", "Boos op iedereen"],
+            antwoorden: ["Rijk aan genade en vol grote liefde", "Ver weg en onzichtbaar", "Streng, en alleen tevreden over sterke mensen", "Vriendelijk voor wie het verdient"],
             correct: "Rijk aan genade en vol grote liefde",
             bijbelplaats: "Efeziërs 2:4"
         },
@@ -2965,9 +2959,9 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:14"
         },
         {
-            vraag: "Tegen wie of wat strijden gelovigen volgens Paulus eigenlijk?",
-            antwoorden: ["Niet tegen mensen, maar tegen het kwaad", "Tegen hun buren", "Tegen andere landen", "Tegen zichzelf"],
-            correct: "Niet tegen mensen, maar tegen het kwaad",
+            vraag: "Paulus zegt dat gelovigen in een echte strijd staan. Tegen wie of wat gaat die strijd volgens hem eigenlijk?",
+            antwoorden: ["Niet tegen mensen van vlees en bloed, maar tegen de machten van het kwaad", "Tegen legers van andere koningen en landen", "Tegen wilde dieren en gevaren in de natuur", "Tegen mensen die er anders uitzien of anders geloven"],
+            correct: "Niet tegen mensen van vlees en bloed, maar tegen de machten van het kwaad",
             bijbelplaats: "Efeziërs 6:12"
         },
         {
@@ -2975,6 +2969,12 @@ vragenData["Efeziërs"] = {
             antwoorden: ["Een gouden ring", "De heilige Geest", "Een brief", "Een mooi kleed"],
             correct: "De heilige Geest",
             bijbelplaats: "Efeziërs 1:13-14"
+        },
+        {
+            vraag: "Waar staat de \"gordel\" in de wapenrusting van God voor?",
+            antwoorden: ["De waarheid", "Het geloof", "De gerechtigheid", "De vrede"],
+            correct: "De waarheid",
+            bijbelplaats: "Efeziërs 6:14"
         }
     ]
 };
