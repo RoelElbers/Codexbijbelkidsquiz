@@ -3779,7 +3779,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe moeten de gelovigen elkaar behandelen als iemand iets verkeerd doet?",
-            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Het meteen vergeten", "De ander voortaan ontwijken"],
+            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Het meteen vergeten", "Gewoon de ander terugpakken"],
             correct: "Elkaar vergeven, zoals de Heer hen vergaf",
             bijbelplaats: "Kolossenzen 3:13"
         },
@@ -3803,7 +3803,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus laten \"heersen\" in hun hart?",
-            antwoorden: ["De vrede van Christus", "Hun eigen plannen", "De angst", "De regels"],
+            antwoorden: ["De vrede van Christus", "De boosheid", "De angst", "De jaloezie"],
             correct: "De vrede van Christus",
             bijbelplaats: "Kolossenzen 3:15"
         },
@@ -3871,8 +3871,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat biedt Paulus aan over de schuld die Onesimus misschien nog had?",
-            antwoorden: ["Hij zal het zelf betalen", "Hij vergeet het wel", "Filemon moet het kwijtschelden", "Onesimus moet ervoor werken"],
-            correct: "Hij zal het zelf betalen",
+            antwoorden: ["Paulus zal het zelf betalen", "De schuld hoeft van niemand betaald te worden", "Filemon moet het kwijtschelden", "Onesimus moet ervoor werken"],
+            correct: "Paulus zal het zelf betalen",
             bijbelplaats: "Filemon 18-19"
         },
         {
@@ -3933,7 +3933,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
-            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zou weigeren", "Dat Filemon boos zou worden", "Dat Filemon niets zou doen"],
+            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon boos zou worden", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
             correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
             bijbelplaats: "Filemon 21"
         },
