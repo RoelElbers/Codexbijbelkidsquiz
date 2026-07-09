@@ -1532,7 +1532,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "In hoofdstuk 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat?",
-            antwoorden: ["Gods liefde is alleen voor sterke mensen", "Gods liefde stopt als je een fout maakt", "Je moet Gods liefde verdienen", "Niets kan ons scheiden van Gods liefde"],
+            antwoorden: ["Gods liefde is alleen voor sterke mensen", "Gods liefde stopt als je te veel fouten maakt", "Je moet Gods liefde verdienen", "Niets kan ons scheiden van Gods liefde"],
             correct: "Niets kan ons scheiden van Gods liefde",
             bijbelplaats: "Romeinen 8:38-39"
         },
@@ -1562,13 +1562,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus zegt dat je door te geloven in Jezus iets moois krijgt in je verhouding met God. Wat?",
-            antwoorden: ["Vrede met God", "Macht over anderen", "Altijd gelijk hebben", "Een zorgeloos leven"],
+            antwoorden: ["Vrede met God", "Macht over andere mensen", "Een leven zonder tegenslag", "Rijkdom en aanzien"],
             correct: "Vrede met God",
             bijbelplaats: "Romeinen 5:1"
         },
         {
             vraag: "Paulus schrijft iets bemoedigends voor de mensen die van God houden. Wat doet God volgens hem met alles wat er in hun leven gebeurt?",
-            antwoorden: ["Hij laat het meewerken tot iets goeds", "Hij laat het zomaar gebeuren", "Hij straft hen ervoor", "Hij houdt zich erbuiten"],
+            antwoorden: ["Hij laat het meewerken tot iets goeds", "Hij laat het zomaar gebeuren", "God is een straffende God, dus af en toe straft Hij omdat Hij daar zin in heeft", "Hij houdt zich erbuiten"],
             correct: "Hij laat het meewerken tot iets goeds",
             bijbelplaats: "Romeinen 8:28"
         },
@@ -1597,9 +1597,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 10:17"
         },
         {
-            vraag: "Paulus geeft een mooie raad over meeleven: wees blij met wie blij zijn, en huil met wie verdriet hebben. Maar wat bedoelt hij daar eigenlijk mee?",
-            antwoorden: ["Leef mee met mensen die verdriet hebben", "Ga zelf ook meteen huilen", "Zeg tegen hen dat het wel meevalt", "Laat hen liever even alleen"],
-            correct: "Leef mee met mensen die verdriet hebben",
+            vraag: "Paulus schrijft: 'Wees blij met wie blij zijn en wees begaan met wie verdriet hebben.' Wat bedoelt hij?",
+            antwoorden: ["Leef echt met anderen mee, of ze nu blij of verdrietig zijn", "Ga zelf ook meteen huilen", "Zeg tegen hen dat het wel meevalt", "Laat hen liever even alleen"],
+            correct: "Leef echt met anderen mee, of ze nu blij of verdrietig zijn",
             bijbelplaats: "Romeinen 12:15"
         },
         {
@@ -1642,7 +1642,7 @@ vragenData["Romeinen"] = {
     advanced: [
         {
             vraag: "Waarmee heeft God ons hart gevuld, schrijft Paulus?",
-            antwoorden: ["Met geld", "Met zijn liefde, door de heilige Geest", "Met zorgen", "Met angst"],
+            antwoorden: ["Met niets", "Met zijn liefde, door de heilige Geest", "Met zorgen", "Met angst"],
             correct: "Met zijn liefde, door de heilige Geest",
             bijbelplaats: "Romeinen 5:5"
         },
@@ -1659,20 +1659,20 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 7:24-25"
         },
         {
-            vraag: "Hoe ver ging Gods liefde voor ons, schrijft Paulus?",
-            antwoorden: ["Hij gaf zelfs zijn eigen Zoon", "Hij gaf ons wat geld", "Hij gaf ons niets", "Hij gaf alleen aan rijke mensen"],
-            correct: "Hij gaf zelfs zijn eigen Zoon",
+            vraag: "Waaraan zie je volgens Paulus hoe groot Gods liefde voor ons is?",
+            antwoorden: ["Hij gaf zelfs zijn eigen Zoon voor ons", "Hij gaf ons veel geld en bezit", "Hij gaf ons een makkelijk leven zonder zorgen", "Hij gaf alleen aan mensen die het verdienen"],
+            correct: "Hij gaf zelfs zijn eigen Zoon voor ons",
             bijbelplaats: "Romeinen 8:32"
         },
         {
             vraag: "Wat raadt Paulus aan als het even moeilijk is?",
-            antwoorden: ["Geef het meteen op", "Blijf hopen, wees geduldig en blijf bidden", "Word boos op iedereen", "Doe alsof er niets is"],
+            antwoorden: ["Geef het meteen op", "Blijf hopen, wees geduldig en blijf bidden", "Word boos op iedereen", "Doe alsof er niets aan de hand is"],
             correct: "Blijf hopen, wees geduldig en blijf bidden",
             bijbelplaats: "Romeinen 12:12"
         },
         {
             vraag: "Waar moeten gelovigen volgens Paulus hun best voor doen?",
-            antwoorden: ["Voor ruzie", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te zijn"],
+            antwoorden: ["Om de Joodse wet te bestuderen en zich daaraan te houden", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te kunnen blijven spelen"],
             correct: "Voor dingen die vrede brengen en elkaar opbouwen",
             bijbelplaats: "Romeinen 14:19"
         },
@@ -1684,13 +1684,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarom wilde Paulus zo graag naar de christenen in Rome toe?",
-            antwoorden: ["Om er vakantie te vieren", "Om er de baas te spelen", "Om elkaar in het geloof te bemoedigen", "Om er lekker uit te rusten"],
+            antwoorden: ["Om er vakantie te vieren", "Om er de baas te spelen", "Om elkaar in het geloof te bemoedigen", "Voor zijn werk, omdat hij daar veel meer kon verkopen"],
             correct: "Om elkaar in het geloof te bemoedigen",
             bijbelplaats: "Romeinen 1:11-12"
         },
         {
             vraag: "Wat zegt Paulus tegen iemand die snel een ander veroordeelt?",
-            antwoorden: ["Jij hebt altijd gelijk", "Bedenk dat je zelf ook fouten maakt", "Veroordeel nog strenger", "Anderen zijn altijd slechter dan jij"],
+            antwoorden: ["Bedenk dat je zelf ook fouten maakt", "Jij mag oordelen, want jij doet zelf niks fout", "Wijs de ander streng terecht waar anderen bij zijn", "Vertel aan iedereen wat die ander verkeerd deed"],
             correct: "Bedenk dat je zelf ook fouten maakt",
             bijbelplaats: "Romeinen 2:1"
         },
@@ -1720,7 +1720,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus zegt: laat de daden van het donker achter je en leef in het licht. Wat bedoelt hij?",
-            antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Wacht tot het weer donker is"],
+            antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Blijf binnen tot het buiten weer licht wordt"],
             correct: "Leef eerlijk en goed, alsof het klaarlichte dag is",
             bijbelplaats: "Romeinen 13:12"
         }
