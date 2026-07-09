@@ -3339,6 +3339,12 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Wakker en helder van geest", "Slaperig", "Bang", "Stil"],
             correct: "Wakker en helder van geest",
             bijbelplaats: "1 Tessalonicenzen 5:6"
+        },
+        {
+            vraag: "Paulus schrijft dat gelovigen die gestorven zijn, niet voor altijd weg zijn. Wat gebeurt er met hen wanneer Jezus terugkomt?",
+            antwoorden: ["Ze zullen weer opstaan en leven", "Ze blijven voor altijd slapen", "Ze worden sterren aan de hemel", "Er gebeurt verder niets"],
+            correct: "Ze zullen weer opstaan en leven",
+            bijbelplaats: "1 Tessalonicenzen 4:14"
         }
     ],
     advanced: [
@@ -3356,7 +3362,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus doen, wat er ook gebeurt?",
-            antwoorden: ["Dankbaar blijven", "Bang blijven", "Stil blijven", "Wachten en niets doen"],
+            antwoorden: ["Dankbaar blijven", "Flink en dapper zijn", "Zelf een oplossing bedenken", "Anderen om raad vragen"],
             correct: "Dankbaar blijven",
             bijbelplaats: "1 Tessalonicenzen 5:18"
         },
@@ -3373,10 +3379,10 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 3:10"
         },
         {
-            vraag: "Hoe zal Jezus volgens Paulus terugkomen?",
-            antwoorden: ["Van de hemel, met een roep en een bazuin", "Stilletjes, zonder dat iemand het ziet", "Als een gewone reiziger", "In de tempel van Jeruzalem"],
-            correct: "Van de hemel, met een roep en een bazuin",
-            bijbelplaats: "1 Tessalonicenzen 4:16"
+            vraag: "Vlak vóór Paulus naar Tessalonica kwam, was hij in een andere stad slecht behandeld en gevangengezet. In welke stad?",
+            antwoorden: ["Filippi", "Rome", "Athene", "Korinte"],
+            correct: "Filippi",
+            bijbelplaats: "1 Tessalonicenzen 2:2"
         },
         {
             vraag: "Paulus werkte zelf hard, zodat hij niemand tot last zou zijn. Wat was zijn beroep?",
@@ -3410,13 +3416,13 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "In welk land lag de stad Tessalonica?",
-            antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
+            antwoorden: ["Macedonië", "Klein-Azië", "Judea", "Italië"],
             correct: "Macedonië",
             bijbelplaats: "Handelingen 17:1"
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus blijven doen, ook als ze het moeilijk hebben?",
-            antwoorden: ["Niet moe worden om goed te doen", "Terugslaan", "Wegrennen", "Klagen"],
+            antwoorden: ["Niet moe worden om goed te doen", "Even pauze nemen tot het makkelijker wordt", "Alleen goed doen voor wie het verdient", "Wachten tot iemand anders begint"],
             correct: "Niet moe worden om goed te doen",
             bijbelplaats: "2 Tessalonicenzen 3:13"
         },
@@ -3483,8 +3489,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 1:1"
         },
         {
-            vraag: "Paulus gebruikt het beeld van een wapenrusting. Wat dragen de gelovigen als \"borstpantser\"?",
-            antwoorden: ["Geloof en liefde", "Goud en zilver", "Recht en wet", "Moed en kracht"],
+            vraag: "Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat \"gerechtigheid\". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen?",
+            antwoorden: ["Geloof en liefde", "Gerechtigheid", "Goud en zilver", "Moed en kracht"],
             correct: "Geloof en liefde",
             bijbelplaats: "1 Tessalonicenzen 5:8"
         },
