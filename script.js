@@ -4320,7 +4320,7 @@ vragenData["Hebreeën"] = {
 
 // Jakobus — vragenpool (Algemene brieven).
 // Formaat gelijk aan de andere boeken: vragenData["Jakobus"] met drie niveaus
-// (beginner/advanced/expert). 11 beginner, 14 advanced, 12 expert = 37 vragen.
+// (beginner/advanced/expert). 11 beginner, 12 advanced, 11 expert = 34 vragen.
 vragenData["Jakobus"] = {
     beginner: [
         {
@@ -4330,26 +4330,26 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 1:17"
         },
         {
-            vraag: "Stel je voor dat iemand honger en kou heeft. Wat moet je volgens Jakobus doen?",
-            antwoorden: ["Hem echt helpen met wat hij nodig heeft", "Alleen vriendelijke woorden zeggen", "Wegkijken", "Hem uitlachen"],
-            correct: "Hem echt helpen met wat hij nodig heeft",
+            vraag: "Jakobus vertelt over iemand die honger en kou heeft. Wat leert hij daarmee over geloof?",
+            antwoorden: ["Geloof zonder daden is leeg", "Geloof is vooral goed bedoelen", "Geloof is iets tussen jou en God alleen", "Geloof gaat vooral over de juiste woorden"],
+            correct: "Geloof zonder daden is leeg",
             bijbelplaats: "Jakobus 2:15-16"
         },
         {
-            vraag: "Jakobus zegt: kom dicht bij God, dan komt God …",
-            antwoorden: ["dicht bij jou", "boos op jou", "ver bij je vandaan", "streng voor je"],
-            correct: "dicht bij jou",
+            vraag: "Jakobus zegt: kom dicht bij God. Wat gebeurt er dan?",
+            antwoorden: ["Dan komt God dicht bij jou", "Dan wacht God tot je alles goed doet", "Dan stuurt God een engel naar je toe", "Dan zul je God eindelijk kunnen zien"],
+            correct: "Dan komt God dicht bij jou",
             bijbelplaats: "Jakobus 4:8"
         },
         {
             vraag: "Wat zegt Jakobus over hoe we over andere mensen moeten praten?",
-            antwoorden: ["Spreek geen kwaad over elkaar", "Vertel elkaars geheimen door", "Lach om elkaars fouten", "Zeg altijd precies wat je denkt"],
+            antwoorden: ["Spreek geen kwaad over elkaar", "Zeg altijd precies wat je van iemand vindt", "Wijs elkaar streng op elke fout", "Praat liever helemaal niet over anderen"],
             correct: "Spreek geen kwaad over elkaar",
             bijbelplaats: "Jakobus 4:11"
         },
         {
             vraag: "Wat moet je volgens Jakobus doen als je ziek bent?",
-            antwoorden: ["De leiders van de gemeente vragen om voor je te bidden", "Het stil voor jezelf houden", "Meteen op reis gaan", "Tegen niemand iets zeggen"],
+            antwoorden: ["De leiders van de gemeente vragen om voor je te bidden", "Het stil voor jezelf houden", "Alleen proberen ziek te zijn als je naar school moet", "Tegen niemand iets zeggen"],
             correct: "De leiders van de gemeente vragen om voor je te bidden",
             bijbelplaats: "Jakobus 5:14"
         },
@@ -4373,13 +4373,13 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Stel dat iemand bij God en het goede pad wegloopt. Wat moet je volgens Jakobus proberen te doen?",
-            antwoorden: ["Hem vol liefde weer terugbrengen", "Hem voorgoed wegsturen", "Hem uitlachen", "Net doen of je niets ziet"],
+            antwoorden: ["Hem vol liefde weer terugbrengen", "Hem voorgoed wegsturen", "Net doen of je niets ziet", "Elke keer als je hem ziet, flink in discussie gaan"],
             correct: "Hem vol liefde weer terugbrengen",
             bijbelplaats: "Jakobus 5:19-20"
         },
         {
             vraag: "Jakobus zegt: maak jezelf klein voor God. Wat zal God dan doen?",
-            antwoorden: ["Hij zal je groot maken", "Hij zal je vergeten", "Hij zal je wegsturen", "Hij zal je straffen"],
+            antwoorden: ["Hij zal je groot maken", "Hij zal je met rust laten", "Hij zal je nog kleiner maken", "Hij zal nu voortaan over je heen kijken"],
             correct: "Hij zal je groot maken",
             bijbelplaats: "Jakobus 4:10"
         },
@@ -4404,14 +4404,8 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 1:19"
         },
         {
-            vraag: "Jakobus zegt: doe wat het woord van God zegt. Wees niet iemand die alleen maar … en het daarna vergeet.",
-            antwoorden: ["luistert", "slaapt", "eet", "zingt"],
-            correct: "luistert",
-            bijbelplaats: "Jakobus 1:22"
-        },
-        {
             vraag: "Als je wijsheid nodig hebt, wat moet je dan volgens Jakobus doen?",
-            antwoorden: ["God erom vragen, want Hij geeft het graag", "Het zelf bedenken", "Het kopen", "Erover zwijgen"],
+            antwoorden: ["God erom vragen, want Hij geeft het graag", "Wachten tot je ouder en ervarener bent", "Zorgen dat je eerst genoeg geleerd hebt", "Vertrouw alleen op je eigen verstand"],
             correct: "God erom vragen, want Hij geeft het graag",
             bijbelplaats: "Jakobus 1:5"
         },
@@ -4440,9 +4434,9 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:11"
         },
         {
-            vraag: "Waarmee vergelijkt Jakobus de boer die geduldig wacht, om ons te leren ook geduldig te zijn?",
-            antwoorden: ["Hij wacht tot de oogst rijp is", "Hij bouwt een huis", "Hij vangt vissen", "Hij hoedt schapen"],
-            correct: "Hij wacht tot de oogst rijp is",
+            vraag: "Waarmee vergelijkt Jakobus het geduld waarmee wij op de Heer moeten wachten?",
+            antwoorden: ["Met een boer die wacht op zijn oogst", "Met een soldaat die wacht op bevel", "Met een dienaar die wacht op zijn loon", "Met een reiziger die wacht op mooi weer"],
+            correct: "Met een boer die wacht op zijn oogst",
             bijbelplaats: "Jakobus 5:7"
         },
         {
@@ -4458,21 +4452,15 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:6"
         },
         {
-            vraag: "De wijsheid die van God komt, is volgens Jakobus vooral …",
-            antwoorden: ["vredelievend en vriendelijk", "streng en hard", "slim en sluw", "stil en verborgen"],
-            correct: "vredelievend en vriendelijk",
+            vraag: "Jakobus wil in zijn brief één eigenschap van de wijsheid die van God komt benadrukken. Welke?",
+            antwoorden: ["Ze is vredelievend en vriendelijk", "Ze is vooral heel verstandig", "Ze is streng en duidelijk", "Ze is alleen voor geleerde mensen"],
+            correct: "Ze is vredelievend en vriendelijk",
             bijbelplaats: "Jakobus 3:17"
         },
         {
-            vraag: "Waar komen ruzies en strijd tussen mensen volgens Jakobus vandaan?",
-            antwoorden: ["Uit de verkeerde verlangens in hun eigen hart", "Uit de lucht", "Alleen door de duivel", "Door de regering"],
-            correct: "Uit de verkeerde verlangens in hun eigen hart",
-            bijbelplaats: "Jakobus 4:1"
-        },
-        {
-            vraag: "Jakobus vraagt: ben je wijs? Laat het dan zien door …",
-            antwoorden: ["je goede daden en vriendelijkheid", "veel te praten", "slim te zijn", "streng te zijn"],
-            correct: "je goede daden en vriendelijkheid",
+            vraag: "Jakobus vraagt: ben je wijs? Waaraan moet dat volgens hem te zien zijn?",
+            antwoorden: ["Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed", "Aan dat je in elk gesprek je gelijk haalt", "Aan dat je anderen op hun fouten wijst", "Aan dat mensen graag naar je luisteren"],
+            correct: "Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed",
             bijbelplaats: "Jakobus 3:13"
         }
     ],
@@ -4484,9 +4472,9 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 3:5-6"
         },
         {
-            vraag: "Waarmee vergelijkt Jakobus de tong, om te laten zien dat iets kleins toch iets groots kan sturen?",
-            antwoorden: ["Met het roer van een schip", "Met een zwaard", "Met een ster", "Met een berg"],
-            correct: "Met het roer van een schip",
+            vraag: "Jakobus vergelijkt de tong met het roer van een schip. Wat wil hij daarmee zeggen?",
+            antwoorden: ["Iets kleins kan iets heel groots sturen", "Praten is gevaarlijk werk", "Alleen een stuurman mag spreken", "Woorden waaien snel weg"],
+            correct: "Iets kleins kan iets heel groots sturen",
             bijbelplaats: "Jakobus 3:4"
         },
         {
@@ -4514,12 +4502,6 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:17"
         },
         {
-            vraag: "Wat is volgens Jakobus 'zuivere godsdienst' in de ogen van God?",
-            antwoorden: ["Zorgen voor weeskinderen en weduwen die het moeilijk hebben", "Veel bidden waar iedereen bij is", "Mooie kleren dragen naar de samenkomst", "Veel gebeden uit je hoofd kennen"],
-            correct: "Zorgen voor weeskinderen en weduwen die het moeilijk hebben",
-            bijbelplaats: "Jakobus 1:27"
-        },
-        {
             vraag: "Wat ontvangt volgens Jakobus de mens die moeilijke tijden geduldig doorstaat en van God blijft houden?",
             antwoorden: ["De kroon van het leven", "Roem bij alle mensen", "Een makkelijk leven", "Een lang leven op aarde"],
             correct: "De kroon van het leven",
@@ -4532,9 +4514,9 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 2:23"
         },
         {
-            vraag: "Jakobus zegt: wie denkt dat hij godsdienstig is, maar zijn tong niet in bedwang houdt, bedriegt …",
-            antwoorden: ["zichzelf", "zijn vrienden", "de gemeente", "God"],
-            correct: "zichzelf",
+            vraag: "Jakobus zegt: wie denkt dat hij godsdienstig is, maar zijn tong niet in bedwang houdt — wat is er dan met zijn godsdienst?",
+            antwoorden: ["Die is waardeloos", "Die is nog niet volmaakt", "Die telt alleen voor hemzelf", "Die moet nog groeien"],
+            correct: "Die is waardeloos",
             bijbelplaats: "Jakobus 1:26"
         },
         {
