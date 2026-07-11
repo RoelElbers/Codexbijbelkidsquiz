@@ -4537,13 +4537,13 @@ vragenData["Jakobus"] = {
 // Petrus & Judas — vragenpool (Algemene brieven).
 // Bundel uit 1 & 2 Petrus en Judas — gedeeld thema: waarschuwing tegen
 // dwaalleraars. Formaat gelijk aan de andere boeken: vragenData["Petrus & Judas"]
-// met drie niveaus. 15 beginner, 18 advanced, 12 expert = 45 vragen.
+// met drie niveaus. 10 beginner, 17 advanced, 12 expert = 39 vragen.
 vragenData["Petrus & Judas"] = {
     beginner: [
         {
-            vraag: "Petrus schrijft: geef al je zorgen aan God, want …",
-            antwoorden: ["Hij heeft het te druk voor kleine dingen", "Hij zorgt voor jou", "je moet ze uiteindelijk zelf dragen", "Hij luistert toch niet naar klachten"],
-            correct: "Hij zorgt voor jou",
+            vraag: "Petrus schrijft: geef al je zorgen aan God. Welke reden geeft hij daarvoor?",
+            antwoorden: ["Omdat Hij voor jou zorgt", "Omdat Hij alles kan", "Omdat Hij alles al weet", "Omdat Hij je fouten vergeeft"],
+            correct: "Omdat Hij voor jou zorgt",
             bijbelplaats: "1 Petrus 5:7"
         },
         {
@@ -4560,7 +4560,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft: wees gastvrij voor elkaar, en doe dat …",
-            antwoorden: ["zonder te mopperen", "alleen voor je vrienden", "alleen als je er iets voor terugkrijgt", "alleen als het je uitkomt"],
+            antwoorden: ["zonder te mopperen", "zonder er te veel tijd aan te besteden", "alleen als je zelf genoeg hebt", "vooral voor wie het verdient"],
             correct: "zonder te mopperen",
             bijbelplaats: "1 Petrus 4:9"
         },
@@ -4571,22 +4571,10 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 5:5"
         },
         {
-            vraag: "Judas schrijft: bouw jezelf op in je geloof, en …",
-            antwoorden: ["bid tot God", "wacht maar gewoon af", "ga op reis", "zwijg stil"],
-            correct: "bid tot God",
-            bijbelplaats: "Judas 20"
-        },
-        {
-            vraag: "Petrus schrijft over hoe gelovigen met elkaar moeten omgaan: leef met elkaar mee en heb elkaar lief als …",
-            antwoorden: ["één grote familie", "onbekende vreemden", "concurrenten", "gewone klasgenoten"],
-            correct: "één grote familie",
+            vraag: "Met welk beeld zegt Petrus hoe gelovigen met elkaar moeten omgaan?",
+            antwoorden: ["Als broers en zussen", "Als goede buren", "Als bondgenoten", "Als reisgenoten"],
+            correct: "Als broers en zussen",
             bijbelplaats: "1 Petrus 3:8"
-        },
-        {
-            vraag: "Petrus schrijft dat de gelovigen iets bijzonders doen, ook al hebben ze Jezus nooit met eigen ogen gezien. Wat?",
-            antwoorden: ["Ze houden van Hem", "Ze zijn bang voor Hem", "Ze vergeten Hem", "Ze twijfelen aan Hem"],
-            correct: "Ze houden van Hem",
-            bijbelplaats: "1 Petrus 1:8"
         },
         {
             vraag: "Petrus schrijft over de Bijbel: de profeten spraken niet zomaar hun eigen woorden, maar werden geleid door …",
@@ -4599,24 +4587,6 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["regen", "wind", "licht", "kou"],
             correct: "regen",
             bijbelplaats: "Judas 12"
-        },
-        {
-            vraag: "Hoe noemen we de eerste vier boeken van het Nieuwe Testament, die vertellen over het leven van Jezus?",
-            antwoorden: ["De evangeliën", "De brieven", "De psalmen", "De profeten"],
-            correct: "De evangeliën",
-            bijbelplaats: "NT algemeen"
-        },
-        {
-            vraag: "Petrus en Judas schreven hun teksten als een brief. Wat is een brief in de Bijbel?",
-            antwoorden: ["Een geschreven boodschap aan gelovigen", "Een lied om te zingen", "Een lijst met wetten", "Een verhaal over de schepping"],
-            correct: "Een geschreven boodschap aan gelovigen",
-            bijbelplaats: "NT algemeen"
-        },
-        {
-            vraag: "Petrus schrijft dat iedereen een gave (talent) van God heeft gekregen. Wat moet je er volgens hem mee doen?",
-            antwoorden: ["Er anderen mee helpen", "Het voor jezelf houden", "Het verstoppen", "Het vergeten"],
-            correct: "Er anderen mee helpen",
-            bijbelplaats: "1 Petrus 4:10"
         },
         {
             vraag: "Petrus schrijft dat Jezus onze fouten (zonden) heeft gedragen. Waar deed hij dat volgens Petrus?",
@@ -4651,25 +4621,25 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 3:13"
         },
         {
-            vraag: "Waarom wacht God nog met de terugkeer van Jezus, schrijft Petrus?",
-            antwoorden: ["Omdat Hij geduldig is en wil dat iedereen tot Hem komt", "Omdat Hij het vergeten is", "Omdat Hij het niet kan", "Omdat Hij te boos is"],
-            correct: "Omdat Hij geduldig is en wil dat iedereen tot Hem komt",
+            vraag: "Sommige mensen spotten: waarom is de Heer nog niet teruggekomen? Welke uitleg geeft Petrus?",
+            antwoorden: ["Hij wil dat niemand verloren gaat", "Hij is het vergeten", "Hij komt wel, maar gewoon wat later", "Hij wil de dwaalleraars eerst ontmaskeren"],
+            correct: "Hij wil dat niemand verloren gaat",
             bijbelplaats: "2 Petrus 3:9"
         },
         {
             vraag: "Petrus schrijft: heb elkaar vurig lief, want de liefde bedekt …",
-            antwoorden: ["veel zonden", "helemaal niets", "alleen kleine foutjes", "de waarheid"],
+            antwoorden: ["veel zonden", "helemaal niets", "alleen kleine foutjes", "alleen je eigen fouten"],
             correct: "veel zonden",
             bijbelplaats: "1 Petrus 4:8"
         },
         {
-            vraag: "Petrus schrijft: wees altijd klaar om aan anderen uit te leggen waarom je …",
-            antwoorden: ["hoopt en gelooft", "boos bent", "verdrietig bent", "gelijk hebt"],
-            correct: "hoopt en gelooft",
+            vraag: "Petrus zegt: wees altijd bereid je te verantwoorden. Waarover?",
+            antwoorden: ["Over de hoop die in je leeft", "Over de fouten die je hebt gemaakt", "Over de regels die je volgt", "Over de kerk waar je bij hoort"],
+            correct: "Over de hoop die in je leeft",
             bijbelplaats: "1 Petrus 3:15"
         },
         {
-            vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: ‘Wees …, want Ik ben …’",
+            vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: 'Wees …, want Ik ben …'",
             antwoorden: ["heilig", "sterk", "wijs", "streng"],
             correct: "heilig",
             bijbelplaats: "1 Petrus 1:16"
@@ -4687,15 +4657,15 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 9"
         },
         {
-            vraag: "Petrus schrijft dat Jezus ons een voorbeeld heeft nagelaten. Wat moeten we volgens hem doen?",
-            antwoorden: ["In zijn voetstappen volgen", "Beroemd worden", "Hem snel vergeten", "Zelf de baas spelen"],
-            correct: "In zijn voetstappen volgen",
+            vraag: "Petrus zegt dat Christus ons een voorbeeld heeft nagelaten. Met welk beeld zegt hij hoe wij Hem moeten volgen?",
+            antwoorden: ["Door in zijn voetstappen te treden", "Door zijn juk te dragen", "Door zijn kruis op te nemen", "Door in zijn licht te wandelen"],
+            correct: "Door in zijn voetstappen te treden",
             bijbelplaats: "1 Petrus 2:21"
         },
         {
-            vraag: "Petrus schrijft: als iemand iets verkeerds tegen je doet, doe dan niet hetzelfde kwaad terug, maar …",
-            antwoorden: ["wens hem juist het goede", "doe het dubbel terug", "vertel het overal rond", "blijf voor altijd boos"],
-            correct: "wens hem juist het goede",
+            vraag: "Petrus zegt: vergeld geen kwaad met kwaad, maar zegen juist. Wat belooft hij daarbij?",
+            antwoorden: ["Dat je zelf zegen zult ontvangen", "Dat je vijand zal veranderen", "Dat God de ander zal straffen", "Dat je rust zult vinden"],
+            correct: "Dat je zelf zegen zult ontvangen",
             bijbelplaats: "1 Petrus 3:9"
         },
         {
@@ -4715,12 +4685,6 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
             correct: "Kaïn",
             bijbelplaats: "Judas 11"
-        },
-        {
-            vraag: "Uit hoeveel boeken bestaat het Nieuwe Testament? (Een brief telt ook als een boek.)",
-            antwoorden: ["27", "12", "39", "66"],
-            correct: "27",
-            bijbelplaats: "NT algemeen"
         },
         {
             vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar …?",
@@ -4743,9 +4707,9 @@ vragenData["Petrus & Judas"] = {
     ],
     expert: [
         {
-            vraag: "Judas schrijft dat de gelovigen moeten … voor het geloof dat ze van God gekregen hebben.",
-            antwoorden: ["opkomen", "weglopen", "zwijgen", "betalen"],
-            correct: "opkomen",
+            vraag: "Judas roept de gelovigen op om iets te doen voor het geloof dat eens en voorgoed aan hen is toevertrouwd. Wat?",
+            antwoorden: ["Ervoor strijden", "Het zorgvuldig bewaren", "Het aan anderen doorgeven", "Het steeds beter leren kennen"],
+            correct: "Ervoor strijden",
             bijbelplaats: "Judas 3"
         },
         {
@@ -4755,9 +4719,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 24"
         },
         {
-            vraag: "Petrus noemt Jezus de … herder, die over alle gelovigen waakt.",
-            antwoorden: ["hoogste", "kleinste", "nieuwste", "laatste"],
-            correct: "hoogste",
+            vraag: "Welke titel geeft Petrus aan Jezus, die over alle gelovigen waakt?",
+            antwoorden: ["De opperherder", "De goede herder", "De grote herder", "De trouwe herder"],
+            correct: "De opperherder",
             bijbelplaats: "1 Petrus 5:4"
         },
         {
@@ -4786,8 +4750,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
-            antwoorden: ["“Waar blijft die beloofde terugkomst van Jezus?”", "“Er bestaat geen God!”", "“De wereld is plat!”", "“Wij zijn hier de baas!”"],
-            correct: "“Waar blijft die beloofde terugkomst van Jezus?”",
+            antwoorden: ["\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"De profeten hebben zich vergist.\""],
+            correct: "\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"",
             bijbelplaats: "2 Petrus 3:3-4"
         },
         {
@@ -4797,22 +4761,22 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 1:12"
         },
         {
-            vraag: "Petrus schrijft: groei steeds meer in de … van onze Heer Jezus Christus.",
-            antwoorden: ["genade en kennis", "rijkdom en macht", "snelheid en kracht", "roem en eer"],
-            correct: "genade en kennis",
-            bijbelplaats: "2 Petrus 3:18"
+            vraag: "Petrus verwijst naar de ark van Noach. Hoeveel mensen werden er volgens hem gered?",
+            antwoorden: ["Acht", "Twaalf", "Zeven", "Vier"],
+            correct: "Acht",
+            bijbelplaats: "1 Petrus 3:20"
         },
         {
-            vraag: "Petrus bemoedigt gelovigen die het moeilijk hebben: na een korte tijd van verdriet zal God jullie zelf weer …",
-            antwoorden: ["sterk maken", "vergeten", "wegsturen", "alleen laten"],
-            correct: "sterk maken",
-            bijbelplaats: "1 Petrus 5:10"
+            vraag: "Judas haalt een profetie aan van een man uit de oertijd, de zevende vanaf Adam. Wie?",
+            antwoorden: ["Henoch", "Noach", "Metusalem", "Set"],
+            correct: "Henoch",
+            bijbelplaats: "Judas 14"
         },
         {
-            vraag: "In welke taal is het Nieuwe Testament oorspronkelijk geschreven?",
-            antwoorden: ["Grieks", "Latijn", "Hebreeuws", "Nederlands"],
-            correct: "Grieks",
-            bijbelplaats: "NT algemeen"
+            vraag: "Petrus richt zijn eerste brief aan gelovigen die verspreid wonen. Hoe noemt hij hen?",
+            antwoorden: ["Vreemdelingen in de verstrooiing", "Kinderen van de belofte", "Broeders in de Heer", "Erfgenamen van het koninkrijk"],
+            correct: "Vreemdelingen in de verstrooiing",
+            bijbelplaats: "1 Petrus 1:1"
         }
     ]
 };
