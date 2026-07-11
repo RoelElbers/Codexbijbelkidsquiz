@@ -2837,7 +2837,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:9"
         },
         {
-            vraag: "Paulus vergelijkt de gemeente met een gebouw. De hoeksteen is de allerbelangrijkste steen, waar het hele gebouw op rust en stevig blijft staan. Wie is die hoeksteen?",
+            vraag: "Paulus vergelijkt de gemeente — alle gelovigen samen, de kerk — met een gebouw. De hoeksteen is de allerbelangrijkste steen, waar het hele gebouw op rust en stevig blijft staan. Wie is die hoeksteen?",
             antwoorden: ["Paulus", "Jezus Christus", "Petrus", "De koning"],
             correct: "Jezus Christus",
             bijbelplaats: "Efeziërs 2:20"

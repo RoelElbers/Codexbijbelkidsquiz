@@ -2074,6 +2074,12 @@ height: 22%;
     color: #ffd86b;
     font-weight: bold;
 }
+/* Grieks schrift (bv. ἐκκλησία): Cinzel heeft geen Grieks bereik, dus
+   expliciete fallback naar fonts die Grieks wél aankunnen. */
+.grieks {
+    font-family: 'Noto Serif', Georgia, 'Palatino Linotype', serif;
+    font-style: normal;
+}
 .naslag-bron {
     color: rgba(243, 236, 216, 0.6);
     font-style: italic;
