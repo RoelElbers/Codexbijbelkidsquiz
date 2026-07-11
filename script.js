@@ -4785,7 +4785,7 @@ vragenData["Petrus & Judas"] = {
 // Bundel uit 1, 2 & 3 Johannes. Bewust "Brieven van Johannes" (niet "Johannes"),
 // om verwarring met het evangelie te voorkomen. Formaat gelijk aan de andere
 // boeken: vragenData["Brieven van Johannes"] met drie niveaus.
-// 14 beginner, 12 advanced, 11 expert = 37 vragen.
+// 13 beginner, 12 advanced, 13 expert = 38 vragen.
 vragenData["Brieven van Johannes"] = {
     beginner: [
         {
@@ -4795,15 +4795,15 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:8"
         },
         {
-            vraag: "Johannes schrijft steeds opnieuw één belangrijke opdracht. Welke?",
-            antwoorden: ["Heb elkaar lief", "Denk aan jezelf", "Reis veel", "Blijf binnen"],
+            vraag: "Welke opdracht schrijft Johannes vaak?",
+            antwoorden: ["Heb elkaar lief", "Wees waakzaam", "Wees dankbaar", "Blijf bidden"],
             correct: "Heb elkaar lief",
             bijbelplaats: "1 Johannes 3:11"
         },
         {
-            vraag: "Johannes zegt: als we onze fouten (zonden) eerlijk aan God vertellen, wat doet God dan?",
-            antwoorden: ["Hij vergeeft ze", "Hij onthoudt ze", "Hij vertelt ze door", "Hij lacht erom"],
-            correct: "Hij vergeeft ze",
+            vraag: "Johannes zegt: als we onze fouten (zonden) eerlijk aan God vertellen, wat doet God dan volgens hem?",
+            antwoorden: ["Hij vergeeft ze en maakt ons weer schoon", "Hij vergeeft ze als we het niet meer doen", "Hij vergeeft ze na verloop van tijd", "Hij vergeeft alleen onze kleine zonden"],
+            correct: "Hij vergeeft ze en maakt ons weer schoon",
             bijbelplaats: "1 Johannes 1:9"
         },
         {
@@ -4819,14 +4819,14 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 3:18"
         },
         {
-            vraag: "Johannes zegt: je kunt niet zeggen dat je van God houdt, die je niet ziet, als je je … haat, die je wél ziet.",
-            antwoorden: ["broeder of zuster", "vijand", "koning", "leraar"],
-            correct: "broeder of zuster",
+            vraag: "Johannes zegt: wie beweert dat hij van God houdt, maar zijn broeder of zuster haat — wat is zo iemand volgens hem?",
+            antwoorden: ["Een leugenaar", "Een dwaas", "Een zwakke gelovige", "Iemand die het nog moet leren"],
+            correct: "Een leugenaar",
             bijbelplaats: "1 Johannes 4:20"
         },
         {
             vraag: "Wat verdrijft volgens Johannes de angst helemaal?",
-            antwoorden: ["De volmaakte liefde", "Veel geld", "Sterke muren", "Een groot leger"],
+            antwoorden: ["De volmaakte liefde", "Een sterk geloof", "Veel kennis van God", "Het houden van de geboden"],
             correct: "De volmaakte liefde",
             bijbelplaats: "1 Johannes 4:18"
         },
@@ -4838,45 +4838,39 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Wat zegt Johannes dat zijn allergrootste blijdschap is?",
-            antwoorden: ["Horen dat zijn ‘kinderen’ in de waarheid leven", "Veel brieven krijgen", "Beroemd worden", "Lang op reis gaan"],
-            correct: "Horen dat zijn ‘kinderen’ in de waarheid leven",
+            antwoorden: ["Horen dat zijn 'kinderen' in de waarheid leven", "Horen dat de gemeente groeit", "Zelf bij hen op bezoek kunnen komen", "Horen dat zijn brieven overal gelezen worden"],
+            correct: "Horen dat zijn 'kinderen' in de waarheid leven",
             bijbelplaats: "3 Johannes 4"
         },
         {
-            vraag: "Wat is volgens Johannes het bewijs dat je God echt kent?",
-            antwoorden: ["Dat je doet wat God vraagt", "Dat je heel slim bent", "Dat je heel sterk bent", "Dat je nooit slaapt"],
-            correct: "Dat je doet wat God vraagt",
-            bijbelplaats: "1 Johannes 2:3"
-        },
-        {
             vraag: "Johannes noemt de gelovigen aan wie hij schrijft vaak liefdevol …",
-            antwoorden: ["‘mijn kinderen’", "‘mijn soldaten’", "‘mijn dienaren’", "‘mijn leerlingen’"],
-            correct: "‘mijn kinderen’",
+            antwoorden: ["'mijn kinderen'", "'mijn soldaten'", "'mijn dienaren'", "'mijn leerlingen'"],
+            correct: "'mijn kinderen'",
             bijbelplaats: "1 Johannes 2:1"
         },
         {
             vraag: "Johannes vergelijkt leven mét God met wandelen in het licht, en leven zonder God met wandelen in het …",
-            antwoorden: ["donker", "water", "vuur", "zand"],
+            antwoorden: ["donker", "moeras", "vuur", "modder"],
             correct: "donker",
             bijbelplaats: "1 Johannes 1:6-7"
         },
         {
             vraag: "Hoe liet God volgens Johannes zijn grote liefde aan ons zien?",
-            antwoorden: ["Hij stuurde zijn enige Zoon naar de wereld", "Hij bouwde een prachtige tempel", "Hij maakte de zon en de maan", "Hij gaf de mensen een koning"],
+            antwoorden: ["Hij stuurde zijn enige Zoon naar de wereld", "Hij bouwde een prachtige tempel", "Hij liet een groot teken zien aan de hemel", "Hij gaf de mensen een koning"],
             correct: "Hij stuurde zijn enige Zoon naar de wereld",
             bijbelplaats: "1 Johannes 4:9"
         },
         {
-            vraag: "In de tweede en derde brief schrijft Johannes dat hij niet alles met pen en inkt wil opschrijven, omdat hij iets liever doet. Wat?",
-            antwoorden: ["Hen in het echt ontmoeten en spreken", "Een dik boek maken", "Alles geheimhouden", "Iemand anders laten schrijven"],
-            correct: "Hen in het echt ontmoeten en spreken",
+            vraag: "Johannes heeft nog veel te vertellen, maar hij wil het niet allemaal met pen en inkt opschrijven. Wat wil hij liever doen?",
+            antwoorden: ["Hen zelf bezoeken en van mond tot mond spreken", "Iemand anders het laten opschrijven", "Wachten tot ze zelf naar hem toe komen", "Het geheimhouden voor de anderen"],
+            correct: "Hen zelf bezoeken en van mond tot mond spreken",
             bijbelplaats: "2 Johannes 12; 3 Johannes 13"
         }
     ],
     advanced: [
         {
             vraag: "Waarom kunnen wij volgens Johannes liefhebben? Omdat God …",
-            antwoorden: ["ons eerst heeft liefgehad", "ons dat beveelt", "ons ervoor betaalt", "het ons op school leert"],
+            antwoorden: ["ons eerst heeft liefgehad", "ons dat opdraagt", "ons daarvoor beloont", "ons pas liefheeft als wij beginnen"],
             correct: "ons eerst heeft liefgehad",
             bijbelplaats: "1 Johannes 4:19"
         },
@@ -4885,18 +4879,6 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["kinderen van God", "dienaren van de koning", "vrienden van de wereld", "helden van het volk"],
             correct: "kinderen van God",
             bijbelplaats: "1 Johannes 3:1"
-        },
-        {
-            vraag: "Wat is volgens Johannes de overwinning waarmee we de wereld overwinnen?",
-            antwoorden: ["Ons geloof", "Onze kracht", "Onze slimheid", "Onze moed"],
-            correct: "Ons geloof",
-            bijbelplaats: "1 Johannes 5:4"
-        },
-        {
-            vraag: "Hoe weten we volgens Johannes dat we van de dood naar het leven zijn overgegaan?",
-            antwoorden: ["Omdat we van onze broeders en zusters houden", "Omdat we veel weten", "Omdat we sterk zijn", "Omdat we nooit bang zijn"],
-            correct: "Omdat we van onze broeders en zusters houden",
-            bijbelplaats: "1 Johannes 3:14"
         },
         {
             vraag: "Johannes geeft een test om te weten of iemand de waarheid spreekt: erkent diegene dat Jezus echt … is geworden, een mens van vlees en bloed?",
@@ -4911,9 +4893,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 5:13"
         },
         {
-            vraag: "Johannes waarschuwt voor iemand die tégen Christus ingaat en de mensen wil misleiden. Met welk woord noemt hij zo iemand?",
-            antwoorden: ["de antichrist", "de valse profeet", "de tegenstander", "de bedrieger"],
-            correct: "de antichrist",
+            vraag: "Johannes waarschuwt voor de antichrist, iemand die tégen Christus ingaat en de mensen wil misleiden. Hij noemt één ding waaraan je zo iemand kunt herkennen. Wat?",
+            antwoorden: ["Hij ontkent dat Jezus de Christus is", "Hij komt pas helemaal aan het einde van de tijd", "Hij is erg machtig", "Hij noemt zichzelf koning over de hele wereld"],
+            correct: "Hij ontkent dat Jezus de Christus is",
             bijbelplaats: "1 Johannes 2:18"
         },
         {
@@ -4929,9 +4911,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:9"
         },
         {
-            vraag: "Johannes zegt: de wereld met al haar verkeerde verlangens gaat voorbij, maar wie de wil van God doet, blijft …",
-            antwoorden: ["leven, voor altijd", "sterk", "beroemd", "de baas"],
-            correct: "leven, voor altijd",
+            vraag: "Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee?",
+            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de wereld slecht geschapen is", "Dat gelovigen niets mogen bezitten", "Dat de wereld binnenkort door vuur vergaat"],
+            correct: "Dat alles wat de wereld te bieden heeft tijdelijk is",
             bijbelplaats: "1 Johannes 2:17"
         },
         {
@@ -4941,10 +4923,22 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:13"
         },
         {
-            vraag: "Johannes schrijft dat we vol vertrouwen tot God mogen bidden. Wat gebeurt er als we iets vragen dat bij zijn wil past?",
-            antwoorden: ["Dan luistert Hij naar ons", "Dan moeten we betalen", "Dan duurt het jaren", "Dan zwijgt Hij"],
-            correct: "Dan luistert Hij naar ons",
-            bijbelplaats: "1 Johannes 5:14"
+            vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke?",
+            antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "Rijkdom, macht en roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
+            correct: "De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed",
+            bijbelplaats: "1 Johannes 2:16"
+        },
+        {
+            vraag: "Waaraan hebben wij volgens Johannes geleerd wat liefde is?",
+            antwoorden: ["Doordat Jezus zijn leven voor ons gaf", "Doordat God de wereld heeft geschapen", "Doordat God ons zijn geboden gaf", "Doordat God ons geduldig verdraagt"],
+            correct: "Doordat Jezus zijn leven voor ons gaf",
+            bijbelplaats: "1 Johannes 3:16"
+        },
+        {
+            vraag: "Johannes schrijft over een hart dat je aanklaagt, dat je een schuldig gevoel geeft. Wat zegt hij daarover?",
+            antwoorden: ["God is groter dan ons hart, en Hij weet alles", "Je moet je hart altijd geloven", "Een schuldig gevoel komt van een slechte geest", "Dan heb je vast iets verkeerds gedaan"],
+            correct: "God is groter dan ons hart, en Hij weet alles",
+            bijbelplaats: "1 Johannes 3:20"
         }
     ],
     expert: [
@@ -4955,9 +4949,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:1"
         },
         {
-            vraag: "Johannes stelt iets geruststellends over de regels van God. Gods geboden zijn niet …",
-            antwoorden: ["zwaar (een last)", "nieuw", "geheim", "kort"],
-            correct: "zwaar (een last)",
+            vraag: "Johannes stelt iets geruststellends over de regels van God: zijn geboden zijn niet zwaar, geen last om te dragen. Waarom niet?",
+            antwoorden: ["Omdat wie uit God geboren is de wereld overwint", "Omdat God er maar weinig heeft gegeven", "Omdat God ze aanpast aan wat je kunt", "Omdat je ze pas hoeft te houden als je volwassen bent"],
+            correct: "Omdat wie uit God geboren is de wereld overwint",
             bijbelplaats: "1 Johannes 5:3"
         },
         {
@@ -4967,7 +4961,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "3 Johannes 1"
         },
         {
-            vraag: "In de derde brief noemt Johannes een man die graag de baas speelde en anderen niet wilde ontvangen. Hoe heet hij?",
+            vraag: "In zijn derde brief schrijft Johannes over een man in de gemeente die graag de eerste wilde zijn. Hij wilde niet naar Johannes luisteren en weigerde rondreizende gelovigen te ontvangen. Hoe heette hij?",
             antwoorden: ["Diotrefes", "Demetrius", "Gajus", "Timoteüs"],
             correct: "Diotrefes",
             bijbelplaats: "3 Johannes 9"
@@ -4979,21 +4973,21 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:15"
         },
         {
-            vraag: "Johannes zegt: als we beweren dat we nooit iets verkeerd doen, dan … we onszelf.",
-            antwoorden: ["bedriegen", "helpen", "prijzen", "verbeteren"],
-            correct: "bedriegen",
+            vraag: "Johannes zegt: als we beweren dat we geen zonde hebben — wat is er dan aan de hand?",
+            antwoorden: ["Dan bedriegen we onszelf en is de waarheid niet in ons", "Dan zijn we goed op weg", "Dan hebben we er zelf nog niet goed over nagedacht", "Dan moeten we onze broer of zus vragen om ons te helpen onze zonden te zien"],
+            correct: "Dan bedriegen we onszelf en is de waarheid niet in ons",
             bijbelplaats: "1 Johannes 1:8"
         },
         {
             vraag: "Wat maakt ons volgens Johannes helemaal schoon van elke zonde?",
-            antwoorden: ["Het bloed van Jezus", "Heel veel goede daden", "Een verre reis", "Mooie woorden"],
+            antwoorden: ["Het bloed van Jezus", "Onze eigen goede daden", "Een verre reis maken om daar je zonden achter te laten", "Het houden van de geboden"],
             correct: "Het bloed van Jezus",
             bijbelplaats: "1 Johannes 1:7"
         },
         {
-            vraag: "Johannes geeft een wijze raad: geloof niet zomaar iedereen die zegt namens God te spreken, maar … of het echt bij God past.",
-            antwoorden: ["onderzoek eerst", "lach erom", "zwijg maar", "doe meteen mee"],
-            correct: "onderzoek eerst",
+            vraag: "Johannes waarschuwt dat niet iedereen die zegt namens God te spreken, ook echt van God komt. Hoe kun je dat volgens hem toetsen?",
+            antwoorden: ["Door te vragen of ze belijden dat Jezus echt mens geworden is", "Door te kijken of ze wonderen kunnen doen", "Door te letten op hoe overtuigend ze spreken", "Door te vragen of de meeste mensen hen geloven"],
+            correct: "Door te vragen of ze belijden dat Jezus echt mens geworden is",
             bijbelplaats: "1 Johannes 4:1"
         },
         {
@@ -5004,8 +4998,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "De schrijver van de tweede en derde brief noemt zichzelf niet bij naam, maar met een titel. Welke?",
-            antwoorden: ["‘de oudste’", "‘de koning’", "‘de profeet’", "‘de herder’"],
-            correct: "‘de oudste’",
+            antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
+            correct: "'de oudste'",
             bijbelplaats: "2 Johannes 1; 3 Johannes 1"
         },
         {
@@ -5013,6 +5007,18 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Demetrius", "Diotrefes", "Gajus", "Theofilus"],
             correct: "Demetrius",
             bijbelplaats: "3 Johannes 12"
+        },
+        {
+            vraag: "In zijn tweede brief waarschuwt Johannes voor misleiders die de wereld zijn ingegaan. Wat beweren zij?",
+            antwoorden: ["Dat Jezus niet echt als mens gekomen is", "Dat Jezus nooit heeft bestaan", "Dat Jezus alleen een profeet was", "Dat Jezus niet is opgestaan"],
+            correct: "Dat Jezus niet echt als mens gekomen is",
+            bijbelplaats: "2 Johannes 7"
+        },
+        {
+            vraag: "Johannes geeft in zijn tweede brief een strenge raad over dwaalleraars die bij de gelovigen langskomen en niet bij de leer van Christus blijven. Welke raad?",
+            antwoorden: ["Neem hen niet in huis en groet hen niet", "Ga met hen in gesprek over de waarheid", "Stuur hen door naar de oudsten", "Geef hun te eten en laat hen weer gaan"],
+            correct: "Neem hen niet in huis en groet hen niet",
+            bijbelplaats: "2 Johannes 10"
         }
     ]
 };
