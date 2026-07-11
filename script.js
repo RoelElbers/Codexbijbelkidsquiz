@@ -4012,13 +4012,13 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:24-27"
         },
         {
-            vraag: "Jezus begrijpt precies hoe wij ons voelen, want Hij werd ook op de proef gesteld — maar zonder te …",
-            antwoorden: ["zondigen", "eten", "slapen", "bidden"],
-            correct: "zondigen",
+            vraag: "Jezus is in alles op de proef gesteld, net als wij. Wat is volgens Hebreeën het grote verschil met ons?",
+            antwoorden: ["Hij deed het zonder ooit te zondigen", "Hij werd nooit echt verzocht", "Hij voelde geen pijn of verdriet", "Hij had het altijd makkelijk"],
+            correct: "Hij deed het zonder ooit te zondigen",
             bijbelplaats: "Hebreeën 4:15"
         },
         {
-            vraag: "Welke zoon van Adam bracht volgens Hebreeën door zijn geloof een offer dat God goedvond?",
+            vraag: "Welke zoon van Adam bracht door zijn geloof een offer dat God aannam?",
             antwoorden: ["Abel", "Set", "Henoch", "Kaïn"],
             correct: "Abel",
             bijbelplaats: "Hebreeën 11:4"
@@ -4031,15 +4031,9 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat zijn de engelen volgens het begin van Hebreeën? Het zijn dienaren die God stuurt om …",
-            antwoorden: ["de gelovigen te helpen", "de hemelpoort te bewaken", "de sterren te besturen", "over de mensen te heersen"],
+            antwoorden: ["de gelovigen te helpen", "de sterren te besturen", "over de mensen te heersen", "zelf aanbeden te worden"],
             correct: "de gelovigen te helpen",
             bijbelplaats: "Hebreeën 1:14"
-        },
-        {
-            vraag: "Hebreeën zegt dat Jezus zelf is verzocht en het moeilijk heeft gehad. Daarom kan Hij ons goed …",
-            antwoorden: ["helpen", "straffen", "vergeten", "negeren"],
-            correct: "helpen",
-            bijbelplaats: "Hebreeën 2:18"
         },
         {
             vraag: "Welke koning van Israël wordt in Hebreeën 11 genoemd bij de geloofshelden?",
@@ -4054,8 +4048,8 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 1:1-2"
         },
         {
-            vraag: "Jezus is nu bij God in de hemel. Wat doet Hij daar volgens Hebreeën voortdurend voor ons?",
-            antwoorden: ["Hij pleit voor ons bij God", "Hij slaapt", "Hij is ons vergeten", "Hij telt onze fouten"],
+            vraag: "Jezus leeft altijd bij God. Wat doet Hij daar volgens Hebreeën steeds voor ons?",
+            antwoorden: ["Hij pleit voor ons bij God", "Hij houdt onze fouten bij op een lijst", "Hij wacht tot wij het zelf oplossen", "Hij laat het oordeel over aan de engelen"],
             correct: "Hij pleit voor ons bij God",
             bijbelplaats: "Hebreeën 7:25"
         },
@@ -4066,27 +4060,27 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:3"
         },
         {
-            vraag: "Hebreeën spoort aan: doe je best om met iedereen in … te leven.",
-            antwoorden: ["vrede", "ruzie", "afstand", "wantrouwen"],
-            correct: "vrede",
+            vraag: "Waar moeten de gelovigen volgens Hebreeën met iedereen naar streven?",
+            antwoorden: ["Naar vrede", "Naar hun eigen gelijk", "Naar de hoogste plaats", "Naar zoveel mogelijk bezit"],
+            correct: "Naar vrede",
             bijbelplaats: "Hebreeën 12:14"
         },
         {
-            vraag: "Hebreeën zegt dat God niet vergeet wat je doet. Wat onthoudt God volgens Hebreeën?",
-            antwoorden: ["Het goede dat je uit liefde voor anderen doet", "Alleen je fouten", "Hoe sterk je bent", "Hoe slim je bent"],
+            vraag: "Wat zal God volgens Hebreeën niet vergeten?",
+            antwoorden: ["Het goede dat je uit liefde voor anderen doet", "Elke keer dat je een fout maakte", "Hoeveel je van anderen hebt gekregen", "Hoe vaak je gelijk had"],
             correct: "Het goede dat je uit liefde voor anderen doet",
             bijbelplaats: "Hebreeën 6:10"
         },
         {
-            vraag: "Hebreeën zegt iets bemoedigends over Gods vergeving: als God onze fouten vergeeft, dan … Hij er niet meer aan.",
-            antwoorden: ["denkt", "twijfelt", "vraagt", "lacht"],
-            correct: "denkt",
+            vraag: "Wat doet God volgens Hebreeën met de fouten die Hij vergeeft?",
+            antwoorden: ["Hij denkt er niet meer aan", "Hij bewaart ze voor later", "Hij vertelt ze aan anderen", "Hij straft ze alsnog een beetje"],
+            correct: "Hij denkt er niet meer aan",
             bijbelplaats: "Hebreeën 10:17"
         },
         {
-            vraag: "Hebreeën belooft dat er voor Gods volk nog iets moois wacht: een tijd van … bij God.",
-            antwoorden: ["rust", "werk", "straf", "strijd"],
-            correct: "rust",
+            vraag: "Wat blijft er volgens Hebreeën nog over voor het volk van God?",
+            antwoorden: ["Een rust die God heeft beloofd", "Een beloning voor wie het hardst werkt", "Een leven zonder moeite hier op aarde", "Een plek alleen voor de sterksten"],
+            correct: "Een rust die God heeft beloofd",
             bijbelplaats: "Hebreeën 4:9"
         },
         {
@@ -4096,9 +4090,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:5"
         },
         {
-            vraag: "Hebreeën zegt dat de gelovigen moeten blijven …, zodat ze ontvangen wat God beloofd heeft.",
-            antwoorden: ["volhouden", "twijfelen", "wachten zonder iets te doen", "opgeven"],
-            correct: "volhouden",
+            vraag: "Wat hebben de gelovigen nodig, zodat ze ontvangen wat God beloofd heeft?",
+            antwoorden: ["Blijven volhouden", "Nooit meer een fout maken", "Precies alle regels kennen", "Zelf sterk genoeg zijn"],
+            correct: "Blijven volhouden",
             bijbelplaats: "Hebreeën 10:36"
         }
     ],
@@ -4116,9 +4110,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:30"
         },
         {
-            vraag: "Hebreeën zegt: 'Jezus Christus is gisteren en vandaag dezelfde en …' Hoe gaat het verder?",
-            antwoorden: ["tot in eeuwigheid", "tot volgend jaar", "alleen op zondag", "soms wel, soms niet"],
-            correct: "tot in eeuwigheid",
+            vraag: "Hebreeën zegt: 'Jezus Christus is gisteren en vandaag dezelfde en tot in eeuwigheid.' Wat betekent dat?",
+            antwoorden: ["Hij verandert nooit", "Hij komt elke dag terug", "Hij was er pas vanaf Kerst", "Hij is anders voor elk volk"],
+            correct: "Hij verandert nooit",
             bijbelplaats: "Hebreeën 13:8"
         },
         {
@@ -4134,9 +4128,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:2"
         },
         {
-            vraag: "God voedt ons op zoals een … zijn kinderen opvoedt, omdat Hij van ons houdt.",
-            antwoorden: ["vader", "leraar", "koning", "herder"],
-            correct: "vader",
+            vraag: "God voedt ons uit liefde op. Met wie vergelijkt Hebreeën dat?",
+            antwoorden: ["Met een vader die zijn kind opvoedt", "Met een koning die zijn volk regeert", "Met een baas die zijn werkers aanstuurt", "Met een rechter die vonnis wijst"],
+            correct: "Met een vader die zijn kind opvoedt",
             bijbelplaats: "Hebreeën 12:6-7"
         },
         {
@@ -4153,14 +4147,14 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën noemt Jezus de middelaar van een … verbond tussen God en de mensen.",
-            antwoorden: ["nieuw", "oud", "gebroken", "klein"],
+            antwoorden: ["nieuw", "oud", "tijdelijk", "gebroken"],
             correct: "nieuw",
             bijbelplaats: "Hebreeën 9:15"
         },
         {
             vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel die iets gemeen hadden. Wat?",
-            antwoorden: ["Ze hadden een sterk geloof in God", "Ze waren allemaal koning", "Ze leefden in dezelfde stad", "Ze waren allemaal broers"],
-            correct: "Ze hadden een sterk geloof in God",
+            antwoorden: ["Ze vertrouwden op God, ook zonder alles te zien", "Ze hadden nooit getwijfeld", "Ze kregen allemaal al op aarde wat beloofd was", "Ze waren allemaal belangrijke leiders"],
+            correct: "Ze vertrouwden op God, ook zonder alles te zien",
             bijbelplaats: "Hebreeën 11"
         },
         {
@@ -4177,7 +4171,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Nadat Jezus zijn werk had volbracht, ging Hij zitten aan de … van God.",
-            antwoorden: ["rechterhand", "linkerhand", "voorkant", "achterkant"],
+            antwoorden: ["rechterhand", "linkerhand", "troon", "voeten"],
             correct: "rechterhand",
             bijbelplaats: "Hebreeën 10:12"
         },
@@ -4189,8 +4183,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat laat de brief aan de Hebreeën vooral steeds zien over Jezus?",
-            antwoorden: ["Jezus is groter en belangrijker dan alles en iedereen", "Jezus was een gewone leraar", "Jezus leefde maar heel kort", "Jezus bleef altijd onbekend"],
-            correct: "Jezus is groter en belangrijker dan alles en iedereen",
+            antwoorden: ["Dat Jezus groter is dan alles en iedereen", "Dat Jezus minder is dan de engelen", "Dat Jezus vooral een strenge rechter is", "Dat Jezus zijn werk nog moet beginnen"],
+            correct: "Dat Jezus groter is dan alles en iedereen",
             bijbelplaats: "Hebreeën 1"
         },
         {
@@ -4201,34 +4195,34 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën zegt dat wij, terwijl we geloven, worden omringd door een grote … van getuigen — al die geloofshelden die ons zijn voorgegaan.",
-            antwoorden: ["wolk", "muur", "rivier", "berg"],
+            antwoorden: ["wolk", "zee", "leger", "rij"],
             correct: "wolk",
             bijbelplaats: "Hebreeën 12:1"
         },
         {
-            vraag: "Hebreeën zegt: denk aan de mensen die het zwaar hebben. Aan wie moeten de gelovigen volgens Hebreeën speciaal denken?",
-            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Alleen aan sterke mensen", "Alleen aan belangrijke mensen", "Aan niemand in het bijzonder"],
+            vraag: "Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken?",
+            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Aan mensen die veel hebben gegeven", "Aan de leiders van de gemeente", "Aan mensen die ver weg op reis zijn"],
             correct: "Aan mensen die gevangenzitten en slecht behandeld worden",
             bijbelplaats: "Hebreeën 13:3"
         },
         {
-            vraag: "Hebreeën zegt dat Jezus mens werd en stierf, zodat de mensen ergens niet meer bang voor hoeven te zijn. Waarvoor?",
-            antwoorden: ["de dood", "het donker", "de zee", "de koning"],
-            correct: "de dood",
+            vraag: "Jezus werd mens en stierf, zodat de mensen niet hun leven lang bang hoeven te zijn. Waarvoor?",
+            antwoorden: ["Voor de dood", "Voor de duivel", "Voor Gods straf", "Voor het lijden"],
+            correct: "Voor de dood",
             bijbelplaats: "Hebreeën 2:14-15"
         },
         {
             vraag: "Hebreeën zegt dat we God geen dieren meer hoeven te offeren. Wat mogen we Hem in plaats daarvan brengen?",
-            antwoorden: ["Een lofzang, woorden waarin we Hem danken", "Een groot bouwwerk", "Een lange reis", "Een zware straf"],
-            correct: "Een lofzang, woorden waarin we Hem danken",
+            antwoorden: ["Een lofzang waarin we Hem danken", "Een groot geldbedrag voor de tempel", "Een streng vasten van veertig dagen", "Een lange pelgrimsreis"],
+            correct: "Een lofzang waarin we Hem danken",
             bijbelplaats: "Hebreeën 13:15"
         }
     ],
     expert: [
         {
-            vraag: "Hoe omschrijft Hebreeën wat geloof is?",
-            antwoorden: ["Zeker zijn van de dingen waarop je hoopt", "Altijd gelijk hebben", "Nooit ergens aan twijfelen", "Heel veel kennis hebben"],
-            correct: "Zeker zijn van de dingen waarop je hoopt",
+            vraag: "Hebreeën geeft een beroemde omschrijving van geloof. Waar gaat geloof volgens die omschrijving over?",
+            antwoorden: ["Over zeker zijn van wat je hoopt en niet ziet", "Over zeker zijn van wat je met eigen ogen gezien hebt", "Over hopen dat het toevallig goed afloopt", "Over nooit meer vragen durven stellen"],
+            correct: "Over zeker zijn van wat je hoopt en niet ziet",
             bijbelplaats: "Hebreeën 11:1"
         },
         {
@@ -4239,7 +4233,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Aan het begin laat de brief zien dat Jezus hoger staat dan …",
-            antwoorden: ["de engelen", "de profeten", "de koningen", "de herders"],
+            antwoorden: ["de engelen", "Mozes", "de profeten", "de hogepriesters"],
             correct: "de engelen",
             bijbelplaats: "Hebreeën 1:4"
         },
@@ -4263,7 +4257,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Over welke man zegt Hebreeën dat hij door zijn geloof de dood niet zag, maar door God werd weggenomen?",
-            antwoorden: ["Henoch", "Elia", "Mozes", "Abel"],
+            antwoorden: ["Henoch", "Noach", "Mozes", "Abel"],
             correct: "Henoch",
             bijbelplaats: "Hebreeën 11:5"
         },
@@ -4298,9 +4292,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "naam van het boek"
         },
         {
-            vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God zijn als een fijn …",
-            antwoorden: ["offer", "lied", "feest", "cadeau"],
-            correct: "offer",
+            vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets zijn. Wat?",
+            antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van zijn verbond", "Een plicht die je moet vervullen"],
+            correct: "Een offer waar Hij blij mee is",
             bijbelplaats: "Hebreeën 13:16"
         },
         {
