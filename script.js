@@ -71,6 +71,12 @@ fullscreenBtn.addEventListener("click", () => {
     }
 });
 
+// Op apparaten zonder Fullscreen-API (o.a. Safari op iPhone) doet de knop niets;
+// verberg hem dan zodat er geen dode knop op het scherm staat.
+if (!document.fullscreenEnabled) {
+    fullscreenBtn.style.display = "none";
+}
+
 // Nette labels voor de niveaus (intern: beginner/advanced/expert)
 const niveauLabels = {
     beginner: "Beginner",

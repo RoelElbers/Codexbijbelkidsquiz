@@ -168,10 +168,10 @@ button:hover {
     top: 18px;
     right: 18px;
 
-    /* Boven scherm 2 (#nt-scherm-2, z-index 40) zodat de knop op beide schermen
-       bereikbaar blijft; nog ruim onder de quiz-overlays (z-index 999), die hem
-       tijdens een ronde gewoon afdekken. */
-    z-index: 60;
+    /* Boven de quiz-overlays (999) en de schatkamer-overlays (1000) zodat de knop
+       op álle schermen zichtbaar en bruikbaar blijft — óók tijdens een ronde en
+       in de schatkamer. Blijft onder het dev-only #wolken-paneel (3000). */
+    z-index: 1100;
 
     width: 54px;
     height: 54px;
@@ -187,8 +187,19 @@ button:hover {
     justify-content: center;
 }
 
-:fullscreen .fullscreen-button {
+/* Icoon volgt de fullscreen-state (zonder extra JS): standaard het expand-icoon,
+   in fullscreen het collapse-icoon. De knop zelf blijft in fullscreen zichtbaar,
+   zodat de exitFullscreen()-tak ook op een tablet (geen Esc-toets) bereikbaar is. */
+.fullscreen-button .fs-icon-collapse {
     display: none;
+}
+
+:fullscreen .fullscreen-button .fs-icon-expand {
+    display: none;
+}
+
+:fullscreen .fullscreen-button .fs-icon-collapse {
+    display: block;
 }
 
 /* =========================
