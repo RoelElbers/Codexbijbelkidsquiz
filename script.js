@@ -5031,238 +5031,232 @@ vragenData["Brieven van Johannes"] = {
 
 // Openbaring — vragenpool (laatste boek van het NT, enkel-boek-tegel zoals
 // Handelingen). Bewust gestuurd op de hoopvolle, wonderlijke kant; neutraal t.a.v.
-// eindtijd-uitleg. 12 beginner, 12 advanced, 15 expert = 39 vragen.
+// eindtijd-uitleg. 11 beginner, 12 advanced, 15 expert = 38 vragen.
 vragenData["Openbaring"] = {
     beginner: [
         {
-            vraag: "Aan het einde van Openbaring ziet Johannes iets compleet nieuws verschijnen. Wat?",
-            antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een gouden berg", "Een groot schip", "Een verre planeet"],
+            vraag: "Aan het einde van zijn visioen ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet?",
+            antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een nieuwe zon en een nieuwe maan", "Een gouden berg boven de wolken", "Een groot schip op een wilde zee"],
             correct: "Een nieuwe hemel en een nieuwe aarde",
             bijbelplaats: "Openbaring 21:1"
         },
         {
-            vraag: "Wat belooft God in het nieuwe Jeruzalem? Hij zal alle … van de ogen afwissen, en er zal geen dood of verdriet meer zijn.",
-            antwoorden: ["tranen", "wolken", "schaduwen", "zorgen"],
-            correct: "tranen",
+            vraag: "In de nieuwe wereld troost God zijn mensen zoals een vader zijn kind troost. Johannes schrijft dat God iets van hun gezicht wegveegt, en dat het daarna nooit meer terugkomt. Wat veegt God weg?",
+            antwoorden: ["De tranen", "Het stof", "Het zweet", "De modder"],
+            correct: "De tranen",
             bijbelplaats: "Openbaring 21:4"
         },
         {
-            vraag: "Jezus zegt: ‘Ik sta voor de deur en klop.’ Wat gebeurt er als iemand de deur opendoet?",
-            antwoorden: ["Jezus komt bij hem binnen", "Jezus loopt weer weg", "Jezus blijft buiten wachten", "Jezus klopt nog harder"],
+            vraag: "In een brief aan een gemeente zegt Jezus: ‘Ik sta voor de deur en Ik klop.’ Wat gebeurt er als iemand die deur voor Hem opendoet?",
+            antwoorden: ["Jezus komt bij hem binnen", "Jezus groet even snel en is daarna weer weg", "Jezus blijft buiten staan", "Jezus is weer weg als de deur geopend wordt"],
             correct: "Jezus komt bij hem binnen",
             bijbelplaats: "Openbaring 3:20"
         },
         {
-            vraag: "In Openbaring wordt Jezus telkens vergeleken met een dier dat zichzelf opofferde. Welk dier?",
+            vraag: "Steeds opnieuw ziet Johannes bij de troon een dier dat geslacht is en tóch leeft. Met dat dier wordt Jezus bedoeld, die zichzelf opofferde. Welk dier is het?",
             antwoorden: ["Een lam", "Een duif", "Een adelaar", "Een vis"],
             correct: "Een lam",
             bijbelplaats: "Openbaring 5:6"
         },
         {
-            vraag: "God zegt vanaf zijn troon: ‘Zie, Ik maak alles …’ Hoe gaat het verder?",
-            antwoorden: ["nieuw", "oud", "klaar", "groot"],
+            vraag: "God spreekt vanaf zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: ‘Zie, Ik maak alles …’ Hoe gaat die zin verder?",
+            antwoorden: ["nieuw", "oud", "af", "groot"],
             correct: "nieuw",
             bijbelplaats: "Openbaring 21:5"
         },
         {
-            vraag: "Welke plaats heeft Openbaring in de Bijbel?",
-            antwoorden: ["Het is het allerlaatste boek", "Het eerste boek", "Precies in het midden", "Het kortste boek"],
-            correct: "Het is het allerlaatste boek",
+            vraag: "Openbaring is een bijzonder boek: het vertelt hoe het met de wereld aflopen zal. Welke plaats heeft het in de Bijbel?",
+            antwoorden: ["Het is het allerlaatste boek van de hele Bijbel", "Het is het eerste boek van het Nieuwe Testament", "Het staat precies in het midden van de Bijbel", "Het staat vlak na de vier evangeliën"],
+            correct: "Het is het allerlaatste boek van de hele Bijbel",
             bijbelplaats: "algemeen"
         },
         {
-            vraag: "Johannes ziet een enorme menigte die niemand kon tellen. Waar kwamen al die mensen vandaan?",
-            antwoorden: ["Uit alle volken, talen en landen", "Allemaal uit één stad", "Alleen uit Israël", "Alleen uit Rome"],
+            vraag: "Johannes ziet een menigte die zo groot is dat niemand hen tellen kan. Ze staan voor de troon met palmtakken in hun handen. Waar komen al die mensen vandaan?",
+            antwoorden: ["Uit alle volken, talen en landen", "Ze komen allemaal uit dezelfde stad", "Het zijn alleen mensen uit Israël", "Dat zijn de inwoners van Rome"],
             correct: "Uit alle volken, talen en landen",
             bijbelplaats: "Openbaring 7:9"
         },
         {
-            vraag: "Rondom Gods troon klinkt dag en nacht steeds hetzelfde lied. Welke woorden zingen ze?",
+            vraag: "Bij de troon van God staan vier bijzondere wezens die dag en nacht hetzelfde lied zingen, steeds weer opnieuw. Welke woorden zingen zij?",
             antwoorden: ["‘Heilig, heilig, heilig’", "‘Sterk, sterk, sterk’", "‘Hoog, hoog, hoog’", "‘Ver, ver, ver’"],
             correct: "‘Heilig, heilig, heilig’",
             bijbelplaats: "Openbaring 4:8"
         },
         {
-            vraag: "De grote menigte voor Gods troon droeg allemaal kleren van dezelfde kleur. Welke?",
+            vraag: "Die grote menigte voor de troon valt meteen op: ze dragen allemaal kleren van dezelfde kleur. Welke kleur is dat?",
             antwoorden: ["Wit", "Rood", "Blauw", "Goud"],
             correct: "Wit",
             bijbelplaats: "Openbaring 7:9"
         },
         {
-            vraag: "Bijna aan het einde van het boek belooft Jezus iets over zijn terugkomst. Wat zegt Hij?",
-            antwoorden: ["‘Ik kom spoedig’", "‘Ik kom nooit meer’", "‘Wacht maar duizend jaar’", "‘Ik blijf voor altijd weg’"],
+            vraag: "Openbaring eindigt met een belofte van Jezus zelf, vlak voor het laatste gebed van het boek. Wat zegt Hij over zijn terugkomst?",
+            antwoorden: ["‘Ik kom spoedig’", "‘Ik kom nog lang niet’", "‘Wacht maar duizend jaar’", "‘Ik kom pas als iedereen gelooft’"],
             correct: "‘Ik kom spoedig’",
             bijbelplaats: "Openbaring 22:20"
         },
         {
-            vraag: "Wat is volgens God het allermooiste van de nieuwe wereld? ‘Zie, Ik zal zelf … bij de mensen.’",
-            antwoorden: ["wonen", "langskomen", "soms kijken", "op bezoek gaan"],
+            vraag: "Johannes hoort een luide stem bij de troon die vertelt wat het allermooiste is van de nieuwe wereld — mooier nog dan de gouden straten: ‘Zie, Ik zal zelf … bij de mensen.’ Hoe gaat het verder?",
+            antwoorden: ["wonen", "langskomen", "wegblijven", "af en toe komen logeren"],
             correct: "wonen",
             bijbelplaats: "Openbaring 21:3"
-        },
-        {
-            vraag: "Jezus zegt over zichzelf in Openbaring: ‘Ik was dood, maar zie, Ik leef …’",
-            antwoorden: ["voor altijd", "nog even", "een poosje", "soms"],
-            correct: "voor altijd",
-            bijbelplaats: "Openbaring 1:18"
         }
     ],
     advanced: [
         {
-            vraag: "Jezus zegt in Openbaring: ‘Ik ben de Alfa en de Omega.’ Wat bedoelt Hij daarmee?",
-            antwoorden: ["Ik ben het begin en het einde", "Ik ben de oudste", "Ik ben de sterkste", "Ik ben overal tegelijk"],
+            vraag: "Helemaal aan het begin van het boek stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
+            antwoorden: ["Ik ben het begin en het einde", "Ik ben de oudste", "Ik ben de sterkste", "Ik ben de eerste die er ooit was"],
             correct: "Ik ben het begin en het einde",
             bijbelplaats: "Openbaring 1:8"
         },
         {
-            vraag: "Het boek Openbaring begint met brieven van Jezus aan zeven …",
-            antwoorden: ["gemeenten", "koningen", "landen", "tempels"],
-            correct: "gemeenten",
-            bijbelplaats: "Openbaring 1:4, 11"
+            vraag: "Jezus draagt Johannes op alles op te schrijven wat hij ziet, en het te sturen naar zeven plaatsen in Klein-Azië: Efeze, Smyrna, Pergamum en vier andere. Naar wie gaan die zeven brieven?",
+            antwoorden: ["Naar zeven gemeenten", "Naar zeven koningen", "Naar zeven landen", "Naar zeven tempels"],
+            correct: "Naar zeven gemeenten",
+            bijbelplaats: "Openbaring 1:11"
         },
         {
-            vraag: "Er was een verzegelde boekrol die niemand kon openen — behalve één. Wie mocht de rol openen?",
-            antwoorden: ["Het Lam (Jezus)", "Een sterke engel", "De oudste in de hemel", "Johannes zelf"],
+            vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Niemand in de hemel of op de aarde kan hem openen; mensen zijn er zelfs verdrietig over. Wie blijkt het uiteindelijk wél te mogen doen?",
+            antwoorden: ["Het Lam (Jezus)", "De sterkste engel, aartsengel Michaël", "De oudste in de hemel", "Johannes zelf"],
             correct: "Het Lam (Jezus)",
-            bijbelplaats: "Openbaring 5:1-7"
+            bijbelplaats: "Openbaring 5:1-5"
         },
         {
-            vraag: "De zeven gouden kandelaars die Johannes in het begin ziet, staan voor de zeven …",
-            antwoorden: ["gemeenten", "steden", "koningen", "tempels"],
-            correct: "gemeenten",
+            vraag: "In zijn eerste visioen ziet Johannes Jezus staan tussen zeven gouden kandelaars. Hij begrijpt er niets van, en Jezus legt zelf uit wat die kandelaars betekenen. Waar staan de zeven kandelaars voor?",
+            antwoorden: ["De zeven gemeenten die de brieven krijgen", "De zeven dagen van de schepping", "De zeven aartsengelen", "De zeven heuvels van Rome"],
+            correct: "De zeven gemeenten die de brieven krijgen",
             bijbelplaats: "Openbaring 1:20"
         },
         {
-            vraag: "De poorten van de nieuwe stad gaan nooit dicht, en er is daar ook geen …",
-            antwoorden: ["nacht", "regen", "kou", "wind"],
-            correct: "nacht",
+            vraag: "In het nieuwe Jeruzalem hoeft niemand ooit nog een lamp aan te doen, en de poorten gaan nooit meer dicht. Wat bestaat daar niet meer?",
+            antwoorden: ["De nacht", "De regen", "De kou", "De wind"],
+            correct: "De nacht",
             bijbelplaats: "Openbaring 21:25"
         },
         {
-            vraag: "Johannes hoort over een groot, vrolijk feest in de hemel: het … van het Lam.",
-            antwoorden: ["bruiloftsfeest", "verjaardagsfeest", "oogstfeest", "afscheidsfeest"],
-            correct: "bruiloftsfeest",
-            bijbelplaats: "Openbaring 19:9"
+            vraag: "In de hemel klinkt luid gejuich: het grote feest kan beginnen, want het Lam en zijn gemeente horen nu voorgoed bij elkaar. Met welk feest wordt die ontmoeting vergeleken?",
+            antwoorden: ["Een bruiloftsfeest", "Een verjaardagsfeest", "Een oogstfeest", "Een afscheidsfeest"],
+            correct: "Een bruiloftsfeest",
+            bijbelplaats: "Openbaring 19:7-9"
         },
         {
-            vraag: "Johannes is zo onder de indruk van een engel dat hij voor hem wil knielen. Wat zegt de engel?",
-            antwoorden: ["‘Doe dat niet! Aanbid alleen God.’", "‘Goed zo, ga door.’", "‘Kniel nog dieper.’", "‘Geef me een geschenk.’"],
+            vraag: "Johannes is zo onder de indruk van de engel die hem alles laat zien, dat hij voor hem op de knieën valt om hem te aanbidden. Wat zegt de engel dan?",
+            antwoorden: ["‘Doe dat niet! Aanbid alleen God.’", "‘Goed zo, ga door.’", "‘Buig nog dieper.’", "‘Geef me een geschenk.’"],
             correct: "‘Doe dat niet! Aanbid alleen God.’",
-            bijbelplaats: "Openbaring 19:10"
+            bijbelplaats: "Openbaring 22:8-9"
         },
         {
-            vraag: "Het nieuwe Jeruzalem daalt prachtig versierd uit de hemel neer, mooi als een …",
-            antwoorden: ["bruid", "koningin", "tuin", "ster"],
-            correct: "bruid",
+            vraag: "Johannes ziet de heilige stad uit de hemel neerdalen, prachtig versierd, alsof ze op weg is naar haar grote dag. Waarmee wordt het nieuwe Jeruzalem vergeleken?",
+            antwoorden: ["Met een bruid", "Met een koningin", "Met een tuin", "Met een ster"],
+            correct: "Met een bruid",
             bijbelplaats: "Openbaring 21:2"
         },
         {
-            vraag: "In de nieuwe wereld mag iedereen die dorst heeft drinken uit de bron van het … — en het is helemaal voor niets.",
-            antwoorden: ["leven", "geluk", "licht", "vuur"],
-            correct: "leven",
-            bijbelplaats: "Openbaring 21:6"
+            vraag: "Door het hemelse Jeruzalem stroomt een bijzondere rivier, helder als kristal, die ontspringt bij de troon van God. Wat doet dat water?",
+            antwoorden: ["Het geeft leven", "Het geeft geluk", "Het zuivert; het water lijkt op een stroom van vuur", "Niks. Het is gewoon normaal water"],
+            correct: "Het geeft leven",
+            bijbelplaats: "Openbaring 22:1"
         },
         {
-            vraag: "Wie overwint, belooft Jezus, krijgt een witte steen met daarop iets bijzonders geschreven. Wat?",
-            antwoorden: ["Een nieuwe naam", "Een geheim getal", "Een landkaart", "Een lied"],
+            vraag: "In de brief aan Pergamum belooft Jezus dat wie overwint een witte steen krijgt, met daarop iets geschreven dat niemand anders kent. Wat staat er op die steen?",
+            antwoorden: ["Een nieuwe naam", "Een geheime code", "De naam van de steen", "Het wifiwachtwoord voor de hemel"],
             correct: "Een nieuwe naam",
             bijbelplaats: "Openbaring 2:17"
         },
         {
-            vraag: "In het begin ziet Johannes Jezus met zeven … in zijn rechterhand.",
-            antwoorden: ["sterren", "kronen", "sleutels", "zwaarden"],
-            correct: "sterren",
-            bijbelplaats: "Openbaring 1:16"
+            vraag: "Rondom Gods troon zitten vierentwintig oudsten op hun eigen tronen. Als zij God aanbidden, staan ze op en leggen ze iets voor de troon neer. Wat leggen zij daar neer?",
+            antwoorden: ["Hun kronen", "Hun pen", "Hun portemonnee", "Hun sleutels"],
+            correct: "Hun kronen",
+            bijbelplaats: "Openbaring 4:10"
         },
         {
-            vraag: "De bladeren van de boom van het leven zijn ergens goed voor, zegt Johannes. Waarvoor?",
-            antwoorden: ["Om de volken te genezen", "Om soep van te koken", "Om op te schrijven", "Om kleren van te maken"],
+            vraag: "Aan weerskanten van de rivier staat de levensboom, die twaalf keer per jaar vrucht draagt. Ook de bladeren hebben een doel. Waar zijn de bladeren voor?",
+            antwoorden: ["Om de volken te genezen", "Om soep van te koken", "Om op te schrijven", "Ze hebben geen doel, het is gewoon voedsel voor de dieren"],
             correct: "Om de volken te genezen",
             bijbelplaats: "Openbaring 22:2"
         }
     ],
     expert: [
         {
-            vraag: "Waar was Johannes toen hij de visioenen van Openbaring kreeg?",
+            vraag: "Johannes schrijft dat hij niet in een kerk of tempel was toen hij zijn visioenen kreeg, maar op een afgelegen plek, ver van huis, omdat hij over Jezus had verteld. Waar was hij?",
             antwoorden: ["Op het eiland Patmos", "In de tempel van Jeruzalem", "In een gevangenis in Rome", "Op een berg in Egypte"],
             correct: "Op het eiland Patmos",
             bijbelplaats: "Openbaring 1:9"
         },
         {
-            vraag: "In de nieuwe stad stroomt een heldere rivier, en daarlangs groeit een bijzondere boom. Welke?",
+            vraag: "In de nieuwe stad stroomt een heldere rivier, en daarlangs groeit een bijzondere boom. Welke boom is dat?",
             antwoorden: ["De boom van het leven", "De olijfboom", "De wijnstok", "De vijgenboom"],
             correct: "De boom van het leven",
             bijbelplaats: "Openbaring 22:1-2"
         },
         {
-            vraag: "Alfa en Omega zijn de eerste en de laatste letter van een alfabet. Van welk alfabet?",
-            antwoorden: ["Het Griekse", "Het Hebreeuwse", "Het Latijnse", "Het Nederlandse"],
+            vraag: "God noemt zichzelf de alfa en de omega — de eerste en de laatste letter van een alfabet. Van welk alfabet?",
+            antwoorden: ["Het Griekse", "Het Hebreeuwse", "Het Latijnse", "Het Egyptische"],
             correct: "Het Griekse",
             bijbelplaats: "Openbaring 1:8"
         },
         {
-            vraag: "Rondom Gods troon zag Johannes vierentwintig oudsten zitten. Wat hadden zij op hun hoofd?",
+            vraag: "Rondom Gods troon zag Johannes vierentwintig oudsten op eigen tronen zitten. Wat hadden zij op hun hoofd?",
             antwoorden: ["Gouden kronen", "Witte hoeden", "Groene kransen", "Niets"],
             correct: "Gouden kronen",
             bijbelplaats: "Openbaring 4:4"
         },
         {
-            vraag: "Wat zag Johannes rondom de troon van God, als een teken dat aan Gods trouw doet denken?",
+            vraag: "Wat Johannes rondom de troon ziet, doet denken aan het teken dat God ooit aan Noach gaf. Wat zag hij?",
             antwoorden: ["Een regenboog", "Een muur van vuur", "Een dikke mist", "Een rij sterren"],
             correct: "Een regenboog",
             bijbelplaats: "Openbaring 4:3"
         },
         {
-            vraag: "Helemaal aan het einde geeft Jezus zichzelf een naam met een ster erin. Welke?",
+            vraag: "Helemaal aan het einde van het boek geeft Jezus zichzelf een naam met een ster erin. Welke naam?",
             antwoorden: ["De stralende morgenster", "De vallende ster", "De avondster", "De noorderster"],
             correct: "De stralende morgenster",
             bijbelplaats: "Openbaring 22:16"
         },
         {
-            vraag: "De twaalf poorten van het nieuwe Jeruzalem waren elk gemaakt van één bijzonder materiaal. Welk?",
+            vraag: "De stadsmuur van het nieuwe Jeruzalem heeft twaalf poorten, en elke poort is uit één stuk gemaakt van hetzelfde bijzondere materiaal. Welk materiaal is dat?",
             antwoorden: ["Parels", "Goud", "Zilver", "Diamant"],
             correct: "Parels",
             bijbelplaats: "Openbaring 21:21"
         },
         {
-            vraag: "Wat is opvallend aan het nieuwe Jeruzalem? Er is geen … meer nodig, want God woont er zelf.",
-            antwoorden: ["tempel", "muur", "poort", "markt"],
-            correct: "tempel",
+            vraag: "In het oude Jeruzalem stond één gebouw dat het middelpunt van alles was: de plaats waar je God ging opzoeken. Johannes speurt de nieuwe stad af, maar vindt het nergens — want daar woont God zelf tussen de mensen. Wat ontbreekt er in het nieuwe Jeruzalem?",
+            antwoorden: ["De tempel", "De stadsmuur", "De poorten", "De rivier"],
+            correct: "De tempel",
             bijbelplaats: "Openbaring 21:22"
         },
         {
-            vraag: "Waarom heeft de nieuwe stad geen zon of maan nodig?",
-            antwoorden: ["Omdat de glans van God de stad verlicht", "Omdat er duizend kaarsen branden", "Omdat het er altijd ochtend is", "Omdat de sterren extra fel schijnen"],
+            vraag: "De nieuwe stad heeft geen zon en geen maan nodig, en toch is het er nooit donker. Hoe komt dat?",
+            antwoorden: ["Omdat de glans van God de stad verlicht", "Omdat er duizenden kaarsen branden", "Omdat het er altijd ochtend is", "Omdat de sterren extra fel schijnen"],
             correct: "Omdat de glans van God de stad verlicht",
             bijbelplaats: "Openbaring 21:23"
         },
         {
-            vraag: "Johannes krijgt een klein boekrolletje dat hij moet opeten. Hoe smaakt het in zijn mond?",
-            antwoorden: ["Zo zoet als honing", "Zo bitter als gal", "Zo zout als zeewater", "Zo zuur als azijn"],
+            vraag: "Een engel geeft Johannes een klein boekrolletje en zegt dat hij het moet opeten. Hoe smaakt het in zijn mond?",
+            antwoorden: ["Zo zoet als honing", "Zo bitter als spruitjes", "Zo zout als zeewater", "Zo zuur als een citroen"],
             correct: "Zo zoet als honing",
             bijbelplaats: "Openbaring 10:9-10"
         },
         {
-            vraag: "In de hemel klinkt luid het woord ‘Halleluja!’ Wat betekent dat woord?",
-            antwoorden: ["Prijs de Heer", "Tot ziens", "Wees maar stil", "Kom snel"],
+            vraag: "In de hemel klinkt een geweldig gejuich, als het geluid van een grote menigte en van rollende donder. Steeds weer roepen ze hetzelfde woord: ‘Halleluja!’ Wat betekent dat woord?",
+            antwoorden: ["Prijs de Heer", "Tot ziens", "Stilte", "Het betekent niks, het klinkt gewoon mooi"],
             correct: "Prijs de Heer",
             bijbelplaats: "Openbaring 19:1, 6"
         },
         {
-            vraag: "Rondom Gods troon ziet Johannes vier levende wezens, elk met een eigen gezicht. Eén lijkt op een leeuw, één op een stier en één op een arend. Het laatste wezen heeft een gezicht dat Johannes meteen herkent — het is geen dier. Waar lijkt dat gezicht op?",
+            vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Elk wezen heeft een eigen gezicht: het ene lijkt op een leeuw, een ander op een stier, een ander op een arend. Waar lijkt het overgebleven wezen op?",
             antwoorden: ["Een mens", "Een paard", "Een slang", "Een vis"],
             correct: "Een mens",
             bijbelplaats: "Openbaring 4:7"
         },
         {
-            vraag: "Een engel mat het nieuwe Jeruzalem op: de lengte, de breedte en de hoogte waren precies gelijk. Welke vorm had de stad dus?",
-            antwoorden: ["Een kubus (een vierkant blok)", "Een bol", "Een piramide", "Een platte cirkel"],
+            vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
+            antwoorden: ["Een kubus (een vierkant blok)", "Een bol", "Een piramide", "Een rechthoek"],
             correct: "Een kubus (een vierkant blok)",
             bijbelplaats: "Openbaring 21:16"
         },
         {
-            vraag: "Op de twaalf fundamenten van de stadsmuur stonden twaalf namen. Van wie?",
-            antwoorden: ["Van de twaalf apostelen", "Van de twaalf profeten", "Van de twaalf engelen", "Van de twaalf koningen"],
+            vraag: "De stadsmuur rust op twaalf fundamenten, en op elk fundament staat een naam gegraveerd. Van wie waren deze namen?",
+            antwoorden: ["Van de twaalf apostelen", "Van de twaalf stammen van Israël", "Van de twaalf engelen", "Van de twaalf koningen"],
             correct: "Van de twaalf apostelen",
             bijbelplaats: "Openbaring 21:14"
         },
