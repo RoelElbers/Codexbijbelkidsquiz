@@ -702,6 +702,17 @@ height: 22%;
         0 0 12px rgba(255,215,120,0.4);
 }
 
+/* Compacter titel-blok in het quizvak zodat de bijbelplaats-regel bij
+   gemiddelde en lange vragen zonder scrollen in beeld past. margin-top: 0
+   haalt de onbedoelde UA-<h2>-marge (0.83em ≈ 53px) weg; de titel wordt iets
+   kleiner (blijft ruim leesbaar als label) met wat minder marge eronder. Alleen
+   binnen #quiz-scherm — vraag- en antwoordfont blijven ongemoeid. */
+#quiz-scherm .quiz-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 2.75rem;
+}
+
 .quiz-question {
     font-size: 2.3rem;
 
@@ -901,7 +912,13 @@ height: 22%;
     font-weight: bold;
     text-align: center;
     min-height: clamp(110px, 13vh, 140px);
-    margin-bottom: 100px;
+    /* De min-height hierboven reserveert de ruimte voor feedback + bijbelplaats
+       en voorkomt een lay-out-sprong (gemeten 76px) zodra de feedback verschijnt
+       — daarom blijft die staan. De grote lege ondermarge is weg: de 40px
+       box-padding scheidt de bijbelplaats al van de vakrand. Zo staat de
+       "Lees het na in: ..."-regel bij gemiddelde/lange vragen zonder scrollen
+       in beeld. */
+    margin-bottom: 0;
 }
 
 .bijbelplaats {
