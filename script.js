@@ -5243,9 +5243,9 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 19:1, 6"
         },
         {
-            vraag: "Rondom Gods troon zag Johannes vier bijzondere levende wezens. Eén leek op een leeuw, één op een stier, één op een arend — en de vierde op een …",
-            antwoorden: ["mens", "paard", "slang", "vis"],
-            correct: "mens",
+            vraag: "Rondom Gods troon ziet Johannes vier levende wezens, elk met een eigen gezicht. Eén lijkt op een leeuw, één op een stier en één op een arend. Het laatste wezen heeft een gezicht dat Johannes meteen herkent — het is geen dier. Waar lijkt dat gezicht op?",
+            antwoorden: ["Een mens", "Een paard", "Een slang", "Een vis"],
+            correct: "Een mens",
             bijbelplaats: "Openbaring 4:7"
         },
         {
