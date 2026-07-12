@@ -1,3 +1,14 @@
+/* Kleuren gesampled uit het geschilderde blauwe muzieknootje-knopje rechtsboven
+   in images/startschermzonderwolken.png (knop-center ~1582,55; diameter ~85px).
+   Hier centraal gezet zodat de fullscreen-knop dezelfde familie deelt en de
+   tinten later bij te stellen zijn zonder in de PNG te hoeven meten. */
+:root {
+    --knop-blauw-licht: #005EC3;   /* glans bovenin het bolvlak */
+    --knop-blauw-donker: #002155;  /* diep navy in het onderste deel */
+    --knop-goud: #E09123;          /* gemiddelde van de gouden ring */
+    --knop-nootje: #E0B321;        /* goud van het nootje-icoon */
+}
+
 /* Cinzel lokaal geladen uit de projectmap, zodat het ook offline werkt. */
 @font-face {
     font-family: 'Cinzel';
@@ -182,6 +193,14 @@ button:hover {
 
     padding: 0;
 
+    /* Overschrijft de globale button{}-stijl (bruin/goud) met de tinten die uit
+       het geschilderde muzieknootje-knopje zijn gesampled, zodat de twee knoppen
+       één familie vormen: blauw bolvlak, gouden ring, goud icoon. De gouden glow
+       (box-shadow) erft de knop bewust van button{} — dezelfde verhouding. */
+    background: linear-gradient(180deg, var(--knop-blauw-licht), var(--knop-blauw-donker));
+    border: 2px solid var(--knop-goud);
+    color: var(--knop-nootje);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,6 +219,24 @@ button:hover {
 
 :fullscreen .fullscreen-button .fs-icon-collapse {
     display: block;
+}
+
+/* Wegvagen bij afwezige muis: op apparaten mét een fijne aanwijzer (desktopmuis)
+   staat de knop rustig op de achtergrond en licht hij op bij hover of focus. Op
+   touch-apparaten (tablet/iPad) geldt deze media query NIET, dus daar blijft de
+   knop volledig zichtbaar (opacity 1) — daar is immers geen hover. Bewust geen
+   pointer-events: none, zodat hij ook op opacity 0.15 klikbaar blijft, en
+   :focus-visible maakt hem zichtbaar voor toetsenbordbediening. */
+@media (hover: hover) and (pointer: fine) {
+    .fullscreen-button {
+        opacity: 0.15;
+        transition: opacity 0.25s ease;
+    }
+
+    .fullscreen-button:hover,
+    .fullscreen-button:focus-visible {
+        opacity: 1;
+    }
 }
 
 /* =========================
