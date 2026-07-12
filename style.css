@@ -926,6 +926,8 @@ height: 22%;
 }
 
 #score-balk {
+    position: relative;      /* anker voor de zwevende "+N" (.xp-plus) */
+
     margin-bottom: 25px;
 
     font-size: 28px;
@@ -934,6 +936,34 @@ height: 22%;
 
     text-shadow:
         0 0 10px rgba(255,215,120,0.4);
+}
+
+/* Zwevende "+N" bij een goed antwoord: stijgt ~40px en vervaagt naar 0 in
+   ~800 ms. Puur CSS; JS (toonXpPlus) voegt het element toe en haalt het na de
+   animatie weg. Goud uit de gedeelde variabele — geen nieuwe kleur. Bij
+   prefers-reduced-motion toont JS de +N sowieso niet; de media query hieronder
+   is een extra vangnet. */
+.xp-plus {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+    transform: translate(-50%, 0);
+
+    color: var(--knop-nootje);
+    font-weight: 700;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.55);
+
+    pointer-events: none;
+    animation: xpPlusZweef 800ms ease-out forwards;
+}
+
+@keyframes xpPlusZweef {
+    from { opacity: 1; transform: translate(-50%, 0); }
+    to   { opacity: 0; transform: translate(-50%, -40px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .xp-plus { display: none; }
 }
 
 /* =========================

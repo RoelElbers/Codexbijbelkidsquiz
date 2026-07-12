@@ -5296,6 +5296,12 @@ let rondeStopPendingAdvance = false;
 // sessies — elke nieuwe ronde/elk nieuw niveau begint weer op 0.
 let huidigeXP = 0;
 
+// Handle van de lopende requestAnimationFrame voor het optellende XP-tellertje.
+// null = geen animatie actief. Wordt geannuleerd voordat een nieuwe start en bij
+// het doorschakelen, zodat er nooit twee count-ups tegelijk lopen. Puur
+// presentatie — raakt de score-/XP-waarde (huidigeXP) niet aan.
+let xpAnimFrame = null;
+
 // Aantal goede antwoorden van de laatst VOLTOOIDE ronde. Bepaalt hoe vol de
 // XP-balk op het startscherm staat (één tiende per goed antwoord; 10 = vol).
 // Wordt in eindScherm() vastgelegd en bij "nieuw spel" weer op 0 gezet.
@@ -6516,9 +6522,14 @@ function checkAntwoord(antwoord) {
         score++;
 
         // XP is per ronde: +100 per goed antwoord, max 1000 — niet opslaan in localStorage.
+        // De oude waarde vastleggen vóór de ophoging, zodat de presentatie de
+        // werkelijke toename (nieuw − oud) toont i.p.v. een hard "+100".
+        const oudeXP = huidigeXP;
         huidigeXP += 100;
 
-        updateXPBalk();
+        // Presentatie: zwevende "+N" + optellend tellertje. Verandert de
+        // XP-waarde niet; toont enkel de sprong van oudeXP naar huidigeXP.
+        toonXpToename(oudeXP, huidigeXP);
     } else {
         melding = "❌ Dat is niet goed.";
         resultaat.style.color = "#FF7C7C";
@@ -6557,6 +6568,10 @@ function checkAntwoord(antwoord) {
 }
 
 function gaNaarVolgende() {
+    // Een eventueel lopende XP-count-up direct afbreken en het eindgetal tonen,
+    // zodat doorklikken tijdens de animatie nooit een half getal achterlaat.
+    stopXpTeller();
+
     volgendeTimer = null;
     huidigeVraag++;
     if (huidigeVraag < vragen.length) {
@@ -6564,6 +6579,99 @@ function gaNaarVolgende() {
     } else {
         eindScherm();
     }
+}
+
+// --- XP-presentatie: zwevende "+N" + optellend tellertje ---------------------
+// Puur cosmetisch. De score-/XP-logica (score, huidigeXP) blijft ongemoeid; deze
+// functies tonen alleen de sprong die daar al is berekend. Bij prefers-reduced-
+// motion wordt er niets geanimeerd — dan verschijnt meteen het eindgetal.
+
+// Breekt een lopende count-up af en zet het XP-getal meteen op de echte waarde.
+function stopXpTeller() {
+    if (xpAnimFrame !== null) {
+        cancelAnimationFrame(xpAnimFrame);
+        xpAnimFrame = null;
+    }
+    const xpBoven = document.getElementById("xp");
+    if (xpBoven) xpBoven.innerHTML = huidigeXP;
+}
+
+// Regisseert de toename: eerst een lopende animatie stoppen (geen overlap bij
+// snel doorklikken), dan — afhankelijk van reduced-motion — animeren of snappen.
+function toonXpToename(oudeXP, nieuweXP) {
+    // Altijd eerst een eventueel nog lopende count-up annuleren.
+    if (xpAnimFrame !== null) {
+        cancelAnimationFrame(xpAnimFrame);
+        xpAnimFrame = null;
+    }
+
+    const xpBoven = document.getElementById("xp");
+    const toename = nieuweXP - oudeXP;
+
+    const geenBeweging = window.matchMedia
+        && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    if (geenBeweging || toename <= 0) {
+        if (xpBoven) xpBoven.innerHTML = nieuweXP;   // gewoon het eindgetal
+        return;
+    }
+
+    toonXpPlus(toename);              // zwevende "+N" bij het XP-getal
+    animeerXpTeller(oudeXP, nieuweXP); // optellend tellertje
+}
+
+// Zwevende "+N": stijgt en vervaagt via een pure CSS-animatie (.xp-plus). We
+// voegen het element toe aan #score-balk (niet aan #xp, want dat wordt elke
+// frame herschreven) en halen het na de animatie weer weg.
+function toonXpPlus(bedrag) {
+    const balk = document.getElementById("score-balk");
+    if (!balk) return;
+
+    // Een eventueel nog zwevende "+N" eerst verwijderen, zodat er niets opstapelt.
+    const bestaand = balk.querySelector(".xp-plus");
+    if (bestaand) bestaand.remove();
+
+    const plus = document.createElement("span");
+    plus.className = "xp-plus";
+    plus.textContent = "+" + bedrag;
+    plus.addEventListener("animationend", () => plus.remove());
+    balk.appendChild(plus);
+}
+
+// Optellend tellertje: ~200 ms pauze, dan ~600 ms optellen met een ease-out,
+// aangedreven door requestAnimationFrame (geen setInterval). De rAF-timestamp
+// dient als klok, zodat het niet afhangt van de framesnelheid.
+function animeerXpTeller(vanXP, naarXP) {
+    const xpBoven = document.getElementById("xp");
+    if (!xpBoven) return;
+
+    const PAUZE_MS = 200;
+    const DUUR_MS = 600;
+    let startTijd = null;
+
+    function stap(nu) {
+        if (startTijd === null) startTijd = nu;
+        const verstreken = nu - startTijd;
+
+        if (verstreken < PAUZE_MS) {
+            xpBoven.innerHTML = vanXP;              // tijdens de pauze de oude waarde
+            xpAnimFrame = requestAnimationFrame(stap);
+            return;
+        }
+
+        const t = Math.min((verstreken - PAUZE_MS) / DUUR_MS, 1);
+        const eased = 1 - Math.pow(1 - t, 3);       // ease-out (cubic): snel starten, zacht uitlopen
+        xpBoven.innerHTML = Math.round(vanXP + (naarXP - vanXP) * eased);
+
+        if (t < 1) {
+            xpAnimFrame = requestAnimationFrame(stap);
+        } else {
+            xpBoven.innerHTML = naarXP;              // exact het eindgetal
+            xpAnimFrame = null;
+        }
+    }
+
+    xpAnimFrame = requestAnimationFrame(stap);
 }
 
 // --- Verborgen Schat: zelf-getempo'd onthullingsscherm -----------------------
