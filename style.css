@@ -221,20 +221,27 @@ button:hover {
     display: block;
 }
 
-/* Wegvagen bij afwezige muis: op apparaten mét een fijne aanwijzer (desktopmuis)
-   staat de knop rustig op de achtergrond en licht hij op bij hover of focus. Op
-   touch-apparaten (tablet/iPad) geldt deze media query NIET, dus daar blijft de
-   knop volledig zichtbaar (opacity 1) — daar is immers geen hover. Bewust geen
-   pointer-events: none, zodat hij ook op opacity 0.15 klikbaar blijft, en
-   :focus-visible maakt hem zichtbaar voor toetsenbordbediening. */
+/* Wegvagen afhankelijk van de fullscreen-state, alleen op apparaten mét een
+   fijne aanwijzer (desktopmuis). Buiten fullscreen blijft de knop vol zichtbaar
+   zodat de speler hem meteen vindt; ín fullscreen vervaagt hij (niet meer nodig)
+   en komt terug bij hover/focus. Op touch-apparaten (tablet/iPad) geldt deze
+   media query NIET, dus daar blijft de knop in beide states volledig zichtbaar —
+   daar bestaat geen hover. Bewust geen pointer-events: none, zodat hij ook op
+   opacity 0.15 klikbaar blijft, en :focus-visible dient de toetsenbordbediening. */
 @media (hover: hover) and (pointer: fine) {
+    /* Buiten fullscreen: knop altijd volledig zichtbaar — de speler moet hem meteen vinden */
     .fullscreen-button {
-        opacity: 0.15;
+        opacity: 1;
         transition: opacity 0.25s ease;
     }
 
-    .fullscreen-button:hover,
-    .fullscreen-button:focus-visible {
+    /* In fullscreen: knop vervaagt, want hij is niet meer nodig; bij hover komt hij terug */
+    :fullscreen .fullscreen-button {
+        opacity: 0.15;
+    }
+
+    :fullscreen .fullscreen-button:hover,
+    :fullscreen .fullscreen-button:focus-visible {
         opacity: 1;
     }
 }
