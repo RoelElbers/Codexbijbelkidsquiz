@@ -6638,14 +6638,20 @@ function toonXpPlus(bedrag) {
     balk.appendChild(plus);
 }
 
-// Optellend tellertje: ~200 ms pauze, dan ~600 ms optellen met een ease-out,
+// Optellend tellertje: ~600 ms pauze, dan ~600 ms optellen met een ease-out,
 // aangedreven door requestAnimationFrame (geen setInterval). De rAF-timestamp
-// dient als klok, zodat het niet afhangt van de framesnelheid.
+// dient als klok, zodat het niet afhangt van de framesnelheid. De pauze laat de
+// speler eerst het groen wordende antwoord zien; pas daarna trekken de "+100" en
+// de oplopende teller de aandacht. Totaal ~1200 ms, ruim binnen de 2000 ms tot de
+// volgende vraag, zodat de bijbelplaats leesbaar blijft.
 function animeerXpTeller(vanXP, naarXP) {
+    // Vertraging vóór het optellen begint. Los benoemd zodat je hem makkelijk
+    // kunt bijstellen zonder in de logica te zoeken.
+    const XP_ANIMATIE_VERTRAGING = 600;
+
     const xpBoven = document.getElementById("xp");
     if (!xpBoven) return;
 
-    const PAUZE_MS = 200;
     const DUUR_MS = 600;
     let startTijd = null;
 
@@ -6653,13 +6659,13 @@ function animeerXpTeller(vanXP, naarXP) {
         if (startTijd === null) startTijd = nu;
         const verstreken = nu - startTijd;
 
-        if (verstreken < PAUZE_MS) {
+        if (verstreken < XP_ANIMATIE_VERTRAGING) {
             xpBoven.innerHTML = vanXP;              // tijdens de pauze de oude waarde
             xpAnimFrame = requestAnimationFrame(stap);
             return;
         }
 
-        const t = Math.min((verstreken - PAUZE_MS) / DUUR_MS, 1);
+        const t = Math.min((verstreken - XP_ANIMATIE_VERTRAGING) / DUUR_MS, 1);
         const eased = 1 - Math.pow(1 - t, 3);       // ease-out (cubic): snel starten, zacht uitlopen
         xpBoven.innerHTML = Math.round(vanXP + (naarXP - vanXP) * eased);
 
