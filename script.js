@@ -4997,40 +4997,10 @@ vragenData["Brieven van Johannes"] = {
     ],
     expert: [
         {
-            vraag: "Johannes noemt Jezus onze … bij de Vader: iemand die voor ons opkomt wanneer we toch verkeerd doen.",
-            antwoorden: ["voorspraak (helper)", "rechter", "soldaat", "dienaar"],
-            correct: "voorspraak (helper)",
-            bijbelplaats: "1 Johannes 2:1"
-        },
-        {
-            vraag: "Johannes stelt iets geruststellends over de regels van God: zijn geboden zijn niet zwaar, geen last om te dragen. Waarom niet?",
-            antwoorden: ["Omdat wie uit God geboren is de wereld overwint", "Omdat God er maar weinig heeft gegeven", "Omdat God ze aanpast aan wat je kunt", "Omdat je ze pas hoeft te houden als je volwassen bent"],
-            correct: "Omdat wie uit God geboren is de wereld overwint",
-            bijbelplaats: "1 Johannes 5:3"
-        },
-        {
-            vraag: "In de derde brief prijst Johannes een man die gastvrij is voor rondreizende gelovigen. Hoe heet hij?",
-            antwoorden: ["Gajus", "Petrus", "Lucas", "Marcus"],
-            correct: "Gajus",
-            bijbelplaats: "3 Johannes 1"
-        },
-        {
-            vraag: "In zijn derde brief schrijft Johannes over een man in de gemeente die graag de eerste wilde zijn. Hij wilde niet naar Johannes luisteren en weigerde rondreizende gelovigen te ontvangen. Hoe heette hij?",
-            antwoorden: ["Diotrefes", "Demetrius", "Gajus", "Timoteüs"],
-            correct: "Diotrefes",
-            bijbelplaats: "3 Johannes 9"
-        },
-        {
-            vraag: "Johannes waarschuwt de gelovigen: heb de … niet lief, met alle verkeerde dingen die daarbij horen.",
-            antwoorden: ["wereld", "buren", "gemeente", "waarheid"],
-            correct: "wereld",
-            bijbelplaats: "1 Johannes 2:15"
-        },
-        {
-            vraag: "Johannes zegt: als we beweren dat we geen zonde hebben — wat is er dan aan de hand?",
-            antwoorden: ["Dan bedriegen we onszelf en is de waarheid niet in ons", "Dan zijn we goed op weg", "Dan hebben we er zelf nog niet goed over nagedacht", "Dan moeten we onze broer of zus vragen om ons te helpen onze zonden te zien"],
-            correct: "Dan bedriegen we onszelf en is de waarheid niet in ons",
-            bijbelplaats: "1 Johannes 1:8"
+            vraag: "Johannes begint zijn eerste brief niet met zijn naam, maar met een verrassende bewering. Hij wil duidelijk maken dat hij zijn verhaal niet van horen zeggen heeft. Wat zegt hij over het Woord van het leven?",
+            antwoorden: ["Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt", "Hij heeft over hem gedroomd", "Hij heeft het van Petrus gehoord", "Hij heeft het bij de profeten gelezen"],
+            correct: "Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt",
+            bijbelplaats: "1 Johannes 1:1"
         },
         {
             vraag: "Wat maakt ons volgens Johannes helemaal schoon van elke zonde?",
@@ -5039,10 +5009,40 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:7"
         },
         {
-            vraag: "Johannes waarschuwt dat niet iedereen die zegt namens God te spreken, ook echt van God komt. Hoe kun je dat volgens hem toetsen?",
-            antwoorden: ["Door te vragen of ze belijden dat Jezus echt mens geworden is", "Door te kijken of ze wonderen kunnen doen", "Door te letten op hoe overtuigend ze spreken", "Door te vragen of de meeste mensen hen geloven"],
-            correct: "Door te vragen of ze belijden dat Jezus echt mens geworden is",
-            bijbelplaats: "1 Johannes 4:1"
+            vraag: "Johannes zegt: als we beweren dat we geen zonde hebben — wat is er dan aan de hand?",
+            antwoorden: ["Dan bedriegen we onszelf en is de waarheid niet in ons", "Dan zijn we goed op weg", "Dan hebben we er zelf nog niet goed over nagedacht", "Dan moeten we onze broer of zus vragen om ons te helpen onze zonden te zien"],
+            correct: "Dan bedriegen we onszelf en is de waarheid niet in ons",
+            bijbelplaats: "1 Johannes 1:8"
+        },
+        {
+            vraag: "Johannes noemt Jezus onze … bij de Vader: iemand die voor ons opkomt wanneer we toch verkeerd doen.",
+            antwoorden: ["voorspraak (helper)", "rechter", "soldaat", "dienaar"],
+            correct: "voorspraak (helper)",
+            bijbelplaats: "1 Johannes 2:1"
+        },
+        {
+            vraag: "Johannes geeft een eenvoudige toets voor iedereen die beweert dat hij in God blijft. Wat moet zo iemand dan doen?",
+            antwoorden: ["Leven zoals Jezus geleefd heeft", "Elke dag naar de tempel gaan", "De boeken van Mozes uit het hoofd leren", "Al zijn bezit weggeven"],
+            correct: "Leven zoals Jezus geleefd heeft",
+            bijbelplaats: "1 Johannes 2:6"
+        },
+        {
+            vraag: "Johannes richt zich in één passage achter elkaar tot drie verschillende groepen mensen in de gemeente, en hij zegt tegen elke groep iets anders. Welke drie groepen zijn dat?",
+            antwoorden: ["Kinderen, jonge mannen en vaders", "Mannen, vrouwen en kinderen", "Armen, rijken en slaven", "Joden, Grieken en Romeinen"],
+            correct: "Kinderen, jonge mannen en vaders",
+            bijbelplaats: "1 Johannes 2:12-14"
+        },
+        {
+            vraag: "Johannes waarschuwt de gelovigen: heb de … niet lief, met alle verkeerde dingen die daarbij horen.",
+            antwoorden: ["wereld", "buren", "gemeente", "waarheid"],
+            correct: "wereld",
+            bijbelplaats: "1 Johannes 2:15"
+        },
+        {
+            vraag: "Een groep mensen had de gemeente verlaten. Dat deed pijn, en Johannes trekt er een harde conclusie uit. Wat schrijft hij over hen?",
+            antwoorden: ["Ze hoorden nooit echt bij ons, anders waren ze gebleven", "Ze komen vast weer terug", "Ze zijn met geweld weggejaagd", "Ze zijn gewoon naar een andere stad verhuisd"],
+            correct: "Ze hoorden nooit echt bij ons, anders waren ze gebleven",
+            bijbelplaats: "1 Johannes 2:19"
         },
         {
             vraag: "Johannes belooft iets moois voor later: als Jezus verschijnt, zullen wij aan Hem … zijn.",
@@ -5051,16 +5051,58 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 3:2"
         },
         {
+            vraag: "In één korte zin zegt Johannes waarvoor de Zoon van God op aarde verschenen is. Wat was volgens hem het doel?",
+            antwoorden: ["Om de werken van de duivel te verbreken", "Om een nieuw koninkrijk op aarde te stichten", "Om de wet van Mozes uit te leggen", "Om de tempel te herbouwen"],
+            correct: "Om de werken van de duivel te verbreken",
+            bijbelplaats: "1 Johannes 3:8"
+        },
+        {
+            vraag: "Johannes zegt dat je zeker kunt wéten dat je van de dood in het leven bent overgegaan. Waaraan merk je dat volgens hem?",
+            antwoorden: ["Aan het feit dat je je broeders en zusters liefhebt", "Dat je nooit meer bang bent", "Dat je wonderen kunt doen", "Dat je alle geboden kent"],
+            correct: "Aan het feit dat je je broeders en zusters liefhebt",
+            bijbelplaats: "1 Johannes 3:14"
+        },
+        {
+            vraag: "Johannes schrijft iets schokkends over iemand die zijn broeder of zuster haat. Hij zegt niet dat zo iemand een beetje fout zit — hij zet hem meteen naast de ergste misdadiger die er bestaat. Met welke misdaad stelt Johannes haat gelijk?",
+            antwoorden: ["Met moord", "Met diefstal", "Met liegen", "Met afgoderij"],
+            correct: "Met moord",
+            bijbelplaats: "1 Johannes 3:15"
+        },
+        {
+            vraag: "Johannes schetst een situatie: iemand heeft genoeg geld, ziet zijn broeder gebrek lijden, en sluit zijn hart voor hem. Wat concludeert Johannes daaruit?",
+            antwoorden: ["Dan blijft de liefde van God niet in hem", "Dan is dat zijn eigen zaak", "Dan mag hij het later nog goedmaken", "Dan hoeft hij alleen voor hem te bidden"],
+            correct: "Dan blijft de liefde van God niet in hem",
+            bijbelplaats: "1 Johannes 3:17"
+        },
+        {
+            vraag: "Johannes wil de gelovigen moed geven tegenover valse leraren. Hij wijst hen niet op hun eigen kracht of hun aantal, maar op iets anders. Wat schrijft hij?",
+            antwoorden: ["Hij die in jullie is, is groter dan hij die in de wereld is", "Jullie zijn met meer mensen dan zij", "Jullie zijn slimmer dan zij", "Jullie hebben betere argumenten dan zij"],
+            correct: "Hij die in jullie is, is groter dan hij die in de wereld is",
+            bijbelplaats: "1 Johannes 4:4"
+        },
+        {
+            vraag: "Johannes schrijft nuchter dat niemand God ooit heeft gezien. En tóch, zegt hij, is er iets waardoor God tussen de mensen zichtbaar wordt. Wanneer gebeurt dat volgens hem?",
+            antwoorden: ["Als wij elkaar liefhebben, blijft God in ons", "In de tempel in Jeruzalem", "In de sterren aan de hemel", "In de dromen van de profeten"],
+            correct: "Als wij elkaar liefhebben, blijft God in ons",
+            bijbelplaats: "1 Johannes 4:12"
+        },
+        {
+            vraag: "Johannes stelt iets geruststellends over de regels van God: zijn geboden zijn niet zwaar, geen last om te dragen. Waarom niet?",
+            antwoorden: ["Omdat wie uit God geboren is de wereld overwint", "Omdat God er maar weinig heeft gegeven", "Omdat God ze aanpast aan wat je kunt", "Omdat je ze pas hoeft te houden als je volwassen bent"],
+            correct: "Omdat wie uit God geboren is de wereld overwint",
+            bijbelplaats: "1 Johannes 5:3"
+        },
+        {
+            vraag: "Johannes moedigt de gelovigen aan om vrijmoedig tot God te bidden: je mag alles vragen. Maar hij voegt er één voorwaarde aan toe. Welke voorwaarde is dat?",
+            antwoorden: ["Dat we vragen wat overeenkomt met zijn wil", "Dat we het luid genoeg vragen", "Dat we het drie keer vragen", "Dat we het samen met anderen vragen"],
+            correct: "Dat we vragen wat overeenkomt met zijn wil",
+            bijbelplaats: "1 Johannes 5:14"
+        },
+        {
             vraag: "De schrijver van de tweede en derde brief noemt zichzelf niet bij naam, maar met een titel. Welke?",
             antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
             correct: "'de oudste'",
             bijbelplaats: "2 Johannes 1; 3 Johannes 1"
-        },
-        {
-            vraag: "In de derde brief noemt Johannes nóg een goede man, over wie iedereen alleen maar goeds zegt. Hoe heet hij?",
-            antwoorden: ["Demetrius", "Diotrefes", "Gajus", "Theofilus"],
-            correct: "Demetrius",
-            bijbelplaats: "3 Johannes 12"
         },
         {
             vraag: "In zijn tweede brief waarschuwt Johannes voor misleiders die de wereld zijn ingegaan. Wat beweren zij?",
@@ -5073,6 +5115,24 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Neem hen niet in huis en groet hen niet", "Ga met hen in gesprek over de waarheid", "Stuur hen door naar de oudsten", "Geef hun te eten en laat hen weer gaan"],
             correct: "Neem hen niet in huis en groet hen niet",
             bijbelplaats: "2 Johannes 10"
+        },
+        {
+            vraag: "Johannes prijst Gajus, omdat die rondreizende gelovigen gastvrij ontving, ook al kende hij hen niet. Waarom is dat volgens Johannes zo belangrijk?",
+            antwoorden: ["Zo word je zelf medewerker van de waarheid", "Zo word je rijk gezegend", "Zo krijg je aanzien in de gemeente", "Zo hoef je zelf niet ver weg te gaan om deze mensen te bezoeken"],
+            correct: "Zo word je zelf medewerker van de waarheid",
+            bijbelplaats: "3 Johannes 8"
+        },
+        {
+            vraag: "In zijn derde brief schrijft Johannes over Diotrefes, een man in de gemeente die altijd de eerste wilde zijn. Wat deed hij met rondreizende gelovigen die langskwamen?",
+            antwoorden: ["Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen betalen voor onderdak", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
+            correct: "Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit",
+            bijbelplaats: "3 Johannes 9-10"
+        },
+        {
+            vraag: "De derde brief eindigt met een vuistregel van maar een paar woorden. Wat schrijft Johannes?",
+            antwoorden: ["Volg niet het kwade na, maar het goede", "Volg je eigen hart", "Volg de meerderheid", "Volg de oudste van de gemeente"],
+            correct: "Volg niet het kwade na, maar het goede",
+            bijbelplaats: "3 Johannes 11"
         }
     ]
 };
@@ -6330,6 +6390,24 @@ const metgezellenVragen = [
         antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lukas", "Priscilla en Aquila"],
         correct: "Apfia en Archippus",
         bijbelplaats: "Filemon 2"
+    },
+    {
+        vraag: "In de derde brief prijst Johannes een man die gastvrij is voor rondreizende gelovigen. Hoe heet hij?",
+        antwoorden: ["Gajus", "Petrus", "Lucas", "Marcus"],
+        correct: "Gajus",
+        bijbelplaats: "3 Johannes 1"
+    },
+    {
+        vraag: "In zijn derde brief schrijft Johannes over een man in de gemeente die graag de eerste wilde zijn. Hij wilde niet naar Johannes luisteren en weigerde rondreizende gelovigen te ontvangen. Hoe heette hij?",
+        antwoorden: ["Diotrefes", "Demetrius", "Gajus", "Timoteüs"],
+        correct: "Diotrefes",
+        bijbelplaats: "3 Johannes 9"
+    },
+    {
+        vraag: "In de derde brief noemt Johannes nóg een goede man, over wie iedereen alleen maar goeds zegt. Hoe heet hij?",
+        antwoorden: ["Demetrius", "Diotrefes", "Gajus", "Theofilus"],
+        correct: "Demetrius",
+        bijbelplaats: "3 Johannes 12"
     }
 ];
 
