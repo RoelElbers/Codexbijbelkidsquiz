@@ -3920,16 +3920,58 @@ vragenData["Kolossenzen & Filemon"] = {
     ],
     expert: [
         {
-            vraag: "Wie had het goede nieuws naar Kolosse gebracht, een trouwe medewerker van Paulus?",
-            antwoorden: ["Epafras", "Petrus", "Paulus zelf", "Apollos"],
-            correct: "Epafras",
-            bijbelplaats: "Kolossenzen 1:7"
+            vraag: "Paulus schrijft deze brief aan een gemeente die hij zelf nooit heeft bezocht. Epafras, een man uit Kolosse, had daar het goede nieuws gebracht en was daarna naar Paulus gereisd om verslag te doen. Wat betekent dat voor Paulus' band met de Kolossenzen?",
+            antwoorden: ["Hij had de meesten van hen nog nooit ontmoet", "Hij had de gemeente zelf gesticht", "Hij had er jarenlang gewoond", "Hij was er opgegroeid"],
+            correct: "Hij had de meesten van hen nog nooit ontmoet",
+            bijbelplaats: "Kolossenzen 1:7 en 2:1"
         },
         {
-            vraag: "De brief aan Filemon gaat over een man die was weggelopen bij zijn meester. Hoe heette hij?",
-            antwoorden: ["Onesimus", "Epafroditus", "Tychikus", "Demas"],
-            correct: "Onesimus",
-            bijbelplaats: "Filemon 10"
+            vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
+            antwoorden: ["Ook de dingen die je niet kunt zien", "Alleen de aarde en de zee", "Alleen de mensen en de dieren", "Alleen wat mooi en goed is"],
+            correct: "Ook de dingen die je niet kunt zien",
+            bijbelplaats: "Kolossenzen 1:16"
+        },
+        {
+            vraag: "Paulus schrijft dat Christus er \"eerder dan alles\" was. Wat bedoelt hij daarmee?",
+            antwoorden: ["Christus bestond al voordat er iets gemaakt werd", "Christus kwam als eerste in Kolosse aan", "Christus was de eerste leerling van Johannes", "Christus sprak als eerste in de tempel"],
+            correct: "Christus bestond al voordat er iets gemaakt werd",
+            bijbelplaats: "Kolossenzen 1:17"
+        },
+        {
+            vraag: "Paulus vertelt dat God een geheim had, dat eeuwenlang verborgen bleef voor alle generaties. Nu is het eindelijk bekendgemaakt, en het bleek geen ingewikkelde formule te zijn. Wat is dat geheim?",
+            antwoorden: ["Christus is in jullie, en dat is de hoop op Gods heerlijkheid", "De dag waarop Jezus terugkomt", "Waar de ark van het verbond verstopt is", "De namen van alle engelen"],
+            correct: "Christus is in jullie, en dat is de hoop op Gods heerlijkheid",
+            bijbelplaats: "Kolossenzen 1:27"
+        },
+        {
+            vraag: "In Kolosse liepen leraren rond die beweerden dat zij een geheime, hogere kennis bezaten die de gewone gelovigen misten. Paulus antwoordt dat er inderdaad een schat verborgen ligt, maar dan in Christus zelf. Wat ligt daar volgens hem verborgen?",
+            antwoorden: ["Alle schatten van wijsheid en kennis", "Alle goud van de tempel", "Alle boeken van de profeten", "Alle namen van de gelovigen"],
+            correct: "Alle schatten van wijsheid en kennis",
+            bijbelplaats: "Kolossenzen 2:2-3"
+        },
+        {
+            vraag: "Paulus is bang dat de Kolossenzen zich laten inpakken. Hij waarschuwt hen zoals een herder die een wolf ziet aankomen: let op dat niemand jullie als buit meesleept. Waarmee zouden die mensen hen meeslepen?",
+            antwoorden: ["Met filosofie en holle woorden van mensen", "Met geld en cadeaus", "Met soldaten van de keizer", "Met valse wonderen"],
+            correct: "Met filosofie en holle woorden van mensen",
+            bijbelplaats: "Kolossenzen 2:8"
+        },
+        {
+            vraag: "Paulus legt uit wat er bij de doop eigenlijk gebeurt: je wordt verbonden met iets wat Christus zelf heeft meegemaakt. Met welke twee gebeurtenissen uit zijn leven vergelijkt Paulus de doop?",
+            antwoorden: ["Met hem begraven worden, en met hem opstaan", "Met hem geboren worden en opgroeien", "Met hem de woestijn in gaan", "Met hem naar de hemel opstijgen"],
+            correct: "Met hem begraven worden, en met hem opstaan",
+            bijbelplaats: "Kolossenzen 2:12"
+        },
+        {
+            vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In een enkele zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
+            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
+            correct: "God heeft het doorgestreept en aan het kruis genageld",
+            bijbelplaats: "Kolossenzen 2:14"
+        },
+        {
+            vraag: "In Kolosse liep een leer rond die heel vroom leek, maar die Christus stilletjes opzijschoof. Paulus waarschuwt er streng tegen. Wat wilden die leraren dat de gelovigen deden?",
+            antwoorden: ["Engelen aanbidden", "De keizer aanbidden", "De zon aanbidden", "De tempel aanbidden"],
+            correct: "Engelen aanbidden",
+            bijbelplaats: "Kolossenzen 2:18"
         },
         {
             vraag: "Waarmee vergelijkt Paulus het beginnen van een nieuw leven met Christus?",
@@ -3938,46 +3980,28 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 3:10"
         },
         {
+            vraag: "In de gemeente van Kolosse zaten mensen door elkaar die in de gewone wereld nooit samen aan tafel zouden zijn gegaan: Joden en Grieken, slaven en vrije burgers. Paulus zegt dat zulke verschillen in Christus wegvallen. Hoe vat hij dat samen?",
+            antwoorden: ["Christus is alles, en in allen", "Christus kiest de Grieken uit", "Christus telt alleen de vrije mensen", "Christus maakt iedereen tot Jood"],
+            correct: "Christus is alles, en in allen",
+            bijbelplaats: "Kolossenzen 3:11"
+        },
+        {
+            vraag: "Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed?",
+            antwoorden: ["Dat God een deur zou openen voor zijn boodschap", "Dat hij snel uit de gevangenis zou komen", "Dat hij gezond zou blijven", "Dat hij Kolosse eindelijk zou kunnen bezoeken"],
+            correct: "Dat God een deur zou openen voor zijn boodschap",
+            bijbelplaats: "Kolossenzen 4:3"
+        },
+        {
+            vraag: "Paulus geeft raad over hoe je omgaat met mensen die niet geloven: wees wijs en gebruik je tijd goed. En dan zegt hij ook nog iets over de manier waarop je praat. Hoe moet je spreken?",
+            antwoorden: ["Vriendelijk, en als het ware gekruid met zout", "Streng, als een rechter", "Zwijgzaam, zo min mogelijk", "Luid, zodat iedereen het hoort"],
+            correct: "Vriendelijk, en als het ware gekruid met zout",
+            bijbelplaats: "Kolossenzen 4:6"
+        },
+        {
             vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee?",
             antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
             correct: "Met bidden",
             bijbelplaats: "Kolossenzen 4:12-13"
-        },
-        {
-            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
-            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon boos zou worden", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
-            correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
-            bijbelplaats: "Filemon 21"
-        },
-        {
-            vraag: "Welke trouwe medewerker zou de Kolossenzen al het nieuws over Paulus komen vertellen?",
-            antwoorden: ["Tychikus", "Onesimus", "Lukas", "Demas"],
-            correct: "Tychikus",
-            bijbelplaats: "Kolossenzen 4:7"
-        },
-        {
-            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten lezen. Welke?",
-            antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
-            correct: "Laodicea",
-            bijbelplaats: "Kolossenzen 4:16"
-        },
-        {
-            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
-            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
-            correct: "Lukas",
-            bijbelplaats: "Kolossenzen 4:14"
-        },
-        {
-            vraag: "Aan het einde vraagt Paulus aandacht voor één medewerker die zijn taak nog moet \"afmaken\". Hoe heet hij?",
-            antwoorden: ["Archippus", "Onesimus", "Tychikus", "Epafras"],
-            correct: "Archippus",
-            bijbelplaats: "Kolossenzen 4:17"
-        },
-        {
-            vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie?",
-            antwoorden: ["Aristarchus", "Lukas", "Tychikus", "Onesimus"],
-            correct: "Aristarchus",
-            bijbelplaats: "Kolossenzen 4:10"
         },
         {
             vraag: "Paulus noemt Marcus familie van een bekende medewerker. Van wie is Marcus de neef?",
@@ -3986,16 +4010,40 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:10"
         },
         {
-            vraag: "In de brief aan Filemon noemt Paulus naast Filemon ook een vrouw en nog iemand uit het huis. Wie worden er gegroet?",
-            antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lukas", "Priscilla en Aquila"],
-            correct: "Apfia en Archippus",
+            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
+            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
+            correct: "Lukas",
+            bijbelplaats: "Kolossenzen 4:14"
+        },
+        {
+            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten lezen. Welke?",
+            antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
+            correct: "Laodicea",
+            bijbelplaats: "Kolossenzen 4:16"
+        },
+        {
+            vraag: "Paulus groet niet alleen Filemon zelf, maar ook de groep gelovigen die bij hem bij elkaar komt. In die eerste jaren bestonden er nog geen aparte gebouwen voor christenen. Waar kwamen zij dus samen?",
+            antwoorden: ["Gewoon bij iemand thuis", "In een apart kerkgebouw", "In de synagoge", "Op het marktplein"],
+            correct: "Gewoon bij iemand thuis",
             bijbelplaats: "Filemon 2"
         },
         {
-            vraag: "Paulus schrijft dat Christus er \"eerder dan alles\" was. Wat bedoelt hij daarmee?",
-            antwoorden: ["Christus bestond al voordat er iets gemaakt werd", "Christus kwam als eerste in Kolosse aan", "Christus was de eerste leerling van Johannes", "Christus sprak als eerste in de tempel"],
-            correct: "Christus bestond al voordat er iets gemaakt werd",
-            bijbelplaats: "Kolossenzen 1:17"
+            vraag: "Paulus had Onesimus makkelijk bij zich kunnen houden, want hij had veel aan hem. Toch stuurt hij hem terug, en hij wil niets beslissen zonder Filemon eerst te vragen. Waarom niet?",
+            antwoorden: ["Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen", "Omdat hij zelf niet wist wat het beste was", "Omdat hij bang was dat Filemon naar de rechter zou stappen", "Omdat hij er geen mening over had"],
+            correct: "Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen",
+            bijbelplaats: "Filemon 14"
+        },
+        {
+            vraag: "Onesimus was weggelopen bij zijn meester, en dat was in die tijd een ernstige misdaad. Toch schrijft Paulus voorzichtig dat er misschien iets goeds in schuilt. Wat oppert hij?",
+            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij zo de wereld kon zien", "Dat hij Filemon een lesje wilde leren"],
+            correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder",
+            bijbelplaats: "Filemon 15-16"
+        },
+        {
+            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
+            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon boos zou worden", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
+            correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
+            bijbelplaats: "Filemon 21"
         }
     ]
 };
@@ -6245,6 +6293,45 @@ function kiesNiveau(niveau) {
     updateXPBalk();
     laadVraag();
 }
+
+// =========================================================================
+// DE METGEZELLEN — losse pool met bewust extreem moeilijke naamvragen.
+// Staat OPZETTELIJK buiten vragenData: alleVragenVoorNiveau() loopt over
+// vragenData en zou deze vragen anders naar de schatkisten laten lekken.
+// Nog niet aan de UI gekoppeld; wacht op de Hemeltrap-ruimte.
+// =========================================================================
+const metgezellenVragen = [
+    {
+        vraag: "De brief aan Filemon gaat over een man die was weggelopen bij zijn meester. Hoe heette hij?",
+        antwoorden: ["Onesimus", "Epafroditus", "Tychikus", "Demas"],
+        correct: "Onesimus",
+        bijbelplaats: "Filemon 10"
+    },
+    {
+        vraag: "Welke trouwe medewerker zou de Kolossenzen al het nieuws over Paulus komen vertellen?",
+        antwoorden: ["Tychikus", "Onesimus", "Lukas", "Demas"],
+        correct: "Tychikus",
+        bijbelplaats: "Kolossenzen 4:7"
+    },
+    {
+        vraag: "Aan het einde vraagt Paulus aandacht voor één medewerker die zijn taak nog moet \"afmaken\". Hoe heet hij?",
+        antwoorden: ["Archippus", "Onesimus", "Tychikus", "Epafras"],
+        correct: "Archippus",
+        bijbelplaats: "Kolossenzen 4:17"
+    },
+    {
+        vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie?",
+        antwoorden: ["Aristarchus", "Lukas", "Tychikus", "Onesimus"],
+        correct: "Aristarchus",
+        bijbelplaats: "Kolossenzen 4:10"
+    },
+    {
+        vraag: "In de brief aan Filemon noemt Paulus naast Filemon ook een vrouw en nog iemand uit het huis. Wie worden er gegroet?",
+        antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lukas", "Priscilla en Aquila"],
+        correct: "Apfia en Archippus",
+        bijbelplaats: "Filemon 2"
+    }
+];
 
 // Combineert alle vragen van één niveau uit alle evangeliën tot één pool.
 // Doordat we de bestaande arrays hergebruiken, groeit deze pool vanzelf mee
