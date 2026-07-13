@@ -683,11 +683,11 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         ],
         expert: [
             {
-                vraag: "Aan wie is het Lucas-evangelie opgedragen, zoals we in de eerste verzen lezen?",
-                antwoorden: ["Aan de gemeente van Rome", "Aan Theofilus", "Aan Petrus", "Aan Maria"],
-                correct: "Aan Theofilus",
-                bijbelplaats: "Lucas 1:1-4"
-            },
+            vraag: "Lucas begint zijn evangelie met een korte opdracht aan een man die Theofilus heet. Daarin legt hij uit waarom hij dit boek geschreven heeft: hij heeft alles zorgvuldig nagegaan en met ooggetuigen gesproken. Wat wilde Lucas daarmee bereiken?",
+            antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem geld zou geven voor zijn reizen", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
+            correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
+            bijbelplaats: "Lucas 1:1-4"
+        },
             {
                 vraag: "Hoe heet de beroemde lofzang van Maria, waarin zij God prijst nadat de engel haar de geboorte van Jezus had aangekondigd?",
                 antwoorden: ["Het Benedictus", "Het Magnificat", "Het Nunc Dimittis", "Het Gloria"],
@@ -1781,9 +1781,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 15:24,28"
         },
         {
-            vraag: "Paulus beveelt een vrouw aan die de gemeente diende. Hoe heette zij?",
-            antwoorden: ["Lydia", "Marta", "Febe", "Hanna"],
-            correct: "Febe",
+            vraag: "Aan het eind van zijn brief beveelt Paulus een vrouw aan die Febe heet. Zij diende de gemeente en was nu op reis naar Rome, waarschijnlijk met deze brief in haar hand. Wat vraagt Paulus aan de Romeinen?",
+            antwoorden: ["Ontvang haar goed en help haar met alles wat ze nodig heeft", "Onderzoek eerst of ze wel te vertrouwen is", "Stuur haar zo snel mogelijk weer terug", "Laat haar buiten de stad wachten tot Paulus komt"],
+            correct: "Ontvang haar goed en help haar met alles wat ze nodig heeft",
             bijbelplaats: "Romeinen 16:1-2"
         },
         {
@@ -1793,9 +1793,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 16:3"
         },
         {
-            vraag: "Paulus zei deze brief hardop; iemand anders schreef hem op. Hoe heette die schrijver?",
-            antwoorden: ["Lucas", "Marcus", "Tertius", "Timoteüs"],
-            correct: "Tertius",
+            vraag: "Paulus sprak zijn brief aan de Romeinen hardop uit, terwijl een schrijver die Tertius heette alles opschreef. En dan gebeurt er aan het eind iets bijzonders. Wat doet Tertius?",
+            antwoorden: ["Hij schrijft er even zijn eigen groet tussen", "Hij zet zijn handtekening onder de brief", "Hij vraagt Paulus om betaling", "Hij weigert het laatste stuk op te schrijven"],
+            correct: "Hij schrijft er even zijn eigen groet tussen",
             bijbelplaats: "Romeinen 16:22"
         },
         {
@@ -2030,9 +2030,9 @@ vragenData["Handelingen"] = {
     ],
     expert: [
         {
-            vraag: "De leerlingen kozen iemand nieuw in de plaats van Judas. Hoe heette hij?",
-            antwoorden: ["Marcus", "Mattias", "Silas", "Lucas"],
-            correct: "Mattias",
+            vraag: "Na het verraad van Judas moesten de elf apostelen iemand kiezen die zijn plaats zou innemen. Er bleven twee kandidaten over, en het werd Mattias. Maar hóe maakten zij die keuze?",
+            antwoorden: ["Ze baden, en lieten daarna het lot beslissen", "Ze lieten de hele gemeente stemmen", "Petrus wees hem persoonlijk aan", "Ze kozen de oudste van de twee"],
+            correct: "Ze baden, en lieten daarna het lot beslissen",
             bijbelplaats: "Handelingen 1:23-26"
         },
         {
@@ -3191,12 +3191,6 @@ vragenData["Filippenzen"] = {
     ],
     expert: [
         {
-            vraag: "Paulus stuurt de brief mee met een vriend die heel ziek was geweest. Hoe heette hij?",
-            antwoorden: ["Epafroditus", "Judas", "Tomas", "Lukas"],
-            correct: "Epafroditus",
-            bijbelplaats: "Filippenzen 2:25-27"
-        },
-        {
             vraag: "In welk gebied lag de stad Filippi?",
             antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
             correct: "Macedonië",
@@ -3239,10 +3233,10 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:27"
         },
         {
-            vraag: "Paulus noemt de twee vrouwen die ruzie hadden zelfs bij naam. Hoe heetten ze?",
-            antwoorden: ["Euodia en Syntyche", "Lydia en Priscilla", "Maria en Marta", "Febe en Junia"],
-            correct: "Euodia en Syntyche",
-            bijbelplaats: "Filippenzen 4:2"
+            vraag: "In de gemeente van Filippi hadden twee vrouwen ruzie met elkaar: Euodia en Syntyche. Paulus zet hun namen gewoon in zijn brief, die daarna aan iedereen werd voorgelezen. Wat vraagt hij hun?",
+            antwoorden: ["Om het weer eens te worden met elkaar", "Om allebei de gemeente te verlaten", "Om hun ruzie aan de oudsten voor te leggen", "Om er verder over te zwijgen"],
+            correct: "Om het weer eens te worden met elkaar",
+            bijbelplaats: "Filippenzen 4:2-3"
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond nu \"verlies\" is. Waarmee vergelijkt hij die oude dingen zelfs?",
@@ -3487,12 +3481,6 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Timoteüs", "Lukas", "Marcus", "Demas"],
             correct: "Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 3:2"
-        },
-        {
-            vraag: "Wie noemt Paulus aan het begin als mede-afzenders, naast hemzelf?",
-            antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Marcus", "Lukas en Titus"],
-            correct: "Silvanus en Timoteüs",
-            bijbelplaats: "1 Tessalonicenzen 1:1"
         },
         {
             vraag: "Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat \"gerechtigheid\". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen?",
@@ -6474,6 +6462,18 @@ const metgezellenVragen = [
         antwoorden: ["Alexander", "Demas", "Lukas", "Titus"],
         correct: "Alexander",
         bijbelplaats: "2 Timoteüs 4:14"
+    },
+    {
+        vraag: "Paulus stuurt de brief aan de Filippenzen mee met een vriend die heel ziek was geweest. Hoe heette hij?",
+        antwoorden: ["Epafroditus", "Judas", "Tomas", "Lukas"],
+        correct: "Epafroditus",
+        bijbelplaats: "Filippenzen 2:25-27"
+    },
+    {
+        vraag: "Wie noemt Paulus aan het begin van zijn brief aan de Tessalonicenzen als mede-afzenders, naast hemzelf?",
+        antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Marcus", "Lukas en Titus"],
+        correct: "Silvanus en Timoteüs",
+        bijbelplaats: "1 Tessalonicenzen 1:1"
     }
 ];
 
