@@ -6329,15 +6329,27 @@ function openBoek(boekNaam, { vergrendel = true, oefen = false } = {}) {
 
 // Pakt willekeurig maximaal `aantal` vragen uit een pool, zonder de
 // oorspronkelijke vragenData te wijzigen. Husselt een kopie (Fisher-Yates)
-// en pakt er de eerste `aantal` uit. Is de pool kleiner dan `aantal`, dan
-// komen alle vragen terug, in willekeurige volgorde.
+// en pakt er dan `aantal` uit, waarbij dezelfde vraagtekst nooit twee keer
+// wordt gekozen. In de schatkist-modus voegt alleVragenVoorNiveau() alle
+// boeken samen, en sommige boeken delen bewust een vraag (bijv. dezelfde
+// vraag terecht in zowel Matteüs als Marcus). Zonder deze filter zou zo'n
+// vraag dubbel in één quiz kunnen belanden. Is de pool na ontdubbelen kleiner
+// dan `aantal`, dan komen alle unieke vragen terug, in willekeurige volgorde.
 function kiesWillekeurigeVragen(pool, aantal) {
     const kopie = [...pool];
     for (let i = kopie.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [kopie[i], kopie[j]] = [kopie[j], kopie[i]];
     }
-    return kopie.slice(0, aantal);
+    const gekozen = [];
+    const gezien = new Set();
+    for (const vraag of kopie) {
+        if (gezien.has(vraag.vraag)) continue;
+        gezien.add(vraag.vraag);
+        gekozen.push(vraag);
+        if (gekozen.length === aantal) break;
+    }
+    return gekozen;
 }
 
 // Keuze van een niveau -> hier start pas de echte quiz
