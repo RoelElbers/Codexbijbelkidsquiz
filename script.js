@@ -3687,34 +3687,10 @@ vragenData["Timoteüs & Titus"] = {
     ],
     expert: [
         {
-            vraag: "Wie waren volgens Paulus de oma en moeder die Timoteüs het geloof hadden meegegeven?",
-            antwoorden: ["Loïs en Eunike", "Maria en Marta", "Sara en Rebekka", "Ruth en Naomi"],
-            correct: "Loïs en Eunike",
-            bijbelplaats: "2 Timoteüs 1:5"
-        },
-        {
-            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch mee te nemen. Wat?",
-            antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
-            correct: "Zijn mantel en zijn boeken",
-            bijbelplaats: "2 Timoteüs 4:13"
-        },
-        {
-            vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie?",
-            antwoorden: ["Demas", "Lukas", "Timoteüs", "Titus"],
-            correct: "Demas",
-            bijbelplaats: "2 Timoteüs 4:10"
-        },
-        {
-            vraag: "Op welk eiland had Paulus Titus achtergelaten om de gemeenten te helpen?",
-            antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
-            correct: "Kreta",
-            bijbelplaats: "Titus 1:5"
-        },
-        {
-            vraag: "Paulus zegt tegen Timoteüs: \"wakker het vuur weer aan.\" Wat bedoelt hij?",
-            antwoorden: ["Gebruik de gave die God je hebt gegeven", "Word vuriger in het straffen van zonde", "Vernieuw je band met de gemeente", "Bid dag en nacht zonder ophouden"],
-            correct: "Gebruik de gave die God je hebt gegeven",
-            bijbelplaats: "2 Timoteüs 1:6"
+            vraag: "Paulus kijkt in zijn brief aan Timoteüs terug op zijn eigen verleden, en hij verzacht niets. Hoe noemt hij zichzelf zoals hij vroeger was?",
+            antwoorden: ["Een godslasteraar en een vervolger", "Een vrome Farizeeër", "Een goede Jood", "Een rechtvaardig man"],
+            correct: "Een godslasteraar en een vervolger",
+            bijbelplaats: "1 Timoteüs 1:13"
         },
         {
             vraag: "In welke stad had Paulus Timoteüs achtergelaten om de gemeente te helpen?",
@@ -3723,16 +3699,52 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 1:3"
         },
         {
-            vraag: "Aan het einde van zijn laatste brief schrijft Paulus dat bijna iedereen weg is. Wie was nog wél bij hem?",
-            antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
-            correct: "Alleen Lukas",
-            bijbelplaats: "2 Timoteüs 4:11"
+            vraag: "Paulus waarschuwt tegen de jacht op geld met een nuchtere waarheid over geboorte en dood. Wat schrijft hij?",
+            antwoorden: ["We hebben niets meegebracht in de wereld, en kunnen er ook niets uit meenemen", "Geld is de wortel van alle kwaad", "Rijke mensen komen niet in de hemel", "Wie veel heeft moet alles weggeven"],
+            correct: "We hebben niets meegebracht in de wereld, en kunnen er ook niets uit meenemen",
+            bijbelplaats: "1 Timoteüs 6:7"
         },
         {
-            vraag: "Paulus noemt twee mannen die met hun verkeerde uitleg anderen van het geloof afbrachten. Wie?",
-            antwoorden: ["Hymeneüs en Filetus", "Demas en Alexander", "Jakobus en Johannes", "Paulus en Barnabas"],
-            correct: "Hymeneüs en Filetus",
-            bijbelplaats: "2 Timoteüs 2:17"
+            vraag: "Midden in zijn brief barst Paulus ineens uit in een lofzang op God. Met welke titel noemt hij God daar?",
+            antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots van Israël", "De Vader van het licht", "De Herder van de schapen"],
+            correct: "De Koning der koningen en de Heer der heren",
+            bijbelplaats: "1 Timoteüs 6:15"
+        },
+        {
+            vraag: "Paulus herinnert Timoteüs eraan dat zijn geloof niet bij hemzelf begonnen is. Hij noemt zijn oma Loïs en zijn moeder Eunike. Wat wil Paulus daarmee duidelijk maken?",
+            antwoorden: ["Dat het geloof al bij zijn oma en moeder leefde, en zo bij hem terechtkwam", "Dat hij zijn geloof pas als volwassene vond", "Dat Paulus hem het geloof had geleerd", "Dat hij uit een gezin kwam waar niemand geloofde"],
+            correct: "Dat het geloof al bij zijn oma en moeder leefde, en zo bij hem terechtkwam",
+            bijbelplaats: "2 Timoteüs 1:5"
+        },
+        {
+            vraag: "Paulus zegt tegen Timoteüs: \"wakker het vuur weer aan.\" Wat bedoelt hij?",
+            antwoorden: ["Gebruik de gave die God je hebt gegeven", "Word vuriger in het straffen van zonde", "Vernieuw je band met de gemeente", "Bid dag en nacht zonder ophouden"],
+            correct: "Gebruik de gave die God je hebt gegeven",
+            bijbelplaats: "2 Timoteüs 1:6"
+        },
+        {
+            vraag: "Paulus vergelijkt het werken voor Christus met drie beroepen: iemand die vecht, iemand die rent, en iemand die op het land werkt. Welke drie beroepen noemt hij?",
+            antwoorden: ["Een soldaat, een sportman en een boer", "Een koning, een priester en een profeet", "Een visser, een herder en een timmerman", "Een koopman, een schrijver en een arts"],
+            correct: "Een soldaat, een sportman en een boer",
+            bijbelplaats: "2 Timoteüs 2:3-6"
+        },
+        {
+            vraag: "Paulus schrijft deze brief vanuit de gevangenis, geboeid als een misdadiger. En dan zet hij daar één zin tegenover die alles omdraait. Wat schrijft hij?",
+            antwoorden: ["Maar het woord van God zit niet gevangen", "Maar ik zal binnenkort vrijkomen", "Maar de bewakers zijn tot geloof gekomen", "Maar mijn straf is niet zo zwaar"],
+            correct: "Maar het woord van God zit niet gevangen",
+            bijbelplaats: "2 Timoteüs 2:9"
+        },
+        {
+            vraag: "In een groot huis staan voorwerpen van goud en zilver, maar ook van hout en aardewerk. Paulus gebruikt dat beeld voor de gemeente. Wat moet iemand volgens hem doen om een kostbaar voorwerp te worden?",
+            antwoorden: ["Zichzelf reinigen van het verkeerde", "Rijk worden", "Veel leren", "Een hoge functie krijgen"],
+            correct: "Zichzelf reinigen van het verkeerde",
+            bijbelplaats: "2 Timoteüs 2:20-21"
+        },
+        {
+            vraag: "Paulus doet een voorspelling die niet vrolijk klinkt, maar wel eerlijk is. Wat gebeurt er volgens hem met iedereen die trouw met God wil leven?",
+            antwoorden: ["Die zal het moeilijk krijgen en vervolgd worden", "Die zal rijk worden", "Die zal nooit ziek worden", "Die zal door iedereen geprezen worden"],
+            correct: "Die zal het moeilijk krijgen en vervolgd worden",
+            bijbelplaats: "2 Timoteüs 3:12"
         },
         {
             vraag: "Paulus schrijft dat er voor hem een \"krans\" klaarligt. Wat voor krans?",
@@ -3741,16 +3753,46 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:8"
         },
         {
-            vraag: "Paulus waarschuwt voor één man, een kopersmid, die hem veel kwaad deed. Hoe heette hij?",
-            antwoorden: ["Alexander", "Demas", "Lukas", "Titus"],
-            correct: "Alexander",
-            bijbelplaats: "2 Timoteüs 4:14"
+            vraag: "Aan het eind van zijn leven schrijft Paulus verdrietig over Demas, een medewerker die hem in de steek heeft gelaten. Wat was de reden dat Demas wegging?",
+            antwoorden: ["Hij hield meer van deze wereld", "Hij werd ziek", "Hij was het niet eens met Paulus' leer", "Hij werd zelf gevangengenomen"],
+            correct: "Hij hield meer van deze wereld",
+            bijbelplaats: "2 Timoteüs 4:10"
+        },
+        {
+            vraag: "Aan het einde van zijn laatste brief schrijft Paulus dat bijna iedereen weg is. Wie was nog wél bij hem?",
+            antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
+            correct: "Alleen Lukas",
+            bijbelplaats: "2 Timoteüs 4:11"
+        },
+        {
+            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch mee te nemen. Wat?",
+            antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
+            correct: "Zijn mantel en zijn boeken",
+            bijbelplaats: "2 Timoteüs 4:13"
+        },
+        {
+            vraag: "Toen Paulus zich voor de rechter moest verdedigen, kwam er niemand voor hem op. Al zijn vrienden lieten hem in de steek. Wat schrijft hij daarover?",
+            antwoorden: ["Ik bid dat het hun niet wordt aangerekend", "Ik zal het hun nooit vergeven", "God zal hen zwaar straffen", "Ik had het kunnen weten"],
+            correct: "Ik bid dat het hun niet wordt aangerekend",
+            bijbelplaats: "2 Timoteüs 4:16"
+        },
+        {
+            vraag: "Op welk eiland had Paulus Titus achtergelaten om de gemeenten te helpen?",
+            antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
+            correct: "Kreta",
+            bijbelplaats: "Titus 1:5"
         },
         {
             vraag: "Paulus was zelf vertrokken en liet Titus achter op Kreta. Wat moest Titus daar in elke stad regelen?",
             antwoorden: ["Geschikte leiders aanstellen voor de gemeenten", "Tempels bouwen", "Belasting innen", "Scholen openen"],
             correct: "Geschikte leiders aanstellen voor de gemeenten",
             bijbelplaats: "Titus 1:5"
+        },
+        {
+            vraag: "Paulus geeft Titus raad voor vier verschillende groepen in de gemeente, en tegen elke groep zegt hij iets anders. Welke vier groepen zijn dat?",
+            antwoorden: ["Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen", "Priesters, leraren, profeten en apostelen", "Joden, Grieken, slaven en vrijen", "Armen, rijken, zieken en gezonden"],
+            correct: "Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen",
+            bijbelplaats: "Titus 2:2-6"
         }
     ]
 };
@@ -6408,6 +6450,30 @@ const metgezellenVragen = [
         antwoorden: ["Demetrius", "Diotrefes", "Gajus", "Theofilus"],
         correct: "Demetrius",
         bijbelplaats: "3 Johannes 12"
+    },
+    {
+        vraag: "Wie waren volgens Paulus de oma en moeder die Timoteüs het geloof hadden meegegeven?",
+        antwoorden: ["Loïs en Eunike", "Maria en Marta", "Sara en Rebekka", "Ruth en Naomi"],
+        correct: "Loïs en Eunike",
+        bijbelplaats: "2 Timoteüs 1:5"
+    },
+    {
+        vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie?",
+        antwoorden: ["Demas", "Lukas", "Timoteüs", "Titus"],
+        correct: "Demas",
+        bijbelplaats: "2 Timoteüs 4:10"
+    },
+    {
+        vraag: "Paulus noemt twee mannen die met hun verkeerde uitleg anderen van het geloof afbrachten. Wie?",
+        antwoorden: ["Hymeneüs en Filetus", "Demas en Alexander", "Jakobus en Johannes", "Paulus en Barnabas"],
+        correct: "Hymeneüs en Filetus",
+        bijbelplaats: "2 Timoteüs 2:17"
+    },
+    {
+        vraag: "Paulus waarschuwt voor één man, een kopersmid, die hem veel kwaad deed. Hoe heette hij?",
+        antwoorden: ["Alexander", "Demas", "Lukas", "Titus"],
+        correct: "Alexander",
+        bijbelplaats: "2 Timoteüs 4:14"
     }
 ];
 
