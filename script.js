@@ -1507,10 +1507,10 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 1:1"
         },
         {
-            vraag: "Aan wie schreef Paulus deze brief?",
-            antwoorden: ["De christenen in Korinte", "De christenen in Efeze", "De christenen in Rome", "De christenen in Jeruzalem"],
-            correct: "De christenen in Rome",
-            bijbelplaats: "Romeinen 1:7"
+            vraag: "Paulus geeft een korte regel over wat je moet doen als iemand jou kwaad doet. Wat schrijft hij?",
+            antwoorden: ["Overwin het kwade door het goede", "Doe precies hetzelfde terug", "Doe alsof je niets merkt", "Meld het meteen bij de overheid"],
+            correct: "Overwin het kwade door het goede",
+            bijbelplaats: "Romeinen 12:21"
         },
         {
             vraag: "Wat voor soort tekst is \"Romeinen\"?",
@@ -2462,10 +2462,10 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 1:1"
         },
         {
-            vraag: "Aan wie schreef Paulus deze brief?",
-            antwoorden: ["De gemeenten in Galatië", "De stad Rome", "De koning van Egypte", "De gemeente in Korinte"],
-            correct: "De gemeenten in Galatië",
-            bijbelplaats: "Galaten 1:2"
+            vraag: "Paulus gebruikt het beeld van een zware last die iemand moet dragen. Wat moeten gelovigen volgens hem doen als een ander het moeilijk heeft?",
+            antwoorden: ["Elkaars lasten dragen, en zo elkaar helpen", "Wachten tot hij het zelf oplost", "Hem eraan herinneren dat het zijn eigen schuld is", "Er maar niet over praten"],
+            correct: "Elkaars lasten dragen, en zo elkaar helpen",
+            bijbelplaats: "Galaten 6:2"
         },
         {
             vraag: "Wat deed Paulus met de christenen voordat hij zelf in Jezus ging geloven?",
@@ -2703,10 +2703,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 1:1"
         },
         {
-            vraag: "Aan wie schreef Paulus deze brief?",
-            antwoorden: ["De gelovigen in Efeze", "De koning van Rome", "De gemeente in Korinte", "De mensen in Egypte"],
-            correct: "De gelovigen in Efeze",
-            bijbelplaats: "Efeziërs 1:1"
+            vraag: "Paulus schrijft hoe gelovigen met elkaar om moeten gaan. Hij noemt drie dingen: goed zijn voor elkaar, met elkaar meeleven, en nog iets. Wat is dat derde?",
+            antwoorden: ["Elkaar vergeven, zoals God jou vergeven heeft", "Elkaar prijzen", "Elkaar verbeteren", "Elkaar met rust laten"],
+            correct: "Elkaar vergeven, zoals God jou vergeven heeft",
+            bijbelplaats: "Efeziërs 4:32"
         },
         {
             vraag: "Door wie krijgen we volgens Paulus vergeving van onze fouten?",
@@ -2905,7 +2905,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:17"
         },
         {
-            vraag: "Waar was Paulus toen hij deze brief schreef?",
+            vraag: "Vanuit welke plek schreef Paulus zijn brief aan de Efeziërs?",
             antwoorden: ["Op een schip", "In de gevangenis", "In een paleis", "Op reis door de woestijn"],
             correct: "In de gevangenis",
             bijbelplaats: "Efeziërs 4:1"
@@ -2995,10 +2995,10 @@ vragenData["Efeziërs"] = {
 vragenData["Filippenzen"] = {
     beginner: [
         {
-            vraag: "Aan welke gemeente schreef Paulus deze brief?",
-            antwoorden: ["De gemeente in Korinte", "De gemeente in Filippi", "De gemeente in Efeze", "De gemeente in Rome"],
-            correct: "De gemeente in Filippi",
-            bijbelplaats: "Filippenzen 1:1"
+            vraag: "Paulus geeft raad over waar je je gedachten mee vult. Waar moet je volgens hem aan blijven denken?",
+            antwoorden: ["Aan alles wat waar, mooi en goed is", "Alleen aan je eigen problemen", "Alleen aan wat er morgen gebeurt", "Zo min mogelijk"],
+            correct: "Aan alles wat waar, mooi en goed is",
+            bijbelplaats: "Filippenzen 4:8"
         },
         {
             vraag: "Wat voor soort tekst is Filippenzen?",
@@ -3099,7 +3099,7 @@ vragenData["Filippenzen"] = {
     ],
     advanced: [
         {
-            vraag: "Waar was Paulus toen hij deze brief schreef?",
+            vraag: "Vanuit welke plek schreef Paulus zijn brief aan de Filippenzen?",
             antwoorden: ["In de gevangenis", "Op reis met een schip", "In de tempel", "Thuis in Nazaret"],
             correct: "In de gevangenis",
             bijbelplaats: "Filippenzen 1:13"
@@ -3233,10 +3233,10 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:27"
         },
         {
-            vraag: "In de gemeente van Filippi hadden twee vrouwen ruzie met elkaar: Euodia en Syntyche. Paulus zet hun namen gewoon in zijn brief, die daarna aan iedereen werd voorgelezen. Wat vraagt hij hun?",
-            antwoorden: ["Om het weer eens te worden met elkaar", "Om allebei de gemeente te verlaten", "Om hun ruzie aan de oudsten voor te leggen", "Om er verder over te zwijgen"],
-            correct: "Om het weer eens te worden met elkaar",
-            bijbelplaats: "Filippenzen 4:2-3"
+            vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat?",
+            antwoorden: ["Dat ze samen met hem gestreden hebben voor het goede nieuws", "Dat ze de rijkste vrouwen van Filippi waren", "Dat ze nooit eerder ruzie hadden gehad", "Dat ze allebei door Lydia waren opgevoed"],
+            correct: "Dat ze samen met hem gestreden hebben voor het goede nieuws",
+            bijbelplaats: "Filippenzen 4:3"
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond nu \"verlies\" is. Waarmee vergelijkt hij die oude dingen zelfs?",
@@ -3717,7 +3717,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 2:3-6"
         },
         {
-            vraag: "Paulus schrijft deze brief vanuit de gevangenis, geboeid als een misdadiger. En dan zet hij daar één zin tegenover die alles omdraait. Wat schrijft hij?",
+            vraag: "Paulus schrijft zijn laatste brief aan Timoteüs vanuit de gevangenis, geboeid als een misdadiger. En dan zet hij daar één zin tegenover die alles omdraait. Wat schrijft hij?",
             antwoorden: ["Maar het woord van God zit niet gevangen", "Maar ik zal binnenkort vrijkomen", "Maar de bewakers zijn tot geloof gekomen", "Maar mijn straf is niet zo zwaar"],
             correct: "Maar het woord van God zit niet gevangen",
             bijbelplaats: "2 Timoteüs 2:9"
@@ -3802,7 +3802,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 1:2"
         },
         {
-            vraag: "Vanuit welke situatie schrijft Paulus ook deze brief?",
+            vraag: "Vanuit welke situatie schreef Paulus zijn brief aan de Kolossenzen?",
             antwoorden: ["Vanuit de gevangenis", "Vanuit de tempel", "Vanuit een schip op zee", "Vanuit zijn werkplaats"],
             correct: "Vanuit de gevangenis",
             bijbelplaats: "Kolossenzen 4:18"
