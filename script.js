@@ -364,26 +364,26 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deed Jezus met het dochtertje van Jaïrus, dat was overleden?",
-                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij gaf haar medicijnen", "Hij ging weg"],
+                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij gaf haar medicijnen", "Hij pakte haar bij de hand en beloofde dat de dokters haar snel beter zouden maken"],
                 correct: "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op",
                 bijbelplaats: "Marcus 5:41-42"
             },
             {
                 vraag: "Wat deed Jezus toen mensen kinderen bij hem brachten en de leerlingen dat wilden tegenhouden?",
-                antwoorden: ["Hij liet hen wegsturen", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk", "Hij liep door"],
+                antwoorden: ["Hij liet hen wegsturen", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk", "Hij stuurde de kinderen weg om verder te kunnen preken"],
                 correct: "Hij omarmde de kinderen en zegende hen",
                 bijbelplaats: "Marcus 10:13-16"
             },
             {
                 vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
-                antwoorden: ["Een paard", "Een kameel", "Een veulen van een ezel", "Een muildier"],
+                antwoorden: ["Een paard", "Een kameel", "Een veulen van een ezel", "Een groot wit strijdpaard"],
                 correct: "Een veulen van een ezel",
                 bijbelplaats: "Marcus 11:7",
                 uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet hij zien wat voor koning hij wilde zijn."
             },
             {
                 vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na zijn intocht, wat ophef veroorzaakte?",
-                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij ging slapen"],
+                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij deelde brood en geld uit aan alle arme mensen daar"],
                 correct: "Hij joeg de geldwisselaars en duivenverkopers eruit",
                 bijbelplaats: "Marcus 11:15-17"
             },
@@ -395,7 +395,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Waar werd Jezus gekruisigd, volgens Marcus?",
-                antwoorden: ["Op de Olijfberg", "Op Golgota, wat 'schedelplaats' betekent", "In Betlehem", "Bij de Jordaan"],
+                antwoorden: ["Op de Olijfberg", "Op Golgota, wat 'schedelplaats' betekent", "In de tuin van Getsemane bij de olijfbomen", "Bij de Jordaan"],
                 correct: "Op Golgota, wat 'schedelplaats' betekent",
                 bijbelplaats: "Marcus 15:22"
             }
@@ -409,7 +409,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei Jezus dat iemand moet doen die hem wil volgen?",
-                antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Soldaat worden"],
+                antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Zoveel mogelijk rijkdom en bezit voor zichzelf verzamelen"],
                 correct: "Zichzelf verloochenen en zijn kruis op zich nemen",
                 bijbelplaats: "Marcus 8:34"
             },
@@ -421,13 +421,13 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat antwoordde Jezus toen iemand hem vroeg wat het belangrijkste gebod was?",
-                antwoorden: ["Heb de Heer uw God lief met heel uw hart en uw naaste als uzelf", "Steel niet", "Eer uw vader en moeder", "Houd de sabbat heilig"],
+                antwoorden: ["Heb de Heer uw God lief met heel uw hart en uw naaste als uzelf", "Houd je aan alle voorschriften over rein en onrein voedsel", "Eer uw vader en moeder", "Houd de sabbat heilig"],
                 correct: "Heb de Heer uw God lief met heel uw hart en uw naaste als uzelf",
                 bijbelplaats: "Marcus 12:29-31"
             },
             {
                 vraag: "Wat deed Jezus met een vijgenboom die geen vruchten droeg, vlak voor de tempelreiniging?",
-                antwoorden: ["Hij plukte er bladeren af", "Hij vervloekte hem waarna de boom verdorde", "Hij snoeide hem", "Hij liet hem met rust"],
+                antwoorden: ["Hij plukte er bladeren af", "Hij vervloekte hem waarna de boom verdorde", "Hij plantte er een nieuwe boom naast die wél vruchten droeg", "Hij liet hem met rust"],
                 correct: "Hij vervloekte hem waarna de boom verdorde",
                 bijbelplaats: "Marcus 11:12-14, 20-21"
             },
@@ -452,7 +452,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei de Romeinse hoofdman die bij het kruis stond, toen Jezus stierf?",
-                antwoorden: ["Hij was een goed mens", "Werkelijk deze mens was Gods Zoon", "Wat een trieste dag", "Het is voorbij"],
+                antwoorden: ["Hij was een goed mens", "Werkelijk deze mens was Gods Zoon", "Wat een trieste dag", "Dit was vast een groot profeet uit vroeger tijden"],
                 correct: "Werkelijk deze mens was Gods Zoon",
                 bijbelplaats: "Marcus 15:39"
             },
@@ -472,7 +472,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Waar begint het Marcus-evangelie mee?",
-                antwoorden: ["Het begin van het verhaal van Jezus", "Het begin van het evangelie van Jezus Christus de Zoon van God", "In den beginne", "Lang geleden"],
+                antwoorden: ["Het begin van het verhaal van Jezus", "Het begin van het evangelie van Jezus Christus de Zoon van God", "Het geslachtsregister van Jezus, helemaal terug tot aan koning David", "Lang geleden"],
                 correct: "Het begin van het evangelie van Jezus Christus de Zoon van God",
                 bijbelplaats: "Marcus 1:1"
             },
@@ -484,7 +484,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Hoe noemde de bezetene in het gebied van de Gerasenen de demonen die in hem zaten?",
-                antwoorden: ["Schaduw", "Legioen want we zijn met velen", "Storm", "Beëlzebul"],
+                antwoorden: ["Wij zijn de heersers van heel dit gebied", "Legioen want we zijn met velen", "Storm", "Beëlzebul"],
                 correct: "Legioen want we zijn met velen",
                 bijbelplaats: "Marcus 5:9"
             },
@@ -502,7 +502,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Komen Lazarus en zijn zusters Marta en Maria voor in het Marcus-evangelie?",
-                antwoorden: ["Ja, alle drie", "Alleen Lazarus", "Alleen Marta en Maria", "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)"],
+                antwoorden: ["Ja, alle drie komen ze meerdere keren in het Marcus-evangelie voor", "Alleen Lazarus", "Alleen Marta en Maria", "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)"],
                 correct: "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)",
                 bijbelplaats: "Marcus"
             },
@@ -520,7 +520,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Jezus riep aan het kruis in zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
-                antwoorden: ["Heer, ontferm U over ons", "Mijn God, mijn God, waarom hebt U mij verlaten?", "Geprezen zij Uw heilige naam", "Vergeef ons onze schulden"],
+                antwoorden: ["In uw handen leg ik mijn geest, o hemelse Vader", "Mijn God, mijn God, waarom hebt U mij verlaten?", "Geprezen zij Uw heilige naam", "Vergeef ons onze schulden"],
                 correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
             },
@@ -1053,13 +1053,13 @@ vragenData["Marcus"].beginner.push(
     },
     {
         vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
-        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Veel gebeden opzeggen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
+        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
         correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
         bijbelplaats: "Marcus 1:4"
     },
     {
         vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
-        antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "De stad Rome"],
+        antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
         correct: "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft",
         bijbelplaats: "Marcus 1:15"
     },
@@ -1079,7 +1079,7 @@ vragenData["Marcus"].advanced.push(
     },
     {
         vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
-        antwoorden: ["Op de sabbat mag je echt niemand helpen", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
+        antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
         correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
         bijbelplaats: "Marcus 2:27"
     },
@@ -1285,7 +1285,7 @@ vragenData["Marcus"].beginner.push(
 vragenData["Marcus"].advanced.push(
     {
         vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
-        antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "Zonsopgang, ochtend, middag en avond", "Het eerste, tweede, derde en vierde uur"],
+        antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De eerste wake, de tweede wake, de derde wake en de vierde wake", "Het eerste, tweede, derde en vierde uur"],
         correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
         bijbelplaats: "Marcus 13:35"
     }
@@ -1816,7 +1816,7 @@ vragenData["Handelingen"] = {
     beginner: [
         {
             vraag: "Waarover gaat het boek Handelingen vooral?",
-            antwoorden: ["Over wat Jezus' volgelingen deden nadat hij naar de hemel ging", "Over de schepping van de wereld", "Over koning David", "Over de tien geboden"],
+            antwoorden: ["Over wat Jezus' volgelingen deden nadat hij naar de hemel ging", "Over de schepping van de wereld", "Over de profeten die het volk lang vóór de tijd van Jezus waarschuwden", "Over de tien geboden"],
             correct: "Over wat Jezus' volgelingen deden nadat hij naar de hemel ging",
             bijbelplaats: "Handelingen 1:8"
         },
@@ -1834,7 +1834,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Paulus was eerst fel tégen de christenen. Wat gebeurde er onderweg naar Damascus?",
-            antwoorden: ["Hij verdwaalde in de woestijn", "Hij viel in een diepe slaap", "Hij ontmoette Jezus in een fel licht en veranderde", "Hij werd tot koning gekroond"],
+            antwoorden: ["Hij verdwaalde in de woestijn", "Hij viel in een diepe slaap", "Hij ontmoette Jezus in een fel licht en veranderde", "Hij raakte de weg kwijt en kwam pas dagen later aan"],
             correct: "Hij ontmoette Jezus in een fel licht en veranderde",
             bijbelplaats: "Handelingen 9:3-6"
         },
@@ -1889,7 +1889,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Toen Paulus en Barnabas door de heilige Geest werden uitgezonden, wat was hun taak?",
-            antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven wonen"],
+            antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
             correct: "Naar andere landen reizen om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13:2-4"
         },
@@ -1945,49 +1945,49 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Hoe leefden de allereerste christenen met elkaar?",
-            antwoorden: ["Ieder voor zich", "Ze woonden ver uit elkaar", "Ze deelden alles en kwamen vaak samen", "Ze spraken nooit af"],
+            antwoorden: ["Ze kwamen alleen op de sabbat een enkele keer bijeen", "Ze woonden ver uit elkaar", "Ze deelden alles en kwamen vaak samen", "Ze spraken nooit af"],
             correct: "Ze deelden alles en kwamen vaak samen",
             bijbelplaats: "Handelingen 2:44-46"
         },
         {
             vraag: "Bij de tempelpoort zat een man die niet kon lopen. Wat deed Petrus voor hem?",
-            antwoorden: ["Hij gaf hem goud", "Hij liep voorbij", "Hij riep de wachters", "Hij genas hem in de naam van Jezus"],
+            antwoorden: ["Hij gaf hem goud", "Hij liep voorbij", "Hij stuurde hem door naar de priesters in de tempel", "Hij genas hem in de naam van Jezus"],
             correct: "Hij genas hem in de naam van Jezus",
             bijbelplaats: "Handelingen 3:6-8"
         },
         {
             vraag: "Filippus ontmoette een man uit Ethiopië die uit de Bijbel zat te lezen, maar het niet begreep. Wat deed Filippus?",
-            antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij liet hem alleen", "Hij lachte hem uit", "Hij nam het boek mee"],
+            antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij liet hem alleen", "Hij lachte hem uit", "Hij las het boek voor maar legde er verder niets over uit"],
             correct: "Hij legde uit dat het over Jezus ging en doopte hem",
             bijbelplaats: "Handelingen 8:30-38"
         },
         {
             vraag: "Cornelius was een Romeinse legerofficier. Wat leerde Petrus door hem?",
-            antwoorden: ["Dat alleen Joden erbij horen", "Dat het goede nieuws óók voor niet-Joden is", "Dat hij soldaat moest blijven", "Dat hij moest zwijgen"],
+            antwoorden: ["Dat alleen Joden erbij horen", "Dat het goede nieuws óók voor niet-Joden is", "Dat hij soldaat moest blijven", "Dat Romeinse soldaten geen christen mochten worden"],
             correct: "Dat het goede nieuws óók voor niet-Joden is",
             bijbelplaats: "Handelingen 10:34-35"
         },
         {
-            vraag: "Na de aardbeving deed de gevangenbewaarder iets belangrijks. Wat?",
-            antwoorden: ["Hij liep boos weg", "Hij ging in Jezus geloven en liet zich dopen", "Hij sloot de deuren weer", "Hij riep de koning"],
+            vraag: "Na de aardbeving moest de gevangenbewaarder een keuze maken. Wat deed hij?",
+            antwoorden: ["Hij liep boos weg", "Hij ging in Jezus geloven en liet zich dopen", "Hij sloot de deuren weer", "Hij vluchtte uit angst de stad uit, ver bij de gevangenis vandaan"],
             correct: "Hij ging in Jezus geloven en liet zich dopen",
             bijbelplaats: "Handelingen 16:30-34"
         },
         {
             vraag: "Op zijn reis naar Rome kwam Paulus in een zware storm op zee. Wat gebeurde er met het schip en de mensen?",
-            antwoorden: ["Iedereen verdronk", "Het schip bleef heel", "Het schip verging, maar alle mensen kwamen veilig aan land", "Ze keerden om"],
+            antwoorden: ["Iedereen verdronk", "Het schip bleef heel", "Het schip verging, maar alle mensen kwamen veilig aan land", "Ze wisten het schip nog net veilig de haven binnen te varen"],
             correct: "Het schip verging, maar alle mensen kwamen veilig aan land",
             bijbelplaats: "Handelingen 27:41-44"
         },
         {
             vraag: "In Athene vond Paulus een altaar met het opschrift 'voor een onbekende god'. Wat deed hij daarmee?",
-            antwoorden: ["Hij gebruikte het om te vertellen wie die onbekende God echt is", "Hij brak het altaar meteen af", "Hij liep er zwijgend aan voorbij", "Hij begon die onbekende god zelf te aanbidden"],
+            antwoorden: ["Hij gebruikte het om te vertellen wie die onbekende God echt is", "Hij liet op diezelfde plek meteen een nieuw altaar voor de ware God bouwen", "Hij liep er zwijgend aan voorbij", "Hij begon die onbekende god zelf te aanbidden"],
             correct: "Hij gebruikte het om te vertellen wie die onbekende God echt is",
             bijbelplaats: "Handelingen 17:22-23"
         },
         {
             vraag: "Stefanus, een van de eerste christenen, werd aangevallen door boze mensen omdat hij over Jezus vertelde. Wat deed hij toen?",
-            antwoorden: ["Hij werd boos", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
+            antwoorden: ["Hij riep dat God hen zwaar zou straffen hiervoor", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
             correct: "Hij bad of God de mensen wilde vergeven",
             bijbelplaats: "Handelingen 7:59-60"
         },
@@ -1999,13 +1999,13 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op het eiland Malta beet er een gevaarlijke slang in Paulus' hand. Wat gebeurde er met hem?",
-            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Hem overkwam niets, hij bleef ongedeerd", "Hij rende weg"],
+            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Hem overkwam niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
             correct: "Hem overkwam niets, hij bleef ongedeerd",
             bijbelplaats: "Handelingen 28:3-6"
         },
         {
             vraag: "Wie stuurde Filippus naar de eenzame weg door de woestijn, waar hij de man uit Ethiopië ontmoette?",
-            antwoorden: ["De keizer", "Petrus", "Een engel van de Heer", "Zijn vader"],
+            antwoorden: ["De keizer", "Petrus", "Een engel van de Heer", "De hogepriester in Jeruzalem"],
             correct: "Een engel van de Heer",
             bijbelplaats: "Handelingen 8:26"
         },
@@ -2017,13 +2017,13 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij?",
-            antwoorden: ["Om naar huis te gaan", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om voor geld vrijgekocht te kunnen worden"],
+            antwoorden: ["Om door de Joodse raad in Jeruzalem zelf berecht te worden", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om voor geld vrijgekocht te kunnen worden"],
             correct: "Om zijn zaak door de keizer in Rome te laten behandelen",
             bijbelplaats: "Handelingen 25:11"
         },
         {
             vraag: "Een wijze leraar, Gamaliel, gaf de leiders advies over de apostelen. Wat zei hij?",
-            antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Straf hen meteen", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
+            antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Verbied hun voorgoed om ooit nog ergens over Jezus te spreken", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
             correct: "Laat hen met rust; als het van God komt, houd je het toch niet tegen",
             bijbelplaats: "Handelingen 5:34-39"
         }
@@ -2031,13 +2031,13 @@ vragenData["Handelingen"] = {
     expert: [
         {
             vraag: "Na het verraad van Judas moesten de elf apostelen iemand kiezen die zijn plaats zou innemen. Er bleven twee kandidaten over, en het werd Mattias. Maar hóe maakten zij die keuze?",
-            antwoorden: ["Ze baden, en lieten daarna het lot beslissen", "Ze lieten de hele gemeente stemmen", "Petrus wees hem persoonlijk aan", "Ze kozen de oudste van de twee"],
+            antwoorden: ["Ze baden, en lieten daarna het lot beslissen", "Ze lieten de hele gemeente stemmen", "Petrus wees hem persoonlijk aan", "Ze kozen degene die het langst met Jezus was meegereisd"],
             correct: "Ze baden, en lieten daarna het lot beslissen",
             bijbelplaats: "Handelingen 1:23-26"
         },
         {
             vraag: "Op de Pinksterdag was er ineens iets te horen en te zien. Wat?",
-            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Donker en stilte"],
+            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
             correct: "Een geluid als harde wind en vlammetjes als van vuur",
             bijbelplaats: "Handelingen 2:2-3"
         },
@@ -2049,7 +2049,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In de stad Joppe maakte Petrus een vrouw weer levend die veel goeds had gedaan voor arme mensen. Hoe heette zij?",
-            antwoorden: ["Maria", "Lydia", "Tabita (ook Dorkas genoemd)", "Marta"],
+            antwoorden: ["Maria", "Lydia, de vrouw die purperstof verkocht", "Tabita (ook Dorkas genoemd)", "Marta"],
             correct: "Tabita (ook Dorkas genoemd)",
             bijbelplaats: "Handelingen 9:36-41"
         },
@@ -2091,7 +2091,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Waar is Paulus aan het eind van het boek Handelingen?",
-            antwoorden: ["In Jeruzalem", "In Egypte", "In Rome, waar hij de mensen over Jezus vertelt", "Terug in zijn geboorteplaats Tarsus"],
+            antwoorden: ["In Jeruzalem", "Terug op reis door de steden van Klein-Azië", "In Rome, waar hij de mensen over Jezus vertelt", "Terug in zijn geboorteplaats Tarsus"],
             correct: "In Rome, waar hij de mensen over Jezus vertelt",
             bijbelplaats: "Handelingen 28:30-31"
         },
@@ -2109,7 +2109,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
-            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze viel flauw", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
+            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze dacht dat het zijn geest was en durfde de deur niet voor hem open te doen", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
             correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
             bijbelplaats: "Handelingen 12:13-14"
         },
