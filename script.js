@@ -578,31 +578,31 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Waarom moesten Jozef en Maria naar Betlehem reizen volgens Lucas?",
-                antwoorden: ["Voor een bruiloft", "Voor een volkstelling die keizer Augustus had bevolen", "Op vakantie", "Voor een tempelbezoek"],
+                antwoorden: ["Voor een bruiloft", "Voor een volkstelling die keizer Augustus had bevolen", "Op vakantie", "Voor het grote jaarlijkse feest in de tempel van Jeruzalem"],
                 correct: "Voor een volkstelling die keizer Augustus had bevolen",
                 bijbelplaats: "Lucas 2:1-5"
             },
             {
                 vraag: "Waarin werd het pasgeboren kindje Jezus gelegd?",
-                antwoorden: ["In een wieg", "Op een bed", "In een voederbak (kribbe)", "In een mand"],
+                antwoorden: ["In een wieg", "Op een bed", "In een voederbak (kribbe)", "In een mooi versierd houten wiegje"],
                 correct: "In een voederbak (kribbe)",
                 bijbelplaats: "Lucas 2:7"
             },
             {
                 vraag: "Aan wie verschenen de engelen om als eersten te vertellen dat Jezus geboren was?",
-                antwoorden: ["Aan koningen", "Aan priesters", "Aan herders in het veld", "Aan vissers"],
+                antwoorden: ["Aan koningen", "Aan priesters", "Aan herders in het veld", "Aan vissers aan de oever van een meer"],
                 correct: "Aan herders in het veld",
                 bijbelplaats: "Lucas 2:8-14"
             },
             {
                 vraag: "Wat deed Jezus toen hij twaalf jaar oud was, en zijn ouders hem na drie dagen zoeken terugvonden in Jeruzalem?",
-                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij was verdwaald", "Hij speelde met andere kinderen"],
+                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij hielp een timmerman in zijn werkplaats met het zagen en schaven van hout", "Hij speelde met andere kinderen"],
                 correct: "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen",
                 bijbelplaats: "Lucas 2:41-47"
             },
             {
                 vraag: "Wat gebeurde er toen Simon (Petrus) op aanwijzing van Jezus zijn netten uitwierp na een nacht zonder vangst?",
-                antwoorden: ["Niets, ze vingen niets", "Ze vingen zoveel vissen dat de netten dreigden te scheuren", "Ze vingen alleen kleine visjes", "Ze vingen één heel grote vis"],
+                antwoorden: ["Ze vingen weer helemaal niets, precies zoals de hele nacht ervoor", "Ze vingen zoveel vissen dat de netten dreigden te scheuren", "Ze vingen alleen kleine visjes", "Ze vingen één heel grote vis"],
                 correct: "Ze vingen zoveel vissen dat de netten dreigden te scheuren",
                 bijbelplaats: "Lucas 5:1-7"
             },
@@ -658,19 +658,19 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deed Zacheüs nadat Jezus bij hem te gast was geweest?",
-                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij ging weg", "Hij hield alles voor zichzelf", "Hij werd priester"],
+                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij hield alles voor zichzelf", "Hij werd priester"],
                 correct: "Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst",
                 bijbelplaats: "Lucas 19:8"
             },
             {
                 vraag: "Wat zei Jezus tegen één van de misdadigers die naast hem was gekruisigd en die om hem vroeg?",
-                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Het is te laat voor jou", "Daar kan ik nu niets aan doen"],
+                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan mij", "Daar kan ik nu niets aan doen"],
                 correct: "Vandaag zul je met mij in het paradijs zijn",
                 bijbelplaats: "Lucas 23:43"
             },
             {
                 vraag: "Wat gebeurde er toen twee leerlingen op weg waren naar het dorp Emmaüs, na de opstanding?",
-                antwoorden: ["Ze ontmoetten engelen", "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
+                antwoorden: ["Ze zagen in de verte twee engelen die hun de weg naar huis wezen", "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
                 correct: "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak",
                 bijbelplaats: "Lucas 24:13-31"
             },
@@ -684,7 +684,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         expert: [
             {
             vraag: "Lucas begint zijn evangelie met een korte opdracht aan een man die Theofilus heet. Daarin legt hij uit waarom hij dit boek geschreven heeft: hij heeft alles zorgvuldig nagegaan en met ooggetuigen gesproken. Wat wilde Lucas daarmee bereiken?",
-            antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem geld zou geven voor zijn reizen", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
+            antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
             correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
             bijbelplaats: "Lucas 1:1-4"
         },
@@ -708,7 +708,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat overkwam Zacharias toen hij de engel Gabriël niet geloofde over de geboorte van zijn zoon?",
-                antwoorden: ["Hij werd blind", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw", "Hij werd ziek"],
+                antwoorden: ["Hij werd blind", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw", "Hij kon niet meer horen totdat het kind een naam had gekregen"],
                 correct: "Hij kon niet meer spreken tot zijn zoon werd geboren",
                 bijbelplaats: "Lucas 1:18-22"
             },
@@ -1101,13 +1101,13 @@ vragenData["Marcus"].expert.push(
 vragenData["Lucas"].beginner.push(
     {
         vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
-        antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lied", "Een gebed", "Een wet"],
+        antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
         correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
         bijbelplaats: "Lucas 15 (o.a. de verloren zoon)"
     },
     {
         vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
-        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Een berg beklimmen", "Een schat verstoppen", "Een brief verscheuren"],
+        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
         correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
         bijbelplaats: "Lucas 15:18"
     }
@@ -1121,13 +1121,13 @@ vragenData["Lucas"].advanced.push(
     },
     {
         vraag: "Wat was een synagoge?",
-        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "Het paleis waar de koning woonde", "De grote markt waar handelaren verkochten", "Het huis waar de hogepriester offerde"],
+        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "De grote tempel in Jeruzalem waar de priesters elke dag opnieuw de dieren aan God offerden", "De grote markt waar handelaren verkochten", "Het huis waar de hogepriester offerde"],
         correct: "Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren",
         bijbelplaats: "Lucas 4:16"
     },
     {
         vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
-        antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De geboorte van koning David"],
+        antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
         correct: "De bevrijding uit de slavernij in Egypte",
         bijbelplaats: "Lucas 22 (het Laatste Avondmaal was een Pesachmaaltijd)"
     }
@@ -2233,19 +2233,19 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus maakte veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
-            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie", "Hij bleef veilig thuis", "Hij werd koning"],
+            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie", "Hij bleef veilig thuis", "Hij mocht rustig in een mooi groot paleis wonen"],
             correct: "Hij leed schipbreuk en was vaak in gevaar",
             bijbelplaats: "2 Korintiërs 11:25-26"
         },
         {
             vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie?",
-            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor niemand"],
+            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor de keizer en de machtige leiders van het land"],
             correct: "Voor God, om hem eer te geven",
             bijbelplaats: "1 Korintiërs 10:31"
         },
         {
             vraag: "Over de gaven (talenten) in de gemeente zegt Paulus: er zijn er veel, maar...",
-            antwoorden: ["ze komen allemaal van dezelfde Geest", "alleen Paulus heeft ze", "ze zijn niet belangrijk", "je moet ze kopen"],
+            antwoorden: ["ze komen allemaal van dezelfde Geest", "alleen Paulus heeft ze", "ze zijn niet belangrijk", "je krijgt ze pas als je heel oud bent geworden"],
             correct: "ze komen allemaal van dezelfde Geest",
             bijbelplaats: "1 Korintiërs 12:4"
         },
@@ -2257,13 +2257,13 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus noemt de gelovigen \"gezanten\" (boodschappers) van Christus. Wat is hun taak?",
-            antwoorden: ["Oorlog voeren", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Alleen reizen"],
+            antwoorden: ["De mensen dwingen om voortaan in Jezus te geloven", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Alleen reizen"],
             correct: "Namens Christus mensen oproepen om vrede met God te sluiten",
             bijbelplaats: "2 Korintiërs 5:20"
         },
         {
             vraag: "Wat raadt Paulus de gelovigen aan om te doen, om dichtbij God te blijven?",
-            antwoorden: ["Anderen veroordelen", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken", "Alleen aan zichzelf denken"],
+            antwoorden: ["Zoveel mogelijk goede daden aan iedereen laten zien", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken", "Alleen aan zichzelf denken"],
             correct: "Zichzelf eerlijk onderzoeken in het geloof",
             bijbelplaats: "2 Korintiërs 13:5"
         },
@@ -2275,7 +2275,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Waar gaat 1 Korintiërs 15 vooral over, het hart van het geloof?",
-            antwoorden: ["Dat Paulus beroemd werd", "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan", "Over het weer in Korinte", "Over een grote reis"],
+            antwoorden: ["Dat Paulus beroemd werd", "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan", "Over het weer in Korinte", "Dat Paulus binnenkort weer op reis zou gaan naar verre landen"],
             correct: "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan",
             bijbelplaats: "1 Korintiërs 15:20-22"
         }
@@ -2283,25 +2283,25 @@ vragenData["1 & 2 Korintiërs"] = {
     advanced: [
         {
             vraag: "Paulus vergelijkt het geloof met een wedstrijd. Wat moet je doen om de prijs te winnen?",
-            antwoorden: ["Stoppen halverwege", "Wachten op anderen", "Doorzetten, net als een hardloper die doorrent", "Opgeven"],
+            antwoorden: ["Stoppen halverwege", "Wachten op anderen", "Doorzetten, net als een hardloper die doorrent", "Alleen meedoen als je zeker weet dat je zult winnen"],
             correct: "Doorzetten, net als een hardloper die doorrent",
             bijbelplaats: "1 Korintiërs 9:24"
         },
         {
             vraag: "Paulus zegt aan het eind: blijf waakzaam en sterk. Wat raadt hij aan?",
-            antwoorden: ["Geef snel op", "Sta vast in het geloof en wees moedig", "Doe maar wat", "Vertrouw op niemand"],
+            antwoorden: ["Geef snel op", "Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand"],
             correct: "Sta vast in het geloof en wees moedig",
             bijbelplaats: "1 Korintiërs 16:13"
         },
         {
             vraag: "Paulus en de gelovigen spaarden geld op om iets goeds te doen. Waarvoor?",
-            antwoorden: ["Om een paleis te bouwen", "Om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een schip te kopen"],
+            antwoorden: ["Om een paleis te bouwen", "Om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een groot nieuw schip te kopen voor hun reizen"],
             correct: "Om arme gelovigen in Jeruzalem te helpen",
             bijbelplaats: "1 Korintiërs 16:1-3"
         },
         {
             vraag: "De mensen in Korinte kozen partij: \"ik ben van Paulus\", \"ik ben van Apollos\". Wat vond Paulus daarvan?",
-            antwoorden: ["Dat het goed was", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze voor hem moesten kiezen", "Dat het niet uitmaakte"],
+            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze voor hem moesten kiezen", "Dat het niet uitmaakte"],
             correct: "Dat ze juist één moesten zijn, niet verdeeld",
             bijbelplaats: "1 Korintiërs 1:12-13"
         },
@@ -2319,7 +2319,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het laatste avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
-            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tocht van het volk door de woestijn", "Om een gewoon feestmaal"],
+            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tocht van het volk door de woestijn", "Om God te danken voor de oogst en het dagelijkse eten"],
             correct: "Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven",
             bijbelplaats: "1 Korintiërs 11:23-26"
         },
@@ -2331,7 +2331,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat gelovigen leven door op God te vertrouwen, en niet door iets anders. Waardoor niet?",
-            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door heel slim te zijn"],
+            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door alles wat de wereld hun te bieden heeft"],
             correct: "Door wat ze met hun ogen kunnen zien",
             bijbelplaats: "2 Korintiërs 5:7"
         },
@@ -2349,7 +2349,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
-            antwoorden: ["Over zijn geld", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over zijn reizen"],
+            antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over zijn reizen"],
             correct: "Over de Heer en over wat God door hem doet",
             bijbelplaats: "2 Korintiërs 10:17"
         },
@@ -2361,13 +2361,13 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Wat zegt Paulus over de zwakste of minste delen van het lichaam?",
-            antwoorden: ["Ze tellen niet mee", "Ze mogen weg", "Ze zijn juist heel belangrijk en nodig", "Ze worden nooit gezien"],
+            antwoorden: ["Ze tellen niet mee", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze worden nooit gezien"],
             correct: "Ze zijn juist heel belangrijk en nodig",
             bijbelplaats: "1 Korintiërs 12:22"
         },
         {
             vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van hem houden. Hoe bijzonder is dat?",
-            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Heel gewoon", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
+            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
             correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
             bijbelplaats: "1 Korintiërs 2:9"
         }
@@ -2381,7 +2381,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat we nu nog niet alles begrijpen, maar later wel. Waarmee vergelijkt hij dat?",
-            antwoorden: ["Met een dichte deur", "Met kijken in een wazige spiegel", "Met een diepe slaap", "Met een lange reis"],
+            antwoorden: ["Met een boek in een taal die je nog niet kent", "Met kijken in een wazige spiegel", "Met een diepe slaap", "Met een lange reis"],
             correct: "Met kijken in een wazige spiegel",
             bijbelplaats: "1 Korintiërs 13:12"
         },
@@ -2393,7 +2393,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus eindigt 2 Korintiërs met een zegen. Wat wenst hij de gelovigen toe?",
-            antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Veel geld en macht", "Een lang leven vol roem", "Een grote reis"],
+            antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Veel geld en macht", "Een lang leven vol roem", "Zoveel wijsheid dat ze slimmer worden dan alle andere gelovigen"],
             correct: "De genade van Jezus, de liefde van God en de verbondenheid van de Geest",
             bijbelplaats: "2 Korintiërs 13:14"
         },
@@ -2423,7 +2423,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Wat zegt Paulus over zwak en sterk zijn, dat verrassend klinkt?",
-            antwoorden: ["Alleen de sterkste telt", "Juist als ik zwak ben, ben ik sterk (door God)", "Zwak zijn is altijd slecht", "Sterk zijn is genoeg"],
+            antwoorden: ["Alleen de sterkste telt", "Juist als ik zwak ben, ben ik sterk (door God)", "Zwak zijn is altijd slecht", "Wie sterk genoeg is, heeft God helemaal niet meer nodig"],
             correct: "Juist als ik zwak ben, ben ik sterk (door God)",
             bijbelplaats: "2 Korintiërs 12:10"
         },
@@ -2469,13 +2469,13 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat deed Paulus met de christenen voordat hij zelf in Jezus ging geloven?",
-            antwoorden: ["Hij vervolgde hen en deed hun kwaad", "Hij hielp hen", "Hij kende hen nog niet", "Hij nodigde hen uit"],
+            antwoorden: ["Hij vervolgde hen en deed hun kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet", "Hij nodigde hen uit"],
             correct: "Hij vervolgde hen en deed hun kwaad",
             bijbelplaats: "Galaten 1:13"
         },
         {
             vraag: "Wat is volgens Paulus het goede nieuws dat hij brengt?",
-            antwoorden: ["Dat je heel rijk moet worden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen", "Dat je alles alleen moet doen"],
+            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen", "Dat je alles alleen moet doen"],
             correct: "Dat je bij God mág horen door op Jezus te vertrouwen",
             bijbelplaats: "Galaten 2:16"
         },
@@ -2487,7 +2487,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft dat het bij God niet uitmaakt wie je bent. Wat bedoelt hij?",
-            antwoorden: ["Alleen rijke mensen tellen mee", "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij", "Alleen sterke mensen horen erbij", "Alleen mensen uit Galatië"],
+            antwoorden: ["Alleen wie uit Joodse ouders geboren is, mag bij God horen", "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij", "Alleen sterke mensen horen erbij", "Alleen mensen uit Galatië"],
             correct: "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij",
             bijbelplaats: "Galaten 3:28"
         },
@@ -2537,13 +2537,13 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat raadt Paulus aan als iemand anders het moeilijk heeft?",
-            antwoorden: ["Loop eromheen", "Help elkaar en draag elkaars lasten", "Lach hem uit", "Doe alsof je niets ziet"],
+            antwoorden: ["Loop eromheen", "Help elkaar en draag elkaars lasten", "Wacht rustig af tot het probleem vanzelf weer overgaat", "Doe alsof je niets ziet"],
             correct: "Help elkaar en draag elkaars lasten",
             bijbelplaats: "Galaten 6:2"
         },
         {
             vraag: "Paulus gebruikt het beeld van zaaien en oogsten. Wat bedoelt hij ongeveer?",
-            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet boer worden", "Als je veel oogst, kan je veel eten", "Het maakt niet uit wat je doet"],
+            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet vooral in het juiste seizoen zaaien en oogsten", "Als je veel oogst, kan je veel eten", "Het maakt niet uit wat je doet"],
             correct: "Wat je doet, heeft gevolgen; doe daarom het goede",
             bijbelplaats: "Galaten 6:7-9"
         },
@@ -2573,7 +2573,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
-            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Alleen mensen die heel oud worden horen erbij", "Alleen mensen die heel sterk zijn horen erbij", "Alleen belangrijke mensen mogen bij God horen"],
+            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Alleen de mensen die rechtstreeks van Abraham afstammen tellen mee", "Alleen mensen die heel sterk zijn horen erbij", "Alleen belangrijke mensen mogen bij God horen"],
             correct: "Ook wij mogen bij God horen door te geloven, net als Abraham",
             bijbelplaats: "Galaten 3:6-7"
         },
@@ -2603,7 +2603,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat zegt Paulus over opscheppen — waar mag je volgens hem alleen trots op zijn?",
-            antwoorden: ["Op je eigen kracht", "Op je eigen slimheid", "Op wat Jezus voor ons heeft gedaan", "Op je reizen"],
+            antwoorden: ["Op je eigen kracht", "Op je eigen slimheid", "Op wat Jezus voor ons heeft gedaan", "Op alle goede daden die je zelf hebt gedaan"],
             correct: "Op wat Jezus voor ons heeft gedaan",
             bijbelplaats: "Galaten 6:14"
         }
@@ -2623,19 +2623,19 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "In Antiochië sprak Paulus Petrus openlijk tegen. Wat was er gebeurd?",
-            antwoorden: ["Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug", "Petrus wilde het goede nieuws alleen nog aan Joden vertellen", "Petrus stuurde de niet-Joodse gelovigen weg uit de gemeente", "Petrus beweerde dat hij een grotere apostel was dan Paulus"],
+            antwoorden: ["Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug", "Petrus wilde het goede nieuws alleen nog aan Joden vertellen", "Petrus stuurde de niet-Joodse gelovigen weg uit de gemeente", "Petrus zei openlijk dat Paulus geen echte apostel van Jezus genoemd mocht worden"],
             correct: "Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug",
             bijbelplaats: "Galaten 2:11-14"
         },
         {
             vraag: "Paulus vraagt verbaasd: \"Wie heeft jullie betoverd?\" Waarom is hij zo verbaasd?",
-            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden onderling ruzie gekregen over geld", "Ze wilden geen brieven meer van hem lezen"],
+            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden onderling ruzie gekregen over geld", "Ze meenden nu dat ze zichzelf konden redden door zich alleen maar heel streng aan alle regels te houden"],
             correct: "Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen",
             bijbelplaats: "Galaten 3:1-3"
         },
         {
             vraag: "Paulus gebruikt Abraham als voorbeeld van hoe je bij God hoort. Wat maakt Abraham juist tot dat voorbeeld?",
-            antwoorden: ["Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend", "Hij hield zich al precies aan de hele wet van Mozes", "Hij was heel rijk en machtig en had veel bezit", "Hij stamde rechtstreeks af van koning David"],
+            antwoorden: ["Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend", "Hij hield zich al precies aan de hele wet van Mozes", "Hij was heel rijk en machtig en had veel bezit", "Hij bouwde met zijn eigen handen de allereerste tempel voor God in Jeruzalem"],
             correct: "Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend",
             bijbelplaats: "Galaten 3:6-7"
         },
@@ -2653,7 +2653,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat je geen slaaf meer bent, maar een kind van God. Wat hoort daar volgens hem ook bij?",
-            antwoorden: ["Je bent erfgenaam: alles wat God belooft, is ook voor jou", "Je bent nu de baas over anderen", "Je hoeft niets meer te doen", "Je bent beter dan anderen"],
+            antwoorden: ["Je bent erfgenaam: alles wat God belooft, is ook voor jou", "Je bent nu de baas over anderen", "Je hoeft niets meer te doen", "Je staat nu een stuk hoger dan de mensen die de wet nog volgen"],
             correct: "Je bent erfgenaam: alles wat God belooft, is ook voor jou",
             bijbelplaats: "Galaten 4:7"
         },
@@ -2671,19 +2671,19 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt met het beeld van zaaien en oogsten dat je op twee manieren kunt leven. Welke twee?",
-            antwoorden: ["Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt veel óf weinig zaaien"],
+            antwoorden: ["Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt op vruchtbare grond zaaien óf juist op de harde, droge grond ernaast"],
             correct: "Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest",
             bijbelplaats: "Galaten 6:7-8"
         },
         {
             vraag: "Aan het eind schrijft Paulus iets opvallends over hóe hij dit deel van de brief schrijft. Wat?",
-            antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "In een andere taal"],
+            antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "Met de hand van iemand anders die het voor hem opschreef"],
             correct: "Met grote letters, met zijn eigen hand",
             bijbelplaats: "Galaten 6:11"
         },
         {
             vraag: "Wat zegt Paulus dat écht telt, belangrijker dan of je je aan bepaalde regels houdt?",
-            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Uit welk land je komt", "Hoe sterk je bent"],
+            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Uit welk land je komt", "Hoeveel regels van de wet je precies volgt"],
             correct: "Dat je een nieuwe schepping bent",
             bijbelplaats: "Galaten 6:15"
         }
@@ -3809,7 +3809,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe moeten de gelovigen elkaar behandelen als iemand iets verkeerd doet?",
-            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Het meteen vergeten", "Gewoon de ander terugpakken"],
+            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Doen alsof er helemaal niets gebeurd is", "Gewoon de ander terugpakken"],
             correct: "Elkaar vergeven, zoals de Heer hen vergaf",
             bijbelplaats: "Kolossenzen 3:13"
         },
@@ -3821,7 +3821,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat voor soort tekst is de brief aan Filemon?",
-            antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een lied", "Een gebed"],
+            antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een verslag van een van de grote reizen", "Een gebed"],
             correct: "Een korte, persoonlijke brief",
             bijbelplaats: "Filemon 1"
         },
@@ -3833,7 +3833,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus laten \"heersen\" in hun hart?",
-            antwoorden: ["De vrede van Christus", "De boosheid", "De angst", "De jaloezie"],
+            antwoorden: ["De vrede van Christus", "De boosheid", "De strijd tegen andere gelovigen", "De jaloezie"],
             correct: "De vrede van Christus",
             bijbelplaats: "Kolossenzen 3:15"
         },
@@ -3845,19 +3845,19 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Onesimus was bij Paulus in de gevangenis gaan geloven. Hoe noemt Paulus hem daarom?",
-            antwoorden: ["Zijn kind, dat in de gevangenis \"geboren\" werd", "Zijn dienaar", "Zijn leerling", "Zijn bewaker"],
+            antwoorden: ["Zijn kind, dat in de gevangenis \"geboren\" werd", "Zijn dienaar", "Zijn leerling", "Zijn medegevangene die ook op straf wachtte"],
             correct: "Zijn kind, dat in de gevangenis \"geboren\" werd",
             bijbelplaats: "Filemon 10"
         },
         {
             vraag: "Hoe moeten de gelovigen volgens Paulus zingen tot God?",
-            antwoorden: ["Met psalmen en liederen, dankbaar in hun hart", "Alleen in het Latijn", "Zo hard mogelijk", "Alleen op feestdagen"],
+            antwoorden: ["Met psalmen en liederen, dankbaar in hun hart", "Alleen in het Latijn", "Alleen in de tempel en nergens anders", "Alleen op feestdagen"],
             correct: "Met psalmen en liederen, dankbaar in hun hart",
             bijbelplaats: "Kolossenzen 3:16"
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus uit hun oude leven wegdoen?",
-            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Hun bezittingen", "Contact met niet-gelovigen"],
+            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Elk contact met mensen die anders geloven", "Contact met niet-gelovigen"],
             correct: "Slechte dingen zoals jaloezie en woede",
             bijbelplaats: "Kolossenzen 3:8"
         },
@@ -3889,13 +3889,13 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat vraagt Paulus aan Filemon over Onesimus?",
-            antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem te vergeten"],
+            antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem streng te straffen voor zijn weglopen"],
             correct: "Om hem terug te ontvangen als een broeder",
             bijbelplaats: "Filemon 17"
         },
         {
             vraag: "De naam Onesimus betekent \"nuttig\". Welke woordgrap maakt Paulus daarmee?",
-            antwoorden: ["Vroeger was hij onbruikbaar, nu juist heel bruikbaar", "Hij was altijd al nuttig", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
+            antwoorden: ["Vroeger was hij onbruikbaar, nu juist heel bruikbaar", "Hij zou zijn naam pas veel later helemaal waarmaken", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
             correct: "Vroeger was hij onbruikbaar, nu juist heel bruikbaar",
             bijbelplaats: "Filemon 11"
         },
@@ -3907,7 +3907,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe noemt Paulus zichzelf in de brief aan Filemon — niet als koning, maar als?",
-            antwoorden: ["Een gevangene van Christus", "Een rechter", "Een soldaat", "Een koopman"],
+            antwoorden: ["Een gevangene van Christus", "Een rechter", "Een soldaat", "Een machtige leraar van de wet"],
             correct: "Een gevangene van Christus",
             bijbelplaats: "Filemon 1"
         },
@@ -3925,7 +3925,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus zegt dat God de gelovigen heeft overgebracht van het ene rijk naar het andere. Van welk naar welk?",
-            antwoorden: ["Van de duisternis naar het rijk van Gods Zoon", "Van Egypte naar het beloofde land", "Van Rome naar Jeruzalem", "Van de tempel naar de hemel"],
+            antwoorden: ["Van de duisternis naar het rijk van Gods Zoon", "Van Egypte naar het beloofde land", "Van het land van de vijand naar het huis van de koning", "Van de tempel naar de hemel"],
             correct: "Van de duisternis naar het rijk van Gods Zoon",
             bijbelplaats: "Kolossenzen 1:13"
         },
@@ -3939,7 +3939,7 @@ vragenData["Kolossenzen & Filemon"] = {
     expert: [
         {
             vraag: "Paulus schrijft deze brief aan een gemeente die hij zelf nooit heeft bezocht. Epafras, een man uit Kolosse, had daar het goede nieuws gebracht en was daarna naar Paulus gereisd om verslag te doen. Wat betekent dat voor Paulus' band met de Kolossenzen?",
-            antwoorden: ["Hij had de meesten van hen nog nooit ontmoet", "Hij had de gemeente zelf gesticht", "Hij had er jarenlang gewoond", "Hij was er opgegroeid"],
+            antwoorden: ["Hij had de meesten van hen nog nooit ontmoet", "Hij had de gemeente zelf gesticht", "Hij had er jarenlang gewoond", "Hij kende iedereen daar al vanaf zijn jeugd"],
             correct: "Hij had de meesten van hen nog nooit ontmoet",
             bijbelplaats: "Kolossenzen 1:7 en 2:1"
         },
@@ -3957,7 +3957,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus vertelt dat God een geheim had, dat eeuwenlang verborgen bleef voor alle generaties. Nu is het eindelijk bekendgemaakt, en het bleek geen ingewikkelde formule te zijn. Wat is dat geheim?",
-            antwoorden: ["Christus is in jullie, en dat is de hoop op Gods heerlijkheid", "De dag waarop Jezus terugkomt", "Waar de ark van het verbond verstopt is", "De namen van alle engelen"],
+            antwoorden: ["Christus is in jullie, en dat is de hoop op Gods heerlijkheid", "De dag waarop Jezus terugkomt", "Waar de ark van het verbond verstopt is", "Een geheime formule waarmee je zelf allerlei wonderen kunt verrichten"],
             correct: "Christus is in jullie, en dat is de hoop op Gods heerlijkheid",
             bijbelplaats: "Kolossenzen 1:27"
         },
@@ -3969,7 +3969,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus is bang dat de Kolossenzen zich laten inpakken. Hij waarschuwt hen zoals een herder die een wolf ziet aankomen: let op dat niemand jullie als buit meesleept. Waarmee zouden die mensen hen meeslepen?",
-            antwoorden: ["Met filosofie en holle woorden van mensen", "Met geld en cadeaus", "Met soldaten van de keizer", "Met valse wonderen"],
+            antwoorden: ["Met filosofie en holle woorden van mensen", "Met mooie beloften over rijkdom en macht", "Met soldaten van de keizer", "Met valse wonderen"],
             correct: "Met filosofie en holle woorden van mensen",
             bijbelplaats: "Kolossenzen 2:8"
         },
@@ -3981,7 +3981,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In een enkele zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
-            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
+            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God bewaart het zorgvuldig tot de dag van het oordeel"],
             correct: "God heeft het doorgestreept en aan het kruis genageld",
             bijbelplaats: "Kolossenzen 2:14"
         },
@@ -4011,7 +4011,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus geeft raad over hoe je omgaat met mensen die niet geloven: wees wijs en gebruik je tijd goed. En dan zegt hij ook nog iets over de manier waarop je praat. Hoe moet je spreken?",
-            antwoorden: ["Vriendelijk, en als het ware gekruid met zout", "Streng, als een rechter", "Zwijgzaam, zo min mogelijk", "Luid, zodat iedereen het hoort"],
+            antwoorden: ["Vriendelijk, en als het ware gekruid met zout", "Streng en hard, zodat ze meteen ontzag voor je hebben", "Zwijgzaam, zo min mogelijk", "Luid, zodat iedereen het hoort"],
             correct: "Vriendelijk, en als het ware gekruid met zout",
             bijbelplaats: "Kolossenzen 4:6"
         },
@@ -4047,19 +4047,19 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus had Onesimus makkelijk bij zich kunnen houden, want hij had veel aan hem. Toch stuurt hij hem terug, en hij wil niets beslissen zonder Filemon eerst te vragen. Waarom niet?",
-            antwoorden: ["Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen", "Omdat hij zelf niet wist wat het beste was", "Omdat hij bang was dat Filemon naar de rechter zou stappen", "Omdat hij er geen mening over had"],
+            antwoorden: ["Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen", "Omdat hij zelf niet wist wat het beste was", "Omdat hij bang was dat Filemon naar de rechter zou stappen", "Omdat hij bang was dat Filemon anders juist heel erg boos op hem zou worden"],
             correct: "Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen",
             bijbelplaats: "Filemon 14"
         },
         {
             vraag: "Onesimus was weggelopen bij zijn meester, en dat was in die tijd een ernstige misdaad. Toch schrijft Paulus voorzichtig dat er misschien iets goeds in schuilt. Wat oppert hij?",
-            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij zo de wereld kon zien", "Dat hij Filemon een lesje wilde leren"],
+            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij op zijn vlucht veel van de grote wijde wereld heeft gezien", "Dat hij Filemon een lesje wilde leren"],
             correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder",
             bijbelplaats: "Filemon 15-16"
         },
         {
             vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
-            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon boos zou worden", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
+            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zijn verzoek zonder meer zou weigeren", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
             correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
             bijbelplaats: "Filemon 21"
         }
