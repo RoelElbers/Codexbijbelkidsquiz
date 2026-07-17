@@ -4213,7 +4213,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Waarmee vergelijkt Hebreeën het woord van God, omdat het scherp is en diep in je hart kan kijken?",
-            antwoorden: ["Een tweesnijdend zwaard", "Een spiegel", "Een lamp", "Een sleutel"],
+            antwoorden: ["Een tweesnijdend zwaard", "Een spiegel", "Een fel brandende fakkel in het donker", "Een sleutel"],
             correct: "Een tweesnijdend zwaard",
             bijbelplaats: "Hebreeën 4:12"
         },
@@ -4273,7 +4273,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken?",
-            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Aan mensen die veel hebben gegeven", "Aan de leiders van de gemeente", "Aan mensen die ver weg op reis zijn"],
+            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Aan de mensen die al veel geld aan de armen gaven", "Aan de leiders van de gemeente", "Aan mensen die ver weg op reis zijn"],
             correct: "Aan mensen die gevangenzitten en slecht behandeld worden",
             bijbelplaats: "Hebreeën 13:3"
         },
@@ -4483,7 +4483,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus waarschuwt: behandel een rijke bezoeker niet beter dan een arme. Welke fout maak je dan?",
-            antwoorden: ["Je bent partijdig en trekt mensen voor", "Je bent te gastvrij", "Je bent te stil", "Je bent te vrijgevig"],
+            antwoorden: ["Je bent partijdig en trekt mensen voor", "Je bent te gastvrij", "Je vergeet om je gasten iets te drinken aan te bieden", "Je bent te vrijgevig"],
             correct: "Je bent partijdig en trekt mensen voor",
             bijbelplaats: "Jakobus 2:1-4"
         },
@@ -4513,7 +4513,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus zegt: wie God iets vraagt maar blijft twijfelen, lijkt op …",
-            antwoorden: ["een golf van de zee die heen en weer wordt geslingerd", "een sterke rots in de branding", "een rechte, vaste weg", "een rustige, stille vijver"],
+            antwoorden: ["een golf van de zee die heen en weer wordt geslingerd", "een sterke rots in de branding", "een anker dat het schip stevig op zijn plek houdt", "een rustige, stille vijver"],
             correct: "een golf van de zee die heen en weer wordt geslingerd",
             bijbelplaats: "Jakobus 1:6"
         },
@@ -4531,7 +4531,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus vraagt: ben je wijs? Waaraan moet dat volgens hem te zien zijn?",
-            antwoorden: ["Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed", "Aan dat je in elk gesprek je gelijk haalt", "Aan dat je anderen op hun fouten wijst", "Aan dat mensen graag naar je luisteren"],
+            antwoorden: ["Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed", "Aan dat je in elk gesprek je gelijk haalt", "Aan dat je anderen op hun fouten wijst", "Aan hoeveel mensen jouw wijze raad komen vragen"],
             correct: "Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed",
             bijbelplaats: "Jakobus 3:13"
         }
@@ -4551,7 +4551,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus zegt: wees niet te zeker over morgen, want je weet niet wat er gebeurt. Waarmee vergelijkt hij ons leven?",
-            antwoorden: ["Met damp die even verschijnt en weer verdwijnt", "Met een sterke berg", "Met een diepe zee", "Met een oude boom"],
+            antwoorden: ["Met damp die even verschijnt en weer verdwijnt", "Met een sterke berg", "Met een diepe zee", "Met een ster die eeuwig aan de hemel blijft staan"],
             correct: "Met damp die even verschijnt en weer verdwijnt",
             bijbelplaats: "Jakobus 4:14"
         },
@@ -4798,7 +4798,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Hoe noemt Petrus alle gelovigen samen?",
-            antwoorden: ["Een uitgekozen volk, een koninklijk priesterschap", "Een groep vreemden", "Een leger soldaten", "Een klas vol leerlingen"],
+            antwoorden: ["Een uitgekozen volk, een koninklijk priesterschap", "Een grote verzameling gewone mensen uit alle landen", "Een leger soldaten", "Een klas vol leerlingen"],
             correct: "Een uitgekozen volk, een koninklijk priesterschap",
             bijbelplaats: "1 Petrus 2:9"
         },
@@ -4810,7 +4810,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft dat hij met eigen ogen de glorie van Jezus zag, op een hoge berg. Wat hoorde hij daar?",
-            antwoorden: ["De stem van God uit de hemel", "Een engelenkoor", "Donder en bliksem", "Helemaal niets"],
+            antwoorden: ["De stem van God uit de hemel", "Een engelenkoor", "Donder en bliksem", "Het geluid van machtige bazuinen"],
             correct: "De stem van God uit de hemel",
             bijbelplaats: "2 Petrus 1:17-18"
         },
@@ -4822,7 +4822,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
-            antwoorden: ["\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"De profeten hebben zich vergist.\""],
+            antwoorden: ["\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
             correct: "\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"",
             bijbelplaats: "2 Petrus 3:3-4"
         },
@@ -4972,7 +4972,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes sluit zijn eerste brief af met een korte, krachtige waarschuwing. Waarvoor moeten de gelovigen oppassen?",
-            antwoorden: ["Voor afgoden (nepgoden die mensen aanbidden)", "Voor wilde dieren", "Voor lange reizen", "Voor drukke steden"],
+            antwoorden: ["Voor afgoden (nepgoden die mensen aanbidden)", "Voor wilde dieren", "Voor lange reizen", "Voor de soldaten van de Romeinse keizer"],
             correct: "Voor afgoden (nepgoden die mensen aanbidden)",
             bijbelplaats: "1 Johannes 5:21"
         },
@@ -4984,7 +4984,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee?",
-            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de wereld slecht geschapen is", "Dat gelovigen niets mogen bezitten", "Dat de wereld binnenkort door vuur vergaat"],
+            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de mensen op aarde nooit echt gelukkig kunnen zijn", "Dat gelovigen niets mogen bezitten", "Dat de wereld binnenkort door vuur vergaat"],
             correct: "Dat alles wat de wereld te bieden heeft tijdelijk is",
             bijbelplaats: "1 Johannes 2:17"
         },
@@ -4996,7 +4996,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke?",
-            antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "Rijkdom, macht en roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
+            antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "De grote liefde voor geld, de jacht op macht en het verlangen naar roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
             correct: "De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed",
             bijbelplaats: "1 Johannes 2:16"
         },
@@ -5016,7 +5016,7 @@ vragenData["Brieven van Johannes"] = {
     expert: [
         {
             vraag: "Johannes begint zijn eerste brief niet met zijn naam, maar met een verrassende bewering. Hij wil duidelijk maken dat hij zijn verhaal niet van horen zeggen heeft. Wat zegt hij over het Woord van het leven?",
-            antwoorden: ["Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt", "Hij heeft over hem gedroomd", "Hij heeft het van Petrus gehoord", "Hij heeft het bij de profeten gelezen"],
+            antwoorden: ["Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt", "Hij heeft het in een visioen van een engel te horen gekregen", "Hij heeft het van Petrus gehoord", "Hij heeft het bij de profeten gelezen"],
             correct: "Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt",
             bijbelplaats: "1 Johannes 1:1"
         },
@@ -5034,7 +5034,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes noemt Jezus onze … bij de Vader: iemand die voor ons opkomt wanneer we toch verkeerd doen.",
-            antwoorden: ["voorspraak (helper)", "rechter", "soldaat", "dienaar"],
+            antwoorden: ["voorspraak (helper)", "rechter", "onze leraar en gids", "dienaar"],
             correct: "voorspraak (helper)",
             bijbelplaats: "1 Johannes 2:1"
         },
@@ -5058,7 +5058,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Een groep mensen had de gemeente verlaten. Dat deed pijn, en Johannes trekt er een harde conclusie uit. Wat schrijft hij over hen?",
-            antwoorden: ["Ze hoorden nooit echt bij ons, anders waren ze gebleven", "Ze komen vast weer terug", "Ze zijn met geweld weggejaagd", "Ze zijn gewoon naar een andere stad verhuisd"],
+            antwoorden: ["Ze hoorden nooit echt bij ons, anders waren ze gebleven", "Ze waren gewoon boos over een ruzie en komen vast weer terug", "Ze zijn met geweld weggejaagd", "Ze zijn gewoon naar een andere stad verhuisd"],
             correct: "Ze hoorden nooit echt bij ons, anders waren ze gebleven",
             bijbelplaats: "1 Johannes 2:19"
         },
@@ -5076,7 +5076,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes zegt dat je zeker kunt wéten dat je van de dood in het leven bent overgegaan. Waaraan merk je dat volgens hem?",
-            antwoorden: ["Aan het feit dat je je broeders en zusters liefhebt", "Dat je nooit meer bang bent", "Dat je wonderen kunt doen", "Dat je alle geboden kent"],
+            antwoorden: ["Aan het feit dat je je broeders en zusters liefhebt", "Dat je nooit meer bang bent", "Dat je wonderen kunt doen", "Aan het feit dat je alle regels van de wet uit je hoofd kent"],
             correct: "Aan het feit dat je je broeders en zusters liefhebt",
             bijbelplaats: "1 Johannes 3:14"
         },
@@ -5094,13 +5094,13 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes wil de gelovigen moed geven tegenover valse leraren. Hij wijst hen niet op hun eigen kracht of hun aantal, maar op iets anders. Wat schrijft hij?",
-            antwoorden: ["Hij die in jullie is, is groter dan hij die in de wereld is", "Jullie zijn met meer mensen dan zij", "Jullie zijn slimmer dan zij", "Jullie hebben betere argumenten dan zij"],
+            antwoorden: ["Hij die in jullie is, is groter dan hij die in de wereld is", "Jullie zijn met meer mensen dan zij", "Jullie kennen de heilige boeken veel beter dan zij dat doen", "Jullie hebben betere argumenten dan zij"],
             correct: "Hij die in jullie is, is groter dan hij die in de wereld is",
             bijbelplaats: "1 Johannes 4:4"
         },
         {
             vraag: "Johannes schrijft nuchter dat niemand God ooit heeft gezien. En tóch, zegt hij, is er iets waardoor God tussen de mensen zichtbaar wordt. Wanneer gebeurt dat volgens hem?",
-            antwoorden: ["Als wij elkaar liefhebben, blijft God in ons", "In de tempel in Jeruzalem", "In de sterren aan de hemel", "In de dromen van de profeten"],
+            antwoorden: ["Als wij elkaar liefhebben, blijft God in ons", "In de pracht van de natuur en de bergen om ons heen", "In de sterren aan de hemel", "In de dromen van de profeten"],
             correct: "Als wij elkaar liefhebben, blijft God in ons",
             bijbelplaats: "1 Johannes 4:12"
         },
@@ -5142,7 +5142,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "In zijn derde brief schrijft Johannes over Diotrefes, een man in de gemeente die altijd de eerste wilde zijn. Wat deed hij met rondreizende gelovigen die langskwamen?",
-            antwoorden: ["Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen betalen voor onderdak", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
+            antwoorden: ["Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen eerst flink betalen voordat ze ook maar ergens mochten overnachten", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
             correct: "Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit",
             bijbelplaats: "3 Johannes 9-10"
         },
@@ -5266,7 +5266,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Johannes is zo onder de indruk van de engel die hem alles laat zien, dat hij voor hem op de knieën valt om hem te aanbidden. Wat zegt de engel dan?",
-            antwoorden: ["‘Doe dat niet! Aanbid alleen God.’", "‘Goed zo, ga door.’", "‘Buig nog dieper.’", "‘Geef me een geschenk.’"],
+            antwoorden: ["‘Doe dat niet! Aanbid alleen God.’", "‘Goed zo, ga door.’", "‘Buig nog dieper.’", "‘Sta op en volg mij naar de hoge hemel.’"],
             correct: "‘Doe dat niet! Aanbid alleen God.’",
             bijbelplaats: "Openbaring 22:8-9"
         },
@@ -5376,7 +5376,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
-            antwoorden: ["Een kubus (een vierkant blok)", "Een bol", "Een piramide", "Een rechthoek"],
+            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide", "Een rechthoek"],
             correct: "Een kubus (een vierkant blok)",
             bijbelplaats: "Openbaring 21:16"
         },
