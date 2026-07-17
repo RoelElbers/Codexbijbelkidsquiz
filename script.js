@@ -7159,7 +7159,62 @@ function sluitBijbeltraining() {
 // Placeholders — worden in de volgende stappen ingevuld.
 function startOefenen() {
     document.getElementById("bijbeltraining-scherm").style.display = "none";
+    vulOefenBoeken();
     document.getElementById("oefen-boek-scherm").style.display = "flex";
+}
+
+// Vult het oefen-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v. alleen de
+// vier evangeliën die statisch in index.html staan). Defensief: het vindt de
+// bestaande boekknoppen via hun onclick (kiesOefenBoek) en neemt hun opmaak/plek
+// over; de Terug-knop blijft staan. Vindt het niets herkenbaars, dan laat het
+// het scherm ongemoeid. Bouwt maar één keer op (dataset-vlag) en maakt de lijst
+// scrollbaar, want 18 boeken passen anders niet zoals 4 dat deden.
+function vulOefenBoeken() {
+    const scherm = document.getElementById("oefen-boek-scherm");
+    if (!scherm) return;
+
+    // Ondertitel bijwerken: het zijn niet meer alleen evangeliën.
+    scherm.querySelectorAll("*").forEach((el) => {
+        if (el.children.length === 0 && el.textContent.trim() === "Kies een evangelie") {
+            el.textContent = "Kies een boek";
+        }
+    });
+
+    const knoppen = Array.from(scherm.querySelectorAll("button"));
+    const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesOefenBoek");
+    const isTerugKnop = (b) => (b.getAttribute("onclick") || "").includes("terugNaarBijbeltraining");
+
+    const boekKnoppen = knoppen.filter(isBoekKnop);
+    if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
+
+    const template = boekKnoppen[0];
+    const ouder = template.parentElement;
+    if (!ouder || ouder.dataset.oefenVol === "1") return;   // al aangevuld
+
+    const klasse = template.className;
+    const terugKnop = knoppen.find(isTerugKnop);
+
+    // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
+    boekKnoppen.forEach((b) => b.remove());
+
+    // Alle 18 boeken toevoegen, in de vaste volgorde van boekNaarKey, vóór Terug.
+    Object.keys(boekNaarKey).forEach((boek) => {
+        const knop = document.createElement("button");
+        knop.className = klasse;
+        knop.textContent = boek;
+        knop.onclick = () => kiesOefenBoek(boek);
+        if (terugKnop && terugKnop.parentElement === ouder) {
+            ouder.insertBefore(knop, terugKnop);
+        } else {
+            ouder.appendChild(knop);
+        }
+    });
+
+    // Lijst scrollbaar maken zodat alle boeken op één scherm passen.
+    ouder.style.maxHeight = "72vh";
+    ouder.style.overflowY = "auto";
+
+    ouder.dataset.oefenVol = "1";
 }
 function terugNaarBijbeltraining() {
     document.getElementById("oefen-boek-scherm").style.display = "none";
