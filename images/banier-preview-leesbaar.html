@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banier-golf preview — leesbare tekst</title>
+<style>
+  :root {
+    --banier-blauw:  #0e1a3a;
+    --banier-blauw2: #1a2c5c;
+    --goud:          #d9ad4e;
+    --goud-licht:    #f2d888;
+  }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 40px;
+    background: linear-gradient(180deg, #2a5a9e 0%, #4a82c4 45%, #cfe0f0 100%);
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  .toneel { display: flex; gap: 340px; align-items: flex-start; }
+
+  /* de wrapper positioneert doek + tekst over elkaar */
+  .banier {
+    position: relative; width: 130px; height: 200px;
+    transform-origin: top center; will-change: transform;
+    backface-visibility: hidden;
+  }
+
+  /* ---- laag 1: het DOEK (krijgt de golf) ---- */
+  .doek {
+    position: absolute; inset: 0;
+    background: linear-gradient(160deg, var(--banier-blauw2), var(--banier-blauw));
+    border: 2px solid var(--goud); border-radius: 4px 4px 0 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,.45), inset 0 0 18px rgba(0,0,0,.55);
+    will-change: filter;
+  }
+  .doek::after {
+    content: ""; position: absolute; left: -2px; right: -2px; bottom: -26px;
+    height: 26px; background: inherit; border: 2px solid var(--goud);
+    border-top: none; clip-path: polygon(0 0, 100% 0, 50% 100%);
+  }
+  .banier-links  .doek { filter: url(#golf-links); }
+  .banier-rechts .doek { filter: url(#golf-rechts); }
+
+  /* ---- laag 2: de TEKST (blijft scherp, deint alleen zacht) ---- */
+  .tekst {
+    position: absolute; inset: 0; padding: 26px 18px 40px;
+    color: var(--goud-licht); text-align: center; line-height: 1.35; font-size: 17px;
+    display: flex; flex-direction: column; align-items: center;
+    will-change: transform;
+  }
+  .vers { font-size: 12.5px; letter-spacing: .5px; margin-top: 14px; opacity: .9; }
+  .symbool { font-size: 20px; margin-top: 6px; }
+
+  /* zachte, leesbare deining voor de tekstlaag (translate, geen vervorming) */
+  @keyframes tekst-deining-a {
+    0%,100% { transform: translate(0, 0) rotate(-0.15deg); }
+    50%     { transform: translate(1.5px, -1px) rotate(0.15deg); }
+  }
+  @keyframes tekst-deining-b {
+    0%,100% { transform: translate(0, 0) rotate(0.15deg); }
+    50%     { transform: translate(-1.5px, -1px) rotate(-0.15deg); }
+  }
+  .banier-links  .tekst { animation: tekst-deining-a 6s   ease-in-out infinite; }
+  .banier-rechts .tekst { animation: tekst-deining-b 6.6s ease-in-out infinite; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .doek { filter: none; } .tekst { animation: none; }
+  }
+
+  .panel {
+    background: rgba(0,0,0,.35); color: #f2d888; padding: 14px 18px;
+    border-radius: 8px; display: flex; gap: 22px; align-items: center; font-size: 14px;
+  }
+  .panel label { display: flex; flex-direction: column; gap: 4px; }
+  .panel input { width: 130px; }
+  .panel button { background: var(--goud); border: none; padding: 8px 14px; border-radius: 6px; font-weight: bold; cursor: pointer; }
+  .hint { color:#e9d9a0; font-size:13px; max-width:520px; text-align:center; opacity:.85; }
+</style>
+</head>
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="golf-links" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence id="turb-links" type="fractalNoise" baseFrequency="0.010 0.045"
+                      numOctaves="2" seed="2" result="noise"/>
+        <feDisplacementMap id="disp-links" in="SourceGraphic" in2="noise" scale="10"
+                           xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="golf-rechts" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence id="turb-rechts" type="fractalNoise" baseFrequency="0.010 0.045"
+                      numOctaves="2" seed="7" result="noise"/>
+        <feDisplacementMap id="disp-rechts" in="SourceGraphic" in2="noise" scale="10"
+                           xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
+  <div class="toneel">
+    <div class="banier banier-links">
+      <div class="doek"></div>
+      <div class="tekst">
+        Jij bent het licht van de wereld.
+        <div class="vers">MATTEÜS 5:14</div>
+        <div class="symbool">✝</div>
+      </div>
+    </div>
+    <div class="banier banier-rechts">
+      <div class="doek"></div>
+      <div class="tekst">
+        Jij bent kostbaar in Mijn ogen en Ik heb je lief.
+        <div class="vers">JESAJA 43:4</div>
+        <div class="symbool">♥</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <label>golfdiepte doek
+      <input id="depth" type="range" min="0" max="24" step="1" value="10">
+    </label>
+    <label>snelheid
+      <input id="speed" type="range" min="0.2" max="3" step="0.1" value="1">
+    </label>
+    <button id="reset">Terug naar standaard</button>
+  </div>
+  <div class="hint">Alleen het doek rimpelt; de tekst ligt er als scherpe laag bovenop en deint zacht mee.</div>
+
+<script>
+  const dispL = document.getElementById('disp-links');
+  const dispR = document.getElementById('disp-rechts');
+  const turbL = document.getElementById('turb-links');
+  const turbR = document.getElementById('turb-rechts');
+  const depth = document.getElementById('depth');
+  const speed = document.getElementById('speed');
+
+  const baseX = 0.010, baseY = 0.045, ampX = 0.006;
+  let t = 0;
+  function tick() {
+    t += 0.016 * parseFloat(speed.value);
+    const d = depth.value;
+    dispL.setAttribute('scale', d);
+    dispR.setAttribute('scale', d);
+    const fxL = (baseX + ampX * Math.sin(t)).toFixed(4);
+    const fxR = (baseX + ampX * Math.sin(t + 2.1)).toFixed(4);
+    turbL.setAttribute('baseFrequency', `${fxL} ${baseY}`);
+    turbR.setAttribute('baseFrequency', `${fxR} ${baseY}`);
+    requestAnimationFrame(tick);
+  }
+  document.getElementById('reset').addEventListener('click', () => { depth.value = 10; speed.value = 1; });
+  requestAnimationFrame(tick);
+</script>
+</body>
+</html>

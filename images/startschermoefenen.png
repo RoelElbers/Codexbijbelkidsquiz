@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Gebruiker/Desktop/Codexbijbelkidsquiz/index.html -->
+<html lang="nl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bijbelkidsquiz</title>
+    <link rel="stylesheet" href="./startschermoefenen_files/style.css">
+</head>
+
+<body>
+
+    <div id="game-container">
+
+        <button id="fullscreen-btn" class="fullscreen-button" aria-label="Volledig scherm" title="Volledig scherm">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M8 21H5a2 2 0 0 1-2-2v-3M16 21h3a2 2 0 0 0 2-2v-3"></path>
+            </svg>
+        </button>
+
+        <!-- Avatar-frame linksboven: één doorzichtige plaat (avatarframe.png)
+             met de ronde gouden lijst plus het brede naamvak rechts en het
+             kleine naamvak eronder. De wrapper legt het frame over de
+             ingebakken ronde lijst én de oude "David / Geloofzoeker"-tekst.
+             De avatarfoto en de twee namen liggen er als kinderen bovenop en
+             zijn in % van deze wrapper geplaatst, zodat alles meeschaalt.
+             Positie/grootte fijnafstellen via de CSS-variabelen in style.css. -->
+        <div id="avatar-frame" class="avatar-frame">
+
+            <!-- Het frame zelf (onderste laag binnen de wrapper). -->
+            <img class="avatar-frame-img" src="./startschermoefenen_files/avatarframe.png" alt="">
+
+            <!-- Avatarfoto, rond bijgesneden in de ronde opening. Standaard
+                 Mozes; verandert via het Nieuw-spel-keuzescherm. -->
+            <img id="avatar-portret" class="avatar-portret" src="./startschermoefenen_files/avatar-esther.png" alt="Avatar">
+
+            <!-- Naam van de gekozen Bijbelfiguur op het brede vak rechts. -->
+            <div id="avatar-figuurnaam" class="avatar-figuurnaam">Esther</div>
+
+            <!-- Voornaam van de speler op het kleine vak eronder. -->
+            <div id="speler-voornaam" class="speler-voornaam">Boquet</div>
+
+        </div>
+
+        <!-- Prijzenkast: trofeeën per evangelie. -->
+        <img id="trofee-matteus" class="trofee trofee-matteus brons" src="./startschermoefenen_files/matteus-zilver.png" alt="Matteüs trofee">
+        <img id="trofee-marcus" class="trofee trofee-marcus schaduw" src="./startschermoefenen_files/marcus-zilver.png" alt="Marcus trofee">
+        <img id="trofee-lucas" class="trofee trofee-lucas schaduw" src="./startschermoefenen_files/lucas-zilver.png" alt="Lucas trofee">
+        <img id="trofee-johannes" class="trofee trofee-johannes schaduw" src="./startschermoefenen_files/johannes-zilver.png" alt="Johannes trofee">
+
+        <!-- Onzichtbare klik-zone over het trofee-vak ("DE VIER EVANGELIËN")
+             van de geschilderde prijzenkast. Klik opent de schatkamer. Ligt
+             bewust alleen over de trofee-plank, niet over de schatkisten
+             eronder, zodat die hun eigen klik houden. -->
+        <div class="schatkamer-zone" onclick="openSchatkamer()"></div>
+
+        <!-- Prijzenkast: Bijbelschatkisten per niveau. Klikbaar: start een
+             schatkist-uitdaging met vragen uit alle evangeliën op dat niveau.
+             Altijd speelbaar, ongeacht of de kist al verdiend is. -->
+        <img id="kist-brons" class="kist kist-brons" src="./startschermoefenen_files/kist-brons.png" alt="Bronzen schatkist" style="cursor: pointer;" onclick="openSchatkist(&#39;beginner&#39;)">
+        <img id="kist-zilver" class="kist kist-zilver" src="./startschermoefenen_files/kist-zilver.png" alt="Zilveren schatkist" style="cursor: pointer;" onclick="openSchatkist(&#39;advanced&#39;)">
+        <img id="kist-goud" class="kist kist-goud" src="./startschermoefenen_files/kist-goud.png" alt="Gouden schatkist" style="cursor: pointer;" onclick="openSchatkist(&#39;expert&#39;)">
+
+        <!-- Verborgen schat: de diamanten kist in de "VERBORGEN SCHAT"-plek
+             onder de drie schatkisten. Voorlopig statisch en gewoon zichtbaar
+             om grootte/positie te kunnen controleren. De onthul-logica (schaduw-
+             /vergrendelde staat tot alle drie de kisten behaald zijn, daarna de
+             volle kist) volgt later en raakt de win-logica niet aan. -->
+        <img id="kist-diamant" class="kist-diamant" src="./startschermoefenen_files/kist-diamant.png" alt="Verborgen diamanten schatkist" onclick="openVerborgenSchat()">
+
+        <div class="boek-zone matteus" onclick="openBoek(&#39;Matteüs&#39;)"></div>
+        <div class="boek-zone marcus" onclick="openBoek(&#39;Marcus&#39;)"></div>
+        <div class="boek-zone lucas" onclick="openBoek(&#39;Lucas&#39;)"></div>
+        <div class="boek-zone johannes" onclick="openBoek(&#39;Johannes&#39;)"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "NIEUW SPEL"-knop
+             in het MENU-paneel links in de achtergrondafbeelding. Werkt
+             op dezelfde manier als de boek-zones: doorzichtig, absoluut
+             gepositioneerd, en triggert nieuwSpel() bij klikken. -->
+        <div class="nieuw-spel-zone" onclick="nieuwSpel()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "BIJBELTRAINING"-knop
+             in het MENU-paneel. Zelfde patroon als .nieuw-spel-zone. Positie
+             staat in style.css (.bijbeltraining-zone) en wordt nog fijn afgesteld. -->
+        <div class="bijbeltraining-zone" onclick="openBijbeltraining()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "SCHATKAMER"-knop in het
+             MENU-paneel. Dit is de hoofd-ingang naar de schatkamer (de plank in
+             de prijzenkast rechts is een tweede ingang). Zelfde patroon als de
+             andere menu-zones. -->
+        <div class="schatkamer-menu-zone" onclick="openSchatkamer()"></div>
+
+        <!-- Onzichtbare klik-zone over de geschilderde "INSTELLINGEN"-knop.
+             Zelfde patroon als .bijbeltraining-zone. -->
+        <div class="instellingen-zone" onclick="openInstellingen()"></div>
+
+        <!-- ===== Schermnavigatie: Evangeliën (scherm 1, dit startscherm) <->
+             overige NT-boeken (scherm 2). Beide randpijlen én scherm 2 zitten
+             BINNEN #game-container, zodat ze met de 16:9-box meeschalen en de
+             gevoelige rand altijd op de juiste plek ligt. ===== -->
+
+        <!-- Randpijl rechts (hoort bij scherm 1): standaard onzichtbaar én niet-
+             klikbaar; JS onthult 'm zodra de muis binnen ~80px van de rechterrand
+             komt. Klik -> scherm 2. -->
+        <button class="nt-pijl nt-pijl-rechts" id="nt-pijl-naar-2" type="button" onclick="gaNaarScherm2()" aria-label="Naar de overige boeken van het Nieuwe Testament">
+            <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M9 5l7 7-7 7"></path>
+            </svg>
+        </button>
+
+        <!-- Scherm 2: overige boeken van het Nieuwe Testament. Titel + vier
+             groep-tegels (nog zonder vragen erachter). Vult de hele 16:9-box, met
+             dezelfde achtergrond als scherm 1 onder een kalme donkerblauwe sluier. -->
+        <div id="nt-scherm-2" aria-hidden="true">
+            <button class="nt-pijl nt-pijl-links" id="nt-pijl-naar-1" type="button" onclick="gaNaarScherm1()" aria-label="Terug naar de evangeliën">
+                <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M15 5l-7 7 7 7"></path>
+                </svg>
+            </button>
+            <div class="nt2-inhoud">
+                <h2 class="nt-placeholder-titel">Nieuwe Testament — overige boeken</h2>
+
+                <!-- Vier groep-tegels. Voorlopig zonder eigen vragen erachter; een
+                     klik toont een rustige "binnenkort"-melding (openNtGroep). De
+                     groepsindeling is de gangbare vierdeling van het NT na de
+                     evangeliën en is makkelijk te hernoemen. -->
+                <div class="nt2-tegels">
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep(&#39;Handelingen&#39;)">
+                        <span class="nt2-tegel-titel">Handelingen</span>
+                        <span class="nt2-tegel-sub">De jonge kerk</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep(&#39;Brieven van Paulus&#39;)">
+                        <span class="nt2-tegel-titel">Brieven van Paulus</span>
+                        <span class="nt2-tegel-sub">Romeinen t/m Filemon</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep(&#39;Algemene brieven&#39;)">
+                        <span class="nt2-tegel-titel">Algemene brieven</span>
+                        <span class="nt2-tegel-sub">Hebreeën t/m Judas</span>
+                    </button>
+                    <button class="nt2-tegel" type="button" onclick="openNtGroep(&#39;Openbaring&#39;)">
+                        <span class="nt2-tegel-titel">Openbaring</span>
+                        <span class="nt2-tegel-sub">De Apocalyps</span>
+                    </button>
+                </div>
+
+                <p class="nt2-melding" id="nt2-melding" role="status" aria-live="polite"></p>
+            </div>
+        </div>
+
+        <!-- Nieuw-spel-keuzescherm: avatar kiezen + naam invullen + Start/Terug.
+             Gebruikt .quiz-overlay zodat hij dezelfde warme achtergrond krijgt
+             als de andere overlays. Pas op "Start" worden de schildpunten gewist
+             en de keuzes opgeslagen; "Terug" sluit zonder wijzigingen. -->
+        <div id="nieuw-spel-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Nieuw spel</h2>
+                <p class="quiz-question">Kies je avatar</p>
+
+                <div class="avatar-keuze">
+                    <button type="button" class="avatar-keuze-btn" data-avatar="mozes">
+                        <img src="./startschermoefenen_files/avatar-mozes.png" alt="Mozes">
+                        <span>Mozes</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="esther">
+                        <img src="./startschermoefenen_files/avatar-esther.png" alt="Esther">
+                        <span>Esther</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="judith">
+                        <img src="./startschermoefenen_files/avatar-judith.png" alt="Judith">
+                        <span>Judith</span>
+                    </button>
+                    <button type="button" class="avatar-keuze-btn" data-avatar="samuel">
+                        <img src="./startschermoefenen_files/avatar-samuel.png" alt="Samuel">
+                        <span>Samuel</span>
+                    </button>
+                </div>
+
+                <div class="speler-naam-rij">
+                    <label for="speler-naam-invoer" class="speler-naam-label">Naam:</label>
+                    <input id="speler-naam-invoer" class="speler-naam-invoer" type="text" autocomplete="off" placeholder="Typ je volledige naam">
+                </div>
+
+                <button type="button" class="answer-btn niveau-btn niveau-expert" onclick="bevestigNieuwSpel()">Start</button>
+                <button type="button" class="answer-btn niveau-terug" onclick="annuleerNieuwSpel()">Terug</button>
+            </div>
+        </div>
+
+        <div id="niveau-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 id="niveau-boek-titel" class="quiz-title"></h2>
+                <p class="quiz-question">Kies je niveau</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesNiveau(&#39;beginner&#39;)">Beginner</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesNiveau(&#39;advanced&#39;)">Advanced</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesNiveau(&#39;expert&#39;)">Expert</button>
+                <p id="niveau-hint" class="niveau-hint"></p>
+                <button class="answer-btn niveau-terug" onclick="terugNaarStartscherm()">Terug</button>
+            </div>
+        </div>
+
+        <div id="quiz-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 id="quiz-title" class="quiz-title">Matteüs Quiz</h2>
+                <div id="score-balk">
+                    XP: <span id="xp">0</span>
+                </div>
+                <p id="quiz-question" class="quiz-question"></p>
+                <button id="antwoord-1" class="answer-btn"></button>
+                <button id="antwoord-2" class="answer-btn"></button>
+                <button id="antwoord-3" class="answer-btn"></button>
+                <button id="antwoord-4" class="answer-btn"></button>
+                <div id="resultaat"></div>
+            </div>
+
+        <!-- Alleen zichtbaar in de oefenmodus: stoppen en terug naar het start-
+             scherm. Staat buiten .quiz-box zodat hij niet meescrollt. -->
+        <button id="oefen-stop-knop" class="oefen-stop" style="display: none;" onclick="terugNaarStartscherm()">← Terug</button>
+
+        <!-- Zichtbaar tijdens elke meetellende ronde (evangelie, schatkist,
+             Verborgen Schat): stopt de ronde na een bevestiging. Staat buiten
+             .quiz-box zodat hij niet meescrollt en het herschrijven van de
+             quiz-box overleeft. -->
+        <button id="ronde-stop-knop" class="ronde-stop" style="display: none;" onclick="vraagRondeStoppen()" aria-label="Stop deze ronde">← Terug</button>
+        </div>
+
+        <!-- Bevestiging bij het stoppen van een ronde. Eigen overlay bovenop de
+             quiz; staat ná #quiz-scherm in de DOM zodat hij erboven verschijnt. -->
+        <div id="ronde-stop-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Stoppen?</h2>
+                <p class="quiz-question">Wil je stoppen met deze ronde? Je voortgang van deze ronde gaat verloren.</p>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="bevestigRondeStoppen()">Stoppen</button>
+                <button class="answer-btn niveau-terug" onclick="annuleerRondeStoppen()">Doorgaan</button>
+            </div>
+        </div>
+
+        <!-- Verborgen Schat: zelf-getempo'd onthullingsscherm na elke beantwoorde
+             vraag (alléén deze modus). Eigen overlay bovenop de quiz; staat ná
+             #quiz-scherm in de DOM zodat de kaart erboven verschijnt. Wordt gevuld
+             door toonVsReveal(); "Volgende →" gaat zelf door. -->
+        <div id="vs-reveal-scherm" class="quiz-overlay" style="display: none;">
+            <div class="vs-reveal-kaart">
+                <div id="vs-reveal-uitslag" class="vs-reveal-uitslag"></div>
+                <h3 id="vs-reveal-kop" class="vs-reveal-kop">Verborgen boodschap</h3>
+                <p id="vs-reveal-tekst" class="vs-reveal-tekst"></p>
+                <p id="vs-reveal-meer-melding" class="vs-reveal-meer-melding" role="status" aria-live="polite"></p>
+                <div class="vs-reveal-knoppen">
+                    <button id="vs-reveal-catechese" type="button" class="answer-btn vs-reveal-meer" onclick="vsRevealMeer()">Meer ontdekken → Catechese</button>
+                    <button type="button" class="answer-btn vs-reveal-volgende" onclick="vsRevealVolgende()">Volgende →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bijbeltraining-kruispunt: twee keuzes (Oefenen / Naslag & uitleg).
+             Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
+        <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Bijbeltraining</h2>
+                <p class="quiz-question">Oefen en groei</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="startOefenen()">Oefenen</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="openNaslag()">Naslag &amp; uitleg</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
+                <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
+                <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Boekkeuze binnen Bijbeltraining > Oefenen. Zelfde overlay-opzet.
+             Elke knop opent het gekozen evangelie in oefenmodus. -->
+        <div id="oefen-boek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Oefenen</h2>
+                <p class="quiz-question">Kies een evangelie</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek(&#39;Matteüs&#39;)">Matteüs</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek(&#39;Marcus&#39;)">Marcus</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek(&#39;Lucas&#39;)">Lucas</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOefenBoek(&#39;Johannes&#39;)">Johannes</button>
+                <button class="answer-btn niveau-terug" onclick="terugNaarBijbeltraining()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg (read-only): evangelie kiezen. Leest straks rechtstreeks
+             uit vragenData; raakt de quizlogica niet aan. -->
+        <div id="vu-boek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Vragen &amp; uitleg</h2>
+                <p class="quiz-question">Kies een evangelie</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek(&#39;Matteüs&#39;)">Matteüs</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek(&#39;Marcus&#39;)">Marcus</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek(&#39;Lucas&#39;)">Lucas</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuBoek(&#39;Johannes&#39;)">Johannes</button>
+                <button class="answer-btn niveau-terug" onclick="sluitVuBoek()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: niveau kiezen. Alle niveaus zijn hier open (read-only,
+             geen vergrendeling). De boektitel wordt door JS ingevuld. -->
+        <div id="vu-niveau-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title" id="vu-niveau-titel">Vragen &amp; uitleg</h2>
+                <p class="quiz-question">Kies een niveau</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuNiveau(&#39;beginner&#39;)">Beginner</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesVuNiveau(&#39;advanced&#39;)">Advanced</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesVuNiveau(&#39;expert&#39;)">Expert</button>
+                <button class="answer-btn niveau-terug" onclick="terugVuNiveau()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: genummerde, scrollbare lijst van alle vragen van het
+             gekozen boek + niveau. Wordt door bouwVuLijst() gevuld uit vragenData. -->
+        <div id="vu-lijst-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="vu-lijst-titel">Vragen &amp; uitleg</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuLijst()">← Terug</button>
+                <div id="vu-lijst" class="vu-lijst"></div>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuLijst()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Vragen & uitleg: uitlegpagina van één vraag. Wordt door openVuDetail()
+             gevuld uit vragenData (vraag, juiste antwoord, bijbelplaats, uitleg). -->
+        <div id="vu-detail-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuDetail()">← Terug</button>
+                <div id="vu-detail"></div>
+            </div>
+        </div>
+
+        <!-- ===== Catechese: data-gedreven uitleg-artikelen. Drie schermen,
+             zelfde opzet als "Vragen & uitleg": categorie -> artikel-lijst ->
+             artikel-detail. Categorieën en artikelen staan in config-arrays in
+             script.js; deze schermen worden door JS gevuld. ===== -->
+
+        <!-- Catechese (landing): de categorieën als knoppen, in de stijl van de
+             boekenkeuze. Wordt door bouwCatecheseCategorieen() gevuld. -->
+        <div id="catechese-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Catechese</h2>
+                <p class="quiz-question">Kies een onderwerp</p>
+                <div id="catechese-categorieen"></div>
+                <button class="answer-btn niveau-terug" onclick="sluitCatechese()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Catechese: scrollbare artikel-lijst van de gekozen categorie. Wordt
+             door bouwCatecheseLijst() gevuld (gefilterd op categorie). -->
+        <div id="catechese-lijst-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="catechese-lijst-titel">Catechese</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
+                <div id="catechese-lijst" class="vu-lijst"></div>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Catechese: één herbruikbaar, scrollbaar artikel-detail (titel + tekst).
+             Wordt door openCatecheseArtikel(id) gevuld uit catecheseArtikelen. -->
+        <div id="catechese-artikel-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseArtikel()">← Terug</button>
+                <div id="catechese-artikel"></div>
+            </div>
+        </div>
+
+        <!-- Naslag & uitleg: tussenmenu met drie keuzes. Zelfde overlay-/quiz-box-
+             opzet als de andere Bijbeltraining-schermen. openNaslag()/sluitNaslag()
+             blijven ongewijzigd: ze openen/sluiten dit tussenmenu. -->
+        <div id="naslag-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Naslag &amp; uitleg</h2>
+                <p class="quiz-question">Kies een onderwerp</p>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="openWoordenboek()">Woordenboek</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="openMaten()">Maten, geld &amp; tijd</button>
+                <!-- Verborgen Schat: diamant/blauw-witte knop. Standaard vergrendeld
+                     (slotje + hint, niet klikbaar). Zodra de vlag verborgenschat_voltooid
+                     op "waar" staat, haalt werkVerborgenSchatNaslagKnopBij() de
+                     'vergrendeld'-class weg en wordt het de actieve diamantstijl die de
+                     naslagpagina opent. -->
+                <button id="verborgenschat-knop" class="answer-btn niveau-btn naslag-diamant vergrendeld" onclick="openVerborgenSchatNaslag()">Verborgen Schat</button>
+                <p id="verborgenschat-hint" class="naslag-slot-hint">Speel eerst de Verborgen Schat om te ontgrendelen</p>
+                <button class="answer-btn niveau-terug" onclick="sluitNaslag()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Woordenboek: moeilijke Bijbelwoorden, alfabetisch, kindvriendelijk
+             uitgelegd. Zelfde opzet/opmaak als #maten-scherm (scrollbaar .quiz-box
+             met .naslag-item/.naslag-term). -->
+        <div id="woordenboek-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title">Woordenboek</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitWoordenboek()">← Terug</button>
+
+                <p class="naslag-item"><span class="naslag-term">Apostel</span> — Het woord betekent "gezant" of "boodschapper", van het Griekse <em>apostolos</em>: iemand die wordt uitgezonden. In de oudheid was een apostel geen gewone postbode, maar een officiële afgezant — zoals een ambassadeur — die namens een koning op pad ging; zijn woorden golden als de woorden van de koning zelf. In het Nieuwe Testament koos Jezus twaalf van zijn leerlingen (discipelen) uit en zond hen uit om zijn boodschap te verspreiden en zieken te genezen; vanaf dat moment waren zij zijn apostelen. In de eerste kerk werd de eis zelfs strenger: een echte apostel moest Jezus tijdens zijn leven hebben meegemaakt én hem na zijn dood weer levend hebben gezien. Eén beroemde uitzondering is Paulus: hij had de levende Jezus nooit ontmoet, maar noemde zich tóch apostel, omdat de opgestane Jezus hém — volgens zijn eigen verhaal, in een visioen op weg naar Damascus — persoonlijk had uitgekozen en uitgezonden.</p>
+                <p class="naslag-item"><span class="naslag-term">Bekering</span> — Je leven omdraaien: stoppen met de verkeerde kant op gaan en kiezen om het goede te doen. Je kunt het zien als een ommekeer van 180 graden — je loopt letterlijk de andere kant op. In de Bijbel hoort daar vaak spijt bij over wat je fout deed, en het verlangen om opnieuw te beginnen.</p>
+                <p class="naslag-item"><span class="naslag-term">Discipel</span> — Een leerling van Jezus die met hem meetrok en van hem leerde. "Discipel" en "leerling" betekenen hetzelfde. Jezus had veel discipelen; uit die grote groep koos hij een kleinere groep apostelen die hij eropuit stuurde.</p>
+                <p class="naslag-item"><span class="naslag-term">Evangelie</span> — Het woord betekent "goed nieuws". Het zijn ook de vier boeken die het leven van Jezus vertellen: Matteüs, Marcus, Lucas en Johannes. Elke schrijver kreeg later zijn eigen symbool — de mens, de leeuw, de stier en de adelaar — precies de tekens die je in dit spel als trofee kunt verdienen.</p>
+                <p class="naslag-item"><span class="naslag-term">Farizeeër</span> — Iemand uit een groep die het heel serieus nam om precies volgens Gods regels te leven, tot in de kleinste details. Op zich knap, maar in de evangeliën botsen de farizeeën vaak met Jezus: volgens hem ging het hun te veel om de regels en te weinig om de mensen daarachter.</p>
+                <p class="naslag-item"><span class="naslag-term">Gelijkenis</span> — Een kort verhaaltje dat Jezus vertelde om iets groots uit te leggen met iets gewoons. Door over schapen, zaadjes of een verloren muntje te vertellen, maakte hij een diepe les ineens begrijpelijk. Het bekendste voorbeeld is misschien wel het verhaal van de verloren zoon.</p>
+                <p class="naslag-item"><span class="naslag-term">Genade</span> — Iets goeds krijgen wat je niet verdiend hebt; onverdiende vriendelijkheid. Het is een cadeau, geen beloning — je hoeft er niets voor te presteren. In de Bijbel gaat het vaak over Gods genade: dat hij goed is voor mensen, ook als ze het niet "verdiend" hebben.</p>
+                <p class="naslag-item"><span class="naslag-term">Heiden</span> — In de Bijbel: iemand die niet bij het Joodse volk hoorde en de God van Israël (nog) niet kende. Het was geen scheldwoord, gewoon een aanduiding. Bijzonder is dat Jezus juist ook heidenen hielp — iets wat veel mensen toen verbaasde.</p>
+                <p class="naslag-item"><span class="naslag-term">Heilige Geest</span> — De Heilige Geest is God zelf: de derde persoon van de Drie-eenheid. Christenen geloven in één God in drie personen — de Vader, de Zoon (Jezus) en de Heilige Geest — die samen tóch één God zijn. De Heilige Geest werkt in mensen: hij geeft moed en troost en helpt hen om dichter bij God te leven. Je kunt hem niet zien, net zomin als je de wind ziet, maar je merkt wel wat hij doet.</p>
+                <p class="naslag-item"><span class="naslag-term">Hemelvaart</span> — Het moment waarop Jezus, na zijn opstanding, omhoogging naar de hemel en niet langer op aarde bij zijn leerlingen bleef. Christenen herdenken dit op Hemelvaartsdag — voor veel kinderen ook gewoon een vrije donderdag.</p>
+                <p class="naslag-item"><span class="naslag-term">Koninkrijk van God</span> — Niet een land dat je op de kaart kunt aanwijzen, maar een manier om te zeggen: daar waar God de koning is en alles goed en eerlijk gaat. Jezus sprak er heel vaak over. Soms heet het ook "het hemelrijk" of "het koninkrijk der hemelen".</p>
+                <p class="naslag-item"><span class="naslag-term">Messias</span> — Een Hebreeuws woord dat "de gezalfde" betekent: iemand die met olie gezalfd werd als teken dat God hem uitkoos, zoals vroeger bij koningen. De Messias is de beloofde redder op wie het volk lang wachtte. Christenen geloven dat Jezus die Messias is. In het Grieks heet "de gezalfde" trouwens "Christus" — dus Messias en Christus betekenen precies hetzelfde, alleen in een andere taal.</p>
+                <p class="naslag-item"><span class="naslag-term">Opstanding</span> — Weer levend worden na de dood. Het bekendste voorbeeld is Jezus, die volgens de evangeliën op de derde dag na zijn dood weer opstond — dat vieren christenen met Pasen. Het is het grote keerpunt waar de evangeliën naartoe werken.</p>
+                <p class="naslag-item"><span class="naslag-term">Pasen (Pesach)</span> — Pesach is het Joodse feest waarop het volk viert dat God hen lang geleden uit de slavernij in Egypte bevrijdde. Jezus vierde dit feest ook. Voor christenen kreeg Pasen er later een tweede betekenis bij: het feest van Jezus' opstanding.</p>
+                <p class="naslag-item"><span class="naslag-term">Profeet</span> — Iemand die namens God spreekt. Geen waarzegger met een glazen bol: een profeet voorspelt niet zomaar wat er gaat gebeuren, maar roept de mensen vooral op om naar God te luisteren — ook als ze dat liever niet horen. Een waarschuwing is meestal een laatste kans om het anders te doen. Toen de profeet Jona aankondigde dat de stad Nineve zou vergaan, kregen de inwoners spijt en veranderden ze hun leven — en toen liet God het onheil niet doorgaan. Dat laat zien dat God het aangekondigde onheil eigenlijk niet wíl: liever ziet hij dat mensen veranderen. (Jona baalde daar trouwens flink van.)</p>
+                <p class="naslag-item"><span class="naslag-term">Sabbat</span> — De vaste rustdag in de week, voor Joden de zaterdag. Op die dag werkten de mensen niet, maar namen ze tijd voor God en voor rust. Er waren strenge regels over wat wel en niet mocht — zo streng zelfs dat sommigen vonden dat Jezus de regels overtrad toen hij op de sabbat iemand beter maakte.</p>
+                <p class="naslag-item"><span class="naslag-term">Schriftgeleerde</span> — Een echte kenner van de heilige boeken: iemand die ze van buiten kende en aan anderen uitlegde, een beetje als een professor van de Bijbel van toen. Schriftgeleerden hadden veel aanzien en kwamen in de evangeliën vaak in gesprek — en in discussie — met Jezus.</p>
+                <p class="naslag-item"><span class="naslag-term">Synagoge</span> — Het gebouw waar Joodse mensen bij elkaar kwamen om te bidden, te leren en uit de heilige boeken te lezen. Anders dan de tempel was er niet één synagoge, maar stond er in bijna elk dorp en elke stad een. Jezus kwam er vaak en leerde er de mensen.</p>
+                <p class="naslag-item"><span class="naslag-term">Tempel</span> — Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden. Let op het verschil met een synagoge: synagogen stonden in elk dorp, maar dé tempel was er maar één. In de geschiedenis waren er eigenlijk twee. De eerste werd rond 960 v.Chr. gebouwd door koning Salomo en in 586 v.Chr. verwoest door de Babyloniërs. De tweede werd na de ballingschap herbouwd — voltooid rond 515 v.Chr., onder leiding van Zerubbabel — en eeuwen later door koning Herodes enorm vergroot en verfraaid; dát is de tempel uit Jezus' tijd. In het jaar 70 n.Chr. verwoestten de Romeinen ook die. Zou er ooit een nieuwe tempel komen, dan zou dat dus de derde tempel zijn.</p>
+                <p class="naslag-item"><span class="naslag-term">Tollenaar</span> — Een belastingontvanger die geld ophaalde voor de Romeinse bezetters. Veel mensen zagen hem als een verrader, en hij rekende vaak stiekem een beetje te veel — handig voor zijn eigen portemonnee. Toch koos Jezus er één als leerling uit: Matteüs, die later zelfs een evangelie schreef.</p>
+                <p class="naslag-item"><span class="naslag-term">Verbond</span> — Een bijzondere, plechtige afspraak tussen God en de mensen — sterker dan een gewone belofte, meer als een blijvende band. De Bijbel vertelt over verschillende verbonden, bijvoorbeeld met Noach en met Abraham. Jezus sprak bij het Laatste Avondmaal over een "nieuw verbond".</p>
+                <p class="naslag-item"><span class="naslag-term">Wet (de Wet)</span> — De regels die God volgens de Bijbel via Mozes aan het volk Israël gaf, zoals de Tien Geboden. Met "de Wet" worden soms ook de eerste boeken van de Bijbel bedoeld, waarin die regels staan. Joden in Jezus' tijd hechtten er veel waarde aan om volgens de Wet te leven.</p>
+                <p class="naslag-item"><span class="naslag-term">Wonder</span> — Iets bijzonders dat je niet op een gewone manier kunt verklaren, en dat laat zien hoe groot Gods kracht is. In de evangeliën doet Jezus veel wonderen: hij maakt zieken beter, stilt een storm en geeft blinden hun zicht terug. Een wonder is in de Bijbel meestal ook een teken: het wil iets duidelijk maken.</p>
+                <p class="naslag-item"><span class="naslag-term">Zaligspreking</span> — Een van de uitspraken van Jezus die begint met "Gelukkig zijn zij die…", over wie het bij God écht goed heeft. Jezus sprak ze uit tijdens een beroemde toespraak op een berg, de Bergrede. Vaak draaien ze de gewone verwachting om: juist wie het moeilijk heeft, wordt gelukkig genoemd.</p>
+                <p class="naslag-item"><span class="naslag-term">Zonde</span> — Iets verkeerds doen, tegen wat goed is en tegen wat God wil. Het oude woord betekent eigenlijk "je doel missen" — alsof je met een pijl op de roos mikt en er net naast schiet.</p>
+
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitWoordenboek()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Verborgen Schat (naslag): de volledige uitleg bij de Verborgen Schat-
+             vragen. Pas bereikbaar als de knop in het tussenmenu ontgrendeld is
+             (vlag verborgenschat_voltooid). Zelfde scrollbare .naslag-opzet als
+             #maten-scherm/#woordenboek-scherm: vraag als .naslag-kop, uitleg als
+             .naslag-item eronder. -->
+        <div id="verborgenschat-naslag-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title">Verborgen Schat</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVerborgenSchatNaslag()">← Terug</button>
+
+                <h3 class="naslag-kop">Van wie was het huis met de bovenzaal van het Laatste Avondmaal?</h3>
+                <p class="naslag-item">Hier moeten we eerlijk zijn — en juist dat maakt het een echte schat. De evangeliën noemen de eigenaar namelijk níet. Jezus stuurt zijn leerlingen achter "een man met een kruik water" aan; die brengt hen naar een huis met een grote bovenzaal, maar een naam krijgen we niet (Marcus 14, Lucas 22). De kerkelijke overlevering verbindt die bovenzaal vaak met het huis van Maria, de moeder van Johannes Marcus — omdat de eerste christenen later juist in háár huis bij elkaar kwamen (Handelingen 12:12). Het mooie om te weten is dus het verschil: wat zwart-op-wit in de Bijbel staat (een naamloze gastheer) en wat de traditie er later bij heeft verteld (het huis van Maria). Allebei waardevol, maar het is goed om ze uit elkaar te houden.</p>
+
+                <h3 class="naslag-kop">Wat betekent "apocalyps" eigenlijk?</h3>
+                <p class="naslag-item">Veel mensen denken bij "apocalyps" meteen aan het einde van de wereld, aan rampen en ondergang. Maar het Griekse woord <em>apokalypsis</em> betekent iets heel anders: "onthulling" of "openbaring" — het wegtrekken van een sluier, zodat je ziet wat eerst verborgen was. Daarom heet het laatste Bijbelboek in het Nederlands ook "Openbaring". Het wil dus niet vooral angst aanjagen, maar iets láten zien. En dat is precies waarom dit zo goed bij de Verborgen Schat past: een verborgen schat onthullen is letterlijk wat een apocalyps doet.</p>
+
+                <h3 class="naslag-kop">Waarom noemt Jezus zichzelf "de Alfa en de Omega"?</h3>
+                <p class="naslag-item">Alfa is de eerste letter van het Griekse alfabet, omega de laatste — een beetje zoals onze A en Z. Door zichzelf zo te noemen zegt Jezus: ik ben er vanaf het allereerste begin én tot aan het einde van alles. Er is geen moment dat buiten hem valt; hij staat aan het begin van het verhaal én aan het slot. Zo zegt hij in twee letters iets enorms over wie hij is.</p>
+
+                <h3 class="naslag-kop">Wie wordt in Openbaring "het Lam" genoemd, en waarom juist een lam?</h3>
+                <p class="naslag-item">Met "het Lam" wordt steeds Jezus bedoeld. Een lam is een kwetsbaar, zachtmoedig dier, en het werd vroeger gebruikt als offerdier — het beeld wijst dus naar Jezus die zichzelf opofferde. Het verrassende is dat juist dit geofferde Lam in Openbaring de grote overwinnaar is. Niet de sterkste of de hardste wint, maar het Lam dat zichzelf gaf. Die omkering — kwetsbaarheid die overwint — is een van de diepste lagen van het boek.</p>
+
+                <h3 class="naslag-kop">Waar staat het getal zeven symbolisch voor?</h3>
+                <p class="naslag-item">In Openbaring kom je zeven overal tegen: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen. Dat is geen toeval. In de Bijbel staat zeven voor volheid, voor "helemaal compleet" — denk aan de zeven dagen waarin de schepping af was. Het gaat dus niet om precies tellen, maar om volledigheid. Wie dat doorheeft, leest Openbaring anders: het wil zeggen dat Gods plan helemaal compleet wordt, tot in alle hoeken.</p>
+
+                <h3 class="naslag-kop">Hoe eindigt de Bijbel in Openbaring?</h3>
+                <p class="naslag-item">Niet met ondergang, maar met hoop. In de laatste hoofdstukken komt er een nieuwe hemel en een nieuwe aarde, waar God zelf bij de mensen woont en waar geen tranen, dood of pijn meer zijn. En er gebeurt iets moois: de levensboom uit het paradijs, helemaal aan het begin van de Bijbel, keert terug. Zo komt het hele verhaal rond — het paradijs dat in Genesis verloren ging, wordt aan het einde hersteld. De Bijbel sluit zich als een grote cirkel.</p>
+
+                <h3 class="naslag-kop">Wat betekent "een tijd, tijden en een halve tijd"?</h3>
+                <p class="naslag-item">Het klinkt cryptisch, maar je kunt het gewoon uitrekenen: een "tijd" is een jaar, "tijden" is twee jaar, en een "halve tijd" een half jaar — samen drieënhalf jaar. De Bijbel noemt diezelfde periode elders met andere woorden: 42 maanden, of 1260 dagen. En de uitdrukking dook eeuwen eerder al op in het boek Daniël — Openbaring pakt dat beeld bewust weer op.</p>
+
+                <h3 class="naslag-kop">Waar komen de vier levende wezens vandaan?</h3>
+                <p class="naslag-item">De vier wezens rond Gods troon — een leeuw, een rund, een mens en een arend — komen uit een eeuwenoud visioen van de profeet Ezechiël. Het bijzondere: deze vier gezichten werden later de symbolen van de vier evangelisten. De leeuw hoort bij Marcus, het rund bij Lucas, de mens bij Matteüs en de arend bij Johannes. Precies de vier die je in dit spel als trofeeën kunt verdienen!</p>
+
+                <h3 class="naslag-kop">De boom des levens — begin en einde</h3>
+                <p class="naslag-item">De Bijbel begint en eindigt bij dezelfde boom. In het paradijs (Genesis) staat de boom des levens, en helemaal aan het eind, in het nieuwe Jeruzalem (Openbaring), staat hij er weer — met bladeren tot genezing van de volken. Tussen die twee bomen in speelt het hele verhaal van de Bijbel zich af. Let op: in het paradijs stonden twee bijzondere bomen; alleen de boom des levens komt aan het eind terug, niet de boom van kennis van goed en kwaad.</p>
+
+                <h3 class="naslag-kop">De zeven gemeenten</h3>
+                <p class="naslag-item">Openbaring begint als een brief aan zeven echte gemeenten in Klein-Azië (het huidige Turkije): Efeze, Smyrna, Pergamum, Tyatira, Sardis, Filadelfia en Laodicea. Het getal zeven is geen toeval — het staat in de Bijbel voor volheid. Door aan zéven gemeenten te schrijven, schrijft Johannes eigenlijk aan de hele kerk.</p>
+
+                <h3 class="naslag-kop">Het nieuwe Jeruzalem</h3>
+                <p class="naslag-item">Aan het slot van Openbaring daalt een schitterende stad uit de hemel neer: het nieuwe Jeruzalem. Het mooiste is niet het goud of de edelstenen, maar wat erbij gezegd wordt: God woont nu voorgoed bij de mensen, en Hij wist alle tranen weg. Geen dood, geen verdriet en geen pijn meer. Daar loopt het hele verhaal van de Bijbel op uit.</p>
+
+                <h3 class="naslag-kop">De sandwich-techniek van Marcus</h3>
+                <p class="naslag-item">Marcus blijkt een knappe verteller. Hij begint een verhaal, schuift er een tweede verhaal tussen, en pakt dan de draad van het eerste weer op — net als twee boterhammen met beleg ertussen. Geleerden noemen dit de sandwich-techniek (met een moeilijk woord: intercalatie). Het mooiste inzicht: de nadruk ligt meestal op het verhaal ín het midden — net als bij een echte sandwich is het beleg waar het om draait. Dat binnenste verhaal is vaak de sleutel tot de betekenis, en de twee verhalen eromheen helpen je dat te begrijpen. Bij Jaïrus en de zieke vrouw (Marcus 5) staat zo het geloof van de vrouw in het midden, met een knipoog: het getal twaalf komt in beide verhalen terug — de vrouw is twaalf jaar ziek, het meisje twaalf jaar oud. Een ander bekend voorbeeld is de tempelreiniging, ingeklemd tussen de vervloeking en het verdorren van een vijgenboom (Marcus 11). Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als losse verhalen, maar als één doordacht geheel.</p>
+
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVerborgenSchatNaslag()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Maten, geld & tijd: het rustige leesscherm met maten, munten en tijd.
+             De tekst is ongewijzigd verplaatst vanuit het oude Naslag-scherm. -->
+        <div id="maten-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title">Maten, geld &amp; tijd</h2>
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
+
+                <div class="naslag-kadertje">
+                    Sommige maten kennen we vrij precies, andere niet — dan zeggen we dat er eerlijk bij. En oud geld omrekenen naar euro's van nu is eigenlijk niet te doen, want toen was alles anders. Daarom rekenen we vaak in "daglonen": wat een gewone arbeider op één dag verdiende.
+                </div>
+
+                <h3 class="naslag-kop">Geld in de Bijbel</h3>
+                <p class="naslag-noot">Reken je dit heel ruw om naar Nederland in 2026, met een flinke marge, dan kom je ongeveer op de bedragen hieronder — uitgaand van een dagloon van zo'n 150 à 200 euro. Exacte bedragen zijn het niet, maar ze geven je wel een idee.</p>
+                <p class="naslag-item"><span class="naslag-term">Penning</span> — het allerkleinste muntje dat er bestond; mogelijk zelfs het kleinste dat ooit is gemaakt. Eén penning was ongeveer 1/128 van een dagloon, omgerekend zo'n 1 à 1,50 euro van nu. Je had er dus ongeveer 128 nodig voor één dag werken. De arme weduwe gaf er twee — samen zo'n twee à drie euro — en tóch zei Jezus dat zij het meeste had gegeven.</p>
+                <p class="naslag-item"><span class="naslag-term">Denarie</span> — hiermee wordt al het andere vergeleken: het loon voor één hele dag werken, een zilveren muntje van ongeveer 4 gram. Omgerekend dus grofweg 150 à 200 euro van nu.</p>
+                <p class="naslag-item"><span class="naslag-term">Pond</span> — honderd denarie (1/60 van een talent): ongeveer honderd dagen werken, omgerekend zo'n 15.000 à 20.000 euro. Let op: "pond" betekent in de Bijbel soms ook een gewicht (ongeveer 300 gram), zoals het pond kostbare olie waarmee Jezus werd gezalfd — dan gaat het dus niet over geld.</p>
+                <p class="naslag-item"><span class="naslag-term">Talent</span> — de allergrootste geldmaat: zesduizend denarie, dus zesduizend daglonen. Daar zou een arbeider zo'n vijftien tot twintig jaar voor moeten werken — omgerekend grofweg tussen de 900.000 en 1,2 miljoen euro. Als gewicht aan zilver of goud was een talent ongeveer 33 kilo (van zo'n 20 tot 40 kilo).</p>
+
+                <h3 class="naslag-kop">Lengte</h3>
+                <p class="naslag-item"><span class="naslag-term">El</span> — ongeveer 45 centimeter, zo lang als de afstand van je elleboog tot je vingertoppen. Daar komt de naam vandaan. Omdat niet iedereen even lange armen heeft, was hij niet overal precies gelijk.</p>
+                <p class="naslag-item"><span class="naslag-term">Stadie</span> — een afstandsmaat van ongeveer 185 meter. Emmaüs lag zo'n zestig stadiën van Jeruzalem: bijna elf kilometer.</p>
+                <p class="naslag-item"><span class="naslag-term">Mijl</span> — de Romeinse mijl was ongeveer 1.500 meter (anderhalve kilometer), oorspronkelijk duizend dubbele passen van een soldaat. Jezus zei: als iemand je dwingt één mijl mee te gaan, ga er dan twee.</p>
+
+                <h3 class="naslag-kop">Inhoud</h3>
+                <p class="naslag-noot">Hier weten we het minder zeker: er bestond geen officiële standaard, en de potten en vaten van toen waren niet allemaal even groot.</p>
+                <p class="naslag-item"><span class="naslag-term">Vat</span> — ongeveer 22 liter, zoiets als een flinke emmer. Sommige geleerden komen hoger uit.</p>
+                <p class="naslag-item"><span class="naslag-term">Kor</span> — de grootste inhoudsmaat: tien vaten, dus ongeveer 220 liter.</p>
+                <p class="naslag-item"><span class="naslag-term">Seah</span> — een derde van een vat, zo'n 7 liter, al lopen de schattingen uiteen. Drie seah meel was genoeg om voor een heleboel mensen brood te bakken.</p>
+                <p class="naslag-item"><span class="naslag-term">Korenmaat</span> — een bak of mand waar ongeveer negen liter graan in kon, zoiets als een flinke emmer. Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop, zodat iedereen het licht ziet.</p>
+                <p class="naslag-item"><span class="naslag-term">Metreet</span> — een grote inhoudsmaat van ongeveer 39 liter. De stenen kruiken op de bruiloft in Kana hielden er elk twee of drie van — dus zo'n 80 tot 120 liter per kruik.</p>
+
+                <h3 class="naslag-kop">Tijd</h3>
+                <p class="naslag-item"><span class="naslag-term">Uren</span> — de tijdsaanduidingen in de Bijbel werken anders dan onze moderne klok. In de tijd van Jezus begon de dag bij zonsopgang, ongeveer om 6.00 uur. De tijd tot zonsondergang werd in twaalf uren verdeeld. De tabel laat zien rond welk tijdstip op onze klok elk Bijbels uur ongeveer uitkomt.</p>
+                <table class="naslag-tabel">
+                    <tbody><tr><th>Bijbels uur</th><th>Onze tijd (ongeveer)</th></tr>
+                    <tr><td>1e uur</td><td>07.00</td></tr>
+                    <tr><td>2e uur</td><td>08.00</td></tr>
+                    <tr><td>3e uur</td><td>09.00</td></tr>
+                    <tr><td>4e uur</td><td>10.00</td></tr>
+                    <tr><td>5e uur</td><td>11.00</td></tr>
+                    <tr><td>6e uur</td><td>12.00</td></tr>
+                    <tr><td>7e uur</td><td>13.00</td></tr>
+                    <tr><td>8e uur</td><td>14.00</td></tr>
+                    <tr><td>9e uur</td><td>15.00</td></tr>
+                    <tr><td>10e uur</td><td>16.00</td></tr>
+                    <tr><td>11e uur</td><td>17.00</td></tr>
+                    <tr><td>12e uur</td><td>18.00 (zonsondergang)</td></tr>
+                </tbody></table>
+                <p class="naslag-noot">Goed om te weten: bij de Romeinen en de Joden begon het eerste uur eigenlijk al bij zonsopgang, rond 6.00 uur. In de meeste bijbelcommentaren wordt het eerste uur echter rond 7.00 uur gerekend. Wij volgen hier die gangbare indeling — zo blijven de bekende voorbeelden hieronder (zoals het negende uur rond 15.00 uur) goed kloppen.</p>
+                <p class="naslag-item"><span class="naslag-term">Bekende voorbeelden</span></p>
+                <p class="naslag-item"><span class="naslag-term">Het derde uur</span> → ongeveer 9.00 uur. Bij Pinksteren zei Petrus: "Het is pas het derde uur van de dag" (Handelingen 2:15).</p>
+                <p class="naslag-item"><span class="naslag-term">Het zesde uur</span> → ongeveer 12.00 uur. Rond het middaguur sprak Jezus bij de put met de Samaritaanse vrouw (Johannes 4:6).</p>
+                <p class="naslag-item"><span class="naslag-term">Het negende uur</span> → ongeveer 15.00 uur. Rond dit uur stierf Jezus aan het kruis (Matteüs 27:46-50). Het was ook een vast uur van gebed: Petrus en Johannes gingen toen naar de tempel (Handelingen 3:1).</p>
+                <p class="naslag-item"><span class="naslag-term">Zomer en winter: niet elk uur even lang</span></p>
+                <p class="naslag-item">Er zit behoorlijk wat verschil tussen zomer en winter. Israël ligt ongeveer op dezelfde breedtegraad als Zuid-Spanje en Noord-Afrika. Daardoor zijn de verschillen kleiner dan in Nederland, maar nog steeds duidelijk merkbaar. Voor Jeruzalem gelden ongeveer deze tijden:</p>
+                <table class="naslag-tabel">
+                    <tbody><tr><th>Periode</th><th>Zonsopgang</th><th>Zonsondergang</th></tr>
+                    <tr><td>Winter (± 21 dec)</td><td>± 06.35</td><td>± 16.40</td></tr>
+                    <tr><td>Lente (± 21 mrt)</td><td>± 05.45</td><td>± 17.55</td></tr>
+                    <tr><td>Zomer (± 21 jun)</td><td>± 05.30</td><td>± 19.45</td></tr>
+                    <tr><td>Herfst (± 21 sep)</td><td>± 06.20</td><td>± 18.20</td></tr>
+                </tbody></table>
+                <p class="naslag-item">De daglengte varieert dus van ongeveer 10 uur in de winter tot ruim 14 uur in de zomer. En omdat men die daglengte altijd in twaalf gelijke delen verdeelde, duurde één "uur" in de winter ongeveer 50 minuten en in de zomer ongeveer 70 minuten. Daarom viel bijvoorbeeld het "negende uur" niet altijd precies op 15.00 uur volgens onze klok, maar ergens midden tot laat in de middag.</p>
+                <p class="naslag-item"><span class="naslag-term">Voorbeeld: het negende uur</span></p>
+                <table class="naslag-tabel">
+                    <tbody><tr><th></th><th>Winter (dag ± 10 uur)</th><th>Zomer (dag ± 14 uur)</th></tr>
+                    <tr><td>Zonsopgang</td><td>06.35</td><td>05.30</td></tr>
+                    <tr><td>Eén Bijbels uur</td><td>± 50 min</td><td>± 70 min</td></tr>
+                    <tr><td>Negende uur</td><td>± 14.05</td><td>± 15.55</td></tr>
+                </tbody></table>
+                <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends. Wachters losten elkaar per wacht af — vandaar de naam.</p>
+                <table class="naslag-tabel">
+                    <tbody><tr><th>Nachtwaak</th><th>Tijd</th></tr>
+                    <tr><td>1e</td><td>18.00 – 21.00 uur</td></tr>
+                    <tr><td>2e</td><td>21.00 – 24.00 uur</td></tr>
+                    <tr><td>3e</td><td>24.00 – 3.00 uur</td></tr>
+                    <tr><td>4e</td><td>3.00 – 6.00 uur</td></tr>
+                </tbody></table>
+                <p class="naslag-item">De vierde nachtwaak is op het einde van de nacht, vlak voor zonsopgang. Toen Jezus over het water naar de leerlingen liep, was het de vierde nachtwaak (Matteüs 14:25): het moet dus na 3.00 uur zijn geweest, ergens tot aan zonsopgang. In het Oude Testament kende men er nog maar drie, van zo'n vier uur.</p>
+
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
+            </div>
+        </div>
+
+        <!-- Instellingen: voorlopig alleen geluid aan/uit. -->
+        <div id="instellingen-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title">Instellingen</h2>
+                <p class="quiz-question">Geluid</p>
+                <button id="geluid-knop" class="answer-btn niveau-btn niveau-beginner" onclick="wisselGeluid()">Geluid: aan</button>
+                <button class="answer-btn niveau-terug" onclick="sluitInstellingen()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Schatkamer: overzichtszaal (NT-vleugel). De speler komt hier binnen
+             via openSchatkamer(). De zaal is één achtergrondafbeelding met
+             klikbare zones (zelfde principe als de boek-zones op het start-
+             scherm); bouwZaal() in script.js plaatst per zone een klikknop met
+             naam + voortgangsmunten in .sk-zones, op basis van de config in
+             schatkamerZalen. Klikken zoomt in naar het vitrine-detailscherm
+             hieronder; dit scherm blijft daarbij openstaan voor de uitzoom. -->
+        <div id="zaal-scherm" class="schatkamer-overlay" style="display: flex;">
+            <div class="sk-zaal" data-placeholder-titel="Schatkamer — Nieuwe Testament" style="background-image: url(&quot;images/zaal-nt.png&quot;);">
+                <!-- Hierin plaatst bouwZaal() de vier schatkisten als decor
+                     (vóór .sk-zones in de DOM, dus de klikzones liggen erboven). -->
+                <div class="sk-kisten"><img class="zaal-kist" src="./startschermoefenen_files/kist-diamant.png" alt="Verborgen diamanten schatkist" style="left: 50%; top: 28.5%; width: 3.4%;"><img class="zaal-kist" src="./startschermoefenen_files/kist-brons.png" alt="Brons schatkist" style="left: 66%; top: 73%; width: 4.6%;"><img class="zaal-kist" src="./startschermoefenen_files/kist-zilver.png" alt="Zilver schatkist" style="left: 72.5%; top: 78%; width: 5.4%;"><img class="zaal-kist" src="./startschermoefenen_files/kist-goud.png" alt="Goud schatkist" style="left: 79.5%; top: 84%; width: 6.2%;"></div>
+
+                <!-- EXPERIMENT (vlag ZAAL_NIS_TROFEEEN in script.js): hierin
+                     plaatst bouwZaal() mini-trofeeën in de geschilderde nissen
+                     van de drie kasten. Ook decor: klikzones liggen erboven. -->
+                <div class="sk-nis-trofeeen"><img class="zaal-nis-trofee brons" alt="Matteüs" src="./startschermoefenen_files/matteus-zilver.png" style="left: 6.8%; top: 33%; height: 12%;"></div>
+
+                <!-- Hierin plaatst bouwZaal() de klikbare zones. -->
+                <div class="sk-zones"><button type="button" class="zaal-zone" aria-label="Openbaring: 0 van 1 trofeeën behaald" style="left: 42%; top: 12%; width: 16%; height: 22%;"><span class="zaal-zone-naam">Openbaring</span><span class="zaal-zone-munten"><span class="zaal-munt geen"></span></span><span class="zaal-zone-telling">0/1</span></button><button type="button" class="zaal-zone" aria-label="Evangeliën: 1 van 4 trofeeën behaald" style="left: 2.5%; top: 20%; width: 15%; height: 52%;"><span class="zaal-zone-naam">Evangeliën</span><span class="zaal-zone-munten"><span class="zaal-munt brons"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span></span><span class="zaal-zone-telling">1/4</span></button><button type="button" class="zaal-zone" aria-label="Algemene brieven: 0 van 8 trofeeën behaald" style="left: 83.5%; top: 19%; width: 14.5%; height: 62%;"><span class="zaal-zone-naam">Algemene brieven</span><span class="zaal-zone-munten"><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span></span><span class="zaal-zone-telling">0/8</span></button><button type="button" class="zaal-zone" aria-label="Paulusbrieven: 0 van 13 trofeeën behaald" style="left: 27%; top: 34%; width: 46%; height: 38%;"><span class="zaal-zone-naam">Paulusbrieven</span><span class="zaal-zone-munten"><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span><span class="zaal-munt geen"></span></span><span class="zaal-zone-telling">0/13</span></button><button type="button" class="zaal-zone" aria-label="Handelingen: 0 van 1 trofeeën behaald" style="left: 34%; top: 75%; width: 27%; height: 19%;"><span class="zaal-zone-naam">Handelingen</span><span class="zaal-zone-munten"><span class="zaal-munt geen"></span></span><span class="zaal-zone-telling">0/1</span></button></div>
+
+                <button class="schatkamer-terug" onclick="sluitZaal()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Schatkamer (trofeeënkamer): het vitrine-detailscherm. Komt als
+             overlay over de overzichtszaal (en het startscherm). De inhoud van
+             de vitrine (sokkels + naamplaatjes) wordt config-gedreven opgebouwd
+             door bouwVitrine() in script.js, op basis van het config-object van
+             de aangeklikte zone. De achtergrond, posities, namen, localStorage-
+             sleutels en afbeeldingsnamen staan dáár; hier blijft alleen het lege
+             omhulsel met de Terug-knop. Een nieuwe vitrine = puur een extra
+             config-object, geen nieuwe HTML/CSS. -->
+        <div id="schatkamer-scherm" class="schatkamer-overlay over-zaal" style="display: none;">
+            <div class="schatkamer-vitrine" data-placeholder-titel="" style="background-image: url(&quot;images/scahtkamer2.png&quot;); --trofee-bodem: 30%; --naam-midden: 84%; --naam-breedte: 15%; --naam-hoogte: 8%;">
+                <!-- Hierin plaatst bouwVitrine() per nis een sokkel + naamplaat. -->
+                <div class="sk-nissen"><img class="sk-trofee" alt="Matteüs" src="./startschermoefenen_files/matteus-brons.png" style="left: 19.5%; height: 37%;"><div class="sk-naam" style="left: 18.8%; font-size: clamp(8px, 1.45vw, 17px);">Matteüs</div><img class="sk-trofee" alt="Marcus" hidden="" style="left: 40.5%; height: 42%;"><div class="sk-naam" style="left: 39.3%; font-size: clamp(9px, 1.65vw, 19px);">Marcus</div><img class="sk-trofee" alt="Lucas" hidden="" style="left: 59.5%; height: 37%;"><div class="sk-naam" style="left: 60.1%; font-size: clamp(9px, 1.65vw, 19px);">Lucas</div><img class="sk-trofee" alt="Johannes" hidden="" style="left: 79%; height: 42%;"><div class="sk-naam" style="left: 80.6%; font-size: clamp(7px, 1.25vw, 14px);">Johannes</div></div>
+
+                <button class="schatkamer-terug" onclick="sluitSchatkamer()">Terug</button>
+            </div>
+        </div>
+
+        <div id="level-hud">
+            <div class="xp-paneel">
+                <div class="xp-balk">
+                    <div id="xp-vulling" style="width: 0%;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="level-nummer">1</div>
+
+    </div>
+
+    <script src="./startschermoefenen_files/script.js"></script>
+
+
+
+</body></html>

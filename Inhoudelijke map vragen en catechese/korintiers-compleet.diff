@@ -1,0 +1,130 @@
+--- script.js	2026-07-09 14:44:20.880696859 +0000
++++ korall.js	2026-07-09 14:45:20.850110857 +0000
+@@ -2191,13 +2191,13 @@
+         },
+         {
+             vraag: "Paulus schrijft een beroemd stuk over de liefde. Wat zegt hij dat liefde is?",
+-            antwoorden: ["Geduldig en vriendelijk", "Jaloers en opschepperig", "Snel boos", "Trots en onaardig"],
++            antwoorden: ["Geduldig en vriendelijk", "Sterk en dapper", "Streng maar rechtvaardig", "Vrolijk en grappig"],
+             correct: "Geduldig en vriendelijk",
+             bijbelplaats: "1 Korintiërs 13:4-5"
+         },
+         {
+             vraag: "Paulus zegt dat de gemeente samen één lichaam vormt, met veel verschillende delen. Wat wil hij daarmee zeggen?",
+-            antwoorden: ["Alleen het hoofd telt mee", "Iedereen hoort erbij en heeft elkaar nodig", "Iedereen moet precies hetzelfde zijn", "De sterkste is de baas"],
++            antwoorden: ["Iedereen hoort erbij en heeft elkaar nodig", "Ieder deel moet vooral zijn eigen ding doen", "De belangrijkste delen zitten vanbinnen", "Een groot lichaam werkt beter dan een klein"],
+             correct: "Iedereen hoort erbij en heeft elkaar nodig",
+             bijbelplaats: "1 Korintiërs 12:12"
+         },
+@@ -2215,7 +2215,7 @@
+         },
+         {
+             vraag: "Paulus zegt dat wie bij Christus hoort, helemaal nieuw wordt. Hoe noemt hij dat?",
+-            antwoorden: ["Nog precies dezelfde als vroeger", "Een nieuwe schepping", "Maar een beetje veranderd", "Helemaal niet veranderd"],
++            antwoorden: ["Een nieuwe schepping", "Een beter mens", "Een tweede kans", "Een nieuw lid van de kerk"],
+             correct: "Een nieuwe schepping",
+             bijbelplaats: "2 Korintiërs 5:17"
+         },
+@@ -2300,26 +2300,26 @@
+             bijbelplaats: "1 Korintiërs 1:12-13"
+         },
+         {
+-            vraag: "Paulus zegt dat de gelovigen samen iets bijzonders zijn waarin Gods Geest woont. Wat?",
+-            antwoorden: ["Een leeg huis", "Een gewone school", "Een tempel van God", "Een markt"],
+-            correct: "Een tempel van God",
+-            bijbelplaats: "1 Korintiërs 3:16"
++            vraag: "Paulus zegt dat je lichaam een heilige plek is, waarin Gods Geest woont. Wat betekent dat volgens hem?",
++            antwoorden: ["Dat je met respect en zorg met je lichaam en je leven omgaat", "Dat je nooit meer iets mag aanraken wat vies is", "Dat je voortaan alleen nog zachtjes en heel rustig mag praten", "Dat je je lichaam nooit meer moe mag maken"],
++            correct: "Dat je met respect en zorg met je lichaam en je leven omgaat",
++            bijbelplaats: "1 Korintiërs 6:19"
+         },
+         {
+             vraag: "Paulus zegt: als je alles kunt, maar je hebt geen liefde, dan...",
+-            antwoorden: ["ben je niets", "ben je de allerbeste", "ben je het belangrijkst", "heb je alles"],
++            antwoorden: ["ben je niets", "ben je toch nog knap bezig", "maakt het eigenlijk niet uit", "heb je in elk geval veel bereikt"],
+             correct: "ben je niets",
+             bijbelplaats: "1 Korintiërs 13:2"
+         },
+         {
+-            vraag: "Een deel van het lichaam kan niet tegen een ander zeggen: \"ik heb je niet nodig.\" Wat leert Paulus daarmee?",
+-            antwoorden: ["Alleen de sterkste telt", "Elke gelovige is nodig", "Je kunt beter alleen zijn", "Sommigen mogen weg"],
+-            correct: "Elke gelovige is nodig",
+-            bijbelplaats: "1 Korintiërs 12:21"
++            vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het laatste avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
++            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tocht van het volk door de woestijn", "Om een gewoon feestmaal"],
++            correct: "Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven",
++            bijbelplaats: "1 Korintiërs 11:23-26"
+         },
+         {
+             vraag: "Paulus zegt: kennis alleen maakt je trots, maar er is iets dat mensen echt opbouwt. Wat?",
+-            antwoorden: ["Liefde", "Geld", "Macht", "Snelheid"],
++            antwoorden: ["Liefde", "Geld", "Macht", "Hard werken"],
+             correct: "Liefde",
+             bijbelplaats: "1 Korintiërs 8:1"
+         },
+@@ -2337,14 +2337,14 @@
+         },
+         {
+             vraag: "Welke gave noemt Paulus de allergrootste, die altijd zal blijven?",
+-            antwoorden: ["Het spreken in talen", "Kennis", "De liefde", "Wonderen doen"],
++            antwoorden: ["Het uitleggen van dromen", "Kennis", "De liefde", "Wonderen doen"],
+             correct: "De liefde",
+             bijbelplaats: "1 Korintiërs 13:13"
+         },
+         {
+             vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
+-            antwoorden: ["Over zijn geld", "Over zijn eigen kracht", "Over de Heer / over wat God doet", "Over zijn reizen"],
+-            correct: "Over de Heer / over wat God doet",
++            antwoorden: ["Over zijn geld", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over zijn reizen"],
++            correct: "Over de Heer en over wat God door hem doet",
+             bijbelplaats: "2 Korintiërs 10:17"
+         },
+         {
+@@ -2369,7 +2369,7 @@
+     expert: [
+         {
+             vraag: "Er was iets mis in de gemeente van Korinte. Wat?",
+-            antwoorden: ["Ze maakten ruzie en waren verdeeld", "Ze sliepen te veel", "Ze woonden te ver weg", "Ze spraken een vreemde taal"],
++            antwoorden: ["Ze maakten ruzie en waren verdeeld", "Sommigen dachten dat ze beter waren dan anderen", "Er waren mensen die zich misdroegen bij de samenkomst", "Ze twijfelden of de doden wel zouden opstaan"],
+             correct: "Ze maakten ruzie en waren verdeeld",
+             bijbelplaats: "1 Korintiërs 1:10-11"
+         },
+@@ -2381,8 +2381,8 @@
+         },
+         {
+             vraag: "Paulus vergelijkt de schat van het goede nieuws met iets kostbaars in iets gewoons. Waarin zit die schat?",
+-            antwoorden: ["In een gouden kist", "In een groot kasteel", "In kruiken van klei (gewone potten)", "In een diepe put"],
+-            correct: "In kruiken van klei (gewone potten)",
++            antwoorden: ["In een gouden kist", "In een groot kasteel", "In kruiken van klei", "In een diepe put"],
++            correct: "In kruiken van klei",
+             bijbelplaats: "2 Korintiërs 4:7"
+         },
+         {
+@@ -2405,7 +2405,7 @@
+         },
+         {
+             vraag: "Paulus zegt dat ons lichaam zwakker wordt, maar dat er iets anders gebeurt van binnen. Wat?",
+-            antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "We worden bang"],
++            antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "Van buiten worden we juist steeds mooier"],
+             correct: "Van binnen worden we elke dag vernieuwd",
+             bijbelplaats: "2 Korintiërs 4:16"
+         },
+@@ -2425,7 +2425,8 @@
+             vraag: "Hoeveel keer leed Paulus schipbreuk, schrijft hij in 2 Korintiërs?",
+             antwoorden: ["Nooit", "Eén keer", "Drie keer", "Tien keer"],
+             correct: "Drie keer",
+-            bijbelplaats: "2 Korintiërs 11:25"
++            bijbelplaats: "2 Korintiërs 11:25",
++            uitleg: "Een schipbreuk is als je schip op zee vergaat, bijvoorbeeld door een zware storm of doordat het op de rotsen loopt. Paulus reisde veel over zee en maakte dat maar liefst drie keer mee."
+         },
+         {
+             vraag: "Paulus schrijft dat de gelovigen zelf een soort \"brief\" zijn. Waarmee is die geschreven?",
+@@ -2435,7 +2436,7 @@
+         },
+         {
+             vraag: "Aan het eind van het grote opstandingshoofdstuk bemoedigt Paulus de gelovigen. Wat zegt hij over hun werk voor God?",
+-            antwoorden: ["Dat het zinloos is", "Dat het nooit voor niets is", "Dat alleen sterke mensen het mogen doen", "Dat ze er beter mee kunnen stoppen"],
++            antwoorden: ["Dat het zinloos is", "Dat het nooit voor niets is", "Dat alleen sterke mensen het mogen doen", "Dat ze er flink voor betaald zullen krijgen"],
+             correct: "Dat het nooit voor niets is",
+             bijbelplaats: "1 Korintiërs 15:58"
+         }
