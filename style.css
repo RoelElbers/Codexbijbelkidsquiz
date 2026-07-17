@@ -3730,3 +3730,35 @@ height: 22%;
 #quiz-scherm #resultaat {
     margin-top: clamp(16px, 2.2vh, 26px);   /* was clamp(28px, 3.6vh, 42px) */
 }
+
+
+/* =========================================================================
+   TELEFOON / KORTE SCHERMEN — de HELE overlay scrollt (touch-vriendelijk),
+   niet de losse vakken intern. Geldt voor alle schermen (quiz, niveau,
+   avatar-keuze, spelerkiezer, naslag, catechese, enz.). Desktop/tablet
+   blijven ongemoeid. !important omdat diverse schermen eigen ID-regels met
+   max-height hebben die anders zouden winnen.
+========================================================================= */
+@media (max-width: 768px), (max-height: 500px) {
+    .quiz-overlay {
+        align-items: flex-start;           /* vak bovenaan i.p.v. gecentreerd-afgekapt */
+        overflow-y: auto;                  /* de overlay scrollt als geheel */
+        -webkit-overflow-scrolling: touch; /* soepel scrollen op iOS */
+        padding: 16px 0;
+    }
+
+    /* Alle quiz-vakken: niet meer intern begrenzen/afkappen. */
+    .quiz-box {
+        max-width: 94vw !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    /* Interne scroll-lijsten laten meegroeien met de pagina i.p.v. eigen scroll. */
+    #nieuw-spel-scherm .avatar-keuze,
+    .speler-kiezer-box,
+    .speler-kiezer-box * {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+}
