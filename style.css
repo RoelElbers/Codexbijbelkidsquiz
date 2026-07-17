@@ -2361,8 +2361,8 @@ height: 22%;
         #5aa9e6 72%,
         #3f92da 100%);  /* stevig blauw onderaan */
     border-color: #e6d6a2;                     /* zacht crème/goud randje */
-    color: #ffffff;
-    text-shadow: 0 1px 2px rgba(20, 40, 70, 0.45);
+    color: #1e2a4a;                            /* diep marineblauw — leest beter dan wit op de lichte top */
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);  /* lichte highlight voor scherpte */
 }
 
 /* =========================
