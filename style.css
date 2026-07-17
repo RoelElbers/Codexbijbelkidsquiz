@@ -3707,3 +3707,26 @@ height: 22%;
         transform: translateY(-50%);
     }
 }
+
+/* =========================================================================
+   OEFENMODUS — compacte navigatie (Terug/Volgende)
+   Houdt de onderste knoppenrij ruim boven de schermrand, zodat "Volgende →"
+   altijd goed klikbaar blijft. Alleen de oefen-nav + wat spatiëring; de
+   vraag/antwoord-lettergroottes blijven ongemoeid.
+========================================================================= */
+#resultaat .oefen-nav .oefen-volgende {
+    width: auto;
+    min-width: 200px;
+    margin: 0;               /* weg met de 18px top-marge van de antwoordknop */
+    padding: 12px 24px;      /* compacter dan de 22px van een antwoordknop */
+    font-size: 1.5rem;       /* kleiner dan de 2rem van een antwoordknop */
+}
+
+/* Iets meer verticale lucht in het quizvak, zodat de onderste rij niet tegen de
+   rand komt. Alleen marges — geen lettergroottes. */
+#quiz-scherm .answer-btn {
+    margin-top: 16px;        /* was 22px */
+}
+#quiz-scherm #resultaat {
+    margin-top: clamp(16px, 2.2vh, 26px);   /* was clamp(28px, 3.6vh, 42px) */
+}
