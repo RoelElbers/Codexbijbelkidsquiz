@@ -118,7 +118,7 @@ const vragenData = {
             },
             {
                 vraag: "Wie doopte Jezus in de rivier de Jordaan?",
-                antwoorden: ["Petrus", "Mozes", "Johannes de Doper", "Paulus"],
+                antwoorden: ["Petrus", "Zijn eigen vader Jozef", "Johannes de Doper", "Paulus"],
                 correct: "Johannes de Doper",
                 bijbelplaats: "Matteüs 3:13-17"
             },
@@ -136,7 +136,7 @@ const vragenData = {
             },
             {
                 vraag: "Wie kwamen er na de geboorte van Jezus naar hem op zoek, geleid door een ster?",
-                antwoorden: ["Herders", "Wijzen uit het oosten", "Engelen", "Vissers"],
+                antwoorden: ["Herders", "Wijzen uit het oosten", "Engelen", "Priesters uit de grote tempel"],
                 correct: "Wijzen uit het oosten",
                 bijbelplaats: "Matteüs 2:1-2"
             },
@@ -148,7 +148,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat gebeurde er toen Jezus gedoopt werd?",
-                antwoorden: ["Er kwam een storm op", "De hemel ging open en er daalde een duif neer", "Het werd donker", "Er klonk een bazuin"],
+                antwoorden: ["Er kwam een storm op", "De hemel ging open en er daalde een duif neer", "Er verscheen een grote regenboog aan de hemel", "Er klonk een bazuin"],
                 correct: "De hemel ging open en er daalde een duif neer",
                 bijbelplaats: "Matteüs 3:16"
             },
@@ -180,19 +180,19 @@ const vragenData = {
             },
             {
                 vraag: "In de gelijkenis van de zaaier: waar viel het zaad dat geen blijvende vrucht droeg, onder andere?",
-                antwoorden: ["In een rivier", "Op het pad", "Op de rotsbodem en tussen de distels", "Op een berg"],
+                antwoorden: ["In een rivier", "Op het pad", "Op de rotsbodem en tussen de distels", "In een ruig bergachtig gebied"],
                 correct: "Op de rotsbodem en tussen de distels",
                 bijbelplaats: "Matteüs 13:3-8"
             },
             {
                 vraag: "Wat antwoordde Jezus toen hem werd gevraagd wat het grootste gebod is?",
-                antwoorden: ["Heb God lief, en je naaste als jezelf", "Steel niet", "Eer je vader en moeder", "Houd de sabbat heilig"],
+                antwoorden: ["Heb God lief, en je naaste als jezelf", "Breng elke dag trouw een offer in de tempel", "Eer je vader en moeder", "Houd de sabbat heilig"],
                 correct: "Heb God lief, en je naaste als jezelf",
                 bijbelplaats: "Matteüs 22:37-39"
             },
             {
                 vraag: "Wat gebeurde er op het moment dat Jezus aan het kruis stierf?",
-                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Er verscheen een regenboog", "De zon kwam op"],
+                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Er verscheen een regenboog", "Alle vogels in de wijde omgeving begonnen tegelijk te zingen"],
                 correct: "Het werd donker en het voorhangsel van de tempel scheurde",
                 bijbelplaats: "Matteüs 27:45-51"
             },
@@ -210,7 +210,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat zei Jezus dat je moest doen als iemand je op de ene wang slaat?",
-                antwoorden: ["Terugslaan", "De andere wang ook toekeren", "Weglopen", "Om hulp roepen"],
+                antwoorden: ["Terugslaan", "De andere wang ook toekeren", "Weglopen", "De ander meteen bij de rechter aanklagen"],
                 correct: "De andere wang ook toekeren",
                 bijbelplaats: "Matteüs 5:39"
             },
@@ -222,7 +222,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat was de laatste opdracht die Jezus aan zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
-                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Houd het goede nieuws voor jezelf", "Schrijf een boek"],
+                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Blijf voortaan allemaal samen in de stad Jeruzalem wonen", "Schrijf een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
             }
@@ -248,7 +248,7 @@ const vragenData = {
             },
             {
                 vraag: "Waarmee begint het evangelie van Matteüs?",
-                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met de schepping", "Met een brief", "Met een lied"],
+                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met de schepping", "Met de aankondiging van de engel aan Maria", "Met een lied"],
                 correct: "Met een geslachtsregister vanaf Abraham",
                 bijbelplaats: "Matteüs 1:1-17"
             },
@@ -296,7 +296,7 @@ const vragenData = {
             },
             {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
-                antwoorden: ["Bij zonsondergang", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht", "Bij het eerste hanengekraai"],
+                antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht", "Bij het eerste hanengekraai"],
                 correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
                 bijbelplaats: "Matteüs 14:25",
                 uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken' van elk ongeveer drie uur. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
@@ -329,7 +329,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "In de gelijkenis van het zuurdesem mengt een vrouw zuurdesem door 'drie maten' (sata) meel. Wat valt op aan die hoeveelheid?",
-                antwoorden: ["Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken", "Het was maar een klein kopje", "Het was precies genoeg voor één broodje", "Het was te weinig om brood van te bakken"],
+                antwoorden: ["Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken", "Het was ongeveer precies de hoeveelheid meel die een gewoon gezin op één hele dag opat", "Het was precies genoeg voor één broodje", "Het was te weinig om brood van te bakken"],
                 correct: "Het was een heel grote hoeveelheid, genoeg om voor heel veel mensen brood te bakken",
                 bijbelplaats: "Matteüs 13:33"
             },
@@ -797,7 +797,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         beginner: [
             {
                 vraag: "Hoe noemde Johannes de Doper Jezus toen hij hem zag aankomen?",
-                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De Heer", "De rabbi"],
+                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet die door Mozes lang geleden was beloofd", "De rabbi"],
                 correct: "Het Lam van God dat de zonde van de wereld wegneemt",
                 bijbelplaats: "Johannes 1:29"
             },
@@ -809,7 +809,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Met wie sprak Jezus bij een waterput in Samaria?",
-                antwoorden: ["Een Samaritaanse vrouw", "Maria", "Marta", "Elisabet"],
+                antwoorden: ["Een Samaritaanse vrouw", "Maria", "Marta", "De moeder van Johannes de Doper"],
                 correct: "Een Samaritaanse vrouw",
                 bijbelplaats: "Johannes 4:5-26"
             },
@@ -859,7 +859,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         advanced: [
             {
                 vraag: "Hoe begint het evangelie van Johannes?",
-                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister", "Met een brief"],
+                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister", "Met de vlucht van Jozef en Maria naar het land Egypte"],
                 correct: "Met de woorden 'In het begin was het Woord'",
                 bijbelplaats: "Johannes 1:1"
             },
@@ -901,7 +901,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat schreef Pilatus op het bordje boven het kruis, in drie talen?",
-                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Veroordeeld", "De Zoon van God"],
+                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "De Zoon van God"],
                 correct: "Jezus van Nazaret, de koning van de Joden",
                 bijbelplaats: "Johannes 19:19-20"
             },
@@ -913,7 +913,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Volg mij", "Heb je mij lief? Zorg voor mijn schapen", "Vrees niet", "Blijf hier wachten"],
+                antwoorden: ["Volg mij", "Heb je mij lief? Zorg voor mijn schapen", "Vrees niet", "Ga nu de hele wijde wereld in en vertel over mij"],
                 correct: "Heb je mij lief? Zorg voor mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             }
@@ -921,7 +921,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         expert: [
             {
                 vraag: "Wat antwoordde Jezus toen Tomas vroeg hoe de leerlingen de weg naar de Vader konden kennen?",
-                antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood des levens", "Ik ben de wijnstok"],
+                antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood des levens", "Ik ben de opstanding en het eeuwige leven"],
                 correct: "Ik ben de weg, de waarheid en het leven",
                 bijbelplaats: "Johannes 14:5-6"
             },
@@ -990,7 +990,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat is er zo bijzonder aan de Dode Zee?",
-                antwoorden: ["Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven", "Het is het grootste zoetwatermeer van Israël", "Het water stijgt en daalt sterk bij eb en vloed", "Er leven bijzonder veel verschillende vissoorten in"],
+                antwoorden: ["Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven", "Het is zo ontzettend diep dat niemand ooit de bodem ervan heeft kunnen bereiken", "Het water stijgt en daalt sterk bij eb en vloed", "Er leven bijzonder veel verschillende vissoorten in"],
                 correct: "Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven",
                 uitleg: "De Dode Zee zit boordevol zout — zoveel dat er niets in kan leven, en dat je er zomaar op blijft drijven. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
             },
@@ -1019,7 +1019,7 @@ vragenData["Matteüs"].advanced.push(
     },
     {
         vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
-        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De regels van koning Herodes", "Regels opgesteld door de tempelwachters"],
+        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
         correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
         bijbelplaats: "Matteüs 5:17"
     },
@@ -1143,7 +1143,7 @@ vragenData["Lucas"].expert.push(
 vragenData["Johannes"].beginner.push(
     {
         vraag: 'Wat is een "discipel"?',
-        antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een koning"],
+        antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een dienaar die in de tempel het heilige vuur brandend hield"],
         correct: "Een leerling van Jezus die met hem meeging en van hem leerde",
         bijbelplaats: "Johannes 1:35-40"
     },
@@ -1155,7 +1155,7 @@ vragenData["Johannes"].beginner.push(
     },
     {
         vraag: "Wat was de tempel?",
-        antwoorden: ["Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden", "Een gewoon woonhuis", "De markt van Jeruzalem", "Een Romeins fort"],
+        antwoorden: ["Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden", "Het grote paleis waar de koning van de Joden met zijn hele familie woonde", "De markt van Jeruzalem", "Een Romeins fort"],
         correct: "Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden",
         bijbelplaats: "Johannes 2:13-22"
     }
@@ -1221,7 +1221,7 @@ vragenData["Matteüs"].beginner.push(
     },
     {
         vraag: "Een herder heeft honderd schapen en er raakt er één kwijt. Wat doet hij volgens Jezus?",
-        antwoorden: ["Hij laat de negenennegentig achter om dat ene te zoeken", "Hij blijft bij de negenennegentig", "Hij koopt een nieuw schaap", "Hij wacht tot het vanzelf terugkomt"],
+        antwoorden: ["Hij laat de negenennegentig achter om dat ene te zoeken", "Hij vergeet dat ene schaap en telt gewoon rustig verder", "Hij koopt een nieuw schaap", "Hij wacht tot het vanzelf terugkomt"],
         correct: "Hij laat de negenennegentig achter om dat ene te zoeken",
         bijbelplaats: "Matteüs 18:12-14",
         uitleg: "Met dit verhaal liet Jezus zien dat God ieder mens belangrijk vindt — juist ook die ene die verdwaald is geraakt."
@@ -1234,7 +1234,7 @@ vragenData["Matteüs"].beginner.push(
     },
     {
         vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei hij?",
-        antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Zorg eerst goed voor jezelf"],
+        antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Behandel anderen precies zoals zij jou behandeld hebben"],
         correct: "Behandel anderen zoals je zelf behandeld wilt worden",
         bijbelplaats: "Matteüs 7:12"
     }
@@ -1248,7 +1248,7 @@ vragenData["Matteüs"].beginner.push(
 vragenData["Matteüs"].advanced.push(
     {
         vraag: 'Een "el" is ongeveer zo lang als…',
-        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "Eén grote stap (ongeveer 75 cm)", "De breedte van je hand (ongeveer 8 cm)"],
+        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "De lengte van je arm van schouder tot pols (ongeveer 60 cm)", "De breedte van je hand (ongeveer 8 cm)"],
         correct: "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)",
         bijbelplaats: "Matteüs 6:27"
     },
@@ -1260,7 +1260,7 @@ vragenData["Matteüs"].advanced.push(
     },
     {
         vraag: "Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop. Wat was een korenmaat?",
-        antwoorden: ["Een muntstuk", "Een bak of mand voor graan", "Een soort lamp", "Een lengtemaat"],
+        antwoorden: ["Een mand om vissen mee te vangen", "Een bak of mand voor graan", "Een soort lamp", "Een lengtemaat"],
         correct: "Een bak of mand voor graan",
         bijbelplaats: "Matteüs 5:15",
         uitleg: "Een korenmaat was een bak of mand om graan in te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
@@ -1327,14 +1327,14 @@ vragenData["Lucas"].advanced.push(
 vragenData["Johannes"].expert.push(
     {
         vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
-        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een afstand", "Een tijdsmaat"],
+        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld van wel driehonderd munten", "Een tijdsmaat"],
         correct: "Een gewicht (ongeveer 300 gram)",
         bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
         uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
     },
     {
         vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
-        antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Eén denarie", "Een paar penningen"],
+        antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar penningen"],
         correct: "Driehonderd denarie (bijna een jaarloon)",
         bijbelplaats: "Johannes 12:5",
         uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
@@ -1366,7 +1366,7 @@ vragenData["Matteüs"].expert.push(
         antwoorden: [
             "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
             "Ongeveer negen uur 's ochtends — het begin van de werkdag",
-            "Rond middernacht — het uur van de nachtwacht",
+            "Precies om middernacht — het uur waarop de tempelwachters van dienst wisselden",
             "Bij zonsopgang — het uur van het ochtendoffer"
         ],
         correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
@@ -1439,7 +1439,7 @@ vragenData["Johannes"].expert.push(
             "Hij geeft zijn leven voor de schapen",
             "Hij verkoopt ze",
             "Hij laat ze alleen",
-            "Hij telt ze elke dag"
+            "Hij laat ze door een knecht in de gaten houden"
         ],
         correct: "Hij geeft zijn leven voor de schapen",
         bijbelplaats: "Johannes 10:11"
@@ -1532,7 +1532,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat noemt Paulus het grootste geschenk van God aan de mensen?",
-            antwoorden: ["Geld", "Een mooi huis", "Het eeuwige leven door Jezus Christus", "Veel land"],
+            antwoorden: ["Een lang leven vol rijkdom, eer en macht", "Een mooi huis", "Het eeuwige leven door Jezus Christus", "Veel land"],
             correct: "Het eeuwige leven door Jezus Christus",
             bijbelplaats: "Romeinen 6:23"
         },
@@ -1580,7 +1580,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus schrijft bemoedigend: 'Als God vóór ons is, wie kan dan tégen ons zijn?' Wat wil hij hiermee duidelijk maken?",
-            antwoorden: ["Niemand is sterker dan God, dus we hoeven niet bang te zijn", "Dat we altijd onze zin zullen krijgen", "Dat we nooit meer verdrietig zullen zijn", "Dat we nooit meer hoeven te werken"],
+            antwoorden: ["Niemand is sterker dan God, dus we hoeven niet bang te zijn", "Dat we altijd onze zin zullen krijgen", "Dat we nooit meer verdrietig zullen zijn", "Dat God al onze vijanden voor ons zal komen straffen en verslaan"],
             correct: "Niemand is sterker dan God, dus we hoeven niet bang te zijn",
             bijbelplaats: "Romeinen 8:31"
         },
@@ -1598,13 +1598,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Hoe ontstaat geloof volgens Paulus?",
-            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen", "Door slim te zijn"],
+            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen", "Door zoveel mogelijk goede daden te verzamelen"],
             correct: "Door te luisteren naar het woord van God",
             bijbelplaats: "Romeinen 10:17"
         },
         {
             vraag: "Paulus schrijft: 'Wees blij met wie blij zijn en wees begaan met wie verdriet hebben.' Wat bedoelt hij?",
-            antwoorden: ["Leef echt met anderen mee, of ze nu blij of verdrietig zijn", "Ga zelf ook meteen huilen", "Zeg tegen hen dat het wel meevalt", "Laat hen liever even alleen"],
+            antwoorden: ["Leef echt met anderen mee, of ze nu blij of verdrietig zijn", "Bemoei je liever helemaal niet met het verdriet van anderen", "Zeg tegen hen dat het wel meevalt", "Laat hen liever even alleen"],
             correct: "Leef echt met anderen mee, of ze nu blij of verdrietig zijn",
             bijbelplaats: "Romeinen 12:15"
         },
@@ -1648,13 +1648,13 @@ vragenData["Romeinen"] = {
     advanced: [
         {
             vraag: "Waarmee heeft God ons hart gevuld, schrijft Paulus?",
-            antwoorden: ["Met niets", "Met zijn liefde, door de heilige Geest", "Met zorgen", "Met angst"],
+            antwoorden: ["Met niets", "Met zijn liefde, door de heilige Geest", "Met wijsheid over alle dingen op aarde", "Met angst"],
             correct: "Met zijn liefde, door de heilige Geest",
             bijbelplaats: "Romeinen 5:5"
         },
         {
             vraag: "Mogen we rustig verkeerde dingen blijven doen, omdat God toch vergeeft?",
-            antwoorden: ["Ja, het maakt niet uit", "Ja, hoe meer hoe beter", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
+            antwoorden: ["Ja, het maakt niet uit", "Ja, want een beetje kwaad kan echt geen kwaad", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
             correct: "Nee, want we leven nu een nieuw leven",
             bijbelplaats: "Romeinen 6:1-2"
         },
@@ -1684,7 +1684,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarvoor zijn de woorden uit de Bijbel volgens Paulus opgeschreven?",
-            antwoorden: ["Om ons te laten schrikken", "Om ons te bemoedigen en hoop te geven", "Om ons te vervelen", "Om ons in de war te brengen"],
+            antwoorden: ["Om ons te laten schrikken", "Om ons te bemoedigen en hoop te geven", "Om ons bang te maken voor het oordeel van God", "Om ons in de war te brengen"],
             correct: "Om ons te bemoedigen en hoop te geven",
             bijbelplaats: "Romeinen 15:4"
         },
@@ -1702,7 +1702,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat raadt Paulus aan om met je leven te doen?",
-            antwoorden: ["Hou alles voor jezelf", "Doe gewoon wat je maar wilt", "Geef jezelf aan God om het goede te doen", "Wacht af tot anderen iets doen"],
+            antwoorden: ["Verzamel zoveel mogelijk bezit en rijkdom voor jezelf", "Doe gewoon wat je maar wilt", "Geef jezelf aan God om het goede te doen", "Wacht af tot anderen iets doen"],
             correct: "Geef jezelf aan God om het goede te doen",
             bijbelplaats: "Romeinen 6:13"
         },
@@ -1720,7 +1720,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
-            antwoorden: ["Maak overal ruzie", "Probeer zoveel mogelijk met iedereen in vrede te leven", "Praat liever met niemand", "Vrede is niet belangrijk"],
+            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt", "Probeer zoveel mogelijk met iedereen in vrede te leven", "Praat liever met niemand", "Vrede is niet belangrijk"],
             correct: "Probeer zoveel mogelijk met iedereen in vrede te leven",
             bijbelplaats: "Romeinen 12:18"
         },
@@ -1764,13 +1764,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarom moet je een ander niet te snel veroordelen, zegt Paulus?",
-            antwoorden: ["Omdat jij altijd gelijk hebt", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat het toch niemand opvalt"],
+            antwoorden: ["Omdat jij altijd gelijk hebt", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat andere mensen jou anders ook zullen veroordelen"],
             correct: "Omdat we allemaal eens voor God zullen staan",
             bijbelplaats: "Romeinen 14:10-12"
         },
         {
             vraag: "Waar wilde Paulus het liefst het goede nieuws brengen?",
-            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "Nergens, hij bleef liever thuis"],
+            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "Alleen in de allergrootste en rijkste steden van het Romeinse rijk"],
             correct: "Op plekken waar mensen nog nooit van Christus hadden gehoord",
             bijbelplaats: "Romeinen 15:20"
         },
@@ -1782,7 +1782,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Aan het eind van zijn brief beveelt Paulus een vrouw aan die Febe heet. Zij diende de gemeente en was nu op reis naar Rome, waarschijnlijk met deze brief in haar hand. Wat vraagt Paulus aan de Romeinen?",
-            antwoorden: ["Ontvang haar goed en help haar met alles wat ze nodig heeft", "Onderzoek eerst of ze wel te vertrouwen is", "Stuur haar zo snel mogelijk weer terug", "Laat haar buiten de stad wachten tot Paulus komt"],
+            antwoorden: ["Ontvang haar goed en help haar met alles wat ze nodig heeft", "Onderzoek eerst of ze wel te vertrouwen is", "Vraag haar eerst om te bewijzen dat ze echt gelovig is", "Laat haar buiten de stad wachten tot Paulus komt"],
             correct: "Ontvang haar goed en help haar met alles wat ze nodig heeft",
             bijbelplaats: "Romeinen 16:1-2"
         },
@@ -1800,7 +1800,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Helemaal aan het eind zegt Paulus dat God iets met de gelovigen kan doen. Wat?",
-            antwoorden: ["Hij kan hen rijk maken", "Hij kan hen beroemd maken", "Hij kan hen de baas maken", "Hij kan hen sterk maken in het geloof"],
+            antwoorden: ["Hij kan hen machtiger maken dan alle koningen", "Hij kan hen beroemd maken", "Hij kan hen de baas maken", "Hij kan hen sterk maken in het geloof"],
             correct: "Hij kan hen sterk maken in het geloof",
             bijbelplaats: "Romeinen 16:25"
         }
@@ -2704,7 +2704,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus schrijft hoe gelovigen met elkaar om moeten gaan. Hij noemt drie dingen: goed zijn voor elkaar, met elkaar meeleven, en nog iets. Wat is dat derde?",
-            antwoorden: ["Elkaar vergeven, zoals God jou vergeven heeft", "Elkaar prijzen", "Elkaar verbeteren", "Elkaar met rust laten"],
+            antwoorden: ["Elkaar vergeven, zoals God jou vergeven heeft", "Elkaar overtreffen in zoveel mogelijk goede daden", "Elkaar verbeteren", "Elkaar met rust laten"],
             correct: "Elkaar vergeven, zoals God jou vergeven heeft",
             bijbelplaats: "Efeziërs 4:32"
         },
@@ -2728,7 +2728,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat zegt Paulus dat kinderen en hun ouders voor elkaar betekenen?",
-            antwoorden: ["Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen", "Kinderen mogen altijd zelf bepalen wat ze doen", "Ouders moeten hun kinderen vooral streng straffen", "Kinderen en ouders kunnen elkaar beter mijden"],
+            antwoorden: ["Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen", "Kinderen mogen altijd zelf bepalen wat ze doen", "Ouders moeten hun kinderen vooral streng straffen", "Ouders bepalen echt alles en kinderen mogen nooit iets zelf beslissen"],
             correct: "Kinderen luisteren naar hun ouders, en ouders zorgen liefdevol voor hen",
             bijbelplaats: "Efeziërs 6:1-4"
         },
@@ -2764,7 +2764,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus schrijft dat we gered zijn \"uit genade\". Wat betekent dat?",
-            antwoorden: ["Het is een geschenk van God; je kunt het niet zelf verdienen", "Je moet er heel hard voor werken", "Alleen heel sterke mensen worden gered", "Je moet er veel geld voor betalen"],
+            antwoorden: ["Het is een geschenk van God; je kunt het niet zelf verdienen", "Je moet er je hele leven lang heel erg hard voor blijven werken", "Alleen heel sterke mensen worden gered", "Je moet er veel geld voor betalen"],
             correct: "Het is een geschenk van God; je kunt het niet zelf verdienen",
             bijbelplaats: "Efeziërs 2:8-9"
         }
@@ -2784,7 +2784,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt: wees vriendelijk voor elkaar en...",
-            antwoorden: ["blijf boos op elkaar", "ga uit elkaars buurt", "vergeef elkaar, zoals God jullie vergeven heeft", "denk alleen aan jezelf"],
+            antwoorden: ["praat pas weer als de ander netjes zijn excuses aanbiedt", "ga uit elkaars buurt", "vergeef elkaar, zoals God jullie vergeven heeft", "denk alleen aan jezelf"],
             correct: "vergeef elkaar, zoals God jullie vergeven heeft",
             bijbelplaats: "Efeziërs 4:32"
         },
@@ -2838,7 +2838,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Waarom kun je je redding niet zelf verdienen, zegt Paulus?",
-            antwoorden: ["Het is een geschenk van God, zodat niemand kan opscheppen", "Omdat het te duur is", "Omdat je te zwak bent", "Omdat het te ver weg is"],
+            antwoorden: ["Het is een geschenk van God, zodat niemand kan opscheppen", "Omdat je er eerst heel veel goede daden voor moet gaan doen", "Omdat je te zwak bent", "Omdat het te ver weg is"],
             correct: "Het is een geschenk van God, zodat niemand kan opscheppen",
             bijbelplaats: "Efeziërs 2:9"
         },
@@ -2886,7 +2886,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt: je oude gewoonten afleggen is niet genoeg. Wat moet er ook nieuw worden, van binnen?",
-            antwoorden: ["Je gedachten, je manier van denken", "Je naam", "Je huis", "Je kleren"],
+            antwoorden: ["Je gedachten, je manier van denken", "Je naam", "De vrienden en de mensen met wie je elke dag omgaat", "Je kleren"],
             correct: "Je gedachten, je manier van denken",
             bijbelplaats: "Efeziërs 4:23"
         }
@@ -2912,7 +2912,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Joden en niet-Joden waren vroeger gescheiden. Wat is er door Christus gebeurd?",
-            antwoorden: ["De muur tussen hen is afgebroken; ze horen nu samen bij elkaar", "De muur werd nog hoger dan eerst", "Ze mochten alleen op vaste dagen bij elkaar komen", "Ze bleven twee aparte groepen naast elkaar"],
+            antwoorden: ["De muur tussen hen is afgebroken; ze horen nu samen bij elkaar", "De muur tussen hen werd juist nog een heel stuk hoger gebouwd", "Ze mochten alleen op vaste dagen bij elkaar komen", "Ze bleven twee aparte groepen naast elkaar"],
             correct: "De muur tussen hen is afgebroken; ze horen nu samen bij elkaar",
             bijbelplaats: "Efeziërs 2:14"
         },
@@ -2936,7 +2936,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Waar staan de \"schoenen\" in de wapenrusting voor?",
-            antwoorden: ["Klaarstaan om het goede nieuws van vrede te brengen", "Hard kunnen wegrennen", "Mooi voor de dag komen", "Stil kunnen lopen"],
+            antwoorden: ["Klaarstaan om het goede nieuws van vrede te brengen", "Hard kunnen wegrennen", "Mooi voor de dag komen", "Ongemerkt en zo stil mogelijk kunnen rondsluipen"],
             correct: "Klaarstaan om het goede nieuws van vrede te brengen",
             bijbelplaats: "Efeziërs 6:15"
         },
@@ -2954,19 +2954,19 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat zegt Paulus tegen ouders?",
-            antwoorden: ["Maak je kinderen niet boos, maar voed ze liefdevol op", "Wees zo streng mogelijk", "Laat je kinderen aan hun lot over", "Geef ze alles wat ze willen"],
+            antwoorden: ["Maak je kinderen niet boos, maar voed ze liefdevol op", "Wees zo streng mogelijk en straf elke fout meteen hard af", "Laat je kinderen aan hun lot over", "Geef ze alles wat ze willen"],
             correct: "Maak je kinderen niet boos, maar voed ze liefdevol op",
             bijbelplaats: "Efeziërs 6:4"
         },
         {
             vraag: "Waar staat het \"borstpantser\" (harnas) van de wapenrusting voor?",
-            antwoorden: ["Het goede doen (gerechtigheid)", "Veel macht", "Veel kennis", "Hard werken"],
+            antwoorden: ["Het goede doen (gerechtigheid)", "Veel macht", "Slimmer zijn dan alle anderen", "Hard werken"],
             correct: "Het goede doen (gerechtigheid)",
             bijbelplaats: "Efeziërs 6:14"
         },
         {
             vraag: "Paulus zegt dat gelovigen in een echte strijd staan. Tegen wie of wat gaat die strijd volgens hem eigenlijk?",
-            antwoorden: ["Niet tegen mensen van vlees en bloed, maar tegen de machten van het kwaad", "Tegen legers van andere koningen en landen", "Tegen wilde dieren en gevaren in de natuur", "Tegen mensen die er anders uitzien of anders geloven"],
+            antwoorden: ["Niet tegen mensen van vlees en bloed, maar tegen de machten van het kwaad", "Tegen valse profeten die het volk overal probeerden te misleiden", "Tegen wilde dieren en gevaren in de natuur", "Tegen mensen die er anders uitzien of anders geloven"],
             correct: "Niet tegen mensen van vlees en bloed, maar tegen de machten van het kwaad",
             bijbelplaats: "Efeziërs 6:12"
         },
@@ -3032,7 +3032,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Hoe kun je volgens Paulus het beste naar een ander kijken?",
-            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Niemand vertrouwen", "Een ander ontwijken"],
+            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Anderen vooral goed in de gaten houden op fouten", "Een ander ontwijken"],
             correct: "De ander belangrijker vinden dan jezelf",
             bijbelplaats: "Filippenzen 2:3"
         },
@@ -3050,7 +3050,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "In het lied schrijft Paulus dat élke knie zal buigen. Maar waar overal?",
-            antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In elke kerk", "In Jeruzalem en Filippi"],
+            antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In alle grote steden van het Romeinse rijk", "In Jeruzalem en Filippi"],
             correct: "In de hemel, op de aarde én onder de aarde",
             bijbelplaats: "Filippenzen 2:10"
         },
@@ -3112,7 +3112,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Wat moet je volgens Paulus doen in plaats van je zorgen maken?",
-            antwoorden: ["Bidden en je zorgen aan God vertellen", "Wachten tot het overgaat", "Het voor je houden", "Erover blijven piekeren"],
+            antwoorden: ["Bidden en je zorgen aan God vertellen", "Wachten tot het overgaat", "Zo snel mogelijk vluchten voor het probleem", "Erover blijven piekeren"],
             correct: "Bidden en je zorgen aan God vertellen",
             bijbelplaats: "Filippenzen 4:6"
         },
@@ -3142,7 +3142,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom?",
-            antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij het kwijt is", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
+            antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij door zijn gevangenschap alles heeft verloren", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
             correct: "Omdat het kennen van Christus het allerkostbaarst is",
             bijbelplaats: "Filippenzen 3:8"
         },
@@ -3172,7 +3172,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "In het lied schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat?",
-            antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een groot leger", "Een prachtig paleis"],
+            antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een troon van puur goud in de hemel", "Een prachtig paleis"],
             correct: "De hoogste naam, boven alle namen",
             bijbelplaats: "Filippenzen 2:9"
         },
@@ -3210,13 +3210,13 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "In het lied over Jezus schrijft Paulus dat uiteindelijk iedereen iets zal doen. Wat?",
-            antwoorden: ["Knielen en belijden dat Jezus Heer is", "Wegrennen", "Zwijgen van angst", "Een offer brengen"],
+            antwoorden: ["Knielen en belijden dat Jezus Heer is", "Vluchten en zich ergens gaan verbergen", "Zwijgen van angst", "Een offer brengen"],
             correct: "Knielen en belijden dat Jezus Heer is",
             bijbelplaats: "Filippenzen 2:10-11"
         },
         {
             vraag: "Paulus twijfelt tussen twee goede dingen. Tussen welke?",
-            antwoorden: ["Blijven leven om te helpen, óf bij Christus zijn", "Naar Rome of naar Jeruzalem", "Schrijven of reizen", "Werken of rusten"],
+            antwoorden: ["Blijven leven om te helpen, óf bij Christus zijn", "Naar Rome of naar Jeruzalem", "De gemeente bezoeken óf in de gevangenis blijven", "Werken of rusten"],
             correct: "Blijven leven om te helpen, óf bij Christus zijn",
             bijbelplaats: "Filippenzen 1:23-24"
         },
@@ -3234,7 +3234,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat?",
-            antwoorden: ["Dat ze samen met hem gestreden hebben voor het goede nieuws", "Dat ze de rijkste vrouwen van Filippi waren", "Dat ze nooit eerder ruzie hadden gehad", "Dat ze allebei door Lydia waren opgevoed"],
+            antwoorden: ["Dat ze samen met hem gestreden hebben voor het goede nieuws", "Dat ze de rijkste vrouwen van Filippi waren", "Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht", "Dat ze allebei door Lydia waren opgevoed"],
             correct: "Dat ze samen met hem gestreden hebben voor het goede nieuws",
             bijbelplaats: "Filippenzen 4:3"
         },
@@ -3246,13 +3246,13 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Hoe verraste Paulus' gevangenschap iedereen? Wié hoorden er juist dóór hem van Christus?",
-            antwoorden: ["Zelfs de soldaten van de keizerlijke wacht", "Alleen zijn medegevangenen", "Alleen zijn vrienden", "Niemand, hij zat afgezonderd"],
+            antwoorden: ["Zelfs de soldaten van de keizerlijke wacht", "Alleen zijn medegevangenen", "De rijke kooplieden die hem in zijn cel bezochten", "Niemand, hij zat afgezonderd"],
             correct: "Zelfs de soldaten van de keizerlijke wacht",
             bijbelplaats: "Filippenzen 1:13"
         },
         {
             vraag: "Hoe noemt Paulus de Filippenzen liefkozend, als beeld van hoe trots en blij hij met hen is?",
-            antwoorden: ["Zijn blijdschap en erekrans", "Zijn leerlingen", "Zijn soldaten", "Zijn schapen"],
+            antwoorden: ["Zijn blijdschap en erekrans", "Zijn leerlingen", "Zijn allerkostbaarste bezit op deze aarde", "Zijn schapen"],
             correct: "Zijn blijdschap en erekrans",
             bijbelplaats: "Filippenzen 4:1"
         },
@@ -3312,7 +3312,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "In de tweede brief vraagt Paulus de Tessalonicenzen ergens voor te bidden. Waarvoor?",
-            antwoorden: ["Dat het goede nieuws zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat de keizer aftreedt", "Dat Paulus beroemd wordt"],
+            antwoorden: ["Dat het goede nieuws zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat Paulus veilig door al zijn vele reizen komt", "Dat Paulus beroemd wordt"],
             correct: "Dat het goede nieuws zich snel verspreidt",
             bijbelplaats: "2 Tessalonicenzen 3:1"
         },
@@ -3336,7 +3336,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus zegt dat de gelovigen bij het licht horen, niet bij de nacht. Hoe moeten ze daarom zijn?",
-            antwoorden: ["Wakker en helder van geest", "Slaperig", "Bang", "Stil"],
+            antwoorden: ["Wakker en helder van geest", "Lui en de hele dag door aan het slapen", "Bang", "Stil"],
             correct: "Wakker en helder van geest",
             bijbelplaats: "1 Tessalonicenzen 5:6"
         },
@@ -3368,7 +3368,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus prijst de Tessalonicenzen omdat hun geloof bekend is geworden. Tot waar?",
-            antwoorden: ["Tot in heel Macedonië en nog verder", "Alleen in hun eigen stad", "Alleen in Jeruzalem", "Nergens nog"],
+            antwoorden: ["Tot in heel Macedonië en nog verder", "Alleen in hun eigen stad", "Alleen in Jeruzalem", "Tot in het paleis van de keizer in Rome"],
             correct: "Tot in heel Macedonië en nog verder",
             bijbelplaats: "1 Tessalonicenzen 1:8"
         },
@@ -3392,25 +3392,25 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus zegt: vergeld kwaad niet met kwaad, maar…",
-            antwoorden: ["…doe altijd goed, voor elkaar en voor iedereen", "…laat het maar zo", "…vergeet het snel", "…blijf op je hoede"],
+            antwoorden: ["…doe altijd goed, voor elkaar en voor iedereen", "…zorg dat je het hem later dubbel en dwars terugbetaalt", "…vergeet het snel", "…blijf op je hoede"],
             correct: "…doe altijd goed, voor elkaar en voor iedereen",
             bijbelplaats: "1 Tessalonicenzen 5:15"
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus met alles doen voordat ze het aannemen?",
-            antwoorden: ["Alles onderzoeken en het goede vasthouden", "Alles meteen geloven", "Alles afwijzen", "Alles vergeten"],
+            antwoorden: ["Alles onderzoeken en het goede vasthouden", "Alles meteen geloven", "Alles wat nieuw of vreemd is meteen verwerpen", "Alles vergeten"],
             correct: "Alles onderzoeken en het goede vasthouden",
             bijbelplaats: "1 Tessalonicenzen 5:21"
         },
         {
             vraag: "Paulus wil niet dat de gelovigen verdrietig zijn over gestorvenen zoals mensen \"zonder hoop\". Wat hebben de gelovigen wél?",
-            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "Niets bijzonders", "Alleen herinneringen", "Verdriet voor altijd"],
+            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "De troost dat de doden ergens verder leven als geesten", "Alleen herinneringen", "Verdriet voor altijd"],
             correct: "Hoop: bij de komst van Jezus zien ze elkaar weer",
             bijbelplaats: "1 Tessalonicenzen 4:13"
         },
         {
             vraag: "Waar kwamen de Tessalonicenzen vandaan vóór ze gingen geloven? Wat lieten ze achter?",
-            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun handel", "Hun familie"],
+            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "De grote feesten ter ere van de keizer", "Hun familie"],
             correct: "De afgoden, om de levende God te dienen",
             bijbelplaats: "1 Tessalonicenzen 1:9"
         },
@@ -3428,7 +3428,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen?",
-            antwoorden: ["De wolken in, de Heer tegemoet", "De tempel in", "De berg op", "De hemelpoort door"],
+            antwoorden: ["De wolken in, de Heer tegemoet", "De tempel in", "Naar de allerhoogste top van de heilige berg Sion", "De hemelpoort door"],
             correct: "De wolken in, de Heer tegemoet",
             bijbelplaats: "1 Tessalonicenzen 4:17"
         },
@@ -3440,7 +3440,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun?",
-            antwoorden: ["Rust, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een eigen land", "Wraak met het zwaard"],
+            antwoorden: ["Rust, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Wraak met het zwaard"],
             correct: "Rust, wanneer Jezus verschijnt",
             bijbelplaats: "2 Tessalonicenzen 1:7"
         }
@@ -3466,7 +3466,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Hoe noemt Paulus de Tessalonicenzen, als beeld van hoe trots hij op hen is bij de komst van Jezus?",
-            antwoorden: ["Zijn kroon om trots op te zijn", "Zijn leerlingen", "Zijn dienaren", "Zijn schapen"],
+            antwoorden: ["Zijn kroon om trots op te zijn", "Zijn leerlingen", "Zijn trouwste soldaten in de strijd", "Zijn schapen"],
             correct: "Zijn kroon om trots op te zijn",
             bijbelplaats: "1 Tessalonicenzen 2:19"
         },
@@ -3496,7 +3496,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus beschrijft hoe de Heer zelf uit de hemel zal neerdalen. Welk geluid hoort daar volgens hem bij?",
-            antwoorden: ["Een bevel, de stem van een aartsengel en een trompet van God", "Het gezang van duizenden engelen", "Een donderslag uit een heldere hemel", "Het ruisen van een grote wind"],
+            antwoorden: ["Een bevel, de stem van een aartsengel en een trompet van God", "Het gezang van duizenden engelen", "Een donderslag uit een heldere hemel", "Het geluid van machtige watervallen en bruisende zeeën"],
             correct: "Een bevel, de stem van een aartsengel en een trompet van God",
             bijbelplaats: "1 Tessalonicenzen 4:16"
         },
