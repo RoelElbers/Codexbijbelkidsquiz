@@ -5421,6 +5421,9 @@ let rondeStopPendingAdvance = false;
 // +100 per goed antwoord tot maximaal 1000. Wordt bewust NIET bewaard tussen
 // sessies — elke nieuwe ronde/elk nieuw niveau begint weer op 0.
 let huidigeXP = 0;
+// Vraag-indexen die in deze ronde al een punt + XP opleverden. Voorkomt dubbel
+// scoren als je in de oefenmodus terugbladert en een vraag opnieuw goed beantwoordt.
+let gescoordeVragen = new Set();
 
 // Handle van de lopende requestAnimationFrame voor het optellende XP-tellertje.
 // null = geen animatie actief. Wordt geannuleerd voordat een nieuwe start en bij
@@ -6351,11 +6354,16 @@ function kiesNiveau(niveau) {
 
     gekozenNiveau = niveau;
     gekozenModus = "boek";
-    // 10 willekeurige vragen uit de pool, elk met gehusselde antwoordopties
-    // (zelfde aanpak als de Verborgen Schat). Het juiste antwoord wordt op
-    // tekstwaarde herkend (huidig.correct), dus husselen blijft veilig. Map naar
+    // Gewone quiz: 10 willekeurige vragen uit de pool. Oefenmodus: ALLE vragen
+    // van dit boek+niveau, zodat een kind een lastige set helemaal kan doorwerken
+    // (bijv. Lucas expert). kiesWillekeurigeVragen ontdubbelt en husselt; door de
+    // poollengte als aantal mee te geven, komen in oefenmodus alle unieke vragen
+    // in willekeurige volgorde terug. Elk met gehusselde antwoordopties (het juiste
+    // antwoord wordt op tekstwaarde herkend, dus husselen blijft veilig). Map naar
     // nieuwe objecten zodat vragenData niet gemuteerd wordt.
-    vragen = kiesWillekeurigeVragen(vragenData[gekozenBoek][niveau], 10).map((v) => ({
+    const oefenPool = vragenData[gekozenBoek][niveau];
+    const aantalVragen = oefenModus ? oefenPool.length : 10;
+    vragen = kiesWillekeurigeVragen(oefenPool, aantalVragen).map((v) => ({
         ...v,
         antwoorden: husselArray(v.antwoorden)
     }));
@@ -6379,6 +6387,7 @@ function kiesNiveau(niveau) {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
+    gescoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6520,6 +6529,7 @@ function openSchatkist(niveau) {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
+    gescoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6679,6 +6689,7 @@ function openVerborgenSchat() {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
+    gescoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6723,6 +6734,10 @@ function laadVraag() {
     antwoord2.onclick = () => checkAntwoord(vragen[huidigeVraag].antwoorden[1]);
     antwoord3.onclick = () => checkAntwoord(vragen[huidigeVraag].antwoorden[2]);
     antwoord4.onclick = () => checkAntwoord(vragen[huidigeVraag].antwoorden[3]);
+
+    // Oefenmodus: toon meteen de navigatie (← Terug / Volgende →), óók vóór het
+    // antwoorden, zodat een kind vrij door de hele set kan bladeren en terug kan.
+    if (oefenModus) toonOefenNav();
 }
 
 function checkAntwoord(antwoord) {
@@ -6750,17 +6765,26 @@ function checkAntwoord(antwoord) {
         melding = "✅ Goed gedaan!";
         resultaat.style.color = "#7CFF7C";
 
-        score++;
+        // Punt + XP alleen de eerste keer dat deze vraag goed beantwoord wordt.
+        // In de oefenmodus kun je terugbladeren; opnieuw goed antwoorden mag geen
+        // dubbele punten geven (de score zou anders boven het aantal vragen komen).
+        // Wie eerst fout had en daarna alsnog goed antwoordt, krijgt het punt bij
+        // die eerste goede poging — eerlijk voor een oefenmodus.
+        if (!gescoordeVragen.has(huidigeVraag)) {
+            gescoordeVragen.add(huidigeVraag);
 
-        // XP is per ronde: +100 per goed antwoord, max 1000 — niet opslaan in localStorage.
-        // De oude waarde vastleggen vóór de ophoging, zodat de presentatie de
-        // werkelijke toename (nieuw − oud) toont i.p.v. een hard "+100".
-        const oudeXP = huidigeXP;
-        huidigeXP += 100;
+            score++;
 
-        // Presentatie: zwevende "+N" + optellend tellertje. Verandert de
-        // XP-waarde niet; toont enkel de sprong van oudeXP naar huidigeXP.
-        toonXpToename(oudeXP, huidigeXP);
+            // XP is per ronde: +100 per goed antwoord, max 1000 — niet opslaan in localStorage.
+            // De oude waarde vastleggen vóór de ophoging, zodat de presentatie de
+            // werkelijke toename (nieuw − oud) toont i.p.v. een hard "+100".
+            const oudeXP = huidigeXP;
+            huidigeXP += 100;
+
+            // Presentatie: zwevende "+N" + optellend tellertje. Verandert de
+            // XP-waarde niet; toont enkel de sprong van oudeXP naar huidigeXP.
+            toonXpToename(oudeXP, huidigeXP);
+        }
     } else {
         melding = "❌ Dat is niet goed.";
         resultaat.style.color = "#FF7C7C";
@@ -6786,13 +6810,10 @@ function checkAntwoord(antwoord) {
         // "Volgende →". Alleen deze modus; de gewone quiz blijft snel.
         toonVsReveal(antwoord === huidig.correct, huidig);
     } else if (oefenModus) {
-        // Oefenmodus: geen timer. De feedback + bijbelplaats blijven staan
-        // tot het kind zelf op "Volgende" klikt, zodat het rustig kan nalezen.
-        const volgendeKnop = document.createElement("button");
-        volgendeKnop.className = "answer-btn oefen-volgende";
-        volgendeKnop.textContent = "Volgende →";
-        volgendeKnop.onclick = gaNaarVolgende;
-        resultaat.appendChild(volgendeKnop);
+        // Oefenmodus: geen timer. De feedback + bijbelplaats blijven staan, met
+        // daaronder de navigatie (← Terug / Volgende →) zodat het kind zelf zijn
+        // tempo bepaalt en rustig kan terugbladeren om iets na te lezen.
+        toonOefenNav();
     } else {
         volgendeTimer = setTimeout(gaNaarVolgende, 2000);
     }
@@ -6810,6 +6831,50 @@ function gaNaarVolgende() {
     } else {
         eindScherm();
     }
+}
+
+// Eén vraag terug in de oefenmodus. Op de eerste vraag gebeurt er niets (de
+// Terug-knop is dan uitgeschakeld). Alleen bedoeld voor de oefenmodus.
+function gaNaarVorige() {
+    stopXpTeller();
+    volgendeTimer = null;
+    if (huidigeVraag > 0) {
+        huidigeVraag--;
+        laadVraag();
+    }
+}
+
+// Oefenmodus-navigatie: ← Terug en Volgende → naast elkaar. Terug is uitgeschakeld
+// op de eerste vraag; Volgende → op de laatste vraag sluit de oefenronde af. Wordt
+// zowel vóór als ná het antwoorden getoond, zodat een kind vrij door de set kan
+// bladeren en rustig iets kan nalezen. Alleen oefenmodus; de gewone quiz houdt zijn
+// snelle automatische doorloop.
+function toonOefenNav() {
+    const resultaat = document.getElementById("resultaat");
+    if (!resultaat) return;
+
+    const nav = document.createElement("div");
+    nav.className = "oefen-nav";
+    nav.style.display = "flex";
+    nav.style.gap = "10px";
+    nav.style.justifyContent = "center";
+    nav.style.marginTop = "12px";
+
+    const terug = document.createElement("button");
+    terug.className = "answer-btn oefen-volgende oefen-terug";
+    terug.textContent = "← Terug";
+    terug.disabled = (huidigeVraag === 0);
+    if (huidigeVraag === 0) terug.style.opacity = "0.4";
+    terug.onclick = gaNaarVorige;
+
+    const volgende = document.createElement("button");
+    volgende.className = "answer-btn oefen-volgende";
+    volgende.textContent = "Volgende →";
+    volgende.onclick = gaNaarVolgende;
+
+    nav.appendChild(terug);
+    nav.appendChild(volgende);
+    resultaat.appendChild(nav);
 }
 
 // --- XP-presentatie: zwevende "+N" + optellend tellertje ---------------------
@@ -7019,6 +7084,7 @@ function terugNaarStartscherm() {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
+    gescoordeVragen.clear();
     gekozenBoek = null;
     gekozenNiveau = null;
     gekozenModus = "boek";
