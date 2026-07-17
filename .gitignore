@@ -1,12 +1,58 @@
-# Ruwe trofee-aanleveringen (vóór bijsnijden naar 428x676 + transparant).
-# Alleen werkmateriaal; de verwerkte versies staan los in images/.
-images/origineel-trofee-aanlevering/
+# ============================================================
+#  .gitignore — Bijbelkidsquiz
+#  Houdt back-ups, werkbestanden en zware artefact-bundels uit
+#  de git-geschiedenis. De echte game (script.js, style.css,
+#  index.html, images/ met de gebruikte assets) wordt gewoon
+#  gevolgd en gecommit.
+# ============================================================
 
+# --- Back-ups en losse .bak-bestanden ---
+_backup_voor_*/
+*_backup/
+*.bak
+*.bak-*
+
+# --- Opgeslagen-webpagina-bundels (browser "Save As") ---
+# Deze *_files-mappen zijn elk ~20 MB en horen niet in de repo.
+*_files/
+
+# --- Uitgepakte / originele werkmappen bij beeldbewerking ---
+*_origineel/
+*_origineel_opaque/
+_voorgrond_origineel/
+_wolk_*_origineel/
+
+# --- Uitgepakte webp-mappen (dubbel met de zip) ---
+bijbelkidsquiz-webp/
+bijbelkidsquiz-webp-compleet/
+
+# --- Zip-extractie-werkmappen ("zip ... images") ---
+zip */
+
+# --- Zip-archieven (bijv. de webp-zip van meerdere MB) ---
+*.zip
+
+# --- Project-specifieke werkmappen/bestanden (bestonden al) ---
+# Ruwe trofee-aanleveringen (vóór bijsnijden naar 428x676 + transparant).
+images/origineel-trofee-aanlevering/
 # Backup van de oude boek-PNG's (staan al in de git-historie).
 images/_oud-boeken/
-
-# Windows-systeembestand; in elke map negeren.
-desktop.ini
-
 # Verdwaalde kopie in de repo-root; de echte staat in images/nt2-kast-paneel2.png.
 /nt2-kast-paneel2.png
+
+# --- Tijdelijke / systeembestanden ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Editor-rommel (optioneel, mag blijven staan) ---
+*~
+*.tmp
+
+# ============================================================
+#  Let op: dit negeert ALLEEN nieuwe/untracked bestanden.
+#  Staat er al iets per ongeluk in git (tracked)? Haal het er
+#  dan eenmalig uit met, bijvoorbeeld:
+#      git rm -r --cached "map_of_bestand"
+#  en commit dat. Daarna houdt .gitignore het buiten de repo.
+# ============================================================
