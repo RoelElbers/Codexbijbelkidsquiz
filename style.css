@@ -2348,6 +2348,23 @@ height: 22%;
     border-color: #f4c75e;
 }
 
+/* Menu-/boekknoppen: glanzend blauw met zacht crème/goud randje (blauw-goud
+   kathedraalthema). Via de extra class .menu-knop-blauw op menu- en boekknoppen,
+   zodat de brons/zilver/goud difficulty-medailles in #niveau-scherm hun eigen
+   kleur houden. .answer-btn ervoor geeft genoeg specificiteit om de niveau-*-
+   kleuren te overschrijven. Alleen kleur/afwerking; vorm, border-radius (14px),
+   border-breedte (2px van button) en het hover/klik-gedrag blijven ongemoeid. */
+.answer-btn.menu-knop-blauw {
+    background: linear-gradient(180deg,
+        #dceffc 0%,     /* lichte top-glans */
+        #a9d8f6 38%,
+        #5aa9e6 72%,
+        #3f92da 100%);  /* stevig blauw onderaan */
+    border-color: #e6d6a2;                     /* zacht crème/goud randje */
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(20, 40, 70, 0.45);
+}
+
 /* =========================
    VERBORGEN SCHAT — onthullingskaart (zelf-getempo'd)
    Goud/donkerblauw, in de sfeer van de schatkist. Verschijnt na elke
