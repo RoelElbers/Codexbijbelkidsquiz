@@ -5421,9 +5421,10 @@ let rondeStopPendingAdvance = false;
 // +100 per goed antwoord tot maximaal 1000. Wordt bewust NIET bewaard tussen
 // sessies — elke nieuwe ronde/elk nieuw niveau begint weer op 0.
 let huidigeXP = 0;
-// Vraag-indexen die in deze ronde al een punt + XP opleverden. Voorkomt dubbel
-// scoren als je in de oefenmodus terugbladert en een vraag opnieuw goed beantwoordt.
-let gescoordeVragen = new Set();
+// Vraag-indexen die in de HUIDIGE ronde al beantwoord zijn. Alleen het eerste
+// antwoord op een vraag telt mee voor score/XP (zie checkAntwoord); zo levert
+// terugbladeren en opnieuw invullen geen extra punten op. Bij elke ronde geleegd.
+let beantwoordeVragen = new Set();
 
 // Handle van de lopende requestAnimationFrame voor het optellende XP-tellertje.
 // null = geen animatie actief. Wordt geannuleerd voordat een nieuwe start en bij
@@ -6387,7 +6388,7 @@ function kiesNiveau(niveau) {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
-    gescoordeVragen.clear();
+    beantwoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6529,7 +6530,7 @@ function openSchatkist(niveau) {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
-    gescoordeVragen.clear();
+    beantwoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6689,7 +6690,7 @@ function openVerborgenSchat() {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
-    gescoordeVragen.clear();
+    beantwoordeVragen.clear();
 
     updateXPBalk();
     laadVraag();
@@ -6760,19 +6761,19 @@ function checkAntwoord(antwoord) {
     const goedeKnop = knoppen.find((knop) => knop.innerHTML === huidig.correct);
     if (goedeKnop) goedeKnop.classList.add("answer-correct");
 
+    // Alleen het EERSTE antwoord op een vraag telt mee voor de score/XP. Zo levert
+    // terugbladeren en een vraag opnieuw (goed) invullen geen extra punten op —
+    // belangrijk nu je in de oefenmodus vrij heen en weer kunt bladeren. Ook een
+    // fout eerste antwoord vergrendelt de vraag: later alsnog goed geeft geen punt.
+    const alGescoord = beantwoordeVragen.has(huidigeVraag);
+    beantwoordeVragen.add(huidigeVraag);
+
     let melding;
     if (antwoord === huidig.correct) {
         melding = "✅ Goed gedaan!";
         resultaat.style.color = "#7CFF7C";
 
-        // Punt + XP alleen de eerste keer dat deze vraag goed beantwoord wordt.
-        // In de oefenmodus kun je terugbladeren; opnieuw goed antwoorden mag geen
-        // dubbele punten geven (de score zou anders boven het aantal vragen komen).
-        // Wie eerst fout had en daarna alsnog goed antwoordt, krijgt het punt bij
-        // die eerste goede poging — eerlijk voor een oefenmodus.
-        if (!gescoordeVragen.has(huidigeVraag)) {
-            gescoordeVragen.add(huidigeVraag);
-
+        if (!alGescoord) {
             score++;
 
             // XP is per ronde: +100 per goed antwoord, max 1000 — niet opslaan in localStorage.
@@ -7084,7 +7085,7 @@ function terugNaarStartscherm() {
     huidigeVraag = 0;
     score = 0;
     huidigeXP = 0;
-    gescoordeVragen.clear();
+    beantwoordeVragen.clear();
     gekozenBoek = null;
     gekozenNiveau = null;
     gekozenModus = "boek";
