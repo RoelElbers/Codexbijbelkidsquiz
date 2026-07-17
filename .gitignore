@@ -33,6 +33,8 @@ zip */
 *.zip
 
 # --- Project-specifieke werkmappen/bestanden (bestonden al) ---
+# Oude referentie-afbeeldingen/HTML; archief, niet in de repo.
+images/Oude afbeeldingen voor de game/
 # Ruwe trofee-aanleveringen (vóór bijsnijden naar 428x676 + transparant).
 images/origineel-trofee-aanlevering/
 # Backup van de oude boek-PNG's (staan al in de git-historie).
