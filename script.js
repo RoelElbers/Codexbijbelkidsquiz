@@ -5987,13 +5987,23 @@ function updateAvatarWeergave() {
 // (--speler-lettergrootte); we verkleinen alleen wanneer het echt nodig is.
 function pasVoornaamGrootteAan(el) {
     if (!el) return;
-    el.style.fontSize = "";            // terug naar de CSS-basisgrootte
-    const minGrootte = 8;              // px-ondergrens, blijft leesbaar
-    let grootte = parseFloat(getComputedStyle(el).fontSize);
+    // We krimpen NIET meer met een vaste px-waarde: dat zou de vloeiende
+    // basisgrootte uit style.css (calc(var(--game-breedte) * 0.00667))
+    // overschrijven, waardoor de naam bij kleine vensters weer buiten het vak
+    // valt. In plaats daarvan verkleinen we diezelfde vloeiende formule met een
+    // factor, zodat de letters bij elke venstergrootte blijven meeschalen.
+    const basis = 0.00667;             // = de CSS-basisfactor
+    el.style.removeProperty("font-size");           // oude px-overschrijving weg
+    el.style.removeProperty("--speler-lettergrootte");  // terug naar CSS-basis
+    const minFactor = 0.6;             // ondergrens, blijft leesbaar
+    let factor = 1;
     // Krimp stap voor stap tot de tekst binnen de breedte van het bordje past.
-    while (el.scrollWidth > el.clientWidth && grootte > minGrootte) {
-        grootte -= 1;
-        el.style.fontSize = grootte + "px";
+    while (el.scrollWidth > el.clientWidth && factor > minFactor) {
+        factor -= 0.05;
+        el.style.setProperty(
+            "--speler-lettergrootte",
+            `calc(var(--game-breedte) * ${basis} * ${factor.toFixed(2)})`
+        );
     }
 }
 
@@ -9093,6 +9103,19 @@ werkVerborgenSchatBij();
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.
 updateAvatarWeergave();
+
+// De naam-krimp hangt af van de gemeten breedte van het bordje, en die
+// verandert bij venstergrootte (--game-breedte schaalt mee) en zodra het
+// Cinzel-lettertype geladen is (bredere glyphs). Herbereken daarom bij resize
+// en na fonts.ready, anders klopt de eerste meting bij een fallback-font nog.
+function herberekenVoornaamGrootte() {
+    const voornaamEl = document.getElementById("speler-voornaam");
+    if (voornaamEl) pasVoornaamGrootteAan(voornaamEl);
+}
+window.addEventListener("resize", herberekenVoornaamGrootte);
+if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(herberekenVoornaamGrootte);
+}
 
 // Profiel-opstart: toon het startscherm met het laatst actieve profiel, of het
 // Nieuw-spel-scherm als er nog geen enkel profiel bestaat.

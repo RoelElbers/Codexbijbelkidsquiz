@@ -7,6 +7,11 @@
     --knop-blauw-donker: #002155;  /* diep navy in het onderste deel */
     --knop-goud: #E09123;          /* gemiddelde van de gouden ring */
     --knop-nootje: #E0B321;        /* goud van het nootje-icoon */
+
+    /* Effectieve breedte van #game-container — exact dezelfde formule als de
+       width daar. Avatarframe-lettergroottes schalen hiermee mee, zodat namen
+       ook bij kleine vensters binnen hun gouden vak blijven. */
+    --game-breedte: min(100vw, calc(100vh * 16 / 9));
 }
 
 /* Cinzel lokaal geladen uit de projectmap, zodat het ook offline werkt. */
@@ -1722,7 +1727,7 @@ height: 22%;
     --fig-hoogte: 34.6%;      /* % van de wrapperhoogte  */
     --fig-padding-x: 4%;      /* binnenmarge; laat lange namen over 2 regels breken */
     --fig-padding-y: 2%;
-    --fig-lettergrootte: 1.3rem;   /* zelfde grootte voor alle namen */
+    --fig-lettergrootte: calc(var(--game-breedte) * 0.01083);   /* schaalt mee met #game-container */
     /* ============================================== */
 
     position: absolute;
@@ -1761,7 +1766,7 @@ height: 22%;
     --speler-hoogte: 20.3%;   /* % van de wrapperhoogte  */
     --speler-padding-x: 6%;
     --speler-padding-y: 2%;
-    --speler-lettergrootte: 0.8rem;  /* basisgrootte; JS krimpt indien nodig */
+    --speler-lettergrootte: calc(var(--game-breedte) * 0.00667);  /* basisgrootte, schaalt mee; JS krimpt indien nodig */
     /* ================================================ */
 
     position: absolute;
