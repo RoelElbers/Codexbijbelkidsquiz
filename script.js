@@ -409,7 +409,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei Jezus dat iemand moet doen die hem wil volgen?",
-                antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Zoveel mogelijk rijkdom en bezit voor zichzelf verzamelen"],
+                antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Elke dag naar de tempel in Jeruzalem gaan om daar te bidden"],
                 correct: "Zichzelf verloochenen en zijn kruis op zich nemen",
                 bijbelplaats: "Marcus 8:34"
             },
