@@ -5955,12 +5955,13 @@ function getSpelerNaam() {
 }
 
 function setSpelerNaam(naam) {
-    updateActiefProfiel({ naam: naam || "" });
+    updateActiefProfiel({ naam: (naam || "").trim() });
 }
 
 // De naam zoals die op het naambordje en in de spelerkiezer verschijnt: de
 // VOLLEDIGE ingevoerde naam, inclusief spaties ("Coole Kids" blijft "Coole
-// Kids"). Te lange namen worden op het bordje passend gekrompen, niet afgekapt.
+// Kids"). Te lange namen worden op het bordje passend gekrompen — nooit
+// halverwege een woord afgeknipt.
 function getSpelerWeergaveNaam() {
     return getSpelerNaam().trim();
 }
