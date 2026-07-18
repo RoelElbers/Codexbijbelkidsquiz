@@ -1009,7 +1009,7 @@ height: 22%;
     text-align: center;
     white-space: nowrap;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: 44px;
+    font-size: calc(var(--game-breedte) * 0.02292);   /* schaalt mee met #game-container (= 44px bij 1920) */
     font-weight: 700;
     color: #ffd86b;
     text-shadow:
@@ -1045,9 +1045,9 @@ height: 22%;
 }
 
 .xp-balk {
-    width: 100%;        
+    width: 100%;
     box-sizing: border-box;
-    height: 10px;        /* Slanke balk die precies binnen de gouden randen valt */
+    height: calc(var(--game-breedte) * 0.00521);   /* schaalt mee met #game-container (= 10px bij 1920); slank, valt binnen de gouden randen */
     border-radius: 20px;
     overflow: hidden;
     background: rgba(3, 10, 24, 0.95);
