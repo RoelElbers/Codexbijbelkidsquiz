@@ -5982,23 +5982,26 @@ function updateAvatarWeergave() {
 }
 
 // Laat de letters van het speler-naambordje automatisch iets krimpen wanneer
-// de naam te lang is voor de vaste breedte van het bordje, zodat hij
-// altijd binnen de plaat blijft passen. De basisgrootte komt uit style.css
+// de naam te lang is voor het (brede) vak, zodat hij altijd binnen de plaat
+// blijft passen. De naam mag over twee regels breken; past hij dan nog niet in
+// de hoogte, dan verkleinen we de letters. De basisgrootte komt uit style.css
 // (--speler-lettergrootte); we verkleinen alleen wanneer het echt nodig is.
 function pasVoornaamGrootteAan(el) {
     if (!el) return;
-    // We krimpen NIET meer met een vaste px-waarde: dat zou de vloeiende
-    // basisgrootte uit style.css (calc(var(--game-breedte) * 0.00667))
+    // We krimpen NIET met een vaste px-waarde: dat zou de vloeiende
+    // basisgrootte uit style.css (calc(var(--game-breedte) * 0.01083))
     // overschrijven, waardoor de naam bij kleine vensters weer buiten het vak
     // valt. In plaats daarvan verkleinen we diezelfde vloeiende formule met een
     // factor, zodat de letters bij elke venstergrootte blijven meeschalen.
-    const basis = 0.00667;             // = de CSS-basisfactor
+    const basis = 0.01083;             // = de CSS-basisfactor (brede vak)
     el.style.removeProperty("font-size");           // oude px-overschrijving weg
     el.style.removeProperty("--speler-lettergrootte");  // terug naar CSS-basis
-    const minFactor = 0.6;             // ondergrens, blijft leesbaar
+    const minFactor = 0.6;             // ondergrens; brede vak kan veel tekst aan
     let factor = 1;
-    // Krimp stap voor stap tot de tekst binnen de breedte van het bordje past.
-    while (el.scrollWidth > el.clientWidth && factor > minFactor) {
+    // De naam breekt nu over regels (geen nowrap meer), dus te veel tekst uit
+    // zich in HOOGTE. Krimp stap voor stap tot alle regels binnen de hoogte van
+    // het vak passen.
+    while (el.scrollHeight > el.clientHeight && factor > minFactor) {
         factor -= 0.05;
         el.style.setProperty(
             "--speler-lettergrootte",

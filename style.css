@@ -1717,17 +1717,17 @@ height: 22%;
    in % van de wrapper (= van de frameplaat), opgemeten uit avatarframe.png. */
 
 .avatar-figuurnaam {
-    /* ===== Figuurnaam op het brede vak rechts ===== */
-    /* Opgemeten platte donkere binnenvlak van het brede vak (scanlijn door het
-       midden). De box dekt precies dit vak, zodat de flex-centrering de naam
-       horizontaal in het echte midden zet — voor elke naamlengte. */
-    --fig-left: 41.1%;        /* % van de wrapperbreedte */
-    --fig-top: 30.3%;         /* % van de wrapperhoogte  */
-    --fig-breedte: 47%;       /* % van de wrapperbreedte (vak loopt tot ~89%) */
-    --fig-hoogte: 34.6%;      /* % van de wrapperhoogte  */
-    --fig-padding-x: 4%;      /* binnenmarge; laat lange namen over 2 regels breken */
+    /* ===== Figuurnaam op het kleine vak eronder ===== */
+    /* Opgemeten donker binnenvlak van het kleine vak. De acht figuurnamen zijn
+       kort, dus ze passen op één regel; de flex-centrering zet ze in het
+       midden van het vak. */
+    --fig-left: 13.6%;        /* % van de wrapperbreedte */
+    --fig-top: 63%;           /* % van de wrapperhoogte  */
+    --fig-breedte: 23.5%;     /* % van de wrapperbreedte (vak loopt ~13.6%–37%) */
+    --fig-hoogte: 20.3%;      /* % van de wrapperhoogte  */
+    --fig-padding-x: 6%;
     --fig-padding-y: 2%;
-    --fig-lettergrootte: calc(var(--game-breedte) * 0.01083);   /* schaalt mee met #game-container */
+    --fig-lettergrootte: calc(var(--game-breedte) * 0.00667);   /* schaalt mee met #game-container */
     /* ============================================== */
 
     position: absolute;
@@ -1757,16 +1757,19 @@ height: 22%;
 }
 
 .speler-voornaam {
-    /* ===== Spelernaam op het kleine vak eronder ===== */
-    /* Opgemeten donker binnenvlak van het kleine vak. De breedte is meteen de
-       maximale breedte; een lange voornaam krimpt via JS (pasVoornaamGrootteAan). */
-    --speler-left: 13.6%;     /* % van de wrapperbreedte */
-    --speler-top: 63%;        /* % van de wrapperhoogte  */
-    --speler-breedte: 23.5%;  /* % van de wrapperbreedte (= max. breedte; vak loopt ~13.6%–37%) */
-    --speler-hoogte: 20.3%;   /* % van de wrapperhoogte  */
-    --speler-padding-x: 6%;
+    /* ===== Spelernaam op het brede vak rechts ===== */
+    /* Opgemeten platte donkere binnenvlak van het brede vak (scanlijn door het
+       midden). De box dekt precies dit vak, zodat de flex-centrering de naam
+       in het echte midden zet — voor elke naamlengte. Een lange voornaam mag
+       over twee regels breken en krimpt indien nodig via JS
+       (pasVoornaamGrootteAan). */
+    --speler-left: 41.1%;     /* % van de wrapperbreedte */
+    --speler-top: 30.3%;      /* % van de wrapperhoogte  */
+    --speler-breedte: 47%;    /* % van de wrapperbreedte (vak loopt tot ~89%) */
+    --speler-hoogte: 34.6%;   /* % van de wrapperhoogte  */
+    --speler-padding-x: 4%;   /* binnenmarge; laat lange namen over 2 regels breken */
     --speler-padding-y: 2%;
-    --speler-lettergrootte: calc(var(--game-breedte) * 0.00667);  /* basisgrootte, schaalt mee; JS krimpt indien nodig */
+    --speler-lettergrootte: calc(var(--game-breedte) * 0.01083);  /* basisgrootte, schaalt mee; JS krimpt indien nodig */
     /* ================================================ */
 
     position: absolute;
@@ -1777,6 +1780,8 @@ height: 22%;
     padding: var(--speler-padding-y) var(--speler-padding-x);
     box-sizing: border-box;
 
+    /* Tekst gecentreerd; korte namen op één regel verticaal in het midden,
+       lange namen breken netjes over twee regels. */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1785,11 +1790,8 @@ height: 22%;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-size: var(--speler-lettergrootte);
     font-weight: 700;
-    line-height: 1.1;
+    line-height: 1.15;
     text-align: center;
-    /* Voornaam blijft op één regel; past hij niet, dan krimpt JS de letters
-       (pasVoornaamGrootteAan) tot hij binnen het vak valt. */
-    white-space: nowrap;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 
     z-index: 3;            /* bovenop het frame */
