@@ -1047,7 +1047,7 @@ height: 22%;
 .xp-balk {
     width: 100%;
     box-sizing: border-box;
-    height: calc(var(--game-breedte) * 0.00521);   /* schaalt mee met #game-container (= 10px bij 1920); slank, valt binnen de gouden randen */
+    height: 10px;        /* Slanke balk die precies binnen de gouden randen valt (met fijnstellen afgesteld) */
     border-radius: 20px;
     overflow: hidden;
     background: rgba(3, 10, 24, 0.95);
