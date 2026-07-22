@@ -1009,7 +1009,7 @@ height: 22%;
     text-align: center;
     white-space: nowrap;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: calc(var(--game-breedte) * 0.02292);   /* schaalt mee met #game-container (= 44px bij 1920) */
+    font-size: clamp(40px, calc(var(--game-breedte) * 0.02292), 44px);   /* schaalt mee met #game-container (= 44px bij 1920), maar nooit onder 40px (leesbaarheid) of boven 44px (oude vertrouwde maat) */
     font-weight: 700;
     color: #ffd86b;
     text-shadow:
