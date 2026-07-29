@@ -1047,8 +1047,23 @@ height: 22%;
 .xp-balk {
     width: 100%;
     box-sizing: border-box;
-    height: 10px;        /* Slanke balk die precies binnen de gouden randen valt (met fijnstellen afgesteld) */
-    border-radius: 20px;
+
+    /* XP-balk hoogte — handmatig geijkt, niet zomaar wijzigen.
+       De gouden gleuf is GESCHILDERD in images/startschermzonderwolken.png en
+       staat dus niet in de DOM; er valt niets aan te koppelen. Opgemeten in de
+       gerenderde app bij 1920x1080:
+         gouden bovenrand  app-rij 895-896
+         binnenkant        app-rij 897-920  (24px)
+         gouden onderrand  app-rij 921-922
+       #level-hud pint met bottom:15% de ONDERkant vast, dus de balk groeit
+       alleen naar boven en onder de balk blijft altijd 3px donker staan.
+       24 - 3 - 3 = 18px (= 0.009375 × --game-breedte) geeft boven dezelfde
+       3px lucht, zodat de gouden rand rondom vrij blijft. Symmetrisch
+       nagemeten bij containerbreedte 1920, 2560, 1366 en 693.
+       Bij een nieuwe achtergrondplaat moet deze factor opnieuw opgemeten
+       worden — recept en valkuilen staan in layout-ijkpunten.md. */
+    height: calc(var(--game-breedte) * 0.009375);   /* = 18px bij 1920 */
+    border-radius: 999px;   /* altijd een pil: de browser klemt de radius op de halve hoogte, ongeacht het formaat */
     overflow: hidden;
     background: rgba(3, 10, 24, 0.95);
     border: none;
@@ -1057,7 +1072,7 @@ height: 22%;
 #xp-vulling {
     width: 0%;          /* Begint leeg, wordt gevuld via JavaScript */
     height: 100%;
-    border-radius: 20px;
+    border-radius: 999px;   /* zelfde pil-vorm als .xp-balk eromheen */
     background: linear-gradient(to right, #006bd6, #36dfff);
     box-shadow:
         inset 0 0 6px rgba(255,255,255,0.55),

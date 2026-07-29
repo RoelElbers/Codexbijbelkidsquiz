@@ -179,9 +179,9 @@ const vragenData = {
                 bijbelplaats: "Matteüs 26:14-16"
             },
             {
-                vraag: "In de gelijkenis van de zaaier: waar viel het zaad dat geen blijvende vrucht droeg, onder andere?",
-                antwoorden: ["In een rivier", "Op het pad", "Op de rotsbodem en tussen de distels", "In een ruig bergachtig gebied"],
-                correct: "Op de rotsbodem en tussen de distels",
+                vraag: "Het zaad viel in de gelijkenis van de zaaier op vier plekken. Welke plek hoort daar niet bij?",
+                antwoorden: ["Op het pad", "Op de rotsbodem", "Tussen de distels", "In het water"],
+                correct: "In het water",
                 bijbelplaats: "Matteüs 13:3-8"
             },
             {
