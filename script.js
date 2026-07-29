@@ -1259,11 +1259,11 @@ vragenData["Matteüs"].advanced.push(
         bijbelplaats: "Matteüs 5:41"
     },
     {
-        vraag: "Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop. Wat was een korenmaat?",
-        antwoorden: ["Een mand om vissen mee te vangen", "Een bak of mand voor graan", "Een soort lamp", "Een lengtemaat"],
-        correct: "Een bak of mand voor graan",
+        vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
+        antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
+        correct: "Een maatbak om graan af te meten",
         bijbelplaats: "Matteüs 5:15",
-        uitleg: "Een korenmaat was een bak of mand om graan in te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
+        uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
     }
 );
 vragenData["Matteüs"].advanced.push(

@@ -42,6 +42,16 @@ images/_oud-boeken/
 # Verdwaalde kopie in de repo-root; de echte staat in images/nt2-kast-paneel2.png.
 /nt2-kast-paneel2.png
 
+# --- Gegenereerde wegwerpbestanden ---
+# vragen-export.md wordt volledig opgebouwd uit script.js door
+# maak-vragen-export.py (dat script gaat WEL de repo in). Nooit met de hand
+# bewerken; opnieuw maken met: python maak-vragen-export.py
+vragen-export.md
+
+# --- Python-rommel (de repo bevat hulpscripts zoals maak-vragen-export.py) ---
+__pycache__/
+*.pyc
+
 # --- Tijdelijke / systeembestanden ---
 Thumbs.db
 desktop.ini
