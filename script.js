@@ -1494,6 +1494,158 @@ vragenData["Johannes"].advanced.push(
 );
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert)
+// Doel: het kind komt een woord tegen dat het nog niet kende, met het
+// bijbelvers als inleiding, en kent het daarna.
+// =====================================================================
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
+        antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
+        correct: "De top van de graanhalm, waar de korrels in zitten",
+        bijbelplaats: "Matteüs 12:1"
+    },
+    {
+        vraag: "Johannes de Doper zegt over degene die na hem komt: hij heeft de wan in zijn hand. Wat is een wan?",
+        antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een grote mand om de oogst mee naar de schuur te dragen"],
+        correct: "Een schep om graan op te gooien, zodat de wind het kaf wegblaast",
+        bijbelplaats: "Matteüs 3:12"
+    },
+    {
+        vraag: "Jezus zegt: neem mijn juk op je, want mijn juk is zacht. Wat is een juk?",
+        antwoorden: ["Een houten balk over de nek van twee dieren die samen trekken", "Een dikke wollen mantel die herders 's nachts omsloegen", "Een leren riem om een zware last mee op je rug te binden", "Een grote steen waarmee de ingang van een put werd afgesloten"],
+        correct: "Een houten balk over de nek van twee dieren die samen trekken",
+        bijbelplaats: "Matteüs 11:29-30"
+    },
+    {
+        vraag: "Matteüs vertelt over de Sadduceeën en zegt er meteen bij wat hen bijzonder maakte. Wat geloofden zij niet?",
+        antwoorden: ["Dat de doden zullen opstaan", "Dat de sabbat gehouden moest worden", "Dat God de wereld heeft gemaakt", "Dat Mozes de wet heeft ontvangen"],
+        correct: "Dat de doden zullen opstaan",
+        bijbelplaats: "Matteüs 22:23"
+    },
+    {
+        vraag: "De wijzen uit het oosten brachten goud, wierook en mirre. Wat is mirre?",
+        antwoorden: ["Een kostbare hars die ook bij het balsemen werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
+        correct: "Een kostbare hars die ook bij het balsemen werd gebruikt",
+        bijbelplaats: "Matteüs 2:11"
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn?",
+        antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had al je bezit verloren en werkte als dagloner op het land"],
+        correct: "Je had een ernstige huidziekte en moest buiten het dorp wonen",
+        bijbelplaats: "Marcus 1:40"
+    },
+    {
+        vraag: "Als Jezus een dove man geneest, zegt hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
+        antwoorden: ["Ga open", "Sta op", "Wees stil", "Kom hier"],
+        correct: "Ga open",
+        bijbelplaats: "Marcus 7:34"
+    },
+    {
+        vraag: "Bij Jezus' intocht in Jeruzalem roepen de mensen \"Hosanna!\". Wat riepen ze daarmee eigenlijk?",
+        antwoorden: ["Red ons", "Vrede zij met jou", "Leve de koning", "Dank aan God"],
+        correct: "Red ons",
+        bijbelplaats: "Marcus 11:9"
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Twee leerlingen noemen Jezus \"Rabbi\". Johannes vertelt er meteen bij wat dat woord betekent. Wat is het?",
+        antwoorden: ["Meester", "Redder", "Vriend", "Koning"],
+        correct: "Meester",
+        bijbelplaats: "Johannes 1:38"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij twee tortelduiven. Wat zegt dat over hen?",
+        antwoorden: ["Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen", "Dat zij uit een priesterfamilie kwamen en daarom duiven moesten offeren", "Dat zij een lange reis hadden gemaakt en geen lam konden meenemen", "Dat het lente was, want duiven werden alleen in het voorjaar geofferd"],
+        correct: "Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen",
+        bijbelplaats: "Lucas 2:24"
+    }
+);
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 2)
+// =====================================================================
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
+        antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+        correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
+        bijbelplaats: "Matteüs 9:9"
+    },
+    {
+        vraag: "Jezus verwijt sommige leiders dat ze hun gebedsriemen extra breed maken. Wat waren gebedsriemen?",
+        antwoorden: ["Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden", "Sjerpen die je om je middel bond als teken dat je aan het bidden was", "Touwen waarmee de rollen in de synagoge werden dichtgebonden", "Leren riemen waarmee de deuren van de synagoge werden vergrendeld"],
+        correct: "Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden",
+        bijbelplaats: "Matteüs 23:5"
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Jakobus en Johannes kregen van Jezus de bijnaam Boanerges. Marcus vertelt erbij wat dat betekent. Wat is het?",
+        antwoorden: ["Zonen van de donder", "Zonen van het licht", "Zonen van de rots", "Zonen van de storm"],
+        correct: "Zonen van de donder",
+        bijbelplaats: "Marcus 3:17"
+    },
+    {
+        vraag: "Een vrouw brak een albasten kruik en goot dure olie over Jezus' hoofd. Wat is albast?",
+        antwoorden: ["Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte", "Een dunne witte stof waarin men flessen wikkelde tegen de warmte", "Een geelbruine houtsoort die alleen in Libanon groeide", "Een dikke laag was waarmee kruiken werden dichtgemaakt"],
+        correct: "Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte",
+        bijbelplaats: "Marcus 14:3"
+    },
+    {
+        vraag: "Toen Jezus stierf, scheurde het voorhangsel van de tempel in tweeën. Wat was het voorhangsel?",
+        antwoorden: ["Een groot gordijn dat het allerheiligste deel van de tempel afsloot", "De brede stenen trap die naar de ingang van de tempel omhoogliep", "Het dak boven de binnenplaats waar de mensen samenkwamen", "De poort waardoor alleen priesters naar binnen mochten"],
+        correct: "Een groot gordijn dat het allerheiligste deel van de tempel afsloot",
+        bijbelplaats: "Marcus 15:38"
+    },
+    {
+        vraag: "Jezus ging bidden in Getsemane, een plek met olijfbomen. Wat betekent die naam?",
+        antwoorden: ["Olijfpers", "Stille tuin", "Berg van tranen", "Hof van de koning"],
+        correct: "Olijfpers",
+        bijbelplaats: "Marcus 14:32"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Zacharias was priester en moest het reukoffer brengen in de tempel. Wat deed hij daarbij?",
+        antwoorden: ["Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden", "Hij slachtte een lam en legde het op het brandofferaltaar", "Hij goot olie uit over de gouden kandelaar en stak die aan", "Hij waste de heilige voorwerpen met water uit het bekken"],
+        correct: "Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden",
+        bijbelplaats: "Lucas 1:8-11"
+    },
+    {
+        vraag: "De barmhartige Samaritaan goot olie en wijn op de wonden van de gewonde man. Waarom deed hij dat?",
+        antwoorden: ["Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht", "Het was een gebed in daden: olie stond voor God, wijn voor het leven", "Het was alles wat hij bij zich had en het was beter dan niets", "Het hoorde bij de gastvrijheid: zo begroette je iemand die je meenam"],
+        correct: "Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht",
+        bijbelplaats: "Lucas 10:34"
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Jezus stuurt een blinde man naar het badwater Siloam. Johannes schrijft erbij wat die naam betekent. Wat is het?",
+        antwoorden: ["Gezonden", "Genezen", "Levend water", "Geopend"],
+        correct: "Gezonden",
+        bijbelplaats: "Johannes 9:7"
+    },
+    {
+        vraag: "Op de bruiloft in Kana stonden zes grote stenen watervaten klaar. Waar dienden die voor?",
+        antwoorden: ["Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was", "Voor het bewaren van regenwater voor tijden van droogte", "Voor het mengen van wijn met water tijdens de maaltijd", "Voor het wassen van de voeten van de gasten bij binnenkomst"],
+        correct: "Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was",
+        bijbelplaats: "Johannes 2:6"
+    }
+);
+
+// =====================================================================
 // Vragenpool: Romeinen  (Beginner 24 · Gevorderd 14 · Expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
@@ -8947,6 +9099,146 @@ function openInstellingen() {
 }
 function sluitInstellingen() {
     document.getElementById("instellingen-scherm").style.display = "none";
+}
+
+// --- Steun de Bijbelkidsquiz (Instellingen → Over dit spel) ------------------
+// Zelfde patroon als openMaten()/sluitMaten(): het ouderscherm gaat dicht, dit
+// scherm open, en Terug draait dat precies om. De inhoud komt uit NL.steun in
+// lang/nl.js en wordt bij elke opening opnieuw opgebouwd, zodat een
+// tekstwijziging in het taalbestand meteen doorwerkt zonder HTML aan te raken.
+function openSteun() {
+    vulSteunScherm();
+    document.getElementById("instellingen-scherm").style.display = "none";
+    document.getElementById("steun-scherm").style.display = "flex";
+    // Altijd bovenaan beginnen; een onthouden scrollstand is hier verwarrend.
+    const box = document.querySelector("#steun-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
+}
+
+function sluitSteun() {
+    document.getElementById("steun-scherm").style.display = "none";
+    document.getElementById("instellingen-scherm").style.display = "flex";
+}
+
+// Bouwt het steunscherm op uit NL.steun. Bewust met DOM-methodes en
+// textContent in plaats van innerHTML: de echte teksten komen er later in en
+// mogen dan gewoon &, < of > bevatten zonder dat er iets stukgaat.
+function vulSteunScherm() {
+    const doel = document.getElementById("steun-inhoud");
+    if (!doel) return;
+
+    const t = (typeof NL !== "undefined" && NL.steun) || null;
+    if (!t) return;   // taalbestand niet geladen: de HTML-vangnetteksten blijven staan
+
+    doel.innerHTML = "";
+
+    const zetTekst = (id, tekst) => {
+        const el = document.getElementById(id);
+        if (el && tekst) el.textContent = tekst;
+    };
+    zetTekst("steun-titel", t.titel);
+    zetTekst("steun-kvk", t.kvk);
+    zetTekst("steun-terug-boven", t.terugBoven);
+    zetTekst("steun-terug-onder", t.terugOnder);
+
+    (t.blokken || []).forEach((blok) => {
+        if (blok.kop) {
+            const kop = document.createElement("h3");
+            kop.className = "naslag-kop";
+            kop.textContent = blok.kop;
+            doel.appendChild(kop);
+        }
+
+        (blok.items || []).forEach((item) => doel.appendChild(maakAlinea(item)));
+
+        // Blok met alleen het nieuwste voortgangsbericht + link naar het
+        // volledige overzicht. De lijst zelf staat in NL.updates.
+        if (blok.nieuwsteUpdate) {
+            const lijst = (typeof NL !== "undefined" && NL.updates && NL.updates.items) || [];
+            if (lijst.length) doel.appendChild(maakAlinea(lijst[0]));
+
+            const meer = document.createElement("button");
+            meer.type = "button";
+            meer.className = "tekst-link";
+            meer.textContent = blok.meerLabel || "Bekijk alle updates";
+            meer.onclick = openUpdates;
+            doel.appendChild(meer);
+        }
+
+        if (blok.link) {
+            // Bewust een <button> met window.open en niet een <a>: knoppen in dit
+            // spel erven hun lettertype van de browser, dus een <a> met dezelfde
+            // classes zou in een ander font renderen. "noopener" houdt het nieuwe
+            // tabblad los van dit venster.
+            const knop = document.createElement("button");
+            knop.className = "answer-btn niveau-btn niveau-advanced menu-knop-blauw";
+            knop.textContent = blok.link.label;
+            knop.onclick = () => window.open(blok.link.url, "_blank", "noopener");
+            doel.appendChild(knop);
+        }
+    });
+}
+
+// Eén tekstregel voor de lees-schermen. Een gewone string wordt een alinea; een
+// item {datum, tekst} krijgt de datum in goud vooraan, zoals een lemma in het
+// woordenboek \u2014 zo leest een groeiende lijst als een tijdlijn. Gedeeld door
+// het steunscherm en het updatescherm, zodat beide er hetzelfde uitzien.
+function maakAlinea(item) {
+    const p = document.createElement("p");
+    p.className = "naslag-item";
+    if (typeof item === "string") {
+        p.textContent = item;
+    } else {
+        const datum = document.createElement("span");
+        datum.className = "naslag-term";
+        datum.textContent = item.datum;
+        p.appendChild(datum);
+        p.appendChild(document.createTextNode(" \u2014 " + item.tekst));
+    }
+    return p;
+}
+
+// --- Alle updates (Steun \u2192 Bekijk alle updates) ---------------------------
+// Zelfde patroon als openSteun()/sluitSteun(), maar met het steunscherm als
+// ouder: Terug keert dus terug naar Steun en niet naar Instellingen.
+function openUpdates() {
+    vulUpdatesScherm();
+    document.getElementById("steun-scherm").style.display = "none";
+    document.getElementById("updates-scherm").style.display = "flex";
+    const box = document.querySelector("#updates-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
+}
+
+function sluitUpdates() {
+    document.getElementById("updates-scherm").style.display = "none";
+    document.getElementById("steun-scherm").style.display = "flex";
+}
+
+function vulUpdatesScherm() {
+    const doel = document.getElementById("updates-inhoud");
+    if (!doel) return;
+
+    const t = (typeof NL !== "undefined" && NL.updates) || null;
+    if (!t) return;   // taalbestand niet geladen: HTML-vangnet blijft staan
+
+    doel.innerHTML = "";
+
+    const zetTekst = (id, tekst) => {
+        const el = document.getElementById(id);
+        if (el && tekst) el.textContent = tekst;
+    };
+    zetTekst("updates-titel", t.titel);
+    zetTekst("updates-terug-boven", t.terugBoven);
+    zetTekst("updates-terug-onder", t.terugOnder);
+
+    if (t.intro) {
+        const intro = document.createElement("p");
+        intro.className = "naslag-noot";
+        intro.textContent = t.intro;
+        doel.appendChild(intro);
+    }
+
+    (t.items || []).forEach((item) => doel.appendChild(maakAlinea(item)));
 }
 function wisselGeluid() {
     geluidAan = !geluidAan;

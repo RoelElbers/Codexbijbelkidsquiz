@@ -2068,6 +2068,8 @@ height: 22%;
    blijft het vak binnen het scherm en is de hele lange tekst bereikbaar, ook al
    centreert de overlay het verticaal. (Deze regels stonden vóór de ombouw op
    #naslag-scherm; ze horen bij de tekst, die nu in deze schermen staat.) */
+#updates-scherm .quiz-box,
+#steun-scherm .quiz-box,
 #maten-scherm .quiz-box,
 #woordenboek-scherm .quiz-box,
 #verborgenschat-naslag-scherm .quiz-box,
@@ -2081,6 +2083,8 @@ height: 22%;
     overflow-y: auto;
     text-align: left;
 }
+#updates-scherm .quiz-title,
+#steun-scherm .quiz-title,
 #maten-scherm .quiz-title,
 #woordenboek-scherm .quiz-title,
 #verborgenschat-naslag-scherm .quiz-title,
@@ -2109,6 +2113,8 @@ height: 22%;
     color: #f3ecd8;
     margin: 0 0 20px;
 }
+#updates-scherm .naslag-terug,
+#steun-scherm .naslag-terug,
 #maten-scherm .naslag-terug,
 #woordenboek-scherm .naslag-terug,
 #verborgenschat-naslag-scherm .naslag-terug,
@@ -2633,6 +2639,7 @@ height: 22%;
 /* Bescheiden tekstlink onder de Start/Terug-knoppen in het Nieuw-spel-scherm:
    route naar de bestaande spelers. Ondergeschikt aan het hoofddoel (nieuw
    profiel), dus geen volle knop-look maar een rustige onderstreepte link. */
+.tekst-link,
 .speler-kiezer-link {
     display: block;
     margin: 10px auto 0;
@@ -2647,6 +2654,16 @@ height: 22%;
     transition: color 0.2s ease;
 }
 
+/* De generieke tekstlink moet als link lezen en niet als knopje: de globale
+   button-regel geeft elke button een gouden gloed en een zweefanimatie, en die
+   horen hier niet bij. Bewust alleen op de generieke class zelf, zodat de
+   bestaande link in het spelerkiezer-scherm onveranderd blijft. */
+.tekst-link {
+    box-shadow: none;
+    animation: none;
+}
+
+.tekst-link:hover,
 .speler-kiezer-link:hover {
     color: #ffd86b;
 }

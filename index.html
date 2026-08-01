@@ -15,7 +15,7 @@
     <link rel="manifest" href="icons/site.webmanifest">
     <meta name="theme-color" content="#102a5c">
 
-    <link rel="stylesheet" href="style.css?v=17">
+    <link rel="stylesheet" href="style.css?v=19">
 </head>
 
 <body>
@@ -706,7 +706,60 @@
                 <h2 class="quiz-title">Instellingen</h2>
                 <p class="quiz-question">Geluid</p>
                 <button id="geluid-knop" class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="wisselGeluid()">Geluid: aan</button>
+
+                <p class="quiz-question">Over dit spel</p>
+                <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openSteun()">Steun de Bijbelkidsquiz</button>
+
+                <!-- Losse HTML-pagina's, geen spelschermen. Bewust <button> met
+                     window.open en niet een <a>: knoppen in dit spel erven hun
+                     lettertype van de browser, dus een <a> zou in een ander font
+                     renderen (zelfde reden als in vulSteunScherm). Nieuw tabblad,
+                     zodat een lopende quizronde niet verloren gaat; "noopener"
+                     houdt dat tabblad los van dit venster. Steunen staat hier
+                     bewust niet bij — die link zit al in het steunscherm. -->
+                <button type="button" class="tekst-link" onclick="window.open('contact.html', '_blank', 'noopener')">Contact</button>
+                <button type="button" class="tekst-link" onclick="window.open('privacyverklaring.html', '_blank', 'noopener')">Privacyverklaring</button>
+
                 <button class="answer-btn niveau-terug" onclick="sluitInstellingen()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Steun de Bijbelkidsquiz: leesscherm onder Instellingen → Over dit
+             spel. Zelfde opzet als #maten-scherm / #woordenboek-scherm: een
+             scrollbare .quiz-box met .naslag-kop en .naslag-item. De inhoud
+             staat bewust NIET hier maar in NL.steun (lang/nl.js);
+             vulSteunScherm() in script.js bouwt #steun-inhoud daaruit op, zodat
+             de teksten later vertaalbaar zijn. De teksten in de HTML hieronder
+             zijn alleen een vangnet als het taalbestand niet laadt.
+             Terug staat boven én onder: de voortgangslijst groeit elke maand,
+             en dan is alleen een knop onderaan onhandig. -->
+        <div id="steun-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="steun-titel">Steun de Bijbelkidsquiz</h2>
+                <button id="steun-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="sluitSteun()">← Terug</button>
+
+                <div id="steun-inhoud"></div>
+
+                <p class="naslag-bron" id="steun-kvk">KVK: 00000000</p>
+
+                <button id="steun-terug-onder" class="answer-btn niveau-terug" onclick="sluitSteun()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Alle updates: het volledige voortgangsoverzicht, geopend vanaf de
+             link "Bekijk alle updates" op het steunscherm. Zelfde leesscherm-
+             opzet als #steun-scherm; Terug keert terug naar Steun, niet naar
+             Instellingen. Inhoud komt uit NL.updates (lang/nl.js) via
+             vulUpdatesScherm(); de teksten hieronder zijn alleen een vangnet
+             als het taalbestand niet laadt. -->
+        <div id="updates-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box naslag-box">
+                <h2 class="quiz-title" id="updates-titel">Waar we nu staan</h2>
+                <button id="updates-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="sluitUpdates()">← Terug</button>
+
+                <div id="updates-inhoud"></div>
+
+                <button id="updates-terug-onder" class="answer-btn niveau-terug" onclick="sluitUpdates()">Terug</button>
             </div>
         </div>
 
@@ -764,8 +817,8 @@
 
     </div>
 
-    <script src="lang/nl.js?v=17"></script>
-    <script src="script.js?v=17"></script>
+    <script src="lang/nl.js?v=19"></script>
+    <script src="script.js?v=19"></script>
 
 </body>
 
