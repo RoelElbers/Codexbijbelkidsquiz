@@ -5547,6 +5547,158 @@ vragenData["Openbaring"] = {
     ]
 };
 
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 4)
+// =====================================================================
+vragenData["Romeinen"].expert.push(
+    {
+        vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
+        antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het", "Tot ziens"],
+        correct: "Zo is het, het staat vast",
+        bijbelplaats: "Romeinen 1:25"
+    },
+    {
+        vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
+        antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
+        correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
+        bijbelplaats: "Romeinen 8:15"
+    }
+);
+
+vragenData["1 & 2 Korintiërs"].expert.push(
+    {
+        vraag: "Paulus noemt Jezus de \"eersteling\" van wie gestorven zijn. Dat woord komt uit de landbouw. Wat is een eersteling?",
+        antwoorden: ["De eerste vrucht van de oogst, het bewijs dat de rest eraan komt", "De grootste vrucht van de hele oogst", "De laatste schoof die van het veld werd gehaald", "Het zaad dat je apart houdt voor volgend jaar"],
+        correct: "De eerste vrucht van de oogst, het bewijs dat de rest eraan komt",
+        bijbelplaats: "1 Korintiërs 15:20"
+    }
+);
+
+vragenData["Filippenzen"].expert.push(
+    {
+        vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
+        antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
+        correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
+        bijbelplaats: "Filippenzen 3:20"
+    }
+);
+
+vragenData["Openbaring"].expert.push(
+    {
+        vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
+        antwoorden: ["Het brood dat God zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
+        correct: "Het brood dat God zijn volk in de woestijn elke ochtend gaf",
+        bijbelplaats: "Openbaring 2:17"
+    }
+);
+
+vragenData["Hebreeën"].expert.push(
+    {
+        vraag: "De schrijver spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
+        antwoorden: ["Woorden: het uitspreken en bezingen van Gods naam", "Een lam zonder gebreken op het altaar", "Het eerste deel van het graan uit de oogst", "Een gouden schaal met wierook erin"],
+        correct: "Woorden: het uitspreken en bezingen van Gods naam",
+        bijbelplaats: "Hebreeën 13:15"
+    }
+);
+
+vragenData["Timoteüs & Titus"].expert.push(
+    {
+        vraag: "Paulus schrijft dat hij in boeien zit, maar dat Gods woord niet geboeid is. Wat waren boeien?",
+        antwoorden: ["IJzeren kettingen om polsen of enkels van een gevangene", "Dikke touwen waarmee schepen werden vastgelegd", "De houten balken van een cel", "De zegels waarmee een gevangenis werd afgesloten"],
+        correct: "IJzeren kettingen om polsen of enkels van een gevangene",
+        bijbelplaats: "2 Timoteüs 2:9"
+    }
+);
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 3:
+// brieven en Openbaring)
+// =====================================================================
+vragenData["1 & 2 Korintiërs"].expert.push(
+    {
+        vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
+        antwoorden: ["Kom, Heer!", "Vrede zij met u", "Wees waakzaam", "God is trouw"],
+        correct: "Kom, Heer!",
+        bijbelplaats: "1 Korintiërs 16:22"
+    },
+    {
+        vraag: "Paulus schrijft dat God de Geest als onderpand heeft gegeven. Wat is een onderpand?",
+        antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een zegel waarmee een brief werd dichtgemaakt", "Een bewijs dat een schuld helemaal is afbetaald"],
+        correct: "Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt",
+        bijbelplaats: "2 Korintiërs 1:22"
+    }
+);
+
+vragenData["Openbaring"].expert.push(
+    {
+        vraag: "God noemt zichzelf \"de alfa en de omega\". Waar komen die twee woorden vandaan?",
+        antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
+        correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
+        bijbelplaats: "Openbaring 1:8"
+    }
+);
+
+vragenData["Filippenzen"].expert.push(
+    {
+        vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar in die tijd?",
+        antwoorden: ["Een krans van bladeren, gevlochten op zijn hoofd", "Een gouden beker gevuld met wijn", "Een zilveren munt uit de stadskas", "Een nieuw stel kleren van de stadsbestuurders"],
+        correct: "Een krans van bladeren, gevlochten op zijn hoofd",
+        bijbelplaats: "Filippenzen 3:14"
+    }
+);
+
+vragenData["Jakobus"].expert.push(
+    {
+        vraag: "Jakobus zegt: de boer wacht geduldig op de vroege en de late regen. Wat bedoelde hij daarmee?",
+        antwoorden: ["De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst", "De regen 's ochtends vroeg en die laat in de avond", "De regen van dit jaar en die van volgend jaar", "De eerste regen van een jonge boer en de laatste van een oude boer"],
+        correct: "De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst",
+        bijbelplaats: "Jakobus 5:7",
+        uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt in oktober en november: pas dan wordt de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen — precies op tijd om het graan te laten rijpen. Blijft die late regen uit, dan is de hele oogst mislukt. De boer moet dus een half jaar lang geduld hebben."
+    }
+);
+
+vragenData["Timoteüs & Titus"].expert.push(
+    {
+        vraag: "Paulus vraagt Timoteüs om zijn mantel mee te nemen, en ook de boeken en vooral de perkamenten. Wat is perkament?",
+        antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boeken in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
+        correct: "Dun bewerkte dierenhuid om op te schrijven",
+        bijbelplaats: "2 Timoteüs 4:13"
+    },
+    {
+        vraag: "Paulus schrijft over wie \"opziener\" wil worden. Wat was dat voor iemand?",
+        antwoorden: ["Iemand die leiding gaf aan een gemeente en toezicht hield", "Iemand die bij de stadspoort de wacht hield", "Iemand die de boeken van de gemeente bijhield", "Iemand die de zieken bezocht en eten rondbracht"],
+        correct: "Iemand die leiding gaf aan een gemeente en toezicht hield",
+        bijbelplaats: "1 Timoteüs 3:1"
+    }
+);
+
+vragenData["Hebreeën"].expert.push(
+    {
+        vraag: "De schrijver zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
+        antwoorden: ["Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen", "Ze eten te weinig en zijn daardoor te zwak om te reizen", "Ze zijn nog jong van jaren en mogen nog niet meedoen aan de maaltijd", "Ze houden zich aan de spijswetten en eten geen vlees"],
+        correct: "Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen",
+        bijbelplaats: "Hebreeën 5:12-14"
+    }
+);
+
+vragenData["Kolossenzen & Filemon"].expert.push(
+    {
+        vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse rijk?",
+        antwoorden: ["Hij was eigendom van zijn meester en kon gekocht en verkocht worden", "Hij was een knecht die elk jaar opnieuw zijn loon afsprak", "Hij was een gevangene die na zijn straf weer vrij kwam", "Hij was een leerling die bij zijn meester in huis een vak leerde"],
+        correct: "Hij was eigendom van zijn meester en kon gekocht en verkocht worden",
+        bijbelplaats: "Filemon 16"
+    }
+);
+
+vragenData["Efeziërs"].expert.push(
+    {
+        vraag: "Paulus schrijft dat de gelovigen met de Geest \"verzegeld\" zijn. Wat deed men in die tijd met een zegel?",
+        antwoorden: ["Men drukte een merkteken in was, om te tonen van wie iets was", "Men bond een koord om een pak heen zodat het dicht bleef", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
+        correct: "Men drukte een merkteken in was, om te tonen van wie iets was",
+        bijbelplaats: "Efeziërs 1:13"
+    }
+);
+
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
