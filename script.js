@@ -5519,6 +5519,66 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 9:
+// huizen, land en geld in de gelijkenissen)
+// =====================================================================
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Vier mannen braken het dak open om een verlamde bij Jezus te brengen. Hoe kon dat zomaar?",
+        antwoorden: ["Daken waren plat, van balken met takken en aangestampte leem ertussen", "Daken waren van dunne planken die je opzij kon schuiven", "Er zat altijd een luik in, om lucht binnen te laten", "Het huis was nog in aanbouw en had nog geen echt dak"],
+        correct: "Daken waren plat, van balken met takken en aangestampte leem ertussen",
+        bijbelplaats: "Marcus 2:4",
+        uitleg: "Een gewoon huis had een plat dak van houten balken, met daaroverheen riet, takken en een laag aangestampte leem. Je kwam er via een trap aan de buitenkant, en je gebruikte het dak om te slapen in de zomer of om vruchten te drogen. Zo'n dak openbreken was dus geen sloopwerk, maar het moest daarna wel opnieuw dichtgemaakt worden — Marcus vertelt niet voor niets dat het huis vol stond."
+    }
+);
+
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon dat zomaar?",
+        antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, dat was verboden en daarom werd hij zelf gestraft", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
+        correct: "Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht",
+        bijbelplaats: "Matteüs 18:30"
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "De vrouw bij de put zegt: \"U hebt niet eens een emmer, en de put is diep.\" Waarmee haalde je water uit een put?",
+        antwoorden: ["Een leren zak aan een lang touw, die je liet zakken en weer ophaalde", "Een houten bak op een hefboom", "Een koperen ketel die aan een ketting hing", "Een rieten mand met pek aan de binnenkant"],
+        correct: "Een leren zak aan een lang touw, die je liet zakken en weer ophaalde",
+        bijbelplaats: "Johannes 4:11"
+    },
+    {
+        vraag: "'s Nachts brachten herders hun schapen samen in één kooi met een poortwachter. Hoe vond een herder 's ochtends zijn eigen schapen terug?",
+        antwoorden: ["Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe", "Hij had elk schaap een merkteken op de vacht gegeven", "De poortwachter hield bij welk schaap van wie was", "Hij telde ze, want elke herder had er evenveel"],
+        correct: "Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe",
+        bijbelplaats: "Johannes 10:1-3"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "De vader geeft zijn teruggekeerde zoon het beste kleed, een ring en sandalen. Wat betekende die ring?",
+        antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden", "Dat hij zijn schulden had afbetaald"],
+        correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
+        bijbelplaats: "Lucas 15:22",
+        uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon met een afdruk in was namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
+    },
+    {
+        vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
+        antwoorden: ["Varkens waren onreine dieren, die een Jood niet mocht eten of houden", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
+        correct: "Varkens waren onreine dieren, die een Jood niet mocht eten of houden",
+        bijbelplaats: "Lucas 15:15"
+    },
+    {
+        vraag: "De zoon had willen eten van de peulen die de varkens kregen. Wat waren dat?",
+        antwoorden: ["De peulen van de johannesbroodboom, hard voer dat men aan vee gaf", "De schillen van gedroogde vijgen", "De doppen van noten die overbleven na het persen", "Restjes brood die van de tafel werden geveegd"],
+        correct: "De peulen van de johannesbroodboom, hard voer dat men aan vee gaf",
+        bijbelplaats: "Lucas 15:16"
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 8:
 // tempel, feesten en kleding)
 // =====================================================================
@@ -6019,6 +6079,35 @@ vragenData["Jakobus"].advanced.push(
         correct: "De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst",
         bijbelplaats: "Jakobus 5:7",
         uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt in oktober en november: pas dan wordt de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen — precies op tijd om het graan te laten rijpen. Blijft die late regen uit, dan is de hele oogst mislukt. De boer moet dus een half jaar lang geduld hebben."
+    }
+);
+
+
+// =====================================================================
+// Nog drie woordvragen uit reeks 9 die op gevorderd thuishoren:
+// het antwoord volgt uit de vraag zelf.
+// =====================================================================
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "In de gelijkenis huurt de eigenaar nog arbeiders in \"op het elfde uur\". Wat betekent dat?",
+        antwoorden: ["Een uur voor het einde van de werkdag", "Om elf uur 's ochtends, halverwege de dag", "De elfde dag van de maand", "Het elfde uur na middernacht"],
+        correct: "Een uur voor het einde van de werkdag",
+        bijbelplaats: "Matteüs 20:6-9"
+    },
+    {
+        vraag: "De eigenaar vond mannen werkloos op het marktplein staan. Waarom stonden zij daar?",
+        antwoorden: ["Daar wachtten dagloners tot iemand hen voor die dag inhuurde", "Daar werd de belasting geïnd en moesten zij hun beurt afwachten", "Daar deelden de rijken elke ochtend brood uit", "Daar kwamen zij samen om te bidden voor werk"],
+        correct: "Daar wachtten dagloners tot iemand hen voor die dag inhuurde",
+        bijbelplaats: "Matteüs 20:3"
+    }
+);
+
+vragenData["Johannes"].advanced.push(
+    {
+        vraag: "Jezus stelt de goede herder tegenover een huurling. Wat is het verschil?",
+        antwoorden: ["Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem", "Een huurling werkt alleen in de zomer, een herder het hele jaar", "Een huurling mag de schapen niet aanraken, een herder wel", "Een huurling hoedt runderen, een herder schapen"],
+        correct: "Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem",
+        bijbelplaats: "Johannes 10:12"
     }
 );
 
