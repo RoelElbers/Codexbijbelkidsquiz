@@ -1009,7 +1009,7 @@ height: 22%;
     text-align: center;
     white-space: nowrap;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: clamp(40px, calc(var(--game-breedte) * 0.02292), 44px);   /* schaalt mee met #game-container (= 44px bij 1920), maar nooit onder 40px (leesbaarheid) of boven 44px (oude vertrouwde maat) */
+    font-size: min(44px, calc(var(--game-breedte) * 0.02292));   /* schaalt mee met #game-container (= 44px bij 1920) en nooit boven 44px (oude vertrouwde maat). Bewust GEEN ondergrens hier: op een smal scherm krimpt het schild mee, en een vaste vloer in px maakte het cijfer daar onevenredig groot. De leesbaarheidsvloer van 40px staat nu in de media query hieronder en geldt alleen boven 900px breed. */
     font-weight: 700;
     color: #ffd86b;
     text-shadow:
@@ -1022,6 +1022,13 @@ height: 22%;
     /* Puur decoratief: het getal op het schild hoeft geen klikken te vangen.
        Zo kan een klik op andere knoppen er nooit door geblokkeerd worden. */
     pointer-events: none;
+}
+
+@media (min-width: 900px) {
+    #level-nummer {
+        /* leesbaarheidsvloer, alleen op brede schermen */
+        font-size: clamp(40px, calc(var(--game-breedte) * 0.02292), 44px);
+    }
 }
 
 /* XP-balk in de gleuf rechts in het paneel. */
