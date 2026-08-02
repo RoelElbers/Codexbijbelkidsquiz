@@ -1009,7 +1009,14 @@ height: 22%;
     text-align: center;
     white-space: nowrap;
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-size: min(44px, calc(var(--game-breedte) * 0.02292));   /* schaalt mee met #game-container (= 44px bij 1920) en nooit boven 44px (oude vertrouwde maat). Bewust GEEN ondergrens hier: op een smal scherm krimpt het schild mee, en een vaste vloer in px maakte het cijfer daar onevenredig groot. De leesbaarheidsvloer van 40px staat nu in de media query hieronder en geldt alleen boven 900px breed. */
+    /* Geen ondergrens: het cijfer is overal 2,292% van --game-breedte, met een
+       plafond van 44px (= de oude vertrouwde maat, bereikt bij 1920).
+       De vroegere vloer van 40px is verwijderd. Die werd op brede schermen
+       nooit actief — bij 1902px is de natuurlijke waarde al 40,09px en daarboven
+       loopt hij tegen het plafond — maar greep wél in onder circa 1745px
+       --game-breedte, en trok het cijfer op een telefoon volledig uit proportie:
+       het schild kromp mee, het getal bleef op 40px staan. */
+    font-size: min(44px, calc(var(--game-breedte) * 0.02292));
     font-weight: 700;
     color: #ffd86b;
     text-shadow:
@@ -1022,13 +1029,6 @@ height: 22%;
     /* Puur decoratief: het getal op het schild hoeft geen klikken te vangen.
        Zo kan een klik op andere knoppen er nooit door geblokkeerd worden. */
     pointer-events: none;
-}
-
-@media (min-width: 900px) {
-    #level-nummer {
-        /* leesbaarheidsvloer, alleen op brede schermen */
-        font-size: clamp(40px, calc(var(--game-breedte) * 0.02292), 44px);
-    }
 }
 
 /* XP-balk in de gleuf rechts in het paneel. */
