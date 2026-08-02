@@ -15,7 +15,7 @@
     <link rel="manifest" href="icons/site.webmanifest">
     <meta name="theme-color" content="#102a5c">
 
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=21">
 </head>
 
 <body>
@@ -412,6 +412,12 @@
             <div class="quiz-box">
                 <h2 class="quiz-title">Vragen &amp; uitleg</h2>
                 <p class="quiz-question">Kies een evangelie</p>
+
+                <!-- Terug staat boven én onder, net als in de andere leesschermen:
+                     vulVuBoeken() vult deze lijst met alle 18 boeken en maakt de
+                     box scrollbaar, en dan is alleen een knop onderaan onhandig. -->
+                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVuBoek()">&larr; Terug</button>
+
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Matteüs')">Matteüs</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Marcus')">Marcus</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Lucas')">Lucas</button>
@@ -817,8 +823,8 @@
 
     </div>
 
-    <script src="lang/nl.js?v=20"></script>
-    <script src="script.js?v=20"></script>
+    <script src="lang/nl.js?v=21"></script>
+    <script src="script.js?v=21"></script>
 
 </body>
 

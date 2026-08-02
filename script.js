@@ -5548,6 +5548,245 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 7:
+// gebruiken aan tafel, bij rouw en op het land)
+// =====================================================================
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Bij de maaltijd wordt gezegd dat een leerling \"aanlag\" tegen Jezus. Hoe zat men aan tafel?",
+        antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Staand, want een maaltijd duurde kort"],
+        correct: "Half liggend op kussens rond een lage tafel, steunend op één elleboog",
+        bijbelplaats: "Johannes 13:23",
+        uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
+    },
+    {
+        vraag: "Jezus wast de voeten van zijn leerlingen. Waarom was dat zo opvallend?",
+        antwoorden: ["In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester", "Het mocht alleen op de sabbat gebeuren en het was geen sabbat", "Het was een taak van de gastvrouw, niet van een man", "Het gebeurde normaal pas na de maaltijd, niet ervoor"],
+        correct: "In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester",
+        bijbelplaats: "Johannes 13:5"
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Een vrouw zegt tegen Jezus dat zelfs de hondjes onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
+        antwoorden: ["Ook wie niet aan tafel zit, mag iets van de overvloed krijgen", "Honden waren heilige dieren en mochten meeëten", "Ze had zelf honger en vroeg om eten", "Het eten dat viel, was niet meer rein en werd weggegooid"],
+        correct: "Ook wie niet aan tafel zit, mag iets van de overvloed krijgen",
+        bijbelplaats: "Marcus 7:28"
+    },
+    {
+        vraag: "De hogepriester scheurde zijn kleren toen hij Jezus hoorde. Wat betekende dat gebaar?",
+        antwoorden: ["Diepe verontwaardiging of verdriet, zichtbaar voor iedereen", "Dat hij zijn ambt neerlegde en wegging", "Dat hij het te warm had in de rechtszaal", "Dat hij de wet niet langer wilde volgen"],
+        correct: "Diepe verontwaardiging of verdriet, zichtbaar voor iedereen",
+        bijbelplaats: "Marcus 14:63"
+    },
+    {
+        vraag: "In de gelijkenis plant een man een wijngaard, graaft een kuil voor de wijnpers en bouwt een wachttoren. Waarvoor diende die toren?",
+        antwoorden: ["Om de wijngaard te bewaken tegen dieven en dieren", "Om de druiven in te drogen na de oogst", "Om van bovenaf te zien of de druiven al rijp waren", "Om de wijn koel te bewaren in de zomer"],
+        correct: "Om de wijngaard te bewaken tegen dieven en dieren",
+        bijbelplaats: "Marcus 12:1"
+    },
+    {
+        vraag: "De eigenaar verhuurde zijn wijngaard aan pachters en ging op reis. Wat is een pachter?",
+        antwoorden: ["Iemand die grond van een ander bewerkt en een deel van de oogst afstaat", "Iemand die de grond koopt en er zelf eigenaar van wordt", "Iemand die als dagloner per dag betaald wordt", "Iemand die het land bewaakt maar er niet op werkt"],
+        correct: "Iemand die grond van een ander bewerkt en een deel van de oogst afstaat",
+        bijbelplaats: "Marcus 12:1-2"
+    }
+);
+
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Bij het gestorven meisje trof Jezus fluitspelers en een luidruchtige menigte aan. Wat deden die daar?",
+        antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij vierden feest omdat het meisje ooit beter zou worden", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
+        correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
+        bijbelplaats: "Matteüs 9:23",
+        uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene."
+    },
+    {
+        vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
+        antwoorden: ["Zodat niemand er per ongeluk op stapte en onrein werd", "Zodat de familie het graf makkelijk kon terugvinden", "Omdat wit de kleur van de rouw was", "Omdat kalk het gesteente tegen regen beschermde"],
+        correct: "Zodat niemand er per ongeluk op stapte en onrein werd",
+        bijbelplaats: "Matteüs 23:27",
+        uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Het beeld is dus scherper dan het lijkt: van buiten mooi wit, maar juist bedoeld als waarschuwing voor wat erin zit."
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Jezus zegt: als men jullie niet ontvangt, schud dan het stof van je voeten. Wat betekende dat?",
+        antwoorden: ["Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven", "Een manier om te tonen dat je moe was van de reis", "Een gebruik om je sandalen te sparen op een lange weg", "Een zegen die je bij het weggaan achterliet"],
+        correct: "Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven",
+        bijbelplaats: "Lucas 9:5"
+    }
+);
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 6:
+// beroepen, gewoonten en het schrijven van brieven)
+// =====================================================================
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
+        antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
+        correct: "Hij maakte huiden van geslachte dieren tot leer",
+        bijbelplaats: "Handelingen 9:43",
+        uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
+    },
+    {
+        vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
+        antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
+        correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
+        bijbelplaats: "Handelingen 18:3"
+    },
+    {
+        vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
+        antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
+        correct: "De eerste naam voor de volgelingen van Jezus",
+        bijbelplaats: "Handelingen 9:2"
+    },
+    {
+        vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
+        antwoorden: ["Een rotsheuvel waar de raad van de stad bijeenkwam", "De grootste tempel van de stad", "De markt waar de kooplieden stonden", "Het theater waar toneelstukken werden opgevoerd"],
+        correct: "Een rotsheuvel waar de raad van de stad bijeenkwam",
+        bijbelplaats: "Handelingen 17:19",
+        uitleg: "De naam betekent \"heuvel van Ares\", de Griekse oorlogsgod — de Romeinen noemden hem Mars, vandaar dat je ook \"Marsheuvel\" leest. De raad die er vergaderde was eeuwenlang het hoogste bestuur van Athene en hield toezicht op wie er in de stad over goden en filosofie sprak. Paulus werd er dus niet gearresteerd, maar uitgenodigd om zijn zaak toe te lichten."
+    },
+    {
+        vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
+        antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
+        correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
+        bijbelplaats: "Handelingen 27:28"
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank?",
+        antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Azijn dat men gebruikte om wonden te reinigen", "Een gifdrank die de dood moest bespoedigen"],
+        correct: "Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst",
+        bijbelplaats: "Marcus 15:36",
+        uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen wrede grap: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
+    }
+);
+
+vragenData["Galaten"].expert.push(
+    {
+        vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
+        antwoorden: ["De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf", "Hij was zijn bril kwijt en kon niet kleiner schrijven", "Grote letters betekenden dat de brief voorgelezen moest worden", "Hij had geen inkt meer en moest krassen in het papier"],
+        correct: "De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf",
+        bijbelplaats: "Galaten 6:11"
+    }
+);
+
+vragenData["Romeinen"].expert.push(
+    {
+        vraag: "Paulus schrijft: groet elkaar met een heilige kus. Wat was dat?",
+        antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
+        correct: "De gewone begroeting in die tijd, een kus op de wang",
+        bijbelplaats: "Romeinen 16:16"
+    }
+);
+
+vragenData["Kolossenzen & Filemon"].expert.push(
+    {
+        vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen bij elkaar?",
+        antwoorden: ["In gewone woonhuizen, want kerkgebouwen bestonden nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
+        correct: "In gewone woonhuizen, want kerkgebouwen bestonden nog niet",
+        bijbelplaats: "Filemon 2"
+    }
+);
+
+vragenData["Jakobus"].expert.push(
+    {
+        vraag: "Jakobus vergelijkt de tong met twee kleine dingen die iets groots sturen. Welke twee zijn dat?",
+        antwoorden: ["Het bit in de bek van een paard en het roer van een schip", "De sleutel van een poort en het slot van een kist", "De pen van een schrijver en het zegel van een koning", "De vonk van een vuursteen en de lont van een lamp"],
+        correct: "Het bit in de bek van een paard en het roer van een schip",
+        bijbelplaats: "Jakobus 3:3-5"
+    }
+);
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 5:
+// gebruiken, offers en geld rond de tempel)
+// =====================================================================
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Jezus zegt dat je jonge wijn niet in oude zakken doet. Waar waren die \"zakken\" van gemaakt?",
+        antwoorden: ["Van dierenhuid, die meerekte als de wijn ging gisten", "Van geweven stof met pek aan de binnenkant", "Van gevlochten riet met een deksel erop", "Van gebakken klei met een nauwe hals"],
+        correct: "Van dierenhuid, die meerekte als de wijn ging gisten",
+        bijbelplaats: "Matteüs 9:17"
+    },
+    {
+        vraag: "Jezus zegt: laat geen bazuin voor je uit blazen als je een aalmoes geeft. Wat is een aalmoes?",
+        antwoorden: ["Een gift aan iemand die arm is", "Een offer dat je in de tempel bracht", "Een belasting die je aan de Romeinen betaalde", "Een geschenk dat je aan een gast meegaf"],
+        correct: "Een gift aan iemand die arm is",
+        bijbelplaats: "Matteüs 6:2"
+    },
+    {
+        vraag: "Aan Petrus wordt gevraagd of Jezus de tempelbelasting betaalt. Waar was dat geld voor?",
+        antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen in Judea", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
+        correct: "Voor het onderhoud van de tempel, opgebracht door de Joden zelf",
+        bijbelplaats: "Matteüs 17:24",
+        uitleg: "Elke Joodse man van twintig jaar en ouder betaalde één keer per jaar een halve sikkel voor de tempel. Van dat geld werden de dagelijkse offers betaald, de wierook, de broden die in het heiligdom lagen en het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Jezus spreekt over iemand met een molensteen om zijn hals. Wat is een molensteen?",
+        antwoorden: ["Een zware ronde steen om graan mee te malen", "De steen waarmee een graf werd afgesloten", "De steen waarop het altaar was gebouwd", "Een steen die men in de put liet zakken om water te halen"],
+        correct: "Een zware ronde steen om graan mee te malen",
+        bijbelplaats: "Marcus 9:42"
+    },
+    {
+        vraag: "Voordat Jezus werd gekruisigd, liet Pilatus hem geselen. Wat betekent dat?",
+        antwoorden: ["Slaan met een zweep, een straf die de Romeinen vaak vooraf gaven", "Vastbinden aan een paal op het plein", "Berechten door een tweede rechter", "Het hoofd kaal scheren als teken van schande"],
+        correct: "Slaan met een zweep, een straf die de Romeinen vaak vooraf gaven",
+        bijbelplaats: "Marcus 15:15"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "De farizeeër in de gelijkenis zegt dat hij tienden geeft van alles wat hij bezit. Wat zijn tienden?",
+        antwoorden: ["Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel", "Tien munten die je jaarlijks moest betalen", "De tiende dag van elke maand, die je apart hield", "De tien geboden die je uit je hoofd leerde"],
+        correct: "Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel",
+        bijbelplaats: "Lucas 18:12",
+        uitleg: "Een tiende deel van de oogst was bestemd voor de levieten. Zij verzorgden de dienst in de tempel en hadden als enige stam geen eigen land gekregen, dus dit was hun inkomen. De levieten gaven daar zelf weer een tiende deel van door aan de priesters. Daarnaast was er elke drie jaar een tiende voor de armen, de weduwen, de wezen en de vreemdelingen. De farizeeër uit de gelijkenis ging nog verder dan de wet vroeg: hij gaf van alles een tiende, tot aan de kruiden in zijn tuin toe."
+    }
+);
+
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
+        antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
+        correct: "Je hoofd kaalscheren en offers brengen in de tempel",
+        bijbelplaats: "Handelingen 21:23-26",
+        uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
+    },
+    {
+        vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
+        antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die extra streng leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
+        correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
+        bijbelplaats: "Handelingen 10:2"
+    },
+    {
+        vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
+        antwoorden: ["Ongeveer een kilometer: zo ver mocht je op sabbat lopen", "Precies één dagreis te voet", "De afstand die een ezel op één dag aflegt", "De afstand van de tempel tot de stadsmuur"],
+        correct: "Ongeveer een kilometer: zo ver mocht je op sabbat lopen",
+        bijbelplaats: "Handelingen 1:12",
+        uitleg: "Op sabbat mocht je niet ver van huis gaan. De schriftgeleerden hadden die regel precies gemaakt: tweeduizend el vanaf de rand van je woonplaats, ongeveer negenhonderd meter. Lucas noemt die afstand niet zomaar — hij laat er zijn lezers mee weten dat de Olijfberg vlak bij Jeruzalem lag, en dat de leerlingen dus gewoon terug konden lopen zonder de sabbat te breken."
+    },
+    {
+        vraag: "In het visioen van Petrus worden dieren \"rein\" of \"onrein\" genoemd. Wat betekende dat?",
+        antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier gewassen was voordat het geslacht werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
+        correct: "Of je het volgens de wet van Mozes wel of niet mocht eten",
+        bijbelplaats: "Handelingen 10:14",
+        uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt of ziek was geweest, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 4)
 // =====================================================================
 vragenData["Romeinen"].expert.push(
@@ -7617,7 +7856,66 @@ let vuNiveau = null;
 // Bijbeltraining -> evangelie-keuze
 function openVraagUitleg() {
     document.getElementById("bijbeltraining-scherm").style.display = "none";
+    vulVuBoeken();
     document.getElementById("vu-boek-scherm").style.display = "flex";
+}
+
+// Vult het Vragen & uitleg-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v.
+// alleen de vier evangeliën die statisch in index.html staan). Zelfde defensieve
+// aanpak als vulOefenBoeken(): het vindt de bestaande boekknoppen via hun
+// onclick (kiesVuBoek) en neemt hun opmaak/plek over; de Terug-knop blijft
+// staan. Vindt het niets herkenbaars, dan laat het het scherm ongemoeid. Bouwt
+// maar één keer op (dataset-vlag) en maakt de lijst scrollbaar, want 18 boeken
+// passen anders niet zoals 4 dat deden.
+function vulVuBoeken() {
+    const scherm = document.getElementById("vu-boek-scherm");
+    if (!scherm) return;
+
+    // Ondertitel bijwerken: het zijn niet meer alleen evangeliën.
+    scherm.querySelectorAll("*").forEach((el) => {
+        if (el.children.length === 0 && el.textContent.trim() === "Kies een evangelie") {
+            el.textContent = "Kies een boek";
+        }
+    });
+
+    const knoppen = Array.from(scherm.querySelectorAll("button"));
+    const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesVuBoek");
+    const isTerugKnop = (b) => (b.getAttribute("onclick") || "").includes("sluitVuBoek");
+
+    const boekKnoppen = knoppen.filter(isBoekKnop);
+    if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
+
+    const template = boekKnoppen[0];
+    const ouder = template.parentElement;
+    if (!ouder || ouder.dataset.vuVol === "1") return;      // al aangevuld
+
+    const klasse = template.className;
+    // Bewust de LAATSTE Terug-knop: er staat er ook één bovenaan, en de boeken
+    // horen daartussenin. Met find() zou de bovenste gevonden worden en belandde
+    // de hele lijst daarboven.
+    const terugKnop = knoppen.filter(isTerugKnop).pop();
+
+    // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
+    boekKnoppen.forEach((b) => b.remove());
+
+    // Alle 18 boeken toevoegen, in de vaste volgorde van boekNaarKey, vóór Terug.
+    Object.keys(boekNaarKey).forEach((boek) => {
+        const knop = document.createElement("button");
+        knop.className = klasse;
+        knop.textContent = boek;
+        knop.onclick = () => kiesVuBoek(boek);
+        if (terugKnop && terugKnop.parentElement === ouder) {
+            ouder.insertBefore(knop, terugKnop);
+        } else {
+            ouder.appendChild(knop);
+        }
+    });
+
+    // Lijst scrollbaar maken zodat alle boeken op één scherm passen.
+    ouder.style.maxHeight = "72vh";
+    ouder.style.overflowY = "auto";
+
+    ouder.dataset.vuVol = "1";
 }
 // Evangelie-keuze -> terug naar Bijbeltraining
 function sluitVuBoek() {
