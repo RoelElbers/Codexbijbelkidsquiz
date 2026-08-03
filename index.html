@@ -15,7 +15,11 @@
     <link rel="manifest" href="icons/site.webmanifest">
     <meta name="theme-color" content="#102a5c">
 
-    <link rel="stylesheet" href="style.css?v=25">
+    <!-- Cache-buster ?v=N: style.css, lang/nl.js en script.js dragen ALTIJD hetzelfde
+         nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
+         Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
+         hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
+    <link rel="stylesheet" href="style.css?v=26">
 </head>
 
 <body>
@@ -823,8 +827,9 @@
 
     </div>
 
-    <script src="lang/nl.js?v=23"></script>
-    <script src="script.js?v=24"></script>
+    <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
+    <script src="lang/nl.js?v=26"></script>
+    <script src="script.js?v=26"></script>
 
 </body>
 
