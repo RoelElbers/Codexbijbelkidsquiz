@@ -5519,6 +5519,87 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 10:
+// ambachten, dieren en het meer van Galilea)
+// =====================================================================
+vragenData["Marcus"].advanced.push(
+    {
+        vraag: "De mensen noemen Jezus \"de timmerman\". Wat maakte een timmerman in die tijd vooral?",
+        antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
+        correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
+        bijbelplaats: "Marcus 6:3"
+    },
+    {
+        vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
+        antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "In de stadsmuur zat een lage poort die \"het naaldoog\" heette"],
+        correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
+        bijbelplaats: "Marcus 10:25"
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
+        antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een hangmat die tussen de masten was gespannen", "De voorplecht, waar het droogst was"],
+        correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
+        bijbelplaats: "Marcus 4:38",
+        uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Volgens oude kerkelijke overlevering schreef hij op wat Petrus vertelde — en Petrus was die nacht wél in de boot."
+    },
+    {
+        vraag: "Op het meer van Galilea stak plotseling een zware storm op. Hoe kon dat zo snel gaan?",
+        antwoorden: ["Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden", "Er lopen warme bronnen onder het meer die het water doen koken", "Het meer staat in verbinding met de zee, waardoor er vloedgolven komen", "De storm kwam altijd rond dezelfde tijd van het jaar"],
+        correct: "Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden",
+        bijbelplaats: "Marcus 4:37",
+        uitleg: "Het meer van Galilea ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels. Boven het water hangt warme lucht. Komt er over de bergen koude lucht aan, dan zakt die naar beneden — koude lucht is zwaarder — en duwt de warme lucht omhoog. Precies zo ontstaan bij ons onweersbuien als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
+    }
+);
+
+vragenData["Lucas"].advanced.push(
+    {
+        vraag: "In de gelijkenis zegt iemand dat hij vijf span ossen heeft gekocht. Wat is een span?",
+        antwoorden: ["Twee ossen die samen onder één juk trekken", "Een os met een wagen erachter", "De hoeveelheid land die één os op een dag ploegt", "Het touw waarmee een os wordt vastgezet"],
+        correct: "Twee ossen die samen onder één juk trekken",
+        bijbelplaats: "Lucas 14:19"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
+        antwoorden: ["Om wier, slib en schelpen eruit te halen, anders zag de vis het net", "Om ze te wassen voordat ze thuis te drogen werden gehangen", "Om te kijken of er nog vis in was blijven zitten", "Om ze zwaarder te maken, zodat ze dieper zonken"],
+        correct: "Om wier, slib en schelpen eruit te halen, anders zag de vis het net",
+        bijbelplaats: "Lucas 5:2"
+    },
+    {
+        vraag: "Jezus zegt: wie de hand aan de ploeg slaat en omkijkt, is niet geschikt. Waarom is omkijken bij het ploegen een probleem?",
+        antwoorden: ["De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij", "De ossen slaan op hol als je hen niet aankijkt", "Je verliest het zaad dat je in je andere hand draagt", "Het is verboden om over je schouder te kijken op het land"],
+        correct: "De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij",
+        bijbelplaats: "Lucas 9:62"
+    },
+    {
+        vraag: "Jezus zegt tegen Simon dat de satan hem wil \"zeven als tarwe\". Wat gebeurt er bij het zeven?",
+        antwoorden: ["Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
+        correct: "Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen",
+        bijbelplaats: "Lucas 22:31"
+    }
+);
+
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Jezus vertelt over een net dat wordt uitgeworpen en allerlei vissen vangt. Wat voor net was dat?",
+        antwoorden: ["Een lang sleepnet dat tussen twee boten door het water werd getrokken", "Een klein rond net dat je vanaf de oever uitwierp", "Een fuik die je 's nachts liet staan", "Een net dat je aan een lange stok voor je uit hield"],
+        correct: "Een lang sleepnet dat tussen twee boten door het water werd getrokken",
+        bijbelplaats: "Matteüs 13:47"
+    },
+    {
+        vraag: "Van het geld van Judas kochten de priesters \"de akker van de pottenbakker\". Waarom lag daar een akker van een pottenbakker?",
+        antwoorden: ["Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard", "Daar stonden zijn ovens, ver van de stad vanwege de rook", "Daar verkocht hij zijn potten aan de pelgrims", "Daar werden gebroken potten begraven, want die waren onrein"],
+        correct: "Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard",
+        bijbelplaats: "Matteüs 27:7"
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 9:
 // huizen, land en geld in de gelijkenissen)
 // =====================================================================
