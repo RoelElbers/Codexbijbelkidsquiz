@@ -5546,7 +5546,8 @@ vragenData["Matteüs"].advanced.push(
         vraag: "Jezus werd gelegd in een graf dat in de rots was uitgehakt. Hoe zag zo'n graf eruit?",
         antwoorden: ["Een kamer in de rotswand met stenen banken, afgesloten met een grote steen", "Een diep gat in de grond met aarde erop", "Een houten kist die boven de grond stond", "Een grot waar het hele dorp begraven werd"],
         correct: "Een kamer in de rotswand met stenen banken, afgesloten met een grote steen",
-        bijbelplaats: "Matteüs 27:60"
+        bijbelplaats: "Matteüs 27:60",
+        uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en daar werd het lichaam op gelegd, gewikkeld in doeken met specerijen. Voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
     },
     {
         vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
@@ -5628,7 +5629,8 @@ vragenData["Handelingen"].expert.push(
         vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
         antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd zelden toegestaan"],
         correct: "Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen",
-        bijbelplaats: "Handelingen 25:11"
+        bijbelplaats: "Handelingen 25:11",
+        uitleg: "Het Romeinse burgerrecht gaf een handvol rechten die voor gewone inwoners niet golden: je mocht niet zonder vonnis gegeseld worden, niet gekruisigd worden, en je mocht je zaak naar Rome laten verwijzen. Zodra Paulus die woorden uitsprak, was de zaak uit handen van de gouverneur — die kón hem daarna niet meer vrijlaten, ook al vond hij hem onschuldig. Het beroep bracht Paulus dus naar Rome, maar het sloot tegelijk de deur naar vrijlating."
     },
     {
         vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
@@ -5717,7 +5719,8 @@ vragenData["Marcus"].expert.push(
         vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
         antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
         correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
-        bijbelplaats: "Marcus 7:24"
+        bijbelplaats: "Marcus 7:24",
+        uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed. Dat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
     }
 );
 
@@ -5726,7 +5729,8 @@ vragenData["Handelingen"].advanced.push(
         vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
         antwoorden: ["Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
         correct: "Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten",
-        bijbelplaats: "Handelingen 11:26"
+        bijbelplaats: "Handelingen 11:26",
+        uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer. Vanuit Antiochië vertrok Paulus later op al zijn reizen."
     },
     {
         vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
@@ -5747,7 +5751,8 @@ vragenData["Handelingen"].expert.push(
         vraag: "Op het Wekenfeest waren er in Jeruzalem \"Joden en proselieten\". Wat is een proseliet?",
         antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
         correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
-        bijbelplaats: "Handelingen 2:10"
+        bijbelplaats: "Handelingen 2:10",
+        uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende ging naar de synagoge en hield zich aan de belangrijkste geboden, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden, nam een rituele wassing en gold daarna volledig als Jood. Lucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
     },
     {
         vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
