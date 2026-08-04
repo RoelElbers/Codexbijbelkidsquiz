@@ -5519,6 +5519,62 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 11:
+// trouwen, gastvrijheid en godsdienstige gebruiken)
+// =====================================================================
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Jozef wilde Maria \"in stilte verlaten\" toen bleek dat zij zwanger was. Waarom was dat nodig, terwijl ze nog niet getrouwd waren?",
+        antwoorden: ["Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief", "Hij had haar bruidsschat al betaald en die moest hij terugvragen", "Ze woonden al samen, dus hij moest verhuizen", "Alleen een priester mocht een verloving beëindigen"],
+        correct: "Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief",
+        bijbelplaats: "Matteüs 1:19",
+        uitleg: "Trouwen ging in twee stappen. Eerst de verloving, waarbij de afspraak juridisch werd vastgelegd — vanaf dat moment heette je al man en vrouw en kon je alleen nog uit elkaar met een scheidbrief. Pas een jaar later haalde de bruidegom zijn bruid op en begon het feest en het samenwonen. Jozef en Maria zaten dus in die tussenperiode. Dat verklaart waarom Matteüs Jozef \"haar man\" noemt terwijl het huwelijk nog niet voltrokken was."
+    },
+    {
+        vraag: "Jezus hekelt leiders die zeggen: zweren bij de tempel telt niet, maar zweren bij het goud van de tempel wel. Wat was daar mis mee?",
+        antwoorden: ["Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken", "Zweren was helemaal verboden en zij deden het toch", "Zij zwoeren bij goud, en dat was afgoderij", "Alleen priesters mochten een eed afleggen"],
+        correct: "Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken",
+        bijbelplaats: "Matteüs 23:16"
+    }
+);
+
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom kwam hij zo laat?",
+        antwoorden: ["Hij haalde zijn bruid pas op als de afspraken met haar familie rond waren, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
+        correct: "Hij haalde zijn bruid pas op als de afspraken met haar familie rond waren, en dat kon uitlopen",
+        bijbelplaats: "Matteüs 25:6"
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
+        antwoorden: ["Hij leidde het feest en zag toe op het eten en drinken", "Hij sprak de zegen uit over het bruidspaar", "Hij hield bij welke gasten een geschenk hadden meegebracht", "Hij speelde muziek en leidde de dansen"],
+        correct: "Hij leidde het feest en zag toe op het eten en drinken",
+        bijbelplaats: "Johannes 2:9"
+    }
+);
+
+vragenData["Marcus"].advanced.push(
+    {
+        vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
+        antwoorden: ["Om een religieus gebruik van reiniging, niet om hygiëne", "Om vieze handen na het werk op het land", "Om een regel van de Romeinse bezetter", "Om een afspraak die alleen in de tempel gold"],
+        correct: "Om een religieus gebruik van reiniging, niet om hygiëne",
+        bijbelplaats: "Marcus 7:3"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
+        antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
+        correct: "Eén vastendag per jaar, op Grote Verzoendag",
+        bijbelplaats: "Lucas 18:12"
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 10:
 // ambachten, dieren en het meer van Galilea)
 // =====================================================================
