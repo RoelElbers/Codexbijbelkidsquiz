@@ -7889,7 +7889,7 @@ const verborgenSchatVragen = [
         antwoorden: ["Hebreeën", "Romeinen", "Galaten", "Efeziërs"],
         correct: "Hebreeën",
         bijbelplaats: "naam van het boek",
-        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. Daarom gaat deze brief ook zo uitgebreid over de tempel, de offers en het priesterschap — dat was de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen."
+        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen."
     }
 ];
 
