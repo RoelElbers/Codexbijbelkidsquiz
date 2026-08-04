@@ -5537,7 +5537,8 @@ vragenData["Marcus"].advanced.push(
         vraag: "De vrouwen kochten specerijen om Jezus te zalven. Waarvoor dienden die?",
         antwoorden: ["Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode", "Om het lichaam te bewaren zoals in Egypte gebeurde", "Om de dode warm te houden in het koude graf", "Om het graf te ontsmetten voor de bezoekers"],
         correct: "Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode",
-        bijbelplaats: "Marcus 16:1"
+        bijbelplaats: "Marcus 16:1",
+        uitleg: "Men balsemde in Israël niet zoals in Egypte. Wat men deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging het lichaam te bewaren. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond specerijen en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor hem konden doen."
     }
 );
 
@@ -5553,7 +5554,8 @@ vragenData["Matteüs"].advanced.push(
         vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
         antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting en verder niets"],
         correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
-        bijbelplaats: "Matteüs 27:2"
+        bijbelplaats: "Matteüs 27:2",
+        uitleg: "Judea was geen gewone provincie maar een onrustig grensgebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee, en kwam alleen naar de stad tijdens de grote feesten, wanneer er honderdduizenden pelgrims waren en de kans op onrust het grootst was. Hij had één bevoegdheid die de Joodse leiders niet hadden: het doodvonnis. Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
     }
 );
 
@@ -5562,7 +5564,8 @@ vragenData["Lucas"].expert.push(
         vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
         antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger", "Hogepriester in de tempel", "Rechter van de Hoge Raad"],
         correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
-        bijbelplaats: "Lucas 3:1"
+        bijbelplaats: "Lucas 3:1",
+        uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang. Lucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
     },
     {
         vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
@@ -5745,13 +5748,15 @@ vragenData["Handelingen"].advanced.push(
         vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
         antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
         correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
-        bijbelplaats: "Handelingen 2:44-45"
+        bijbelplaats: "Handelingen 2:44-45",
+        uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen."
     },
     {
         vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
         antwoorden: ["Iemand aanwijzen voor een taak en hem daarbij zegenen", "Controleren of iemand gezond was", "Iemand welkom heten in de gemeente", "Iemand vergeving schenken voor zijn fouten"],
         correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
-        bijbelplaats: "Handelingen 6:6"
+        bijbelplaats: "Handelingen 6:6",
+        uitleg: "Handen opleggen was een oud gebaar met twee betekenissen: iemand zegenen, en iemand aanwijzen voor een taak. In het Oude Testament legt Mozes zijn handen op Jozua als die zijn opvolger wordt. In de eerste gemeente gebeurde het bij het uitzenden van Paulus en Barnabas, en hier bij de zeven mannen. Het gebaar maakte zichtbaar wat er gebeurde: dit is niet iets wat je jezelf toe-eigent, het wordt je gegeven. Het gebruik leeft nog steeds. In katholieke kerken hoort handoplegging bij de wijding van een diaken of priester, in protestantse kerken bij de bevestiging van een predikant, ouderling of diaken, en in evangelische gemeenten legt men elkaar vaak de handen op bij het gebed voor iemand die ziek is."
     }
 );
 
@@ -5787,7 +5792,8 @@ vragenData["Timoteüs & Titus"].expert.push(
         vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
         antwoorden: ["Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël, op een halve dagreis varen", "Een onbewoond eiland waar schepen alleen schuilden bij storm"],
         correct: "Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet",
-        bijbelplaats: "Titus 1:5"
+        bijbelplaats: "Titus 1:5",
+        uitleg: "Kreta is met ruim tweehonderd kilometer lengte het grootste Griekse eiland en lag midden op de vaarroutes tussen Egypte, Griekenland en Italië. Er waren tientallen steden, en al vanaf Pinksteren woonden er Joden — Handelingen noemt Kretenzers bij de volken die in Jeruzalem waren. Dat Paulus schrijft dat Titus in elke stad oudsten moest aanstellen zegt dus iets: het ging niet om één gemeente, maar om een eiland vol verspreide groepjes gelovigen."
     }
 );
 
