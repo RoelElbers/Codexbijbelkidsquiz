@@ -5519,6 +5519,93 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 14:
+// onderwijs, recht en reizen)
+// =====================================================================
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: "Paulus zegt dat hij \"aan de voeten van Gamaliël\" is opgeleid. Wat betekent die uitdrukking?",
+        antwoorden: ["Hij was leerling van die leraar en zat letterlijk lager dan hij", "Hij heeft die leraar verzorgd toen die oud werd", "Hij is als kind door hem gedoopt", "Hij heeft zijn schoenen mogen dragen als eerbetoon"],
+        correct: "Hij was leerling van die leraar en zat letterlijk lager dan hij",
+        bijbelplaats: "Handelingen 22:3",
+        uitleg: "Een leraar zat op een stoel of verhoging, en zijn leerlingen zaten op de grond om hem heen. \"Aan iemands voeten zitten\" werd daardoor de gewone uitdrukking voor \"bij iemand in de leer zijn\". Datzelfde beeld staat bij Maria, de zus van Marta: zij zat aan Jezus' voeten en luisterde. Dat was voor een vrouw ongebruikelijk — zij nam de plaats in van een leerling."
+    },
+    {
+        vraag: "De apostelen moesten voor \"de Hoge Raad\" verschijnen. Wat was dat?",
+        antwoorden: ["De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
+        correct: "De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester",
+        bijbelplaats: "Handelingen 5:27",
+        uitleg: "Deze raad heette in het Grieks het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
+    },
+    {
+        vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
+        antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd zelden toegestaan"],
+        correct: "Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen",
+        bijbelplaats: "Handelingen 25:11"
+    },
+    {
+        vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
+        antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden hun zweep al verloren", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
+        correct: "Dat was verboden, en wie het toch deed kon zelf gestraft worden",
+        bijbelplaats: "Handelingen 22:25"
+    },
+    {
+        vraag: "Paulus werd overgezet op een schip uit Alexandrië, op weg naar Italië. Wat vervoerde zo'n schip vooral?",
+        antwoorden: ["Graan uit Egypte, waarmee de stad Rome werd gevoed", "Marmer voor de bouw van tempels", "Soldaten die met verlof gingen", "Wilde dieren voor de spelen in het theater"],
+        correct: "Graan uit Egypte, waarmee de stad Rome werd gevoed",
+        bijbelplaats: "Handelingen 27:6",
+        uitleg: "Egypte was de graanschuur van het rijk. Elk jaar voeren grote vrachtschepen graan naar Rome, want de stad had ruim een miljoen inwoners en kon zichzelf niet voeden. Die schepen waren de grootste van hun tijd — er konden honderden mensen mee. Daarom staat er ook dat er 276 opvarenden waren toen het schip verging: dat is geen legerkonvooi, maar één vrachtschip vol graan en passagiers."
+    }
+);
+
+vragenData["Handelingen"].advanced.push(
+    {
+        vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
+        antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
+        correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
+        bijbelplaats: "Handelingen 27:12"
+    }
+);
+
+vragenData["Lucas"].advanced.push(
+    {
+        vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
+        antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
+        correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
+        bijbelplaats: "Lucas 4:17"
+    }
+);
+
+vragenData["Matteüs"].expert.push(
+    {
+        vraag: "Jezus zegt dat zout weggegooid wordt als het zijn kracht verliest. Hoe kan zout zijn smaak verliezen?",
+        antwoorden: ["Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over", "Zout wordt oud en verliest dan vanzelf zijn smaak", "Zout dat je te lang bewaart verandert in zand", "Zout verliest zijn smaak als er licht op valt"],
+        correct: "Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over",
+        bijbelplaats: "Matteüs 5:13",
+        uitleg: "Wat men zout noemde, waren brokken van de oever van de Dode Zee. Daar zit naast echt zout ook gips en kalk in. Echt zout lost sneller op dan die andere stoffen, dus lag zo'n brok lang in een vochtige voorraadkamer, dan trok het zoute eruit en bleef er korrelig gruis over dat nergens meer naar smaakte. Weggooien op het land kon niet — zout maakt grond onvruchtbaar — dus strooide men het op de paden. Vandaar dat Jezus zegt dat het wordt weggeworpen en vertrapt."
+    }
+);
+
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
+        antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat de grond in het dal te duur was", "Omdat er op de heuvels meer water te vinden was"],
+        correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
+        bijbelplaats: "Matteüs 5:14"
+    }
+);
+
+vragenData["Hebreeën"].expert.push(
+    {
+        vraag: "De schrijver noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
+        antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
+        correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
+        bijbelplaats: "Hebreeën 9:7",
+        uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: hij ging één keer naar binnen, en dat was genoeg voor altijd."
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 13:
 // plaatsen, volken en de eerste gemeenten)
 // =====================================================================
