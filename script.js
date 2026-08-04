@@ -5519,6 +5519,90 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 13:
+// plaatsen, volken en de eerste gemeenten)
+// =====================================================================
+vragenData["Lucas"].advanced.push(
+    {
+        vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom?",
+        antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
+        correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
+        bijbelplaats: "Lucas 10:33",
+        uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — er is zelfs een keer een Samaritaanse tempel verwoest door Joden. Wie in Galilea naar Jeruzalem reisde, maakte liever een omweg dan door Samaria te lopen. Dat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
+    }
+);
+
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "De genezen man ging het verhaal vertellen in \"Dekapolis\". Wat was dat?",
+        antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
+        correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
+        bijbelplaats: "Marcus 5:20"
+    },
+    {
+        vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
+        antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
+        correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
+        bijbelplaats: "Marcus 7:24"
+    }
+);
+
+vragenData["Handelingen"].advanced.push(
+    {
+        vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
+        antwoorden: ["Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
+        correct: "Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten",
+        bijbelplaats: "Handelingen 11:26"
+    },
+    {
+        vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
+        antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
+        correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
+        bijbelplaats: "Handelingen 2:44-45"
+    },
+    {
+        vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
+        antwoorden: ["Iemand aanwijzen voor een taak en hem daarbij zegenen", "Controleren of iemand gezond was", "Iemand welkom heten in de gemeente", "Iemand vergeving schenken voor zijn fouten"],
+        correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
+        bijbelplaats: "Handelingen 6:6"
+    }
+);
+
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: "Op het Wekenfeest waren er in Jeruzalem \"Joden en proselieten\". Wat is een proseliet?",
+        antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
+        correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
+        bijbelplaats: "Handelingen 2:10"
+    },
+    {
+        vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
+        antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het innen", "Er moest iemand de brieven van Paulus rondbrengen"],
+        correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
+        bijbelplaats: "Handelingen 6:1-3",
+        uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
+    }
+);
+
+vragenData["Jakobus"].expert.push(
+    {
+        vraag: "Jakobus schrijft aan de twaalf stammen \"in de verstrooiing\". Wat betekent dat?",
+        antwoorden: ["De Joden die buiten Israël woonden, verspreid over het hele rijk", "De gelovigen die zich verstopt hielden voor vervolging", "De stammen die onderling ruzie hadden gekregen", "De mensen die hun geloof waren kwijtgeraakt"],
+        correct: "De Joden die buiten Israël woonden, verspreid over het hele rijk",
+        bijbelplaats: "Jakobus 1:1"
+    }
+);
+
+vragenData["Timoteüs & Titus"].expert.push(
+    {
+        vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
+        antwoorden: ["Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël, op een halve dagreis varen", "Een onbewoond eiland waar schepen alleen schuilden bij storm"],
+        correct: "Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet",
+        bijbelplaats: "Titus 1:5"
+    }
+);
+
+// =====================================================================
 // De drie talen van Israël (expert)
 // =====================================================================
 vragenData["Johannes"].expert.push(
