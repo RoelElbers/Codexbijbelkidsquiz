@@ -5540,9 +5540,9 @@ vragenData["Matteüs"].expert.push(
 
 vragenData["Matteüs"].advanced.push(
     {
-        vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom kwam hij zo laat?",
-        antwoorden: ["Hij haalde zijn bruid pas op als de afspraken met haar familie rond waren, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
-        correct: "Hij haalde zijn bruid pas op als de afspraken met haar familie rond waren, en dat kon uitlopen",
+        vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom een bruidegom lang op zich kon laten wachten, vertelt de gelijkenis niet — maar wat weten we wel over hoe een bruiloft begon?",
+        antwoorden: ["De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
+        correct: "De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen",
         bijbelplaats: "Matteüs 25:6"
     }
 );
