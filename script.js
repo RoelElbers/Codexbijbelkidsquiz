@@ -7592,6 +7592,18 @@ const verborgenSchatVragen = [
         bijbelplaats: "1 Korintiërs 15:9 · Efeziërs 3:8 · 1 Timoteüs 1:15",
         reveal: "Wist je dit? Omdat de brieven op lengte staan en niet op tijd, zie je iets moois pas als je ze op volgorde van schrijven leest. Dan noemt Paulus zichzelf telkens kleiner: eerst \"de minste van de apostelen\" (1 Korintiërs), later \"de allerminste van alle gelovigen\" (Efeziërs), en aan het eind \"de grootste van de zondaars\" (1 Timoteüs). Hoe dichter Paulus bij God leefde, hoe kleiner hij zichzelf maakte.",
         catecheseId: "verborgen-patronen-paulus-brieven"
+    },
+    {
+        vraag: "Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus, de dienaar van de hogepriester. Wat gebeurde er daarna?",
+        antwoorden: [
+            "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
+            "Petrus werd meteen gevangengenomen en pas de volgende dag vrijgelaten",
+            "De soldaten sloegen Petrus neer en bonden hem vast",
+            "Jezus beval Petrus dat hij weg moest gaan"
+        ],
+        correct: "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
+        bijbelplaats: "Lucas 22:50-51 en Johannes 18:10",
+        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette; hij schreef als laatste, toen niemand daar nog last van kon krijgen. En Lucas — die volgens de overlevering arts was — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Volgens oude kerkelijke overlevering is hij later tot geloof gekomen, maar zeker weten doen we dat niet."
     }
 ];
 
