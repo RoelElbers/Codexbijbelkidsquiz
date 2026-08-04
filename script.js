@@ -5519,6 +5519,87 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// De drie talen van Israël (expert)
+// =====================================================================
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Welke talen sprak men in Israël in de tijd van Jezus?",
+        antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
+        correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
+        bijbelplaats: "Johannes 19:20",
+        uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven. Latijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij. Dat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
+    }
+);
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 12, BEGINNER:
+// aanvulling voor Petrus & Judas, Timoteüs & Titus en Openbaring)
+// =====================================================================
+vragenData["Petrus & Judas"].beginner.push(
+    {
+        vraag: "Petrus schrijft dat de duivel rondgaat als een brullende leeuw. Waarom juist een leeuw?",
+        antwoorden: ["Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver", "Leeuwen kwamen alleen 's nachts en waren daarom eng", "De leeuw was het teken van de Romeinse keizer", "Leeuwen werden in de tempel gebruikt als versiering"],
+        correct: "Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver",
+        bijbelplaats: "1 Petrus 5:8"
+    },
+    {
+        vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
+        antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die tijdelijk bij familie inwoont na een verhuizing"],
+        correct: "Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land",
+        bijbelplaats: "1 Petrus 2:11"
+    },
+    {
+        vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
+        antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
+        correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem",
+        bijbelplaats: "2 Petrus 3:8"
+    }
+);
+
+vragenData["Timoteüs & Titus"].beginner.push(
+    {
+        vraag: "Paulus schrijft dat de liefde voor geld de wortel is van alle kwaad. Waarom kiest hij het woord \"wortel\"?",
+        antwoorden: ["Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds", "Een wortel zit in de grond en is dus vies", "Een wortel is het kleinste deel van een plant", "Een wortel is eetbaar en dus verleidelijk"],
+        correct: "Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds",
+        bijbelplaats: "1 Timoteüs 6:10"
+    },
+    {
+        vraag: "Paulus schrijft: ik heb de goede strijd gestreden, ik heb de wedloop volbracht. Waar haalt hij dat beeld vandaan?",
+        antwoorden: ["Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd", "Uit het leger, waar hij zelf gediend had", "Uit de landbouw, waar hij als jongen werkte", "Uit de rechtszaal, waar hij vaak had gestaan"],
+        correct: "Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd",
+        bijbelplaats: "2 Timoteüs 4:7"
+    },
+    {
+        vraag: "Paulus schrijft aan Timoteüs: laat niemand op je neerkijken omdat je jong bent. Wat zegt dat over Timoteüs?",
+        antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
+        correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
+        bijbelplaats: "1 Timoteüs 4:12"
+    }
+);
+
+vragenData["Openbaring"].beginner.push(
+    {
+        vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
+        antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
+        correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
+        bijbelplaats: "Openbaring 1:9",
+        uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. Volgens oude kerkelijke overlevering gebeurde dat onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
+    },
+    {
+        vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
+        antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
+        correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
+        bijbelplaats: "Openbaring 2:10"
+    },
+    {
+        vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Waarvoor gebruikte men een zegel?",
+        antwoorden: ["Om iets dicht te houden, zodat je kon zien of iemand het geopend had", "Om te tonen hoe duur een boekrol was", "Om de bladzijden bij elkaar te houden", "Om het papier tegen vocht te beschermen"],
+        correct: "Om iets dicht te houden, zodat je kon zien of iemand het geopend had",
+        bijbelplaats: "Openbaring 5:1"
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 11:
 // trouwen, gastvrijheid en godsdienstige gebruiken)
 // =====================================================================
