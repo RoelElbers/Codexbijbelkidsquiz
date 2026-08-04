@@ -5578,13 +5578,15 @@ vragenData["Johannes"].expert.push(
         vraag: "Jezus werd na zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd hij eerst bij Annas gebracht?",
         antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
         correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
-        bijbelplaats: "Johannes 18:13"
+        bijbelplaats: "Johannes 18:13",
+        uitleg: "In de tijd vóór de Romeinen bleef een hogepriester zijn leven lang in functie. Onder Romeins bestuur benoemde en ontsloeg de gouverneur hen echter naar believen. Annas was ongeveer tien jaar hogepriester geweest en werd afgezet, maar hij bleef achter de schermen de machtigste man in Jeruzalem: vijf van zijn zonen én zijn schoonzoon Kajafas werden na hem hogepriester. Wie iets wilde regelen, ging dus eerst langs Annas. Dat verklaart ook waarom Lucas twee namen tegelijk noemt als hij vertelt wanneer Johannes de Doper begon."
     },
     {
         vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
         antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Twee of drie man", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
         correct: "Een paar honderd soldaten, een tiende deel van een legioen",
-        bijbelplaats: "Johannes 18:3"
+        bijbelplaats: "Johannes 18:3",
+        uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
     }
 );
 
@@ -5593,7 +5595,8 @@ vragenData["Hebreeën"].expert.push(
         vraag: "De schrijver zegt dat Jezus buiten de poort heeft geleden. Waarom vonden kruisigingen buiten de stad plaats?",
         antwoorden: ["Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte", "Omdat er binnen de muren geen ruimte was", "Omdat de Romeinen het binnen de stad niet mochten van de keizer", "Omdat het buiten stiller was voor de familie"],
         correct: "Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte",
-        bijbelplaats: "Hebreeën 13:12"
+        bijbelplaats: "Hebreeën 13:12",
+        uitleg: "Een dode maakte volgens de wet onrein, dus begraafplaatsen en terechtstellingen hoorden buiten de stadsmuur. De Romeinen kozen daarbij bewust een plek langs een drukke weg, zodat iedereen die de stad in kwam het zag. De schrijver van Hebreeën legt daar nog een tweede laag onder: op de Grote Verzoendag werd het offerdier ook buiten het kamp gebracht en daar verbrand. Buiten de poort is voor hem dus niet zomaar een plaatsaanduiding, maar een verwijzing naar dat oude gebruik."
     }
 );
 
@@ -5713,7 +5716,8 @@ vragenData["Marcus"].expert.push(
         vraag: "De genezen man ging het verhaal vertellen in \"Dekapolis\". Wat was dat?",
         antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
         correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
-        bijbelplaats: "Marcus 5:20"
+        bijbelplaats: "Marcus 5:20",
+        uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was. De man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
     },
     {
         vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
@@ -5768,7 +5772,8 @@ vragenData["Jakobus"].expert.push(
         vraag: "Jakobus schrijft aan de twaalf stammen \"in de verstrooiing\". Wat betekent dat?",
         antwoorden: ["De Joden die buiten Israël woonden, verspreid over het hele rijk", "De gelovigen die zich verstopt hielden voor vervolging", "De stammen die onderling ruzie hadden gekregen", "De mensen die hun geloof waren kwijtgeraakt"],
         correct: "De Joden die buiten Israël woonden, verspreid over het hele rijk",
-        bijbelplaats: "Jakobus 1:1"
+        bijbelplaats: "Jakobus 1:1",
+        uitleg: "Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin. Sommigen waren ooit weggevoerd, anderen waren voor handel of werk vertrokken. Zo ontstonden Joodse gemeenschappen in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord daarvoor is diaspora, verstrooiing — alsof zaad is uitgestrooid over een groot veld. Juist door die verspreiding kon het christelijk geloof zich later zo snel verbreiden: Paulus vond in elke stad die hij bezocht al een synagoge waar hij kon beginnen."
     }
 );
 
