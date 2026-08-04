@@ -7888,7 +7888,8 @@ const verborgenSchatVragen = [
         vraag: "Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?",
         antwoorden: ["Hebreeën", "Romeinen", "Galaten", "Efeziërs"],
         correct: "Hebreeën",
-        bijbelplaats: "naam van het boek"
+        bijbelplaats: "naam van het boek",
+        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. Daarom gaat deze brief ook zo uitgebreid over de tempel, de offers en het priesterschap — dat was de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen."
     }
 ];
 
