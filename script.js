@@ -5519,6 +5519,93 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 15:
+// tijd, bestuur en het graf)
+// =====================================================================
+vragenData["Marcus"].expert.push(
+    {
+        vraag: "Marcus schrijft dat het avond werd en de sabbat aanbrak. Wanneer begon een nieuwe dag bij de Joden?",
+        antwoorden: ["Bij zonsondergang, dus de avond hoorde al bij de volgende dag", "Om middernacht, net als bij ons", "Bij zonsopgang, als het licht werd", "Om twaalf uur 's middags"],
+        correct: "Bij zonsondergang, dus de avond hoorde al bij de volgende dag",
+        bijbelplaats: "Marcus 15:42",
+        uitleg: "Dat verklaart de haast rond de begrafenis van Jezus. Hij stierf op vrijdagmiddag, en zodra de zon onderging begon de sabbat — dan mocht er niet meer gewerkt worden. Jozef van Arimatea had dus maar een paar uur. Om diezelfde reden kwamen de vrouwen pas zondagochtend terug met specerijen: eerder konden ze niet."
+    }
+);
+
+vragenData["Marcus"].advanced.push(
+    {
+        vraag: "De vrouwen kochten specerijen om Jezus te zalven. Waarvoor dienden die?",
+        antwoorden: ["Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode", "Om het lichaam te bewaren zoals in Egypte gebeurde", "Om de dode warm te houden in het koude graf", "Om het graf te ontsmetten voor de bezoekers"],
+        correct: "Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode",
+        bijbelplaats: "Marcus 16:1"
+    }
+);
+
+vragenData["Matteüs"].advanced.push(
+    {
+        vraag: "Jezus werd gelegd in een graf dat in de rots was uitgehakt. Hoe zag zo'n graf eruit?",
+        antwoorden: ["Een kamer in de rotswand met stenen banken, afgesloten met een grote steen", "Een diep gat in de grond met aarde erop", "Een houten kist die boven de grond stond", "Een grot waar het hele dorp begraven werd"],
+        correct: "Een kamer in de rotswand met stenen banken, afgesloten met een grote steen",
+        bijbelplaats: "Matteüs 27:60"
+    },
+    {
+        vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
+        antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting en verder niets"],
+        correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
+        bijbelplaats: "Matteüs 27:2"
+    }
+);
+
+vragenData["Lucas"].expert.push(
+    {
+        vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
+        antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger", "Hogepriester in de tempel", "Rechter van de Hoge Raad"],
+        correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
+        bijbelplaats: "Lucas 3:1"
+    },
+    {
+        vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
+        antwoorden: ["De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas", "Het was dezelfde man, maar hij was oud geworden", "Herodes was een titel, geen naam, net als keizer", "De tweede was de kleinzoon van de eerste"],
+        correct: "De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas",
+        bijbelplaats: "Lucas 23:7",
+        uitleg: "Herodes de Grote regeerde toen Jezus geboren werd en stierf kort daarna. Zijn rijk werd verdeeld onder zijn zonen. Herodes Antipas kreeg Galilea — hij is degene die Johannes de Doper liet onthoofden en die Jezus verhoorde. Nog weer later komt in Handelingen een Herodes Agrippa voor, een kleinzoon. Er lopen dus drie verschillende Herodessen door het Nieuwe Testament."
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Jezus werd na zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd hij eerst bij Annas gebracht?",
+        antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
+        correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
+        bijbelplaats: "Johannes 18:13"
+    },
+    {
+        vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
+        antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Twee of drie man", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
+        correct: "Een paar honderd soldaten, een tiende deel van een legioen",
+        bijbelplaats: "Johannes 18:3"
+    }
+);
+
+vragenData["Hebreeën"].expert.push(
+    {
+        vraag: "De schrijver zegt dat Jezus buiten de poort heeft geleden. Waarom vonden kruisigingen buiten de stad plaats?",
+        antwoorden: ["Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte", "Omdat er binnen de muren geen ruimte was", "Omdat de Romeinen het binnen de stad niet mochten van de keizer", "Omdat het buiten stiller was voor de familie"],
+        correct: "Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte",
+        bijbelplaats: "Hebreeën 13:12"
+    }
+);
+
+vragenData["Handelingen"].advanced.push(
+    {
+        vraag: "De gelovigen kwamen samen \"op de eerste dag van de week\". Welke dag was dat?",
+        antwoorden: ["De zondag, de dag na de sabbat, waarop Jezus was opgestaan", "De maandag, het begin van de werkweek", "De zaterdag, dezelfde dag als de sabbat", "De vrijdagavond, als de sabbat begon"],
+        correct: "De zondag, de dag na de sabbat, waarop Jezus was opgestaan",
+        bijbelplaats: "Handelingen 20:7"
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 14:
 // onderwijs, recht en reizen)
 // =====================================================================
