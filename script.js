@@ -5605,7 +5605,8 @@ vragenData["Handelingen"].advanced.push(
         vraag: "De gelovigen kwamen samen \"op de eerste dag van de week\". Welke dag was dat?",
         antwoorden: ["De zondag, de dag na de sabbat, waarop Jezus was opgestaan", "De maandag, het begin van de werkweek", "De zaterdag, dezelfde dag als de sabbat", "De vrijdagavond, als de sabbat begon"],
         correct: "De zondag, de dag na de sabbat, waarop Jezus was opgestaan",
-        bijbelplaats: "Handelingen 20:7"
+        bijbelplaats: "Handelingen 20:7",
+        uitleg: "De Joodse week telde geen namen maar nummers: de eerste dag, de tweede dag, en zo verder tot de sabbat. De eerste dag van de week is dus wat wij zondag noemen. De eerste christenen bleven aanvankelijk gewoon op sabbat naar de synagoge gaan, maar kwamen daarnaast op die eerste dag bijeen om brood te breken — de dag waarop Jezus was opgestaan. Omdat een dag bij zonsondergang begon, viel zo'n samenkomst voor hun gevoel op zaterdagavond. Dat verklaart waarom Paulus in dit verhaal tot na middernacht doorpraat."
     }
 );
 
@@ -5639,7 +5640,8 @@ vragenData["Handelingen"].expert.push(
         vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
         antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden hun zweep al verloren", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
         correct: "Dat was verboden, en wie het toch deed kon zelf gestraft worden",
-        bijbelplaats: "Handelingen 22:25"
+        bijbelplaats: "Handelingen 22:25",
+        uitleg: "Twee oude Romeinse wetten verboden het om een burger zonder vonnis te binden of te slaan. Wie dat toch deed, riskeerde zelf een zware straf, en de commandant in dit verhaal schrikt dan ook oprecht — hij had Paulus al laten vastbinden. Het burgerrecht was niet aan een gebied gebonden: je nam het mee waar je ook kwam, en één zin was genoeg om het in te roepen. Precies dat maakt het ook zo bijzonder dat Paulus die zin niet altijd uitsprak; in Filippi liet hij zich eerst afranselen en zei hij het pas achteraf."
     },
     {
         vraag: "Paulus werd overgezet op een schip uit Alexandrië, op weg naar Italië. Wat vervoerde zo'n schip vooral?",
@@ -5655,7 +5657,8 @@ vragenData["Handelingen"].advanced.push(
         vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
         antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
         correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
-        bijbelplaats: "Handelingen 27:12"
+        bijbelplaats: "Handelingen 27:12",
+        uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
     }
 );
 
@@ -5664,7 +5667,8 @@ vragenData["Lucas"].advanced.push(
         vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
         antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
         correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
-        bijbelplaats: "Lucas 4:17"
+        bijbelplaats: "Lucas 4:17",
+        uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen. Lucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon hij te spreken."
     }
 );
 
@@ -5683,7 +5687,8 @@ vragenData["Matteüs"].advanced.push(
         vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
         antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat de grond in het dal te duur was", "Omdat er op de heuvels meer water te vinden was"],
         correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
-        bijbelplaats: "Matteüs 5:14"
+        bijbelplaats: "Matteüs 5:14",
+        uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt. En omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
     }
 );
 
