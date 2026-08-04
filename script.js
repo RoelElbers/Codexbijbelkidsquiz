@@ -4481,7 +4481,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:11"
         },
         {
-            vraag: "Aan welke groep gelovigen is de brief vooral gericht, zoals je aan de naam kunt zien?",
+            vraag: "Aan welke groep gelovigen is de brief aan de Hebreeën vooral gericht?",
             antwoorden: ["Joodse christenen", "Romeinse soldaten", "Griekse filosofen", "Egyptische priesters"],
             correct: "Joodse christenen",
             bijbelplaats: "naam van het boek"
@@ -7883,6 +7883,12 @@ const verborgenSchatVragen = [
         correct: "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
         bijbelplaats: "Lucas 22:50-51 en Johannes 18:10",
         reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die volgens de overlevering arts was — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Volgens oude kerkelijke overlevering is hij later tot geloof gekomen, maar zeker weten doen we dat niet."
+    },
+    {
+        vraag: "Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?",
+        antwoorden: ["Hebreeën", "Romeinen", "Galaten", "Efeziërs"],
+        correct: "Hebreeën",
+        bijbelplaats: "naam van het boek"
     }
 ];
 
