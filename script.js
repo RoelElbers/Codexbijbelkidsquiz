@@ -299,15 +299,15 @@ const vragenData = {
                 antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht", "Bij het eerste hanengekraai"],
                 correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
                 bijbelplaats: "Matteüs 14:25",
-                uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken' van elk ongeveer drie uur. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
+                uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.
 
-De vier nachtwaken waren:
+Rond de lente, de tijd waarin dit verhaal speelt, kwam het ongeveer hierop neer:
 1e nachtwaak: 18.00 – 21.00 uur
 2e nachtwaak: 21.00 – 24.00 uur
 3e nachtwaak: 24.00 – 3.00 uur
 4e nachtwaak: 3.00 – 6.00 uur
 
-Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het einde van de nacht, vlak voordat het licht werd. We weten niet het precieze uur — het moet na 3.00 uur zijn geweest, ergens tot aan zonsopgang.`
+Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het einde van de nacht, vlak voordat het licht werd.`
             },
             {
                 vraag: "Welke lengtemaat gebruikt Jezus in de Bergrede, als hij zegt dat niemand door bezorgdheid iets aan zijn leven kan toevoegen?",
@@ -448,7 +448,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "Op welk uur van de dag werd het donker terwijl Jezus aan het kruis hing, volgens Marcus?",
                 antwoorden: ["Vanaf het derde uur (9 uur 's morgens)", "Vanaf het zesde uur (12 uur 's middags)", "Vanaf het negende uur (3 uur 's middags)", "Vanaf zonsondergang"],
                 correct: "Vanaf het zesde uur (12 uur 's middags)",
-                bijbelplaats: "Marcus 15:33"
+                bijbelplaats: "Marcus 15:33",
+                uitleg: `In Jezus' tijd telde men de uren van de dag vanaf zonsopgang. Het eerste uur begon dus zodra het licht werd, en de twaalf uren liepen door tot zonsondergang. Het zesde uur is daarmee het middelste uur van de dag: rond de middag.
+
+Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn dan bijna even lang, dus het zesde uur viel toen inderdaad rond 12 uur 's middags. De duisternis hield aan tot het negende uur: ongeveer 3 uur 's middags.`
             },
             {
                 vraag: "Wat zei de Romeinse hoofdman die bij het kruis stond, toen Jezus stierf?",
@@ -540,7 +543,12 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "De Romeinen verdeelden de nacht in 'nachtwaken'. In hoeveel wachten, en hoe lang duurde elk ongeveer?",
                 antwoorden: ["Vier wachten van elk ongeveer drie uur", "Drie wachten van elk ongeveer vier uur", "Twee wachten van elk ongeveer zes uur", "Zes wachten van elk ongeveer twee uur"],
                 correct: "Vier wachten van elk ongeveer drie uur",
-                bijbelplaats: "Marcus 13:35"
+                bijbelplaats: "Marcus 13:35",
+                uitleg: `De Romeinen verdeelden de nacht — van zonsondergang tot zonsopgang — in vier gelijke stukken, de 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
+
+Omdat de nacht in de winter langer is dan in de zomer, duurde een nachtwaak niet altijd even lang: in de winter bijna drieënhalf uur, in de zomer nog geen tweeënhalf. Gemiddeld over het jaar kwam het uit op ongeveer drie uur.
+
+Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waakzaam blijven.`
             },
             {
                 vraag: "Hoe lang was Israël in de tijd van de Bijbel ongeveer van noord naar zuid?",
