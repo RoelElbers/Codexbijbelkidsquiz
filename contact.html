@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact — Bijbelkidsquiz</title>
-<meta name="description" content="Neem contact op met Bijbelkidsquiz via info@bijbelkidsquiz.nl.">
+<meta name="description" content="Stuur de Bijbelkidsquiz een bericht: een vraag voor de quiz, een foutmelding, of iets anders.">
 <link rel="icon" href="favicon.ico?v=19" sizes="any">
 <style>
 @font-face {
@@ -124,6 +124,73 @@ footer {
     color: var(--tekst-gedempt);
 }
 
+[hidden] { display: none !important; }
+
+form { margin: 0 0 1rem; }
+
+.veld { margin: 0 0 1.25rem; }
+
+.veld label {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--goud-zacht);
+    margin-bottom: 0.375rem;
+}
+
+.veld .hint {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--tekst-gedempt);
+    margin-bottom: 0.375rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    background: var(--diepblauw);
+    border: 1px solid var(--lijn);
+    border-radius: 0.375rem;
+    color: var(--tekst);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+textarea { min-height: 8rem; resize: vertical; }
+
+select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--goud) 50%),
+                      linear-gradient(135deg, var(--goud) 50%, transparent 50%);
+    background-position: calc(100% - 1.15rem) 1.15rem, calc(100% - 0.8rem) 1.15rem;
+    background-size: 0.35rem 0.35rem, 0.35rem 0.35rem;
+    background-repeat: no-repeat;
+    padding-right: 2.5rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--goud);
+    outline: none;
+}
+
+.knop {
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    background: var(--goud);
+    color: var(--diepblauw);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+}
+
+.knop:hover { background: var(--goud-zacht); }
+
 :focus-visible {
     outline: 2px solid var(--goud);
     outline-offset: 3px;
@@ -144,26 +211,86 @@ footer {
     Elk bericht wordt gelezen, maar het is voor ons niet altijd mogelijk om elk bericht ook te beantwoorden.</p>
 </div>
 
-<h2>Denk mee</h2>
+<h2>Stuur ons een bericht</h2>
 
-<p>Heb je zelf een leuke vraag, stuur hem in. Misschien staat hij binnenkort in de quiz.</p>
+<p>Vul in wat je kwijt wilt. Alleen het onderwerp en je bericht zijn nodig; de rest mag je leeg laten. Vraag even aan je ouders of het goed is dat je iets instuurt.</p>
 
-<p>Stuur hem in deze vorm, dan kan hij snel worden bekeken:</p>
+<form action="https://forminit.com/f/e6cxo3ej3z9" method="POST">
 
-<ul>
-    <li>het Bijbelboek</li>
-    <li>de vraag</li>
-    <li>het juiste antwoord</li>
-    <li>drie antwoorden die fout zijn</li>
-</ul>
+    <input type="hidden" name="_gotcha" style="display:none !important">
 
-<p>Kort mag. Eén vraag per bericht is prima.</p>
+    <div class="veld">
+        <label for="onderwerp">Waar gaat het over?</label>
+        <select id="onderwerp" name="fi-select-onderwerp" required>
+            <option value="">Kies een onderwerp</option>
+            <option value="Denk mee — een vraag insturen">Ik heb een vraag voor de quiz bedacht</option>
+            <option value="Er klopt iets niet">Er klopt iets niet</option>
+            <option value="Gebruik op school of catechese">De quiz wordt gebruikt op school of bij catechese</option>
+            <option value="Iets anders">Iets anders</option>
+        </select>
+    </div>
 
-<h2>Klopt er iets niet?</h2>
+    <div class="veld" id="veld-bijbelboek" hidden>
+        <label for="bijbelboek">Om welk Bijbelboek gaat het?</label>
+        <input type="text" id="bijbelboek" name="fi-text-bijbelboek" autocomplete="off">
+    </div>
 
-<p>Kom je een vraag tegen die niet klopt, geef dan het Bijbelboek door en zo mogelijk de vraag zelf. Werkt er iets niet in het spel, zet er dan bij welk apparaat en welke browser je gebruikt en wat er precies gebeurde. Met die gegevens is het meestal snel gevonden.</p>
+    <div class="veld" id="veld-apparaat" hidden>
+        <label for="apparaat">Waarop speel je?</label>
+        <select id="apparaat" name="fi-select-apparaat">
+            <option value="">Kies een apparaat</option>
+            <option value="Computer of laptop">Computer of laptop</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Telefoon">Telefoon</option>
+            <option value="Weet ik niet">Weet ik niet</option>
+        </select>
+    </div>
 
-<h2>In de klas of catechese</h2>
+    <div class="veld" id="veld-browser" hidden>
+        <label for="browser">Welke browser gebruik je?</label>
+        <select id="browser" name="fi-select-browser">
+            <option value="">Kies een browser</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Safari">Safari</option>
+            <option value="Firefox">Firefox</option>
+            <option value="Edge">Edge</option>
+            <option value="Anders of weet ik niet">Anders of weet ik niet</option>
+        </select>
+    </div>
+
+    <div class="veld">
+        <label for="bericht">Je bericht</label>
+        <span class="hint" id="hint-bericht">Schrijf hier wat je kwijt wilt.</span>
+        <textarea id="bericht" name="fi-text-bericht" required></textarea>
+    </div>
+
+    <div class="veld">
+        <label for="naam">Je naam of bijnaam <span class="hint" style="display:inline">(mag je leeg laten)</span></label>
+        <input type="text" id="naam" name="fi-sender-fullName" autocomplete="off">
+    </div>
+
+    <div class="veld">
+        <label for="email">Je e-mailadres <span class="hint" style="display:inline">(alleen als je antwoord wilt)</span></label>
+        <input type="email" id="email" name="fi-sender-email" autocomplete="off">
+    </div>
+
+    <button type="submit" class="knop">Versturen</button>
+
+</form>
+
+<p class="uitgelicht">Wat je verstuurt komt binnen in onze mailbox en wordt nergens anders voor gebruikt. Hoe dat precies zit, staat in de <a href="privacyverklaring.html">privacyverklaring</a>.</p>
+
+<h2>Wat je kunt insturen</h2>
+
+<h3>Een vraag voor de quiz</h3>
+
+<p>Heb je zelf een leuke vraag bedacht, stuur hem in. Geef het Bijbelboek erbij, de vraag, het juiste antwoord en drie antwoorden die fout zijn. Kort mag. Eén vraag per bericht is prima.</p>
+
+<h3>Er klopt iets niet</h3>
+
+<p>Kom je een vraag tegen die niet klopt, geef dan het Bijbelboek door en zo mogelijk de vraag zelf. Werkt er iets niet in het spel, zet er dan bij wat er precies gebeurde. Met die gegevens is het meestal snel gevonden.</p>
+
+<h3>In de klas of catechese</h3>
 
 <p>Wordt de Bijbelkidsquiz ergens gebruikt op school of bij de catechese? Dat horen we graag.</p>
 
@@ -187,5 +314,33 @@ E-mail: <a href="mailto:info@bijbelkidsquiz.nl">info@bijbelkidsquiz.nl</a></p>
 </footer>
 
 </div>
+
+<script>
+(function () {
+    var keuze = document.getElementById('onderwerp');
+    var bijbelboek = document.getElementById('veld-bijbelboek');
+    var apparaat = document.getElementById('veld-apparaat');
+    var browser = document.getElementById('veld-browser');
+    var hint = document.getElementById('hint-bericht');
+
+    var hints = {
+        'Denk mee — een vraag insturen': 'Zet erbij: de vraag, het juiste antwoord en drie foute antwoorden.',
+        'Er klopt iets niet': 'Zet erbij wat er precies gebeurde, en zo mogelijk de vraag zelf.',
+        'Gebruik op school of catechese': 'Vertel gerust kort waar en hoe de quiz gebruikt wordt.',
+        'Iets anders': 'Schrijf hier wat je kwijt wilt.'
+    };
+
+    function bijwerken() {
+        var waarde = keuze.value;
+        bijbelboek.hidden = !(waarde === 'Denk mee — een vraag insturen' || waarde === 'Er klopt iets niet');
+        apparaat.hidden = waarde !== 'Er klopt iets niet';
+        browser.hidden = waarde !== 'Er klopt iets niet';
+        hint.textContent = hints[waarde] || 'Schrijf hier wat je kwijt wilt.';
+    }
+
+    keuze.addEventListener('change', bijwerken);
+    bijwerken();
+})();
+</script>
 </body>
 </html>

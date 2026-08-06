@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Bedankt — Bijbelkidsquiz</title>
+<meta name="description" content="Je bericht aan de Bijbelkidsquiz is verstuurd.">
+<link rel="icon" href="favicon.ico?v=19" sizes="any">
+<style>
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/cinzel-700.woff2") format("woff2");
+}
+
+:root {
+    --diepblauw: #0a1836;
+    --blauw: #12295c;
+    --goud: #d9ab3f;
+    --goud-zacht: #f0d38a;
+    --tekst: #e8e6df;
+    --tekst-gedempt: #a8b2c8;
+    --lijn: rgba(217, 171, 63, 0.28);
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0 1.25rem 5rem;
+    background: var(--diepblauw);
+    background-image: radial-gradient(ellipse at 50% 0%, #1c3566 0%, transparent 60%);
+    color: var(--tekst);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+}
+
+.omhulsel {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+header {
+    padding: 3.5rem 0 2.5rem;
+    border-bottom: 1px solid var(--lijn);
+    margin-bottom: 2.5rem;
+}
+
+.kruimel {
+    font-size: 0.875rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--tekst-gedempt);
+    margin: 0 0 1rem;
+}
+
+.kruimel a { color: var(--goud); text-decoration: none; }
+.kruimel a:hover { text-decoration: underline; }
+
+h1 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 6vw, 2.75rem);
+    line-height: 1.15;
+    color: var(--goud-zacht);
+    margin: 0 0 0.75rem;
+}
+
+.datum {
+    font-size: 0.9375rem;
+    color: var(--tekst-gedempt);
+    margin: 0;
+}
+
+.kern {
+    background: var(--blauw);
+    border: 1px solid var(--lijn);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1.75rem;
+    margin: 0 0 3rem;
+}
+
+.kern p { margin: 0; }
+.kern strong { color: var(--goud-zacht); }
+
+h2 {
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.375rem;
+    color: var(--goud);
+    margin: 2.75rem 0 0.75rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-family: Georgia, serif;
+    font-size: 1.0625rem;
+    color: var(--goud-zacht);
+    margin: 1.75rem 0 0.5rem;
+}
+
+p { margin: 0 0 1rem; }
+
+ul { padding-left: 1.25rem; margin: 0 0 1rem; }
+li { margin-bottom: 0.5rem; }
+
+a { color: var(--goud); }
+
+.uitgelicht {
+    border-left: 3px solid var(--goud);
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--tekst-gedempt);
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--lijn);
+    font-size: 0.9375rem;
+    color: var(--tekst-gedempt);
+}
+
+[hidden] { display: none !important; }
+
+form { margin: 0 0 1rem; }
+
+.veld { margin: 0 0 1.25rem; }
+
+.veld label {
+    display: block;
+    font-size: 0.9375rem;
+    color: var(--goud-zacht);
+    margin-bottom: 0.375rem;
+}
+
+.veld .hint {
+    display: block;
+    font-size: 0.875rem;
+    color: var(--tekst-gedempt);
+    margin-bottom: 0.375rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.625rem 0.75rem;
+    background: var(--diepblauw);
+    border: 1px solid var(--lijn);
+    border-radius: 0.375rem;
+    color: var(--tekst);
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+textarea { min-height: 8rem; resize: vertical; }
+
+select {
+    appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, var(--goud) 50%),
+                      linear-gradient(135deg, var(--goud) 50%, transparent 50%);
+    background-position: calc(100% - 1.15rem) 1.15rem, calc(100% - 0.8rem) 1.15rem;
+    background-size: 0.35rem 0.35rem, 0.35rem 0.35rem;
+    background-repeat: no-repeat;
+    padding-right: 2.5rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--goud);
+    outline: none;
+}
+
+.knop {
+    font-family: 'Cinzel', Georgia, serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.04em;
+    background: var(--goud);
+    color: var(--diepblauw);
+    border: none;
+    border-radius: 0.375rem;
+    padding: 0.75rem 2rem;
+    cursor: pointer;
+}
+
+.knop:hover { background: var(--goud-zacht); }
+
+:focus-visible {
+    outline: 2px solid var(--goud);
+    outline-offset: 3px;
+}
+</style>
+</head>
+<body>
+<div class="omhulsel">
+
+<header>
+    <p class="kruimel"><a href="index.html">&larr; Terug naar de quiz</a></p>
+    <h1>Bedankt</h1>
+    <p class="datum">Je bericht is verstuurd</p>
+</header>
+
+<div class="kern">
+    <p><strong>Je bericht is aangekomen.</strong><br>
+    Elk bericht wordt gelezen, maar het is voor ons niet altijd mogelijk om elk bericht ook te beantwoorden.</p>
+</div>
+
+<p>Heb je een vraag voor de quiz ingestuurd: dank je wel. Wie weet kom je hem binnenkort in het spel tegen.</p>
+
+<p><a href="index.html">Terug naar de quiz</a></p>
+
+<footer>
+    <p><a href="index.html">Terug naar de quiz</a> &nbsp;·&nbsp; <a href="steunen.html">Steunen</a> &nbsp;·&nbsp; <a href="privacyverklaring.html">Privacyverklaring</a></p>
+</footer>
+
+</div>
+</body>
+</html>
