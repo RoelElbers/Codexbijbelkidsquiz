@@ -68,3 +68,25 @@ desktop.ini
 #      git rm -r --cached "map_of_bestand"
 #  en commit dat. Daarna houdt .gitignore het buiten de repo.
 # ============================================================
+
+# Bronmateriaal hoort niet in de repo.
+# Het spel laadt uitsluitend .webp; PNG's zijn onbewerkte originelen
+# en horen op de eigen schijf te blijven staan.
+images/*.png
+images/**/*.png
+
+# Uitzonderingen: PNG's die het spel wél laadt. Deze lijst is afgeleid uit
+# de code (index.html, style.css, script.js, lang/) en dekt precies de
+# paden die daar buiten commentaar staan:
+#   startschermzonderwolken.png            style.css:48, script.js:11626
+#   voorgrond_transparante_lucht.png       index.html:35   (voorgrond scherm 1)
+#   voorgrond_scherm2_transparante_lucht.png  script.js:11633 (voorgrond scherm 2)
+#   wolk1..wolk5.png                       script.js:11534 en 11710, opgebouwd
+#                                          als "images/wolk" + N + ".png"; N komt
+#                                          uit WOLKEN_CONFIG (1 t/m 5) en uit het
+#                                          afstelpaneel (lus n = 1..5).
+# Wijzigt een van die plekken, pas dan ook deze lijst aan.
+!images/wolk[1-5].png
+!images/startschermzonderwolken.png
+!images/voorgrond_scherm2_transparante_lucht.png
+!images/voorgrond_transparante_lucht.png
