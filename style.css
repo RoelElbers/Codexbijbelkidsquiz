@@ -2324,6 +2324,96 @@ height: 22%;
         0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
+/* NIVEAUKNOPPEN — gedreven rand ("variant C" uit metaaltest.html).
+   Het metaal komt hier uit de RAND en niet uit het vlak: een zacht verloop
+   als basis, met vier inset-schaduwen die een lichte bovenkant en een
+   donkere onderkant drijven. De kleurwaarden staan per knop als variabelen
+   zodat de drie metalen dezelfde behandeling delen en alleen in tint
+   verschillen. Wijzigt hier iets, wijzig dan ook metaaltest.html en
+   niveautest.html — die tonen exact dezelfde set.
+
+   MAATVOERING: de rand is 1px waar .answer-btn er 2 heeft. Zonder
+   compensatie wordt de knop 2px lager en schuift het hele paneel mee.
+   Daarom padding 23px: 23 + 1 is gelijk aan 22 + 2, dus de buitenmaat
+   blijft exact zoals hij was.
+
+   BEREIK: bewust gescopet op #niveau-scherm. De classes .niveau-beginner,
+   -advanced, -expert en -terug worden namelijk door het hele spel
+   hergebruikt (49 knoppen buiten dit scherm: Start, Stoppen, de niveaukeuze
+   van de Verborgen Uitdaging, de oefen- en boekmenu's en 28 Terug-knoppen).
+   Zonder scope zou deze wijziging al die schermen meeverven. */
+
+/* Beginner = brons */
+#niveau-scherm .niveau-beginner {
+    --rimdonker:    #4A2C0E;
+    --spiegelwit:   #F2C89A;
+    --boventoon:    #C98A4E;
+    --middentoon:   #96602C;
+    --kerndonker:   #5E3A12;
+    --weerkaatsing: #B87A3E;
+    --onderlicht:   #E0A874;
+    --tekst:        #2A1B05;
+}
+
+/* Gevorderd = zilver */
+#niveau-scherm .niveau-advanced {
+    --rimdonker:    #5A5F6B;
+    --spiegelwit:   #FFFFFF;
+    --boventoon:    #E3E7EE;
+    --middentoon:   #A8AEBA;
+    --kerndonker:   #6E7480;
+    --weerkaatsing: #D2D7E0;
+    --onderlicht:   #F2F4F8;
+    --tekst:        #1C2028;
+}
+
+/* Expert = goud */
+#niveau-scherm .niveau-expert {
+    --rimdonker:    #6B4A10;
+    --spiegelwit:   #FFF3C4;
+    --boventoon:    #F2CE55;
+    --middentoon:   #C99A22;
+    --kerndonker:   #8F6512;
+    --weerkaatsing: #E8BC3E;
+    --onderlicht:   #FFEBA8;
+    --tekst:        #2A1B05;
+}
+
+/* De gedeelde behandeling: gelijk voor alle drie de metalen. */
+#niveau-scherm .niveau-beginner,
+#niveau-scherm .niveau-advanced,
+#niveau-scherm .niveau-expert {
+    background: linear-gradient(to bottom,
+        var(--rimdonker)     0%,
+        var(--spiegelwit)    10%,
+        var(--boventoon)     23%,
+        var(--middentoon)    37%,
+        var(--kerndonker)    50%,
+        var(--weerkaatsing)  63%,
+        var(--onderlicht)    80%,
+        var(--rimdonker)     93%,
+        var(--rimdonker)     100%);
+    box-shadow:
+        inset 0  2px 0    rgba(255, 255, 255, 0.75),
+        inset 0 -2px 0    rgba(0, 0, 0, 0.45),
+        inset 0  8px 14px rgba(255, 255, 255, 0.18),
+        inset 0 -8px 14px rgba(0, 0, 0, 0.30);
+    border: 1px solid var(--rimdonker);
+    padding: 23px;                                  /* zie MAATVOERING hierboven */
+    color: var(--tekst);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Terug — diep navy met een gouden rand, zodat hij bij de rand van het
+   quizvak hoort en niet meedoet aan de metalen. Geen verloop. */
+#niveau-scherm .niveau-terug {
+    background: #16326E;
+    border: 2px solid #C8A03C;
+    color: #F5F3EC;
+    text-shadow: none;
+    box-shadow: none;
+}
+
 /* Vergrendeld niveau (alleen in het spel): grijs/gedimd met een slotje, zodat
    het duidelijk niet-actief oogt. Overschrijft de gekleurde medaille-look. De
    knop blijft klikbaar zodat een tik de hint toont; dankzij de guard in
