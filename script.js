@@ -8,7 +8,7 @@ const BETA_MODUS = true;
 // staan nog UIT. Zodra de donatiepagina live is (bunq of Mollie): DONATIE_ACTIEF
 // op true en DONATIE_URL invullen — dat is de enige plek die je hoeft te wijzigen.
 // Uit  -> klik toont een in-stijl melding ("binnenkort mogelijk").
-// Aan  -> klik opent DONATIE_URL in een nieuwe tab (noopener, noreferrer).
+// Aan  -> klik opent DONATIE_URL in een nieuw tabblad via openTabblad().
 const DONATIE_ACTIEF = false;
 const DONATIE_URL = "";
 
@@ -83,6 +83,18 @@ const niveauLabels = {
     advanced: "Advanced",
     expert: "Expert"
 };
+
+/* Opent een URL in een nieuw tabblad.
+   Bewust GEEN derde argument aan window.open: elke featuresstring —
+   ook alleen "noopener" — laat de browser een popup openen in plaats
+   van een tabblad. De koppeling met dit venster verbreken we daarom
+   achteraf met opener = null. */
+function openTabblad(url) {
+    const nieuw = window.open(url, "_blank");
+    if (nieuw) {
+        try { nieuw.opener = null; } catch (e) { /* cross-origin: browser regelt het zelf */ }
+    }
+}
 
 // Hulpfunctie die 10 placeholdervragen maakt voor een boek + niveau.
 // Deze vervangen we later door echte vragen.
@@ -6067,7 +6079,7 @@ vragenData["Lucas"].expert.push(
         antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden", "Dat hij zijn schulden had afbetaald"],
         correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
         bijbelplaats: "Lucas 15:22",
-        uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon met een afdruk in was namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
+        uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon zijn zegel in zachte zegelwas drukken en zo namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
     },
     {
         vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
@@ -10313,14 +10325,14 @@ function vulSteunScherm() {
         }
 
         if (blok.link) {
-            // Bewust een <button> met window.open en niet een <a>: knoppen in dit
+            // Bewust een <button> met openTabblad() en niet een <a>: knoppen in dit
             // spel erven hun lettertype van de browser, dus een <a> met dezelfde
-            // classes zou in een ander font renderen. "noopener" houdt het nieuwe
-            // tabblad los van dit venster.
+            // classes zou in een ander font renderen. openTabblad() verbreekt de
+            // koppeling van het nieuwe tabblad met dit venster.
             const knop = document.createElement("button");
             knop.className = "answer-btn niveau-btn niveau-advanced menu-knop-blauw";
             knop.textContent = blok.link.label;
-            knop.onclick = () => window.open(blok.link.url, "_blank", "noopener");
+            knop.onclick = () => openTabblad(blok.link.url);
             doel.appendChild(knop);
         }
     });
@@ -11268,7 +11280,7 @@ if (BETA_MODUS) {
 
     function activeer() {
         if (DONATIE_ACTIEF && DONATIE_URL) {
-            window.open(DONATIE_URL, "_blank", "noopener,noreferrer");
+            openTabblad(DONATIE_URL);
         } else {
             toonMelding("Steun dit project — binnenkort mogelijk!");
         }

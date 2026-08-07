@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=44">
+    <link rel="stylesheet" href="style.css?v=46">
 </head>
 
 <body>
@@ -721,14 +721,14 @@
                 <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openSteun()">Steun de Bijbelkidsquiz</button>
 
                 <!-- Losse HTML-pagina's, geen spelschermen. Bewust <button> met
-                     window.open en niet een <a>: knoppen in dit spel erven hun
+                     openTabblad() en niet een <a>: knoppen in dit spel erven hun
                      lettertype van de browser, dus een <a> zou in een ander font
                      renderen (zelfde reden als in vulSteunScherm). Nieuw tabblad,
-                     zodat een lopende quizronde niet verloren gaat; "noopener"
-                     houdt dat tabblad los van dit venster. Steunen staat hier
-                     bewust niet bij — die link zit al in het steunscherm. -->
-                <button type="button" class="tekst-link" onclick="window.open('contact.html', '_blank', 'noopener')">Contact</button>
-                <button type="button" class="tekst-link" onclick="window.open('privacyverklaring.html', '_blank', 'noopener')">Privacyverklaring</button>
+                     zodat een lopende quizronde niet verloren gaat; openTabblad()
+                     in script.js verbreekt de koppeling met dit venster. Steunen
+                     staat hier bewust niet bij — die link zit al in het steunscherm. -->
+                <button type="button" class="tekst-link" onclick="openTabblad('contact.html')">Contact</button>
+                <button type="button" class="tekst-link" onclick="openTabblad('privacyverklaring.html')">Privacyverklaring</button>
 
                 <button class="answer-btn niveau-terug" onclick="sluitInstellingen()">Terug</button>
             </div>
@@ -828,8 +828,8 @@
     </div>
 
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
-    <script src="lang/nl.js?v=44"></script>
-    <script src="script.js?v=44"></script>
+    <script src="lang/nl.js?v=46"></script>
+    <script src="script.js?v=46"></script>
 
 </body>
 
