@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niveautest — huidig scherm versus metaalknoppen</title>
+<meta name="robots" content="noindex">
+<style>
+/* Zelfstandige testpagina. Raakt style.css, script.js en metaaltest.html
+   niet aan en wordt nergens vanuit het spel gelinkt.
+
+   De twee vensters hebben ELKE regel gemeen behalve de knopstijlen; het
+   verschil zit uitsluitend in de class .huidig / .nieuw op de wrapper.
+   Alle waarden hieronder zijn overgenomen uit de echte gerenderde
+   #niveau-scherm (opgemeten met getComputedStyle), niet nagebouwd op het
+   oog. Loopt style.css uit de pas, dan klopt deze pagina niet meer. */
+
+@font-face {
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("fonts/cinzel-700.woff2") format("woff2");
+}
+
+* { box-sizing: border-box; }
+
+/* Geen font-family op body: net als in het spel valt de titel daardoor
+   terug op de serif van de browser en de knoppen op de UI-font. */
+body {
+    margin: 0;
+    background: #E9C182;
+}
+
+/* ---- vaste balk bovenaan ---- */
+
+.balk {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    padding: 0 1rem;
+    background: #14120F;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.balk button {
+    font-family: inherit;
+    font-size: 0.9375rem;
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    border: 3px solid transparent;
+    background: #EFEBE2;
+    color: #14120F;
+    cursor: pointer;
+}
+
+.balk button.actief { border-color: #C8A03C; font-weight: bold; }
+
+.balk .label {
+    margin-left: auto;
+    color: #F0E8D8;
+    font-size: 0.875rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+/* ---- het venster op ware grootte ------------------------------------------
+   16:9, gecentreerd. De hoogte van de balk gaat eraf zodat het hele venster
+   in beeld past: bij een harde wissel mag er niets verschuiven of scrollen. */
+
+.venster {
+    width: min(100vw, calc((100vh - 3.5rem) * 16 / 9));
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.venster.verborgen { display: none; }
+
+/* ---- alles hieronder is letterlijk het echte niveauscherm ---- */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at 50% 40%, #f6dca8 0%, #ecc488 55%, #d9a86a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-box {
+    width: 1200px;
+    max-width: 88%;
+    max-height: 95%;
+    padding: 40px 56px;
+    border-radius: 35px;
+    background: rgba(10, 20, 55, 0.82);
+    border: 2px solid rgba(255, 215, 120, 0.35);
+    box-shadow:
+        0 0 40px rgba(0, 0, 0, 0.6),
+        0 0 25px rgba(255, 215, 120, 0.15);
+    text-align: center;
+    overflow: hidden;
+}
+
+.quiz-title {
+    font-size: 4rem;
+    color: #ffd86b;
+    margin-bottom: 30px;
+    text-shadow: 0 0 12px rgba(255, 215, 120, 0.4);
+}
+
+.quiz-question {
+    font-size: 2.3rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.niveau-hint {
+    width: 100%;
+    max-width: 640px;
+    margin: 12px auto 0;
+    min-height: 1.3em;
+    color: #ffe6a8;
+    font-size: 1.1rem;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Geometrie van de knoppen. Identiek in beide versies: alleen kleur,
+   verloop, rand en schaduw verschillen straks. */
+.answer-btn {
+    width: 100%;
+    max-width: 640px;
+    display: block;
+    margin: 14px auto 0;
+    padding: 22px;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 215, 120, 0.25);
+    cursor: pointer;
+}
+
+/* =========================================================================
+   VERSIE 1 — HUIDIG
+   Overgenomen uit style.css regels 2284-2325.
+========================================================================= */
+
+.huidig .niveau-beginner {
+    background: linear-gradient(180deg, #f4c48d 0%, #e0974f 42%, #b86c30 60%, #8f5220 100%);
+    border-color: #6f3f18;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.45),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.huidig .niveau-advanced {
+    background: linear-gradient(180deg, #ffffff 0%, #dde3ec 42%, #b9c2cf 60%, #8e98a6 100%);
+    border-color: #6f7886;
+    color: #2a2a2a;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.6),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.huidig .niveau-expert {
+    background: linear-gradient(180deg, #fff4c2 0%, #f5d24f 42%, #e0b62e 60%, #b8870f 100%);
+    border-color: #8a6207;
+    color: #3a2a00;
+    text-shadow: none;
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.55),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.huidig .niveau-terug {
+    background: linear-gradient(180deg, #4cbfa9 0%, #2d8f7d 100%);
+    border-color: #1f6b5e;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.35),
+        0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================================================================
+   VERSIE 2 — NIEUW
+   De variant-c behandeling uit metaaltest.html, letterlijk overgenomen:
+   dezelfde kleurrollen, dezelfde box-shadow-set, dezelfde border en
+   dezelfde tekstbehandeling. Wijzigt er iets in metaaltest.html, dan
+   moet het hier mee.
+========================================================================= */
+
+.nieuw .niveau-beginner {
+    --rimdonker:    #4A2C0E;
+    --spiegelwit:   #F2C89A;
+    --boventoon:    #C98A4E;
+    --middentoon:   #96602C;
+    --kerndonker:   #5E3A12;
+    --weerkaatsing: #B87A3E;
+    --onderlicht:   #E0A874;
+    --tekst:        #2A1B05;
+}
+
+.nieuw .niveau-advanced {
+    --rimdonker:    #5A5F6B;
+    --spiegelwit:   #FFFFFF;
+    --boventoon:    #E3E7EE;
+    --middentoon:   #A8AEBA;
+    --kerndonker:   #6E7480;
+    --weerkaatsing: #D2D7E0;
+    --onderlicht:   #F2F4F8;
+    --tekst:        #1C2028;
+}
+
+.nieuw .niveau-expert {
+    --rimdonker:    #6B4A10;
+    --spiegelwit:   #FFF3C4;
+    --boventoon:    #F2CE55;
+    --middentoon:   #C99A22;
+    --kerndonker:   #8F6512;
+    --weerkaatsing: #E8BC3E;
+    --onderlicht:   #FFEBA8;
+    --tekst:        #2A1B05;
+}
+
+.nieuw .niveau-beginner,
+.nieuw .niveau-advanced,
+.nieuw .niveau-expert {
+    color: var(--tekst);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+    background-image: linear-gradient(to bottom,
+        var(--rimdonker)     0%,
+        var(--spiegelwit)    10%,
+        var(--boventoon)     23%,
+        var(--middentoon)    37%,
+        var(--kerndonker)    50%,
+        var(--weerkaatsing)  63%,
+        var(--onderlicht)    80%,
+        var(--rimdonker)     93%,
+        var(--rimdonker)     100%);
+    box-shadow:
+        inset 0  2px 0    rgba(255, 255, 255, 0.75),
+        inset 0 -2px 0    rgba(0, 0, 0, 0.45),
+        inset 0  8px 14px rgba(255, 255, 255, 0.18),
+        inset 0 -8px 14px rgba(0, 0, 0, 0.30);
+    border: 1px solid var(--rimdonker);
+
+    /* variant-c heeft een 1px rand waar versie 1 er 2 gebruikt. Zonder
+       compensatie wordt de knop 2px lager en schuift het hele paneel mee,
+       en dan vergelijk je positie in plaats van glans. 23 + 1 = 22 + 2,
+       dus de buitenmaat blijft exact gelijk en de rand blijft 1px. */
+    padding: 23px;
+}
+
+.nieuw .niveau-terug {
+    background: #16326E;
+    border: 2px solid #C8A03C;
+    color: #F5F3EC;
+    text-shadow: none;
+    box-shadow: none;
+}
+</style>
+</head>
+<body>
+
+<div class="balk">
+    <button type="button" id="knop-huidig" class="actief">Huidig</button>
+    <button type="button" id="knop-nieuw">Nieuw</button>
+    <button type="button" id="knop-wissel">Wisselen (spatiebalk)</button>
+    <span class="label" id="label">Huidig</span>
+</div>
+
+<!-- De twee vensters hebben identieke markup; alleen de class op .venster
+     verschilt. Beide staan in de DOM zodat wisselen geen herberekening
+     kost en er dus niets kan verspringen. -->
+
+<div class="venster huidig" id="venster-huidig">
+    <div class="overlay">
+        <div class="quiz-box">
+            <h2 class="quiz-title">Marcus</h2>
+            <p class="quiz-question">Kies je niveau</p>
+            <button class="answer-btn niveau-btn niveau-beginner">Beginner</button>
+            <button class="answer-btn niveau-btn niveau-advanced">Advanced</button>
+            <button class="answer-btn niveau-btn niveau-expert">Expert</button>
+            <p class="niveau-hint"></p>
+            <button class="answer-btn niveau-terug">Terug</button>
+        </div>
+    </div>
+</div>
+
+<div class="venster nieuw verborgen" id="venster-nieuw">
+    <div class="overlay">
+        <div class="quiz-box">
+            <h2 class="quiz-title">Marcus</h2>
+            <p class="quiz-question">Kies je niveau</p>
+            <button class="answer-btn niveau-btn niveau-beginner">Beginner</button>
+            <button class="answer-btn niveau-btn niveau-advanced">Advanced</button>
+            <button class="answer-btn niveau-btn niveau-expert">Expert</button>
+            <p class="niveau-hint"></p>
+            <button class="answer-btn niveau-terug">Terug</button>
+        </div>
+    </div>
+</div>
+
+<script>
+(function () {
+    var vHuidig = document.getElementById("venster-huidig");
+    var vNieuw  = document.getElementById("venster-nieuw");
+    var kHuidig = document.getElementById("knop-huidig");
+    var kNieuw  = document.getElementById("knop-nieuw");
+    var label   = document.getElementById("label");
+    var opNieuw = false;
+
+    function toon(nieuw) {
+        opNieuw = nieuw;
+        vHuidig.classList.toggle("verborgen", nieuw);
+        vNieuw.classList.toggle("verborgen", !nieuw);
+        kHuidig.classList.toggle("actief", !nieuw);
+        kNieuw.classList.toggle("actief", nieuw);
+        label.textContent = nieuw ? "Nieuw" : "Huidig";
+    }
+
+    kHuidig.addEventListener("click", function () { toon(false); });
+    kNieuw.addEventListener("click", function () { toon(true); });
+    document.getElementById("knop-wissel").addEventListener("click", function () { toon(!opNieuw); });
+
+    // Spatiebalk wisselt; preventDefault houdt de pagina op zijn plek.
+    document.addEventListener("keydown", function (e) {
+        if (e.code === "Space" || e.key === " ") {
+            e.preventDefault();
+            toon(!opNieuw);
+        }
+    });
+})();
+</script>
+
+</body>
+</html>
