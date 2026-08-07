@@ -7,8 +7,8 @@
 <meta name="robots" content="noindex">
 <style>
 /* Zelfstandige testpagina. Raakt style.css en script.js niet aan en
-   wordt nergens vanuit het spel gelinkt; puur om drie glansbehandelingen
-   van dezelfde metaalkleuren naast elkaar te kunnen zien. */
+   wordt nergens vanuit het spel gelinkt; puur om de gedreven-rand-knop
+   tegen verschillende achtergronden en paneelranden te kunnen zien. */
 
 @font-face {
     font-family: 'Cinzel';
@@ -24,58 +24,74 @@ body {
     margin: 0;
     padding: 2rem 1.5rem 4rem;
     font-family: Georgia, 'Times New Roman', serif;
-    background: #0B1730;
+    background: #E9C182;
     transition: background 0.2s;
 }
 
-body.zand { background: #E9C182; }
+/* ---- de zes achtergronden ---- */
 
-/* ---- knoppenrij voor de achtergrond ---- */
+body.bg-zand        { background: #E9C182; }
+body.bg-warmbruin   { background: #8C6239; }
+body.bg-terracotta  { background: #6B3A2A; }
+body.bg-donkerbruin { background: #3A2617; }
+body.bg-diepnavy    { background: #0B1730; }
+body.bg-zwart       { background: #14120F; }
 
-.schakelaars {
-    display: flex;
-    gap: 0.75rem;
-    margin: 0 0 2rem;
+/* ---- de twee schakelaarrijen ---------------------------------------------
+   Eigen vaste vormgeving, los van de body-achtergrond: lichte chip met
+   donkere tekst leest op alle zes de achtergronden. De actieve knop krijgt
+   een dikke gouden rand. */
+
+.bediening {
+    max-width: 62rem;
+    margin: 0 auto 1rem;
 }
 
-.schakelaars button {
+.bediening h3 {
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F0E8D8;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    margin: 0 0 0.5rem;
+}
+
+.rij {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    margin: 0 0 1.75rem;
+}
+
+.rij button {
     font-family: inherit;
     font-size: 0.9375rem;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     border-radius: 6px;
-    border: 1px solid #7d8aa5;
-    background: #1b2c50;
-    color: #e8e6df;
+    border: 3px solid transparent;
+    background: #EFEBE2;
+    color: #14120F;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.schakelaars button.actief {
-    background: #e8e6df;
-    color: #0B1730;
-    border-color: #e8e6df;
+.rij button.actief {
+    border-color: #C8A03C;
+    font-weight: bold;
 }
 
-/* ---- drie kolommen ---- */
-
-.kolommen {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-width: 72rem;
+/* Kleurstaal in de achtergrondknoppen, zodat je ziet wat je kiest. */
+.staal {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.35);
 }
 
-.kolom h2 {
-    font-family: 'Cinzel', Georgia, serif;
-    font-weight: 700;
-    font-size: 1.0625rem;
-    color: #e8e6df;
-    margin: 0 0 0.75rem;
-    letter-spacing: 0.02em;
-}
+/* ---- het paneel ---- */
 
-body.zand .kolom h2 { color: #2A1B05; }
-
-/* Diepnavy paneel, zodat de knoppen niet los op de body zweven. */
 .paneel {
     background: #101C38;
     padding: 24px;
@@ -83,7 +99,14 @@ body.zand .kolom h2 { color: #2A1B05; }
     display: flex;
     flex-direction: column;
     gap: 16px;
+    max-width: 420px;
+    margin: 0 auto;
+    border: none;
+    box-shadow: none;
 }
+
+.paneel.rand-goud  { border: 2px solid #C8A03C; }
+.paneel.rand-gloed { box-shadow: 0 0 40px 8px rgba(200, 160, 60, 0.28); }
 
 /* ---- de knoppen zelf ---- */
 
@@ -94,7 +117,6 @@ body.zand .kolom h2 { color: #2A1B05; }
     font-size: 20px;
     font-family: 'Cinzel', serif;
     letter-spacing: 0.02em;
-    border: none;
     cursor: pointer;
     color: var(--tekst);
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
@@ -135,50 +157,10 @@ body.zand .kolom h2 { color: #2A1B05; }
     --tekst:        #2A1B05;
 }
 
-/* ---- A: harde spiegelband ----------------------------------------------
-   Elke kleur krijgt twee stops op dezelfde positie, dus geen enkele
-   overgang. Geen box-shadow en geen border: de glans komt volledig uit
-   het verloop. */
-.variant-a {
-    background-image: linear-gradient(to bottom,
-        var(--rimdonker)     0%,   var(--rimdonker)     10%,
-        var(--spiegelwit)    10%,  var(--spiegelwit)    23%,
-        var(--boventoon)     23%,  var(--boventoon)     37%,
-        var(--middentoon)    37%,  var(--middentoon)    50%,
-        var(--kerndonker)    50%,  var(--kerndonker)    63%,
-        var(--weerkaatsing)  63%,  var(--weerkaatsing)  80%,
-        var(--onderlicht)    80%,  var(--onderlicht)    93%,
-        var(--rimdonker)     93%,  var(--rimdonker)     100%);
-}
-
-/* ---- B: gebogen licht ---------------------------------------------------
-   Twee lagen. Bovenop een witte glans met een harde afsnijding op 42-44%,
-   daaronder hetzelfde verloop als A maar met enkele stops, dus zacht.
-   Samen leest dat als een bol oppervlak. */
-.variant-b {
-    background-image:
-        linear-gradient(to bottom,
-            rgba(255, 255, 255, 0.55) 0%,
-            rgba(255, 255, 255, 0.10) 42%,
-            rgba(255, 255, 255, 0)    44%,
-            rgba(255, 255, 255, 0)    78%,
-            rgba(255, 255, 255, 0.18) 100%),
-        linear-gradient(to bottom,
-            var(--rimdonker)     0%,
-            var(--spiegelwit)    10%,
-            var(--boventoon)     23%,
-            var(--middentoon)    37%,
-            var(--kerndonker)    50%,
-            var(--weerkaatsing)  63%,
-            var(--onderlicht)    80%,
-            var(--rimdonker)     93%,
-            var(--rimdonker)     100%);
-}
-
 /* ---- C: gedreven rand ---------------------------------------------------
    Zacht verloop als basis; het metaal komt hier uit de rand en niet uit
    het vlak. De border telt door box-sizing: border-box niet op bij de
-   hoogte, zodat alle negen knoppen even groot blijven. */
+   hoogte, zodat alle drie de knoppen even groot blijven. */
 .variant-c {
     background-image: linear-gradient(to bottom,
         var(--rimdonker)     0%,
@@ -199,57 +181,64 @@ body.zand .kolom h2 { color: #2A1B05; }
 }
 </style>
 </head>
-<body>
+<body class="bg-zand">
 
-<div class="schakelaars">
-    <button type="button" id="knop-navy" class="actief">Navy achtergrond</button>
-    <button type="button" id="knop-zand">Zandkleurige achtergrond</button>
+<div class="bediening">
+
+    <h3>Achtergrond</h3>
+    <div class="rij" id="rij-achtergrond">
+        <button type="button" class="actief" data-bg="bg-zand"><span class="staal" style="background:#E9C182"></span>Zand</button>
+        <button type="button" data-bg="bg-warmbruin"><span class="staal" style="background:#8C6239"></span>Warm bruin</button>
+        <button type="button" data-bg="bg-terracotta"><span class="staal" style="background:#6B3A2A"></span>Terracotta</button>
+        <button type="button" data-bg="bg-donkerbruin"><span class="staal" style="background:#3A2617"></span>Donkerbruin</button>
+        <button type="button" data-bg="bg-diepnavy"><span class="staal" style="background:#0B1730"></span>Diepnavy</button>
+        <button type="button" data-bg="bg-zwart"><span class="staal" style="background:#14120F"></span>Bijna zwart</button>
+    </div>
+
+    <h3>Paneelrand</h3>
+    <div class="rij" id="rij-paneel">
+        <button type="button" class="actief" data-rand="">Geen rand</button>
+        <button type="button" data-rand="rand-goud">Gouden rand</button>
+        <button type="button" data-rand="rand-gloed">Gloed</button>
+    </div>
+
 </div>
 
-<div class="kolommen">
-
-    <div class="kolom">
-        <h2>A - harde spiegelband</h2>
-        <div class="paneel">
-            <button type="button" class="knop variant-a brons">Beginner</button>
-            <button type="button" class="knop variant-a zilver">Advanced</button>
-            <button type="button" class="knop variant-a goud">Expert</button>
-        </div>
-    </div>
-
-    <div class="kolom">
-        <h2>B - gebogen licht</h2>
-        <div class="paneel">
-            <button type="button" class="knop variant-b brons">Beginner</button>
-            <button type="button" class="knop variant-b zilver">Advanced</button>
-            <button type="button" class="knop variant-b goud">Expert</button>
-        </div>
-    </div>
-
-    <div class="kolom">
-        <h2>C - gedreven rand</h2>
-        <div class="paneel">
-            <button type="button" class="knop variant-c brons">Beginner</button>
-            <button type="button" class="knop variant-c zilver">Advanced</button>
-            <button type="button" class="knop variant-c goud">Expert</button>
-        </div>
-    </div>
-
+<div class="paneel" id="paneel">
+    <button type="button" class="knop variant-c brons">Beginner</button>
+    <button type="button" class="knop variant-c zilver">Advanced</button>
+    <button type="button" class="knop variant-c goud">Expert</button>
 </div>
 
 <script>
 (function () {
-    var navy = document.getElementById('knop-navy');
-    var zand = document.getElementById('knop-zand');
+    var ACHTERGRONDEN = ["bg-zand", "bg-warmbruin", "bg-terracotta",
+                         "bg-donkerbruin", "bg-diepnavy", "bg-zwart"];
+    var RANDEN = ["rand-goud", "rand-gloed"];
+    var paneel = document.getElementById("paneel");
 
-    function zet(isZand) {
-        document.body.classList.toggle('zand', isZand);
-        navy.classList.toggle('actief', !isZand);
-        zand.classList.toggle('actief', isZand);
+    function markeer(rij, knop) {
+        rij.querySelectorAll("button").forEach(function (b) {
+            b.classList.toggle("actief", b === knop);
+        });
     }
 
-    navy.addEventListener('click', function () { zet(false); });
-    zand.addEventListener('click', function () { zet(true); });
+    // De twee rijen werken los van elkaar: elke combinatie is te bekijken.
+    document.getElementById("rij-achtergrond").addEventListener("click", function (e) {
+        var knop = e.target.closest("button");
+        if (!knop) return;
+        ACHTERGRONDEN.forEach(function (c) { document.body.classList.remove(c); });
+        document.body.classList.add(knop.dataset.bg);
+        markeer(this, knop);
+    });
+
+    document.getElementById("rij-paneel").addEventListener("click", function (e) {
+        var knop = e.target.closest("button");
+        if (!knop) return;
+        RANDEN.forEach(function (c) { paneel.classList.remove(c); });
+        if (knop.dataset.rand) paneel.classList.add(knop.dataset.rand);
+        markeer(this, knop);
+    });
 })();
 </script>
 
