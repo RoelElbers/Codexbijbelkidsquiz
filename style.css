@@ -2337,14 +2337,18 @@ height: 22%;
    Daarom padding 23px: 23 + 1 is gelijk aan 22 + 2, dus de buitenmaat
    blijft exact zoals hij was.
 
-   BEREIK: bewust gescopet op #niveau-scherm. De classes .niveau-beginner,
-   -advanced, -expert en -terug worden namelijk door het hele spel
-   hergebruikt (49 knoppen buiten dit scherm: Start, Stoppen, de niveaukeuze
-   van de Verborgen Uitdaging, de oefen- en boekmenu's en 28 Terug-knoppen).
-   Zonder scope zou deze wijziging al die schermen meeverven. */
+   BEREIK: bewust gescopet op de twee niveaukeuzeschermen, #niveau-scherm en
+   #vu-niveau-scherm (Verborgen Uitdaging). Beide staan in dezelfde
+   selectorlijsten en delen dus één bron — voeg een scherm toe door de scope
+   erbij te zetten, nooit door de regels te kopiëren. De classes
+   .niveau-beginner, -advanced, -expert en -terug worden namelijk door het
+   hele spel hergebruikt (Start, Stoppen, de oefen- en boekmenu's en de
+   Terug-knoppen op ruim twintig andere schermen). Zonder scope zou deze
+   wijziging al die schermen meeverven. */
 
 /* Beginner = brons */
-#niveau-scherm .niveau-beginner {
+#niveau-scherm .niveau-beginner,
+#vu-niveau-scherm .niveau-beginner {
     --rimdonker:    #4A2C0E;
     --spiegelwit:   #F2C89A;
     --boventoon:    #C98A4E;
@@ -2356,7 +2360,8 @@ height: 22%;
 }
 
 /* Gevorderd = zilver */
-#niveau-scherm .niveau-advanced {
+#niveau-scherm .niveau-advanced,
+#vu-niveau-scherm .niveau-advanced {
     --rimdonker:    #5A5F6B;
     --spiegelwit:   #FFFFFF;
     --boventoon:    #E3E7EE;
@@ -2368,7 +2373,8 @@ height: 22%;
 }
 
 /* Expert = goud */
-#niveau-scherm .niveau-expert {
+#niveau-scherm .niveau-expert,
+#vu-niveau-scherm .niveau-expert {
     --rimdonker:    #6B4A10;
     --spiegelwit:   #FFF3C4;
     --boventoon:    #F2CE55;
@@ -2382,7 +2388,10 @@ height: 22%;
 /* De gedeelde behandeling: gelijk voor alle drie de metalen. */
 #niveau-scherm .niveau-beginner,
 #niveau-scherm .niveau-advanced,
-#niveau-scherm .niveau-expert {
+#niveau-scherm .niveau-expert,
+#vu-niveau-scherm .niveau-beginner,
+#vu-niveau-scherm .niveau-advanced,
+#vu-niveau-scherm .niveau-expert {
     background: linear-gradient(to bottom,
         var(--rimdonker)     0%,
         var(--spiegelwit)    10%,
@@ -2406,7 +2415,8 @@ height: 22%;
 
 /* Terug — diep navy met een gouden rand, zodat hij bij de rand van het
    quizvak hoort en niet meedoet aan de metalen. Geen verloop. */
-#niveau-scherm .niveau-terug {
+#niveau-scherm .niveau-terug,
+#vu-niveau-scherm .niveau-terug {
     background: #16326E;
     border: 2px solid #C8A03C;
     color: #F5F3EC;
