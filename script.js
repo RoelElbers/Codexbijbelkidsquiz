@@ -5506,12 +5506,6 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 10:9-10"
         },
         {
-            vraag: "In de hemel klinkt een geweldig gejuich, als het geluid van een grote menigte en van rollende donder. Steeds weer roepen ze hetzelfde woord: ‘Halleluja!’ Wat betekent dat woord?",
-            antwoorden: ["Prijs de Heer", "Tot ziens", "Stilte", "Het betekent niks, het klinkt gewoon mooi"],
-            correct: "Prijs de Heer",
-            bijbelplaats: "Openbaring 19:1, 6"
-        },
-        {
             vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Elk wezen heeft een eigen gezicht: het ene lijkt op een leeuw, een ander op een stier, een ander op een arend. Waar lijkt het overgebleven wezen op?",
             antwoorden: ["Een mens", "Een paard", "Een slang", "Een vis"],
             correct: "Een mens",
@@ -5537,6 +5531,89 @@ vragenData["Openbaring"] = {
         }
     ]
 };
+
+// =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 17:
+// de beeldtaal van Openbaring)
+// =====================================================================
+vragenData["Openbaring"].advanced.push(
+    {
+        vraag: "Het laatste boek van de Bijbel heet \"Openbaring\". Wat betekent dat woord?",
+        antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
+        correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
+        bijbelplaats: "Openbaring 1:1",
+        uitleg: "Het Griekse woord betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+    },
+    {
+        vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
+        antwoorden: ["Een hoorn waarop men één hard signaal blies, geen melodie", "Een lange trompet van zilver, alleen voor muziek in de tempel", "Een grote trommel die het ritme van een lange optocht aangaf", "Een fluit die de zangers in de tempel begeleidde"],
+        correct: "Een hoorn waarop men één hard signaal blies, geen melodie",
+        bijbelplaats: "Openbaring 8:6",
+        uitleg: "Meestal was het een ramshoorn. Je blies erop om te waarschuwen voor gevaar, om een feest te openen of om te melden dat de koning eraan kwam. Een bazuin in Openbaring betekent dus niet muziek, maar: let op, er gaat iets beginnen."
+    },
+    {
+        vraag: "In de hemel klinkt \"Halleluja\". Wat betekent dat woord?",
+        antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
+        correct: "Prijs de HEER, in het Hebreeuws",
+        bijbelplaats: "Openbaring 19:1",
+        uitleg: "Hallelu betekent prijst, en Jah is de verkorte naam van God. Net als amen is het woord nooit vertaald; het klinkt in elke taal hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+    }
+);
+
+vragenData["Openbaring"].expert.push(
+    {
+        vraag: "De oudsten houden gouden schalen vol reukwerk vast. Johannes schrijft er meteen bij wat die schalen voorstellen. Wat?",
+        antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
+        correct: "De gebeden van de gelovigen",
+        bijbelplaats: "Openbaring 5:8",
+        uitleg: "In de tempel werd elke dag reukwerk verbrand, en de rook die opsteeg was het beeld van gebed dat omhooggaat. Openbaring houdt dat beeld vast en voegt er iets aan toe: de gebeden komen aan, en ze worden bewaard."
+    },
+    {
+        vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
+        antwoorden: ["Feest en overwinning: zo haalde men een winnaar binnen", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
+        correct: "Feest en overwinning: zo haalde men een winnaar binnen",
+        bijbelplaats: "Openbaring 7:9",
+        uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
+    },
+    {
+        vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk?",
+        antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
+        correct: "Martelaar",
+        bijbelplaats: "Openbaring 2:13",
+        uitleg: "Martys betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
+    },
+    {
+        vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
+        antwoorden: ["Dat je het zeggen had over wie er binnen mocht", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
+        correct: "Dat je het zeggen had over wie er binnen mocht",
+        bijbelplaats: "Openbaring 3:7",
+        uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
+    },
+    {
+        vraag: "Johannes ziet iemand met veel \"diademen\" op zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
+        antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
+        correct: "Een diadeem was een band die alleen een koning droeg",
+        bijbelplaats: "Openbaring 19:12",
+        uitleg: "Het Grieks gebruikt twee verschillende woorden. De krans van bladeren was voor wie de wedstrijd won; de diadeem was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
+    },
+    {
+        vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",
+        antwoorden: ["Hun water kwam van ver en was onderweg lauw geworden", "Zij hadden geen bron en dronken alleen regenwater", "Hun stad lag in een dal waar het altijd warm bleef", "Zij kookten hun water eerst en lieten het staan"],
+        correct: "Hun water kwam van ver en was onderweg lauw geworden",
+        bijbelplaats: "Openbaring 3:16",
+        uitleg: "Laodicea haalde zijn water door een lange leiding uit de heuvels; het kwam lauw en kalkig aan. Even verderop lag Hiërapolis met warme bronnen waar zieken heen gingen, en Kolosse met koud bergwater. Warm was goed, koud was goed — lauw water spuugde je uit."
+    }
+);
+
+vragenData["Efeziërs"].expert.push(
+    {
+        vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke muur dachten zijn lezers?",
+        antwoorden: ["Een muur in de tempel waar niet-Joden niet voorbij mochten", "De stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Een muur die de rijke wijk en de arme wijk uit elkaar hield", "De muur rond het paleis van de Romeinse stadhouder"],
+        correct: "Een muur in de tempel waar niet-Joden niet voorbij mochten",
+        bijbelplaats: "Efeziërs 2:14",
+        uitleg: "Op het tempelplein stond een lage stenen afscheiding met borden erop, in het Grieks en het Latijn, dat vreemdelingen niet verder mochten. Twee van die borden zijn later teruggevonden. Paulus zegt dus niet iets vaags: hij wijst op een muur die zijn lezers zelf gezien hadden."
+    }
+);
 
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 16:
