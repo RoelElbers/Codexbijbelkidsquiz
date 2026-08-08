@@ -5539,6 +5539,107 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 16:
+// woorden en gebruiken uit de brieven)
+// =====================================================================
+vragenData["Romeinen"].advanced.push(
+    {
+        vraag: "Paulus noemt zichzelf meteen in de eerste zin een \"apostel\". Wat betekent dat woord?",
+        antwoorden: ["Iemand die wordt uitgezonden met een opdracht", "Iemand die de heilige boeken uit zijn hoofd geleerd heeft", "Iemand die voorgaat in het gebed", "Iemand die als eerste ging geloven"],
+        correct: "Iemand die wordt uitgezonden met een opdracht",
+        bijbelplaats: "Romeinen 1:1",
+        uitleg: "Het woord komt van het Griekse werkwoord voor wegsturen. Een gezant sprak met het gezag van degene die hem stuurde: zijn boodschap was niet zijn eigen mening. Daarom kon Paulus zeggen dat het evangelie dat hij bracht niet van hemzelf kwam."
+    }
+);
+
+vragenData["Romeinen"].expert.push(
+    {
+        vraag: "Paulus noemt zijn boodschap het \"evangelie\", een woord dat toen al bestond. Wat betekende het in de gewone taal?",
+        antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Het loon dat een bode voor zijn bericht kreeg"],
+        correct: "Goed nieuws dat een bode kwam brengen, zoals een overwinning",
+        bijbelplaats: "Romeinen 1:1",
+        uitleg: "Bij een overwinning of de geboorte van een keizerszoon liet men door het hele rijk goed bericht omroepen. Dat de christenen juist dat woord kozen voor hun boodschap was een gewaagde keuze: het echte goede nieuws komt niet uit Rome."
+    }
+);
+
+vragenData["1 & 2 Korintiërs"].expert.push(
+    {
+        vraag: "Paulus begint zijn brief door de Korintiërs \"heiligen\" te noemen — en bespreekt daarna bladzijdenlang hun ruzies. Wat betekende dat woord bij hem?",
+        antwoorden: ["Apart gezet voor God; het gold voor iedereen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
+        correct: "Apart gezet voor God; het gold voor iedereen",
+        bijbelplaats: "1 Korintiërs 1:2",
+        uitleg: "Het woord zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
+    },
+    {
+        vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
+        antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
+        correct: "Wat van de tempeloffers overbleef, ging naar de markt",
+        bijbelplaats: "1 Korintiërs 8:1",
+        uitleg: "In een Griekse stad liep bijna al het vlees via de tempels. Vlees kopen op de markt of ergens gaan eten was voor de eerste christenen dus een echte vraag en geen theorie."
+    }
+);
+
+vragenData["Galaten"].expert.push(
+    {
+        vraag: "Paulus sluit zijn brief af: \"ik draag de merktekens van Jezus in mijn lichaam\". Waaraan deed dat toen denken?",
+        antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de zegelring waarmee een rijke zijn brieven dichtmaakte", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
+        correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
+        bijbelplaats: "Galaten 6:17",
+        uitleg: "Paulus doelt op de littekens die hij overhield aan de mishandelingen onderweg. Wie ze zag, zag bij wie hij hoorde. Voor Paulus was dat een sterker bewijs dan alle mooie papieren waarmee zijn tegenstanders zwaaiden."
+    }
+);
+
+vragenData["Filippenzen"].expert.push(
+    {
+        vraag: "Paulus schrijft dat hij \"uitgegoten wordt als een plengoffer\". Wat was een plengoffer?",
+        antwoorden: ["Wijn die bij een offer over het altaar ging", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
+        correct: "Wijn die bij een offer over het altaar ging",
+        bijbelplaats: "Filippenzen 2:17",
+        uitleg: "Bij een plengoffer bleef er niets over: alles ging het altaar op. Vandaar het beeld dat Paulus kiest terwijl hij gevangenzit — hij houdt niets van zichzelf achter."
+    }
+);
+
+vragenData["Kolossenzen & Filemon"].expert.push(
+    {
+        vraag: "Paulus noemt dingen waarover niemand de Kolossenzen mag veroordelen: eten, drinken, feestdagen, \"nieuwe maan\" en sabbat. Wat was die nieuwe maan?",
+        antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
+        correct: "Het begin van een nieuwe maand, met een feest",
+        bijbelplaats: "Kolossenzen 2:16",
+        uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Omdat die kalender nog steeds meetelt, valt Pasen ook nu elk jaar op een andere datum."
+    }
+);
+
+vragenData["Hebreeën"].expert.push(
+    {
+        vraag: "Hebreeën vergelijkt het werk van Jezus telkens met wat er gebeurde in \"de tent\". Wat was dat voor tent?",
+        antwoorden: ["Een heiligdom dat het volk door de woestijn meedroeg", "De tent waarin de hogepriester woonde, naast de tempel", "Een tent op het tempelplein waar de offerdieren stonden", "De tent waarin Abraham God ontmoette bij de eiken"],
+        correct: "Een heiligdom dat het volk door de woestijn meedroeg",
+        bijbelplaats: "Hebreeën 9:2",
+        uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: uit elkaar te halen, mee te dragen en weer op te bouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
+    }
+);
+
+vragenData["Petrus & Judas"].advanced.push(
+    {
+        vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
+        antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
+        correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
+        bijbelplaats: "1 Petrus 1:13",
+        uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel. Het beeld betekent dus: maak je klaar — en Petrus zegt het over je hoofd."
+    }
+);
+
+vragenData["Jakobus"].advanced.push(
+    {
+        vraag: "Jakobus verwijt rijke landeigenaars dat zij het loon van hun maaiers achterhielden. Waarom was dat zo erg?",
+        antwoorden: ["Een dagloner leefde van die dag en had niets achter de hand", "Maaiers mochten volgens de wet geen loon vragen, alleen eten", "Het loon van de oogst hoorde eerst naar de priesters te gaan", "Wie op het land werkte, kreeg altijd graan en nooit geld"],
+        correct: "Een dagloner leefde van die dag en had niets achter de hand",
+        bijbelplaats: "Jakobus 5:4",
+        uitleg: "De wet van Mozes schreef het letterlijk voor: betaal een dagloner nog dezelfde dag, want hij heeft niets achter de hand. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 15:
 // tijd, bestuur en het graf)
 // =====================================================================
@@ -6197,7 +6298,7 @@ vragenData["Matteüs"].expert.push(
         antwoorden: ["Zodat niemand er per ongeluk op stapte en onrein werd", "Zodat de familie het graf makkelijk kon terugvinden", "Omdat wit de kleur van de rouw was", "Omdat kalk het gesteente tegen regen beschermde"],
         correct: "Zodat niemand er per ongeluk op stapte en onrein werd",
         bijbelplaats: "Matteüs 23:27",
-        uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Het beeld is dus scherper dan het lijkt: van buiten mooi wit, maar juist bedoeld als waarschuwing voor wat erin zit."
+        uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Dat witte kalk was dus geen versiering, maar een waarschuwingsbord. En zo bedoelt Jezus het ook: je kunt er van buiten keurig uitzien en toch niet leven zoals God het vraagt."
     }
 );
 
