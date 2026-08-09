@@ -4545,10 +4545,10 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 1:17"
         },
         {
-            vraag: "Jakobus vertelt over iemand die honger en kou heeft. Wat leert hij daarmee over geloof?",
-            antwoorden: ["Geloof zonder daden is leeg", "Geloof is vooral goed bedoelen", "Geloof is iets tussen jou en God alleen", "Geloof gaat vooral over de juiste woorden"],
-            correct: "Geloof zonder daden is leeg",
-            bijbelplaats: "Jakobus 2:15-16"
+            vraag: "Jakobus vergelijkt de tong met iets heel kleins dat een groot schip van richting verandert. Wat is dat?",
+            antwoorden: ["Het roer", "Het anker", "De mast", "Het zeil"],
+            correct: "Het roer",
+            bijbelplaats: "Jakobus 3:4"
         },
         {
             vraag: "Jakobus zegt: kom dicht bij God. Wat gebeurt er dan?",
