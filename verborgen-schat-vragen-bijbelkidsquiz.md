@@ -4,6 +4,8 @@
 
 *Volledige lijst van alle Verborgen Schat-vragen. Dit is de pool waaruit per ronde willekeurig 10 vragen worden getrokken; je moet ze alle 10 goed hebben om de kist te winnen.*
 
+*Vier vragen tonen na het antwoorden een langere toelichting in het spel. Die staat hieronder als reveal onder de vraag; twee ervan hebben ook een catecheseId, waarmee de knop “Meer ontdekken” naar de catechese doorlinkt.*
+
 *Dit is een bronbestand voor je eigen administratie. Het spel zelf gebruikt alleen index.html, script.js en style.css — dit document draait niet mee.*
 
 ---
@@ -138,6 +140,10 @@ In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, e
 Juiste antwoord: De blijde boodschap mag aan alle volken gebracht worden
 Bron: Johannes 21:11 (oude kerkelijke overlevering, o.a. Hiëronymus)
 
+> **Reveal na het antwoorden:** 153 vissen, en het net scheurt niet! Volgens oude kerkelijke overlevering dacht men dat er precies zoveel soorten vissen waren. De verborgen boodschap: het goede nieuws is voor álle volken — en niemand gaat verloren.
+>
+> *catecheseId: `verborgen-getallen-153`*
+
 **Vraag 14**
 De brieven van Paulus staan in de Bijbel niet op volgorde van wanneer hij ze schreef. Waarop is hun volgorde ongeveer gebaseerd?
 - Op lengte: van de langste brief naar de kortste
@@ -147,6 +153,10 @@ De brieven van Paulus staan in de Bijbel niet op volgorde van wanneer hij ze sch
 
 Juiste antwoord: Op lengte: van de langste brief naar de kortste
 Bron: 1 Korintiërs 15:9 · Efeziërs 3:8 · 1 Timoteüs 1:15
+
+> **Reveal na het antwoorden:** Wist je dit? Omdat de brieven op lengte staan en niet op tijd, zie je iets moois pas als je ze op volgorde van schrijven leest. Dan noemt Paulus zichzelf telkens kleiner: eerst "de minste van de apostelen" (1 Korintiërs), later "de allerminste van alle gelovigen" (Efeziërs), en aan het eind "de grootste van de zondaars" (1 Timoteüs). Hoe dichter Paulus bij God leefde, hoe kleiner hij zichzelf maakte.
+>
+> *catecheseId: `verborgen-patronen-paulus-brieven`*
 
 **Vraag 15**
 Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus, de dienaar van de hogepriester. Wat gebeurde er daarna?
@@ -158,6 +168,8 @@ Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus, de die
 Juiste antwoord: Jezus raakte het oor aan en genas de man die hem kwam arresteren
 Bron: Lucas 22:50-51 en Johannes 18:10
 
+> **Reveal na het antwoorden:** Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die volgens de overlevering arts was — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Volgens oude kerkelijke overlevering is hij later tot geloof gekomen.
+
 **Vraag 16**
 Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?
 - Hebreeën
@@ -167,3 +179,5 @@ Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een bri
 
 Juiste antwoord: Hebreeën
 Bron: naam van het boek
+
+> **Reveal na het antwoorden:** De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen.
