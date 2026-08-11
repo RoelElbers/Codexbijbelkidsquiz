@@ -52,6 +52,10 @@ vragen-export.md
 __pycache__/
 *.pyc
 
+# Wegwerpkopieën van sjabloon-reeks-toevoegen.py: per reeks één keer gebruikt
+# en daarna weg. Het sjabloon zelf gaat WEL de repo in.
+toevoegen_reeks*.py
+
 # --- Tijdelijke / systeembestanden ---
 Thumbs.db
 desktop.ini
