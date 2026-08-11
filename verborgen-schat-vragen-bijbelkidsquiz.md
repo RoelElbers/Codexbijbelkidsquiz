@@ -1,4 +1,6 @@
-# Verborgen Schat — speelbare vragen
+# Verborgen Schat — vragen uit het hele Nieuwe Testament
+
+*Stand per 11 augustus 2026. Bronbestand voor administratie; de actuele pool staat in script.js — dat bestand is altijd leidend.*
 
 *Volledige lijst van alle Verborgen Schat-vragen. Dit is de pool waaruit per ronde willekeurig 10 vragen worden getrokken; je moet ze alle 10 goed hebben om de kist te winnen.*
 
@@ -7,11 +9,13 @@
 ---
 
 **Vraag 1**
-Van wie was het huis met de bovenzaal van het Laatste Avondmaal?
+Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?
+- Marcus
+- Mattheüs
+- Lucas
+- Johannes
 
-> *De vier antwoordopties van deze vraag zijn in een eerdere sessie rechtstreeks in het spel gezet en zijn hier niet woordelijk vastgelegd. Neem ze even over uit het spel (script.js) om deze lijst compleet te maken.*
-
-Juiste antwoord: Maria, de moeder van Johannes Marcus (volgens de overlevering)
+Juiste antwoord: Marcus
 Bron: Marcus 14 / Lucas 22
 
 **Vraag 2**
@@ -123,3 +127,43 @@ Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuif
 
 Juiste antwoord: De sandwich-techniek
 Bron: Marcus 5:21-43 · Marcus 11:12-25
+
+**Vraag 13**
+In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?
+- De blijde boodschap mag aan alle volken gebracht worden
+- De boodschap is alleen voor het volk Israël
+- Het getal staat voor 153 wonderen van Jezus
+- Het getal telt de jaren tot Jezus' terugkomst
+
+Juiste antwoord: De blijde boodschap mag aan alle volken gebracht worden
+Bron: Johannes 21:11 (oude kerkelijke overlevering, o.a. Hiëronymus)
+
+**Vraag 14**
+De brieven van Paulus staan in de Bijbel niet op volgorde van wanneer hij ze schreef. Waarop is hun volgorde ongeveer gebaseerd?
+- Op lengte: van de langste brief naar de kortste
+- Op de tijd waarin Paulus ze schreef
+- Op de alfabetische volgorde van de namen
+- Op hoe belangrijk de brieven zijn
+
+Juiste antwoord: Op lengte: van de langste brief naar de kortste
+Bron: 1 Korintiërs 15:9 · Efeziërs 3:8 · 1 Timoteüs 1:15
+
+**Vraag 15**
+Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus, de dienaar van de hogepriester. Wat gebeurde er daarna?
+- Jezus raakte het oor aan en genas de man die hem kwam arresteren
+- Petrus werd meteen gevangengenomen en pas de volgende dag vrijgelaten
+- De soldaten sloegen Petrus neer en bonden hem vast
+- Jezus beval Petrus dat hij weg moest gaan
+
+Juiste antwoord: Jezus raakte het oor aan en genas de man die hem kwam arresteren
+Bron: Lucas 22:50-51 en Johannes 18:10
+
+**Vraag 16**
+Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?
+- Hebreeën
+- Romeinen
+- Galaten
+- Efeziërs
+
+Juiste antwoord: Hebreeën
+Bron: naam van het boek
