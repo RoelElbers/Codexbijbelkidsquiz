@@ -519,7 +519,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Komen Lazarus en zijn zusters Marta en Maria voor in het Marcus-evangelie?",
                 antwoorden: ["Ja, alle drie komen ze meerdere keren in het Marcus-evangelie voor", "Alleen Lazarus", "Alleen Marta en Maria", "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)"],
                 correct: "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)",
-                bijbelplaats: "Marcus"
+                bijbelplaats: "Lucas 10:38-42 · Johannes 11"
             },
             {
                 vraag: "Welk Aramees woord sprak Jezus uit toen hij het dochtertje van Jaïrus opwekte uit de dood?",
@@ -1035,7 +1035,7 @@ vragenData["Matteüs"].advanced.push(
         vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
         antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
         correct: "De Bergrede",
-        bijbelplaats: "Matteüs 5"
+        bijbelplaats: "Matteüs 5:3"
     },
     {
         vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
@@ -1047,7 +1047,7 @@ vragenData["Matteüs"].advanced.push(
         vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
         antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een gewone Jood, iemand zonder openbare religieuze functie"],
         correct: "Iemand die niet bij het Joodse volk hoorde",
-        bijbelplaats: "Matteüs 8 (de Romeinse hoofdman)"
+        bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
     }
 );
 vragenData["Matteüs"].expert.push(
@@ -1123,7 +1123,7 @@ vragenData["Lucas"].beginner.push(
         vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
         antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
         correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
-        bijbelplaats: "Lucas 15 (o.a. de verloren zoon)"
+        bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
     },
     {
         vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
@@ -1149,7 +1149,7 @@ vragenData["Lucas"].advanced.push(
         vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
         antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
         correct: "De bevrijding uit de slavernij in Egypte",
-        bijbelplaats: "Lucas 22 (het Laatste Avondmaal was een Pesachmaaltijd)"
+        bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
     }
 );
 vragenData["Lucas"].expert.push(
@@ -1171,7 +1171,7 @@ vragenData["Johannes"].beginner.push(
         vraag: 'Wat betekent het woord "opstanding"?',
         antwoorden: ["Weer levend worden na de dood", "Omhooggaan naar de hemel", "Een lange reis maken", "Een groot feest vieren"],
         correct: "Weer levend worden na de dood",
-        bijbelplaats: "Johannes 20 (het lege graf)"
+        bijbelplaats: "Johannes 11:25 (Jezus bij het graf van Lazarus)"
     },
     {
         vraag: "Wat was de tempel?",
@@ -2336,7 +2336,7 @@ vragenData["1 & 2 Korintiërs"] = {
             vraag: "Hoeveel brieven aan de Korintiërs staan er in de Bijbel?",
             antwoorden: ["Eén", "Twee", "Drie", "Vijf"],
             correct: "Twee",
-            bijbelplaats: "1 & 2 Korintiërs"
+            bijbelplaats: "1 Korintiërs 1:1 · 2 Korintiërs 1:1"
         },
         {
             vraag: "Paulus schrijft een beroemd stuk over de liefde. Wat zegt hij dat liefde is?",
@@ -4370,7 +4370,7 @@ vragenData["Hebreeën"] = {
             vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel die iets gemeen hadden. Wat?",
             antwoorden: ["Ze vertrouwden op God, ook zonder alles te zien", "Ze hadden nooit getwijfeld", "Ze kregen allemaal al op aarde wat beloofd was", "Ze waren allemaal belangrijke leiders"],
             correct: "Ze vertrouwden op God, ook zonder alles te zien",
-            bijbelplaats: "Hebreeën 11"
+            bijbelplaats: "Hebreeën 11:1"
         },
         {
             vraag: "Door het geloof trok het volk dwars door een zee, alsof het droog land was. Welke zee?",
@@ -4400,7 +4400,7 @@ vragenData["Hebreeën"] = {
             vraag: "Wat laat de brief aan de Hebreeën vooral steeds zien over Jezus?",
             antwoorden: ["Dat Jezus groter is dan alles en iedereen", "Dat Jezus minder is dan de engelen", "Dat Jezus vooral een strenge rechter is", "Dat Jezus zijn werk nog moet beginnen"],
             correct: "Dat Jezus groter is dan alles en iedereen",
-            bijbelplaats: "Hebreeën 1"
+            bijbelplaats: "Hebreeën 1:4"
         },
         {
             vraag: "Hebreeën noemt Jezus degene die ons geloof begint én …",
