@@ -5533,6 +5533,92 @@ vragenData["Openbaring"] = {
 };
 
 // =====================================================================
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 18:
+// woorden uit de brieven van Johannes en Tessalonicenzen)
+// =====================================================================
+vragenData["1 & 2 Tessalonicenzen"].advanced.push(
+    {
+        vraag: "Paulus noemt gestorven gelovigen \"zij die slapen\". Waarom koos hij juist dat woord?",
+        antwoorden: ["Omdat je uit een slaap weer wakker wordt", "Omdat gelovigen zonder pijn en angst sterven", "Omdat je in een graf ligt zoals in een bed", "Omdat niemand weet wanneer iemand sterft"],
+        correct: "Omdat je uit een slaap weer wakker wordt",
+        bijbelplaats: "1 Tessalonicenzen 4:13",
+        uitleg: "Paulus zegt niet dat sterven niet erg is — hij schrijft juist aan mensen die verdrietig zijn. Maar met dit woord zegt hij wel: dit is niet het einde. De vroege christenen noemden hun begraafplaats daarom een koimeterion, Grieks voor slaapplaats. Daar komt het Engelse woord cemetery nog altijd vandaan."
+    },
+    {
+        vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld denkt hij bij dat woord?",
+        antwoorden: ["Aan een vuur waar iemand water overheen gooit", "Aan een olielamp die na een lange nacht leegraakt", "Aan een fakkel die van hand tot hand gaat", "Aan een kaars die je mee naar buiten neemt"],
+        correct: "Aan een vuur waar iemand water overheen gooit",
+        bijbelplaats: "1 Tessalonicenzen 5:19",
+        uitleg: "Het Griekse werkwoord werd gebruikt voor het blussen van een brand. Dat is iets anders dan opraken: bij blussen doet iemand het bewust. In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt dus niet dat de Geest vanzelf verdwijnt, maar dat mensen er water overheen kunnen gooien."
+    }
+);
+
+vragenData["1 & 2 Tessalonicenzen"].expert.push(
+    {
+        vraag: "Voor de terugkomst van Jezus gebruikt Paulus het woord \"komst\". In het Grieks was dat een heel gewoon woord. Waarvoor gebruikte men het?",
+        antwoorden: ["Voor het bezoek van een koning aan een stad", "Voor de thuiskomst van een soldaat na de oorlog", "Voor de dag waarop een schip binnenliep", "Voor het uur waarop een gast aan tafel aanschoof"],
+        correct: "Voor het bezoek van een koning aan een stad",
+        bijbelplaats: "1 Tessalonicenzen 2:19",
+        uitleg: "Parousia betekent letterlijk \"aanwezigheid\", maar in de steden van het Romeinse rijk was het de vaste term voor een staatsbezoek van de keizer of een koning. Er werden munten voor geslagen en poorten voor versierd. Dat Paulus juist dát woord voor Jezus kiest, zegt dus iets over wie volgens hem de echte koning is."
+    },
+    {
+        vraag: "Paulus schrijft: \"bemoedig de kleinmoedigen.\" Wat betekent dat Griekse woord letterlijk?",
+        antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig moed hebben in de strijd", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
+        correct: "Mensen met een kleine ziel",
+        bijbelplaats: "1 Tessalonicenzen 5:14",
+        uitleg: "Het Griekse woord is samengesteld uit \"weinig\" en \"ziel\". Het gaat niet over lafheid, maar over mensen bij wie de moed in de schoenen is gezakt — die het even niet meer zien zitten. Ons woord kleinmoedig is langs het Latijn precies dezelfde samenstelling. Paulus noemt hen in één adem met wie het zwaar hebben, en zegt: hou vol met hen, wees geduldig."
+    },
+    {
+        vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia bestond al eeuwen in elke Griekse stad. Wat was het toen?",
+        antwoorden: ["De vergadering waarop de burgers samen beslisten", "De school waar de jongens van de stad les kregen", "Het bestuur dat door de keizer was aangesteld", "De tempel waar men de goden van de stad diende"],
+        correct: "De vergadering waarop de burgers samen beslisten",
+        bijbelplaats: "1 Tessalonicenzen 1:1",
+        uitleg: "Ekklesia betekent letterlijk \"de opgeroepenen\". Een omroeper trok door de stad en riep de burgers bijeen op het marktplein. Daar stemden ze over de dingen die iedereen aangingen: nieuwe wetten, oorlog of vrede, en wie het komende jaar de stad zou besturen. In Handelingen 19 staat het woord nog in die gewone betekenis, voor de volksoploop in Efeze. Noemden de eerste christenen zich zo, dan zeiden ze dus niet \"wij zijn een gebouw\", maar \"wij zijn opgeroepen en horen erbij\"."
+    },
+    {
+        vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Uit welke wereld komt dat Griekse woord?",
+        antwoorden: ["Uit het leger: een soldaat die uit het gelid loopt", "Uit de rechtszaal: iemand die zijn eed en belofte breekt", "Uit de haven: een schip zonder vaste route", "Uit de landbouw: een os die zijn juk afwerpt"],
+        correct: "Uit het leger: een soldaat die uit het gelid loopt",
+        bijbelplaats: "2 Tessalonicenzen 3:6",
+        uitleg: "Het woord betekent letterlijk \"niet op zijn plek\". Wie uit het gelid stapte bracht de hele linie in gevaar. Paulus gebruikt het voor gemeenteleden die gestopt waren met werken — niet omdat werken het belangrijkste in het leven is, maar omdat de anderen hun last moesten dragen."
+    }
+);
+
+vragenData["Brieven van Johannes"].advanced.push(
+    {
+        vraag: "Johannes schrijft dat de gelovigen \"een zalving\" hebben gekregen. Wat gebeurde er vroeger bij een zalving?",
+        antwoorden: ["Er werd olie over iemands hoofd gegoten", "Er werd water over iemands handen gegoten", "Er werd een ring aan iemands vinger geschoven", "Er werd een mantel om iemands schouders gelegd"],
+        correct: "Er werd olie over iemands hoofd gegoten",
+        bijbelplaats: "1 Johannes 2:20",
+        uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt het beeld om hen moed te geven — jullie horen er echt bij."
+    }
+);
+
+vragenData["Brieven van Johannes"].expert.push(
+    {
+        vraag: "In de derde brief van Johannes staat het woord \"gemeente\", dat in andere vertalingen \"kerk\" heet. Waar komt ons Nederlandse woord kerk vandaan?",
+        antwoorden: ["Van een Grieks woord dat \"van de Heer\" betekent", "Van het Griekse ekklesia, dat vergadering betekent", "Van een Latijns woord voor een gebouw met een toren", "Van de naam van de eerste kerk in Rome"],
+        correct: "Van een Grieks woord dat \"van de Heer\" betekent",
+        bijbelplaats: "3 Johannes 1:6",
+        uitleg: "Kerk komt van kyriakon, \"wat van de Heer is\". Via het Germaans werd dat kerk in het Nederlands, Kirche in het Duits, church in het Engels en kirke in het Deens. Het Griekse ekklesia ging een andere weg: in het Latijn werd het ecclesia, en daaruit ontstonden het Franse église, het Spaanse iglesia en het Italiaanse chiesa. Twee woorden voor dezelfde zaak — het ene noemt het huis van de Heer, het andere de mensen die bij elkaar geroepen zijn."
+    },
+    {
+        vraag: "Johannes noemt Jezus de \"verzoening\" voor onze zonden. Het Nederlandse woord verzoening hangt samen met het woord zoen. Hoe zit dat?",
+        antwoorden: ["Zoen betekende eerst vrede, en pas veel later een kus", "Zoen is een verkorting van verzoening en kwam later", "Zoen komt van een oud woord dat zoet betekende", "Beide woorden zijn uit het Latijn vertaald"],
+        correct: "Zoen betekende eerst vrede, en pas veel later een kus",
+        bijbelplaats: "1 Johannes 2:2",
+        uitleg: "In het Middelnederlands was een \"soene\" een vrede of een goedmaking. Een zoenoffer was een offer om vrede te sluiten en zoengeld was geld waarmee je een ruzie afkocht. Pas veel later ging het woord de kus betekenen die bij zo'n verzoening hoorde. Als Johannes Jezus de verzoening noemt, bedoelt hij: door Hem is de breuk tussen God en mensen goedgemaakt."
+    },
+    {
+        vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers \"gemeenschap\" met hem hebben. In gewoon Grieks kwam dat woord ook uit de handel. Wat betekende het daar?",
+        antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
+        correct: "Samen eigenaar zijn van één zaak",
+        bijbelplaats: "1 Johannes 1:3",
+        uitleg: "Koinonia gebruikte men voor zakenpartners die samen een schip of een bedrijf bezaten — allebei helemaal betrokken, allebei verantwoordelijk. Vissers met één gezamenlijk net heetten koinonoi (Lucas 5:10). Het woord betekent dus meer dan gezelligheid: je hoort er echt bij en deelt in alles."
+    }
+);
+
+// =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 17:
 // de beeldtaal van Openbaring)
 // =====================================================================
