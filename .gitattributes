@@ -1,0 +1,14 @@
+# Alle tekstbestanden houden LF, ook op Windows.
+* text=auto eol=lf
+
+# Binaire bestanden nooit aanraken.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.mp3  binary
+*.mp4  binary
+*.woff  binary
+*.woff2 binary
