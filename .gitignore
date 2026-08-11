@@ -52,8 +52,7 @@ vragen-export.md
 __pycache__/
 *.pyc
 
-# Wegwerpkopieën van sjabloon-reeks-toevoegen.py: per reeks één keer gebruikt
-# en daarna weg. Het sjabloon zelf gaat WEL de repo in.
+# Eenmalige generator-scripts voor het toevoegen van vraagreeksen.
 toevoegen_reeks*.py
 
 # --- Tijdelijke / systeembestanden ---
