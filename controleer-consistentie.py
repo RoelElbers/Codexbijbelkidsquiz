@@ -575,6 +575,79 @@ def controle_vragen(boeknaarkey, pools):
 
 
 # ---------------------------------------------------------------------------
+#  7. Catechese-links
+# ---------------------------------------------------------------------------
+#
+# Een vraag mag een 'catecheseId' dragen; de knop "Meer ontdekken" opent dan
+# het bijbehorende artikel. vsRevealMeer() controleert zelf of het id bestaat
+# en toont anders een rustige "binnenkort"-melding. Prettig voor het kind,
+# maar daardoor valt een verkeerd gespeld id tijdens het spelen niet op: het
+# ziet er precies zo uit als een vraag die nog geen artikel heeft. Vandaar
+# deze controle, en wel als PROBLEEM — een kapotte verwijzing is een fout.
+#
+# Bewust GEEN melding als een vraag met een reveal géén catecheseId heeft:
+# dat is een normale toestand (Malchus en Hebreeën hebben er terecht geen).
+# Zou dit als waarschuwing meelopen, dan klaagt het script bij elke run over
+# iets wat klopt, en dan leert de lezer de meldingen negeren.
+
+def lees_catechese_artikelen(bron):
+    return lees_literaal(bron, r"^const catecheseArtikelen = \[",
+                         "catecheseArtikelen")
+
+
+def alle_vraagobjecten(bron, pools, meldingen):
+    """(herkomst, vraagobject) voor vragenData plus de losse pools."""
+    for boek in pools:
+        for niveau, vragen in pools[boek].items():
+            for vraag in vragen:
+                if isinstance(vraag, dict):
+                    yield ("%s / %s" % (boek, niveau), vraag)
+    for naam, _, _ in MVE.LOSSE_POOLS:
+        for vraag in MVE.lees_losse_pool(bron, naam, meldingen):
+            if isinstance(vraag, dict):
+                yield (naam, vraag)
+
+
+def controle_catechese(bron, pools):
+    kop(7, "Catechese-links (catecheseId)")
+
+    artikelen = lees_catechese_artikelen(bron)
+    ids = [a.get("id") for a in artikelen if isinstance(a, dict)]
+    bekend = set(i for i in ids if i)
+    info("catecheseArtikelen : %d artikelen." % len(artikelen))
+
+    for artikel_id in sorted(set(i for i in ids if ids.count(i) > 1)):
+        probleem("catecheseArtikelen bevat het id '%s' meer dan een keer."
+                 % artikel_id)
+
+    meldingen = []
+    verwijzingen = []
+    for herkomst, vraag in alle_vraagobjecten(bron, pools, meldingen):
+        if vraag.get("catecheseId"):
+            verwijzingen.append((herkomst, vraag["catecheseId"],
+                                 vraag.get("vraag", "")))
+    for melding in meldingen:
+        waarschuwing("parser: %s" % melding)
+
+    info("vragen met catecheseId: %d." % len(verwijzingen))
+
+    stuk = 0
+    for herkomst, catechese_id, vraagtekst in verwijzingen:
+        if catechese_id not in bekend:
+            stuk += 1
+            probleem("catecheseId '%s' bestaat niet in catecheseArtikelen "
+                     "(%s: %s...)" % (catechese_id, herkomst, vraagtekst[:50]))
+
+    if not stuk:
+        ok("elk catecheseId wijst naar een bestaand artikel.")
+
+    gebruikt = set(c for _, c, _ in verwijzingen)
+    for artikel_id in sorted(bekend - gebruikt):
+        info("artikel '%s' wordt nog door geen enkele vraag aangehaald."
+             % artikel_id)
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -613,6 +686,7 @@ def main():
     controle_afkortingen(kast, afkortingen)
     controle_afbeeldingen(vitrines, kast, planken)
     controle_vragen(boeknaarkey, pools)
+    controle_catechese(bron, pools)
 
     schrijf()
     schrijf("=" * 78)
