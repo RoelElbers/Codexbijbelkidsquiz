@@ -1,8 +1,10 @@
 # Kladblok Bijbelkidsquiz
 
-> **Afspraak met Claude:** plak dit bestand aan het begin van een sessie.
-> Zeggen we ergens "daar kijken we later naar", dan eindigt Claude dat
-> bericht met een kant-en-klaar regeltje om hieronder te plakken.
+> **Afspraak:** plak dit bestand aan het begin van een chatsessie —
+> Claude in de chat kan de repo niet lezen. Zeggen we ergens "daar kijken
+> we later naar", dan eindigt Claude dat bericht met een kant-en-klaar
+> regeltje om hieronder te plakken.
+> Claude Code leest de repo wel en kan regels er direct zelf in zetten.
 > Formaat: `- JJJJ-MM-DD — één zin, genoeg om het terug te herkennen.`
 >
 > Korte punten staan hier. Groeit iets uit tot een uitgewerkt plan, dan
