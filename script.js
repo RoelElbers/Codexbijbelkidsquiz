@@ -6450,11 +6450,11 @@ vragenData["Marcus"].expert.push(
 
 vragenData["Matteüs"].expert.push(
     {
-        vraag: "Bij het gestorven meisje trof Jezus fluitspelers en een luidruchtige menigte aan. Wat deden die daar?",
+        vraag: "Toen Jezus bij het huis van Jaïrus kwam, was diens dochter net gestorven. Er waren fluitspelers en een luidruchtige menigte. Wat deden die daar?",
         antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij vierden feest omdat het meisje ooit beter zou worden", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
         correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
         bijbelplaats: "Matteüs 9:23",
-        uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene."
+        uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten hem uit. Toen nam hij haar hand en stond ze op."
     },
     {
         vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
