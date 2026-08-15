@@ -27,15 +27,16 @@
   aparte video-CDN. Wacht op nieuwe computer.
 - 2026-08-11 — Muziek: tweede register zoeken — ingetogen variant voor
   tijdens het spelen, naast de melodische voor startscherm en beloning.
-- 2026-08-15 — Rolverdeling Verborgen Schat vastgelegd: reveal = korte
-  verrassing (2-3 zinnen, één inzicht), naslag = het volledige verhaal.
-  Bestaande vragen hierop nalopen — sommige hebben alleen naslag, andere
-  alleen reveal.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
 worden bij een volgende wijziging.*
 
+- 2026-08-15 — Rolverdeling Verborgen Schat: de plek volgt de lengte, niet
+  andersom. Past de uitleg in 2-3 zinnen, dan is een reveal genoeg. Is er
+  meer te vertellen, dan reveal voor het inzicht en naslag voor het verhaal.
+  Feitelijke uitleg mag ook alleen in de naslag staan. Geen quotum: niet
+  elke vraag hoeft beide te hebben.
 - 2026-08-15 — Beide bedankpagina's werken, maar worden aangeroepen vanaf een
   redirect-URL búiten de repo: bedankt.html vanuit het Forminit-dashboard,
   bedankt-donatie.html vanuit de Mollie-betaallink (ingesteld en getest met
