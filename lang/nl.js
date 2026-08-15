@@ -70,13 +70,13 @@ const NL = {
                 ]
             },
             {
-                kop: "Hoe je kunt helpen",
+                kop: "Hoe u kunt helpen",
                 items: [
                     "De Bijbelkidsquiz is er, en spelen kost niets. Dat blijft zo.",
-                    "Wie het spel waardeert en wil bijdragen aan wat er nog komt, is van harte welkom. Je kiest zelf welk bedrag je geeft."
+                    "Wie het spel waardeert en wil bijdragen aan wat er nog komt, is van harte welkom. U kiest zelf welk bedrag u geeft."
                 ],
                 link: {
-                    label: "Lees hoe je kunt steunen",
+                    label: "Lees hoe u kunt steunen",
                     url: "steunen.html"
                 }
             }
