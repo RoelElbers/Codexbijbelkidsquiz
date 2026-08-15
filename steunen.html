@@ -139,17 +139,20 @@ footer {
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
 }
 
-.binnenkort {
+.knop:hover { background: linear-gradient(180deg, #f0d38a 0%, #d9ab3f 100%); }
+
+/* Donatieblok: de knop gecentreerd, met de Mollie-melding er direct onder.
+   Staat op de plek van het oude "binnenkort"-kader. */
+.doneer {
     text-align: center;
-    background: rgba(18, 41, 92, 0.55);
-    border: 1px dashed var(--lijn);
-    border-radius: 0.5rem;
-    padding: 1.25rem 1.5rem;
     margin: 2.5rem 0 3rem;
-    color: var(--tekst-gedempt);
 }
 
-.knop:hover { background: linear-gradient(180deg, #f0d38a 0%, #d9ab3f 100%); }
+.doneer .toelichting {
+    font-size: 0.9375rem;
+    color: var(--tekst-gedempt);
+    margin: 0.9rem 0 0;
+}
 
 :focus-visible {
     outline: 2px solid var(--goud);
@@ -170,8 +173,14 @@ footer {
     <p><strong>Je kiest zelf welk bedrag je geeft.</strong> Er is geen minimum en geen vast tarief. Alle bedragen zijn in euro's. Een donatie is vrijwillig: je krijgt er geen product of dienst voor terug. Mede dankzij jouw steun blijft de Bijbelkidsquiz voor iedereen volledig gratis en zonder reclame.</p>
 </div>
 
-<p class="binnenkort">De donatieknop wordt op dit moment ingericht en verschijnt hier binnenkort.<br>
-Wil je nu al bijdragen, stuur dan een bericht naar <a href="mailto:info@bijbelkidsquiz.nl">info@bijbelkidsquiz.nl</a>.</p>
+<!-- Betaallink van Mollie. Bewust GEEN target="_blank": een betaling hoort in
+     hetzelfde tabblad te verlopen, zodat de terugkeer naar bedankt-donatie.html
+     op dezelfde plek uitkomt. Die terugkeer-URL staat in het Mollie-dashboard,
+     niet in deze repo. -->
+<div class="doneer">
+    <a class="knop" href="https://payment-links.mollie.com/payment/z2KTSyqjrwg2fABAZDPzE" rel="noopener">Doneren</a>
+    <p class="toelichting">Je wordt doorgestuurd naar Mollie, onze betaaldienst.</p>
+</div>
 
 <h2>Waar je bijdrage naartoe gaat</h2>
 
@@ -187,9 +196,9 @@ Wil je nu al bijdragen, stuur dan een bericht naar <a href="mailto:info@bijbelki
 
 <h2>Hoe het werkt</h2>
 
-<p>Doneren via de website is nog in voorbereiding. Zodra het zover is, kun je hier een bedrag kiezen en de betaling direct afronden.</p>
+<p>Klik op de knop hierboven, kies je bedrag en rond de betaling af.</p>
 
-<p>De betaling zal verlopen via Mollie, een Nederlandse betaaldienstverlener. Bijbelkidsquiz zal daarbij geen rekeningnummers, kaartgegevens of andere betaalgegevens ontvangen. Wat er tijdens de betaling met je gegevens gebeurt, staat straks beschreven in de privacyverklaring van Mollie.</p>
+<p>De betaling verloopt via Mollie, een Nederlandse betaaldienstverlener. Bijbelkidsquiz ontvangt daarbij geen rekeningnummers, kaartgegevens of andere betaalgegevens. Wat er tijdens de betaling met je gegevens gebeurt, staat beschreven in de <a href="https://www.mollie.com/nl/privacy" rel="noopener">privacyverklaring van Mollie</a>.</p>
 
 <h2>Wie je steunt</h2>
 
