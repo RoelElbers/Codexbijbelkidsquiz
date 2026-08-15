@@ -31,6 +31,9 @@
   verrassing (2-3 zinnen, één inzicht), naslag = het volledige verhaal.
   Bestaande vragen hierop nalopen — sommige hebben alleen naslag, andere
   alleen reveal.
+- 2026-08-15 — Twee redirect-URL's staan buiten de repo en breken stil bij
+  hernoemen: bedankt.html is ingesteld in het Forminit-dashboard,
+  bedankt-donatie.html in de Mollie-betaallink.
 
 ## Besloten: niet doen
 - Telefoonondersteuning — bewust uitgesteld, mogelijk nooit.
