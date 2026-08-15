@@ -8062,7 +8062,7 @@ const verborgenSchatVragen = [
         vraag: "Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?",
         antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
         correct: "Marcus",
-        bijbelplaats: "Marcus 14 / Lucas 22"
+        bijbelplaats: "Handelingen 12:12 (kerkelijke overlevering)"
     },
     {
         vraag: 'Wat betekent het woord "apocalyps" eigenlijk?',
@@ -8128,7 +8128,8 @@ const verborgenSchatVragen = [
         vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke?",
         antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
         correct: "De sandwich-techniek",
-        bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25"
+        bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25",
+        reveal: "Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — de twee verhalen eromheen helpen je dat te begrijpen. Met een moeilijk woord heet dit intercalatie."
     },
     {
         vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?",
@@ -8525,18 +8526,23 @@ function toonVsReveal(isGoed, q) {
         uitslag.classList.toggle("fout", !isGoed);
     }
 
-    // De boodschap-tekst, kop en Catechese-knop verschijnen alleen als er een
-    // reveal bij deze vraag hoort. Anders: enkel goed/fout + Volgende.
+    // De boodschap-tekst en kop verschijnen alleen als er een reveal bij deze
+    // vraag hoort. Anders: enkel goed/fout + Volgende.
     const heeftReveal = !!(q && q.reveal);
     if (kop) kop.style.display = heeftReveal ? "" : "none";
     if (tekst) {
         tekst.textContent = heeftReveal ? q.reveal : "";
         tekst.style.display = heeftReveal ? "" : "none";
     }
+    // De Catechese-knop hangt aan de catecheseId, niet aan de reveal: alleen
+    // tonen als er echt een artikel te openen valt. Haal je de catechese-tekst
+    // bij een vraag weg (of voeg je er later een toe), dan volgt de knop
+    // vanzelf — hier hoeft dan niets aangepast te worden.
+    const heeftCatechese = !!(q && q.catecheseId);
     if (meerKnop) {
-        meerKnop.style.display = heeftReveal ? "" : "none";
-        // De (optionele) catecheseId bewaren voor de latere deep-link.
-        meerKnop.dataset.catecheseId = (q && q.catecheseId) ? q.catecheseId : "";
+        meerKnop.style.display = (heeftReveal && heeftCatechese) ? "" : "none";
+        // De catecheseId bewaren voor de deep-link vanuit vsRevealMeer().
+        meerKnop.dataset.catecheseId = heeftCatechese ? q.catecheseId : "";
     }
     if (meerMelding) {
         meerMelding.textContent = "";

@@ -18,7 +18,7 @@ Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal 
 - Johannes
 
 Juiste antwoord: Marcus
-Bron: Marcus 14 / Lucas 22
+Bron: Handelingen 12:12 (kerkelijke overlevering)
 
 **Vraag 2**
 Wat betekent het woord "apocalyps" eigenlijk?
@@ -129,6 +129,8 @@ Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuif
 
 Juiste antwoord: De sandwich-techniek
 Bron: Marcus 5:21-43 · Marcus 11:12-25
+
+> **Reveal na het antwoorden:** Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — de twee verhalen eromheen helpen je dat te begrijpen. Met een moeilijk woord heet dit intercalatie.
 
 **Vraag 13**
 In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?
