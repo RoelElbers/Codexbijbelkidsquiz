@@ -31,12 +31,24 @@
   verrassing (2-3 zinnen, één inzicht), naslag = het volledige verhaal.
   Bestaande vragen hierop nalopen — sommige hebben alleen naslag, andere
   alleen reveal.
-- 2026-08-15 — Twee redirect-URL's staan buiten de repo en breken stil bij
-  hernoemen: bedankt.html is ingesteld in het Forminit-dashboard,
-  bedankt-donatie.html in de Mollie-betaallink.
+
+## Goed om te weten
+*Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
+worden bij een volgende wijziging.*
+
+- 2026-08-15 — Beide bedankpagina's werken, maar worden aangeroepen vanaf een
+  redirect-URL búiten de repo: bedankt.html vanuit het Forminit-dashboard,
+  bedankt-donatie.html vanuit de Mollie-betaallink (ingesteld en getest met
+  een echte betaling). Het aandachtspunt is dus niet dat er nog iets moet,
+  maar dat hernoemen of verplaatsen ze stil breekt: geen enkele href of src
+  in het project wijst ernaar, dus een zoekactie in de repo vindt niets.
 
 ## Besloten: niet doen
 - Telefoonondersteuning — bewust uitgesteld, mogelijk nooit.
+- Contact- en bedankpagina omzetten naar de u-vorm — bewust niet. Een fout
+  melden is juist iets wat een kind zelf doet. Het steunblok in de game,
+  steunen.html, bedankt-donatie.html en de privacyverklaring staan wél in de
+  u-vorm: die route is voor de gever.
 
 ## Gedaan
 - (afgeronde punten hierheen schuiven met de datum van afronden)
