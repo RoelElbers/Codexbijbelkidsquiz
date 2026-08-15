@@ -11913,14 +11913,17 @@ function bouwWolkenLaag(config, prefix) {
 
     const bg = document.createElement("img");
     bg.className = "nt2-hemel-bg";
-    bg.src = "images/startschermzonderwolken.png";   // avondhemel (scherm 1's scène)
+    // ?v=N hieronder is de PLATEN-teller met een eigen ritme: alleen omhoog als
+    // de plaat echt is vervangen, nooit samen met de teller van style.css /
+    // lang/nl.js / script.js. Volledige toelichting in index.html <head>.
+    bg.src = "images/startschermzonderwolken.png?v=1";   // avondhemel (scherm 1's scène)
     bg.alt = "";
 
     const laag = bouwWolkenLaag(WOLKEN, "s2-");
 
     const voor = document.createElement("img");
     voor.className = "voorgrond";          // hergebruikt de bestaande voorgrond-stijl (z-index 3)
-    voor.src = "images/voorgrond_scherm2_transparante_lucht.png";  // avondplaat, boeken weg-geïnpaint, lucht transparant
+    voor.src = "images/voorgrond_scherm2_transparante_lucht.png?v=1";  // avondplaat, boeken weg-geïnpaint, lucht transparant (?v= = platen-teller)
     voor.alt = "";
 
     hemel.appendChild(bg);

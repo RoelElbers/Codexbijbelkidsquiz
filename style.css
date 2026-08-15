@@ -45,7 +45,10 @@ body {
 
     overflow: hidden;
 
-    background-image: url("images/startschermzonderwolken.png");
+    /* ?v=N hier is de PLATEN-teller met een eigen ritme: alleen omhoog als deze
+       plaat echt is vervangen, en nooit samen met de teller van style.css /
+       lang/nl.js / script.js. Volledige toelichting in index.html <head>. */
+    background-image: url("images/startschermzonderwolken.png?v=1");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
