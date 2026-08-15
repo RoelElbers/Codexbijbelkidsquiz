@@ -27,6 +27,9 @@
   aparte video-CDN. Wacht op nieuwe computer.
 - 2026-08-11 — Muziek: tweede register zoeken — ingetogen variant voor
   tijdens het spelen, naast de melodische voor startscherm en beloning.
+- 2026-08-15 — Reveal van Malchus en Hebreeën splitsen: het inzicht blijft in
+  de reveal, het verhaal gaat naar het naslagscherm. Beide hebben nu geen
+  naslagtekst, dus inkorten betekent er een schrijven.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
