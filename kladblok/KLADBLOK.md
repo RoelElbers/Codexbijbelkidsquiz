@@ -30,6 +30,10 @@
 - 2026-08-15 — Reveal van Malchus en Hebreeën splitsen: het inzicht blijft in
   de reveal, het verhaal gaat naar het naslagscherm. Beide hebben nu geen
   naslagtekst, dus inkorten betekent er een schrijven.
+- 2026-08-15 — iPhone: game werkt, maar het scherm beweegt tijdens gebruik.
+  Vermoedelijk de in- en uitschuivende Safari-adresbalk in combinatie met
+  100vh in #game-container; dvh is de kandidaat-oplossing. Eerst rustig
+  observeren wanneer het precies gebeurt.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
