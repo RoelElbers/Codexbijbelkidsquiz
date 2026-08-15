@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=61">
+    <link rel="stylesheet" href="style.css?v=62">
 
     <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
          Vier verwijzingen dragen samen dit eigen nummer:
@@ -401,7 +401,10 @@
             </div>
         </div>
 
-        <!-- Bijbeltraining-kruispunt: twee keuzes (Oefenen / Naslag & uitleg).
+        <!-- Bijbeltraining-kruispunt: vijf ingangen. De eerste drie (Oefenen,
+             Naslag & uitleg, Vragen & uitleg) openen een overlay binnen het spel.
+             De laatste twee zijn leesmateriaal en delen daarom de catechese-knop-
+             stijl; "De verschillende kerken" verlaat het spel naar kerken.html.
              Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
         <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
@@ -411,6 +414,7 @@
                 <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openNaslag()">Naslag &amp; uitleg</button>
                 <button class="answer-btn niveau-btn niveau-expert menu-knop-blauw" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
                 <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
+                <button class="answer-btn niveau-btn catechese-knop" onclick="window.location.href='kerken.html'">De verschillende kerken</button>
                 <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
             </div>
         </div>
@@ -847,8 +851,8 @@
     </div>
 
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
-    <script src="lang/nl.js?v=61"></script>
-    <script src="script.js?v=61"></script>
+    <script src="lang/nl.js?v=62"></script>
+    <script src="script.js?v=62"></script>
 
 </body>
 
