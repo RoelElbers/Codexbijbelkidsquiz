@@ -7994,9 +7994,6 @@ const metgezellenVragen = [
     }
 ];
 
-// Combineert alle vragen van één niveau uit alle evangeliën tot één pool.
-// Doordat we de bestaande arrays hergebruiken, groeit deze pool vanzelf mee
-// zodra je ergens vragen toevoegt — geen aparte lijst om bij te houden.
 // Combineert alle vragen van één niveau uit alle boeken tot één kistpool.
 // Vragen met kist: false blijven buiten de kisten. Dat zijn vragen die alleen
 // binnen de boekmodus te begrijpen zijn, bijvoorbeeld omdat ze verwijzen naar
