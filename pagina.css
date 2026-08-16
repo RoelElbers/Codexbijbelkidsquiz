@@ -223,6 +223,13 @@ input:focus, select:focus, textarea:focus {
     text-align: center;
 }
 
+/* Tweede terugknop onderaan een lange leespagina, boven de footer. Zelfde
+   vormgeving als de kruimel bovenaan (die klassen staan er samen op); alleen de
+   marge draait om, want hier is ruimte ERBOVEN nodig in plaats van eronder. */
+.kruimel-onder {
+    margin: 2.5rem 0 0;
+}
+
 /* Scheiding tussen de blokken op een lange leespagina. Zelfde gouden lijn als
    de rand onder de header en boven de footer. */
 hr {
