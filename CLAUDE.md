@@ -34,8 +34,14 @@ assert c == 1, "verwacht 1 treffer, gevonden %d" % c
 
 ## Controleren
 
-**Node staat niet op dit systeem** — `node --check` werkt niet (ook `deno`,
-`bun` en `npm` ontbreken). Gebruik in plaats daarvan:
+**Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in
+`script.js`:
+
+```
+node --check script.js
+```
+
+Daarnaast:
 
 ```
 python controleer-consistentie.py
