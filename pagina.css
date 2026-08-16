@@ -180,20 +180,27 @@ input:focus, select:focus, textarea:focus {
     outline: none;
 }
 
+/* Gouden knop. Wordt gebruikt op een <a> (donatieknop, kerken-keuzeknoppen) en
+   op de verstuurknop van het contactformulier, die een <button> is. Vandaar
+   zowel display:inline-block en text-decoration:none (nodig voor de links) als
+   cursor:pointer (nodig voor de button). */
 .knop {
+    display: inline-block;
+    background: linear-gradient(180deg, #e5bc55 0%, #c39429 100%);
+    color: #17264a;
     font-family: 'Cinzel', Georgia, serif;
     font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 0.04em;
-    background: var(--goud);
-    color: var(--diepblauw);
-    border: none;
-    border-radius: 0.375rem;
-    padding: 0.75rem 2rem;
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    padding: 0.95rem 2.25rem;
+    border-radius: 0.4rem;
+    border: 1px solid #f0d38a;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
     cursor: pointer;
 }
 
-.knop:hover { background: var(--goud-zacht); }
+.knop:hover { background: linear-gradient(180deg, #f0d38a 0%, #d9ab3f 100%); }
 
 /* Donatieblok: de knop gecentreerd, met de Mollie-melding er direct onder.
    Staat op de plek van het oude "binnenkort"-kader. */
@@ -214,7 +221,7 @@ input:focus, select:focus, textarea:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.9rem;
+    gap: 2rem;
     margin: 2.5rem 0 3rem;
 }
 
