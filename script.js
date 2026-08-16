@@ -8129,7 +8129,8 @@ const verborgenSchatVragen = [
         antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
         correct: "De sandwich-techniek",
         bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25",
-        reveal: "Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — de twee verhalen eromheen helpen je dat te begrijpen. Met een moeilijk woord heet dit intercalatie."
+        reveal: "Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — de twee verhalen eromheen helpen je dat te begrijpen. Met een moeilijk woord heet dit intercalatie.",
+        catecheseId: "verborgen-patronen-sandwich"
     },
     {
         vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?",
@@ -9045,6 +9046,18 @@ Paulus zegt dit nergens hardop. Hij schrijft niet: "let op, ik word steeds neder
 Eén ding om eerlijk bij te zeggen: de jaartallen hierboven zijn ongeveer — geleerden weten niet op de dag nauwkeurig wanneer Paulus elke brief schreef. En dat Paulus "steeds nederiger" werd, is iets wat wij ontdekken als we de brieven op tijd ordenen; het is een prachtige ontdekking, geen regel die zo in de Bijbel staat. Maar de drie teksten zijn er echt, en ze zijn in deze volgorde geschreven. Dat maakt het zo bijzonder.
 
 Word jij van binnen groter of kleiner naarmate je meer leert? Paulus laat zien dat echt dichtbij God komen je juist nederig maakt — niet omdat je niks waard bent, maar omdat je steeds beter ziet hoe groot Gods liefde is.`
+    },
+    {
+        id: "verborgen-patronen-sandwich",
+        categorie: "Verborgen patronen",
+        titel: "De sandwich-techniek van Marcus",
+        tekst: `Marcus blijkt een knappe verteller. Hij begint een verhaal, schuift er een tweede verhaal tussen, en pakt dan de draad van het eerste weer op — net als twee boterhammen met beleg ertussen. Geleerden noemen dit de sandwich-techniek (met een moeilijk woord: intercalatie).
+
+Het mooiste inzicht: de nadruk ligt meestal op het verhaal ín het midden — net als bij een echte sandwich is het beleg waar het om draait. Dat binnenste verhaal is vaak de sleutel tot de betekenis, en de twee verhalen eromheen helpen je dat te begrijpen.
+
+Bij Jaïrus en de zieke vrouw (Marcus 5) staat zo het geloof van de vrouw in het midden, met een knipoog: het getal twaalf komt in beide verhalen terug — de vrouw is twaalf jaar ziek, het meisje twaalf jaar oud. Een ander bekend voorbeeld is de tempelreiniging, ingeklemd tussen de vervloeking en het verdorren van een vijgenboom (Marcus 11).
+
+Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als losse verhalen, maar als één doordacht geheel. Kun jij nog een sandwich vinden als je Marcus leest?`
     }
 ];
 
