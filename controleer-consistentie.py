@@ -648,6 +648,114 @@ def controle_catechese(bron, pools):
 
 
 # ---------------------------------------------------------------------------
+#  8. Kistpool (kist: false)
+# ---------------------------------------------------------------------------
+#
+# alleVragenVoorNiveau() in script.js bouwt de kistpool met een filter op
+# `v.kist !== false`. Dat is een strikte vergelijking: alleen exact de boolean
+# false houdt een vraag buiten de kisten. Juist daardoor is een tikfout hier
+# onzichtbaar tijdens het spelen — `Kist: false` of `kist: "false"` filtert
+# niets weg, de vraag duikt gewoon op in een kist en niemand die het merkt.
+# Vandaar deze twee dingen naast elkaar: welke vragen bewust buiten de pool
+# vallen, en welke velden erop lijken maar niet meetellen.
+#
+# De bijna-treffers zijn WAARSCHUWING en geen PROBLEEM: het spel blijft
+# gewoon werken, alleen staat er een vraag in de kist die daar niet hoort.
+
+KIST_VELD = "kist"
+
+
+def _lijkt_op_kist(sleutel):
+    """Herkent veldnamen die op 'kist' lijken: Kist, KIST, in_kist, kistje."""
+    kaal = re.sub(r"[^a-z0-9]", "", sleutel.lower())
+    return KIST_VELD in kaal
+
+
+def _vragen_met_herkomst(bron, pools, meldingen):
+    """(herkomst, niveaulabel, vraagobject) voor vragenData plus losse pools."""
+    for boek in pools:
+        aanwezig = list(pools[boek])
+        # Eerst de bekende niveaus in vaste volgorde, daarna eventuele rest,
+        # zodat een onbekend niveau (controle 6 meldt dat al) niet wegvalt.
+        geordend = [n for n in NIVEAUS if n in aanwezig]
+        geordend += [n for n in aanwezig if n not in NIVEAUS]
+        for niveau in geordend:
+            for vraag in pools[boek].get(niveau, []):
+                if isinstance(vraag, dict):
+                    yield (boek, NIVEAU_LABEL.get(niveau, niveau), vraag)
+    for naam, _, _ in MVE.LOSSE_POOLS:
+        for vraag in MVE.lees_losse_pool(bron, naam, meldingen):
+            if isinstance(vraag, dict):
+                yield (naam, "losse pool", vraag)
+
+
+def controle_kist(bron, pools):
+    kop(8, "Kistpool — welke vragen vallen buiten de kisten?")
+
+    # De parsermeldingen van de losse pools komen al uit controle 7; hier
+    # nogmaals melden zou ze dubbel in de samenvatting laten meetellen.
+    meldingen = []
+    losse_namen = set(naam for naam, _, _ in MVE.LOSSE_POOLS)
+
+    buiten = []
+    expliciet_in = 0
+    afwijkend = 0
+
+    for herkomst, niveau, vraag in _vragen_met_herkomst(bron, pools, meldingen):
+        for sleutel in vraag:
+            if sleutel != KIST_VELD and _lijkt_op_kist(sleutel):
+                waarschuwing("%s / %s: veld %r lijkt op 'kist' maar heet niet "
+                             "exact zo en wordt dus genegeerd (%s...)"
+                             % (herkomst, niveau, sleutel,
+                                vraag.get("vraag", "")[:40]))
+                afwijkend += 1
+
+        if KIST_VELD not in vraag:
+            continue
+
+        waarde = vraag[KIST_VELD]
+        if not isinstance(waarde, bool):
+            waarschuwing("%s / %s: kist is %r (%s) in plaats van een boolean; "
+                         "alleen exact false houdt een vraag uit de kist, dus "
+                         "deze vraag doet gewoon mee (%s...)"
+                         % (herkomst, niveau, waarde,
+                            type(waarde).__name__,
+                            vraag.get("vraag", "")[:40]))
+            afwijkend += 1
+        elif waarde is False:
+            buiten.append((herkomst, niveau, vraag.get("vraag", "")))
+        else:
+            expliciet_in += 1
+
+        if herkomst in losse_namen:
+            waarschuwing("%s: een kist-veld heeft hier geen effect; de losse "
+                         "pools lopen niet via alleVragenVoorNiveau()"
+                         % herkomst)
+            afwijkend += 1
+
+    info("vragen met kist: false : %d (die vallen buiten de kistpool)"
+         % len(buiten))
+    if expliciet_in:
+        info("vragen met kist: true  : %d (gelijk aan geen kist-veld)"
+             % expliciet_in)
+
+    if buiten:
+        breedte = max(len(h) for h, _, _ in buiten) + 2
+        schrijf()
+        schrijf("  %-*s %-11s %s" % (breedte, "boek", "niveau", "vraag"))
+        schrijf("  " + "-" * (breedte + 12 + 56))
+        for herkomst, niveau, vraagtekst in buiten:
+            kort = vraagtekst if len(vraagtekst) <= 56 else vraagtekst[:53] + "..."
+            schrijf("  %-*s %-11s %s" % (breedte, herkomst, niveau, kort))
+        schrijf()
+
+    if not afwijkend:
+        ok("geen veld dat op 'kist' lijkt maar het niet exact is.")
+    info("Alleen exact `kist: false` houdt een vraag buiten de kisten; zulke "
+         "vragen blijven wel gewoon in de boekmodus staan.")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -687,6 +795,7 @@ def main():
     controle_afbeeldingen(vitrines, kast, planken)
     controle_vragen(boeknaarkey, pools)
     controle_catechese(bron, pools)
+    controle_kist(bron, pools)
 
     schrijf()
     schrijf("=" * 78)
