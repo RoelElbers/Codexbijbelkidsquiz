@@ -44,6 +44,12 @@ worden bij een volgende wijziging.*
   meer te vertellen, dan reveal voor het inzicht en naslag voor het verhaal.
   Feitelijke uitleg mag ook alleen in de naslag staan. Geen quotum: niet
   elke vraag hoeft beide te hebben.
+- 2026-08-16 — Op kerken-katholiek-maria.html staat de slotregel "Doe maar wat
+  Hij jullie zegt." bewust ZONDER bronregel. Het is een echo van het Kana-blok
+  hoger op de pagina, waar — Vrij naar Johannes 2:5 wel staat. Geen omissie dus;
+  niet alsnog aanvullen. Daardoor telt die pagina 8 .uitgelicht-blokken bij 7
+  bronregels: 6 keer "Vrij naar", één keer de Nationale Raad voor Liturgie bij
+  het Weesgegroet, en die ene slotregel bewust zonder.
 - 2026-08-16 — TERUGKEREND CONTROLEPUNT bij een nieuwe paus: het blok "De paus
   van nu" op kerken-katholiek-petrus.html noemt naam, verkiezingsjaar, land en
   motto, en draagt eronder een .datum-regel "Bijgewerkt in augustus 2026". Bij
