@@ -1680,13 +1680,13 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 6:23"
         },
         {
-            vraag: "In hoofdstuk 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat?",
+            vraag: "In Romeinen 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat?",
             antwoorden: ["Gods liefde is alleen voor sterke mensen", "Gods liefde stopt als je te veel fouten maakt", "Je moet Gods liefde verdienen", "Niets kan ons scheiden van Gods liefde"],
             correct: "Niets kan ons scheiden van Gods liefde",
             bijbelplaats: "Romeinen 8:38-39"
         },
         {
-            vraag: "In hoofdstuk 12 schrijft Paulus over mensen die het je moeilijk maken. Wat zegt hij dat je moet doen?",
+            vraag: "In Romeinen 12 schrijft Paulus over mensen die het je moeilijk maken. Wat zegt hij dat je moet doen?",
             antwoorden: ["Zegen hen en wens hun het goede toe", "Pak ze flink terug", "Negeer ze voorgoed", "Vertel iedereen hoe slecht ze zijn"],
             correct: "Zegen hen en wens hun het goede toe",
             bijbelplaats: "Romeinen 12:14"
@@ -1882,7 +1882,7 @@ vragenData["Romeinen"] = {
     ],
     expert: [
         {
-            vraag: "In hoofdstuk 11 vergelijkt Paulus Gods volk met een olijfboom. Wat bedoelt hij als hij zegt dat gelovigen uit andere volken als 'wilde takken' worden geënt?",
+            vraag: "In Romeinen 11 vergelijkt Paulus Gods volk met een olijfboom. Wat bedoelt hij als hij zegt dat gelovigen uit andere volken als 'wilde takken' worden geënt?",
             antwoorden: ["Ook mensen die geen Jood zijn, mogen bij Gods volk horen", "Alleen Joden kunnen echt bij God horen", "De oude takken, Israël, tellen niet meer mee", "Paulus had zich vergist, hij bedoelde iets anders"],
             correct: "Ook mensen die geen Jood zijn, mogen bij Gods volk horen",
             bijbelplaats: "Romeinen 11:17-24"
@@ -2415,12 +2415,6 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Met de keizer", "Met God", "Met de koning", "Met niemand"],
             correct: "Met God",
             bijbelplaats: "1 Korintiërs 3:9"
-        },
-        {
-            vraag: "Waar gaat 1 Korintiërs 15 vooral over, het hart van het geloof?",
-            antwoorden: ["Dat Paulus beroemd werd", "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan", "Over het weer in Korinte", "Dat Paulus binnenkort weer op reis zou gaan naar verre landen"],
-            correct: "Dat Jezus is opgestaan uit de dood, en de gelovigen ook zullen opstaan",
-            bijbelplaats: "1 Korintiërs 15:20-22"
         }
     ],
     advanced: [
