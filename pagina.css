@@ -223,6 +223,17 @@ input:focus, select:focus, textarea:focus {
     text-align: center;
 }
 
+/* Oriëntatieregel in de header van de kerken-pagina's: vertelt bij welke tak de
+   pagina hoort en wijst naar de andere. Kleiner en gedempt zodat hij niet met de
+   titel concurreert, maar ruim genoeg voor een meelezende volwassene. De link
+   erin pakt vanzelf de gouden linkkleur op. Klassenaam zonder trema, net als de
+   andere klassen in dit bestand. */
+.orientatie {
+    font-size: 0.9375rem;
+    color: var(--tekst-gedempt);
+    margin: 1rem 0 0;
+}
+
 /* Tweede terugknop onderaan een lange leespagina, boven de footer. Zelfde
    vormgeving als de kruimel bovenaan (die klassen staan er samen op); alleen de
    marge draait om, want hier is ruimte ERBOVEN nodig in plaats van eronder. */
