@@ -2330,7 +2330,8 @@ vragenData["1 & 2 Korintiërs"] = {
             vraag: "Aan welke stad schreef Paulus deze brieven?",
             antwoorden: ["Rome", "Efeze", "Korinte", "Athene"],
             correct: "Korinte",
-            bijbelplaats: "1 Korintiërs 1:2"
+            bijbelplaats: "1 Korintiërs 1:2",
+            kist: false
         },
         {
             vraag: "Hoeveel brieven aan de Korintiërs staan er in de Bijbel?",
@@ -2813,7 +2814,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 6:7-8"
         },
         {
-            vraag: "Aan het eind schrijft Paulus iets opvallends over hóe hij dit deel van de brief schrijft. Wat?",
+            vraag: "Aan het eind van de brief aan de Galaten schrijft Paulus iets opvallends over hóe hij dit deel zelf schrijft. Wat?",
             antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "Met de hand van iemand anders die het voor hem opschreef"],
             correct: "Met grote letters, met zijn eigen hand",
             bijbelplaats: "Galaten 6:11"
@@ -3358,7 +3359,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:23-24"
         },
         {
-            vraag: "Wie noemt Paulus aan het begin als mede-afzender van de brief?",
+            vraag: "Wie noemt Paulus aan het begin van de brief aan de Filippenzen als mede-afzender?",
             antwoorden: ["Timoteüs", "Petrus", "Lukas", "Marcus"],
             correct: "Timoteüs",
             bijbelplaats: "Filippenzen 1:1"
@@ -3415,7 +3416,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Aan welke gemeente schreef Paulus deze twee brieven?",
             antwoorden: ["De gemeente in Tessalonica", "De gemeente in Filippi", "De gemeente in Korinte", "De gemeente in Berea"],
             correct: "De gemeente in Tessalonica",
-            bijbelplaats: "1 Tessalonicenzen 1:1"
+            bijbelplaats: "1 Tessalonicenzen 1:1",
+            kist: false
         },
         {
             vraag: "Paulus zegt: bid…",
@@ -3626,7 +3628,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:8"
         },
         {
-            vraag: "Aan het eind van zijn tweede brief doet Paulus iets met zijn eigen hand, als een soort handtekening. Wat?",
+            vraag: "Aan het eind van 2 Tessalonicenzen doet Paulus iets met zijn eigen hand, als een soort handtekening. Wat?",
             antwoorden: ["Hij schrijft de groet eigenhandig", "Hij tekent een vis", "Hij drukt een zegel in was", "Hij schrijft in het Hebreeuws"],
             correct: "Hij schrijft de groet eigenhandig",
             bijbelplaats: "2 Tessalonicenzen 3:17"
@@ -3638,7 +3640,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 4:16"
         },
         {
-            vraag: "In zijn tweede brief waarschuwt Paulus dat er vóór de dag van de Heer eerst iemand verschijnt die zich tegen God verzet en zich boven alles verheft. Hoe noemt Paulus deze figuur?",
+            vraag: "In 2 Tessalonicenzen waarschuwt Paulus dat er vóór de dag van de Heer eerst iemand verschijnt die zich tegen God verzet en zich boven alles verheft. Hoe noemt Paulus deze figuur?",
             antwoorden: ["De wetteloze mens", "De valse profeet", "De koning van het zuiden", "De engel van de afgrond"],
             correct: "De wetteloze mens",
             bijbelplaats: "2 Tessalonicenzen 2:3-4"
@@ -3650,7 +3652,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 3:3"
         },
         {
-            vraag: "In zijn tweede brief spreekt Paulus mensen aan die niet willen werken. Wat doen deze mensen volgens hem juist wél?",
+            vraag: "In 2 Tessalonicenzen spreekt Paulus mensen aan die niet willen werken. Wat doen deze mensen volgens hem juist wél?",
             antwoorden: ["Ze bemoeien zich met andermans zaken", "Ze slapen de hele dag", "Ze reizen van stad naar stad", "Ze houden lange toespraken"],
             correct: "Ze bemoeien zich met andermans zaken",
             bijbelplaats: "2 Tessalonicenzen 3:11"
@@ -4441,7 +4443,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:8"
         },
         {
-            vraag: "Aan het begin laat de brief zien dat Jezus hoger staat dan …",
+            vraag: "Aan het begin laat de brief aan de Hebreeën zien dat Jezus hoger staat dan …",
             antwoorden: ["de engelen", "Mozes", "de profeten", "de hogepriesters"],
             correct: "de engelen",
             bijbelplaats: "Hebreeën 1:4"
@@ -5254,7 +5256,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 5:14"
         },
         {
-            vraag: "De schrijver van de tweede en derde brief noemt zichzelf niet bij naam, maar met een titel. Welke?",
+            vraag: "De schrijver van de tweede en derde brief van Johannes noemt zichzelf niet bij naam, maar met een titel. Welke?",
             antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
             correct: "'de oudste'",
             bijbelplaats: "2 Johannes 1; 3 Johannes 1"
@@ -5366,7 +5368,7 @@ vragenData["Openbaring"] = {
     ],
     advanced: [
         {
-            vraag: "Helemaal aan het begin van het boek stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
+            vraag: "Helemaal aan het begin van Openbaring stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
             antwoorden: ["Ik ben het begin en het einde", "Ik ben de oudste", "Ik ben de sterkste", "Ik ben de eerste die er ooit was"],
             correct: "Ik ben het begin en het einde",
             bijbelplaats: "Openbaring 1:8"
@@ -5420,7 +5422,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 22:1"
         },
         {
-            vraag: "In de brief aan Pergamum belooft Jezus dat wie overwint een witte steen krijgt, met daarop iets geschreven dat niemand anders kent. Wat staat er op die steen?",
+            vraag: "In Openbaring, in de brief aan de gemeente in Pergamum, belooft Jezus dat wie overwint een witte steen krijgt, met daarop iets geschreven dat niemand anders kent. Wat staat er op die steen?",
             antwoorden: ["Een nieuwe naam", "Een geheime code", "De naam van de steen", "Het wifiwachtwoord voor de hemel"],
             correct: "Een nieuwe naam",
             bijbelplaats: "Openbaring 2:17"
@@ -5470,7 +5472,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 4:3"
         },
         {
-            vraag: "Helemaal aan het einde van het boek geeft Jezus zichzelf een naam met een ster erin. Welke naam?",
+            vraag: "Helemaal aan het einde van Openbaring geeft Jezus zichzelf een naam met een ster erin. Welke naam?",
             antwoorden: ["De stralende morgenster", "De vallende ster", "De avondster", "De noorderster"],
             correct: "De stralende morgenster",
             bijbelplaats: "Openbaring 22:16"
@@ -5873,7 +5875,7 @@ vragenData["Johannes"].expert.push(
 
 vragenData["Hebreeën"].expert.push(
     {
-        vraag: "De schrijver zegt dat Jezus buiten de poort heeft geleden. Waarom vonden kruisigingen buiten de stad plaats?",
+        vraag: "De brief aan de Hebreeën zegt dat Jezus buiten de poort heeft geleden. Waarom vonden kruisigingen buiten de stad plaats?",
         antwoorden: ["Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte", "Omdat er binnen de muren geen ruimte was", "Omdat de Romeinen het binnen de stad niet mochten van de keizer", "Omdat het buiten stiller was voor de familie"],
         correct: "Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte",
         bijbelplaats: "Hebreeën 13:12",
@@ -5975,7 +5977,7 @@ vragenData["Matteüs"].advanced.push(
 
 vragenData["Hebreeën"].expert.push(
     {
-        vraag: "De schrijver noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
+        vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
         antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
         correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
         bijbelplaats: "Hebreeën 9:7",
@@ -6819,13 +6821,13 @@ vragenData["Openbaring"].advanced.push(
 
 vragenData["Hebreeën"].advanced.push(
     {
-        vraag: "De schrijver spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
+        vraag: "De schrijver van de brief aan de Hebreeën spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
         antwoorden: ["Woorden: het uitspreken en bezingen van Gods naam", "Een lam zonder gebreken op het altaar", "Het eerste deel van het graan uit de oogst", "Een gouden schaal met wierook erin"],
         correct: "Woorden: het uitspreken en bezingen van Gods naam",
         bijbelplaats: "Hebreeën 13:15"
     },
     {
-        vraag: "De schrijver zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
+        vraag: "De schrijver van de brief aan de Hebreeën zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
         antwoorden: ["Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen", "Ze eten te weinig en zijn daardoor te zwak om te reizen", "Ze zijn nog jong van jaren en mogen nog niet meedoen aan de maaltijd", "Ze houden zich aan de spijswetten en eten geen vlees"],
         correct: "Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen",
         bijbelplaats: "Hebreeën 5:12-14"
@@ -7995,11 +7997,18 @@ const metgezellenVragen = [
 // Combineert alle vragen van één niveau uit alle evangeliën tot één pool.
 // Doordat we de bestaande arrays hergebruiken, groeit deze pool vanzelf mee
 // zodra je ergens vragen toevoegt — geen aparte lijst om bij te houden.
+// Combineert alle vragen van één niveau uit alle boeken tot één kistpool.
+// Vragen met kist: false blijven buiten de kisten. Dat zijn vragen die alleen
+// binnen de boekmodus te begrijpen zijn, bijvoorbeeld omdat ze verwijzen naar
+// "deze brief" — in de kist weet de speler niet welk boek dat is, en de
+// boeknaam toevoegen zou het antwoord verklappen.
 function alleVragenVoorNiveau(niveau) {
     let pool = [];
     for (const boek in vragenData) {
         if (vragenData[boek][niveau]) {
-            pool = pool.concat(vragenData[boek][niveau]);
+            pool = pool.concat(
+                vragenData[boek][niveau].filter(v => v.kist !== false)
+            );
         }
     }
     return pool;
