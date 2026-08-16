@@ -47,6 +47,10 @@ images/_oud-boeken/
 # maak-vragen-export.py (dat script gaat WEL de repo in). Nooit met de hand
 # bewerken; opnieuw maken met: python maak-vragen-export.py
 vragen-export.md
+# kist-export.md wordt op dezelfde manier opgebouwd door maak-kist-export.py
+# (dat script gaat ook WEL de repo in). Opnieuw maken met:
+# python maak-kist-export.py
+kist-export.md
 
 # --- Python-rommel (de repo bevat hulpscripts zoals maak-vragen-export.py) ---
 __pycache__/
