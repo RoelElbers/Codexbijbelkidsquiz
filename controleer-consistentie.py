@@ -754,6 +754,119 @@ def controle_kist(bron, pools):
     info("Alleen exact `kist: false` houdt een vraag buiten de kisten; zulke "
          "vragen blijven wel gewoon in de boekmodus staan.")
 
+    controle_boekmodus(pools)
+
+
+# ---------------------------------------------------------------------------
+#  8b. Leeshulp: vragen die om hun eigen boek vragen
+# ---------------------------------------------------------------------------
+#
+# In de boekmodus weet de speler welk boek hij speelt; "deze brief" en "de
+# schrijver" wijzen dan vanzelf. In een kist komen alle boeken door elkaar en
+# is diezelfde vraag ineens een raadsel. Dit onderdeel zoekt vragen die zo'n
+# verwijzing bevatten zonder dat hun eigen boek ergens in de vraagtekst staat.
+#
+# Nadrukkelijk een LEESHULP en geen fout: een vraag die "aan het begin" zegt
+# maar verder op zichzelf staat, is prima. De lijst is bedoeld om er met het
+# oog langs te gaan, niet om leeg gemaakt te worden. Vandaar WAARSCHUWING en
+# geen PROBLEEM — de exitcode blijft 0.
+#
+# Vragen met kist: false slaan we over: die zitten al niet in de kist.
+
+# Patronen die naar context buiten de vraag wijzen. Hoofdletterongevoelig.
+CONTEXTPATRONEN = [
+    "deze brief", "deze brieven", "deze twee brieven",
+    "dit boek", "dit evangelie", "deze gemeente", "dit hoofdstuk",
+    "de schrijver", "de brief", "het boek",
+    "aan het eind", "aan het begin", "helemaal aan het",
+    "de eerste brief", "de tweede brief", "de derde brief",
+]
+
+# "hoofdstuk 3" en varianten; los patroon omdat er een cijfer in zit.
+CONTEXT_HOOFDSTUK = re.compile(r"hoofdstuk\s*\d")
+
+# Waaraan je ziet dat een vraag haar eigen boek zelf noemt. Bewust fragmenten
+# en geen volledige namen: "Matte" vangt ook Mattheüs, "Korint" vangt zowel
+# Korintiërs als Korinte.
+BOEKDELEN = {
+    "Matteüs": ["Matte"],
+    "Marcus": ["Marcus"],
+    "Lucas": ["Lucas"],
+    "Johannes": ["Johannes"],
+    "Handelingen": ["Handelingen"],
+    "Romeinen": ["Romein", "Rome"],
+    "1 & 2 Korintiërs": ["Korint"],
+    "Galaten": ["Galat"],
+    "Efeziërs": ["Efez"],
+    "Filippenzen": ["Filipp"],
+    "Kolossenzen & Filemon": ["Kolos", "Filemon"],
+    "1 & 2 Tessalonicenzen": ["Tessalon"],
+    "Timoteüs & Titus": ["Timote", "Titus"],
+    "Hebreeën": ["Hebree"],
+    "Jakobus": ["Jakobus"],
+    "Petrus & Judas": ["Petrus", "Judas"],
+    "Brieven van Johannes": ["Johannes"],
+    "Openbaring": ["Openbaring"],
+}
+
+
+def _contextverwijzing(vraagtekst):
+    """Het eerste patroon dat aanslaat, of None."""
+    laag = vraagtekst.lower()
+    for patroon in CONTEXTPATRONEN:
+        if patroon in laag:
+            return patroon
+    m = CONTEXT_HOOFDSTUK.search(laag)
+    if m:
+        return m.group(0)
+    return None
+
+
+def _noemt_eigen_boek(vraagtekst, boek):
+    laag = vraagtekst.lower()
+    return any(deel.lower() in laag for deel in BOEKDELEN.get(boek, []))
+
+
+def controle_boekmodus(pools):
+    schrijf()
+    schrijf("  " + "-" * 74)
+    schrijf("  Leeshulp: vragen die alleen binnen de boekmodus te begrijpen zijn")
+    schrijf("  " + "-" * 74)
+
+    treffers = 0
+    for boek in pools:
+        if boek not in BOEKDELEN:
+            # Nieuw boek zonder herkenningsdelen: dan kan deze controle er
+            # niets zinnigs over zeggen en zou hij stilletjes overslaan.
+            waarschuwing("'%s' heeft geen herkenningsdelen in BOEKDELEN; de "
+                         "leeshulp slaat dit boek over" % boek)
+            continue
+        aanwezig = list(pools[boek])
+        geordend = [n for n in NIVEAUS if n in aanwezig]
+        geordend += [n for n in aanwezig if n not in NIVEAUS]
+        for niveau in geordend:
+            for vraag in pools[boek].get(niveau, []):
+                if not isinstance(vraag, dict):
+                    continue
+                if vraag.get(KIST_VELD) is False:
+                    continue
+                vraagtekst = vraag.get("vraag") or ""
+                patroon = _contextverwijzing(vraagtekst)
+                if not patroon:
+                    continue
+                if _noemt_eigen_boek(vraagtekst, boek):
+                    continue
+                treffers += 1
+                waarschuwing("%s / %s: %r maar noemt het boek niet zelf (%s...)"
+                             % (boek, NIVEAU_LABEL.get(niveau, niveau), patroon,
+                                vraagtekst[:60]))
+
+    info("vragen die om hun boek vragen : %d" % treffers)
+    info("Dit is een leeshulp, geen fout: sommige treffers zijn prima en mogen "
+         "blijven staan.")
+    info("Klopt een treffer wel, dan zijn er twee uitwegen: de boeknaam in de "
+         "vraag zetten, of de vraag `kist: false` geven.")
+
 
 # ---------------------------------------------------------------------------
 
