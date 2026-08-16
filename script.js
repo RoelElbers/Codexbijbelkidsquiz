@@ -7039,20 +7039,25 @@ function toonKist(kistKey) {
     }
 }
 
-// Verborgen schat: de diamanten kist. Leest met getKistStatus() de drie kisten
-// uit. Zijn brons, zilver én goud allemaal "verdiend" -> volle diamanten kist
-// (filter eraf: class .vergrendeld weg). Anders -> vergrendelde/schaduw-staat
-// (class .vergrendeld erop, die de CSS-filtertruc toepast). Verandert niets aan
-// de win-logica of de bestaande kist-schaduw-afbeeldingen; leest alleen uit.
+// De diamanten kist kent drie staten. Brons/zilver/goud alle drie verdiend
+// opent de VRAGENPOOL: de kist wordt klikbaar (.speelbaar) maar blijft een
+// donker silhouet (.vergrendeld). Pas na 10/10 in de Verborgen Schat-quiz
+// valt het silhouet weg en verschijnt de volle diamant. Die twee dingen staan
+// dus los van elkaar: spelen mag eerder dan verschijnen.
 function werkVerborgenSchatBij() {
     const img = document.getElementById("kist-diamant");
     if (!img) return;
 
-    const alleVerdiend = alleKistKeys.every(
+    img.classList.toggle("speelbaar", magVerborgenSchatSpelen());
+    img.classList.toggle("vergrendeld", !isVerborgenSchatOntgrendeld());
+}
+
+// De vragenpool van de Verborgen Schat gaat open zodra alle drie de kisten
+// verdiend zijn. Los van de vraag of de speler hem al gewonnen heeft.
+function magVerborgenSchatSpelen() {
+    return alleKistKeys.every(
         (kistKey) => getKistStatus(kistKey) === "verdiend"
     );
-
-    img.classList.toggle("vergrendeld", !alleVerdiend);
 }
 
 // Beginner → brons, Gevorderd → zilver, Expert → goud
@@ -8193,9 +8198,10 @@ function husselArray(bron) {
 // Start de Verborgen Schat-quiz. Zelfde startstramien als openSchatkist, maar
 // met de eigen modus "verborgen" en de testvraag (antwoorden gehusseld).
 function openVerborgenSchat() {
-    // Alleen spelen als de kist onthuld is (niet vergrendeld).
-    const img = document.getElementById("kist-diamant");
-    if (img && img.classList.contains("vergrendeld")) return;
+    // Toegangspoort: alleen spelen als de pool open is. Bewust NIET op de
+    // class in de DOM controleren — als dat element ontbreekt, zou zo'n
+    // controle stilzwijgend doorlaten.
+    if (!magVerborgenSchatSpelen() && !afstelModus) return;
 
     oefenModus = false;
     gekozenModus = "verborgen";
@@ -9656,10 +9662,10 @@ function bouwZaal(zaalEl, zaal) {
             if (k.kist === "diamant") {
                 img.src = "images/kist-diamant.webp";
                 img.alt = "Verborgen diamanten schatkist";
-                const alleVerdiend = afstelModus || alleKistKeys.every(
-                    (kistKey) => getKistStatus(kistKey) === "verdiend"
-                );
-                img.classList.toggle("vergrendeld", !alleVerdiend);
+                // In de zaal is de diamant niet klikbaar; hij toont alleen of
+                // de Verborgen Schat al ontdekt is. Donker tot 10/10.
+                const ontdekt = afstelModus || isVerborgenSchatOntgrendeld();
+                img.classList.toggle("vergrendeld", !ontdekt);
             } else {
                 const status = afstelModus ? "verdiend" : getKistStatus(k.kist);
                 img.src = kistAfbeeldingen[k.kist][status];
@@ -10719,7 +10725,7 @@ function eindScherm() {
     // Verborgen Schat: voorlopig geen beloning-/10-goed-logica. Een eenvoudig
     // slot met de score en een Terug-knop, los van de trofee-/kist-afhandeling.
     if (gekozenModus === "verborgen") {
-        // Winvoorwaarde: alle vragen goed (6/6). Dan is de Verborgen Schat ontdekt
+        // Winvoorwaarde: alle vragen goed (10/10). Dan is de Verborgen Schat ontdekt
         // en zetten we de vlag, zodat de naslagpagina ontgrendelt. Idempotent —
         // opnieuw spelen mag en houdt de vlag gewoon op "waar".
         const allesGoed = score === vragen.length;

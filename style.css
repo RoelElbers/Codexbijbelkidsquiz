@@ -1657,12 +1657,30 @@ height: 22%;
     filter: brightness(0.4) opacity(0.85);
 }
 
-/* Zodra de kist onthuld is (niet vergrendeld) wordt hij klikbaar: een klik
-   opent de Verborgen Schat-quiz. Vergrendeld blijft niet-klikbaar (de basis-
-   regel houdt pointer-events: none). */
-.kist-diamant:not(.vergrendeld) {
+/* De diamant kent drie staten, gestuurd door twee losse classes:
+     .vergrendeld            -> donker silhouet (visueel)
+     .speelbaar              -> klikbaar (gedrag)
+   pool dicht  = .vergrendeld
+   pool open   = .vergrendeld .speelbaar  (donker, maar wel te spelen)
+   verdiend    = .speelbaar               (volle diamant)
+   Donker en klikbaar staan los van elkaar: de speler mag de Verborgen Schat
+   spelen zodra brons/zilver/goud binnen zijn, maar de diamant verschijnt pas
+   echt na 10/10 in die quiz. */
+.kist-diamant.speelbaar {
     pointer-events: auto;
     cursor: pointer;
+}
+
+/* Bij hover licht de kist iets op, zodat zichtbaar is dat er geklikt kan
+   worden. Werkt in beide klikbare staten; bij de donkere staat blijft het
+   silhouet donker maar wordt het net iets helderder. */
+.kist-diamant.speelbaar:hover {
+    filter: brightness(0.55) opacity(1)
+            drop-shadow(0 0 8px rgba(255, 255, 255, 0.55));
+}
+
+.kist-diamant.speelbaar:not(.vergrendeld):hover {
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
 }
 
 /* =========================
