@@ -1,0 +1,49 @@
+# Projectinstructies — Bijbelkidsquiz
+
+Vaste conventies van dit project. Volg ze zonder er per sessie naar te vragen.
+
+## Commits
+
+- **Geen `Co-Authored-By`-trailer.** Deze repository gebruikt die conventie niet.
+  Voeg hem aan geen enkele commit toe.
+- **Rechtstreeks op `main`.** Geen feature-branches, geen pull requests.
+- **Eén milestone per commit.** Niet meerdere losse wijzigingen samen.
+- Schrijf het commitbericht naar een tijdelijk bestand en gebruik
+  `git commit -F <bestand>`, zodat er geen editor nodig is.
+
+## Cache-buster in `index.html`
+
+`style.css`, `lang/nl.js` en `script.js` dragen **samen één nummer** en gaan
+**altijd samen omhoog**, ook als er maar één van de drie is gewijzigd. Nooit per
+bestand ophogen, nooit terug in nummer. Lees de huidige stand uit `index.html`
+zelf (regel 22 voor de stylesheet, onderaan `<body>` voor de twee scripts).
+
+De favicons in `icons/` hebben een **eigen teller** en staan hier los van; die
+niet meebumpen.
+
+## Vervangingen in `script.js`
+
+Tekstvervangingen in `script.js` gaan via een **Python-script met een
+exact-match vervanging en `assert c == 1`**, niet met de hand en niet met een
+losse zoek-vervangactie. Zo is gegarandeerd dat precies één plek wordt geraakt.
+
+```python
+c = tekst.count(OUD)
+assert c == 1, "verwacht 1 treffer, gevonden %d" % c
+```
+
+## Controleren
+
+**Node staat niet op dit systeem** — `node --check` werkt niet (ook `deno`,
+`bun` en `npm` ontbreken). Gebruik in plaats daarvan:
+
+```
+python controleer-consistentie.py
+```
+
+Dat script leest `script.js` met een eigen JS-parser, is read-only en geeft
+exitcode 1 zodra er een probleem is.
+
+Na inhoudelijke wijzigingen aan vragen ook `python maak-vragen-export.py`
+draaien. `vragen-export.md` is automatisch gegenereerd, staat in `.gitignore` en
+wordt nooit met de hand bewerkt — corrigeer altijd in `script.js`.
