@@ -175,6 +175,18 @@ const vragenData = {
                 antwoorden: ["Johannes", "Petrus", "Andreas", "Jakobus"],
                 correct: "Petrus",
                 bijbelplaats: "Matteüs 14:28-31"
+            },
+            {
+                vraag: "Welke leerling verraadde Jezus voor dertig zilverstukken?",
+                antwoorden: ["Petrus", "Tomas", "Judas Iskariot", "Filippus"],
+                correct: "Judas Iskariot",
+                bijbelplaats: "Matteüs 26:14-16"
+            },
+            {
+                vraag: "Wat antwoordde Jezus toen hem werd gevraagd wat het grootste gebod is?",
+                antwoorden: ["Heb God lief, en je naaste als jezelf", "Breng elke dag trouw een offer in de tempel", "Eer je vader en moeder", "Houd de sabbat heilig"],
+                correct: "Heb God lief, en je naaste als jezelf",
+                bijbelplaats: "Matteüs 22:37-39"
             }
         ],
         advanced: [
@@ -185,22 +197,10 @@ const vragenData = {
                 bijbelplaats: "Matteüs 27:11-26"
             },
             {
-                vraag: "Welke leerling verraadde Jezus voor dertig zilverstukken?",
-                antwoorden: ["Petrus", "Tomas", "Judas Iskariot", "Filippus"],
-                correct: "Judas Iskariot",
-                bijbelplaats: "Matteüs 26:14-16"
-            },
-            {
                 vraag: "Het zaad viel in de gelijkenis van de zaaier op vier plekken. Welke plek hoort daar niet bij?",
                 antwoorden: ["Op het pad", "Op de rotsbodem", "Tussen de distels", "In het water"],
                 correct: "In het water",
                 bijbelplaats: "Matteüs 13:3-8"
-            },
-            {
-                vraag: "Wat antwoordde Jezus toen hem werd gevraagd wat het grootste gebod is?",
-                antwoorden: ["Heb God lief, en je naaste als jezelf", "Breng elke dag trouw een offer in de tempel", "Eer je vader en moeder", "Houd de sabbat heilig"],
-                correct: "Heb God lief, en je naaste als jezelf",
-                bijbelplaats: "Matteüs 22:37-39"
             },
             {
                 vraag: "Wat gebeurde er op het moment dat Jezus aan het kruis stierf?",
@@ -237,6 +237,18 @@ const vragenData = {
                 antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Blijf voortaan allemaal samen in de stad Jeruzalem wonen", "Schrijf een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
+            },
+            {
+                vraag: "Welke drie geschenken brachten de wijzen uit het oosten aan het kind Jezus?",
+                antwoorden: ["Goud, wierook en mirre", "Brood, wijn en olie", "Goud, zilver en koper", "Water, zout en graan"],
+                correct: "Goud, wierook en mirre",
+                bijbelplaats: "Matteüs 2:11"
+            },
+            {
+                vraag: "Wat at Johannes de Doper in de woestijn?",
+                antwoorden: ["Brood en vis", "Sprinkhanen en wilde honing", "Vijgen en dadels", "Niets, hij vastte altijd"],
+                correct: "Sprinkhanen en wilde honing",
+                bijbelplaats: "Matteüs 3:4"
             }
         ],
         expert: [
@@ -281,18 +293,6 @@ const vragenData = {
                 antwoorden: ["Redder", "God met ons", "Koning der koningen", "Vredevorst"],
                 correct: "God met ons",
                 bijbelplaats: "Matteüs 1:23"
-            },
-            {
-                vraag: "Welke drie geschenken brachten de wijzen uit het oosten aan het kind Jezus?",
-                antwoorden: ["Goud, wierook en mirre", "Brood, wijn en olie", "Goud, zilver en koper", "Water, zout en graan"],
-                correct: "Goud, wierook en mirre",
-                bijbelplaats: "Matteüs 2:11"
-            },
-            {
-                vraag: "Wat at Johannes de Doper in de woestijn?",
-                antwoorden: ["Brood en vis", "Sprinkhanen en wilde honing", "Vijgen en dadels", "Niets, hij vastte altijd"],
-                correct: "Sprinkhanen en wilde honing",
-                bijbelplaats: "Matteüs 3:4"
             },
             {
                 vraag: "Welke twee broers, vissers, riep Jezus als eersten om hem te volgen?",
@@ -1032,12 +1032,6 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
 // (10 uit de pool) pakt dat vanzelf op.
 vragenData["Matteüs"].advanced.push(
     {
-        vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
-        antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
-        correct: "De Bergrede",
-        bijbelplaats: "Matteüs 5:3"
-    },
-    {
         vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
         antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
         correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
@@ -1056,6 +1050,12 @@ vragenData["Matteüs"].expert.push(
         antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
         correct: "Jona",
         bijbelplaats: "Matteüs 12:39-40"
+    },
+    {
+        vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
+        antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
+        correct: "De Bergrede",
+        bijbelplaats: "Matteüs 5:3"
     }
 );
 vragenData["Marcus"].beginner.push(
@@ -1215,12 +1215,6 @@ vragenData["Matteüs"].beginner.push(
         uitleg: "Jezus zei tegen hen: 'Kom, volg mij, dan zal ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
     },
     {
-        vraag: "Met hoeveel broden en vissen gaf Jezus een grote menigte te eten?",
-        antwoorden: ["Vijf broden en twee vissen", "Twee broden en vijf vissen", "Tien broden en tien vissen", "Eén brood en één vis"],
-        correct: "Vijf broden en twee vissen",
-        bijbelplaats: "Matteüs 14:13-21"
-    },
-    {
         vraag: "Wat zei Jezus toen mensen de kinderen bij hem wilden weghouden?",
         antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
         correct: "Laat de kinderen bij mij komen",
@@ -1265,44 +1259,6 @@ vragenData["Matteüs"].beginner.push(
 // antwoord->correct) en niveau "gevorderd"->advanced. Elke vraag is op het
 // evangelie in zijn bijbelplaats geplaatst. Pool-/hussel-/win-/scorelogica
 // blijft ongemoeid; de niveaus worden alleen groter.
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: 'Een "el" is ongeveer zo lang als…',
-        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "De lengte van je arm van schouder tot pols (ongeveer 60 cm)", "De breedte van je hand (ongeveer 8 cm)"],
-        correct: "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)",
-        bijbelplaats: "Matteüs 6:27"
-    },
-    {
-        vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
-        antwoorden: ["Honderd meter", "Anderhalve kilometer", "Een halve kilometer", "Tien kilometer"],
-        correct: "Anderhalve kilometer",
-        bijbelplaats: "Matteüs 5:41"
-    },
-    {
-        vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
-        antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
-        correct: "Een maatbak om graan af te meten",
-        bijbelplaats: "Matteüs 5:15",
-        uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
-    }
-);
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
-        antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
-        correct: "Vijftien tot twintig jaar",
-        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
-    }
-);
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
-        antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
-        correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
-        bijbelplaats: "Matteüs 26:15",
-        uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin. Het bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
-    }
-);
 vragenData["Marcus"].beginner.push(
     {
         vraag: "Welk muntje was het allerkleinste dat in de Bijbel voorkomt?",
@@ -1401,6 +1357,44 @@ vragenData["Matteüs"].expert.push(
         correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
         bijbelplaats: "Matteüs 27:46-50",
         uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: in het boek Handelingen lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
+    },
+    {
+        vraag: "Met hoeveel broden en vissen gaf Jezus een grote menigte te eten?",
+        antwoorden: ["Vijf broden en twee vissen", "Twee broden en vijf vissen", "Tien broden en tien vissen", "Eén brood en één vis"],
+        correct: "Vijf broden en twee vissen",
+        bijbelplaats: "Matteüs 14:13-21"
+    },
+    {
+        vraag: 'Een "el" is ongeveer zo lang als…',
+        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "De lengte van je arm van schouder tot pols (ongeveer 60 cm)", "De breedte van je hand (ongeveer 8 cm)"],
+        correct: "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)",
+        bijbelplaats: "Matteüs 6:27"
+    },
+    {
+        vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
+        antwoorden: ["Honderd meter", "Anderhalve kilometer", "Een halve kilometer", "Tien kilometer"],
+        correct: "Anderhalve kilometer",
+        bijbelplaats: "Matteüs 5:41"
+    },
+    {
+        vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
+        antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
+        correct: "Een maatbak om graan af te meten",
+        bijbelplaats: "Matteüs 5:15",
+        uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
+    },
+    {
+        vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
+        antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
+        correct: "Vijftien tot twintig jaar",
+        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
+    },
+    {
+        vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
+        antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
+        correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
+        bijbelplaats: "Matteüs 26:15",
+        uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin. Het bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
     }
 );
 
@@ -1495,6 +1489,12 @@ vragenData["Matteüs"].beginner.push(
         antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze moesten stoppen met vissen"],
         correct: "Dat ze mensen bij God zouden brengen",
         bijbelplaats: "Matteüs 4:19"
+    },
+    {
+        vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
+        antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+        correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
+        bijbelplaats: "Matteüs 9:9"
     }
 );
 vragenData["Matteüs"].advanced.push(
@@ -6175,10 +6175,7 @@ vragenData["Matteüs"].expert.push(
         antwoorden: ["Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken", "Zweren was helemaal verboden en zij deden het toch", "Zij zwoeren bij goud, en dat was afgoderij", "Alleen priesters mochten een eed afleggen"],
         correct: "Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken",
         bijbelplaats: "Matteüs 23:16"
-    }
-);
-
-vragenData["Matteüs"].advanced.push(
+    },
     {
         vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom een bruidegom lang op zich kon laten wachten, vertelt de gelijkenis niet — maar wat weten we wel over hoe een bruiloft begon?",
         antwoorden: ["De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
@@ -6538,6 +6535,12 @@ vragenData["Matteüs"].expert.push(
         antwoorden: ["Van dierenhuid, die meerekte als de wijn ging gisten", "Van geweven stof met pek aan de binnenkant", "Van gevlochten riet met een deksel erop", "Van gebakken klei met een nauwe hals"],
         correct: "Van dierenhuid, die meerekte als de wijn ging gisten",
         bijbelplaats: "Matteüs 9:17"
+    },
+    {
+        vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
+        antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
+        correct: "De top van de graanhalm, waar de korrels in zitten",
+        bijbelplaats: "Matteüs 12:1"
     }
 );
 
@@ -6661,18 +6664,6 @@ vragenData["Efeziërs"].expert.push(
 // woord zelf, uit de vraag, of het is bekend bijbelstof.
 // =====================================================================
 vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
-        antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
-        correct: "De top van de graanhalm, waar de korrels in zitten",
-        bijbelplaats: "Matteüs 12:1"
-    },
-    {
-        vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
-        antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
-        correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
-        bijbelplaats: "Matteüs 9:9"
-    },
     {
         vraag: "Jezus zegt: laat geen bazuin voor je uit blazen als je een aalmoes geeft. Wat is een aalmoes?",
         antwoorden: ["Een gift aan iemand die arm is", "Een offer dat je in de tempel bracht", "Een belasting die je aan de Romeinen betaalde", "Een geschenk dat je aan een gast meegaf"],
