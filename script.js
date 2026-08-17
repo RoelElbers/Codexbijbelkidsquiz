@@ -1124,12 +1124,6 @@ vragenData["Lucas"].beginner.push(
         antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
         correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
         bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
-    },
-    {
-        vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
-        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
-        correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
-        bijbelplaats: "Lucas 15:18"
     }
 );
 vragenData["Lucas"].advanced.push(
@@ -1150,6 +1144,12 @@ vragenData["Lucas"].advanced.push(
         antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
         correct: "De bevrijding uit de slavernij in Egypte",
         bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
+    },
+    {
+        vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
+        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
+        correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
+        bijbelplaats: "Lucas 15:18"
     }
 );
 vragenData["Lucas"].expert.push(
@@ -6247,15 +6247,6 @@ vragenData["Marcus"].expert.push(
     }
 );
 
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "In de gelijkenis zegt iemand dat hij vijf span ossen heeft gekocht. Wat is een span?",
-        antwoorden: ["Twee ossen die samen onder één juk trekken", "Een os met een wagen erachter", "De hoeveelheid land die één os op een dag ploegt", "Het touw waarmee een os wordt vastgezet"],
-        correct: "Twee ossen die samen onder één juk trekken",
-        bijbelplaats: "Lucas 14:19"
-    }
-);
-
 vragenData["Lucas"].expert.push(
     {
         vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
@@ -6274,6 +6265,12 @@ vragenData["Lucas"].expert.push(
         antwoorden: ["Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
         correct: "Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen",
         bijbelplaats: "Lucas 22:31"
+    },
+    {
+        vraag: "In de gelijkenis zegt iemand dat hij vijf span ossen heeft gekocht. Wat is een span?",
+        antwoorden: ["Twee ossen die samen onder één juk trekken", "Een os met een wagen erachter", "De hoeveelheid land die één os op een dag ploegt", "Het touw waarmee een os wordt vastgezet"],
+        correct: "Twee ossen die samen onder één juk trekken",
+        bijbelplaats: "Lucas 14:19"
     }
 );
 
