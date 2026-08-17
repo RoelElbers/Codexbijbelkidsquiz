@@ -5814,11 +5814,11 @@ vragenData["Marcus"].expert.push(
 
 vragenData["Marcus"].advanced.push(
     {
-        vraag: "De vrouwen kochten specerijen om Jezus te zalven. Waarvoor dienden die?",
-        antwoorden: ["Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode", "Om het lichaam te bewaren zoals in Egypte gebeurde", "Om de dode warm te houden in het koude graf", "Om het graf te ontsmetten voor de bezoekers"],
-        correct: "Om de geur van het lichaam te verzachten, als teken van eerbied voor de dode",
+        vraag: "De vrouwen kochten welriekende kruiden om Jezus te zalven. Wat wilden zij daarmee laten zien?",
+        antwoorden: ["Eerbied en genegenheid voor iemand die hun dierbaar was", "Dat zij geloofden dat Jezus uit de dood zou opstaan", "Dat zij rijker waren dan de andere leerlingen van Jezus", "Dat zij niet bang waren voor de wachters bij het graf"],
+        correct: "Eerbied en genegenheid voor iemand die hun dierbaar was",
         bijbelplaats: "Marcus 16:1",
-        uitleg: "Men balsemde in Israël niet zoals in Egypte. Wat men deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging het lichaam te bewaren. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond specerijen en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor hem konden doen."
+        uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
     }
 );
 
