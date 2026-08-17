@@ -227,10 +227,10 @@ const vragenData = {
                 bijbelplaats: "Matteüs 5:39"
             },
             {
-                vraag: "Welke koning liet alle jongetjes in Betlehem doden uit angst voor de pasgeboren koning?",
-                antwoorden: ["Herodes", "Farao", "Nebukadnessar", "Saul"],
-                correct: "Herodes",
-                bijbelplaats: "Matteüs 2:16"
+                vraag: "Een engel waarschuwde Jozef in een droom dat koning Herodes het kind Jezus zocht. Wat moest hij doen?",
+                antwoorden: ["Met Maria en het kind naar Egypte vluchten", "Het kind in het geheim bij familie in Nazaret verbergen", "Zo snel mogelijk naar koning Herodes gaan", "Met het gezin de bergen bij Betlehem in trekken"],
+                correct: "Met Maria en het kind naar Egypte vluchten",
+                bijbelplaats: "Matteüs 2:13"
             },
             {
                 vraag: "Wat was de laatste opdracht die Jezus aan zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
@@ -1548,8 +1548,8 @@ vragenData["Matteüs"].expert.push(
     },
     {
         vraag: "De wijzen uit het oosten brachten goud, wierook en mirre. Wat is mirre?",
-        antwoorden: ["Een kostbare hars die ook bij het balsemen werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
-        correct: "Een kostbare hars die ook bij het balsemen werd gebruikt",
+        antwoorden: ["Een kostbare hars die ook bij een begrafenis werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
+        correct: "Een kostbare hars die ook bij een begrafenis werd gebruikt",
         bijbelplaats: "Matteüs 2:11"
     }
 );
@@ -5534,13 +5534,6 @@ vragenData["Openbaring"] = {
 // =====================================================================
 vragenData["1 & 2 Tessalonicenzen"].advanced.push(
     {
-        vraag: "Paulus noemt gestorven gelovigen \"zij die slapen\". Waarom koos hij juist dat woord?",
-        antwoorden: ["Omdat je uit een slaap weer wakker wordt", "Omdat gelovigen zonder pijn en angst sterven", "Omdat je in een graf ligt zoals in een bed", "Omdat niemand weet wanneer iemand sterft"],
-        correct: "Omdat je uit een slaap weer wakker wordt",
-        bijbelplaats: "1 Tessalonicenzen 4:13",
-        uitleg: "Paulus zegt niet dat sterven niet erg is — hij schrijft juist aan mensen die verdrietig zijn. Maar met dit woord zegt hij wel: dit is niet het einde. De vroege christenen noemden hun begraafplaats daarom een koimeterion, Grieks voor slaapplaats. Daar komt het Engelse woord cemetery nog altijd vandaan."
-    },
-    {
         vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld denkt hij bij dat woord?",
         antwoorden: ["Aan een vuur waar iemand water overheen gooit", "Aan een olielamp die na een lange nacht leegraakt", "Aan een fakkel die van hand tot hand gaat", "Aan een kaars die je mee naar buiten neemt"],
         correct: "Aan een vuur waar iemand water overheen gooit",
@@ -5870,16 +5863,6 @@ vragenData["Johannes"].expert.push(
         correct: "Een paar honderd soldaten, een tiende deel van een legioen",
         bijbelplaats: "Johannes 18:3",
         uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
-    }
-);
-
-vragenData["Hebreeën"].expert.push(
-    {
-        vraag: "De brief aan de Hebreeën zegt dat Jezus buiten de poort heeft geleden. Waarom vonden kruisigingen buiten de stad plaats?",
-        antwoorden: ["Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte", "Omdat er binnen de muren geen ruimte was", "Omdat de Romeinen het binnen de stad niet mochten van de keizer", "Omdat het buiten stiller was voor de familie"],
-        correct: "Langs een drukke weg, als afschrikking, en omdat een dode de stad onrein maakte",
-        bijbelplaats: "Hebreeën 13:12",
-        uitleg: "Een dode maakte volgens de wet onrein, dus begraafplaatsen en terechtstellingen hoorden buiten de stadsmuur. De Romeinen kozen daarbij bewust een plek langs een drukke weg, zodat iedereen die de stad in kwam het zag. De schrijver van Hebreeën legt daar nog een tweede laag onder: op de Grote Verzoendag werd het offerdier ook buiten het kamp gebracht en daar verbrand. Buiten de poort is voor hem dus niet zomaar een plaatsaanduiding, maar een verwijzing naar dat oude gebruik."
     }
 );
 
@@ -6487,10 +6470,10 @@ vragenData["Handelingen"].expert.push(
 vragenData["Marcus"].expert.push(
     {
         vraag: "Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank?",
-        antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Azijn dat men gebruikte om wonden te reinigen", "Een gifdrank die de dood moest bespoedigen"],
+        antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Wijn uit de tempel, die alleen de priesters mochten drinken", "Een dure wijn die een rijke voorbijganger had meegebracht"],
         correct: "Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst",
         bijbelplaats: "Marcus 15:36",
-        uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen wrede grap: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
+        uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen pesterij: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
     }
 );
 
@@ -6714,9 +6697,9 @@ vragenData["Marcus"].advanced.push(
         bijbelplaats: "Marcus 9:42"
     },
     {
-        vraag: "Voordat Jezus werd gekruisigd, liet Pilatus hem geselen. Wat betekent dat?",
-        antwoorden: ["Slaan met een zweep, een straf die de Romeinen vaak vooraf gaven", "Vastbinden aan een paal op het plein", "Berechten door een tweede rechter", "Het hoofd kaal scheren als teken van schande"],
-        correct: "Slaan met een zweep, een straf die de Romeinen vaak vooraf gaven",
+        vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij hem kruisigen. Waarom deed hij dat volgens Marcus?",
+        antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Hij was zelf bang geworden voor Jezus"],
+        correct: "Hij wilde het volk zijn zin geven",
         bijbelplaats: "Marcus 15:15"
     }
 );
