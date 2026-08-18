@@ -46,18 +46,26 @@ Het gaat om deze vraagwoorden, hoofdletterongevoelig:
 
 De controle kijkt naar de **slotzin**: alles na het laatste zinseinde
 (`.` `:` `;` `!` `?` `—` `–`), of de hele vraag als dat er niet is.
-Bestaat die slotzin uit niets anders dan een vraagwoord, eventueel met één
-voorzetsel ervoor, dan is de vraag niet af.
+Bestaat die slotzin uit niets anders dan één of meer *blokjes*, dan is de
+vraag niet af. Een blokje is een vraagwoord met hooguit één voorzetsel
+ervoor; tussen twee blokjes staat witruimte, eventueel met een komma, 'en'
+of 'of' ertussen.
 
 > aan, bij, door, in, met, na, naar, om, op, over, tot, tussen, uit, van,
 > voor, zonder
 
-Dus `... zeiden iets tegen hen. Wat?`, `... spaarden geld op. Waarvoor?` en
-`... voor iemand kunt doen. Voor wie?` mogen niet. Een volledige zin die
-toevallig op een vraagwoord eindigt mag wél: `Paulus zegt: doe alles in de
-naam van wie?` is goed, want daar hoort het kind precies wat er gevraagd
-wordt. Woorden die toevallig op een vraagwoord eindigen ('zowat?',
-'vanwaar?') slaan niet aan.
+Dus deze mogen geen van alle:
+
+> `... zeiden iets tegen hen. Wat?` — `... spaarden geld op. Waarvoor?`
+> `... voor iemand kunt doen. Voor wie?` — `... naar het andere. Van welk
+> naar welk?` — `Met wie en waarom?` — `Wie, wat, waar?`
+
+Een volledige zin die toevallig op een vraagwoord eindigt mag wél: `Paulus
+zegt: doe alles in de naam van wie?` is goed, want daar hoort het kind
+precies wat er gevraagd wordt. Zodra er buiten de blokjes nog een gewoon
+woord in de slotzin staat, slaat de controle niet aan — `Van welk rijk naar
+welk rijk gingen zij?` is dus in orde. Woorden die toevallig op een
+vraagwoord eindigen ('zowat?', 'vanwaar?') slaan evenmin aan.
 
 **`controleer-consistentie.py` controleert hierop** (sectie 9), over
 `vragenData` en over de losse pools `verborgenSchatVragen` en

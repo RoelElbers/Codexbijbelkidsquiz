@@ -911,12 +911,20 @@ ZINSEINDEN = ".:;!?\u2014\u2013"
 # "... telt vanaf de geboorte van wie?" toegestaan: dat is een volledige zin
 # die toevallig op een vraagwoord eindigt, en het kind hoort precies wat er
 # gevraagd wordt.
+# Een blokje is een vraagwoord met hooguit een voorzetsel ervoor. De slotzin
+# mag ook uit meer van die blokjes achter elkaar bestaan: "Van welk naar
+# welk?", "Met wie en waarom?", "Wie, wat, waar?" zijn stuk voor stuk net zo
+# kaal als "Wat?". Tussen twee blokjes staat witruimte, eventueel met een
+# komma, "en" of "of" ertussen.
+_VZ = "|".join(sorted((re.escape(v) for v in VOORZETSELS),
+                      key=len, reverse=True))
+_VW = "|".join(sorted((re.escape(w) for w in VRAAGWOORDEN),
+                      key=len, reverse=True))
+_BLOKJE = r"(?:(?:%s)\s+)?(?:%s)" % (_VZ, _VW)
+_SCHEIDING = r"(?:\s*,\s*|\s+)(?:(?:en|of)\s+)?"
+
 KALE_SLOTZIN = re.compile(
-    r"^(?:(?:%s)\s+)?(%s)$"
-    % ("|".join(sorted((re.escape(v) for v in VOORZETSELS),
-                       key=len, reverse=True)),
-       "|".join(sorted((re.escape(w) for w in VRAAGWOORDEN),
-                       key=len, reverse=True))),
+    r"^%s(?:%s%s)*$" % (_BLOKJE, _SCHEIDING, _BLOKJE),
     re.IGNORECASE | re.UNICODE,
 )
 
@@ -937,13 +945,16 @@ def _slotzin(vraagtekst):
     return kern[grens + 1:].strip()
 
 
-def _losstaand_vraagwoord(vraagtekst):
-    """Het afgekeurde slotwoord, of None als de vraag in orde is."""
+def _kale_slotzin(vraagtekst):
+    """De afgekeurde slotzin, of None als de vraag in orde is.
+
+    Levert de slotzin zoals hij in het bestand staat op, niet de
+    accentloze versie waarop vergeleken wordt.
+    """
     slot = _slotzin(vraagtekst)
     if not slot:
         return None
-    m = KALE_SLOTZIN.match(_zonder_accenten(slot))
-    return m.group(1) if m else None
+    return slot if KALE_SLOTZIN.match(_zonder_accenten(slot)) else None
 
 
 def _vraagbronnen(bron, pools, meldingen):
@@ -987,9 +998,9 @@ def controle_vraagwoorden(bron, pools):
         gescand += 1
         per_bron[bronnaam] = per_bron.get(bronnaam, 0) + 1
         vraagtekst = vraag.get("vraag") or ""
-        woord = _losstaand_vraagwoord(vraagtekst)
-        if woord:
-            treffers.append((bronnaam, boek, niveau, index, woord, vraagtekst))
+        slot = _kale_slotzin(vraagtekst)
+        if slot:
+            treffers.append((bronnaam, boek, niveau, index, slot, vraagtekst))
 
     for melding in meldingen:
         waarschuwing("parser: %s" % melding)
@@ -1000,10 +1011,10 @@ def controle_vraagwoorden(bron, pools):
         info("gescand: %-22s %d vragen" % (bronnaam, per_bron[bronnaam]))
     info("gescand: %-22s %d vragen" % ("TOTAAL", gescand))
 
-    for bronnaam, boek, niveau, index, woord, vraagtekst in treffers:
-        probleem("%s / %s / %s / index %d eindigt op het losstaande "
-                 "vraagwoord '%s': %s"
-                 % (bronnaam, boek, niveau, index, woord, vraagtekst))
+    for bronnaam, boek, niveau, index, slot, vraagtekst in treffers:
+        probleem("%s / %s / %s / index %d eindigt op de kale slotzin "
+                 "'%s?': %s"
+                 % (bronnaam, boek, niveau, index, slot, vraagtekst))
 
     if not treffers:
         ok("geen enkele vraag eindigt op een losstaand vraagwoord.")
