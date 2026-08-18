@@ -72,6 +72,17 @@ vraagwoord eindigen ('zowat?', 'vanwaar?') slaan evenmin aan.
 `metgezellenVragen`. Een treffer is een PROBLEEM, geen waarschuwing: de
 exitcode wordt 1.
 
+### Aanvulzinnen
+
+Een vraag mag ook een zin zijn die het kind zelf afmaakt. Die eindigt dan op
+het ellipsisteken `…` — **niet** op drie losse punten, en **zonder**
+vraagteken, want grammaticaal is het een aanvulzin en geen vraag.
+
+> `Paulus zegt: wat je ook doet, doe het…`
+
+De vraagwoordcontrole laat deze vragen met rust: die kijkt alleen naar
+teksten die op een vraagteken eindigen.
+
 ## Controleren
 
 **Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in

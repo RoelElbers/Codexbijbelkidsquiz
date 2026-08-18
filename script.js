@@ -1711,7 +1711,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 10:9"
         },
         {
-            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal …?",
+            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal …",
             antwoorden: ["gered worden", "alles begrijpen", "nooit meer verdrietig zijn", "een teken zien"],
             correct: "gered worden",
             bijbelplaats: "Romeinen 10:13"
@@ -1729,7 +1729,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 12:15"
         },
         {
-            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar …?",
+            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar …",
             antwoorden: ["liefhebben", "gehoorzamen", "bewonderen", "volgen"],
             correct: "liefhebben",
             bijbelplaats: "Romeinen 13:8"
@@ -1741,13 +1741,13 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 13:9"
         },
         {
-            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de …?",
+            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de …",
             antwoorden: ["hoop", "oorlog", "donkerte", "stilte"],
             correct: "hoop",
             bijbelplaats: "Romeinen 15:13"
         },
         {
-            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees …?",
+            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees …",
             antwoorden: ["gastvrij", "streng", "stil", "snel"],
             correct: "gastvrij",
             bijbelplaats: "Romeinen 12:13"
@@ -2366,7 +2366,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 10:31"
         },
         {
-            vraag: "Over de gaven (talenten) in de gemeente zegt Paulus: er zijn er veel, maar...",
+            vraag: "Over de gaven (talenten) in de gemeente zegt Paulus: er zijn er veel, maar…",
             antwoorden: ["ze komen allemaal van dezelfde Geest", "alleen Paulus heeft ze", "ze zijn niet belangrijk", "je krijgt ze pas als je heel oud bent geworden"],
             correct: "ze komen allemaal van dezelfde Geest",
             bijbelplaats: "1 Korintiërs 12:4"
@@ -2428,7 +2428,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 6:19"
         },
         {
-            vraag: "Paulus zegt: als je alles kunt, maar je hebt geen liefde, dan...",
+            vraag: "Paulus zegt: als je alles kunt, maar je hebt geen liefde, dan…",
             antwoorden: ["ben je niets", "ben je toch nog knap bezig", "maakt het eigenlijk niet uit", "heb je in elk geval veel bereikt"],
             correct: "ben je niets",
             bijbelplaats: "1 Korintiërs 13:2"
@@ -2514,7 +2514,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 13:14"
         },
         {
-            vraag: "Paulus zegt dat de boodschap van het kruis voor sommige mensen dwaas lijkt, maar voor gelovigen is het...",
+            vraag: "Paulus zegt dat de boodschap van het kruis voor sommige mensen dwaas lijkt, maar voor gelovigen is het…",
             antwoorden: ["Gods kracht", "een grap", "onbelangrijk", "te moeilijk"],
             correct: "Gods kracht",
             bijbelplaats: "1 Korintiërs 1:18"
@@ -2614,7 +2614,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 5:13"
         },
         {
-            vraag: "Paulus zegt dat christenen elkaar moeten behandelen met...",
+            vraag: "Paulus zegt dat christenen elkaar moeten behandelen met…",
             antwoorden: ["liefde en vriendelijkheid", "strengheid en kou", "onverschilligheid", "ruzie"],
             correct: "liefde en vriendelijkheid",
             bijbelplaats: "Galaten 5:22"
@@ -2899,13 +2899,13 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 4:29"
         },
         {
-            vraag: "Paulus zegt: wees vriendelijk voor elkaar en...",
+            vraag: "Paulus zegt: wees vriendelijk voor elkaar en…",
             antwoorden: ["praat pas weer als de ander netjes zijn excuses aanbiedt", "ga uit elkaars buurt", "vergeef elkaar, zoals God jullie vergeven heeft", "denk alleen aan jezelf"],
             correct: "vergeef elkaar, zoals God jullie vergeven heeft",
             bijbelplaats: "Efeziërs 4:32"
         },
         {
-            vraag: "Paulus zegt dat christenen mogen leven als kinderen van het...",
+            vraag: "Paulus zegt dat christenen mogen leven als kinderen van het…",
             antwoorden: ["donker", "licht", "water", "vuur"],
             correct: "licht",
             bijbelplaats: "Efeziërs 5:8"
@@ -2917,7 +2917,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:11"
         },
         {
-            vraag: "Paulus zegt: volg het voorbeeld van God en leef in...",
+            vraag: "Paulus zegt: volg het voorbeeld van God en leef in…",
             antwoorden: ["liefde", "angst", "rijkdom", "macht"],
             correct: "liefde",
             bijbelplaats: "Efeziërs 5:1-2"
@@ -2935,7 +2935,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 3:18-19"
         },
         {
-            vraag: "Paulus benadrukt de eenheid van de gelovigen. Hij zegt: er is één lichaam en één...?",
+            vraag: "Paulus benadrukt de eenheid van de gelovigen. Hij zegt: er is één lichaam en één…",
             antwoorden: ["Geest", "hart", "stem", "huis"],
             correct: "Geest",
             bijbelplaats: "Efeziërs 4:4"
@@ -3033,7 +3033,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:14"
         },
         {
-            vraag: "Paulus noemt: één Heer, één geloof, en één...",
+            vraag: "Paulus noemt: één Heer, één geloof, en één…",
             antwoorden: ["land", "taal", "doop", "koning"],
             correct: "doop",
             bijbelplaats: "Efeziërs 4:5"
@@ -4876,7 +4876,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 11"
         },
         {
-            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar …?",
+            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar …",
             antwoorden: ["melk", "speelgoed", "slaap", "muziek"],
             correct: "melk",
             bijbelplaats: "1 Petrus 2:2"
