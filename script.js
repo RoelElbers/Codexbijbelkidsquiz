@@ -510,7 +510,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 4:3-9"
             },
             {
-                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel 'een stem roept in de woestijn, maak de weg van de Heer gereed' komt inderdaad uit Jesaja. Maar de andere regel — 'Ik zend mijn bode voor je uit, hij zal een weg voor je banen' — komt uit een ander Bijbelboek. Welk?",
+                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel 'een stem roept in de woestijn, maak de weg van de Heer gereed' komt inderdaad uit Jesaja. Maar de andere regel — 'Ik zend mijn bode voor je uit, hij zal een weg voor je banen' — komt uit een ander Bijbelboek. Uit welk boek komt die regel?",
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
                 bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
@@ -2646,7 +2646,7 @@ vragenData["Galaten"] = {
     ],
     advanced: [
         {
-            vraag: "Paulus vat de hele wet samen in één gebod. Welk?",
+            vraag: "Paulus vat de hele wet samen in één gebod. Welk gebod is dat volgens hem?",
             antwoorden: ["Heb je naaste lief als jezelf", "Houd je precies aan alle regels en feesten", "Breng elke dag een offer", "Ken de hele wet uit je hoofd"],
             correct: "Heb je naaste lief als jezelf",
             bijbelplaats: "Galaten 5:14"
@@ -2694,7 +2694,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:6-7"
         },
         {
-            vraag: "Omdat we kinderen van God zijn, mogen we God aanspreken met een bijzonder, vertrouwelijk woord. Welk?",
+            vraag: "Omdat we kinderen van God zijn, mogen we God aanspreken met een bijzonder, vertrouwelijk woord. Welk woord is dat?",
             antwoorden: ["Meester", "Koning", "Abba, Vader", "Heer"],
             correct: "Abba, Vader",
             bijbelplaats: "Galaten 4:6"
@@ -5629,7 +5629,7 @@ vragenData["Openbaring"].expert.push(
         uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
     },
     {
-        vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk?",
+        vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
         antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
         correct: "Martelaar",
         bijbelplaats: "Openbaring 2:13",
