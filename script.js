@@ -1645,7 +1645,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 1:10-13"
         },
         {
-            vraag: "Paulus schrijft dat álle mensen iets gemeen hebben. Wat?",
+            vraag: "Paulus schrijft dat álle mensen iets met elkaar gemeen hebben. Wat geldt er volgens hem voor iedereen?",
             antwoorden: ["Ze zijn allemaal goed genoeg voor God", "Ze hebben allemaal gezondigd", "Ze hebben God niet nodig", "Ze maken nooit fouten"],
             correct: "Ze hebben allemaal gezondigd",
             bijbelplaats: "Romeinen 3:23"
@@ -1657,7 +1657,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 6:23"
         },
         {
-            vraag: "In Romeinen 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat?",
+            vraag: "In Romeinen 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat zegt hij daarover?",
             antwoorden: ["Gods liefde is alleen voor sterke mensen", "Gods liefde stopt als je te veel fouten maakt", "Je moet Gods liefde verdienen", "Niets kan ons scheiden van Gods liefde"],
             correct: "Niets kan ons scheiden van Gods liefde",
             bijbelplaats: "Romeinen 8:38-39"
@@ -1687,7 +1687,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 1:20"
         },
         {
-            vraag: "Paulus zegt dat je door te geloven in Jezus iets moois krijgt in je verhouding met God. Wat?",
+            vraag: "Paulus zegt dat je door te geloven in Jezus iets moois krijgt in je verhouding met God. Wat krijg je dan?",
             antwoorden: ["Vrede met God", "Macht over andere mensen", "Een leven zonder tegenslag", "Rijkdom en aanzien"],
             correct: "Vrede met God",
             bijbelplaats: "Romeinen 5:1"
@@ -1919,7 +1919,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 16:22"
         },
         {
-            vraag: "Helemaal aan het eind zegt Paulus dat God iets met de gelovigen kan doen. Wat?",
+            vraag: "Helemaal aan het eind van zijn brief schrijft Paulus dat God iets voor de gelovigen kan doen. Wat kan God volgens hem doen?",
             antwoorden: ["Hij kan hen machtiger maken dan alle koningen", "Hij kan hen beroemd maken", "Hij kan hen de baas maken", "Hij kan hen sterk maken in het geloof"],
             correct: "Hij kan hen sterk maken in het geloof",
             bijbelplaats: "Romeinen 16:25"
@@ -2372,7 +2372,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 12:4"
         },
         {
-            vraag: "De gemeenten in Macedonië waren zelf arm, maar deden toch iets bijzonders. Wat?",
+            vraag: "De gemeenten in Macedonië waren zelf arm, maar deden toch iets bijzonders. Wat deden zij?",
             antwoorden: ["Ze hielden alles voor zichzelf", "Ze gaven royaal om anderen te helpen", "Ze vroegen zelf om hulp", "Ze deden niets"],
             correct: "Ze gaven royaal om anderen te helpen",
             bijbelplaats: "2 Korintiërs 8:1-3"
@@ -2440,7 +2440,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 11:23-26"
         },
         {
-            vraag: "Paulus zegt: kennis alleen maakt je trots, maar er is iets dat mensen echt opbouwt. Wat?",
+            vraag: "Paulus zegt: kennis alleen maakt je trots, maar er is iets anders dat mensen echt opbouwt. Wat is dat volgens hem?",
             antwoorden: ["Liefde", "Geld", "Macht", "Hard werken"],
             correct: "Liefde",
             bijbelplaats: "1 Korintiërs 8:1"
@@ -2490,7 +2490,7 @@ vragenData["1 & 2 Korintiërs"] = {
     ],
     expert: [
         {
-            vraag: "Waarover maakt Paulus zich meteen aan het begin van de brief zorgen: er was iets mis in Korinte. Wat?",
+            vraag: "Meteen aan het begin van zijn eerste brief schrijft Paulus dat er iets mis is in Korinte. Waarover maakt hij zich zorgen?",
             antwoorden: ["Ze maakten ruzie en waren verdeeld", "Ze durfden niet meer over Jezus te praten", "Ze wilden geen nieuwe leden meer toelaten", "Ze waren gestopt met samen bidden"],
             correct: "Ze maakten ruzie en waren verdeeld",
             bijbelplaats: "1 Korintiërs 1:10-11"
@@ -2526,7 +2526,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 15:55-57"
         },
         {
-            vraag: "Paulus zegt dat ons lichaam zwakker wordt, maar dat er iets anders gebeurt van binnen. Wat?",
+            vraag: "Paulus schrijft dat ons lichaam met de jaren zwakker wordt, maar dat er van binnen iets anders gebeurt. Wat gebeurt er volgens hem van binnen?",
             antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "Van buiten worden we juist steeds mooier"],
             correct: "Van binnen worden we elke dag vernieuwd",
             bijbelplaats: "2 Korintiërs 4:16"
@@ -2596,7 +2596,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 2:16"
         },
         {
-            vraag: "Paulus zegt dat alle gelovigen samen iets zijn van God. Wat?",
+            vraag: "Paulus zegt dat alle gelovigen samen iets van God zijn. Wat zijn zij volgens hem?",
             antwoorden: ["Vreemden", "Dienaren van de keizer", "Kinderen van God", "Gasten op bezoek"],
             correct: "Kinderen van God",
             bijbelplaats: "Galaten 3:26"
@@ -2632,13 +2632,13 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 6:10"
         },
         {
-            vraag: "Aan het begin van zijn brief wenst Paulus de Galaten iets toe. Wat?",
+            vraag: "Aan het begin van zijn brief wenst Paulus de Galaten iets toe. Wat wenst hij hun toe?",
             antwoorden: ["Genade en vrede van God", "Een lang en makkelijk leven", "Roem en aanzien", "Altijd je zin krijgen"],
             correct: "Genade en vrede van God",
             bijbelplaats: "Galaten 1:3"
         },
         {
-            vraag: "Paulus schrijft dat Jezus iets groots voor ons heeft gedaan. Wat?",
+            vraag: "Paulus schrijft dat Jezus iets groots voor ons heeft gedaan. Wat heeft Jezus volgens hem gedaan?",
             antwoorden: ["Hij liet ons alleen", "Hij gaf zichzelf, uit liefde voor ons", "Hij keek van een afstand toe", "Hij deed niets bijzonders"],
             correct: "Hij gaf zichzelf, uit liefde voor ons",
             bijbelplaats: "Galaten 1:4"
@@ -2792,7 +2792,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 6:7-8"
         },
         {
-            vraag: "Aan het eind van de brief aan de Galaten schrijft Paulus iets opvallends over hóe hij dit deel zelf schrijft. Wat?",
+            vraag: "Aan het eind van zijn brief aan de Galaten schrijft Paulus iets opvallends over de manier waarop hij dit laatste stuk zelf opschrijft. Wat vertelt hij daarover?",
             antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "Met de hand van iemand anders die het voor hem opschreef"],
             correct: "Met grote letters, met zijn eigen hand",
             bijbelplaats: "Galaten 6:11"
@@ -2867,7 +2867,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:19-20"
         },
         {
-            vraag: "Paulus zegt dat gelovigen samen moeten opgroeien naar het voorbeeld van iemand. Wie?",
+            vraag: "Paulus zegt dat gelovigen samen moeten opgroeien naar het voorbeeld van één iemand. Naar wiens voorbeeld?",
             antwoorden: ["De koning", "Christus", "Paulus zelf", "De sterkste mens"],
             correct: "Christus",
             bijbelplaats: "Efeziërs 4:13"
@@ -2929,7 +2929,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 4:11-12"
         },
         {
-            vraag: "Paulus bidt dat de gelovigen iets leren begrijpen. Wat?",
+            vraag: "Paulus bidt dat de gelovigen iets gaan begrijpen. Wat hoopt hij dat zij leren begrijpen?",
             antwoorden: ["Hoe groot Gods liefde is", "Hoe je de baas wordt", "Hoe je de sterkste wordt", "Hoe je beroemd wordt"],
             correct: "Hoe groot Gods liefde is",
             bijbelplaats: "Efeziërs 3:18-19"
@@ -3189,7 +3189,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:3"
         },
         {
-            vraag: "Paulus vertelt waar hij voor bidt: hij hoopt dat één ding bij de gelovigen steeds groter wordt. Wat?",
+            vraag: "Paulus vertelt waar hij voor bidt: hij hoopt dat één ding bij de gelovigen steeds groter wordt. Wat hoopt hij dat er groeit?",
             antwoorden: ["Hun liefde", "Hun moed", "Hun aantal", "Hun kracht"],
             correct: "Hun liefde",
             bijbelplaats: "Filippenzen 1:9"
@@ -3257,13 +3257,13 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:11-12"
         },
         {
-            vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom?",
+            vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom denkt hij daar zo over?",
             antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij door zijn gevangenschap alles heeft verloren", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
             correct: "Omdat het kennen van Christus het allerkostbaarst is",
             bijbelplaats: "Filippenzen 3:8"
         },
         {
-            vraag: "Paulus schrijft dat het echte \"thuis\" van de gelovigen ergens anders is. Waar?",
+            vraag: "Paulus schrijft dat het echte \"thuis\" van de gelovigen ergens anders is dan de stad waar zij wonen. Waar is dat volgens hem?",
             antwoorden: ["In de hemel", "In Rome", "In Jeruzalem", "In Filippi"],
             correct: "In de hemel",
             bijbelplaats: "Filippenzen 3:20"
@@ -3275,19 +3275,19 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:14-16"
         },
         {
-            vraag: "Paulus is ervan overtuigd dat God iets zal afmaken. Wat?",
+            vraag: "Paulus is ervan overtuigd dat God iets zal afmaken bij de gelovigen in Filippi. Wat zal God afmaken?",
             antwoorden: ["Het goede werk dat Hij in hen begon", "De bouw van de tempel", "Het werk dat zij zelf begonnen waren", "De brief die Paulus aan het schrijven was"],
             correct: "Het goede werk dat Hij in hen begon",
             bijbelplaats: "Filippenzen 1:6"
         },
         {
-            vraag: "Toen Paulus in de gevangenis zat, gebeurde er iets onverwachts met het goede nieuws. Wat?",
+            vraag: "Toen Paulus in de gevangenis zat, gebeurde er iets onverwachts met het goede nieuws. Wat gebeurde er?",
             antwoorden: ["Het werd juist méér bekend", "Het werd verboden", "Niemand hoorde er nog van", "Het werd vergeten"],
             correct: "Het werd juist méér bekend",
             bijbelplaats: "Filippenzen 1:12"
         },
         {
-            vraag: "In het lied schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat?",
+            vraag: "In het lied over Jezus schrijft Paulus dat God hem iets gaf wat boven alles uitgaat. Wat gaf God hem?",
             antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een troon van puur goud in de hemel", "Een prachtig paleis"],
             correct: "De hoogste naam, boven alle namen",
             bijbelplaats: "Filippenzen 2:9"
@@ -3325,7 +3325,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:21"
         },
         {
-            vraag: "In het lied over Jezus schrijft Paulus dat uiteindelijk iedereen iets zal doen. Wat?",
+            vraag: "In het lied over Jezus schrijft Paulus dat uiteindelijk alle mensen iets zullen doen. Wat zullen zij doen?",
             antwoorden: ["Knielen en belijden dat Jezus Heer is", "Vluchten en zich ergens gaan verbergen", "Zwijgen van angst", "Een offer brengen"],
             correct: "Knielen en belijden dat Jezus Heer is",
             bijbelplaats: "Filippenzen 2:10-11"
@@ -3349,7 +3349,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:27"
         },
         {
-            vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat?",
+            vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat schrijft hij over hen?",
             antwoorden: ["Dat ze samen met hem gestreden hebben voor het goede nieuws", "Dat ze de rijkste vrouwen van Filippi waren", "Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht", "Dat ze allebei door Lydia waren opgevoed"],
             correct: "Dat ze samen met hem gestreden hebben voor het goede nieuws",
             bijbelplaats: "Filippenzen 4:3"
@@ -3550,7 +3550,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 4:17"
         },
         {
-            vraag: "Paulus schrijft dat hij dag en nacht werkte toen hij bij de Tessalonicenzen was. Waarom?",
+            vraag: "Paulus schrijft dat hij dag en nacht werkte toen hij bij de Tessalonicenzen was. Waarom deed hij dat?",
             antwoorden: ["Om niemand tot last te zijn", "Om rijk te worden", "Om beroemd te worden", "Om de keizer te plezieren"],
             correct: "Om niemand tot last te zijn",
             bijbelplaats: "1 Tessalonicenzen 2:9"
@@ -3594,7 +3594,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 1:3"
         },
         {
-            vraag: "Toen Paulus niet zelf kon komen, stuurde hij iemand om de Tessalonicenzen te bemoedigen. Wie?",
+            vraag: "Toen Paulus niet zelf naar Tessalonica kon komen, stuurde hij iemand anders om de gelovigen daar te bemoedigen. Wie stuurde hij?",
             antwoorden: ["Timoteüs", "Lukas", "Marcus", "Demas"],
             correct: "Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 3:2"
@@ -3606,7 +3606,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:8"
         },
         {
-            vraag: "Aan het eind van 2 Tessalonicenzen doet Paulus iets met zijn eigen hand, als een soort handtekening. Wat?",
+            vraag: "Aan het eind van 2 Tessalonicenzen doet Paulus zelf iets met zijn eigen hand, als een soort handtekening. Wat doet hij?",
             antwoorden: ["Hij schrijft de groet eigenhandig", "Hij tekent een vis", "Hij drukt een zegel in was", "Hij schrijft in het Hebreeuws"],
             correct: "Hij schrijft de groet eigenhandig",
             bijbelplaats: "2 Tessalonicenzen 3:17"
@@ -3692,7 +3692,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 2:5"
         },
         {
-            vraag: "Paulus vraagt om Marcus naar hem toe te halen. Waarom?",
+            vraag: "Paulus vraagt of Marcus naar hem toe gebracht kan worden. Waarom wil hij dat Marcus komt?",
             antwoorden: ["Omdat Marcus nuttig is voor het werk", "Omdat Marcus de weg goed kent", "Omdat Marcus ziek is", "Omdat Marcus sterk is"],
             correct: "Omdat Marcus nuttig is voor het werk",
             bijbelplaats: "2 Timoteüs 4:11"
@@ -3704,7 +3704,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 2:4"
         },
         {
-            vraag: "Paulus zegt dat Titus de mensen moet leren hoe ze tegen iedereen moeten zijn. Hoe?",
+            vraag: "Paulus zegt dat Titus de mensen moet leren hoe ze tegen iedereen moeten zijn. Hoe moeten zij volgens hem zijn?",
             antwoorden: ["Vriendelijk en vredelievend", "Streng en hard", "Streng zwijgend en nooit een woord teveel spreken", "Slim en gehaaid"],
             correct: "Vriendelijk en vredelievend",
             bijbelplaats: "Titus 3:2"
@@ -3760,7 +3760,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 3:2-3"
         },
         {
-            vraag: "Aan het eind van zijn leven schrijft Paulus een beroemde zin. Welke?",
+            vraag: "Aan het eind van zijn leven schrijft Paulus een beroemd geworden zin over hoe hij op zijn leven terugkijkt. Welke zin schrijft hij?",
             antwoorden: ["\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"", "\"Ik heb gedaan wat ik kon, de rest laat ik aan anderen\"", "\"Ik heb veel gestreden, maar het was tevergeefs\"", "\"Ik heb de wet gehouden en alle regels bewaard\""],
             correct: "\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"",
             bijbelplaats: "2 Timoteüs 4:7"
@@ -3858,7 +3858,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:11"
         },
         {
-            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch mee te nemen. Wat?",
+            vraag: "In zijn laatste brief vraagt Paulus of Timoteüs iets praktisch voor hem wil meenemen. Wat vraagt hij mee te nemen?",
             antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
             correct: "Zijn mantel en zijn boeken",
             bijbelplaats: "2 Timoteüs 4:13"
@@ -4151,7 +4151,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:14"
         },
         {
-            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten lezen. Welke?",
+            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten voorlezen. Welke stad noemt hij?",
             antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
             correct: "Laodicea",
             bijbelplaats: "Kolossenzen 4:16"
@@ -4341,7 +4341,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 9:15"
         },
         {
-            vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel die iets gemeen hadden. Wat?",
+            vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel op een rij, die iets met elkaar gemeen hadden. Wat hadden zij gemeen?",
             antwoorden: ["Ze vertrouwden op God, ook zonder alles te zien", "Ze hadden nooit getwijfeld", "Ze kregen allemaal al op aarde wat beloofd was", "Ze waren allemaal belangrijke leiders"],
             correct: "Ze vertrouwden op God, ook zonder alles te zien",
             bijbelplaats: "Hebreeën 11:1"
@@ -4481,7 +4481,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "naam van het boek"
         },
         {
-            vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets zijn. Wat?",
+            vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets bijzonders zijn. Wat zijn ze volgens de brief?",
             antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van zijn verbond", "Een plicht die je moet vervullen"],
             correct: "Een offer waar Hij blij mee is",
             bijbelplaats: "Hebreeën 13:16"
@@ -4573,7 +4573,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:10"
         },
         {
-            vraag: "Jakobus zegt: wees geduldig en verlies de moed niet, want er komt iemand terug. Wie?",
+            vraag: "Jakobus zegt tegen de gelovigen: wees geduldig en verlies de moed niet, want iemand zal terugkomen. Op wiens komst moeten zij wachten?",
             antwoorden: ["De Heer", "De koning", "De profeet", "De leraar"],
             correct: "De Heer",
             bijbelplaats: "Jakobus 5:7-8"
@@ -4641,7 +4641,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:6"
         },
         {
-            vraag: "Jakobus wil in zijn brief één eigenschap van de wijsheid die van God komt benadrukken. Welke?",
+            vraag: "Jakobus beschrijft in zijn brief de wijsheid die van God komt. Welke eigenschap van die wijsheid benadrukt hij vooral?",
             antwoorden: ["Ze is vredelievend en vriendelijk", "Ze is vooral heel verstandig", "Ze is streng en duidelijk", "Ze is alleen voor geleerde mensen"],
             correct: "Ze is vredelievend en vriendelijk",
             bijbelplaats: "Jakobus 3:17"
@@ -4784,7 +4784,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 2:24"
         },
         {
-            vraag: "In zijn tweede brief noemt Petrus een man die met zijn gezin door de ark gered werd, toen de grote watervloed kwam. Wie?",
+            vraag: "In zijn tweede brief noemt Petrus een man die met zijn gezin door de ark gered werd toen de grote watervloed kwam. Over welke man gaat het?",
             antwoorden: ["Noach", "Mozes", "Abraham", "David"],
             correct: "Noach",
             bijbelplaats: "2 Petrus 2:5"
@@ -4870,7 +4870,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 1:5-7"
         },
         {
-            vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die zijn eigen broer doodde uit jaloezie. Wie?",
+            vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die zijn eigen broer doodde uit jaloezie. Wie was die man?",
             antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
             correct: "Kaïn",
             bijbelplaats: "Judas 11"
@@ -4896,7 +4896,7 @@ vragenData["Petrus & Judas"] = {
     ],
     expert: [
         {
-            vraag: "Judas roept de gelovigen op om iets te doen voor het geloof dat eens en voorgoed aan hen is toevertrouwd. Wat?",
+            vraag: "Judas roept de gelovigen op om iets te doen voor het geloof dat eens en voorgoed aan hen is toevertrouwd. Waartoe roept hij hen op?",
             antwoorden: ["Ervoor strijden", "Het zorgvuldig bewaren", "Het aan anderen doorgeven", "Het steeds beter leren kennen"],
             correct: "Ervoor strijden",
             bijbelplaats: "Judas 3"
@@ -4956,7 +4956,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 3:20"
         },
         {
-            vraag: "Judas haalt een profetie aan van een man uit de oertijd, de zevende vanaf Adam. Wie?",
+            vraag: "Judas haalt een profetie aan van een man uit de oertijd, de zevende vanaf Adam. Wie was die man?",
             antwoorden: ["Henoch", "Noach", "Metusalem", "Set"],
             correct: "Henoch",
             bijbelplaats: "Judas 14"
@@ -5082,7 +5082,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 5:13"
         },
         {
-            vraag: "Johannes waarschuwt voor de antichrist, iemand die tégen Christus ingaat en de mensen wil misleiden. Hij noemt één ding waaraan je zo iemand kunt herkennen. Wat?",
+            vraag: "Johannes waarschuwt voor de antichrist, iemand die tégen Christus ingaat en de mensen wil misleiden. Hij noemt één ding waaraan je zo iemand kunt herkennen. Waaraan herken je hem volgens Johannes?",
             antwoorden: ["Hij ontkent dat Jezus de Christus is", "Hij komt pas helemaal aan het einde van de tijd", "Hij is erg machtig", "Hij noemt zichzelf koning over de hele wereld"],
             correct: "Hij ontkent dat Jezus de Christus is",
             bijbelplaats: "1 Johannes 2:18"
@@ -5112,7 +5112,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:13"
         },
         {
-            vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke?",
+            vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke drie dingen noemt hij?",
             antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "De grote liefde voor geld, de jacht op macht en het verlangen naar roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
             correct: "De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed",
             bijbelplaats: "1 Johannes 2:16"
@@ -5234,7 +5234,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 5:14"
         },
         {
-            vraag: "De schrijver van de tweede en derde brief van Johannes noemt zichzelf niet bij naam, maar met een titel. Welke?",
+            vraag: "De schrijver van de tweede en derde brief van Johannes noemt zichzelf niet bij naam, maar met een titel. Welke titel gebruikt hij?",
             antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
             correct: "'de oudste'",
             bijbelplaats: "2 Johannes 1; 3 Johannes 1"
@@ -5615,7 +5615,7 @@ vragenData["Openbaring"].advanced.push(
 
 vragenData["Openbaring"].expert.push(
     {
-        vraag: "De oudsten houden gouden schalen vol reukwerk vast. Johannes schrijft er meteen bij wat die schalen voorstellen. Wat?",
+        vraag: "De oudsten houden gouden schalen vol reukwerk vast. Johannes schrijft er meteen bij wat die schalen voorstellen. Wat stellen zij voor?",
         antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
         correct: "De gebeden van de gelovigen",
         bijbelplaats: "Openbaring 5:8",
@@ -5942,7 +5942,7 @@ vragenData["Hebreeën"].expert.push(
 // =====================================================================
 vragenData["Lucas"].advanced.push(
     {
-        vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom?",
+        vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
         antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
         correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
         bijbelplaats: "Lucas 10:33",
