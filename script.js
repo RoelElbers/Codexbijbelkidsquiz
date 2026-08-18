@@ -862,18 +862,6 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Judas", "Petrus", "Tomas", "Andreas"],
                 correct: "Petrus",
                 bijbelplaats: "Johannes 13:6-8"
-            },
-            {
-                vraag: "Wat zei Tomas toen hij Jezus na de opstanding zag?",
-                antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Ik geloof nu"],
-                correct: "Mijn Heer en mijn God!",
-                bijbelplaats: "Johannes 20:28"
-            },
-            {
-                vraag: "Wie kwam als eerste bij het graf van Jezus op de eerste dag van de week, volgens Johannes?",
-                antwoorden: ["Petrus", "Maria Magdalena", "Johannes", "De twaalf leerlingen"],
-                correct: "Maria Magdalena",
-                bijbelplaats: "Johannes 20:1"
             }
         ],
         advanced: [
@@ -882,12 +870,6 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister", "Met de vlucht van Jozef en Maria naar het land Egypte"],
                 correct: "Met de woorden 'In het begin was het Woord'",
                 bijbelplaats: "Johannes 1:1"
-            },
-            {
-                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
-                antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
-                correct: "Nikodemus",
-                bijbelplaats: "Johannes 3:1-2"
             },
             {
                 vraag: "Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt?",
@@ -924,12 +906,6 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "De Zoon van God"],
                 correct: "Jezus van Nazaret, de koning van de Joden",
                 bijbelplaats: "Johannes 19:19-20"
-            },
-            {
-                vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
-                antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
-                correct: "De tuinman",
-                bijbelplaats: "Johannes 20:15"
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
@@ -989,10 +965,11 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 bijbelplaats: "Johannes 5:1-9"
             },
             {
-                vraag: "Natanaël was stomverbaasd over iets wat Jezus tegen hem zei, want ze hadden elkaar nog nooit ontmoet. Wat zei Jezus tegen hem?",
+                vraag: "Filippus bracht zijn vriend Natanaël bij Jezus. Nog voordat ze ook maar één woord met elkaar hadden gewisseld, zei Jezus iets waardoor Natanaël stomverbaasd was: Jezus bleek hem al eerder gezien te hebben. Wat zei Jezus tegen hem?",
                 antwoorden: ["Dat hij hem onder de vijgenboom had zien zitten", "Dat hij hem in de tempel had zien bidden", "Dat hij hem op de markt had gezien", "Dat hij hem aan het werk had gezien"],
                 correct: "Dat hij hem onder de vijgenboom had zien zitten",
-                bijbelplaats: "Johannes 1:47-49"
+                bijbelplaats: "Johannes 1:47-49",
+                uitleg: "Een vijgenboom gaf koele schaduw, en het was een geliefde plek om rustig te zitten lezen en bidden. Natanaël begreep meteen: deze man kent mij, terwijl we elkaar nooit ontmoet hebben."
             },
             {
                 vraag: "Volgens Johannes was er één leerling die 'de leerling van wie Jezus hield' werd genoemd. Wie wordt daarmee bedoeld, volgens de traditie?",
@@ -1002,17 +979,17 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 uitleg: "Deze leerling wordt nooit bij naam genoemd. Volgens de traditie is het Johannes zelf, de schrijver van dit evangelie."
             },
             {
-                vraag: "Hoe ver van de kant waren de leerlingen bij de wonderbaarlijke visvangst na de opstanding, volgens Johannes?",
-                antwoorden: ["Vijftig el", "Honderd el", "Tweehonderd el", "Vijfhonderd el"],
-                correct: "Tweehonderd el",
+                vraag: "Na zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",
+                antwoorden: ["Vijftig el (ruim twintig meter)", "Honderd el (ongeveer vijftig meter)", "Tweehonderd el (ongeveer honderd meter)", "Vijfhonderd el (ruim tweehonderd meter)"],
+                correct: "Tweehonderd el (ongeveer honderd meter)",
                 bijbelplaats: "Johannes 21:8",
-                uitleg: "Een 'el' was ongeveer een halve meter (de lengte van een onderarm). Tweehonderd el is dus zo'n honderd meter — ongeveer een voetbalveld."
+                uitleg: "Een el was ongeveer een halve meter, de lengte van een onderarm. Tweehonderd el is dus zo'n honderd meter — de lengte van een voetbalveld. Op die afstand zie je wel iemand staan, maar kun je geen gezichten herkennen. Pas toen het net vol zat, wist Johannes het zeker: het is de Heer."
             },
             {
-                vraag: "Wat is er zo bijzonder aan de Dode Zee?",
-                antwoorden: ["Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven", "Het is zo ontzettend diep dat niemand ooit de bodem ervan heeft kunnen bereiken", "Het water stijgt en daalt sterk bij eb en vloed", "Er leven bijzonder veel verschillende vissoorten in"],
-                correct: "Als je erin gaat zwemmen kun je niet zinken; door het zout blijf je vanzelf drijven",
-                uitleg: "De Dode Zee zit boordevol zout — zoveel dat er niets in kan leven, en dat je er zomaar op blijft drijven. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
+                vraag: "Je kunt in de Dode Zee gaan zwemmen zonder ooit te zinken: je blijft er vanzelf drijven, alsof het water je draagt. Hoe kan dat?",
+                antwoorden: ["Er zit zoveel zout in het water dat het je omhoog duwt", "Het water is er zo koud dat het je omhoog stuwt", "Er borrelt van onderaf steeds lucht uit de bodem omhoog", "Het meer is overal zo ondiep dat je gewoon kunt staan"],
+                correct: "Er zit zoveel zout in het water dat het je omhoog duwt",
+                uitleg: "Het water zit zó vol zout dat er geen vis of plant in kan leven — vandaar de naam. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
             },
             {
                 vraag: "Hoeveel grote rivieren en meren heeft Israël?",
@@ -1182,7 +1159,7 @@ vragenData["Johannes"].beginner.push(
 );
 vragenData["Johannes"].advanced.push(
     {
-        vraag: "Een man genaamd Nicodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
+        vraag: "Een man genaamd Nikodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
         antwoorden: ["De Farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
         correct: "De Farizeeën",
         bijbelplaats: "Johannes 3:1"
@@ -6856,6 +6833,36 @@ vragenData["Johannes"].advanced.push(
         antwoorden: ["Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem", "Een huurling werkt alleen in de zomer, een herder het hele jaar", "Een huurling mag de schapen niet aanraken, een herder wel", "Een huurling hoedt runderen, een herder schapen"],
         correct: "Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem",
         bijbelplaats: "Johannes 10:12"
+    }
+);
+
+vragenData["Johannes"].advanced.push(
+    {
+        vraag: "Wat zei Tomas toen hij Jezus na de opstanding zag?",
+        antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Ik geloof nu"],
+        correct: "Mijn Heer en mijn God!",
+        bijbelplaats: "Johannes 20:28"
+    },
+    {
+        vraag: "Wie kwam als eerste bij het graf van Jezus op de eerste dag van de week, volgens Johannes?",
+        antwoorden: ["Petrus", "Maria Magdalena", "Johannes", "De twaalf leerlingen"],
+        correct: "Maria Magdalena",
+        bijbelplaats: "Johannes 20:1"
+    }
+);
+
+vragenData["Johannes"].expert.push(
+    {
+        vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
+        antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
+        correct: "Nikodemus",
+        bijbelplaats: "Johannes 3:1-2"
+    },
+    {
+        vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
+        antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
+        correct: "De tuinman",
+        bijbelplaats: "Johannes 20:15"
     }
 );
 
