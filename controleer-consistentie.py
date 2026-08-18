@@ -24,6 +24,7 @@ import importlib.util
 import os
 import re
 import sys
+import unicodedata
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 SCRIPT_JS = os.path.join(HIER, "script.js")
@@ -869,6 +870,149 @@ def controle_boekmodus(pools):
 
 
 # ---------------------------------------------------------------------------
+#  9. Vraagwoordregel
+# ---------------------------------------------------------------------------
+#
+# CLAUDE.md: een vraag eindigt nooit op een losstaand vraagwoord ("Wat?",
+# "Wie?"). De vraagzin wordt altijd volledig uitgeschreven, zodat het kind
+# precies weet waar de vraag naar zoekt. Voor een voorlezer is "... zeiden
+# iets tegen de leerlingen. Wat?" namelijk een halve zin: het kind hoort wel
+# dat er iets gevraagd wordt, maar niet waarnaar.
+#
+# Dit is een PROBLEEM en geen waarschuwing: de regel is hard, en de exitcode
+# moet 1 worden zodra er weer zo'n vraag binnenglipt.
+#
+# De controle kijkt naar de slotzin: alles na het laatste zinseinde. Staat
+# daar niets anders dan (een voorzetsel plus) een vraagwoord, dan is de vraag
+# niet af. Een volledige zin die op een vraagwoord eindigt mag wel.
+
+VRAAGWOORDEN = [
+    "Wat", "Wie", "Wiens", "Wier",
+    "Waar", "Waarom", "Waarheen", "Waarmee", "Waarvoor", "Waarvan",
+    "Waardoor", "Waarover", "Waarnaartoe",
+    "Hoe", "Hoelang", "Hoeveel", "Wanneer",
+    "Welke", "Welk",
+]
+
+# Een enkel voorzetsel mag voor het vraagwoord staan zonder dat de slotzin
+# daarmee een echte zin wordt: "Voor wie?" en "Tussen welke?" zijn net zo
+# kaal als "Wie?".
+VOORZETSELS = [
+    "aan", "bij", "door", "in", "met", "na", "naar", "om", "op", "over",
+    "tot", "tussen", "uit", "van", "voor", "zonder",
+]
+
+# Waar een zin eindigt. Let op: de komma staat er bewust NIET bij, want een
+# bijzin scheidt geen zinnen.
+ZINSEINDEN = ".:;!?\u2014\u2013"
+
+# De slotzin is alles na het laatste zinseinde. Slaat alleen aan als die
+# slotzin niets anders is dan (een voorzetsel plus) een vraagwoord. Zo blijft
+# "... telt vanaf de geboorte van wie?" toegestaan: dat is een volledige zin
+# die toevallig op een vraagwoord eindigt, en het kind hoort precies wat er
+# gevraagd wordt.
+KALE_SLOTZIN = re.compile(
+    r"^(?:(?:%s)\s+)?(%s)$"
+    % ("|".join(sorted((re.escape(v) for v in VOORZETSELS),
+                       key=len, reverse=True)),
+       "|".join(sorted((re.escape(w) for w in VRAAGWOORDEN),
+                       key=len, reverse=True))),
+    re.IGNORECASE | re.UNICODE,
+)
+
+
+def _zonder_accenten(s):
+    """'zonder' en 'zonder' met klemtoonaccent moeten hetzelfde tellen."""
+    ontleed = unicodedata.normalize("NFD", s)
+    return u"".join(c for c in ontleed if not unicodedata.combining(c))
+
+
+def _slotzin(vraagtekst):
+    """Alles na het laatste zinseinde, zonder het afsluitende vraagteken."""
+    t = (vraagtekst or "").strip()
+    if not t.endswith("?"):
+        return None
+    kern = t[:-1]
+    grens = max(kern.rfind(teken) for teken in ZINSEINDEN)
+    return kern[grens + 1:].strip()
+
+
+def _losstaand_vraagwoord(vraagtekst):
+    """Het afgekeurde slotwoord, of None als de vraag in orde is."""
+    slot = _slotzin(vraagtekst)
+    if not slot:
+        return None
+    m = KALE_SLOTZIN.match(_zonder_accenten(slot))
+    return m.group(1) if m else None
+
+
+def _vraagbronnen(bron, pools, meldingen):
+    """(bron, boek, niveau, index, vraagobject) over alle vraagpools.
+
+    Levert naast vragenData ook de losse pools op, zodat er geen vraagtekst
+    buiten deze controle valt.
+    """
+    for boek in pools:
+        aanwezig = list(pools[boek])
+        geordend = [n for n in NIVEAUS if n in aanwezig]
+        geordend += [n for n in aanwezig if n not in NIVEAUS]
+        for niveau in geordend:
+            for i, vraag in enumerate(pools[boek].get(niveau, [])):
+                if isinstance(vraag, dict):
+                    yield ("vragenData", boek, NIVEAU_LABEL.get(niveau, niveau),
+                           i, vraag)
+    for naam, kop_naam, _ in MVE.LOSSE_POOLS:
+        vragen = MVE.lees_losse_pool(bron, naam, meldingen)
+        if not vragen:
+            # Stil overslaan zou deze controle laten slagen op een bron die
+            # helemaal niet gelezen is. Dus expliciet melden.
+            probleem("vraagwoordcontrole: pool '%s' (%s) leverde geen enkele "
+                     "vraag op; die bron is niet gedekt" % (naam, kop_naam))
+            continue
+        for i, vraag in enumerate(vragen):
+            if isinstance(vraag, dict):
+                yield (naam, kop_naam, "losse pool", i, vraag)
+
+
+def controle_vraagwoorden(bron, pools):
+    kop(9, "Vraagwoordregel — geen vraag eindigt op een losstaand vraagwoord")
+
+    meldingen = []
+    gescand = 0
+    per_bron = {}
+    treffers = []
+
+    for bronnaam, boek, niveau, index, vraag in _vraagbronnen(bron, pools,
+                                                              meldingen):
+        gescand += 1
+        per_bron[bronnaam] = per_bron.get(bronnaam, 0) + 1
+        vraagtekst = vraag.get("vraag") or ""
+        woord = _losstaand_vraagwoord(vraagtekst)
+        if woord:
+            treffers.append((bronnaam, boek, niveau, index, woord, vraagtekst))
+
+    for melding in meldingen:
+        waarschuwing("parser: %s" % melding)
+
+    info("vraagwoorden in de controle : %d (%s)"
+         % (len(VRAAGWOORDEN), ", ".join(VRAAGWOORDEN)))
+    for bronnaam in sorted(per_bron):
+        info("gescand: %-22s %d vragen" % (bronnaam, per_bron[bronnaam]))
+    info("gescand: %-22s %d vragen" % ("TOTAAL", gescand))
+
+    for bronnaam, boek, niveau, index, woord, vraagtekst in treffers:
+        probleem("%s / %s / %s / index %d eindigt op het losstaande "
+                 "vraagwoord '%s': %s"
+                 % (bronnaam, boek, niveau, index, woord, vraagtekst))
+
+    if not treffers:
+        ok("geen enkele vraag eindigt op een losstaand vraagwoord.")
+    else:
+        info("Schrijf de vraagzin volledig uit, bijvoorbeeld \"Wat zeiden die "
+             "twee mannen?\" in plaats van \"... zeiden iets. Wat?\".")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -909,6 +1053,7 @@ def main():
     controle_vragen(boeknaarkey, pools)
     controle_catechese(bron, pools)
     controle_kist(bron, pools)
+    controle_vraagwoorden(bron, pools)
 
     schrijf()
     schrijf("=" * 78)

@@ -38,6 +38,32 @@ Een vraag eindigt nooit op een losstaand vraagwoord ('Wat?', 'Wie?').
 De vraagzin wordt altijd volledig uitgeschreven, zodat het kind precies
 weet waar de vraag naar zoekt.
 
+Het gaat om deze vraagwoorden, hoofdletterongevoelig:
+
+> Wat, Wie, Wiens, Wier, Waar, Waarom, Waarheen, Waarmee, Waarvoor,
+> Waarvan, Waardoor, Waarover, Waarnaartoe, Hoe, Hoelang, Hoeveel,
+> Wanneer, Welke, Welk
+
+De controle kijkt naar de **slotzin**: alles na het laatste zinseinde
+(`.` `:` `;` `!` `?` `—` `–`), of de hele vraag als dat er niet is.
+Bestaat die slotzin uit niets anders dan een vraagwoord, eventueel met één
+voorzetsel ervoor, dan is de vraag niet af.
+
+> aan, bij, door, in, met, na, naar, om, op, over, tot, tussen, uit, van,
+> voor, zonder
+
+Dus `... zeiden iets tegen hen. Wat?`, `... spaarden geld op. Waarvoor?` en
+`... voor iemand kunt doen. Voor wie?` mogen niet. Een volledige zin die
+toevallig op een vraagwoord eindigt mag wél: `Paulus zegt: doe alles in de
+naam van wie?` is goed, want daar hoort het kind precies wat er gevraagd
+wordt. Woorden die toevallig op een vraagwoord eindigen ('zowat?',
+'vanwaar?') slaan niet aan.
+
+**`controleer-consistentie.py` controleert hierop** (sectie 9), over
+`vragenData` en over de losse pools `verborgenSchatVragen` en
+`metgezellenVragen`. Een treffer is een PROBLEEM, geen waarschuwing: de
+exitcode wordt 1.
+
 ## Controleren
 
 **Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in

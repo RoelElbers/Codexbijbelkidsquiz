@@ -2360,7 +2360,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 11:25-26"
         },
         {
-            vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie?",
+            vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie kun je het doen?",
             antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor de keizer en de machtige leiders van het land"],
             correct: "Voor God, om hem eer te geven",
             bijbelplaats: "1 Korintiërs 10:31"
@@ -2410,7 +2410,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 16:13"
         },
         {
-            vraag: "Paulus en de gelovigen spaarden geld op om iets goeds te doen. Waarvoor?",
+            vraag: "Paulus en de gelovigen spaarden geld op om iets goeds te doen. Waarvoor was dat geld bedoeld?",
             antwoorden: ["Om een paleis te bouwen", "Om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een groot nieuw schip te kopen voor hun reizen"],
             correct: "Om arme gelovigen in Jeruzalem te helpen",
             bijbelplaats: "1 Korintiërs 16:1-3"
@@ -2911,7 +2911,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:8"
         },
         {
-            vraag: "Paulus zegt: doe de wapenrusting van God aan. Waarvoor?",
+            vraag: "Paulus zegt tegen de gelovigen dat zij de wapenrusting van God moeten aandoen. Waarvoor hebben zij die nodig?",
             antwoorden: ["Om staande te blijven tegen het kwaad", "Om oorlog te voeren tegen mensen", "Om indruk te maken", "Gewoon zomaar, dan zie je er leuk uit"],
             correct: "Om staande te blijven tegen het kwaad",
             bijbelplaats: "Efeziërs 6:11"
@@ -2923,7 +2923,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:1-2"
         },
         {
-            vraag: "Iedereen in de gemeente kreeg eigen gaven. Waarvoor?",
+            vraag: "Iedereen in de gemeente kreeg zijn eigen gaven. Waarvoor zijn die gaven bedoeld?",
             antwoorden: ["Om de gemeente samen op te bouwen", "Om over op te scheppen", "Om alleen zelf beter te worden", "Om anderen jaloers te maken"],
             correct: "Om de gemeente samen op te bouwen",
             bijbelplaats: "Efeziërs 4:11-12"
@@ -2983,7 +2983,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:9"
         },
         {
-            vraag: "Paulus knielt en bidt dat God de gelovigen van binnen sterk maakt. Waardoor?",
+            vraag: "Paulus knielt en bidt dat God de gelovigen van binnen sterk maakt. Waardoor worden zij sterk gemaakt?",
             antwoorden: ["Door alles voor hen makkelijk te maken", "Door zijn Geest", "Door hun spieren sterk te maken", "Door alleen nog maar gezond voedsel te eten"],
             correct: "Door zijn Geest",
             bijbelplaats: "Efeziërs 3:16"
@@ -3221,7 +3221,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:13"
         },
         {
-            vraag: "Paulus schrijft hóe de gelovigen alles moeten doen. Namelijk: zónder wat?",
+            vraag: "Paulus schrijft hóe de gelovigen alles moeten doen. Wat moet er volgens hem juist wegblijven?",
             antwoorden: ["Zonder mopperen en ruzie", "Zonder ervoor betaald te worden", "Zonder erover na te denken", "Zonder het aan iemand te vragen"],
             correct: "Zonder mopperen en ruzie",
             bijbelplaats: "Filippenzen 2:14"
@@ -3331,7 +3331,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 2:10-11"
         },
         {
-            vraag: "Paulus twijfelt tussen twee goede dingen. Tussen welke?",
+            vraag: "Paulus twijfelt tussen twee dingen die allebei goed zijn. Tussen welke twee dingen twijfelt hij?",
             antwoorden: ["Blijven leven om te helpen, óf bij Christus zijn", "Naar Rome of naar Jeruzalem", "De gemeente bezoeken óf in de gevangenis blijven", "Werken of rusten"],
             correct: "Blijven leven om te helpen, óf bij Christus zijn",
             bijbelplaats: "Filippenzen 1:23-24"
@@ -3428,7 +3428,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:11"
         },
         {
-            vraag: "In de tweede brief vraagt Paulus de Tessalonicenzen ergens voor te bidden. Waarvoor?",
+            vraag: "In de tweede brief vraagt Paulus de Tessalonicenzen ergens voor te bidden. Waarvoor moeten zij bidden?",
             antwoorden: ["Dat het goede nieuws zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat Paulus veilig door al zijn vele reizen komt", "Dat Paulus beroemd wordt"],
             correct: "Dat het goede nieuws zich snel verspreidt",
             bijbelplaats: "2 Tessalonicenzen 3:1"
@@ -3484,7 +3484,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:18"
         },
         {
-            vraag: "Paulus prijst de Tessalonicenzen omdat hun geloof bekend is geworden. Tot waar?",
+            vraag: "Paulus prijst de Tessalonicenzen omdat hun geloof bekend is geworden. Tot hoe ver reikte die bekendheid?",
             antwoorden: ["Tot in heel Macedonië en nog verder", "Alleen in hun eigen stad", "Alleen in Jeruzalem", "Tot in het paleis van de keizer in Rome"],
             correct: "Tot in heel Macedonië en nog verder",
             bijbelplaats: "1 Tessalonicenzen 1:8"
@@ -3544,7 +3544,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 3:13"
         },
         {
-            vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen?",
+            vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen gaan zij dan?",
             antwoorden: ["De wolken in, de Heer tegemoet", "De tempel in", "Naar de allerhoogste top van de heilige berg Sion", "De hemelpoort door"],
             correct: "De wolken in, de Heer tegemoet",
             bijbelplaats: "1 Tessalonicenzen 4:17"
@@ -4041,13 +4041,13 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 22"
         },
         {
-            vraag: "Paulus zegt dat God de gelovigen heeft overgebracht van het ene rijk naar het andere. Van welk naar welk?",
+            vraag: "Paulus zegt dat God de gelovigen heeft overgebracht van het ene rijk naar het andere. Van welk rijk naar welk rijk gingen zij?",
             antwoorden: ["Van de duisternis naar het rijk van Gods Zoon", "Van Egypte naar het beloofde land", "Van het land van de vijand naar het huis van de koning", "Van de tempel naar de hemel"],
             correct: "Van de duisternis naar het rijk van Gods Zoon",
             bijbelplaats: "Kolossenzen 1:13"
         },
         {
-            vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan?",
+            vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan is hij volgens Paulus de eerstgeborene?",
             antwoorden: ["Van heel de schepping", "Van de familie van Jozef", "Van de twaalf leerlingen", "Van de gemeente in Kolosse"],
             correct: "Van heel de schepping",
             bijbelplaats: "Kolossenzen 1:15"
@@ -4133,7 +4133,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:6"
         },
         {
-            vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee?",
+            vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat?",
             antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
             correct: "Met bidden",
             bijbelplaats: "Kolossenzen 4:12-13"
@@ -4395,7 +4395,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:3"
         },
         {
-            vraag: "Jezus werd mens en stierf, zodat de mensen niet hun leven lang bang hoeven te zijn. Waarvoor?",
+            vraag: "Jezus werd mens en stierf, zodat de mensen niet hun leven lang bang hoeven te zijn. Waarvoor hoeven zij niet meer bang te zijn?",
             antwoorden: ["Voor de dood", "Voor de duivel", "Voor Gods straf", "Voor het lijden"],
             correct: "Voor de dood",
             bijbelplaats: "Hebreeën 2:14-15"
@@ -4822,7 +4822,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 4:8"
         },
         {
-            vraag: "Petrus zegt: wees altijd bereid je te verantwoorden. Waarover?",
+            vraag: "Petrus zegt dat je altijd bereid moet zijn om je te verantwoorden als iemand ernaar vraagt. Waarover moet je dan kunnen vertellen?",
             antwoorden: ["Over de hoop die in je leeft", "Over de fouten die je hebt gemaakt", "Over de regels die je volgt", "Over de kerk waar je bij hoort"],
             correct: "Over de hoop die in je leeft",
             bijbelplaats: "1 Petrus 3:15"
@@ -7911,7 +7911,7 @@ const metgezellenVragen = [
         bijbelplaats: "Kolossenzen 4:17"
     },
     {
-        vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie?",
+        vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie was dat?",
         antwoorden: ["Aristarchus", "Lukas", "Tychikus", "Onesimus"],
         correct: "Aristarchus",
         bijbelplaats: "Kolossenzen 4:10"
@@ -7947,13 +7947,13 @@ const metgezellenVragen = [
         bijbelplaats: "2 Timoteüs 1:5"
     },
     {
-        vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie?",
+        vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie was deze medewerker?",
         antwoorden: ["Demas", "Lukas", "Timoteüs", "Titus"],
         correct: "Demas",
         bijbelplaats: "2 Timoteüs 4:10"
     },
     {
-        vraag: "Paulus noemt twee mannen die met hun verkeerde uitleg anderen van het geloof afbrachten. Wie?",
+        vraag: "Paulus noemt twee mannen die met hun verkeerde uitleg anderen van het geloof afbrachten. Wie waren deze twee mannen?",
         antwoorden: ["Hymeneüs en Filetus", "Demas en Alexander", "Jakobus en Johannes", "Paulus en Barnabas"],
         correct: "Hymeneüs en Filetus",
         bijbelplaats: "2 Timoteüs 2:17"
@@ -8109,7 +8109,7 @@ const verborgenSchatVragen = [
         bijbelplaats: "Openbaring 21:2"
     },
     {
-        vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke?",
+        vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke bijnaam is dat?",
         antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
         correct: "De sandwich-techniek",
         bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25",
