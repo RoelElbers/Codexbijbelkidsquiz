@@ -32,6 +32,12 @@ c = tekst.count(OUD)
 assert c == 1, "verwacht 1 treffer, gevonden %d" % c
 ```
 
+## Vragen
+
+Een vraag eindigt nooit op een losstaand vraagwoord ('Wat?', 'Wie?').
+De vraagzin wordt altijd volledig uitgeschreven, zodat het kind precies
+weet waar de vraag naar zoekt.
+
 ## Controleren
 
 **Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in

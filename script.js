@@ -1947,7 +1947,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 1:9"
         },
         {
-            vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders. Wat?",
+            vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders, waar Jezus hen op had laten wachten. Wat kregen zij die dag?",
             antwoorden: ["De heilige Geest", "Een nieuwe boot", "Een mooie mantel", "Een zak brood"],
             correct: "De heilige Geest",
             bijbelplaats: "Handelingen 2:1-4"
@@ -2002,7 +2002,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:33-34"
         },
         {
-            vraag: "Op het eiland Malta, na de schipbreuk, deed Paulus nog iets goeds voor de mensen daar. Wat?",
+            vraag: "Nadat het schip bij het eiland Malta was vergaan, kwamen alle opvarenden veilig aan land. Paulus bleef daar nog een tijd, en hij deed iets goeds voor de mensen op het eiland. Wat deed hij voor hen?",
             antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
             correct: "Hij genas veel zieke mensen",
             bijbelplaats: "Handelingen 28:8-9"
@@ -2058,7 +2058,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 13–28"
         },
         {
-            vraag: "Toen Jezus omhoogging, zeiden twee mannen in witte kleren iets tegen de leerlingen. Wat?",
+            vraag: "Toen Jezus omhoogging naar de hemel, stonden de leerlingen hem na te kijken. Opeens stonden er twee mannen in witte kleren bij hen, die iets tegen hen zeiden. Wat zeiden die twee mannen?",
             antwoorden: ["Dat ze Jezus nooit meer zouden zien", "Dat Jezus op een dag net zo terug zal komen", "Dat ze meteen moesten verhuizen", "Dat ze het geheim moesten houden"],
             correct: "Dat Jezus op een dag net zo terug zal komen",
             bijbelplaats: "Handelingen 1:10-11"
@@ -2119,8 +2119,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op het eiland Malta beet er een gevaarlijke slang in Paulus' hand. Wat gebeurde er met hem?",
-            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Hem overkwam niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
-            correct: "Hem overkwam niets, hij bleef ongedeerd",
+            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Er gebeurde niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
+            correct: "Er gebeurde niets, hij bleef ongedeerd",
             bijbelplaats: "Handelingen 28:3-6"
         },
         {
@@ -2130,7 +2130,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 8:26"
         },
         {
-            vraag: "Cornelius kreeg bezoek van een engel, die zei dat hij iemand moest laten halen. Wie?",
+            vraag: "Cornelius kreeg bezoek van een engel. Die zei dat hij mannen naar de stad Joppe moest sturen om iemand te laten halen. Wie moest Cornelius laten komen?",
             antwoorden: ["Paulus", "Petrus", "Filippus", "Lucas"],
             correct: "Petrus",
             bijbelplaats: "Handelingen 10:3-5"
@@ -2142,7 +2142,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 25:11"
         },
         {
-            vraag: "Een wijze leraar, Gamaliel, gaf de leiders advies over de apostelen. Wat zei hij?",
+            vraag: "Een wijze leraar, Gamaliël, gaf de leiders advies over de apostelen. Wat zei hij?",
             antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Verbied hun voorgoed om ooit nog ergens over Jezus te spreken", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
             correct: "Laat hen met rust; als het van God komt, houd je het toch niet tegen",
             bijbelplaats: "Handelingen 5:34-39"
@@ -2156,7 +2156,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 1:23-26"
         },
         {
-            vraag: "Op de Pinksterdag was er ineens iets te horen en te zien. Wat?",
+            vraag: "De leerlingen waren op de Pinksterdag met elkaar in één huis bij elkaar. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
             antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
             correct: "Een geluid als harde wind en vlammetjes als van vuur",
             bijbelplaats: "Handelingen 2:2-3"
@@ -2237,7 +2237,8 @@ vragenData["Handelingen"] = {
             vraag: "In de stad Lystra genas Paulus een man die nooit had kunnen lopen. Wat dachten de mensen toen?",
             antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat Paulus een goede dokter was", "Dat het niet echt was en dat het kwakzalvers waren"],
             correct: "Dat Paulus en Barnabas goden waren",
-            bijbelplaats: "Handelingen 14:11"
+            bijbelplaats: "Handelingen 14:11",
+            uitleg: "De mensen in Lystra spraken hun eigen streektaal en riepen dat de goden als mensen naar hen toe waren gekomen: Barnabas noemden zij Zeus en Paulus Hermes, omdat hij het woord voerde. De priester van Zeus kwam zelfs met stieren en bloemenkransen aanzetten om offers te brengen. Paulus en Barnabas schrokken daar zo van dat ze hun kleren scheurden en riepen dat zij gewone mensen waren, net als de anderen. Een kwakzalver, uit een van de andere antwoorden, is iemand die doet alsof hij zieke mensen kan genezen terwijl hij dat helemaal niet kan. Het is een oud woord dat ook in de Bijbel voorkomt: in het boek Job noemt Job zijn vrienden zo, omdat ze wel raad geven maar hem niet echt helpen."
         },
         {
             vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
@@ -5895,16 +5896,6 @@ vragenData["Handelingen"].expert.push(
     }
 );
 
-vragenData["Handelingen"].advanced.push(
-    {
-        vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
-        antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
-        correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
-        bijbelplaats: "Handelingen 27:12",
-        uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
-    }
-);
-
 vragenData["Lucas"].advanced.push(
     {
         vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
@@ -6698,23 +6689,10 @@ vragenData["Johannes"].advanced.push(
 
 vragenData["Handelingen"].advanced.push(
     {
-        vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
-        antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
-        correct: "Hij maakte huiden van geslachte dieren tot leer",
-        bijbelplaats: "Handelingen 9:43",
-        uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
-    },
-    {
         vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
         antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
         correct: "De eerste naam voor de volgelingen van Jezus",
         bijbelplaats: "Handelingen 9:2"
-    },
-    {
-        vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
-        antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
-        correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
-        bijbelplaats: "Handelingen 27:28"
     }
 );
 
@@ -6863,6 +6841,29 @@ vragenData["Johannes"].expert.push(
         antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
         correct: "De tuinman",
         bijbelplaats: "Johannes 20:15"
+    }
+);
+
+vragenData["Handelingen"].expert.push(
+    {
+        vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
+        antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
+        correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
+        bijbelplaats: "Handelingen 27:12",
+        uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
+    },
+    {
+        vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
+        antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
+        correct: "Hij maakte huiden van geslachte dieren tot leer",
+        bijbelplaats: "Handelingen 9:43",
+        uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
+    },
+    {
+        vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
+        antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
+        correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
+        bijbelplaats: "Handelingen 27:28"
     }
 );
 
