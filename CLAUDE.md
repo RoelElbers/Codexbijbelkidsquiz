@@ -76,7 +76,8 @@ exitcode wordt 1.
 
 Een vraag mag ook een zin zijn die het kind zelf afmaakt. Die eindigt dan op
 het ellipsisteken `…` — **niet** op drie losse punten, en **zonder**
-vraagteken, want grammaticaal is het een aanvulzin en geen vraag.
+vraagteken, want grammaticaal is het een aanvulzin en geen vraag. Het teken
+sluit **direct aan** op het voorafgaande woord, zonder spatie ervoor.
 
 > `Paulus zegt: wat je ook doet, doe het…`
 

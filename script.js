@@ -1711,7 +1711,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 10:9"
         },
         {
-            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal …",
+            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal…",
             antwoorden: ["gered worden", "alles begrijpen", "nooit meer verdrietig zijn", "een teken zien"],
             correct: "gered worden",
             bijbelplaats: "Romeinen 10:13"
@@ -1729,7 +1729,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 12:15"
         },
         {
-            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar …",
+            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar…",
             antwoorden: ["liefhebben", "gehoorzamen", "bewonderen", "volgen"],
             correct: "liefhebben",
             bijbelplaats: "Romeinen 13:8"
@@ -1741,13 +1741,13 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 13:9"
         },
         {
-            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de …",
+            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de…",
             antwoorden: ["hoop", "oorlog", "donkerte", "stilte"],
             correct: "hoop",
             bijbelplaats: "Romeinen 15:13"
         },
         {
-            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees …",
+            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees…",
             antwoorden: ["gastvrij", "streng", "stil", "snel"],
             correct: "gastvrij",
             bijbelplaats: "Romeinen 12:13"
@@ -4219,7 +4219,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:20"
         },
         {
-            vraag: "Wat zijn de engelen volgens het begin van Hebreeën? Het zijn dienaren die God stuurt om …",
+            vraag: "Wat zijn de engelen volgens het begin van Hebreeën? Het zijn dienaren die God stuurt om…",
             antwoorden: ["de gelovigen te helpen", "de sterren te besturen", "over de mensen te heersen", "zelf aanbeden te worden"],
             correct: "de gelovigen te helpen",
             bijbelplaats: "Hebreeën 1:14"
@@ -4231,7 +4231,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:32"
         },
         {
-            vraag: "Hebreeën begint zo: vroeger sprak God door de profeten, maar nu heeft Hij tot ons gesproken door zijn …",
+            vraag: "Hebreeën begint zo: vroeger sprak God door de profeten, maar nu heeft Hij tot ons gesproken door zijn…",
             antwoorden: ["Zoon", "engelen", "koningen", "boeken"],
             correct: "Zoon",
             bijbelplaats: "Hebreeën 1:1-2"
@@ -4377,7 +4377,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 1:4"
         },
         {
-            vraag: "Hebreeën noemt Jezus degene die ons geloof begint én …",
+            vraag: "Hebreeën noemt Jezus degene die ons geloof begint én…",
             antwoorden: ["voltooit", "beproeft", "beschermt", "beloont"],
             correct: "voltooit",
             bijbelplaats: "Hebreeën 12:2"
@@ -4421,7 +4421,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:8"
         },
         {
-            vraag: "Aan het begin laat de brief aan de Hebreeën zien dat Jezus hoger staat dan …",
+            vraag: "Aan het begin laat de brief aan de Hebreeën zien dat Jezus hoger staat dan…",
             antwoorden: ["de engelen", "Mozes", "de profeten", "de hogepriesters"],
             correct: "de engelen",
             bijbelplaats: "Hebreeën 1:4"
@@ -4555,7 +4555,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:16"
         },
         {
-            vraag: "Jakobus zegt: wie weet wat goed is om te doen, maar het niet doet, …",
+            vraag: "Jakobus zegt: wie weet wat goed is om te doen, maar het niet doet,…",
             antwoorden: ["doet verkeerd", "doet niets verkeerds", "is juist heel wijs", "mag het zelf weten"],
             correct: "doet verkeerd",
             bijbelplaats: "Jakobus 4:17"
@@ -4629,7 +4629,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:7"
         },
         {
-            vraag: "Jakobus zegt: wie God iets vraagt maar blijft twijfelen, lijkt op …",
+            vraag: "Jakobus zegt: wie God iets vraagt maar blijft twijfelen, lijkt op…",
             antwoorden: ["een golf van de zee die heen en weer wordt geslingerd", "een sterke rots in de branding", "een anker dat het schip stevig op zijn plek houdt", "een rustige, stille vijver"],
             correct: "een golf van de zee die heen en weer wordt geslingerd",
             bijbelplaats: "Jakobus 1:6"
@@ -4748,7 +4748,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 2:4-6"
         },
         {
-            vraag: "Petrus schrijft: wees gastvrij voor elkaar, en doe dat …",
+            vraag: "Petrus schrijft: wees gastvrij voor elkaar, en doe dat…",
             antwoorden: ["zonder te mopperen", "zonder er te veel tijd aan te besteden", "alleen als je zelf genoeg hebt", "vooral voor wie het verdient"],
             correct: "zonder te mopperen",
             bijbelplaats: "1 Petrus 4:9"
@@ -4766,7 +4766,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 3:8"
         },
         {
-            vraag: "Petrus schrijft over de Bijbel: de profeten spraken niet zomaar hun eigen woorden, maar werden geleid door …",
+            vraag: "Petrus schrijft over de Bijbel: de profeten spraken niet zomaar hun eigen woorden, maar werden geleid door…",
             antwoorden: ["de heilige Geest", "de koning", "hun eigen dromen", "de sterren"],
             correct: "de heilige Geest",
             bijbelplaats: "2 Petrus 1:21"
@@ -4816,7 +4816,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 3:9"
         },
         {
-            vraag: "Petrus schrijft: heb elkaar vurig lief, want de liefde bedekt …",
+            vraag: "Petrus schrijft: heb elkaar vurig lief, want de liefde bedekt…",
             antwoorden: ["veel zonden", "helemaal niets", "alleen kleine foutjes", "alleen je eigen fouten"],
             correct: "veel zonden",
             bijbelplaats: "1 Petrus 4:8"
@@ -4834,7 +4834,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 1:16"
         },
         {
-            vraag: "Petrus zegt dat de dag van de Heer zal komen als een …",
+            vraag: "Petrus zegt dat de dag van de Heer zal komen als een…",
             antwoorden: ["dief in de nacht", "aangekondigde feestdag", "storm die je ziet aankomen", "koning met groot vertoon"],
             correct: "dief in de nacht",
             bijbelplaats: "2 Petrus 3:10"
@@ -4864,7 +4864,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 1:18-19"
         },
         {
-            vraag: "In zijn tweede brief zegt Petrus: voeg bij je geloof steeds meer goede eigenschappen toe, en als kroon op alles …",
+            vraag: "In zijn tweede brief zegt Petrus: voeg bij je geloof steeds meer goede eigenschappen toe, en als kroon op alles…",
             antwoorden: ["de liefde", "veel kennis", "grote roem", "een lang leven"],
             correct: "de liefde",
             bijbelplaats: "2 Petrus 1:5-7"
@@ -4876,7 +4876,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 11"
         },
         {
-            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar …",
+            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar…",
             antwoorden: ["melk", "speelgoed", "slaap", "muziek"],
             correct: "melk",
             bijbelplaats: "1 Petrus 2:2"
@@ -4920,7 +4920,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 2:9"
         },
         {
-            vraag: "Petrus schrijft: bij de Heer is één dag als …",
+            vraag: "Petrus schrijft: bij de Heer is één dag als…",
             antwoorden: ["duizend jaar", "één uur", "één minuut", "één week"],
             correct: "duizend jaar",
             bijbelplaats: "2 Petrus 3:8"
@@ -4978,7 +4978,7 @@ vragenData["Petrus & Judas"] = {
 vragenData["Brieven van Johannes"] = {
     beginner: [
         {
-            vraag: "Welke beroemde zin over God staat in de eerste brief van Johannes? God is …",
+            vraag: "Welke beroemde zin over God staat in de eerste brief van Johannes? God is…",
             antwoorden: ["liefde", "ver weg", "streng", "onzichtbaar"],
             correct: "liefde",
             bijbelplaats: "1 Johannes 4:8"
@@ -5002,7 +5002,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:5"
         },
         {
-            vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden, maar met …",
+            vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden, maar met…",
             antwoorden: ["daden en in waarheid", "dure cadeaus", "een luide stem", "veel beloften"],
             correct: "daden en in waarheid",
             bijbelplaats: "1 Johannes 3:18"
@@ -5032,13 +5032,13 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "3 Johannes 4"
         },
         {
-            vraag: "Johannes noemt de gelovigen aan wie hij schrijft vaak liefdevol …",
+            vraag: "Johannes noemt de gelovigen aan wie hij schrijft vaak liefdevol…",
             antwoorden: ["'mijn kinderen'", "'mijn soldaten'", "'mijn dienaren'", "'mijn leerlingen'"],
             correct: "'mijn kinderen'",
             bijbelplaats: "1 Johannes 2:1"
         },
         {
-            vraag: "Johannes vergelijkt leven mét God met wandelen in het licht, en leven zonder God met wandelen in het …",
+            vraag: "Johannes vergelijkt leven mét God met wandelen in het licht, en leven zonder God met wandelen in het…",
             antwoorden: ["donker", "moeras", "vuur", "modder"],
             correct: "donker",
             bijbelplaats: "1 Johannes 1:6-7"
@@ -5058,7 +5058,7 @@ vragenData["Brieven van Johannes"] = {
     ],
     advanced: [
         {
-            vraag: "Waarom kunnen wij volgens Johannes liefhebben? Omdat God …",
+            vraag: "Waarom kunnen wij volgens Johannes liefhebben? Omdat God…",
             antwoorden: ["ons eerst heeft liefgehad", "ons dat opdraagt", "ons daarvoor beloont", "ons pas liefheeft als wij beginnen"],
             correct: "ons eerst heeft liefgehad",
             bijbelplaats: "1 Johannes 4:19"
@@ -5498,7 +5498,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:14"
         },
         {
-            vraag: "De hoofdstraat van de nieuwe stad was van zuiver goud, maar zó helder dat het leek op …",
+            vraag: "De hoofdstraat van de nieuwe stad was van zuiver goud, maar zó helder dat het leek op…",
             antwoorden: ["doorzichtig glas", "blauw water", "wit marmer", "groen gras"],
             correct: "doorzichtig glas",
             bijbelplaats: "Openbaring 21:21"
