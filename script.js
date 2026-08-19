@@ -1630,19 +1630,14 @@ vragenData["Romeinen"] = {
             vraag: "Paulus geeft een korte regel over wat je moet doen als iemand jou kwaad doet. Wat schrijft hij?",
             antwoorden: ["Overwin het kwade door het goede", "Doe precies hetzelfde terug", "Doe alsof je niets merkt", "Meld het meteen bij de overheid"],
             correct: "Overwin het kwade door het goede",
-            bijbelplaats: "Romeinen 12:21"
+            bijbelplaats: "Romeinen 12:21",
+            uitleg: "Stel je voor: een vriend van je zegt iets gemeens waar anderen bij staan. Je eerste gedachte is om iets net zo gemeens terug te zeggen. Dat noemt Paulus \"overwonnen worden door het kwade\": het gemene wint, want nu doen jullie het allebei. Zijn raad is om het andersom te doen. Niet terugpakken, maar iets goeds doen — hem toch groeten de volgende dag, of vragen wat er aan de hand was. Dat is veel moeilijker dan terugpakken, maar het is het enige wat de ruzie echt kan laten ophouden. Overwinnen betekent hier dus niet dat jij wint van hem, maar dat het gemene gedrag geen terrein wint in jullie hart. Paulus bedoelt niet dat je alles maar moet laten gebeuren. Als iemand je steeds pijn doet of pest, mag je gewoon \"stop\" zeggen en het aan je ouders of je juf of meester vertellen. Vlak vóór deze regel schrijft Paulus zelf dat je in vrede moet leven \"voor zover het van jou afhangt\" — hij weet dus goed dat het niet altijd alleen van jou afhangt."
         },
         {
             vraag: "Wat voor soort tekst is \"Romeinen\"?",
             antwoorden: ["Een lied", "Een evangelie", "Een gebed", "Een brief"],
             correct: "Een brief",
             bijbelplaats: "Romeinen 1:1-7"
-        },
-        {
-            vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
-            antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
-            correct: "Nee, maar hij wilde er graag heen",
-            bijbelplaats: "Romeinen 1:10-13"
         },
         {
             vraag: "Paulus schrijft dat álle mensen iets met elkaar gemeen hebben. Wat geldt er volgens hem voor iedereen?",
@@ -1705,15 +1700,15 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 8:31"
         },
         {
-            vraag: "Paulus legt eenvoudig uit hoe je gered wordt: geloof in je hart, en belijd met je mond dat Jezus … is.",
-            antwoorden: ["Heer", "koning van Rome", "een profeet", "een engel"],
-            correct: "Heer",
+            vraag: "Paulus legt kort uit hoe je gered wordt: je gelooft in je hart, en je zegt hardop wie Jezus is. Wat zeg je dan over Hem?",
+            antwoorden: ["Dat Hij de Heer is", "Dat Hij de koning van Rome is", "Dat Hij een profeet is", "Dat Hij een engel is"],
+            correct: "Dat Hij de Heer is",
             bijbelplaats: "Romeinen 10:9"
         },
         {
-            vraag: "Paulus schrijft: iedereen die de naam van de Heer aanroept, zal…",
-            antwoorden: ["gered worden", "alles begrijpen", "nooit meer verdrietig zijn", "een teken zien"],
-            correct: "gered worden",
+            vraag: "Paulus haalt een oude belofte aan, over iedereen die de naam van de Heer aanroept. Wat belooft God zo iemand?",
+            antwoorden: ["Dat hij gered wordt", "Dat hij alles zal begrijpen", "Dat hij nooit meer verdrietig zal zijn", "Dat hij een teken zal zien"],
+            correct: "Dat hij gered wordt",
             bijbelplaats: "Romeinen 10:13"
         },
         {
@@ -1729,27 +1724,27 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 12:15"
         },
         {
-            vraag: "Paulus zegt: blijf elkaar maar één ding altijd schuldig, namelijk dat jullie elkaar…",
-            antwoorden: ["liefhebben", "gehoorzamen", "bewonderen", "volgen"],
-            correct: "liefhebben",
+            vraag: "Paulus zegt dat je je schulden moet betalen, maar dat er één ding is dat je elkaar altijd schuldig blijft. Wat is dat?",
+            antwoorden: ["Elkaar liefhebben", "Elkaar gehoorzamen", "Elkaar bewonderen", "Elkaar volgen"],
+            correct: "Elkaar liefhebben",
             bijbelplaats: "Romeinen 13:8"
         },
         {
-            vraag: "Paulus herhaalt een bekende regel uit de Bijbel: heb je … lief als jezelf.",
-            antwoorden: ["naaste", "koning", "leraar", "baas"],
-            correct: "naaste",
+            vraag: "Paulus herhaalt een bekende regel uit de wet van Mozes. Wie moet je volgens die regel liefhebben als jezelf?",
+            antwoorden: ["Je naaste", "Je koning", "Je leraar", "Je baas"],
+            correct: "Je naaste",
             bijbelplaats: "Romeinen 13:9"
         },
         {
-            vraag: "Paulus noemt God aan het eind met een mooie naam: de God van de…",
-            antwoorden: ["hoop", "oorlog", "donkerte", "stilte"],
-            correct: "hoop",
+            vraag: "Tegen het eind van zijn brief wenst Paulus de gelovigen vreugde en vrede toe, en noemt God daarbij met een mooie naam. Welke naam geeft hij God?",
+            antwoorden: ["De God van de hoop", "De God van de oorlog", "De God van het donker", "De God van de stilte"],
+            correct: "De God van de hoop",
             bijbelplaats: "Romeinen 15:13"
         },
         {
-            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben, en wees…",
-            antwoorden: ["gastvrij", "streng", "stil", "snel"],
-            correct: "gastvrij",
+            vraag: "Paulus geeft praktische raad: deel met mensen die iets nodig hebben. En wat moet je doen met mensen die bij je aankloppen?",
+            antwoorden: ["Ontvang hen hartelijk in je huis", "Wacht tot zij jou eerst uitnodigen", "Help alleen mensen die je goed kent", "Geef pas als je genoeg overhoudt"],
+            correct: "Ontvang hen hartelijk in je huis",
             bijbelplaats: "Romeinen 12:13"
         },
         {
@@ -1759,9 +1754,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 12:2"
         },
         {
-            vraag: "Paulus schrijft dat mensen die zich door Gods Geest laten leiden, Gods … zijn.",
-            antwoorden: ["kinderen", "dienaren", "soldaten", "gasten"],
-            correct: "kinderen",
+            vraag: "Paulus schrijft over mensen die zich door Gods Geest laten leiden. Wat zijn zij volgens hem?",
+            antwoorden: ["Kinderen van God", "Dienaren van God", "Soldaten van God", "Gasten van God"],
+            correct: "Kinderen van God",
             bijbelplaats: "Romeinen 8:14"
         }
     ],
@@ -1875,12 +1870,6 @@ vragenData["Romeinen"] = {
             antwoorden: ["Denk dat je beter bent dan anderen", "Denk dat je alles alleen kunt", "Denk dat je nooit fouten maakt", "Denk niet te hoog van jezelf"],
             correct: "Denk niet te hoog van jezelf",
             bijbelplaats: "Romeinen 12:3"
-        },
-        {
-            vraag: "Hoe kun je het kwaad volgens Paulus het beste aanpakken?",
-            antwoorden: ["Sla nog harder terug", "Loop altijd weg", "Overwin het kwade met het goede", "Doe net zo gemeen terug"],
-            correct: "Overwin het kwade met het goede",
-            bijbelplaats: "Romeinen 12:21"
         },
         {
             vraag: "Waarom moet je een ander niet te snel veroordelen, zegt Paulus?",
@@ -6459,7 +6448,8 @@ vragenData["Romeinen"].expert.push(
         vraag: "Paulus schrijft: groet elkaar met een heilige kus. Wat was dat?",
         antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
         correct: "De gewone begroeting in die tijd, een kus op de wang",
-        bijbelplaats: "Romeinen 16:16"
+        bijbelplaats: "Romeinen 16:16",
+        uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders. Rond de Middellandse Zee is de begroetingskus trouwens tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
     }
 );
 
@@ -6864,6 +6854,15 @@ vragenData["Handelingen"].expert.push(
         antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
         correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
         bijbelplaats: "Handelingen 27:28"
+    }
+);
+
+vragenData["Romeinen"].advanced.push(
+    {
+        vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
+        antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
+        correct: "Nee, maar hij wilde er graag heen",
+        bijbelplaats: "Romeinen 1:10-13"
     }
 );
 
