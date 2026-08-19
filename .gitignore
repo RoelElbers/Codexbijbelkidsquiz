@@ -51,6 +51,9 @@ vragen-export.md
 # (dat script gaat ook WEL de repo in). Opnieuw maken met:
 # python maak-kist-export.py
 kist-export.md
+# Invulblad voor het uitschrijven van de aanvulzinnen. Werkdocument, geen bron:
+# de nieuwe teksten belanden uiteindelijk in script.js.
+aanvulzinnen-werklijst.md
 
 # --- Python-rommel (de repo bevat hulpscripts zoals maak-vragen-export.py) ---
 __pycache__/

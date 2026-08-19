@@ -1024,6 +1024,85 @@ def controle_vraagwoorden(bron, pools):
 
 
 # ---------------------------------------------------------------------------
+#  10. Vraagzinregel
+# ---------------------------------------------------------------------------
+
+# Zolang de oude aanvulzinnen nog niet allemaal uitgeschreven zijn, is een
+# treffer een WAARSCHUWING en blijft de exitcode 0. Zet deze vlag op True zodra
+# de sweep klaar is; vanaf dan is een treffer een PROBLEEM.
+VRAAGZINREGEL_HARD = False
+
+BELETSELTEKENS = ("…", "...")
+
+
+def _eindigt_op_beletselteken(vraagtekst):
+    t = (vraagtekst or "").strip()
+    return any(t.endswith(teken) for teken in BELETSELTEKENS)
+
+
+def _is_vraagzin(vraagtekst):
+    """Een vraag hoort op een vraagteken te eindigen."""
+    return (vraagtekst or "").strip().endswith("?")
+
+
+def controle_vraagzin(bron, pools):
+    kop(10, "Vraagzinregel — elke vraag eindigt op een vraagteken")
+
+    meldingen = []
+    gescand = 0
+    aanvulzinnen = []
+    gatenzinnen = []
+    beletselteken_middenin = 0
+
+    for bronnaam, boek, niveau, index, vraag in _vraagbronnen(bron, pools,
+                                                              meldingen):
+        gescand += 1
+        vraagtekst = vraag.get("vraag") or ""
+        if not _is_vraagzin(vraagtekst):
+            rij = (bronnaam, boek, niveau, index, vraagtekst)
+            if _eindigt_op_beletselteken(vraagtekst):
+                aanvulzinnen.append(rij)
+            else:
+                gatenzinnen.append(rij)
+        elif any(teken in vraagtekst for teken in BELETSELTEKENS):
+            # Beletselteken middenin met een echte vraagzin erna: toegestaan.
+            beletselteken_middenin += 1
+
+    for melding in meldingen:
+        waarschuwing("parser: %s" % melding)
+
+    info("gescand: %-22s %d vragen" % ("TOTAAL", gescand))
+    info("beletselteken middenin, met vraagzin erna : %d (toegestaan)"
+         % beletselteken_middenin)
+
+    melden = probleem if VRAAGZINREGEL_HARD else waarschuwing
+
+    for bronnaam, boek, niveau, index, vraagtekst in aanvulzinnen:
+        melden("aanvulzin (eindigt op beletselteken) — %s / %s / %s / "
+               "index %d: %s" % (bronnaam, boek, niveau, index, vraagtekst))
+    for bronnaam, boek, niveau, index, vraagtekst in gatenzinnen:
+        melden("geen vraagzin (eindigt niet op '?') — %s / %s / %s / "
+               "index %d: %s" % (bronnaam, boek, niveau, index, vraagtekst))
+
+    openstaand = len(aanvulzinnen) + len(gatenzinnen)
+    if not openstaand:
+        ok("elke vraag is een volledige vraagzin en eindigt op een vraagteken.")
+        if not VRAAGZINREGEL_HARD:
+            info("Alles is uitgeschreven: zet VRAAGZINREGEL_HARD op True, dan "
+                 "wordt een terugval voortaan een PROBLEEM.")
+    else:
+        info("aanvulzinnen  : %d" % len(aanvulzinnen))
+        info("gatenzinnen   : %d" % len(gatenzinnen))
+        info("nog uit te schrijven : %d" % openstaand)
+        if not VRAAGZINREGEL_HARD:
+            info("Deze staan bewust nog als WAARSCHUWING: de sweep loopt nog. "
+                 "Zodra de teller op 0 staat gaat VRAAGZINREGEL_HARD op True.")
+        info("Bij het uitschrijven wijzigen 'antwoorden' en 'correct' mee, "
+             "want die sluiten aan op de oude, onafgemaakte zin. "
+             "'bijbelplaats' blijft ongewijzigd.")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -1065,6 +1144,7 @@ def main():
     controle_catechese(bron, pools)
     controle_kist(bron, pools)
     controle_vraagwoorden(bron, pools)
+    controle_vraagzin(bron, pools)
 
     schrijf()
     schrijf("=" * 78)

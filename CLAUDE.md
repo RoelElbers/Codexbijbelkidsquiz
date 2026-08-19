@@ -72,17 +72,25 @@ vraagwoord eindigen ('zowat?', 'vanwaar?') slaan evenmin aan.
 `metgezellenVragen`. Een treffer is een PROBLEEM, geen waarschuwing: de
 exitcode wordt 1.
 
-### Aanvulzinnen
+### Aanvulzinnen worden uitgeschreven
 
-Een vraag mag ook een zin zijn die het kind zelf afmaakt. Die eindigt dan op
-het ellipsisteken `…` — **niet** op drie losse punten, en **zonder**
-vraagteken, want grammaticaal is het een aanvulzin en geen vraag. Het teken
-sluit **direct aan** op het voorafgaande woord, zonder spatie ervoor.
+Een vraag bevat **altijd een volledige vraagzin en eindigt op een vraagteken**.
+Een aanvulzin die op een beletselteken `…` eindigt is geen vraag: het kind
+krijgt dan een half afgemaakte zin in plaats van iets wat het gevraagd wordt.
+Zo'n zin wordt uitgeschreven tot een echte vraag.
 
-> `Paulus zegt: wat je ook doet, doe het…`
+Een beletselteken **middenin** mag wel, mits er een echte vraagzin op volgt —
+het citaat mag onaf zijn, de vraag erover niet:
 
-De vraagwoordcontrole laat deze vragen met rust: die kijkt alleen naar
-teksten die op een vraagteken eindigen.
+> `Paulus schrijft: "Het leven is voor mij Christus…" Hoe vult hij die zin aan?`
+
+Wordt een aanvulzin uitgeschreven, dan **wijzigen de antwoorden mee**, want die
+sluiten grammaticaal aan op de oude, onafgemaakte zin. Met `antwoorden` wijzigt
+dus ook `correct` mee. `bijbelplaats` blijft ongewijzigd.
+
+> was: `Paulus zegt: wat je ook doet, doe het…` — antwoorden `["in liefde", …]`
+> wordt: `Paulus zegt dat het bij alles wat je doet om één ding gaat. Waar
+> gaat het hem om?` — antwoorden `["Dat je het in liefde doet", …]`
 
 ## Controleren
 
