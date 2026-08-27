@@ -2417,9 +2417,9 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 6:19"
         },
         {
-            vraag: "Paulus zegt: als je alles kunt, maar je hebt geen liefde, dan…",
-            antwoorden: ["ben je niets", "ben je toch nog knap bezig", "maakt het eigenlijk niet uit", "heb je in elk geval veel bereikt"],
-            correct: "ben je niets",
+            vraag: "Stel dat iemand alles kan: profeteren, alles begrijpen, zelfs bergen verzetten. Wat is die persoon volgens Paulus zonder liefde?",
+            antwoorden: ["Niets", "Bijna volmaakt", "Toch knap bezig", "Al een heel eind"],
+            correct: "Niets",
             bijbelplaats: "1 Korintiërs 13:2"
         },
         {
@@ -8002,7 +8002,10 @@ function openSchatkist(niveau) {
     gekozenBoek = null;
     gekozenNiveau = niveau;
 
-    vragen = kiesWillekeurigeVragen(alleVragenVoorNiveau(niveau), 10);
+    vragen = kiesWillekeurigeVragen(alleVragenVoorNiveau(niveau), 10).map((v) => ({
+        ...v,
+        antwoorden: husselArray(v.antwoorden)
+    }));
 
     document.getElementById("niveau-scherm").style.display = "none";
     const quizScherm = document.getElementById("quiz-scherm");
@@ -8163,7 +8166,8 @@ const verborgenSchatVragen = [
 ];
 
 // Kleine herbruikbare hulp: gehusselde kopie (Fisher-Yates), origineel blijft
-// ongemoeid. Gebruikt voor de antwoordvolgorde van de Verborgen Schat-vraag.
+// ongemoeid. Gebruikt voor de antwoordvolgorde in alle quizmodi: boek-quiz,
+// oefenmodus, schatkist en Verborgen Schat.
 function husselArray(bron) {
     const kopie = [...bron];
     for (let i = kopie.length - 1; i > 0; i--) {
