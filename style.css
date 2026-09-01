@@ -2091,34 +2091,24 @@ height: 22%;
     cursor: pointer;
 }
 
-/* Het tekstvak van de leesschermen (Maten, geld & tijd en Woordenboek): breder,
-   links uitgelijnd, en — cruciaal — begrensd in hoogte met interne scroll. Zo
-   blijft het vak binnen het scherm en is de hele lange tekst bereikbaar, ook al
-   centreert de overlay het verticaal. (Deze regels stonden vóór de ombouw op
-   #naslag-scherm; ze horen bij de tekst, die nu in deze schermen staat.) */
-#updates-scherm .quiz-box,
-#steun-scherm .quiz-box,
-#maten-scherm .quiz-box,
-#woordenboek-scherm .quiz-box,
-#verborgenschat-naslag-scherm .quiz-box,
-#vu-lijst-scherm .quiz-box,
-#vu-detail-scherm .quiz-box,
-#catechese-lijst-scherm .quiz-box,
-#catechese-artikel-scherm .quiz-box {
+/* Het tekstvak van elk leesscherm: breder, links uitgelijnd, en — cruciaal —
+   begrensd in hoogte met interne scroll. Zo blijft het vak binnen het scherm en
+   is de hele lange tekst bereikbaar, inclusief de Terug-knoppen, ook al
+   centreert de overlay het verticaal.
+
+   Op de class .naslag-box en niet op een lijst van id's. Dat was eerder wél zo,
+   en toen de losse naslagschermen opgingen in de Ontdekken-hub viel het
+   woordenboek buiten de lijst: geen scroll meer, en de tekst gecentreerd in
+   plaats van links. Elk leesscherm draagt deze class al, dus een nieuw scherm
+   krijgt het gedrag nu vanzelf. */
+.quiz-box.naslag-box {
     width: 900px;
     max-width: 90vw;
     max-height: 90vh;
     overflow-y: auto;
     text-align: left;
 }
-#updates-scherm .quiz-title,
-#steun-scherm .quiz-title,
-#maten-scherm .quiz-title,
-#woordenboek-scherm .quiz-title,
-#verborgenschat-naslag-scherm .quiz-title,
-#vu-lijst-scherm .quiz-title,
-#vu-detail-scherm .quiz-title,
-#catechese-lijst-scherm .quiz-title {
+.naslag-box .quiz-title {
     text-align: center;
 }
 
@@ -2128,10 +2118,8 @@ height: 22%;
    menuknoppen in Bijbeltraining). Alleen het scroll-gedrag; de menu-opmaak
    (gecentreerd) blijft. */
 #bijbeltraining-scherm .quiz-box,
-#naslag-scherm .quiz-box,
-#oefen-boek-scherm .quiz-box,
-#vu-boek-scherm .quiz-box,
-#catechese-scherm .quiz-box {
+#ontdek-scherm .quiz-box,
+#on-boek-scherm .quiz-box {
     max-height: 90vh;
     overflow-y: auto;
 }
@@ -2141,14 +2129,9 @@ height: 22%;
     color: #f3ecd8;
     margin: 0 0 20px;
 }
-#updates-scherm .naslag-terug,
-#steun-scherm .naslag-terug,
-#maten-scherm .naslag-terug,
-#woordenboek-scherm .naslag-terug,
-#verborgenschat-naslag-scherm .naslag-terug,
-#vu-boek-scherm .naslag-terug,
-#vu-lijst-scherm .naslag-terug,
-#vu-detail-scherm .naslag-terug {
+/* Compacte "← Terug" boven en onder een leesscherm. Ook op class: de lijst met
+   id's raakte achterop bij elke hernoeming. */
+.naslag-terug {
     display: inline-block;
     width: auto;
     padding: 10px 24px;
@@ -2358,8 +2341,8 @@ height: 22%;
    Daarom padding 23px: 23 + 1 is gelijk aan 22 + 2, dus de buitenmaat
    blijft exact zoals hij was.
 
-   BEREIK: bewust gescopet op de twee niveaukeuzeschermen, #niveau-scherm en
-   #vu-niveau-scherm (Verborgen Uitdaging). Beide staan in dezelfde
+   BEREIK: bewust gescopet op de twee niveaukeuzeschermen, #niveau-scherm (de
+   quiz) en #on-niveau-scherm (Oefenen & nalezen). Beide staan in dezelfde
    selectorlijsten en delen dus één bron — voeg een scherm toe door de scope
    erbij te zetten, nooit door de regels te kopiëren. De classes
    .niveau-beginner, -advanced, -expert en -terug worden namelijk door het
@@ -2369,7 +2352,7 @@ height: 22%;
 
 /* Beginner = brons */
 #niveau-scherm .niveau-beginner,
-#vu-niveau-scherm .niveau-beginner {
+#on-niveau-scherm .niveau-beginner {
     --rimdonker:    #4A2C0E;
     --spiegelwit:   #F2C89A;
     --boventoon:    #C98A4E;
@@ -2382,7 +2365,7 @@ height: 22%;
 
 /* Gevorderd = zilver */
 #niveau-scherm .niveau-advanced,
-#vu-niveau-scherm .niveau-advanced {
+#on-niveau-scherm .niveau-advanced {
     --rimdonker:    #5A5F6B;
     --spiegelwit:   #FFFFFF;
     --boventoon:    #E3E7EE;
@@ -2395,7 +2378,7 @@ height: 22%;
 
 /* Expert = goud */
 #niveau-scherm .niveau-expert,
-#vu-niveau-scherm .niveau-expert {
+#on-niveau-scherm .niveau-expert {
     --rimdonker:    #6B4A10;
     --spiegelwit:   #FFF3C4;
     --boventoon:    #F2CE55;
@@ -2410,9 +2393,9 @@ height: 22%;
 #niveau-scherm .niveau-beginner,
 #niveau-scherm .niveau-advanced,
 #niveau-scherm .niveau-expert,
-#vu-niveau-scherm .niveau-beginner,
-#vu-niveau-scherm .niveau-advanced,
-#vu-niveau-scherm .niveau-expert {
+#on-niveau-scherm .niveau-beginner,
+#on-niveau-scherm .niveau-advanced,
+#on-niveau-scherm .niveau-expert {
     background: linear-gradient(to bottom,
         var(--rimdonker)     0%,
         var(--spiegelwit)    10%,
@@ -2437,7 +2420,7 @@ height: 22%;
 /* Terug — diep navy met een gouden rand, zodat hij bij de rand van het
    quizvak hoort en niet meedoet aan de metalen. Geen verloop. */
 #niveau-scherm .niveau-terug,
-#vu-niveau-scherm .niveau-terug {
+#on-niveau-scherm .niveau-terug {
     background: #16326E;
     border: 2px solid #C8A03C;
     color: #F5F3EC;

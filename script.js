@@ -8837,7 +8837,7 @@ function kiesNalezen() {
 // tekst nooit twee keer.
 // =========================
 const ontdekRubrieken = [
-    { id: "woorden", naam: "Woorden",
+    { id: "woorden", naam: "Woordenboek",
       onderwerpen: [
           { id: "woordenboek", naam: "Woordenboek", type: "lexicon", inhoud: ONTDEK_WOORDENBOEK }
       ] },
