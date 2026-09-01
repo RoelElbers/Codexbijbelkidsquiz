@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=79">
+    <link rel="stylesheet" href="style.css?v=80">
 
     <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
          Vier verwijzingen dragen samen dit eigen nummer:
@@ -401,72 +401,75 @@
             </div>
         </div>
 
-        <!-- Bijbeltraining-kruispunt: vijf ingangen. De eerste drie (Oefenen,
-             Naslag & uitleg, Vragen & uitleg) openen een overlay binnen het spel.
-             De laatste twee zijn leesmateriaal en delen daarom de catechese-knop-
+        <!-- Bijbeltraining-kruispunt: vier ingangen. De eerste twee (Oefenen &
+             nalezen, Naslag & uitleg) openen een overlay binnen het spel. De
+             laatste twee zijn leesmateriaal en delen daarom de catechese-knop-
              stijl; "De verschillende kerken" verlaat het spel naar kerken.html.
              Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
         <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
                 <h2 class="quiz-title">Bijbeltraining</h2>
                 <p class="quiz-question">Oefen en groei</p>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="startOefenen()">Oefenen</button>
+                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="openOefenenNalezen()">Oefenen &amp; nalezen</button>
                 <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openNaslag()">Naslag &amp; uitleg</button>
-                <button class="answer-btn niveau-btn niveau-expert menu-knop-blauw" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
                 <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
                 <button class="answer-btn niveau-btn catechese-knop" onclick="window.location.href='kerken.html'">De verschillende kerken</button>
                 <button id="bijbeltraining-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
-        <!-- Boekkeuze binnen Bijbeltraining > Oefenen. Zelfde overlay-opzet.
-             Elke knop opent het gekozen evangelie in oefenmodus. -->
-        <div id="oefen-boek-scherm" class="quiz-overlay" style="display: none;">
+        <!-- Oefenen & nalezen — stap 1: boekkeuze. Eén ingang voor allebei de
+             manieren van werken; de keuze tussen oefenen en nalezen valt pas na
+             het niveau, op #modus-scherm. De 18 boekknoppen staan hier bewust
+             NIET: vulOnBoeken() voegt ze bij het openen in vóór de onderste
+             Terug-knop. Terug staat boven én onder, want een lijst van 18 boeken
+             is langer dan een beeldscherm. -->
+        <div id="on-boek-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
-                <h2 class="quiz-title">Oefenen</h2>
-                <p class="quiz-question">Kies een evangelie</p>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Matteüs')">Matteüs</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Marcus')">Marcus</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Lucas')">Lucas</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Johannes')">Johannes</button>
-                <button id="oefen-boek-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
+                <h2 class="quiz-title">Oefenen &amp; nalezen</h2>
+                <p class="quiz-question">Kies een boek</p>
+
+                <button id="on-boek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
+
+                <button id="on-boek-terug-onder" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
-        <!-- Vragen & uitleg (read-only): evangelie kiezen. Leest straks rechtstreeks
-             uit vragenData; raakt de quizlogica niet aan. -->
-        <div id="vu-boek-scherm" class="quiz-overlay" style="display: none;">
+        <!-- Oefenen & nalezen — stap 2: niveaukeuze. Geen vergrendeling: allebei
+             de manieren staan altijd open. De boektitel wordt door kiesOnBoek()
+             ingevuld. De labels zijn de trofeekleuren; de datasleutels eronder
+             blijven beginner/advanced/expert (zie niveauLabels in script.js). -->
+        <div id="on-niveau-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
-                <h2 class="quiz-title">Vragen &amp; uitleg</h2>
-                <p class="quiz-question">Kies een evangelie</p>
-
-                <!-- Terug staat boven én onder, net als in de andere leesschermen:
-                     vulVuBoeken() vult deze lijst met alle 18 boeken en maakt de
-                     box scrollbaar, en dan is alleen een knop onderaan onhandig. -->
-                <button id="vu-boek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
-
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Matteüs')">Matteüs</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Marcus')">Marcus</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Lucas')">Lucas</button>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Johannes')">Johannes</button>
-                <button id="vu-boek-terug-onder" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
-            </div>
-        </div>
-
-        <!-- Vragen & uitleg: niveau kiezen. Alle niveaus zijn hier open (read-only,
-             geen vergrendeling). De boektitel wordt door JS ingevuld. -->
-        <div id="vu-niveau-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box">
-                <h2 class="quiz-title" id="vu-niveau-titel">Vragen &amp; uitleg</h2>
+                <h2 class="quiz-title" id="on-niveau-titel"></h2>
                 <p class="quiz-question">Kies een niveau</p>
-                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuNiveau('beginner')">Beginner</button>
-                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesVuNiveau('advanced')">Advanced</button>
-                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesVuNiveau('expert')">Expert</button>
-                <button id="vu-niveau-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
+                <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesOnNiveau('beginner')">Brons</button>
+                <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesOnNiveau('advanced')">Zilver</button>
+                <button class="answer-btn niveau-btn niveau-expert" onclick="kiesOnNiveau('expert')">Goud</button>
+                <button id="on-niveau-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
-        <!-- Vragen & uitleg: genummerde, scrollbare lijst van alle vragen van het
+        <!-- Oefenen & nalezen — stap 3: wat wil je doen? De titel toont de
+             gekozen combinatie, bijv. "Marcus — Zilver". Oefenen verlaat de
+             Bijbeltraining-tak (de quiz-tak neemt het over, dus de stack wordt
+             geleegd); Nalezen blijft op de stack en gaat naar #vu-lijst-scherm. -->
+        <div id="modus-scherm" class="quiz-overlay" style="display: none;">
+            <div class="quiz-box">
+                <h2 class="quiz-title" id="modus-titel"></h2>
+                <p class="quiz-question">Wat wil je doen?</p>
+
+                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenen()">Oefenen</button>
+                <p class="naslag-slot-hint">Alle vragen achter elkaar, rustig, zonder klok.</p>
+
+                <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="kiesNalezen()">Nalezen</button>
+                <p class="naslag-slot-hint">Lees de vragen na, met de uitleg erbij.</p>
+
+                <button id="modus-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
+            </div>
+        </div>
+
+        <!-- Nalezen: genummerde, scrollbare lijst van alle vragen van het
              gekozen boek + niveau. Wordt door bouwVuLijst() gevuld uit vragenData. -->
         <div id="vu-lijst-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
@@ -477,7 +480,7 @@
             </div>
         </div>
 
-        <!-- Vragen & uitleg: uitlegpagina van één vraag. Wordt door openVuDetail()
+        <!-- Nalezen: uitlegpagina van één vraag. Wordt door openVuDetail()
              gevuld uit vragenData (vraag, juiste antwoord, bijbelplaats, uitleg). -->
         <div id="vu-detail-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
@@ -850,8 +853,8 @@
     </div>
 
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
-    <script src="lang/nl.js?v=79"></script>
-    <script src="script.js?v=79"></script>
+    <script src="lang/nl.js?v=80"></script>
+    <script src="script.js?v=80"></script>
 
 </body>
 

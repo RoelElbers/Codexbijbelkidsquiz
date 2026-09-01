@@ -78,10 +78,13 @@ if (!document.fullscreenEnabled) {
 }
 
 // Nette labels voor de niveaus (intern: beginner/advanced/expert)
+// Zichtbare namen van de drie niveaus: de trofeekleuren. De DATASLEUTELS
+// (beginner/advanced/expert) blijven ongewijzigd — die zitten in vragenData en
+// in controleer-consistentie.py, en veranderen dus niet mee.
 const niveauLabels = {
-    beginner: "Beginner",
-    advanced: "Advanced",
-    expert: "Expert"
+    beginner: "Brons",
+    advanced: "Zilver",
+    expert: "Goud"
 };
 
 /* Opent een URL in een nieuw tabblad.
@@ -94,22 +97,6 @@ function openTabblad(url) {
     if (nieuw) {
         try { nieuw.opener = null; } catch (e) { /* cross-origin: browser regelt het zelf */ }
     }
-}
-
-// Hulpfunctie die 10 placeholdervragen maakt voor een boek + niveau.
-// Deze vervangen we later door echte vragen.
-function maakPlaceholders(boek, niveau) {
-    const set = [];
-
-    for (let i = 1; i <= 10; i++) {
-        set.push({
-            vraag: `Placeholdervraag ${i} – ${boek} (${niveauLabels[niveau]})`,
-            antwoorden: ["Antwoord A", "Antwoord B", "Antwoord C", "Antwoord D"],
-            correct: "Antwoord A"
-        });
-    }
-
-    return set;
 }
 
 // Vragen georganiseerd per boek en per niveau: vragenData[boek][niveau]
@@ -7153,8 +7140,8 @@ const niveauDrempel = {
 
 // Vriendelijke hint bij een nog vergrendeld niveau.
 const niveauSlotHint = {
-    advanced: "Verdien eerst brons bij Beginner om Advanced te openen.",
-    expert: "Verdien eerst zilver bij Advanced om Expert te openen."
+    advanced: "Verdien eerst Brons om Zilver te openen.",
+    expert: "Verdien eerst Zilver om Goud te openen."
 };
 
 // Welke knop-class hoort bij welk niveau (binnen #niveau-scherm).
@@ -8715,14 +8702,19 @@ function gaTerug() {
         if (nieuw) nieuw.style.display = "flex";
         huidigScherm = vorige;
     } else {
-        huidigScherm = null;
+        // Stack leeg: de tak is verlaten, dus meteen alles opruimen.
+        leegSchermStack();
     }
 }
 
-// De tak wordt verlaten: pad vergeten.
+// De tak wordt verlaten: pad vergeten. Ook de boek- en niveaukeuze van Oefenen
+// & nalezen hoort bij dat pad — wie de tak verlaat, begint een volgende keer
+// weer bij het boek.
 function leegSchermStack() {
     schermStack.length = 0;
     huidigScherm = null;
+    onBoek = null;
+    onNiveau = null;
 }
 
 // --- Bijbeltraining ---------------------------------------------------------
@@ -8734,74 +8726,96 @@ function openBijbeltraining() {
     gaNaarScherm("bijbeltraining-scherm");
 }
 
-// Placeholders — worden in de volgende stappen ingevuld.
-function startOefenen() {
-    vulOefenBoeken();
-    gaNaarScherm("oefen-boek-scherm");
+// --- Oefenen & nalezen ------------------------------------------------------
+// Eén route voor allebei de manieren van werken:
+//
+//   Bijbeltraining -> boek -> niveau -> "Wat wil je doen?" -> Oefenen of Nalezen
+//
+// Tot en met het modusscherm loopt alles op de navigatiestack, dus elke Terug is
+// gewoon gaTerug(). Pas ná de moduskeuze splitsen de twee: Nalezen blijft op de
+// stack, Oefenen draagt over aan de quiz-tak en leegt de stack.
+//
+// Eigen statusvariabelen, losstaand van de quiz (gekozenBoek/gekozenNiveau).
+// leegSchermStack() zet ze weer op null zodra de tak wordt verlaten.
+let onBoek = null;
+let onNiveau = null;
+
+// Klasse van een boekknop. Stond vroeger op de vier statische knoppen in
+// index.html, waar hij als sjabloon werd gekopieerd; nu die knoppen weg zijn
+// staat hij hier.
+const ON_BOEK_KNOP_CLASS = "answer-btn niveau-btn niveau-beginner menu-knop-blauw";
+
+// Bijbeltraining -> boekkeuze
+function openOefenenNalezen() {
+    vulOnBoeken();
+    gaNaarScherm("on-boek-scherm");
 }
 
-// Vult het oefen-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v. alleen de
-// vier evangeliën die statisch in index.html staan). Defensief: het vindt de
-// bestaande boekknoppen via hun onclick (kiesOefenBoek) en neemt hun opmaak/plek
-// over; de Terug-knop blijft staan. Vindt het niets herkenbaars, dan laat het
-// het scherm ongemoeid. Bouwt maar één keer op (dataset-vlag) en maakt de lijst
-// scrollbaar, want 18 boeken passen anders niet zoals 4 dat deden.
-function vulOefenBoeken() {
-    const scherm = document.getElementById("oefen-boek-scherm");
-    if (!scherm) return;
+// Vult het boekscherm met alle 18 boeken uit boekNaarKey. De knoppen komen vóór
+// de onderste Terug-knop, zodat die onderaan blijft staan. Bouwt maar één keer
+// op (dataset-vlag) en maakt de box scrollbaar, want 18 boeken passen niet op
+// één scherm.
+function vulOnBoeken() {
+    const terugKnop = document.getElementById("on-boek-terug-onder");
+    if (!terugKnop) return;                                 // onbekende opmaak
 
-    // Ondertitel bijwerken: het zijn niet meer alleen evangeliën.
-    scherm.querySelectorAll("*").forEach((el) => {
-        if (el.children.length === 0 && el.textContent.trim() === "Kies een evangelie") {
-            el.textContent = "Kies een boek";
-        }
-    });
+    const ouder = terugKnop.parentElement;
+    if (!ouder || ouder.dataset.onVol === "1") return;      // al gevuld
 
-    const knoppen = Array.from(scherm.querySelectorAll("button"));
-    const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesOefenBoek");
-
-    const boekKnoppen = knoppen.filter(isBoekKnop);
-    if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
-
-    const template = boekKnoppen[0];
-    const ouder = template.parentElement;
-    if (!ouder || ouder.dataset.oefenVol === "1") return;   // al aangevuld
-
-    const klasse = template.className;
-    // De Terug-knop is het ankerpunt: de boeken komen ervóór. Hij wordt op zijn
-    // id gezocht en niet op de tekst van zijn onclick — die is sinds de
-    // navigatiestack overal gaTerug() en dus niet meer onderscheidend.
-    const terugKnop = document.getElementById("oefen-boek-terug");
-
-    // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
-    boekKnoppen.forEach((b) => b.remove());
-
-    // Alle 18 boeken toevoegen, in de vaste volgorde van boekNaarKey, vóór Terug.
     Object.keys(boekNaarKey).forEach((boek) => {
         const knop = document.createElement("button");
-        knop.className = klasse;
+        knop.type = "button";
+        knop.className = ON_BOEK_KNOP_CLASS;
         knop.textContent = boek;
-        knop.onclick = () => kiesOefenBoek(boek);
-        if (terugKnop && terugKnop.parentElement === ouder) {
-            ouder.insertBefore(knop, terugKnop);
-        } else {
-            ouder.appendChild(knop);
-        }
+        knop.onclick = () => kiesOnBoek(boek);
+        ouder.insertBefore(knop, terugKnop);
     });
 
     // Lijst scrollbaar maken zodat alle boeken op één scherm passen.
     ouder.style.maxHeight = "72vh";
     ouder.style.overflowY = "auto";
 
-    ouder.dataset.oefenVol = "1";
+    ouder.dataset.onVol = "1";
 }
-function kiesOefenBoek(boek) {
-    // Hier verlaat de speler de Bijbeltraining-tak: vanaf #niveau-scherm neemt
-    // de quiz-tak het over, met zijn eigen Terug (terugNaarStartscherm). De
-    // stack heeft daar niets meer te zoeken en wordt dus geleegd.
-    document.getElementById("oefen-boek-scherm").style.display = "none";
+
+// Boek gekozen -> niveaukeuze (titel toont het boek)
+function kiesOnBoek(boek) {
+    onBoek = boek;
+    const titel = document.getElementById("on-niveau-titel");
+    if (titel) titel.textContent = boek;
+    gaNaarScherm("on-niveau-scherm");
+}
+
+// Niveau gekozen -> "Wat wil je doen?" (titel toont boek + niveau)
+function kiesOnNiveau(niveau) {
+    onNiveau = niveau;
+    const titel = document.getElementById("modus-titel");
+    if (titel) titel.textContent = `${onBoek} — ${niveauLabels[niveau]}`;
+    gaNaarScherm("modus-scherm");
+}
+
+// "Oefenen": hier verlaat de speler de Bijbeltraining-tak. De quiz-tak neemt het
+// over met zijn eigen Terug (terugNaarStartscherm), dus de stack heeft daar
+// niets meer te zoeken. Boek en niveau staan al vast, daarom gaat openBoek()
+// meteen door naar kiesNiveau(): #niveau-scherm komt er niet aan te pas.
+// Boek en niveau eerst in lokale variabelen, want leegSchermStack() wist ze.
+function kiesOefenen() {
+    const boek = onBoek;
+    const niveau = onNiveau;
+    if (!boek || !niveau) return;
+
+    document.getElementById("modus-scherm").style.display = "none";
     leegSchermStack();
+
     openBoek(boek, { vergrendel: false, oefen: true });
+    kiesNiveau(niveau);
+}
+
+// "Nalezen": blijft op de stack, zodat Terug stap voor stap terugloopt.
+function kiesNalezen() {
+    if (!onBoek || !onNiveau) return;
+    bouwVuLijst();
+    gaNaarScherm("vu-lijst-scherm");
 }
 function openNaslag() {
     gaNaarScherm("naslag-scherm");
@@ -8846,100 +8860,22 @@ function openVerborgenSchatNaslag() {
 }
 
 // =========================
-// VRAGEN & UITLEG (read-only browser)
+// NALEZEN (read-only browser)
 // Toont de bestaande vragen per boek + niveau, met hun antwoord/bijbelplaats/
-// uitleg. Leest RECHTSTREEKS uit vragenData; eigen statusvariabelen (vuBoek/
-// vuNiveau), losstaand van de quiz. Raakt quiz-/pool-/win-/scorelogica niet aan.
+// uitleg. Leest RECHTSTREEKS uit vragenData; gebruikt onBoek/onNiveau uit
+// Oefenen & nalezen. Raakt quiz-/pool-/win-/scorelogica niet aan.
 // =========================
-let vuBoek = null;
-let vuNiveau = null;
-
-// Bijbeltraining -> evangelie-keuze
-function openVraagUitleg() {
-    vulVuBoeken();
-    gaNaarScherm("vu-boek-scherm");
-}
-
-// Vult het Vragen & uitleg-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v.
-// alleen de vier evangeliën die statisch in index.html staan). Zelfde defensieve
-// aanpak als vulOefenBoeken(): het vindt de bestaande boekknoppen via hun
-// onclick (kiesVuBoek) en neemt hun opmaak/plek over; de Terug-knop blijft
-// staan. Vindt het niets herkenbaars, dan laat het het scherm ongemoeid. Bouwt
-// maar één keer op (dataset-vlag) en maakt de lijst scrollbaar, want 18 boeken
-// passen anders niet zoals 4 dat deden.
-function vulVuBoeken() {
-    const scherm = document.getElementById("vu-boek-scherm");
-    if (!scherm) return;
-
-    // Ondertitel bijwerken: het zijn niet meer alleen evangeliën.
-    scherm.querySelectorAll("*").forEach((el) => {
-        if (el.children.length === 0 && el.textContent.trim() === "Kies een evangelie") {
-            el.textContent = "Kies een boek";
-        }
-    });
-
-    const knoppen = Array.from(scherm.querySelectorAll("button"));
-    const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesVuBoek");
-
-    const boekKnoppen = knoppen.filter(isBoekKnop);
-    if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
-
-    const template = boekKnoppen[0];
-    const ouder = template.parentElement;
-    if (!ouder || ouder.dataset.vuVol === "1") return;      // al aangevuld
-
-    const klasse = template.className;
-    // Bewust de ONDERSTE Terug-knop: er staat er ook één bovenaan, en de boeken
-    // horen daartussenin. Hij wordt op zijn id gezocht en niet op de tekst van
-    // zijn onclick — die is sinds de navigatiestack voor beide knoppen gaTerug().
-    const terugKnop = document.getElementById("vu-boek-terug-onder");
-
-    // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
-    boekKnoppen.forEach((b) => b.remove());
-
-    // Alle 18 boeken toevoegen, in de vaste volgorde van boekNaarKey, vóór Terug.
-    Object.keys(boekNaarKey).forEach((boek) => {
-        const knop = document.createElement("button");
-        knop.className = klasse;
-        knop.textContent = boek;
-        knop.onclick = () => kiesVuBoek(boek);
-        if (terugKnop && terugKnop.parentElement === ouder) {
-            ouder.insertBefore(knop, terugKnop);
-        } else {
-            ouder.appendChild(knop);
-        }
-    });
-
-    // Lijst scrollbaar maken zodat alle boeken op één scherm passen.
-    ouder.style.maxHeight = "72vh";
-    ouder.style.overflowY = "auto";
-
-    ouder.dataset.vuVol = "1";
-}
-// Evangelie gekozen -> niveau-keuze (titel toont het boek)
-function kiesVuBoek(boek) {
-    vuBoek = boek;
-    const titel = document.getElementById("vu-niveau-titel");
-    if (titel) titel.textContent = boek;
-    gaNaarScherm("vu-niveau-scherm");
-}
-// Niveau gekozen -> de lijst bouwen en tonen.
-function kiesVuNiveau(niveau) {
-    vuNiveau = niveau;
-    bouwVuLijst();
-    gaNaarScherm("vu-lijst-scherm");
-}
-// Bouwt de genummerde lijst rechtstreeks uit vragenData[vuBoek][vuNiveau].
+// Bouwt de genummerde lijst rechtstreeks uit vragenData[onBoek][onNiveau].
 // Read-only: leest alleen; kopieert niets. Een 💡-teken markeert vragen met uitleg.
 function bouwVuLijst() {
     const titel = document.getElementById("vu-lijst-titel");
-    if (titel) titel.textContent = `${vuBoek} – ${niveauLabels[vuNiveau]}`;
+    if (titel) titel.textContent = `${onBoek} – ${niveauLabels[onNiveau]}`;
 
     const houder = document.getElementById("vu-lijst");
     if (!houder) return;
     houder.innerHTML = "";
 
-    const pool = (vragenData[vuBoek] && vragenData[vuBoek][vuNiveau]) || [];
+    const pool = (vragenData[onBoek] && vragenData[onBoek][onNiveau]) || [];
     pool.forEach((q, i) => {
         const rij = document.createElement("button");
         rij.type = "button";
@@ -8954,7 +8890,7 @@ function bouwVuLijst() {
 // rechtstreeks uit vragenData. Toont vraag, juist antwoord, bijbelplaats en
 // (optioneel) de uitleg.
 function openVuDetail(index) {
-    const pool = (vragenData[vuBoek] && vragenData[vuBoek][vuNiveau]) || [];
+    const pool = (vragenData[onBoek] && vragenData[onBoek][onNiveau]) || [];
     const q = pool[index];
     if (!q) return;
 
