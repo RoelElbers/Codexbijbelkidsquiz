@@ -35,6 +35,30 @@
   100vh in #game-container; dvh is de kandidaat-oplossing. Eerst rustig
   observeren wanneer het precies gebeurt.
 
+- 2026-09-01 — Opmaak van het rubriekscherm in Ontdekken opnieuw bekijken zodra
+  "Wie is wie" en "Waar gebeurde het" gevuld zijn. Zeven knoppen onder elkaar is
+  nu al lang, en de hub is het enige scherm waar alle thema's samenkomen.
+- 2026-09-01 — De Terug-knop op #on-niveau-scherm is diep navy met gouden rand,
+  terwijl hij op de omringende schermen van Oefenen & nalezen groen is
+  (.niveau-terug, style.css r. 2321). De blauwe variant is bewust gemaakt voor
+  #niveau-scherm, waar hij bij de metalen knoppen hoort, en is meegekomen toen
+  #vu-niveau-scherm werd hernoemd. style.css r. 2422–2430.
+- 2026-09-01 — bijbelQuizXP is een dode localStorage-sleutel: script.js r. 6901
+  wist hem bij elke laadbeurt, maar niets schrijft hem nog. De opschoning kan
+  eruit zodra zeker is dat geen enkele speler hem nog heeft staan.
+- 2026-09-01 — bump.py maken voor de cache-buster. Sinds ontdekken-inhoud.js
+  erbij is gaan er vier verwijzingen samen omhoog (style.css, lang/nl.js,
+  ontdekken-inhoud.js, script.js); met de hand zijn dat vier plekken en dus vier
+  kansen om er een te vergeten.
+- 2026-09-01 — Malchus en Hebreeën: in de Ontdekken-hub staat voor allebei een
+  onderwerp klaar met als tekst "Deze uitleg wordt nog geschreven"
+  (ontdekken-inhoud.js, rubriek Verborgen Schat). De plek is er dus; alleen de
+  tekst ontbreekt — zie de regel van 2026-08-15 hierboven over het splitsen van
+  de reveal.
+- 2026-09-01 — De 44 woordenboektermen hebben geen bijbelplaats. Het lexicon-
+  formaat in ontdekken-inhoud.js heeft er een optioneel veld voor en de renderer
+  laat de regel weg als hij ontbreekt; invullen is inhoudelijk werk per term.
+
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
 worden bij een volgende wijziging.*
