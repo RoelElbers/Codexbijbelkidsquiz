@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=81">
+    <link rel="stylesheet" href="style.css?v=82">
 
     <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
          Vier verwijzingen dragen samen dit eigen nummer:
@@ -401,19 +401,17 @@
             </div>
         </div>
 
-        <!-- Bijbeltraining-kruispunt: vier ingangen. De eerste twee (Oefenen &
-             nalezen, Naslag & uitleg) openen een overlay binnen het spel. De
-             laatste twee zijn leesmateriaal en delen daarom de catechese-knop-
-             stijl; "De verschillende kerken" verlaat het spel naar kerken.html.
+        <!-- Bijbeltraining-kruispunt: twee ingangen. Oefenen & nalezen is het
+             doe-gedeelte, Ontdekken het lees-gedeelte. Ontdekken heeft de vroegere
+             knoppen Naslag & uitleg, Catechese en De verschillende kerken
+             opgeslokt; die zijn nu rubrieken binnen de hub.
              Zelfde overlay-opzet als #niveau-scherm zodat het meteen in de stijl past. -->
         <div id="bijbeltraining-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
                 <h2 class="quiz-title">Bijbeltraining</h2>
                 <p class="quiz-question">Oefen en groei</p>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="openOefenenNalezen()">Oefenen &amp; nalezen</button>
-                <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openNaslag()">Naslag &amp; uitleg</button>
-                <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
-                <button class="answer-btn niveau-btn catechese-knop" onclick="window.location.href='kerken.html'">De verschillende kerken</button>
+                <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openOntdekken()">Ontdekken</button>
                 <button id="bijbeltraining-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
@@ -489,249 +487,47 @@
             </div>
         </div>
 
-        <!-- ===== Catechese: data-gedreven uitleg-artikelen. Drie schermen,
-             zelfde opzet als "Vragen & uitleg": categorie -> artikel-lijst ->
-             artikel-detail. Categorieën en artikelen staan in config-arrays in
-             script.js; deze schermen worden door JS gevuld. ===== -->
+        <!-- ===== Ontdekken: config-gestuurde hub. Drie generieke schermen die
+             samen alle rubrieken en onderwerpen aankunnen. De rubrieken staan in
+             ontdekRubrieken (script.js), de teksten in ontdekken-inhoud.js.
+             Vervangt de losse schermen van Naslag & uitleg en Catechese. ===== -->
 
-        <!-- Catechese (landing): de categorieën als knoppen, in de stijl van de
-             boekenkeuze. Wordt door bouwCatecheseCategorieen() gevuld. -->
-        <div id="catechese-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box">
-                <h2 class="quiz-title">Catechese</h2>
-                <p class="quiz-question">Kies een onderwerp</p>
-                <div id="catechese-categorieen"></div>
-                <button id="catechese-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
-            </div>
-        </div>
-
-        <!-- Catechese: scrollbare artikel-lijst van de gekozen categorie. Wordt
-             door bouwCatecheseLijst() gevuld (gefilterd op categorie). -->
-        <div id="catechese-lijst-scherm" class="quiz-overlay" style="display: none;">
+        <!-- Ontdekken (hub): de rubrieken als knoppen. Wordt door
+             bouwOntdekRubrieken() gevuld; een rubriek op slot krijgt daar de
+             class .vergrendeld en een .naslag-slot-hint eronder. Terug staat
+             boven en onder: zeven rubrieken plus een slotregel is langer dan
+             een beeldscherm. -->
+        <div id="ontdek-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
-                <h2 class="quiz-title" id="catechese-lijst-titel">Catechese</h2>
-                <button id="catechese-lijst-terug" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-                <div id="catechese-lijst" class="vu-lijst"></div>
+                <h2 class="quiz-title">Ontdekken</h2>
+                <p class="quiz-question">Kies een rubriek</p>
+                <button id="ontdek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
+                <div id="ontdek-rubrieken"></div>
+                <button id="ontdek-terug-onder" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
-        <!-- Catechese: één herbruikbaar, scrollbaar artikel-detail (titel + tekst).
-             Wordt door openCatecheseArtikel(id) gevuld uit catecheseArtikelen. -->
-        <div id="catechese-artikel-scherm" class="quiz-overlay" style="display: none;">
+        <!-- Ontdekken: de onderwerpen van een rubriek. Wordt door
+             bouwOntdekLijst() gevuld. Een rubriek met precies een onderwerp
+             slaat dit scherm over. -->
+        <div id="ontdek-lijst-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
-                <button id="catechese-artikel-terug" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-                <div id="catechese-artikel"></div>
+                <h2 class="quiz-title" id="ontdek-lijst-titel"></h2>
+                <button id="ontdek-lijst-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
+                <div id="ontdek-lijst-inleiding" class="naslag-kadertje" style="display: none;"></div>
+                <div id="ontdek-lijst" class="vu-lijst"></div>
+                <button id="ontdek-lijst-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
             </div>
         </div>
 
-        <!-- Naslag & uitleg: tussenmenu met drie keuzes. Zelfde overlay-/quiz-box-
-             opzet als de andere Bijbeltraining-schermen. openNaslag() zet het op
-             de navigatiestack; de Terug-knop loopt via gaTerug(). -->
-        <div id="naslag-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box">
-                <h2 class="quiz-title">Naslag &amp; uitleg</h2>
-                <p class="quiz-question">Kies een onderwerp</p>
-                <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="openWoordenboek()">Woordenboek</button>
-                <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openMaten()">Maten, geld &amp; tijd</button>
-                <!-- Verborgen Schat: diamant/blauw-witte knop. Standaard vergrendeld
-                     (slotje + hint, niet klikbaar). Zodra de vlag verborgenschat_voltooid
-                     op "waar" staat, haalt werkVerborgenSchatNaslagKnopBij() de
-                     'vergrendeld'-class weg en wordt het de actieve diamantstijl die de
-                     naslagpagina opent. -->
-                <button id="verborgenschat-knop" class="answer-btn niveau-btn naslag-diamant vergrendeld" onclick="openVerborgenSchatNaslag()">Verborgen Schat</button>
-                <p id="verborgenschat-hint" class="naslag-slot-hint">Speel eerst de Verborgen Schat om te ontgrendelen</p>
-                <button id="naslag-terug-knop" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
-            </div>
-        </div>
-
-        <!-- Woordenboek: moeilijke Bijbelwoorden, alfabetisch, kindvriendelijk
-             uitgelegd. Zelfde opzet/opmaak als #maten-scherm (scrollbaar .quiz-box
-             met .naslag-item/.naslag-term). -->
-        <div id="woordenboek-scherm" class="quiz-overlay" style="display: none;">
+        <!-- Ontdekken: een lexicon of een artikel. Wordt door
+             openOntdekOnderwerp() gevuld via rendeerOntdekInhoud(). -->
+        <div id="ontdek-detail-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
-                <h2 class="quiz-title">Woordenboek</h2>
-                <button id="woordenboek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-
-                <p class="naslag-item"><span class="naslag-term">Allerheiligste</span> — Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen.</p>
-                <p class="naslag-item"><span class="naslag-term">Altaar</span> — Een verhoogde plek, vaak van steen, waar offers aan God werden gebracht.</p>
-                <p class="naslag-item"><span class="naslag-term">Apostel</span> — Het woord betekent "gezant" of "boodschapper", van het Griekse <em>apostolos</em>: iemand die wordt uitgezonden. In de oudheid was een apostel geen gewone postbode, maar een officiële afgezant — zoals een ambassadeur — die namens een koning op pad ging; zijn woorden golden als de woorden van de koning zelf. In het Nieuwe Testament koos Jezus twaalf van zijn leerlingen (discipelen) uit en zond hen uit om zijn boodschap te verspreiden en zieken te genezen; vanaf dat moment waren zij zijn apostelen. In de eerste kerk werd de eis zelfs strenger: een echte apostel moest Jezus tijdens zijn leven hebben meegemaakt én hem na zijn dood weer levend hebben gezien. Eén beroemde uitzondering is Paulus: hij had de levende Jezus nooit ontmoet, maar noemde zich tóch apostel, omdat de opgestane Jezus hém — volgens zijn eigen verhaal, in een visioen op weg naar Damascus — persoonlijk had uitgekozen en uitgezonden.</p>
-                <p class="naslag-item"><span class="naslag-term">Bekering</span> — Je leven omdraaien: stoppen met de verkeerde kant op gaan en kiezen om het goede te doen, en zo bij God gaan horen. Je kunt het zien als een ommekeer van 180 graden — je loopt letterlijk de andere kant op. In de Bijbel hoort daar vaak spijt bij over wat je fout deed, en het verlangen om opnieuw te beginnen.</p>
-                <p class="naslag-item"><span class="naslag-term">Discipel</span> — Een leerling van Jezus die met hem meetrok en van hem leerde. "Discipel" en "leerling" betekenen hetzelfde. Jezus had veel discipelen; uit die grote groep koos hij een kleinere groep apostelen die hij eropuit stuurde.</p>
-                <p class="naslag-item"><span class="naslag-term">Eeuwig leven</span> — Leven dat nooit ophoudt, samen met God — ook na de dood.</p>
-                <p class="naslag-item"><span class="naslag-term">Evangelie</span> — Het woord betekent "goed nieuws". Het zijn ook de vier boeken die het leven van Jezus vertellen: Matteüs, Marcus, Lucas en Johannes. Elke schrijver kreeg later zijn eigen symbool — de mens, de leeuw, de stier en de adelaar — precies de tekens die je in dit spel als trofee kunt verdienen.</p>
-                <p class="naslag-item"><span class="naslag-term">Farizeeër</span> — Iemand uit een Joodse groep die het heel serieus nam om precies volgens Gods regels te leven, tot in de kleinste details. Op zich knap, maar in de evangeliën botsen de farizeeën vaak met Jezus: volgens hem ging het hun te veel om de regels en te weinig om de mensen daarachter.</p>
-                <p class="naslag-item"><span class="naslag-term">Gelijkenis</span> — Een kort verhaaltje dat Jezus vertelde om iets groots uit te leggen met iets gewoons. Door over schapen, zaadjes of een verloren muntje te vertellen, maakte hij een diepe les ineens begrijpelijk. Het bekendste voorbeeld is misschien wel het verhaal van de verloren zoon.</p>
-                <p class="naslag-item"><span class="naslag-term">Gemeente</span> — In de Bijbel is een gemeente de groep christenen die in één stad bij elkaar hoort, bijvoorbeeld "de gemeente in Filippi". Er waren toen nog geen kerkgebouwen: de mensen kwamen gewoon bij elkaar thuis. Vandaag gebruiken christenen hier twee woorden voor. Sommige groepen noemen zich een kerk — bijvoorbeeld de Katholieke Kerk, de Protestantse Kerk of de Orthodoxe Kerk. Andere groepen noemen zich een gemeente — bijvoorbeeld evangelische gemeenten, baptistengemeenten en pinkstergemeenten. Allebei is goed. Het gaat namelijk niet om het gebouw of om de naam, maar om de mensen die samen bij Jezus horen. En dat zijn ze allemaal. <em>Zie ook: kerk.</em></p>
-                <p class="naslag-item"><span class="naslag-term">Genade</span> — Iets goeds krijgen wat je niet verdiend hebt; onverdiende vriendelijkheid. Het is een cadeau, geen beloning — je hoeft er niets voor te presteren. In de Bijbel gaat het vaak over Gods genade: dat hij goed is voor mensen, ook als ze het niet "verdiend" hebben.</p>
-                <p class="naslag-item"><span class="naslag-term">Heiden</span> — In de Bijbel: iemand die niet bij het Joodse volk hoorde en de God van Israël (nog) niet kende — het betekent gewoon "niet-Jood". Het was geen scheldwoord, gewoon een aanduiding. Bijzonder is dat Jezus juist ook heidenen hielp — iets wat veel mensen toen verbaasde.</p>
-                <p class="naslag-item"><span class="naslag-term">Heilige Geest</span> — De Heilige Geest is God zelf: de derde persoon van de Drie-eenheid. Christenen geloven in één God in drie personen — de Vader, de Zoon (Jezus) en de Heilige Geest — die samen tóch één God zijn. De Heilige Geest werkt in mensen: hij geeft moed en troost en helpt hen om dichter bij God te leven. Je kunt hem niet zien, net zomin als je de wind ziet, maar je merkt wel wat hij doet.</p>
-                <p class="naslag-item"><span class="naslag-term">Hemelvaart</span> — Het moment waarop Jezus, na zijn opstanding, omhoogging naar de hemel en niet langer op aarde bij zijn leerlingen bleef. Christenen herdenken dit op Hemelvaartsdag — voor veel kinderen ook gewoon een vrije donderdag.</p>
-                <p class="naslag-item"><span class="naslag-term">Hogepriester</span> — De belangrijkste priester, een soort baas van de tempel in Jeruzalem. Hij mocht als enige, en maar één keer per jaar, in het meest heilige deel van de tempel komen.</p>
-                <p class="naslag-item"><span class="naslag-term">Kerk</span> — Het woord kerk betekent twee dingen. Het is het gebouw waar christenen samenkomen. Maar het is vooral de groep mensen zelf: de kerk zijn de christenen, niet de stenen. In het Grieks, de taal waarin het Nieuwe Testament is geschreven, staat er <span class="grieks">ἐκκλησία</span> (<em>ekklèsia</em>). Dat betekent letterlijk "de groep die bij elkaar geroepen is" — van <em>ek</em> ("uit") en <em>kaleō</em> ("roepen"). In een Griekse stad was de <em>ekklèsia</em> de vergadering van alle burgers, die met een roep bijeen werd geroepen. Paulus gebruikt datzelfde woord voor de christenen: mensen die door God bij elkaar geroepen zijn. In onze Bijbel wordt <em>ekklèsia</em> soms vertaald met "gemeente" en soms met "kerk" — het is dus hetzelfde woord. Ons woord kerk komt van een ánder Grieks woord: <span class="grieks">κυριακόν</span> (<em>kuriakon</em>). Dat betekent "wat van de Heer is", van <em>kurios</em>, "Heer". Toen de christenen na een paar honderd jaar eigen gebouwen kregen om in samen te komen, noemden ze zo'n gebouw het <em>kuriakon</em>: het huis van de Heer. Dat woord reisde mee naar het noorden van Europa en werd daar kerk — en ook het Duitse <em>Kirche</em> en het Engelse <em>church</em>. Grappig genoeg had het Grieks dus twee woorden: <em>ekklèsia</em> voor de mensen en <em>kuriakon</em> voor het gebouw. Wij hebben daar één woord van gemaakt. Als je "kerk" zegt, kun je dus allebei bedoelen — en meestal bedoelen we de mensen. <em>Zie ook: gemeente.</em></p>
-                <p class="naslag-item"><span class="naslag-term">Koninkrijk van God</span> — Niet een land dat je op de kaart kunt aanwijzen, maar een manier om te zeggen: daar waar God de koning is en alles goed en eerlijk gaat. Jezus sprak er heel vaak over. Soms heet het ook "het hemelrijk" of "het koninkrijk der hemelen".</p>
-                <p class="naslag-item"><span class="naslag-term">Kruisiging</span> — Een wrede Romeinse straf waarbij iemand aan een kruis werd vastgemaakt. Jezus werd op deze manier ter dood gebracht.</p>
-                <p class="naslag-item"><span class="naslag-term">Martelaar</span> — Iemand die aan zijn geloof vasthoudt, zelfs als hij daarvoor gedood wordt. Stefanus was de eerste in de vroege kerk.</p>
-                <p class="naslag-item"><span class="naslag-term">Messias</span> — Een Hebreeuws woord dat "de gezalfde" betekent: iemand die met olie gezalfd werd als teken dat God hem uitkoos, zoals vroeger bij koningen. De Messias is de beloofde redder op wie het volk lang wachtte. Christenen geloven dat Jezus die Messias is. In het Grieks heet "de gezalfde" trouwens "Christus" — dus Messias en Christus betekenen precies hetzelfde, alleen in een andere taal.</p>
-                <p class="naslag-item"><span class="naslag-term">Offer</span> — Iets waardevols dat je aan God geeft. Vroeger was dat vaak een dier, dat op het altaar in de tempel werd gebracht.</p>
-                <p class="naslag-item"><span class="naslag-term">Openbaring</span> — Iets wat God laat zien of bekendmaakt dat mensen uit zichzelf niet konden weten. Het is ook de naam van het laatste boek van de Bijbel.</p>
-                <p class="naslag-item"><span class="naslag-term">Opstanding</span> — Weer levend worden na de dood. Het bekendste voorbeeld is Jezus, die volgens de evangeliën op de derde dag na zijn dood weer opstond — dat vieren christenen met Pasen. Het is het grote keerpunt waar de evangeliën naartoe werken.</p>
-                <p class="naslag-item"><span class="naslag-term">Pasen (Pesach)</span> — Pesach is het Joodse feest waarop het volk viert dat God hen lang geleden uit de slavernij in Egypte bevrijdde. Jezus vierde dit feest ook. Voor christenen kreeg Pasen er later een tweede betekenis bij: het feest van Jezus' opstanding.</p>
-                <p class="naslag-item"><span class="naslag-term">Profeet</span> — Iemand die namens God spreekt. Geen waarzegger met een glazen bol: een profeet voorspelt niet zomaar wat er gaat gebeuren, maar roept de mensen vooral op om naar God te luisteren — ook als ze dat liever niet horen. Een waarschuwing is meestal een laatste kans om het anders te doen. Toen de profeet Jona aankondigde dat de stad Nineve zou vergaan, kregen de inwoners spijt en veranderden ze hun leven — en toen liet God het onheil niet doorgaan. Dat laat zien dat God het aangekondigde onheil eigenlijk niet wíl: liever ziet hij dat mensen veranderen. (Jona baalde daar trouwens flink van.)</p>
-                <p class="naslag-item"><span class="naslag-term">Rechtvaardig</span> — Eerlijk en betrouwbaar; iemand die anderen eerlijk behandelt en leeft zoals God het bedoelt.</p>
-                <p class="naslag-item"><span class="naslag-term">Sabbat</span> — De vaste rustdag in de week, voor Joden de zaterdag. Op die dag werkten de mensen niet, maar namen ze tijd voor God en voor rust. Er waren strenge regels over wat wel en niet mocht — zo streng zelfs dat sommigen vonden dat Jezus de regels overtrad toen hij op de sabbat iemand beter maakte.</p>
-                <p class="naslag-item"><span class="naslag-term">Sadduceeën</span> — Een groep voorname Joden, vaak priesters, rond de tempel. Ze geloofden niet in een opstanding uit de dood — en daarin verschilden ze juist van de farizeeën.</p>
-                <p class="naslag-item"><span class="naslag-term">Schriftgeleerde</span> — Een echte kenner van de heilige boeken: iemand die ze van buiten kende en aan anderen uitlegde, een beetje als een professor van de Bijbel van toen. Schriftgeleerden hadden veel aanzien en kwamen in de evangeliën vaak in gesprek — en in discussie — met Jezus.</p>
-                <p class="naslag-item"><span class="naslag-term">Stadhouder</span> — Een bestuurder die namens de Romeinse keizer de baas was over een gebied. Pontius Pilatus was de stadhouder over Judea.</p>
-                <p class="naslag-item"><span class="naslag-term">Synagoge</span> — Het gebouw waar Joodse mensen bij elkaar kwamen om te bidden, te leren en uit de heilige boeken te lezen. Anders dan de tempel was er niet één synagoge, maar stond er in bijna elk dorp en elke stad een. Jezus kwam er vaak en leerde er de mensen.</p>
-                <p class="naslag-item"><span class="naslag-term">Tempel</span> — Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden. Let op het verschil met een synagoge: synagogen stonden in elk dorp, maar dé tempel was er maar één. In de geschiedenis waren er eigenlijk twee. De eerste werd rond 960 v.Chr. gebouwd door koning Salomo en in 586 v.Chr. verwoest door de Babyloniërs. De tweede werd na de ballingschap herbouwd — voltooid rond 515 v.Chr., onder leiding van Zerubbabel — en eeuwen later door koning Herodes enorm vergroot en verfraaid; dát is de tempel uit Jezus' tijd. In het jaar 70 n.Chr. verwoestten de Romeinen ook die. Zou er ooit een nieuwe tempel komen, dan zou dat dus de derde tempel zijn.</p>
-                <p class="naslag-item"><span class="naslag-term">Tollenaar</span> — Een belastingontvanger die geld ophaalde voor de Romeinse bezetters. Veel mensen zagen hem als een verrader, en hij rekende vaak stiekem een beetje te veel — handig voor zijn eigen portemonnee. Toch koos Jezus er één als leerling uit: Matteüs, die later zelfs een evangelie schreef.</p>
-                <p class="naslag-item"><span class="naslag-term">Vasten</span> — Een tijd lang niet of veel minder eten, om je aandacht helemaal op God te richten.</p>
-                <p class="naslag-item"><span class="naslag-term">Verbond</span> — Een bijzondere, plechtige afspraak tussen God en de mensen — sterker dan een gewone belofte, meer als een blijvende band. De Bijbel vertelt over verschillende verbonden, bijvoorbeeld met Noach en met Abraham. Jezus sprak bij het Laatste Avondmaal over een "nieuw verbond".</p>
-                <p class="naslag-item"><span class="naslag-term">Vergeving</span> — Niet boos blijven over iets wat verkeerd is gedaan, maar het loslaten en opnieuw beginnen.</p>
-                <p class="naslag-item"><span class="naslag-term">Verkondigen</span> — Het goede nieuws over God en Jezus aan mensen vertellen, zodat zo veel mogelijk mensen het horen.</p>
-                <p class="naslag-item"><span class="naslag-term">Verzoeking</span> — De aandrang om iets te doen waarvan je diep vanbinnen weet dat het niet goed is.</p>
-                <p class="naslag-item"><span class="naslag-term">Wet (de Wet)</span> — De regels die God volgens de Bijbel via Mozes aan het volk Israël gaf, zoals de Tien Geboden. Met "de Wet" worden soms ook de eerste boeken van de Bijbel bedoeld, waarin die regels staan. Joden in Jezus' tijd hechtten er veel waarde aan om volgens de Wet te leven.</p>
-                <p class="naslag-item"><span class="naslag-term">Wonder</span> — Iets bijzonders dat je niet op een gewone manier kunt verklaren, en dat laat zien hoe groot Gods kracht is. In de evangeliën doet Jezus veel wonderen: hij maakt zieken beter, stilt een storm en geeft blinden hun zicht terug. Een wonder is in de Bijbel meestal ook een teken: het wil iets duidelijk maken.</p>
-                <p class="naslag-item"><span class="naslag-term">Zaligspreking</span> — Een van de uitspraken van Jezus die begint met "Gelukkig zijn zij die…", over wie het bij God écht goed heeft. Jezus sprak ze uit tijdens een beroemde toespraak op een berg, de Bergrede. Vaak draaien ze de gewone verwachting om: juist wie het moeilijk heeft, wordt gelukkig genoemd.</p>
-                <p class="naslag-item"><span class="naslag-term">Zegenen</span> — Iemand namens God het goede toewensen, vaak met woorden of met een hand op het hoofd.</p>
-                <p class="naslag-item"><span class="naslag-term">Zendeling</span> — Iemand die op reis gaat, vaak ver van huis, om anderen over Jezus te vertellen. Paulus was zo iemand.</p>
-                <p class="naslag-item"><span class="naslag-term">Zonde</span> — Alles wat stukgaat tussen mensen onderling en tussen mensen en God: iets verkeerds doen, tegen wat goed is en tegen wat God wil. Het oude woord betekent eigenlijk "je doel missen" — alsof je met een pijl op de roos mikt en er net naast schiet.</p>
-
-                <button id="woordenboek-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-            </div>
-        </div>
-
-        <!-- Verborgen Schat (naslag): de volledige uitleg bij de Verborgen Schat-
-             vragen. Pas bereikbaar als de knop in het tussenmenu ontgrendeld is
-             (vlag verborgenschat_voltooid). Zelfde scrollbare .naslag-opzet als
-             #maten-scherm/#woordenboek-scherm: vraag als .naslag-kop, uitleg als
-             .naslag-item eronder. -->
-        <div id="verborgenschat-naslag-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box naslag-box">
-                <h2 class="quiz-title">Verborgen Schat</h2>
-                <button id="verborgenschat-naslag-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-
-                <h3 class="naslag-kop">Van wie was het huis met de bovenzaal van het Laatste Avondmaal?</h3>
-                <p class="naslag-item">Hier moeten we eerlijk zijn — en juist dat maakt het een echte schat. De evangeliën noemen de eigenaar namelijk níet. Jezus stuurt zijn leerlingen achter "een man met een kruik water" aan; die brengt hen naar een huis met een grote bovenzaal, maar een naam krijgen we niet (Marcus 14, Lucas 22). De kerkelijke overlevering verbindt die bovenzaal vaak met het huis van Maria, de moeder van Johannes Marcus — omdat de eerste christenen later juist in háár huis bij elkaar kwamen (Handelingen 12:12). Het mooie om te weten is dus het verschil: wat zwart-op-wit in de Bijbel staat (een naamloze gastheer) en wat de traditie er later bij heeft verteld (het huis van Maria). Allebei waardevol, maar het is goed om ze uit elkaar te houden.</p>
-
-                <h3 class="naslag-kop">Wat betekent "apocalyps" eigenlijk?</h3>
-                <p class="naslag-item">Veel mensen denken bij "apocalyps" meteen aan het einde van de wereld, aan rampen en ondergang. Maar het Griekse woord <em>apokalypsis</em> betekent iets heel anders: "onthulling" of "openbaring" — het wegtrekken van een sluier, zodat je ziet wat eerst verborgen was. Daarom heet het laatste Bijbelboek in het Nederlands ook "Openbaring". Het wil dus niet vooral angst aanjagen, maar iets láten zien. En dat is precies waarom dit zo goed bij de Verborgen Schat past: een verborgen schat onthullen is letterlijk wat een apocalyps doet.</p>
-
-                <h3 class="naslag-kop">Waarom noemt Jezus zichzelf "de Alfa en de Omega"?</h3>
-                <p class="naslag-item">Alfa is de eerste letter van het Griekse alfabet, omega de laatste — een beetje zoals onze A en Z. Door zichzelf zo te noemen zegt Jezus: ik ben er vanaf het allereerste begin én tot aan het einde van alles. Er is geen moment dat buiten hem valt; hij staat aan het begin van het verhaal én aan het slot. Zo zegt hij in twee letters iets enorms over wie hij is.</p>
-
-                <h3 class="naslag-kop">Wie wordt in Openbaring "het Lam" genoemd, en waarom juist een lam?</h3>
-                <p class="naslag-item">Met "het Lam" wordt steeds Jezus bedoeld. Een lam is een kwetsbaar, zachtmoedig dier, en het werd vroeger gebruikt als offerdier — het beeld wijst dus naar Jezus die zichzelf opofferde. Het verrassende is dat juist dit geofferde Lam in Openbaring de grote overwinnaar is. Niet de sterkste of de hardste wint, maar het Lam dat zichzelf gaf. Die omkering — kwetsbaarheid die overwint — is een van de diepste lagen van het boek.</p>
-
-                <h3 class="naslag-kop">Waar staat het getal zeven symbolisch voor?</h3>
-                <p class="naslag-item">In Openbaring kom je zeven overal tegen: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen. Dat is geen toeval. In de Bijbel staat zeven voor volheid, voor "helemaal compleet" — denk aan de zeven dagen waarin de schepping af was. Het gaat dus niet om precies tellen, maar om volledigheid. Wie dat doorheeft, leest Openbaring anders: het wil zeggen dat Gods plan helemaal compleet wordt, tot in alle hoeken.</p>
-
-                <h3 class="naslag-kop">Hoe eindigt de Bijbel in Openbaring?</h3>
-                <p class="naslag-item">Niet met ondergang, maar met hoop. In de laatste hoofdstukken komt er een nieuwe hemel en een nieuwe aarde, waar God zelf bij de mensen woont en waar geen tranen, dood of pijn meer zijn. En er gebeurt iets moois: de levensboom uit het paradijs, helemaal aan het begin van de Bijbel, keert terug. Zo komt het hele verhaal rond — het paradijs dat in Genesis verloren ging, wordt aan het einde hersteld. De Bijbel sluit zich als een grote cirkel.</p>
-
-                <h3 class="naslag-kop">Wat betekent "een tijd, tijden en een halve tijd"?</h3>
-                <p class="naslag-item">Het klinkt cryptisch, maar je kunt het gewoon uitrekenen: een "tijd" is een jaar, "tijden" is twee jaar, en een "halve tijd" een half jaar — samen drieënhalf jaar. De Bijbel noemt diezelfde periode elders met andere woorden: 42 maanden, of 1260 dagen. En de uitdrukking dook eeuwen eerder al op in het boek Daniël — Openbaring pakt dat beeld bewust weer op.</p>
-
-                <h3 class="naslag-kop">Waar komen de vier levende wezens vandaan?</h3>
-                <p class="naslag-item">De vier wezens rond Gods troon — een leeuw, een rund, een mens en een arend — komen uit een eeuwenoud visioen van de profeet Ezechiël. Het bijzondere: deze vier gezichten werden later de symbolen van de vier evangelisten. De leeuw hoort bij Marcus, het rund bij Lucas, de mens bij Matteüs en de arend bij Johannes. Precies de vier die je in dit spel als trofeeën kunt verdienen!</p>
-
-                <h3 class="naslag-kop">De boom des levens — begin en einde</h3>
-                <p class="naslag-item">De Bijbel begint en eindigt bij dezelfde boom. In het paradijs (Genesis) staat de boom des levens, en helemaal aan het eind, in het nieuwe Jeruzalem (Openbaring), staat hij er weer — met bladeren tot genezing van de volken. Tussen die twee bomen in speelt het hele verhaal van de Bijbel zich af. Let op: in het paradijs stonden twee bijzondere bomen; alleen de boom des levens komt aan het eind terug, niet de boom van kennis van goed en kwaad.</p>
-
-                <h3 class="naslag-kop">De zeven gemeenten</h3>
-                <p class="naslag-item">Openbaring begint als een brief aan zeven echte gemeenten in Klein-Azië (het huidige Turkije): Efeze, Smyrna, Pergamum, Tyatira, Sardis, Filadelfia en Laodicea. Het getal zeven is geen toeval — het staat in de Bijbel voor volheid. Door aan zéven gemeenten te schrijven, schrijft Johannes eigenlijk aan de hele kerk.</p>
-
-                <h3 class="naslag-kop">Het nieuwe Jeruzalem</h3>
-                <p class="naslag-item">Aan het slot van Openbaring daalt een schitterende stad uit de hemel neer: het nieuwe Jeruzalem. Het mooiste is niet het goud of de edelstenen, maar wat erbij gezegd wordt: God woont nu voorgoed bij de mensen, en Hij wist alle tranen weg. Geen dood, geen verdriet en geen pijn meer. Daar loopt het hele verhaal van de Bijbel op uit.</p>
-
-                <h3 class="naslag-kop">De sandwich-techniek van Marcus</h3>
-                <p class="naslag-item">Marcus blijkt een knappe verteller. Hij begint een verhaal, schuift er een tweede verhaal tussen, en pakt dan de draad van het eerste weer op — net als twee boterhammen met beleg ertussen. Geleerden noemen dit de sandwich-techniek (met een moeilijk woord: intercalatie). Het mooiste inzicht: de nadruk ligt meestal op het verhaal ín het midden — net als bij een echte sandwich is het beleg waar het om draait. Dat binnenste verhaal is vaak de sleutel tot de betekenis, en de twee verhalen eromheen helpen je dat te begrijpen. Bij Jaïrus en de zieke vrouw (Marcus 5) staat zo het geloof van de vrouw in het midden, met een knipoog: het getal twaalf komt in beide verhalen terug — de vrouw is twaalf jaar ziek, het meisje twaalf jaar oud. Een ander bekend voorbeeld is de tempelreiniging, ingeklemd tussen de vervloeking en het verdorren van een vijgenboom (Marcus 11). Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als losse verhalen, maar als één doordacht geheel.</p>
-
-                <button id="verborgenschat-naslag-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-            </div>
-        </div>
-
-        <!-- Maten, geld & tijd: het rustige leesscherm met maten, munten en tijd.
-             De tekst is ongewijzigd verplaatst vanuit het oude Naslag-scherm. -->
-        <div id="maten-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box naslag-box">
-                <h2 class="quiz-title">Maten, geld &amp; tijd</h2>
-                <button id="maten-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
-
-                <div class="naslag-kadertje">
-                    Sommige maten kennen we vrij precies, andere niet — dan zeggen we dat er eerlijk bij. En oud geld omrekenen naar euro's van nu is eigenlijk niet te doen, want toen was alles anders. Daarom rekenen we vaak in "daglonen": wat een gewone arbeider op één dag verdiende.
-                </div>
-
-                <h3 class="naslag-kop">Geld in de Bijbel</h3>
-                <p class="naslag-noot">Reken je dit heel ruw om naar Nederland in 2026, met een flinke marge, dan kom je ongeveer op de bedragen hieronder — uitgaand van een dagloon van zo'n 150 à 200 euro. Exacte bedragen zijn het niet, maar ze geven je wel een idee.</p>
-                <p class="naslag-item"><span class="naslag-term">Penning</span> — het allerkleinste muntje dat er bestond; mogelijk zelfs het kleinste dat ooit is gemaakt. Eén penning was ongeveer 1/128 van een dagloon, omgerekend zo'n 1 à 1,50 euro van nu. Je had er dus ongeveer 128 nodig voor één dag werken. De arme weduwe gaf er twee — samen zo'n twee à drie euro — en tóch zei Jezus dat zij het meeste had gegeven.</p>
-                <p class="naslag-item"><span class="naslag-term">Denarie</span> — hiermee wordt al het andere vergeleken: het loon voor één hele dag werken, een zilveren muntje van ongeveer 4 gram. Omgerekend dus grofweg 150 à 200 euro van nu.</p>
-                <p class="naslag-item"><span class="naslag-term">Pond</span> — honderd denarie (1/60 van een talent): ongeveer honderd dagen werken, omgerekend zo'n 15.000 à 20.000 euro. Let op: "pond" betekent in de Bijbel soms ook een gewicht (ongeveer 300 gram), zoals het pond kostbare olie waarmee Jezus werd gezalfd — dan gaat het dus niet over geld.</p>
-                <p class="naslag-item"><span class="naslag-term">Talent</span> — de allergrootste geldmaat: zesduizend denarie, dus zesduizend daglonen. Daar zou een arbeider zo'n vijftien tot twintig jaar voor moeten werken — omgerekend grofweg tussen de 900.000 en 1,2 miljoen euro. Als gewicht aan zilver of goud was een talent ongeveer 33 kilo (van zo'n 20 tot 40 kilo).</p>
-
-                <h3 class="naslag-kop">Lengte</h3>
-                <p class="naslag-item"><span class="naslag-term">El</span> — ongeveer 45 centimeter, zo lang als de afstand van je elleboog tot je vingertoppen. Daar komt de naam vandaan. Omdat niet iedereen even lange armen heeft, was hij niet overal precies gelijk.</p>
-                <p class="naslag-item"><span class="naslag-term">Stadie</span> — een afstandsmaat van ongeveer 185 meter. Emmaüs lag zo'n zestig stadiën van Jeruzalem: bijna elf kilometer.</p>
-                <p class="naslag-item"><span class="naslag-term">Mijl</span> — de Romeinse mijl was ongeveer 1.500 meter (anderhalve kilometer), oorspronkelijk duizend dubbele passen van een soldaat. Jezus zei: als iemand je dwingt één mijl mee te gaan, ga er dan twee.</p>
-
-                <h3 class="naslag-kop">Inhoud</h3>
-                <p class="naslag-noot">Hier weten we het minder zeker: er bestond geen officiële standaard, en de potten en vaten van toen waren niet allemaal even groot.</p>
-                <p class="naslag-item"><span class="naslag-term">Vat</span> — ongeveer 22 liter, zoiets als een flinke emmer. Sommige geleerden komen hoger uit.</p>
-                <p class="naslag-item"><span class="naslag-term">Kor</span> — de grootste inhoudsmaat: tien vaten, dus ongeveer 220 liter.</p>
-                <p class="naslag-item"><span class="naslag-term">Seah</span> — een derde van een vat, zo'n 7 liter, al lopen de schattingen uiteen. Drie seah meel was genoeg om voor een heleboel mensen brood te bakken.</p>
-                <p class="naslag-item"><span class="naslag-term">Korenmaat</span> — een bak of mand waar ongeveer negen liter graan in kon, zoiets als een flinke emmer. Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop, zodat iedereen het licht ziet.</p>
-                <p class="naslag-item"><span class="naslag-term">Metreet</span> — een grote inhoudsmaat van ongeveer 39 liter. De stenen kruiken op de bruiloft in Kana hielden er elk twee of drie van — dus zo'n 80 tot 120 liter per kruik.</p>
-
-                <h3 class="naslag-kop">Tijd</h3>
-                <p class="naslag-item"><span class="naslag-term">Uren</span> — de tijdsaanduidingen in de Bijbel werken anders dan onze moderne klok. In de tijd van Jezus begon de dag bij zonsopgang, ongeveer om 6.00 uur. De tijd tot zonsondergang werd in twaalf uren verdeeld. De tabel laat zien rond welk tijdstip op onze klok elk Bijbels uur ongeveer uitkomt.</p>
-                <table class="naslag-tabel">
-                    <tr><th>Bijbels uur</th><th>Onze tijd (ongeveer)</th></tr>
-                    <tr><td>1e uur</td><td>07.00</td></tr>
-                    <tr><td>2e uur</td><td>08.00</td></tr>
-                    <tr><td>3e uur</td><td>09.00</td></tr>
-                    <tr><td>4e uur</td><td>10.00</td></tr>
-                    <tr><td>5e uur</td><td>11.00</td></tr>
-                    <tr><td>6e uur</td><td>12.00</td></tr>
-                    <tr><td>7e uur</td><td>13.00</td></tr>
-                    <tr><td>8e uur</td><td>14.00</td></tr>
-                    <tr><td>9e uur</td><td>15.00</td></tr>
-                    <tr><td>10e uur</td><td>16.00</td></tr>
-                    <tr><td>11e uur</td><td>17.00</td></tr>
-                    <tr><td>12e uur</td><td>18.00 (zonsondergang)</td></tr>
-                </table>
-                <p class="naslag-noot">Goed om te weten: bij de Romeinen en de Joden begon het eerste uur eigenlijk al bij zonsopgang, rond 6.00 uur. In de meeste bijbelcommentaren wordt het eerste uur echter rond 7.00 uur gerekend. Wij volgen hier die gangbare indeling — zo blijven de bekende voorbeelden hieronder (zoals het negende uur rond 15.00 uur) goed kloppen.</p>
-                <p class="naslag-item"><span class="naslag-term">Bekende voorbeelden</span></p>
-                <p class="naslag-item"><span class="naslag-term">Het derde uur</span> → ongeveer 9.00 uur. Bij Pinksteren zei Petrus: "Het is pas het derde uur van de dag" (Handelingen 2:15).</p>
-                <p class="naslag-item"><span class="naslag-term">Het zesde uur</span> → ongeveer 12.00 uur. Rond het middaguur sprak Jezus bij de put met de Samaritaanse vrouw (Johannes 4:6).</p>
-                <p class="naslag-item"><span class="naslag-term">Het negende uur</span> → ongeveer 15.00 uur. Rond dit uur stierf Jezus aan het kruis (Matteüs 27:46-50). Het was ook een vast uur van gebed: Petrus en Johannes gingen toen naar de tempel (Handelingen 3:1).</p>
-                <p class="naslag-item"><span class="naslag-term">Zomer en winter: niet elk uur even lang</span></p>
-                <p class="naslag-item">Er zit behoorlijk wat verschil tussen zomer en winter. Israël ligt ongeveer op dezelfde breedtegraad als Zuid-Spanje en Noord-Afrika. Daardoor zijn de verschillen kleiner dan in Nederland, maar nog steeds duidelijk merkbaar. Voor Jeruzalem gelden ongeveer deze tijden:</p>
-                <table class="naslag-tabel">
-                    <tr><th>Periode</th><th>Zonsopgang</th><th>Zonsondergang</th></tr>
-                    <tr><td>Winter (± 21 dec)</td><td>± 06.35</td><td>± 16.40</td></tr>
-                    <tr><td>Lente (± 21 mrt)</td><td>± 05.45</td><td>± 17.55</td></tr>
-                    <tr><td>Zomer (± 21 jun)</td><td>± 05.30</td><td>± 19.45</td></tr>
-                    <tr><td>Herfst (± 21 sep)</td><td>± 06.20</td><td>± 18.20</td></tr>
-                </table>
-                <p class="naslag-item">De daglengte varieert dus van ongeveer 10 uur in de winter tot ruim 14 uur in de zomer. En omdat men die daglengte altijd in twaalf gelijke delen verdeelde, duurde één "uur" in de winter ongeveer 50 minuten en in de zomer ongeveer 70 minuten. Daarom viel bijvoorbeeld het "negende uur" niet altijd precies op 15.00 uur volgens onze klok, maar ergens midden tot laat in de middag.</p>
-                <p class="naslag-item"><span class="naslag-term">Voorbeeld: het negende uur</span></p>
-                <table class="naslag-tabel">
-                    <tr><th></th><th>Winter (dag ± 10 uur)</th><th>Zomer (dag ± 14 uur)</th></tr>
-                    <tr><td>Zonsopgang</td><td>06.35</td><td>05.30</td></tr>
-                    <tr><td>Eén Bijbels uur</td><td>± 50 min</td><td>± 70 min</td></tr>
-                    <tr><td>Negende uur</td><td>± 14.05</td><td>± 15.55</td></tr>
-                </table>
-                <p class="naslag-item"><span class="naslag-term">Nachtwaak</span> — in de tijd van Jezus verdeelden de Romeinen de nacht in vier "wachten" van ongeveer drie uur, samen van zes uur 's avonds tot zes uur 's ochtends. Wachters losten elkaar per wacht af — vandaar de naam.</p>
-                <table class="naslag-tabel">
-                    <tr><th>Nachtwaak</th><th>Tijd</th></tr>
-                    <tr><td>1e</td><td>18.00 – 21.00 uur</td></tr>
-                    <tr><td>2e</td><td>21.00 – 24.00 uur</td></tr>
-                    <tr><td>3e</td><td>24.00 – 3.00 uur</td></tr>
-                    <tr><td>4e</td><td>3.00 – 6.00 uur</td></tr>
-                </table>
-                <p class="naslag-item">De vierde nachtwaak is op het einde van de nacht, vlak voor zonsopgang. Toen Jezus over het water naar de leerlingen liep, was het de vierde nachtwaak (Matteüs 14:25): het moet dus na 3.00 uur zijn geweest, ergens tot aan zonsopgang. In het Oude Testament kende men er nog maar drie, van zo'n vier uur.</p>
-
-                <button id="maten-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
+                <h2 class="quiz-title" id="ontdek-detail-titel"></h2>
+                <button id="ontdek-detail-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
+                <div id="ontdek-detail"></div>
+                <button id="ontdek-detail-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
             </div>
         </div>
 
@@ -852,9 +648,12 @@
 
     </div>
 
-    <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
-    <script src="lang/nl.js?v=81"></script>
-    <script src="script.js?v=81"></script>
+    <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
+         ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
+         script.js staan, want ontdekRubrieken verwijst ernaar. -->
+    <script src="lang/nl.js?v=82"></script>
+    <script src="ontdekken-inhoud.js?v=82"></script>
+    <script src="script.js?v=82"></script>
 
 </body>
 

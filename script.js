@@ -8541,15 +8541,14 @@ function vsRevealVolgende() {
 function vsRevealMeer() {
     const meerKnop = document.getElementById("vs-reveal-catechese");
     const id = meerKnop ? meerKnop.dataset.catecheseId : "";
-    if (id && typeof openCatecheseArtikel === "function" &&
-        catecheseArtikelen.some((a) => a.id === id)) {
+    if (id && typeof openOntdekOnderwerp === "function" && vindOntdekOnderwerp(id)) {
         // De onthullingskaart is het scherm waar we vandaan komen. Door hem als
         // huidig scherm te zetten duwt gaNaarScherm() hem op de stack, verbergt
         // hem, en keert gaTerug() vanuit het artikel er netjes naar terug. De
         // lopende Verborgen Schat-ronde blijft daaronder onaangeroerd staan; de
         // stack wordt hier bewust NIET geleegd, want de ronde gaat door.
         huidigScherm = "vs-reveal-scherm";
-        openCatecheseArtikel(id);
+        openOntdekOnderwerp(id);
         return;
     }
     const meerMelding = document.getElementById("vs-reveal-meer-melding");
@@ -8817,46 +8816,226 @@ function kiesNalezen() {
     bouwVuLijst();
     gaNaarScherm("vu-lijst-scherm");
 }
-function openNaslag() {
-    gaNaarScherm("naslag-scherm");
-    // Verborgen Schat-knop in de juiste (on)vergrendelde staat zetten.
-    werkVerborgenSchatNaslagKnopBij();
+// =========================
+// ONTDEKKEN — config-gestuurde hub
+// Vervangt de losse schermen van Naslag & uitleg en Catechese. Eén rubriekenlijst
+// stuurt drie generieke schermen aan: de hub, de onderwerpenlijst en het detail.
+// De teksten staan in ontdekken-inhoud.js; hier staat alleen de structuur.
+//
+// Eén rubriek:
+//   id           sleutel; ook het aanknopingspunt voor deep-links
+//   naam         de knoptekst
+//   knopClass    optioneel; extra stijlklasse (bestaande CSS)
+//   inleiding    optioneel; kadertje boven de onderwerpenlijst
+//   onderwerpen  lijst; bij precies één onderwerp slaat de hub de lijst over
+//   extern       optioneel; verlaat het spel naar een HTML-pagina
+//   slot         optioneel; functie die true geeft zodra de rubriek open is
+//   slotHint     regel onder een rubriek die nog op slot zit
+//
+// Eén onderwerp is óf inhoud (type "lexicon" / "artikel" + inhoud), óf een
+// verwijzing (verwijstNaar: id van een onderwerp elders). Zo staat dezelfde
+// tekst nooit twee keer.
+// =========================
+const ontdekRubrieken = [
+    { id: "woorden", naam: "Woorden",
+      onderwerpen: [
+          { id: "woordenboek", naam: "Woordenboek", type: "lexicon", inhoud: ONTDEK_WOORDENBOEK }
+      ] },
+
+    { id: "wie",  naam: "Wie is wie",        onderwerpen: [] },
+    { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
+
+    { id: "hoe", naam: "Hoe leefden ze toen",
+      inleiding: ONTDEK_HOE_INLEIDING,
+      onderwerpen: [
+          { id: "geld",  naam: "Geld",  type: "artikel", inhoud: ONTDEK_GELD  },
+          { id: "maten", naam: "Maten", type: "artikel", inhoud: ONTDEK_MATEN },
+          { id: "tijd",  naam: "Tijd",  type: "artikel", inhoud: ONTDEK_TIJD  }
+      ] },
+
+    { id: "patronen", naam: "Verborgen patronen", onderwerpen: ONTDEK_PATRONEN },
+
+    { id: "kerken", naam: "De verschillende kerken",
+      knopClass: "catechese-knop", extern: "kerken.html" },
+
+    { id: "schat", naam: "Verborgen Schat",
+      knopClass: "naslag-diamant",
+      slot: isVerborgenSchatOntgrendeld,
+      slotHint: "Speel eerst de Verborgen Schat om te ontgrendelen",
+      onderwerpen: ONTDEK_SCHAT }
+];
+
+// De rubriek waar de speler nu in zit; nodig voor de lijst en de titel.
+let ontdekRubriek = null;
+
+// Zonder slot staat een rubriek altijd open.
+function rubriekIsOpen(rubriek) {
+    return typeof rubriek.slot !== "function" || rubriek.slot();
 }
 
-// --- Naslag-onderwerpen (vanuit het Naslag-tussenmenu) -----------------------
-// Elk onderwerp is een eigen scherm; "← Terug" keert terug naar het tussenmenu.
-function openMaten() {
-    gaNaarScherm("maten-scherm");
-}
-function openWoordenboek() {
-    gaNaarScherm("woordenboek-scherm");
+// Bijbeltraining -> de hub
+function openOntdekken() {
+    bouwOntdekRubrieken();
+    gaNaarScherm("ontdek-scherm");
 }
 
-// --- Verborgen Schat (naslag) ------------------------------------------------
-// De vlag "verborgenschat_voltooid" bepaalt of het Verborgen Schat-onderwerp
-// ontgrendeld is. Die vlag wordt later gezet als de speler de Verborgen Schat
-// heeft gespeeld; voor nu staat hij niet en blijft de knop dus vergrendeld.
+// De rubriekknoppen uit de config. Een rubriek op slot krijgt dezelfde vorm als
+// elk ander vergrendeld onderdeel in het spel: .vergrendeld (gedimd, slotje via
+// ::after) met een .naslag-slot-hint eronder. Geen nieuwe CSS.
+function bouwOntdekRubrieken() {
+    const houder = document.getElementById("ontdek-rubrieken");
+    if (!houder) return;
+    houder.innerHTML = "";
+
+    ontdekRubrieken.forEach((rubriek) => {
+        const open = rubriekIsOpen(rubriek);
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "answer-btn niveau-btn "
+            + (rubriek.knopClass || "niveau-beginner menu-knop-blauw")
+            + (open ? "" : " vergrendeld");
+        knop.textContent = rubriek.naam;
+        knop.setAttribute("aria-disabled", open ? "false" : "true");
+        knop.onclick = () => kiesOntdekRubriek(rubriek.id);
+        houder.appendChild(knop);
+
+        if (!open && rubriek.slotHint) {
+            const hint = document.createElement("p");
+            hint.className = "naslag-slot-hint";
+            hint.textContent = rubriek.slotHint;
+            houder.appendChild(hint);
+        }
+    });
+}
+
+// Rubriek gekozen. Een rubriek op slot doet bewust niets; een externe rubriek
+// verlaat het spel; een rubriek met precies één onderwerp slaat de lijst over.
+function kiesOntdekRubriek(id) {
+    const rubriek = ontdekRubrieken.find((r) => r.id === id);
+    if (!rubriek || !rubriekIsOpen(rubriek)) return;
+
+    if (rubriek.extern) {
+        window.location.href = rubriek.extern;
+        return;
+    }
+
+    ontdekRubriek = rubriek;
+    const onderwerpen = rubriek.onderwerpen || [];
+
+    if (onderwerpen.length === 1) {
+        openOntdekOnderwerp(onderwerpen[0].id);
+        return;
+    }
+
+    bouwOntdekLijst();
+    gaNaarScherm("ontdek-lijst-scherm");
+}
+
+// De onderwerpen van de huidige rubriek. Een lege rubriek zegt dat eerlijk.
+function bouwOntdekLijst() {
+    const rubriek = ontdekRubriek;
+    if (!rubriek) return;
+
+    const titel = document.getElementById("ontdek-lijst-titel");
+    if (titel) titel.textContent = rubriek.naam;
+
+    const inleiding = document.getElementById("ontdek-lijst-inleiding");
+    if (inleiding) {
+        inleiding.textContent = rubriek.inleiding || "";
+        inleiding.style.display = rubriek.inleiding ? "" : "none";
+    }
+
+    const houder = document.getElementById("ontdek-lijst");
+    if (!houder) return;
+    houder.innerHTML = "";
+
+    const onderwerpen = rubriek.onderwerpen || [];
+    if (onderwerpen.length === 0) {
+        houder.innerHTML = `<div class="vu-geen-uitleg">Hier komen binnenkort onderwerpen.</div>`;
+        return;
+    }
+
+    onderwerpen.forEach((onderwerp) => {
+        const rij = document.createElement("button");
+        rij.type = "button";
+        rij.className = "vu-item";
+        rij.onclick = () => openOntdekOnderwerp(onderwerp.id);
+        rij.innerHTML = `<span class="vu-vraag">${onderwerp.naam}</span>`;
+        houder.appendChild(rij);
+    });
+}
+
+// Zoekt een onderwerp op id, dwars door alle rubrieken. Zo blijft een deep-link
+// werken, ook als een onderwerp later naar een andere rubriek verhuist.
+function vindOntdekOnderwerp(id) {
+    for (const rubriek of ontdekRubrieken) {
+        const gevonden = (rubriek.onderwerpen || []).find((o) => o.id === id);
+        if (gevonden) return gevonden;
+    }
+    return null;
+}
+
+// Opent één onderwerp. Een verwijzing wordt eerst gevolgd, zodat dezelfde tekst
+// maar op één plek hoeft te staan. Waar Terug naartoe gaat regelt de
+// navigatiestack: dat is het scherm dat openstond toen dit werd geopend — de
+// onderwerpenlijst, of de Verborgen-Schat-onthullingskaart.
+function openOntdekOnderwerp(id) {
+    let onderwerp = vindOntdekOnderwerp(id);
+    if (onderwerp && onderwerp.verwijstNaar) {
+        onderwerp = vindOntdekOnderwerp(onderwerp.verwijstNaar);
+    }
+    if (!onderwerp) return;
+
+    const titel = document.getElementById("ontdek-detail-titel");
+    if (titel) titel.textContent = onderwerp.naam;
+
+    const houder = document.getElementById("ontdek-detail");
+    if (houder) houder.innerHTML = rendeerOntdekInhoud(onderwerp);
+
+    gaNaarScherm("ontdek-detail-scherm");
+
+    // Bovenaan beginnen, anders blijft de scrollpositie van een vorig onderwerp staan.
+    const box = document.querySelector("#ontdek-detail-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
+}
+
+// Zet een onderwerp om in HTML. Elk blok valt op een bestaande CSS-klasse, dus
+// een nieuw onderwerp vraagt nooit om nieuwe opmaak.
+function rendeerOntdekInhoud(onderwerp) {
+    const inhoud = onderwerp.inhoud || [];
+
+    if (onderwerp.type === "lexicon") {
+        return inhoud.map((e) => {
+            let r = `<p class="naslag-item"><span class="naslag-term">${e.term}</span> — ${e.uitleg}</p>`;
+            if (e.bijbelplaats) r += `<div class="bijbelplaats">Lees het na in: ${e.bijbelplaats}</div>`;
+            return r;
+        }).join("");
+    }
+
+    return inhoud.map((blok) => {
+        if (blok.kop)   return `<h3 class="naslag-kop">${blok.kop}</h3>`;
+        if (blok.kader) return `<div class="naslag-kadertje">${blok.kader}</div>`;
+        if (blok.noot)  return `<p class="naslag-noot">${blok.noot}</p>`;
+        if (blok.item)  return `<p class="naslag-item">${blok.item}</p>`;
+        if (blok.tabel) {
+            const t = blok.tabel;
+            const koprij = (t.koppen || []).length
+                ? `<tr>${t.koppen.map((k) => `<th>${k}</th>`).join("")}</tr>`
+                : "";
+            const rijen = (t.rijen || [])
+                .map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("");
+            return `<table class="naslag-tabel">${koprij}${rijen}</table>`;
+        }
+        return "";
+    }).join("");
+}
+
+// --- Verborgen Schat: de vlag -----------------------------------------------
+// "verborgenschat_voltooid" bepaalt of de gelijknamige rubriek in Ontdekken open
+// staat. Wordt ook gelezen door de diamanten kist op het startscherm en door de
+// schatkamer.
 function isVerborgenSchatOntgrendeld() {
     return localStorage.getItem(profielSleutel("verborgenschat_voltooid")) === "waar";
-}
-
-// Zet de Verborgen Schat-knop in het tussenmenu in de juiste staat: vergrendeld
-// (slotje + hint, niet klikbaar) of actief (volle diamantstijl, geen hint).
-function werkVerborgenSchatNaslagKnopBij() {
-    const knop = document.getElementById("verborgenschat-knop");
-    const hint = document.getElementById("verborgenschat-hint");
-    if (!knop) return;
-
-    const ontgrendeld = isVerborgenSchatOntgrendeld();
-    knop.classList.toggle("vergrendeld", !ontgrendeld);
-    if (hint) hint.style.display = ontgrendeld ? "none" : "";
-}
-
-// Opent de Verborgen Schat-naslagpagina — alleen als die ontgrendeld is. Bij een
-// vergrendelde knop doet een klik bewust niets.
-function openVerborgenSchatNaslag() {
-    if (!isVerborgenSchatOntgrendeld()) return;
-    gaNaarScherm("verborgenschat-naslag-scherm");
 }
 
 // =========================
@@ -8916,157 +9095,6 @@ function openVuDetail(index) {
 
     // Bovenaan beginnen (anders blijft de scrollpositie van een vorige vraag staan).
     const box = document.querySelector("#vu-detail-scherm .quiz-box");
-    if (box) box.scrollTop = 0;
-}
-
-// =========================
-// CATECHESE — data-gedreven uitleg-artikelen, los van de quiz.
-// Navigatie als "Vragen & uitleg": categorie -> artikel-lijst -> artikel-detail.
-// Categorieën en artikelen staan in config-arrays; inhoud toevoegen of hernoemen
-// kan dus zonder de layout aan te raken. Elk artikel heeft een 'id', zodat er
-// later vanuit de uitleg-bij-een-vraag naartoe gelinkt kan worden.
-// =========================
-
-// Categorieën — vrij aan te passen / te hernoemen / uit te breiden.
-const catecheseCategorieen = [
-    "Verborgen getallen",
-    "Verborgen patronen"
-];
-
-// Artikelen — elk hoort via 'categorie' bij precies één categorie hierboven (let
-// op de exacte schrijfwijze). 'tekst' mag meerdere alinea's bevatten, gescheiden
-// door een LEGE regel. 'id' is de sleutel voor latere "Meer hierover ->"-links.
-const catecheseArtikelen = [
-    {
-        id: "verborgen-getallen-153",
-        categorie: "Verborgen getallen",
-        titel: "De 153 vissen",
-        tekst: `Na zijn opstanding liet Jezus zich aan zijn leerlingen zien bij het meer. Ze hadden de hele nacht gevist en niets gevangen. Op Jezus' woord gooiden ze het net nóg een keer uit — en nu zat het zó vol dat ze het bijna niet aan land kregen. Toen ze de vissen telden, waren het er precies honderddrieënvijftig. En het mooie: hoe vol het net ook zat, het scheurde niet (Johannes 21).
-
-Waarom zou Johannes zo'n precies getal opschrijven? Johannes is namelijk een schrijver die van verborgen lagen houdt: in zijn evangelie zit vaak een diepere betekenis onder de oppervlakte. En bij dit getal hebben uitleggers door de eeuwen heen iets bijzonders gezien.
-
-Volgens oude kerkelijke overlevering dacht men vroeger dat er precies 153 soorten vissen in de zee bestonden — élke soort die er was. Het beeld werd dan: het net van het evangelie haalt mensen binnen uit élk volk, uit de hele wereld. De blijde boodschap is niet voor één groep, maar voor iedereen.
-
-En dat het net niet scheurde? Ook dat lazen ze als een boodschap: in dat ene net is plaats voor allemaal, en er gaat niemand verloren.
-
-Sommige uitleggers, zoals Augustinus, keken naar het getal zelf. 153 is namelijk de optelsom van alle getallen van 1 tot en met 17 (1 + 2 + 3 + … + 17 = 153). En 17, zeiden zij, is 10 + 7: de tien geboden plus de zeven gaven van Gods Geest. Zo werd 153 een teken van álle mensen die bij God horen — door zijn wet én door zijn genade.
-
-Er zit zelfs nog een wiskundig wonder in: 153 is óók gelijk aan 1×1×1 + 5×5×5 + 3×3×3 (dat is 1 + 125 + 27). Een getal dat zó keurig in elkaar past, voelt niet zomaar gekozen.
-
-Belangrijk om te weten: deze betekenissen staan niet allemaal letterlijk in de Bijbel — het zijn uitleggingen die door de eeuwen heen zijn ontstaan. Maar ze laten prachtig zien hoe gelovigen in zo'n klein detail een grote boodschap ontdekten: het goede nieuws van Jezus is bestemd voor de hele wereld.`
-    },
-    {
-        id: "verborgen-patronen-paulus-brieven",
-        categorie: "Verborgen patronen",
-        titel: "De verborgen schat in de brieven van Paulus",
-        tekst: `Heb je je weleens afgevraagd waarom de brieven van Paulus in de Bijbel in deze volgorde staan? Het is niet de volgorde waarin hij ze schreef. De brieven zijn ongeveer gerangschikt op lengte: de langste (de brief aan de Romeinen) staat vooraan, en zo wordt het steeds korter, tot het kleine briefje aan Filemon achteraan. Eerst komen de brieven aan gemeenten, daarna de brieven aan personen.
-
-Maar er gebeurt iets moois als je de brieven anders leest — niet op lengte, maar op tijd. Op de volgorde waarin Paulus ze schreef, van zijn eerste jaren als apostel tot vlak voor zijn dood. Dan ontdek je een patroon dat je anders nooit zou zien. Een soort verborgen schat.
-
-Vroeg in zijn leven, in de eerste brief aan de Korintiërs (rond het jaar 54), schrijft Paulus: "Want ik ben de minste van de apostelen." (1 Korintiërs 15:9). De minste van de apostelen — dat is al nederig. En er zijn maar twaalf apostelen, dus dat is nog een kleine groep om de laagste van te zijn.
-
-Jaren later, als hij gevangenzit in Rome, schrijft hij in de brief aan de Efeziërs (rond het jaar 60): "Mij, de allerminste van alle gelovigen…" (Efeziërs 3:8). Nu is hij niet meer de minste van de apostelen, maar de minste van alle gelovigen. De groep is veel groter geworden, en Paulus zet zichzelf onderaan.
-
-En helemaal aan het einde van zijn leven, in de eerste brief aan Timoteüs (rond het jaar 64), schrijft hij: "Christus Jezus is in de wereld gekomen om zondaars te redden, en ik ben de grootste van hen." (1 Timoteüs 1:15). Niet meer de minste apostel, niet meer de minste gelovige, maar de grootste van alle zondaars.
-
-Zie je het patroon? Hoe ouder Paulus werd en hoe dichter hij bij God leefde, hoe kleiner hij zichzelf maakte. Dat lijkt misschien gek — je zou denken dat iemand die zoveel voor God deed juist trotser zou worden. Maar bij Paulus is het andersom. Hoe meer hij Gods liefde leerde kennen, hoe duidelijker hij zag hoe groot die genade voor hém was.
-
-En let op iets belangrijks: Paulus bleef gewoon apostel. Hij heeft die taak nooit weggegooid. Hij hield twee dingen tegelijk vast — "ik ben een apostel van Jezus Christus" én "ik ben de grootste zondaar". Dat spreekt elkaar niet tegen. Je mag weten wie je in God bent, en tegelijk klein blijven voor Hem.
-
-Paulus zegt dit nergens hardop. Hij schrijft niet: "let op, ik word steeds nederiger." Je ontdekt het pas als je zijn brieven naast elkaar legt op volgorde van tijd. Daarom is het echt een verborgen schat: hij ligt verstopt in de volgorde, en je vindt hem alleen als je goed zoekt.
-
-Eén ding om eerlijk bij te zeggen: de jaartallen hierboven zijn ongeveer — geleerden weten niet op de dag nauwkeurig wanneer Paulus elke brief schreef. En dat Paulus "steeds nederiger" werd, is iets wat wij ontdekken als we de brieven op tijd ordenen; het is een prachtige ontdekking, geen regel die zo in de Bijbel staat. Maar de drie teksten zijn er echt, en ze zijn in deze volgorde geschreven. Dat maakt het zo bijzonder.
-
-Word jij van binnen groter of kleiner naarmate je meer leert? Paulus laat zien dat echt dichtbij God komen je juist nederig maakt — niet omdat je niks waard bent, maar omdat je steeds beter ziet hoe groot Gods liefde is.`
-    },
-    {
-        id: "verborgen-patronen-sandwich",
-        categorie: "Verborgen patronen",
-        titel: "De sandwich-techniek van Marcus",
-        tekst: `Marcus blijkt een knappe verteller. Hij begint een verhaal, schuift er een tweede verhaal tussen, en pakt dan de draad van het eerste weer op — net als twee boterhammen met beleg ertussen. Geleerden noemen dit de sandwich-techniek (met een moeilijk woord: intercalatie).
-
-Het mooiste inzicht: de nadruk ligt meestal op het verhaal ín het midden — net als bij een echte sandwich is het beleg waar het om draait. Dat binnenste verhaal is vaak de sleutel tot de betekenis, en de twee verhalen eromheen helpen je dat te begrijpen.
-
-Bij Jaïrus en de zieke vrouw (Marcus 5) staat zo het geloof van de vrouw in het midden, met een knipoog: het getal twaalf komt in beide verhalen terug — de vrouw is twaalf jaar ziek, het meisje twaalf jaar oud. Een ander bekend voorbeeld is de tempelreiniging, ingeklemd tussen de vervloeking en het verdorren van een vijgenboom (Marcus 11).
-
-Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als losse verhalen, maar als één doordacht geheel. Kun jij nog een sandwich vinden als je Marcus leest?`
-    }
-];
-
-// Huidig gekozen categorie (voor de artikel-lijst en de Terug-knoppen).
-let catecheseCategorie = null;
-
-// Bijbeltraining -> Catechese-landing
-function openCatechese() {
-    bouwCatecheseCategorieen();
-    gaNaarScherm("catechese-scherm");
-}
-// Bouwt de categorie-knoppen uit de config-array (boekenkeuze-stijl). Alle
-// categorieën in catecheseCategorieen hebben echte artikelen, dus ze zijn
-// allemaal gewoon klikbaar.
-function bouwCatecheseCategorieen() {
-    const houder = document.getElementById("catechese-categorieen");
-    if (!houder) return;
-    houder.innerHTML = "";
-    catecheseCategorieen.forEach((categorie) => {
-        const knop = document.createElement("button");
-        knop.type = "button";
-        knop.className = "answer-btn niveau-btn catechese-knop";
-        knop.textContent = categorie;
-        knop.onclick = () => kiesCatecheseCategorie(categorie);
-        houder.appendChild(knop);
-    });
-}
-// Categorie gekozen -> artikel-lijst bouwen en tonen.
-function kiesCatecheseCategorie(categorie) {
-    catecheseCategorie = categorie;
-    bouwCatecheseLijst();
-    gaNaarScherm("catechese-lijst-scherm");
-}
-// Bouwt de artikel-lijst van de huidige categorie (gefilterd uit catecheseArtikelen).
-function bouwCatecheseLijst() {
-    const titel = document.getElementById("catechese-lijst-titel");
-    if (titel) titel.textContent = catecheseCategorie;
-
-    const houder = document.getElementById("catechese-lijst");
-    if (!houder) return;
-    houder.innerHTML = "";
-
-    const artikelen = catecheseArtikelen.filter((a) => a.categorie === catecheseCategorie);
-    if (artikelen.length === 0) {
-        houder.innerHTML = `<div class="vu-geen-uitleg">Voor dit onderwerp komen binnenkort artikelen.</div>`;
-        return;
-    }
-    artikelen.forEach((a) => {
-        const rij = document.createElement("button");
-        rij.type = "button";
-        rij.className = "vu-item";
-        rij.onclick = () => openCatecheseArtikel(a.id);
-        rij.innerHTML = `<span class="vu-vraag">${a.titel}</span>`;
-        houder.appendChild(rij);
-    });
-}
-// Opent één artikel op 'id'. Geschikt voor deep-links vanuit een vraag-uitleg
-// ("Meer hierover ->"): roep gewoon openCatecheseArtikel(id) aan. De categorie
-// wordt meegezet, zodat de lijst eronder bij het juiste onderwerp staat. Waar
-// Terug naartoe gaat regelt de navigatiestack: dat is het scherm dat openstond
-// toen dit artikel werd geopend — de artikellijst, of de Verborgen-Schat-kaart.
-function openCatecheseArtikel(id) {
-    const a = catecheseArtikelen.find((art) => art.id === id);
-    if (!a) return;
-    catecheseCategorie = a.categorie;
-
-    let html = `<h3 class="naslag-kop">${a.titel}</h3>`;
-    const alineas = (a.tekst || "").split(/\n\s*\n/).filter((s) => s.trim() !== "");
-    html += `<div class="uitleg">` + alineas.map((s) => `<p>${s}</p>`).join("") + `</div>`;
-
-    const houder = document.getElementById("catechese-artikel");
-    if (houder) houder.innerHTML = html;
-
-    gaNaarScherm("catechese-artikel-scherm");
-
-    // Bovenaan beginnen, anders blijft de scrollpositie van een vorig artikel staan.
-    const box = document.querySelector("#catechese-artikel-scherm .quiz-box");
     if (box) box.scrollTop = 0;
 }
 

@@ -13,10 +13,14 @@ Vaste conventies van dit project. Volg ze zonder er per sessie naar te vragen.
 
 ## Cache-buster in `index.html`
 
-`style.css`, `lang/nl.js` en `script.js` dragen **samen één nummer** en gaan
-**altijd samen omhoog**, ook als er maar één van de drie is gewijzigd. Nooit per
-bestand ophogen, nooit terug in nummer. Lees de huidige stand uit `index.html`
-zelf (regel 22 voor de stylesheet, onderaan `<body>` voor de twee scripts).
+`style.css`, `lang/nl.js`, `ontdekken-inhoud.js` en `script.js` dragen **samen
+één nummer** en gaan **altijd samen omhoog**, ook als er maar één van de vier is
+gewijzigd. Nooit per bestand ophogen, nooit terug in nummer. Lees de huidige
+stand uit `index.html` zelf (regel 22 voor de stylesheet, onderaan `<body>` voor
+de drie scripts).
+
+`ontdekken-inhoud.js` staat bewust vóór `script.js`: `ontdekRubrieken` verwijst
+naar de constanten uit dat bestand.
 
 De favicons in `icons/` hebben een **eigen teller** en staan hier los van; die
 niet meebumpen.

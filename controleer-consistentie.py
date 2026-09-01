@@ -28,6 +28,7 @@ import unicodedata
 
 HIER = os.path.dirname(os.path.abspath(__file__))
 SCRIPT_JS = os.path.join(HIER, "script.js")
+ONTDEKKEN_JS = os.path.join(HIER, "ontdekken-inhoud.js")
 NL_JS = os.path.join(HIER, "lang", "nl.js")
 IMAGES = os.path.join(HIER, "images")
 
@@ -580,7 +581,7 @@ def controle_vragen(boeknaarkey, pools):
 # ---------------------------------------------------------------------------
 #
 # Een vraag mag een 'catecheseId' dragen; de knop "Meer ontdekken" opent dan
-# het bijbehorende artikel. vsRevealMeer() controleert zelf of het id bestaat
+# het bijbehorende onderwerp in de Ontdekken-hub. vsRevealMeer() controleert zelf of het id bestaat
 # en toont anders een rustige "binnenkort"-melding. Prettig voor het kind,
 # maar daardoor valt een verkeerd gespeld id tijdens het spelen niet op: het
 # ziet er precies zo uit als een vraag die nog geen artikel heeft. Vandaar
@@ -591,9 +592,18 @@ def controle_vragen(boeknaarkey, pools):
 # Zou dit als waarschuwing meelopen, dan klaagt het script bij elke run over
 # iets wat klopt, en dan leert de lezer de meldingen negeren.
 
-def lees_catechese_artikelen(bron):
-    return lees_literaal(bron, r"^const catecheseArtikelen = \[",
-                         "catecheseArtikelen")
+def lees_ontdek_onderwerpen():
+    """Alle onderwerpen uit ontdekken-inhoud.js, over de rubrieken heen.
+
+    vindOntdekOnderwerp() zoekt op dezelfde manier: op id, dwars door alle
+    rubrieken. Een catecheseId hoeft dus niet per se in Verborgen patronen te
+    staan om te werken.
+    """
+    inhoud = lees_bestand(ONTDEKKEN_JS)
+    onderwerpen = []
+    for naam in ("ONTDEK_PATRONEN", "ONTDEK_SCHAT"):
+        onderwerpen += lees_literaal(inhoud, r"^const %s = \[" % naam, naam)
+    return onderwerpen
 
 
 def alle_vraagobjecten(bron, pools, meldingen):
@@ -610,15 +620,16 @@ def alle_vraagobjecten(bron, pools, meldingen):
 
 
 def controle_catechese(bron, pools):
-    kop(7, "Catechese-links (catecheseId)")
+    kop(7, "Deep-links naar Ontdekken (catecheseId)")
 
-    artikelen = lees_catechese_artikelen(bron)
+    artikelen = lees_ontdek_onderwerpen()
     ids = [a.get("id") for a in artikelen if isinstance(a, dict)]
     bekend = set(i for i in ids if i)
-    info("catecheseArtikelen : %d artikelen." % len(artikelen))
+    info("Ontdekken-onderwerpen : %d (Verborgen patronen + Verborgen Schat)."
+         % len(artikelen))
 
     for artikel_id in sorted(set(i for i in ids if ids.count(i) > 1)):
-        probleem("catecheseArtikelen bevat het id '%s' meer dan een keer."
+        probleem("ontdekken-inhoud.js bevat het id '%s' meer dan een keer."
                  % artikel_id)
 
     meldingen = []
@@ -636,7 +647,7 @@ def controle_catechese(bron, pools):
     for herkomst, catechese_id, vraagtekst in verwijzingen:
         if catechese_id not in bekend:
             stuk += 1
-            probleem("catecheseId '%s' bestaat niet in catecheseArtikelen "
+            probleem("catecheseId '%s' bestaat niet in ontdekken-inhoud.js "
                      "(%s: %s...)" % (catechese_id, herkomst, vraagtekst[:50]))
 
     if not stuk:
