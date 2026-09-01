@@ -8790,7 +8790,7 @@ function kiesOnBoek(boek) {
 function kiesOnNiveau(niveau) {
     onNiveau = niveau;
     const titel = document.getElementById("modus-titel");
-    if (titel) titel.textContent = `${onBoek} — ${niveauLabels[niveau]}`;
+    if (titel) titel.textContent = `${onBoek} – ${niveauLabels[niveau]}`;
     gaNaarScherm("modus-scherm");
 }
 
