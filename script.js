@@ -8556,11 +8556,13 @@ function vsRevealMeer() {
     const id = meerKnop ? meerKnop.dataset.catecheseId : "";
     if (id && typeof openCatecheseArtikel === "function" &&
         catecheseArtikelen.some((a) => a.id === id)) {
-        const scherm = document.getElementById("vs-reveal-scherm");
-        if (scherm) scherm.style.display = "none";
-        // Open het artikel mét herkomst "vs-reveal": de onthullingskaart blijft
-        // eronder en de Terug-knop in het artikel keert ernaar terug.
-        openCatecheseArtikel(id, "vs-reveal");
+        // De onthullingskaart is het scherm waar we vandaan komen. Door hem als
+        // huidig scherm te zetten duwt gaNaarScherm() hem op de stack, verbergt
+        // hem, en keert gaTerug() vanuit het artikel er netjes naar terug. De
+        // lopende Verborgen Schat-ronde blijft daaronder onaangeroerd staan; de
+        // stack wordt hier bewust NIET geleegd, want de ronde gaat door.
+        huidigScherm = "vs-reveal-scherm";
+        openCatecheseArtikel(id);
         return;
     }
     const meerMelding = document.getElementById("vs-reveal-meer-melding");
@@ -8617,6 +8619,10 @@ function terugNaarStartscherm() {
     oefenModus = false;
     vragen = [];
 
+    // Wie hier komt, verlaat de Bijbeltraining-tak hoe dan ook: pad vergeten,
+    // zodat een volgend bezoek aan het kruispunt schoon begint.
+    leegSchermStack();
+
     // FIX 5: HUD weer zichtbaar maken bij terugkeer naar het startscherm
     toonLevelHud();
 
@@ -8670,22 +8676,68 @@ function bevestigRondeStoppen() {
     terugNaarStartscherm();
 }
 
-// --- Bijbeltraining ---------------------------------------------------------
-// Opent het Bijbeltraining-kruispunt (Oefenen / Naslag & uitleg).
-function openBijbeltraining() {
-    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+// --- Navigatiestack (Bijbeltraining-tak) ------------------------------------
+// Eén mechaniek voor alle Terug-knoppen binnen Bijbeltraining, in plaats van
+// dertien losse sluit-/terug-functies. gaNaarScherm() verbergt het scherm dat
+// nu openstaat, zet het op de stack en toont het nieuwe; gaTerug() draait dat
+// om. Is de stack leeg, dan gaat het laatste scherm dicht en zie je vanzelf het
+// startscherm weer — dat is geen overlay maar ligt eronder.
+//
+// De quiz-tak (#niveau-scherm, #quiz-scherm) doet hier NIET aan mee: die houdt
+// terugNaarStartscherm(). Zodra de Bijbeltraining-tak wordt verlaten, wordt de
+// stack geleegd, zodat een volgend bezoek schoon begint.
+const schermStack = [];
+
+// Het scherm dat nu openstaat, of null als er geen overlay uit deze tak open is.
+let huidigScherm = null;
+
+// Toont een scherm en onthoudt waar we vandaan kwamen.
+function gaNaarScherm(id) {
+    if (huidigScherm) {
+        const oud = document.getElementById(huidigScherm);
+        if (oud) oud.style.display = "none";
+        schermStack.push(huidigScherm);
+    }
+    const nieuw = document.getElementById(id);
+    if (nieuw) nieuw.style.display = "flex";
+    huidigScherm = id;
 }
 
-// Sluit het kruispunt en keert terug naar het startscherm.
-function sluitBijbeltraining() {
-    document.getElementById("bijbeltraining-scherm").style.display = "none";
+// Eén scherm terug. Lege stack = terug naar het startscherm.
+function gaTerug() {
+    if (huidigScherm) {
+        const oud = document.getElementById(huidigScherm);
+        if (oud) oud.style.display = "none";
+    }
+    const vorige = schermStack.pop();
+    if (vorige) {
+        const nieuw = document.getElementById(vorige);
+        if (nieuw) nieuw.style.display = "flex";
+        huidigScherm = vorige;
+    } else {
+        huidigScherm = null;
+    }
+}
+
+// De tak wordt verlaten: pad vergeten.
+function leegSchermStack() {
+    schermStack.length = 0;
+    huidigScherm = null;
+}
+
+// --- Bijbeltraining ---------------------------------------------------------
+// Opent het Bijbeltraining-kruispunt: het begin van de tak, dus met een schone
+// stack. De Terug-knop hier loopt via gaTerug() en komt op een lege stack uit,
+// waarmee het kruispunt sluit en het startscherm weer zichtbaar wordt.
+function openBijbeltraining() {
+    leegSchermStack();
+    gaNaarScherm("bijbeltraining-scherm");
 }
 
 // Placeholders — worden in de volgende stappen ingevuld.
 function startOefenen() {
-    document.getElementById("bijbeltraining-scherm").style.display = "none";
     vulOefenBoeken();
-    document.getElementById("oefen-boek-scherm").style.display = "flex";
+    gaNaarScherm("oefen-boek-scherm");
 }
 
 // Vult het oefen-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v. alleen de
@@ -8707,7 +8759,6 @@ function vulOefenBoeken() {
 
     const knoppen = Array.from(scherm.querySelectorAll("button"));
     const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesOefenBoek");
-    const isTerugKnop = (b) => (b.getAttribute("onclick") || "").includes("terugNaarBijbeltraining");
 
     const boekKnoppen = knoppen.filter(isBoekKnop);
     if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
@@ -8717,7 +8768,10 @@ function vulOefenBoeken() {
     if (!ouder || ouder.dataset.oefenVol === "1") return;   // al aangevuld
 
     const klasse = template.className;
-    const terugKnop = knoppen.find(isTerugKnop);
+    // De Terug-knop is het ankerpunt: de boeken komen ervóór. Hij wordt op zijn
+    // id gezocht en niet op de tekst van zijn onclick — die is sinds de
+    // navigatiestack overal gaTerug() en dus niet meer onderscheidend.
+    const terugKnop = document.getElementById("oefen-boek-terug");
 
     // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
     boekKnoppen.forEach((b) => b.remove());
@@ -8741,43 +8795,27 @@ function vulOefenBoeken() {
 
     ouder.dataset.oefenVol = "1";
 }
-function terugNaarBijbeltraining() {
-    document.getElementById("oefen-boek-scherm").style.display = "none";
-    document.getElementById("bijbeltraining-scherm").style.display = "flex";
-}
 function kiesOefenBoek(boek) {
+    // Hier verlaat de speler de Bijbeltraining-tak: vanaf #niveau-scherm neemt
+    // de quiz-tak het over, met zijn eigen Terug (terugNaarStartscherm). De
+    // stack heeft daar niets meer te zoeken en wordt dus geleegd.
     document.getElementById("oefen-boek-scherm").style.display = "none";
+    leegSchermStack();
     openBoek(boek, { vergrendel: false, oefen: true });
 }
 function openNaslag() {
-    document.getElementById("bijbeltraining-scherm").style.display = "none";
-    document.getElementById("naslag-scherm").style.display = "flex";
+    gaNaarScherm("naslag-scherm");
     // Verborgen Schat-knop in de juiste (on)vergrendelde staat zetten.
     werkVerborgenSchatNaslagKnopBij();
-}
-
-function sluitNaslag() {
-    document.getElementById("naslag-scherm").style.display = "none";
-    document.getElementById("bijbeltraining-scherm").style.display = "flex";
 }
 
 // --- Naslag-onderwerpen (vanuit het Naslag-tussenmenu) -----------------------
 // Elk onderwerp is een eigen scherm; "← Terug" keert terug naar het tussenmenu.
 function openMaten() {
-    document.getElementById("naslag-scherm").style.display = "none";
-    document.getElementById("maten-scherm").style.display = "flex";
-}
-function sluitMaten() {
-    document.getElementById("maten-scherm").style.display = "none";
-    document.getElementById("naslag-scherm").style.display = "flex";
+    gaNaarScherm("maten-scherm");
 }
 function openWoordenboek() {
-    document.getElementById("naslag-scherm").style.display = "none";
-    document.getElementById("woordenboek-scherm").style.display = "flex";
-}
-function sluitWoordenboek() {
-    document.getElementById("woordenboek-scherm").style.display = "none";
-    document.getElementById("naslag-scherm").style.display = "flex";
+    gaNaarScherm("woordenboek-scherm");
 }
 
 // --- Verborgen Schat (naslag) ------------------------------------------------
@@ -8804,12 +8842,7 @@ function werkVerborgenSchatNaslagKnopBij() {
 // vergrendelde knop doet een klik bewust niets.
 function openVerborgenSchatNaslag() {
     if (!isVerborgenSchatOntgrendeld()) return;
-    document.getElementById("naslag-scherm").style.display = "none";
-    document.getElementById("verborgenschat-naslag-scherm").style.display = "flex";
-}
-function sluitVerborgenSchatNaslag() {
-    document.getElementById("verborgenschat-naslag-scherm").style.display = "none";
-    document.getElementById("naslag-scherm").style.display = "flex";
+    gaNaarScherm("verborgenschat-naslag-scherm");
 }
 
 // =========================
@@ -8823,9 +8856,8 @@ let vuNiveau = null;
 
 // Bijbeltraining -> evangelie-keuze
 function openVraagUitleg() {
-    document.getElementById("bijbeltraining-scherm").style.display = "none";
     vulVuBoeken();
-    document.getElementById("vu-boek-scherm").style.display = "flex";
+    gaNaarScherm("vu-boek-scherm");
 }
 
 // Vult het Vragen & uitleg-keuzescherm met ALLE boeken uit boekNaarKey (i.p.v.
@@ -8848,7 +8880,6 @@ function vulVuBoeken() {
 
     const knoppen = Array.from(scherm.querySelectorAll("button"));
     const isBoekKnop = (b) => (b.getAttribute("onclick") || "").includes("kiesVuBoek");
-    const isTerugKnop = (b) => (b.getAttribute("onclick") || "").includes("sluitVuBoek");
 
     const boekKnoppen = knoppen.filter(isBoekKnop);
     if (boekKnoppen.length === 0) return;            // onbekende opmaak: niets doen
@@ -8858,10 +8889,10 @@ function vulVuBoeken() {
     if (!ouder || ouder.dataset.vuVol === "1") return;      // al aangevuld
 
     const klasse = template.className;
-    // Bewust de LAATSTE Terug-knop: er staat er ook één bovenaan, en de boeken
-    // horen daartussenin. Met find() zou de bovenste gevonden worden en belandde
-    // de hele lijst daarboven.
-    const terugKnop = knoppen.filter(isTerugKnop).pop();
+    // Bewust de ONDERSTE Terug-knop: er staat er ook één bovenaan, en de boeken
+    // horen daartussenin. Hij wordt op zijn id gezocht en niet op de tekst van
+    // zijn onclick — die is sinds de navigatiestack voor beide knoppen gaTerug().
+    const terugKnop = document.getElementById("vu-boek-terug-onder");
 
     // Oude (statische) boekknoppen weghalen; Terug blijft behouden.
     boekKnoppen.forEach((b) => b.remove());
@@ -8885,35 +8916,18 @@ function vulVuBoeken() {
 
     ouder.dataset.vuVol = "1";
 }
-// Evangelie-keuze -> terug naar Bijbeltraining
-function sluitVuBoek() {
-    document.getElementById("vu-boek-scherm").style.display = "none";
-    document.getElementById("bijbeltraining-scherm").style.display = "flex";
-}
 // Evangelie gekozen -> niveau-keuze (titel toont het boek)
 function kiesVuBoek(boek) {
     vuBoek = boek;
     const titel = document.getElementById("vu-niveau-titel");
     if (titel) titel.textContent = boek;
-    document.getElementById("vu-boek-scherm").style.display = "none";
-    document.getElementById("vu-niveau-scherm").style.display = "flex";
-}
-// Niveau-keuze -> terug naar evangelie-keuze
-function terugVuNiveau() {
-    document.getElementById("vu-niveau-scherm").style.display = "none";
-    document.getElementById("vu-boek-scherm").style.display = "flex";
+    gaNaarScherm("vu-niveau-scherm");
 }
 // Niveau gekozen -> de lijst bouwen en tonen.
 function kiesVuNiveau(niveau) {
     vuNiveau = niveau;
     bouwVuLijst();
-    document.getElementById("vu-niveau-scherm").style.display = "none";
-    document.getElementById("vu-lijst-scherm").style.display = "flex";
-}
-// Lijst -> terug naar niveau-keuze
-function terugVuLijst() {
-    document.getElementById("vu-lijst-scherm").style.display = "none";
-    document.getElementById("vu-niveau-scherm").style.display = "flex";
+    gaNaarScherm("vu-lijst-scherm");
 }
 // Bouwt de genummerde lijst rechtstreeks uit vragenData[vuBoek][vuNiveau].
 // Read-only: leest alleen; kopieert niets. Een 💡-teken markeert vragen met uitleg.
@@ -8962,17 +8976,11 @@ function openVuDetail(index) {
     const houder = document.getElementById("vu-detail");
     if (houder) houder.innerHTML = html;
 
-    document.getElementById("vu-lijst-scherm").style.display = "none";
-    document.getElementById("vu-detail-scherm").style.display = "flex";
+    gaNaarScherm("vu-detail-scherm");
 
     // Bovenaan beginnen (anders blijft de scrollpositie van een vorige vraag staan).
     const box = document.querySelector("#vu-detail-scherm .quiz-box");
     if (box) box.scrollTop = 0;
-}
-// Uitlegpagina -> terug naar de lijst
-function terugVuDetail() {
-    document.getElementById("vu-detail-scherm").style.display = "none";
-    document.getElementById("vu-lijst-scherm").style.display = "flex";
 }
 
 // =========================
@@ -9052,21 +9060,10 @@ Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als loss
 // Huidig gekozen categorie (voor de artikel-lijst en de Terug-knoppen).
 let catecheseCategorie = null;
 
-// Vanwaar het artikel-detail is geopend: null = normaal (vanuit de lijst), of
-// "vs-reveal" = vanuit de Verborgen-Schat-onthullingskaart. Bepaalt waar de
-// Terug-knop in het artikel naartoe gaat, zodat een lopende VS-ronde niet breekt.
-let catecheseArtikelHerkomst = null;
-
 // Bijbeltraining -> Catechese-landing
 function openCatechese() {
-    document.getElementById("bijbeltraining-scherm").style.display = "none";
     bouwCatecheseCategorieen();
-    document.getElementById("catechese-scherm").style.display = "flex";
-}
-// Catechese-landing -> terug naar Bijbeltraining
-function sluitCatechese() {
-    document.getElementById("catechese-scherm").style.display = "none";
-    document.getElementById("bijbeltraining-scherm").style.display = "flex";
+    gaNaarScherm("catechese-scherm");
 }
 // Bouwt de categorie-knoppen uit de config-array (boekenkeuze-stijl). Alle
 // categorieën in catecheseCategorieen hebben echte artikelen, dus ze zijn
@@ -9088,13 +9085,7 @@ function bouwCatecheseCategorieen() {
 function kiesCatecheseCategorie(categorie) {
     catecheseCategorie = categorie;
     bouwCatecheseLijst();
-    document.getElementById("catechese-scherm").style.display = "none";
-    document.getElementById("catechese-lijst-scherm").style.display = "flex";
-}
-// Artikel-lijst -> terug naar de categorieën.
-function terugCatecheseLijst() {
-    document.getElementById("catechese-lijst-scherm").style.display = "none";
-    document.getElementById("catechese-scherm").style.display = "flex";
+    gaNaarScherm("catechese-lijst-scherm");
 }
 // Bouwt de artikel-lijst van de huidige categorie (gefilterd uit catecheseArtikelen).
 function bouwCatecheseLijst() {
@@ -9119,14 +9110,15 @@ function bouwCatecheseLijst() {
         houder.appendChild(rij);
     });
 }
-// Opent één artikel op 'id'. Geschikt voor latere deep-links vanuit een vraag-
-// uitleg ("Meer hierover ->"): roep gewoon openCatecheseArtikel(id) aan. De
-// categorie wordt meegezet, zodat de Terug-knop naar de juiste lijst gaat.
-function openCatecheseArtikel(id, herkomst) {
+// Opent één artikel op 'id'. Geschikt voor deep-links vanuit een vraag-uitleg
+// ("Meer hierover ->"): roep gewoon openCatecheseArtikel(id) aan. De categorie
+// wordt meegezet, zodat de lijst eronder bij het juiste onderwerp staat. Waar
+// Terug naartoe gaat regelt de navigatiestack: dat is het scherm dat openstond
+// toen dit artikel werd geopend — de artikellijst, of de Verborgen-Schat-kaart.
+function openCatecheseArtikel(id) {
     const a = catecheseArtikelen.find((art) => art.id === id);
     if (!a) return;
     catecheseCategorie = a.categorie;
-    catecheseArtikelHerkomst = herkomst || null;
 
     let html = `<h3 class="naslag-kop">${a.titel}</h3>`;
     const alineas = (a.tekst || "").split(/\n\s*\n/).filter((s) => s.trim() !== "");
@@ -9135,24 +9127,11 @@ function openCatecheseArtikel(id, herkomst) {
     const houder = document.getElementById("catechese-artikel");
     if (houder) houder.innerHTML = html;
 
-    document.getElementById("catechese-lijst-scherm").style.display = "none";
-    document.getElementById("catechese-artikel-scherm").style.display = "flex";
+    gaNaarScherm("catechese-artikel-scherm");
 
     // Bovenaan beginnen, anders blijft de scrollpositie van een vorig artikel staan.
     const box = document.querySelector("#catechese-artikel-scherm .quiz-box");
     if (box) box.scrollTop = 0;
-}
-// Artikel-detail -> terug. Normaal naar de artikel-lijst; maar als het artikel
-// vanuit de Verborgen-Schat-kaart werd geopend, keren we daar netjes naar terug,
-// zodat het kind de ronde gewoon kan vervolgen met "Volgende ->".
-function terugCatecheseArtikel() {
-    document.getElementById("catechese-artikel-scherm").style.display = "none";
-    if (catecheseArtikelHerkomst === "vs-reveal") {
-        catecheseArtikelHerkomst = null;
-        document.getElementById("vs-reveal-scherm").style.display = "flex";
-    } else {
-        document.getElementById("catechese-lijst-scherm").style.display = "flex";
-    }
 }
 
 // =========================
@@ -10532,7 +10511,7 @@ function sluitInstellingen() {
 }
 
 // --- Steun de Bijbelkidsquiz (Instellingen → Over dit spel) ------------------
-// Zelfde patroon als openMaten()/sluitMaten(): het ouderscherm gaat dicht, dit
+// Zelfde patroon als de naslagschermen: het ouderscherm gaat dicht, dit
 // scherm open, en Terug draait dat precies om. De inhoud komt uit NL.steun in
 // lang/nl.js en wordt bij elke opening opnieuw opgebouwd, zodat een
 // tekstwijziging in het taalbestand meteen doorwerkt zonder HTML aan te raken.

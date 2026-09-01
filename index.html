@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=78">
+    <link rel="stylesheet" href="style.css?v=79">
 
     <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
          Vier verwijzingen dragen samen dit eigen nummer:
@@ -415,7 +415,7 @@
                 <button class="answer-btn niveau-btn niveau-expert menu-knop-blauw" onclick="openVraagUitleg()">Vragen &amp; uitleg</button>
                 <button class="answer-btn niveau-btn catechese-knop" onclick="openCatechese()">Catechese</button>
                 <button class="answer-btn niveau-btn catechese-knop" onclick="window.location.href='kerken.html'">De verschillende kerken</button>
-                <button class="answer-btn niveau-terug" onclick="sluitBijbeltraining()">Terug</button>
+                <button id="bijbeltraining-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -429,7 +429,7 @@
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Marcus')">Marcus</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Lucas')">Lucas</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesOefenBoek('Johannes')">Johannes</button>
-                <button class="answer-btn niveau-terug" onclick="terugNaarBijbeltraining()">Terug</button>
+                <button id="oefen-boek-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -443,13 +443,13 @@
                 <!-- Terug staat boven én onder, net als in de andere leesschermen:
                      vulVuBoeken() vult deze lijst met alle 18 boeken en maakt de
                      box scrollbaar, en dan is alleen een knop onderaan onhandig. -->
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVuBoek()">&larr; Terug</button>
+                <button id="vu-boek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
 
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Matteüs')">Matteüs</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Marcus')">Marcus</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Lucas')">Lucas</button>
                 <button class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="kiesVuBoek('Johannes')">Johannes</button>
-                <button class="answer-btn niveau-terug" onclick="sluitVuBoek()">Terug</button>
+                <button id="vu-boek-terug-onder" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -462,7 +462,7 @@
                 <button class="answer-btn niveau-btn niveau-beginner" onclick="kiesVuNiveau('beginner')">Beginner</button>
                 <button class="answer-btn niveau-btn niveau-advanced" onclick="kiesVuNiveau('advanced')">Advanced</button>
                 <button class="answer-btn niveau-btn niveau-expert" onclick="kiesVuNiveau('expert')">Expert</button>
-                <button class="answer-btn niveau-terug" onclick="terugVuNiveau()">Terug</button>
+                <button id="vu-niveau-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -471,9 +471,9 @@
         <div id="vu-lijst-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title" id="vu-lijst-titel">Vragen &amp; uitleg</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuLijst()">← Terug</button>
+                <button id="vu-lijst-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
                 <div id="vu-lijst" class="vu-lijst"></div>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuLijst()">← Terug</button>
+                <button id="vu-lijst-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
             </div>
         </div>
 
@@ -481,7 +481,7 @@
              gevuld uit vragenData (vraag, juiste antwoord, bijbelplaats, uitleg). -->
         <div id="vu-detail-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugVuDetail()">← Terug</button>
+                <button id="vu-detail-terug" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
                 <div id="vu-detail"></div>
             </div>
         </div>
@@ -498,7 +498,7 @@
                 <h2 class="quiz-title">Catechese</h2>
                 <p class="quiz-question">Kies een onderwerp</p>
                 <div id="catechese-categorieen"></div>
-                <button class="answer-btn niveau-terug" onclick="sluitCatechese()">Terug</button>
+                <button id="catechese-terug" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -507,9 +507,8 @@
         <div id="catechese-lijst-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title" id="catechese-lijst-titel">Catechese</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
+                <button id="catechese-lijst-terug" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
                 <div id="catechese-lijst" class="vu-lijst"></div>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseLijst()">← Terug</button>
             </div>
         </div>
 
@@ -517,14 +516,14 @@
              Wordt door openCatecheseArtikel(id) gevuld uit catecheseArtikelen. -->
         <div id="catechese-artikel-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
-                <button class="answer-btn niveau-terug naslag-terug" onclick="terugCatecheseArtikel()">← Terug</button>
+                <button id="catechese-artikel-terug" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
                 <div id="catechese-artikel"></div>
             </div>
         </div>
 
         <!-- Naslag & uitleg: tussenmenu met drie keuzes. Zelfde overlay-/quiz-box-
-             opzet als de andere Bijbeltraining-schermen. openNaslag()/sluitNaslag()
-             blijven ongewijzigd: ze openen/sluiten dit tussenmenu. -->
+             opzet als de andere Bijbeltraining-schermen. openNaslag() zet het op
+             de navigatiestack; de Terug-knop loopt via gaTerug(). -->
         <div id="naslag-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
                 <h2 class="quiz-title">Naslag &amp; uitleg</h2>
@@ -538,7 +537,7 @@
                      naslagpagina opent. -->
                 <button id="verborgenschat-knop" class="answer-btn niveau-btn naslag-diamant vergrendeld" onclick="openVerborgenSchatNaslag()">Verborgen Schat</button>
                 <p id="verborgenschat-hint" class="naslag-slot-hint">Speel eerst de Verborgen Schat om te ontgrendelen</p>
-                <button class="answer-btn niveau-terug" onclick="sluitNaslag()">Terug</button>
+                <button id="naslag-terug-knop" class="answer-btn niveau-terug" onclick="gaTerug()">Terug</button>
             </div>
         </div>
 
@@ -548,7 +547,7 @@
         <div id="woordenboek-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title">Woordenboek</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitWoordenboek()">← Terug</button>
+                <button id="woordenboek-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
 
                 <p class="naslag-item"><span class="naslag-term">Allerheiligste</span> — Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen.</p>
                 <p class="naslag-item"><span class="naslag-term">Altaar</span> — Een verhoogde plek, vaak van steen, waar offers aan God werden gebracht.</p>
@@ -595,7 +594,7 @@
                 <p class="naslag-item"><span class="naslag-term">Zendeling</span> — Iemand die op reis gaat, vaak ver van huis, om anderen over Jezus te vertellen. Paulus was zo iemand.</p>
                 <p class="naslag-item"><span class="naslag-term">Zonde</span> — Alles wat stukgaat tussen mensen onderling en tussen mensen en God: iets verkeerds doen, tegen wat goed is en tegen wat God wil. Het oude woord betekent eigenlijk "je doel missen" — alsof je met een pijl op de roos mikt en er net naast schiet.</p>
 
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitWoordenboek()">← Terug</button>
+                <button id="woordenboek-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
             </div>
         </div>
 
@@ -607,7 +606,7 @@
         <div id="verborgenschat-naslag-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title">Verborgen Schat</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVerborgenSchatNaslag()">← Terug</button>
+                <button id="verborgenschat-naslag-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
 
                 <h3 class="naslag-kop">Van wie was het huis met de bovenzaal van het Laatste Avondmaal?</h3>
                 <p class="naslag-item">Hier moeten we eerlijk zijn — en juist dat maakt het een echte schat. De evangeliën noemen de eigenaar namelijk níet. Jezus stuurt zijn leerlingen achter "een man met een kruik water" aan; die brengt hen naar een huis met een grote bovenzaal, maar een naam krijgen we niet (Marcus 14, Lucas 22). De kerkelijke overlevering verbindt die bovenzaal vaak met het huis van Maria, de moeder van Johannes Marcus — omdat de eerste christenen later juist in háár huis bij elkaar kwamen (Handelingen 12:12). Het mooie om te weten is dus het verschil: wat zwart-op-wit in de Bijbel staat (een naamloze gastheer) en wat de traditie er later bij heeft verteld (het huis van Maria). Allebei waardevol, maar het is goed om ze uit elkaar te houden.</p>
@@ -645,7 +644,7 @@
                 <h3 class="naslag-kop">De sandwich-techniek van Marcus</h3>
                 <p class="naslag-item">Marcus blijkt een knappe verteller. Hij begint een verhaal, schuift er een tweede verhaal tussen, en pakt dan de draad van het eerste weer op — net als twee boterhammen met beleg ertussen. Geleerden noemen dit de sandwich-techniek (met een moeilijk woord: intercalatie). Het mooiste inzicht: de nadruk ligt meestal op het verhaal ín het midden — net als bij een echte sandwich is het beleg waar het om draait. Dat binnenste verhaal is vaak de sleutel tot de betekenis, en de twee verhalen eromheen helpen je dat te begrijpen. Bij Jaïrus en de zieke vrouw (Marcus 5) staat zo het geloof van de vrouw in het midden, met een knipoog: het getal twaalf komt in beide verhalen terug — de vrouw is twaalf jaar ziek, het meisje twaalf jaar oud. Een ander bekend voorbeeld is de tempelreiniging, ingeklemd tussen de vervloeking en het verdorren van een vijgenboom (Marcus 11). Zo blijkt dat Marcus zijn evangelie zorgvuldig heeft opgebouwd — niet als losse verhalen, maar als één doordacht geheel.</p>
 
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitVerborgenSchatNaslag()">← Terug</button>
+                <button id="verborgenschat-naslag-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
             </div>
         </div>
 
@@ -654,7 +653,7 @@
         <div id="maten-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title">Maten, geld &amp; tijd</h2>
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
+                <button id="maten-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
 
                 <div class="naslag-kadertje">
                     Sommige maten kennen we vrij precies, andere niet — dan zeggen we dat er eerlijk bij. En oud geld omrekenen naar euro's van nu is eigenlijk niet te doen, want toen was alles anders. Daarom rekenen we vaak in "daglonen": wat een gewone arbeider op één dag verdiende.
@@ -729,7 +728,7 @@
                 </table>
                 <p class="naslag-item">De vierde nachtwaak is op het einde van de nacht, vlak voor zonsopgang. Toen Jezus over het water naar de leerlingen liep, was het de vierde nachtwaak (Matteüs 14:25): het moet dus na 3.00 uur zijn geweest, ergens tot aan zonsopgang. In het Oude Testament kende men er nog maar drie, van zo'n vier uur.</p>
 
-                <button class="answer-btn niveau-terug naslag-terug" onclick="sluitMaten()">← Terug</button>
+                <button id="maten-terug-onder" class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">← Terug</button>
             </div>
         </div>
 
@@ -851,8 +850,8 @@
     </div>
 
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar. -->
-    <script src="lang/nl.js?v=78"></script>
-    <script src="script.js?v=78"></script>
+    <script src="lang/nl.js?v=79"></script>
+    <script src="script.js?v=79"></script>
 
 </body>
 
