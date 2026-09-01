@@ -2281,7 +2281,7 @@ vragenData["Handelingen"].expert.push(
 );
 
 // =====================================================================
-// Vragenpool: 1 & 2 Korintiërs  (Beginner 17 · Gevorderd 15 · Expert 12)
+// Vragenpool: 1 & 2 Korintiërs  (Beginner 16 · Gevorderd 14 · Expert 13)
 // De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
 // zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
 // =====================================================================
@@ -2307,7 +2307,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 1:1 · 2 Korintiërs 1:1"
         },
         {
-            vraag: "Paulus schrijft een beroemd stuk over de liefde. Wat zegt hij dat liefde is?",
+            vraag: "In het dertiende hoofdstuk van 1 Korintiërs schrijft Paulus een beroemd stuk over de liefde. Wat zegt hij dat liefde is?",
             antwoorden: ["Geduldig en vriendelijk", "Sterk en dapper", "Streng maar rechtvaardig", "Vrolijk en grappig"],
             correct: "Geduldig en vriendelijk",
             bijbelplaats: "1 Korintiërs 13:4-5"
@@ -2344,20 +2344,20 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus maakte veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
-            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie", "Hij bleef veilig thuis", "Hij mocht rustig in een mooi groot paleis wonen"],
+            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie en geen werk", "Hij bleef veilig thuis", "Hij mocht rustig in een mooi groot paleis wonen"],
             correct: "Hij leed schipbreuk en was vaak in gevaar",
             bijbelplaats: "2 Korintiërs 11:25-26"
         },
         {
             vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie kun je het doen?",
-            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor de keizer en de machtige leiders van het land"],
+            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor de machtige leiders van het land"],
             correct: "Voor God, om hem eer te geven",
             bijbelplaats: "1 Korintiërs 10:31"
         },
         {
-            vraag: "Over de gaven (talenten) in de gemeente zegt Paulus: er zijn er veel, maar…",
-            antwoorden: ["ze komen allemaal van dezelfde Geest", "alleen Paulus heeft ze", "ze zijn niet belangrijk", "je krijgt ze pas als je heel oud bent geworden"],
-            correct: "ze komen allemaal van dezelfde Geest",
+            vraag: "Er zijn veel verschillende gaven (talenten) in de gemeente. Wat zegt Paulus daarover?",
+            antwoorden: ["Ze komen allemaal van dezelfde Geest", "Alleen Paulus heeft ze", "Ze zijn niet belangrijk", "Je krijgt ze pas als je heel oud bent geworden"],
+            correct: "Ze komen allemaal van dezelfde Geest",
             bijbelplaats: "1 Korintiërs 12:4"
         },
         {
@@ -2406,7 +2406,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "De mensen in Korinte kozen partij: \"ik ben van Paulus\", \"ik ben van Apollos\". Wat vond Paulus daarvan?",
-            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze voor hem moesten kiezen", "Dat het niet uitmaakte"],
+            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze een preekwedstrijd moesten organiseren", "Dat het niet uitmaakte"],
             correct: "Dat ze juist één moesten zijn, niet verdeeld",
             bijbelplaats: "1 Korintiërs 1:12-13"
         },
@@ -2447,12 +2447,6 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 12:9"
         },
         {
-            vraag: "Welke gave noemt Paulus de allergrootste, die altijd zal blijven?",
-            antwoorden: ["Het uitleggen van dromen", "Kennis", "De liefde", "Wonderen doen"],
-            correct: "De liefde",
-            bijbelplaats: "1 Korintiërs 13:13"
-        },
-        {
             vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
             antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over zijn reizen"],
             correct: "Over de Heer en over wat God door hem doet",
@@ -2489,6 +2483,12 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Met een boek in een taal die je nog niet kent", "Met kijken in een wazige spiegel", "Met een diepe slaap", "Met een lange reis"],
             correct: "Met kijken in een wazige spiegel",
             bijbelplaats: "1 Korintiërs 13:12"
+        },
+        {
+            vraag: "Geloof, hoop en liefde blijven, zegt Paulus. Maar welke van de drie noemt hij de grootste?",
+            antwoorden: ["Het geloof", "De hoop", "De liefde", "Alle drie even groot"],
+            correct: "De liefde",
+            bijbelplaats: "1 Korintiërs 13:13"
         },
         {
             vraag: "Paulus vergelijkt de schat van het goede nieuws met iets kostbaars in iets gewoons. Waarin zit die schat?",
@@ -5687,13 +5687,13 @@ vragenData["1 & 2 Korintiërs"].expert.push(
         antwoorden: ["Apart gezet voor God; het gold voor iedereen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
         correct: "Apart gezet voor God; het gold voor iedereen",
         bijbelplaats: "1 Korintiërs 1:2",
-        uitleg: "Het woord zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
+        uitleg: "Het woord heilig zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het door de kerk ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
     },
     {
         vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
         antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
         correct: "Wat van de tempeloffers overbleef, ging naar de markt",
-        bijbelplaats: "1 Korintiërs 8:1",
+        bijbelplaats: "1 Korintiërs 10:25",
         uitleg: "In een Griekse stad liep bijna al het vlees via de tempels. Vlees kopen op de markt of ergens gaan eten was voor de eerste christenen dus een echte vraag en geen theorie."
     }
 );
