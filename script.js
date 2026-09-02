@@ -2866,7 +2866,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Hoe moet je volgens Paulus met elkaar práten?",
-            antwoorden: ["Je mag alleen met elkaar praten als het over God gaat", "Met woorden die opbouwen en goeddoen", "Zo weinig mogelijk", "Met scheldwoorden"],
+            antwoorden: ["Met woorden die opbouwen en goeddoen", "Je mag alleen met elkaar praten als het over God gaat", "Alleen als je zeker weet dat je gelijk hebt", "Precies zoals je denkt, ook als het heel bot voor een ander overkomt"],
             correct: "Met woorden die opbouwen en goeddoen",
             bijbelplaats: "Efeziërs 4:29"
         },
@@ -2920,7 +2920,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat zegt Paulus over hoe je je tijd gebruikt?",
-            antwoorden: ["Gebruik je tijd goed en wijs", "Verspil je tijd zoveel mogelijk", "Laat anderen je tijd bepalen", "Doe altijd alles op het laatste moment"],
+            antwoorden: ["Gebruik je tijd goed en wijs", "Doe alles zo snel mogelijk, dan hou je tijd over", "Laat anderen je tijd bepalen", "Doe altijd alles op het laatste moment"],
             correct: "Gebruik je tijd goed en wijs",
             bijbelplaats: "Efeziërs 5:15-16"
         },
@@ -3012,7 +3012,7 @@ vragenData["Efeziërs"] = {
             uitleg: "Een slaaf in de Romeinse tijd was niet vrij: hij was eigendom van iemand anders en kon niet zomaar weggaan. Toch was het anders dan de slavernij die je uit de geschiedenisboeken kent. Het had niets met huidskleur te maken, slaven deden allerlei soorten werk — ook als schrijver, boekhouder of leraar — en veel van hen werden na verloop van tijd vrijgelaten. In een grote stad was een flink deel van de bewoners slaaf. Het bijzondere aan Paulus is dat hij hen rechtstreeks aanspreekt, alsof ze er gewoon bij horen. En tegen de meesters zegt hij: jullie hebben dezelfde Heer in de hemel. Voor God staan ze dus naast elkaar."
         },
         {
-            vraag: "Wat zegt Paulus dat God kan doen?",
+            vraag: "Paulus sluit zijn gebed af met een lofprijzing op God. Wat zegt hij daarin over wat God kan doen?",
             antwoorden: ["Veel meer dan wij ooit kunnen vragen of bedenken", "Precies dat wat wij Hem vragen, niet meer", "Alleen wat wij zelf eerst verdiend hebben", "Alleen dingen die wij kunnen begrijpen"],
             correct: "Veel meer dan wij ooit kunnen vragen of bedenken",
             bijbelplaats: "Efeziërs 3:20"
@@ -3036,9 +3036,9 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:13"
         },
         {
-            vraag: "Hoe beschrijft Paulus God?",
-            antwoorden: ["Rijk aan genade en vol grote liefde", "Ver weg en onzichtbaar", "Streng, en alleen tevreden over sterke mensen", "Vriendelijk voor wie het verdient"],
-            correct: "Rijk aan genade en vol grote liefde",
+            vraag: "Paulus beschrijft eerst hoe ver de mensen van God af stonden. Dan draait hij de zin om met twee woorden: \"Maar God…\" Wat zegt hij daarna over Hem?",
+            antwoorden: ["Dat Hij rijk is aan erbarmen en ons met een grote liefde heeft liefgehad", "Dat Hij streng is en alleen tevreden over sterke mensen", "Dat Hij ver weg is en moeilijk te bereiken", "Dat Hij vriendelijk is voor wie het verdient"],
+            correct: "Dat Hij rijk is aan erbarmen en ons met een grote liefde heeft liefgehad",
             bijbelplaats: "Efeziërs 2:4"
         },
         {
