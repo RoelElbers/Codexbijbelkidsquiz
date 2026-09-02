@@ -2542,7 +2542,7 @@ vragenData["1 & 2 Korintiërs"] = {
 };
 
 // =====================================================================
-// Vragenpool: Galaten  (Beginner 12 · Gevorderd 13 · Expert 12)
+// Vragenpool: Galaten  (Beginner 12 · Gevorderd 12 · Expert 13)
 // Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
 // =====================================================================
 vragenData["Galaten"] = {
@@ -2590,10 +2590,11 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 5:13"
         },
         {
-            vraag: "Paulus zegt dat christenen elkaar moeten behandelen met…",
-            antwoorden: ["liefde en vriendelijkheid", "strengheid en kou", "onverschilligheid", "ruzie"],
-            correct: "liefde en vriendelijkheid",
-            bijbelplaats: "Galaten 5:22"
+            vraag: "Paulus noemt negen goede dingen die groeien als je je door Gods Geest laat leiden. Hoe noemt hij die negen samen?",
+            antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De regels van de gemeente"],
+            correct: "De vrucht van de Geest",
+            bijbelplaats: "Galaten 5:22",
+            uitleg: "Paulus schrijft \"de vrucht\", niet \"de vruchten\". Vlak ervoor noemt hij de verkeerde dingen wél in het meervoud: de werken van het vlees. Dat verschil is met opzet. De negen horen bij elkaar, als negen kanten van één ding — je kunt niet de vriendelijkheid uitkiezen en het geduld laten liggen."
         },
         {
             vraag: "Hoe wist Paulus zo zeker dat zijn boodschap klopte?",
@@ -2628,10 +2629,10 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 5:14"
         },
         {
-            vraag: "Wat raadt Paulus aan als iemand anders het moeilijk heeft?",
-            antwoorden: ["Loop eromheen", "Help elkaar en draag elkaars lasten", "Wacht rustig af tot het probleem vanzelf weer overgaat", "Doe alsof je niets ziet"],
-            correct: "Help elkaar en draag elkaars lasten",
-            bijbelplaats: "Galaten 6:2"
+            vraag: "Paulus schrijft iets opvallends over zijn eigen leven: hij zegt dat hij eigenlijk niet meer zelf leeft. Wat bedoelt hij daarmee?",
+            antwoorden: ["Christus leeft in hem; zijn oude leven ging met Christus mee het kruis op", "Hij bedoelt dat hij zich sindsdien precies aan alle regels van de wet houdt", "Hij is oud geworden en denkt dat hij niet lang meer te leven heeft", "Hij leeft alleen nog voor zijn werk en gunt zichzelf niets meer"],
+            correct: "Christus leeft in hem; zijn oude leven ging met Christus mee het kruis op",
+            bijbelplaats: "Galaten 2:20"
         },
         {
             vraag: "Paulus gebruikt het beeld van zaaien en oogsten. Wat bedoelt hij ongeveer?",
@@ -2658,22 +2659,16 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 1:6-7"
         },
         {
-            vraag: "Paulus zegt: wie op Jezus vertrouwt, leeft door geloof. Hij citeert: \"Wie rechtvaardig is, zal leven door...\"",
-            antwoorden: ["werk", "regels", "geloof", "geluk"],
-            correct: "geloof",
-            bijbelplaats: "Galaten 3:11"
-        },
-        {
             vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
             antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Alleen de mensen die rechtstreeks van Abraham afstammen tellen mee", "Alleen mensen die heel sterk zijn horen erbij", "Alleen belangrijke mensen mogen bij God horen"],
             correct: "Ook wij mogen bij God horen door te geloven, net als Abraham",
             bijbelplaats: "Galaten 3:6-7"
         },
         {
-            vraag: "Omdat we kinderen van God zijn, mogen we God aanspreken met een bijzonder, vertrouwelijk woord. Welk woord is dat?",
-            antwoorden: ["Meester", "Koning", "Abba, Vader", "Heer"],
-            correct: "Abba, Vader",
-            bijbelplaats: "Galaten 4:6"
+            vraag: "Paulus schrijft dat God zijn Zoon stuurde toen de tijd er rijp voor was. Hoe kwam Gods Zoon volgens hem in de wereld?",
+            antwoorden: ["Geboren uit een vrouw, levend onder de wet, net als ieder ander", "Geboren in het paleis van de koning, met alle eer die daarbij hoort", "Als een profeet die pas als volwassene voor het eerst optrad", "Alleen zichtbaar voor wie in Hem geloofde"],
+            correct: "Geboren uit een vrouw, levend onder de wet, net als ieder ander",
+            bijbelplaats: "Galaten 4:4"
         },
         {
             vraag: "Wat is belangrijker dan alle regels, zegt Paulus — waar draait het echt om?",
@@ -2732,6 +2727,12 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:6-7"
         },
         {
+            vraag: "In het derde hoofdstuk van zijn brief aan de Galaten haalt Paulus de profeet Habakuk aan om te laten zien dat je niet door de wet bij God gaat horen. Wat zegt dat citaat?",
+            antwoorden: ["Wie rechtvaardig is, zal leven door geloof", "Wie de wet kent, zal leven door de wet", "Wie zich aan de geboden houdt, zal lang leven", "Wie volhoudt tot het einde, zal gered worden"],
+            correct: "Wie rechtvaardig is, zal leven door geloof",
+            bijbelplaats: "Galaten 3:11"
+        },
+        {
             vraag: "Paulus zegt dat de wet vroeger een taak had, zoals een oppasser die op je let tot je groot genoeg bent. Wat gebeurde er toen Christus kwam?",
             antwoorden: ["De wet had zijn taak gedaan en had ons naar Christus gebracht", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
             correct: "De wet had zijn taak gedaan en had ons naar Christus gebracht",
@@ -2757,7 +2758,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus noemt negen mooie dingen die groeien als de Geest je leidt: de \"vrucht van de Geest\". Welke staat bovenaan?",
-            antwoorden: ["Trots", "Liefde", "Roem", "Macht"],
+            antwoorden: ["Liefde", "Vreugde", "Vrede", "Geduld"],
             correct: "Liefde",
             bijbelplaats: "Galaten 5:22"
         },
@@ -2766,12 +2767,6 @@ vragenData["Galaten"] = {
             antwoorden: ["Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt op vruchtbare grond zaaien óf juist op de harde, droge grond ernaast"],
             correct: "Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest",
             bijbelplaats: "Galaten 6:7-8"
-        },
-        {
-            vraag: "Aan het eind van zijn brief aan de Galaten schrijft Paulus iets opvallends over de manier waarop hij dit laatste stuk zelf opschrijft. Wat vertelt hij daarover?",
-            antwoorden: ["Met grote letters, met zijn eigen hand", "Heel klein en sierlijk", "In een geheime code", "Met de hand van iemand anders die het voor hem opschreef"],
-            correct: "Met grote letters, met zijn eigen hand",
-            bijbelplaats: "Galaten 6:11"
         },
         {
             vraag: "Wat zegt Paulus dat écht telt, belangrijker dan of je je aan bepaalde regels houdt?",
