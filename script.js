@@ -2561,8 +2561,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat deed Paulus met de christenen voordat hij zelf in Jezus ging geloven?",
-            antwoorden: ["Hij vervolgde hen en deed hun kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet", "Hij nodigde hen uit"],
-            correct: "Hij vervolgde hen en deed hun kwaad",
+            antwoorden: ["Hij vervolgde hen en deed de christenen veel kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet", "Hij nodigde hen uit"],
+            correct: "Hij vervolgde hen en deed de christenen veel kwaad",
             bijbelplaats: "Galaten 1:13"
         },
         {
@@ -2656,7 +2656,8 @@ vragenData["Galaten"] = {
             vraag: "Paulus had de Galaten het evangelie verkondigd. Toch luisterden sommigen al snel naar een ánder evangelie. Wat vond Paulus daarvan?",
             antwoorden: ["Hij was streng: er is maar één echt evangelie", "Hij vond het prima, het maakte niet uit", "Hij wist niet wat hij ervan moest denken", "Hij liet de Galaten zelf maar kiezen"],
             correct: "Hij was streng: er is maar één echt evangelie",
-            bijbelplaats: "Galaten 1:6-7"
+            bijbelplaats: "Galaten 1:6-7",
+            uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Je moet je ook aan de Joodse wet gaan houden, anders hoor je er niet echt bij. Paulus noemt dat een ánder evangelie, en hij is er streng over. Want als je er zelf nog iets bij moet doen, dan was wat Jezus deed blijkbaar niet genoeg — en dat is precies waar de hele brief over gaat."
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
@@ -2757,7 +2758,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 5:9"
         },
         {
-            vraag: "Paulus noemt negen mooie dingen die groeien als de Geest je leidt: de \"vrucht van de Geest\". Welke staat bovenaan?",
+            vraag: "Paulus noemt negen mooie dingen die groeien als de Geest je leidt: de \"vrucht van de Geest\". Welke noemt Paulus als eerste?",
             antwoorden: ["Liefde", "Vreugde", "Vrede", "Geduld"],
             correct: "Liefde",
             bijbelplaats: "Galaten 5:22"
