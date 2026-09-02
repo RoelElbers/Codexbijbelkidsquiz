@@ -2779,7 +2779,7 @@ vragenData["Galaten"] = {
 };
 
 // =====================================================================
-// Vragenpool: Efeziërs  (Beginner 12 · Gevorderd 21 · Expert 14)
+// Vragenpool: Efeziërs  (Beginner 12 · Gevorderd 20 · Expert 15)
 // Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
 // =====================================================================
 vragenData["Efeziërs"] = {
@@ -2871,16 +2871,16 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 4:29"
         },
         {
-            vraag: "Paulus zegt: wees vriendelijk voor elkaar en…",
-            antwoorden: ["praat pas weer als de ander netjes zijn excuses aanbiedt", "ga uit elkaars buurt", "vergeef elkaar, zoals God jullie vergeven heeft", "denk alleen aan jezelf"],
-            correct: "vergeef elkaar, zoals God jullie vergeven heeft",
-            bijbelplaats: "Efeziërs 4:32"
+            vraag: "Paulus schrijft dat God een geheim heeft bekendgemaakt dat eeuwenlang verborgen was. Wat is dat geheim?",
+            antwoorden: ["Dat ook niet-Joodse volken er helemaal bij horen", "Dat niemand precies weet wanneer Jezus terugkomt", "Dat de tempel op een dag zou worden afgebroken", "Dat God een nieuwe wet zou geven, strenger dan die van Mozes"],
+            correct: "Dat ook niet-Joodse volken er helemaal bij horen",
+            bijbelplaats: "Efeziërs 3:6"
         },
         {
-            vraag: "Paulus zegt dat christenen mogen leven als kinderen van het…",
-            antwoorden: ["donker", "licht", "water", "vuur"],
-            correct: "licht",
-            bijbelplaats: "Efeziërs 5:8"
+            vraag: "Paulus vergelijkt de liefde tussen man en vrouw met iets veel groters. Waarmee vergelijkt hij die?",
+            antwoorden: ["Met de liefde tussen Christus en de gemeente", "Met de vriendschap tussen twee koningen", "Met de band tussen een leraar en zijn leerling", "Met de trouw van een dienaar aan zijn heer"],
+            correct: "Met de liefde tussen Christus en de gemeente",
+            bijbelplaats: "Efeziërs 5:25,32"
         },
         {
             vraag: "Paulus zegt tegen de gelovigen dat zij de wapenrusting van God moeten aandoen. Waarvoor hebben zij die nodig?",
@@ -2889,9 +2889,9 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:11"
         },
         {
-            vraag: "Paulus zegt: volg het voorbeeld van God en leef in…",
-            antwoorden: ["liefde", "angst", "rijkdom", "macht"],
-            correct: "liefde",
+            vraag: "Paulus schrijft dat gelovigen het voorbeeld van God mogen volgen, zoals kinderen dat van hun vader doen. Hoe moeten ze dan leven?",
+            antwoorden: ["In liefde, zoals Christus ons heeft liefgehad", "Streng, zodat niemand iets op hen aan te merken heeft", "Stil en teruggetrokken, ver van andere mensen", "Zo voorzichtig mogelijk, om geen fouten te maken"],
+            correct: "In liefde, zoals Christus ons heeft liefgehad",
             bijbelplaats: "Efeziërs 5:1-2"
         },
         {
@@ -2907,10 +2907,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 3:18-19"
         },
         {
-            vraag: "Paulus benadrukt de eenheid van de gelovigen. Hij zegt: er is één lichaam en één…",
-            antwoorden: ["Geest", "hart", "stem", "huis"],
-            correct: "Geest",
-            bijbelplaats: "Efeziërs 4:4"
+            vraag: "Paulus somt op wat alle gelovigen samen delen: één lichaam, één Geest, één Heer, één geloof, één doop, één God. Waarom noemt hij dat rijtje?",
+            antwoorden: ["Om te laten zien dat gelovigen bij elkaar horen en één moeten blijven", "Om te laten zien hoeveel regels er zijn om te onthouden", "Om aan te geven dat er maar één gemeente in de stad mocht zijn", "Om te zeggen dat je maar één keer in je leven mag kiezen"],
+            correct: "Om te laten zien dat gelovigen bij elkaar horen en één moeten blijven",
+            bijbelplaats: "Efeziërs 4:4-6"
         },
         {
             vraag: "Wat raadt Paulus aan om te blijven doen, naast het aantrekken van de wapenrusting?",
@@ -2925,10 +2925,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:15-16"
         },
         {
-            vraag: "Waarom kun je je redding niet zelf verdienen, zegt Paulus?",
-            antwoorden: ["Het is een geschenk van God, zodat niemand kan opscheppen", "Omdat je er eerst heel veel goede daden voor moet gaan doen", "Omdat je te zwak bent", "Omdat het te ver weg is"],
-            correct: "Het is een geschenk van God, zodat niemand kan opscheppen",
-            bijbelplaats: "Efeziërs 2:9"
+            vraag: "Paulus zegt dat je niet gered wordt door je eigen goede daden. Waar zijn die goede daden dan wél voor?",
+            antwoorden: ["God heeft ons gemaakt om goed te doen; het is het gevolg van de redding, niet de oorzaak", "Ze zijn nergens voor nodig", "Ze tellen mee als je er genoeg verzamelt", "Ze maken je belangrijker dan andere gelovigen"],
+            correct: "God heeft ons gemaakt om goed te doen; het is het gevolg van de redding, niet de oorzaak",
+            bijbelplaats: "Efeziërs 2:10"
         },
         {
             vraag: "Paulus vergelijkt de gemeente — alle gelovigen samen, de kerk — met een gebouw. De hoeksteen is de allerbelangrijkste steen, waar het hele gebouw op rust en stevig blijft staan. Wie is die hoeksteen?",
@@ -3005,10 +3005,11 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:14"
         },
         {
-            vraag: "Paulus noemt: één Heer, één geloof, en één…",
-            antwoorden: ["land", "taal", "doop", "koning"],
-            correct: "doop",
-            bijbelplaats: "Efeziërs 4:5"
+            vraag: "Paulus schrijft ook aan slaven en hun meesters. Wat zegt hij tegen de meesters?",
+            antwoorden: ["Behandel hen goed en dreig niet, want jullie hebben dezelfde Heer in de hemel", "Wees streng, anders luisteren ze niet", "Laat hen het zwaarste werk doen, daar zijn ze voor", "Stuur hen weg zodra ze een fout maken"],
+            correct: "Behandel hen goed en dreig niet, want jullie hebben dezelfde Heer in de hemel",
+            bijbelplaats: "Efeziërs 6:9",
+            uitleg: "Een slaaf in de Romeinse tijd was niet vrij: hij was eigendom van iemand anders en kon niet zomaar weggaan. Toch was het anders dan de slavernij die je uit de geschiedenisboeken kent. Het had niets met huidskleur te maken, slaven deden allerlei soorten werk — ook als schrijver, boekhouder of leraar — en veel van hen werden na verloop van tijd vrijgelaten. In een grote stad was een flink deel van de bewoners slaaf. Het bijzondere aan Paulus is dat hij hen rechtstreeks aanspreekt, alsof ze er gewoon bij horen. En tegen de meesters zegt hij: jullie hebben dezelfde Heer in de hemel. Voor God staan ze dus naast elkaar."
         },
         {
             vraag: "Wat zegt Paulus dat God kan doen?",
