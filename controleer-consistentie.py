@@ -1114,6 +1114,187 @@ def controle_vraagzin(bron, pools):
 
 
 # ---------------------------------------------------------------------------
+#  11. Kopcommentaar boven de vragenpools
+# ---------------------------------------------------------------------------
+#
+# Boven een pool staat een kopregel met de telling erin:
+#
+#   // Filippenzen — vragenpool (47 vragen: beginner 17, advanced 15, expert 15)
+#
+# Die getallen worden met de hand bijgehouden en lopen dus achter zodra er een
+# vraag bij komt of weg gaat. Vervelend genoeg is het wél het eerste wat een
+# lezer ziet die het bestand opent: de kop zegt 47 terwijl er 45 staan, en
+# niets piept. Daarom een PROBLEEM en geen waarschuwing — een verkeerd getal
+# in de kop is gewoon fout, geen kwestie van smaak.
+#
+# De kop mag over meerdere //-regels doorlopen (bij de langere boeknamen breekt
+# de zin af halverwege de telling). Het commentaarblok boven de toewijzing
+# wordt daarom eerst tot één tekst samengevoegd en pas daarna gelezen.
+#
+# Bewust beperkt tot déze schrijfwijze. Pools met een andere notatie ("11
+# beginner, 12 advanced, 15 expert = 38 vragen." of "(Beginner 24 · Gevorderd
+# 14 · Expert 14)") en pools zonder telling worden overgeslagen — maar wel bij
+# naam genoemd, zodat zichtbaar blijft wat deze controle níét bewaakt.
+
+KOPTELLING = re.compile(
+    r"vragenpool\s*\(\s*(\d+)\s+vragen:\s*"
+    r"beginner\s+(\d+)\s*,\s*advanced\s+(\d+)\s*,\s*expert\s+(\d+)\s*\)")
+
+# Een pool staat op twee manieren in het bestand: als losse toewijzing
+# vragenData["Boek"] = { ... } aan het regelbegin, en — voor de vier
+# evangeliën — als sleutel binnen const vragenData = { ... }.
+POOLTOEWIJZING = re.compile(r'^vragenData\["([^"]+)"\]\s*=\s*\{', re.M)
+POOLSLEUTEL = re.compile(r'^ {4}"([^"]+)"\s*:\s*\{', re.M)
+
+
+def _poolposities(bron):
+    """[(boek, positie), ...] van elke vragenpool, in bronvolgorde.
+
+    De positie wijst naar het begin van de regel waarop de pool opent; daar
+    kijkt _kopcommentaar_boven() vanaf omhoog.
+    """
+    posities = [(m.group(1), m.start()) for m in POOLTOEWIJZING.finditer(bron)]
+
+    m = re.search(r"^const vragenData = \{", bron, re.M)
+    if m:
+        # Alleen binnen dit object zoeken, en alleen op sleutels met precies
+        # vier spaties inspringing: de niveaus eronder staan dieper en zonder
+        # aanhalingstekens, dus die kunnen niet meekomen.
+        p = JSParser(bron)
+        p.i = m.end() - 1
+        p.lees_object()
+        blok = bron[m.start():p.i]
+        for mm in POOLSLEUTEL.finditer(blok):
+            posities.append((mm.group(1), m.start() + mm.start()))
+
+    posities.sort(key=lambda paar: paar[1])
+    return posities
+
+
+def _kopcommentaar_boven(bron, positie):
+    """De aaneengesloten //-regels vlak boven een toewijzing, als één tekst.
+
+    Scheidingsregels (// ===== en // -----) en lege //-regels vallen weg; de
+    rest wordt met spaties aan elkaar geplakt, zodat een telling die over twee
+    regels is afgebroken alsnog in één keer te lezen is.
+    """
+    regels = bron[:positie].split("\n")
+    if regels and regels[-1] == "":
+        regels.pop()
+
+    verzameld = []
+    for regel in reversed(regels):
+        kaal = regel.strip()
+        if not kaal.startswith("//"):
+            break
+        kaal = kaal[2:].strip()
+        if not kaal or set(kaal) <= set("=-_*· "):
+            continue          # scheidingsregel: overslaan, blok loopt door
+        verzameld.append(kaal)
+
+    verzameld.reverse()
+    return " ".join(verzameld)
+
+
+def controle_kopcommentaar(bron, pools):
+    kop(11, "Kopcommentaar — klopt de telling boven elke vragenpool?")
+
+    gedekt = []
+    afwijkende = []
+    andere_notatie = []
+    zonder_telling = []
+    gevonden_in_bron = set()
+
+    for boek, positie in _poolposities(bron):
+        gevonden_in_bron.add(boek)
+        tekst = _kopcommentaar_boven(bron, positie)
+
+        treffers = KOPTELLING.findall(tekst)
+        if not treffers:
+            if "vragenpool" in tekst.lower():
+                andere_notatie.append(boek)
+            else:
+                zonder_telling.append(boek)
+            continue
+        if len(treffers) > 1:
+            probleem("kopcommentaar '%s': %d tellingen boven één pool — niet "
+                     "te bepalen welke bedoeld is" % (boek, len(treffers)))
+            continue
+
+        totaal, beginner, advanced, expert = [int(x) for x in treffers[0]]
+        kopgetal = {"beginner": beginner, "advanced": advanced,
+                    "expert": expert}
+
+        # Staat de naam van het boek zelf in de kop? Zo niet, dan is de regel
+        # waarschijnlijk overgenomen van de pool erboven.
+        streepje = "[\u2014\u2013-]"      # em dash, en dash of gewoon streepje
+        if not re.search(re.escape(boek) + r"\s*" + streepje + r"\s*vragenpool",
+                         tekst):
+            probleem("kopcommentaar boven '%s' noemt dat boek zelf niet — "
+                     "waarschijnlijk overgenomen van een andere pool" % boek)
+
+        if totaal != beginner + advanced + expert:
+            probleem("kopcommentaar '%s' / totaal: de kop spreekt zichzelf "
+                     "tegen — %d vragen, maar %d + %d + %d = %d"
+                     % (boek, totaal, beginner, advanced, expert,
+                        beginner + advanced + expert))
+
+        niveaus = pools.get(boek, {})
+        werkelijk = dict((n, len(niveaus.get(n, []))) for n in NIVEAUS)
+        werkelijk_totaal = sum(werkelijk.values())
+
+        for niveau in NIVEAUS:
+            if kopgetal[niveau] != werkelijk[niveau]:
+                probleem("kopcommentaar '%s' / %s: kop zegt %d vragen, "
+                         "werkelijk %d" % (boek, niveau, kopgetal[niveau],
+                                           werkelijk[niveau]))
+        if totaal != werkelijk_totaal:
+            probleem("kopcommentaar '%s' / totaal: kop zegt %d vragen, "
+                     "werkelijk %d" % (boek, totaal, werkelijk_totaal))
+
+        gedekt.append((boek, kopgetal, totaal, werkelijk, werkelijk_totaal))
+
+    if gedekt:
+        breedte = max(len(b) for b, _, _, _, _ in gedekt) + 2
+        schrijf("  %-*s %11s %11s %11s %11s"
+                % (breedte, "boek (kop/werkelijk)", "beginner", "advanced",
+                   "expert", "totaal"))
+        schrijf("  " + "-" * (breedte + 48))
+        for boek, kopgetal, totaal, werkelijk, werkelijk_totaal in gedekt:
+            cellen = ["%d/%d" % (kopgetal[n], werkelijk[n]) for n in NIVEAUS]
+            cellen.append("%d/%d" % (totaal, werkelijk_totaal))
+            afwijking = (any(kopgetal[n] != werkelijk[n] for n in NIVEAUS)
+                         or totaal != werkelijk_totaal)
+            if afwijking:
+                afwijkende.append(boek)
+            schrijf("  %-*s %11s %11s %11s %11s%s"
+                    % (breedte, boek, cellen[0], cellen[1], cellen[2],
+                       cellen[3], "   <-- wijkt af" if afwijking else ""))
+        schrijf()
+
+    # Wat deze controle niet dekt — bij naam, niet alleen als getal.
+    buiten_blok = sorted(b for b in pools if b not in gevonden_in_bron)
+    niet_gedekt = len(andere_notatie) + len(zonder_telling) + len(buiten_blok)
+
+    info("gedekt      : %d van de %d pools" % (len(gedekt), len(pools)))
+    info("niet gedekt : %d pools" % niet_gedekt)
+    for boek in andere_notatie:
+        info("  telling in een andere notatie : %s" % boek)
+    for boek in zonder_telling:
+        info("  kop zonder telling            : %s" % boek)
+    for boek in buiten_blok:
+        info("  pool niet in de bron teruggevonden : %s" % boek)
+
+    if not gedekt:
+        waarschuwing("geen enkele pool heeft een kop in de gecontroleerde "
+                     "vorm — de controle bewaakt op dit moment niets.")
+    elif not afwijkende:
+        ok("elke gecontroleerde kop komt overeen met de werkelijke telling.")
+    else:
+        info("koppen die bijgewerkt moeten worden: %s" % ", ".join(afwijkende))
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -1156,6 +1337,7 @@ def main():
     controle_kist(bron, pools)
     controle_vraagwoorden(bron, pools)
     controle_vraagzin(bron, pools)
+    controle_kopcommentaar(bron, pools)
 
     schrijf()
     schrijf("=" * 78)

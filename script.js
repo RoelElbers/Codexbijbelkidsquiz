@@ -100,7 +100,10 @@ function openTabblad(url) {
 }
 
 // Vragen georganiseerd per boek en per niveau: vragenData[boek][niveau]
+// De koppen hieronder tellen de hele pool: inclusief de vragen die verderop in
+// dit bestand met vragenData[...].niveau.push() worden toegevoegd.
 const vragenData = {
+    // Matteüs — vragenpool (87 vragen: beginner 24, advanced 20, expert 43)
     "Matteüs": {
         beginner: [
             {
@@ -341,6 +344,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             }
         ]
     },
+    // Marcus — vragenpool (73 vragen: beginner 15, advanced 25, expert 33)
     "Marcus": {
         beginner: [
             {
@@ -563,6 +567,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
             }
         ]
     },
+    // Lucas — vragenpool (62 vragen: beginner 11, advanced 18, expert 33)
     "Lucas": {
         beginner: [
             {
@@ -800,6 +805,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
             }
         ]
     },
+    // Johannes — vragenpool (65 vragen: beginner 15, advanced 18, expert 32)
     "Johannes": {
         beginner: [
             {
@@ -1601,7 +1607,7 @@ vragenData["Johannes"].expert.push(
 );
 
 // =====================================================================
-// Vragenpool: Romeinen  (Beginner 24 · Gevorderd 14 · Expert 14)
+// Romeinen — vragenpool (54 vragen: beginner 23, advanced 17, expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
 // =====================================================================
@@ -1904,7 +1910,7 @@ vragenData["Romeinen"] = {
 };
 
 // =====================================================================
-// Vragenpool: Handelingen  (Beginner 14 · Gevorderd 21 · Expert 20)
+// Handelingen — vragenpool (78 vragen: beginner 14, advanced 26, expert 38)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
 // =====================================================================
@@ -2268,7 +2274,8 @@ vragenData["Handelingen"].expert.push(
 );
 
 // =====================================================================
-// Vragenpool: 1 & 2 Korintiërs  (Beginner 16 · Gevorderd 14 · Expert 13)
+// 1 & 2 Korintiërs — vragenpool (48 vragen: beginner 16, advanced 15,
+// expert 17)
 // De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
 // zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
 // =====================================================================
@@ -2542,7 +2549,7 @@ vragenData["1 & 2 Korintiërs"] = {
 };
 
 // =====================================================================
-// Vragenpool: Galaten  (Beginner 12 · Gevorderd 12 · Expert 13)
+// Galaten — vragenpool (39 vragen: beginner 12, advanced 12, expert 15)
 // Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
 // =====================================================================
 vragenData["Galaten"] = {
@@ -2779,7 +2786,7 @@ vragenData["Galaten"] = {
 };
 
 // =====================================================================
-// Vragenpool: Efeziërs  (Beginner 12 · Gevorderd 20 · Expert 15)
+// Efeziërs — vragenpool (49 vragen: beginner 12, advanced 20, expert 17)
 // Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
 // =====================================================================
 vragenData["Efeziërs"] = {
@@ -3075,7 +3082,7 @@ vragenData["Efeziërs"] = {
 };
 
 // =========================================================================
-// Filippenzen — vragenpool (47 vragen: beginner 17, advanced 15, expert 15)
+// Filippenzen — vragenpool (45 vragen: beginner 17, advanced 14, expert 14)
 // Formaat gelijk aan de andere boeken: vragenData["Filippenzen"] met drie
 // niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
 // correct (exact gelijk aan één antwoord) en bijbelplaats.
@@ -3096,9 +3103,9 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:1"
         },
         {
-            vraag: "Bidt Paulus voor de gemeente in Filippi?",
-            antwoorden: ["Ja, en met blijdschap", "Nee, hij heeft geen tijd", "Alleen als ze erom vragen", "Nooit"],
-            correct: "Ja, en met blijdschap",
+            vraag: "Met welk gevoel bidt Paulus telkens voor de gemeente in Filippi?",
+            antwoorden: ["Met blijdschap", "Met verdriet", "Met haast", "Met angst"],
+            correct: "Met blijdschap",
             bijbelplaats: "Filippenzen 1:4"
         },
         {
@@ -3108,7 +3115,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:2"
         },
         {
-            vraag: "Paulus zegt dat de gelovigen mogen schijnen \"als lichten\". Waar, volgens hem?",
+            vraag: "Paulus zegt dat de gelovigen mogen schijnen \"als lichten\". Waar doen zij dat volgens hem?",
             antwoorden: ["In de wereld om hen heen", "Alleen in de kerk", "Alleen thuis", "Alleen op zondag"],
             correct: "In de wereld om hen heen",
             bijbelplaats: "Filippenzen 2:15"
@@ -3121,7 +3128,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Hoe kun je volgens Paulus het beste naar een ander kijken?",
-            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Anderen vooral goed in de gaten houden op fouten", "Een ander ontwijken"],
+            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Vooral letten op de fouten van anderen", "Een ander ontwijken"],
             correct: "De ander belangrijker vinden dan jezelf",
             bijbelplaats: "Filippenzen 2:3"
         },
@@ -3138,7 +3145,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:7"
         },
         {
-            vraag: "In het lied schrijft Paulus dat élke knie zal buigen. Maar waar overal?",
+            vraag: "In het lied schrijft Paulus dat élke knie zal buigen. Op welke plaatsen gebeurt dat volgens hem?",
             antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In alle grote steden van het Romeinse rijk", "In Jeruzalem en Filippi"],
             correct: "In de hemel, op de aarde én onder de aarde",
             bijbelplaats: "Filippenzen 2:10"
@@ -3169,8 +3176,8 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft een korte, bemoedigende zin: 'De Heer is …'. Welk woord hoort er volgens Paulus?",
-            antwoorden: ["dichtbij", "ver weg", "onbereikbaar", "boos"],
-            correct: "dichtbij",
+            antwoorden: ["Dichtbij", "Ver weg", "Onbereikbaar", "Boos"],
+            correct: "Dichtbij",
             bijbelplaats: "Filippenzen 4:5"
         },
         {
@@ -3194,7 +3201,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:13"
         },
         {
-            vraag: "Paulus schrijft hóe de gelovigen alles moeten doen. Wat moet er volgens hem juist wegblijven?",
+            vraag: "Hoe moeten de gelovigen volgens Paulus alles doen?",
             antwoorden: ["Zonder mopperen en ruzie", "Zonder ervoor betaald te worden", "Zonder erover na te denken", "Zonder het aan iemand te vragen"],
             correct: "Zonder mopperen en ruzie",
             bijbelplaats: "Filippenzen 2:14"
@@ -3206,16 +3213,11 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:6"
         },
         {
-            vraag: "Hoe schrijft Paulus over zijn tijd in de gevangenis?",
-            antwoorden: ["Hij blijft blij, omdat het goede nieuws zich juist verspreidt", "Hij is dankbaar, maar wil zo snel mogelijk stoppen met schrijven", "Hij is blij dat hij niet hoeft te werken", "Hij zegt er eigenlijk niks over"],
-            correct: "Hij blijft blij, omdat het goede nieuws zich juist verspreidt",
-            bijbelplaats: "Filippenzen 1:18"
-        },
-        {
             vraag: "In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan?",
             antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rijke heerser", "Die van een legeraanvoerder"],
             correct: "Die van een dienaar",
-            bijbelplaats: "Filippenzen 2:7"
+            bijbelplaats: "Filippenzen 2:7",
+            uitleg: "Filippenzen 2:6-11 wordt vaak een lied genoemd. De regels lopen ritmisch, en het lijkt erop dat Paulus hier iets aanhaalt wat de eerste christenen al samen zongen of opzegden. Het gaat eerst omlaag: Jezus laat zijn hoge plaats los, wordt mens en kiest de laagste plek van allemaal. Daarna keert het om, en juist daarom geeft God hem de hoogste naam."
         },
         {
             vraag: "Welke jonge medewerker prijst Paulus omdat die echt om de gemeente geeft?",
@@ -3263,7 +3265,8 @@ vragenData["Filippenzen"] = {
             vraag: "In het lied over Jezus schrijft Paulus dat God hem iets gaf wat boven alles uitgaat. Wat gaf God hem?",
             antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een troon van puur goud in de hemel", "Een prachtig paleis"],
             correct: "De hoogste naam, boven alle namen",
-            bijbelplaats: "Filippenzen 2:9"
+            bijbelplaats: "Filippenzen 2:9",
+            uitleg: "Deze regel komt uit hetzelfde lied over Jezus (Filippenzen 2:6-11), en wel uit het punt waar het omslaat. Eerst gaat het helemaal omlaag, tot de dood toe; dan geeft God hem de naam die boven alle namen staat. Een naam is in de Bijbel meer dan een woord waarmee je iemand roept — hij zegt wie iemand is en hoeveel gezag hij heeft."
         },
         {
             vraag: "Paulus vertelt over zijn leven vóór hij Jezus volgde. Tot welke Joodse groep hoorde hij?",
@@ -3284,12 +3287,6 @@ vragenData["Filippenzen"] = {
             antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
             correct: "Macedonië",
             bijbelplaats: "Handelingen 16:12"
-        },
-        {
-            vraag: "Waar moeten gelovigen volgens Paulus hun gedachten op richten?",
-            antwoorden: ["Op alles wat waar, eerlijk en mooi is", "Op hun problemen", "Op wat anderen verkeerd doen", "Op het verleden"],
-            correct: "Op alles wat waar, eerlijk en mooi is",
-            bijbelplaats: "Filippenzen 4:8"
         },
         {
             vraag: "Paulus schrijft: \"Het leven is voor mij Christus…\" Hoe vult hij die zin aan?",
@@ -3346,17 +3343,17 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:1"
         },
         {
-            vraag: "Paulus zegt dat hij tevreden kan zijn, of hij nu veel heeft of weinig. Waardóór lukt hem dat?",
-            antwoorden: ["Door Christus, die hem kracht geeft", "Door zelf heel sterk en dapper te zijn", "Door precies te krijgen wat hij wil", "Door zich nergens meer druk om te maken"],
-            correct: "Door Christus, die hem kracht geeft",
-            bijbelplaats: "Filippenzen 4:13"
+            vraag: "Paulus roept de Filippenzen op te werken aan hun eigen redding. Wat zegt hij daar in dezelfde zin bij?",
+            antwoorden: ["Dat God zelf in hen werkt, zowel het willen als het doen", "Dat zij het helemaal alleen moeten opknappen", "Dat de leiders van de gemeente hen zullen aansturen", "Dat het pas telt als zij het volmaakt doen"],
+            correct: "Dat God zelf in hen werkt, zowel het willen als het doen",
+            bijbelplaats: "Filippenzen 2:12-13"
         }
     ]
 };
 
 // =========================================================================
-// 1 & 2 Tessalonicenzen — vragenpool (40 vragen: beginner 11, advanced 16,
-// expert 13). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
+// 1 & 2 Tessalonicenzen — vragenpool (45 vragen: beginner 12, advanced 17,
+// expert 16). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
 // vragenData["1 & 2 Tessalonicenzen"] met drie niveaus (beginner/advanced/
 // expert). Per vraag: vraag, antwoorden[], correct (exact gelijk aan één
 // antwoord), bijbelplaats. Niveau-indeling zoals goedgekeurd door Roel.
@@ -3612,8 +3609,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
 };
 
 // =========================================================================
-// Timoteüs & Titus — vragenpool (34 vragen: beginner 11, advanced 12,
-// expert 11). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
+// Timoteüs & Titus — vragenpool (46 vragen: beginner 14, advanced 14,
+// expert 18). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
 // (trofee_timoteus_titus). vragenData["Timoteüs & Titus"] met drie niveaus
 // (beginner/advanced/expert). Per vraag: vraag, antwoorden[], correct (exact
 // gelijk aan één antwoord), bijbelplaats. Neutraal taalgebruik (geen
@@ -3864,8 +3861,8 @@ vragenData["Timoteüs & Titus"] = {
 };
 
 // =========================================================================
-// Kolossenzen & Filemon — vragenpool (38 vragen: beginner 14, advanced 11,
-// expert 13). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
+// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 14, advanced 13,
+// expert 22). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
 // Formaat gelijk aan de andere boeken: vragenData["Kolossenzen & Filemon"] met
 // drie niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
 // correct (exact gelijk aan één antwoord), bijbelplaats. Niveau-indeling zoals
@@ -4156,9 +4153,9 @@ vragenData["Kolossenzen & Filemon"] = {
     ]
 };
 
-// Hebreeën — vragenpool (eerste boek van de Algemene brieven).
-// Formaat gelijk aan de andere boeken: vragenData["Hebreeën"] met drie niveaus
-// (beginner/advanced/expert). 17 beginner, 20 advanced, 16 expert = 53 vragen.
+// Hebreeën — vragenpool (56 vragen: beginner 16, advanced 22, expert 18)
+// Eerste boek van de Algemene brieven. Formaat gelijk aan de andere boeken:
+// vragenData["Hebreeën"] met drie niveaus (beginner/advanced/expert).
 vragenData["Hebreeën"] = {
     beginner: [
         {
@@ -4480,9 +4477,9 @@ vragenData["Hebreeën"] = {
     ]
 };
 
-// Jakobus — vragenpool (Algemene brieven).
-// Formaat gelijk aan de andere boeken: vragenData["Jakobus"] met drie niveaus
-// (beginner/advanced/expert). 11 beginner, 12 advanced, 11 expert = 34 vragen.
+// Jakobus — vragenpool (38 vragen: beginner 11, advanced 14, expert 13)
+// Algemene brieven. Formaat gelijk aan de andere boeken: vragenData["Jakobus"]
+// met drie niveaus (beginner/advanced/expert).
 vragenData["Jakobus"] = {
     beginner: [
         {
@@ -4696,10 +4693,10 @@ vragenData["Jakobus"] = {
     ]
 };
 
-// Petrus & Judas — vragenpool (Algemene brieven).
-// Bundel uit 1 & 2 Petrus en Judas — gedeeld thema: waarschuwing tegen
-// dwaalleraars. Formaat gelijk aan de andere boeken: vragenData["Petrus & Judas"]
-// met drie niveaus. 10 beginner, 17 advanced, 12 expert = 39 vragen.
+// Petrus & Judas — vragenpool (43 vragen: beginner 13, advanced 18, expert 12)
+// Algemene brieven. Bundel uit 1 & 2 Petrus en Judas — gedeeld thema:
+// waarschuwing tegen dwaalleraars. Formaat gelijk aan de andere boeken:
+// vragenData["Petrus & Judas"] met drie niveaus (beginner/advanced/expert).
 vragenData["Petrus & Judas"] = {
     beginner: [
         {
@@ -4943,11 +4940,10 @@ vragenData["Petrus & Judas"] = {
     ]
 };
 
-// Brieven van Johannes — vragenpool (Algemene brieven).
-// Bundel uit 1, 2 & 3 Johannes. Bewust "Brieven van Johannes" (niet "Johannes"),
-// om verwarring met het evangelie te voorkomen. Formaat gelijk aan de andere
-// boeken: vragenData["Brieven van Johannes"] met drie niveaus.
-// 13 beginner, 12 advanced, 13 expert = 38 vragen.
+// Brieven van Johannes — vragenpool (52 vragen: beginner 13, advanced 13,
+// expert 26). Algemene brieven. Bundel uit 1, 2 & 3 Johannes. Bewust
+// "Brieven van Johannes" (niet "Johannes"), om verwarring met het evangelie te
+// voorkomen. vragenData["Brieven van Johannes"] met drie niveaus.
 vragenData["Brieven van Johannes"] = {
     beginner: [
         {
@@ -5245,9 +5241,9 @@ vragenData["Brieven van Johannes"] = {
     ]
 };
 
-// Openbaring — vragenpool (laatste boek van het NT, enkel-boek-tegel zoals
-// Handelingen). Bewust gestuurd op de hoopvolle, wonderlijke kant; neutraal t.a.v.
-// eindtijd-uitleg. 11 beginner, 12 advanced, 15 expert = 38 vragen.
+// Openbaring — vragenpool (51 vragen: beginner 14, advanced 17, expert 20)
+// Laatste boek van het NT, enkel-boek-tegel zoals Handelingen. Bewust gestuurd
+// op de hoopvolle, wonderlijke kant; neutraal t.a.v. eindtijd-uitleg.
 vragenData["Openbaring"] = {
     beginner: [
         {
@@ -5698,7 +5694,7 @@ vragenData["Filippenzen"].expert.push(
         antwoorden: ["Wijn die bij een offer over het altaar ging", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
         correct: "Wijn die bij een offer over het altaar ging",
         bijbelplaats: "Filippenzen 2:17",
-        uitleg: "Bij een plengoffer bleef er niets over: alles ging het altaar op. Vandaar het beeld dat Paulus kiest terwijl hij gevangenzit — hij houdt niets van zichzelf achter."
+        uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit over het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
     }
 );
 
