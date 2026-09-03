@@ -1,6 +1,6 @@
 # Bronnen-audit — signaalwoorden zonder genoemde bron
 
-*Inventarisatie, 16-08-2026. Bijgewerkt 03-09-2026: vijf plekken zijn intussen
+*Inventarisatie, 16-08-2026. Bijgewerkt 03-09-2026: zes plekken zijn intussen
 afgehandeld, zie **Status** hieronder. De inventarisatie zelf is onveranderd
 gelaten — ook de regelnummers, die nog van 16-08-2026 zijn en dus zijn verschoven.*
 
@@ -17,17 +17,17 @@ stond, staat nu wie het schrijft en waar:
 | 8102 / 8110 / 8111, de 153 vissen | overlevering, bron alleen "o.a. Hiëronymus" | **Hiëronymus, commentaar op Ezechiël**; de reveal noemt nu ook Augustinus' andere telling (1+2+…+17) |
 | 8137, `reveal` Malchus | "die volgens de overlevering arts was" | **Kolossenzen 4:14**, "de geliefde arts" — Bijbeltekst in plaats van overlevering |
 | 8028 / 8031, `vraag` bovenzaal | oude kerkelijke overlevering | **inscriptie uit de 6e eeuw**, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem |
+| 4646 / 4649, `vraag` Jakobus | "volgens de overlevering", bronveld letterlijk `"overlevering"` | **Handelingen 15:13 · Galaten 2:9** — de vraag wijst nu naar Handelingen zelf |
 
 De bovenzaalvraag (8028/8031) stond nog niet in de vier plekken die als eerste
-waren aangewezen; die is er bij het uitvoeren als vijfde bij gekomen.
+waren aangewezen; die is er bij het uitvoeren als vijfde bij gekomen. De
+Jakobus-vraag (4646/4649) volgde daarna, in een eigen commit.
 
-`oude kerkelijke overlevering` komt hierna niet meer voor in `script.js`.
+`oude kerkelijke overlevering` en `volgens de overlevering` komen hierna niet
+meer voor in `script.js`, ook niet met een hoofdletter.
 
 **Wat nog openstaat** (wel geïnventariseerd, niet gewijzigd):
 
-- Regel 4646 / 4649 — Jakobus als leider in Jeruzalem: "Volgens de overlevering",
-  met een bronveld dat letterlijk alleen `"overlevering"` bevat. Van de gevallen
-  die nog openstaan is dit de zwakste bron.
 - Regel 968 / 972 — "de leerling van wie Jezus hield": "volgens de traditie",
   zonder naam.
 - Regel 744 — "sommige heel oude handschriften" bij Lucas 10:1, niet
@@ -125,12 +125,16 @@ De woorden `men neemt aan`, `wordt aangenomen`, `vermoedelijk`, `oude bronnen`,
 - **Signaalwoord:** overlevering
 - **Zin:** de vraag zelf, zie hierboven.
 - **Bron genoemd?** Nee.
+- **Afgehandeld 03-09-2026:** de vraag noemt nu Handelingen in plaats van de overlevering (nu regel 4646).
+
 
 ### Regel 4705 — veld `bijbelplaats` (zelfde vraag)
 - **Onderwerp:** Jakobus als leider in Jeruzalem
 - **Signaalwoord:** overlevering
 - **Zin:** `bijbelplaats: "overlevering"`
 - **Bron genoemd?** Nee — het bronveld bevat hier letterlijk alleen het woord "overlevering". Vergelijk Handelingen 15:13 en Galaten 1:19, die wel bestaan.
+- **Afgehandeld 03-09-2026:** bronveld is nu "Handelingen 15:13 · Galaten 2:9" (nu regel 4649).
+
 
 ### Regel 6149 — veld `uitleg`
 - **Vraag:** "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?" (Openbaring 1:9)

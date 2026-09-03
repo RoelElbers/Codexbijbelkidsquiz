@@ -4643,10 +4643,10 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:14"
         },
         {
-            vraag: "Volgens de overlevering was Jakobus, de schrijver, een belangrijke leider van de eerste christenen. In welke stad leidde hij de gemeente?",
+            vraag: "In het boek Handelingen komt een Jakobus voor die een belangrijke leider was onder de eerste christenen. In welke stad leidde hij de gemeente?",
             antwoorden: ["Jeruzalem", "Rome", "Antiochië", "Korinte"],
             correct: "Jeruzalem",
-            bijbelplaats: "overlevering"
+            bijbelplaats: "Handelingen 15:13 · Galaten 2:9"
         },
         {
             vraag: "'Heb je naaste lief als jezelf' noemt Jakobus de … wet — de allerbelangrijkste regel.",
