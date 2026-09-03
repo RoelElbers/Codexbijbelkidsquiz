@@ -3861,8 +3861,8 @@ vragenData["Timoteüs & Titus"] = {
 };
 
 // =========================================================================
-// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 14, advanced 13,
-// expert 22). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
+// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 16, advanced 16,
+// expert 17). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
 // Formaat gelijk aan de andere boeken: vragenData["Kolossenzen & Filemon"] met
 // drie niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
 // correct (exact gelijk aan één antwoord), bijbelplaats. Niveau-indeling zoals
@@ -3953,6 +3953,18 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["God is volledig in Jezus aanwezig", "Jezus is een gewone profeet", "God woont vooral in de tempel", "Jezus werd pas later God"],
             correct: "God is volledig in Jezus aanwezig",
             bijbelplaats: "Kolossenzen 2:9"
+        },
+        {
+            vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat?",
+            antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
+            correct: "Met bidden",
+            bijbelplaats: "Kolossenzen 4:12-13"
+        },
+        {
+            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
+            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
+            correct: "Lukas",
+            bijbelplaats: "Kolossenzen 4:14"
         }
     ],
     advanced: [
@@ -4021,6 +4033,24 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Van heel de schepping", "Van de familie van Jozef", "Van de twaalf leerlingen", "Van de gemeente in Kolosse"],
             correct: "Van heel de schepping",
             bijbelplaats: "Kolossenzen 1:15"
+        },
+        {
+            vraag: "Paulus noemt Marcus familie van een bekende medewerker. Van wie is Marcus de neef?",
+            antwoorden: ["Van Barnabas", "Van Petrus", "Van Paulus", "Van Timoteüs"],
+            correct: "Van Barnabas",
+            bijbelplaats: "Kolossenzen 4:10"
+        },
+        {
+            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten voorlezen. Welke stad noemt hij?",
+            antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
+            correct: "Laodicea",
+            bijbelplaats: "Kolossenzen 4:16"
+        },
+        {
+            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
+            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zijn verzoek zonder meer zou weigeren", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
+            correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
+            bijbelplaats: "Filemon 21"
         }
     ],
     expert: [
@@ -4068,7 +4098,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In een enkele zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
-            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God bewaart het zorgvuldig tot de dag van het oordeel"],
+            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
             correct: "God heeft het doorgestreept en aan het kruis genageld",
             bijbelplaats: "Kolossenzen 2:14"
         },
@@ -4103,30 +4133,6 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:6"
         },
         {
-            vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat?",
-            antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
-            correct: "Met bidden",
-            bijbelplaats: "Kolossenzen 4:12-13"
-        },
-        {
-            vraag: "Paulus noemt Marcus familie van een bekende medewerker. Van wie is Marcus de neef?",
-            antwoorden: ["Van Barnabas", "Van Petrus", "Van Paulus", "Van Timoteüs"],
-            correct: "Van Barnabas",
-            bijbelplaats: "Kolossenzen 4:10"
-        },
-        {
-            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
-            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
-            correct: "Lukas",
-            bijbelplaats: "Kolossenzen 4:14"
-        },
-        {
-            vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten voorlezen. Welke stad noemt hij?",
-            antwoorden: ["Laodicea", "Rome", "Jeruzalem", "Efeze"],
-            correct: "Laodicea",
-            bijbelplaats: "Kolossenzen 4:16"
-        },
-        {
             vraag: "Paulus groet niet alleen Filemon zelf, maar ook de groep gelovigen die bij hem bij elkaar komt. In die eerste jaren bestonden er nog geen aparte gebouwen voor christenen. Waar kwamen zij dus samen?",
             antwoorden: ["Gewoon bij iemand thuis", "In een apart kerkgebouw", "In de synagoge", "Op het marktplein"],
             correct: "Gewoon bij iemand thuis",
@@ -4143,12 +4149,6 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij op zijn vlucht veel van de grote wijde wereld heeft gezien", "Dat hij Filemon een lesje wilde leren"],
             correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder",
             bijbelplaats: "Filemon 15-16"
-        },
-        {
-            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
-            antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zijn verzoek zonder meer zou weigeren", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
-            correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
-            bijbelplaats: "Filemon 21"
         }
     ]
 };
