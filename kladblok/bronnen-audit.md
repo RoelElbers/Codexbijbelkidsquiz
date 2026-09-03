@@ -1,6 +1,38 @@
 # Bronnen-audit — signaalwoorden zonder genoemde bron
 
-*Inventarisatie, 16-08-2026. Er is niets aan de teksten gewijzigd.*
+*Inventarisatie, 16-08-2026. Bijgewerkt 03-09-2026: vijf plekken zijn intussen
+afgehandeld, zie **Status** hieronder. De inventarisatie zelf is onveranderd
+gelaten — ook de regelnummers, die nog van 16-08-2026 zijn en dus zijn verschoven.*
+
+## Status — 03-09-2026
+
+Afgehandeld in `script.js` (commit "Bronvermeldingen: vage overlevering vervangen
+door aanwijsbare bronnen"). Waar eerst "volgens oude kerkelijke overlevering"
+stond, staat nu wie het schrijft en waar:
+
+| plek (regel nu) | was | is nu |
+|---|---|---|
+| 6065, `uitleg` Patmos | oude kerkelijke overlevering | **Irenaeus** met naam |
+| 6159, `uitleg` kussen in de boot | oude kerkelijke overlevering | **Papias**, bisschop uit de 2e eeuw |
+| 8102 / 8110 / 8111, de 153 vissen | overlevering, bron alleen "o.a. Hiëronymus" | **Hiëronymus, commentaar op Ezechiël**; de reveal noemt nu ook Augustinus' andere telling (1+2+…+17) |
+| 8137, `reveal` Malchus | "die volgens de overlevering arts was" | **Kolossenzen 4:14**, "de geliefde arts" — Bijbeltekst in plaats van overlevering |
+| 8028 / 8031, `vraag` bovenzaal | oude kerkelijke overlevering | **inscriptie uit de 6e eeuw**, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem |
+
+De bovenzaalvraag (8028/8031) stond nog niet in de vier plekken die als eerste
+waren aangewezen; die is er bij het uitvoeren als vijfde bij gekomen.
+
+`oude kerkelijke overlevering` komt hierna niet meer voor in `script.js`.
+
+**Wat nog openstaat** (wel geïnventariseerd, niet gewijzigd):
+
+- Regel 4646 / 4649 — Jakobus als leider in Jeruzalem: "Volgens de overlevering",
+  met een bronveld dat letterlijk alleen `"overlevering"` bevat. Van de gevallen
+  die nog openstaan is dit de zwakste bron.
+- Regel 968 / 972 — "de leerling van wie Jezus hield": "volgens de traditie",
+  zonder naam.
+- Regel 744 — "sommige heel oude handschriften" bij Lucas 10:1, niet
+  gespecificeerd (de vertalingen zelf zijn wél concreet benoemd).
+- Regel 1208 — "geleerden denken" bij het geboortejaar van Jezus, zonder naam.
 
 ## Wat is doorzocht
 
@@ -105,42 +137,56 @@ De woorden `men neemt aan`, `wordt aangenomen`, `vermoedelijk`, `oude bronnen`,
 - **Signaalwoord:** overlevering
 - **Zin:** "Volgens oude kerkelijke overlevering gebeurde dat onder keizer Domitianus, rond het jaar 95."
 - **Bron genoemd?** Nee — geen naam bij "oude kerkelijke overlevering" (de gangbare herkomst is Irenaeus).
+- **Afgehandeld 03-09-2026:** Patmos staat nu op naam van Irenaeus (nu regel 6065).
+
 
 ### Regel 6246 — veld `uitleg`
 - **Vraag:** "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?" (Marcus 4:38)
 - **Signaalwoord:** overlevering
 - **Zin:** "Volgens oude kerkelijke overlevering schreef hij op wat Petrus vertelde — en Petrus was die nacht wél in de boot."
 - **Bron genoemd?** Nee — geen naam bij de overlevering (gangbaar: Papias, via Eusebius).
+- **Afgehandeld 03-09-2026:** de boot-uitleg noemt nu Papias, bisschop uit de tweede eeuw (nu regel 6159).
+
 
 ### Regel 8062 — veld `vraag` (Verborgen Schat, vraag 1)
 - **Vraag:** "Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?"
 - **Signaalwoord:** overlevering
 - **Zin:** de vraag zelf, zie hierboven.
 - **Bron genoemd?** Nee.
+- **Afgehandeld 03-09-2026:** de vraag noemt nu de inscriptie uit de 6e eeuw in de Sint-Markuskerk (nu regel 8028).
+
 
 ### Regel 8065 — veld `bijbelplaats` (zelfde vraag)
 - **Onderwerp:** de bovenzaal als huis van de familie van Marcus
 - **Signaalwoord:** overlevering
 - **Zin:** `bijbelplaats: "Handelingen 12:12 (kerkelijke overlevering)"`
 - **Bron genoemd?** Deels — Handelingen 12:12 staat er wel, maar dat vers verbindt het huis niet met de bovenzaal; dat deel is juist de overlevering, en dáárvoor is geen bron genoemd.
+- **Afgehandeld 03-09-2026:** het bronveld noemt nu die inscriptie met kerk en eeuw (nu regel 8031).
+
 
 ### Regel 8135 — veld `vraag` (Verborgen Schat)
 - **Vraag:** "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen… Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?"
 - **Signaalwoord:** overlevering ("geloofde men")
 - **Zin:** "Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden."
 - **Bron genoemd?** Niet in de vraag zelf; wel in het bronveld (zie 8143).
+- **Afgehandeld 03-09-2026:** de vraag noemt nu Hiëronymus met naam (nu regel 8102).
+
 
 ### Regel 8143 — veld `bijbelplaats` (zelfde vraag)
 - **Onderwerp:** de 153 vissen
 - **Signaalwoord:** oude kerkelijke overlevering
 - **Zin:** `bijbelplaats: "Johannes 21:11 (oude kerkelijke overlevering, o.a. Hiëronymus)"`
 - **Bron genoemd?** Ja — Hiëronymus wordt met naam genoemd. Dit is het enige bronveld in het bestand dat dat doet.
+- **Afgehandeld 03-09-2026:** bronveld is nu "Johannes 21:11 · Hiëronymus, commentaar op Ezechiël" (nu regel 8110).
+
 
 ### Regel 8144 — veld `reveal` (zelfde vraag)
 - **Onderwerp:** de 153 vissen
 - **Signaalwoord:** overlevering
 - **Zin:** "Volgens oude kerkelijke overlevering dacht men dat er precies zoveel soorten vissen waren."
 - **Bron genoemd?** Niet in de reveal zelf. De speler ziet de reveal; of het bronveld met Hiëronymus daarbij in beeld komt, bepaalt of de naam meekomt.
+- **Afgehandeld 03-09-2026:** de reveal noemt Hiëronymus en zet Augustinus' afwijkende telling ernaast (nu regel 8111).
+
 
 ### Regel 8170 — veld `reveal` (twee treffers in één tekst)
 - **Vraag:** "Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus… Wat gebeurde er daarna?" (Lucas 22:50-51 en Johannes 18:10)
@@ -151,6 +197,8 @@ De woorden `men neemt aan`, `wordt aangenomen`, `vermoedelijk`, `oude bronnen`,
 - **Zin:** "Volgens oude kerkelijke overlevering is hij later tot geloof gekomen."
 - **Bron genoemd?** Nee.
 - **Extra opmerking:** in dezelfde reveal staat ook een open speculatie zonder bron: "Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten?" Deze valt buiten de gezochte woorden, maar hoort inhoudelijk bij dezelfde categorie.
+- **Afgehandeld 03-09-2026:** Lucas als arts staat nu op Kolossenzen 4:14; de tweede treffer in deze reveal is nog niet aangeraakt (nu regel 8137).
+
 
 ### Regel 9015 — `catecheseArtikelen`, artikel "De 153 vissen" (`verborgen-getallen-153`, categorie "Verborgen getallen")
 - **Onderwerp:** waarom Johannes precies 153 opschrijft

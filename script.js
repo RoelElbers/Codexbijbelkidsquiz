@@ -6062,7 +6062,7 @@ vragenData["Openbaring"].beginner.push(
         antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
         correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
         bijbelplaats: "Openbaring 1:9",
-        uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. Volgens oude kerkelijke overlevering gebeurde dat onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
+        uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
     },
     {
         vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
@@ -6156,7 +6156,7 @@ vragenData["Marcus"].expert.push(
         antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een hangmat die tussen de masten was gespannen", "De voorplecht, waar het droogst was"],
         correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
         bijbelplaats: "Marcus 4:38",
-        uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Volgens oude kerkelijke overlevering schreef hij op wat Petrus vertelde — en Petrus was die nacht wél in de boot."
+        uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Papias, een bisschop uit de tweede eeuw, schrijft dat Marcus opschreef wat Petrus vertelde — en Petrus was die nacht wél in de boot."
     },
     {
         vraag: "Op het meer van Galilea stak plotseling een zware storm op. Hoe kon dat zo snel gaan?",
@@ -8025,10 +8025,10 @@ function openSchatkist(niveau) {
 // 'bijbelplaats' en verschijnt na het antwoorden via checkAntwoord().
 const verborgenSchatVragen = [
     {
-        vraag: "Volgens oude kerkelijke overlevering was de bovenzaal van het laatste avondmaal het huis van de familie van welke evangelist?",
+        vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het laatste avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
         antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
         correct: "Marcus",
-        bijbelplaats: "Handelingen 12:12 (kerkelijke overlevering)"
+        bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem"
     },
     {
         vraag: 'Wat betekent het woord "apocalyps" eigenlijk?',
@@ -8099,7 +8099,7 @@ const verborgenSchatVragen = [
         catecheseId: "verborgen-patronen-sandwich"
     },
     {
-        vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. Volgens oude kerkelijke overlevering geloofde men dat er net zoveel soorten vissen bestonden. Welke verborgen boodschap zagen zij daarin?",
+        vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. De kerkvader Hiëronymus schrijft dat men in zijn tijd geloofde dat er precies zoveel soorten vissen bestonden. Welke verborgen boodschap zag men daarin?",
         antwoorden: [
             "De blijde boodschap mag aan alle volken gebracht worden",
             "De boodschap is alleen voor het volk Israël",
@@ -8107,8 +8107,8 @@ const verborgenSchatVragen = [
             "Het getal telt de jaren tot Jezus' terugkomst"
         ],
         correct: "De blijde boodschap mag aan alle volken gebracht worden",
-        bijbelplaats: "Johannes 21:11 (oude kerkelijke overlevering, o.a. Hiëronymus)",
-        reveal: "153 vissen, en het net scheurt niet! Volgens oude kerkelijke overlevering dacht men dat er precies zoveel soorten vissen waren. De verborgen boodschap: het goede nieuws is voor álle volken — en niemand gaat verloren.",
+        bijbelplaats: "Johannes 21:11 · Hiëronymus, commentaar op Ezechiël",
+        reveal: "153 vissen, en het net scheurt niet! De kerkvader Hiëronymus vertelt dat men in zijn tijd geloofde dat er precies zoveel soorten vissen waren. De verborgen boodschap die men daarin zag: het goede nieuws is voor álle volken — en niemand gaat verloren. Niet iedereen las het zo. Augustinus telde 1 + 2 + 3 en zo verder tot 17, en kwam ook precies op 153 uit. De oude uitleggers zochten allemaal iets achter dat getal, maar niet allemaal hetzelfde.",
         catecheseId: "verborgen-getallen-153"
     },
     {
@@ -8134,7 +8134,7 @@ const verborgenSchatVragen = [
         ],
         correct: "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
         bijbelplaats: "Lucas 22:50-51 en Johannes 18:10",
-        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die volgens de overlevering arts was — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
+        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
     },
     {
         vraag: "Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?",
