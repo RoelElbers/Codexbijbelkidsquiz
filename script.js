@@ -3861,7 +3861,7 @@ vragenData["Timoteüs & Titus"] = {
 };
 
 // =========================================================================
-// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 16, advanced 16,
+// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 15, advanced 17,
 // expert 17). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
 // Formaat gelijk aan de andere boeken: vragenData["Kolossenzen & Filemon"] met
 // drie niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
@@ -3889,9 +3889,9 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 3:1-2"
         },
         {
-            vraag: "Paulus zegt: wat je ook doet, doe het…",
-            antwoorden: ["…van harte, voor de Heer", "…zo snel mogelijk", "…alleen als anderen kijken", "…alleen als je er zin in hebt"],
-            correct: "…van harte, voor de Heer",
+            vraag: "Paulus schrijft over de manier waarop je alles moet doen wat je onder handen hebt. Wat zegt hij daarover?",
+            antwoorden: ["Doe het van harte, voor de Heer", "Doe het zo snel mogelijk", "Doe het alleen als anderen kijken", "Doe het alleen als je er zin in hebt"],
+            correct: "Doe het van harte, voor de Heer",
             bijbelplaats: "Kolossenzen 3:23"
         },
         {
@@ -3913,8 +3913,8 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 1"
         },
         {
-            vraag: "Paulus zegt: doe alles in de naam van wie?",
-            antwoorden: ["De Heer Jezus", "De keizer", "Paulus zelf", "De tempel"],
+            vraag: "In wiens naam moeten de gelovigen volgens Paulus alles doen?",
+            antwoorden: ["De Heer Jezus", "De keizer", "Paulus zelf", "Mozes"],
             correct: "De Heer Jezus",
             bijbelplaats: "Kolossenzen 3:17"
         },
@@ -3938,21 +3938,15 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe moeten de gelovigen volgens Paulus zingen tot God?",
-            antwoorden: ["Met psalmen en liederen, dankbaar in hun hart", "Alleen in het Latijn", "Alleen in de tempel en nergens anders", "Alleen op feestdagen"],
+            antwoorden: ["Met psalmen en liederen, dankbaar in hun hart", "Zo hard mogelijk, zodat iedereen het hoort", "In het Latijn, want dat is de taal van de kerk", "Alleen uit het psalmboek, en niets anders"],
             correct: "Met psalmen en liederen, dankbaar in hun hart",
             bijbelplaats: "Kolossenzen 3:16"
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus uit hun oude leven wegdoen?",
-            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Elk contact met mensen die anders geloven", "Contact met niet-gelovigen"],
+            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Elk contact met mensen die anders geloven", "Alles wat je vroeger geleerd hebt"],
             correct: "Slechte dingen zoals jaloezie en woede",
             bijbelplaats: "Kolossenzen 3:8"
-        },
-        {
-            vraag: "Paulus schrijft dat in Christus \"de volheid van God\" woont. Wat bedoelt hij daarmee?",
-            antwoorden: ["God is volledig in Jezus aanwezig", "Jezus is een gewone profeet", "God woont vooral in de tempel", "Jezus werd pas later God"],
-            correct: "God is volledig in Jezus aanwezig",
-            bijbelplaats: "Kolossenzen 2:9"
         },
         {
             vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat?",
@@ -3970,9 +3964,10 @@ vragenData["Kolossenzen & Filemon"] = {
     advanced: [
         {
             vraag: "Waarmee moeten de gelovigen zich \"kleden\", schrijft Paulus?",
-            antwoorden: ["Met goedheid, geduld en liefde", "Met mooie, dure kleren", "Met een ijzeren wapenrusting", "Met witte gewaden"],
-            correct: "Met goedheid, geduld en liefde",
-            bijbelplaats: "Kolossenzen 3:12"
+            antwoorden: ["Met medelijden, vriendelijkheid en zachtmoedigheid", "Met mooie, dure kleren", "Met een ijzeren wapenrusting", "Met witte gewaden"],
+            correct: "Met medelijden, vriendelijkheid en zachtmoedigheid",
+            bijbelplaats: "Kolossenzen 3:12",
+            uitleg: "Zachtmoedig betekent: niet ruw of hard, maar mild in de manier waarop je met anderen omgaat. Het heeft niets met zwak zijn te maken. Iemand die zachtmoedig is, kán best boos worden, maar kiest ervoor dat niet op een ander af te reageren. Paulus zet het hier in een rijtje met medelijden en vriendelijkheid: eigenschappen die je niet aan iemand ziet, maar wel merkt zodra het ergens om spant."
         },
         {
             vraag: "Paulus noemt Jezus \"het beeld van de onzichtbare God\". Wat bedoelt hij?",
@@ -3988,7 +3983,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat vraagt Paulus aan Filemon over Onesimus?",
-            antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem streng te straffen voor zijn weglopen"],
+            antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem vrij te laten en te laten gaan waar hij wil"],
             correct: "Om hem terug te ontvangen als een broeder",
             bijbelplaats: "Filemon 17"
         },
@@ -4005,7 +4000,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 18-19"
         },
         {
-            vraag: "Hoe noemt Paulus zichzelf in de brief aan Filemon — niet als koning, maar als?",
+            vraag: "Hoe noemt Paulus zichzelf meteen aan het begin van de brief aan Filemon?",
             antwoorden: ["Een gevangene van Christus", "Een rechter", "Een soldaat", "Een machtige leraar van de wet"],
             correct: "Een gevangene van Christus",
             bijbelplaats: "Filemon 1"
@@ -4051,6 +4046,12 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zijn verzoek zonder meer zou weigeren", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
             correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
             bijbelplaats: "Filemon 21"
+        },
+        {
+            vraag: "Paulus schrijft dat in Christus \"de volheid van God\" woont. Wat bedoelt hij daarmee?",
+            antwoorden: ["God is volledig in Jezus aanwezig", "Jezus is een gewone profeet", "God woont vooral in de tempel", "Jezus werd pas later God"],
+            correct: "God is volledig in Jezus aanwezig",
+            bijbelplaats: "Kolossenzen 2:9"
         }
     ],
     expert: [
@@ -4133,10 +4134,10 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:6"
         },
         {
-            vraag: "Paulus groet niet alleen Filemon zelf, maar ook de groep gelovigen die bij hem bij elkaar komt. In die eerste jaren bestonden er nog geen aparte gebouwen voor christenen. Waar kwamen zij dus samen?",
-            antwoorden: ["Gewoon bij iemand thuis", "In een apart kerkgebouw", "In de synagoge", "Op het marktplein"],
-            correct: "Gewoon bij iemand thuis",
-            bijbelplaats: "Filemon 2"
+            vraag: "Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen?",
+            antwoorden: ["De taak afmaken die hij van de Heer gekregen heeft", "De brief voorlezen in de synagoge", "Onesimus begeleiden op zijn terugreis", "Het geld inzamelen voor Paulus' vrijlating"],
+            correct: "De taak afmaken die hij van de Heer gekregen heeft",
+            bijbelplaats: "Filemon 2 · Kolossenzen 4:17"
         },
         {
             vraag: "Paulus had Onesimus makkelijk bij zich kunnen houden, want hij had veel aan hem. Toch stuurt hij hem terug, en hij wil niets beslissen zonder Filemon eerst te vragen. Waarom niet?",
