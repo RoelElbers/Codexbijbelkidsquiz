@@ -3617,8 +3617,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
 };
 
 // =========================================================================
-// Timoteüs & Titus — vragenpool (46 vragen: beginner 14, advanced 14,
-// expert 18). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
+// Timoteüs & Titus — vragenpool (46 vragen: beginner 14, advanced 15,
+// expert 17). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
 // (trofee_timoteus_titus). vragenData["Timoteüs & Titus"] met drie niveaus
 // (beginner/advanced/expert). Per vraag: vraag, antwoorden[], correct (exact
 // gelijk aan één antwoord), bijbelplaats. Neutraal taalgebruik (geen
@@ -3683,7 +3683,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus zegt dat Titus de mensen moet leren hoe ze tegen iedereen moeten zijn. Hoe moeten zij volgens hem zijn?",
-            antwoorden: ["Vriendelijk en vredelievend", "Streng en hard", "Streng zwijgend en nooit een woord teveel spreken", "Slim en gehaaid"],
+            antwoorden: ["Vriendelijk en vredelievend", "Streng en hard", "Op je hoede, en zo min mogelijk zeggen", "Slim en gehaaid"],
             correct: "Vriendelijk en vredelievend",
             bijbelplaats: "Titus 3:2"
         },
@@ -3720,9 +3720,9 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "Titus 2:7"
         },
         {
-            vraag: "Paulus noemt het geloof een soort wedstrijd. Wat moet Timoteüs doen?",
-            antwoorden: ["De goede strijd van het geloof strijden", "Zo hard mogelijk rennen", "Stoppen als het te zwaar wordt", "Anderen verslaan"],
-            correct: "De goede strijd van het geloof strijden",
+            vraag: "Paulus roept Timoteüs op om iets vast te grijpen waartoe God hem geroepen heeft. Wat moet hij vastgrijpen?",
+            antwoorden: ["Het eeuwige leven", "De leiding over de gemeente", "De rijkdom van de kerk", "De wet van Mozes"],
+            correct: "Het eeuwige leven",
             bijbelplaats: "1 Timoteüs 6:12"
         },
         {
@@ -3756,9 +3756,9 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 1:7"
         },
         {
-            vraag: "Paulus zegt tegen Timoteüs: schaam je niet voor…",
-            antwoorden: ["…het goede nieuws van Jezus", "…je eenvoudige afkomst", "…je gebrek aan kennis", "…de spot van anderen"],
-            correct: "…het goede nieuws van Jezus",
+            vraag: "Timoteüs kon door zijn geloof in de problemen komen. Waarvoor moet hij zich volgens Paulus niet schamen?",
+            antwoorden: ["Het goede nieuws van Jezus", "Zijn eenvoudige afkomst", "Zijn gebrek aan kennis", "De spot van anderen"],
+            correct: "Het goede nieuws van Jezus",
             bijbelplaats: "2 Timoteüs 1:8"
         },
         {
@@ -3766,6 +3766,12 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Om zondaars te redden", "Om koning te worden", "Om de tempel te bouwen", "Om regels te geven"],
             correct: "Om zondaars te redden",
             bijbelplaats: "1 Timoteüs 1:15"
+        },
+        {
+            vraag: "Op welk eiland had Paulus Titus achtergelaten om de gemeenten te helpen?",
+            antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
+            correct: "Kreta",
+            bijbelplaats: "Titus 1:5"
         }
     ],
     expert: [
@@ -3783,13 +3789,13 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus waarschuwt tegen de jacht op geld met een nuchtere waarheid over geboorte en dood. Wat schrijft hij?",
-            antwoorden: ["We hebben niets meegebracht in de wereld, en kunnen er ook niets uit meenemen", "Geld is de wortel van alle kwaad", "Rijke mensen komen niet in de hemel", "Wie arm is als hij dood gaat, krijgt in de hemel een veel grotere beloning dan wie rijk is als hij sterft"],
-            correct: "We hebben niets meegebracht in de wereld, en kunnen er ook niets uit meenemen",
+            antwoorden: ["We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee", "Het geld zelf is de wortel van alle kwaad in de wereld", "Rijke mensen kunnen het koninkrijk van God niet binnengaan", "Wie veel weggeeft, krijgt van God vanzelf meer terug"],
+            correct: "We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee",
             bijbelplaats: "1 Timoteüs 6:7"
         },
         {
             vraag: "Midden in zijn brief barst Paulus ineens uit in een lofzang op God. Met welke titel noemt hij God daar?",
-            antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots van Israël", "De Vader van het licht", "De Wijnstok waaraan alle gelovigen als ranken vastzitten"],
+            antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots waarop Israël altijd kon bouwen", "De Vader van alle licht aan de hemel", "De Wijnstok waar de gelovigen als ranken aan zitten"],
             correct: "De Koning der koningen en de Heer der heren",
             bijbelplaats: "1 Timoteüs 6:15"
         },
@@ -3848,13 +3854,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:16"
         },
         {
-            vraag: "Op welk eiland had Paulus Titus achtergelaten om de gemeenten te helpen?",
-            antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
-            correct: "Kreta",
-            bijbelplaats: "Titus 1:5"
-        },
-        {
-            vraag: "Paulus was zelf vertrokken en liet Titus achter op Kreta. Wat moest Titus daar in elke stad regelen?",
+            vraag: "Paulus vertrok zelf en liet Titus achter om het werk af te maken. Wat moest Titus in elke stad regelen?",
             antwoorden: ["Geschikte leiders aanstellen voor de gemeenten", "In elke stad een grote kerk bouwen", "Belasting innen", "Scholen openen"],
             correct: "Geschikte leiders aanstellen voor de gemeenten",
             bijbelplaats: "Titus 1:5"
@@ -6566,7 +6566,7 @@ vragenData["Filippenzen"].expert.push(
 
 vragenData["Timoteüs & Titus"].expert.push(
     {
-        vraag: "Paulus vraagt Timoteüs om zijn mantel mee te nemen, en ook de boeken en vooral de perkamenten. Wat is perkament?",
+        vraag: "In zijn laatste brief vraagt Paulus of Timoteüs ook de perkamenten wil meebrengen. Wat is perkament?",
         antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boeken in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
         correct: "Dun bewerkte dierenhuid om op te schrijven",
         bijbelplaats: "2 Timoteüs 4:13"
