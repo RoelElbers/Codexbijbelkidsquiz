@@ -3696,16 +3696,10 @@ vragenData["Timoteüs & Titus"] = {
     ],
     advanced: [
         {
-            vraag: "De meeste brieven van Paulus zijn aan gemeenten gericht. Wat is bijzonder aan deze drie?",
-            antwoorden: ["Ze zijn aan personen geschreven, niet aan een gemeente", "Ze zijn aan de leiders van alle Joodse synagogen tegelijk geschreven", "Ze zijn aan alle kerken tegelijk geschreven", "Ze zijn aan kinderen geschreven"],
-            correct: "Ze zijn aan personen geschreven, niet aan een gemeente",
+            vraag: "Paulus schreef zijn brieven meestal aan een hele gemeente. Wat is er anders aan 1 en 2 Timoteüs en Titus?",
+            antwoorden: ["Ze zijn aan één persoon geschreven", "Ze zijn aan de leiders van alle Joodse synagogen geschreven", "Ze zijn aan alle kerken tegelijk geschreven", "Ze zijn aan kinderen geschreven"],
+            correct: "Ze zijn aan één persoon geschreven",
             bijbelplaats: "1 Timoteüs 1:1"
-        },
-        {
-            vraag: "Timoteüs was nog jong. Wat zegt Paulus daarover?",
-            antwoorden: ["Laat niemand op je neerkijken om je jonge leeftijd", "Wacht met leidinggeven tot je ouder bent", "Laat het spreken en leidinggeven maar over aan de oudere mannen", "Doe precies wat de oudere leiders zeggen"],
-            correct: "Laat niemand op je neerkijken om je jonge leeftijd",
-            bijbelplaats: "1 Timoteüs 4:12"
         },
         {
             vraag: "Waaraan moet Timoteüs volgens Paulus vasthouden, wat hij van jongs af aan kent?",
@@ -3772,6 +3766,12 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Kreta", "Cyprus", "Malta", "Patmos"],
             correct: "Kreta",
             bijbelplaats: "Titus 1:5"
+        },
+        {
+            vraag: "Paulus schrijft aan Titus dat God ons niet redt om wat wij goed gedaan hebben, maar uit barmhartigheid. Met welk beeld beschrijft hij dat?",
+            antwoorden: ["Een bad waarin je opnieuw geboren wordt", "Een weegschaal waarop je goede daden worden geteld", "Een poort die alleen opengaat voor wie genoeg gedaan heeft", "Een boek waarin al je fouten worden bijgehouden"],
+            correct: "Een bad waarin je opnieuw geboren wordt",
+            bijbelplaats: "Titus 3:5"
         }
     ],
     expert: [
@@ -3801,8 +3801,8 @@ vragenData["Timoteüs & Titus"] = {
         },
 {
             vraag: "Paulus zegt tegen Timoteüs: \"wakker het vuur weer aan.\" Wat bedoelt hij?",
-            antwoorden: ["Gebruik de gave die God je hebt gegeven", "Word vuriger in het straffen van zonde", "Vernieuw je band met de gemeente", "Bid dag en nacht zonder ophouden"],
-            correct: "Gebruik de gave die God je hebt gegeven",
+            antwoorden: ["Gebruik de gave die God je heeft gegeven", "Word vuriger in het straffen van zonde", "Vernieuw je band met de gemeente", "Bid dag en nacht zonder ophouden"],
+            correct: "Gebruik de gave die God je heeft gegeven",
             bijbelplaats: "2 Timoteüs 1:6"
         },
         {
@@ -3842,7 +3842,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:11"
         },
         {
-            vraag: "In zijn laatste brief vraagt Paulus of Timoteüs iets praktisch voor hem wil meenemen. Wat vraagt hij mee te nemen?",
+            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch voor hem mee te nemen. Wat moet hij meebrengen?",
             antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
             correct: "Zijn mantel en zijn boeken",
             bijbelplaats: "2 Timoteüs 4:13"
