@@ -2,6 +2,15 @@
 
 Vaste conventies van dit project. Volg ze zonder er per sessie naar te vragen.
 
+## Gedragsafspraken
+
+**Noem openstaande punten niet ongevraagd.** `kladblok/wachtlijst.md` houdt bij
+wat er nog ligt; nieuwe punten worden daar aan toegevoegd zodra ze opkomen, en
+een punt wordt eruit gehaald in dezelfde commit waarin het wordt afgerond. Sluit
+een antwoord niet af met een opsomming van wat er nog openstaat, tenzij er
+expliciet naar gevraagd wordt. Meld wel altijd wat er in de huidige opdracht is
+afgeweken, mislukt of opgevallen — dat hoort bij het werk zelf.
+
 ## Commits
 
 - **Geen `Co-Authored-By`-trailer.** Deze repository gebruikt die conventie niet.
