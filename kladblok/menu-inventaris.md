@@ -112,7 +112,9 @@ in de code is niets gewijzigd.
    rubriekscherm en zijn niet vergrendeld; wie erop klikt komt in een leeg
    lijstscherm. `bouwOntdekLijst()` vangt dat op — het commentaar zegt "een lege
    rubriek zegt dat eerlijk" — dus het lijkt bewust, maar het is wel de enige
-   plek waar een knop tot niets leidt.
+   plek waar een knop tot niets leidt. **Openstaand werk (04-09-2026):** dit
+   wordt aangepakt; de knoppen horen vergrendeld te zijn zolang de rubrieken
+   leeg zijn.
 
 2. **Twee plaatshouder-artikelen.** `het-oor-van-malchus` en
    `de-brief-aan-de-hebreeen` (`ontdekken-inhoud.js` r. 203–207) bevatten
@@ -150,8 +152,11 @@ in de code is niets gewijzigd.
    constante wordt precies één keer vanuit `script.js` gebruikt. Geen dode
    inhoud, geen dubbele definities.
 
-8. **Het woordenboek telt nu 44 termen**, waar de inventaris van 1 september er
-   45 noemde. Niet nagetrokken waar dat verschil vandaan komt.
+8. **Het woordenboek telt 44 termen**, waar de inventaris van 1 september er
+   45 noemde. Nageteld op 4 september 2026: `ONTDEK_WOORDENBOEK` loopt
+   alfabetisch van *Allerheiligste* tot *Zonde*, zonder dubbelingen en zonder
+   gaten. 44 is dus het juiste getal; waar de 45e vandaan kwam is niet
+   achterhaald.
 
 ## Tabel 2 — Menu "De verschillende kerken" (losse pagina's)
 

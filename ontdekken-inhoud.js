@@ -206,4 +206,12 @@ const ONTDEK_SCHAT = [
       inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
     { id: "de-brief-aan-de-hebreeen", naam: "De brief aan de Hebree\u00ebn", type: "artikel",
       inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
+
+    // Vraag 17: het poortje-verhaal bij Marcus 10:25-27.
+    { id: "het-oog-van-de-naald", naam: "Waarom \"het oog van de naald\" waarschijnlijk geen poortje was", type: "artikel",
+      inhoud: [
+          { item: "Je hoort het vaak: het oog van de naald zou een laag poortje in de muur van Jeruzalem zijn geweest, waar een kameel alleen doorheen kon als hij eerst alle bagage aflegde. Een mooi beeld — je moet je spullen loslaten om erdoor te komen." },
+          { item: "Toch klopt er iets niet. Als je de oudste christelijke uitleggers erop naslaat, mensen als Origenes, Chrysostomus en Augustinus, dan bespreken die deze tekst uitgebreid, maar noemt geen van hen een poort. Het verhaal duikt pas veel later op, in preken." },
+          { item: "Wat Jezus waarschijnlijk juist bedoelde, is dat het beeld ónmogelijk is. Een enorme kameel door een piepklein naaldgaatje: dat kán niet. En dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk." }
+      ] },
 ];
