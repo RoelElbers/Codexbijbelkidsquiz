@@ -741,7 +741,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["24", "40", "72", "100"],
                 correct: "72",
                 bijbelplaats: "Lucas 10:1",
-                uitleg: "Sommige heel oude handschriften zeggen \"zeventig\", andere \"tweeënzeventig\". Daarom staat het in de ene Bijbel net iets anders dan in de andere: in de Nieuwe Bijbelvertaling en in de katholieke traditie lees je 72, en in de Statenvertaling 70. De getallen liggen zó dicht bij elkaar dat beide goed zijn."
+                uitleg: "De twee beroemdste oude bijbelhandschriften zijn het hier niet met elkaar eens. In de Codex Vaticanus staat \"tweeënzeventig\", in de Codex Sinaïticus staat \"zeventig\". Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom staat het in de ene Bijbel net iets anders dan in de andere: in de Nieuwe Bijbelvertaling en in de katholieke traditie lees je 72, in de Statenvertaling 70. Beide getallen betekenen trouwens iets: zeventig is het aantal oudsten dat Mozes uitkoos, en tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde."
             },
             {
                 vraag: "Hoe heette de bedelaar in de gelijkenis over de rijke man, die in de schoot van Abraham terechtkwam?",
@@ -965,11 +965,11 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 uitleg: "Een vijgenboom gaf koele schaduw, en het was een geliefde plek om rustig te zitten lezen en bidden. Natanaël begreep meteen: deze man kent mij, terwijl we elkaar nooit ontmoet hebben."
             },
             {
-                vraag: "Volgens Johannes was er één leerling die 'de leerling van wie Jezus hield' werd genoemd. Wie wordt daarmee bedoeld, volgens de traditie?",
+                vraag: "In het evangelie van Johannes komt telkens een leerling voor die 'de leerling van wie Jezus hield' wordt genoemd, zonder dat zijn naam erbij staat. Wie is het volgens de vroege kerk?",
                 antwoorden: ["Petrus", "Johannes", "Andreas", "Tomas"],
                 correct: "Johannes",
-                bijbelplaats: "Johannes 13:23, 19:26",
-                uitleg: "Deze leerling wordt nooit bij naam genoemd. Volgens de traditie is het Johannes zelf, de schrijver van dit evangelie."
+                bijbelplaats: "Johannes 13:23, 19:26, 21:24 · Irenaeus, Tegen de ketterijen 3.1.1",
+                uitleg: "Deze leerling wordt nooit bij naam genoemd. Aan het slot van het evangelie staat wel dat híj het is die dit alles heeft opgeschreven (Johannes 21:24). Rond het jaar 180 schrijft de kerkvader Irenaeus dat het om Johannes gaat, de leerling die bij het laatste avondmaal naast Jezus lag."
             },
             {
                 vraag: "Na zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",

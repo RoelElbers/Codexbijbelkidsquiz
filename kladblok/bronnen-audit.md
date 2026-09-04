@@ -1,6 +1,6 @@
 # Bronnen-audit — signaalwoorden zonder genoemde bron
 
-*Inventarisatie, 16-08-2026. Bijgewerkt 03-09-2026: zes plekken zijn intussen
+*Inventarisatie, 16-08-2026. Bijgewerkt 03-09 en 04-09-2026: acht plekken zijn intussen
 afgehandeld, zie **Status** hieronder. De inventarisatie zelf is onveranderd
 gelaten — ook de regelnummers, die nog van 16-08-2026 zijn en dus zijn verschoven.*
 
@@ -18,6 +18,8 @@ stond, staat nu wie het schrijft en waar:
 | 8137, `reveal` Malchus | "die volgens de overlevering arts was" | **Kolossenzen 4:14**, "de geliefde arts" — Bijbeltekst in plaats van overlevering |
 | 8028 / 8031, `vraag` bovenzaal | oude kerkelijke overlevering | **inscriptie uit de 6e eeuw**, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem |
 | 4646 / 4649, `vraag` Jakobus | "volgens de overlevering", bronveld letterlijk `"overlevering"` | **Handelingen 15:13 · Galaten 2:9** — de vraag wijst nu naar Handelingen zelf |
+| 968 / 971 / 972, de leerling van wie Jezus hield (04-09) | "volgens de traditie", zonder naam | vraag verwijst naar **de vroege kerk**; uitleg noemt **Irenaeus** en Johannes 21:24; bronveld: `Johannes 13:23, 19:26, 21:24 · Irenaeus, Tegen de ketterijen 3.1.1` |
+| 744, `uitleg` Lucas 10:1 (04-09) | "sommige heel oude handschriften" | **Codex Vaticanus** (72) tegenover **Codex Sinaïticus** (70), beide rond het jaar 350, met de betekenis van beide getallen |
 
 De bovenzaalvraag (8028/8031) stond nog niet in de vier plekken die als eerste
 waren aangewezen; die is er bij het uitvoeren als vijfde bij gekomen. De
@@ -28,11 +30,10 @@ meer voor in `script.js`, ook niet met een hoofdletter.
 
 **Wat nog openstaat** (wel geïnventariseerd, niet gewijzigd):
 
-- Regel 968 / 972 — "de leerling van wie Jezus hield": "volgens de traditie",
-  zonder naam.
-- Regel 744 — "sommige heel oude handschriften" bij Lucas 10:1, niet
-  gespecificeerd (de vertalingen zelf zijn wél concreet benoemd).
-- Regel 1208 — "geleerden denken" bij het geboortejaar van Jezus, zonder naam.
+- Regel 1178 — "geleerden denken" bij het geboortejaar van Jezus. **Blijft
+  bewust staan**: dat is de correcte weergave van een echte wetenschappelijke
+  onzekerheid, geen vage bronvermelding. (Stond hier eerder als regel 1208; dat
+  nummer was van 16-08-2026 en klopte niet meer.)
 
 ## Wat is doorzocht
 
@@ -71,18 +72,24 @@ De woorden `men neemt aan`, `wordt aangenomen`, `vermoedelijk`, `oude bronnen`,
 - **Signaalwoord:** traditie
 - **Zin:** "Daarom staat het in de ene Bijbel net iets anders dan in de andere: in de Nieuwe Bijbelvertaling en in de katholieke traditie lees je 72, en in de Statenvertaling 70."
 - **Bron genoemd?** Deels — "sommige heel oude handschriften" is niet gespecificeerd, maar de vertalingen (NBV, Statenvertaling) zijn wél concreet benoemd.
+- **Afgehandeld 04-09-2026:** de handschriften staan nu met naam in de uitleg: Codex Vaticanus tegenover Codex Sinaïticus (nu regel 744).
+
 
 ### Regel 998 — veld `vraag`
 - **Vraag:** "Volgens Johannes was er één leerling die 'de leerling van wie Jezus hield' werd genoemd. Wie wordt daarmee bedoeld, volgens de traditie?" (Johannes 13:23, 19:26)
 - **Signaalwoord:** volgens de traditie
 - **Zin:** de vraag zelf, zie hierboven.
 - **Bron genoemd?** Nee.
+- **Afgehandeld 04-09-2026:** de vraag verwijst nu naar de vroege kerk in plaats van naar "de traditie" (nu regel 968).
+
 
 ### Regel 1002 — veld `uitleg` (zelfde vraag als 998)
 - **Onderwerp:** de leerling van wie Jezus hield
 - **Signaalwoord:** volgens de traditie
 - **Zin:** "Volgens de traditie is het Johannes zelf, de schrijver van dit evangelie."
 - **Bron genoemd?** Nee.
+- **Afgehandeld 04-09-2026:** de uitleg noemt nu Irenaeus en Johannes 21:24; de vindplaats staat in het bronveld (nu regel 972).
+
 
 ### Regel 1208 — veld `uitleg`
 - **Vraag:** "Onze jaartelling — zoals het jaar 2026 'na Christus' — telt vanaf de geboorte van wie?" (Matteüs 2:1)
