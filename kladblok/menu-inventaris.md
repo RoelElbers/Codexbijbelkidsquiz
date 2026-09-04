@@ -1,6 +1,14 @@
 # Inventaris naslag-/informatiemenu
 
-Peildatum: 1 september 2026. Alleen vastgesteld, niets gewijzigd.
+Peildatum: 1 september 2026. Bijgewerkt op 4 september 2026 voor de
+kerkenpagina's; zie de gemarkeerde regels hieronder.
+
+De woordtellingen van de bijgewerkte rijen zijn het getal van 1 september plus
+het gemeten verschil ten opzichte van de staat vóór de wijzigingen (commit
+`d3a4701`), met dezelfde teller op beide versies. De telmethode van 1 september
+zelf bleek niet exact te reproduceren — op ongewijzigde pagina's scheelt het
+vijf woorden — dus het verschil is betrouwbaar, de absolute waarde erft de
+onzekerheid van de peildatum.
 
 ## Vooraf: één feit dat de opdracht raakt
 
@@ -25,6 +33,19 @@ Telmethode van de kolommen:
   tellen wél mee.
 
 ## Bovenliggend menu
+
+> **Achterhaald sinds de Ontdekken-hub (vastgesteld 04-09-2026).** Deze paragraaf
+> en heel Tabel 1 beschrijven een structuur die niet meer in de bron staat.
+> `#bijbeltraining-scherm` heeft nu twee knoppen — "Oefenen & nalezen" en
+> "Ontdekken" — en de overlays `#naslag-scherm`, `#woordenboek-scherm`,
+> `#maten-scherm` en `#verborgenschat-naslag-scherm` bestaan niet meer in
+> `index.html`; de enige vindplaats van die namen is een toelichtend commentaar
+> op regel 559. Woordenboek, Maten en de Verborgen Schat-naslag zitten nu in de
+> Ontdekken-hub (`ontdekRubrieken` in `script.js`, inhoud uit
+> `ontdekken-inhoud.js`), en ook de kerken-tak hangt daar als rubriek
+> "De verschillende kerken" met `extern: "kerken.html"` (`script.js`, r. 8856) —
+> niet meer als eigen knop in het Bijbeltraining-menu. `index.html` telt nu 660
+> regels, niet 859. Tabel 2 hieronder is wél nagerekend en actueel.
 
 `#bijbeltraining-scherm` (`index.html`, regel 409–420), titel **Bijbeltraining**,
 vijf ingangen:
@@ -55,10 +76,10 @@ vijf ingangen:
 | De katholieke kerk *(onderwerpenmenu)* | `kerken-katholiek-onderwerpen.html` | 40 | 33 | *(geen h2/h3)* | `kerken-katholiek.html` (knop "Verder →") en alle vier de katholieke onderwerp-pagina's |
 | De zeven sacramenten | `kerken-katholiek-sacramenten.html` | 135 | 831 | h2: Drie sacramenten om erbij te horen; Twee sacramenten om beter te worden; Twee sacramenten om je leven aan iets te geven; Zeven keer God — h3: Het doopsel; De eerste communie; Het vormsel; De biecht; De ziekenzalving; De wijding; Het huwelijk | `kerken-katholiek-onderwerpen.html` (knop "De sacramenten") |
 | Petrus en de paus | `kerken-katholiek-petrus.html` | 118 | 627 | h2: De sleutels; Weid mijn schapen; En daarna?; De paus van nu; Waarom het bijzonder is | `kerken-katholiek-onderwerpen.html` (knop "Petrus en de paus") |
-| Maria | `kerken-katholiek-maria.html` | 155 | 744 | h2: Ja; Haar lied; Op de bruiloft; Onder het kruis; In de bovenzaal; Waarom katholieken tot Maria bidden; De rozenkrans; Zij wijst altijd verder | `kerken-katholiek-onderwerpen.html` (knop "Maria") |
-| De heilige Mis | `kerken-katholiek-mis.html` | 129 | 732 | h2: Het eerste deel: luisteren; Het tweede deel: de eucharistie; De communie; Wat je ziet, ruikt en hoort; Waarom elke zondag; Eén tafel | `kerken-katholiek-onderwerpen.html` (knop "De heilige Mis") |
+| Maria | `kerken-katholiek-maria.html` | 155 | 738 | h2: Ja; Haar lied; Op de bruiloft; Onder het kruis; In de bovenzaal; Waarom katholieken tot Maria bidden; De rozenkrans; Zij wijst altijd verder | `kerken-katholiek-onderwerpen.html` (knop "Maria") |
+| De heilige Mis | `kerken-katholiek-mis.html` | 142 | 856 | h2: Het eerste deel: luisteren; Het tweede deel: de eucharistie; De communie; Wat je ziet, ruikt en hoort; Waarom elke zondag; Wat je daarna doet; Eén tafel | `kerken-katholiek-onderwerpen.html` (knop "De heilige Mis") |
 | De protestantse kerken *(voorportaal)* | `kerken-protestant.html` | 37 | 37 | *(geen h2/h3)* | `kerken.html` (knop "Ik ben protestant"), `kerken-katholiek.html`, `kerken-katholiek-onderwerpen.html`, de vier katholieke onderwerp-pagina's, `kerken-protestant-kerken.html` |
-| Wij zijn samen één lichaam | `kerken-protestant-kerken.html` | 142 | 950 | h2: De gereformeerde en hervormde traditie; De evangelisch-lutherse traditie; De evangelische en pinkstertraditie; De baptisten; Het Leger des Heils; De doopsgezinden; Eén familie | `kerken-protestant.html` (knop "Verder →") |
+| Wij zijn samen één lichaam | `kerken-protestant-kerken.html` | 135 | 1058 | h2: De gereformeerde en hervormde traditie; De evangelisch-lutherse traditie; De evangelische en pinkstertraditie; De baptisten; De doopsgezinden; Eén familie | `kerken-protestant.html` (knop "Verder →") |
 
 Opmerking bij de laatste rij: de `<title>` is "De verschillende protestantse
 kerken", de `<h1>` op de pagina is "Wij zijn samen één lichaam", en de knop
@@ -167,16 +188,21 @@ drie blokken:
 - Twee sacramenten om je leven aan iets te geven: De wijding / Het huwelijk
 - Zeven keer God *(afsluiting)*
 
-**`kerken-protestant-kerken.html`** — zes verschillende kerkstromingen op één
+**`kerken-protestant-kerken.html`** — vijf verschillende kerkstromingen op één
 pagina:
 
 - De gereformeerde en hervormde traditie
 - De evangelisch-lutherse traditie
 - De evangelische en pinkstertraditie
 - De baptisten
-- Het Leger des Heils
 - De doopsgezinden
 - Eén familie *(afsluiting)*
+
+De sectie **Het Leger des Heils** is op 04-09-2026 van deze pagina verwijderd.
+De **Vrije Evangelische Gemeenten** werden tot diezelfde datum in de
+pinkstersectie opgesomd; zij staan nu als eigen alinea in "Eén familie", bij de
+kerken die zich niet in één stroming laten indelen. Beide staan niet als eigen
+`h2` in de bron — dit is de enige plek in deze inventaris waar ze voorkomen.
 
 **`kerken-katholiek-maria.html`** — acht kopjes die twee soorten inhoud
 mengen: vijf Bijbelscènes en drie stukken over katholieke praktijk:
