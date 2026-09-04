@@ -1906,7 +1906,7 @@ vragenData["Romeinen"] = {
 };
 
 // =====================================================================
-// Handelingen — vragenpool (78 vragen: beginner 14, advanced 26, expert 38)
+// Handelingen — vragenpool (79 vragen: beginner 14, advanced 27, expert 38)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
 // =====================================================================
@@ -2124,6 +2124,12 @@ vragenData["Handelingen"] = {
             antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Verbied hun voorgoed om ooit nog ergens over Jezus te spreken", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
             correct: "Laat hen met rust; als het van God komt, houd je het toch niet tegen",
             bijbelplaats: "Handelingen 5:34-39"
+        },
+        {
+            vraag: "Paulus werkte zelf hard, zodat hij niemand tot last zou zijn. Wat was zijn beroep?",
+            antwoorden: ["Tentenmaker", "Visser", "Timmerman", "Herder"],
+            correct: "Tentenmaker",
+            bijbelplaats: "Handelingen 18:3"
         }
     ],
     expert: [
@@ -3348,8 +3354,8 @@ vragenData["Filippenzen"] = {
 };
 
 // =========================================================================
-// 1 & 2 Tessalonicenzen — vragenpool (45 vragen: beginner 12, advanced 17,
-// expert 16). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
+// 1 & 2 Tessalonicenzen — vragenpool (46 vragen: beginner 15, advanced 16,
+// expert 15). Gebundeld boek: één quiz, één trofee (trofee_tessalonicenzen).
 // vragenData["1 & 2 Tessalonicenzen"] met drie niveaus (beginner/advanced/
 // expert). Per vraag: vraag, antwoorden[], correct (exact gelijk aan één
 // antwoord), bijbelplaats. Niveau-indeling zoals goedgekeurd door Roel.
@@ -3382,9 +3388,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 1:1"
         },
         {
-            vraag: "Paulus zegt: wees altijd…",
-            antwoorden: ["…blij", "…stil", "…bang", "…streng"],
-            correct: "…blij",
+            vraag: "Paulus geeft in één kort zinnetje aan hoe de gelovigen mogen zijn. Wat schrijft hij?",
+            antwoorden: ["Wees altijd blij", "Wees altijd stil", "Wees altijd voorzichtig", "Wees altijd streng"],
+            correct: "Wees altijd blij",
             bijbelplaats: "1 Tessalonicenzen 5:16"
         },
         {
@@ -3419,7 +3425,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus zegt dat de gelovigen bij het licht horen, niet bij de nacht. Hoe moeten ze daarom zijn?",
-            antwoorden: ["Wakker en helder van geest", "Lui en de hele dag door aan het slapen", "Bang", "Stil"],
+            antwoorden: ["Wakker en helder van geest", "Lekker lui zijn en veel slapen", "Bang voor alles wat er nog komen gaat", "Zo stil mogelijk, zodat niemand hen opmerkt"],
             correct: "Wakker en helder van geest",
             bijbelplaats: "1 Tessalonicenzen 5:6"
         },
@@ -3428,6 +3434,24 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Ze zullen weer opstaan en leven", "Ze blijven voor altijd slapen", "Ze worden sterren aan de hemel", "Er gebeurt verder niets"],
             correct: "Ze zullen weer opstaan en leven",
             bijbelplaats: "1 Tessalonicenzen 4:14"
+        },
+        {
+            vraag: "Hoe noemt Paulus de gelovigen, omdat ze niet bij het donker maar bij het licht horen?",
+            antwoorden: ["Kinderen van het licht", "Kinderen van de nacht", "Kinderen van de tempel", "Kinderen van de keizer"],
+            correct: "Kinderen van het licht",
+            bijbelplaats: "1 Tessalonicenzen 5:5"
+        },
+        {
+            vraag: "Aan het eind van zijn tweede brief wenst Paulus de gelovigen rust toe. Hoe noemt hij God daarbij?",
+            antwoorden: ["De Heer van de vrede", "De Heer van de legers", "De Heer van de tempel", "De Heer van de oogst"],
+            correct: "De Heer van de vrede",
+            bijbelplaats: "2 Tessalonicenzen 3:16"
+        },
+        {
+            vraag: "Paulus vraagt de gelovigen ergens goed aan vast te houden. Waaraan?",
+            antwoorden: ["Aan alles wat ze van hem geleerd hebben", "Aan hun bezittingen", "Aan hun oude gewoontes", "Aan hun plek in de stad"],
+            correct: "Aan alles wat ze van hem geleerd hebben",
+            bijbelplaats: "2 Tessalonicenzen 2:15"
         }
     ],
     advanced: [
@@ -3468,12 +3492,6 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 2:2"
         },
         {
-            vraag: "Paulus werkte zelf hard, zodat hij niemand tot last zou zijn. Wat was zijn beroep?",
-            antwoorden: ["Tentenmaker", "Visser", "Timmerman", "Herder"],
-            correct: "Tentenmaker",
-            bijbelplaats: "Handelingen 18:3"
-        },
-        {
             vraag: "Paulus zegt: vergeld kwaad niet met kwaad, maar…",
             antwoorden: ["…doe altijd goed, voor elkaar en voor iedereen", "…zorg dat je het hem later dubbel en dwars terugbetaalt", "…vergeet het snel", "…blijf op je hoede"],
             correct: "…doe altijd goed, voor elkaar en voor iedereen",
@@ -3487,7 +3505,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus wil niet dat de gelovigen verdrietig zijn over gestorvenen zoals mensen \"zonder hoop\". Wat hebben de gelovigen wél?",
-            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "De troost dat de doden ergens verder leven als geesten", "Alleen herinneringen", "Verdriet voor altijd"],
+            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "Het vertrouwen dat de tijd alle wonden heelt", "Alleen de herinneringen aan wie ze gekend hebben", "De troost dat ze het verdriet samen kunnen dragen"],
             correct: "Hoop: bij de komst van Jezus zien ze elkaar weer",
             bijbelplaats: "1 Tessalonicenzen 4:13"
         },
@@ -3534,12 +3552,6 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Met een moeder die haar kinderen koestert", "Met een herder bij zijn schapen", "Met een tuinman bij zijn planten", "Met een leraar bij zijn leerlingen"],
             correct: "Met een moeder die haar kinderen koestert",
             bijbelplaats: "1 Tessalonicenzen 2:7"
-        },
-        {
-            vraag: "Hoe noemt Paulus de gelovigen, omdat ze niet bij het donker maar bij het licht horen?",
-            antwoorden: ["Kinderen van het licht", "Kinderen van de nacht", "Kinderen van de tempel", "Kinderen van de keizer"],
-            correct: "Kinderen van het licht",
-            bijbelplaats: "1 Tessalonicenzen 5:5"
         },
         {
             vraag: "Paulus zegt dat de dag van de Heer komt als iets onverwachts. Waarmee vergelijkt hij dat?",
