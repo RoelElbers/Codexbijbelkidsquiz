@@ -1,7 +1,9 @@
 # Inventaris naslag-/informatiemenu
 
-Peildatum: 1 september 2026. Bijgewerkt op 4 september 2026 voor de
-kerkenpagina's; zie de gemarkeerde regels hieronder.
+Peildatum: 1 september 2026. Op 4 september 2026 zijn de kerkenpagina's
+nagerekend en zijn het bovenliggende menu en Tabel 1 opnieuw opgebouwd, omdat
+die een structuur beschreven die niet meer bestond. Tabel 2 en de delen 1 tot en
+met 3 dateren nog van de peildatum, met de bijgewerkte regels erin verwerkt.
 
 De woordtellingen van de bijgewerkte rijen zijn het getal van 1 september plus
 het gemeten verschil ten opzichte van de staat vóór de wijzigingen (commit
@@ -12,16 +14,21 @@ onzekerheid van de peildatum.
 
 ## Vooraf: één feit dat de opdracht raakt
 
-Het menu waaronder **"Maten, geld & tijd"** valt, heet **Naslag & uitleg**
-(`index.html`, regel 528–543). Dat menu bestaat **niet uit losse pagina's**.
-Alle drie de items zijn overlay-blokken *binnen* `index.html`; er is geen enkel
-eigen `.html`-bestand voor. De kolom "Bestandsnaam" staat daarom voor alle
-items op `index.html`, met het `id` van het overlay-blok erbij.
+Het naslagmateriaal bestaat **niet uit losse pagina's**. Woordenboek, Maten,
+geld & tijd en de Verborgen Schat-naslag zijn geen `.html`-bestanden maar
+rubrieken in de Ontdekken-hub: drie overlay-schermen in `index.html`, gevuld
+vanuit `ontdekRubrieken` (`script.js`) met inhoud uit `ontdekken-inhoud.js`.
+Tabel 1 wijst daarom niet naar bestandsnamen maar naar die drie vindplaatsen.
+
+*Tot 1 september stonden deze onderwerpen als losse overlays in `index.html`
+(`#naslag-scherm`, `#woordenboek-scherm`, `#maten-scherm`,
+`#verborgenschat-naslag-scherm`), bereikbaar via een menu "Naslag & uitleg".
+Die overlays en dat menu bestaan niet meer; zie punt 4 en 5 onder "Wat opvalt".*
 
 Het enige informatiemenu in de repo dat wél uit losse pagina's bestaat, is de
-**kerken-tak** (`kerken.html` en verder). Die is bereikbaar uit hetzelfde
-bovenliggende menu (Bijbeltraining) en is hieronder als tweede tabel apart
-geïnventariseerd.
+**kerken-tak** (`kerken.html` en verder). Die is bereikbaar als rubriek in de
+Ontdekken-hub — niet meer als eigen knop in het Bijbeltraining-menu — en is
+hieronder als tweede tabel apart geïnventariseerd.
 
 Telmethode van de kolommen:
 
@@ -34,38 +41,117 @@ Telmethode van de kolommen:
 
 ## Bovenliggend menu
 
-> **Achterhaald sinds de Ontdekken-hub (vastgesteld 04-09-2026).** Deze paragraaf
-> en heel Tabel 1 beschrijven een structuur die niet meer in de bron staat.
-> `#bijbeltraining-scherm` heeft nu twee knoppen — "Oefenen & nalezen" en
-> "Ontdekken" — en de overlays `#naslag-scherm`, `#woordenboek-scherm`,
-> `#maten-scherm` en `#verborgenschat-naslag-scherm` bestaan niet meer in
-> `index.html`; de enige vindplaats van die namen is een toelichtend commentaar
-> op regel 559. Woordenboek, Maten en de Verborgen Schat-naslag zitten nu in de
-> Ontdekken-hub (`ontdekRubrieken` in `script.js`, inhoud uit
-> `ontdekken-inhoud.js`), en ook de kerken-tak hangt daar als rubriek
-> "De verschillende kerken" met `extern: "kerken.html"` (`script.js`, r. 8856) —
-> niet meer als eigen knop in het Bijbeltraining-menu. `index.html` telt nu 660
-> regels, niet 859. Tabel 2 hieronder is wél nagerekend en actueel.
+Herzien op 4 september 2026, rechtstreeks uit de bron.
 
-`#bijbeltraining-scherm` (`index.html`, regel 409–420), titel **Bijbeltraining**,
-vijf ingangen:
+`#bijbeltraining-scherm` (`index.html`, r. 409–417), titel **Bijbeltraining**,
+**twee** ingangen plus een Terug-knop:
 
-| Knoptekst | Gaat naar |
-|---|---|
-| Oefenen | overlay in `index.html` |
-| Naslag & uitleg | `#naslag-scherm` — het menu hieronder |
-| Vragen & uitleg | overlay in `index.html` |
-| Catechese | overlay in `index.html` |
-| De verschillende kerken | `kerken.html` — losse pagina's, tweede tabel |
+| Knoptekst | Gaat naar | Vindplaats van de functie |
+|---|---|---|
+| Oefenen & nalezen | boekkeuze → niveau → `#modus-scherm` | `openOefenenNalezen()`, `script.js` r. 8745 |
+| Ontdekken | `#ontdek-scherm` — de hub hieronder | `openOntdekken()`, `script.js` r. 8874 |
 
-## Tabel 1 — Menu "Naslag & uitleg"
+De vijf ingangen die hier tot 1 september stonden (Oefenen, Naslag & uitleg,
+Vragen & uitleg, Catechese, De verschillende kerken) bestaan niet meer als
+losse knoppen in dit menu.
 
-| Titel zoals getoond | Bestandsnaam | Regels HTML | Woorden lopende tekst | Kopjes (h2/h3) | Gelinkt vanaf |
+## Tabel 1 — De Ontdekken-hub
+
+Drie overlays in `index.html` dragen de hub:
+
+| Scherm | `index.html` | Gevuld door |
+|---|---|---|
+| `#ontdek-scherm` — de rubriekknoppen | r. 500–511 | `bouwOntdekRubrieken()`, `script.js` r. 8882 |
+| `#ontdek-lijst-scherm` — onderwerpen binnen één rubriek | r. 513–523 | `bouwOntdekLijst()`, `script.js` r. 8932 |
+| `#ontdek-detail-scherm` — één lexicon of artikel | r. 525–535 | `openOntdekOnderwerp()`, `script.js` r. 8979 |
+
+De rubrieken zelf staan in `const ontdekRubrieken` (`script.js` r. 8836–8863).
+De inhoud staat niet in `index.html` maar in `ontdekken-inhoud.js`, dat vóór
+`script.js` wordt ingeladen.
+
+| Rubriek (knoptekst) | `id` | Onderwerpen | Inhoud uit | Vindplaats inhoud | Bijzonderheden |
 |---|---|---|---|---|---|
-| Naslag & uitleg *(het menu zelf)* | `index.html` → `#naslag-scherm` (r. 528–543) | 16 | 13 | h2: Naslag & uitleg | `#bijbeltraining-scherm`, knop "Naslag & uitleg" (`openNaslag()`) |
-| Woordenboek | `index.html` → `#woordenboek-scherm` (r. 548–600) | 53 | 2112 | h2: Woordenboek *(geen h3; 45 termen als `.naslag-term`)* | `#naslag-scherm`, knop "Woordenboek" (`openWoordenboek()`) |
-| Maten, geld & tijd | `index.html` → `#maten-scherm` (r. 654–734) | 81 | 1010 | h2: Maten, geld & tijd — h3: Geld in de Bijbel; Lengte; Inhoud; Tijd | `#naslag-scherm`, knop "Maten, geld & tijd" (`openMaten()`) |
-| Verborgen Schat | `index.html` → `#verborgenschat-naslag-scherm` (r. 607–650) | 44 | 1068 | h2: Verborgen Schat — h3 (12): Van wie was het huis met de bovenzaal van het Laatste Avondmaal?; Wat betekent "apocalyps" eigenlijk?; Waarom noemt Jezus zichzelf "de Alfa en de Omega"?; Wie wordt in Openbaring "het Lam" genoemd, en waarom juist een lam?; Waar staat het getal zeven symbolisch voor?; Hoe eindigt de Bijbel in Openbaring?; Wat betekent "een tijd, tijden en een halve tijd"?; Waar komen de vier levende wezens vandaan?; De boom des levens — begin en einde; De zeven gemeenten; Het nieuwe Jeruzalem; De sandwich-techniek van Marcus | `#naslag-scherm`, knop "Verborgen Schat" (`openVerborgenSchatNaslag()`) — standaard vergrendeld, ontgrendelt bij de vlag `verborgenschat_voltooid` |
+| Woordenboek | `woorden` | 1 onderwerp, 44 termen | `ONTDEK_WOORDENBOEK` | `ontdekken-inhoud.js` r. 26 | type `lexicon`; één onderwerp, dus `kiesOntdekRubriek()` (r. 8910) slaat het lijstscherm over |
+| Wie is wie | `wie` | 0 | — | *(geen)* | knop staat er wel; `onderwerpen: []` op r. 8842 |
+| Waar gebeurde het | `waar` | 0 | — | *(geen)* | knop staat er wel; `onderwerpen: []` op r. 8843 |
+| Hoe leefden ze toen | `hoe` | 3 — Geld, Maten, Tijd | `ONTDEK_GELD`, `ONTDEK_MATEN`, `ONTDEK_TIJD` | `ontdekken-inhoud.js` r. 78, 98, 112 | heeft als enige een `inleiding`: `ONTDEK_HOE_INLEIDING` (r. 76, 47 woorden) |
+| Verborgen patronen | `patronen` | 3 | `ONTDEK_PATRONEN` | `ontdekken-inhoud.js` r. 135 | de canonieke artikelen; doelwit van de `verwijstNaar`-verwijzingen uit Verborgen Schat |
+| De verschillende kerken | `kerken` | *(n.v.t.)* | externe pagina | `script.js` r. 8855–8856 | `extern: "kerken.html"`; `kiesOntdekRubriek()` doet `window.location.href` en verlaat het spel |
+| Verborgen Schat | `schat` | 16 | `ONTDEK_SCHAT` | `ontdekken-inhoud.js` r. 185 | op slot tot `isVerborgenSchatOntgrendeld()` (r. 9034); 3 onderwerpen zijn `verwijstNaar`-verwijzingen, 2 zijn plaatshouders |
+
+Verantwoording bij de omvang: hieronder staat mijn eigen meting van 4 september
+2026, niet de telling van 1 september. Die telmethode is niet exact te
+reproduceren (op ongewijzigde pagina's scheelt het vijf woorden), dus deze
+getallen zijn **niet** vergelijkbaar met de kolom "Woorden lopende tekst" in
+Tabel 2. Geteld zijn de tekstvelden (`term`, `item`, `kop`, `titel`, `naam`,
+`uitleg`, `tekst`) binnen elke constante, met HTML-tags eruit.
+
+| Constante | Woorden (eigen meting 04-09-2026) |
+|---|---|
+| `ONTDEK_WOORDENBOEK` | 2113 |
+| `ONTDEK_GELD` | 550 |
+| `ONTDEK_MATEN` | 201 |
+| `ONTDEK_TIJD` | 339 |
+| `ONTDEK_PATRONEN` | 1089 |
+| `ONTDEK_SCHAT` | 930 |
+| **Totaal** | **5222** |
+
+Ter vergelijking, met dezelfde onzekerheid: het Woordenboek stond op 1 september
+op 2112 woorden en meet nu 2113 — die inhoud is dus vrijwel ongewijzigd
+meeverhuisd. Maten, geld & tijd stond op 1010 en de drie artikelen samen meten
+nu 1090; de Verborgen Schat-naslag stond op 1068 en `ONTDEK_SCHAT` meet 930,
+wat past bij de drie verwijzingen en twee plaatshouders.
+
+## Wat opvalt
+
+Losse waarnemingen bij het narekenen op 4 september 2026. Alleen vastgesteld —
+in de code is niets gewijzigd.
+
+1. **Twee lege rubrieken.** "Wie is wie" en "Waar gebeurde het" hebben
+   `onderwerpen: []` (`script.js` r. 8842–8843). De knoppen staan gewoon in het
+   rubriekscherm en zijn niet vergrendeld; wie erop klikt komt in een leeg
+   lijstscherm. `bouwOntdekLijst()` vangt dat op — het commentaar zegt "een lege
+   rubriek zegt dat eerlijk" — dus het lijkt bewust, maar het is wel de enige
+   plek waar een knop tot niets leidt.
+
+2. **Twee plaatshouder-artikelen.** `het-oor-van-malchus` en
+   `de-brief-aan-de-hebreeen` (`ontdekken-inhoud.js` r. 203–207) bevatten
+   alleen "Deze uitleg wordt nog geschreven."
+
+3. **De Verborgen Schat loopt uit de pas met de vragenpool.** `ONTDEK_SCHAT`
+   heeft 16 onderwerpen; `verborgenSchatVragen` heeft er sinds 4 september 17.
+   De commentaarregels in `ONTDEK_SCHAT` verwijzen naar vraagnummers ("Vragen 13
+   en 14", "Vragen 15 en 16"), wat op een één-op-één-koppeling wijst. De nieuwe
+   vraag over het oog van de naald heeft dus nog geen onderwerp in de hub.
+
+4. **Een verwijzing in commentaar die nergens meer heen gaat.** `index.html`
+   r. 559 zegt over het steunscherm: "Zelfde opzet als #maten-scherm /
+   #woordenboek-scherm". Die twee overlays bestaan niet meer; dit is de enige
+   plek in de hele repo waar die namen nog voorkomen.
+
+5. **Verder geen resten van de oude overlay-structuur.** Gezocht in
+   `index.html`, `script.js`, `style.css` en `lang/nl.js` naar `#naslag-scherm`,
+   `#woordenboek-scherm`, `#maten-scherm`, `#verborgenschat-naslag-scherm` en de
+   functies `openNaslag()`, `openWoordenboek()`, `openMaten()` en
+   `openVerborgenSchatNaslag()`: op het commentaar van punt 4 na komt geen van
+   die namen nog voor. De CSS-klassen `naslag-term`, `naslag-kop`,
+   `naslag-item`, `naslag-diamant` en `catechese-knop` zijn géén resten — die
+   worden door `ontdekken-inhoud.js` en `script.js` nog volop gebruikt.
+
+6. **De kerken-rubriek verlaat de app.** `kiesOntdekRubriek()` doet bij een
+   rubriek met `extern` een `window.location.href` (`script.js` r. 8914–8916).
+   Terugkomen kan alleen via "Terug naar de quiz" in de voettekst van de
+   kerkenpagina's, en dat start het spel opnieuw op. Het is de enige rubriek die
+   het spel uit stuurt.
+
+7. **Alle interne verwijzingen kloppen.** De drie `verwijstNaar`-doelen
+   (`verborgen-patronen-sandwich`, `verborgen-getallen-153`,
+   `verborgen-patronen-paulus-brieven`) bestaan alle drie, en elke `ONTDEK_`-
+   constante wordt precies één keer vanuit `script.js` gebruikt. Geen dode
+   inhoud, geen dubbele definities.
+
+8. **Het woordenboek telt nu 44 termen**, waar de inventaris van 1 september er
+   45 noemde. Niet nagetrokken waar dat verschil vandaan komt.
 
 ## Tabel 2 — Menu "De verschillende kerken" (losse pagina's)
 
@@ -155,7 +241,10 @@ Binnen `index.html` verwijzen twee woordenboek-lemma's expliciet naar elkaar:
 
 ## 3. Pagina's met meer dan één duidelijk onderwerp
 
-**`index.html` → `#maten-scherm`** — vier onderwerpen onder één titel:
+**Maten, geld & tijd** — vier onderwerpen onder één titel. Stond tot 1
+september als `#maten-scherm` in `index.html`; nu de rubriek "Hoe leefden ze
+toen" (`ONTDEK_GELD`, `ONTDEK_MATEN`, `ONTDEK_TIJD` in `ontdekken-inhoud.js`
+r. 78, 98 en 112). Geld staat er als eigen onderwerp naast Maten:
 
 - Geld in de Bijbel
 - Lengte
@@ -163,9 +252,12 @@ Binnen `index.html` verwijzen twee woordenboek-lemma's expliciet naar elkaar:
 - Tijd *(bevat zelf ook nog drie tabellen: Bijbelse uren, zonsopgang per
   seizoen, en de nachtwaken)*
 
-**`index.html` → `#verborgenschat-naslag-scherm`** — twaalf losse onderwerpen,
-elk met een eigen h3; ze horen inhoudelijk bij drie verschillende dingen: het
-Laatste Avondmaal, het boek Openbaring en de verteltechniek van Marcus:
+**Verborgen Schat-naslag** — twaalf losse onderwerpen; ze horen inhoudelijk bij
+drie verschillende dingen: het Laatste Avondmaal, het boek Openbaring en de
+verteltechniek van Marcus. Stond tot 1 september als
+`#verborgenschat-naslag-scherm` in `index.html`; nu de rubriek "Verborgen Schat"
+(`ONTDEK_SCHAT`, `ontdekken-inhoud.js` r. 185), inmiddels met zestien
+onderwerpen — de vier erbij staan in "Wat opvalt", punt 3:
 
 - Van wie was het huis met de bovenzaal van het Laatste Avondmaal?
 - Wat betekent "apocalyps" eigenlijk?
@@ -228,6 +320,12 @@ mengen: vijf Bijbelscènes en drie stukken over katholieke praktijk:
   Het contactformulier / Voor ouders en begeleiders / Doneren / Uw rechten /
   Wijzigingen
 
-**`index.html` als geheel** — 859 regels, ± 4281 woorden zichtbare tekst en 25
-overlay-schermen in één bestand, waaronder het volledige woordenboek (2112
-woorden), Maten, geld & tijd (1010) en de Verborgen Schat-naslag (1068).
+**`index.html` als geheel** — op 1 september 859 regels, ± 4281 woorden
+zichtbare tekst en 25 overlay-schermen in één bestand, waaronder het volledige
+woordenboek (2112 woorden), Maten, geld & tijd (1010) en de Verborgen
+Schat-naslag (1068).
+
+*Nagerekend op 4 september: `index.html` telt nu **660 regels** en **21**
+overlay-schermen. De drie genoemde naslagblokken zitten er niet meer in; hun
+tekst staat in `ontdekken-inhoud.js` (zie Tabel 1). Het woordgetal ± 4281 is
+niet opnieuw vastgesteld — dat is met de telmethode van de peildatum gemeten.*
