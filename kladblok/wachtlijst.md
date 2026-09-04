@@ -17,8 +17,12 @@ elk antwoord herhaald hoeft te worden.*
   dat bestand. Anders van aard dan de andere gevallen — hier gaat het om de
   Joodse tempeltheologie; Exodus 25:22 en Leviticus 16 zijn de aanwijsbare
   plaatsen.
-- **De erfzonde op de sacramentenpagina.** `kerken-katholiek-sacramenten.html`,
-  de sectie "Het doopsel" (r. 31). Het woord komt er op dit moment niet in voor.
+- **"Erfzonde" als woordenboekterm overwegen.** Toe te voegen aan
+  `ONTDEK_WOORDENBOEK` in `ontdekken-inhoud.js`; dat is de plek waar begrippen
+  kort worden uitgelegd, naast termen als *Genade*, *Verbond*, *Vergeving* en
+  *Zonde*. Verder alleen behandelen waar het bij een concrete vraag hoort. Niet
+  op de kerkpagina's: die laten zien wat een traditie meebrengt en leggen geen
+  leer uit.
 
 ## Bouw en gedrag van het spel
 
