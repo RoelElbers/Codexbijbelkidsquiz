@@ -30,6 +30,15 @@ meer voor in `script.js`, ook niet met een hoofdletter.
 
 **Wat nog openstaat** (wel geïnventariseerd, niet gewijzigd):
 
+- `verborgen-schat-vragen-bijbelkidsquiz.md` en
+  `verborgen-schat-naslag-bijbelkidsquiz.md` — beide stonden in de doorzochte
+  lijst van 16-08, maar zijn **niet opgeschoond**. Ze zijn op 04-09-2026 wel
+  van een waarschuwing bovenaan voorzien: wie er tekst uit overneemt, moet
+  eerst de bron opzoeken. Resterende signaalwoorden: **zes** zinnen met
+  "overlevering" in het vragenbestand (waarvan twee ook "geloofde men" of
+  "dacht men" bevatten — dezelfde zinnen, niet extra), en **vier** treffers in
+  het naslagbestand, waarvan er drie echt zijn; de vierde is de bekende
+  woordgrens-treffer "zo te noe**men zegt** Jezus".
 - Regel 1178 — "geleerden denken" bij het geboortejaar van Jezus. **Blijft
   bewust staan**: dat is de correcte weergave van een echte wetenschappelijke
   onzekerheid, geen vage bronvermelding. (Stond hier eerder als regel 1208; dat

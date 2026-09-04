@@ -1,5 +1,13 @@
 # Verborgen Schat — naslag (Bijbeltraining)
 
+**Bij overname in de quiz: elke claim heeft een naam of een vindplaats nodig.**
+
+*Dit bestand bevat nog formuleringen als "volgens de overlevering" en "men zegt", zonder dat erbij staat wie dat schrijft en waar. Zulke teksten mogen niet ongewijzigd in `script.js` of `ontdekken-inhoud.js` terechtkomen. Zoek eerst de bron op en noem die in het `bijbelplaats`- of `uitleg`-veld — bijvoorbeeld "Hiëronymus, commentaar op Ezechiël" of "inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem". Is er geen bron te vinden, dan gaat de claim er niet in.*
+
+*Blijft een claim onzeker terwijl de bronnen wél vaststaan, dan is dat geen probleem: "geleerden denken" of "waarschijnlijk" is een eerlijke weergave en mag blijven staan. Het verschil is vage herkomst tegenover eerlijke twijfel.*
+
+*Zie `kladblok/bronnen-audit.md` (04-09-2026).*
+
 *De volledige uitleg bij alle Verborgen Schat-vragen. Staat in de Bijbeltraining en wordt pas zichtbaar nadat de speler de Verborgen Schat heeft vrijgespeeld.*
 
 *Dit is een bronbestand voor je eigen administratie. Het spel zelf gebruikt alleen index.html, script.js en style.css — dit document draait niet mee.*

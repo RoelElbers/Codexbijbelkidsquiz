@@ -1,5 +1,13 @@
 # Verborgen Schat — vragen uit het hele Nieuwe Testament
 
+**Bij overname in de quiz: elke claim heeft een naam of een vindplaats nodig.**
+
+*Dit bestand bevat nog formuleringen als "volgens de overlevering" en "men zegt", zonder dat erbij staat wie dat schrijft en waar. Zulke teksten mogen niet ongewijzigd in `script.js` of `ontdekken-inhoud.js` terechtkomen. Zoek eerst de bron op en noem die in het `bijbelplaats`- of `uitleg`-veld — bijvoorbeeld "Hiëronymus, commentaar op Ezechiël" of "inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem". Is er geen bron te vinden, dan gaat de claim er niet in.*
+
+*Blijft een claim onzeker terwijl de bronnen wél vaststaan, dan is dat geen probleem: "geleerden denken" of "waarschijnlijk" is een eerlijke weergave en mag blijven staan. Het verschil is vage herkomst tegenover eerlijke twijfel.*
+
+*Zie `kladblok/bronnen-audit.md` (04-09-2026).*
+
 *Stand per 11 augustus 2026. Bronbestand voor administratie; de actuele pool staat in script.js — dat bestand is altijd leidend.*
 
 *Volledige lijst van alle Verborgen Schat-vragen. Dit is de pool waaruit per ronde willekeurig 10 vragen worden getrokken; je moet ze alle 10 goed hebben om de kist te winnen.*
