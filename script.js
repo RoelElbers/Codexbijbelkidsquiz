@@ -1257,16 +1257,12 @@ vragenData["Marcus"].expert.push(
         antwoorden: [
             "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
             "Dat een rijke nooit gered kan worden",
-            "Dat je eerst je bagage moet afleggen bij een klein stadspoortje",
+            "Dat rijke mensen het moeilijker vinden om te delen",
             "Dat alleen arme mensen in de hemel komen"
         ],
         correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
         bijbelplaats: "Marcus 10:25-27",
-        uitleg: `Veel mensen hebben geleerd dat het "oog van de naald" een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als hij eerst alle bagage aflegde. Het klinkt mooi en praktisch, en het wordt al tientallen jaren zo verteld. Maar als we eerlijk zijn, klopt deze uitleg historisch waarschijnlijk niet.
-
-Er is namelijk geen enkel bewijs voor zo'n poort. Archeologen hebben nooit een poort gevonden die "Oog van de Naald" heette, en de oudste christelijke uitleggers — zoals Origenes, Chrysostomus en Augustinus — bespreken deze tekst uitgebreid, maar géén van hen noemt een poortje. De uitleg duikt pas veel later op; het lijkt dus eerder iets dat later in preken is verteld dan een echte herinnering uit Jezus' tijd.
-
-Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+        uitleg: `Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
 
 En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
     }
@@ -6145,7 +6141,7 @@ vragenData["Marcus"].advanced.push(
     },
     {
         vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
-        antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "In de stadsmuur zat een lage poort die \"het naaldoog\" heette"],
+        antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
         correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
         bijbelplaats: "Marcus 10:25"
     }
@@ -8143,6 +8139,13 @@ const verborgenSchatVragen = [
         correct: "Hebreeën",
         bijbelplaats: "naam van het boek",
         reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen."
+    },
+    {
+        vraag: "Veel mensen hebben gehoord dat \"het oog van de naald\" een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als hij eerst zijn bagage aflegde. Wat blijkt er als je de oudste christelijke uitleggers erop naslaat?",
+        antwoorden: ["Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort", "Zij beschrijven precies waar de poort in de stadsmuur stond", "Zij schrijven dat de poort in hun eigen tijd al was afgebroken", "Zij vertellen dat Jezus zelf die poort vaak gebruikte"],
+        correct: "Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort",
+        bijbelplaats: "Marcus 10:25-27 · Origenes, Chrysostomus en Augustinus over deze tekst",
+        reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op — in preken, niet in de oudste bronnen. Wat Jezus waarschijnlijk juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
     }
 ];
 
