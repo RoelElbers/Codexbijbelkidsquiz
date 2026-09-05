@@ -4162,7 +4162,7 @@ vragenData["Kolossenzen & Filemon"] = {
     ]
 };
 
-// Hebreeën — vragenpool (56 vragen: beginner 16, advanced 22, expert 18)
+// Hebreeën — vragenpool (56 vragen: beginner 18, advanced 20, expert 18)
 // Eerste boek van de Algemene brieven. Formaat gelijk aan de andere boeken:
 // vragenData["Hebreeën"] met drie niveaus (beginner/advanced/expert).
 vragenData["Hebreeën"] = {
@@ -4192,15 +4192,15 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:4"
         },
         {
-            vraag: "Hebreeën noemt Jezus, die door God uit de dood is teruggebracht, de grote … van de schapen.",
-            antwoorden: ["herder", "koning", "vader", "vriend"],
-            correct: "herder",
+            vraag: "Hoe noemt Hebreeën aan het slot van de brief Jezus, die door God uit de dood is teruggebracht?",
+            antwoorden: ["De grote herder van de schapen", "De grote koning van de engelen", "De grote leraar van het volk", "De grote helper van de armen"],
+            correct: "De grote herder van de schapen",
             bijbelplaats: "Hebreeën 13:20"
         },
         {
-            vraag: "Wat zijn de engelen volgens het begin van Hebreeën? Het zijn dienaren die God stuurt om…",
-            antwoorden: ["de gelovigen te helpen", "de sterren te besturen", "over de mensen te heersen", "zelf aanbeden te worden"],
-            correct: "de gelovigen te helpen",
+            vraag: "Waarvoor stuurt God de engelen volgens het begin van Hebreeën eropuit?",
+            antwoorden: ["Om de gelovigen te helpen", "Om over de mensen te heersen", "Om de sterren en de planeten te besturen", "Om zelf aanbeden te worden"],
+            correct: "Om de gelovigen te helpen",
             bijbelplaats: "Hebreeën 1:14"
         },
         {
@@ -4210,9 +4210,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:32"
         },
         {
-            vraag: "Hebreeën begint zo: vroeger sprak God door de profeten, maar nu heeft Hij tot ons gesproken door zijn…",
-            antwoorden: ["Zoon", "engelen", "koningen", "boeken"],
-            correct: "Zoon",
+            vraag: "Hebreeën begint met een beroemde zin: vroeger sprak God vele malen en op allerlei manieren tot de mensen door de profeten. Door wie spreekt Hij nu tot ons?",
+            antwoorden: ["Door zijn Zoon", "Door zijn engelen", "Door de koningen van Israël", "Door de boeken van de wet"],
+            correct: "Door zijn Zoon",
             bijbelplaats: "Hebreeën 1:1-2"
         },
         {
@@ -4262,6 +4262,18 @@ vragenData["Hebreeën"] = {
             antwoorden: ["Blijven volhouden", "Nooit meer een fout maken", "Precies alle regels kennen", "Zelf sterk genoeg zijn"],
             correct: "Blijven volhouden",
             bijbelplaats: "Hebreeën 10:36"
+        },
+        {
+            vraag: "Hebreeën zegt dat er één ding nodig is om God te kunnen behagen, en dat het zonder dat niemand lukt. Wat is dat?",
+            antwoorden: ["Geloof", "Geld", "Kracht", "Wijsheid"],
+            correct: "Geloof",
+            bijbelplaats: "Hebreeën 11:6"
+        },
+        {
+            vraag: "Welke sterke man, die zijn kracht van God kreeg, wordt in Hebreeën 11 genoemd als voorbeeld van geloof?",
+            antwoorden: ["Simson", "Goliat", "Absalom", "Esau"],
+            correct: "Simson",
+            bijbelplaats: "Hebreeën 11:32"
         }
     ],
     advanced: [
@@ -4290,34 +4302,22 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 12:1-2"
         },
         {
-            vraag: "Wees gastvrij voor vreemdelingen, zegt Hebreeën, want sommige mensen hebben zonder het te weten … ontvangen.",
-            antwoorden: ["engelen", "koningen", "soldaten", "vijanden"],
-            correct: "engelen",
+            vraag: "Hebreeën roept op om gastvrij te zijn voor vreemdelingen, en geeft daar een bijzondere reden bij. Welke reden noemt de brief?",
+            antwoorden: ["Sommige mensen hebben zonder het te weten engelen ontvangen", "Sommige mensen hebben zonder het te weten een profeet ontvangen", "Sommige mensen hebben zonder het te weten een koning ontvangen", "Sommige mensen hebben zonder het te weten hun eigen familie ontvangen"],
+            correct: "Sommige mensen hebben zonder het te weten engelen ontvangen",
             bijbelplaats: "Hebreeën 13:2"
         },
         {
             vraag: "God voedt ons uit liefde op. Met wie vergelijkt Hebreeën dat?",
-            antwoorden: ["Met een vader die zijn kind opvoedt", "Met een koning die zijn volk regeert", "Met een baas die zijn werkers aanstuurt", "Met een rechter die vonnis wijst"],
+            antwoorden: ["Met een vader die zijn kind opvoedt", "Met een koning die zijn volk regeert", "Met een baas die zijn werknemers aanstuurt", "Met een rechter die vonnis wijst"],
             correct: "Met een vader die zijn kind opvoedt",
             bijbelplaats: "Hebreeën 12:6-7"
-        },
-        {
-            vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
-            antwoorden: ["Eén keer, voor altijd", "Elk jaar opnieuw", "Elke dag", "Elke sabbat"],
-            correct: "Eén keer, voor altijd",
-            bijbelplaats: "Hebreeën 9:28; 10:10"
         },
         {
             vraag: "Waarmee vergelijkt Hebreeën het woord van God, omdat het scherp is en diep in je hart kan kijken?",
             antwoorden: ["Een tweesnijdend zwaard", "Een spiegel", "Een fel brandende fakkel in het donker", "Een sleutel"],
             correct: "Een tweesnijdend zwaard",
             bijbelplaats: "Hebreeën 4:12"
-        },
-        {
-            vraag: "Hebreeën noemt Jezus de middelaar van een … verbond tussen God en de mensen.",
-            antwoorden: ["nieuw", "oud", "tijdelijk", "gebroken"],
-            correct: "nieuw",
-            bijbelplaats: "Hebreeën 9:15"
         },
         {
             vraag: "In Hebreeën 11 staan veel bekende mensen uit de Bijbel op een rij, die iets met elkaar gemeen hadden. Wat hadden zij gemeen?",
@@ -4332,21 +4332,21 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:29"
         },
         {
-            vraag: "Hebreeën spoort aan: laten we elkaar aanmoedigen tot liefde en goede daden, en onze … niet verzuimen.",
-            antwoorden: ["samenkomsten", "maaltijden", "reizen", "wedstrijden"],
-            correct: "samenkomsten",
+            vraag: "Hebreeën spoort de gelovigen aan om elkaar aan te moedigen tot liefde en goede daden. Wat moeten zij daarvoor blijven doen?",
+            antwoorden: ["Blijven samenkomen met de andere gelovigen", "Elke dag alleen thuis blijven bidden", "Elkaar brieven blijven schrijven", "Elk jaar naar Jeruzalem blijven reizen"],
+            correct: "Blijven samenkomen met de andere gelovigen",
             bijbelplaats: "Hebreeën 10:24-25"
         },
         {
-            vraag: "Nadat Jezus zijn werk had volbracht, ging Hij zitten aan de … van God.",
-            antwoorden: ["rechterhand", "linkerhand", "troon", "voeten"],
-            correct: "rechterhand",
+            vraag: "Waar ging Jezus volgens Hebreeën zitten, nadat Hij zijn werk had volbracht?",
+            antwoorden: ["Aan de rechterhand van God", "Aan de linkerhand van God", "Aan de voeten van God", "Voor de troon van God"],
+            correct: "Aan de rechterhand van God",
             bijbelplaats: "Hebreeën 10:12"
         },
         {
-            vraag: "Mozes koos er volgens Hebreeën voor om slecht behandeld te worden samen met Gods volk, in plaats van te genieten van de … van Egypte.",
-            antwoorden: ["schatten", "paleizen", "feesten", "macht"],
-            correct: "schatten",
+            vraag: "Mozes koos er volgens Hebreeën voor om slecht behandeld te worden samen met Gods volk. Wat vond hij belangrijker dan alle schatten van Egypte?",
+            antwoorden: ["Bij Gods volk horen, ook al werd hij daarom vernederd", "Zijn eigen leven in veiligheid brengen", "Een goede opleiding krijgen aan het hof", "Later zelf koning van Egypte worden"],
+            correct: "Bij Gods volk horen, ook al werd hij daarom vernederd",
             bijbelplaats: "Hebreeën 11:25-26"
         },
         {
@@ -4356,16 +4356,10 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 1:4"
         },
         {
-            vraag: "Hebreeën noemt Jezus degene die ons geloof begint én…",
-            antwoorden: ["voltooit", "beproeft", "beschermt", "beloont"],
-            correct: "voltooit",
+            vraag: "Hebreeën noemt Jezus degene die ons geloof begint. Wat doet Hij er volgens dezelfde zin nog meer mee?",
+            antwoorden: ["Hij voltooit het ook", "Hij beproeft het ook", "Hij beschermt het ook", "Hij beloont het ook"],
+            correct: "Hij voltooit het ook",
             bijbelplaats: "Hebreeën 12:2"
-        },
-        {
-            vraag: "Hebreeën zegt dat wij, terwijl we geloven, worden omringd door een grote … van getuigen — al die geloofshelden die ons zijn voorgegaan.",
-            antwoorden: ["wolk", "zee", "leger", "rij"],
-            correct: "wolk",
-            bijbelplaats: "Hebreeën 12:1"
         },
         {
             vraag: "Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken?",
@@ -4374,9 +4368,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:3"
         },
         {
-            vraag: "Jezus werd mens en stierf, zodat de mensen niet hun leven lang bang hoeven te zijn. Waarvoor hoeven zij niet meer bang te zijn?",
-            antwoorden: ["Voor de dood", "Voor de duivel", "Voor Gods straf", "Voor het lijden"],
-            correct: "Voor de dood",
+            vraag: "Jezus werd mens en stierf. Waarvan bevrijdde Hij volgens Hebreeën de mensen, die daardoor hun leven lang als slaven leefden?",
+            antwoorden: ["Van de angst voor de dood", "Van de armoede waarin zij leefden", "Van de wetten van de Romeinen", "Van het zware werk dat zij moesten doen"],
+            correct: "Van de angst voor de dood",
             bijbelplaats: "Hebreeën 2:14-15"
         },
         {
@@ -4384,6 +4378,24 @@ vragenData["Hebreeën"] = {
             antwoorden: ["Een lofzang waarin we Hem danken", "Een groot geldbedrag voor de tempel", "Een streng vasten van veertig dagen", "Een lange pelgrimsreis"],
             correct: "Een lofzang waarin we Hem danken",
             bijbelplaats: "Hebreeën 13:15"
+        },
+        {
+            vraag: "Welke man vertrok door zijn geloof naar een land dat God hem zou wijzen, zonder te weten waar hij heen ging?",
+            antwoorden: ["Abraham", "Jakob", "Jozef", "David"],
+            correct: "Abraham",
+            bijbelplaats: "Hebreeën 11:8"
+        },
+        {
+            vraag: "De ouders van een baby verborgen hem drie maanden lang, omdat ze niet bang waren voor het bevel van de koning. Welke baby werd op die manier gered?",
+            antwoorden: ["Mozes", "Samuël", "Isaak", "Johannes"],
+            correct: "Mozes",
+            bijbelplaats: "Hebreeën 11:23"
+        },
+        {
+            vraag: "Volgens Hebreeën mogen we naar God toe gaan om hulp te krijgen wanneer we die nodig hebben. Hoe mogen we bij Hem komen?",
+            antwoorden: ["Met vertrouwen, zonder angst", "Alleen als we nooit fouten maken", "Alleen één keer per jaar", "Alleen als je priester bent"],
+            correct: "Met vertrouwen, zonder angst",
+            bijbelplaats: "Hebreeën 4:16"
         }
     ],
     expert: [
@@ -4394,34 +4406,17 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:1"
         },
         {
-            vraag: "Welke man vertrok door zijn geloof naar een land dat God hem zou wijzen, zonder te weten waar hij heen ging?",
-            antwoorden: ["Abraham", "Jakob", "Jozef", "David"],
-            correct: "Abraham",
-            bijbelplaats: "Hebreeën 11:8"
-        },
-        {
-            vraag: "Aan het begin laat de brief aan de Hebreeën zien dat Jezus hoger staat dan…",
-            antwoorden: ["de engelen", "Mozes", "de profeten", "de hogepriesters"],
-            correct: "de engelen",
+            vraag: "Het eerste hoofdstuk van Hebreeën citeert een hele reeks teksten uit het Oude Testament om te bewijzen dat Jezus hoger staat dan één bepaalde groep. Met welke groep vergelijkt de brief Hem daar?",
+            antwoorden: ["Met de engelen", "Met de profeten", "Met de hogepriesters", "Met de koningen van Israël"],
+            correct: "Met de engelen",
             bijbelplaats: "Hebreeën 1:4"
-        },
-        {
-            vraag: "De ouders van een baby verborgen hem drie maanden lang, omdat ze niet bang waren voor het bevel van de koning. Welke baby?",
-            antwoorden: ["Mozes", "Samuël", "Isaak", "Johannes"],
-            correct: "Mozes",
-            bijbelplaats: "Hebreeën 11:23"
-        },
-        {
-            vraag: "Hebreeën zegt dat het zonder iets onmogelijk is om God te behagen. Wat is dat?",
-            antwoorden: ["geloof", "geld", "kracht", "wijsheid"],
-            correct: "geloof",
-            bijbelplaats: "Hebreeën 11:6"
         },
         {
             vraag: "Jezus wordt hogepriester genoemd 'naar de orde van' een geheimzinnige koning-priester uit de tijd van Abraham. Hoe heet hij?",
             antwoorden: ["Melchisedek", "Aäron", "Levi", "Henoch"],
             correct: "Melchisedek",
-            bijbelplaats: "Hebreeën 7:1-3"
+            bijbelplaats: "Hebreeën 7:1-3",
+            uitleg: "Melchisedek komt in het Oude Testament maar in één klein verhaal voor: hij is koning van Salem én priester, en hij zegent Abraham (Genesis 14:18-20). Over zijn familie staat er niets, en juist dat valt de schrijver van Hebreeën op: Melchisedek hoort niet bij de priesterfamilie van Levi. 'Naar de orde van Melchisedek' betekent dan ook: van dezelfde soort als hij. Jezus is dus priester op een heel andere manier dan de priesters in de tempel."
         },
         {
             vraag: "Over welke man zegt Hebreeën dat hij door zijn geloof de dood niet zag, maar door God werd weggenomen?",
@@ -4466,22 +4461,56 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:16"
         },
         {
-            vraag: "Welke sterke man, bekend om zijn lange haar, wordt in Hebreeën 11 genoemd als voorbeeld van geloof?",
-            antwoorden: ["Simson", "Goliat", "Saul", "Esau"],
-            correct: "Simson",
-            bijbelplaats: "Hebreeën 11:32"
-        },
-        {
-            vraag: "Volgens Hebreeën mogen we naar God toe gaan om hulp te krijgen wanneer we die nodig hebben. Hoe mogen we bij Hem komen?",
-            antwoorden: ["Met vertrouwen, zonder angst", "Alleen als we nooit fouten maken", "Alleen één keer per jaar", "Alleen als je priester bent"],
-            correct: "Met vertrouwen, zonder angst",
-            bijbelplaats: "Hebreeën 4:16"
-        },
-        {
-            vraag: "Hebreeën spoort aan: laten we stevig vasthouden aan onze …, want God houdt zich aan wat Hij beloofd heeft.",
-            antwoorden: ["hoop", "spullen", "vrienden", "plannen"],
-            correct: "hoop",
+            vraag: "Hebreeën geeft een reden om ergens stevig aan vast te houden: God houdt zich aan wat Hij beloofd heeft. Waaraan moeten de gelovigen daarom vasthouden?",
+            antwoorden: ["Aan de hoop die zij hebben uitgesproken", "Aan de regels die zij hebben geleerd", "Aan de leiders die zij hebben gekozen", "Aan de plannen die zij hebben gemaakt"],
+            correct: "Aan de hoop die zij hebben uitgesproken",
             bijbelplaats: "Hebreeën 10:23"
+        },
+        {
+            vraag: "Hebreeën vergelijkt het werk van Jezus telkens met wat er gebeurde in \"de tent\". Wat was dat voor tent?",
+            antwoorden: ["Een heiligdom dat het volk door de woestijn meedroeg", "De tent waarin de hogepriester woonde, naast de tempel", "Een tent op het tempelplein waar de offerdieren stonden", "De tent waarin Abraham God ontmoette bij de eiken"],
+            correct: "Een heiligdom dat het volk door de woestijn meedroeg",
+            bijbelplaats: "Hebreeën 9:2",
+            uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: uit elkaar te halen, mee te dragen en weer op te bouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
+        },
+        {
+            vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
+            antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
+            correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
+            bijbelplaats: "Hebreeën 9:7",
+            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: hij ging één keer naar binnen, en dat was genoeg voor altijd."
+        },
+        {
+            vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
+            antwoorden: ["Eén keer, voor altijd", "Elk jaar opnieuw", "Elke dag", "Elke sabbat"],
+            correct: "Eén keer, voor altijd",
+            bijbelplaats: "Hebreeën 9:28; 10:10"
+        },
+        {
+            vraag: "Hebreeën noemt Jezus de middelaar tussen God en de mensen. Van welk verbond is Hij volgens de brief de middelaar?",
+            antwoorden: ["Van een nieuw verbond", "Van het oude verbond met Mozes", "Van een verbond dat maar tijdelijk geldt", "Van het verbond dat God met Noach sloot"],
+            correct: "Van een nieuw verbond",
+            bijbelplaats: "Hebreeën 9:15",
+            uitleg: "Een middelaar is iemand die tussen twee partijen in staat en hen weer bij elkaar brengt, zoals iemand die bemiddelt als er ruzie is. Hebreeën zegt dat Jezus dat doet tussen God en de mensen."
+        },
+        {
+            vraag: "Hebreeën zegt dat alle geloofshelden die ons zijn voorgegaan als getuigen om ons heen staan. Met welk beeld beschrijft de brief die grote groep?",
+            antwoorden: ["Een wolk", "Een zee", "Een leger", "Een rij"],
+            correct: "Een wolk",
+            bijbelplaats: "Hebreeën 12:1",
+            uitleg: "In het Grieks werd het woord voor wolk ook gebruikt voor een geweldige menigte mensen, ongeveer zoals wij spreken van een zee van mensen. Hebreeën bedoelt dus geen wolk aan de hemel, maar een menigte die niet te tellen is."
+        },
+        {
+            vraag: "De schrijver van de brief aan de Hebreeën spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
+            antwoorden: ["Woorden: het uitspreken en bezingen van Gods naam", "Een lam zonder gebreken op het altaar", "Het eerste deel van het graan uit de oogst", "Een gouden schaal met wierook erin"],
+            correct: "Woorden: het uitspreken en bezingen van Gods naam",
+            bijbelplaats: "Hebreeën 13:15"
+        },
+        {
+            vraag: "De schrijver van de brief aan de Hebreeën zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
+            antwoorden: ["Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen", "Ze eten te weinig en zijn daardoor te zwak om te reizen", "Ze zijn nog jong van jaren en mogen nog niet meedoen aan de maaltijd", "Ze houden zich aan de spijswetten en eten geen vlees"],
+            correct: "Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen",
+            bijbelplaats: "Hebreeën 5:12-14"
         }
     ]
 };
@@ -5717,16 +5746,6 @@ vragenData["Kolossenzen & Filemon"].expert.push(
     }
 );
 
-vragenData["Hebreeën"].expert.push(
-    {
-        vraag: "Hebreeën vergelijkt het werk van Jezus telkens met wat er gebeurde in \"de tent\". Wat was dat voor tent?",
-        antwoorden: ["Een heiligdom dat het volk door de woestijn meedroeg", "De tent waarin de hogepriester woonde, naast de tempel", "Een tent op het tempelplein waar de offerdieren stonden", "De tent waarin Abraham God ontmoette bij de eiken"],
-        correct: "Een heiligdom dat het volk door de woestijn meedroeg",
-        bijbelplaats: "Hebreeën 9:2",
-        uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: uit elkaar te halen, mee te dragen en weer op te bouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
-    }
-);
-
 vragenData["Petrus & Judas"].advanced.push(
     {
         vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
@@ -5901,16 +5920,6 @@ vragenData["Matteüs"].advanced.push(
         correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
         bijbelplaats: "Matteüs 5:14",
         uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt. En omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
-    }
-);
-
-vragenData["Hebreeën"].expert.push(
-    {
-        vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
-        antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
-        correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
-        bijbelplaats: "Hebreeën 9:7",
-        uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: hij ging één keer naar binnen, en dat was genoeg voor altijd."
     }
 );
 
@@ -6721,21 +6730,6 @@ vragenData["Openbaring"].advanced.push(
         antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
         correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
         bijbelplaats: "Openbaring 1:8"
-    }
-);
-
-vragenData["Hebreeën"].advanced.push(
-    {
-        vraag: "De schrijver van de brief aan de Hebreeën spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
-        antwoorden: ["Woorden: het uitspreken en bezingen van Gods naam", "Een lam zonder gebreken op het altaar", "Het eerste deel van het graan uit de oogst", "Een gouden schaal met wierook erin"],
-        correct: "Woorden: het uitspreken en bezingen van Gods naam",
-        bijbelplaats: "Hebreeën 13:15"
-    },
-    {
-        vraag: "De schrijver van de brief aan de Hebreeën zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
-        antwoorden: ["Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen", "Ze eten te weinig en zijn daardoor te zwak om te reizen", "Ze zijn nog jong van jaren en mogen nog niet meedoen aan de maaltijd", "Ze houden zich aan de spijswetten en eten geen vlees"],
-        correct: "Ze kennen alleen de eenvoudigste dingen van het geloof en zijn nog niet verder gekomen",
-        bijbelplaats: "Hebreeën 5:12-14"
     }
 );
 
