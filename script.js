@@ -4515,7 +4515,7 @@ vragenData["Hebreeën"] = {
     ]
 };
 
-// Jakobus — vragenpool (36 vragen: beginner 10, advanced 14, expert 12)
+// Jakobus — vragenpool (36 vragen: beginner 11, advanced 13, expert 12)
 // Algemene brieven. Formaat gelijk aan de andere boeken: vragenData["Jakobus"]
 // met drie niveaus (beginner/advanced/expert).
 vragenData["Jakobus"] = {
@@ -4580,6 +4580,12 @@ vragenData["Jakobus"] = {
             antwoorden: ["De Heer", "De koning", "De profeet", "De leraar"],
             correct: "De Heer",
             bijbelplaats: "Jakobus 5:7-8"
+        },
+        {
+            vraag: "Jakobus roept de gelovigen op om geduldig te zijn. Waarmee vergelijkt hij dat geduld?",
+            antwoorden: ["Met een boer die wacht op zijn oogst", "Met een soldaat die wacht op bevel", "Met een dienaar die wacht op zijn loon", "Met een reiziger die wacht op mooi weer"],
+            correct: "Met een boer die wacht op zijn oogst",
+            bijbelplaats: "Jakobus 5:7"
         }
     ],
     advanced: [
@@ -4625,12 +4631,6 @@ vragenData["Jakobus"] = {
             antwoorden: ["Job", "Mozes", "David", "Jona"],
             correct: "Job",
             bijbelplaats: "Jakobus 5:11"
-        },
-        {
-            vraag: "Waarmee vergelijkt Jakobus het geduld waarmee wij op de Heer moeten wachten?",
-            antwoorden: ["Met een boer die wacht op zijn oogst", "Met een soldaat die wacht op bevel", "Met een dienaar die wacht op zijn loon", "Met een reiziger die wacht op mooi weer"],
-            correct: "Met een boer die wacht op zijn oogst",
-            bijbelplaats: "Jakobus 5:7"
         },
         {
             vraag: "Jakobus zegt dat iemand die God iets vraagt maar intussen blijft twijfelen, op iets uit de natuur lijkt. Waarmee vergelijkt hij zo iemand?",
