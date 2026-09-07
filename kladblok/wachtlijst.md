@@ -30,6 +30,11 @@ elk antwoord herhaald hoeft te worden.*
   hebben `onderwerpen: []` (`script.js` r. 8842–8843). De knoppen staan er wel
   en zijn niet vergrendeld, dus ze leiden naar een leeg lijstscherm. Ze horen
   vergrendeld te zijn zolang de rubrieken leeg zijn.
+- **Avatarbeschrijvingen liggen klaar voor twee figuren die er nog niet zijn.**
+  Korte introteksten bij Rebekka en Debora; `avatarNamen` (`script.js` r. 7199)
+  telt acht andere avatars zonder beschrijving. Bewust geparkeerd tot alle
+  avatars er een krijgen — anders een halve set. Zie
+  `kladblok/KLADBLOK-avatarbeschrijvingen.md`.
 - **`BETA_MODUS` op `false`.** `script.js` r. 4. Zolang die op `true` staat toont
   het startscherm het "TESTVERSIE"-lint. Moet om vóór de release.
 
