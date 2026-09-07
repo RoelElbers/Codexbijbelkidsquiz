@@ -60,9 +60,9 @@ is bij testen niet te betrappen, want dan is de cache toch vers.
 ```
 index.html: 107        het startschermportret
 index.html: 266-302    de tien keuzeknoppen
-script.js : 7217       const AVATAR_VERSIE
-script.js : 7397       updateAvatarWeergave()
-script.js : 7564       de spelerkiezer
+script.js : 7214       const AVATAR_VERSIE
+script.js : 7394       updateAvatarWeergave()
+script.js : 7561       de spelerkiezer
 ```
 
 De twee plekken in `script.js` lezen `AVATAR_VERSIE`; in `index.html` staat
