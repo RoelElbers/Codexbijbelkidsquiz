@@ -7467,12 +7467,13 @@ function updateAvatarWeergave() {
 // tekst onderaan zichtbaar, zodat er aanleiding is om te scrollen. De maat
 // staat in style.css (.avatar-detail-portret), niet hier.
 //
-// stopPropagation is nodig: de wrapper #avatar-frame draagt een eigen onclick
-// (openSpelerKiezer). Zonder deze rem zou een klik op het portret allebei doen.
+// Het portret is het enige klikbare element in het frame. De wrapper
+// #avatar-frame is weer kaal decor, zoals hij oorspronkelijk was; de klik
+// bubbelt dus vrij door naar de document-luisteraar bovenin dit bestand, die
+// het kliksignaal speelt. Niet afremmen met stopPropagation: dan opent dit
+// venster als enige knop in het spel geluidloos.
 // ---------------------------------------------------------------------------
-function openAvatarDetail(e) {
-    if (e) e.stopPropagation();
-
+function openAvatarDetail() {
     const avatar = getGekozenAvatar();
     const info = avatarInfo[avatar];
     const overlay = document.getElementById("avatar-detail");
