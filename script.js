@@ -7205,7 +7205,8 @@ const avatarNamen = {
     elia: "Elia",
     ruth: "Ruth",
     maria: "Maria",
-    debora: "Debora"
+    debora: "Debora",
+    rebekka: "Rebekka"
 };
 
 const STANDAARD_AVATAR = "mozes";
