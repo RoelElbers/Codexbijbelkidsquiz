@@ -7215,6 +7215,60 @@ const AVATAR_VERSIE = 1;
 
 const STANDAARD_AVATAR = "mozes";
 
+// Introtekst per avatar, getoond in het detailvenster dat opengaat door op
+// het portret in het frame linksboven te klikken (openAvatarDetail).
+//
+// DE TEKSTEN ZIJN REDACTIONEEL VASTGESTELD. Niet hier herschrijven of
+// inkorten: de bron is kladblok/KLADBLOK-avatarbeschrijvingen.md, met daarin
+// ook de vormafspraak (een alinea, een concreet beeld, geen moraal aan het
+// slot) en de aandachtspunten per figuur. Wijzig daar, en neem het hier over.
+//
+// Los van avatarNamen gehouden: dat object koppelt een sleutel aan een kale
+// weergavenaam en wordt op elf plekken als string gebruikt.
+// Een videoveld kan hier later bij zonder die plekken te raken.
+const avatarInfo = {
+    mozes: {
+        bijbelplaats: "Exodus 3",
+        tekst: "Mozes hoedde de schapen van zijn schoonvader in de woestijn toen hij een struik zag branden die maar niet opbrandde. Hij liep erheen om beter te kijken, en toen klonk er een stem die hem bij zijn naam riep. Hij moest zijn sandalen uitdoen, want de grond waar hij stond was heilig."
+    },
+    esther: {
+        bijbelplaats: "Ester 4 en 5",
+        tekst: "Esther was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning — ongevraagd, en dat mocht niet. Drie dagen bereidde ze zich voor. Daarna trok ze haar mooiste kleren aan en liep de troonzaal binnen."
+    },
+    judith: {
+        bijbelplaats: "Het boek Judit",
+        tekst: "Judith woonde in een stad die werd belegerd door een enorm leger. Het water raakte op en de mensen wilden zich overgeven. Zij niet. Ze trok haar rouwkleren uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in elke Bijbel vindt."
+    },
+    samuel: {
+        bijbelplaats: "1 Samuel 3",
+        tekst: "Samuel sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen wist Eli genoeg: dit was God, die Samuel riep. Ga terug, zei hij, en als je het weer hoort, zeg dan dat je luistert."
+    },
+    jozef: {
+        bijbelplaats: "Genesis 37",
+        tekst: "Jozef was de lieveling van zijn vader en kreeg een prachtig kleed dat zijn broers niet kregen. Bovendien had hij dromen. In de ene bogen de bundels graan van zijn broers zich voor die van hem. In de andere bogen de zon, de maan en elf sterren voor hem. Hij vertelde ze gewoon aan tafel, alsof het het nieuws van de dag was. Zijn broers vonden dat niet grappig."
+    },
+    elia: {
+        bijbelplaats: "1 Koningen 17",
+        tekst: "Elia moest zich verstoppen bij een beek, ver van iedereen. Er groeide daar niets en er woonde niemand. Toch kreeg hij elke ochtend en elke avond eten: raven brachten hem brood en vlees, en uit de beek dronk hij. Tot op een dag de beek droogviel, omdat het al lang niet meer geregend had."
+    },
+    ruth: {
+        bijbelplaats: "Ruth 2",
+        tekst: "Ruth kwam als vreemdeling in een land waar ze niemand kende, samen met haar schoonmoeder Noömi. Ze hadden niets. Dus ging Ruth het veld in om aren te rapen die de maaiers hadden laten liggen — dat mocht, want zo hoorde het volgens de wet. Ze werkte de hele dag, en de eigenaar van het veld merkte haar op."
+    },
+    maria: {
+        bijbelplaats: "Lucas 1",
+        tekst: "Maria was een jonge vrouw en ze woonde in Nazaret, een dorp waar nooit iets bijzonders gebeurde. Toen stond er een engel voor haar die zei dat ze een zoon zou krijgen. Ze schrok en vroeg hoe dat kon. Het antwoord begreep ze niet helemaal, maar ze zei toch ja."
+    },
+    debora: {
+        bijbelplaats: "Rechters 4 en 5",
+        tekst: "Debora was rechter én profetes. Ze zat onder een palmboom tussen Rama en Betel, en van heinde en ver kwamen mensen naar haar toe om hun ruzies te laten beslechten. Toen het volk in het nauw zat, riep zij Barak op om op te trekken — en na de overwinning zong ze het lied dat nog steeds in de Bijbel staat."
+    },
+    rebekka: {
+        bijbelplaats: "Genesis 24",
+        tekst: "Bij de bron buiten de stad kwam Rebekka water halen, haar kruik op haar schouder. Toen een vreemdeling om een slok vroeg, gaf ze hem te drinken én schepte ze water voor al zijn kamelen — dorstige dieren die liters wegdrinken. Dat ene gebaar veranderde haar hele leven: ze werd de vrouw van Isaak."
+    }
+};
+
 // =========================
 // PROFIELEN (meerdere spelers op één computer)
 // =========================
@@ -7402,6 +7456,62 @@ function updateAvatarWeergave() {
         pasVoornaamGrootteAan(voornaamEl);
     }
 }
+
+// ---------------------------------------------------------------------------
+// AVATAR-DETAILVENSTER (startscherm)
+// Klikken op het portret in het frame opent een schermvullend venster met dat
+// portret groot en de tekst uit avatarInfo eronder. Altijd de op dat moment
+// gekozen avatar; geen galerij en geen doorbladeren.
+//
+// Het portret is bewust NIET schermvullend: op ~85vh blijven de eerste regels
+// tekst onderaan zichtbaar, zodat er aanleiding is om te scrollen. De maat
+// staat in style.css (.avatar-detail-portret), niet hier.
+//
+// stopPropagation is nodig: de wrapper #avatar-frame draagt een eigen onclick
+// (openSpelerKiezer). Zonder deze rem zou een klik op het portret allebei doen.
+// ---------------------------------------------------------------------------
+function openAvatarDetail(e) {
+    if (e) e.stopPropagation();
+
+    const avatar = getGekozenAvatar();
+    const info = avatarInfo[avatar];
+    const overlay = document.getElementById("avatar-detail");
+    if (!info || !overlay) return;
+
+    const img = document.getElementById("avatar-detail-portret");
+    if (img) {
+        // Dezelfde ?v= als het frame, anders toont dit venster na een
+        // portretvervanging het oude beeld uit de cache.
+        img.src = `images/Avatars/avatar-${avatar}.webp?v=${AVATAR_VERSIE}`;
+        img.alt = avatarNamen[avatar];
+    }
+
+    const naam = document.getElementById("avatar-detail-naam");
+    if (naam) naam.textContent = avatarNamen[avatar];
+
+    const plaats = document.getElementById("avatar-detail-plaats");
+    if (plaats) plaats.textContent = info.bijbelplaats;
+
+    const tekst = document.getElementById("avatar-detail-tekst");
+    if (tekst) tekst.textContent = info.tekst;
+
+    overlay.style.display = "block";
+    overlay.scrollTop = 0;          // altijd bovenaan openen, ook na eerder scrollen
+}
+
+function sluitAvatarDetail() {
+    const overlay = document.getElementById("avatar-detail");
+    if (overlay) overlay.style.display = "none";
+}
+
+function avatarDetailOpen() {
+    const overlay = document.getElementById("avatar-detail");
+    return !!(overlay && overlay.style.display && overlay.style.display !== "none");
+}
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && avatarDetailOpen()) sluitAvatarDetail();
+});
 
 // Laat de letters van het speler-naambordje automatisch iets krimpen wanneer
 // de naam te lang is voor het (brede) vak, zodat hij altijd binnen de plaat
@@ -11370,7 +11480,7 @@ function naarSchatkamerZone(zoneId) {
 // Hulp: staat er een schermvullende overlay open (quiz, keuze, naslag, schatkamer)?
 // Dan mogen de pijltjestoetsen niet van hoofdscherm wisselen.
 function eenOverlayOpen() {
-    const overlays = document.querySelectorAll(".quiz-overlay, .schatkamer-overlay");
+    const overlays = document.querySelectorAll(".quiz-overlay, .schatkamer-overlay, .avatar-detail-overlay");
     if (Array.from(overlays).some((o) => o.style.display && o.style.display !== "none")) return true;
     // De boekenplank schakelt via een class (geen display), dus apart checken.
     const plank = document.getElementById("boekenplank");

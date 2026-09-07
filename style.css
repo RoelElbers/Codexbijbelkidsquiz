@@ -1752,7 +1752,28 @@ height: 22%;
     border-radius: 50%;
     object-fit: cover;
     z-index: 3;            /* bovenop het frame */
-    pointer-events: none;
+
+    /* Klikbaar: opent het avatar-detailvenster (openAvatarDetail in script.js).
+       De wrapper .avatar-frame staat op pointer-events: none; hier zetten we
+       hem weer aan, alleen voor het portret zelf. */
+    pointer-events: auto;
+    cursor: pointer;
+
+    /* AANWIJZING DAT HET KLIKBAAR IS — twee lagen.
+       1. Een zachte gouden gloed die ALTIJD zichtbaar is. Dit is de laag die
+          op een tablet het werk doet: daar bestaat hover niet, want de eerste
+          tik is meteen de klik.
+       2. Oplichten bij hover, hieronder, alleen voor de muis. */
+    box-shadow: 0 0 14px 2px rgba(255, 215, 120, 0.45);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+@media (hover: hover) {
+    .avatar-portret:hover,
+    .avatar-portret:focus-visible {
+        box-shadow: 0 0 26px 7px rgba(255, 215, 120, 0.85);
+        transform: scale(1.05);
+    }
 }
 
 /* De twee namen liggen bovenop de twee donkere vakken van avatarframe.png.
@@ -2620,6 +2641,106 @@ height: 22%;
     color: #ffe6a8;
     font-size: 1.1rem;
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* =========================
+   AVATAR-DETAILVENSTER (startscherm)
+   Gaat open door op het portret in het frame linksboven te klikken. Het portret
+   staat groot bovenaan, de tekst eronder, bereikbaar door te scrollen.
+
+   De maat van het portret is het hele punt: op ~85vh blijven de eerste regels
+   tekst onderaan net zichtbaar, zodat een kind ziet dát er iets onder staat.
+   Schermvullend maken haalt die aanleiding weg. De drie waarden in min() zijn
+   er alle drie nodig: 88vh voor de hoogte, 94vw zodat de cirkel op een smal
+   scherm (tablet staand) niet breder wordt dan het venster, en 1100px als rem
+   voor zeer grote schermen.
+========================= */
+
+.avatar-detail-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(8, 14, 34, 0.96);
+    z-index: 1000;                  /* zelfde laag als de schatkamer-overlays */
+
+    overflow-y: auto;               /* de overlay zelf scrollt */
+    overscroll-behavior: contain;   /* geen doorscrollen naar de pagina erachter */
+    -webkit-overflow-scrolling: touch;
+}
+
+.avatar-detail-paneel {
+    width: min(94vw, 1100px);
+    margin: 0 auto;
+    padding: 2vh 0 48px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-detail-portret {
+    width: min(88vh, 94vw, 1100px);
+    aspect-ratio: 1 / 1;
+    height: auto;
+
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid rgba(255, 215, 120, 0.5);
+    box-shadow: 0 0 40px rgba(255, 215, 120, 0.28);
+}
+
+.avatar-detail-naam {
+    margin: 26px 0 2px;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    font-weight: 700;
+    color: #ffd86b;
+    text-shadow: 0 0 10px rgba(255, 215, 120, 0.35);
+    text-align: center;
+}
+
+.avatar-detail-plaats {
+    margin: 0 0 22px;
+    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    letter-spacing: 0.04em;
+    color: rgba(255, 215, 120, 0.7);
+    text-align: center;
+}
+
+.avatar-detail-tekst {
+    max-width: 62ch;                /* leesregel; niet de volle 1100px */
+    margin: 0;
+    font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+    line-height: 1.65;
+    color: #f2ead8;
+}
+
+/* Vast in de hoek, niet meescrollend: bij een lange tekst moet het kruisje
+   bereikbaar blijven zonder terug naar boven te scrollen. */
+.avatar-detail-sluit {
+    position: fixed;
+    top: 14px;
+    right: 18px;
+    z-index: 2;
+
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    line-height: 1;
+
+    background: rgba(10, 20, 55, 0.75);
+    border: 2px solid rgba(255, 215, 120, 0.45);
+    border-radius: 50%;
+
+    color: #ffd86b;
+    font-size: 1.9rem;
+    cursor: pointer;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar-detail-sluit:hover,
+.avatar-detail-sluit:focus-visible {
+    border-color: #ffd86b;
+    box-shadow: 0 0 14px rgba(255, 215, 120, 0.5);
 }
 
 /* =========================

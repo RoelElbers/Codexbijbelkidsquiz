@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=112">
+    <link rel="stylesheet" href="style.css?v=113">
 
     <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
          Dertien verwijzingen dragen samen dit eigen nummer:
@@ -104,7 +104,10 @@
 
             <!-- Avatarfoto, rond bijgesneden in de ronde opening. Standaard
                  Mozes; verandert via het Nieuw-spel-keuzescherm. -->
-            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp?v=1" alt="Avatar">
+            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp?v=1" alt="Avatar"
+                 role="button" tabindex="0" title="Lees over deze figuur"
+                 onclick="openAvatarDetail(event)"
+                 onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openAvatarDetail(event); }">
 
             <!-- Naam van de gekozen Bijbelfiguur op het brede vak rechts. -->
             <div id="avatar-figuurnaam" class="avatar-figuurnaam">Mozes</div>
@@ -666,6 +669,24 @@
             </div>
         </div>
 
+        <!-- Avatar-detailvenster: gaat open door op het portret in het frame
+             linksboven te klikken. Vult zichzelf uit avatarInfo (script.js) met
+             de op dat moment gekozen avatar; er is dus maar één van deze
+             vensters nodig. Sluiten kan met het kruisje, met Escape, en met een
+             klik naast het paneel (de onclick hieronder vuurt alleen als de
+             klik de overlay zelf raakt, niet een kind ervan). -->
+        <div id="avatar-detail" class="avatar-detail-overlay" style="display: none;"
+             onclick="if (event.target === this) sluitAvatarDetail();">
+            <button type="button" class="avatar-detail-sluit" aria-label="Sluiten"
+                    onclick="sluitAvatarDetail()">&times;</button>
+            <div class="avatar-detail-paneel">
+                <img id="avatar-detail-portret" class="avatar-detail-portret" src="" alt="">
+                <h2 id="avatar-detail-naam" class="avatar-detail-naam"></h2>
+                <p id="avatar-detail-plaats" class="avatar-detail-plaats"></p>
+                <p id="avatar-detail-tekst" class="avatar-detail-tekst"></p>
+            </div>
+        </div>
+
         <div id="level-hud">
             <div class="xp-paneel">
                 <div class="xp-balk">
@@ -681,9 +702,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=112"></script>
-    <script src="ontdekken-inhoud.js?v=112"></script>
-    <script src="script.js?v=112"></script>
+    <script src="lang/nl.js?v=113"></script>
+    <script src="ontdekken-inhoud.js?v=113"></script>
+    <script src="script.js?v=113"></script>
 
 </body>
 
