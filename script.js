@@ -7498,11 +7498,22 @@ function openAvatarDetail() {
 
     overlay.style.display = "block";
     overlay.scrollTop = 0;          // altijd bovenaan openen, ook na eerder scrollen
+
+    // Focus naar de overlay, anders scrollen de pijltjestoetsen niets: het
+    // browservenster scrollt alleen de container die focus heeft, en een div
+    // is zonder tabindex niet focusbaar. Muiswiel en aanraking werken los
+    // hiervan; dit is puur voor het toetsenbord.
+    overlay.focus();
 }
 
 function sluitAvatarDetail() {
     const overlay = document.getElementById("avatar-detail");
     if (overlay) overlay.style.display = "none";
+
+    // Focus terug naar het portret waar het venster vandaan kwam, zodat wie
+    // met Enter opende niet in het niets achterblijft.
+    const portret = document.getElementById("avatar-portret");
+    if (portret) portret.focus();
 }
 
 function avatarDetailOpen() {

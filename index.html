@@ -19,7 +19,7 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=114">
+    <link rel="stylesheet" href="style.css?v=115">
 
     <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
          Dertien verwijzingen dragen samen dit eigen nummer:
@@ -674,6 +674,7 @@
              klik naast het paneel (de onclick hieronder vuurt alleen als de
              klik de overlay zelf raakt, niet een kind ervan). -->
         <div id="avatar-detail" class="avatar-detail-overlay" style="display: none;"
+             tabindex="-1"
              onclick="if (event.target === this) sluitAvatarDetail();">
             <button type="button" class="avatar-detail-sluit" aria-label="Sluiten"
                     onclick="sluitAvatarDetail()">&times;</button>
@@ -700,9 +701,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=114"></script>
-    <script src="ontdekken-inhoud.js?v=114"></script>
-    <script src="script.js?v=114"></script>
+    <script src="lang/nl.js?v=115"></script>
+    <script src="ontdekken-inhoud.js?v=115"></script>
+    <script src="script.js?v=115"></script>
 
 </body>
 

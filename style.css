@@ -2665,6 +2665,21 @@ height: 22%;
     overflow-y: auto;               /* de overlay zelf scrollt */
     overscroll-behavior: contain;   /* geen doorscrollen naar de pagina erachter */
     -webkit-overflow-scrolling: touch;
+
+    /* Scrollbalk verbergen — het portret moet zonder afleiding in beeld staan,
+       net als bij de schatkamer. Dit verbergt alleen de balk; scrollen zelf
+       blijft werken met muiswiel, aanraking en pijltjestoetsen. */
+    scrollbar-width: none;          /* Firefox */
+    -ms-overflow-style: none;       /* oudere Edge */
+
+    /* De overlay krijgt tabindex="-1" en focus bij openen, want een div is
+       zonder tabindex niet focusbaar en dan doen de pijltjestoetsen niets.
+       De focusrand hoort hier niet: het is een venster, geen bedienelement. */
+    outline: none;
+}
+
+.avatar-detail-overlay::-webkit-scrollbar {
+    display: none;                  /* Chrome, Edge, Safari */
 }
 
 .avatar-detail-paneel {
@@ -2714,12 +2729,17 @@ height: 22%;
     color: #f2ead8;
 }
 
-/* Vast in de hoek, niet meescrollend: bij een lange tekst moet het kruisje
-   bereikbaar blijven zonder terug naar boven te scrollen. */
+/* Vast in beeld, niet meescrollend: bij een lange tekst moet het kruisje
+   bereikbaar blijven zonder terug naar boven te scrollen.
+
+   Bewust UIT de uiterste hoek. In beeldvullende modus zet Chrome daar zijn
+   eigen sluitknop neer, op precies dezelfde plek. Die knop is niet van ons en
+   is niet te verplaatsen, dus wijkt het onze: 64px naar binnen en naar
+   beneden, ruim buiten het bereik van de browser-eigen knop. */
 .avatar-detail-sluit {
     position: fixed;
-    top: 14px;
-    right: 18px;
+    top: 64px;
+    right: 64px;
     z-index: 2;
 
     width: 46px;
