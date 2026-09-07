@@ -4751,7 +4751,7 @@ vragenData["Jakobus"] = {
     ]
 };
 
-// Petrus & Judas — vragenpool (43 vragen: beginner 13, advanced 18, expert 12)
+// Petrus & Judas — vragenpool (42 vragen: beginner 13, advanced 15, expert 14)
 // Algemene brieven. Bundel uit 1 & 2 Petrus en Judas — gedeeld thema:
 // waarschuwing tegen dwaalleraars. Formaat gelijk aan de andere boeken:
 // vragenData["Petrus & Judas"] met drie niveaus (beginner/advanced/expert).
@@ -4764,9 +4764,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 5:7"
         },
         {
-            vraag: "Judas eindigt zijn brief met de aanmoediging: blijf in de … van God.",
-            antwoorden: ["liefde", "stad", "woestijn", "tempel"],
-            correct: "liefde",
+            vraag: "Judas sluit zijn brief af met een aanmoediging. Waarin moeten de gelovigen zichzelf bewaren?",
+            antwoorden: ["In de liefde van God", "In het gebed", "In de leer van de apostelen", "In de tempel van God"],
+            correct: "In de liefde van God",
             bijbelplaats: "Judas 21"
         },
         {
@@ -4776,15 +4776,15 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 2:4-6"
         },
         {
-            vraag: "Petrus schrijft: wees gastvrij voor elkaar, en doe dat…",
-            antwoorden: ["zonder te mopperen", "zonder er te veel tijd aan te besteden", "alleen als je zelf genoeg hebt", "vooral voor wie het verdient"],
-            correct: "zonder te mopperen",
+            vraag: "Petrus zegt: wees gastvrij voor elkaar. Welke voorwaarde voegt hij daaraan toe?",
+            antwoorden: ["Doe het zonder te mopperen", "Doe het alleen als je zelf genoeg hebt", "Doe het vooral voor wie het verdient", "Doe het zonder er te veel tijd aan te besteden"],
+            correct: "Doe het zonder te mopperen",
             bijbelplaats: "1 Petrus 4:9"
         },
         {
-            vraag: "Petrus schrijft: trek tegenover elkaar … aan, als een kleed.",
-            antwoorden: ["nederigheid", "dure kleren", "een harnas", "een masker"],
-            correct: "nederigheid",
+            vraag: "Petrus gebruikt het beeld van een kleed dat je aantrekt. Wat moeten de gelovigen volgens hem tegenover elkaar aantrekken?",
+            antwoorden: ["Nederigheid", "Dure kleren", "Een harnas", "Een masker"],
+            correct: "Nederigheid",
             bijbelplaats: "1 Petrus 5:5"
         },
         {
@@ -4794,15 +4794,15 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 3:8"
         },
         {
-            vraag: "Petrus schrijft over de Bijbel: de profeten spraken niet zomaar hun eigen woorden, maar werden geleid door…",
-            antwoorden: ["de heilige Geest", "de koning", "hun eigen dromen", "de sterren"],
-            correct: "de heilige Geest",
+            vraag: "Petrus schrijft over de profeten in de Bijbel: zij spraken niet zomaar hun eigen woorden. Door wie werden zij geleid?",
+            antwoorden: ["Door de heilige Geest", "Door de koning", "Door hun eigen dromen", "Door de sterren"],
+            correct: "Door de heilige Geest",
             bijbelplaats: "2 Petrus 1:21"
         },
         {
-            vraag: "Judas vergelijkt dwaalleraars, die veel beloven maar niets geven, met wolken die geen … brengen.",
-            antwoorden: ["regen", "wind", "licht", "kou"],
-            correct: "regen",
+            vraag: "Judas vergelijkt dwaalleraars, die veel beloven maar niets geven, met wolken. Wat brengen die wolken volgens hem niet?",
+            antwoorden: ["Regen", "Wind", "Licht", "Kou"],
+            correct: "Regen",
             bijbelplaats: "Judas 12"
         },
         {
@@ -4821,19 +4821,22 @@ vragenData["Petrus & Judas"] = {
             vraag: "Petrus schrijft dat de duivel rondgaat als een brullende leeuw. Waarom juist een leeuw?",
             antwoorden: ["Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver", "Leeuwen kwamen alleen 's nachts en waren daarom eng", "De leeuw was het teken van de Romeinse keizer", "Leeuwen werden in de tempel gebruikt als versiering"],
             correct: "Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver",
-            bijbelplaats: "1 Petrus 5:8"
+            bijbelplaats: "1 Petrus 5:8",
+            uitleg: "In het gebied waar Petrus' lezers woonden kwamen echt leeuwen voor. Een leeuw brult vooral als hij op jacht is: het geluid maakt bang en zorgt dat je in paniek de verkeerde kant op rent. Petrus kiest dat beeld met opzet, maar hij zegt er meteen bij: blijf nuchter en waakzaam. Gebrul is nog geen sprong."
         },
         {
             vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
             antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die tijdelijk bij familie inwoont na een verhuizing"],
             correct: "Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land",
-            bijbelplaats: "1 Petrus 2:11"
+            bijbelplaats: "1 Petrus 2:11",
+            uitleg: "Een bijwoner was in de oudheid een echt bestaande positie. Je woonde met toestemming in een stad, je werkte er en je betaalde er belasting, maar je was er geen burger van: je mocht niet meestemmen en je familiegraf lag ergens anders. Petrus gebruikt dat woord voor de gelovigen. Je woont hier echt en je hoort erbij, en tegelijk ligt je eigenlijke thuis ergens anders."
         },
         {
             vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
             antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
             correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem",
-            bijbelplaats: "2 Petrus 3:8"
+            bijbelplaats: "2 Petrus 3:8",
+            uitleg: "Petrus schrijft dit aan mensen die ongeduldig werden: waarom duurt het zo lang voordat Jezus terugkomt? Zijn antwoord is niet dat God traag is, maar dat God niet in onze tijd leeft. Wat voor ons eindeloos lang lijkt, is dat voor Hem niet. In het vers erna legt hij uit waarom het dan toch duurt: God geeft mensen de tijd."
         }
     ],
     advanced: [
@@ -4842,12 +4845,6 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
             correct: "Een brullende leeuw",
             bijbelplaats: "1 Petrus 5:8"
-        },
-        {
-            vraag: "In de tweede brief van Petrus staat een verhaal over een profeet die verkeerd bezig was. Wat deed zijn ezel om hem te waarschuwen?",
-            antwoorden: ["De ezel begon te praten", "De ezel vloog weg", "De ezel werd onzichtbaar", "De ezel veranderde in goud"],
-            correct: "De ezel begon te praten",
-            bijbelplaats: "2 Petrus 2:16"
         },
         {
             vraag: "Waar kijken de gelovigen volgens Petrus naar uit, waar alles goed en eerlijk zal zijn?",
@@ -4862,9 +4859,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 3:9"
         },
         {
-            vraag: "Petrus schrijft: heb elkaar vurig lief, want de liefde bedekt…",
-            antwoorden: ["veel zonden", "helemaal niets", "alleen kleine foutjes", "alleen je eigen fouten"],
-            correct: "veel zonden",
+            vraag: "Petrus zegt: heb elkaar vurig lief, want de liefde bedekt iets. Wat bedekt de liefde volgens hem?",
+            antwoorden: ["Veel zonden", "Helemaal niets", "Alleen kleine foutjes", "Alleen je eigen fouten"],
+            correct: "Veel zonden",
             bijbelplaats: "1 Petrus 4:8"
         },
         {
@@ -4880,16 +4877,10 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 1:16"
         },
         {
-            vraag: "Petrus zegt dat de dag van de Heer zal komen als een…",
-            antwoorden: ["dief in de nacht", "aangekondigde feestdag", "storm die je ziet aankomen", "koning met groot vertoon"],
-            correct: "dief in de nacht",
+            vraag: "Petrus schrijft over de dag waarop de Heer terugkomt. Waarmee vergelijkt hij die dag?",
+            antwoorden: ["Met een dief in de nacht", "Met een aangekondigde feestdag", "Met een storm die je ziet aankomen", "Met een koning met groot vertoon"],
+            correct: "Met een dief in de nacht",
             bijbelplaats: "2 Petrus 3:10"
-        },
-        {
-            vraag: "Judas vertelt over een aartsengel die met de duivel streed over het lichaam van Mozes. Hoe heet die aartsengel?",
-            antwoorden: ["Michaël", "Gabriël", "Rafaël", "Uriël"],
-            correct: "Michaël",
-            bijbelplaats: "Judas 9"
         },
         {
             vraag: "Petrus zegt dat Christus ons een voorbeeld heeft nagelaten. Met welk beeld zegt hij hoe wij Hem moeten volgen?",
@@ -4904,15 +4895,15 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 3:9"
         },
         {
-            vraag: "Petrus schrijft: jullie zijn niet vrijgekocht met goud of zilver, maar met het kostbare … van Christus, als van een lam zonder gebrek.",
-            antwoorden: ["bloed", "goud", "water", "brood"],
-            correct: "bloed",
+            vraag: "Petrus schrijft: jullie zijn niet vrijgekocht met goud of zilver, maar met iets veel kostbaarders van Christus, als van een lam zonder gebrek. Waarmee dan wel?",
+            antwoorden: ["Met zijn bloed", "Met zijn woord", "Met zijn brood", "Met zijn water"],
+            correct: "Met zijn bloed",
             bijbelplaats: "1 Petrus 1:18-19"
         },
         {
-            vraag: "In zijn tweede brief zegt Petrus: voeg bij je geloof steeds meer goede eigenschappen toe, en als kroon op alles…",
-            antwoorden: ["de liefde", "veel kennis", "grote roem", "een lang leven"],
-            correct: "de liefde",
+            vraag: "Petrus noemt een rijtje eigenschappen die je bij je geloof moet voegen. Welke zet hij als laatste, als kroon op alles?",
+            antwoorden: ["De liefde", "Veel kennis", "Grote roem", "Een lang leven"],
+            correct: "De liefde",
             bijbelplaats: "2 Petrus 1:5-7"
         },
         {
@@ -4922,9 +4913,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 11"
         },
         {
-            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby verlangt naar…",
-            antwoorden: ["melk", "speelgoed", "slaap", "muziek"],
-            correct: "melk",
+            vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby ergens naar verlangt. Waar verlangt die baby naar?",
+            antwoorden: ["Melk", "Speelgoed", "Slaap", "Muziek"],
+            correct: "Melk",
             bijbelplaats: "1 Petrus 2:2"
         },
         {
@@ -4938,13 +4929,6 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Met levende stenen", "Met sterke pilaren", "Met houten balken", "Met hoge muren"],
             correct: "Met levende stenen",
             bijbelplaats: "1 Petrus 2:5"
-        },
-        {
-            vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
-            antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
-            correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
-            bijbelplaats: "1 Petrus 1:13",
-            uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel. Het beeld betekent dus: maak je klaar — en Petrus zegt het over je hoofd."
         }
     ],
     expert: [
@@ -4955,9 +4939,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 3"
         },
         {
-            vraag: "Judas eindigt door God te prijzen, die machtig is om jou … te houden zodat je niet valt.",
-            antwoorden: ["staande", "stil", "klein", "verborgen"],
-            correct: "staande",
+            vraag: "Judas eindigt met een lofprijzing op God, die machtig is om te zorgen dat je niet valt. Wat zegt hij dat God met jou doet?",
+            antwoorden: ["Hij houdt je staande", "Hij houdt je stil", "Hij houdt je klein", "Hij houdt je verborgen"],
+            correct: "Hij houdt je staande",
             bijbelplaats: "Judas 24"
         },
         {
@@ -4968,15 +4952,9 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Hoe noemt Petrus alle gelovigen samen?",
-            antwoorden: ["Een uitgekozen volk, een koninklijk priesterschap", "Een grote verzameling gewone mensen uit alle landen", "Een leger soldaten", "Een klas vol leerlingen"],
+            antwoorden: ["Een uitgekozen volk, een koninklijk priesterschap", "Een gemeenschap van leerlingen en leraren", "Een leger soldaten", "Een klas vol leerlingen"],
             correct: "Een uitgekozen volk, een koninklijk priesterschap",
             bijbelplaats: "1 Petrus 2:9"
-        },
-        {
-            vraag: "Petrus schrijft: bij de Heer is één dag als…",
-            antwoorden: ["duizend jaar", "één uur", "één minuut", "één week"],
-            correct: "duizend jaar",
-            bijbelplaats: "2 Petrus 3:8"
         },
         {
             vraag: "Petrus schrijft dat hij met eigen ogen de glorie van Jezus zag, op een hoge berg. Wat hoorde hij daar?",
@@ -4985,9 +4963,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 1:17-18"
         },
         {
-            vraag: "Petrus schrijft dat gelovigen opnieuw geboren zijn, en daardoor een levende … hebben.",
-            antwoorden: ["hoop", "zorg", "angst", "vraag"],
-            correct: "hoop",
+            vraag: "Petrus schrijft dat gelovigen opnieuw geboren zijn. Wat hebben zij daardoor volgens hem gekregen?",
+            antwoorden: ["Een levende hoop", "Een onvergankelijke erfenis", "Een nieuwe naam", "Een vaste belofte"],
+            correct: "Een levende hoop",
             bijbelplaats: "1 Petrus 1:3"
         },
         {
@@ -4997,9 +4975,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 3:3-4"
         },
         {
-            vraag: "Petrus schrijft iets verrassends: zelfs de … verlangen ernaar om de geheimen van Gods redding beter te begrijpen.",
-            antwoorden: ["engelen", "koningen", "profeten", "sterren"],
-            correct: "engelen",
+            vraag: "Petrus schrijft iets verrassends: er is een groep die ernaar verlangt de geheimen van Gods redding beter te begrijpen. Wie zijn dat?",
+            antwoorden: ["De engelen", "De koningen", "De apostelen", "De profeten"],
+            correct: "De engelen",
             bijbelplaats: "1 Petrus 1:12"
         },
         {
@@ -5019,6 +4997,25 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Vreemdelingen in de verstrooiing", "Kinderen van de belofte", "Broeders in de Heer", "Erfgenamen van het koninkrijk"],
             correct: "Vreemdelingen in de verstrooiing",
             bijbelplaats: "1 Petrus 1:1"
+        },
+        {
+            vraag: "In de tweede brief van Petrus staat een verhaal over een profeet die verkeerd bezig was. Wat deed zijn ezel om hem te waarschuwen?",
+            antwoorden: ["De ezel begon te praten", "De ezel vloog weg", "De ezel werd onzichtbaar", "De ezel veranderde in goud"],
+            correct: "De ezel begon te praten",
+            bijbelplaats: "2 Petrus 2:16"
+        },
+        {
+            vraag: "Judas vertelt over een aartsengel die met de duivel streed over het lichaam van Mozes. Hoe heet die aartsengel?",
+            antwoorden: ["Michaël", "Gabriël", "Rafaël", "Uriël"],
+            correct: "Michaël",
+            bijbelplaats: "Judas 9"
+        },
+        {
+            vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
+            antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
+            correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
+            bijbelplaats: "1 Petrus 1:13",
+            uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel, zodat hij vrij kon bewegen. Het beeld betekent dus: maak je klaar om aan de slag te gaan. Het bijzondere is dat Petrus het niet over je benen heeft maar over je denken — houd je gedachten bij elkaar in plaats van ze alle kanten op te laten waaien."
         }
     ]
 };
