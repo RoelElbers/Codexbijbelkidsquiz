@@ -5726,8 +5726,8 @@ vragenData["1 & 2 Tessalonicenzen"].expert.push(
 );
 
 // =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 17:
-// de beeldtaal van Openbaring)
+// Woorden & begrippen uit de bijbeltekst zelf (reeks 17)
+// De Openbaring-vragen van deze reeks staan nu in de hoofdpool.
 // =====================================================================
 vragenData["Efeziërs"].expert.push(
     {
