@@ -4515,7 +4515,7 @@ vragenData["Hebreeën"] = {
     ]
 };
 
-// Jakobus — vragenpool (38 vragen: beginner 11, advanced 14, expert 13)
+// Jakobus — vragenpool (36 vragen: beginner 10, advanced 14, expert 12)
 // Algemene brieven. Formaat gelijk aan de andere boeken: vragenData["Jakobus"]
 // met drie niveaus (beginner/advanced/expert).
 vragenData["Jakobus"] = {
@@ -4530,7 +4530,8 @@ vragenData["Jakobus"] = {
             vraag: "Jakobus vergelijkt de tong met iets heel kleins dat een groot schip van richting verandert. Wat is dat?",
             antwoorden: ["Het roer", "Het anker", "De mast", "Het zeil"],
             correct: "Het roer",
-            bijbelplaats: "Jakobus 3:4"
+            bijbelplaats: "Jakobus 3:4",
+            uitleg: "Een schip is enorm en het roer is klein. Toch bepaalt dat kleine stukje hout waar het hele schip naartoe gaat. Zo is het ook met je tong: een klein onderdeel van je lichaam, en toch kunnen je woorden een gesprek, een vriendschap of een hele dag de goede of de verkeerde kant op sturen."
         },
         {
             vraag: "Jakobus zegt: kom dicht bij God. Wat gebeurt er dan?",
@@ -4563,12 +4564,6 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:16"
         },
         {
-            vraag: "Jakobus zegt: wie weet wat goed is om te doen, maar het niet doet,…",
-            antwoorden: ["doet verkeerd", "doet niets verkeerds", "is juist heel wijs", "mag het zelf weten"],
-            correct: "doet verkeerd",
-            bijbelplaats: "Jakobus 4:17"
-        },
-        {
             vraag: "Stel dat iemand bij God en het goede pad wegloopt. Wat moet je volgens Jakobus proberen te doen?",
             antwoorden: ["Hem vol liefde weer terugbrengen", "Hem voorgoed wegsturen", "Net doen of je niets ziet", "Elke keer als je hem ziet, flink in discussie gaan"],
             correct: "Hem vol liefde weer terugbrengen",
@@ -4589,15 +4584,15 @@ vragenData["Jakobus"] = {
     ],
     advanced: [
         {
-            vraag: "Jakobus zegt: geloof zonder … is dood. Wat hoort hier?",
-            antwoorden: ["daden", "woorden", "geld", "vrienden"],
-            correct: "daden",
+            vraag: "Hoe noemt Jakobus een geloof waar geen enkele daad uit voortkomt?",
+            antwoorden: ["Dood", "Zwak", "Koud", "Klein"],
+            correct: "Dood",
             bijbelplaats: "Jakobus 2:17, 26"
         },
         {
-            vraag: "Jakobus geeft een wijze raad: wees snel om te …, langzaam om te spreken en langzaam om boos te worden.",
-            antwoorden: ["luisteren", "rennen", "eten", "slapen"],
-            correct: "luisteren",
+            vraag: "Jakobus geeft drie adviezen op een rij: wees langzaam om te spreken, langzaam om boos te worden — en waar moet je juist snel in zijn?",
+            antwoorden: ["Luisteren", "Vergeven", "Antwoorden", "Helpen"],
+            correct: "Luisteren",
             bijbelplaats: "Jakobus 1:19"
         },
         {
@@ -4613,16 +4608,17 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 2:1-4"
         },
         {
-            vraag: "Jakobus vergelijkt iemand die wel hoort maar niet doet met een man die in een … kijkt en meteen weer vergeet hoe hij eruitziet.",
-            antwoorden: ["spiegel", "boek", "put", "raam"],
-            correct: "spiegel",
+            vraag: "Jakobus vergelijkt iemand die Gods woord wel hoort maar er niets mee doet, met een man die in de spiegel kijkt. Wat gebeurt er met die man zodra hij weer weggaat?",
+            antwoorden: ["Hij vergeet meteen hoe hij eruitzag", "Hij is tevreden over wat hij zag", "Hij kijkt nog één keer om", "Hij poetst de spiegel schoon"],
+            correct: "Hij vergeet meteen hoe hij eruitzag",
             bijbelplaats: "Jakobus 1:23-24"
         },
         {
-            vraag: "Jakobus zegt: onderwerp je aan God en … de duivel, dan zal hij van je wegvluchten.",
-            antwoorden: ["weersta", "volg", "zoek", "roep"],
-            correct: "weersta",
-            bijbelplaats: "Jakobus 4:7"
+            vraag: "Jakobus zegt: sluit je aan bij God. En wat moet je volgens hem met de duivel doen, zodat die van je wegvlucht?",
+            antwoorden: ["Hem weerstaan", "Hem overschreeuwen", "Hem negeren", "Hem wegjagen"],
+            correct: "Hem weerstaan",
+            bijbelplaats: "Jakobus 4:7",
+            uitleg: "Weerstaan is iets anders dan wegjagen. Je hoeft de duivel niet zelf te verslaan of te verjagen — je zegt nee en gaat niet met hem mee. Jakobus zegt dat hij dán uit zichzelf op de vlucht slaat. Let ook op de volgorde in het vers: eerst sluit je je aan bij God, pas daarna houd je stand."
         },
         {
             vraag: "Welke man uit het Oude Testament noemt Jakobus als voorbeeld van iemand die in groot lijden geduldig bleef?",
@@ -4637,9 +4633,9 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:7"
         },
         {
-            vraag: "Jakobus zegt: wie God iets vraagt maar blijft twijfelen, lijkt op…",
-            antwoorden: ["een golf van de zee die heen en weer wordt geslingerd", "een sterke rots in de branding", "een anker dat het schip stevig op zijn plek houdt", "een rustige, stille vijver"],
-            correct: "een golf van de zee die heen en weer wordt geslingerd",
+            vraag: "Jakobus zegt dat iemand die God iets vraagt maar intussen blijft twijfelen, op iets uit de natuur lijkt. Waarmee vergelijkt hij zo iemand?",
+            antwoorden: ["Met een golf die de wind heen en weer gooit", "Met rook die door de wind wordt meegevoerd", "Met een blad dat van een boom valt", "Met zand dat door je vingers glijdt"],
+            correct: "Met een golf die de wind heen en weer gooit",
             bijbelplaats: "Jakobus 1:6"
         },
         {
@@ -4649,10 +4645,11 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:6"
         },
         {
-            vraag: "Jakobus beschrijft in zijn brief de wijsheid die van God komt. Welke eigenschap van die wijsheid benadrukt hij vooral?",
-            antwoorden: ["Ze is vredelievend en vriendelijk", "Ze is vooral heel verstandig", "Ze is streng en duidelijk", "Ze is alleen voor geleerde mensen"],
-            correct: "Ze is vredelievend en vriendelijk",
-            bijbelplaats: "Jakobus 3:17"
+            vraag: "Jakobus noemt een rijtje eigenschappen van de wijsheid die van God komt. Eén daarvan zet hij met opzet vooraan, als allereerste. Welke is dat?",
+            antwoorden: ["Rein", "Vredelievend", "Barmhartig", "Onpartijdig"],
+            correct: "Rein",
+            bijbelplaats: "Jakobus 3:17",
+            uitleg: "Alle vier de eigenschappen staan in dit ene vers, maar Jakobus zet er één met opzet vooraan. Het Griekse woord dat hij gebruikt, hagnos, betekent schoon van binnen, zonder verborgen bijbedoelingen. De ene Bijbel vertaalt dat met \"rein\", de andere met \"zuiver\" — allebei goed."
         },
         {
             vraag: "Jakobus vraagt: ben je wijs? Waaraan moet dat volgens hem te zien zijn?",
@@ -4669,12 +4666,6 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 3:5-6"
         },
         {
-            vraag: "Jakobus vergelijkt de tong met het roer van een schip. Wat wil hij daarmee zeggen?",
-            antwoorden: ["Iets kleins kan iets heel groots sturen", "Praten is gevaarlijk werk", "Alleen een stuurman mag spreken", "Woorden waaien snel weg"],
-            correct: "Iets kleins kan iets heel groots sturen",
-            bijbelplaats: "Jakobus 3:4"
-        },
-        {
             vraag: "Jakobus zegt: wees niet te zeker over morgen, want je weet niet wat er gebeurt. Waarmee vergelijkt hij ons leven?",
             antwoorden: ["Met damp die even verschijnt en weer verdwijnt", "Met een sterke berg", "Met een diepe zee", "Met een ster die eeuwig aan de hemel blijft staan"],
             correct: "Met damp die even verschijnt en weer verdwijnt",
@@ -4687,10 +4678,11 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Handelingen 15:13 · Galaten 2:9"
         },
         {
-            vraag: "'Heb je naaste lief als jezelf' noemt Jakobus de … wet — de allerbelangrijkste regel.",
-            antwoorden: ["koninklijke", "oude", "nieuwe", "gouden"],
-            correct: "koninklijke",
-            bijbelplaats: "Jakobus 2:8"
+            vraag: "Jakobus haalt het gebod 'heb je naaste lief als jezelf' aan en geeft die wet een bijzondere naam. Hoe noemt hij hem?",
+            antwoorden: ["De koninklijke wet", "De gouden wet", "De oude wet", "De eerste wet"],
+            correct: "De koninklijke wet",
+            bijbelplaats: "Jakobus 2:8",
+            uitleg: "Koninklijk betekent hier: van de koning. Jakobus bedoelt God als koning — dit is de wet van zijn koninkrijk, de regel waar alle andere regels aan opgehangen worden. Je hoort ook wel spreken over de \"gouden regel\"; dat is een andere uitdrukking, voor: behandel anderen zoals je zelf behandeld wilt worden."
         },
         {
             vraag: "Jakobus zegt dat het gebed van een gelovige veel kan doen. Welke profeet bad, en daarna regende het drieëneenhalf jaar niet?",
@@ -4702,7 +4694,8 @@ vragenData["Jakobus"] = {
             vraag: "Wat ontvangt volgens Jakobus de mens die moeilijke tijden geduldig doorstaat en van God blijft houden?",
             antwoorden: ["De kroon van het leven", "Roem bij alle mensen", "Een makkelijk leven", "Een lang leven op aarde"],
             correct: "De kroon van het leven",
-            bijbelplaats: "Jakobus 1:12"
+            bijbelplaats: "Jakobus 1:12",
+            uitleg: "Een kroon was in die tijd niet alleen iets voor koningen. Wie een hardloopwedstrijd won, kreeg een krans op zijn hoofd. Jakobus gebruikt dat beeld: wie volhoudt, krijgt van God niet zomaar een prijs, maar het leven zelf als erekrans."
         },
         {
             vraag: "Welke man uit het Oude Testament wordt door Jakobus 'een vriend van God' genoemd, omdat zijn geloof bleek uit wat hij deed?",
