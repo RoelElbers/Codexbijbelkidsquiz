@@ -34,6 +34,42 @@ naar de constanten uit dat bestand.
 De favicons in `icons/` hebben een **eigen teller** en staan hier los van; die
 niet meebumpen.
 
+### Avatarteller — ander ophoogmoment
+
+De avatarportretten in `images/Avatars/` dragen een **eigen `?v=`-teller**,
+los van de cache-buster hierboven. Let op het verschil in ophoogmoment:
+
+| teller | gaat omhoog zodra |
+| --- | --- |
+| cache-buster | `style.css`, `lang/nl.js`, `ontdekken-inhoud.js` of `script.js` wijzigt |
+| **avatarteller** | **een bestand in `images/Avatars/` wijzigt** |
+
+Ze liften dus niet met elkaar mee. Een nieuwe render verandert niets aan de
+code, en een codewijziging verandert niets aan de portretten.
+
+**Waarom hij er is.** Een avatar houdt zijn bestandsnaam wanneer het portret
+wordt vervangen — `avatar-rebekka.webp` blijft `avatar-rebekka.webp`. De URL
+verandert dan niet, dus een bezoeker die het oude portret in zijn
+browsercache heeft, blijft dat zien tot de HTTP-cache van dat bestand
+verloopt. De teller maakt de URL wél nieuw.
+
+**Dertien plekken, allemaal tegelijk.** Blijft er één achter, dan ziet de
+bezoeker in het ene scherm het nieuwe portret en in het andere het oude. Dat
+is bij testen niet te betrappen, want dan is de cache toch vers.
+
+```
+index.html: 107        het startschermportret
+index.html: 266-302    de tien keuzeknoppen
+script.js : 7217       const AVATAR_VERSIE
+script.js : 7397       updateAvatarWeergave()
+script.js : 7564       de spelerkiezer
+```
+
+De twee plekken in `script.js` lezen `AVATAR_VERSIE`; in `index.html` staat
+het nummer elf keer voluit. Regelnummers schuiven — zoek desnoods op
+`Avatars/` in beide bestanden, dat vindt ze alle dertien. De toelichting bij
+de teller staat ook boven in `index.html`, naast die van de scèneplaten.
+
 ## Vervangingen in `script.js`
 
 Tekstvervangingen in `script.js` gaan via een **Python-script met een

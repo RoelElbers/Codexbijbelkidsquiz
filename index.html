@@ -19,7 +19,29 @@
          nummer en gaan samen omhoog, ook als er maar een van de drie is gewijzigd.
          Nooit per bestand ophogen, nooit terug in nummer. Lees het huidige nummer
          hier uit het bestand. De favicons hierboven staan hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=110">
+    <link rel="stylesheet" href="style.css?v=111">
+
+    <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
+         Dertien verwijzingen dragen samen dit eigen nummer:
+             index.html: 107        avatar-mozes.webp   (startschermportret)
+             index.html: 266-302    de tien keuzeknoppen
+             script.js : 7217       const AVATAR_VERSIE
+             script.js : 7397       updateAvatarWeergave()
+             script.js : 7564       de spelerkiezer
+         (Regelnummers schuiven; zoek desnoods op "Avatars/" in beide bestanden.)
+
+         Hoog dit nummer op zodra een bestand in images/Avatars/ verandert —
+         een vervangen render, een nieuwe avatar. Een avatar houdt bij zo'n
+         vervanging zijn bestandsnaam, dus zonder ophoging blijft een bezoeker
+         het oude portret uit zijn browsercache zien. Alle dertien plekken gaan
+         samen omhoog: blijft er één achter, dan ziet de bezoeker in het ene
+         scherm het nieuwe portret en in het andere het oude — en dat valt bij
+         testen met een verse cache niet op.
+
+         Deze teller staat LOS van de cache-buster hierboven: die gaat omhoog
+         bij een wijziging in style.css, lang/nl.js, ontdekken-inhoud.js of
+         script.js, deze bij een wijziging in images/Avatars/. Laat ze niet
+         meeliften met elkaar. -->
 
     <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
          Vier verwijzingen dragen samen dit eigen nummer:
@@ -82,7 +104,7 @@
 
             <!-- Avatarfoto, rond bijgesneden in de ronde opening. Standaard
                  Mozes; verandert via het Nieuw-spel-keuzescherm. -->
-            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp" alt="Avatar">
+            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp?v=1" alt="Avatar">
 
             <!-- Naam van de gekozen Bijbelfiguur op het brede vak rechts. -->
             <div id="avatar-figuurnaam" class="avatar-figuurnaam">Mozes</div>
@@ -241,43 +263,43 @@
 
                 <div class="avatar-keuze">
                     <button type="button" class="avatar-keuze-btn" data-avatar="mozes">
-                        <img src="images/Avatars/avatar-mozes.webp" alt="Mozes">
+                        <img src="images/Avatars/avatar-mozes.webp?v=1" alt="Mozes">
                         <span>Mozes</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="esther">
-                        <img src="images/Avatars/avatar-esther.webp" alt="Esther">
+                        <img src="images/Avatars/avatar-esther.webp?v=1" alt="Esther">
                         <span>Esther</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="judith">
-                        <img src="images/Avatars/avatar-judith.webp" alt="Judith">
+                        <img src="images/Avatars/avatar-judith.webp?v=1" alt="Judith">
                         <span>Judith</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="samuel">
-                        <img src="images/Avatars/avatar-samuel.webp" alt="Samuel">
+                        <img src="images/Avatars/avatar-samuel.webp?v=1" alt="Samuel">
                         <span>Samuel</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="jozef">
-                        <img src="images/Avatars/avatar-jozef.webp" alt="Jozef">
+                        <img src="images/Avatars/avatar-jozef.webp?v=1" alt="Jozef">
                         <span>Jozef</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="elia">
-                        <img src="images/Avatars/avatar-elia.webp" alt="Elia">
+                        <img src="images/Avatars/avatar-elia.webp?v=1" alt="Elia">
                         <span>Elia</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="ruth">
-                        <img src="images/Avatars/avatar-ruth.webp" alt="Ruth">
+                        <img src="images/Avatars/avatar-ruth.webp?v=1" alt="Ruth">
                         <span>Ruth</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="maria">
-                        <img src="images/Avatars/avatar-maria.webp" alt="Maria">
+                        <img src="images/Avatars/avatar-maria.webp?v=1" alt="Maria">
                         <span>Maria</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="debora">
-                        <img src="images/Avatars/avatar-debora.webp" alt="Debora">
+                        <img src="images/Avatars/avatar-debora.webp?v=1" alt="Debora">
                         <span>Debora</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="rebekka">
-                        <img src="images/Avatars/avatar-rebekka.webp" alt="Rebekka">
+                        <img src="images/Avatars/avatar-rebekka.webp?v=1" alt="Rebekka">
                         <span>Rebekka</span>
                     </button>
                 </div>
@@ -659,9 +681,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=110"></script>
-    <script src="ontdekken-inhoud.js?v=110"></script>
-    <script src="script.js?v=110"></script>
+    <script src="lang/nl.js?v=111"></script>
+    <script src="ontdekken-inhoud.js?v=111"></script>
+    <script src="script.js?v=111"></script>
 
 </body>
 

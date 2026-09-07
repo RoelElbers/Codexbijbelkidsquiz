@@ -7209,6 +7209,13 @@ const avatarNamen = {
     rebekka: "Rebekka"
 };
 
+// Eigen teller voor de avatarbestanden — LOS van de cache-buster in
+// index.html. Een avatar houdt zijn bestandsnaam wanneer het portret wordt
+// vervangen, dus zonder dit nummer blijft een bezoeker het oude portret uit
+// zijn browsercache zien. Hoog op zodra er iets in images/Avatars/ verandert,
+// en houd hem gelijk met de ?v= achter de avatar-URL's in index.html.
+const AVATAR_VERSIE = 1;
+
 const STANDAARD_AVATAR = "mozes";
 
 // =========================
@@ -7387,7 +7394,7 @@ function updateAvatarWeergave() {
     const avatar = getGekozenAvatar();
 
     const img = document.getElementById("avatar-portret");
-    if (img) img.src = `images/Avatars/avatar-${avatar}.webp`;
+    if (img) img.src = `images/Avatars/avatar-${avatar}.webp?v=${AVATAR_VERSIE}`;
 
     const figuurnaam = document.getElementById("avatar-figuurnaam");
     if (figuurnaam) figuurnaam.innerHTML = avatarNamen[avatar];
@@ -7554,7 +7561,7 @@ function openSpelerKiezer(behoudModus) {
 
         const avatar = avatarNamen[p.avatar] ? p.avatar : STANDAARD_AVATAR;
         const img = document.createElement("img");
-        img.src = `images/Avatars/avatar-${avatar}.webp`;
+        img.src = `images/Avatars/avatar-${avatar}.webp?v=${AVATAR_VERSIE}`;
         img.alt = p.naam || avatarNamen[avatar];
 
         const naam = document.createElement("span");
