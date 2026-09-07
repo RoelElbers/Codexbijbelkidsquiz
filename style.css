@@ -2624,11 +2624,15 @@ height: 22%;
 
 /* =========================
    AVATAR-KEUZE in het Nieuw-spel-scherm
-   De vier avatars staan op één rij naast elkaar in een quiz-box die bijna
-   de volle schermbreedte gebruikt. Daardoor blijven de ronde portretten
-   groot zonder dat het naamveld of de knoppen in de knel komen — alles
-   past zonder scrollen op het scherm. De kaart-stijl blijft hetzelfde:
-   donkerblauw vak met gouden rand, naam onder de avatar.
+   De avatars staan in een raster van vier kolommen in een quiz-box die
+   bijna de volle schermbreedte gebruikt. Daardoor blijven de ronde
+   portretten groot zonder dat het naamveld of de knoppen in de knel komen.
+   Het zijn er nu negen, dus 4-4-1: de laatste rij bevat één avatar, die
+   linksuitgelijnd in de eerste kolom staat. Dat is zo gelaten — bij tien
+   wordt het 4-4-2 en bij twaalf weer 4-4-4. Het raster past niet meer in
+   het venster en scrollt verticaal; zie de max-height verderop. De
+   kaart-stijl blijft hetzelfde: donkerblauw vak met gouden rand, naam
+   onder de avatar.
 ========================= */
 
 /* Quiz-box bijna over de volle schermbreedte; benut de lege ruimte links
