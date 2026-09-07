@@ -4656,6 +4656,20 @@ vragenData["Jakobus"] = {
             antwoorden: ["Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed", "Aan dat je in elk gesprek je gelijk haalt", "Aan dat je anderen op hun fouten wijst", "Aan hoeveel mensen jouw wijze raad komen vragen"],
             correct: "Aan hoe je leeft: goede daden, vriendelijk en zonder hoogmoed",
             bijbelplaats: "Jakobus 3:13"
+        },
+        {
+            vraag: "Jakobus verwijt rijke landeigenaars dat zij het loon van hun maaiers achterhielden. Waarom was dat zo erg?",
+            antwoorden: ["Een dagloner leefde van die dag en had niets achter de hand", "Maaiers mochten volgens de wet geen loon vragen, alleen eten", "Het loon van de oogst hoorde eerst naar de priesters te gaan", "Wie op het land werkte, kreeg altijd graan en nooit geld"],
+            correct: "Een dagloner leefde van die dag en had niets achter de hand",
+            bijbelplaats: "Jakobus 5:4",
+            uitleg: "De wet van Mozes schreef het letterlijk voor: betaal een dagloner nog dezelfde dag, want hij heeft niets achter de hand. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
+        },
+        {
+            vraag: "Jakobus zegt: de boer wacht geduldig op de vroege en de late regen. Wat bedoelde hij daarmee?",
+            antwoorden: ["De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst", "De regen 's ochtends vroeg en die laat in de avond", "De regen van dit jaar en die van volgend jaar", "De eerste regen van een jonge boer en de laatste van een oude boer"],
+            correct: "De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst",
+            bijbelplaats: "Jakobus 5:7",
+            uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt in oktober en november: pas dan wordt de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen — precies op tijd om het graan te laten rijpen. Blijft die late regen uit, dan is de hele oogst mislukt. De boer moet dus een half jaar lang geduld hebben."
         }
     ],
     expert: [
@@ -4720,6 +4734,19 @@ vragenData["Jakobus"] = {
             antwoorden: ["De Rechter", "De koning", "De leraar", "De herder"],
             correct: "De Rechter",
             bijbelplaats: "Jakobus 5:9"
+        },
+        {
+            vraag: "Jakobus schrijft aan de twaalf stammen \"in de verstrooiing\". Wat betekent dat?",
+            antwoorden: ["De Joden die buiten Israël woonden, verspreid over het hele rijk", "De gelovigen die zich verstopt hielden voor vervolging", "De stammen die onderling ruzie hadden gekregen", "De mensen die hun geloof waren kwijtgeraakt"],
+            correct: "De Joden die buiten Israël woonden, verspreid over het hele rijk",
+            bijbelplaats: "Jakobus 1:1",
+            uitleg: "Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin. Sommigen waren ooit weggevoerd, anderen waren voor handel of werk vertrokken. Zo ontstonden Joodse gemeenschappen in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord daarvoor is diaspora, verstrooiing — alsof zaad is uitgestrooid over een groot veld. Juist door die verspreiding kon het christelijk geloof zich later zo snel verbreiden: Paulus vond in elke stad die hij bezocht al een synagoge waar hij kon beginnen."
+        },
+        {
+            vraag: "Jakobus vergelijkt de tong met twee kleine dingen die iets groots sturen. Welke twee zijn dat?",
+            antwoorden: ["Het bit in de bek van een paard en het roer van een schip", "De sleutel van een poort en het slot van een kist", "De pen van een schrijver en het zegel van een koning", "De vonk van een vuursteen en de lont van een lamp"],
+            correct: "Het bit in de bek van een paard en het roer van een schip",
+            bijbelplaats: "Jakobus 3:3-5"
         }
     ]
 };
@@ -4789,6 +4816,24 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Noach", "Mozes", "Abraham", "David"],
             correct: "Noach",
             bijbelplaats: "2 Petrus 2:5"
+        },
+        {
+            vraag: "Petrus schrijft dat de duivel rondgaat als een brullende leeuw. Waarom juist een leeuw?",
+            antwoorden: ["Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver", "Leeuwen kwamen alleen 's nachts en waren daarom eng", "De leeuw was het teken van de Romeinse keizer", "Leeuwen werden in de tempel gebruikt als versiering"],
+            correct: "Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver",
+            bijbelplaats: "1 Petrus 5:8"
+        },
+        {
+            vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
+            antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die tijdelijk bij familie inwoont na een verhuizing"],
+            correct: "Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land",
+            bijbelplaats: "1 Petrus 2:11"
+        },
+        {
+            vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
+            antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
+            correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem",
+            bijbelplaats: "2 Petrus 3:8"
         }
     ],
     advanced: [
@@ -4893,6 +4938,13 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Met levende stenen", "Met sterke pilaren", "Met houten balken", "Met hoge muren"],
             correct: "Met levende stenen",
             bijbelplaats: "1 Petrus 2:5"
+        },
+        {
+            vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
+            antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
+            correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
+            bijbelplaats: "1 Petrus 1:13",
+            uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel. Het beeld betekent dus: maak je klaar — en Petrus zegt het over je hoofd."
         }
     ],
     expert: [
@@ -4971,8 +5023,8 @@ vragenData["Petrus & Judas"] = {
     ]
 };
 
-// Brieven van Johannes — vragenpool (52 vragen: beginner 13, advanced 13,
-// expert 26). Algemene brieven. Bundel uit 1, 2 & 3 Johannes. Bewust
+// Brieven van Johannes — vragenpool (52 vragen: beginner 13, advanced 13, expert 26).
+// Algemene brieven. Bundel uit 1, 2 & 3 Johannes. Bewust
 // "Brieven van Johannes" (niet "Johannes"), om verwarring met het evangelie te
 // voorkomen. vragenData["Brieven van Johannes"] met drie niveaus.
 vragenData["Brieven van Johannes"] = {
@@ -5128,6 +5180,13 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["God is groter dan ons hart, en Hij weet alles", "Je moet je hart altijd geloven", "Een schuldig gevoel komt van een slechte geest", "Dan heb je vast iets verkeerds gedaan"],
             correct: "God is groter dan ons hart, en Hij weet alles",
             bijbelplaats: "1 Johannes 3:20"
+        },
+        {
+            vraag: "Johannes schrijft dat de gelovigen \"een zalving\" hebben gekregen. Wat gebeurde er vroeger bij een zalving?",
+            antwoorden: ["Er werd olie over iemands hoofd gegoten", "Er werd water over iemands handen gegoten", "Er werd een ring aan iemands vinger geschoven", "Er werd een mantel om iemands schouders gelegd"],
+            correct: "Er werd olie over iemands hoofd gegoten",
+            bijbelplaats: "1 Johannes 2:20",
+            uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt het beeld om hen moed te geven — jullie horen er echt bij."
         }
     ],
     expert: [
@@ -5268,6 +5327,27 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Volg niet het kwade na, maar het goede", "Volg je eigen hart", "Volg de meerderheid", "Volg de oudste van de gemeente"],
             correct: "Volg niet het kwade na, maar het goede",
             bijbelplaats: "3 Johannes 11"
+        },
+        {
+            vraag: "In de derde brief van Johannes staat het woord \"gemeente\", dat in andere vertalingen \"kerk\" heet. Waar komt ons Nederlandse woord kerk vandaan?",
+            antwoorden: ["Van een Grieks woord dat \"van de Heer\" betekent", "Van het Griekse ekklesia, dat vergadering betekent", "Van een Latijns woord voor een gebouw met een toren", "Van de naam van de eerste kerk in Rome"],
+            correct: "Van een Grieks woord dat \"van de Heer\" betekent",
+            bijbelplaats: "3 Johannes 1:6",
+            uitleg: "Kerk komt van kyriakon, \"wat van de Heer is\". Via het Germaans werd dat kerk in het Nederlands, Kirche in het Duits, church in het Engels en kirke in het Deens. Het Griekse ekklesia ging een andere weg: in het Latijn werd het ecclesia, en daaruit ontstonden het Franse église, het Spaanse iglesia en het Italiaanse chiesa. Twee woorden voor dezelfde zaak — het ene noemt het huis van de Heer, het andere de mensen die bij elkaar geroepen zijn."
+        },
+        {
+            vraag: "Johannes noemt Jezus de \"verzoening\" voor onze zonden. Het Nederlandse woord verzoening hangt samen met het woord zoen. Hoe zit dat?",
+            antwoorden: ["Zoen betekende eerst vrede, en pas veel later een kus", "Zoen is een verkorting van verzoening en kwam later", "Zoen komt van een oud woord dat zoet betekende", "Beide woorden zijn uit het Latijn vertaald"],
+            correct: "Zoen betekende eerst vrede, en pas veel later een kus",
+            bijbelplaats: "1 Johannes 2:2",
+            uitleg: "In het Middelnederlands was een \"soene\" een vrede of een goedmaking. Een zoenoffer was een offer om vrede te sluiten en zoengeld was geld waarmee je een ruzie afkocht. Pas veel later ging het woord de kus betekenen die bij zo'n verzoening hoorde. Als Johannes Jezus de verzoening noemt, bedoelt hij: door Hem is de breuk tussen God en mensen goedgemaakt."
+        },
+        {
+            vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers \"gemeenschap\" met hem hebben. In gewoon Grieks kwam dat woord ook uit de handel. Wat betekende het daar?",
+            antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
+            correct: "Samen eigenaar zijn van één zaak",
+            bijbelplaats: "1 Johannes 1:3",
+            uitleg: "Koinonia gebruikte men voor zakenpartners die samen een schip of een bedrijf bezaten — allebei helemaal betrokken, allebei verantwoordelijk. Vissers met één gezamenlijk net heetten koinonoi (Lucas 5:10). Het woord betekent dus meer dan gezelligheid: je hoort er echt bij en deelt in alles."
         }
     ]
 };
@@ -5342,6 +5422,25 @@ vragenData["Openbaring"] = {
             antwoorden: ["wonen", "langskomen", "wegblijven", "af en toe komen logeren"],
             correct: "wonen",
             bijbelplaats: "Openbaring 21:3"
+        },
+        {
+            vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
+            antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
+            correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
+            bijbelplaats: "Openbaring 1:9",
+            uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
+        },
+        {
+            vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
+            antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
+            correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
+            bijbelplaats: "Openbaring 2:10"
+        },
+        {
+            vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Waarvoor gebruikte men een zegel?",
+            antwoorden: ["Om iets dicht te houden, zodat je kon zien of iemand het geopend had", "Om te tonen hoe duur een boekrol was", "Om de bladzijden bij elkaar te houden", "Om het papier tegen vocht te beschermen"],
+            correct: "Om iets dicht te houden, zodat je kon zien of iemand het geopend had",
+            bijbelplaats: "Openbaring 5:1"
         }
     ],
     advanced: [
@@ -5416,6 +5515,39 @@ vragenData["Openbaring"] = {
             antwoorden: ["Om de volken te genezen", "Om soep van te koken", "Om op te schrijven", "Ze hebben geen doel, het is gewoon voedsel voor de dieren"],
             correct: "Om de volken te genezen",
             bijbelplaats: "Openbaring 22:2"
+        },
+        {
+            vraag: "Het laatste boek van de Bijbel heet \"Openbaring\". Wat betekent dat woord?",
+            antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
+            correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
+            bijbelplaats: "Openbaring 1:1",
+            uitleg: "Het Griekse woord betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+        },
+        {
+            vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
+            antwoorden: ["Een hoorn waarop men één hard signaal blies, geen melodie", "Een lange trompet van zilver, alleen voor muziek in de tempel", "Een grote trommel die het ritme van een lange optocht aangaf", "Een fluit die de zangers in de tempel begeleidde"],
+            correct: "Een hoorn waarop men één hard signaal blies, geen melodie",
+            bijbelplaats: "Openbaring 8:6",
+            uitleg: "Meestal was het een ramshoorn. Je blies erop om te waarschuwen voor gevaar, om een feest te openen of om te melden dat de koning eraan kwam. Een bazuin in Openbaring betekent dus niet muziek, maar: let op, er gaat iets beginnen."
+        },
+        {
+            vraag: "In de hemel klinkt \"Halleluja\". Wat betekent dat woord?",
+            antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
+            correct: "Prijs de HEER, in het Hebreeuws",
+            bijbelplaats: "Openbaring 19:1",
+            uitleg: "Hallelu betekent prijst, en Jah is de verkorte naam van God. Net als amen is het woord nooit vertaald; het klinkt in elke taal hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+        },
+        {
+            vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
+            antwoorden: ["Het brood dat God zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
+            correct: "Het brood dat God zijn volk in de woestijn elke ochtend gaf",
+            bijbelplaats: "Openbaring 2:17"
+        },
+        {
+            vraag: "God noemt zichzelf \"de alfa en de omega\". Waar komen die twee woorden vandaan?",
+            antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
+            correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
+            bijbelplaats: "Openbaring 1:8"
         }
     ],
     expert: [
@@ -5502,6 +5634,48 @@ vragenData["Openbaring"] = {
             antwoorden: ["doorzichtig glas", "blauw water", "wit marmer", "groen gras"],
             correct: "doorzichtig glas",
             bijbelplaats: "Openbaring 21:21"
+        },
+        {
+            vraag: "De oudsten houden gouden schalen vol reukwerk vast. Johannes schrijft er meteen bij wat die schalen voorstellen. Wat stellen zij voor?",
+            antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
+            correct: "De gebeden van de gelovigen",
+            bijbelplaats: "Openbaring 5:8",
+            uitleg: "In de tempel werd elke dag reukwerk verbrand, en de rook die opsteeg was het beeld van gebed dat omhooggaat. Openbaring houdt dat beeld vast en voegt er iets aan toe: de gebeden komen aan, en ze worden bewaard."
+        },
+        {
+            vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
+            antwoorden: ["Feest en overwinning: zo haalde men een winnaar binnen", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
+            correct: "Feest en overwinning: zo haalde men een winnaar binnen",
+            bijbelplaats: "Openbaring 7:9",
+            uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
+        },
+        {
+            vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
+            antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
+            correct: "Martelaar",
+            bijbelplaats: "Openbaring 2:13",
+            uitleg: "Martys betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
+        },
+        {
+            vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
+            antwoorden: ["Dat je het zeggen had over wie er binnen mocht", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
+            correct: "Dat je het zeggen had over wie er binnen mocht",
+            bijbelplaats: "Openbaring 3:7",
+            uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
+        },
+        {
+            vraag: "Johannes ziet iemand met veel \"diademen\" op zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
+            antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
+            correct: "Een diadeem was een band die alleen een koning droeg",
+            bijbelplaats: "Openbaring 19:12",
+            uitleg: "Het Grieks gebruikt twee verschillende woorden. De krans van bladeren was voor wie de wedstrijd won; de diadeem was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
+        },
+        {
+            vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",
+            antwoorden: ["Hun water kwam van ver en was onderweg lauw geworden", "Zij hadden geen bron en dronken alleen regenwater", "Hun stad lag in een dal waar het altijd warm bleef", "Zij kookten hun water eerst en lieten het staan"],
+            correct: "Hun water kwam van ver en was onderweg lauw geworden",
+            bijbelplaats: "Openbaring 3:16",
+            uitleg: "Laodicea haalde zijn water door een lange leiding uit de heuvels; het kwam lauw en kalkig aan. Even verderop lag Hiërapolis met warme bronnen waar zieken heen gingen, en Kolosse met koud bergwater. Warm was goed, koud was goed — lauw water spuugde je uit."
         }
     ]
 };
@@ -5551,113 +5725,10 @@ vragenData["1 & 2 Tessalonicenzen"].expert.push(
     }
 );
 
-vragenData["Brieven van Johannes"].advanced.push(
-    {
-        vraag: "Johannes schrijft dat de gelovigen \"een zalving\" hebben gekregen. Wat gebeurde er vroeger bij een zalving?",
-        antwoorden: ["Er werd olie over iemands hoofd gegoten", "Er werd water over iemands handen gegoten", "Er werd een ring aan iemands vinger geschoven", "Er werd een mantel om iemands schouders gelegd"],
-        correct: "Er werd olie over iemands hoofd gegoten",
-        bijbelplaats: "1 Johannes 2:20",
-        uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt het beeld om hen moed te geven — jullie horen er echt bij."
-    }
-);
-
-vragenData["Brieven van Johannes"].expert.push(
-    {
-        vraag: "In de derde brief van Johannes staat het woord \"gemeente\", dat in andere vertalingen \"kerk\" heet. Waar komt ons Nederlandse woord kerk vandaan?",
-        antwoorden: ["Van een Grieks woord dat \"van de Heer\" betekent", "Van het Griekse ekklesia, dat vergadering betekent", "Van een Latijns woord voor een gebouw met een toren", "Van de naam van de eerste kerk in Rome"],
-        correct: "Van een Grieks woord dat \"van de Heer\" betekent",
-        bijbelplaats: "3 Johannes 1:6",
-        uitleg: "Kerk komt van kyriakon, \"wat van de Heer is\". Via het Germaans werd dat kerk in het Nederlands, Kirche in het Duits, church in het Engels en kirke in het Deens. Het Griekse ekklesia ging een andere weg: in het Latijn werd het ecclesia, en daaruit ontstonden het Franse église, het Spaanse iglesia en het Italiaanse chiesa. Twee woorden voor dezelfde zaak — het ene noemt het huis van de Heer, het andere de mensen die bij elkaar geroepen zijn."
-    },
-    {
-        vraag: "Johannes noemt Jezus de \"verzoening\" voor onze zonden. Het Nederlandse woord verzoening hangt samen met het woord zoen. Hoe zit dat?",
-        antwoorden: ["Zoen betekende eerst vrede, en pas veel later een kus", "Zoen is een verkorting van verzoening en kwam later", "Zoen komt van een oud woord dat zoet betekende", "Beide woorden zijn uit het Latijn vertaald"],
-        correct: "Zoen betekende eerst vrede, en pas veel later een kus",
-        bijbelplaats: "1 Johannes 2:2",
-        uitleg: "In het Middelnederlands was een \"soene\" een vrede of een goedmaking. Een zoenoffer was een offer om vrede te sluiten en zoengeld was geld waarmee je een ruzie afkocht. Pas veel later ging het woord de kus betekenen die bij zo'n verzoening hoorde. Als Johannes Jezus de verzoening noemt, bedoelt hij: door Hem is de breuk tussen God en mensen goedgemaakt."
-    },
-    {
-        vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers \"gemeenschap\" met hem hebben. In gewoon Grieks kwam dat woord ook uit de handel. Wat betekende het daar?",
-        antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
-        correct: "Samen eigenaar zijn van één zaak",
-        bijbelplaats: "1 Johannes 1:3",
-        uitleg: "Koinonia gebruikte men voor zakenpartners die samen een schip of een bedrijf bezaten — allebei helemaal betrokken, allebei verantwoordelijk. Vissers met één gezamenlijk net heetten koinonoi (Lucas 5:10). Het woord betekent dus meer dan gezelligheid: je hoort er echt bij en deelt in alles."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 17:
 // de beeldtaal van Openbaring)
 // =====================================================================
-vragenData["Openbaring"].advanced.push(
-    {
-        vraag: "Het laatste boek van de Bijbel heet \"Openbaring\". Wat betekent dat woord?",
-        antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
-        correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
-        bijbelplaats: "Openbaring 1:1",
-        uitleg: "Het Griekse woord betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
-    },
-    {
-        vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
-        antwoorden: ["Een hoorn waarop men één hard signaal blies, geen melodie", "Een lange trompet van zilver, alleen voor muziek in de tempel", "Een grote trommel die het ritme van een lange optocht aangaf", "Een fluit die de zangers in de tempel begeleidde"],
-        correct: "Een hoorn waarop men één hard signaal blies, geen melodie",
-        bijbelplaats: "Openbaring 8:6",
-        uitleg: "Meestal was het een ramshoorn. Je blies erop om te waarschuwen voor gevaar, om een feest te openen of om te melden dat de koning eraan kwam. Een bazuin in Openbaring betekent dus niet muziek, maar: let op, er gaat iets beginnen."
-    },
-    {
-        vraag: "In de hemel klinkt \"Halleluja\". Wat betekent dat woord?",
-        antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
-        correct: "Prijs de HEER, in het Hebreeuws",
-        bijbelplaats: "Openbaring 19:1",
-        uitleg: "Hallelu betekent prijst, en Jah is de verkorte naam van God. Net als amen is het woord nooit vertaald; het klinkt in elke taal hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
-    }
-);
-
-vragenData["Openbaring"].expert.push(
-    {
-        vraag: "De oudsten houden gouden schalen vol reukwerk vast. Johannes schrijft er meteen bij wat die schalen voorstellen. Wat stellen zij voor?",
-        antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
-        correct: "De gebeden van de gelovigen",
-        bijbelplaats: "Openbaring 5:8",
-        uitleg: "In de tempel werd elke dag reukwerk verbrand, en de rook die opsteeg was het beeld van gebed dat omhooggaat. Openbaring houdt dat beeld vast en voegt er iets aan toe: de gebeden komen aan, en ze worden bewaard."
-    },
-    {
-        vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
-        antwoorden: ["Feest en overwinning: zo haalde men een winnaar binnen", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
-        correct: "Feest en overwinning: zo haalde men een winnaar binnen",
-        bijbelplaats: "Openbaring 7:9",
-        uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
-    },
-    {
-        vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
-        antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
-        correct: "Martelaar",
-        bijbelplaats: "Openbaring 2:13",
-        uitleg: "Martys betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
-    },
-    {
-        vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
-        antwoorden: ["Dat je het zeggen had over wie er binnen mocht", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
-        correct: "Dat je het zeggen had over wie er binnen mocht",
-        bijbelplaats: "Openbaring 3:7",
-        uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
-    },
-    {
-        vraag: "Johannes ziet iemand met veel \"diademen\" op zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
-        antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
-        correct: "Een diadeem was een band die alleen een koning droeg",
-        bijbelplaats: "Openbaring 19:12",
-        uitleg: "Het Grieks gebruikt twee verschillende woorden. De krans van bladeren was voor wie de wedstrijd won; de diadeem was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
-    },
-    {
-        vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",
-        antwoorden: ["Hun water kwam van ver en was onderweg lauw geworden", "Zij hadden geen bron en dronken alleen regenwater", "Hun stad lag in een dal waar het altijd warm bleef", "Zij kookten hun water eerst en lieten het staan"],
-        correct: "Hun water kwam van ver en was onderweg lauw geworden",
-        bijbelplaats: "Openbaring 3:16",
-        uitleg: "Laodicea haalde zijn water door een lange leiding uit de heuvels; het kwam lauw en kalkig aan. Even verderop lag Hiërapolis met warme bronnen waar zieken heen gingen, en Kolosse met koud bergwater. Warm was goed, koud was goed — lauw water spuugde je uit."
-    }
-);
-
 vragenData["Efeziërs"].expert.push(
     {
         vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke muur dachten zijn lezers?",
@@ -5736,26 +5807,6 @@ vragenData["Kolossenzen & Filemon"].expert.push(
         correct: "Het begin van een nieuwe maand, met een feest",
         bijbelplaats: "Kolossenzen 2:16",
         uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Omdat die kalender nog steeds meetelt, valt Pasen ook nu elk jaar op een andere datum."
-    }
-);
-
-vragenData["Petrus & Judas"].advanced.push(
-    {
-        vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
-        antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
-        correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
-        bijbelplaats: "1 Petrus 1:13",
-        uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel. Het beeld betekent dus: maak je klaar — en Petrus zegt het over je hoofd."
-    }
-);
-
-vragenData["Jakobus"].advanced.push(
-    {
-        vraag: "Jakobus verwijt rijke landeigenaars dat zij het loon van hun maaiers achterhielden. Waarom was dat zo erg?",
-        antwoorden: ["Een dagloner leefde van die dag en had niets achter de hand", "Maaiers mochten volgens de wet geen loon vragen, alleen eten", "Het loon van de oogst hoorde eerst naar de priesters te gaan", "Wie op het land werkte, kreeg altijd graan en nooit geld"],
-        correct: "Een dagloner leefde van die dag en had niets achter de hand",
-        bijbelplaats: "Jakobus 5:4",
-        uitleg: "De wet van Mozes schreef het letterlijk voor: betaal een dagloner nog dezelfde dag, want hij heeft niets achter de hand. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
     }
 );
 
@@ -5988,16 +6039,6 @@ vragenData["Handelingen"].expert.push(
     }
 );
 
-vragenData["Jakobus"].expert.push(
-    {
-        vraag: "Jakobus schrijft aan de twaalf stammen \"in de verstrooiing\". Wat betekent dat?",
-        antwoorden: ["De Joden die buiten Israël woonden, verspreid over het hele rijk", "De gelovigen die zich verstopt hielden voor vervolging", "De stammen die onderling ruzie hadden gekregen", "De mensen die hun geloof waren kwijtgeraakt"],
-        correct: "De Joden die buiten Israël woonden, verspreid over het hele rijk",
-        bijbelplaats: "Jakobus 1:1",
-        uitleg: "Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin. Sommigen waren ooit weggevoerd, anderen waren voor handel of werk vertrokken. Zo ontstonden Joodse gemeenschappen in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord daarvoor is diaspora, verstrooiing — alsof zaad is uitgestrooid over een groot veld. Juist door die verspreiding kon het christelijk geloof zich later zo snel verbreiden: Paulus vond in elke stad die hij bezocht al een synagoge waar hij kon beginnen."
-    }
-);
-
 vragenData["Timoteüs & Titus"].expert.push(
     {
         vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
@@ -6025,27 +6066,6 @@ vragenData["Johannes"].expert.push(
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 12, BEGINNER:
 // aanvulling voor Petrus & Judas, Timoteüs & Titus en Openbaring)
 // =====================================================================
-vragenData["Petrus & Judas"].beginner.push(
-    {
-        vraag: "Petrus schrijft dat de duivel rondgaat als een brullende leeuw. Waarom juist een leeuw?",
-        antwoorden: ["Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver", "Leeuwen kwamen alleen 's nachts en waren daarom eng", "De leeuw was het teken van de Romeinse keizer", "Leeuwen werden in de tempel gebruikt als versiering"],
-        correct: "Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver",
-        bijbelplaats: "1 Petrus 5:8"
-    },
-    {
-        vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
-        antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die tijdelijk bij familie inwoont na een verhuizing"],
-        correct: "Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land",
-        bijbelplaats: "1 Petrus 2:11"
-    },
-    {
-        vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
-        antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
-        correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem",
-        bijbelplaats: "2 Petrus 3:8"
-    }
-);
-
 vragenData["Timoteüs & Titus"].beginner.push(
     {
         vraag: "Paulus schrijft dat de liefde voor geld de wortel is van alle kwaad. Waarom kiest hij het woord \"wortel\"?",
@@ -6064,28 +6084,6 @@ vragenData["Timoteüs & Titus"].beginner.push(
         antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
         correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
         bijbelplaats: "1 Timoteüs 4:12"
-    }
-);
-
-vragenData["Openbaring"].beginner.push(
-    {
-        vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
-        antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
-        correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
-        bijbelplaats: "Openbaring 1:9",
-        uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
-    },
-    {
-        vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
-        antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
-        correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
-        bijbelplaats: "Openbaring 2:10"
-    },
-    {
-        vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Waarvoor gebruikte men een zegel?",
-        antwoorden: ["Om iets dicht te houden, zodat je kon zien of iemand het geopend had", "Om te tonen hoe duur een boekrol was", "Om de bladzijden bij elkaar te houden", "Om het papier tegen vocht te beschermen"],
-        correct: "Om iets dicht te houden, zodat je kon zien of iemand het geopend had",
-        bijbelplaats: "Openbaring 5:1"
     }
 );
 
@@ -6445,15 +6443,6 @@ vragenData["Romeinen"].expert.push(
 );
 
 
-vragenData["Jakobus"].expert.push(
-    {
-        vraag: "Jakobus vergelijkt de tong met twee kleine dingen die iets groots sturen. Welke twee zijn dat?",
-        antwoorden: ["Het bit in de bek van een paard en het roer van een schip", "De sleutel van een poort en het slot van een kist", "De pen van een schrijver en het zegel van een koning", "De vonk van een vuursteen en de lont van een lamp"],
-        correct: "Het bit in de bek van een paard en het roer van een schip",
-        bijbelplaats: "Jakobus 3:3-5"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 5:
 // gebruiken, offers en geld rond de tempel)
@@ -6711,21 +6700,6 @@ vragenData["1 & 2 Korintiërs"].advanced.push(
     }
 );
 
-vragenData["Openbaring"].advanced.push(
-    {
-        vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
-        antwoorden: ["Het brood dat God zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
-        correct: "Het brood dat God zijn volk in de woestijn elke ochtend gaf",
-        bijbelplaats: "Openbaring 2:17"
-    },
-    {
-        vraag: "God noemt zichzelf \"de alfa en de omega\". Waar komen die twee woorden vandaan?",
-        antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
-        correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
-        bijbelplaats: "Openbaring 1:8"
-    }
-);
-
 vragenData["Timoteüs & Titus"].advanced.push(
     {
         vraag: "Paulus schrijft dat hij in boeien zit, maar dat Gods woord niet geboeid is. Wat waren boeien?",
@@ -6740,17 +6714,6 @@ vragenData["Timoteüs & Titus"].advanced.push(
         bijbelplaats: "1 Timoteüs 3:1"
     }
 );
-
-vragenData["Jakobus"].advanced.push(
-    {
-        vraag: "Jakobus zegt: de boer wacht geduldig op de vroege en de late regen. Wat bedoelde hij daarmee?",
-        antwoorden: ["De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst", "De regen 's ochtends vroeg en die laat in de avond", "De regen van dit jaar en die van volgend jaar", "De eerste regen van een jonge boer en de laatste van een oude boer"],
-        correct: "De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst",
-        bijbelplaats: "Jakobus 5:7",
-        uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt in oktober en november: pas dan wordt de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen — precies op tijd om het graan te laten rijpen. Blijft die late regen uit, dan is de hele oogst mislukt. De boer moet dus een half jaar lang geduld hebben."
-    }
-);
-
 
 // =====================================================================
 // Nog drie woordvragen uit reeks 9 die op gevorderd thuishoren:
