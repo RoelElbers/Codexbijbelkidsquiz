@@ -101,23 +101,45 @@ in de zinsbouw. Niet inkorten.
 
 Bij uitbreiding naar nieuwe avatars dezelfde lengte en toon aanhouden.
 
-## Wat er nog moet gebeuren voor invoer
+## Waar de beschrijvingen terechtkomen
 
-De teksten zijn klaar, maar er is nog **geen plek in de code** waar ze terecht
-kunnen. `avatarNamen` (`script.js` r. 7196) koppelt een sleutel alleen aan een
-weergavenaam:
+**Besluit: het startscherm, niet het keuzescherm.**
+
+Op het startscherm staat de gekozen avatar klein in het frame linksboven
+(`.avatar-portret`, `style.css` r. 1737 — 26,4% van de framebreedte). Klikken op
+dat portret opent een venster met het portret groot in beeld en de beschrijving
+eronder, bereikbaar door te scrollen.
+
+Het portret daarbij **niet schermvullend** maken: laat de eerste regels tekst net
+zichtbaar, anders is er geen aanleiding om te scrollen.
+
+Alleen de eigen, op dat moment gekozen avatar. Geen galerij, geen doorbladeren.
+De inhoud verandert mee zodra de speler een andere avatar kiest.
+
+**In het keuzescherm verandert niets**: klikken blijft daar kiezen.
+
+*Waarom deze keuze.* In het keuzescherm is klikken al bezet, op het startscherm
+niet. En daar is het probleem ook het grootst: het portret is er veel kleiner dan
+de 440 px die het in het keuzescherm maximaal krijgt (`style.css` r. 2718).
+
+## Dataopzet
+
+**Een apart configblok naast `avatarNamen`** — `avatarNamen` niet uitbreiden naar
+objecten. Dat laatste raakt elf plekken die nu een string verwachten.
+
+Het aparte blok krijgt per avatar een naam, een bijbelplaats en een tekst, en kan
+later een videoveld krijgen zonder verbouwing:
 
 ```js
-const avatarNamen = {
-    mozes: "Mozes",
+const avatarBeschrijvingen = {
+    mozes: {
+        naam: "Mozes",
+        bijbelplaats: "Exodus 3",
+        tekst: "Mozes hoedde de schapen van zijn schoonvader …"
+    },
     ...
 };
 ```
 
-Er is geen veld voor een beschrijving en geen scherm dat er een toont. Invoeren
-betekent dus twee dingen: de teksten ergens in de data zetten — een tweede
-object naast `avatarNamen`, of `avatarNamen` uitbreiden naar objecten met `naam`
-en `beschrijving` — en beslissen wáár het kind ze te zien krijgt. Het
-keuzescherm (`index.html`, de tien `.avatar-keuze-btn`) is de voor de hand
-liggende plek, maar daar staat nu alleen een portret met een naam eronder, en
-tien alinea's passen daar niet zomaar bij.
+`avatarNamen` (`script.js` r. 7196) blijft dus wat het is: sleutel naar
+weergavenaam.

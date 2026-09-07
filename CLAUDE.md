@@ -141,6 +141,22 @@ dus ook `correct` mee. `bijbelplaats` blijft ongewijzigd.
 > wordt: `Paulus zegt dat het bij alles wat je doet om één ding gaat. Waar
 > gaat het hem om?` — antwoorden `["Dat je het in liefde doet", …]`
 
+## Plaatsingsregel — gewone pool of Verborgen Schat
+
+Waar materiaal terechtkomt hangt af van hoe vast de herkomst ervan ligt.
+
+**Vaststaande basis → de gewone vraagpools.** De bijbeltekst zelf,
+identificeerbare vroegkerkelijke bronnen, gevestigde exegese.
+
+**Herkomst ligt niet vast → de Verborgen Schat.** Overleveringen, dingen die je
+alleen buiten de Bijbel vindt. Daar rechtvaardigt "verborgen" het opzoeken.
+
+Voorbeeld, uit `kladblok/KLADBLOK-avatarbeschrijvingen.md`: bij Maria staat
+bewust "ze woonde in Nazaret" en niet "uit Nazaret". Lucas 1 zegt alleen dat de
+engel daarheen werd gestuurd; over haar afkomst staat er niets. Dat ze opgroeide
+in de tempel in Jeruzalem komt uit het Protevangelium van Jakobus en blijft
+daarom uit de gewone tekst.
+
 ## Controleren
 
 **Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in
