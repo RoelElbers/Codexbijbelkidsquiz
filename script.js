@@ -5020,23 +5020,17 @@ vragenData["Petrus & Judas"] = {
     ]
 };
 
-// Brieven van Johannes — vragenpool (52 vragen: beginner 13, advanced 13, expert 26).
+// Brieven van Johannes — vragenpool (52 vragen: beginner 11, advanced 15, expert 26).
 // Algemene brieven. Bundel uit 1, 2 & 3 Johannes. Bewust
 // "Brieven van Johannes" (niet "Johannes"), om verwarring met het evangelie te
 // voorkomen. vragenData["Brieven van Johannes"] met drie niveaus.
 vragenData["Brieven van Johannes"] = {
     beginner: [
         {
-            vraag: "Welke beroemde zin over God staat in de eerste brief van Johannes? God is…",
-            antwoorden: ["liefde", "ver weg", "streng", "onzichtbaar"],
-            correct: "liefde",
+            vraag: "In de eerste brief van Johannes staat een korte, beroemde zin over wie God is. Hoe luidt die zin?",
+            antwoorden: ["God is liefde", "God is streng", "God is ver weg", "God is onzichtbaar"],
+            correct: "God is liefde",
             bijbelplaats: "1 Johannes 4:8"
-        },
-        {
-            vraag: "Welke opdracht schrijft Johannes vaak?",
-            antwoorden: ["Heb elkaar lief", "Wees waakzaam", "Wees dankbaar", "Blijf bidden"],
-            correct: "Heb elkaar lief",
-            bijbelplaats: "1 Johannes 3:11"
         },
         {
             vraag: "Johannes zegt: als we onze fouten (zonden) eerlijk aan God vertellen, wat doet God dan volgens hem?",
@@ -5045,15 +5039,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:9"
         },
         {
-            vraag: "God is …, en in Hem is helemaal geen duisternis, schrijft Johannes.",
-            antwoorden: ["licht", "ver", "oud", "stil"],
-            correct: "licht",
-            bijbelplaats: "1 Johannes 1:5"
-        },
-        {
-            vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden, maar met…",
-            antwoorden: ["daden en in waarheid", "dure cadeaus", "een luide stem", "veel beloften"],
-            correct: "daden en in waarheid",
+            vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden. Hoe moeten we het dan wél doen?",
+            antwoorden: ["Met daden, en in waarheid", "Met dure cadeaus", "Met veel beloften", "Door er vaak met anderen over te praten"],
+            correct: "Met daden, en in waarheid",
             bijbelplaats: "1 Johannes 3:18"
         },
         {
@@ -5069,27 +5057,27 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:18"
         },
         {
-            vraag: "Johannes schrijft: wie de Zoon (Jezus) heeft, heeft het …; wie de Zoon niet heeft, heeft het niet.",
-            antwoorden: ["leven", "een huis", "een boek", "een kroon"],
-            correct: "leven",
+            vraag: "Johannes schrijft over de Zoon, Jezus. Wat heeft volgens hem iedereen die de Zoon heeft?",
+            antwoorden: ["Het leven", "Het licht", "De waarheid", "De vrede"],
+            correct: "Het leven",
             bijbelplaats: "1 Johannes 5:12"
         },
         {
             vraag: "Wat zegt Johannes dat zijn allergrootste blijdschap is?",
-            antwoorden: ["Horen dat zijn 'kinderen' in de waarheid leven", "Horen dat de gemeente groeit", "Zelf bij hen op bezoek kunnen komen", "Horen dat zijn brieven overal gelezen worden"],
+            antwoorden: ["Horen dat zijn 'kinderen' in de waarheid leven", "Horen dat de gemeente groeit", "Horen dat het goed met hen gaat en dat ze gezond zijn", "Horen dat zijn brieven overal gelezen worden"],
             correct: "Horen dat zijn 'kinderen' in de waarheid leven",
             bijbelplaats: "3 Johannes 4"
         },
         {
-            vraag: "Johannes noemt de gelovigen aan wie hij schrijft vaak liefdevol…",
-            antwoorden: ["'mijn kinderen'", "'mijn soldaten'", "'mijn dienaren'", "'mijn leerlingen'"],
-            correct: "'mijn kinderen'",
+            vraag: "Johannes spreekt de gelovigen in zijn brief steeds aan met hetzelfde liefdevolle woord. Welk woord gebruikt hij?",
+            antwoorden: ["'Mijn kinderen'", "'Mijn vrienden'", "'Mijn broeders'", "'Mijn leerlingen'"],
+            correct: "'Mijn kinderen'",
             bijbelplaats: "1 Johannes 2:1"
         },
         {
-            vraag: "Johannes vergelijkt leven mét God met wandelen in het licht, en leven zonder God met wandelen in het…",
-            antwoorden: ["donker", "moeras", "vuur", "modder"],
-            correct: "donker",
+            vraag: "Johannes gebruikt het beeld van wandelen. Wie met God leeft, wandelt in het licht. Hoe noemt hij het leven van wie niet met God leeft?",
+            antwoorden: ["Wandelen in het donker", "Wandelen in de woestijn", "Wandelen op een doodlopende weg", "Wandelen zonder ergens aan te komen"],
+            correct: "Wandelen in het donker",
             bijbelplaats: "1 Johannes 1:6-7"
         },
         {
@@ -5100,16 +5088,16 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes heeft nog veel te vertellen, maar hij wil het niet allemaal met pen en inkt opschrijven. Wat wil hij liever doen?",
-            antwoorden: ["Hen zelf bezoeken en van mond tot mond spreken", "Iemand anders het laten opschrijven", "Wachten tot ze zelf naar hem toe komen", "Het geheimhouden voor de anderen"],
-            correct: "Hen zelf bezoeken en van mond tot mond spreken",
+            antwoorden: ["Zelf bij hen langskomen en het persoonlijk vertellen", "Iemand anders het laten opschrijven", "Wachten tot ze zelf naar hem toe komen", "Het geheimhouden voor de anderen"],
+            correct: "Zelf bij hen langskomen en het persoonlijk vertellen",
             bijbelplaats: "2 Johannes 12; 3 Johannes 13"
         }
     ],
     advanced: [
         {
-            vraag: "Waarom kunnen wij volgens Johannes liefhebben? Omdat God…",
-            antwoorden: ["ons eerst heeft liefgehad", "ons dat opdraagt", "ons daarvoor beloont", "ons pas liefheeft als wij beginnen"],
-            correct: "ons eerst heeft liefgehad",
+            vraag: "Johannes legt uit waar onze liefde vandaan komt. Wat is volgens hem de reden dat wij kunnen liefhebben?",
+            antwoorden: ["God heeft ons het eerst liefgehad", "God draagt het ons op", "God beloont ons ervoor", "God heeft ons nu eenmaal zo gemaakt"],
+            correct: "God heeft ons het eerst liefgehad",
             bijbelplaats: "1 Johannes 4:19"
         },
         {
@@ -5119,15 +5107,15 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 3:1"
         },
         {
-            vraag: "Johannes geeft een test om te weten of iemand de waarheid spreekt: erkent diegene dat Jezus echt … is geworden, een mens van vlees en bloed?",
-            antwoorden: ["mens", "koning", "engel", "profeet"],
-            correct: "mens",
+            vraag: "Johannes geeft een test waarmee je kunt nagaan of iemand de waarheid spreekt. Wat moet zo iemand erkennen over Jezus?",
+            antwoorden: ["Dat Hij echt mens is geworden, van vlees en bloed", "Dat Hij uit de hemel is neergedaald", "Dat Hij de Zoon van David is", "Dat Hij de grootste profeet is"],
+            correct: "Dat Hij echt mens is geworden, van vlees en bloed",
             bijbelplaats: "1 Johannes 4:2"
         },
         {
-            vraag: "Waarom heeft Johannes zijn brief geschreven, zegt hij zelf? Zodat de gelovigen zeker weten dat ze het … hebben.",
-            antwoorden: ["eeuwige leven", "laatste woord", "mooiste huis", "grootste gelijk"],
-            correct: "eeuwige leven",
+            vraag: "Johannes zegt zelf waarom hij zijn brief geschreven heeft. Waar moesten zijn lezers zeker van worden?",
+            antwoorden: ["Dat zij het eeuwige leven hebben", "Dat hun zonden vergeven zijn", "Dat Jezus terugkomt", "Dat zij gelijk hebben tegenover de dwaalleraars"],
+            correct: "Dat zij het eeuwige leven hebben",
             bijbelplaats: "1 Johannes 5:13"
         },
         {
@@ -5143,21 +5131,21 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 5:21"
         },
         {
-            vraag: "Johannes schrijft dat iemand die zegt in het licht te leven, maar zijn broeder of zuster haat, in werkelijkheid nog steeds in het … is.",
-            antwoorden: ["donker", "licht", "midden", "begin"],
-            correct: "donker",
+            vraag: "Johannes schrijft over iemand die zegt dat hij in het licht leeft, maar zijn broeder of zuster haat. Wat is er volgens Johannes met zo iemand aan de hand?",
+            antwoorden: ["Hij is nog steeds in het donker", "Hij bedriegt alleen zichzelf", "Hij moet nog groeien in het geloof", "Hij weet niet wat hij zegt"],
+            correct: "Hij is nog steeds in het donker",
             bijbelplaats: "1 Johannes 2:9"
         },
         {
             vraag: "Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee?",
-            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de mensen op aarde nooit echt gelukkig kunnen zijn", "Dat gelovigen niets mogen bezitten", "Dat de wereld binnenkort door vuur vergaat"],
+            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de mensen op aarde nooit echt gelukkig kunnen zijn", "Dat gelovigen niets mogen bezitten", "Dat de wereld nu al bezig is te vergaan"],
             correct: "Dat alles wat de wereld te bieden heeft tijdelijk is",
             bijbelplaats: "1 Johannes 2:17"
         },
         {
-            vraag: "Hoe weten we volgens Johannes zeker dat God in ons blijft en wij in Hem? Omdat Hij ons zijn … heeft gegeven.",
-            antwoorden: ["Geest", "boek", "huis", "naam"],
-            correct: "Geest",
+            vraag: "Waaraan kunnen wij volgens Johannes zeker weten dat God in ons blijft en wij in Hem?",
+            antwoorden: ["Hij heeft ons zijn Geest gegeven", "Hij heeft ons zijn Zoon gegeven", "Hij heeft ons zijn geboden gegeven", "Hij heeft ons zijn naam gegeven"],
+            correct: "Hij heeft ons zijn Geest gegeven",
             bijbelplaats: "1 Johannes 4:13"
         },
         {
@@ -5173,9 +5161,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 3:16"
         },
         {
-            vraag: "Johannes schrijft over een hart dat je aanklaagt, dat je een schuldig gevoel geeft. Wat zegt hij daarover?",
-            antwoorden: ["God is groter dan ons hart, en Hij weet alles", "Je moet je hart altijd geloven", "Een schuldig gevoel komt van een slechte geest", "Dan heb je vast iets verkeerds gedaan"],
-            correct: "God is groter dan ons hart, en Hij weet alles",
+            vraag: "Soms klaagt je eigen hart je aan en voel je je schuldig, ook als je alles al aan God verteld hebt. Wat schrijft Johannes tegen wie dat overkomt?",
+            antwoorden: ["God is groter dan je hart, en Hij weet alles", "Dan heb je vast toch nog iets verkeerds gedaan", "Dan moet je het nog een keer vragen", "Dan luister je naar de verkeerde stem"],
+            correct: "God is groter dan je hart, en Hij weet alles",
             bijbelplaats: "1 Johannes 3:20"
         },
         {
@@ -5184,6 +5172,18 @@ vragenData["Brieven van Johannes"] = {
             correct: "Er werd olie over iemands hoofd gegoten",
             bijbelplaats: "1 Johannes 2:20",
             uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt het beeld om hen moed te geven — jullie horen er echt bij."
+        },
+        {
+            vraag: "Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat?",
+            antwoorden: ["Heb elkaar lief", "Blijf trouw aan de leer van de apostelen", "Wees waakzaam, want het is het laatste uur", "Deel je bezit met wie tekortkomt"],
+            correct: "Heb elkaar lief",
+            bijbelplaats: "1 Johannes 3:11"
+        },
+        {
+            vraag: "Johannes geeft aan het begin van zijn brief een boodschap door die hij van Jezus zelf gehoord heeft: in God is helemaal geen duisternis. Wat is God dan wél, volgens die boodschap?",
+            antwoorden: ["Licht", "Geest", "Vuur", "Waarheid"],
+            correct: "Licht",
+            bijbelplaats: "1 Johannes 1:5"
         }
     ],
     expert: [
@@ -5206,10 +5206,11 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:8"
         },
         {
-            vraag: "Johannes noemt Jezus onze … bij de Vader: iemand die voor ons opkomt wanneer we toch verkeerd doen.",
-            antwoorden: ["voorspraak (helper)", "rechter", "onze leraar en gids", "dienaar"],
-            correct: "voorspraak (helper)",
-            bijbelplaats: "1 Johannes 2:1"
+            vraag: "Johannes schrijft dat gelovigen die tóch verkeerd doen er niet alleen voor staan: er is iemand die bij de Vader voor hen opkomt. Hoe noemt Johannes Jezus hier?",
+            antwoorden: ["Onze voorspraak", "Onze rechter", "Onze leraar en gids", "Onze dienaar"],
+            correct: "Onze voorspraak",
+            bijbelplaats: "1 Johannes 2:1",
+            uitleg: "Voorspraak is een oud woord voor iemand die het woord voor je doet. In een rechtszaak was dat degene die naast je ging staan en jouw kant van het verhaal uitlegde. De ene vertaling schrijft \"pleitbezorger\", de andere \"helper\", en in het Grieks staat er parakletos: iemand die je erbij roept om je te steunen. Johannes zegt dus: als je de fout in gaat, sta je er bij God niet alleen voor."
         },
         {
             vraag: "Johannes geeft een eenvoudige toets voor iedereen die beweert dat hij in God blijft. Wat moet zo iemand dan doen?",
@@ -5224,9 +5225,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:12-14"
         },
         {
-            vraag: "Johannes waarschuwt de gelovigen: heb de … niet lief, met alle verkeerde dingen die daarbij horen.",
-            antwoorden: ["wereld", "buren", "gemeente", "waarheid"],
-            correct: "wereld",
+            vraag: "Johannes waarschuwt dat er iets is waar de gelovigen hun hart niet aan mogen verliezen, want wie dat wél doet, heeft de liefde van de Vader niet in zich. Waar gaat die waarschuwing over?",
+            antwoorden: ["De wereld", "Het geld", "De macht", "De roem"],
+            correct: "De wereld",
             bijbelplaats: "1 Johannes 2:15"
         },
         {
@@ -5236,10 +5237,11 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:19"
         },
         {
-            vraag: "Johannes belooft iets moois voor later: als Jezus verschijnt, zullen wij aan Hem … zijn.",
-            antwoorden: ["gelijk", "vreemd", "voorbij", "kwijt"],
-            correct: "gelijk",
-            bijbelplaats: "1 Johannes 3:2"
+            vraag: "Johannes belooft iets moois voor het moment dat Jezus verschijnt. Wat zal er dan met de gelovigen gebeuren?",
+            antwoorden: ["Zij zullen aan Hem gelijk zijn", "Zij zullen Hem eindelijk begrijpen", "Zij zullen naast Hem mogen staan", "Zij zullen een nieuwe naam krijgen"],
+            correct: "Zij zullen aan Hem gelijk zijn",
+            bijbelplaats: "1 Johannes 3:2",
+            uitleg: "Alle Nederlandse Bijbels vertalen dit met \"aan Hem gelijk zijn\", maar dat klinkt sterker dan Johannes bedoelt. Het Griekse woord dat hij gebruikt, homoios, betekent \"lijkend op, van dezelfde soort\". Je wordt dus niet God, je gaat op Hem lijken. Johannes zegt er meteen bij hoe dat komt: omdat we Hem dan zien zoals Hij werkelijk is. Je kent het van iemand met een idool — wie lang genoeg naar iemand opkijkt, gaat vanzelf op hem lijken: in hoe hij praat, hoe hij loopt, wat hij belangrijk vindt."
         },
         {
             vraag: "In één korte zin zegt Johannes waarvoor de Zoon van God op aarde verschenen is. Wat was volgens hem het doel?",
@@ -5278,14 +5280,14 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:12"
         },
         {
-            vraag: "Johannes stelt iets geruststellends over de regels van God: zijn geboden zijn niet zwaar, geen last om te dragen. Waarom niet?",
-            antwoorden: ["Omdat wie uit God geboren is de wereld overwint", "Omdat God er maar weinig heeft gegeven", "Omdat God ze aanpast aan wat je kunt", "Omdat je ze pas hoeft te houden als je volwassen bent"],
-            correct: "Omdat wie uit God geboren is de wereld overwint",
-            bijbelplaats: "1 Johannes 5:3"
+            vraag: "Johannes schrijft dat Gods geboden niet zwaar zijn, geen last om te dragen. In de zin die daarop volgt legt hij uit hoe dat komt. Wat schrijft hij daar?",
+            antwoorden: ["Wie uit God geboren is, overwint de wereld", "God vraagt maar weinig van ons", "God past zijn geboden aan wat je aankunt", "Je hoeft ze pas te houden als je volwassen bent"],
+            correct: "Wie uit God geboren is, overwint de wereld",
+            bijbelplaats: "1 Johannes 5:3-4"
         },
         {
-            vraag: "Johannes moedigt de gelovigen aan om vrijmoedig tot God te bidden: je mag alles vragen. Maar hij voegt er één voorwaarde aan toe. Welke voorwaarde is dat?",
-            antwoorden: ["Dat we vragen wat overeenkomt met zijn wil", "Dat we het luid genoeg vragen", "Dat we het drie keer vragen", "Dat we het samen met anderen vragen"],
+            vraag: "Johannes moedigt de gelovigen aan om vrijmoedig tot God te bidden: je mag alles vragen. Maar hij noemt er één voorwaarde bij. Welke voorwaarde is dat?",
+            antwoorden: ["Dat we vragen wat overeenkomt met zijn wil", "Dat we hard genoeg spreken, zodat God het kan horen", "Dat we het precies drie keer achter elkaar vragen", "Dat we het 's ochtends vroeg vragen, als God nog tijd heeft"],
             correct: "Dat we vragen wat overeenkomt met zijn wil",
             bijbelplaats: "1 Johannes 5:14"
         },
@@ -5302,9 +5304,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "2 Johannes 7"
         },
         {
-            vraag: "Johannes geeft in zijn tweede brief een strenge raad over dwaalleraars die bij de gelovigen langskomen en niet bij de leer van Christus blijven. Welke raad?",
-            antwoorden: ["Neem hen niet in huis en groet hen niet", "Ga met hen in gesprek over de waarheid", "Stuur hen door naar de oudsten", "Geef hun te eten en laat hen weer gaan"],
-            correct: "Neem hen niet in huis en groet hen niet",
+            vraag: "Johannes geeft in zijn tweede brief een strenge raad over dwaalleraars die langskomen en niet bij de leer van Christus blijven. Wat moeten de gelovigen met zulke mensen doen?",
+            antwoorden: ["Hen niet in huis nemen en niet begroeten", "Met hen in gesprek gaan over de waarheid", "Hen doorsturen naar de oudsten", "Hun te eten geven en dan laten gaan"],
+            correct: "Hen niet in huis nemen en niet begroeten",
             bijbelplaats: "2 Johannes 10"
         },
         {
@@ -5314,9 +5316,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "3 Johannes 8"
         },
         {
-            vraag: "In zijn derde brief schrijft Johannes over Diotrefes, een man in de gemeente die altijd de eerste wilde zijn. Wat deed hij met rondreizende gelovigen die langskwamen?",
-            antwoorden: ["Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen eerst flink betalen voordat ze ook maar ergens mochten overnachten", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
-            correct: "Hij weigerde hen te ontvangen, en wie dat wél deed zette hij de gemeente uit",
+            vraag: "In zijn derde brief schrijft Johannes over Diotrefes, een man die in de gemeente graag de eerste wilde zijn — hij speelde er de baas. Wat deed hij met rondreizende gelovigen die langskwamen?",
+            antwoorden: ["Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen eerst flink betalen voordat ze mochten overnachten", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
+            correct: "Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit",
             bijbelplaats: "3 Johannes 9-10"
         },
         {
@@ -5326,10 +5328,10 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "3 Johannes 11"
         },
         {
-            vraag: "In de derde brief van Johannes staat het woord \"gemeente\", dat in andere vertalingen \"kerk\" heet. Waar komt ons Nederlandse woord kerk vandaan?",
-            antwoorden: ["Van een Grieks woord dat \"van de Heer\" betekent", "Van het Griekse ekklesia, dat vergadering betekent", "Van een Latijns woord voor een gebouw met een toren", "Van de naam van de eerste kerk in Rome"],
-            correct: "Van een Grieks woord dat \"van de Heer\" betekent",
-            bijbelplaats: "3 Johannes 1:6",
+            vraag: "In de derde brief van Johannes staat het woord 'gemeente'; veel vertalingen schrijven daar 'kerk'. Van welk Grieks woord stamt ons Nederlandse woord kerk af?",
+            antwoorden: ["Van kyriakon, 'wat van de Heer is'", "Van ekklesia, 'de bijeengeroepen groep'", "Van synagoge, 'de samenkomst'", "Van basiliek, 'het koningshuis'"],
+            correct: "Van kyriakon, 'wat van de Heer is'",
+            bijbelplaats: "3 Johannes 6",
             uitleg: "Kerk komt van kyriakon, \"wat van de Heer is\". Via het Germaans werd dat kerk in het Nederlands, Kirche in het Duits, church in het Engels en kirke in het Deens. Het Griekse ekklesia ging een andere weg: in het Latijn werd het ecclesia, en daaruit ontstonden het Franse église, het Spaanse iglesia en het Italiaanse chiesa. Twee woorden voor dezelfde zaak — het ene noemt het huis van de Heer, het andere de mensen die bij elkaar geroepen zijn."
         },
         {
@@ -5340,7 +5342,7 @@ vragenData["Brieven van Johannes"] = {
             uitleg: "In het Middelnederlands was een \"soene\" een vrede of een goedmaking. Een zoenoffer was een offer om vrede te sluiten en zoengeld was geld waarmee je een ruzie afkocht. Pas veel later ging het woord de kus betekenen die bij zo'n verzoening hoorde. Als Johannes Jezus de verzoening noemt, bedoelt hij: door Hem is de breuk tussen God en mensen goedgemaakt."
         },
         {
-            vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers \"gemeenschap\" met hem hebben. In gewoon Grieks kwam dat woord ook uit de handel. Wat betekende het daar?",
+            vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers helemaal bij hem horen en alles met hem delen. Het Griekse woord dat hij daarvoor gebruikt, koinonia, kwam ook uit de handel. Wat betekende het daar?",
             antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
             correct: "Samen eigenaar zijn van één zaak",
             bijbelplaats: "1 Johannes 1:3",
