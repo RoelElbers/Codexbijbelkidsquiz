@@ -5513,7 +5513,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
             correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
             bijbelplaats: "Openbaring 1:1",
-            uitleg: "Het Griekse woord is apokalypsis (ἀποκάλυψις) en betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Van datzelfde woord komt ons \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Van datzelfde woord komt ons \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
         },
         {
             vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
@@ -5642,7 +5642,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
             correct: "Martelaar",
             bijbelplaats: "Openbaring 2:13",
-            uitleg: "Het Griekse woord is martys (μάρτυς), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
+            uitleg: "Het Griekse woord is martys (<span class='grieks'>μάρτυς</span>), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
         },
         {
             vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
@@ -5656,7 +5656,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
             correct: "Een diadeem was een band die alleen een koning droeg",
             bijbelplaats: "Openbaring 19:12",
-            uitleg: "Het Grieks gebruikt twee verschillende woorden. Stephanos (στέφανος) was de krans van bladeren voor wie de wedstrijd won; diadema (διάδημα) was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
+            uitleg: "Het Grieks gebruikt twee verschillende woorden. Stephanos (<span class='grieks'>στέφανος</span>) was de krans van bladeren voor wie de wedstrijd won; diadema (<span class='grieks'>διάδημα</span>) was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
         },
         {
             vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",

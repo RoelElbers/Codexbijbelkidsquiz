@@ -969,6 +969,22 @@ height: 22%;
     font-size: 1.08em;
 }
 
+/* Grieks binnen een lopende tekst. Bewust GEEN direction en GEEN unicode-bidi:
+   Grieks leest van links naar rechts, net als de tekst eromheen.
+
+   Palatino Linotype staat vooraan omdat hij alle gebruikte tekens dekt en qua
+   vorm het dichtst bij de omringende letter blijft. Book Antiqua is met opzet
+   overgeslagen, hoewel het in de hoofdstack staat: dat font mist U+1F00 (ἀ),
+   de eerste letter van ἀποκάλυψις, waardoor juist dat woord uit twee
+   lettertypen werd opgebouwd. Times New Roman dekt alles en vangt de rest af.
+
+   Geen afwijkende font-size: Griekse letters hebben wel stokken naar boven en
+   onder en staan naast de Latijnse tekst al op maat. */
+.grieks {
+    font-family: 'Palatino Linotype', 'Palatino', 'Noto Serif',
+                 'Times New Roman', serif;
+}
+
 #score-balk {
     position: relative;      /* anker voor de zwevende "+N" (.xp-plus) */
 
