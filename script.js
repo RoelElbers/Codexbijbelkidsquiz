@@ -5351,7 +5351,7 @@ vragenData["Brieven van Johannes"] = {
     ]
 };
 
-// Openbaring — vragenpool (51 vragen: beginner 14, advanced 17, expert 20)
+// Openbaring — vragenpool (49 vragen: beginner 14, advanced 18, expert 17)
 // Laatste boek van het NT, enkel-boek-tegel zoals Handelingen. Bewust gestuurd
 // op de hoopvolle, wonderlijke kant; neutraal t.a.v. eindtijd-uitleg.
 vragenData["Openbaring"] = {
@@ -5382,7 +5382,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "God spreekt vanaf zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: ‘Zie, Ik maak alles …’ Hoe gaat die zin verder?",
-            antwoorden: ["nieuw", "oud", "af", "groot"],
+            antwoorden: ["nieuw", "goed", "af", "groot"],
             correct: "nieuw",
             bijbelplaats: "Openbaring 21:5"
         },
@@ -5405,7 +5405,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 4:8"
         },
         {
-            vraag: "Die grote menigte voor de troon valt meteen op: ze dragen allemaal kleren van dezelfde kleur. Welke kleur is dat?",
+            vraag: "Johannes ziet een enorme menigte voor de troon staan, met palmtakken in hun handen. Ze dragen allemaal kleren van dezelfde kleur. Welke kleur is dat?",
             antwoorden: ["Wit", "Rood", "Blauw", "Goud"],
             correct: "Wit",
             bijbelplaats: "Openbaring 7:9"
@@ -5423,13 +5423,6 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:3"
         },
         {
-            vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
-            antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
-            correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
-            bijbelplaats: "Openbaring 1:9",
-            uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
-        },
-        {
             vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
             antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
             correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
@@ -5440,15 +5433,15 @@ vragenData["Openbaring"] = {
             antwoorden: ["Om iets dicht te houden, zodat je kon zien of iemand het geopend had", "Om te tonen hoe duur een boekrol was", "Om de bladzijden bij elkaar te houden", "Om het papier tegen vocht te beschermen"],
             correct: "Om iets dicht te houden, zodat je kon zien of iemand het geopend had",
             bijbelplaats: "Openbaring 5:1"
-        }
-    ],
-    advanced: [
+        },
         {
             vraag: "Helemaal aan het begin van Openbaring stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
             antwoorden: ["Ik ben het begin en het einde", "Ik ben de oudste", "Ik ben de sterkste", "Ik ben de eerste die er ooit was"],
             correct: "Ik ben het begin en het einde",
             bijbelplaats: "Openbaring 1:8"
-        },
+        }
+    ],
+    advanced: [
         {
             vraag: "Jezus draagt Johannes op alles op te schrijven wat hij ziet, en het te sturen naar zeven plaatsen in Klein-Azië: Efeze, Smyrna, Pergamum en vier andere. Naar wie gaan die zeven brieven?",
             antwoorden: ["Naar zeven gemeenten", "Naar zeven koningen", "Naar zeven landen", "Naar zeven tempels"],
@@ -5493,7 +5486,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Door het hemelse Jeruzalem stroomt een bijzondere rivier, helder als kristal, die ontspringt bij de troon van God. Wat doet dat water?",
-            antwoorden: ["Het geeft leven", "Het geeft geluk", "Het zuivert; het water lijkt op een stroom van vuur", "Niks. Het is gewoon normaal water"],
+            antwoorden: ["Het geeft leven", "Het geeft wijsheid", "Het maakt oude mensen weer jong", "Het laat wie erin kijkt de toekomst zien"],
             correct: "Het geeft leven",
             bijbelplaats: "Openbaring 22:1"
         },
@@ -5511,7 +5504,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Aan weerskanten van de rivier staat de levensboom, die twaalf keer per jaar vrucht draagt. Ook de bladeren hebben een doel. Waar zijn de bladeren voor?",
-            antwoorden: ["Om de volken te genezen", "Om soep van te koken", "Om op te schrijven", "Ze hebben geen doel, het is gewoon voedsel voor de dieren"],
+            antwoorden: ["Om de volken te genezen", "Om erop te schrijven", "Om er thee van te zetten", "Om de stad mee te versieren"],
             correct: "Om de volken te genezen",
             bijbelplaats: "Openbaring 22:2"
         },
@@ -5520,7 +5513,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
             correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
             bijbelplaats: "Openbaring 1:1",
-            uitleg: "Het Griekse woord betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+            uitleg: "Het Griekse woord is apokalypsis (ἀποκάλυψις) en betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Van datzelfde woord komt ons \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
         },
         {
             vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
@@ -5534,7 +5527,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
             correct: "Prijs de HEER, in het Hebreeuws",
             bijbelplaats: "Openbaring 19:1",
-            uitleg: "Hallelu betekent prijst, en Jah is de verkorte naam van God. Net als amen is het woord nooit vertaald; het klinkt in elke taal hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+            uitleg: "Halleluja is geen Grieks maar Hebreeuws: הַלְלוּ יָהּ. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen is het woord nooit vertaald; het klinkt in elke taal ter wereld hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
@@ -5547,15 +5540,22 @@ vragenData["Openbaring"] = {
             antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
             correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
             bijbelplaats: "Openbaring 1:8"
+        },
+        {
+            vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
+            antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
+            correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
+            bijbelplaats: "Openbaring 1:9",
+            uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
+        },
+        {
+            vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
+            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide", "Een rechthoek"],
+            correct: "Een kubus (een vierkant blok)",
+            bijbelplaats: "Openbaring 21:16"
         }
     ],
     expert: [
-        {
-            vraag: "Johannes schrijft dat hij niet in een kerk of tempel was toen hij zijn visioenen kreeg, maar op een afgelegen plek, ver van huis, omdat hij over Jezus had verteld. Waar was hij?",
-            antwoorden: ["Op het eiland Patmos", "In de tempel van Jeruzalem", "In een gevangenis in Rome", "Op een berg in Egypte"],
-            correct: "Op het eiland Patmos",
-            bijbelplaats: "Openbaring 1:9"
-        },
         {
             vraag: "In de nieuwe stad stroomt een heldere rivier, en daarlangs groeit een bijzondere boom. Welke boom is dat?",
             antwoorden: ["De boom van het leven", "De olijfboom", "De wijnstok", "De vijgenboom"],
@@ -5569,22 +5569,17 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 1:8"
         },
         {
-            vraag: "Rondom Gods troon zag Johannes vierentwintig oudsten op eigen tronen zitten. Wat hadden zij op hun hoofd?",
-            antwoorden: ["Gouden kronen", "Witte hoeden", "Groene kransen", "Niets"],
-            correct: "Gouden kronen",
-            bijbelplaats: "Openbaring 4:4"
-        },
-        {
             vraag: "Wat Johannes rondom de troon ziet, doet denken aan het teken dat God ooit aan Noach gaf. Wat zag hij?",
             antwoorden: ["Een regenboog", "Een muur van vuur", "Een dikke mist", "Een rij sterren"],
             correct: "Een regenboog",
             bijbelplaats: "Openbaring 4:3"
         },
         {
-            vraag: "Helemaal aan het einde van Openbaring geeft Jezus zichzelf een naam met een ster erin. Welke naam?",
+            vraag: "Helemaal aan het einde van Openbaring stelt Jezus zichzelf voor met een naam waar een ster in zit. Welke naam gebruikt Hij voor zichzelf?",
             antwoorden: ["De stralende morgenster", "De vallende ster", "De avondster", "De noorderster"],
             correct: "De stralende morgenster",
-            bijbelplaats: "Openbaring 22:16"
+            bijbelplaats: "Openbaring 22:16",
+            uitleg: "De morgenster is geen ster maar de planeet Venus. Zij staat laag aan de oostelijke hemel en is het laatste lichtpunt dat nog schijnt als het al begint te schemeren — het teken dat de nacht voorbij is en de zon eraan komt. Johannes schrijft aan mensen die het zwaar hadden. Dat Jezus zichzelf zo noemt, betekent dus: het donker duurt niet eeuwig."
         },
         {
             vraag: "De stadsmuur van het nieuwe Jeruzalem heeft twaalf poorten, en elke poort is uit één stuk gemaakt van hetzelfde bijzondere materiaal. Welk materiaal is dat?",
@@ -5617,21 +5612,15 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 4:7"
         },
         {
-            vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
-            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide", "Een rechthoek"],
-            correct: "Een kubus (een vierkant blok)",
-            bijbelplaats: "Openbaring 21:16"
-        },
-        {
             vraag: "De stadsmuur rust op twaalf fundamenten, en op elk fundament staat een naam gegraveerd. Van wie waren deze namen?",
             antwoorden: ["Van de twaalf apostelen", "Van de twaalf stammen van Israël", "Van de twaalf engelen", "Van de twaalf koningen"],
             correct: "Van de twaalf apostelen",
             bijbelplaats: "Openbaring 21:14"
         },
         {
-            vraag: "De hoofdstraat van de nieuwe stad was van zuiver goud, maar zó helder dat het leek op…",
-            antwoorden: ["doorzichtig glas", "blauw water", "wit marmer", "groen gras"],
-            correct: "doorzichtig glas",
+            vraag: "De hoofdstraat van de nieuwe stad was van zuiver goud, maar Johannes schrijft dat het er heel anders uitzag dan goud normaal doet. Waarop leek die straat?",
+            antwoorden: ["Op doorzichtig glas", "Op blauw water", "Op wit marmer", "Op groen gras"],
+            correct: "Op doorzichtig glas",
             bijbelplaats: "Openbaring 21:21"
         },
         {
@@ -5653,12 +5642,12 @@ vragenData["Openbaring"] = {
             antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
             correct: "Martelaar",
             bijbelplaats: "Openbaring 2:13",
-            uitleg: "Martys betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
+            uitleg: "Het Griekse woord is martys (μάρτυς), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
         },
         {
             vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
-            antwoorden: ["Dat je het zeggen had over wie er binnen mocht", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
-            correct: "Dat je het zeggen had over wie er binnen mocht",
+            antwoorden: ["Dat je bepaalde wie er binnen mocht komen", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
+            correct: "Dat je bepaalde wie er binnen mocht komen",
             bijbelplaats: "Openbaring 3:7",
             uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
         },
@@ -5667,7 +5656,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
             correct: "Een diadeem was een band die alleen een koning droeg",
             bijbelplaats: "Openbaring 19:12",
-            uitleg: "Het Grieks gebruikt twee verschillende woorden. De krans van bladeren was voor wie de wedstrijd won; de diadeem was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
+            uitleg: "Het Grieks gebruikt twee verschillende woorden. Stephanos (στέφανος) was de krans van bladeren voor wie de wedstrijd won; diadema (διάδημα) was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
         },
         {
             vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",
