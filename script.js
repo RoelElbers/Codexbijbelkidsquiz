@@ -1,10 +1,8 @@
 // --- Testversie -------------------------------------------------------------
-// Toont een rustig "TESTVERSIE"-lint op het startscherm zolang dit true is.
-// Bij de echte launch: op false zetten en het lint verdwijnt volledig.
-// Toont het TESTVERSIE-lintje linksonder op het startscherm.
-// Gaat pas op false bij de openbare release op 1 oktober 2026 — niet eerder,
-// ook niet als de game al af is. Tot die datum is de site wel bereikbaar,
-// maar nog niet openbaar aangekondigd.
+// Toont een rustig "TESTVERSIE"-lint linksonder op het startscherm zolang dit
+// true is. Gaat pas op false bij de openbare release op 1 oktober 2026 — niet
+// eerder, ook niet als de game al af is. Tot die datum is de site wel
+// bereikbaar, maar nog niet openbaar aangekondigd.
 const BETA_MODUS = true;
 
 // --- Donatie-lantaarn (linksonder op het startscherm) -----------------------
