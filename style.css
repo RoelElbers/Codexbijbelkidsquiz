@@ -950,6 +950,25 @@ height: 22%;
     text-shadow: 0 0 6px rgba(255, 215, 120, 0.35);
 }
 
+/* Hebreeuws binnen een lopende tekst. Cinzel dekt alleen Latijn (220 glyphs),
+   en van de fallbacks in de hoofdstack heeft alleen de generieke serif
+   Hebreeuwse letters. Zonder eigen stack hangt het dus af van wat de browser
+   toevallig kiest; hier wijzen we het aan.
+
+   direction + unicode-bidi horen erbij: Hebreeuws leest van rechts naar links,
+   en zonder isolate kan de punt of komma die erop volgt aan de verkeerde kant
+   belanden. Isolate snijdt het fragment los van de bidi-volgorde eromheen.
+
+   Iets groter gezet: Hebreeuwse letters hebben geen stok naar boven of onder
+   en ogen bij gelijke puntgrootte kleiner dan de Latijnse tekst ernaast. */
+.hebreeuws {
+    font-family: 'Times New Roman', 'David', 'Noto Serif Hebrew',
+                 'Frank Ruehl CLM', serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    font-size: 1.08em;
+}
+
 #score-balk {
     position: relative;      /* anker voor de zwevende "+N" (.xp-plus) */
 

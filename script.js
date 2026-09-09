@@ -5527,7 +5527,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
             correct: "Prijs de HEER, in het Hebreeuws",
             bijbelplaats: "Openbaring 19:1",
-            uitleg: "Halleluja is geen Grieks maar Hebreeuws: הַלְלוּ יָהּ. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen is het woord nooit vertaald; het klinkt in elke taal ter wereld hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+            uitleg: "Halleluja is geen Grieks maar Hebreeuws: <span class='hebreeuws'>הַלְלוּ יָהּ</span>. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen is het woord nooit vertaald; het klinkt in elke taal ter wereld hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
