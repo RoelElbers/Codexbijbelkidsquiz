@@ -102,8 +102,43 @@ function openTabblad(url) {
 }
 
 // Vragen georganiseerd per boek en per niveau: vragenData[boek][niveau]
-// De koppen hieronder tellen de hele pool: inclusief de vragen die verderop in
-// dit bestand met vragenData[...].niveau.push() worden toegevoegd.
+// De koppen hieronder tellen de hele pool.
+//
+// GESCHIEDENIS — waarom je in dit bestand geen "reeks 12" zult vinden.
+// De vragen over woorden en begrippen uit de bijbeltekst zijn geschreven in
+// achttien rondes, elk met een eigen thema. Dat was een manier van werken en
+// geen indeling van het bestand: de rondes stonden een tijdlang als losse
+// push-blokken achter de pools, en zijn in september 2026 opgenomen in de pool
+// van hun eigen boek en niveau. Daar zijn ze aan niets meer te herkennen, en
+// dat is de bedoeling — een vraag hoort bij zijn boek, niet bij de ronde
+// waarin hij toevallig geschreven is. Zoeken naar een reeksnummer levert dus
+// niets op; de git-historie bewaart wat waar vandaan kwam.
+//
+// Het doel was elke ronde hetzelfde: het kind komt een woord tegen dat het nog
+// niet kende, met het bijbelvers als inleiding, en kent het daarna.
+//
+// De thema's per ronde:
+//    1  algemeen (expert)
+//    2  algemeen (expert)
+//    3  brieven en Openbaring
+//    4  algemeen (expert)
+//    5  gebruiken, offers en geld rond de tempel
+//    6  beroepen, gewoonten en het schrijven van brieven
+//    7  gebruiken aan tafel, bij rouw en op het land
+//    8  tempel, feesten en kleding
+//    9  huizen, land en geld in de gelijkenissen
+//   10  ambachten, dieren en het meer van Galilea
+//   11  trouwen, gastvrijheid en godsdienstige gebruiken
+//   12  aanvulling op beginnerniveau voor Petrus & Judas, Timoteüs & Titus
+//       en Openbaring
+//   13  plaatsen, volken en de eerste gemeenten
+//   14  onderwijs, recht en reizen
+//   15  tijd, bestuur en het graf
+//   16  woorden en gebruiken uit de brieven
+//   17  de beeldtaal van Openbaring
+//   18  woorden uit de brieven van Johannes en Tessalonicenzen
+//
+// Buiten de nummering liep nog een losse ronde over de drie talen van Israël.
 const vragenData = {
     // Matteüs — vragenpool (87 vragen: beginner 24, advanced 20, expert 43)
     "Matteüs": {
@@ -1975,14 +2010,6 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
 // in de array doet er niet toe.
 // === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
 // "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert)
-// Doel: het kind komt een woord tegen dat het nog niet kende, met het
-// bijbelvers als inleiding, en kent het daarna.
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 2)
-// =====================================================================
 // =====================================================================
 // Romeinen — vragenpool (54 vragen: beginner 23, advanced 17, expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
@@ -6409,81 +6436,6 @@ vragenData["Openbaring"] = {
     ]
 };
 
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 18:
-// woorden uit de brieven van Johannes en Tessalonicenzen)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 17)
-// De Openbaring-vragen van deze reeks staan nu in de hoofdpool.
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 16:
-// woorden en gebruiken uit de brieven)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 15:
-// tijd, bestuur en het graf)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 14:
-// onderwijs, recht en reizen)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 13:
-// plaatsen, volken en de eerste gemeenten)
-// =====================================================================
-// =====================================================================
-// De drie talen van Israël (expert)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 12, BEGINNER:
-// aanvulling voor Petrus & Judas, Timoteüs & Titus en Openbaring)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 11:
-// trouwen, gastvrijheid en godsdienstige gebruiken)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (reeks 10:
-// ambachten, dieren en het meer van Galilea)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 9:
-// huizen, land en geld in de gelijkenissen)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 8:
-// tempel, feesten en kleding)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 7:
-// gebruiken aan tafel, bij rouw en op het land)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 6:
-// beroepen, gewoonten en het schrijven van brieven)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 5:
-// gebruiken, offers en geld rond de tempel)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 4)
-// =====================================================================
-// =====================================================================
-// Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 3:
-// brieven en Openbaring)
-// =====================================================================
-// =====================================================================
-// Woordvragen die van expert naar gevorderd zijn verplaatst.
-// Zelfde vragen, alleen een ander niveau: het antwoord volgt uit het
-// woord zelf, uit de vraag, of het is bekend bijbelstof.
-// =====================================================================
-// =====================================================================
-// Nog drie woordvragen uit reeks 9 die op gevorderd thuishoren:
-// het antwoord volgt uit de vraag zelf.
-// =====================================================================
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
