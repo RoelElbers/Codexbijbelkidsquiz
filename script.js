@@ -179,6 +179,82 @@ const vragenData = {
                 antwoorden: ["Heb God lief, en je naaste als jezelf", "Breng elke dag trouw een offer in de tempel", "Eer je vader en moeder", "Houd de sabbat heilig"],
                 correct: "Heb God lief, en je naaste als jezelf",
                 bijbelplaats: "Matteüs 22:37-39"
+            },
+            {
+                vraag: "Onze jaartelling — zoals het jaar 2026 'na Christus' — telt vanaf de geboorte van wie?",
+                antwoorden: ["Jezus", "Mozes", "Abraham", "Koning David"],
+                correct: "Jezus",
+                bijbelplaats: "Matteüs 2:1",
+                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt waarschijnlijk net niet — geleerden denken een paar jaar eerder, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf zíjn geboorte."
+            },
+            {
+                vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
+                antwoorden: ["Vissers", "Boeren", "Soldaten", "Bakkers"],
+                correct: "Vissers",
+                bijbelplaats: "Matteüs 4:18-20",
+                uitleg: "Jezus zei tegen hen: 'Kom, volg mij, dan zal ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
+            },
+            {
+                vraag: "Wat zei Jezus toen mensen de kinderen bij hem wilden weghouden?",
+                antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
+                correct: "Laat de kinderen bij mij komen",
+                bijbelplaats: "Matteüs 19:13-14"
+            },
+            {
+                vraag: "Jezus vertelde over een verstandige man die zijn huis bouwde zodat het in de storm bleef staan. Waarop bouwde hij?",
+                antwoorden: ["Op de rots", "Op het zand", "Op het water", "Op een hooiberg"],
+                correct: "Op de rots",
+                bijbelplaats: "Matteüs 7:24-27",
+                uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar zijn woorden luistert én ze ook doet."
+            },
+            {
+                vraag: "Jezus vergeleek het koninkrijk van God met een heel klein zaadje dat uitgroeit tot een grote plant. Welk zaadje?",
+                antwoorden: ["Een mosterdzaadje", "Een appelpit", "Een graankorrel", "Een druivenpit"],
+                correct: "Een mosterdzaadje",
+                bijbelplaats: "Matteüs 13:31-32"
+            },
+            {
+                vraag: "Een herder heeft honderd schapen en er raakt er één kwijt. Wat doet hij volgens Jezus?",
+                antwoorden: ["Hij laat de negenennegentig achter om dat ene te zoeken", "Hij vergeet dat ene schaap en telt gewoon rustig verder", "Hij koopt een nieuw schaap", "Hij wacht tot het vanzelf terugkomt"],
+                correct: "Hij laat de negenennegentig achter om dat ene te zoeken",
+                bijbelplaats: "Matteüs 18:12-14",
+                uitleg: "Met dit verhaal liet Jezus zien dat God ieder mens belangrijk vindt — juist ook die ene die verdwaald is geraakt."
+            },
+            {
+                vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
+                antwoorden: ["Wees niet bang, hij is naar Galilea gegaan", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
+                correct: "Hij is opgestaan, hij is hier niet",
+                bijbelplaats: "Matteüs 28:5-6"
+            },
+            {
+                vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei hij?",
+                antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Behandel anderen precies zoals zij jou behandeld hebben"],
+                correct: "Behandel anderen zoals je zelf behandeld wilt worden",
+                bijbelplaats: "Matteüs 7:12"
+            },
+            {
+                vraag: "Jezus zei dat zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
+                antwoorden: ["zout", "suiker", "peper", "meel"],
+                correct: "zout",
+                bijbelplaats: "Matteüs 5:13"
+            },
+            {
+                vraag: "Jezus zei tegen zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
+                antwoorden: ["het licht", "het vuur", "de wind", "het water"],
+                correct: "het licht",
+                bijbelplaats: "Matteüs 5:14"
+            },
+            {
+                vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde hij daarmee?",
+                antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze moesten stoppen met vissen"],
+                correct: "Dat ze mensen bij God zouden brengen",
+                bijbelplaats: "Matteüs 4:19"
+            },
+            {
+                vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
+                antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+                correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
+                bijbelplaats: "Matteüs 9:9"
             }
         ],
         advanced: [
@@ -241,6 +317,70 @@ const vragenData = {
                 antwoorden: ["Brood en vis", "Sprinkhanen en wilde honing", "Vijgen en dadels", "Niets, hij vastte altijd"],
                 correct: "Sprinkhanen en wilde honing",
                 bijbelplaats: "Matteüs 3:4"
+            },
+            {
+                vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
+                antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
+                correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
+                bijbelplaats: "Matteüs 5:17"
+            },
+            {
+                vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
+                antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een gewone Jood, iemand zonder openbare religieuze functie"],
+                correct: "Iemand die niet bij het Joodse volk hoorde",
+                bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
+            },
+            {
+                vraag: "Jezus riep zijn eerste leerlingen bij het meer. Wat deden ze toen hij zei 'volg mij'?",
+                antwoorden: ["Ze vroegen eerst of ze hun boot mochten verkopen", "Ze lieten meteen hun netten achter en gingen mee", "Ze gingen eerst afscheid nemen van hun familie", "Ze zeiden dat ze de volgende dag zouden komen"],
+                correct: "Ze lieten meteen hun netten achter en gingen mee",
+                bijbelplaats: "Matteüs 4:18-22"
+            },
+            {
+                vraag: "Jezus werd gelegd in een graf dat in de rots was uitgehakt. Hoe zag zo'n graf eruit?",
+                antwoorden: ["Een kamer in de rotswand met stenen banken, afgesloten met een grote steen", "Een diep gat in de grond met aarde erop", "Een houten kist die boven de grond stond", "Een grot waar het hele dorp begraven werd"],
+                correct: "Een kamer in de rotswand met stenen banken, afgesloten met een grote steen",
+                bijbelplaats: "Matteüs 27:60",
+                uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en daar werd het lichaam op gelegd, gewikkeld in doeken met specerijen. Voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
+            },
+            {
+                vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
+                antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting en verder niets"],
+                correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
+                bijbelplaats: "Matteüs 27:2",
+                uitleg: "Judea was geen gewone provincie maar een onrustig grensgebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee, en kwam alleen naar de stad tijdens de grote feesten, wanneer er honderdduizenden pelgrims waren en de kans op onrust het grootst was. Hij had één bevoegdheid die de Joodse leiders niet hadden: het doodvonnis. Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
+            },
+            {
+                vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
+                antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat de grond in het dal te duur was", "Omdat er op de heuvels meer water te vinden was"],
+                correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
+                bijbelplaats: "Matteüs 5:14",
+                uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt. En omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
+            },
+            {
+                vraag: "Jezus zegt: laat geen bazuin voor je uit blazen als je een aalmoes geeft. Wat is een aalmoes?",
+                antwoorden: ["Een gift aan iemand die arm is", "Een offer dat je in de tempel bracht", "Een belasting die je aan de Romeinen betaalde", "Een geschenk dat je aan een gast meegaf"],
+                correct: "Een gift aan iemand die arm is",
+                bijbelplaats: "Matteüs 6:2"
+            },
+            {
+                vraag: "Aan Petrus wordt gevraagd of Jezus de tempelbelasting betaalt. Waar was dat geld voor?",
+                antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen in Judea", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
+                correct: "Voor het onderhoud van de tempel, opgebracht door de Joden zelf",
+                bijbelplaats: "Matteüs 17:24",
+                uitleg: "Elke Joodse man van twintig jaar en ouder betaalde één keer per jaar een halve sikkel voor de tempel. Van dat geld werden de dagelijkse offers betaald, de wierook, de broden die in het heiligdom lagen en het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
+            },
+            {
+                vraag: "In de gelijkenis huurt de eigenaar nog arbeiders in \"op het elfde uur\". Wat betekent dat?",
+                antwoorden: ["Een uur voor het einde van de werkdag", "Om elf uur 's ochtends, halverwege de dag", "De elfde dag van de maand", "Het elfde uur na middernacht"],
+                correct: "Een uur voor het einde van de werkdag",
+                bijbelplaats: "Matteüs 20:6-9"
+            },
+            {
+                vraag: "De eigenaar vond mannen werkloos op het marktplein staan. Waarom stonden zij daar?",
+                antwoorden: ["Daar wachtten dagloners tot iemand hen voor die dag inhuurde", "Daar werd de belasting geïnd en moesten zij hun beurt afwachten", "Daar deelden de rijken elke ochtend brood uit", "Daar kwamen zij samen om te bidden voor werk"],
+                correct: "Daar wachtten dagloners tot iemand hen voor die dag inhuurde",
+                bijbelplaats: "Matteüs 20:3"
             }
         ],
         expert: [
@@ -343,6 +483,187 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 correct: "Jakob",
                 bijbelplaats: "Matteüs 1:16",
                 uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om zijn vader op aarde te zijn."
+            },
+            {
+                vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van zijn eigen opstanding. Over welke profeet ging het?",
+                antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
+                correct: "Jona",
+                bijbelplaats: "Matteüs 12:39-40"
+            },
+            {
+                vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
+                antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
+                correct: "De Bergrede",
+                bijbelplaats: "Matteüs 5:3"
+            },
+            {
+                vraag: 'Op het "negende uur" gebeurde er iets belangrijks bij het kruis. Wat was dat uur ongeveer, en wat hoorde er nog meer bij?',
+                antwoorden: [
+                    "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
+                    "Ongeveer negen uur 's ochtends — het begin van de werkdag",
+                    "Precies om middernacht — het uur waarop de tempelwachters van dienst wisselden",
+                    "Bij zonsopgang — het uur van het ochtendoffer"
+                ],
+                correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
+                bijbelplaats: "Matteüs 27:46-50",
+                uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: in het boek Handelingen lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
+            },
+            {
+                vraag: "Met hoeveel broden en vissen gaf Jezus een grote menigte te eten?",
+                antwoorden: ["Vijf broden en twee vissen", "Twee broden en vijf vissen", "Tien broden en tien vissen", "Eén brood en één vis"],
+                correct: "Vijf broden en twee vissen",
+                bijbelplaats: "Matteüs 14:13-21"
+            },
+            {
+                vraag: "Jezus vraagt: wie van jullie kan door zich zorgen te maken één el aan zijn leven toevoegen? Een el was een maat die men aan het eigen lichaam afmat. Hoe lang was een el ongeveer?",
+                antwoorden: ["Zo lang als je voet, ongeveer 30 cm", "Van je elleboog tot je vingertoppen, ongeveer 45 cm", "Van je schouder tot je pols, ongeveer 60 cm", "Zo breed als je hand, ongeveer 8 cm"],
+                correct: "Van je elleboog tot je vingertoppen, ongeveer 45 cm",
+                bijbelplaats: "Matteüs 6:27"
+            },
+            {
+                vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
+                antwoorden: ["Honderd meter", "Anderhalve kilometer", "Een halve kilometer", "Tien kilometer"],
+                correct: "Anderhalve kilometer",
+                bijbelplaats: "Matteüs 5:41"
+            },
+            {
+                vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
+                antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
+                correct: "Een maatbak om graan af te meten",
+                bijbelplaats: "Matteüs 5:15",
+                uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
+            },
+            {
+                vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
+                antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
+                correct: "Vijftien tot twintig jaar",
+                bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
+            },
+            {
+                vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
+                antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
+                correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
+                bijbelplaats: "Matteüs 26:15",
+                uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin. Het bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
+            },
+            {
+                vraag: "Johannes de Doper zegt over degene die na hem komt: hij heeft de wan in zijn hand. Wat is een wan?",
+                antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een grote mand om de oogst mee naar de schuur te dragen"],
+                correct: "Een schep om graan op te gooien, zodat de wind het kaf wegblaast",
+                bijbelplaats: "Matteüs 3:12"
+            },
+            {
+                vraag: "Jezus zegt: neem mijn juk op je, want mijn juk is zacht. Wat is een juk?",
+                antwoorden: ["Een houten balk over de nek van twee dieren die samen trekken", "Een dikke wollen mantel die herders 's nachts omsloegen", "Een leren riem om een zware last mee op je rug te binden", "Een grote steen waarmee de ingang van een put werd afgesloten"],
+                correct: "Een houten balk over de nek van twee dieren die samen trekken",
+                bijbelplaats: "Matteüs 11:29-30"
+            },
+            {
+                vraag: "Matteüs vertelt over de Sadduceeën en zegt er meteen bij wat hen bijzonder maakte. Wat geloofden zij niet?",
+                antwoorden: ["Dat de doden zullen opstaan", "Dat de sabbat gehouden moest worden", "Dat God de wereld heeft gemaakt", "Dat Mozes de wet heeft ontvangen"],
+                correct: "Dat de doden zullen opstaan",
+                bijbelplaats: "Matteüs 22:23"
+            },
+            {
+                vraag: "De wijzen uit het oosten brachten goud, wierook en mirre. Wat is mirre?",
+                antwoorden: ["Een kostbare hars die ook bij een begrafenis werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
+                correct: "Een kostbare hars die ook bij een begrafenis werd gebruikt",
+                bijbelplaats: "Matteüs 2:11"
+            },
+            {
+                vraag: "Jezus verwijt sommige leiders dat ze hun gebedsriemen extra breed maken. Wat waren gebedsriemen?",
+                antwoorden: ["Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden", "Sjerpen die je om je middel bond als teken dat je aan het bidden was", "Touwen waarmee de rollen in de synagoge werden dichtgebonden", "Leren riemen waarmee de deuren van de synagoge werden vergrendeld"],
+                correct: "Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden",
+                bijbelplaats: "Matteüs 23:5"
+            },
+            {
+                vraag: "Jezus zegt dat zout weggegooid wordt als het zijn kracht verliest. Hoe kan zout zijn smaak verliezen?",
+                antwoorden: ["Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over", "Zout wordt oud en verliest dan vanzelf zijn smaak", "Zout dat je te lang bewaart verandert in zand", "Zout verliest zijn smaak als er licht op valt"],
+                correct: "Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over",
+                bijbelplaats: "Matteüs 5:13",
+                uitleg: "Wat men zout noemde, waren brokken van de oever van de Dode Zee. Daar zit naast echt zout ook gips en kalk in. Echt zout lost sneller op dan die andere stoffen, dus lag zo'n brok lang in een vochtige voorraadkamer, dan trok het zoute eruit en bleef er korrelig gruis over dat nergens meer naar smaakte. Weggooien op het land kon niet — zout maakt grond onvruchtbaar — dus strooide men het op de paden. Vandaar dat Jezus zegt dat het wordt weggeworpen en vertrapt."
+            },
+            {
+                vraag: "Jozef wilde Maria \"in stilte verlaten\" toen bleek dat zij zwanger was. Waarom was dat nodig, terwijl ze nog niet getrouwd waren?",
+                antwoorden: ["Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief", "Hij had haar bruidsschat al betaald en die moest hij terugvragen", "Ze woonden al samen, dus hij moest verhuizen", "Alleen een priester mocht een verloving beëindigen"],
+                correct: "Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief",
+                bijbelplaats: "Matteüs 1:19",
+                uitleg: "Trouwen ging in twee stappen. Eerst de verloving, waarbij de afspraak juridisch werd vastgelegd — vanaf dat moment heette je al man en vrouw en kon je alleen nog uit elkaar met een scheidbrief. Pas een jaar later haalde de bruidegom zijn bruid op en begon het feest en het samenwonen. Jozef en Maria zaten dus in die tussenperiode. Dat verklaart waarom Matteüs Jozef \"haar man\" noemt terwijl het huwelijk nog niet voltrokken was."
+            },
+            {
+                vraag: "Jezus hekelt leiders die zeggen: zweren bij de tempel telt niet, maar zweren bij het goud van de tempel wel. Wat was daar mis mee?",
+                antwoorden: ["Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken", "Zweren was helemaal verboden en zij deden het toch", "Zij zwoeren bij goud, en dat was afgoderij", "Alleen priesters mochten een eed afleggen"],
+                correct: "Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken",
+                bijbelplaats: "Matteüs 23:16"
+            },
+            {
+                vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom een bruidegom lang op zich kon laten wachten, vertelt de gelijkenis niet — maar wat weten we wel over hoe een bruiloft begon?",
+                antwoorden: ["De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
+                correct: "De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen",
+                bijbelplaats: "Matteüs 25:6"
+            },
+            {
+                vraag: "Jezus vertelt over een net dat wordt uitgeworpen en allerlei vissen vangt. Wat voor net was dat?",
+                antwoorden: ["Een lang sleepnet dat tussen twee boten door het water werd getrokken", "Een klein rond net dat je vanaf de oever uitwierp", "Een fuik die je 's nachts liet staan", "Een net dat je aan een lange stok voor je uit hield"],
+                correct: "Een lang sleepnet dat tussen twee boten door het water werd getrokken",
+                bijbelplaats: "Matteüs 13:47"
+            },
+            {
+                vraag: "Van het geld van Judas kochten de priesters \"de akker van de pottenbakker\". Waarom lag daar een akker van een pottenbakker?",
+                antwoorden: ["Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard", "Daar stonden zijn ovens, ver van de stad vanwege de rook", "Daar verkocht hij zijn potten aan de pelgrims", "Daar werden gebroken potten begraven, want die waren onrein"],
+                correct: "Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard",
+                bijbelplaats: "Matteüs 27:7"
+            },
+            {
+                vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon dat zomaar?",
+                antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, dat was verboden en daarom werd hij zelf gestraft", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
+                correct: "Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht",
+                bijbelplaats: "Matteüs 18:30"
+            },
+            {
+                vraag: "Een zieke vrouw raakte \"de zoom van zijn kleed\" aan. Wat zat daar precies?",
+                antwoorden: ["Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken", "De gouden rand die alleen leraren mochten dragen", "Een strook met daarop zijn naam geborduurd", "De onderkant van de mantel, die het dichtst bij de grond hing"],
+                correct: "Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken",
+                bijbelplaats: "Matteüs 9:20",
+                uitleg: "In Numeri 15 staat dat het volk kwastjes aan de hoeken van hun kleren moest maken, met een blauwe draad erin. Ze waren bedoeld als geheugensteun: zie je ze, dan denk je aan Gods geboden. Jezus droeg ze dus gewoon, zoals iedere Joodse man. Later verwijt hij sommige leiders dat ze hun kwastjes extra lang maken — hetzelfde verwijt als bij de brede gebedsriemen: goed bedoeld, maar bedoeld om gezien te worden."
+            },
+            {
+                vraag: "Jezus verwijst naar David, die de \"toonbroden\" at. Wat waren dat?",
+                antwoorden: ["Twaalf broden die in het heiligdom lagen, alleen bestemd voor de priesters", "De broden die bij een offer werden verbrand", "Broden die aan de armen bij de tempelpoort werden uitgedeeld", "Het brood dat bij het Joodse paasfeest Pesach op tafel kwam"],
+                correct: "Twaalf broden die in het heiligdom lagen, alleen bestemd voor de priesters",
+                bijbelplaats: "Matteüs 12:4"
+            },
+            {
+                vraag: "De vijf onverstandige meisjes namen geen olie mee voor hun lampen. Wat voor olie was dat?",
+                antwoorden: ["Olijfolie, die je in een schaaltje goot waarin een pit brandde", "Dierlijk vet dat men smolt boven het vuur", "Kostbare parfumolie uit het oosten", "Aardolie die men uit de bodem bij de Dode Zee haalde"],
+                correct: "Olijfolie, die je in een schaaltje goot waarin een pit brandde",
+                bijbelplaats: "Matteüs 25:3"
+            },
+            {
+                vraag: "Toen Jezus bij het huis van Jaïrus kwam, was diens dochter net gestorven. Er waren fluitspelers en een luidruchtige menigte. Wat deden die daar?",
+                antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij vierden feest omdat het meisje ooit beter zou worden", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
+                correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
+                bijbelplaats: "Matteüs 9:23",
+                uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten hem uit. Toen nam hij haar hand en stond ze op."
+            },
+            {
+                vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
+                antwoorden: ["Zodat niemand er per ongeluk op stapte en onrein werd", "Zodat de familie het graf makkelijk kon terugvinden", "Omdat wit de kleur van de rouw was", "Omdat kalk het gesteente tegen regen beschermde"],
+                correct: "Zodat niemand er per ongeluk op stapte en onrein werd",
+                bijbelplaats: "Matteüs 23:27",
+                uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Dat witte kalk was dus geen versiering, maar een waarschuwingsbord. En zo bedoelt Jezus het ook: je kunt er van buiten keurig uitzien en toch niet leven zoals God het vraagt."
+            },
+            {
+                vraag: "Jezus zegt dat je jonge wijn niet in oude zakken doet. Waar waren die \"zakken\" van gemaakt?",
+                antwoorden: ["Van dierenhuid, die meerekte als de wijn ging gisten", "Van geweven stof met pek aan de binnenkant", "Van gevlochten riet met een deksel erop", "Van gebakken klei met een nauwe hals"],
+                correct: "Van dierenhuid, die meerekte als de wijn ging gisten",
+                bijbelplaats: "Matteüs 9:17"
+            },
+            {
+                vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
+                antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
+                correct: "De top van de graanhalm, waar de korrels in zitten",
+                bijbelplaats: "Matteüs 12:1"
             }
         ]
     },
@@ -403,6 +724,42 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Op de Olijfberg", "Op Golgota, wat 'schedelplaats' betekent", "In de tuin van Getsemane bij de olijfbomen", "Bij de Jordaan"],
                 correct: "Op Golgota, wat 'schedelplaats' betekent",
                 bijbelplaats: "Marcus 15:22"
+            },
+            {
+                vraag: 'Wat betekent het woord "Messias"?',
+                antwoorden: ['De beloofde redder ("de gezalfde")', "De koning van de Romeinen", "De leider van de tempel", "Een hemelse engel"],
+                correct: 'De beloofde redder ("de gezalfde")',
+                bijbelplaats: "Marcus 8:29"
+            },
+            {
+                vraag: 'Wat betekent het woord "evangelie"?',
+                antwoorden: ["Goed nieuws", "Heilig boek", "Lange reis", "Oude wet"],
+                correct: "Goed nieuws",
+                bijbelplaats: "Marcus 1:1"
+            },
+            {
+                vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
+                antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
+                correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
+                bijbelplaats: "Marcus 1:4"
+            },
+            {
+                vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
+                antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
+                correct: "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft",
+                bijbelplaats: "Marcus 1:15"
+            },
+            {
+                vraag: 'Wat is een "wonder" in de Bijbel?',
+                antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
+                correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
+                bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
+            },
+            {
+                vraag: "Welk muntje was het allerkleinste dat in de Bijbel voorkomt?",
+                antwoorden: ["Penning", "Denarie", "Talent", "Pond"],
+                correct: "Penning",
+                bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
             }
         ],
         advanced: [
@@ -469,6 +826,97 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["De storm ging liggen, maar pas na een uur", "Het werd meteen helemaal stil op het meer", "De regen hield op, maar de wind bleef waaien", "De boot werd toch omvergeblazen en ze vielen in het water"],
                 correct: "Het werd meteen helemaal stil op het meer",
                 bijbelplaats: "Marcus 4:39"
+            },
+            {
+                vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
+                antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
+                correct: "Een duif",
+                bijbelplaats: "Marcus 1:10"
+            },
+            {
+                vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
+                antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
+                correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
+                bijbelplaats: "Marcus 2:27"
+            },
+            {
+                vraag: 'Wat was een "schriftgeleerde"?',
+                antwoorden: ["Iemand die heel veel boeken gelezen had", "Een kenner van de heilige boeken, die ze aan anderen uitlegde", "Iemand die de belastingregels aan het volk kon uitleggen", "Iemand die de Romeinse wet uit zijn hoofd kende"],
+                correct: "Een kenner van de heilige boeken, die ze aan anderen uitlegde",
+                bijbelplaats: "Marcus 12:28"
+            },
+            {
+                vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
+                antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De eerste wake, de tweede wake, de derde wake en de vierde wake", "Het eerste, tweede, derde en vierde uur"],
+                correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
+                bijbelplaats: "Marcus 13:35"
+            },
+            {
+                vraag: "De vrouwen kochten welriekende kruiden om Jezus te zalven. Wat wilden zij daarmee laten zien?",
+                antwoorden: ["Eerbied en genegenheid voor iemand die hun dierbaar was", "Dat zij geloofden dat Jezus uit de dood zou opstaan", "Dat zij rijker waren dan de andere leerlingen van Jezus", "Dat zij niet bang waren voor de wachters bij het graf"],
+                correct: "Eerbied en genegenheid voor iemand die hun dierbaar was",
+                bijbelplaats: "Marcus 16:1",
+                uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
+            },
+            {
+                vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
+                antwoorden: ["Om een religieus gebruik van reiniging, niet om hygiëne", "Om vieze handen na het werk op het land", "Om een regel van de Romeinse bezetter", "Om een afspraak die alleen in de tempel gold"],
+                correct: "Om een religieus gebruik van reiniging, niet om hygiëne",
+                bijbelplaats: "Marcus 7:3"
+            },
+            {
+                vraag: "De mensen noemen Jezus \"de timmerman\". Wat maakte een timmerman in die tijd vooral?",
+                antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
+                correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
+                bijbelplaats: "Marcus 6:3"
+            },
+            {
+                vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
+                antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
+                correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
+                bijbelplaats: "Marcus 10:25"
+            },
+            {
+                vraag: "Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn?",
+                antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had al je bezit verloren en werkte als dagloner op het land"],
+                correct: "Je had een ernstige huidziekte en moest buiten het dorp wonen",
+                bijbelplaats: "Marcus 1:40"
+            },
+            {
+                vraag: "Als Jezus een dove man geneest, zegt hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
+                antwoorden: ["Ga open", "Sta op", "Wees stil", "Kom hier"],
+                correct: "Ga open",
+                bijbelplaats: "Marcus 7:34"
+            },
+            {
+                vraag: "Toen Jezus stierf, scheurde het voorhangsel van de tempel in tweeën. Wat was het voorhangsel?",
+                antwoorden: ["Een groot gordijn dat het allerheiligste deel van de tempel afsloot", "De brede stenen trap die naar de ingang van de tempel omhoogliep", "Het dak boven de binnenplaats waar de mensen samenkwamen", "De poort waardoor alleen priesters naar binnen mochten"],
+                correct: "Een groot gordijn dat het allerheiligste deel van de tempel afsloot",
+                bijbelplaats: "Marcus 15:38"
+            },
+            {
+                vraag: "In de gelijkenis plant een man een wijngaard, graaft een kuil voor de wijnpers en bouwt een wachttoren. Waarvoor diende die toren?",
+                antwoorden: ["Om de wijngaard te bewaken tegen dieven en dieren", "Om de druiven in te drogen na de oogst", "Om van bovenaf te zien of de druiven al rijp waren", "Om de wijn koel te bewaren in de zomer"],
+                correct: "Om de wijngaard te bewaken tegen dieven en dieren",
+                bijbelplaats: "Marcus 12:1"
+            },
+            {
+                vraag: "De eigenaar verhuurde zijn wijngaard aan pachters en ging op reis. Wat is een pachter?",
+                antwoorden: ["Iemand die grond van een ander bewerkt en een deel van de oogst afstaat", "Iemand die de grond koopt en er zelf eigenaar van wordt", "Iemand die als dagloner per dag betaald wordt", "Iemand die het land bewaakt maar er niet op werkt"],
+                correct: "Iemand die grond van een ander bewerkt en een deel van de oogst afstaat",
+                bijbelplaats: "Marcus 12:1-2"
+            },
+            {
+                vraag: "Jezus spreekt over iemand met een molensteen om zijn hals. Wat is een molensteen?",
+                antwoorden: ["Een zware ronde steen om graan mee te malen", "De steen waarmee een graf werd afgesloten", "De steen waarop het altaar was gebouwd", "Een steen die men in de put liet zakken om water te halen"],
+                correct: "Een zware ronde steen om graan mee te malen",
+                bijbelplaats: "Marcus 9:42"
+            },
+            {
+                vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij hem kruisigen. Waarom deed hij dat volgens Marcus?",
+                antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Hij was zelf bang geworden voor Jezus"],
+                correct: "Hij wilde het volk zijn zin geven",
+                bijbelplaats: "Marcus 15:15"
             }
         ],
         expert: [
@@ -566,6 +1014,129 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["De berg Tabor", "De berg Sinaï, in de woestijn van Egypte", "De berg Hermon", "De Olijfberg"],
                 correct: "De berg Hermon",
                 uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager. De berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit. En de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
+            },
+            {
+                vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
+                antwoorden: ["Christus", "Rabbi", "Profeet", "Immanuël"],
+                correct: "Christus",
+                bijbelplaats: "Johannes 1:41"
+            },
+            {
+                vraag: 'Volgens Marcus stierf Jezus op het "negende uur". Hoe laat was dat ongeveer?',
+                antwoorden: ["Ongeveer drie uur 's middags", "Ongeveer negen uur 's ochtends", "Rond middernacht", "Bij zonsopgang"],
+                correct: "Ongeveer drie uur 's middags",
+                bijbelplaats: "Marcus 15:33-34"
+            },
+            {
+                vraag: "Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde hij daarmee?",
+                antwoorden: [
+                    "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
+                    "Dat een rijke nooit gered kan worden",
+                    "Dat rijke mensen het moeilijker vinden om te delen",
+                    "Dat alleen arme mensen in de hemel komen"
+                ],
+                correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
+                bijbelplaats: "Marcus 10:25-27",
+                uitleg: `Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+
+En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
+            },
+            {
+                vraag: "Bij Jezus' intocht in Jeruzalem roepen de mensen \"Hosanna!\". Wat riepen ze daarmee eigenlijk?",
+                antwoorden: ["Red ons", "Vrede zij met jou", "Leve de koning", "Dank aan God"],
+                correct: "Red ons",
+                bijbelplaats: "Marcus 11:9"
+            },
+            {
+                vraag: "Jakobus en Johannes kregen van Jezus de bijnaam Boanerges. Marcus vertelt erbij wat dat betekent. Wat is het?",
+                antwoorden: ["Zonen van de donder", "Zonen van het licht", "Zonen van de rots", "Zonen van de storm"],
+                correct: "Zonen van de donder",
+                bijbelplaats: "Marcus 3:17"
+            },
+            {
+                vraag: "Een vrouw brak een albasten kruik en goot dure olie over Jezus' hoofd. Wat is albast?",
+                antwoorden: ["Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte", "Een dunne witte stof waarin men flessen wikkelde tegen de warmte", "Een geelbruine houtsoort die alleen in Libanon groeide", "Een dikke laag was waarmee kruiken werden dichtgemaakt"],
+                correct: "Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte",
+                bijbelplaats: "Marcus 14:3"
+            },
+            {
+                vraag: "Jezus ging bidden in Getsemane, een plek met olijfbomen. Wat betekent die naam?",
+                antwoorden: ["Olijfpers", "Stille tuin", "Berg van tranen", "Hof van de koning"],
+                correct: "Olijfpers",
+                bijbelplaats: "Marcus 14:32"
+            },
+            {
+                vraag: "Marcus schrijft dat het avond werd en de sabbat aanbrak. Wanneer begon een nieuwe dag bij de Joden?",
+                antwoorden: ["Bij zonsondergang, dus de avond hoorde al bij de volgende dag", "Om middernacht, net als bij ons", "Bij zonsopgang, als het licht werd", "Om twaalf uur 's middags"],
+                correct: "Bij zonsondergang, dus de avond hoorde al bij de volgende dag",
+                bijbelplaats: "Marcus 15:42",
+                uitleg: "Dat verklaart de haast rond de begrafenis van Jezus. Hij stierf op vrijdagmiddag, en zodra de zon onderging begon de sabbat — dan mocht er niet meer gewerkt worden. Jozef van Arimatea had dus maar een paar uur. Om diezelfde reden kwamen de vrouwen pas zondagochtend terug met specerijen: eerder konden ze niet."
+            },
+            {
+                vraag: "De genezen man ging het verhaal vertellen in \"Dekapolis\". Wat was dat?",
+                antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
+                correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
+                bijbelplaats: "Marcus 5:20",
+                uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was. De man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
+            },
+            {
+                vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
+                antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
+                correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
+                bijbelplaats: "Marcus 7:24",
+                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed. Dat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
+            },
+            {
+                vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
+                antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een hangmat die tussen de masten was gespannen", "De voorplecht, waar het droogst was"],
+                correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
+                bijbelplaats: "Marcus 4:38",
+                uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Papias, een bisschop uit de tweede eeuw, schrijft dat Marcus opschreef wat Petrus vertelde — en Petrus was die nacht wél in de boot."
+            },
+            {
+                vraag: "Op het meer van Galilea stak plotseling een zware storm op. Hoe kon dat zo snel gaan?",
+                antwoorden: ["Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden", "Er lopen warme bronnen onder het meer die het water doen koken", "Het meer staat in verbinding met de zee, waardoor er vloedgolven komen", "De storm kwam altijd rond dezelfde tijd van het jaar"],
+                correct: "Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden",
+                bijbelplaats: "Marcus 4:37",
+                uitleg: "Het meer van Galilea ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels. Boven het water hangt warme lucht. Komt er over de bergen koude lucht aan, dan zakt die naar beneden — koude lucht is zwaarder — en duwt de warme lucht omhoog. Precies zo ontstaan bij ons onweersbuien als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
+            },
+            {
+                vraag: "Vier mannen braken het dak open om een verlamde bij Jezus te brengen. Hoe kon dat zomaar?",
+                antwoorden: ["Daken waren plat, van balken met takken en aangestampte leem ertussen", "Daken waren van dunne planken die je opzij kon schuiven", "Er zat altijd een luik in, om lucht binnen te laten", "Het huis was nog in aanbouw en had nog geen echt dak"],
+                correct: "Daken waren plat, van balken met takken en aangestampte leem ertussen",
+                bijbelplaats: "Marcus 2:4",
+                uitleg: "Een gewoon huis had een plat dak van houten balken, met daaroverheen riet, takken en een laag aangestampte leem. Je kwam er via een trap aan de buitenkant, en je gebruikte het dak om te slapen in de zomer of om vruchten te drogen. Zo'n dak openbreken was dus geen sloopwerk, maar het moest daarna wel opnieuw dichtgemaakt worden — Marcus vertelt niet voor niets dat het huis vol stond."
+            },
+            {
+                vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
+                antwoorden: ["Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerdieren"],
+                correct: "Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden",
+                bijbelplaats: "Marcus 11:15"
+            },
+            {
+                vraag: "Jezus zegt dat de tempel een huis van gebed moet zijn voor alle volken. In welk deel van de tempel stonden de handelaars?",
+                antwoorden: ["In het buitenste plein, het enige deel waar niet-Joden mochten komen", "In het heiligdom zelf, vlak bij het altaar", "In de zuilengang van de hogepriester", "Op het dak, waar veel ruimte was"],
+                correct: "In het buitenste plein, het enige deel waar niet-Joden mochten komen",
+                bijbelplaats: "Marcus 11:17"
+            },
+            {
+                vraag: "Een vrouw zegt tegen Jezus dat zelfs de hondjes onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
+                antwoorden: ["Ook wie niet aan tafel zit, mag iets van de overvloed krijgen", "Honden waren heilige dieren en mochten meeëten", "Ze had zelf honger en vroeg om eten", "Het eten dat viel, was niet meer rein en werd weggegooid"],
+                correct: "Ook wie niet aan tafel zit, mag iets van de overvloed krijgen",
+                bijbelplaats: "Marcus 7:28"
+            },
+            {
+                vraag: "De hogepriester scheurde zijn kleren toen hij Jezus hoorde. Wat betekende dat gebaar?",
+                antwoorden: ["Diepe verontwaardiging of verdriet, zichtbaar voor iedereen", "Dat hij zijn ambt neerlegde en wegging", "Dat hij het te warm had in de rechtszaal", "Dat hij de wet niet langer wilde volgen"],
+                correct: "Diepe verontwaardiging of verdriet, zichtbaar voor iedereen",
+                bijbelplaats: "Marcus 14:63"
+            },
+            {
+                vraag: "Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank?",
+                antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Wijn uit de tempel, die alleen de priesters mochten drinken", "Een dure wijn die een rijke voorbijganger had meegebracht"],
+                correct: "Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst",
+                bijbelplaats: "Marcus 15:36",
+                uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen pesterij: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
             }
         ]
     },
@@ -631,6 +1202,12 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Lea en Rachel", "Marta en Maria", "Hanna en Naomi", "Mirjam en Sara"],
                 correct: "Marta en Maria",
                 bijbelplaats: "Lucas 10:38-42"
+            },
+            {
+                vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
+                antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
+                correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
+                bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
             }
         ],
         advanced: [
@@ -693,6 +1270,57 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Een priester en een Leviet", "Een koning en een soldaat", "Een tollenaar en een visser", "Twee herders"],
                 correct: "Een priester en een Leviet",
                 bijbelplaats: "Lucas 10:31-32"
+            },
+            {
+                vraag: "Uit zijn vele leerlingen koos Jezus een kleinere, bijzondere groep die hij eropuit stuurde. Hoe noemde hij die?",
+                antwoorden: ["Apostelen", "Profeten", "Schriftgeleerden", "Farizeeën"],
+                correct: "Apostelen",
+                bijbelplaats: "Lucas 6:13"
+            },
+            {
+                vraag: "Wat was een synagoge?",
+                antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "De grote tempel in Jeruzalem waar de priesters elke dag opnieuw de dieren aan God offerden", "De grote markt waar handelaren verkochten", "Het huis waar de hogepriester offerde"],
+                correct: "Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren",
+                bijbelplaats: "Lucas 4:16"
+            },
+            {
+                vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
+                antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
+                correct: "De bevrijding uit de slavernij in Egypte",
+                bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
+            },
+            {
+                vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
+                antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
+                correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
+                bijbelplaats: "Lucas 15:18"
+            },
+            {
+                vraag: "De arme weduwe gaf twee penningen. Hoeveel was dat samen ongeveer in geld van nu?",
+                antwoorden: ["Ongeveer anderhalf tot twee euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
+                correct: "Ongeveer anderhalf tot twee euro",
+                bijbelplaats: "Lucas 21:1-4"
+            },
+            {
+                vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
+                antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
+                correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
+                bijbelplaats: "Lucas 4:17",
+                uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen. Lucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon hij te spreken."
+            },
+            {
+                vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
+                antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
+                correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
+                bijbelplaats: "Lucas 10:33",
+                uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — er is zelfs een keer een Samaritaanse tempel verwoest door Joden. Wie in Galilea naar Jeruzalem reisde, maakte liever een omweg dan door Samaria te lopen. Dat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
+            },
+            {
+                vraag: "De farizeeër in de gelijkenis zegt dat hij tienden geeft van alles wat hij bezit. Wat zijn tienden?",
+                antwoorden: ["Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel", "Tien munten die je jaarlijks moest betalen", "De tiende dag van elke maand, die je apart hield", "De tien geboden die je uit je hoofd leerde"],
+                correct: "Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel",
+                bijbelplaats: "Lucas 18:12",
+                uitleg: "Een tiende deel van de oogst was bestemd voor de levieten. Zij verzorgden de dienst in de tempel en hadden als enige stam geen eigen land gekregen, dus dit was hun inkomen. De levieten gaven daar zelf weer een tiende deel van door aan de priesters. Daarnaast was er elke drie jaar een tiende voor de armen, de weduwen, de wezen en de vreemdelingen. De farizeeër uit de gelijkenis ging nog verder dan de wet vroeg: hij gaf van alles een tiende, tot aan de kruiden in zijn tuin toe."
             }
         ],
         expert: [
@@ -804,6 +1432,99 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Ongeveer tien keer zo groot als een vat", "Ongeveer even groot als een vat", "Kleiner dan een vat", "Ongeveer honderd keer zo groot als een vat"],
                 correct: "Ongeveer tien keer zo groot als een vat",
                 bijbelplaats: "Lucas 16:7"
+            },
+            {
+                vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
+                antwoorden: ["Het nieuwe verbond", "De grote belofte", "De heilige wet", "Het laatste gebod"],
+                correct: "Het nieuwe verbond",
+                bijbelplaats: "Lucas 22:20"
+            },
+            {
+                vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij twee tortelduiven. Wat zegt dat over hen?",
+                antwoorden: ["Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen", "Dat zij uit een priesterfamilie kwamen en daarom duiven moesten offeren", "Dat zij een lange reis hadden gemaakt en geen lam konden meenemen", "Dat het lente was, want duiven werden alleen in het voorjaar geofferd"],
+                correct: "Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen",
+                bijbelplaats: "Lucas 2:24"
+            },
+            {
+                vraag: "Zacharias was priester en moest het reukoffer brengen in de tempel. Wat deed hij daarbij?",
+                antwoorden: ["Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden", "Hij slachtte een lam en legde het op het brandofferaltaar", "Hij goot olie uit over de gouden kandelaar en stak die aan", "Hij waste de heilige voorwerpen met water uit het bekken"],
+                correct: "Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden",
+                bijbelplaats: "Lucas 1:8-11"
+            },
+            {
+                vraag: "De barmhartige Samaritaan goot olie en wijn op de wonden van de gewonde man. Waarom deed hij dat?",
+                antwoorden: ["Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht", "Het was een gebed in daden: olie stond voor God, wijn voor het leven", "Het was alles wat hij bij zich had en het was beter dan niets", "Het hoorde bij de gastvrijheid: zo begroette je iemand die je meenam"],
+                correct: "Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht",
+                bijbelplaats: "Lucas 10:34"
+            },
+            {
+                vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
+                antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger", "Hogepriester in de tempel", "Rechter van de Hoge Raad"],
+                correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
+                bijbelplaats: "Lucas 3:1",
+                uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang. Lucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
+            },
+            {
+                vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
+                antwoorden: ["De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas", "Het was dezelfde man, maar hij was oud geworden", "Herodes was een titel, geen naam, net als keizer", "De tweede was de kleinzoon van de eerste"],
+                correct: "De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas",
+                bijbelplaats: "Lucas 23:7",
+                uitleg: "Herodes de Grote regeerde toen Jezus geboren werd en stierf kort daarna. Zijn rijk werd verdeeld onder zijn zonen. Herodes Antipas kreeg Galilea — hij is degene die Johannes de Doper liet onthoofden en die Jezus verhoorde. Nog weer later komt in Handelingen een Herodes Agrippa voor, een kleinzoon. Er lopen dus drie verschillende Herodessen door het Nieuwe Testament."
+            },
+            {
+                vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
+                antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
+                correct: "Eén vastendag per jaar, op Grote Verzoendag",
+                bijbelplaats: "Lucas 18:12"
+            },
+            {
+                vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
+                antwoorden: ["Om wier, slib en schelpen eruit te halen, anders zag de vis het net", "Om ze te wassen voordat ze thuis te drogen werden gehangen", "Om te kijken of er nog vis in was blijven zitten", "Om ze zwaarder te maken, zodat ze dieper zonken"],
+                correct: "Om wier, slib en schelpen eruit te halen, anders zag de vis het net",
+                bijbelplaats: "Lucas 5:2"
+            },
+            {
+                vraag: "Jezus zegt: wie de hand aan de ploeg slaat en omkijkt, is niet geschikt. Waarom is omkijken bij het ploegen een probleem?",
+                antwoorden: ["De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij", "De ossen slaan op hol als je hen niet aankijkt", "Je verliest het zaad dat je in je andere hand draagt", "Het is verboden om over je schouder te kijken op het land"],
+                correct: "De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij",
+                bijbelplaats: "Lucas 9:62"
+            },
+            {
+                vraag: "Jezus zegt tegen Simon dat de satan hem wil \"zeven als tarwe\". Wat gebeurt er bij het zeven?",
+                antwoorden: ["Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
+                correct: "Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen",
+                bijbelplaats: "Lucas 22:31"
+            },
+            {
+                vraag: "In de gelijkenis zegt iemand dat hij vijf span ossen heeft gekocht. Wat is een span?",
+                antwoorden: ["Twee ossen die samen onder één juk trekken", "Een os met een wagen erachter", "De hoeveelheid land die één os op een dag ploegt", "Het touw waarmee een os wordt vastgezet"],
+                correct: "Twee ossen die samen onder één juk trekken",
+                bijbelplaats: "Lucas 14:19"
+            },
+            {
+                vraag: "De vader geeft zijn teruggekeerde zoon het beste kleed, een ring en sandalen. Wat betekende die ring?",
+                antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden", "Dat hij zijn schulden had afbetaald"],
+                correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
+                bijbelplaats: "Lucas 15:22",
+                uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon zijn zegel in zachte zegelwas drukken en zo namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
+            },
+            {
+                vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
+                antwoorden: ["Varkens waren onreine dieren, die een Jood niet mocht eten of houden", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
+                correct: "Varkens waren onreine dieren, die een Jood niet mocht eten of houden",
+                bijbelplaats: "Lucas 15:15"
+            },
+            {
+                vraag: "De zoon had willen eten van de peulen die de varkens kregen. Wat waren dat?",
+                antwoorden: ["De peulen van de johannesbroodboom, hard voer dat men aan vee gaf", "De schillen van gedroogde vijgen", "De doppen van noten die overbleven na het persen", "Restjes brood die van de tafel werden geveegd"],
+                correct: "De peulen van de johannesbroodboom, hard voer dat men aan vee gaf",
+                bijbelplaats: "Lucas 15:16"
+            },
+            {
+                vraag: "Jezus zegt: als men jullie niet ontvangt, schud dan het stof van je voeten. Wat betekende dat?",
+                antwoorden: ["Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven", "Een manier om te tonen dat je moe was van de reis", "Een gebruik om je sandalen te sparen op een lange weg", "Een zegen die je bij het weggaan achterliet"],
+                correct: "Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven",
+                bijbelplaats: "Lucas 9:5"
             }
         ]
     },
@@ -857,6 +1578,48 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Judas", "Petrus", "Tomas", "Andreas"],
                 correct: "Petrus",
                 bijbelplaats: "Johannes 13:6-8"
+            },
+            {
+                vraag: 'Wat is een "discipel"?',
+                antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een dienaar die in de tempel het heilige vuur brandend hield"],
+                correct: "Een leerling van Jezus die met hem meeging en van hem leerde",
+                bijbelplaats: "Johannes 1:35-40"
+            },
+            {
+                vraag: 'Wat betekent het woord "opstanding"?',
+                antwoorden: ["Weer levend worden na de dood", "Omhooggaan naar de hemel", "Een lange reis maken", "Een groot feest vieren"],
+                correct: "Weer levend worden na de dood",
+                bijbelplaats: "Johannes 11:25 (Jezus bij het graf van Lazarus)"
+            },
+            {
+                vraag: "Wat was de tempel?",
+                antwoorden: ["Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden", "Het grote paleis waar de koning van de Joden met zijn hele familie woonde", "De markt van Jeruzalem", "Een Romeins fort"],
+                correct: "Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden",
+                bijbelplaats: "Johannes 2:13-22"
+            },
+            {
+                vraag: "Jezus zei: 'Ik ben de weg, de waarheid en het ___.' Welk woord hoort op de open plek?",
+                antwoorden: ["het leven", "het licht", "de liefde", "de vrede"],
+                correct: "het leven",
+                bijbelplaats: "Johannes 14:6"
+            },
+            {
+                vraag: "Jezus noemde zichzelf 'de goede ___'. Hoe noemde Hij zich?",
+                antwoorden: ["herder", "koning", "leraar", "visser"],
+                correct: "herder",
+                bijbelplaats: "Johannes 10:11"
+            },
+            {
+                vraag: "Jezus zei: 'Ik ben het licht van de ___.' Wat zei Hij?",
+                antwoorden: ["wereld", "hemel", "nacht", "zon"],
+                correct: "wereld",
+                bijbelplaats: "Johannes 8:12"
+            },
+            {
+                vraag: "In de Bijbel worden de mensen die bij Jezus horen vergeleken met dieren die hun herder volgen. Met welke dieren?",
+                antwoorden: ["schapen", "geiten", "koeien", "duiven"],
+                correct: "schapen",
+                bijbelplaats: "Johannes 10:27"
             }
         ],
         advanced: [
@@ -907,6 +1670,66 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Volg mij", "Heb je mij lief? Zorg voor mijn schapen", "Vrees niet", "Ga nu de hele wijde wereld in en vertel over mij"],
                 correct: "Heb je mij lief? Zorg voor mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
+            },
+            {
+                vraag: "Een man genaamd Nikodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
+                antwoorden: ["De Farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
+                correct: "De Farizeeën",
+                bijbelplaats: "Johannes 3:1"
+            },
+            {
+                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat Híj de manier is om naar binnen te gaan. Hoe noemde Jezus zichzelf in dit beeld?",
+                antwoorden: ["de deur", "de muur", "het dak", "het raam"],
+                correct: "de deur",
+                bijbelplaats: "Johannes 10:7-9"
+            },
+            {
+                vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant?",
+                antwoorden: ["wijnstok", "olijfboom", "vijgenboom", "palmboom"],
+                correct: "wijnstok",
+                bijbelplaats: "Johannes 15:1"
+            },
+            {
+                vraag: "Jezus zei: 'Ik ben het ___ dat leven geeft.' Welk woord hoort hier?",
+                antwoorden: ["brood", "water", "wijn", "vis"],
+                correct: "brood",
+                bijbelplaats: "Johannes 6:35"
+            },
+            {
+                vraag: "Jezus zei: 'Ik ben de wijnstok, jullie zijn de ___.' Wat zijn de gelovigen volgens dit beeld?",
+                antwoorden: ["de ranken", "de bladeren", "de wortels", "de druiven"],
+                correct: "de ranken",
+                bijbelplaats: "Johannes 15:5"
+            },
+            {
+                vraag: "Twee leerlingen noemen Jezus \"Rabbi\". Johannes vertelt er meteen bij wat dat woord betekent. Wat is het?",
+                antwoorden: ["Meester", "Redder", "Vriend", "Koning"],
+                correct: "Meester",
+                bijbelplaats: "Johannes 1:38"
+            },
+            {
+                vraag: "Jezus wast de voeten van zijn leerlingen. Waarom was dat zo opvallend?",
+                antwoorden: ["In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester", "Het mocht alleen op de sabbat gebeuren en het was geen sabbat", "Het was een taak van de gastvrouw, niet van een man", "Het gebeurde normaal pas na de maaltijd, niet ervoor"],
+                correct: "In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester",
+                bijbelplaats: "Johannes 13:5"
+            },
+            {
+                vraag: "Jezus stelt de goede herder tegenover een huurling. Wat is het verschil?",
+                antwoorden: ["Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem", "Een huurling werkt alleen in de zomer, een herder het hele jaar", "Een huurling mag de schapen niet aanraken, een herder wel", "Een huurling hoedt runderen, een herder schapen"],
+                correct: "Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem",
+                bijbelplaats: "Johannes 10:12"
+            },
+            {
+                vraag: "Wat zei Tomas toen hij Jezus na de opstanding zag?",
+                antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Ik geloof nu"],
+                correct: "Mijn Heer en mijn God!",
+                bijbelplaats: "Johannes 20:28"
+            },
+            {
+                vraag: "Wie kwam als eerste bij het graf van Jezus op de eerste dag van de week, volgens Johannes?",
+                antwoorden: ["Petrus", "Maria Magdalena", "Johannes", "De twaalf leerlingen"],
+                correct: "Maria Magdalena",
+                bijbelplaats: "Johannes 20:1"
             }
         ],
         expert: [
@@ -991,6 +1814,138 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["2 rivieren en 3 meren", "1 rivier en 2 meren", "1 rivier en 3 meren", "3 rivieren en 1 meer"],
                 correct: "1 rivier en 3 meren",
                 uitleg: "Israël is een droog land, dus er is weinig water. Er is maar één grote rivier: de Jordaan. En er zijn drie meren: het Meer van Galilea en de Dode Zee zijn de bekende twee, en in het noorden ligt nog een klein meer, het Meer van Hula. De Jordaan verbindt het Meer van Galilea met de Dode Zee."
+            },
+            {
+                vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
+                antwoorden: ["Tekenen", "Krachten", "Wonderwerken", "Machtige daden"],
+                correct: "Tekenen",
+                bijbelplaats: "Johannes 2:11"
+            },
+            {
+                vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
+                antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld van wel driehonderd munten", "Een tijdsmaat"],
+                correct: "Een gewicht (ongeveer 300 gram)",
+                bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
+                uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
+            },
+            {
+                vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
+                antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar penningen"],
+                correct: "Driehonderd denarie (bijna een jaarloon)",
+                bijbelplaats: "Johannes 12:5",
+                uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
+            },
+            {
+                vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
+                antwoorden: [
+                    "Rond het middaguur (ongeveer 12 uur)",
+                    "Negen uur 's ochtends",
+                    "Drie uur 's middags",
+                    "Bij zonsondergang (rond 6 uur 's avonds)"
+                ],
+                correct: "Rond het middaguur (ongeveer 12 uur)",
+                bijbelplaats: "Johannes 4:6",
+                uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Een ongewone tijd om water te halen, en Jezus was moe van de reis."
+            },
+            {
+                vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes waarschijnlijk ontstaan?",
+                antwoorden: ["Als eerste", "Als tweede", "Als derde", "Als laatste"],
+                correct: "Als laatste",
+                bijbelplaats: "NT algemeen",
+                uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
+            },
+            {
+                vraag: "Jezus zei iets bijzonders over zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
+                antwoorden: ["Abraham", "Mozes", "David", "Noach"],
+                correct: "Abraham",
+                bijbelplaats: "Johannes 8:58"
+            },
+            {
+                vraag: "Jezus zei: 'Ik ben de goede herder.' Wat doet de goede herder volgens Hem voor zijn schapen?",
+                antwoorden: [
+                    "Hij geeft zijn leven voor de schapen",
+                    "Hij verkoopt ze",
+                    "Hij laat ze alleen",
+                    "Hij laat ze door een knecht in de gaten houden"
+                ],
+                correct: "Hij geeft zijn leven voor de schapen",
+                bijbelplaats: "Johannes 10:11"
+            },
+            {
+                vraag: "Jezus stuurt een blinde man naar het badwater Siloam. Johannes schrijft erbij wat die naam betekent. Wat is het?",
+                antwoorden: ["Gezonden", "Genezen", "Levend water", "Geopend"],
+                correct: "Gezonden",
+                bijbelplaats: "Johannes 9:7"
+            },
+            {
+                vraag: "Op de bruiloft in Kana stonden zes grote stenen watervaten klaar. Waar dienden die voor?",
+                antwoorden: ["Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was", "Voor het bewaren van regenwater voor tijden van droogte", "Voor het mengen van wijn met water tijdens de maaltijd", "Voor het wassen van de voeten van de gasten bij binnenkomst"],
+                correct: "Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was",
+                bijbelplaats: "Johannes 2:6"
+            },
+            {
+                vraag: "Jezus werd na zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd hij eerst bij Annas gebracht?",
+                antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
+                correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
+                bijbelplaats: "Johannes 18:13",
+                uitleg: "In de tijd vóór de Romeinen bleef een hogepriester zijn leven lang in functie. Onder Romeins bestuur benoemde en ontsloeg de gouverneur hen echter naar believen. Annas was ongeveer tien jaar hogepriester geweest en werd afgezet, maar hij bleef achter de schermen de machtigste man in Jeruzalem: vijf van zijn zonen én zijn schoonzoon Kajafas werden na hem hogepriester. Wie iets wilde regelen, ging dus eerst langs Annas. Dat verklaart ook waarom Lucas twee namen tegelijk noemt als hij vertelt wanneer Johannes de Doper begon."
+            },
+            {
+                vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
+                antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Twee of drie man", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
+                correct: "Een paar honderd soldaten, een tiende deel van een legioen",
+                bijbelplaats: "Johannes 18:3",
+                uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
+            },
+            {
+                vraag: "Welke talen sprak men in Israël in de tijd van Jezus?",
+                antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
+                correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
+                bijbelplaats: "Johannes 19:20",
+                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven. Latijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij. Dat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
+            },
+            {
+                vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
+                antwoorden: ["Hij leidde het feest en zag toe op het eten en drinken", "Hij sprak de zegen uit over het bruidspaar", "Hij hield bij welke gasten een geschenk hadden meegebracht", "Hij speelde muziek en leidde de dansen"],
+                correct: "Hij leidde het feest en zag toe op het eten en drinken",
+                bijbelplaats: "Johannes 2:9"
+            },
+            {
+                vraag: "De vrouw bij de put zegt: \"U hebt niet eens een emmer, en de put is diep.\" Waarmee haalde je water uit een put?",
+                antwoorden: ["Een leren zak aan een lang touw, die je liet zakken en weer ophaalde", "Een houten bak op een hefboom", "Een koperen ketel die aan een ketting hing", "Een rieten mand met pek aan de binnenkant"],
+                correct: "Een leren zak aan een lang touw, die je liet zakken en weer ophaalde",
+                bijbelplaats: "Johannes 4:11"
+            },
+            {
+                vraag: "'s Nachts brachten herders hun schapen samen in één kooi met een poortwachter. Hoe vond een herder 's ochtends zijn eigen schapen terug?",
+                antwoorden: ["Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe", "Hij had elk schaap een merkteken op de vacht gegeven", "De poortwachter hield bij welk schaap van wie was", "Hij telde ze, want elke herder had er evenveel"],
+                correct: "Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe",
+                bijbelplaats: "Johannes 10:1-3"
+            },
+            {
+                vraag: "Jezus zegt dat de wijnbouwer elke rank die vrucht draagt, snoeit. Waarom doet een wijnbouwer dat?",
+                antwoorden: ["Zodat de kracht van de plant naar minder ranken gaat en die meer druiven geven", "Om de plant kleiner te houden zodat hij in de rij past", "Om het hout te gebruiken als brandstof in de winter", "Om te zien welke ranken ziek zijn geworden"],
+                correct: "Zodat de kracht van de plant naar minder ranken gaat en die meer druiven geven",
+                bijbelplaats: "Johannes 15:2"
+            },
+            {
+                vraag: "Bij de maaltijd wordt gezegd dat een leerling \"aanlag\" tegen Jezus. Hoe zat men aan tafel?",
+                antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Staand, want een maaltijd duurde kort"],
+                correct: "Half liggend op kussens rond een lage tafel, steunend op één elleboog",
+                bijbelplaats: "Johannes 13:23",
+                uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
+            },
+            {
+                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
+                antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
+                correct: "Nikodemus",
+                bijbelplaats: "Johannes 3:1-2"
+            },
+            {
+                vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
+                antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
+                correct: "De tuinman",
+                bijbelplaats: "Johannes 20:15"
             }
         ]
     }
@@ -1002,608 +1957,32 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
 // [Gevorderd] -> advanced. De pool-, hussel-, win- en scorelogica blijft
 // ongemoeid; de niveaus worden alleen groter en de bestaande pool-trekking
 // (10 uit de pool) pakt dat vanzelf op.
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
-        antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
-        correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
-        bijbelplaats: "Matteüs 5:17"
-    },
-    {
-        vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
-        antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een gewone Jood, iemand zonder openbare religieuze functie"],
-        correct: "Iemand die niet bij het Joodse volk hoorde",
-        bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
-    }
-);
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van zijn eigen opstanding. Over welke profeet ging het?",
-        antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
-        correct: "Jona",
-        bijbelplaats: "Matteüs 12:39-40"
-    },
-    {
-        vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
-        antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
-        correct: "De Bergrede",
-        bijbelplaats: "Matteüs 5:3"
-    }
-);
-vragenData["Marcus"].beginner.push(
-    {
-        vraag: 'Wat betekent het woord "Messias"?',
-        antwoorden: ['De beloofde redder ("de gezalfde")', "De koning van de Romeinen", "De leider van de tempel", "Een hemelse engel"],
-        correct: 'De beloofde redder ("de gezalfde")',
-        bijbelplaats: "Marcus 8:29"
-    },
-    {
-        vraag: 'Wat betekent het woord "evangelie"?',
-        antwoorden: ["Goed nieuws", "Heilig boek", "Lange reis", "Oude wet"],
-        correct: "Goed nieuws",
-        bijbelplaats: "Marcus 1:1"
-    },
-    {
-        vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
-        antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
-        correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
-        bijbelplaats: "Marcus 1:4"
-    },
-    {
-        vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
-        antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
-        correct: "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft",
-        bijbelplaats: "Marcus 1:15"
-    },
-    {
-        vraag: 'Wat is een "wonder" in de Bijbel?',
-        antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
-        correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
-        bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
-    }
-);
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
-        antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
-        correct: "Een duif",
-        bijbelplaats: "Marcus 1:10"
-    },
-    {
-        vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
-        antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
-        correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
-        bijbelplaats: "Marcus 2:27"
-    },
-    {
-        vraag: 'Wat was een "schriftgeleerde"?',
-        antwoorden: ["Iemand die heel veel boeken gelezen had", "Een kenner van de heilige boeken, die ze aan anderen uitlegde", "Iemand die de belastingregels aan het volk kon uitleggen", "Iemand die de Romeinse wet uit zijn hoofd kende"],
-        correct: "Een kenner van de heilige boeken, die ze aan anderen uitlegde",
-        bijbelplaats: "Marcus 12:28"
-    }
-);
-vragenData["Marcus"].expert.push(
-    {
-        vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
-        antwoorden: ["Christus", "Rabbi", "Profeet", "Immanuël"],
-        correct: "Christus",
-        bijbelplaats: "Johannes 1:41"
-    }
-);
-vragenData["Lucas"].beginner.push(
-    {
-        vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
-        antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
-        correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
-        bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
-    }
-);
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "Uit zijn vele leerlingen koos Jezus een kleinere, bijzondere groep die hij eropuit stuurde. Hoe noemde hij die?",
-        antwoorden: ["Apostelen", "Profeten", "Schriftgeleerden", "Farizeeën"],
-        correct: "Apostelen",
-        bijbelplaats: "Lucas 6:13"
-    },
-    {
-        vraag: "Wat was een synagoge?",
-        antwoorden: ["Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren", "De grote tempel in Jeruzalem waar de priesters elke dag opnieuw de dieren aan God offerden", "De grote markt waar handelaren verkochten", "Het huis waar de hogepriester offerde"],
-        correct: "Het gebouw waar Joodse mensen samenkwamen om te bidden en uit de heilige boeken te leren",
-        bijbelplaats: "Lucas 4:16"
-    },
-    {
-        vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
-        antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
-        correct: "De bevrijding uit de slavernij in Egypte",
-        bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
-    },
-    {
-        vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
-        antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
-        correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
-        bijbelplaats: "Lucas 15:18"
-    }
-);
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
-        antwoorden: ["Het nieuwe verbond", "De grote belofte", "De heilige wet", "Het laatste gebod"],
-        correct: "Het nieuwe verbond",
-        bijbelplaats: "Lucas 22:20"
-    }
-);
-vragenData["Johannes"].beginner.push(
-    {
-        vraag: 'Wat is een "discipel"?',
-        antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een dienaar die in de tempel het heilige vuur brandend hield"],
-        correct: "Een leerling van Jezus die met hem meeging en van hem leerde",
-        bijbelplaats: "Johannes 1:35-40"
-    },
-    {
-        vraag: 'Wat betekent het woord "opstanding"?',
-        antwoorden: ["Weer levend worden na de dood", "Omhooggaan naar de hemel", "Een lange reis maken", "Een groot feest vieren"],
-        correct: "Weer levend worden na de dood",
-        bijbelplaats: "Johannes 11:25 (Jezus bij het graf van Lazarus)"
-    },
-    {
-        vraag: "Wat was de tempel?",
-        antwoorden: ["Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden", "Het grote paleis waar de koning van de Joden met zijn hele familie woonde", "De markt van Jeruzalem", "Een Romeins fort"],
-        correct: "Het grote, heilige gebouw in Jeruzalem waar de mensen God vereerden",
-        bijbelplaats: "Johannes 2:13-22"
-    }
-);
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Een man genaamd Nikodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
-        antwoorden: ["De Farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
-        correct: "De Farizeeën",
-        bijbelplaats: "Johannes 3:1"
-    }
-);
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
-        antwoorden: ["Tekenen", "Krachten", "Wonderwerken", "Machtige daden"],
-        correct: "Tekenen",
-        bijbelplaats: "Johannes 2:11"
-    }
-);
-
 // === Matteüs Beginner — 10 extra vragen (uit matteus-beginner-10-nieuwe-vragen.js)
 // Zelfde objectformaat, sommige met het optionele 'uitleg'-veld. Pool 10 -> 20.
-vragenData["Matteüs"].beginner.push(
-    {
-        vraag: "Onze jaartelling — zoals het jaar 2026 'na Christus' — telt vanaf de geboorte van wie?",
-        antwoorden: ["Jezus", "Mozes", "Abraham", "Koning David"],
-        correct: "Jezus",
-        bijbelplaats: "Matteüs 2:1",
-        uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt waarschijnlijk net niet — geleerden denken een paar jaar eerder, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf zíjn geboorte."
-    },
-    {
-        vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
-        antwoorden: ["Vissers", "Boeren", "Soldaten", "Bakkers"],
-        correct: "Vissers",
-        bijbelplaats: "Matteüs 4:18-20",
-        uitleg: "Jezus zei tegen hen: 'Kom, volg mij, dan zal ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
-    },
-    {
-        vraag: "Wat zei Jezus toen mensen de kinderen bij hem wilden weghouden?",
-        antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
-        correct: "Laat de kinderen bij mij komen",
-        bijbelplaats: "Matteüs 19:13-14"
-    },
-    {
-        vraag: "Jezus vertelde over een verstandige man die zijn huis bouwde zodat het in de storm bleef staan. Waarop bouwde hij?",
-        antwoorden: ["Op de rots", "Op het zand", "Op het water", "Op een hooiberg"],
-        correct: "Op de rots",
-        bijbelplaats: "Matteüs 7:24-27",
-        uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar zijn woorden luistert én ze ook doet."
-    },
-    {
-        vraag: "Jezus vergeleek het koninkrijk van God met een heel klein zaadje dat uitgroeit tot een grote plant. Welk zaadje?",
-        antwoorden: ["Een mosterdzaadje", "Een appelpit", "Een graankorrel", "Een druivenpit"],
-        correct: "Een mosterdzaadje",
-        bijbelplaats: "Matteüs 13:31-32"
-    },
-    {
-        vraag: "Een herder heeft honderd schapen en er raakt er één kwijt. Wat doet hij volgens Jezus?",
-        antwoorden: ["Hij laat de negenennegentig achter om dat ene te zoeken", "Hij vergeet dat ene schaap en telt gewoon rustig verder", "Hij koopt een nieuw schaap", "Hij wacht tot het vanzelf terugkomt"],
-        correct: "Hij laat de negenennegentig achter om dat ene te zoeken",
-        bijbelplaats: "Matteüs 18:12-14",
-        uitleg: "Met dit verhaal liet Jezus zien dat God ieder mens belangrijk vindt — juist ook die ene die verdwaald is geraakt."
-    },
-    {
-        vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
-        antwoorden: ["Wees niet bang, hij is naar Galilea gegaan", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
-        correct: "Hij is opgestaan, hij is hier niet",
-        bijbelplaats: "Matteüs 28:5-6"
-    },
-    {
-        vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei hij?",
-        antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Behandel anderen precies zoals zij jou behandeld hebben"],
-        correct: "Behandel anderen zoals je zelf behandeld wilt worden",
-        bijbelplaats: "Matteüs 7:12"
-    }
-);
-
 // === Thema "Maten, geld & tijd" — verdeeld over de evangelieboeken ============
 // Veldnamen aangepast aan de bestaande structuur (opties->antwoorden,
 // antwoord->correct) en niveau "gevorderd"->advanced. Elke vraag is op het
 // evangelie in zijn bijbelplaats geplaatst. Pool-/hussel-/win-/scorelogica
 // blijft ongemoeid; de niveaus worden alleen groter.
-vragenData["Marcus"].beginner.push(
-    {
-        vraag: "Welk muntje was het allerkleinste dat in de Bijbel voorkomt?",
-        antwoorden: ["Penning", "Denarie", "Talent", "Pond"],
-        correct: "Penning",
-        bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
-    }
-);
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
-        antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De eerste wake, de tweede wake, de derde wake en de vierde wake", "Het eerste, tweede, derde en vierde uur"],
-        correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
-        bijbelplaats: "Marcus 13:35"
-    }
-);
-vragenData["Marcus"].expert.push(
-    {
-        vraag: 'Volgens Marcus stierf Jezus op het "negende uur". Hoe laat was dat ongeveer?',
-        antwoorden: ["Ongeveer drie uur 's middags", "Ongeveer negen uur 's ochtends", "Rond middernacht", "Bij zonsopgang"],
-        correct: "Ongeveer drie uur 's middags",
-        bijbelplaats: "Marcus 15:33-34"
-    },
-    {
-        vraag: "Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde hij daarmee?",
-        antwoorden: [
-            "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
-            "Dat een rijke nooit gered kan worden",
-            "Dat rijke mensen het moeilijker vinden om te delen",
-            "Dat alleen arme mensen in de hemel komen"
-        ],
-        correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
-        bijbelplaats: "Marcus 10:25-27",
-        uitleg: `Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
-
-En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
-    }
-);
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "De arme weduwe gaf twee penningen. Hoeveel was dat samen ongeveer in geld van nu?",
-        antwoorden: ["Ongeveer anderhalf tot twee euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
-        correct: "Ongeveer anderhalf tot twee euro",
-        bijbelplaats: "Lucas 21:1-4"
-    }
-);
-vragenData["Johannes"].expert.push(
-    {
-        vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
-        antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld van wel driehonderd munten", "Een tijdsmaat"],
-        correct: "Een gewicht (ongeveer 300 gram)",
-        bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
-        uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
-    },
-    {
-        vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
-        antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar penningen"],
-        correct: "Driehonderd denarie (bijna een jaarloon)",
-        bijbelplaats: "Johannes 12:5",
-        uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
-    }
-);
-
 // --- Uren van de dag: drie bekende momenten ---------------------------------
 // Horen bij de naslagtabel "Maten, geld & tijd". Elk bij het bijbelboek van de
 // gebeurtenis. Het Pinkstervoorbeeld hoort bij Handelingen (Handelingen 2:15)
 // en staat als push ná de Handelingen-pool, omdat vragenData["Handelingen"]
 // hierboven nog niet bestaat.
-vragenData["Johannes"].expert.push(
-    {
-        vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
-        antwoorden: [
-            "Rond het middaguur (ongeveer 12 uur)",
-            "Negen uur 's ochtends",
-            "Drie uur 's middags",
-            "Bij zonsondergang (rond 6 uur 's avonds)"
-        ],
-        correct: "Rond het middaguur (ongeveer 12 uur)",
-        bijbelplaats: "Johannes 4:6",
-        uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Een ongewone tijd om water te halen, en Jezus was moe van de reis."
-    }
-);
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: 'Op het "negende uur" gebeurde er iets belangrijks bij het kruis. Wat was dat uur ongeveer, en wat hoorde er nog meer bij?',
-        antwoorden: [
-            "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
-            "Ongeveer negen uur 's ochtends — het begin van de werkdag",
-            "Precies om middernacht — het uur waarop de tempelwachters van dienst wisselden",
-            "Bij zonsopgang — het uur van het ochtendoffer"
-        ],
-        correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
-        bijbelplaats: "Matteüs 27:46-50",
-        uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: in het boek Handelingen lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
-    },
-    {
-        vraag: "Met hoeveel broden en vissen gaf Jezus een grote menigte te eten?",
-        antwoorden: ["Vijf broden en twee vissen", "Twee broden en vijf vissen", "Tien broden en tien vissen", "Eén brood en één vis"],
-        correct: "Vijf broden en twee vissen",
-        bijbelplaats: "Matteüs 14:13-21"
-    },
-    {
-        vraag: "Jezus vraagt: wie van jullie kan door zich zorgen te maken één el aan zijn leven toevoegen? Een el was een maat die men aan het eigen lichaam afmat. Hoe lang was een el ongeveer?",
-        antwoorden: ["Zo lang als je voet, ongeveer 30 cm", "Van je elleboog tot je vingertoppen, ongeveer 45 cm", "Van je schouder tot je pols, ongeveer 60 cm", "Zo breed als je hand, ongeveer 8 cm"],
-        correct: "Van je elleboog tot je vingertoppen, ongeveer 45 cm",
-        bijbelplaats: "Matteüs 6:27"
-    },
-    {
-        vraag: "Jezus zei: dwingt iemand je één mijl mee te gaan, ga er dan twee. Hoe lang was een Romeinse mijl ongeveer?",
-        antwoorden: ["Honderd meter", "Anderhalve kilometer", "Een halve kilometer", "Tien kilometer"],
-        correct: "Anderhalve kilometer",
-        bijbelplaats: "Matteüs 5:41"
-    },
-    {
-        vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
-        antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
-        correct: "Een maatbak om graan af te meten",
-        bijbelplaats: "Matteüs 5:15",
-        uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
-    },
-    {
-        vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
-        antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
-        correct: "Vijftien tot twintig jaar",
-        bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
-    },
-    {
-        vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
-        antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
-        correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
-        bijbelplaats: "Matteüs 26:15",
-        uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin. Het bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
-    }
-);
-
 // === Johannes — de "Ik ben"-uitspraken (9 extra vragen) =====================
 // Het juiste antwoord staat in 'correct' op tekstinhoud; de antwoordvolgorde
 // wordt bij het trekken gehusseld (husselArray in kiesNiveau), dus de positie
 // in de array doet er niet toe.
-vragenData["Johannes"].beginner.push(
-    {
-        vraag: "Jezus zei: 'Ik ben de weg, de waarheid en het ___.' Welk woord hoort op de open plek?",
-        antwoorden: ["het leven", "het licht", "de liefde", "de vrede"],
-        correct: "het leven",
-        bijbelplaats: "Johannes 14:6"
-    },
-    {
-        vraag: "Jezus noemde zichzelf 'de goede ___'. Hoe noemde Hij zich?",
-        antwoorden: ["herder", "koning", "leraar", "visser"],
-        correct: "herder",
-        bijbelplaats: "Johannes 10:11"
-    },
-    {
-        vraag: "Jezus zei: 'Ik ben het licht van de ___.' Wat zei Hij?",
-        antwoorden: ["wereld", "hemel", "nacht", "zon"],
-        correct: "wereld",
-        bijbelplaats: "Johannes 8:12"
-    }
-);
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat Híj de manier is om naar binnen te gaan. Hoe noemde Jezus zichzelf in dit beeld?",
-        antwoorden: ["de deur", "de muur", "het dak", "het raam"],
-        correct: "de deur",
-        bijbelplaats: "Johannes 10:7-9"
-    },
-    {
-        vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant?",
-        antwoorden: ["wijnstok", "olijfboom", "vijgenboom", "palmboom"],
-        correct: "wijnstok",
-        bijbelplaats: "Johannes 15:1"
-    },
-    {
-        vraag: "Jezus zei: 'Ik ben het ___ dat leven geeft.' Welk woord hoort hier?",
-        antwoorden: ["brood", "water", "wijn", "vis"],
-        correct: "brood",
-        bijbelplaats: "Johannes 6:35"
-    }
-);
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes waarschijnlijk ontstaan?",
-        antwoorden: ["Als eerste", "Als tweede", "Als derde", "Als laatste"],
-        correct: "Als laatste",
-        bijbelplaats: "NT algemeen",
-        uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
-    },
-    {
-        vraag: "Jezus zei iets bijzonders over zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
-        antwoorden: ["Abraham", "Mozes", "David", "Noach"],
-        correct: "Abraham",
-        bijbelplaats: "Johannes 8:58"
-    },
-    {
-        vraag: "Jezus zei: 'Ik ben de goede herder.' Wat doet de goede herder volgens Hem voor zijn schapen?",
-        antwoorden: [
-            "Hij geeft zijn leven voor de schapen",
-            "Hij verkoopt ze",
-            "Hij laat ze alleen",
-            "Hij laat ze door een knecht in de gaten houden"
-        ],
-        correct: "Hij geeft zijn leven voor de schapen",
-        bijbelplaats: "Johannes 10:11"
-    }
-);
-
 // === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
 // "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
-vragenData["Matteüs"].beginner.push(
-    {
-        vraag: "Jezus zei dat zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
-        antwoorden: ["zout", "suiker", "peper", "meel"],
-        correct: "zout",
-        bijbelplaats: "Matteüs 5:13"
-    },
-    {
-        vraag: "Jezus zei tegen zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
-        antwoorden: ["het licht", "het vuur", "de wind", "het water"],
-        correct: "het licht",
-        bijbelplaats: "Matteüs 5:14"
-    },
-    {
-        vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde hij daarmee?",
-        antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze moesten stoppen met vissen"],
-        correct: "Dat ze mensen bij God zouden brengen",
-        bijbelplaats: "Matteüs 4:19"
-    },
-    {
-        vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
-        antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
-        correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
-        bijbelplaats: "Matteüs 9:9"
-    }
-);
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Jezus riep zijn eerste leerlingen bij het meer. Wat deden ze toen hij zei 'volg mij'?",
-        antwoorden: ["Ze vroegen eerst of ze hun boot mochten verkopen", "Ze lieten meteen hun netten achter en gingen mee", "Ze gingen eerst afscheid nemen van hun familie", "Ze zeiden dat ze de volgende dag zouden komen"],
-        correct: "Ze lieten meteen hun netten achter en gingen mee",
-        bijbelplaats: "Matteüs 4:18-22"
-    }
-);
-vragenData["Johannes"].beginner.push(
-    {
-        vraag: "In de Bijbel worden de mensen die bij Jezus horen vergeleken met dieren die hun herder volgen. Met welke dieren?",
-        antwoorden: ["schapen", "geiten", "koeien", "duiven"],
-        correct: "schapen",
-        bijbelplaats: "Johannes 10:27"
-    }
-);
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Jezus zei: 'Ik ben de wijnstok, jullie zijn de ___.' Wat zijn de gelovigen volgens dit beeld?",
-        antwoorden: ["de ranken", "de bladeren", "de wortels", "de druiven"],
-        correct: "de ranken",
-        bijbelplaats: "Johannes 15:5"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert)
 // Doel: het kind komt een woord tegen dat het nog niet kende, met het
 // bijbelvers als inleiding, en kent het daarna.
 // =====================================================================
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Johannes de Doper zegt over degene die na hem komt: hij heeft de wan in zijn hand. Wat is een wan?",
-        antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een grote mand om de oogst mee naar de schuur te dragen"],
-        correct: "Een schep om graan op te gooien, zodat de wind het kaf wegblaast",
-        bijbelplaats: "Matteüs 3:12"
-    },
-    {
-        vraag: "Jezus zegt: neem mijn juk op je, want mijn juk is zacht. Wat is een juk?",
-        antwoorden: ["Een houten balk over de nek van twee dieren die samen trekken", "Een dikke wollen mantel die herders 's nachts omsloegen", "Een leren riem om een zware last mee op je rug te binden", "Een grote steen waarmee de ingang van een put werd afgesloten"],
-        correct: "Een houten balk over de nek van twee dieren die samen trekken",
-        bijbelplaats: "Matteüs 11:29-30"
-    },
-    {
-        vraag: "Matteüs vertelt over de Sadduceeën en zegt er meteen bij wat hen bijzonder maakte. Wat geloofden zij niet?",
-        antwoorden: ["Dat de doden zullen opstaan", "Dat de sabbat gehouden moest worden", "Dat God de wereld heeft gemaakt", "Dat Mozes de wet heeft ontvangen"],
-        correct: "Dat de doden zullen opstaan",
-        bijbelplaats: "Matteüs 22:23"
-    },
-    {
-        vraag: "De wijzen uit het oosten brachten goud, wierook en mirre. Wat is mirre?",
-        antwoorden: ["Een kostbare hars die ook bij een begrafenis werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
-        correct: "Een kostbare hars die ook bij een begrafenis werd gebruikt",
-        bijbelplaats: "Matteüs 2:11"
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Bij Jezus' intocht in Jeruzalem roepen de mensen \"Hosanna!\". Wat riepen ze daarmee eigenlijk?",
-        antwoorden: ["Red ons", "Vrede zij met jou", "Leve de koning", "Dank aan God"],
-        correct: "Red ons",
-        bijbelplaats: "Marcus 11:9"
-    }
-);
-
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij twee tortelduiven. Wat zegt dat over hen?",
-        antwoorden: ["Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen", "Dat zij uit een priesterfamilie kwamen en daarom duiven moesten offeren", "Dat zij een lange reis hadden gemaakt en geen lam konden meenemen", "Dat het lente was, want duiven werden alleen in het voorjaar geofferd"],
-        correct: "Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen",
-        bijbelplaats: "Lucas 2:24"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 2)
 // =====================================================================
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jezus verwijt sommige leiders dat ze hun gebedsriemen extra breed maken. Wat waren gebedsriemen?",
-        antwoorden: ["Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden", "Sjerpen die je om je middel bond als teken dat je aan het bidden was", "Touwen waarmee de rollen in de synagoge werden dichtgebonden", "Leren riemen waarmee de deuren van de synagoge werden vergrendeld"],
-        correct: "Doosjes met bijbelteksten erin, die met riempjes op arm en voorhoofd werden gebonden",
-        bijbelplaats: "Matteüs 23:5"
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Jakobus en Johannes kregen van Jezus de bijnaam Boanerges. Marcus vertelt erbij wat dat betekent. Wat is het?",
-        antwoorden: ["Zonen van de donder", "Zonen van het licht", "Zonen van de rots", "Zonen van de storm"],
-        correct: "Zonen van de donder",
-        bijbelplaats: "Marcus 3:17"
-    },
-    {
-        vraag: "Een vrouw brak een albasten kruik en goot dure olie over Jezus' hoofd. Wat is albast?",
-        antwoorden: ["Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte", "Een dunne witte stof waarin men flessen wikkelde tegen de warmte", "Een geelbruine houtsoort die alleen in Libanon groeide", "Een dikke laag was waarmee kruiken werden dichtgemaakt"],
-        correct: "Een lichte, doorschijnende steensoort waar men kostbare potjes van maakte",
-        bijbelplaats: "Marcus 14:3"
-    },
-    {
-        vraag: "Jezus ging bidden in Getsemane, een plek met olijfbomen. Wat betekent die naam?",
-        antwoorden: ["Olijfpers", "Stille tuin", "Berg van tranen", "Hof van de koning"],
-        correct: "Olijfpers",
-        bijbelplaats: "Marcus 14:32"
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Zacharias was priester en moest het reukoffer brengen in de tempel. Wat deed hij daarbij?",
-        antwoorden: ["Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden", "Hij slachtte een lam en legde het op het brandofferaltaar", "Hij goot olie uit over de gouden kandelaar en stak die aan", "Hij waste de heilige voorwerpen met water uit het bekken"],
-        correct: "Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden",
-        bijbelplaats: "Lucas 1:8-11"
-    },
-    {
-        vraag: "De barmhartige Samaritaan goot olie en wijn op de wonden van de gewonde man. Waarom deed hij dat?",
-        antwoorden: ["Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht", "Het was een gebed in daden: olie stond voor God, wijn voor het leven", "Het was alles wat hij bij zich had en het was beter dan niets", "Het hoorde bij de gastvrijheid: zo begroette je iemand die je meenam"],
-        correct: "Dat was de gewone manier om een wond te verzorgen: wijn reinigt, olie verzacht",
-        bijbelplaats: "Lucas 10:34"
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Jezus stuurt een blinde man naar het badwater Siloam. Johannes schrijft erbij wat die naam betekent. Wat is het?",
-        antwoorden: ["Gezonden", "Genezen", "Levend water", "Geopend"],
-        correct: "Gezonden",
-        bijbelplaats: "Johannes 9:7"
-    },
-    {
-        vraag: "Op de bruiloft in Kana stonden zes grote stenen watervaten klaar. Waar dienden die voor?",
-        antwoorden: ["Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was", "Voor het bewaren van regenwater voor tijden van droogte", "Voor het mengen van wijn met water tijdens de maaltijd", "Voor het wassen van de voeten van de gasten bij binnenkomst"],
-        correct: "Voor het ritueel wassen van handen en vaatwerk, zoals de Joodse gewoonte was",
-        bijbelplaats: "Johannes 2:6"
-    }
-);
-
 // =====================================================================
 // Romeinen — vragenpool (54 vragen: beginner 23, advanced 17, expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
@@ -1841,6 +2220,19 @@ vragenData["Romeinen"] = {
             antwoorden: ["Ze moeten allemaal precies hetzelfde zijn", "Ze kunnen beter alleen zijn", "Ze horen bij elkaar en hebben elkaar nodig", "Alleen het sterkste deel telt"],
             correct: "Ze horen bij elkaar en hebben elkaar nodig",
             bijbelplaats: "Romeinen 12:4-5"
+        },
+        {
+            vraag: "Paulus noemt zichzelf meteen in de eerste zin een \"apostel\". Wat betekent dat woord?",
+            antwoorden: ["Iemand die wordt uitgezonden met een opdracht", "Iemand die de heilige boeken uit zijn hoofd geleerd heeft", "Iemand die voorgaat in het gebed", "Iemand die als eerste ging geloven"],
+            correct: "Iemand die wordt uitgezonden met een opdracht",
+            bijbelplaats: "Romeinen 1:1",
+            uitleg: "Het woord komt van het Griekse werkwoord voor wegsturen. Een gezant sprak met het gezag van degene die hem stuurde: zijn boodschap was niet zijn eigen mening. Daarom kon Paulus zeggen dat het evangelie dat hij bracht niet van hemzelf kwam."
+        },
+        {
+            vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
+            antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
+            correct: "Nee, maar hij wilde er graag heen",
+            bijbelplaats: "Romeinen 1:10-13"
         }
     ],
     expert: [
@@ -1903,6 +2295,32 @@ vragenData["Romeinen"] = {
             antwoorden: ["Hij kan hen sterk maken in het geloof", "Hij kan hen machtiger maken dan alle koningen", "Hij kan hen beroemd maken", "Hij kan hen de baas maken"],
             correct: "Hij kan hen sterk maken in het geloof",
             bijbelplaats: "Romeinen 16:25"
+        },
+        {
+            vraag: "Paulus noemt zijn boodschap het \"evangelie\", een woord dat toen al bestond. Wat betekende het in de gewone taal?",
+            antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Het loon dat een bode voor zijn bericht kreeg"],
+            correct: "Goed nieuws dat een bode kwam brengen, zoals een overwinning",
+            bijbelplaats: "Romeinen 1:1",
+            uitleg: "Bij een overwinning of de geboorte van een keizerszoon liet men door het hele rijk goed bericht omroepen. Dat de christenen juist dat woord kozen voor hun boodschap was een gewaagde keuze: het echte goede nieuws komt niet uit Rome."
+        },
+        {
+            vraag: "Paulus schrijft: groet elkaar met een heilige kus. Wat was dat?",
+            antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
+            correct: "De gewone begroeting in die tijd, een kus op de wang",
+            bijbelplaats: "Romeinen 16:16",
+            uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders. Rond de Middellandse Zee is de begroetingskus trouwens tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
+        },
+        {
+            vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
+            antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het", "Tot ziens"],
+            correct: "Zo is het, het staat vast",
+            bijbelplaats: "Romeinen 1:25"
+        },
+        {
+            vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
+            antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
+            correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
+            bijbelplaats: "Romeinen 8:15"
         }
     ]
 };
@@ -2132,6 +2550,40 @@ vragenData["Handelingen"] = {
             antwoorden: ["Tentenmaker", "Visser", "Timmerman", "Herder"],
             correct: "Tentenmaker",
             bijbelplaats: "Handelingen 18:3"
+        },
+        {
+            vraag: "De gelovigen kwamen samen \"op de eerste dag van de week\". Welke dag was dat?",
+            antwoorden: ["De zondag, de dag na de sabbat, waarop Jezus was opgestaan", "De maandag, het begin van de werkweek", "De zaterdag, dezelfde dag als de sabbat", "De vrijdagavond, als de sabbat begon"],
+            correct: "De zondag, de dag na de sabbat, waarop Jezus was opgestaan",
+            bijbelplaats: "Handelingen 20:7",
+            uitleg: "De Joodse week telde geen namen maar nummers: de eerste dag, de tweede dag, en zo verder tot de sabbat. De eerste dag van de week is dus wat wij zondag noemen. De eerste christenen bleven aanvankelijk gewoon op sabbat naar de synagoge gaan, maar kwamen daarnaast op die eerste dag bijeen om brood te breken — de dag waarop Jezus was opgestaan. Omdat een dag bij zonsondergang begon, viel zo'n samenkomst voor hun gevoel op zaterdagavond. Dat verklaart waarom Paulus in dit verhaal tot na middernacht doorpraat."
+        },
+        {
+            vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
+            antwoorden: ["Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
+            correct: "Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten",
+            bijbelplaats: "Handelingen 11:26",
+            uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer. Vanuit Antiochië vertrok Paulus later op al zijn reizen."
+        },
+        {
+            vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
+            antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
+            correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
+            bijbelplaats: "Handelingen 2:44-45",
+            uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen."
+        },
+        {
+            vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
+            antwoorden: ["Iemand aanwijzen voor een taak en hem daarbij zegenen", "Controleren of iemand gezond was", "Iemand welkom heten in de gemeente", "Iemand vergeving schenken voor zijn fouten"],
+            correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
+            bijbelplaats: "Handelingen 6:6",
+            uitleg: "Handen opleggen was een oud gebaar met twee betekenissen: iemand zegenen, en iemand aanwijzen voor een taak. In het Oude Testament legt Mozes zijn handen op Jozua als die zijn opvolger wordt. In de eerste gemeente gebeurde het bij het uitzenden van Paulus en Barnabas, en hier bij de zeven mannen. Het gebaar maakte zichtbaar wat er gebeurde: dit is niet iets wat je jezelf toe-eigent, het wordt je gegeven. Het gebruik leeft nog steeds. In katholieke kerken hoort handoplegging bij de wijding van een diaken of priester, in protestantse kerken bij de bevestiging van een predikant, ouderling of diaken, en in evangelische gemeenten legt men elkaar vaak de handen op bij het gebed voor iemand die ziek is."
+        },
+        {
+            vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
+            antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
+            correct: "De eerste naam voor de volgelingen van Jezus",
+            bijbelplaats: "Handelingen 9:2"
         }
     ],
     expert: [
@@ -2255,6 +2707,134 @@ vragenData["Handelingen"] = {
             antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
             correct: "Hij waarschuwde Paulus en de soldaten",
             bijbelplaats: "Handelingen 23:16"
+        },
+        {
+            vraag: "Toen spotters dachten dat de leerlingen dronken waren, zei Petrus dat dat niet kon: 'het is pas het derde uur van de dag.' Hoe laat op de dag was dat ongeveer?",
+            antwoorden: [
+                "Ongeveer negen uur 's ochtends",
+                "Rond het middaguur",
+                "Drie uur 's middags",
+                "Vlak voor zonsondergang"
+            ],
+            correct: "Ongeveer negen uur 's ochtends",
+            bijbelplaats: "Handelingen 2:15",
+            uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord."
+        },
+        {
+            vraag: "Paulus zegt dat hij \"aan de voeten van Gamaliël\" is opgeleid. Wat betekent die uitdrukking?",
+            antwoorden: ["Hij was leerling van die leraar en zat letterlijk lager dan hij", "Hij heeft die leraar verzorgd toen die oud werd", "Hij is als kind door hem gedoopt", "Hij heeft zijn schoenen mogen dragen als eerbetoon"],
+            correct: "Hij was leerling van die leraar en zat letterlijk lager dan hij",
+            bijbelplaats: "Handelingen 22:3",
+            uitleg: "Een leraar zat op een stoel of verhoging, en zijn leerlingen zaten op de grond om hem heen. \"Aan iemands voeten zitten\" werd daardoor de gewone uitdrukking voor \"bij iemand in de leer zijn\". Datzelfde beeld staat bij Maria, de zus van Marta: zij zat aan Jezus' voeten en luisterde. Dat was voor een vrouw ongebruikelijk — zij nam de plaats in van een leerling."
+        },
+        {
+            vraag: "De apostelen moesten voor \"de Hoge Raad\" verschijnen. Wat was dat?",
+            antwoorden: ["De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
+            correct: "De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester",
+            bijbelplaats: "Handelingen 5:27",
+            uitleg: "Deze raad heette in het Grieks het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
+        },
+        {
+            vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
+            antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd zelden toegestaan"],
+            correct: "Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen",
+            bijbelplaats: "Handelingen 25:11",
+            uitleg: "Het Romeinse burgerrecht gaf een handvol rechten die voor gewone inwoners niet golden: je mocht niet zonder vonnis gegeseld worden, niet gekruisigd worden, en je mocht je zaak naar Rome laten verwijzen. Zodra Paulus die woorden uitsprak, was de zaak uit handen van de gouverneur — die kón hem daarna niet meer vrijlaten, ook al vond hij hem onschuldig. Het beroep bracht Paulus dus naar Rome, maar het sloot tegelijk de deur naar vrijlating."
+        },
+        {
+            vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
+            antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden hun zweep al verloren", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
+            correct: "Dat was verboden, en wie het toch deed kon zelf gestraft worden",
+            bijbelplaats: "Handelingen 22:25",
+            uitleg: "Twee oude Romeinse wetten verboden het om een burger zonder vonnis te binden of te slaan. Wie dat toch deed, riskeerde zelf een zware straf, en de commandant in dit verhaal schrikt dan ook oprecht — hij had Paulus al laten vastbinden. Het burgerrecht was niet aan een gebied gebonden: je nam het mee waar je ook kwam, en één zin was genoeg om het in te roepen. Precies dat maakt het ook zo bijzonder dat Paulus die zin niet altijd uitsprak; in Filippi liet hij zich eerst afranselen en zei hij het pas achteraf."
+        },
+        {
+            vraag: "Paulus werd overgezet op een schip uit Alexandrië, op weg naar Italië. Wat vervoerde zo'n schip vooral?",
+            antwoorden: ["Graan uit Egypte, waarmee de stad Rome werd gevoed", "Marmer voor de bouw van tempels", "Soldaten die met verlof gingen", "Wilde dieren voor de spelen in het theater"],
+            correct: "Graan uit Egypte, waarmee de stad Rome werd gevoed",
+            bijbelplaats: "Handelingen 27:6",
+            uitleg: "Egypte was de graanschuur van het rijk. Elk jaar voeren grote vrachtschepen graan naar Rome, want de stad had ruim een miljoen inwoners en kon zichzelf niet voeden. Die schepen waren de grootste van hun tijd — er konden honderden mensen mee. Daarom staat er ook dat er 276 opvarenden waren toen het schip verging: dat is geen legerkonvooi, maar één vrachtschip vol graan en passagiers."
+        },
+        {
+            vraag: "Op het Wekenfeest waren er in Jeruzalem \"Joden en proselieten\". Wat is een proseliet?",
+            antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
+            correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
+            bijbelplaats: "Handelingen 2:10",
+            uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende ging naar de synagoge en hield zich aan de belangrijkste geboden, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden, nam een rituele wassing en gold daarna volledig als Jood. Lucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
+        },
+        {
+            vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
+            antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het innen", "Er moest iemand de brieven van Paulus rondbrengen"],
+            correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
+            bijbelplaats: "Handelingen 6:1-3",
+            uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
+        },
+        {
+            vraag: "Pinksteren heette bij de Joden het Wekenfeest. Waarom die naam?",
+            antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd"],
+            correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
+            bijbelplaats: "Handelingen 2:1",
+            uitleg: "Het Wekenfeest viel vijftig dagen na Pesach — het Griekse woord voor vijftigste is pentèkostè, en daar komt ons woord Pinksteren vandaan. Het was een oogstfeest: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Juist daarom was Jeruzalem die dag vol pelgrims uit alle windstreken, en dat verklaart waarom er zoveel talen te horen waren."
+        },
+        {
+            vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
+            antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
+            correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
+            bijbelplaats: "Handelingen 18:3"
+        },
+        {
+            vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
+            antwoorden: ["Een rotsheuvel waar de raad van de stad bijeenkwam", "De grootste tempel van de stad", "De markt waar de kooplieden stonden", "Het theater waar toneelstukken werden opgevoerd"],
+            correct: "Een rotsheuvel waar de raad van de stad bijeenkwam",
+            bijbelplaats: "Handelingen 17:19",
+            uitleg: "De naam betekent \"heuvel van Ares\", de Griekse oorlogsgod — de Romeinen noemden hem Mars, vandaar dat je ook \"Marsheuvel\" leest. De raad die er vergaderde was eeuwenlang het hoogste bestuur van Athene en hield toezicht op wie er in de stad over goden en filosofie sprak. Paulus werd er dus niet gearresteerd, maar uitgenodigd om zijn zaak toe te lichten."
+        },
+        {
+            vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
+            antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
+            correct: "Je hoofd kaalscheren en offers brengen in de tempel",
+            bijbelplaats: "Handelingen 21:23-26",
+            uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
+        },
+        {
+            vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
+            antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die extra streng leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
+            correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
+            bijbelplaats: "Handelingen 10:2"
+        },
+        {
+            vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
+            antwoorden: ["Ongeveer een kilometer: zo ver mocht je op sabbat lopen", "Precies één dagreis te voet", "De afstand die een ezel op één dag aflegt", "De afstand van de tempel tot de stadsmuur"],
+            correct: "Ongeveer een kilometer: zo ver mocht je op sabbat lopen",
+            bijbelplaats: "Handelingen 1:12",
+            uitleg: "Op sabbat mocht je niet ver van huis gaan. De schriftgeleerden hadden die regel precies gemaakt: tweeduizend el vanaf de rand van je woonplaats, ongeveer negenhonderd meter. Lucas noemt die afstand niet zomaar — hij laat er zijn lezers mee weten dat de Olijfberg vlak bij Jeruzalem lag, en dat de leerlingen dus gewoon terug konden lopen zonder de sabbat te breken."
+        },
+        {
+            vraag: "In het visioen van Petrus worden dieren \"rein\" of \"onrein\" genoemd. Wat betekende dat?",
+            antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier gewassen was voordat het geslacht werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
+            correct: "Of je het volgens de wet van Mozes wel of niet mocht eten",
+            bijbelplaats: "Handelingen 10:14",
+            uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt of ziek was geweest, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
+        },
+        {
+            vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
+            antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
+            correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
+            bijbelplaats: "Handelingen 27:12",
+            uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
+        },
+        {
+            vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
+            antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
+            correct: "Hij maakte huiden van geslachte dieren tot leer",
+            bijbelplaats: "Handelingen 9:43",
+            uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
+        },
+        {
+            vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
+            antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
+            correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
+            bijbelplaats: "Handelingen 27:28"
         }
     ]
 };
@@ -2262,21 +2842,6 @@ vragenData["Handelingen"] = {
 // --- Uren van de dag: Pinksteren (verplaatst vanuit de Lucas-pool) -----------
 // Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
 // Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Toen spotters dachten dat de leerlingen dronken waren, zei Petrus dat dat niet kon: 'het is pas het derde uur van de dag.' Hoe laat op de dag was dat ongeveer?",
-        antwoorden: [
-            "Ongeveer negen uur 's ochtends",
-            "Rond het middaguur",
-            "Drie uur 's middags",
-            "Vlak voor zonsondergang"
-        ],
-        correct: "Ongeveer negen uur 's ochtends",
-        bijbelplaats: "Handelingen 2:15",
-        uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord."
-    }
-);
-
 // =====================================================================
 // 1 & 2 Korintiërs — vragenpool (48 vragen: beginner 16, advanced 15,
 // expert 17)
@@ -2467,6 +3032,12 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
             correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
             bijbelplaats: "1 Korintiërs 2:9"
+        },
+        {
+            vraag: "Paulus noemt Jezus de \"eersteling\" van wie gestorven zijn. Dat woord komt uit de landbouw. Wat is een eersteling?",
+            antwoorden: ["De eerste vrucht van de oogst, het bewijs dat de rest eraan komt", "De grootste vrucht van de hele oogst", "De laatste schoof die van het veld werd gehaald", "Het zaad dat je apart houdt voor volgend jaar"],
+            correct: "De eerste vrucht van de oogst, het bewijs dat de rest eraan komt",
+            bijbelplaats: "1 Korintiërs 15:20"
         }
     ],
     expert: [
@@ -2548,6 +3119,32 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Dat het nooit voor niets is", "Dat het zinloos is", "Dat alleen sterke mensen het mogen doen", "Dat ze er flink voor betaald zullen krijgen"],
             correct: "Dat het nooit voor niets is",
             bijbelplaats: "1 Korintiërs 15:58"
+        },
+        {
+            vraag: "Paulus begint zijn brief door de Korintiërs \"heiligen\" te noemen — en bespreekt daarna bladzijdenlang hun ruzies. Wat betekende dat woord bij hem?",
+            antwoorden: ["Apart gezet voor God; het gold voor iedereen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
+            correct: "Apart gezet voor God; het gold voor iedereen",
+            bijbelplaats: "1 Korintiërs 1:2",
+            uitleg: "Het woord heilig zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het door de kerk ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
+        },
+        {
+            vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
+            antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
+            correct: "Wat van de tempeloffers overbleef, ging naar de markt",
+            bijbelplaats: "1 Korintiërs 10:25",
+            uitleg: "In een Griekse stad liep bijna al het vlees via de tempels. Vlees kopen op de markt of ergens gaan eten was voor de eerste christenen dus een echte vraag en geen theorie."
+        },
+        {
+            vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
+            antwoorden: ["Kom, Heer!", "Vrede zij met u", "Wees waakzaam", "God is trouw"],
+            correct: "Kom, Heer!",
+            bijbelplaats: "1 Korintiërs 16:22"
+        },
+        {
+            vraag: "Paulus schrijft dat God de Geest als onderpand heeft gegeven. Wat is een onderpand?",
+            antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een zegel waarmee een brief werd dichtgemaakt", "Een bewijs dat een schuld helemaal is afbetaald"],
+            correct: "Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt",
+            bijbelplaats: "2 Korintiërs 1:22"
         }
     ]
 };
@@ -2785,6 +3382,19 @@ vragenData["Galaten"] = {
             antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Uit welk land je komt", "Hoeveel regels van de wet je precies volgt"],
             correct: "Dat je een nieuwe schepping bent",
             bijbelplaats: "Galaten 6:15"
+        },
+        {
+            vraag: "Paulus sluit zijn brief af: \"ik draag de merktekens van Jezus in mijn lichaam\". Waaraan deed dat toen denken?",
+            antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de zegelring waarmee een rijke zijn brieven dichtmaakte", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
+            correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
+            bijbelplaats: "Galaten 6:17",
+            uitleg: "Paulus doelt op de littekens die hij overhield aan de mishandelingen onderweg. Wie ze zag, zag bij wie hij hoorde. Voor Paulus was dat een sterker bewijs dan alle mooie papieren waarmee zijn tegenstanders zwaaiden."
+        },
+        {
+            vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
+            antwoorden: ["De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf", "Hij was zijn bril kwijt en kon niet kleiner schrijven", "Grote letters betekenden dat de brief voorgelezen moest worden", "Hij had geen inkt meer en moest krassen in het papier"],
+            correct: "De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf",
+            bijbelplaats: "Galaten 6:11"
         }
     ]
 };
@@ -3081,6 +3691,19 @@ vragenData["Efeziërs"] = {
             antwoorden: ["De waarheid", "Het geloof", "De gerechtigheid", "De vrede"],
             correct: "De waarheid",
             bijbelplaats: "Efeziërs 6:14"
+        },
+        {
+            vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke muur dachten zijn lezers?",
+            antwoorden: ["Een muur in de tempel waar niet-Joden niet voorbij mochten", "De stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Een muur die de rijke wijk en de arme wijk uit elkaar hield", "De muur rond het paleis van de Romeinse stadhouder"],
+            correct: "Een muur in de tempel waar niet-Joden niet voorbij mochten",
+            bijbelplaats: "Efeziërs 2:14",
+            uitleg: "Op het tempelplein stond een lage stenen afscheiding met borden erop, in het Grieks en het Latijn, dat vreemdelingen niet verder mochten. Twee van die borden zijn later teruggevonden. Paulus zegt dus niet iets vaags: hij wijst op een muur die zijn lezers zelf gezien hadden."
+        },
+        {
+            vraag: "Paulus schrijft dat de gelovigen met de Geest \"verzegeld\" zijn. Wat deed men in die tijd met een zegel?",
+            antwoorden: ["Men drukte een merkteken in was, om te tonen van wie iets was", "Men bond een koord om een pak heen zodat het dicht bleef", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
+            correct: "Men drukte een merkteken in was, om te tonen van wie iets was",
+            bijbelplaats: "Efeziërs 1:13"
         }
     ]
 };
@@ -3351,6 +3974,25 @@ vragenData["Filippenzen"] = {
             antwoorden: ["Dat God zelf in hen werkt, zowel het willen als het doen", "Dat zij het helemaal alleen moeten opknappen", "Dat de leiders van de gemeente hen zullen aansturen", "Dat het pas telt als zij het volmaakt doen"],
             correct: "Dat God zelf in hen werkt, zowel het willen als het doen",
             bijbelplaats: "Filippenzen 2:12-13"
+        },
+        {
+            vraag: "Paulus schrijft dat hij \"uitgegoten wordt als een plengoffer\". Wat was een plengoffer?",
+            antwoorden: ["Wijn die bij een offer over het altaar ging", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
+            correct: "Wijn die bij een offer over het altaar ging",
+            bijbelplaats: "Filippenzen 2:17",
+            uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit over het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
+        },
+        {
+            vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
+            antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
+            correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
+            bijbelplaats: "Filippenzen 3:20"
+        },
+        {
+            vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar in die tijd?",
+            antwoorden: ["Een krans van bladeren, gevlochten op zijn hoofd", "Een gouden beker gevuld met wijn", "Een zilveren munt uit de stadskas", "Een nieuw stel kleren van de stadsbestuurders"],
+            correct: "Een krans van bladeren, gevlochten op zijn hoofd",
+            bijbelplaats: "Filippenzen 3:14"
         }
     ]
 };
@@ -3546,6 +4188,13 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Rust, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Wraak met het zwaard"],
             correct: "Rust, wanneer Jezus verschijnt",
             bijbelplaats: "2 Tessalonicenzen 1:7"
+        },
+        {
+            vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld denkt hij bij dat woord?",
+            antwoorden: ["Aan een vuur waar iemand water overheen gooit", "Aan een olielamp die na een lange nacht leegraakt", "Aan een fakkel die van hand tot hand gaat", "Aan een kaars die je mee naar buiten neemt"],
+            correct: "Aan een vuur waar iemand water overheen gooit",
+            bijbelplaats: "1 Tessalonicenzen 5:19",
+            uitleg: "Het Griekse werkwoord werd gebruikt voor het blussen van een brand. Dat is iets anders dan opraken: bij blussen doet iemand het bewust. In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt dus niet dat de Geest vanzelf verdwijnt, maar dat mensen er water overheen kunnen gooien."
         }
     ],
     expert: [
@@ -3614,6 +4263,34 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Ze bemoeien zich met andermans zaken", "Ze slapen de hele dag", "Ze reizen van stad naar stad", "Ze houden lange toespraken"],
             correct: "Ze bemoeien zich met andermans zaken",
             bijbelplaats: "2 Tessalonicenzen 3:11"
+        },
+        {
+            vraag: "Voor de terugkomst van Jezus gebruikt Paulus het woord \"komst\". In het Grieks was dat een heel gewoon woord. Waarvoor gebruikte men het?",
+            antwoorden: ["Voor het bezoek van een koning aan een stad", "Voor de thuiskomst van een soldaat na de oorlog", "Voor de dag waarop een schip binnenliep", "Voor het uur waarop een gast aan tafel aanschoof"],
+            correct: "Voor het bezoek van een koning aan een stad",
+            bijbelplaats: "1 Tessalonicenzen 2:19",
+            uitleg: "Parousia betekent letterlijk \"aanwezigheid\", maar in de steden van het Romeinse rijk was het de vaste term voor een staatsbezoek van de keizer of een koning. Er werden munten voor geslagen en poorten voor versierd. Dat Paulus juist dát woord voor Jezus kiest, zegt dus iets over wie volgens hem de echte koning is."
+        },
+        {
+            vraag: "Paulus schrijft: \"bemoedig de kleinmoedigen.\" Wat betekent dat Griekse woord letterlijk?",
+            antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig moed hebben in de strijd", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
+            correct: "Mensen met een kleine ziel",
+            bijbelplaats: "1 Tessalonicenzen 5:14",
+            uitleg: "Het Griekse woord is samengesteld uit \"weinig\" en \"ziel\". Het gaat niet over lafheid, maar over mensen bij wie de moed in de schoenen is gezakt — die het even niet meer zien zitten. Ons woord kleinmoedig is langs het Latijn precies dezelfde samenstelling. Paulus noemt hen in één adem met wie het zwaar hebben, en zegt: hou vol met hen, wees geduldig."
+        },
+        {
+            vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia bestond al eeuwen in elke Griekse stad. Wat was het toen?",
+            antwoorden: ["De vergadering waarop de burgers samen beslisten", "De school waar de jongens van de stad les kregen", "Het bestuur dat door de keizer was aangesteld", "De tempel waar men de goden van de stad diende"],
+            correct: "De vergadering waarop de burgers samen beslisten",
+            bijbelplaats: "1 Tessalonicenzen 1:1",
+            uitleg: "Ekklesia betekent letterlijk \"de opgeroepenen\". Een omroeper trok door de stad en riep de burgers bijeen op het marktplein. Daar stemden ze over de dingen die iedereen aangingen: nieuwe wetten, oorlog of vrede, en wie het komende jaar de stad zou besturen. In Handelingen 19 staat het woord nog in die gewone betekenis, voor de volksoploop in Efeze. Noemden de eerste christenen zich zo, dan zeiden ze dus niet \"wij zijn een gebouw\", maar \"wij zijn opgeroepen en horen erbij\"."
+        },
+        {
+            vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Uit welke wereld komt dat Griekse woord?",
+            antwoorden: ["Uit het leger: een soldaat die uit het gelid loopt", "Uit de rechtszaal: iemand die zijn eed en belofte breekt", "Uit de haven: een schip zonder vaste route", "Uit de landbouw: een os die zijn juk afwerpt"],
+            correct: "Uit het leger: een soldaat die uit het gelid loopt",
+            bijbelplaats: "2 Tessalonicenzen 3:6",
+            uitleg: "Het woord betekent letterlijk \"niet op zijn plek\". Wie uit het gelid stapte bracht de hele linie in gevaar. Paulus gebruikt het voor gemeenteleden die gestopt waren met werken — niet omdat werken het belangrijkste in het leven is, maar omdat de anderen hun last moesten dragen."
         }
     ]
 };
@@ -3694,6 +4371,24 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Het geloof en het goede nieuws", "Zijn eigen ideeën", "De regels van de keizer", "De verhalen van vroeger"],
             correct: "Het geloof en het goede nieuws",
             bijbelplaats: "2 Timoteüs 1:14"
+        },
+        {
+            vraag: "Paulus schrijft dat de liefde voor geld de wortel is van alle kwaad. Waarom kiest hij het woord \"wortel\"?",
+            antwoorden: ["Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds", "Een wortel zit in de grond en is dus vies", "Een wortel is het kleinste deel van een plant", "Een wortel is eetbaar en dus verleidelijk"],
+            correct: "Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds",
+            bijbelplaats: "1 Timoteüs 6:10"
+        },
+        {
+            vraag: "Paulus schrijft: ik heb de goede strijd gestreden, ik heb de wedloop volbracht. Waar haalt hij dat beeld vandaan?",
+            antwoorden: ["Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd", "Uit het leger, waar hij zelf gediend had", "Uit de landbouw, waar hij als jongen werkte", "Uit de rechtszaal, waar hij vaak had gestaan"],
+            correct: "Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd",
+            bijbelplaats: "2 Timoteüs 4:7"
+        },
+        {
+            vraag: "Paulus schrijft aan Timoteüs: laat niemand op je neerkijken omdat je jong bent. Wat zegt dat over Timoteüs?",
+            antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
+            correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
+            bijbelplaats: "1 Timoteüs 4:12"
         }
     ],
     advanced: [
@@ -3774,6 +4469,18 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Een bad waarin je opnieuw geboren wordt", "Een weegschaal waarop je goede daden worden geteld", "Een poort die alleen opengaat voor wie genoeg gedaan heeft", "Een boek waarin al je fouten worden bijgehouden"],
             correct: "Een bad waarin je opnieuw geboren wordt",
             bijbelplaats: "Titus 3:5"
+        },
+        {
+            vraag: "Paulus schrijft dat hij in boeien zit, maar dat Gods woord niet geboeid is. Wat waren boeien?",
+            antwoorden: ["IJzeren kettingen om polsen of enkels van een gevangene", "Dikke touwen waarmee schepen werden vastgelegd", "De houten balken van een cel", "De zegels waarmee een gevangenis werd afgesloten"],
+            correct: "IJzeren kettingen om polsen of enkels van een gevangene",
+            bijbelplaats: "2 Timoteüs 2:9"
+        },
+        {
+            vraag: "Paulus schrijft over wie \"opziener\" wil worden. Wat was dat voor iemand?",
+            antwoorden: ["Iemand die leiding gaf aan een gemeente en toezicht hield", "Iemand die bij de stadspoort de wacht hield", "Iemand die de boeken van de gemeente bijhield", "Iemand die de zieken bezocht en eten rondbracht"],
+            correct: "Iemand die leiding gaf aan een gemeente en toezicht hield",
+            bijbelplaats: "1 Timoteüs 3:1"
         }
     ],
     expert: [
@@ -3866,6 +4573,19 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen", "Priesters, schriftgeleerden, profeten en de oudsten van het volk", "Joden, Grieken, slaven en vrijen", "Armen, rijken, zieken en gezonden"],
             correct: "Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen",
             bijbelplaats: "Titus 2:2-6"
+        },
+        {
+            vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
+            antwoorden: ["Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël, op een halve dagreis varen", "Een onbewoond eiland waar schepen alleen schuilden bij storm"],
+            correct: "Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet",
+            bijbelplaats: "Titus 1:5",
+            uitleg: "Kreta is met ruim tweehonderd kilometer lengte het grootste Griekse eiland en lag midden op de vaarroutes tussen Egypte, Griekenland en Italië. Er waren tientallen steden, en al vanaf Pinksteren woonden er Joden — Handelingen noemt Kretenzers bij de volken die in Jeruzalem waren. Dat Paulus schrijft dat Titus in elke stad oudsten moest aanstellen zegt dus iets: het ging niet om één gemeente, maar om een eiland vol verspreide groepjes gelovigen."
+        },
+        {
+            vraag: "In zijn laatste brief vraagt Paulus of Timoteüs ook de perkamenten wil meebrengen. Wat is perkament?",
+            antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boeken in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
+            correct: "Dun bewerkte dierenhuid om op te schrijven",
+            bijbelplaats: "2 Timoteüs 4:13"
         }
     ]
 };
@@ -4062,6 +4782,18 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["God is volledig in Jezus aanwezig", "Jezus is een gewone profeet", "God woont vooral in de tempel", "Jezus werd pas later God"],
             correct: "God is volledig in Jezus aanwezig",
             bijbelplaats: "Kolossenzen 2:9"
+        },
+        {
+            vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen bij elkaar?",
+            antwoorden: ["In gewone woonhuizen, want kerkgebouwen bestonden nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
+            correct: "In gewone woonhuizen, want kerkgebouwen bestonden nog niet",
+            bijbelplaats: "Filemon 2"
+        },
+        {
+            vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse rijk?",
+            antwoorden: ["Hij was eigendom van zijn meester en kon gekocht en verkocht worden", "Hij was een knecht die elk jaar opnieuw zijn loon afsprak", "Hij was een gevangene die na zijn straf weer vrij kwam", "Hij was een leerling die bij zijn meester in huis een vak leerde"],
+            correct: "Hij was eigendom van zijn meester en kon gekocht en verkocht worden",
+            bijbelplaats: "Filemon 16"
         }
     ],
     expert: [
@@ -4160,6 +4892,13 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij op zijn vlucht veel van de grote wijde wereld heeft gezien", "Dat hij Filemon een lesje wilde leren"],
             correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder",
             bijbelplaats: "Filemon 15-16"
+        },
+        {
+            vraag: "Paulus noemt dingen waarover niemand de Kolossenzen mag veroordelen: eten, drinken, feestdagen, \"nieuwe maan\" en sabbat. Wat was die nieuwe maan?",
+            antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
+            correct: "Het begin van een nieuwe maand, met een feest",
+            bijbelplaats: "Kolossenzen 2:16",
+            uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Omdat die kalender nog steeds meetelt, valt Pasen ook nu elk jaar op een andere datum."
         }
     ]
 };
@@ -5674,1127 +6413,77 @@ vragenData["Openbaring"] = {
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 18:
 // woorden uit de brieven van Johannes en Tessalonicenzen)
 // =====================================================================
-vragenData["1 & 2 Tessalonicenzen"].advanced.push(
-    {
-        vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld denkt hij bij dat woord?",
-        antwoorden: ["Aan een vuur waar iemand water overheen gooit", "Aan een olielamp die na een lange nacht leegraakt", "Aan een fakkel die van hand tot hand gaat", "Aan een kaars die je mee naar buiten neemt"],
-        correct: "Aan een vuur waar iemand water overheen gooit",
-        bijbelplaats: "1 Tessalonicenzen 5:19",
-        uitleg: "Het Griekse werkwoord werd gebruikt voor het blussen van een brand. Dat is iets anders dan opraken: bij blussen doet iemand het bewust. In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt dus niet dat de Geest vanzelf verdwijnt, maar dat mensen er water overheen kunnen gooien."
-    }
-);
-
-vragenData["1 & 2 Tessalonicenzen"].expert.push(
-    {
-        vraag: "Voor de terugkomst van Jezus gebruikt Paulus het woord \"komst\". In het Grieks was dat een heel gewoon woord. Waarvoor gebruikte men het?",
-        antwoorden: ["Voor het bezoek van een koning aan een stad", "Voor de thuiskomst van een soldaat na de oorlog", "Voor de dag waarop een schip binnenliep", "Voor het uur waarop een gast aan tafel aanschoof"],
-        correct: "Voor het bezoek van een koning aan een stad",
-        bijbelplaats: "1 Tessalonicenzen 2:19",
-        uitleg: "Parousia betekent letterlijk \"aanwezigheid\", maar in de steden van het Romeinse rijk was het de vaste term voor een staatsbezoek van de keizer of een koning. Er werden munten voor geslagen en poorten voor versierd. Dat Paulus juist dát woord voor Jezus kiest, zegt dus iets over wie volgens hem de echte koning is."
-    },
-    {
-        vraag: "Paulus schrijft: \"bemoedig de kleinmoedigen.\" Wat betekent dat Griekse woord letterlijk?",
-        antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig moed hebben in de strijd", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
-        correct: "Mensen met een kleine ziel",
-        bijbelplaats: "1 Tessalonicenzen 5:14",
-        uitleg: "Het Griekse woord is samengesteld uit \"weinig\" en \"ziel\". Het gaat niet over lafheid, maar over mensen bij wie de moed in de schoenen is gezakt — die het even niet meer zien zitten. Ons woord kleinmoedig is langs het Latijn precies dezelfde samenstelling. Paulus noemt hen in één adem met wie het zwaar hebben, en zegt: hou vol met hen, wees geduldig."
-    },
-    {
-        vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia bestond al eeuwen in elke Griekse stad. Wat was het toen?",
-        antwoorden: ["De vergadering waarop de burgers samen beslisten", "De school waar de jongens van de stad les kregen", "Het bestuur dat door de keizer was aangesteld", "De tempel waar men de goden van de stad diende"],
-        correct: "De vergadering waarop de burgers samen beslisten",
-        bijbelplaats: "1 Tessalonicenzen 1:1",
-        uitleg: "Ekklesia betekent letterlijk \"de opgeroepenen\". Een omroeper trok door de stad en riep de burgers bijeen op het marktplein. Daar stemden ze over de dingen die iedereen aangingen: nieuwe wetten, oorlog of vrede, en wie het komende jaar de stad zou besturen. In Handelingen 19 staat het woord nog in die gewone betekenis, voor de volksoploop in Efeze. Noemden de eerste christenen zich zo, dan zeiden ze dus niet \"wij zijn een gebouw\", maar \"wij zijn opgeroepen en horen erbij\"."
-    },
-    {
-        vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Uit welke wereld komt dat Griekse woord?",
-        antwoorden: ["Uit het leger: een soldaat die uit het gelid loopt", "Uit de rechtszaal: iemand die zijn eed en belofte breekt", "Uit de haven: een schip zonder vaste route", "Uit de landbouw: een os die zijn juk afwerpt"],
-        correct: "Uit het leger: een soldaat die uit het gelid loopt",
-        bijbelplaats: "2 Tessalonicenzen 3:6",
-        uitleg: "Het woord betekent letterlijk \"niet op zijn plek\". Wie uit het gelid stapte bracht de hele linie in gevaar. Paulus gebruikt het voor gemeenteleden die gestopt waren met werken — niet omdat werken het belangrijkste in het leven is, maar omdat de anderen hun last moesten dragen."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 17)
 // De Openbaring-vragen van deze reeks staan nu in de hoofdpool.
 // =====================================================================
-vragenData["Efeziërs"].expert.push(
-    {
-        vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke muur dachten zijn lezers?",
-        antwoorden: ["Een muur in de tempel waar niet-Joden niet voorbij mochten", "De stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Een muur die de rijke wijk en de arme wijk uit elkaar hield", "De muur rond het paleis van de Romeinse stadhouder"],
-        correct: "Een muur in de tempel waar niet-Joden niet voorbij mochten",
-        bijbelplaats: "Efeziërs 2:14",
-        uitleg: "Op het tempelplein stond een lage stenen afscheiding met borden erop, in het Grieks en het Latijn, dat vreemdelingen niet verder mochten. Twee van die borden zijn later teruggevonden. Paulus zegt dus niet iets vaags: hij wijst op een muur die zijn lezers zelf gezien hadden."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 16:
 // woorden en gebruiken uit de brieven)
 // =====================================================================
-vragenData["Romeinen"].advanced.push(
-    {
-        vraag: "Paulus noemt zichzelf meteen in de eerste zin een \"apostel\". Wat betekent dat woord?",
-        antwoorden: ["Iemand die wordt uitgezonden met een opdracht", "Iemand die de heilige boeken uit zijn hoofd geleerd heeft", "Iemand die voorgaat in het gebed", "Iemand die als eerste ging geloven"],
-        correct: "Iemand die wordt uitgezonden met een opdracht",
-        bijbelplaats: "Romeinen 1:1",
-        uitleg: "Het woord komt van het Griekse werkwoord voor wegsturen. Een gezant sprak met het gezag van degene die hem stuurde: zijn boodschap was niet zijn eigen mening. Daarom kon Paulus zeggen dat het evangelie dat hij bracht niet van hemzelf kwam."
-    }
-);
-
-vragenData["Romeinen"].expert.push(
-    {
-        vraag: "Paulus noemt zijn boodschap het \"evangelie\", een woord dat toen al bestond. Wat betekende het in de gewone taal?",
-        antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Het loon dat een bode voor zijn bericht kreeg"],
-        correct: "Goed nieuws dat een bode kwam brengen, zoals een overwinning",
-        bijbelplaats: "Romeinen 1:1",
-        uitleg: "Bij een overwinning of de geboorte van een keizerszoon liet men door het hele rijk goed bericht omroepen. Dat de christenen juist dat woord kozen voor hun boodschap was een gewaagde keuze: het echte goede nieuws komt niet uit Rome."
-    }
-);
-
-vragenData["1 & 2 Korintiërs"].expert.push(
-    {
-        vraag: "Paulus begint zijn brief door de Korintiërs \"heiligen\" te noemen — en bespreekt daarna bladzijdenlang hun ruzies. Wat betekende dat woord bij hem?",
-        antwoorden: ["Apart gezet voor God; het gold voor iedereen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
-        correct: "Apart gezet voor God; het gold voor iedereen",
-        bijbelplaats: "1 Korintiërs 1:2",
-        uitleg: "Het woord heilig zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het door de kerk ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
-    },
-    {
-        vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
-        antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
-        correct: "Wat van de tempeloffers overbleef, ging naar de markt",
-        bijbelplaats: "1 Korintiërs 10:25",
-        uitleg: "In een Griekse stad liep bijna al het vlees via de tempels. Vlees kopen op de markt of ergens gaan eten was voor de eerste christenen dus een echte vraag en geen theorie."
-    }
-);
-
-vragenData["Galaten"].expert.push(
-    {
-        vraag: "Paulus sluit zijn brief af: \"ik draag de merktekens van Jezus in mijn lichaam\". Waaraan deed dat toen denken?",
-        antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de zegelring waarmee een rijke zijn brieven dichtmaakte", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
-        correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
-        bijbelplaats: "Galaten 6:17",
-        uitleg: "Paulus doelt op de littekens die hij overhield aan de mishandelingen onderweg. Wie ze zag, zag bij wie hij hoorde. Voor Paulus was dat een sterker bewijs dan alle mooie papieren waarmee zijn tegenstanders zwaaiden."
-    }
-);
-
-vragenData["Filippenzen"].expert.push(
-    {
-        vraag: "Paulus schrijft dat hij \"uitgegoten wordt als een plengoffer\". Wat was een plengoffer?",
-        antwoorden: ["Wijn die bij een offer over het altaar ging", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
-        correct: "Wijn die bij een offer over het altaar ging",
-        bijbelplaats: "Filippenzen 2:17",
-        uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit over het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
-    }
-);
-
-vragenData["Kolossenzen & Filemon"].expert.push(
-    {
-        vraag: "Paulus noemt dingen waarover niemand de Kolossenzen mag veroordelen: eten, drinken, feestdagen, \"nieuwe maan\" en sabbat. Wat was die nieuwe maan?",
-        antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
-        correct: "Het begin van een nieuwe maand, met een feest",
-        bijbelplaats: "Kolossenzen 2:16",
-        uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Omdat die kalender nog steeds meetelt, valt Pasen ook nu elk jaar op een andere datum."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 15:
 // tijd, bestuur en het graf)
 // =====================================================================
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Marcus schrijft dat het avond werd en de sabbat aanbrak. Wanneer begon een nieuwe dag bij de Joden?",
-        antwoorden: ["Bij zonsondergang, dus de avond hoorde al bij de volgende dag", "Om middernacht, net als bij ons", "Bij zonsopgang, als het licht werd", "Om twaalf uur 's middags"],
-        correct: "Bij zonsondergang, dus de avond hoorde al bij de volgende dag",
-        bijbelplaats: "Marcus 15:42",
-        uitleg: "Dat verklaart de haast rond de begrafenis van Jezus. Hij stierf op vrijdagmiddag, en zodra de zon onderging begon de sabbat — dan mocht er niet meer gewerkt worden. Jozef van Arimatea had dus maar een paar uur. Om diezelfde reden kwamen de vrouwen pas zondagochtend terug met specerijen: eerder konden ze niet."
-    }
-);
-
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "De vrouwen kochten welriekende kruiden om Jezus te zalven. Wat wilden zij daarmee laten zien?",
-        antwoorden: ["Eerbied en genegenheid voor iemand die hun dierbaar was", "Dat zij geloofden dat Jezus uit de dood zou opstaan", "Dat zij rijker waren dan de andere leerlingen van Jezus", "Dat zij niet bang waren voor de wachters bij het graf"],
-        correct: "Eerbied en genegenheid voor iemand die hun dierbaar was",
-        bijbelplaats: "Marcus 16:1",
-        uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
-    }
-);
-
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Jezus werd gelegd in een graf dat in de rots was uitgehakt. Hoe zag zo'n graf eruit?",
-        antwoorden: ["Een kamer in de rotswand met stenen banken, afgesloten met een grote steen", "Een diep gat in de grond met aarde erop", "Een houten kist die boven de grond stond", "Een grot waar het hele dorp begraven werd"],
-        correct: "Een kamer in de rotswand met stenen banken, afgesloten met een grote steen",
-        bijbelplaats: "Matteüs 27:60",
-        uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en daar werd het lichaam op gelegd, gewikkeld in doeken met specerijen. Voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
-    },
-    {
-        vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
-        antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting en verder niets"],
-        correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
-        bijbelplaats: "Matteüs 27:2",
-        uitleg: "Judea was geen gewone provincie maar een onrustig grensgebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee, en kwam alleen naar de stad tijdens de grote feesten, wanneer er honderdduizenden pelgrims waren en de kans op onrust het grootst was. Hij had één bevoegdheid die de Joodse leiders niet hadden: het doodvonnis. Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
-        antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger", "Hogepriester in de tempel", "Rechter van de Hoge Raad"],
-        correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
-        bijbelplaats: "Lucas 3:1",
-        uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang. Lucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
-    },
-    {
-        vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
-        antwoorden: ["De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas", "Het was dezelfde man, maar hij was oud geworden", "Herodes was een titel, geen naam, net als keizer", "De tweede was de kleinzoon van de eerste"],
-        correct: "De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas",
-        bijbelplaats: "Lucas 23:7",
-        uitleg: "Herodes de Grote regeerde toen Jezus geboren werd en stierf kort daarna. Zijn rijk werd verdeeld onder zijn zonen. Herodes Antipas kreeg Galilea — hij is degene die Johannes de Doper liet onthoofden en die Jezus verhoorde. Nog weer later komt in Handelingen een Herodes Agrippa voor, een kleinzoon. Er lopen dus drie verschillende Herodessen door het Nieuwe Testament."
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Jezus werd na zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd hij eerst bij Annas gebracht?",
-        antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
-        correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
-        bijbelplaats: "Johannes 18:13",
-        uitleg: "In de tijd vóór de Romeinen bleef een hogepriester zijn leven lang in functie. Onder Romeins bestuur benoemde en ontsloeg de gouverneur hen echter naar believen. Annas was ongeveer tien jaar hogepriester geweest en werd afgezet, maar hij bleef achter de schermen de machtigste man in Jeruzalem: vijf van zijn zonen én zijn schoonzoon Kajafas werden na hem hogepriester. Wie iets wilde regelen, ging dus eerst langs Annas. Dat verklaart ook waarom Lucas twee namen tegelijk noemt als hij vertelt wanneer Johannes de Doper begon."
-    },
-    {
-        vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
-        antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Twee of drie man", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
-        correct: "Een paar honderd soldaten, een tiende deel van een legioen",
-        bijbelplaats: "Johannes 18:3",
-        uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
-    }
-);
-
-vragenData["Handelingen"].advanced.push(
-    {
-        vraag: "De gelovigen kwamen samen \"op de eerste dag van de week\". Welke dag was dat?",
-        antwoorden: ["De zondag, de dag na de sabbat, waarop Jezus was opgestaan", "De maandag, het begin van de werkweek", "De zaterdag, dezelfde dag als de sabbat", "De vrijdagavond, als de sabbat begon"],
-        correct: "De zondag, de dag na de sabbat, waarop Jezus was opgestaan",
-        bijbelplaats: "Handelingen 20:7",
-        uitleg: "De Joodse week telde geen namen maar nummers: de eerste dag, de tweede dag, en zo verder tot de sabbat. De eerste dag van de week is dus wat wij zondag noemen. De eerste christenen bleven aanvankelijk gewoon op sabbat naar de synagoge gaan, maar kwamen daarnaast op die eerste dag bijeen om brood te breken — de dag waarop Jezus was opgestaan. Omdat een dag bij zonsondergang begon, viel zo'n samenkomst voor hun gevoel op zaterdagavond. Dat verklaart waarom Paulus in dit verhaal tot na middernacht doorpraat."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 14:
 // onderwijs, recht en reizen)
 // =====================================================================
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Paulus zegt dat hij \"aan de voeten van Gamaliël\" is opgeleid. Wat betekent die uitdrukking?",
-        antwoorden: ["Hij was leerling van die leraar en zat letterlijk lager dan hij", "Hij heeft die leraar verzorgd toen die oud werd", "Hij is als kind door hem gedoopt", "Hij heeft zijn schoenen mogen dragen als eerbetoon"],
-        correct: "Hij was leerling van die leraar en zat letterlijk lager dan hij",
-        bijbelplaats: "Handelingen 22:3",
-        uitleg: "Een leraar zat op een stoel of verhoging, en zijn leerlingen zaten op de grond om hem heen. \"Aan iemands voeten zitten\" werd daardoor de gewone uitdrukking voor \"bij iemand in de leer zijn\". Datzelfde beeld staat bij Maria, de zus van Marta: zij zat aan Jezus' voeten en luisterde. Dat was voor een vrouw ongebruikelijk — zij nam de plaats in van een leerling."
-    },
-    {
-        vraag: "De apostelen moesten voor \"de Hoge Raad\" verschijnen. Wat was dat?",
-        antwoorden: ["De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
-        correct: "De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester",
-        bijbelplaats: "Handelingen 5:27",
-        uitleg: "Deze raad heette in het Grieks het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
-    },
-    {
-        vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
-        antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd zelden toegestaan"],
-        correct: "Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen",
-        bijbelplaats: "Handelingen 25:11",
-        uitleg: "Het Romeinse burgerrecht gaf een handvol rechten die voor gewone inwoners niet golden: je mocht niet zonder vonnis gegeseld worden, niet gekruisigd worden, en je mocht je zaak naar Rome laten verwijzen. Zodra Paulus die woorden uitsprak, was de zaak uit handen van de gouverneur — die kón hem daarna niet meer vrijlaten, ook al vond hij hem onschuldig. Het beroep bracht Paulus dus naar Rome, maar het sloot tegelijk de deur naar vrijlating."
-    },
-    {
-        vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
-        antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden hun zweep al verloren", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
-        correct: "Dat was verboden, en wie het toch deed kon zelf gestraft worden",
-        bijbelplaats: "Handelingen 22:25",
-        uitleg: "Twee oude Romeinse wetten verboden het om een burger zonder vonnis te binden of te slaan. Wie dat toch deed, riskeerde zelf een zware straf, en de commandant in dit verhaal schrikt dan ook oprecht — hij had Paulus al laten vastbinden. Het burgerrecht was niet aan een gebied gebonden: je nam het mee waar je ook kwam, en één zin was genoeg om het in te roepen. Precies dat maakt het ook zo bijzonder dat Paulus die zin niet altijd uitsprak; in Filippi liet hij zich eerst afranselen en zei hij het pas achteraf."
-    },
-    {
-        vraag: "Paulus werd overgezet op een schip uit Alexandrië, op weg naar Italië. Wat vervoerde zo'n schip vooral?",
-        antwoorden: ["Graan uit Egypte, waarmee de stad Rome werd gevoed", "Marmer voor de bouw van tempels", "Soldaten die met verlof gingen", "Wilde dieren voor de spelen in het theater"],
-        correct: "Graan uit Egypte, waarmee de stad Rome werd gevoed",
-        bijbelplaats: "Handelingen 27:6",
-        uitleg: "Egypte was de graanschuur van het rijk. Elk jaar voeren grote vrachtschepen graan naar Rome, want de stad had ruim een miljoen inwoners en kon zichzelf niet voeden. Die schepen waren de grootste van hun tijd — er konden honderden mensen mee. Daarom staat er ook dat er 276 opvarenden waren toen het schip verging: dat is geen legerkonvooi, maar één vrachtschip vol graan en passagiers."
-    }
-);
-
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
-        antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
-        correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
-        bijbelplaats: "Lucas 4:17",
-        uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen. Lucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon hij te spreken."
-    }
-);
-
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jezus zegt dat zout weggegooid wordt als het zijn kracht verliest. Hoe kan zout zijn smaak verliezen?",
-        antwoorden: ["Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over", "Zout wordt oud en verliest dan vanzelf zijn smaak", "Zout dat je te lang bewaart verandert in zand", "Zout verliest zijn smaak als er licht op valt"],
-        correct: "Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over",
-        bijbelplaats: "Matteüs 5:13",
-        uitleg: "Wat men zout noemde, waren brokken van de oever van de Dode Zee. Daar zit naast echt zout ook gips en kalk in. Echt zout lost sneller op dan die andere stoffen, dus lag zo'n brok lang in een vochtige voorraadkamer, dan trok het zoute eruit en bleef er korrelig gruis over dat nergens meer naar smaakte. Weggooien op het land kon niet — zout maakt grond onvruchtbaar — dus strooide men het op de paden. Vandaar dat Jezus zegt dat het wordt weggeworpen en vertrapt."
-    }
-);
-
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
-        antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat de grond in het dal te duur was", "Omdat er op de heuvels meer water te vinden was"],
-        correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
-        bijbelplaats: "Matteüs 5:14",
-        uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt. En omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 13:
 // plaatsen, volken en de eerste gemeenten)
 // =====================================================================
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
-        antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
-        correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
-        bijbelplaats: "Lucas 10:33",
-        uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — er is zelfs een keer een Samaritaanse tempel verwoest door Joden. Wie in Galilea naar Jeruzalem reisde, maakte liever een omweg dan door Samaria te lopen. Dat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "De genezen man ging het verhaal vertellen in \"Dekapolis\". Wat was dat?",
-        antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
-        correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
-        bijbelplaats: "Marcus 5:20",
-        uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was. De man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
-    },
-    {
-        vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
-        antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
-        correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
-        bijbelplaats: "Marcus 7:24",
-        uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed. Dat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
-    }
-);
-
-vragenData["Handelingen"].advanced.push(
-    {
-        vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
-        antwoorden: ["Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
-        correct: "Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten",
-        bijbelplaats: "Handelingen 11:26",
-        uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer. Vanuit Antiochië vertrok Paulus later op al zijn reizen."
-    },
-    {
-        vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
-        antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
-        correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
-        bijbelplaats: "Handelingen 2:44-45",
-        uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen."
-    },
-    {
-        vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
-        antwoorden: ["Iemand aanwijzen voor een taak en hem daarbij zegenen", "Controleren of iemand gezond was", "Iemand welkom heten in de gemeente", "Iemand vergeving schenken voor zijn fouten"],
-        correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
-        bijbelplaats: "Handelingen 6:6",
-        uitleg: "Handen opleggen was een oud gebaar met twee betekenissen: iemand zegenen, en iemand aanwijzen voor een taak. In het Oude Testament legt Mozes zijn handen op Jozua als die zijn opvolger wordt. In de eerste gemeente gebeurde het bij het uitzenden van Paulus en Barnabas, en hier bij de zeven mannen. Het gebaar maakte zichtbaar wat er gebeurde: dit is niet iets wat je jezelf toe-eigent, het wordt je gegeven. Het gebruik leeft nog steeds. In katholieke kerken hoort handoplegging bij de wijding van een diaken of priester, in protestantse kerken bij de bevestiging van een predikant, ouderling of diaken, en in evangelische gemeenten legt men elkaar vaak de handen op bij het gebed voor iemand die ziek is."
-    }
-);
-
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Op het Wekenfeest waren er in Jeruzalem \"Joden en proselieten\". Wat is een proseliet?",
-        antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
-        correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
-        bijbelplaats: "Handelingen 2:10",
-        uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende ging naar de synagoge en hield zich aan de belangrijkste geboden, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden, nam een rituele wassing en gold daarna volledig als Jood. Lucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
-    },
-    {
-        vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
-        antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het innen", "Er moest iemand de brieven van Paulus rondbrengen"],
-        correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
-        bijbelplaats: "Handelingen 6:1-3",
-        uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
-    }
-);
-
-vragenData["Timoteüs & Titus"].expert.push(
-    {
-        vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
-        antwoorden: ["Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël, op een halve dagreis varen", "Een onbewoond eiland waar schepen alleen schuilden bij storm"],
-        correct: "Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet",
-        bijbelplaats: "Titus 1:5",
-        uitleg: "Kreta is met ruim tweehonderd kilometer lengte het grootste Griekse eiland en lag midden op de vaarroutes tussen Egypte, Griekenland en Italië. Er waren tientallen steden, en al vanaf Pinksteren woonden er Joden — Handelingen noemt Kretenzers bij de volken die in Jeruzalem waren. Dat Paulus schrijft dat Titus in elke stad oudsten moest aanstellen zegt dus iets: het ging niet om één gemeente, maar om een eiland vol verspreide groepjes gelovigen."
-    }
-);
-
 // =====================================================================
 // De drie talen van Israël (expert)
 // =====================================================================
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Welke talen sprak men in Israël in de tijd van Jezus?",
-        antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
-        correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
-        bijbelplaats: "Johannes 19:20",
-        uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven. Latijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij. Dat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 12, BEGINNER:
 // aanvulling voor Petrus & Judas, Timoteüs & Titus en Openbaring)
 // =====================================================================
-vragenData["Timoteüs & Titus"].beginner.push(
-    {
-        vraag: "Paulus schrijft dat de liefde voor geld de wortel is van alle kwaad. Waarom kiest hij het woord \"wortel\"?",
-        antwoorden: ["Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds", "Een wortel zit in de grond en is dus vies", "Een wortel is het kleinste deel van een plant", "Een wortel is eetbaar en dus verleidelijk"],
-        correct: "Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds",
-        bijbelplaats: "1 Timoteüs 6:10"
-    },
-    {
-        vraag: "Paulus schrijft: ik heb de goede strijd gestreden, ik heb de wedloop volbracht. Waar haalt hij dat beeld vandaan?",
-        antwoorden: ["Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd", "Uit het leger, waar hij zelf gediend had", "Uit de landbouw, waar hij als jongen werkte", "Uit de rechtszaal, waar hij vaak had gestaan"],
-        correct: "Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd",
-        bijbelplaats: "2 Timoteüs 4:7"
-    },
-    {
-        vraag: "Paulus schrijft aan Timoteüs: laat niemand op je neerkijken omdat je jong bent. Wat zegt dat over Timoteüs?",
-        antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
-        correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
-        bijbelplaats: "1 Timoteüs 4:12"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 11:
 // trouwen, gastvrijheid en godsdienstige gebruiken)
 // =====================================================================
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jozef wilde Maria \"in stilte verlaten\" toen bleek dat zij zwanger was. Waarom was dat nodig, terwijl ze nog niet getrouwd waren?",
-        antwoorden: ["Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief", "Hij had haar bruidsschat al betaald en die moest hij terugvragen", "Ze woonden al samen, dus hij moest verhuizen", "Alleen een priester mocht een verloving beëindigen"],
-        correct: "Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief",
-        bijbelplaats: "Matteüs 1:19",
-        uitleg: "Trouwen ging in twee stappen. Eerst de verloving, waarbij de afspraak juridisch werd vastgelegd — vanaf dat moment heette je al man en vrouw en kon je alleen nog uit elkaar met een scheidbrief. Pas een jaar later haalde de bruidegom zijn bruid op en begon het feest en het samenwonen. Jozef en Maria zaten dus in die tussenperiode. Dat verklaart waarom Matteüs Jozef \"haar man\" noemt terwijl het huwelijk nog niet voltrokken was."
-    },
-    {
-        vraag: "Jezus hekelt leiders die zeggen: zweren bij de tempel telt niet, maar zweren bij het goud van de tempel wel. Wat was daar mis mee?",
-        antwoorden: ["Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken", "Zweren was helemaal verboden en zij deden het toch", "Zij zwoeren bij goud, en dat was afgoderij", "Alleen priesters mochten een eed afleggen"],
-        correct: "Zo maakten zij van een eed een spel met regels, terwijl je gewoon de waarheid hoort te spreken",
-        bijbelplaats: "Matteüs 23:16"
-    },
-    {
-        vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom een bruidegom lang op zich kon laten wachten, vertelt de gelijkenis niet — maar wat weten we wel over hoe een bruiloft begon?",
-        antwoorden: ["De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
-        correct: "De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen",
-        bijbelplaats: "Matteüs 25:6"
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
-        antwoorden: ["Hij leidde het feest en zag toe op het eten en drinken", "Hij sprak de zegen uit over het bruidspaar", "Hij hield bij welke gasten een geschenk hadden meegebracht", "Hij speelde muziek en leidde de dansen"],
-        correct: "Hij leidde het feest en zag toe op het eten en drinken",
-        bijbelplaats: "Johannes 2:9"
-    }
-);
-
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
-        antwoorden: ["Om een religieus gebruik van reiniging, niet om hygiëne", "Om vieze handen na het werk op het land", "Om een regel van de Romeinse bezetter", "Om een afspraak die alleen in de tempel gold"],
-        correct: "Om een religieus gebruik van reiniging, niet om hygiëne",
-        bijbelplaats: "Marcus 7:3"
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
-        antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
-        correct: "Eén vastendag per jaar, op Grote Verzoendag",
-        bijbelplaats: "Lucas 18:12"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (reeks 10:
 // ambachten, dieren en het meer van Galilea)
 // =====================================================================
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "De mensen noemen Jezus \"de timmerman\". Wat maakte een timmerman in die tijd vooral?",
-        antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
-        correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
-        bijbelplaats: "Marcus 6:3"
-    },
-    {
-        vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
-        antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
-        correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
-        bijbelplaats: "Marcus 10:25"
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
-        antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een hangmat die tussen de masten was gespannen", "De voorplecht, waar het droogst was"],
-        correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
-        bijbelplaats: "Marcus 4:38",
-        uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Papias, een bisschop uit de tweede eeuw, schrijft dat Marcus opschreef wat Petrus vertelde — en Petrus was die nacht wél in de boot."
-    },
-    {
-        vraag: "Op het meer van Galilea stak plotseling een zware storm op. Hoe kon dat zo snel gaan?",
-        antwoorden: ["Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden", "Er lopen warme bronnen onder het meer die het water doen koken", "Het meer staat in verbinding met de zee, waardoor er vloedgolven komen", "De storm kwam altijd rond dezelfde tijd van het jaar"],
-        correct: "Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden",
-        bijbelplaats: "Marcus 4:37",
-        uitleg: "Het meer van Galilea ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels. Boven het water hangt warme lucht. Komt er over de bergen koude lucht aan, dan zakt die naar beneden — koude lucht is zwaarder — en duwt de warme lucht omhoog. Precies zo ontstaan bij ons onweersbuien als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
-        antwoorden: ["Om wier, slib en schelpen eruit te halen, anders zag de vis het net", "Om ze te wassen voordat ze thuis te drogen werden gehangen", "Om te kijken of er nog vis in was blijven zitten", "Om ze zwaarder te maken, zodat ze dieper zonken"],
-        correct: "Om wier, slib en schelpen eruit te halen, anders zag de vis het net",
-        bijbelplaats: "Lucas 5:2"
-    },
-    {
-        vraag: "Jezus zegt: wie de hand aan de ploeg slaat en omkijkt, is niet geschikt. Waarom is omkijken bij het ploegen een probleem?",
-        antwoorden: ["De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij", "De ossen slaan op hol als je hen niet aankijkt", "Je verliest het zaad dat je in je andere hand draagt", "Het is verboden om over je schouder te kijken op het land"],
-        correct: "De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij",
-        bijbelplaats: "Lucas 9:62"
-    },
-    {
-        vraag: "Jezus zegt tegen Simon dat de satan hem wil \"zeven als tarwe\". Wat gebeurt er bij het zeven?",
-        antwoorden: ["Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
-        correct: "Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen",
-        bijbelplaats: "Lucas 22:31"
-    },
-    {
-        vraag: "In de gelijkenis zegt iemand dat hij vijf span ossen heeft gekocht. Wat is een span?",
-        antwoorden: ["Twee ossen die samen onder één juk trekken", "Een os met een wagen erachter", "De hoeveelheid land die één os op een dag ploegt", "Het touw waarmee een os wordt vastgezet"],
-        correct: "Twee ossen die samen onder één juk trekken",
-        bijbelplaats: "Lucas 14:19"
-    }
-);
-
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jezus vertelt over een net dat wordt uitgeworpen en allerlei vissen vangt. Wat voor net was dat?",
-        antwoorden: ["Een lang sleepnet dat tussen twee boten door het water werd getrokken", "Een klein rond net dat je vanaf de oever uitwierp", "Een fuik die je 's nachts liet staan", "Een net dat je aan een lange stok voor je uit hield"],
-        correct: "Een lang sleepnet dat tussen twee boten door het water werd getrokken",
-        bijbelplaats: "Matteüs 13:47"
-    },
-    {
-        vraag: "Van het geld van Judas kochten de priesters \"de akker van de pottenbakker\". Waarom lag daar een akker van een pottenbakker?",
-        antwoorden: ["Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard", "Daar stonden zijn ovens, ver van de stad vanwege de rook", "Daar verkocht hij zijn potten aan de pelgrims", "Daar werden gebroken potten begraven, want die waren onrein"],
-        correct: "Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard",
-        bijbelplaats: "Matteüs 27:7"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 9:
 // huizen, land en geld in de gelijkenissen)
 // =====================================================================
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Vier mannen braken het dak open om een verlamde bij Jezus te brengen. Hoe kon dat zomaar?",
-        antwoorden: ["Daken waren plat, van balken met takken en aangestampte leem ertussen", "Daken waren van dunne planken die je opzij kon schuiven", "Er zat altijd een luik in, om lucht binnen te laten", "Het huis was nog in aanbouw en had nog geen echt dak"],
-        correct: "Daken waren plat, van balken met takken en aangestampte leem ertussen",
-        bijbelplaats: "Marcus 2:4",
-        uitleg: "Een gewoon huis had een plat dak van houten balken, met daaroverheen riet, takken en een laag aangestampte leem. Je kwam er via een trap aan de buitenkant, en je gebruikte het dak om te slapen in de zomer of om vruchten te drogen. Zo'n dak openbreken was dus geen sloopwerk, maar het moest daarna wel opnieuw dichtgemaakt worden — Marcus vertelt niet voor niets dat het huis vol stond."
-    }
-);
-
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon dat zomaar?",
-        antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, dat was verboden en daarom werd hij zelf gestraft", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
-        correct: "Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht",
-        bijbelplaats: "Matteüs 18:30"
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "De vrouw bij de put zegt: \"U hebt niet eens een emmer, en de put is diep.\" Waarmee haalde je water uit een put?",
-        antwoorden: ["Een leren zak aan een lang touw, die je liet zakken en weer ophaalde", "Een houten bak op een hefboom", "Een koperen ketel die aan een ketting hing", "Een rieten mand met pek aan de binnenkant"],
-        correct: "Een leren zak aan een lang touw, die je liet zakken en weer ophaalde",
-        bijbelplaats: "Johannes 4:11"
-    },
-    {
-        vraag: "'s Nachts brachten herders hun schapen samen in één kooi met een poortwachter. Hoe vond een herder 's ochtends zijn eigen schapen terug?",
-        antwoorden: ["Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe", "Hij had elk schaap een merkteken op de vacht gegeven", "De poortwachter hield bij welk schaap van wie was", "Hij telde ze, want elke herder had er evenveel"],
-        correct: "Hij riep, en zijn schapen herkenden zijn stem en kwamen naar hem toe",
-        bijbelplaats: "Johannes 10:1-3"
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "De vader geeft zijn teruggekeerde zoon het beste kleed, een ring en sandalen. Wat betekende die ring?",
-        antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden", "Dat hij zijn schulden had afbetaald"],
-        correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
-        bijbelplaats: "Lucas 15:22",
-        uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon zijn zegel in zachte zegelwas drukken en zo namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
-    },
-    {
-        vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
-        antwoorden: ["Varkens waren onreine dieren, die een Jood niet mocht eten of houden", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
-        correct: "Varkens waren onreine dieren, die een Jood niet mocht eten of houden",
-        bijbelplaats: "Lucas 15:15"
-    },
-    {
-        vraag: "De zoon had willen eten van de peulen die de varkens kregen. Wat waren dat?",
-        antwoorden: ["De peulen van de johannesbroodboom, hard voer dat men aan vee gaf", "De schillen van gedroogde vijgen", "De doppen van noten die overbleven na het persen", "Restjes brood die van de tafel werden geveegd"],
-        correct: "De peulen van de johannesbroodboom, hard voer dat men aan vee gaf",
-        bijbelplaats: "Lucas 15:16"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 8:
 // tempel, feesten en kleding)
 // =====================================================================
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Een zieke vrouw raakte \"de zoom van zijn kleed\" aan. Wat zat daar precies?",
-        antwoorden: ["Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken", "De gouden rand die alleen leraren mochten dragen", "Een strook met daarop zijn naam geborduurd", "De onderkant van de mantel, die het dichtst bij de grond hing"],
-        correct: "Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken",
-        bijbelplaats: "Matteüs 9:20",
-        uitleg: "In Numeri 15 staat dat het volk kwastjes aan de hoeken van hun kleren moest maken, met een blauwe draad erin. Ze waren bedoeld als geheugensteun: zie je ze, dan denk je aan Gods geboden. Jezus droeg ze dus gewoon, zoals iedere Joodse man. Later verwijt hij sommige leiders dat ze hun kwastjes extra lang maken — hetzelfde verwijt als bij de brede gebedsriemen: goed bedoeld, maar bedoeld om gezien te worden."
-    },
-    {
-        vraag: "Jezus verwijst naar David, die de \"toonbroden\" at. Wat waren dat?",
-        antwoorden: ["Twaalf broden die in het heiligdom lagen, alleen bestemd voor de priesters", "De broden die bij een offer werden verbrand", "Broden die aan de armen bij de tempelpoort werden uitgedeeld", "Het brood dat bij het Joodse paasfeest Pesach op tafel kwam"],
-        correct: "Twaalf broden die in het heiligdom lagen, alleen bestemd voor de priesters",
-        bijbelplaats: "Matteüs 12:4"
-    },
-    {
-        vraag: "De vijf onverstandige meisjes namen geen olie mee voor hun lampen. Wat voor olie was dat?",
-        antwoorden: ["Olijfolie, die je in een schaaltje goot waarin een pit brandde", "Dierlijk vet dat men smolt boven het vuur", "Kostbare parfumolie uit het oosten", "Aardolie die men uit de bodem bij de Dode Zee haalde"],
-        correct: "Olijfolie, die je in een schaaltje goot waarin een pit brandde",
-        bijbelplaats: "Matteüs 25:3"
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
-        antwoorden: ["Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerdieren"],
-        correct: "Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden",
-        bijbelplaats: "Marcus 11:15"
-    },
-    {
-        vraag: "Jezus zegt dat de tempel een huis van gebed moet zijn voor alle volken. In welk deel van de tempel stonden de handelaars?",
-        antwoorden: ["In het buitenste plein, het enige deel waar niet-Joden mochten komen", "In het heiligdom zelf, vlak bij het altaar", "In de zuilengang van de hogepriester", "Op het dak, waar veel ruimte was"],
-        correct: "In het buitenste plein, het enige deel waar niet-Joden mochten komen",
-        bijbelplaats: "Marcus 11:17"
-    }
-);
-
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Pinksteren heette bij de Joden het Wekenfeest. Waarom die naam?",
-        antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd"],
-        correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
-        bijbelplaats: "Handelingen 2:1",
-        uitleg: "Het Wekenfeest viel vijftig dagen na Pesach — het Griekse woord voor vijftigste is pentèkostè, en daar komt ons woord Pinksteren vandaan. Het was een oogstfeest: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Juist daarom was Jeruzalem die dag vol pelgrims uit alle windstreken, en dat verklaart waarom er zoveel talen te horen waren."
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Jezus zegt dat de wijnbouwer elke rank die vrucht draagt, snoeit. Waarom doet een wijnbouwer dat?",
-        antwoorden: ["Zodat de kracht van de plant naar minder ranken gaat en die meer druiven geven", "Om de plant kleiner te houden zodat hij in de rij past", "Om het hout te gebruiken als brandstof in de winter", "Om te zien welke ranken ziek zijn geworden"],
-        correct: "Zodat de kracht van de plant naar minder ranken gaat en die meer druiven geven",
-        bijbelplaats: "Johannes 15:2"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 7:
 // gebruiken aan tafel, bij rouw en op het land)
 // =====================================================================
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Bij de maaltijd wordt gezegd dat een leerling \"aanlag\" tegen Jezus. Hoe zat men aan tafel?",
-        antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Staand, want een maaltijd duurde kort"],
-        correct: "Half liggend op kussens rond een lage tafel, steunend op één elleboog",
-        bijbelplaats: "Johannes 13:23",
-        uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Een vrouw zegt tegen Jezus dat zelfs de hondjes onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
-        antwoorden: ["Ook wie niet aan tafel zit, mag iets van de overvloed krijgen", "Honden waren heilige dieren en mochten meeëten", "Ze had zelf honger en vroeg om eten", "Het eten dat viel, was niet meer rein en werd weggegooid"],
-        correct: "Ook wie niet aan tafel zit, mag iets van de overvloed krijgen",
-        bijbelplaats: "Marcus 7:28"
-    },
-    {
-        vraag: "De hogepriester scheurde zijn kleren toen hij Jezus hoorde. Wat betekende dat gebaar?",
-        antwoorden: ["Diepe verontwaardiging of verdriet, zichtbaar voor iedereen", "Dat hij zijn ambt neerlegde en wegging", "Dat hij het te warm had in de rechtszaal", "Dat hij de wet niet langer wilde volgen"],
-        correct: "Diepe verontwaardiging of verdriet, zichtbaar voor iedereen",
-        bijbelplaats: "Marcus 14:63"
-    }
-);
-
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Toen Jezus bij het huis van Jaïrus kwam, was diens dochter net gestorven. Er waren fluitspelers en een luidruchtige menigte. Wat deden die daar?",
-        antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij vierden feest omdat het meisje ooit beter zou worden", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
-        correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
-        bijbelplaats: "Matteüs 9:23",
-        uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten hem uit. Toen nam hij haar hand en stond ze op."
-    },
-    {
-        vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
-        antwoorden: ["Zodat niemand er per ongeluk op stapte en onrein werd", "Zodat de familie het graf makkelijk kon terugvinden", "Omdat wit de kleur van de rouw was", "Omdat kalk het gesteente tegen regen beschermde"],
-        correct: "Zodat niemand er per ongeluk op stapte en onrein werd",
-        bijbelplaats: "Matteüs 23:27",
-        uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Dat witte kalk was dus geen versiering, maar een waarschuwingsbord. En zo bedoelt Jezus het ook: je kunt er van buiten keurig uitzien en toch niet leven zoals God het vraagt."
-    }
-);
-
-vragenData["Lucas"].expert.push(
-    {
-        vraag: "Jezus zegt: als men jullie niet ontvangt, schud dan het stof van je voeten. Wat betekende dat?",
-        antwoorden: ["Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven", "Een manier om te tonen dat je moe was van de reis", "Een gebruik om je sandalen te sparen op een lange weg", "Een zegen die je bij het weggaan achterliet"],
-        correct: "Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven",
-        bijbelplaats: "Lucas 9:5"
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 6:
 // beroepen, gewoonten en het schrijven van brieven)
 // =====================================================================
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
-        antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
-        correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
-        bijbelplaats: "Handelingen 18:3"
-    },
-    {
-        vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
-        antwoorden: ["Een rotsheuvel waar de raad van de stad bijeenkwam", "De grootste tempel van de stad", "De markt waar de kooplieden stonden", "Het theater waar toneelstukken werden opgevoerd"],
-        correct: "Een rotsheuvel waar de raad van de stad bijeenkwam",
-        bijbelplaats: "Handelingen 17:19",
-        uitleg: "De naam betekent \"heuvel van Ares\", de Griekse oorlogsgod — de Romeinen noemden hem Mars, vandaar dat je ook \"Marsheuvel\" leest. De raad die er vergaderde was eeuwenlang het hoogste bestuur van Athene en hield toezicht op wie er in de stad over goden en filosofie sprak. Paulus werd er dus niet gearresteerd, maar uitgenodigd om zijn zaak toe te lichten."
-    }
-);
-
-vragenData["Marcus"].expert.push(
-    {
-        vraag: "Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank?",
-        antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Wijn uit de tempel, die alleen de priesters mochten drinken", "Een dure wijn die een rijke voorbijganger had meegebracht"],
-        correct: "Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst",
-        bijbelplaats: "Marcus 15:36",
-        uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen pesterij: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
-    }
-);
-
-vragenData["Galaten"].expert.push(
-    {
-        vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
-        antwoorden: ["De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf", "Hij was zijn bril kwijt en kon niet kleiner schrijven", "Grote letters betekenden dat de brief voorgelezen moest worden", "Hij had geen inkt meer en moest krassen in het papier"],
-        correct: "De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf",
-        bijbelplaats: "Galaten 6:11"
-    }
-);
-
-vragenData["Romeinen"].expert.push(
-    {
-        vraag: "Paulus schrijft: groet elkaar met een heilige kus. Wat was dat?",
-        antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
-        correct: "De gewone begroeting in die tijd, een kus op de wang",
-        bijbelplaats: "Romeinen 16:16",
-        uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders. Rond de Middellandse Zee is de begroetingskus trouwens tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
-    }
-);
-
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 5:
 // gebruiken, offers en geld rond de tempel)
 // =====================================================================
-vragenData["Matteüs"].expert.push(
-    {
-        vraag: "Jezus zegt dat je jonge wijn niet in oude zakken doet. Waar waren die \"zakken\" van gemaakt?",
-        antwoorden: ["Van dierenhuid, die meerekte als de wijn ging gisten", "Van geweven stof met pek aan de binnenkant", "Van gevlochten riet met een deksel erop", "Van gebakken klei met een nauwe hals"],
-        correct: "Van dierenhuid, die meerekte als de wijn ging gisten",
-        bijbelplaats: "Matteüs 9:17"
-    },
-    {
-        vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
-        antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
-        correct: "De top van de graanhalm, waar de korrels in zitten",
-        bijbelplaats: "Matteüs 12:1"
-    }
-);
-
-
-
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
-        antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
-        correct: "Je hoofd kaalscheren en offers brengen in de tempel",
-        bijbelplaats: "Handelingen 21:23-26",
-        uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
-    },
-    {
-        vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
-        antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die extra streng leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
-        correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
-        bijbelplaats: "Handelingen 10:2"
-    },
-    {
-        vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
-        antwoorden: ["Ongeveer een kilometer: zo ver mocht je op sabbat lopen", "Precies één dagreis te voet", "De afstand die een ezel op één dag aflegt", "De afstand van de tempel tot de stadsmuur"],
-        correct: "Ongeveer een kilometer: zo ver mocht je op sabbat lopen",
-        bijbelplaats: "Handelingen 1:12",
-        uitleg: "Op sabbat mocht je niet ver van huis gaan. De schriftgeleerden hadden die regel precies gemaakt: tweeduizend el vanaf de rand van je woonplaats, ongeveer negenhonderd meter. Lucas noemt die afstand niet zomaar — hij laat er zijn lezers mee weten dat de Olijfberg vlak bij Jeruzalem lag, en dat de leerlingen dus gewoon terug konden lopen zonder de sabbat te breken."
-    },
-    {
-        vraag: "In het visioen van Petrus worden dieren \"rein\" of \"onrein\" genoemd. Wat betekende dat?",
-        antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier gewassen was voordat het geslacht werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
-        correct: "Of je het volgens de wet van Mozes wel of niet mocht eten",
-        bijbelplaats: "Handelingen 10:14",
-        uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt of ziek was geweest, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
-    }
-);
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 4)
 // =====================================================================
-vragenData["Romeinen"].expert.push(
-    {
-        vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
-        antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het", "Tot ziens"],
-        correct: "Zo is het, het staat vast",
-        bijbelplaats: "Romeinen 1:25"
-    },
-    {
-        vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
-        antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
-        correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
-        bijbelplaats: "Romeinen 8:15"
-    }
-);
-
-
-vragenData["Filippenzen"].expert.push(
-    {
-        vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
-        antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
-        correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
-        bijbelplaats: "Filippenzen 3:20"
-    }
-);
-
-
-
-
 // =====================================================================
 // Woorden & begrippen uit de bijbeltekst zelf (expert, reeks 3:
 // brieven en Openbaring)
 // =====================================================================
-vragenData["1 & 2 Korintiërs"].expert.push(
-    {
-        vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
-        antwoorden: ["Kom, Heer!", "Vrede zij met u", "Wees waakzaam", "God is trouw"],
-        correct: "Kom, Heer!",
-        bijbelplaats: "1 Korintiërs 16:22"
-    },
-    {
-        vraag: "Paulus schrijft dat God de Geest als onderpand heeft gegeven. Wat is een onderpand?",
-        antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een zegel waarmee een brief werd dichtgemaakt", "Een bewijs dat een schuld helemaal is afbetaald"],
-        correct: "Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt",
-        bijbelplaats: "2 Korintiërs 1:22"
-    }
-);
-
-
-vragenData["Filippenzen"].expert.push(
-    {
-        vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar in die tijd?",
-        antwoorden: ["Een krans van bladeren, gevlochten op zijn hoofd", "Een gouden beker gevuld met wijn", "Een zilveren munt uit de stadskas", "Een nieuw stel kleren van de stadsbestuurders"],
-        correct: "Een krans van bladeren, gevlochten op zijn hoofd",
-        bijbelplaats: "Filippenzen 3:14"
-    }
-);
-
-
-vragenData["Timoteüs & Titus"].expert.push(
-    {
-        vraag: "In zijn laatste brief vraagt Paulus of Timoteüs ook de perkamenten wil meebrengen. Wat is perkament?",
-        antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boeken in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
-        correct: "Dun bewerkte dierenhuid om op te schrijven",
-        bijbelplaats: "2 Timoteüs 4:13"
-    }
-);
-
-
-
-vragenData["Efeziërs"].expert.push(
-    {
-        vraag: "Paulus schrijft dat de gelovigen met de Geest \"verzegeld\" zijn. Wat deed men in die tijd met een zegel?",
-        antwoorden: ["Men drukte een merkteken in was, om te tonen van wie iets was", "Men bond een koord om een pak heen zodat het dicht bleef", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
-        correct: "Men drukte een merkteken in was, om te tonen van wie iets was",
-        bijbelplaats: "Efeziërs 1:13"
-    }
-);
-
-
 // =====================================================================
 // Woordvragen die van expert naar gevorderd zijn verplaatst.
 // Zelfde vragen, alleen een ander niveau: het antwoord volgt uit het
 // woord zelf, uit de vraag, of het is bekend bijbelstof.
 // =====================================================================
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "Jezus zegt: laat geen bazuin voor je uit blazen als je een aalmoes geeft. Wat is een aalmoes?",
-        antwoorden: ["Een gift aan iemand die arm is", "Een offer dat je in de tempel bracht", "Een belasting die je aan de Romeinen betaalde", "Een geschenk dat je aan een gast meegaf"],
-        correct: "Een gift aan iemand die arm is",
-        bijbelplaats: "Matteüs 6:2"
-    },
-    {
-        vraag: "Aan Petrus wordt gevraagd of Jezus de tempelbelasting betaalt. Waar was dat geld voor?",
-        antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen in Judea", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
-        correct: "Voor het onderhoud van de tempel, opgebracht door de Joden zelf",
-        bijbelplaats: "Matteüs 17:24",
-        uitleg: "Elke Joodse man van twintig jaar en ouder betaalde één keer per jaar een halve sikkel voor de tempel. Van dat geld werden de dagelijkse offers betaald, de wierook, de broden die in het heiligdom lagen en het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
-    }
-);
-
-vragenData["Marcus"].advanced.push(
-    {
-        vraag: "Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn?",
-        antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had al je bezit verloren en werkte als dagloner op het land"],
-        correct: "Je had een ernstige huidziekte en moest buiten het dorp wonen",
-        bijbelplaats: "Marcus 1:40"
-    },
-    {
-        vraag: "Als Jezus een dove man geneest, zegt hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
-        antwoorden: ["Ga open", "Sta op", "Wees stil", "Kom hier"],
-        correct: "Ga open",
-        bijbelplaats: "Marcus 7:34"
-    },
-    {
-        vraag: "Toen Jezus stierf, scheurde het voorhangsel van de tempel in tweeën. Wat was het voorhangsel?",
-        antwoorden: ["Een groot gordijn dat het allerheiligste deel van de tempel afsloot", "De brede stenen trap die naar de ingang van de tempel omhoogliep", "Het dak boven de binnenplaats waar de mensen samenkwamen", "De poort waardoor alleen priesters naar binnen mochten"],
-        correct: "Een groot gordijn dat het allerheiligste deel van de tempel afsloot",
-        bijbelplaats: "Marcus 15:38"
-    },
-    {
-        vraag: "In de gelijkenis plant een man een wijngaard, graaft een kuil voor de wijnpers en bouwt een wachttoren. Waarvoor diende die toren?",
-        antwoorden: ["Om de wijngaard te bewaken tegen dieven en dieren", "Om de druiven in te drogen na de oogst", "Om van bovenaf te zien of de druiven al rijp waren", "Om de wijn koel te bewaren in de zomer"],
-        correct: "Om de wijngaard te bewaken tegen dieven en dieren",
-        bijbelplaats: "Marcus 12:1"
-    },
-    {
-        vraag: "De eigenaar verhuurde zijn wijngaard aan pachters en ging op reis. Wat is een pachter?",
-        antwoorden: ["Iemand die grond van een ander bewerkt en een deel van de oogst afstaat", "Iemand die de grond koopt en er zelf eigenaar van wordt", "Iemand die als dagloner per dag betaald wordt", "Iemand die het land bewaakt maar er niet op werkt"],
-        correct: "Iemand die grond van een ander bewerkt en een deel van de oogst afstaat",
-        bijbelplaats: "Marcus 12:1-2"
-    },
-    {
-        vraag: "Jezus spreekt over iemand met een molensteen om zijn hals. Wat is een molensteen?",
-        antwoorden: ["Een zware ronde steen om graan mee te malen", "De steen waarmee een graf werd afgesloten", "De steen waarop het altaar was gebouwd", "Een steen die men in de put liet zakken om water te halen"],
-        correct: "Een zware ronde steen om graan mee te malen",
-        bijbelplaats: "Marcus 9:42"
-    },
-    {
-        vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij hem kruisigen. Waarom deed hij dat volgens Marcus?",
-        antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Hij was zelf bang geworden voor Jezus"],
-        correct: "Hij wilde het volk zijn zin geven",
-        bijbelplaats: "Marcus 15:15"
-    }
-);
-
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Twee leerlingen noemen Jezus \"Rabbi\". Johannes vertelt er meteen bij wat dat woord betekent. Wat is het?",
-        antwoorden: ["Meester", "Redder", "Vriend", "Koning"],
-        correct: "Meester",
-        bijbelplaats: "Johannes 1:38"
-    },
-    {
-        vraag: "Jezus wast de voeten van zijn leerlingen. Waarom was dat zo opvallend?",
-        antwoorden: ["In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester", "Het mocht alleen op de sabbat gebeuren en het was geen sabbat", "Het was een taak van de gastvrouw, niet van een man", "Het gebeurde normaal pas na de maaltijd, niet ervoor"],
-        correct: "In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester",
-        bijbelplaats: "Johannes 13:5"
-    }
-);
-
-vragenData["Handelingen"].advanced.push(
-    {
-        vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
-        antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
-        correct: "De eerste naam voor de volgelingen van Jezus",
-        bijbelplaats: "Handelingen 9:2"
-    }
-);
-
-vragenData["Kolossenzen & Filemon"].advanced.push(
-    {
-        vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen bij elkaar?",
-        antwoorden: ["In gewone woonhuizen, want kerkgebouwen bestonden nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
-        correct: "In gewone woonhuizen, want kerkgebouwen bestonden nog niet",
-        bijbelplaats: "Filemon 2"
-    },
-    {
-        vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse rijk?",
-        antwoorden: ["Hij was eigendom van zijn meester en kon gekocht en verkocht worden", "Hij was een knecht die elk jaar opnieuw zijn loon afsprak", "Hij was een gevangene die na zijn straf weer vrij kwam", "Hij was een leerling die bij zijn meester in huis een vak leerde"],
-        correct: "Hij was eigendom van zijn meester en kon gekocht en verkocht worden",
-        bijbelplaats: "Filemon 16"
-    }
-);
-
-vragenData["Lucas"].advanced.push(
-    {
-        vraag: "De farizeeër in de gelijkenis zegt dat hij tienden geeft van alles wat hij bezit. Wat zijn tienden?",
-        antwoorden: ["Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel", "Tien munten die je jaarlijks moest betalen", "De tiende dag van elke maand, die je apart hield", "De tien geboden die je uit je hoofd leerde"],
-        correct: "Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel",
-        bijbelplaats: "Lucas 18:12",
-        uitleg: "Een tiende deel van de oogst was bestemd voor de levieten. Zij verzorgden de dienst in de tempel en hadden als enige stam geen eigen land gekregen, dus dit was hun inkomen. De levieten gaven daar zelf weer een tiende deel van door aan de priesters. Daarnaast was er elke drie jaar een tiende voor de armen, de weduwen, de wezen en de vreemdelingen. De farizeeër uit de gelijkenis ging nog verder dan de wet vroeg: hij gaf van alles een tiende, tot aan de kruiden in zijn tuin toe."
-    }
-);
-
-vragenData["1 & 2 Korintiërs"].advanced.push(
-    {
-        vraag: "Paulus noemt Jezus de \"eersteling\" van wie gestorven zijn. Dat woord komt uit de landbouw. Wat is een eersteling?",
-        antwoorden: ["De eerste vrucht van de oogst, het bewijs dat de rest eraan komt", "De grootste vrucht van de hele oogst", "De laatste schoof die van het veld werd gehaald", "Het zaad dat je apart houdt voor volgend jaar"],
-        correct: "De eerste vrucht van de oogst, het bewijs dat de rest eraan komt",
-        bijbelplaats: "1 Korintiërs 15:20"
-    }
-);
-
-vragenData["Timoteüs & Titus"].advanced.push(
-    {
-        vraag: "Paulus schrijft dat hij in boeien zit, maar dat Gods woord niet geboeid is. Wat waren boeien?",
-        antwoorden: ["IJzeren kettingen om polsen of enkels van een gevangene", "Dikke touwen waarmee schepen werden vastgelegd", "De houten balken van een cel", "De zegels waarmee een gevangenis werd afgesloten"],
-        correct: "IJzeren kettingen om polsen of enkels van een gevangene",
-        bijbelplaats: "2 Timoteüs 2:9"
-    },
-    {
-        vraag: "Paulus schrijft over wie \"opziener\" wil worden. Wat was dat voor iemand?",
-        antwoorden: ["Iemand die leiding gaf aan een gemeente en toezicht hield", "Iemand die bij de stadspoort de wacht hield", "Iemand die de boeken van de gemeente bijhield", "Iemand die de zieken bezocht en eten rondbracht"],
-        correct: "Iemand die leiding gaf aan een gemeente en toezicht hield",
-        bijbelplaats: "1 Timoteüs 3:1"
-    }
-);
-
 // =====================================================================
 // Nog drie woordvragen uit reeks 9 die op gevorderd thuishoren:
 // het antwoord volgt uit de vraag zelf.
 // =====================================================================
-vragenData["Matteüs"].advanced.push(
-    {
-        vraag: "In de gelijkenis huurt de eigenaar nog arbeiders in \"op het elfde uur\". Wat betekent dat?",
-        antwoorden: ["Een uur voor het einde van de werkdag", "Om elf uur 's ochtends, halverwege de dag", "De elfde dag van de maand", "Het elfde uur na middernacht"],
-        correct: "Een uur voor het einde van de werkdag",
-        bijbelplaats: "Matteüs 20:6-9"
-    },
-    {
-        vraag: "De eigenaar vond mannen werkloos op het marktplein staan. Waarom stonden zij daar?",
-        antwoorden: ["Daar wachtten dagloners tot iemand hen voor die dag inhuurde", "Daar werd de belasting geïnd en moesten zij hun beurt afwachten", "Daar deelden de rijken elke ochtend brood uit", "Daar kwamen zij samen om te bidden voor werk"],
-        correct: "Daar wachtten dagloners tot iemand hen voor die dag inhuurde",
-        bijbelplaats: "Matteüs 20:3"
-    }
-);
-
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Jezus stelt de goede herder tegenover een huurling. Wat is het verschil?",
-        antwoorden: ["Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem", "Een huurling werkt alleen in de zomer, een herder het hele jaar", "Een huurling mag de schapen niet aanraken, een herder wel", "Een huurling hoedt runderen, een herder schapen"],
-        correct: "Een huurling past op voor geld en vlucht bij gevaar, want de schapen zijn niet van hem",
-        bijbelplaats: "Johannes 10:12"
-    }
-);
-
-vragenData["Johannes"].advanced.push(
-    {
-        vraag: "Wat zei Tomas toen hij Jezus na de opstanding zag?",
-        antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Ik geloof nu"],
-        correct: "Mijn Heer en mijn God!",
-        bijbelplaats: "Johannes 20:28"
-    },
-    {
-        vraag: "Wie kwam als eerste bij het graf van Jezus op de eerste dag van de week, volgens Johannes?",
-        antwoorden: ["Petrus", "Maria Magdalena", "Johannes", "De twaalf leerlingen"],
-        correct: "Maria Magdalena",
-        bijbelplaats: "Johannes 20:1"
-    }
-);
-
-vragenData["Johannes"].expert.push(
-    {
-        vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
-        antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
-        correct: "Nikodemus",
-        bijbelplaats: "Johannes 3:1-2"
-    },
-    {
-        vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
-        antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
-        correct: "De tuinman",
-        bijbelplaats: "Johannes 20:15"
-    }
-);
-
-vragenData["Handelingen"].expert.push(
-    {
-        vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
-        antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
-        correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
-        bijbelplaats: "Handelingen 27:12",
-        uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
-    },
-    {
-        vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
-        antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
-        correct: "Hij maakte huiden van geslachte dieren tot leer",
-        bijbelplaats: "Handelingen 9:43",
-        uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
-    },
-    {
-        vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
-        antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
-        correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
-        bijbelplaats: "Handelingen 27:28"
-    }
-);
-
-vragenData["Romeinen"].advanced.push(
-    {
-        vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
-        antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
-        correct: "Nee, maar hij wilde er graag heen",
-        bijbelplaats: "Romeinen 1:10-13"
-    }
-);
-
 // FIX 1: huidigeVraag en score netjes declareren bovenaan
 let huidigeVraag = 0;
 let score = 0;
