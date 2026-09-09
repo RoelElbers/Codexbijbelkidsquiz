@@ -1331,9 +1331,9 @@ vragenData["Matteüs"].expert.push(
         bijbelplaats: "Matteüs 14:13-21"
     },
     {
-        vraag: 'Een "el" is ongeveer zo lang als…',
-        antwoorden: ["De lengte van je voet (ongeveer 30 cm)", "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)", "De lengte van je arm van schouder tot pols (ongeveer 60 cm)", "De breedte van je hand (ongeveer 8 cm)"],
-        correct: "De afstand van je elleboog tot je vingertoppen (ongeveer 45 cm)",
+        vraag: "Jezus vraagt: wie van jullie kan door zich zorgen te maken één el aan zijn leven toevoegen? Een el was een maat die men aan het eigen lichaam afmat. Hoe lang was een el ongeveer?",
+        antwoorden: ["Zo lang als je voet, ongeveer 30 cm", "Van je elleboog tot je vingertoppen, ongeveer 45 cm", "Van je schouder tot je pols, ongeveer 60 cm", "Zo breed als je hand, ongeveer 8 cm"],
+        correct: "Van je elleboog tot je vingertoppen, ongeveer 45 cm",
         bijbelplaats: "Matteüs 6:27"
     },
     {
@@ -2499,8 +2499,8 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 13:14"
         },
         {
-            vraag: "Paulus zegt dat de boodschap van het kruis voor sommige mensen dwaas lijkt, maar voor gelovigen is het…",
-            antwoorden: ["Gods kracht", "een grap", "onbelangrijk", "te moeilijk"],
+            vraag: "Paulus schrijft dat de boodschap van het kruis voor sommige mensen dwaas lijkt. Wat is diezelfde boodschap volgens hem voor wie gered wordt?",
+            antwoorden: ["Gods kracht", "Gods geheim", "Gods wet", "Gods belofte"],
             correct: "Gods kracht",
             bijbelplaats: "1 Korintiërs 1:18"
         },
@@ -3177,9 +3177,9 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:9"
         },
         {
-            vraag: "Paulus schrijft een korte, bemoedigende zin: 'De Heer is …'. Welk woord hoort er volgens Paulus?",
-            antwoorden: ["Dichtbij", "Ver weg", "Onbereikbaar", "Boos"],
-            correct: "Dichtbij",
+            vraag: "Paulus schrijft in zijn brief aan de Filippenzen een korte, bemoedigende zin over waar de Heer is. Wat schrijft hij?",
+            antwoorden: ["De Heer is dichtbij", "De Heer is machtig", "De Heer is goed", "De Heer is trouw"],
+            correct: "De Heer is dichtbij",
             bijbelplaats: "Filippenzen 4:5"
         },
         {
@@ -3291,9 +3291,9 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Handelingen 16:12"
         },
         {
-            vraag: "Paulus schrijft: \"Het leven is voor mij Christus…\" Hoe vult hij die zin aan?",
-            antwoorden: ["…en het sterven is winst", "…en het sterven is verlies", "…en de dood is het einde", "…en het lijden is straf"],
-            correct: "…en het sterven is winst",
+            vraag: "Paulus schrijft over zijn eigen leven: voor hem is leven Christus. En wat is sterven dan volgens hem?",
+            antwoorden: ["Winst", "Verlies", "Rust", "Het einde"],
+            correct: "Winst",
             bijbelplaats: "Filippenzen 1:21"
         },
         {
@@ -3370,9 +3370,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             kist: false
         },
         {
-            vraag: "Paulus zegt: bid…",
-            antwoorden: ["…zonder ophouden", "…alleen 's ochtends", "…alleen in de kerk", "…alleen als het moet"],
-            correct: "…zonder ophouden",
+            vraag: "Paulus geeft een hele korte opdracht over bidden, van maar twee woorden. Hoe vaak moet je volgens hem bidden?",
+            antwoorden: ["Zonder ophouden", "Elke ochtend en elke avond", "Drie keer per dag", "Zo vaak als je eraan denkt"],
+            correct: "Zonder ophouden",
             bijbelplaats: "1 Tessalonicenzen 5:17"
         },
         {
@@ -3480,9 +3480,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 1:8"
         },
         {
-            vraag: "Wat raadt Paulus aan over werk: wie niet wil werken…",
-            antwoorden: ["…zou ook niet moeten eten", "…mag toch mee-eten", "…moet weggestuurd worden", "…moet dubbel betalen"],
-            correct: "…zou ook niet moeten eten",
+            vraag: "Paulus geeft een stevige regel over werken die hij zelf een gebod noemt. Wat zegt hij over wie niet wíl werken?",
+            antwoorden: ["Die hoeft ook niet te eten", "Die moet uit de gemeente gezet worden", "Die moet het dubbel goedmaken", "Die moet door de anderen onderhouden worden"],
+            correct: "Die hoeft ook niet te eten",
             bijbelplaats: "2 Tessalonicenzen 3:10"
         },
         {
@@ -3492,9 +3492,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 2:2"
         },
         {
-            vraag: "Paulus zegt: vergeld kwaad niet met kwaad, maar…",
-            antwoorden: ["…doe altijd goed, voor elkaar en voor iedereen", "…zorg dat je het hem later dubbel en dwars terugbetaalt", "…vergeet het snel", "…blijf op je hoede"],
-            correct: "…doe altijd goed, voor elkaar en voor iedereen",
+            vraag: "Paulus schrijft: zorg dat niemand kwaad met kwaad vergeldt. Wat moeten de gelovigen in plaats daarvan doen?",
+            antwoorden: ["Altijd het goede doen, voor elkaar en voor iedereen", "Het loslaten en er niet meer aan denken", "Het aan God overlaten, die rechtvaardig oordeelt", "Uit de buurt blijven van wie kwaad doet"],
+            correct: "Altijd het goede doen, voor elkaar en voor iedereen",
             bijbelplaats: "1 Tessalonicenzen 5:15"
         },
         {
@@ -3566,9 +3566,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 2:19"
         },
         {
-            vraag: "Paulus prijst de Tessalonicenzen om drie dingen: hun geloof, hun liefde en hun…",
-            antwoorden: ["…hoop", "…wijsheid", "…kennis", "…kracht"],
-            correct: "…hoop",
+            vraag: "Paulus prijst de Tessalonicenzen om drie dingen die bij elkaar horen: hun geloof, hun liefde en nog iets. Wat is dat derde?",
+            antwoorden: ["Hun hoop", "Hun wijsheid", "Hun kennis", "Hun geduld"],
+            correct: "Hun hoop",
             bijbelplaats: "1 Tessalonicenzen 1:3"
         },
         {
@@ -3744,9 +3744,9 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 1:2"
         },
         {
-            vraag: "Paulus schrijft: God gaf ons geen geest van angst, maar van…",
-            antwoorden: ["…kracht, liefde en bezonnenheid", "…macht, rijkdom en aanzien", "…regels, straf en controle", "…rust, stilte en gemak"],
-            correct: "…kracht, liefde en bezonnenheid",
+            vraag: "Paulus schrijft aan Timoteüs dat God ons geen geest van angst heeft gegeven. Welke drie dingen noemt hij in plaats daarvan?",
+            antwoorden: ["Kracht, liefde en bezonnenheid", "Macht, rijkdom en aanzien", "Geloof, hoop en liefde", "Wijsheid, geduld en vrede"],
+            correct: "Kracht, liefde en bezonnenheid",
             bijbelplaats: "2 Timoteüs 1:7"
         },
         {
@@ -4278,8 +4278,8 @@ vragenData["Hebreeën"] = {
     ],
     advanced: [
         {
-            vraag: "De brief aan de Hebreeën noemt Jezus onze grote …, die ons bij God vertegenwoordigt. Welk woord hoort hier?",
-            antwoorden: ["Hogepriester", "Engel", "Koning", "Profeet"],
+            vraag: "De brief aan de Hebreeën vergelijkt Jezus met de man die één keer per jaar het allerheiligste van de tempel binnenging om daar voor het hele volk te offeren. Welke titel geeft de brief Hem daarom?",
+            antwoorden: ["Hogepriester", "Leviet", "Schriftgeleerde", "Tempelwachter"],
             correct: "Hogepriester",
             bijbelplaats: "Hebreeën 4:14"
         },
