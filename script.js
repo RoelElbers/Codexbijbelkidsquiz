@@ -1897,8 +1897,8 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 16:22"
         },
         {
-            vraag: "Helemaal aan het eind van zijn brief schrijft Paulus dat God iets voor de gelovigen kan doen. Wat kan God volgens hem doen?",
-            antwoorden: ["Hij kan hen machtiger maken dan alle koningen", "Hij kan hen beroemd maken", "Hij kan hen de baas maken", "Hij kan hen sterk maken in het geloof"],
+            vraag: "Helemaal aan het eind van zijn brief aan de Romeinen schrijft Paulus dat God iets voor de gelovigen kan doen. Wat kan God volgens hem doen?",
+            antwoorden: ["Hij kan hen sterk maken in het geloof", "Hij kan hen machtiger maken dan alle koningen", "Hij kan hen beroemd maken", "Hij kan hen de baas maken"],
             correct: "Hij kan hen sterk maken in het geloof",
             bijbelplaats: "Romeinen 16:25"
         }
@@ -2389,8 +2389,8 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 9:24"
         },
         {
-            vraag: "Paulus zegt aan het eind: blijf waakzaam en sterk. Wat raadt hij aan?",
-            antwoorden: ["Geef snel op", "Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand"],
+            vraag: "Aan het slot van zijn eerste brief aan de Korintiërs geeft Paulus vier korte bevelen achter elkaar, als een aanmoediging voor onderweg. Wat draagt hij hun daar op?",
+            antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand", "Geef snel op"],
             correct: "Sta vast in het geloof en wees moedig",
             bijbelplaats: "1 Korintiërs 16:13"
         },
@@ -2542,8 +2542,8 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 3:3"
         },
         {
-            vraag: "Aan het eind van het grote opstandingshoofdstuk bemoedigt Paulus de gelovigen. Wat zegt hij over hun werk voor God?",
-            antwoorden: ["Dat het zinloos is", "Dat het nooit voor niets is", "Dat alleen sterke mensen het mogen doen", "Dat ze er flink voor betaald zullen krijgen"],
+            vraag: "Paulus sluit het grote hoofdstuk over de opstanding in zijn eerste brief aan de Korintiërs af met een bemoediging. Wat zegt hij daar over hun werk voor God?",
+            antwoorden: ["Dat het nooit voor niets is", "Dat het zinloos is", "Dat alleen sterke mensen het mogen doen", "Dat ze er flink voor betaald zullen krijgen"],
             correct: "Dat het nooit voor niets is",
             bijbelplaats: "1 Korintiërs 15:58"
         }
@@ -3442,7 +3442,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:5"
         },
         {
-            vraag: "Aan het eind van zijn tweede brief wenst Paulus de gelovigen rust toe. Hoe noemt hij God daarbij?",
+            vraag: "Aan het slot van zijn tweede brief aan de Tessalonicenzen wenst Paulus de gelovigen rust toe. Hoe noemt hij God daarbij?",
             antwoorden: ["De Heer van de vrede", "De Heer van de legers", "De Heer van de tempel", "De Heer van de oogst"],
             correct: "De Heer van de vrede",
             bijbelplaats: "2 Tessalonicenzen 3:16"
@@ -3836,7 +3836,7 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:10"
         },
         {
-            vraag: "Aan het einde van zijn laatste brief schrijft Paulus dat bijna iedereen weg is. Wie was nog wél bij hem?",
+            vraag: "Paulus schrijft in zijn laatste brief, aan Timoteüs, dat bijna iedereen bij hem weg is. Wie was er nog wél bij hem?",
             antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
             correct: "Alleen Lukas",
             bijbelplaats: "2 Timoteüs 4:11"
@@ -3963,7 +3963,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:12-13"
         },
         {
-            vraag: "Paulus groet aan het eind een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
+            vraag: "Aan het slot van zijn brief aan de Kolossenzen groet Paulus een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
             antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
             correct: "Lukas",
             bijbelplaats: "Kolossenzen 4:14"
