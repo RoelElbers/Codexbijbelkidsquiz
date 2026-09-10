@@ -140,7 +140,7 @@ function openTabblad(url) {
 //
 // Buiten de nummering liep nog een losse ronde over de drie talen van Israël.
 const vragenData = {
-    // Matteüs — vragenpool (87 vragen: beginner 24, advanced 20, expert 43)
+    // Matteüs — vragenpool (88 vragen: beginner 24, advanced 21, expert 43)
     "Matteüs": {
         beginner: [
             {
@@ -300,22 +300,28 @@ const vragenData = {
                 bijbelplaats: "Matteüs 27:11-26"
             },
             {
-                vraag: "Het zaad viel in de gelijkenis van de zaaier op vier plekken. Welke plek hoort daar niet bij?",
+                vraag: "Het zaad viel in de gelijkenis van de zaaier op het pad, op de rotsbodem, tussen de distels en op de goede grond. Welke plek noemde Jezus níet?",
                 antwoorden: ["Op het pad", "Op de rotsbodem", "Tussen de distels", "In het water"],
                 correct: "In het water",
                 bijbelplaats: "Matteüs 13:3-8"
             },
             {
                 vraag: "Wat gebeurde er op het moment dat Jezus aan het kruis stierf?",
-                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Er verscheen een regenboog", "Alle vogels in de wijde omgeving begonnen tegelijk te zingen"],
+                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Alle lampen in de tempel gingen tegelijk uit", "De klokken van de tempel begonnen te luiden"],
                 correct: "Het werd donker en het voorhangsel van de tempel scheurde",
                 bijbelplaats: "Matteüs 27:45-51"
             },
             {
-                vraag: "Wat deed Petrus drie keer voordat de haan kraaide, zoals Jezus had voorspeld?",
-                antwoorden: ["Hij viel in slaap", "Hij ontkende dat hij Jezus kende", "Hij vluchtte weg", "Hij vocht met een soldaat"],
-                correct: "Hij ontkende dat hij Jezus kende",
+                vraag: "In de Bijbel staat dat Petrus Jezus 'verloochende'. Wat betekent dat?",
+                antwoorden: ["Dat hij zei dat hij Jezus niet kende", "Dat hij Jezus verraden had voor geld", "Dat hij slecht over Jezus sprak", "Dat hij niet meer met Jezus mee wilde"],
+                correct: "Dat hij zei dat hij Jezus niet kende",
                 bijbelplaats: "Matteüs 26:69-75"
+            },
+            {
+                vraag: "Wat deed Petrus toen hij de haan hoorde kraaien?",
+                antwoorden: ["Hij ging naar buiten en huilde bitter", "Hij rende terug naar Galilea", "Hij ontkende dat hij dat gedaan had", "Hij zocht Jezus op om sorry te zeggen"],
+                correct: "Hij ging naar buiten en huilde bitter",
+                bijbelplaats: "Matteüs 26:75"
             },
             {
                 vraag: "In de gelijkenis van de talenten: wat deed de dienaar die maar één talent had gekregen?",
@@ -337,7 +343,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat was de laatste opdracht die Jezus aan zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
-                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Blijf voortaan allemaal samen in de stad Jeruzalem wonen", "Schrijf een boek"],
+                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Niets, hij nam gewoon afscheid", "Schrijf een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
             },
@@ -355,7 +361,7 @@ const vragenData = {
             },
             {
                 vraag: 'Wat wordt in de Bijbel bedoeld met "de Wet"?',
-                antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels opgesteld door de Romeinse soldaten", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
+                antwoorden: ["De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden", "De regels die de farizeeën er in de loop van de tijd bij bedacht hadden", "De wetten die de Romeinse keizer aan het hele rijk oplegde", "Regels opgesteld door de tempelwachters"],
                 correct: "De regels die God via Mozes aan Israël gaf, zoals de Tien Geboden",
                 bijbelplaats: "Matteüs 5:17"
             },
@@ -372,22 +378,22 @@ const vragenData = {
                 bijbelplaats: "Matteüs 4:18-22"
             },
             {
-                vraag: "Jezus werd gelegd in een graf dat in de rots was uitgehakt. Hoe zag zo'n graf eruit?",
-                antwoorden: ["Een kamer in de rotswand met stenen banken, afgesloten met een grote steen", "Een diep gat in de grond met aarde erop", "Een houten kist die boven de grond stond", "Een grot waar het hele dorp begraven werd"],
-                correct: "Een kamer in de rotswand met stenen banken, afgesloten met een grote steen",
+                vraag: "Jozef van Arimatea gaf zijn eigen nieuwe graf aan Jezus. Waarom was dat zo bijzonder?",
+                antwoorden: ["Zo'n graf hoorde bij één familie en ging over van vader op zoon", "Omdat hij het pas net had laten uithakken", "Omdat een graf in de rots heel duur was", "Omdat hij het van de Romeinen had gekregen"],
+                correct: "Zo'n graf hoorde bij één familie en ging over van vader op zoon",
                 bijbelplaats: "Matteüs 27:60",
-                uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en daar werd het lichaam op gelegd, gewikkeld in doeken met specerijen. Voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
+                uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
             },
             {
                 vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
-                antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting en verder niets"],
+                antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem en hield toezicht op de markten", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting voor de keizer in Rome"],
                 correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
                 bijbelplaats: "Matteüs 27:2",
                 uitleg: "Judea was geen gewone provincie maar een onrustig grensgebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee, en kwam alleen naar de stad tijdens de grote feesten, wanneer er honderdduizenden pelgrims waren en de kans op onrust het grootst was. Hij had één bevoegdheid die de Joodse leiders niet hadden: het doodvonnis. Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
             },
             {
                 vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
-                antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat de grond in het dal te duur was", "Omdat er op de heuvels meer water te vinden was"],
+                antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat er boven op de heuvels in de winter sneeuw lag waar de kinderen konden spelen", "Omdat er op de heuvels meer water te vinden was"],
                 correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
                 bijbelplaats: "Matteüs 5:14",
                 uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt. En omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
@@ -400,7 +406,7 @@ const vragenData = {
             },
             {
                 vraag: "Aan Petrus wordt gevraagd of Jezus de tempelbelasting betaalt. Waar was dat geld voor?",
-                antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen in Judea", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
+                antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen dat in Judea gelegerd was", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
                 correct: "Voor het onderhoud van de tempel, opgebracht door de Joden zelf",
                 bijbelplaats: "Matteüs 17:24",
                 uitleg: "Elke Joodse man van twintig jaar en ouder betaalde één keer per jaar een halve sikkel voor de tempel. Van dat geld werden de dagelijkse offers betaald, de wierook, de broden die in het heiligdom lagen en het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
