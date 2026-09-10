@@ -1331,9 +1331,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 15:18"
             },
             {
-                vraag: "De arme weduwe gaf twee penningen. Hoeveel was dat samen ongeveer in geld van nu?",
-                antwoorden: ["Ongeveer anderhalf tot twee euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
-                correct: "Ongeveer anderhalf tot twee euro",
+                vraag: "De arme weduwe gaf twee lepta, de allerkleinste muntjes die er bestonden. Hoeveel was dat samen ongeveer in geld van nu?",
+                antwoorden: ["Ongeveer twee tot drie euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
+                correct: "Ongeveer twee tot drie euro",
                 bijbelplaats: "Lucas 21:1-4"
             },
             {
