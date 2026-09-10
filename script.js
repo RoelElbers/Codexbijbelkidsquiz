@@ -702,7 +702,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             }
         ]
     },
-    // Marcus — vragenpool (73 vragen: beginner 15, advanced 25, expert 33)
+    // Marcus — vragenpool (73 vragen: beginner 16, advanced 24, expert 33)
     "Marcus": {
         beginner: [
             {
@@ -795,6 +795,12 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had", "Dat zij de volgende keer wat meer moest meebrengen", "Dat God haar geld zou verdubbelen als beloning", "Dat niemand mocht zien wat een ander in de offerkist deed"],
                 correct: "Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
+            },
+            {
+                vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
+                antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
+                correct: "Een duif",
+                bijbelplaats: "Marcus 1:10"
             }
         ],
         advanced: [
@@ -830,14 +836,14 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zag Jezus een arme weduwe in de tempel doen, wat hij prees als groter dan wat alle rijken gaven?",
-                antwoorden: ["Ze bad lang", "Ze gaf twee kleine muntjes, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
+                antwoorden: ["Ze bracht een duif als offer", "Ze gaf twee kleine muntjes, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
                 correct: "Ze gaf twee kleine muntjes, alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44",
                 uitleg: "Die muntjes heetten lepta, en ze waren samen maar heel weinig waard — omgerekend zo'n twee tot drie euro, precies één quadrans. Eén lepton was het allerkleinste muntje dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
             },
             {
                 vraag: "Welke leerling sprak Jezus rechtstreeks aan toen hij zijn leerlingen in Getsemane slapend aantrof?",
-                antwoorden: ["Judas", "Petrus", "Tomas", "Johannes"],
+                antwoorden: ["Jakobus", "Petrus", "Tomas", "Johannes"],
                 correct: "Petrus",
                 bijbelplaats: "Marcus 14:37"
             },
@@ -863,14 +869,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 4:39"
             },
             {
-                vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
-                antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
-                correct: "Een duif",
-                bijbelplaats: "Marcus 1:10"
-            },
-            {
                 vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
-                antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "De sabbat is belangrijker dan een mens genezen"],
+                antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "Op de sabbat mag je geen werk doen waar je voor betaald wordt"],
                 correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
                 bijbelplaats: "Marcus 2:27"
             },
@@ -882,7 +882,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
-                antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De eerste wake, de tweede wake, de derde wake en de vierde wake", "Het eerste, tweede, derde en vierde uur"],
+                antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De schemering, het eerste licht, de dageraad en de zonsopgang", "Het eerste, tweede, derde en vierde uur"],
                 correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
                 bijbelplaats: "Marcus 13:35"
             },
@@ -895,7 +895,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
-                antwoorden: ["Om een religieus gebruik van reiniging, niet om hygiëne", "Om vieze handen na het werk op het land", "Om een regel van de Romeinse bezetter", "Om een afspraak die alleen in de tempel gold"],
+                antwoorden: ["Om een religieus gebruik van reiniging, niet om hygiëne", "Om vieze handen schoon te wassen na het werk op het land", "Om een regel van de Romeinse bezetter", "Om een afspraak die alleen in de tempel gold"],
                 correct: "Om een religieus gebruik van reiniging, niet om hygiëne",
                 bijbelplaats: "Marcus 7:3"
             },
@@ -903,7 +903,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "De mensen noemen Jezus \"de timmerman\". Wat maakte een timmerman in die tijd vooral?",
                 antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
                 correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
-                bijbelplaats: "Marcus 6:3"
+                bijbelplaats: "Marcus 6:3",
+                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen. Een van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot zijn dertigste was dit gewoon zijn werk."
             },
             {
                 vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
