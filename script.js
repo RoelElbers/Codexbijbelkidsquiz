@@ -1174,7 +1174,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             }
         ]
     },
-    // Lucas — vragenpool (62 vragen: beginner 11, advanced 18, expert 33)
+    // Lucas — vragenpool (62 vragen: beginner 12, advanced 17, expert 33)
     "Lucas": {
         beginner: [
             {
@@ -1203,9 +1203,10 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Waarin werd het pasgeboren kindje Jezus gelegd?",
-                antwoorden: ["In een mand van gevlochten riet", "Op een bed", "In een voederbak (kribbe)", "In een mooi versierd houten wiegje"],
-                correct: "In een voederbak (kribbe)",
-                bijbelplaats: "Lucas 2:7"
+                antwoorden: ["In een mand van gevlochten riet", "Op een bed", "In een voederbak", "In een mooi versierd houten wiegje"],
+                correct: "In een voederbak",
+                bijbelplaats: "Lucas 2:7",
+                uitleg: "In oudere Bijbels heet zo'n voederbak een kribbe. Het was een stenen of houten bak waar de dieren uit aten. Lucas vertelt er meteen bij waarom Jezus daarin lag: er was voor hen geen plaats in het gastenverblijf."
             },
             {
                 vraag: "Aan wie verschenen de engelen om als eersten te vertellen dat Jezus geboren was?",
@@ -1242,6 +1243,12 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed dat je elke dag hardop uitspreekt", "Een regel waar iedereen zich aan moest houden"],
                 correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
                 bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
+            },
+            {
+                vraag: "Wat liet de vader doen toen de verloren zoon thuiskwam?",
+                antwoorden: ["Hij gaf hem werk", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf iedereen de opdracht om hem te negeren", "Hij stuurde hem terug waar hij vandaan gekomen was"],
+                correct: "Hij liet het gemeste kalf slachten en hield een feestmaal",
+                bijbelplaats: "Lucas 15:23"
             }
         ],
         advanced: [
@@ -1252,7 +1259,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 2:25-32"
             },
             {
-                vraag: "Welke gelijkenis vertelde Jezus over een jongste zoon die zijn erfdeel opmaakte en uiteindelijk terugkeerde naar zijn vader?",
+                vraag: "Welke gelijkenis vertelde Jezus over een jongen die zijn erfdeel opeiste, alles uitgaf in een ver land, en bij de varkens terechtkwam?",
                 antwoorden: ["De verloren zoon", "De barmhartige Samaritaan", "De rijke dwaas", "De talenten"],
                 correct: "De verloren zoon",
                 bijbelplaats: "Lucas 15:11-32"
@@ -1264,14 +1271,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 15:20"
             },
             {
-                vraag: "Wat liet de vader doen toen de verloren zoon thuiskwam?",
-                antwoorden: ["Hij gaf hem werk", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf iedereen de opdracht om hem te negeren", "Hij stuurde hem terug waar hij vandaan gekomen was"],
-                correct: "Hij liet het gemeste kalf slachten en hield een feestmaal",
-                bijbelplaats: "Lucas 15:23"
-            },
-            {
                 vraag: "Hoe reageerde de oudste broer toen hij hoorde dat zijn jongere broer was teruggekomen?",
-                antwoorden: ["Hij was blij", "Hij was boos en wilde niet naar binnen gaan", "Hij was verbaasd en kon het niet geloven dat hij terug was", "Hij ging weg"],
+                antwoorden: ["Hij was blij", "Hij was boos en wilde niet naar binnen gaan", "Hij was verbaasd en kon het niet geloven dat hij terug was", "Hij pakte zijn spullen en vertrok, want als hij terugkwam zou hij vast net zo'n onthaal krijgen"],
                 correct: "Hij was boos en wilde niet naar binnen gaan",
                 bijbelplaats: "Lucas 15:28"
             },
@@ -1283,13 +1284,13 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat deed Zacheüs nadat Jezus bij hem te gast was geweest?",
-                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij hield alles voor zichzelf", "Hij werd priester"],
+                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij gaf alles wat hij had weg aan anderen", "Hij werd priester"],
                 correct: "Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst",
                 bijbelplaats: "Lucas 19:8"
             },
             {
-                vraag: "Wat zei Jezus tegen één van de misdadigers die naast hem was gekruisigd en die om hem vroeg?",
-                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan mij", "Daar kan ik nu niets aan doen"],
+                vraag: "Wat zei Jezus tegen de misdadiger die naast hem was gekruisigd en hem vroeg aan hem te denken wanneer hij in zijn koninkrijk kwam?",
+                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan mij", "Daar kan ik nu niets meer aan doen"],
                 correct: "Vandaag zul je met mij in het paradijs zijn",
                 bijbelplaats: "Lucas 23:43"
             },
@@ -1301,8 +1302,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de gelijkenis van de barmhartige Samaritaan: wie kwamen er als eerste langs de gewonde man maar hielpen hem niet?",
-                antwoorden: ["Een priester en een Leviet", "Een koning en een soldaat", "Een tollenaar en een visser", "Twee herders"],
-                correct: "Een priester en een Leviet",
+                antwoorden: ["Een priester en een leviet", "Een koning en een soldaat", "Een tollenaar en een visser", "Twee herders"],
+                correct: "Een priester en een leviet",
                 bijbelplaats: "Lucas 10:31-32"
             },
             {
@@ -1319,7 +1320,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
-                antwoorden: ["De bevrijding uit de slavernij in Egypte", "Het begin van de oogst", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
+                antwoorden: ["De bevrijding uit de slavernij in Egypte", "De inwijding van de tempel door de Makkabeeën", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
                 correct: "De bevrijding uit de slavernij in Egypte",
                 bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
             },
@@ -1331,7 +1332,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "De arme weduwe gaf twee lepta, de allerkleinste muntjes die er bestonden. Hoeveel was dat samen ongeveer in geld van nu?",
-                antwoorden: ["Ongeveer twee tot drie euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Meer dan 1000 euro"],
+                antwoorden: ["Ongeveer twee tot drie euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Ongeveer 20 euro"],
                 correct: "Ongeveer twee tot drie euro",
                 bijbelplaats: "Lucas 21:1-4"
             },
