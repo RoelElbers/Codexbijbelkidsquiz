@@ -1184,7 +1184,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 1:26-28"
             },
             {
-                vraag: "Wie was de oude priester die hoorde dat hij en zijn vrouw Elisabet op hun oude dag een zoon zouden krijgen, Johannes de Doper?",
+                vraag: "Wie was de oude priester die te horen kreeg dat hij en zijn vrouw Elisabet nog een zoon zouden krijgen — Johannes de Doper?",
                 antwoorden: ["Zacharias", "Simeon", "Eli", "Aäron"],
                 correct: "Zacharias",
                 bijbelplaats: "Lucas 1:5-13"
@@ -1203,19 +1203,19 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Waarin werd het pasgeboren kindje Jezus gelegd?",
-                antwoorden: ["In een wieg", "Op een bed", "In een voederbak (kribbe)", "In een mooi versierd houten wiegje"],
+                antwoorden: ["In een mand van gevlochten riet", "Op een bed", "In een voederbak (kribbe)", "In een mooi versierd houten wiegje"],
                 correct: "In een voederbak (kribbe)",
                 bijbelplaats: "Lucas 2:7"
             },
             {
                 vraag: "Aan wie verschenen de engelen om als eersten te vertellen dat Jezus geboren was?",
-                antwoorden: ["Aan koningen", "Aan priesters", "Aan herders in het veld", "Aan vissers aan de oever van een meer"],
+                antwoorden: ["Aan de soldaten die de weg bewaakten", "Aan priesters", "Aan herders in het veld", "Aan vissers aan de oever van een meer"],
                 correct: "Aan herders in het veld",
                 bijbelplaats: "Lucas 2:8-14"
             },
             {
                 vraag: "Wat deed Jezus toen hij twaalf jaar oud was, en zijn ouders hem na drie dagen zoeken terugvonden in Jeruzalem?",
-                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij hielp een timmerman in zijn werkplaats met het zagen en schaven van hout", "Hij speelde met andere kinderen"],
+                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij hielp bij het schoonmaken van de tempel", "Hij speelde met andere kinderen"],
                 correct: "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen",
                 bijbelplaats: "Lucas 2:41-47"
             },
@@ -1226,20 +1226,20 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 5:1-7"
             },
             {
-                vraag: "Welke gelijkenis vertelde Jezus over een man uit Samaria die een gewonde reiziger hielp die door rovers was overvallen?",
+                vraag: "Welke gelijkenis vertelde Jezus over een reiziger die door rovers werd overvallen, en over wie hem uiteindelijk hielp?",
                 antwoorden: ["De verloren zoon", "De barmhartige Samaritaan", "De rijke man en Lazarus", "De zaaier"],
                 correct: "De barmhartige Samaritaan",
                 bijbelplaats: "Lucas 10:30-37"
             },
             {
-                vraag: "Bij welke twee zussen kwam Jezus op bezoek, waarbij Marta druk in de weer was en Maria aan zijn voeten zat te luisteren?",
+                vraag: "Jezus kwam op bezoek bij twee zussen. De één was druk met het eten, de ander zat aan zijn voeten te luisteren. Hoe heetten ze?",
                 antwoorden: ["Lea en Rachel", "Marta en Maria", "Hanna en Naomi", "Mirjam en Sara"],
                 correct: "Marta en Maria",
                 bijbelplaats: "Lucas 10:38-42"
             },
             {
                 vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
-                antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed", "Een wet"],
+                antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed dat je elke dag hardop uitspreekt", "Een regel waar iedereen zich aan moest houden"],
                 correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
                 bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
             }
