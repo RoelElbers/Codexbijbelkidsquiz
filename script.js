@@ -535,7 +535,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "Het 'negende uur' was het uur waarop Jezus stierf. Hoe laat was dat ongeveer, en wat gebeurde er in de tempel op dat uur?",
                 antwoorden: [
                     "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
-                    "Ongeveer negen uur 's ochtends — het begin van de werkdag",
+                    "Ongeveer negen uur 's ochtends — het uur waarop de tempelpoorten opengingen",
                     "Precies om middernacht — het uur waarop de tempelwachters van dienst wisselden",
                     "Bij zonsopgang — het uur van het ochtendoffer"
                 ],
