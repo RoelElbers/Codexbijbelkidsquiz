@@ -702,7 +702,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             }
         ]
     },
-    // Marcus — vragenpool (73 vragen: beginner 16, advanced 24, expert 33)
+    // Marcus — vragenpool (72 vragen: beginner 17, advanced 24, expert 31)
     "Marcus": {
         beginner: [
             {
@@ -801,6 +801,12 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
                 correct: "Een duif",
                 bijbelplaats: "Marcus 1:10"
+            },
+            {
+                vraag: "Welke gelijkenis vertelde Jezus over een man die zaad zaaide op vier verschillende soorten grond?",
+                antwoorden: ["De gelijkenis van de verloren zoon", "De gelijkenis van de zaaier", "De gelijkenis van de talenten", "De gelijkenis van de wijngaard"],
+                correct: "De gelijkenis van de zaaier",
+                bijbelplaats: "Marcus 4:3-9"
             }
         ],
         advanced: [
@@ -958,7 +964,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
         expert: [
             {
                 vraag: "Wat is een opvallend woord dat in het evangelie van Marcus heel vaak voorkomt, en dat de snelheid van zijn verhaal aangeeft?",
-                antwoorden: ["Vrede", "Meteen (of terstond)", "Wacht", "Dat mag je niet doen"],
+                antwoorden: ["Vrede", "Meteen (of terstond)", "Wacht", "Zwijg"],
                 correct: "Meteen (of terstond)",
                 bijbelplaats: "Marcus 1:10, 1:18 en vele andere plaatsen"
             },
@@ -976,33 +982,22 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Hoe noemde de bezetene in het gebied van de Gerasenen de demonen die in hem zaten?",
-                antwoorden: ["Wij zijn de heersers van heel dit gebied", "Legioen want we zijn met velen", "Storm", "Beëlzebul"],
-                correct: "Legioen want we zijn met velen",
+                antwoorden: ["Wij zijn de heersers van heel dit gebied", "Legioen, want we zijn met velen", "Storm", "Beëlzebul"],
+                correct: "Legioen, want we zijn met velen",
                 bijbelplaats: "Marcus 5:9"
             },
             {
-                vraag: "Welke gelijkenis vertelde Jezus over een man die zaad zaaide op vier verschillende soorten grond?",
-                antwoorden: ["De gelijkenis van de verloren zoon", "De gelijkenis van de zaaier", "De gelijkenis van de talenten", "De gelijkenis van de wijngaard"],
-                correct: "De gelijkenis van de zaaier",
-                bijbelplaats: "Marcus 4:3-9"
-            },
-            {
-                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel 'een stem roept in de woestijn, maak de weg van de Heer gereed' komt inderdaad uit Jesaja. Maar de andere regel — 'Ik zend mijn bode voor je uit, hij zal een weg voor je banen' — komt uit een ander Bijbelboek. Uit welk boek komt die regel?",
+                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel over de stem die roept in de woestijn komt daar inderdaad vandaan. Maar de regel ervoor — 'Ik zend mijn bode voor je uit' — komt uit een ander boek. Uit welk boek komt die regel?",
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
                 bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
             },
             {
-                vraag: "Komen Lazarus en zijn zusters Marta en Maria voor in het Marcus-evangelie?",
-                antwoorden: ["Ja, alle drie komen ze meerdere keren in het Marcus-evangelie voor", "Alleen Lazarus", "Alleen Marta en Maria", "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)"],
-                correct: "Nee, ze komen niet in Marcus voor (wel in Lucas en Johannes)",
-                bijbelplaats: "Lucas 10:38-42 · Johannes 11"
-            },
-            {
                 vraag: "Welk Aramees woord sprak Jezus uit toen hij het dochtertje van Jaïrus opwekte uit de dood?",
-                antwoorden: ["Korban", "Talita koemi (Meisje, sta op)", "Effata", "Maranata"],
-                correct: "Talita koemi (Meisje, sta op)",
-                bijbelplaats: "Marcus 5:41"
+                antwoorden: ["Korban", "Talita koemi", "Effata", "Maranata"],
+                correct: "Talita koemi",
+                bijbelplaats: "Marcus 5:41",
+                uitleg: "Talita koemi betekent 'Meisje, sta op'. Marcus schrijft vaker een Aramees woord op zoals Jezus het uitsprak, en zet de vertaling er meteen achter — hij schreef voor lezers die die taal niet kenden. Zo doet hij het ook bij effata ('Ga open') en abba ('Vader')."
             },
             {
                 vraag: "Welke drie leerlingen nam Jezus mee de berg op bij zijn verheerlijking, en ook mee naar Getsemane?",
@@ -1012,7 +1007,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Jezus riep aan het kruis in zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
-                antwoorden: ["In uw handen leg ik mijn geest, o hemelse Vader", "Mijn God, mijn God, waarom hebt U mij verlaten?", "Geprezen zij Uw heilige naam", "Vergeef ons onze schulden"],
+                antwoorden: ["Mijn God, mijn God, waarom hebt U mij verlaten?", "Meisje, sta op", "Ga open", "Kom, onze Heer!"],
                 correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
             },
@@ -1026,7 +1021,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten die muntjes?",
                 antwoorden: ["Denariën", "Lepta", "Ponden", "Talenten"],
                 correct: "Lepta",
-                bijbelplaats: "Marcus 12:42"
+                bijbelplaats: "Marcus 12:42",
+                uitleg: "In het Grieks heet dit muntje een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je bij Geld in de Bijbel."
             },
             {
                 vraag: "De Romeinen verdeelden de nacht in 'nachtwaken'. In hoeveel wachten, en hoe lang duurde elk ongeveer?",
@@ -1040,22 +1036,24 @@ Omdat de nacht in de winter langer is dan in de zomer, duurde een nachtwaak niet
 Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waakzaam blijven.`
             },
             {
-                vraag: "Hoe lang was Israël in de tijd van de Bijbel ongeveer van noord naar zuid?",
+                vraag: "In de tijd van de Bijbel liep Israël van Dan in het noorden tot Berseba in het zuiden. Hoeveel kilometer was dat ongeveer?",
                 antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
                 correct: "Ongeveer 240 kilometer",
-                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van het noorden (de stad Dan) tot het zuiden (de stad Berseba) was het ongeveer 240 kilometer — in de Bijbel heet dat \"van Dan tot Berseba\". Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen. Daardoor kon Jezus in zijn leven veel verschillende plaatsen bezoeken."
+                bijbelplaats: "1 Koningen 4:25",
+                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen. Die uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
             },
             {
                 vraag: "In de Bijbel lezen we dat Jezus soms een hoge berg opging. Wat is de hoogste berg van Israël?",
-                antwoorden: ["De berg Tabor", "De berg Sinaï, in de woestijn van Egypte", "De berg Hermon", "De Olijfberg"],
+                antwoorden: ["De berg Tabor", "De berg Sinaï", "De berg Hermon", "De Olijfberg"],
                 correct: "De berg Hermon",
+                bijbelplaats: "Marcus 9:2",
                 uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager. De berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit. En de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
             },
             {
                 vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
                 antwoorden: ["Christus", "Rabbi", "Profeet", "Immanuël"],
                 correct: "Christus",
-                bijbelplaats: "Johannes 1:41"
+                bijbelplaats: "Marcus 8:29"
             },
             {
                 vraag: 'Volgens Marcus stierf Jezus op het "negende uur". Hoe laat was dat ongeveer?',
@@ -1073,7 +1071,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 ],
                 correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
                 bijbelplaats: "Marcus 10:25-27",
-                uitleg: `Wat bedoelde Jezus dan wél? Waarschijnlijk juist een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+                uitleg: `Het is een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
 
 En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
             },
@@ -1124,7 +1122,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
-                antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een hangmat die tussen de masten was gespannen", "De voorplecht, waar het droogst was"],
+                antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een net dat achterin was opgehangen om op te liggen", "De voorplecht, waar het droogst was"],
                 correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
                 bijbelplaats: "Marcus 4:38",
                 uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Papias, een bisschop uit de tweede eeuw, schrijft dat Marcus opschreef wat Petrus vertelde — en Petrus was die nacht wél in de boot."
@@ -1134,7 +1132,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden", "Er lopen warme bronnen onder het meer die het water doen koken", "Het meer staat in verbinding met de zee, waardoor er vloedgolven komen", "De storm kwam altijd rond dezelfde tijd van het jaar"],
                 correct: "Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden",
                 bijbelplaats: "Marcus 4:37",
-                uitleg: "Het meer van Galilea ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels. Boven het water hangt warme lucht. Komt er over de bergen koude lucht aan, dan zakt die naar beneden — koude lucht is zwaarder — en duwt de warme lucht omhoog. Precies zo ontstaan bij ons onweersbuien als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
+                uitleg: "Wind ontstaat doordat warme en koude lucht op elkaar botsen. Warme lucht is licht en stijgt op, koude lucht is zwaar en zakt naar beneden. Waar die twee elkaar tegenkomen gaat de lucht bewegen, en hoe groter het verschil, hoe harder het waait.\n\nBij het meer van Galilea komt dat verschil bijna dagelijks terug. Het meer ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels, en boven het water hangt warme lucht. Waait er over de bergen koude lucht aan, dan stort die de kom in, duwt de warme lucht omhoog en jaagt het water op. Bij ons ontstaat op dezelfde manier een onweersbui, als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
             },
             {
                 vraag: "Vier mannen braken het dak open om een verlamde bij Jezus te brengen. Hoe kon dat zomaar?",
@@ -1145,7 +1143,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
-                antwoorden: ["Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerdieren"],
+                antwoorden: ["Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
                 correct: "Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden",
                 bijbelplaats: "Marcus 11:15"
             },
@@ -1156,7 +1154,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Marcus 11:17"
             },
             {
-                vraag: "Een vrouw zegt tegen Jezus dat zelfs de hondjes onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
+                vraag: "Een niet-Joodse vrouw vroeg Jezus haar dochter te genezen. Zij zei dat zelfs de honden onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
                 antwoorden: ["Ook wie niet aan tafel zit, mag iets van de overvloed krijgen", "Honden waren heilige dieren en mochten meeëten", "Ze had zelf honger en vroeg om eten", "Het eten dat viel, was niet meer rein en werd weggegooid"],
                 correct: "Ook wie niet aan tafel zit, mag iets van de overvloed krijgen",
                 bijbelplaats: "Marcus 7:28"
