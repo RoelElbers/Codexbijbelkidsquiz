@@ -1428,7 +1428,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de gelijkenis van de ponden geeft een edelman zijn dienaren geld om mee te handelen. Welke geldmaat deelde hij uit?",
-                antwoorden: ["Een talent", "Een pond (mina)", "Een denarie", "Een penning"],
+                antwoorden: ["Een talent", "Een pond (mina)", "Een denarie", "Een sikkel"],
                 correct: "Een pond (mina)",
                 bijbelplaats: "Lucas 19:13"
             },
@@ -1865,7 +1865,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
-                antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar penningen"],
+                antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar muntjes"],
                 correct: "Driehonderd denarie (bijna een jaarloon)",
                 bijbelplaats: "Johannes 12:5",
                 uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
