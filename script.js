@@ -140,7 +140,7 @@ function openTabblad(url) {
 //
 // Buiten de nummering liep nog een losse ronde over de drie talen van Israël.
 const vragenData = {
-    // Matteüs — vragenpool (88 vragen: beginner 24, advanced 21, expert 43)
+    // Matteüs — vragenpool (87 vragen: beginner 24, advanced 21, expert 42)
     "Matteüs": {
         beginner: [
             {
@@ -445,7 +445,7 @@ const vragenData = {
             },
             {
                 vraag: "Waarmee begint het evangelie van Matteüs?",
-                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met de schepping", "Met de aankondiging van de engel aan Maria", "Met een lied"],
+                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met een verhaal over de schepping", "Met de aankondiging van de engel aan Maria", "Met een lied"],
                 correct: "Met een geslachtsregister vanaf Abraham",
                 bijbelplaats: "Matteüs 1:1-17"
             },
@@ -463,7 +463,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat betekent de naam Immanuël, die in Matteüs wordt uitgelegd?",
-                antwoorden: ["Redder", "God met ons", "Koning der koningen", "Vredevorst"],
+                antwoorden: ["God hoort", "God met ons", "Wie is als God", "God is mijn kracht"],
                 correct: "God met ons",
                 bijbelplaats: "Matteüs 1:23"
             },
@@ -495,14 +495,8 @@ Rond de lente, de tijd waarin dit verhaal speelt, kwam het ongeveer hierop neer:
 Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het einde van de nacht, vlak voordat het licht werd.`
             },
             {
-                vraag: "Welke lengtemaat gebruikt Jezus in de Bergrede, als hij zegt dat niemand door bezorgdheid iets aan zijn leven kan toevoegen?",
-                antwoorden: ["Een el", "Een stadie", "Een mijl", "Een voet"],
-                correct: "Een el",
-                bijbelplaats: "Matteüs 6:27"
-            },
-            {
                 vraag: "Een denarie was een Romeinse zilveren munt. Hoeveel was die ongeveer waard?",
-                antwoorden: ["Het loon voor één dag werk", "Het loon voor één uur", "Het loon voor één jaar", "Niets, het was de kleinste munt"],
+                antwoorden: ["Het loon voor één dag werk", "Het loon voor één uur", "Het loon voor één jaar", "Een paar cent, het was de kleinste munt"],
                 correct: "Het loon voor één dag werk",
                 bijbelplaats: "Matteüs 20:2"
             },
@@ -538,7 +532,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 5:3"
             },
             {
-                vraag: 'Op het "negende uur" gebeurde er iets belangrijks bij het kruis. Wat was dat uur ongeveer, en wat hoorde er nog meer bij?',
+                vraag: "Het 'negende uur' was het uur waarop Jezus stierf. Hoe laat was dat ongeveer, en wat gebeurde er in de tempel op dat uur?",
                 antwoorden: [
                     "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
                     "Ongeveer negen uur 's ochtends — het begin van de werkdag",
@@ -550,7 +544,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: in het boek Handelingen lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
             },
             {
-                vraag: "Met hoeveel broden en vissen gaf Jezus een grote menigte te eten?",
+                vraag: "Met hoeveel broden en vissen gaf Jezus vijfduizend mannen te eten?",
                 antwoorden: ["Vijf broden en twee vissen", "Twee broden en vijf vissen", "Tien broden en tien vissen", "Eén brood en één vis"],
                 correct: "Vijf broden en twee vissen",
                 bijbelplaats: "Matteüs 14:13-21"
@@ -569,7 +563,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
-                antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een soort lamp", "Een lengtemaat"],
+                antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een zak waarin je graan naar de markt droeg", "Een lengtemaat"],
                 correct: "Een maatbak om graan af te meten",
                 bijbelplaats: "Matteüs 5:15",
                 uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
@@ -657,13 +651,13 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon dat zomaar?",
-                antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, dat was verboden en daarom werd hij zelf gestraft", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
+                antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, alleen een rechter mocht iemand opsluiten", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
                 correct: "Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht",
                 bijbelplaats: "Matteüs 18:30"
             },
             {
                 vraag: "Een zieke vrouw raakte \"de zoom van zijn kleed\" aan. Wat zat daar precies?",
-                antwoorden: ["Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken", "De gouden rand die alleen leraren mochten dragen", "Een strook met daarop zijn naam geborduurd", "De onderkant van de mantel, die het dichtst bij de grond hing"],
+                antwoorden: ["Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken", "De gouden rand die alleen leraren mochten dragen", "Een strook met daarop zijn naam geborduurd", "De rand die je opvouwde om er geld in te bewaren"],
                 correct: "Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken",
                 bijbelplaats: "Matteüs 9:20",
                 uitleg: "In Numeri 15 staat dat het volk kwastjes aan de hoeken van hun kleren moest maken, met een blauwe draad erin. Ze waren bedoeld als geheugensteun: zie je ze, dan denk je aan Gods geboden. Jezus droeg ze dus gewoon, zoals iedere Joodse man. Later verwijt hij sommige leiders dat ze hun kwastjes extra lang maken — hetzelfde verwijt als bij de brede gebedsriemen: goed bedoeld, maar bedoeld om gezien te worden."
@@ -682,7 +676,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Toen Jezus bij het huis van Jaïrus kwam, was diens dochter net gestorven. Er waren fluitspelers en een luidruchtige menigte. Wat deden die daar?",
-                antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij vierden feest omdat het meisje ooit beter zou worden", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
+                antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij hadden een dokter laten halen en wachtten tot die kwam", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
                 correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
                 bijbelplaats: "Matteüs 9:23",
                 uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten hem uit. Toen nam hij haar hand en stond ze op."
