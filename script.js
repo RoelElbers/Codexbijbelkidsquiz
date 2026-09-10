@@ -157,7 +157,7 @@ const vragenData = {
             },
             {
                 vraag: "Wie doopte Jezus in de rivier de Jordaan?",
-                antwoorden: ["Petrus", "Zijn eigen vader Jozef", "Johannes de Doper", "Paulus"],
+                antwoorden: ["Petrus", "Zijn vader en moeder", "Johannes de Doper", "Paulus"],
                 correct: "Johannes de Doper",
                 bijbelplaats: "Matteüs 3:13-17"
             },
@@ -181,8 +181,8 @@ const vragenData = {
             },
             {
                 vraag: "Wat deed Jezus toen er een storm op het meer was en de leerlingen bang werden?",
-                antwoorden: ["Hij sliep gewoon verder", "Hij maakte dat de storm ging liggen", "Hij verliet de boot en liep over het water naar de overkant", "Hij nam het stuur over en leidde de boot veilig naar de haven"],
-                correct: "Hij maakte dat de storm ging liggen",
+                antwoorden: ["Hij ging gewoon weer verder slapen toen ze hem wakker maakten", "Hij sprak een woord, en de storm hield op", "Hij stapte uit de boot en liep over het water naar de overkant", "Hij nam zelf het roer over"],
+                correct: "Hij sprak een woord, en de storm hield op",
                 bijbelplaats: "Matteüs 8:23-27"
             },
             {
@@ -237,7 +237,7 @@ const vragenData = {
             },
             {
                 vraag: "Jezus vertelde over een verstandige man die zijn huis bouwde zodat het in de storm bleef staan. Waarop bouwde hij?",
-                antwoorden: ["Op de rots", "Op het zand", "Op het water", "Op een hooiberg"],
+                antwoorden: ["Op de rots", "Op het zand", "Op het water", "Op harde kleigrond"],
                 correct: "Op de rots",
                 bijbelplaats: "Matteüs 7:24-27",
                 uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar zijn woorden luistert én ze ook doet."
@@ -257,7 +257,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
-                antwoorden: ["Wees niet bang, hij is naar Galilea gegaan", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
+                antwoorden: ["Wacht hier tot hij terugkomt", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
                 correct: "Hij is opgestaan, hij is hier niet",
                 bijbelplaats: "Matteüs 28:5-6"
             },
@@ -269,25 +269,25 @@ const vragenData = {
             },
             {
                 vraag: "Jezus zei dat zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
-                antwoorden: ["zout", "suiker", "peper", "meel"],
-                correct: "zout",
+                antwoorden: ["Zout", "Suiker", "Peper", "Meel"],
+                correct: "Zout",
                 bijbelplaats: "Matteüs 5:13"
             },
             {
                 vraag: "Jezus zei tegen zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
-                antwoorden: ["het licht", "het vuur", "de wind", "het water"],
+                antwoorden: ["het licht", "het vuur", "de wind", "het zout"],
                 correct: "het licht",
                 bijbelplaats: "Matteüs 5:14"
             },
             {
                 vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde hij daarmee?",
-                antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze moesten stoppen met vissen"],
+                antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze reddingszwemmers zouden worden"],
                 correct: "Dat ze mensen bij God zouden brengen",
                 bijbelplaats: "Matteüs 4:19"
             },
             {
                 vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
-                antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de boeken bij van de tempelschat in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+                antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
                 correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
                 bijbelplaats: "Matteüs 9:9"
             }
