@@ -1265,7 +1265,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 15:11-32"
             },
             {
-                vraag: "Wat deed de vader in de gelijkenis van de verloren zoon toen hij zijn zoon zag terugkomen?",
+                vraag: "Wat deed de vader toen hij zijn zoon in de verte zag aankomen?",
                 antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet, omhelsde hem en kuste hem", "Hij vroeg eerst waar al het geld was gebleven", "Hij stuurde hem weg"],
                 correct: "Hij rende hem tegemoet, omhelsde hem en kuste hem",
                 bijbelplaats: "Lucas 15:20"
