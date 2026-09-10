@@ -830,10 +830,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zag Jezus een arme weduwe in de tempel doen, wat hij prees als groter dan wat alle rijken gaven?",
-                antwoorden: ["Ze bad lang", "Ze gaf twee penningen, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
-                correct: "Ze gaf twee penningen, alles wat ze had",
+                antwoorden: ["Ze bad lang", "Ze gaf twee kleine muntjes, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
+                correct: "Ze gaf twee kleine muntjes, alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44",
-                uitleg: "Twee penningen waren samen maar heel weinig waard — omgerekend zo'n anderhalf tot twee euro. Eén zo'n muntje was het allerkleinste dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
+                uitleg: "Die muntjes heetten lepta, en ze waren samen maar heel weinig waard — omgerekend zo'n twee tot drie euro, precies één quadrans. Eén lepton was het allerkleinste muntje dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
             },
             {
                 vraag: "Welke leerling sprak Jezus rechtstreeks aan toen hij zijn leerlingen in Getsemane slapend aantrof?",
@@ -1017,14 +1017,14 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Met welke munt liet Jezus de strikvraag over belasting aan de keizer beantwoorden — de munt met de afbeelding van de keizer erop?",
-                antwoorden: ["Een denarie", "Een talent", "Een pond", "Een penning"],
+                antwoorden: ["Een denarie", "Een talent", "Een pond", "Een sikkel"],
                 correct: "Een denarie",
                 bijbelplaats: "Marcus 12:15-16"
             },
             {
                 vraag: "De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten die muntjes?",
-                antwoorden: ["Denarie", "Penningen (lepta)", "Ponden", "Talenten"],
-                correct: "Penningen (lepta)",
+                antwoorden: ["Denariën", "Lepta", "Ponden", "Talenten"],
+                correct: "Lepta",
                 bijbelplaats: "Marcus 12:42"
             },
             {
