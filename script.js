@@ -713,7 +713,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Met wie eet Jezus aan tafel, tot afkeer van de Farizeeën?",
-                antwoorden: ["Met de Sadduceeën", "Met tollenaars en zondaars", "Met priesters", "Met soldaten"],
+                antwoorden: ["Met de Sadduceeën", "Met tollenaars en zondaars", "Met de leerlingen van Johannes de Doper", "Met soldaten"],
                 correct: "Met tollenaars en zondaars",
                 bijbelplaats: "Marcus 2:15-16"
             },
@@ -725,19 +725,19 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deed Jezus met het dochtertje van Jaïrus, dat was overleden?",
-                antwoorden: ["Hij begroef haar", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij gaf haar medicijnen", "Hij pakte haar bij de hand en beloofde dat de dokters haar snel beter zouden maken"],
+                antwoorden: ["Hij zei tegen de familie dat ze moesten blijven bidden", "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op", "Hij gaf haar medicijnen", "Hij pakte haar bij de hand en beloofde dat de dokters haar snel beter zouden maken"],
                 correct: "Hij nam haar bij de hand en zei 'Talita koemi' (Meisje, sta op) en ze stond op",
                 bijbelplaats: "Marcus 5:41-42"
             },
             {
                 vraag: "Wat deed Jezus toen mensen kinderen bij hem brachten en de leerlingen dat wilden tegenhouden?",
-                antwoorden: ["Hij liet hen wegsturen", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk", "Hij stuurde de kinderen weg om verder te kunnen preken"],
+                antwoorden: ["Hij liet ze wegsturen, want ze maakten veel te veel lawaai", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk, die vonden dat ze terug moesten komen als ze wat ouder waren", "Hij zei dat ze de volgende dag terug mochten komen, want hij was net begonnen met een lange preek"],
                 correct: "Hij omarmde de kinderen en zegende hen",
                 bijbelplaats: "Marcus 10:13-16"
             },
             {
                 vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
-                antwoorden: ["Een paard", "Een kameel", "Een veulen van een ezel", "Een groot wit strijdpaard"],
+                antwoorden: ["Een muildier", "Een kameel", "Een veulen van een ezel", "Een groot wit strijdpaard"],
                 correct: "Een veulen van een ezel",
                 bijbelplaats: "Marcus 11:7",
                 uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet hij zien wat voor koning hij wilde zijn."
@@ -756,8 +756,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Waar werd Jezus gekruisigd, volgens Marcus?",
-                antwoorden: ["Op de Olijfberg", "Op Golgota, wat 'schedelplaats' betekent", "In de tuin van Getsemane bij de olijfbomen", "Bij de Jordaan"],
-                correct: "Op Golgota, wat 'schedelplaats' betekent",
+                antwoorden: ["Op de Olijfberg", "Op Golgota", "In de tuin van Getsemane bij de olijfbomen", "Bij de Jordaan"],
+                correct: "Op Golgota",
                 bijbelplaats: "Marcus 15:22"
             },
             {
@@ -780,8 +780,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
-                antwoorden: ["Het land Israël op de kaart", "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
-                correct: "Het koninkrijk van God op aarde: dat mensen met elkaar omgaan zoals God het bedoeld heeft",
+                antwoorden: ["Het land Israël op de kaart", "Dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
+                correct: "Dat mensen met elkaar omgaan zoals God het bedoeld heeft",
                 bijbelplaats: "Marcus 1:15"
             },
             {
@@ -791,9 +791,9 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
             },
             {
-                vraag: "Welk muntje was het allerkleinste dat in de Bijbel voorkomt?",
-                antwoorden: ["Penning", "Denarie", "Talent", "Pond"],
-                correct: "Penning",
+                vraag: "Een arme weduwe gooide twee heel kleine muntjes in de offerkist. Wat zei Jezus daarover?",
+                antwoorden: ["Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had", "Dat zij de volgende keer wat meer moest meebrengen", "Dat God haar geld zou verdubbelen als beloning", "Dat niemand mocht zien wat een ander in de offerkist deed"],
+                correct: "Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
             }
         ],
