@@ -98,7 +98,7 @@ const ONTDEK_GELD = [
 const ONTDEK_MATEN = [
     { kop: "Lengte" },
     { item: "<span class=\"naslag-term\">El</span> — ongeveer 45 centimeter, zo lang als de afstand van je elleboog tot je vingertoppen. Daar komt de naam vandaan. Omdat niet iedereen even lange armen heeft, was hij niet overal precies gelijk." },
-    { item: "<span class=\"naslag-term\">Stadie</span> — een afstandsmaat van ongeveer 185 meter. Emmaüs lag zo'n zestig stadiën van Jeruzalem: bijna elf kilometer." },
+    { item: "<span class=\"naslag-term\">Stadie</span> — een afstandsmaat van ongeveer 185 meter. Emmaüs lag zo'n zestig stadiën van Jeruzalem: ruim elf kilometer." },
     { item: "<span class=\"naslag-term\">Mijl</span> — de Romeinse mijl was ongeveer 1.500 meter (anderhalve kilometer), oorspronkelijk duizend dubbele passen van een soldaat. Jezus zei: als iemand je dwingt één mijl mee te gaan, ga er dan twee." },
     { kop: "Inhoud" },
     { noot: "Hier weten we het minder zeker: er bestond geen officiële standaard, en de potten en vaten van toen waren niet allemaal even groot." },

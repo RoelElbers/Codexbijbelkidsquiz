@@ -1360,11 +1360,11 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         ],
         expert: [
             {
-            vraag: "Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden?",
-            antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
-            correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
-            bijbelplaats: "Lucas 1:1-4"
-        },
+                vraag: "Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden?",
+                antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
+                correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
+                bijbelplaats: "Lucas 1:1-4"
+            },
             {
                 vraag: "Hoe heet de beroemde lofzang van Maria, waarin zij God prijst nadat de engel haar de geboorte van Jezus had aangekondigd?",
                 antwoorden: ["Het Benedictus", "Het Magnificat", "Het Nunc Dimittis", "Het Gloria"],
@@ -1406,7 +1406,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was", "Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Vooruitgaan om veilige slaapplaatsen te regelen voor Jezus en de twaalf apostelen"],
                 correct: "Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was",
                 bijbelplaats: "Lucas 10:1-9",
-                uitleg: "Het verschil zit in één woord. In het Grieks staat er hebdomèkonta, 'zeventig', en in de meeste handschriften staat daar duo achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet. Beide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
+                uitleg: "Het verschil zit in één woord. In het Grieks staat er <span class='grieks'>ἑβδομήκοντα</span> (hebdomēkonta), 'zeventig', en in de meeste handschriften staat daar <span class='grieks'>δύο</span> (duo) achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet. Beide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
             },
             {
                 vraag: "Hoe heette de bedelaar in de gelijkenis over de rijke man, die in de schoot van Abraham terechtkwam?",
