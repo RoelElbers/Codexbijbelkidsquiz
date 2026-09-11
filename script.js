@@ -1687,7 +1687,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 11:25"
             },
             {
-                vraag: "Wat zei Jezus dat aan zijn leerlingen kenmerkend zou zijn voor zijn volgelingen?",
+                vraag: "Waaraan zouden de mensen volgens Jezus kunnen zien dat iemand bij hem hoort?",
                 antwoorden: ["Dat ze veel bidden", "Dat ze elkaar liefhebben", "Dat ze veel kennis hebben", "Dat ze rijk zijn"],
                 correct: "Dat ze elkaar liefhebben",
                 bijbelplaats: "Johannes 13:34-35"
@@ -1700,7 +1700,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat schreef Pilatus op het bordje boven het kruis, in drie talen?",
-                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "De Zoon van God"],
+                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "Hij noemde zichzelf koning"],
                 correct: "Jezus van Nazaret, de koning van de Joden",
                 bijbelplaats: "Johannes 19:19-20"
             },
@@ -1717,9 +1717,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 3:1"
             },
             {
-                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat Híj de manier is om naar binnen te gaan. Hoe noemde Jezus zichzelf in dit beeld?",
-                antwoorden: ["de deur", "de muur", "het dak", "het raam"],
-                correct: "de deur",
+                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat de schapen alleen langs hem naar binnen konden. Hoe noemde hij zichzelf in dat beeld?",
+                antwoorden: ["De deur", "De muur", "Het dak", "Het raam"],
+                correct: "De deur",
                 bijbelplaats: "Johannes 10:7-9"
             },
             {
@@ -1735,9 +1735,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 6:35"
             },
             {
-                vraag: "Jezus zei: 'Ik ben de wijnstok, jullie zijn de ___.' Wat zijn de gelovigen volgens dit beeld?",
-                antwoorden: ["de ranken", "de bladeren", "de wortels", "de druiven"],
-                correct: "de ranken",
+                vraag: "Jezus zei dat wie bij hem blijft, veel vrucht draagt. Wat zijn de gelovigen in dat beeld?",
+                antwoorden: ["De ranken", "De bladeren", "De wortels", "De druiven"],
+                correct: "De ranken",
                 bijbelplaats: "Johannes 15:5"
             },
             {
