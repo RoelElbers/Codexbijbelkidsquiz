@@ -594,7 +594,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 11:29-30"
             },
             {
-                vraag: "Matteüs vertelt over de Sadduceeën en zegt er meteen bij wat hen bijzonder maakte. Wat geloofden zij niet?",
+                vraag: "Matteüs vertelt over de sadduceeën en zegt er meteen bij wat hen bijzonder maakte. Wat geloofden zij niet?",
                 antwoorden: ["Dat de doden zullen opstaan", "Dat de sabbat gehouden moest worden", "Dat God de wereld heeft gemaakt", "Dat Mozes de wet heeft ontvangen"],
                 correct: "Dat de doden zullen opstaan",
                 bijbelplaats: "Matteüs 22:23"
@@ -712,8 +712,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 1:9"
             },
             {
-                vraag: "Met wie eet Jezus aan tafel, tot afkeer van de Farizeeën?",
-                antwoorden: ["Met de Sadduceeën", "Met tollenaars en zondaars", "Met de leerlingen van Johannes de Doper", "Met soldaten"],
+                vraag: "Met wie eet Jezus aan tafel, tot afkeer van de farizeeën?",
+                antwoorden: ["Met de sadduceeën", "Met tollenaars en zondaars", "Met de leerlingen van Johannes de Doper", "Met soldaten"],
                 correct: "Met tollenaars en zondaars",
                 bijbelplaats: "Marcus 2:15-16"
             },
@@ -1712,8 +1712,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Een man genaamd Nikodemus kwam 's nachts bij Jezus op bezoek. Tot welke groep behoorde hij?",
-                antwoorden: ["De Farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
-                correct: "De Farizeeën",
+                antwoorden: ["De farizeeën", "De Romeinse soldaten", "De tollenaars", "De vissers"],
+                correct: "De farizeeën",
                 bijbelplaats: "Johannes 3:1"
             },
             {
@@ -3928,8 +3928,8 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus vertelt over zijn leven vóór hij Jezus volgde. Tot welke Joodse groep hoorde hij?",
-            antwoorden: ["De Farizeeën", "De Sadduceeën", "De Schriftgeleerden", "De Essenen"],
-            correct: "De Farizeeën",
+            antwoorden: ["De farizeeën", "De sadduceeën", "De schriftgeleerden", "De essenen"],
+            correct: "De farizeeën",
             bijbelplaats: "Filippenzen 3:5"
         },
         {
@@ -4517,7 +4517,7 @@ vragenData["Timoteüs & Titus"] = {
     expert: [
         {
             vraag: "Paulus kijkt in zijn brief aan Timoteüs terug op zijn eigen verleden, en hij verzacht niets. Hoe noemt hij zichzelf zoals hij vroeger was?",
-            antwoorden: ["Een godslasteraar en een vervolger", "Een vrome Farizeeër", "Een goede Jood", "Een rechtvaardig man die altijd Gods wet volgde"],
+            antwoorden: ["Een godslasteraar en een vervolger", "Een vrome farizeeër", "Een goede Jood", "Een rechtvaardig man die altijd Gods wet volgde"],
             correct: "Een godslasteraar en een vervolger",
             bijbelplaats: "1 Timoteüs 1:13"
         },
