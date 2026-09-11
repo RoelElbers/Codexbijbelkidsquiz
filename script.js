@@ -1360,7 +1360,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         ],
         expert: [
             {
-            vraag: "Lucas begint zijn evangelie met een korte opdracht aan een man die Theofilus heet. Daarin legt hij uit waarom hij dit boek geschreven heeft: hij heeft alles zorgvuldig nagegaan en met ooggetuigen gesproken. Wat wilde Lucas daarmee bereiken?",
+            vraag: "Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden?",
             antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
             correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
             bijbelplaats: "Lucas 1:1-4"
@@ -1385,7 +1385,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat overkwam Zacharias toen hij de engel Gabriël niet geloofde over de geboorte van zijn zoon?",
-                antwoorden: ["Hij werd blind", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw", "Hij kon niet meer horen totdat het kind een naam had gekregen"],
+                antwoorden: ["Hij werd blind", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw", "Hij kon een jaar lang de tempel niet meer in"],
                 correct: "Hij kon niet meer spreken tot zijn zoon werd geboren",
                 bijbelplaats: "Lucas 1:18-22"
             },
@@ -1402,11 +1402,11 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 3:23-38"
             },
             {
-                vraag: "Hoeveel andere leerlingen, naast de twaalf apostelen, zond Jezus uit, twee aan twee, om hem voor te gaan?",
-                antwoorden: ["24", "40", "72", "100"],
-                correct: "72",
-                bijbelplaats: "Lucas 10:1",
-                uitleg: "De twee beroemdste oude bijbelhandschriften zijn het hier niet met elkaar eens. In de Codex Vaticanus staat \"tweeënzeventig\", in de Codex Sinaïticus staat \"zeventig\". Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom staat het in de ene Bijbel net iets anders dan in de andere: in de Nieuwe Bijbelvertaling en in de katholieke traditie lees je 72, in de Statenvertaling 70. Beide getallen betekenen trouwens iets: zeventig is het aantal oudsten dat Mozes uitkoos, en tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde."
+                vraag: "Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen?",
+                antwoorden: ["Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was", "Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Vooruitgaan om veilige slaapplaatsen te regelen voor Jezus en de twaalf apostelen"],
+                correct: "Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was",
+                bijbelplaats: "Lucas 10:1-9",
+                uitleg: "Het verschil zit in één woord. In het Grieks staat er hebdomèkonta, 'zeventig', en in de meeste handschriften staat daar duo achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet. Beide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
             },
             {
                 vraag: "Hoe heette de bedelaar in de gelijkenis over de rijke man, die in de schoot van Abraham terechtkwam?",
@@ -1415,7 +1415,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 16:20"
             },
             {
-                vraag: "Hoeveel melaatsen genas Jezus tegelijk, waarvan er maar één terugkwam om God te danken (een Samaritaan)?",
+                vraag: "Hoeveel melaatsen genas Jezus tegelijk, waarvan er maar één terugkwam om God te danken?",
                 antwoorden: ["5", "7", "10", "12"],
                 correct: "10",
                 bijbelplaats: "Lucas 17:11-19"
@@ -1436,7 +1436,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Hoe ver lag het dorp Emmaüs van Jeruzalem, volgens Lucas?",
                 antwoorden: ["Tien stadiën", "Zestig stadiën", "Honderd stadiën", "Tweehonderd stadiën"],
                 correct: "Zestig stadiën",
-                bijbelplaats: "Lucas 24:13"
+                bijbelplaats: "Lucas 24:13",
+                uitleg: "Zestig stadiën is ruim elf kilometer — een wandeling van zo'n twee tot drie uur. Dat verklaart waarom de twee leerlingen onderweg alle tijd hadden om met hun onbekende reisgenoot te praten, en waarom ze 's avonds aandrongen dat hij bleef eten: het was te ver om nog terug te lopen. Welk dorp Emmaüs precies was, weet niemand zeker; er zijn meerdere plaatsen die er aanspraak op maken."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester laat de rentmeester twee schuldenaren hun schuld verlagen. Waarin waren die schulden uitgedrukt?",
@@ -1445,7 +1446,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 16:6-7"
             },
             {
-                vraag: "In de gelijkenis van de ponden deelt een edelman 'ponden' (mina) uit. Hoeveel daglonen was één pond waard?",
+                vraag: "Een edelman deelt in een gelijkenis geldmaten uit aan zijn dienaren. Hoeveel daglonen was zo'n geldmaat waard?",
                 antwoorden: ["Ongeveer 100 daglonen", "Ongeveer 6000 daglonen", "Eén dagloon", "Ongeveer 1000 daglonen"],
                 correct: "Ongeveer 100 daglonen",
                 bijbelplaats: "Lucas 19:13"
@@ -1454,7 +1455,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Een 'stadie' was een afstandsmaat. Ongeveer hoe lang was één stadie?",
                 antwoorden: ["Ongeveer 10 meter", "Ongeveer 185 meter", "Ongeveer 1 kilometer", "Ongeveer 5 kilometer"],
                 correct: "Ongeveer 185 meter",
-                bijbelplaats: "Lucas 24:13"
+                bijbelplaats: "Lucas 24:13",
+                uitleg: "Een stadie was ongeveer 185 meter. Het Griekse woord is stadion, en daar komt ons woord voor het sportveld vandaan: de hardloopbaan in een Grieks stadion was precies één stadie lang. In Nederlandse Bijbels staat het meervoud stadiën; verwar het niet met stadium, want dat betekent iets heel anders."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand 'honderd vat (bato) olie' schuldig. Ongeveer hoeveel liter was één vat?",
@@ -1464,8 +1466,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Een 'kor' was de grootste inhoudsmaat in de gelijkenissen. Hoe groot was die ongeveer?",
-                antwoorden: ["Ongeveer tien keer zo groot als een vat", "Ongeveer even groot als een vat", "Kleiner dan een vat", "Ongeveer honderd keer zo groot als een vat"],
-                correct: "Ongeveer tien keer zo groot als een vat",
+                antwoorden: ["Ongeveer 220 liter", "Ongeveer 22 liter", "Ongeveer 50 liter", "Ongeveer 2200 liter"],
+                correct: "Ongeveer 220 liter",
                 bijbelplaats: "Lucas 16:7"
             },
             {
@@ -1494,7 +1496,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
-                antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger", "Hogepriester in de tempel", "Rechter van de Hoge Raad"],
+                antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger in een provincie", "Hogepriester die de tempeldienst in Jeruzalem leidde", "Rechter in de Hoge Raad, de hoogste Joodse rechtbank"],
                 correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
                 bijbelplaats: "Lucas 3:1",
                 uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang. Lucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
@@ -1510,7 +1512,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
                 antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
                 correct: "Eén vastendag per jaar, op Grote Verzoendag",
-                bijbelplaats: "Lucas 18:12"
+                bijbelplaats: "Lucas 18:12",
+                uitleg: "De wet van Mozes kende maar één verplichte vastendag per jaar: Grote Verzoendag (Leviticus 16). Twee keer per week vasten was iets wat vrome farizeeën zichzelf oplegden, bovenop wat gevraagd werd — en juist daar gaat de gelijkenis over. De veertigdagentijd voor Pasen bestond toen nog niet; dat is een christelijk gebruik dat pas eeuwen later ontstond."
             },
             {
                 vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
@@ -1550,7 +1553,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 15:15"
             },
             {
-                vraag: "De zoon had willen eten van de peulen die de varkens kregen. Wat waren dat?",
+                vraag: "In de gelijkenis van de verloren zoon had de jongen willen eten van de peulen die de varkens kregen. Wat waren dat?",
                 antwoorden: ["De peulen van de johannesbroodboom, hard voer dat men aan vee gaf", "De schillen van gedroogde vijgen", "De doppen van noten die overbleven na het persen", "Restjes brood die van de tafel werden geveegd"],
                 correct: "De peulen van de johannesbroodboom, hard voer dat men aan vee gaf",
                 bijbelplaats: "Lucas 15:16"
