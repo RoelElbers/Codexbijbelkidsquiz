@@ -1566,7 +1566,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             }
         ]
     },
-    // Johannes — vragenpool (65 vragen: beginner 15, advanced 18, expert 32)
+    // Johannes — vragenpool (65 vragen: beginner 16, advanced 18, expert 31)
     "Johannes": {
         beginner: [
             {
@@ -1659,6 +1659,12 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Schapen", "Geiten", "Koeien", "Duiven"],
                 correct: "Schapen",
                 bijbelplaats: "Johannes 10:27"
+            },
+            {
+                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
+                antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
+                correct: "Nikodemus",
+                bijbelplaats: "Johannes 3:1-2"
             }
         ],
         advanced: [
@@ -1773,8 +1779,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         ],
         expert: [
             {
-                vraag: "Wat antwoordde Jezus toen Tomas vroeg hoe de leerlingen de weg naar de Vader konden kennen?",
-                antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood des levens", "Ik ben de opstanding en het eeuwige leven"],
+                vraag: "Tomas zei tegen Jezus dat de leerlingen niet wisten waar hij heen ging. Wat antwoordde Jezus daarop?",
+                antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood dat leven geeft", "Ik ben de opstanding en het eeuwige leven"],
                 correct: "Ik ben de weg, de waarheid en het leven",
                 bijbelplaats: "Johannes 14:5-6"
             },
@@ -1786,7 +1792,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Welke leerling vroeg in de afscheidsrede: 'Heer, laat ons de Vader zien'?",
-                antwoorden: ["Petrus", "Filippus", "Tomas", "Judas"],
+                antwoorden: ["Petrus", "Filippus", "Tomas", "Matteüs"],
                 correct: "Filippus",
                 bijbelplaats: "Johannes 14:8"
             },
@@ -1801,7 +1807,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["3", "6", "7", "12"],
                 correct: "6",
                 bijbelplaats: "Johannes 2:6",
-                uitleg: "Elk vat kon twee tot drie metreten bevatten — ongeveer 75 tot 115 liter per vat. Samen dus een enorme hoeveelheid wijn."
+                uitleg: "Een metreet was ongeveer 39 liter. Elk vat kon twee tot drie metreten bevatten, dus zo'n 80 tot 120 liter per stuk. Zes vaten samen leverden vijfhonderd tot zevenhonderd liter wijn — genoeg voor een heel dorp."
             },
             {
                 vraag: "Hoeveel vissen telde de wonderbaarlijke vangst toen de leerlingen na de opstanding het net binnenhaalden?",
@@ -1822,9 +1828,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 5:1-9"
             },
             {
-                vraag: "Filippus bracht zijn vriend Natanaël bij Jezus. Nog voordat ze ook maar één woord met elkaar hadden gewisseld, zei Jezus iets waardoor Natanaël stomverbaasd was: Jezus bleek hem al eerder gezien te hebben. Wat zei Jezus tegen hem?",
-                antwoorden: ["Dat hij hem onder de vijgenboom had zien zitten", "Dat hij hem in de tempel had zien bidden", "Dat hij hem op de markt had gezien", "Dat hij hem aan het werk had gezien"],
-                correct: "Dat hij hem onder de vijgenboom had zien zitten",
+                vraag: "Filippus bracht zijn vriend Natanaël bij Jezus. Nog voor ze elkaar gesproken hadden, zei Jezus dat hij hem al eerder had gezien. Waar had hij hem gezien?",
+                antwoorden: ["Onder de vijgenboom", "In de tempel, terwijl hij bad", "Op de markt", "Op het land, aan het werk"],
+                correct: "Onder de vijgenboom",
                 bijbelplaats: "Johannes 1:47-49",
                 uitleg: "Een vijgenboom gaf koele schaduw, en het was een geliefde plek om rustig te zitten lezen en bidden. Natanaël begreep meteen: deze man kent mij, terwijl we elkaar nooit ontmoet hebben."
             },
@@ -1849,10 +1855,10 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Het water zit zó vol zout dat er geen vis of plant in kan leven — vandaar de naam. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
             },
             {
-                vraag: "Hoeveel grote rivieren en meren heeft Israël?",
+                vraag: "Hoeveel grote rivieren en meren had Israël in de tijd van de Bijbel?",
                 antwoorden: ["2 rivieren en 3 meren", "1 rivier en 2 meren", "1 rivier en 3 meren", "3 rivieren en 1 meer"],
                 correct: "1 rivier en 3 meren",
-                uitleg: "Israël is een droog land, dus er is weinig water. Er is maar één grote rivier: de Jordaan. En er zijn drie meren: het Meer van Galilea en de Dode Zee zijn de bekende twee, en in het noorden ligt nog een klein meer, het Meer van Hula. De Jordaan verbindt het Meer van Galilea met de Dode Zee."
+                uitleg: "Israël was een droog land, dus er was weinig water. Er is maar één grote rivier: de Jordaan. En er waren drie meren: het Meer van Galilea en de Dode Zee zijn de bekende twee, en in het noorden lag nog een klein meer, het Hulameer. De Jordaan verbindt het Meer van Galilea met de Dode Zee. Het Hulameer bestaat vandaag bijna niet meer: in de jaren vijftig is het grotendeels drooggelegd om er landbouwgrond van te maken. Later is een klein deel weer onder water gezet, als natuurgebied waar trekvogels rusten."
             },
             {
                 vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
@@ -1862,27 +1868,27 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
-                antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld van wel driehonderd munten", "Een tijdsmaat"],
+                antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld, genoeg voor een heel huis", "Een tijdsmaat"],
                 correct: "Een gewicht (ongeveer 300 gram)",
                 bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
                 uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
             },
             {
                 vraag: "Maria zalfde Jezus' voeten met heel kostbare nardusolie. Hoeveel was die olie ongeveer waard?",
-                antwoorden: ["Driehonderd denarie (bijna een jaarloon)", "Drie denarie", "Vijftig denarie, ongeveer het loon van een maand", "Een paar muntjes"],
-                correct: "Driehonderd denarie (bijna een jaarloon)",
+                antwoorden: ["Driehonderd denarie", "Drie denarie", "Vijftig denarie", "Een paar muntjes"],
+                correct: "Driehonderd denarie",
                 bijbelplaats: "Johannes 12:5",
                 uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
             },
             {
                 vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
                 antwoorden: [
-                    "Rond het middaguur (ongeveer 12 uur)",
-                    "Negen uur 's ochtends",
-                    "Drie uur 's middags",
-                    "Bij zonsondergang (rond 6 uur 's avonds)"
+                    "Rond het middaguur (12 uur)",
+                    "'s Ochtends vroeg (9 uur)",
+                    "'s Middags laat (3 uur)",
+                    "Bij zonsondergang (6 uur 's avonds)"
                 ],
-                correct: "Rond het middaguur (ongeveer 12 uur)",
+                correct: "Rond het middaguur (12 uur)",
                 bijbelplaats: "Johannes 4:6",
                 uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Een ongewone tijd om water te halen, en Jezus was moe van de reis."
             },
@@ -1931,7 +1937,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
-                antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Twee of drie man", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
+                antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Ongeveer tachtig man, zoveel als er in één tent sliepen", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
                 correct: "Een paar honderd soldaten, een tiende deel van een legioen",
                 bijbelplaats: "Johannes 18:3",
                 uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
@@ -1969,20 +1975,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Bij de maaltijd wordt gezegd dat een leerling \"aanlag\" tegen Jezus. Hoe zat men aan tafel?",
-                antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Staand, want een maaltijd duurde kort"],
+                antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Elk op een eigen matje, met het eten in het midden"],
                 correct: "Half liggend op kussens rond een lage tafel, steunend op één elleboog",
                 bijbelplaats: "Johannes 13:23",
                 uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
             },
             {
-                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
-                antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
-                correct: "Nikodemus",
-                bijbelplaats: "Johannes 3:1-2"
-            },
-            {
                 vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
-                antwoorden: ["Een engel", "De tuinman", "Een soldaat", "Een vreemde"],
+                antwoorden: ["De bewaker van het graf", "De tuinman", "Een soldaat", "Een vreemde"],
                 correct: "De tuinman",
                 bijbelplaats: "Johannes 20:15"
             }
