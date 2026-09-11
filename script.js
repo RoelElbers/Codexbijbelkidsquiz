@@ -1571,25 +1571,25 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         beginner: [
             {
                 vraag: "Hoe noemde Johannes de Doper Jezus toen hij hem zag aankomen?",
-                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet die door Mozes lang geleden was beloofd", "De rabbi"],
+                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet Elia, teruggekeerd uit de hemel", "De rabbi"],
                 correct: "Het Lam van God dat de zonde van de wereld wegneemt",
                 bijbelplaats: "Johannes 1:29"
             },
             {
                 vraag: "Bij welke gelegenheid veranderde Jezus water in wijn?",
-                antwoorden: ["Bij een begrafenis", "Bij een bruiloft in Kana", "In de tempel", "Bij een feest in Jeruzalem"],
+                antwoorden: ["Op zijn verjaardag", "Bij een bruiloft in Kana", "In de tempel", "Bij een feest in Jeruzalem"],
                 correct: "Bij een bruiloft in Kana",
                 bijbelplaats: "Johannes 2:1-11"
             },
             {
-                vraag: "Met wie sprak Jezus bij een waterput in Samaria?",
+                vraag: "Jezus zat moe bij een waterput toen er iemand water kwam putten. Met wie raakte hij daar in gesprek?",
                 antwoorden: ["Een Samaritaanse vrouw", "Maria", "Marta", "De moeder van Johannes de Doper"],
                 correct: "Een Samaritaanse vrouw",
                 bijbelplaats: "Johannes 4:5-26"
             },
             {
                 vraag: "Wat deed Jezus voor de man die al vanaf zijn geboorte blind was?",
-                antwoorden: ["Hij luisterde naar wat de man te zeggen had", "Hij genas hem zodat hij kon zien", "Hij stuurde hem naar de tempel", "Hij liep door"],
+                antwoorden: ["Hij luisterde naar wat de man te zeggen had", "Hij genas hem zodat hij kon zien", "Hij zei dat zijn ouders iets verkeerds hadden gedaan", "Hij liep door"],
                 correct: "Hij genas hem zodat hij kon zien",
                 bijbelplaats: "Johannes 9:1-7"
             },
@@ -1603,7 +1603,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Welke vriend van Jezus uit Betanië werd door Jezus opgewekt nadat hij al vier dagen in het graf lag?",
                 antwoorden: ["Petrus", "Lazarus", "Johannes", "Nikodemus"],
                 correct: "Lazarus",
-                bijbelplaats: "Johannes 11:1-44"
+                bijbelplaats: "Johannes 11:1-44",
+                uitleg: "In het Nieuwe Testament komen twee mannen met de naam Lazarus voor, en ze hebben niets met elkaar te maken. Deze Lazarus is een echte vriend van Jezus, de broer van Marta en Maria uit Betanië. De andere is een bedelaar in een gelijkenis die Jezus vertelt bij Lucas. De naam betekent 'God helpt' en kwam in die tijd veel voor."
             },
             {
                 vraag: "Wat zagen de leerlingen Jezus doen toen zij 's avonds in de boot het meer overstaken?",
@@ -1655,8 +1656,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de Bijbel worden de mensen die bij Jezus horen vergeleken met dieren die hun herder volgen. Met welke dieren?",
-                antwoorden: ["schapen", "geiten", "koeien", "duiven"],
-                correct: "schapen",
+                antwoorden: ["Schapen", "Geiten", "Koeien", "Duiven"],
+                correct: "Schapen",
                 bijbelplaats: "Johannes 10:27"
             }
         ],
