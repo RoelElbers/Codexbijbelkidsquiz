@@ -2379,38 +2379,38 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders, waar Jezus hen op had laten wachten. Wat kregen zij die dag?",
-            antwoorden: ["De heilige Geest", "Een nieuwe boot", "Een mooie mantel", "Een zak brood"],
+            antwoorden: ["De heilige Geest", "Een nieuwe boot", "Een mooie mantel", "Een boekrol met alle woorden van Jezus"],
             correct: "De heilige Geest",
             bijbelplaats: "Handelingen 2:1-4"
         },
         {
             vraag: "Paulus was eerst fel tégen de christenen. Wat gebeurde er onderweg naar Damascus?",
-            antwoorden: ["Hij verdwaalde in de woestijn", "Hij viel in een diepe slaap", "Hij ontmoette Jezus in een fel licht en veranderde", "Hij raakte de weg kwijt en kwam pas dagen later aan"],
+            antwoorden: ["Hij verdwaalde in de woestijn", "Hij viel in een diepe slaap", "Hij ontmoette Jezus in een fel licht en veranderde", "Hij werd door rovers overvallen en beroofd"],
             correct: "Hij ontmoette Jezus in een fel licht en veranderde",
             bijbelplaats: "Handelingen 9:3-6"
         },
         {
-            vraag: "Na zijn opstanding verscheen Jezus nog een tijd aan zijn leerlingen voordat hij naar de hemel ging. Hoeveel dagen?",
+            vraag: "Na zijn opstanding liet Jezus zich nog een hele tijd aan zijn leerlingen zien en sprak hij met hen over het koninkrijk van God. Hoeveel dagen duurde dat?",
             antwoorden: ["Drie dagen", "Honderd dagen", "Veertig dagen", "Zeven dagen"],
             correct: "Veertig dagen",
             bijbelplaats: "Handelingen 1:3"
         },
         {
             vraag: "Sommige leiders werden boos en zeiden dat de apostelen moesten stoppen met vertellen over Jezus. Wat deden Petrus en de anderen?",
-            antwoorden: ["Ze stopten meteen", "Ze verstopten zich voorgoed", "Ze bleven het toch doen", "Ze verhuisden naar een ander land"],
+            antwoorden: ["Ze stopten meteen", "Ze verstopten zich en verschenen niet meer in het openbaar", "Ze bleven het toch doen", "Ze verhuisden naar een ander land"],
             correct: "Ze bleven het toch doen",
             bijbelplaats: "Handelingen 5:29,42"
         },
         {
-            vraag: "Nadat Jezus naar de hemel was gegaan, wachtten de leerlingen op de heilige Geest. Wat deden ze in die tijd vaak samen?",
-            antwoorden: ["Ze gingen vissen", "Ze kwamen bij elkaar om te bidden", "Ze maakten ruzie", "Ze namen de tijd om uit te rusten"],
+            vraag: "Nadat Jezus naar de hemel was gegaan, bleven de leerlingen in Jeruzalem wachten. Wat deden ze in die tijd vaak samen?",
+            antwoorden: ["Ze gingen terug naar hun dorp in Galilea", "Ze kwamen bij elkaar om te bidden", "Ze gingen vaak met elkaar discussiëren", "Ze namen de tijd om uit te rusten"],
             correct: "Ze kwamen bij elkaar om te bidden",
             bijbelplaats: "Handelingen 1:14"
         },
         {
             vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
-            antwoorden: ["Dat hij meer moest eten", "Dat alle mensen erbij mogen horen", "Dat hij moest gaan reizen", "Dat hij alleen nog groenten mocht eten"],
-            correct: "Dat alle mensen erbij mogen horen",
+            antwoorden: ["Dat hij meer moest eten", "Dat ook mensen die geen Jood waren erbij mochten horen", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
+            correct: "Dat ook mensen die geen Jood waren erbij mochten horen",
             bijbelplaats: "Handelingen 10:9-15",
             uitleg: "In het visioen zei God dat Petrus dieren die volgens de Joodse wet verboden waren om te eten, nu wél mocht eten. Kort daarna begreep Petrus waar het God echt om ging: net zoals Hij dat eten niet langer afkeurde, wilde God ook geen enkel mens buitensluiten — ook mensen die geen Jood waren, mogen erbij horen."
         },
@@ -2421,10 +2421,10 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 8:5-8"
         },
         {
-            vraag: "Paulus mocht zich verdedigen voor koning Agrippa en andere belangrijke mensen. Waarover bleef hij vertellen?",
-            antwoorden: ["Over zijn reizen", "Over Jezus", "Over zichzelf", "Over het weer"],
-            correct: "Over Jezus",
-            bijbelplaats: "Handelingen 26:22-23"
+            vraag: "Toen Paulus was uitgesproken, reageerde koning Agrippa met een bekende zin. Wat zei hij?",
+            antwoorden: ["Straks overtuig je me nog om christen te worden", "Ik heb nog nooit zo'n goede verdediging gehoord", "Breng hem terug naar zijn cel", "Ik geloof er geen woord van"],
+            correct: "Straks overtuig je me nog om christen te worden",
+            bijbelplaats: "Handelingen 26:28"
         },
         {
             vraag: "In de stad Lydda genas Petrus een man, Eneas, die al acht jaar verlamd op bed lag. Wat zei Petrus tegen hem?",
@@ -2433,22 +2433,22 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:33-34"
         },
         {
-            vraag: "Nadat het schip bij het eiland Malta was vergaan, kwamen alle opvarenden veilig aan land. Paulus bleef daar nog een tijd, en hij deed iets goeds voor de mensen op het eiland. Wat deed hij voor hen?",
+            vraag: "Na de schipbreuk bij Malta bleef Paulus nog een tijd op het eiland. Wat deed hij daar voor de mensen?",
             antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
             correct: "Hij genas veel zieke mensen",
             bijbelplaats: "Handelingen 28:8-9"
         },
         {
-            vraag: "Toen Paulus en Barnabas door de heilige Geest werden uitgezonden, wat was hun taak?",
+            vraag: "Wat was de taak van Paulus en Barnabas toen de heilige Geest hen uitzond?",
             antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
             correct: "Naar andere landen reizen om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13:2-4"
         },
         {
-            vraag: "Barnabas verkocht een stuk land en bracht het geld naar de apostelen om arme mensen te helpen. Wat voor man was hij daardoor?",
-            antwoorden: ["Behulpzaam en vrijgevig", "Hebberig en gierig", "Lui en onverschillig", "Streng en koud"],
-            correct: "Behulpzaam en vrijgevig",
-            bijbelplaats: "Handelingen 4:36-37"
+            vraag: "Barnabas verkocht een stuk land en bracht het geld naar de apostelen. Wat betekent de bijnaam Barnabas, die de apostelen hem gaven?",
+            antwoorden: ["Zoon van de vertroosting", "Zoon van de donder", "Zoon van het licht", "Zoon van de vrede"],
+            correct: "Zoon van de vertroosting",
+            bijbelplaats: "Handelingen 4:36"
         }
     ],
     advanced: [
