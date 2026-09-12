@@ -2367,8 +2367,8 @@ vragenData["Handelingen"] = {
     beginner: [
         {
             vraag: "Waarover gaat het boek Handelingen vooral?",
-            antwoorden: ["Over wat Jezus' volgelingen deden nadat hij naar de hemel ging", "Over de schepping van de wereld", "Over de profeten die het volk lang vóór de tijd van Jezus waarschuwden", "Over de tien geboden"],
-            correct: "Over wat Jezus' volgelingen deden nadat hij naar de hemel ging",
+            antwoorden: ["Over hoe het goede nieuws over Jezus zich verspreidde", "Over de schepping van de wereld", "Over de profeten die het volk lang vóór de tijd van Jezus waarschuwden", "Over de tien geboden"],
+            correct: "Over hoe het goede nieuws over Jezus zich verspreidde",
             bijbelplaats: "Handelingen 1:8"
         },
         {
@@ -2379,7 +2379,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders, waar Jezus hen op had laten wachten. Wat kregen zij die dag?",
-            antwoorden: ["De heilige Geest", "Een nieuwe boot", "Een mooie mantel", "Een boekrol met alle woorden van Jezus"],
+            antwoorden: ["De heilige Geest", "Een nieuwe boot om mee te vissen", "Een mooie mantel", "Een boekrol met alle woorden van Jezus"],
             correct: "De heilige Geest",
             bijbelplaats: "Handelingen 2:1-4"
         },
@@ -2397,19 +2397,19 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Sommige leiders werden boos en zeiden dat de apostelen moesten stoppen met vertellen over Jezus. Wat deden Petrus en de anderen?",
-            antwoorden: ["Ze stopten meteen", "Ze verstopten zich en verschenen niet meer in het openbaar", "Ze bleven het toch doen", "Ze verhuisden naar een ander land"],
-            correct: "Ze bleven het toch doen",
+            antwoorden: ["Ze stopten er meteen mee", "Ze verstopten zich en verschenen niet meer in het openbaar", "Ze bleven toch elke dag over Jezus vertellen", "Ze verhuisden naar een ander land"],
+            correct: "Ze bleven toch elke dag over Jezus vertellen",
             bijbelplaats: "Handelingen 5:29,42"
         },
         {
-            vraag: "Nadat Jezus naar de hemel was gegaan, bleven de leerlingen in Jeruzalem wachten. Wat deden ze in die tijd vaak samen?",
+            vraag: "In de dagen vóór Pinksteren kwamen de leerlingen steeds bij elkaar. Wat deden ze dan vaak samen?",
             antwoorden: ["Ze gingen terug naar hun dorp in Galilea", "Ze kwamen bij elkaar om te bidden", "Ze gingen vaak met elkaar discussiëren", "Ze namen de tijd om uit te rusten"],
             correct: "Ze kwamen bij elkaar om te bidden",
             bijbelplaats: "Handelingen 1:14"
         },
         {
             vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
-            antwoorden: ["Dat hij meer moest eten", "Dat ook mensen die geen Jood waren erbij mochten horen", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
+            antwoorden: ["Dat hij beter voor zichzelf moest zorgen en meer moest eten", "Dat ook mensen die geen Jood waren erbij mochten horen", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
             correct: "Dat ook mensen die geen Jood waren erbij mochten horen",
             bijbelplaats: "Handelingen 10:9-15",
             uitleg: "In het visioen zei God dat Petrus dieren die volgens de Joodse wet verboden waren om te eten, nu wél mocht eten. Kort daarna begreep Petrus waar het God echt om ging: net zoals Hij dat eten niet langer afkeurde, wilde God ook geen enkel mens buitensluiten — ook mensen die geen Jood waren, mogen erbij horen."
