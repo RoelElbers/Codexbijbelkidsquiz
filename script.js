@@ -1459,10 +1459,11 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Een stadie was ongeveer 185 meter. Het Griekse woord is stadion, en daar komt ons woord voor het sportveld vandaan: de hardloopbaan in een Grieks stadion was precies één stadie lang. In Nederlandse Bijbels staat het meervoud stadiën; verwar het niet met stadium, want dat betekent iets heel anders."
             },
             {
-                vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand 'honderd vat (bato) olie' schuldig. Ongeveer hoeveel liter was één vat?",
+                vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand honderd vat olie schuldig. Ongeveer hoeveel liter ging er in één vat?",
                 antwoorden: ["Ongeveer 1 liter", "Ongeveer 22 liter", "Ongeveer 100 liter", "Ongeveer 1000 liter"],
                 correct: "Ongeveer 22 liter",
-                bijbelplaats: "Lucas 16:6"
+                bijbelplaats: "Lucas 16:6",
+                uitleg: "In het Grieks heet deze maat <span class='grieks'>βάτος</span> (batos), naar de Hebreeuwse maat bat. Eén vat was ongeveer 22 liter, zo'n twee volle emmers. Honderd vat olie is dus ruim tweeduizend liter — en tien van die vaten samen vormden één kor."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand honderd zakken tarwe schuldig. Ongeveer hoeveel ging er in één zo'n zak?",
