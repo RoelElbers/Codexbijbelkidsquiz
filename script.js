@@ -1465,10 +1465,11 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 16:6"
             },
             {
-                vraag: "Een 'kor' was de grootste inhoudsmaat in de gelijkenissen. Hoe groot was die ongeveer?",
+                vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand honderd zakken tarwe schuldig. Ongeveer hoeveel ging er in één zo'n zak?",
                 antwoorden: ["Ongeveer 220 liter", "Ongeveer 22 liter", "Ongeveer 50 liter", "Ongeveer 2200 liter"],
                 correct: "Ongeveer 220 liter",
-                bijbelplaats: "Lucas 16:7"
+                bijbelplaats: "Lucas 16:7",
+                uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was ongeveer 220 liter, zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een schuld waar een gewone boer nooit aan kon komen."
             },
             {
                 vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
@@ -1510,7 +1511,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
-                antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
+                antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pasen", "De wet zei er niets over"],
                 correct: "Eén vastendag per jaar, op Grote Verzoendag",
                 bijbelplaats: "Lucas 18:12",
                 uitleg: "De wet van Mozes kende maar één verplichte vastendag per jaar: Grote Verzoendag (Leviticus 16). Twee keer per week vasten was iets wat vrome farizeeën zichzelf oplegden, bovenop wat gevraagd werd — en juist daar gaat de gelijkenis over. De veertigdagentijd voor Pasen bestond toen nog niet; dat is een christelijk gebruik dat pas eeuwen later ontstond."
@@ -1523,7 +1524,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Jezus zegt: wie de hand aan de ploeg slaat en omkijkt, is niet geschikt. Waarom is omkijken bij het ploegen een probleem?",
-                antwoorden: ["De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij", "De ossen slaan op hol als je hen niet aankijkt", "Je verliest het zaad dat je in je andere hand draagt", "Het is verboden om over je schouder te kijken op het land"],
+                antwoorden: ["De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij", "De ossen slaan op hol als je ze niet aankijkt", "Je verliest het zaad dat je in je andere hand draagt", "Het is verboden om over je schouder te kijken op het land"],
                 correct: "De voor wordt meteen krom, want je duwt de ploeg zonder het te merken opzij",
                 bijbelplaats: "Lucas 9:62"
             },
@@ -1560,8 +1561,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Jezus zegt: als men jullie niet ontvangt, schud dan het stof van je voeten. Wat betekende dat?",
-                antwoorden: ["Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven", "Een manier om te tonen dat je moe was van de reis", "Een gebruik om je sandalen te sparen op een lange weg", "Een zegen die je bij het weggaan achterliet"],
-                correct: "Een duidelijk teken: wij laten niets van deze plaats bij ons achterblijven",
+                antwoorden: ["Een duidelijk teken: we nemen niets van deze plaats met ons mee", "Een manier om te tonen dat je moe was van de reis", "Een gebruik om je sandalen te sparen op een lange weg", "Een zegen die je bij het weggaan achterliet"],
+                correct: "Een duidelijk teken: we nemen niets van deze plaats met ons mee",
                 bijbelplaats: "Lucas 9:5"
             }
         ]
