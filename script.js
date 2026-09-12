@@ -1486,7 +1486,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Zacharias was priester en moest het reukoffer brengen in de tempel. Wat deed hij daarbij?",
-                antwoorden: ["Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden", "Hij slachtte een lam en legde het op het brandofferaltaar", "Hij goot olie uit over de gouden kandelaar en stak die aan", "Hij waste de heilige voorwerpen met water uit het bekken"],
+                antwoorden: ["Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden", "Hij slachtte een lam en legde het op het brandofferaltaar", "Hij schreef de namen op van iedereen die die dag een offer had gebracht", "Hij waste de heilige voorwerpen met water uit het bekken"],
                 correct: "Hij verbrandde wierook op een altaar, terwijl het volk buiten stond te bidden",
                 bijbelplaats: "Lucas 1:8-11"
             },
@@ -1550,8 +1550,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
-                antwoorden: ["Varkens waren onreine dieren, die een Jood niet mocht eten of houden", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
-                correct: "Varkens waren onreine dieren, die een Jood niet mocht eten of houden",
+                antwoorden: ["Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
+                correct: "Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben",
                 bijbelplaats: "Lucas 15:15"
             },
             {
