@@ -102,10 +102,10 @@ const ONTDEK_MATEN = [
     { item: "<span class=\"naslag-term\">Mijl</span> — de Romeinse mijl was ongeveer 1.500 meter (anderhalve kilometer), oorspronkelijk duizend dubbele passen van een soldaat. Jezus zei: als iemand je dwingt één mijl mee te gaan, ga er dan twee." },
     { kop: "Inhoud" },
     { noot: "Hier weten we het minder zeker: er bestond geen officiële standaard, en de potten en vaten van toen waren niet allemaal even groot." },
-    { item: "<span class=\"naslag-term\">Vat</span> — ongeveer 22 liter, zoiets als een flinke emmer. Sommige geleerden komen hoger uit." },
+    { item: "<span class=\"naslag-term\">Vat</span> (Grieks: batos, van het Hebreeuwse bat) — ongeveer 22 liter, zo'n twee volle emmers. Sommige geleerden komen hoger uit." },
     { item: "<span class=\"naslag-term\">Kor</span> — de grootste inhoudsmaat: tien vaten, dus ongeveer 220 liter. In Nederlandse Bijbels staat op die plaats meestal 'zakken'." },
     { item: "<span class=\"naslag-term\">Seah</span> — een derde van een vat, zo'n 7 liter, al lopen de schattingen uiteen. Drie seah meel was genoeg om voor een heleboel mensen brood te bakken." },
-    { item: "<span class=\"naslag-term\">Korenmaat</span> — een bak of mand waar ongeveer negen liter graan in kon, zoiets als een flinke emmer. Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop, zodat iedereen het licht ziet." },
+    { item: "<span class=\"naslag-term\">Korenmaat</span> — een bak of mand waar ongeveer negen liter graan in kon, ongeveer een emmer vol. Jezus zei dat je een lamp niet ónder de korenmaat zet, maar erop, zodat iedereen het licht ziet." },
     { item: "<span class=\"naslag-term\">Metreet</span> — een grote inhoudsmaat van ongeveer 39 liter. De stenen kruiken op de bruiloft in Kana hielden er elk twee of drie van — dus zo'n 80 tot 120 liter per kruik." },
 ];
 
