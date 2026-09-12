@@ -1403,7 +1403,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen?",
-                antwoorden: ["Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was", "Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Vooruitgaan om veilige slaapplaatsen te regelen voor Jezus en de twaalf apostelen"],
+                antwoorden: ["Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was", "Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Vooruitgaan om veilige slaapplaatsen en eten te regelen voor Jezus en de twaalf apostelen"],
                 correct: "Vooruitgaan naar elke stad waar Jezus zelf nog zou komen, zieken genezen en zeggen dat Gods koninkrijk dichtbij was",
                 bijbelplaats: "Lucas 10:1-9",
                 uitleg: "Het verschil zit in één woord. In het Grieks staat er <span class='grieks'>ἑβδομήκοντα</span> (hebdomēkonta), 'zeventig', en in de meeste handschriften staat daar <span class='grieks'>δύο</span> (duo) achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds. Daarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet. Beide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
@@ -1498,14 +1498,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
-                antwoorden: ["Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger in een provincie", "Hogepriester die de tempeldienst in Jeruzalem leidde", "Rechter in de Hoge Raad, de hoogste Joodse rechtbank"],
-                correct: "Bestuurder over een deel van een verdeeld rijk, onder Romeins gezag, lager in rang dan een koning",
+                antwoorden: ["Bestuurder over een deel van een verdeeld rijk, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger in een provincie, benoemd door de keizer zelf", "Hogepriester die de tempeldienst in Jeruzalem leidde", "Rechter in de Hoge Raad, de hoogste Joodse rechtbank"],
+                correct: "Bestuurder over een deel van een verdeeld rijk, lager in rang dan een koning",
                 bijbelplaats: "Lucas 3:1",
                 uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang. Lucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
             },
             {
                 vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
-                antwoorden: ["De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas", "Het was dezelfde man, maar hij was oud geworden", "Herodes was een titel, geen naam, net als keizer", "De tweede was de kleinzoon van de eerste"],
+                antwoorden: ["De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas", "Het was dezelfde man, maar hij was oud geworden", "Herodes was een titel en geen naam, net zoals keizer of farao", "De tweede was de kleinzoon van de eerste"],
                 correct: "De eerste was Herodes de Grote, de tweede zijn zoon Herodes Antipas",
                 bijbelplaats: "Lucas 23:7",
                 uitleg: "Herodes de Grote regeerde toen Jezus geboren werd en stierf kort daarna. Zijn rijk werd verdeeld onder zijn zonen. Herodes Antipas kreeg Galilea — hij is degene die Johannes de Doper liet onthoofden en die Jezus verhoorde. Nog weer later komt in Handelingen een Herodes Agrippa voor, een kleinzoon. Er lopen dus drie verschillende Herodessen door het Nieuwe Testament."
@@ -1543,14 +1543,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "De vader geeft zijn teruggekeerde zoon het beste kleed, een ring en sandalen. Wat betekende die ring?",
-                antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden", "Dat hij zijn schulden had afbetaald"],
+                antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden en dus het grootste erfdeel kreeg", "Dat hij zijn schulden had afbetaald"],
                 correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
                 bijbelplaats: "Lucas 15:22",
                 uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon zijn zegel in zachte zegelwas drukken en zo namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat. De zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
             },
             {
                 vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
-                antwoorden: ["Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben", "Varkenshoeders moesten dag en nacht buiten blijven", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
+                antwoorden: ["Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben", "Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
                 correct: "Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben",
                 bijbelplaats: "Lucas 15:15"
             },
