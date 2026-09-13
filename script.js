@@ -2483,7 +2483,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 12:7-10"
         },
         {
-            vraag: "Paulus maakte verschillende grote reizen om over Jezus te vertellen. Vanuit welke stad vertrok hij steeds?",
+            vraag: "Paulus maakte verschillende grote reizen. Vanuit welke stad vertrok hij steeds?",
             antwoorden: ["Antiochië", "Jeruzalem", "Damascus", "Tarsus"],
             correct: "Antiochië",
             bijbelplaats: "Handelingen 13:1-3"
@@ -2508,7 +2508,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Filippus ontmoette een man uit Ethiopië die uit de Bijbel zat te lezen, maar het niet begreep. Hoe hielp Filippus hem?",
-            antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij liet hem alleen", "Hij lachte hem uit", "Hij las het boek voor maar legde er verder niets over uit"],
+            antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij gaf hem een eigen boekrol mee voor onderweg", "Hij bracht hem naar de apostelen in Jeruzalem", "Hij las het boek voor maar legde er verder niets over uit"],
             correct: "Hij legde uit dat het over Jezus ging en doopte hem",
             bijbelplaats: "Handelingen 8:30-38"
         },
@@ -2544,8 +2544,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Een man, Simon, wilde de kracht van de heilige Geest met geld kopen. Wat zei Petrus tegen hem?",
-            antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave niet te koop is", "Dat hij het geld eerst aan de armen moest geven", "Dat hij later terug moest komen, omdat Petrus eerst met de andere apostelen wilde overleggen"],
-            correct: "Dat Gods gave niet te koop is",
+            antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave nooit met geld te koop is", "Dat hij het geld eerst aan de armen moest geven", "Dat hij later terug moest komen, na overleg met de andere apostelen"],
+            correct: "Dat Gods gave nooit met geld te koop is",
             bijbelplaats: "Handelingen 8:18-20"
         },
         {
@@ -2587,8 +2587,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
-            antwoorden: ["Een grote handelsstad waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
-            correct: "Een grote handelsstad waar Joden en niet-Joden samen in de gemeente zaten",
+            antwoorden: ["Een grote handelsstad met Joden en niet-Joden in één gemeente", "Een klein bergdorp waar alleen Joodse families woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
+            correct: "Een grote handelsstad met Joden en niet-Joden in één gemeente",
             bijbelplaats: "Handelingen 11:26",
             uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer. Vanuit Antiochië vertrok Paulus later op al zijn reizen."
         },
