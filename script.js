@@ -2359,7 +2359,7 @@ vragenData["Romeinen"] = {
 };
 
 // =====================================================================
-// Handelingen — vragenpool (79 vragen: beginner 14, advanced 25, expert 40)
+// Handelingen — vragenpool (79 vragen: beginner 19, advanced 30, expert 30)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
 // =====================================================================
@@ -2449,6 +2449,36 @@ vragenData["Handelingen"] = {
             antwoorden: ["Zoon van de vertroosting", "Zoon van de donder", "Zoon van het licht", "Zoon van de vrede"],
             correct: "Zoon van de vertroosting",
             bijbelplaats: "Handelingen 4:36"
+        },
+        {
+            vraag: "De leerlingen waren op de Pinksterdag met elkaar in één huis bij elkaar. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
+            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
+            correct: "Een geluid als harde wind en vlammetjes als van vuur",
+            bijbelplaats: "Handelingen 2:2-3"
+        },
+        {
+            vraag: "Waar is Paulus aan het eind van het boek Handelingen?",
+            antwoorden: ["In Jeruzalem", "Terug op reis door de steden van Klein-Azië", "In Rome, waar hij de mensen over Jezus vertelt", "Terug in zijn geboorteplaats Tarsus"],
+            correct: "In Rome, waar hij de mensen over Jezus vertelt",
+            bijbelplaats: "Handelingen 28:30-31"
+        },
+        {
+            vraag: "De eerste christenen kozen zeven mensen uit om te helpen, zodat het eten eerlijk werd verdeeld onder arme mensen. Wie was een van hen?",
+            antwoorden: ["Marcus", "Paulus", "Stefanus", "Lucas"],
+            correct: "Stefanus",
+            bijbelplaats: "Handelingen 6:5"
+        },
+        {
+            vraag: "Op zijn reizen nam Paulus een jonge helper mee die in Jezus geloofde. Hoe heette deze jonge man?",
+            antwoorden: ["Tomas", "Timoteüs", "Judas", "Marcus"],
+            correct: "Timoteüs",
+            bijbelplaats: "Handelingen 16:1-3"
+        },
+        {
+            vraag: "Vlak nadat Saulus in Jezus ging geloven, wilden boze mensen hem in Damascus kwaad doen. Hoe ontsnapte hij over de stadsmuur?",
+            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
+            correct: "In een mand werd hij naar beneden gelaten",
+            bijbelplaats: "Handelingen 9:23-25"
         }
     ],
     advanced: [
@@ -2605,6 +2635,36 @@ vragenData["Handelingen"] = {
             correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
             bijbelplaats: "Handelingen 6:6",
             uitleg: "Handen opleggen was een oud gebaar met twee betekenissen: iemand zegenen, en iemand aanwijzen voor een taak. In het Oude Testament legt Mozes zijn handen op Jozua als die zijn opvolger wordt. In de eerste gemeente gebeurde het bij het uitzenden van Paulus en Barnabas, en hier bij de zeven mannen. Het gebaar maakte zichtbaar wat er gebeurde: dit is niet iets wat je jezelf toe-eigent, het wordt je gegeven. Het gebruik leeft nog steeds. In katholieke kerken hoort handoplegging bij de wijding van een diaken of priester, in protestantse kerken bij de bevestiging van een predikant, ouderling of diaken, en in evangelische gemeenten legt men elkaar vaak de handen op bij het gebed voor iemand die ziek is."
+        },
+        {
+            vraag: "Hoeveel mensen gingen op de Pinksterdag in Jezus geloven en lieten zich dopen?",
+            antwoorden: ["Ongeveer tien", "Ongeveer drieduizend", "Ongeveer honderd", "Bijna niemand"],
+            correct: "Ongeveer drieduizend",
+            bijbelplaats: "Handelingen 2:41"
+        },
+        {
+            vraag: "Nadat Saulus Jezus had ontmoet, kon hij een tijdje niet zien. Wie hielp hem zodat hij weer kon zien?",
+            antwoorden: ["Petrus", "Ananias", "Barnabas", "Stefanus"],
+            correct: "Ananias",
+            bijbelplaats: "Handelingen 9:17-18"
+        },
+        {
+            vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
+            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze dacht dat het zijn geest was en durfde de deur niet voor hem open te doen", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
+            correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
+            bijbelplaats: "Handelingen 12:13-14"
+        },
+        {
+            vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
+            antwoorden: ["Hij praatte gewoon door en deed alsof er niks aan de hand was", "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven", "Hij schrok en vluchtte weg", "Hij riep een dokter"],
+            correct: "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven",
+            bijbelplaats: "Handelingen 20:9-12"
+        },
+        {
+            vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
+            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
+            correct: "Hij waarschuwde Paulus en de soldaten",
+            bijbelplaats: "Handelingen 23:16"
         }
     ],
     expert: [
@@ -2615,28 +2675,10 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 1:23-26"
         },
         {
-            vraag: "De leerlingen waren op de Pinksterdag met elkaar in één huis bij elkaar. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
-            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
-            correct: "Een geluid als harde wind en vlammetjes als van vuur",
-            bijbelplaats: "Handelingen 2:2-3"
-        },
-        {
-            vraag: "Hoeveel mensen gingen op de Pinksterdag in Jezus geloven en lieten zich dopen?",
-            antwoorden: ["Ongeveer tien", "Ongeveer drieduizend", "Ongeveer honderd", "Bijna niemand"],
-            correct: "Ongeveer drieduizend",
-            bijbelplaats: "Handelingen 2:41"
-        },
-        {
             vraag: "In de stad Joppe maakte Petrus een vrouw weer levend die veel goeds had gedaan voor arme mensen. Hoe heette zij?",
             antwoorden: ["Maria", "Lydia, de vrouw die purperstof verkocht", "Tabita (ook Dorkas genoemd)", "Marta"],
             correct: "Tabita (ook Dorkas genoemd)",
             bijbelplaats: "Handelingen 9:36-41"
-        },
-        {
-            vraag: "Nadat Saulus Jezus had ontmoet, kon hij een tijdje niet zien. Wie hielp hem zodat hij weer kon zien?",
-            antwoorden: ["Petrus", "Ananias", "Barnabas", "Stefanus"],
-            correct: "Ananias",
-            bijbelplaats: "Handelingen 9:17-18"
         },
         {
             vraag: "In welke stad werden de volgelingen van Jezus voor het eerst \"christenen\" genoemd?",
@@ -2669,47 +2711,11 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 16:26"
         },
         {
-            vraag: "Waar is Paulus aan het eind van het boek Handelingen?",
-            antwoorden: ["In Jeruzalem", "Terug op reis door de steden van Klein-Azië", "In Rome, waar hij de mensen over Jezus vertelt", "Terug in zijn geboorteplaats Tarsus"],
-            correct: "In Rome, waar hij de mensen over Jezus vertelt",
-            bijbelplaats: "Handelingen 28:30-31"
-        },
-        {
-            vraag: "De eerste christenen kozen zeven mensen uit om te helpen, zodat het eten eerlijk werd verdeeld onder arme mensen. Wie was een van hen?",
-            antwoorden: ["Marcus", "Paulus", "Stefanus", "Lucas"],
-            correct: "Stefanus",
-            bijbelplaats: "Handelingen 6:5"
-        },
-        {
-            vraag: "Op zijn reizen nam Paulus een jonge helper mee die in Jezus geloofde. Hoe heette deze jonge man?",
-            antwoorden: ["Tomas", "Timoteüs", "Judas", "Marcus"],
-            correct: "Timoteüs",
-            bijbelplaats: "Handelingen 16:1-3"
-        },
-        {
-            vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
-            antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze dacht dat het zijn geest was en durfde de deur niet voor hem open te doen", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
-            correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
-            bijbelplaats: "Handelingen 12:13-14"
-        },
-        {
             vraag: "In de stad Lystra genas Paulus een man die nooit had kunnen lopen. Wat dachten de mensen toen?",
             antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat Paulus een goede dokter was", "Dat het niet echt was en dat het kwakzalvers waren"],
             correct: "Dat Paulus en Barnabas goden waren",
             bijbelplaats: "Handelingen 14:11",
             uitleg: "De mensen in Lystra spraken hun eigen streektaal en riepen dat de goden als mensen naar hen toe waren gekomen: Barnabas noemden zij Zeus en Paulus Hermes, omdat hij het woord voerde. De priester van Zeus kwam zelfs met stieren en bloemenkransen aanzetten om offers te brengen. Paulus en Barnabas schrokken daar zo van dat ze hun kleren scheurden en riepen dat zij gewone mensen waren, net als de anderen. Een kwakzalver, uit een van de andere antwoorden, is iemand die doet alsof hij zieke mensen kan genezen terwijl hij dat helemaal niet kan. Het is een oud woord dat ook in de Bijbel voorkomt: in het boek Job noemt Job zijn vrienden zo, omdat ze wel raad geven maar hem niet echt helpen."
-        },
-        {
-            vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
-            antwoorden: ["Hij praatte gewoon door en deed alsof er niks aan de hand was", "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven", "Hij schrok en vluchtte weg", "Hij riep een dokter"],
-            correct: "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven",
-            bijbelplaats: "Handelingen 20:9-12"
-        },
-        {
-            vraag: "Vlak nadat Saulus in Jezus ging geloven, wilden boze mensen hem in Damascus kwaad doen. Hoe ontsnapte hij over de stadsmuur?",
-            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
-            correct: "In een mand werd hij naar beneden gelaten",
-            bijbelplaats: "Handelingen 9:23-25"
         },
         {
             vraag: "De christenen in Jeruzalem waren eerst bang voor Saulus. Wie nam het voor hem op en stelde hem aan de anderen voor?",
@@ -2722,12 +2728,6 @@ vragenData["Handelingen"] = {
             antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een grote plaag"],
             correct: "Een grote hongersnood",
             bijbelplaats: "Handelingen 11:28"
-        },
-        {
-            vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
-            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
-            correct: "Hij waarschuwde Paulus en de soldaten",
-            bijbelplaats: "Handelingen 23:16"
         },
         {
             vraag: "Toen spotters dachten dat de leerlingen dronken waren, zei Petrus dat dat niet kon: 'het is pas het derde uur van de dag.' Hoe laat op de dag was dat ongeveer?",
