@@ -2359,7 +2359,7 @@ vragenData["Romeinen"] = {
 };
 
 // =====================================================================
-// Handelingen — vragenpool (79 vragen: beginner 14, advanced 27, expert 38)
+// Handelingen — vragenpool (79 vragen: beginner 14, advanced 25, expert 40)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
 // =====================================================================
@@ -2454,7 +2454,7 @@ vragenData["Handelingen"] = {
     advanced: [
         {
             vraag: "Wie schreef het boek Handelingen?",
-            antwoorden: ["Petrus", "Lucas", "Tomas", "Marcus"],
+            antwoorden: ["Petrus", "Lucas", "Paulus", "Marcus"],
             correct: "Lucas",
             bijbelplaats: "Handelingen 1:1"
         },
@@ -2478,18 +2478,18 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Petrus zat gevangen. Wat gebeurde er 's nachts in de gevangenis?",
-            antwoorden: ["Hij groef zelf een tunnel", "Hij bleef daar voorgoed", "Een engel hielp hem ontsnappen", "Hij maakte ruzie met de wachters"],
+            antwoorden: ["Hij groef zelf een tunnel, waardoor hij kon ontsnappen", "Hij bleef daar voorgoed", "Een engel hielp hem ontsnappen", "Hij maakte ruzie met de wachters"],
             correct: "Een engel hielp hem ontsnappen",
             bijbelplaats: "Handelingen 12:7-10"
         },
         {
-            vraag: "Wat deed Paulus in een groot deel van het boek Handelingen?",
-            antwoorden: ["Hij reisde naar veel steden om over Jezus te vertellen", "Hij bleef in Jeruzalem om de eerste gemeente te leiden", "Hij trok zich terug in de woestijn om te bidden en te vasten", "Hij werd leraar in één synagoge en bleef daar wonen"],
-            correct: "Hij reisde naar veel steden om over Jezus te vertellen",
-            bijbelplaats: "Handelingen 13–28"
+            vraag: "Paulus maakte verschillende grote reizen om over Jezus te vertellen. Vanuit welke stad vertrok hij steeds?",
+            antwoorden: ["Antiochië", "Jeruzalem", "Damascus", "Tarsus"],
+            correct: "Antiochië",
+            bijbelplaats: "Handelingen 13:1-3"
         },
         {
-            vraag: "Toen Jezus omhoogging naar de hemel, stonden de leerlingen hem na te kijken. Opeens stonden er twee mannen in witte kleren bij hen, die iets tegen hen zeiden. Wat zeiden die twee mannen?",
+            vraag: "Toen Jezus omhoogging naar de hemel, stonden er opeens twee mannen in witte kleren bij de leerlingen. Wat zeiden zij?",
             antwoorden: ["Dat ze Jezus nooit meer zouden zien", "Dat Jezus op een dag net zo terug zal komen", "Dat ze meteen moesten verhuizen", "Dat ze het geheim moesten houden"],
             correct: "Dat Jezus op een dag net zo terug zal komen",
             bijbelplaats: "Handelingen 1:10-11"
@@ -2502,12 +2502,12 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Bij de tempelpoort zat een man die niet kon lopen. Wat deed Petrus voor hem?",
-            antwoorden: ["Hij gaf hem goud", "Hij liep voorbij", "Hij stuurde hem door naar de priesters in de tempel", "Hij genas hem in de naam van Jezus"],
+            antwoorden: ["Hij gaf hem een goudstuk", "Hij liep voorbij", "Hij stuurde hem door naar de priesters in de tempel", "Hij genas hem in de naam van Jezus"],
             correct: "Hij genas hem in de naam van Jezus",
             bijbelplaats: "Handelingen 3:6-8"
         },
         {
-            vraag: "Filippus ontmoette een man uit Ethiopië die uit de Bijbel zat te lezen, maar het niet begreep. Wat deed Filippus?",
+            vraag: "Filippus ontmoette een man uit Ethiopië die uit de Bijbel zat te lezen, maar het niet begreep. Hoe hielp Filippus hem?",
             antwoorden: ["Hij legde uit dat het over Jezus ging en doopte hem", "Hij liet hem alleen", "Hij lachte hem uit", "Hij las het boek voor maar legde er verder niets over uit"],
             correct: "Hij legde uit dat het over Jezus ging en doopte hem",
             bijbelplaats: "Handelingen 8:30-38"
@@ -2519,7 +2519,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 10:34-35"
         },
         {
-            vraag: "Na de aardbeving moest de gevangenbewaarder een keuze maken. Wat deed hij?",
+            vraag: "In Filippi zaten Paulus en Silas gevangen. Na de aardbeving moest de gevangenbewaarder een keuze maken. Waarvoor koos hij?",
             antwoorden: ["Hij liep boos weg", "Hij ging in Jezus geloven en liet zich dopen", "Hij sloot de deuren weer", "Hij vluchtte uit angst de stad uit, ver bij de gevangenis vandaan"],
             correct: "Hij ging in Jezus geloven en liet zich dopen",
             bijbelplaats: "Handelingen 16:30-34"
@@ -2537,20 +2537,20 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 17:22-23"
         },
         {
-            vraag: "Stefanus, een van de eerste christenen, werd aangevallen door boze mensen omdat hij over Jezus vertelde. Wat deed hij toen?",
-            antwoorden: ["Hij riep dat God hen zwaar zou straffen hiervoor", "Hij riep de soldaten", "Hij bad of God de mensen wilde vergeven", "Hij rende weg"],
-            correct: "Hij bad of God de mensen wilde vergeven",
+            vraag: "Stefanus werd gestenigd omdat hij over Jezus vertelde. Wat bad hij voor de mensen die hem stenigden?",
+            antwoorden: ["Heer, reken hun deze zonde niet aan", "Heer, straf hen voor wat zij doen", "Heer, maak dat zij spijt krijgen", "Heer, laat hen nooit vergeten wat hier gebeurd is"],
+            correct: "Heer, reken hun deze zonde niet aan",
             bijbelplaats: "Handelingen 7:59-60"
         },
         {
             vraag: "Een man, Simon, wilde de kracht van de heilige Geest met geld kopen. Wat zei Petrus tegen hem?",
-            antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave niet te koop is", "Dat het prima was", "Dat hij later terug moest komen"],
+            antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave niet te koop is", "Dat hij het geld eerst aan de armen moest geven", "Dat hij later terug moest komen, omdat Petrus eerst met de andere apostelen wilde overleggen"],
             correct: "Dat Gods gave niet te koop is",
             bijbelplaats: "Handelingen 8:18-20"
         },
         {
             vraag: "Op het eiland Malta beet er een gevaarlijke slang in Paulus' hand. Wat gebeurde er met hem?",
-            antwoorden: ["Hij werd heel ziek", "Hij viel flauw", "Er gebeurde niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
+            antwoorden: ["Hij werd ziek", "Hij viel flauw", "Er gebeurde niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
             correct: "Er gebeurde niets, hij bleef ongedeerd",
             bijbelplaats: "Handelingen 28:3-6"
         },
@@ -2561,19 +2561,13 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 8:26"
         },
         {
-            vraag: "Cornelius kreeg bezoek van een engel. Die zei dat hij mannen naar de stad Joppe moest sturen om iemand te laten halen. Wie moest Cornelius laten komen?",
-            antwoorden: ["Paulus", "Petrus", "Filippus", "Lucas"],
-            correct: "Petrus",
-            bijbelplaats: "Handelingen 10:3-5"
-        },
-        {
             vraag: "Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij?",
             antwoorden: ["Om door de Joodse raad in Jeruzalem zelf berecht te worden", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om voor geld vrijgekocht te kunnen worden"],
             correct: "Om zijn zaak door de keizer in Rome te laten behandelen",
             bijbelplaats: "Handelingen 25:11"
         },
         {
-            vraag: "Een wijze leraar, Gamaliël, gaf de leiders advies over de apostelen. Wat zei hij?",
+            vraag: "De wijze leraar Gamaliël sprak de Joodse raad toe over de apostelen. Wat was zijn advies?",
             antwoorden: ["Laat hen met rust; als het van God komt, houd je het toch niet tegen", "Verbied hun voorgoed om ooit nog ergens over Jezus te spreken", "Stuur hen het land uit", "Doe net of ze niet bestaan"],
             correct: "Laat hen met rust; als het van God komt, houd je het toch niet tegen",
             bijbelplaats: "Handelingen 5:34-39"
@@ -2593,8 +2587,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
-            antwoorden: ["Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
-            correct: "Een grote handelsstad in het noorden, waar Joden en niet-Joden samen in de gemeente zaten",
+            antwoorden: ["Een grote handelsstad waar Joden en niet-Joden samen in de gemeente zaten", "Een klein dorp waar alleen Joden woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
+            correct: "Een grote handelsstad waar Joden en niet-Joden samen in de gemeente zaten",
             bijbelplaats: "Handelingen 11:26",
             uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer. Vanuit Antiochië vertrok Paulus later op al zijn reizen."
         },
@@ -2603,7 +2597,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
             correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
             bijbelplaats: "Handelingen 2:44-45",
-            uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen."
+            uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen. Er stond ook iets tegenover. Wie kon meewerken, werkte mee: Paulus schrijft later aan de gemeente in Tessalonica dat wie niet wíl werken, ook niet hoeft te eten. Maar voor wie het niet kón — ouderen, zieken, weduwen zonder familie — zorgde de gemeente juist wel. Daar ging het in Handelingen 6 zelfs mis, toen sommige weduwen bij het uitdelen werden overgeslagen; daarom werden er zeven mannen aangewezen die het eerlijk gingen verdelen."
         },
         {
             vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
@@ -2611,12 +2605,6 @@ vragenData["Handelingen"] = {
             correct: "Iemand aanwijzen voor een taak en hem daarbij zegenen",
             bijbelplaats: "Handelingen 6:6",
             uitleg: "Handen opleggen was een oud gebaar met twee betekenissen: iemand zegenen, en iemand aanwijzen voor een taak. In het Oude Testament legt Mozes zijn handen op Jozua als die zijn opvolger wordt. In de eerste gemeente gebeurde het bij het uitzenden van Paulus en Barnabas, en hier bij de zeven mannen. Het gebaar maakte zichtbaar wat er gebeurde: dit is niet iets wat je jezelf toe-eigent, het wordt je gegeven. Het gebruik leeft nog steeds. In katholieke kerken hoort handoplegging bij de wijding van een diaken of priester, in protestantse kerken bij de bevestiging van een predikant, ouderling of diaken, en in evangelische gemeenten legt men elkaar vaak de handen op bij het gebed voor iemand die ziek is."
-        },
-        {
-            vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
-            antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
-            correct: "De eerste naam voor de volgelingen van Jezus",
-            bijbelplaats: "Handelingen 9:2"
         }
     ],
     expert: [
@@ -2868,6 +2856,18 @@ vragenData["Handelingen"] = {
             antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
             correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
             bijbelplaats: "Handelingen 27:28"
+        },
+        {
+            vraag: "Cornelius kreeg bezoek van een engel. Die zei dat hij mannen naar de stad Joppe moest sturen om iemand te laten halen. Wie moest Cornelius laten komen?",
+            antwoorden: ["Paulus", "Petrus", "Filippus", "Lucas"],
+            correct: "Petrus",
+            bijbelplaats: "Handelingen 10:3-5"
+        },
+        {
+            vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
+            antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
+            correct: "De eerste naam voor de volgelingen van Jezus",
+            bijbelplaats: "Handelingen 9:2"
         }
     ]
 };
