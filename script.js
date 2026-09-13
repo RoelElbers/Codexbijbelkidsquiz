@@ -2475,7 +2475,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 16:1-3"
         },
         {
-            vraag: "Vlak nadat Saulus in Jezus ging geloven, wilden boze mensen hem in Damascus kwaad doen. Hoe ontsnapte hij over de stadsmuur?",
+            vraag: "Saulus, die later Paulus werd genoemd, moest vluchten uit Damascus. Hoe kwam hij over de stadsmuur?",
             antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
             correct: "In een mand werd hij naar beneden gelaten",
             bijbelplaats: "Handelingen 9:23-25"
@@ -2643,13 +2643,13 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 2:41"
         },
         {
-            vraag: "Nadat Saulus Jezus had ontmoet, kon hij een tijdje niet zien. Wie hielp hem zodat hij weer kon zien?",
+            vraag: "In Damascus kon Saulus drie dagen lang niets zien. Wie hielp hem zodat hij weer kon zien?",
             antwoorden: ["Petrus", "Ananias", "Barnabas", "Stefanus"],
             correct: "Ananias",
             bijbelplaats: "Handelingen 9:17-18"
         },
         {
-            vraag: "Toen Petrus uit de gevangenis was ontsnapt, klopte hij aan bij een huis. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
+            vraag: "Petrus klopte 's nachts aan bij een huis waar de gemeente bijeen was. Een meisje, Rhode, herkende zijn stem. Wat deed ze van blijdschap?",
             antwoorden: ["Ze deed meteen open", "Ze rende eerst weg om het te vertellen en vergat de deur open te doen", "Ze dacht dat het zijn geest was en durfde de deur niet voor hem open te doen", "Ze geloofde niet dat het Petrus was en deed de deur op slot"],
             correct: "Ze rende eerst weg om het te vertellen en vergat de deur open te doen",
             bijbelplaats: "Handelingen 12:13-14"
