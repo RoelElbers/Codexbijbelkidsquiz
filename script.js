@@ -2475,9 +2475,9 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 16:1-3"
         },
         {
-            vraag: "Saulus, die later Paulus werd genoemd, moest vluchten uit Damascus. Hoe kwam hij over de stadsmuur?",
-            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
-            correct: "In een mand werd hij naar beneden gelaten",
+            vraag: "Saulus, die later Paulus werd genoemd, moest vluchten uit Damascus. Hoe kwam hij de stad uit?",
+            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij over de muur naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
+            correct: "In een mand werd hij over de muur naar beneden gelaten",
             bijbelplaats: "Handelingen 9:23-25"
         }
     ],
