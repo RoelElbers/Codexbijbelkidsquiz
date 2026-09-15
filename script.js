@@ -797,7 +797,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
             },
             {
-                vraag: "Bij de doop van Jezus daalde de heilige Geest op hem neer. In de gedaante van welk dier?",
+                vraag: "Bij de doop van Jezus daalde de Heilige Geest op hem neer. In de gedaante van welk dier?",
                 antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
                 correct: "Een duif",
                 bijbelplaats: "Marcus 1:10"
@@ -1702,8 +1702,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat beloofde Jezus aan zijn leerlingen te zenden na zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
-                antwoorden: ["Engelen", "De heilige Geest", "Een profeet", "Een nieuw boek"],
-                correct: "De heilige Geest",
+                antwoorden: ["Engelen", "De Heilige Geest", "Een profeet", "Een nieuw boek"],
+                correct: "De Heilige Geest",
                 bijbelplaats: "Johannes 14:16-17, 14:26"
             },
             {
@@ -2166,8 +2166,8 @@ vragenData["Romeinen"] = {
     advanced: [
         {
             vraag: "Waarmee heeft God ons hart gevuld, schrijft Paulus?",
-            antwoorden: ["Met niets", "Met zijn liefde, door de heilige Geest", "Met wijsheid over alle dingen op aarde", "Met angst"],
-            correct: "Met zijn liefde, door de heilige Geest",
+            antwoorden: ["Met niets", "Met zijn liefde, door de Heilige Geest", "Met wijsheid over alle dingen op aarde", "Met angst"],
+            correct: "Met zijn liefde, door de Heilige Geest",
             bijbelplaats: "Romeinen 5:5"
         },
         {
@@ -2379,8 +2379,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op de Pinksterdag kregen de leerlingen iets bijzonders, waar Jezus hen op had laten wachten. Wat kregen zij die dag?",
-            antwoorden: ["De heilige Geest", "Een nieuwe boot om mee te vissen", "Een mooie mantel", "Een boekrol met alle woorden van Jezus"],
-            correct: "De heilige Geest",
+            antwoorden: ["De Heilige Geest", "Een nieuwe boot om mee te vissen", "Een mooie mantel", "Een boekrol met alle woorden van Jezus"],
+            correct: "De Heilige Geest",
             bijbelplaats: "Handelingen 2:1-4"
         },
         {
@@ -2439,7 +2439,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 28:8-9"
         },
         {
-            vraag: "Wat was de taak van Paulus en Barnabas toen de heilige Geest hen uitzond?",
+            vraag: "Wat was de taak van Paulus en Barnabas toen de Heilige Geest hen uitzond?",
             antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
             correct: "Naar andere landen reizen om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13:2-4"
@@ -2489,7 +2489,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 1:1"
         },
         {
-            vraag: "Wat konden de leerlingen ineens doen toen ze de heilige Geest kregen?",
+            vraag: "Wat konden de leerlingen ineens doen toen ze de Heilige Geest kregen?",
             antwoorden: ["Onzichtbaar worden", "In andere talen spreken", "Vliegen als een vogel", "In de toekomst kijken"],
             correct: "In andere talen spreken",
             bijbelplaats: "Handelingen 2:4"
@@ -2573,7 +2573,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 7:59-60"
         },
         {
-            vraag: "Een man, Simon, wilde de kracht van de heilige Geest met geld kopen. Wat zei Petrus tegen hem?",
+            vraag: "Een man, Simon, wilde de kracht van de Heilige Geest met geld kopen. Wat zei Petrus tegen hem?",
             antwoorden: ["Dat hij meer moest betalen", "Dat Gods gave nooit met geld te koop is", "Dat hij het geld eerst aan de armen moest geven", "Dat hij later terug moest komen, na overleg met de andere apostelen"],
             correct: "Dat Gods gave nooit met geld te koop is",
             bijbelplaats: "Handelingen 8:18-20"
@@ -3719,8 +3719,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat is volgens Paulus het teken (zegel) dat je echt bij God hoort?",
-            antwoorden: ["Een gouden ring", "De heilige Geest", "Een brief", "Een mooi kleed"],
-            correct: "De heilige Geest",
+            antwoorden: ["Een gouden ring", "De Heilige Geest", "Een brief", "Een mooi kleed"],
+            correct: "De Heilige Geest",
             bijbelplaats: "Efeziërs 1:13-14"
         },
         {
@@ -5573,8 +5573,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft over de profeten in de Bijbel: zij spraken niet zomaar hun eigen woorden. Door wie werden zij geleid?",
-            antwoorden: ["Door de heilige Geest", "Door de koning", "Door hun eigen dromen", "Door de sterren"],
-            correct: "Door de heilige Geest",
+            antwoorden: ["Door de Heilige Geest", "Door de koning", "Door hun eigen dromen", "Door de sterren"],
+            correct: "Door de Heilige Geest",
             bijbelplaats: "2 Petrus 1:21"
         },
         {
