@@ -3006,13 +3006,13 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Aan het slot van zijn eerste brief aan de Korintiërs geeft Paulus vier korte bevelen achter elkaar, als een aanmoediging voor onderweg. Wat draagt hij hun daar op?",
-            antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand", "Geef snel op"],
+            antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand", "Als het moeilijk wordt, geef dan maar snel op"],
             correct: "Sta vast in het geloof en wees moedig",
             bijbelplaats: "1 Korintiërs 16:13"
         },
         {
             vraag: "Paulus en de gelovigen spaarden geld op om iets goeds te doen. Waarvoor was dat geld bedoeld?",
-            antwoorden: ["Om een paleis te bouwen", "Om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een groot nieuw schip te kopen voor hun reizen"],
+            antwoorden: ["Om een paleis te bouwen", "Voor zichzelf, om er zelf beter van te worden", "Om arme gelovigen in Jeruzalem te helpen", "Om een groot nieuw schip te kopen voor hun reizen"],
             correct: "Om arme gelovigen in Jeruzalem te helpen",
             bijbelplaats: "1 Korintiërs 16:1-3"
         },
@@ -3026,7 +3026,8 @@ vragenData["1 & 2 Korintiërs"] = {
             vraag: "Paulus zegt dat je lichaam een heilige plek is, waarin Gods Geest woont. Wat betekent dat volgens hem?",
             antwoorden: ["Dat je met respect en zorg met je lichaam en je leven omgaat", "Dat je nooit meer iets mag aanraken wat vies is", "Dat je voortaan alleen nog zachtjes en heel rustig mag praten", "Dat je je lichaam nooit meer moe mag maken"],
             correct: "Dat je met respect en zorg met je lichaam en je leven omgaat",
-            bijbelplaats: "1 Korintiërs 6:19"
+            bijbelplaats: "1 Korintiërs 6:19",
+            uitleg: "In de tijd van Paulus dachten sommige mensen dat alleen je ziel ertoe deed en dat je met je lichaam kon doen wat je wilde. Paulus keert dat om. Het lichaam is geen omhulsel dat je later afgooit, maar de plek waar Gods Geest woont, en daarom ga je er met eerbied mee om. Het hoort dus bij elkaar: hoe je vanbinnen leeft en hoe je met je lichaam omgaat. Datzelfde staat in de geloofsbelijdenis, waar christenen de opstanding van het lichaam belijden — niet alleen de ziel gaat verder."
         },
         {
             vraag: "Stel dat iemand alles kan: profeteren, alles begrijpen, zelfs bergen verzetten. Wat is die persoon volgens Paulus zonder liefde?",
@@ -3036,12 +3037,12 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het laatste avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
-            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tocht van het volk door de woestijn", "Om God te danken voor de oogst en het dagelijkse eten"],
+            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tien geboden die Mozes kreeg", "Om God te danken voor de oogst en het dagelijkse eten"],
             correct: "Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven",
             bijbelplaats: "1 Korintiërs 11:23-26"
         },
         {
-            vraag: "Paulus zegt: kennis alleen maakt je trots, maar er is iets anders dat mensen echt opbouwt. Wat is dat volgens hem?",
+            vraag: "Paulus waarschuwt dat kennis je trots kan maken. Wat bouwt mensen volgens hem wél op?",
             antwoorden: ["Liefde", "Geld", "Macht", "Hard werken"],
             correct: "Liefde",
             bijbelplaats: "1 Korintiërs 8:1"
@@ -3072,12 +3073,12 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Wat zegt Paulus over de zwakste of minste delen van het lichaam?",
-            antwoorden: ["Ze tellen niet mee", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze worden nooit gezien"],
+            antwoorden: ["Ze tellen niet mee", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze moeten zo sterk mogelijk worden gemaakt"],
             correct: "Ze zijn juist heel belangrijk en nodig",
             bijbelplaats: "1 Korintiërs 12:22"
         },
         {
-            vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van hem houden. Hoe bijzonder is dat?",
+            vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van Hem houden. Hoe bijzonder is dat?",
             antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
             correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
             bijbelplaats: "1 Korintiërs 2:9"
