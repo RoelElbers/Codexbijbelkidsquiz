@@ -2229,7 +2229,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus grijpt in dit hoofdstuk naar een hard beeld voor hoe mensen aan iets vastzitten. Welk beeld gebruikt hij?",
-            antwoorden: ["Slaaf zijn: je bent slaaf van de zonde", "Gevangene zijn in een cel", "Soldaat zijn in een leger", "Ziek zijn en beter moeten worden"],
+            antwoorden: ["Slaaf zijn: je bent slaaf van de zonde", "Gevangene zijn in een cel", "Schuldenaar zijn die niet kan terugbetalen", "Ziek zijn en beter moeten worden"],
             correct: "Slaaf zijn: je bent slaaf van de zonde",
             bijbelplaats: "Romeinen 6:16-22"
         },
