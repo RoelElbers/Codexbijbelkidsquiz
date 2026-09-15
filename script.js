@@ -897,7 +897,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Eerbied en genegenheid voor iemand die hun dierbaar was", "Dat zij geloofden dat Jezus uit de dood zou opstaan", "Dat zij rijker waren dan de andere leerlingen van Jezus", "Dat zij niet bang waren voor de wachters bij het graf"],
                 correct: "Eerbied en genegenheid voor iemand die hun dierbaar was",
                 bijbelplaats: "Marcus 16:1",
-                uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde. Bij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
+                uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde.\n\nBij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
             },
             {
                 vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
@@ -910,7 +910,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
                 correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
                 bijbelplaats: "Marcus 6:3",
-                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen. Een van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot zijn dertigste was dit gewoon zijn werk."
+                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nEen van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot zijn dertigste was dit gewoon zijn werk."
             },
             {
                 vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
@@ -1040,14 +1040,14 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
                 correct: "Ongeveer 240 kilometer",
                 bijbelplaats: "1 Koningen 4:25",
-                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen. Die uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
+                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen.\n\nDie uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
             },
             {
                 vraag: "In de Bijbel lezen we dat Jezus soms een hoge berg opging. Wat is de hoogste berg van Israël?",
                 antwoorden: ["De berg Tabor", "De berg Sinaï", "De berg Hermon", "De Olijfberg"],
                 correct: "De berg Hermon",
                 bijbelplaats: "Marcus 9:2",
-                uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager. De berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit. En de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
+                uitleg: "De hoogste berg in het noorden van Israël is de Hermon, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De andere bergen zijn veel lager.\n\nDe berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, is nog lager: ongeveer 800 meter, maar hij steekt maar zo'n honderd meter boven de stad uit.\n\nEn de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
             },
             {
                 vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
@@ -1111,14 +1111,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
                 correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
                 bijbelplaats: "Marcus 5:20",
-                uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was. De man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
+                uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was.\n\nDe man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
             },
             {
                 vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
                 antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
                 correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
                 bijbelplaats: "Marcus 7:24",
-                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed. Dat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
+                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed.\n\nDat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
             },
             {
                 vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
