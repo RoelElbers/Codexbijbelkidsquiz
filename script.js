@@ -2180,10 +2180,10 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 5:5"
         },
         {
-            vraag: "Mogen we rustig verkeerde dingen blijven doen, omdat God toch vergeeft?",
-            antwoorden: ["Ja, het maakt niet uit", "Nee, maar een klein foutje telt niet mee", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
-            correct: "Nee, want we leven nu een nieuw leven",
-            bijbelplaats: "Romeinen 6:1-2"
+            vraag: "Paulus gebruikt een beeld om te zeggen dat het oude leven echt voorbij is. Waarmee vergelijkt hij de doop?",
+            antwoorden: ["Met sterven en begraven worden, en daarna opstaan", "Met een nieuwe naam krijgen", "Met het oversteken van een rivier naar een nieuw land", "Met het aansteken van een lamp"],
+            correct: "Met sterven en begraven worden, en daarna opstaan",
+            bijbelplaats: "Romeinen 6:3-4"
         },
         {
             vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wie of wat kan hem daaruit redden, zegt hij?",
@@ -2192,27 +2192,27 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 7:24-25"
         },
         {
-            vraag: "Waaraan zie je volgens Paulus hoe groot Gods liefde voor ons is?",
-            antwoorden: ["Hij gaf zelfs zijn eigen Zoon voor ons", "Hij gaf ons veel geld en bezit", "Hij gaf ons een makkelijk leven zonder zorgen", "Hij gaf alleen aan mensen die het verdienen"],
-            correct: "Hij gaf zelfs zijn eigen Zoon voor ons",
+            vraag: "Paulus redeneert van groot naar klein: als God zelfs zijn eigen Zoon gaf, wat volgt daaruit dan?",
+            antwoorden: ["Dan zal Hij ons ook al het andere geven", "Dan hoeven wij verder niets meer te doen", "Dan mogen wij Hem vragen wat we maar willen", "Dan is Hij ons verder niets meer verschuldigd"],
+            correct: "Dan zal Hij ons ook al het andere geven",
             bijbelplaats: "Romeinen 8:32"
         },
         {
-            vraag: "Wat raadt Paulus aan als het even moeilijk is?",
-            antwoorden: ["Geef het meteen op", "Blijf hopen, wees geduldig en blijf bidden", "Word boos op iedereen", "Doe alsof er niets aan de hand is"],
-            correct: "Blijf hopen, wees geduldig en blijf bidden",
+            vraag: "Paulus schrijft over christenen die het zwaar hebben, en noemt in één zin drie dingen die dan bij elkaar horen. Welke drie dingen zijn dat?",
+            antwoorden: ["Hoop, geduld en gebed", "Geloof, hoop en liefde", "Vasten, bidden en geven", "Rust, stilte en geduld"],
+            correct: "Hoop, geduld en gebed",
             bijbelplaats: "Romeinen 12:12"
         },
         {
-            vraag: "Paulus schrijft over gelovigen die verschillend denken over eten en feestdagen. Waar moeten zij volgens hem hun best voor doen?",
-            antwoorden: ["Voor afstand tot mensen die er anders over denken", "Voor hun eigen gelijk", "Voor dingen die vrede brengen en elkaar opbouwen", "Voor een plek waar zij de baas blijven"],
-            correct: "Voor dingen die vrede brengen en elkaar opbouwen",
-            bijbelplaats: "Romeinen 14:19"
+            vraag: "Waarover waren de gelovigen in Rome het met elkaar oneens?",
+            antwoorden: ["Over wat je wel en niet mocht eten, en welke dagen bijzonder waren", "Over wie de leider van de gemeente moest zijn na Paulus", "Over hoeveel geld ieder moest geven", "Over de vraag of Jezus echt was opgestaan"],
+            correct: "Over wat je wel en niet mocht eten, en welke dagen bijzonder waren",
+            bijbelplaats: "Romeinen 14:2-6"
         },
         {
-            vraag: "Waarvoor zijn de woorden uit de Bijbel volgens Paulus opgeschreven?",
-            antwoorden: ["Om ons te laten schrikken", "Om ons te bemoedigen en hoop te geven", "Om ons bang te maken voor het oordeel van God", "Om ons in de war te brengen"],
-            correct: "Om ons te bemoedigen en hoop te geven",
+            vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
+            antwoorden: ["De boeken van het Oude Testament", "De vier evangeliën", "De brieven van de apostelen", "De woorden van Jezus zelf"],
+            correct: "De boeken van het Oude Testament",
             bijbelplaats: "Romeinen 15:4"
         },
         {
@@ -2228,10 +2228,10 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 2:1"
         },
         {
-            vraag: "Wat raadt Paulus aan om met je leven te doen?",
-            antwoorden: ["Verzamel zoveel mogelijk bezit en rijkdom voor jezelf", "Doe gewoon wat je maar wilt", "Geef jezelf aan God om het goede te doen", "Wacht af tot anderen iets doen"],
-            correct: "Geef jezelf aan God om het goede te doen",
-            bijbelplaats: "Romeinen 6:13"
+            vraag: "Paulus grijpt in dit hoofdstuk naar een hard beeld voor hoe mensen aan iets vastzitten. Welk beeld gebruikt hij?",
+            antwoorden: ["Slaaf zijn: je bent slaaf van de zonde", "Gevangene zijn in een cel", "Soldaat zijn in een leger", "Ziek zijn en beter moeten worden"],
+            correct: "Slaaf zijn: je bent slaaf van de zonde",
+            bijbelplaats: "Romeinen 6:16-22"
         },
         {
             vraag: "Wat doet Jezus volgens Paulus nu voor ons bij God?",
@@ -2240,9 +2240,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 8:34"
         },
         {
-            vraag: "Hoe mag je God dienen, volgens Paulus?",
-            antwoorden: ["Met tegenzin, omdat het nou eenmaal moet", "Zo weinig mogelijk", "Met vuur en enthousiasme", "Alleen als anderen kijken"],
-            correct: "Met vuur en enthousiasme",
+            vraag: "Paulus zet twee dingen tegenover elkaar: je moet niet traag zijn, maar juist wat?",
+            antwoorden: ["Vurig van geest", "Sterk van arm", "Snel van tong", "Wijs van hoofd"],
+            correct: "Vurig van geest",
             bijbelplaats: "Romeinen 12:11"
         },
         {
@@ -2258,9 +2258,9 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 13:12"
         },
         {
-            vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat bedoelt hij daarmee?",
-            antwoorden: ["Ze moeten allemaal precies hetzelfde zijn", "Ze kunnen beter alleen zijn", "Ze horen bij elkaar en hebben elkaar nodig", "Alleen het sterkste deel telt"],
-            correct: "Ze horen bij elkaar en hebben elkaar nodig",
+            vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat zegt hij erbij over die delen?",
+            antwoorden: ["Ze hebben niet allemaal dezelfde taak", "Ze zijn allemaal even sterk", "Ze kunnen ook los van elkaar verder", "Ze moeten allemaal hetzelfde doen"],
+            correct: "Ze hebben niet allemaal dezelfde taak",
             bijbelplaats: "Romeinen 12:4-5"
         },
         {
