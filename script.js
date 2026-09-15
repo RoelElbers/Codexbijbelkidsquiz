@@ -3213,13 +3213,13 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat deed Paulus met de christenen voordat hij zelf in Jezus ging geloven?",
-            antwoorden: ["Hij vervolgde hen en deed de christenen veel kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet", "Hij nodigde hen uit"],
-            correct: "Hij vervolgde hen en deed de christenen veel kwaad",
+            antwoorden: ["Hij vervolgde hen en deed hun veel kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet, en dat interesseerde hem ook niet veel", "Hij nodigde hen uit"],
+            correct: "Hij vervolgde hen en deed hun veel kwaad",
             bijbelplaats: "Galaten 1:13"
         },
         {
             vraag: "Wat is volgens Paulus het goede nieuws dat hij brengt?",
-            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen", "Dat je alles alleen moet doen"],
+            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je soms ver moet reizen omdat iedereen een keer naar Jeruzalem moet gaan", "Dat je alles alleen moet doen"],
             correct: "Dat je bij God mág horen door op Jezus te vertrouwen",
             bijbelplaats: "Galaten 2:16"
         },
@@ -3230,9 +3230,9 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:26"
         },
         {
-            vraag: "Paulus schrijft dat het bij God niet uitmaakt wie je bent. Wat bedoelt hij?",
-            antwoorden: ["Alleen wie uit Joodse ouders geboren is, mag bij God horen", "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij", "Alleen sterke mensen horen erbij", "Alleen mensen uit Galatië"],
-            correct: "Jood of niet-Jood, slaaf of vrij, iedereen hoort er gelijk bij",
+            vraag: "Paulus noemt drie paren mensen die bij God geen verschil meer maken. Welke drie paren noemt hij?",
+            antwoorden: ["Jood en Griek, slaaf en vrije, man en vrouw", "Priester en gewone gelovige, geleerde en leerling, stad en dorp", "Jood en Samaritaan, kind en volwassene, herder en boer", "Romein en Griek, soldaat en burger, koopman en klant"],
+            correct: "Jood en Griek, slaaf en vrije, man en vrouw",
             bijbelplaats: "Galaten 3:28"
         },
         {
@@ -3243,14 +3243,14 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus noemt negen goede dingen die groeien als je je door Gods Geest laat leiden. Hoe noemt hij die negen samen?",
-            antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De regels van de gemeente"],
+            antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De deugden"],
             correct: "De vrucht van de Geest",
             bijbelplaats: "Galaten 5:22",
             uitleg: "Paulus schrijft \"de vrucht\", niet \"de vruchten\". Vlak ervoor noemt hij de verkeerde dingen wél in het meervoud: de werken van het vlees. Dat verschil is met opzet. De negen horen bij elkaar, als negen kanten van één ding — je kunt niet de vriendelijkheid uitkiezen en het geduld laten liggen."
         },
         {
             vraag: "Hoe wist Paulus zo zeker dat zijn boodschap klopte?",
-            antwoorden: ["Hij had het bedacht", "Hij had het uit een boek", "Hij had het van Jezus Christus zelf gekregen", "Iemand had het hem verteld in een droom"],
+            antwoorden: ["Hij had het bedacht", "Hij had het uit een boek", "Hij had het van Jezus Christus zelf gekregen", "Hij had het geleerd van de apostelen in Jeruzalem"],
             correct: "Hij had het van Jezus Christus zelf gekregen",
             bijbelplaats: "Galaten 1:11-12"
         },
@@ -3267,9 +3267,9 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 1:3"
         },
         {
-            vraag: "Paulus schrijft dat Jezus iets groots voor ons heeft gedaan. Wat heeft Jezus volgens hem gedaan?",
-            antwoorden: ["Hij liet ons alleen", "Hij gaf zichzelf, uit liefde voor ons", "Hij keek van een afstand toe", "Hij deed niets bijzonders"],
-            correct: "Hij gaf zichzelf, uit liefde voor ons",
+            vraag: "Paulus schrijft meteen aan het begin van zijn brief aan de Galaten dat Jezus zichzelf heeft gegeven. Waarvoor deed Hij dat, volgens Paulus?",
+            antwoorden: ["Om ons te bevrijden uit de macht van het kwaad", "Om de Romeinen uit het land te verjagen", "Om de mensen zich weer strikt aan de wet van Mozes te laten houden", "Om een eind te maken aan de honger in het land"],
+            correct: "Om ons te bevrijden uit de macht van het kwaad",
             bijbelplaats: "Galaten 1:4"
         }
     ],
