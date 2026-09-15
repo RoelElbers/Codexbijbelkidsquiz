@@ -2759,7 +2759,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
-            antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd zelden toegestaan"],
+            antwoorden: ["Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen", "Hij was priester geweest en had daardoor bijzondere rechten", "Hij had de gouverneur betaald voor die gunst", "Iedere gevangene mocht dat vragen, maar het werd bijna nooit werkelijk toegestaan"],
             correct: "Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen",
             bijbelplaats: "Handelingen 25:11",
             uitleg: "Het Romeinse burgerrecht gaf een handvol rechten die voor gewone inwoners niet golden: je mocht niet zonder vonnis gegeseld worden, niet gekruisigd worden, en je mocht je zaak naar Rome laten verwijzen. Zodra Paulus die woorden uitsprak, was de zaak uit handen van de gouverneur — die kón hem daarna niet meer vrijlaten, ook al vond hij hem onschuldig. Het beroep bracht Paulus dus naar Rome, maar het sloot tegelijk de deur naar vrijlating."
@@ -2787,14 +2787,14 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
-            antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het innen", "Er moest iemand de brieven van Paulus rondbrengen"],
+            antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het bij de rijke leden gaan innen", "Er moest iemand de brieven van Paulus rondbrengen"],
             correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
             bijbelplaats: "Handelingen 6:1-3",
             uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
         },
         {
             vraag: "De Heilige Geest kwam op de dag dat de Joden het Wekenfeest vierden. Waar komt die naam vandaan?",
-            antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd"],
+            antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd, het hele jaar door"],
             correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
             bijbelplaats: "Handelingen 2:1",
             uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentēkostē, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Het christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
@@ -2815,14 +2815,14 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
-            antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
+            antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten, ook niet voor het feest", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
             correct: "Je hoofd kaalscheren en offers brengen in de tempel",
             bijbelplaats: "Handelingen 21:23-26",
             uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
         },
         {
             vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
-            antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
+            antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom liever bij de tempel wegbleven", "Priesters die alleen in de tempel mochten dienen"],
             correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
             bijbelplaats: "Handelingen 10:2",
             uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet. Cornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem werd voor het eerst hardop uitgesproken dat zulke buitenstaanders erbij mochten horen zonder eerst Jood te worden."
@@ -2843,7 +2843,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
-            antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "Er waaide in de winter te weinig wind om te varen"],
+            antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar gerepareerd worden, want hout ging in het water rotten", "Er waaide in de winter te weinig wind om te varen"],
             correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
             bijbelplaats: "Handelingen 27:12",
             uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
@@ -2857,7 +2857,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
-            antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er aan boord was", "Om de richting van de stroming te bepalen"],
+            antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er aan boord was", "Om de richting van de stroming te bepalen en zo sneller te kunnen varen"],
             correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
             bijbelplaats: "Handelingen 27:28"
         },
