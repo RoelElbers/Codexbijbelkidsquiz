@@ -2670,13 +2670,13 @@ vragenData["Handelingen"] = {
     expert: [
         {
             vraag: "Na het verraad van Judas moesten de elf apostelen iemand kiezen die zijn plaats zou innemen. Er bleven twee kandidaten over, en het werd Mattias. Maar hóe maakten zij die keuze?",
-            antwoorden: ["Ze baden, en lieten daarna het lot beslissen", "Ze lieten de hele gemeente stemmen", "Petrus wees hem persoonlijk aan", "Ze kozen degene die het langst met Jezus was meegereisd"],
+            antwoorden: ["Ze baden, en lieten daarna het lot beslissen", "Ze lieten de hele gemeente stemmen", "Petrus wees hem persoonlijk aan", "Ze kozen degene die het langst bij Jezus was geweest"],
             correct: "Ze baden, en lieten daarna het lot beslissen",
             bijbelplaats: "Handelingen 1:23-26"
         },
         {
             vraag: "In de stad Joppe maakte Petrus een vrouw weer levend die veel goeds had gedaan voor arme mensen. Hoe heette zij?",
-            antwoorden: ["Maria", "Lydia, de vrouw die purperstof verkocht", "Tabita (ook Dorkas genoemd)", "Marta"],
+            antwoorden: ["Maria", "Lydia", "Tabita (ook Dorkas genoemd)", "Marta"],
             correct: "Tabita (ook Dorkas genoemd)",
             bijbelplaats: "Handelingen 9:36-41"
         },
@@ -2688,7 +2688,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Wie reisde in het begin samen met Paulus om mensen over Jezus te vertellen?",
-            antwoorden: ["Petrus", "Johannes", "Tomas", "Barnabas"],
+            antwoorden: ["Andreas", "Johannes", "Tomas", "Barnabas"],
             correct: "Barnabas",
             bijbelplaats: "Handelingen 13:2-3"
         },
@@ -2715,7 +2715,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Dat het toeval was", "Dat Paulus en Barnabas goden waren", "Dat Paulus een goede dokter was", "Dat het niet echt was en dat het kwakzalvers waren"],
             correct: "Dat Paulus en Barnabas goden waren",
             bijbelplaats: "Handelingen 14:11",
-            uitleg: "De mensen in Lystra spraken hun eigen streektaal en riepen dat de goden als mensen naar hen toe waren gekomen: Barnabas noemden zij Zeus en Paulus Hermes, omdat hij het woord voerde. De priester van Zeus kwam zelfs met stieren en bloemenkransen aanzetten om offers te brengen. Paulus en Barnabas schrokken daar zo van dat ze hun kleren scheurden en riepen dat zij gewone mensen waren, net als de anderen. Een kwakzalver, uit een van de andere antwoorden, is iemand die doet alsof hij zieke mensen kan genezen terwijl hij dat helemaal niet kan. Het is een oud woord dat ook in de Bijbel voorkomt: in het boek Job noemt Job zijn vrienden zo, omdat ze wel raad geven maar hem niet echt helpen."
+            uitleg: "De mensen in Lystra spraken hun eigen streektaal en riepen dat de goden als mensen naar hen toe waren gekomen: Barnabas noemden zij Zeus en Paulus Hermes, omdat hij het woord voerde. De priester van Zeus kwam zelfs met stieren en bloemenkransen aanzetten om offers te brengen. Paulus en Barnabas schrokken daar zo van dat ze hun kleren scheurden en riepen dat zij gewone mensen waren, net als de anderen. Een kwakzalver, uit een van de andere antwoorden, is iemand die doet alsof hij zieke mensen kan genezen terwijl hij dat helemaal niet kan. In sommige Bijbelvertalingen komt het woord ook voor: in de NBV21 noemt Job zijn vrienden kwakzalvers, omdat ze wel raad geven maar hem niet echt helpen."
         },
         {
             vraag: "De christenen in Jeruzalem waren eerst bang voor Saulus. Wie nam het voor hem op en stelde hem aan de anderen voor?",
@@ -2727,7 +2727,8 @@ vragenData["Handelingen"] = {
             vraag: "De profeet Agabus kwam naar de gemeente in Antiochië en voorspelde dat er iets ergs zou komen over het hele Romeinse rijk. Wat voorspelde hij?",
             antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een grote plaag"],
             correct: "Een grote hongersnood",
-            bijbelplaats: "Handelingen 11:28"
+            bijbelplaats: "Handelingen 11:28",
+            uitleg: "Agabus hoorde bij een groepje profeten dat vanuit Jeruzalem naar Antiochië kwam. Hij komt twee keer voor in Handelingen, en allebei de keren voorspelt hij iets. Hier de hongersnood, die volgens Lucas kwam toen Claudius keizer was. De tweede keer ontmoet hij Paulus in Caesarea: hij pakt Paulus' riem, bindt zichzelf er handen en voeten mee vast en zegt dat het de eigenaar van die riem in Jeruzalem zo zal vergaan. Profeten deden dat vaker — een gebaar dat je niet vergeet, in plaats van alleen woorden."
         },
         {
             vraag: "Toen spotters dachten dat de leerlingen dronken waren, zei Petrus dat dat niet kon: 'het is pas het derde uur van de dag.' Hoe laat op de dag was dat ongeveer?",
@@ -2739,7 +2740,7 @@ vragenData["Handelingen"] = {
             ],
             correct: "Ongeveer negen uur 's ochtends",
             bijbelplaats: "Handelingen 2:15",
-            uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord."
+            uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord. Hoe de uren van de dag verder werkten, staat in Bijbeltraining bij \"Hoe leefden ze toen\" onder \"Tijd\"."
         },
         {
             vraag: "Paulus zegt dat hij \"aan de voeten van Gamaliël\" is opgeleid. Wat betekent die uitdrukking?",
@@ -2749,9 +2750,9 @@ vragenData["Handelingen"] = {
             uitleg: "Een leraar zat op een stoel of verhoging, en zijn leerlingen zaten op de grond om hem heen. \"Aan iemands voeten zitten\" werd daardoor de gewone uitdrukking voor \"bij iemand in de leer zijn\". Datzelfde beeld staat bij Maria, de zus van Marta: zij zat aan Jezus' voeten en luisterde. Dat was voor een vrouw ongebruikelijk — zij nam de plaats in van een leerling."
         },
         {
-            vraag: "De apostelen moesten voor \"de Hoge Raad\" verschijnen. Wat was dat?",
-            antwoorden: ["De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
-            correct: "De hoogste Joodse rechtbank, met eenenzeventig leden onder leiding van de hogepriester",
+            vraag: "De apostelen moesten voor \"de Hoge Raad\" verschijnen. Wat was dat voor een raad?",
+            antwoorden: ["De hoogste Joodse rechtbank", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
+            correct: "De hoogste Joodse rechtbank",
             bijbelplaats: "Handelingen 5:27",
             uitleg: "Deze raad heette in het Grieks het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
         },
@@ -2764,7 +2765,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Paulus vraagt of het is toegestaan een Romeins burger te geselen zonder vonnis. Waarom schrokken de soldaten daarvan?",
-            antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden hun zweep al verloren", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
+            antwoorden: ["Dat was verboden, en wie het toch deed kon zelf gestraft worden", "Zij hadden geen bevel van de gouverneur gekregen", "Geselen mocht alleen op de sabbat niet", "Zij dachten dat hij een priester was"],
             correct: "Dat was verboden, en wie het toch deed kon zelf gestraft worden",
             bijbelplaats: "Handelingen 22:25",
             uitleg: "Twee oude Romeinse wetten verboden het om een burger zonder vonnis te binden of te slaan. Wie dat toch deed, riskeerde zelf een zware straf, en de commandant in dit verhaal schrikt dan ook oprecht — hij had Paulus al laten vastbinden. Het burgerrecht was niet aan een gebied gebonden: je nam het mee waar je ook kwam, en één zin was genoeg om het in te roepen. Precies dat maakt het ook zo bijzonder dat Paulus die zin niet altijd uitsprak; in Filippi liet hij zich eerst afranselen en zei hij het pas achteraf."
@@ -2791,17 +2792,18 @@ vragenData["Handelingen"] = {
             uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
         },
         {
-            vraag: "Pinksteren heette bij de Joden het Wekenfeest. Waarom die naam?",
+            vraag: "De Heilige Geest kwam op de dag dat de Joden het Wekenfeest vierden. Waar komt die naam vandaan?",
             antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd"],
             correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
             bijbelplaats: "Handelingen 2:1",
-            uitleg: "Het Wekenfeest viel vijftig dagen na Pesach — het Griekse woord voor vijftigste is pentèkostè, en daar komt ons woord Pinksteren vandaan. Het was een oogstfeest: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Juist daarom was Jeruzalem die dag vol pelgrims uit alle windstreken, en dat verklaart waarom er zoveel talen te horen waren."
+            uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentèkostè, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Het christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
         },
         {
             vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
             antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
             correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
-            bijbelplaats: "Handelingen 18:3"
+            bijbelplaats: "Handelingen 18:3",
+            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat er geen regen doorheen kwam. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar. Hij maakte dus het product van zijn eigen geboortestreek. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
         },
         {
             vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
@@ -2819,9 +2821,10 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
-            antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die extra streng leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
+            antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
             correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
-            bijbelplaats: "Handelingen 10:2"
+            bijbelplaats: "Handelingen 10:2",
+            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet. Cornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: hij was de eerste van die buitenstaanders die erbij ging horen zonder eerst Jood te worden."
         },
         {
             vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
@@ -2832,14 +2835,14 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In het visioen van Petrus worden dieren \"rein\" of \"onrein\" genoemd. Wat betekende dat?",
-            antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier gewassen was voordat het geslacht werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
+            antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier wild was of door mensen gehouden werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
             correct: "Of je het volgens de wet van Mozes wel of niet mocht eten",
             bijbelplaats: "Handelingen 10:14",
             uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt of ziek was geweest, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
         },
         {
             vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
-            antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "De havens waren in de winter gesloten voor belasting"],
+            antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar opnieuw gebouwd worden", "Er waaide in de winter te weinig wind om te varen"],
             correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
             bijbelplaats: "Handelingen 27:12",
             uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar. Paulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
@@ -2853,7 +2856,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
-            antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er nog aan boord was", "Om de richting van de stroming te bepalen"],
+            antwoorden: ["Om te meten hoe diep het water was en te weten of land dichtbij kwam", "Om het schip vast te leggen aan de bodem", "Om te wegen hoeveel lading er aan boord was", "Om de richting van de stroming te bepalen"],
             correct: "Om te meten hoe diep het water was en te weten of land dichtbij kwam",
             bijbelplaats: "Handelingen 27:28"
         },
