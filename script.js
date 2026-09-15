@@ -2017,7 +2017,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
 // === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
 // "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
 // =====================================================================
-// Romeinen — vragenpool (54 vragen: beginner 23, advanced 17, expert 14)
+// Romeinen — vragenpool (55 vragen: beginner 24, advanced 17, expert 14)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
 // =====================================================================
@@ -2034,7 +2034,7 @@ vragenData["Romeinen"] = {
             antwoorden: ["Overwin het kwade door het goede", "Doe precies hetzelfde terug", "Doe alsof je niets merkt", "Meld het meteen bij de overheid"],
             correct: "Overwin het kwade door het goede",
             bijbelplaats: "Romeinen 12:21",
-            uitleg: "Stel je voor: een vriend van je zegt iets gemeens waar anderen bij staan. Je eerste gedachte is om iets net zo gemeens terug te zeggen. Dat noemt Paulus \"overwonnen worden door het kwade\": het gemene wint, want nu doen jullie het allebei. Zijn raad is om het andersom te doen. Niet terugpakken, maar iets goeds doen — hem toch groeten de volgende dag, of vragen wat er aan de hand was. Dat is veel moeilijker dan terugpakken, maar het is het enige wat de ruzie echt kan laten ophouden. Overwinnen betekent hier dus niet dat jij wint van hem, maar dat het gemene gedrag geen terrein wint in jullie hart. Paulus bedoelt niet dat je alles maar moet laten gebeuren. Als iemand je steeds pijn doet of pest, mag je gewoon \"stop\" zeggen en het aan je ouders of je juf of meester vertellen. Vlak vóór deze regel schrijft Paulus zelf dat je in vrede moet leven \"voor zover het van jou afhangt\" — hij weet dus goed dat het niet altijd alleen van jou afhangt."
+            uitleg: "Stel je voor: een vriend van je zegt iets gemeens waar anderen bij staan. Je eerste gedachte is om iets net zo gemeens terug te zeggen. Dat noemt Paulus \"overwonnen worden door het kwade\": het gemene wint, want nu doen jullie het allebei. Zijn raad is om het andersom te doen. Niet terugpakken, maar iets goeds doen — hem toch groeten de volgende dag, of vragen wat er aan de hand was. Dat is veel moeilijker dan terugpakken, maar het is het enige wat de ruzie echt kan laten ophouden. Overwinnen betekent hier dus niet dat jij wint van hem, maar dat het gemene gedrag geen terrein wint in jullie hart. Paulus bedoelt niet dat je alles maar moet laten gebeuren. Jezelf liefhebben hoort daar trouwens ook bij. \"Heb je naaste lief als jezelf\" betekent dat je jezelf niet overslaat: wie steeds wordt gepest of pijn gedaan, mag zich verdedigen en hulp zoeken bij iemand die kan ingrijpen. Vlak vóór deze regel schrijft Paulus zelf dat je in vrede moet leven \"voor zover het van jou afhangt\" — hij weet dus goed dat het niet altijd alleen van jou afhangt."
         },
         {
             vraag: "Wat voor soort tekst is \"Romeinen\"?",
@@ -2064,17 +2064,19 @@ vragenData["Romeinen"] = {
             vraag: "In Romeinen 12 schrijft Paulus over mensen die het je moeilijk maken. Wat zegt hij dat je moet doen?",
             antwoorden: ["Zegen hen en wens hun het goede toe", "Pak ze flink terug", "Negeer ze voorgoed", "Vertel iedereen hoe slecht ze zijn"],
             correct: "Zegen hen en wens hun het goede toe",
-            bijbelplaats: "Romeinen 12:14"
+            bijbelplaats: "Romeinen 12:14",
+            uitleg: "Zegenen betekent niet dat je alles maar goed moet vinden. Een paar regels verder schrijft Paulus dat de overheid er juist is om het kwaad te bestrijden, en hijzelf beriep zich later op zijn recht als Romeins burger toen hem onrecht werd aangedaan. Liefde en rechtvaardigheid horen bij elkaar: iemand het goede toewensen en tegelijk zeggen dat wat hij doet niet deugt, is geen tegenspraak. Het verschil zit tussen de persoon en zijn gedrag. Wie het gedrag niet durft te benoemen is niet liefdevol, maar onverschillig."
         },
         {
             vraag: "Wat raadt Paulus de christenen aan over hoe ze met elkaar omgaan?",
             antwoorden: ["Blijf bij elkaar uit de buurt", "Heb elkaar oprecht lief", "Wees streng voor elkaar", "Praat niet met elkaar"],
             correct: "Heb elkaar oprecht lief",
-            bijbelplaats: "Romeinen 12:9-10"
+            bijbelplaats: "Romeinen 12:9-10",
+            uitleg: "Paulus schrijft dit niet zomaar. In de gemeente van Rome zat van alles door elkaar: geboren Joden en mensen uit allerlei andere volken, slaven en vrije mensen, rijk en arm. Ze aten anders, vierden andere feesten en hadden andere gewoonten, en verderop in de brief blijkt dat ze daar flink ruzie over maakten. \"Heb elkaar oprecht lief\" is dus geen mooie zin over mensen die het toch al met elkaar eens waren, maar een opdracht aan mensen die dat juist niet waren. Dat is nog steeds zo: in veel kerken zitten mensen uit heel verschillende landen bij elkaar, en elkaar oprecht liefhebben kost daar soms moeite — precies waar Paulus het over heeft."
         },
         {
             vraag: "Voor wie is het goede nieuws (het evangelie) volgens Paulus?",
-            antwoorden: ["Alleen Joodse mensen", "Alleen Romeinse mensen", "Iedereen die gelooft", "Alleen rijke mensen"],
+            antwoorden: ["Alleen Joodse mensen", "Alleen Romeinse mensen", "Iedereen die gelooft", "Wie zich aan alle regels houdt"],
             correct: "Iedereen die gelooft",
             bijbelplaats: "Romeinen 1:16"
         },
@@ -2098,8 +2100,8 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus schrijft bemoedigend: 'Als God vóór ons is, wie kan dan tégen ons zijn?' Wat wil hij hiermee duidelijk maken?",
-            antwoorden: ["Niemand is sterker dan God, dus we hoeven niet bang te zijn", "Dat we altijd onze zin zullen krijgen", "Dat we nooit meer verdrietig zullen zijn", "Dat God al onze vijanden voor ons zal komen straffen en verslaan"],
-            correct: "Niemand is sterker dan God, dus we hoeven niet bang te zijn",
+            antwoorden: ["Dat niemand sterker is dan God, dus dat we niet bang hoeven te zijn", "Dat we altijd onze zin zullen krijgen", "Dat we nooit meer verdrietig zullen zijn", "Dat God al onze vijanden voor ons zal komen straffen en verslaan"],
+            correct: "Dat niemand sterker is dan God, dus dat we niet bang hoeven te zijn",
             bijbelplaats: "Romeinen 8:31"
         },
         {
@@ -2110,13 +2112,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus haalt een oude belofte aan, over iedereen die de naam van de Heer aanroept. Wat belooft God zo iemand?",
-            antwoorden: ["Dat hij gered wordt", "Dat hij alles zal begrijpen", "Dat hij nooit meer verdrietig zal zijn", "Dat hij een teken zal zien"],
+            antwoorden: ["Dat hij gered wordt", "Dat hij alles zal begrijpen", "Dat zijn wensen vervuld worden", "Dat hij een teken zal zien"],
             correct: "Dat hij gered wordt",
             bijbelplaats: "Romeinen 10:13"
         },
         {
             vraag: "Hoe ontstaat geloof volgens Paulus?",
-            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen", "Door zoveel mogelijk goede daden te verzamelen"],
+            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen en veel van de wereld te zien", "Door zoveel mogelijk goede daden te verzamelen"],
             correct: "Door te luisteren naar het woord van God",
             bijbelplaats: "Romeinen 10:17"
         },
@@ -2140,7 +2142,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Tegen het eind van zijn brief wenst Paulus de gelovigen vreugde en vrede toe, en noemt God daarbij met een mooie naam. Welke naam geeft hij God?",
-            antwoorden: ["De God van de hoop", "De God van de oorlog", "De God van het donker", "De God van de stilte"],
+            antwoorden: ["De God van de hoop", "De God van de rijkdom", "De God van de regels", "De God van de stilte"],
             correct: "De God van de hoop",
             bijbelplaats: "Romeinen 15:13"
         },
@@ -2161,6 +2163,13 @@ vragenData["Romeinen"] = {
             antwoorden: ["Kinderen van God", "Dienaren van God", "Soldaten van God", "Gasten van God"],
             correct: "Kinderen van God",
             bijbelplaats: "Romeinen 8:14"
+        },
+        {
+            vraag: "Aan wie schreef Paulus deze brief?",
+            antwoorden: ["De christenen in Rome", "De christenen in Korinte", "De keizer van Rome", "De leiders van de tempel in Jeruzalem"],
+            correct: "De christenen in Rome",
+            bijbelplaats: "Romeinen 1:7",
+            kist: false
         }
     ],
     advanced: [
