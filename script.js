@@ -2228,7 +2228,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 2:1"
         },
         {
-            vraag: "Paulus grijpt in dit hoofdstuk naar een hard beeld voor hoe mensen aan iets vastzitten. Welk beeld gebruikt hij?",
+            vraag: "Paulus grijpt in Romeinen 6 naar een hard beeld voor hoe mensen aan iets vastzitten. Welk beeld gebruikt hij?",
             antwoorden: ["Slaaf zijn: je bent slaaf van de zonde", "Gevangene zijn in een cel", "Schuldenaar zijn die niet kan terugbetalen", "Ziek zijn en beter moeten worden"],
             correct: "Slaaf zijn: je bent slaaf van de zonde",
             bijbelplaats: "Romeinen 6:16-22"
