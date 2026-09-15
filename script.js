@@ -2186,7 +2186,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 6:1-2"
         },
         {
-            vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wat kan hem daaruit redden, zegt hij?",
+            vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wie of wat kan hem daaruit redden, zegt hij?",
             antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand", "Jezus Christus, onze Heer", "Zich helemaal toewijden aan de wet van Mozes"],
             correct: "Jezus Christus, onze Heer",
             bijbelplaats: "Romeinen 7:24-25"
@@ -2205,7 +2205,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus schrijft over gelovigen die verschillend denken over eten en feestdagen. Waar moeten zij volgens hem hun best voor doen?",
-            antwoorden: ["Om afstand te houden van mensen die er anders over denken", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te kunnen blijven spelen"],
+            antwoorden: ["Voor afstand tot mensen die er anders over denken", "Voor hun eigen gelijk", "Voor dingen die vrede brengen en elkaar opbouwen", "Voor een plek waar zij de baas blijven"],
             correct: "Voor dingen die vrede brengen en elkaar opbouwen",
             bijbelplaats: "Romeinen 14:19"
         },
@@ -2247,12 +2247,12 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
-            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt", "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt", "Praat liever met niemand", "Vrede is niet belangrijk"],
+            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt en vertrouwt", "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt", "Praat liever met niemand", "Vrede is niet belangrijk"],
             correct: "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt",
             bijbelplaats: "Romeinen 12:18"
         },
         {
-            vraag: "Paulus zegt: laat de daden van het donker achter je en leef in het licht. Wat bedoelt hij?",
+            vraag: "Paulus zegt: laat de daden van het donker achter je en leef in het licht. Wat bedoelt hij daarmee?",
             antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Blijf binnen tot het buiten weer licht wordt"],
             correct: "Leef eerlijk en goed, alsof het klaarlichte dag is",
             bijbelplaats: "Romeinen 13:12"
