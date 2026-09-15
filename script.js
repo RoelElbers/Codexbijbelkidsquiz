@@ -3018,7 +3018,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "De mensen in Korinte kozen partij: \"ik ben van Paulus\", \"ik ben van Apollos\". Wat vond Paulus daarvan?",
-            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze een preekwedstrijd moesten organiseren", "Dat het niet uitmaakte"],
+            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze een preekwedstrijd moesten organiseren, om te kijken wie de beste was", "Dat het niet uitmaakte"],
             correct: "Dat ze juist één moesten zijn, niet verdeeld",
             bijbelplaats: "1 Korintiërs 1:12-13"
         },
@@ -3030,7 +3030,7 @@ vragenData["1 & 2 Korintiërs"] = {
             uitleg: "In de tijd van Paulus dachten sommige mensen dat alleen je ziel ertoe deed en dat je met je lichaam kon doen wat je wilde. Paulus keert dat om. Het lichaam is geen omhulsel dat je later afgooit, maar de plek waar Gods Geest woont, en daarom ga je er met eerbied mee om. Het hoort dus bij elkaar: hoe je vanbinnen leeft en hoe je met je lichaam omgaat. Datzelfde staat in de geloofsbelijdenis, waar christenen de opstanding van het lichaam belijden — niet alleen de ziel gaat verder."
         },
         {
-            vraag: "Stel dat iemand alles kan: profeteren, alles begrijpen, zelfs bergen verzetten. Wat is die persoon volgens Paulus zonder liefde?",
+            vraag: "Stel dat iemand alles kan: profeteren, alles begrijpen, zelfs bergen verzetten. Wat is die persoon volgens Paulus als diegene geen liefde heeft?",
             antwoorden: ["Niets", "Bijna volmaakt", "Toch knap bezig", "Al een heel eind"],
             correct: "Niets",
             bijbelplaats: "1 Korintiërs 13:2"
@@ -3048,8 +3048,8 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 8:1"
         },
         {
-            vraag: "Paulus zegt dat gelovigen leven door op God te vertrouwen, en niet door iets anders. Waardoor niet?",
-            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door alles wat de wereld hun te bieden heeft"],
+            vraag: "Paulus zegt dat gelovigen leven door te vertrouwen op God. Waar laten zij zich dus niet door leiden?",
+            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door wat anderen van hen vinden"],
             correct: "Door wat ze met hun ogen kunnen zien",
             bijbelplaats: "2 Korintiërs 5:7"
         },
@@ -3061,12 +3061,12 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
-            antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over zijn reizen"],
+            antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over hoeveel gemeenten hij heeft gesticht"],
             correct: "Over de Heer en over wat God door hem doet",
             bijbelplaats: "2 Korintiërs 10:17"
         },
         {
-            vraag: "Zijn de gaven van de Geest er voor jezelf, of voor iets anders?",
+            vraag: "Paulus zegt dat ieder de Geest merkt op zijn eigen manier. Waar zijn die gaven voor bedoeld?",
             antwoorden: ["Voor het goede van iedereen samen", "Alleen voor jezelf", "Om mee op te scheppen", "Om anderen jaloers te maken"],
             correct: "Voor het goede van iedereen samen",
             bijbelplaats: "1 Korintiërs 12:7"
@@ -3079,7 +3079,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van Hem houden. Hoe bijzonder is dat?",
-            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Niet de moeite waard", "Alleen voor belangrijke mensen"],
+            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Ongeveer zoals de mooiste dag die je ooit hebt gehad", "Alleen voor belangrijke mensen"],
             correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
             bijbelplaats: "1 Korintiërs 2:9"
         },
