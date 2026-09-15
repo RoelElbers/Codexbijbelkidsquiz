@@ -2017,7 +2017,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
 // === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
 // "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
 // =====================================================================
-// Romeinen — vragenpool (55 vragen: beginner 24, advanced 17, expert 14)
+// Romeinen — vragenpool (55 vragen: beginner 24, advanced 15, expert 16)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData is hierboven al gedefinieerd, dus toevoegen mag.
 // =====================================================================
@@ -2210,12 +2210,6 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 14:2-6"
         },
         {
-            vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
-            antwoorden: ["De boeken van het Oude Testament", "De vier evangeliën", "De brieven van de apostelen", "De woorden van Jezus zelf"],
-            correct: "De boeken van het Oude Testament",
-            bijbelplaats: "Romeinen 15:4"
-        },
-        {
             vraag: "Waarom wilde Paulus zo graag naar de christenen in Rome toe?",
             antwoorden: ["Om er vakantie te vieren", "Om te controleren of ze het wel goed deden", "Om elkaar in het geloof te bemoedigen", "Voor zijn werk, omdat hij daar veel meer kon verkopen"],
             correct: "Om elkaar in het geloof te bemoedigen",
@@ -2238,12 +2232,6 @@ vragenData["Romeinen"] = {
             antwoorden: ["Hij is ons vergeten", "Hij komt voor ons op", "Hij klaagt ons aan", "Hij houdt zich afzijdig"],
             correct: "Hij komt voor ons op",
             bijbelplaats: "Romeinen 8:34"
-        },
-        {
-            vraag: "Paulus zet twee dingen tegenover elkaar: je moet niet traag zijn, maar juist wat?",
-            antwoorden: ["Vurig van geest", "Sterk van arm", "Snel van tong", "Wijs van hoofd"],
-            correct: "Vurig van geest",
-            bijbelplaats: "Romeinen 12:11"
         },
         {
             vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
@@ -2299,19 +2287,19 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarom moet je een ander niet te snel veroordelen, zegt Paulus?",
-            antwoorden: ["Omdat jij altijd gelijk hebt", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat andere mensen jou anders ook zullen veroordelen"],
+            antwoorden: ["Omdat je eerst een lijstje moet maken van alles wat hij fout deed", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat andere mensen jou anders ook zullen veroordelen"],
             correct: "Omdat we allemaal eens voor God zullen staan",
             bijbelplaats: "Romeinen 14:10-12"
         },
         {
             vraag: "Waar wilde Paulus het liefst het goede nieuws brengen?",
-            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "Alleen in de allergrootste en rijkste steden van het Romeinse rijk"],
+            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "In steden waar al een gemeente was, om die te versterken"],
             correct: "Op plekken waar mensen nog nooit van Christus hadden gehoord",
             bijbelplaats: "Romeinen 15:20"
         },
         {
             vraag: "Paulus wilde naar een ver land reizen en onderweg de christenen in Rome bezoeken. Naar welk land wilde hij?",
-            antwoorden: ["Spanje", "Egypte", "Griekenland", "Italië"],
+            antwoorden: ["Spanje", "Egypte", "Griekenland", "Gallië"],
             correct: "Spanje",
             bijbelplaats: "Romeinen 15:24,28"
         },
@@ -2319,7 +2307,8 @@ vragenData["Romeinen"] = {
             vraag: "Aan het eind van zijn brief beveelt Paulus een vrouw aan die Febe heet. Zij diende de gemeente en was nu op reis naar Rome, waarschijnlijk met deze brief in haar hand. Wat vraagt Paulus aan de Romeinen?",
             antwoorden: ["Ontvang haar goed en help haar met alles wat ze nodig heeft", "Onderzoek eerst of ze wel te vertrouwen is", "Vraag haar eerst om te bewijzen dat ze echt gelovig is", "Laat haar buiten de stad wachten tot Paulus komt"],
             correct: "Ontvang haar goed en help haar met alles wat ze nodig heeft",
-            bijbelplaats: "Romeinen 16:1-2"
+            bijbelplaats: "Romeinen 16:1-2",
+            kist: false
         },
         {
             vraag: "Welk echtpaar groet Paulus, dat samen met hem in het werk hielp?",
@@ -2351,7 +2340,7 @@ vragenData["Romeinen"] = {
             antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
             correct: "De gewone begroeting in die tijd, een kus op de wang",
             bijbelplaats: "Romeinen 16:16",
-            uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders. Rond de Middellandse Zee is de begroetingskus trouwens tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
+            uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Rond de Middellandse Zee is dat tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
         },
         {
             vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
@@ -2363,7 +2352,20 @@ vragenData["Romeinen"] = {
             vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
             antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
             correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
-            bijbelplaats: "Romeinen 8:15"
+            bijbelplaats: "Romeinen 8:15",
+            uitleg: "Adoptie was in het Romeinse rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader, werd erfgenaam naast de eigen zonen, en zijn oude schulden vervielen. De band kon bovendien niet meer verbroken worden: een gewone zoon kon onterfd worden, een aangenomen zoon niet. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
+        },
+        {
+            vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
+            antwoorden: ["De boeken van het Oude Testament", "De vier evangeliën", "De brieven van de apostelen", "De woorden van Jezus zelf"],
+            correct: "De boeken van het Oude Testament",
+            bijbelplaats: "Romeinen 15:4"
+        },
+        {
+            vraag: "Paulus zet twee dingen tegenover elkaar: je moet niet traag zijn, maar juist wat?",
+            antwoorden: ["Vurig van geest", "Sterk van arm", "Snel van tong", "Wijs van hoofd"],
+            correct: "Vurig van geest",
+            bijbelplaats: "Romeinen 12:11"
         }
     ]
 };
