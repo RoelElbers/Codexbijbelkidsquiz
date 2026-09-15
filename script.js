@@ -2676,9 +2676,10 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In de stad Joppe maakte Petrus een vrouw weer levend die veel goeds had gedaan voor arme mensen. Hoe heette zij?",
-            antwoorden: ["Maria", "Lydia", "Tabita (ook Dorkas genoemd)", "Marta"],
-            correct: "Tabita (ook Dorkas genoemd)",
-            bijbelplaats: "Handelingen 9:36-41"
+            antwoorden: ["Maria", "Lydia", "Tabita", "Marta"],
+            correct: "Tabita",
+            bijbelplaats: "Handelingen 9:36-41",
+            uitleg: "Ze had twee namen: Tabita in het Aramees en Dorkas in het Grieks. Allebei betekenen ze gazelle. Joppe was een havenstad waar beide talen klonken, en veel mensen hadden daar een naam in elke taal — net als Saulus, die als Paulus door de Griekse wereld reisde."
         },
         {
             vraag: "In welke stad werden de volgelingen van Jezus voor het eerst \"christenen\" genoemd?",
@@ -2688,7 +2689,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Wie reisde in het begin samen met Paulus om mensen over Jezus te vertellen?",
-            antwoorden: ["Andreas", "Johannes", "Tomas", "Barnabas"],
+            antwoorden: ["Andreas", "Matteüs", "Tomas", "Barnabas"],
             correct: "Barnabas",
             bijbelplaats: "Handelingen 13:2-3"
         },
@@ -2740,7 +2741,7 @@ vragenData["Handelingen"] = {
             ],
             correct: "Ongeveer negen uur 's ochtends",
             bijbelplaats: "Handelingen 2:15",
-            uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord. Hoe de uren van de dag verder werkten, staat in Bijbeltraining bij \"Hoe leefden ze toen\" onder \"Tijd\"."
+            uitleg: "De Joden telden de uren vanaf zonsopgang, dus het 'derde uur' is ongeveer negen uur 's ochtends — veel te vroeg om dronken te zijn. Daarom was het een goed weerwoord. Hoe de uren van de dag verder werkten, staat in Bijbeltraining onder \"Ontdekken\", bij \"Hoe leefden ze toen\" onder \"Tijd\"."
         },
         {
             vraag: "Paulus zegt dat hij \"aan de voeten van Gamaliël\" is opgeleid. Wat betekent die uitdrukking?",
@@ -2796,7 +2797,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd"],
             correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
             bijbelplaats: "Handelingen 2:1",
-            uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentèkostè, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Het christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
+            uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentēkostē, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Het christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
         },
         {
             vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
@@ -2824,7 +2825,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom wegbleven", "Priesters die alleen in de tempel mochten dienen"],
             correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
             bijbelplaats: "Handelingen 10:2",
-            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet. Cornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: hij was de eerste van die buitenstaanders die erbij ging horen zonder eerst Jood te worden."
+            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet. Cornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem werd voor het eerst hardop uitgesproken dat zulke buitenstaanders erbij mochten horen zonder eerst Jood te worden."
         },
         {
             vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
