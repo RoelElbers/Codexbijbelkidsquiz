@@ -2932,7 +2932,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus plantte en iemand anders gaf water. Maar wie liet alles écht groeien?",
-            antwoorden: ["Paulus zelf", "De keizer", "God", "Niemand"],
+            antwoorden: ["Paulus zelf", "Apollos, die het water gaf", "God", "Niemand"],
             correct: "God",
             bijbelplaats: "1 Korintiërs 3:6"
         },
@@ -2944,26 +2944,26 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat wie bij Christus hoort, helemaal nieuw wordt. Hoe noemt hij dat?",
-            antwoorden: ["Een nieuwe schepping", "Een beter mens", "Een tweede kans", "Een nieuw lid van de kerk"],
+            antwoorden: ["Een nieuwe schepping", "Een beter mens", "Een tweede kans", "Een groot wonder"],
             correct: "Een nieuwe schepping",
             bijbelplaats: "2 Korintiërs 5:17"
         },
         {
             vraag: "Paulus schrijft over het geven van geld om anderen te helpen. Hoe kun je dat het beste doen?",
-            antwoorden: ["Met tegenzin", "Mopperend", "Blij en van harte", "Alleen als anderen het zien"],
+            antwoorden: ["Met tegenzin", "Precies evenveel als een ander geeft", "Blij en van harte", "Alleen als anderen het zien"],
             correct: "Blij en van harte",
             bijbelplaats: "2 Korintiërs 9:7"
         },
         {
-            vraag: "Paulus maakte veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
+            vraag: "Paulus maakte op zijn reizen veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
             antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie en geen werk", "Hij bleef veilig thuis", "Hij mocht rustig in een mooi groot paleis wonen"],
             correct: "Hij leed schipbreuk en was vaak in gevaar",
             bijbelplaats: "2 Korintiërs 11:25-26"
         },
         {
-            vraag: "Paulus zegt dat je alles wat je doet, voor iemand kunt doen. Voor wie kun je het doen?",
-            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om hem eer te geven", "Voor de machtige leiders van het land"],
-            correct: "Voor God, om hem eer te geven",
+            vraag: "Paulus zegt dat je álles wat je doet voor iemand kunt doen — zelfs eten en drinken. Voor wie kun je het doen?",
+            antwoorden: ["Alleen voor jezelf", "Voor de keizer", "Voor God, om Hem eer te geven", "Voor de mensen die je aardig vinden"],
+            correct: "Voor God, om Hem eer te geven",
             bijbelplaats: "1 Korintiërs 10:31"
         },
         {
@@ -2980,7 +2980,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus noemt de gelovigen \"gezanten\" (boodschappers) van Christus. Wat is hun taak?",
-            antwoorden: ["De mensen dwingen om voortaan in Jezus te geloven", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Alleen reizen"],
+            antwoorden: ["De mensen dwingen om voortaan in Jezus te geloven", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Vooral veel reizen, en belangrijke mensen bezoeken"],
             correct: "Namens Christus mensen oproepen om vrede met God te sluiten",
             bijbelplaats: "2 Korintiërs 5:20"
         },
@@ -2992,7 +2992,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus noemt zichzelf en Apollos \"medewerkers\". Met wie werken ze samen?",
-            antwoorden: ["Met de keizer", "Met God", "Met de koning", "Met niemand"],
+            antwoorden: ["Met de apostelen in Jeruzalem", "Met God", "Met de koning", "Met niemand"],
             correct: "Met God",
             bijbelplaats: "1 Korintiërs 3:9"
         }
