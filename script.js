@@ -3073,7 +3073,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Wat zegt Paulus over de zwakste of minste delen van het lichaam?",
-            antwoorden: ["Ze tellen niet mee", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze moeten zo sterk mogelijk worden gemaakt"],
+            antwoorden: ["Ze krijgen minder eer dan de andere delen", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze moeten zo sterk mogelijk worden gemaakt"],
             correct: "Ze zijn juist heel belangrijk en nodig",
             bijbelplaats: "1 Korintiërs 12:22"
         },
