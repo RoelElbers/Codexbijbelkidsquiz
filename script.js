@@ -2031,7 +2031,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus geeft een korte regel over wat je moet doen als iemand jou kwaad doet. Wat schrijft hij?",
-            antwoorden: ["Overwin het kwade door het goede", "Doe precies hetzelfde terug", "Doe alsof je niets merkt", "Meld het meteen bij de overheid"],
+            antwoorden: ["Overwin het kwade door het goede", "Doe precies hetzelfde terug", "Doe alsof je niets merkt", "Zorg dat hij ervoor boet"],
             correct: "Overwin het kwade door het goede",
             bijbelplaats: "Romeinen 12:21",
             uitleg: "Stel je voor: een vriend van je zegt iets gemeens waar anderen bij staan. Je eerste gedachte is om iets net zo gemeens terug te zeggen. Dat noemt Paulus \"overwonnen worden door het kwade\": het gemene wint, want nu doen jullie het allebei. Zijn raad is om het andersom te doen. Niet terugpakken, maar iets goeds doen — hem toch groeten de volgende dag, of vragen wat er aan de hand was. Dat is veel moeilijker dan terugpakken, maar het is het enige wat de ruzie echt kan laten ophouden. Overwinnen betekent hier dus niet dat jij wint van hem, maar dat het gemene gedrag geen terrein wint in jullie hart. Paulus bedoelt niet dat je alles maar moet laten gebeuren. Jezelf liefhebben hoort daar trouwens ook bij. \"Heb je naaste lief als jezelf\" betekent dat je jezelf niet overslaat: wie steeds wordt gepest of pijn gedaan, mag zich verdedigen en hulp zoeken bij iemand die kan ingrijpen. Vlak vóór deze regel schrijft Paulus zelf dat je in vrede moet leven \"voor zover het van jou afhangt\" — hij weet dus goed dat het niet altijd alleen van jou afhangt."
