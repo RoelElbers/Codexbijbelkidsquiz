@@ -2679,7 +2679,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Maria", "Lydia", "Tabita", "Marta"],
             correct: "Tabita",
             bijbelplaats: "Handelingen 9:36-41",
-            uitleg: "Ze had twee namen: Tabita in het Aramees en Dorkas in het Grieks. Allebei betekenen ze gazelle. Joppe was een havenstad waar beide talen klonken, en veel mensen hadden daar een naam in elke taal — net als Saulus, die als Paulus door de Griekse wereld reisde."
+            uitleg: "Ze had twee namen: Tabita in het Aramees en Dorkas in het Grieks. Allebei betekenen ze gazelle. Joppe was een havenstad waar beide talen klonken, en veel mensen hadden daar een naam in elke taal. Paulus deed iets vergelijkbaars: onder Joden heette hij Saulus, en in de Romeinse wereld gebruikte hij zijn Latijnse naam Paulus."
         },
         {
             vraag: "In welke stad werden de volgelingen van Jezus voor het eerst \"christenen\" genoemd?",
@@ -2800,11 +2800,11 @@ vragenData["Handelingen"] = {
             uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentēkostē, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Het christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
         },
         {
-            vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan maakte hij die tenten?",
+            vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan werden tenten in zijn streek vooral gemaakt?",
             antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
             correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
             bijbelplaats: "Handelingen 18:3",
-            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat er geen regen doorheen kwam. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar. Hij maakte dus het product van zijn eigen geboortestreek. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
+            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat er geen regen doorheen kwam. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar. Of hij zelf met die stof werkte of eerder met leer, weten we niet zeker: het woord dat Lucas gebruikt kan allebei betekenen. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
         },
         {
             vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
