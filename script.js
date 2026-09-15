@@ -2932,7 +2932,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus plantte en iemand anders gaf water. Maar wie liet alles écht groeien?",
-            antwoorden: ["Paulus zelf", "Apollos, die het water gaf", "God", "Niemand"],
+            antwoorden: ["Paulus zelf", "Apollos", "God", "Niemand"],
             correct: "God",
             bijbelplaats: "1 Korintiërs 3:6"
         },
