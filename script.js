@@ -2181,13 +2181,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Mogen we rustig verkeerde dingen blijven doen, omdat God toch vergeeft?",
-            antwoorden: ["Ja, het maakt niet uit", "Ja, want een beetje kwaad kan echt geen kwaad", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
+            antwoorden: ["Ja, het maakt niet uit", "Nee, maar een klein foutje telt niet mee", "Nee, want we leven nu een nieuw leven", "Ja, zolang niemand het ziet"],
             correct: "Nee, want we leven nu een nieuw leven",
             bijbelplaats: "Romeinen 6:1-2"
         },
         {
-            vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wie helpt hem, zegt hij?",
-            antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand", "Jezus Christus, onze Heer", "De keizer"],
+            vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wat kan hem daaruit redden, zegt hij?",
+            antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand", "Jezus Christus, onze Heer", "Zich helemaal toewijden aan de wet van Mozes"],
             correct: "Jezus Christus, onze Heer",
             bijbelplaats: "Romeinen 7:24-25"
         },
@@ -2204,7 +2204,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 12:12"
         },
         {
-            vraag: "Waar moeten gelovigen volgens Paulus hun best voor doen?",
+            vraag: "Paulus schrijft over gelovigen die verschillend denken over eten en feestdagen. Waar moeten zij volgens hem hun best voor doen?",
             antwoorden: ["Om afstand te houden van mensen die er anders over denken", "Om altijd gelijk te krijgen", "Voor dingen die vrede brengen en elkaar opbouwen", "Om de baas te kunnen blijven spelen"],
             correct: "Voor dingen die vrede brengen en elkaar opbouwen",
             bijbelplaats: "Romeinen 14:19"
@@ -2217,13 +2217,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarom wilde Paulus zo graag naar de christenen in Rome toe?",
-            antwoorden: ["Om er vakantie te vieren", "Om er de baas te spelen", "Om elkaar in het geloof te bemoedigen", "Voor zijn werk, omdat hij daar veel meer kon verkopen"],
+            antwoorden: ["Om er vakantie te vieren", "Om te controleren of ze het wel goed deden", "Om elkaar in het geloof te bemoedigen", "Voor zijn werk, omdat hij daar veel meer kon verkopen"],
             correct: "Om elkaar in het geloof te bemoedigen",
             bijbelplaats: "Romeinen 1:11-12"
         },
         {
             vraag: "Wat zegt Paulus tegen iemand die snel een ander veroordeelt?",
-            antwoorden: ["Bedenk dat je zelf ook fouten maakt", "Jij mag oordelen, want jij doet zelf niks fout", "Wijs de ander streng terecht waar anderen bij zijn", "Vertel aan iedereen wat die ander verkeerd deed"],
+            antwoorden: ["Bedenk dat je zelf ook fouten maakt", "Je mag iedereen veroordelen, als je zelf maar niks fout doet", "Wijs de ander streng terecht waar anderen bij zijn", "Vertel aan iedereen wat die ander verkeerd deed"],
             correct: "Bedenk dat je zelf ook fouten maakt",
             bijbelplaats: "Romeinen 2:1"
         },
@@ -2241,14 +2241,14 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Hoe mag je God dienen, volgens Paulus?",
-            antwoorden: ["Met tegenzin", "Zo weinig mogelijk", "Met vuur en enthousiasme", "Alleen als anderen kijken"],
+            antwoorden: ["Met tegenzin, omdat het nou eenmaal moet", "Zo weinig mogelijk", "Met vuur en enthousiasme", "Alleen als anderen kijken"],
             correct: "Met vuur en enthousiasme",
             bijbelplaats: "Romeinen 12:11"
         },
         {
             vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
-            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt", "Probeer zoveel mogelijk met iedereen in vrede te leven", "Praat liever met niemand", "Vrede is niet belangrijk"],
-            correct: "Probeer zoveel mogelijk met iedereen in vrede te leven",
+            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt", "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt", "Praat liever met niemand", "Vrede is niet belangrijk"],
+            correct: "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt",
             bijbelplaats: "Romeinen 12:18"
         },
         {
@@ -2258,7 +2258,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 13:12"
         },
         {
-            vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat bedoelt hij?",
+            vraag: "Paulus vergelijkt de gelovigen met één lichaam met veel delen. Wat bedoelt hij daarmee?",
             antwoorden: ["Ze moeten allemaal precies hetzelfde zijn", "Ze kunnen beter alleen zijn", "Ze horen bij elkaar en hebben elkaar nodig", "Alleen het sterkste deel telt"],
             correct: "Ze horen bij elkaar en hebben elkaar nodig",
             bijbelplaats: "Romeinen 12:4-5"
@@ -2274,7 +2274,8 @@ vragenData["Romeinen"] = {
             vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
             antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
             correct: "Nee, maar hij wilde er graag heen",
-            bijbelplaats: "Romeinen 1:10-13"
+            bijbelplaats: "Romeinen 1:10-13",
+            kist: false
         }
     ],
     expert: [
