@@ -2293,7 +2293,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waar wilde Paulus het liefst het goede nieuws brengen?",
-            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "In steden waar al een gemeente was, om die te versterken"],
+            antwoorden: ["Alleen waar hij al bekend was", "Alleen in zijn eigen stad", "Op plekken waar mensen nog nooit van Christus hadden gehoord", "Overal waar hij kwam, zolang er maar veel mensen woonden"],
             correct: "Op plekken waar mensen nog nooit van Christus hadden gehoord",
             bijbelplaats: "Romeinen 15:20"
         },
@@ -2353,7 +2353,7 @@ vragenData["Romeinen"] = {
             antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
             correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
             bijbelplaats: "Romeinen 8:15",
-            uitleg: "Adoptie was in het Romeinse rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader, werd erfgenaam naast de eigen zonen, en zijn oude schulden vervielen. De band kon bovendien niet meer verbroken worden: een gewone zoon kon onterfd worden, een aangenomen zoon niet. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
+            uitleg: "Adoptie was in het Romeinse rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
         },
         {
             vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
