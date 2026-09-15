@@ -3213,13 +3213,13 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat deed Paulus met de christenen voordat hij zelf in Jezus ging geloven?",
-            antwoorden: ["Hij vervolgde hen en deed hun veel kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet, en dat interesseerde hem ook niet veel", "Hij nodigde hen uit"],
+            antwoorden: ["Hij vervolgde hen en deed hun veel kwaad", "Hij leerde juist alles van hen over Jezus", "Hij kende hen nog niet en wilde dat ook niet", "Hij nodigde hen uit"],
             correct: "Hij vervolgde hen en deed hun veel kwaad",
             bijbelplaats: "Galaten 1:13"
         },
         {
             vraag: "Wat is volgens Paulus het goede nieuws dat hij brengt?",
-            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je soms ver moet reizen omdat iedereen een keer naar Jeruzalem moet gaan", "Dat je alles alleen moet doen"],
+            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen, want iedereen moet een keer naar Jeruzalem", "Dat je alles alleen moet doen"],
             correct: "Dat je bij God mág horen door op Jezus te vertrouwen",
             bijbelplaats: "Galaten 2:16"
         },
@@ -3243,7 +3243,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus noemt negen goede dingen die groeien als je je door Gods Geest laat leiden. Hoe noemt hij die negen samen?",
-            antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De deugden"],
+            antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De gaven van de Geest"],
             correct: "De vrucht van de Geest",
             bijbelplaats: "Galaten 5:22",
             uitleg: "Paulus schrijft \"de vrucht\", niet \"de vruchten\". Vlak ervoor noemt hij de verkeerde dingen wél in het meervoud: de werken van het vlees. Dat verschil is met opzet. De negen horen bij elkaar, als negen kanten van één ding — je kunt niet de vriendelijkheid uitkiezen en het geduld laten liggen."
