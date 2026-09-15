@@ -3166,8 +3166,8 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus begint zijn brief door de Korintiërs \"heiligen\" te noemen — en bespreekt daarna bladzijdenlang hun ruzies. Wat betekende dat woord bij hem?",
-            antwoorden: ["Apart gezet voor God; Paulus noemt zo alle gelovigen in Korinte", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
-            correct: "Apart gezet voor God; Paulus noemt zo alle gelovigen in Korinte",
+            antwoorden: ["Apart gezet voor God; Paulus noemt zo alle gelovigen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
+            correct: "Apart gezet voor God; Paulus noemt zo alle gelovigen",
             bijbelplaats: "1 Korintiërs 1:2",
             uitleg: "Het woord heilig zegt in de eerste plaats niet hoe braaf iemand is, maar bij wie hij hoort: apart gezet voor God. Daarom kan Paulus de gemeente in Korinte zo aanspreken en meteen daarna schrijven wat er allemaal misgaat. Het is dus een begin en geen eindstand — hij roept hen in dezelfde brief op om ook echt zo te gaan leven."
         },
@@ -3176,7 +3176,7 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
             correct: "Wat van de tempeloffers overbleef, ging naar de markt",
             bijbelplaats: "1 Korintiërs 10:25",
-            uitleg: "In een Griekse stad als Korinte liep bijna al het vlees via de tempels. Dieren werden geslacht bij het altaar van een god — in Korinte waren dat er veel, met Apollo en Aphrodite voorop. Een deel werd op het altaar verbrand, een deel was voor de priesters, en wat overbleef ging naar de vleesmarkt of werd opgediend in de eetzalen bij de tempel. Wie vlees kocht, wist dus vaak niet of het geofferd was. Voor de eerste christenen was dit geen theorie maar een dagelijkse vraag: kun je op de markt kopen, en kun je bij iemand gaan eten die je uitnodigt?"
+            uitleg: "In een Griekse stad als Korinte liep veel vlees via de tempels. Dieren werden geslacht bij het altaar van een god — in Korinte waren dat er veel, met Apollo en Aphrodite voorop. Een deel werd op het altaar verbrand, een deel was voor de priesters, en wat overbleef ging naar de vleesmarkt of werd opgediend in de eetzalen bij de tempel. Wie vlees kocht, wist dus vaak niet of het geofferd was. Voor de eerste christenen was dit geen theorie maar een dagelijkse vraag: kun je op de markt kopen, en kun je bij iemand gaan eten die je uitnodigt?"
         },
         {
             vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
