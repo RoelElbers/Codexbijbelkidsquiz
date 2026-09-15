@@ -3049,8 +3049,8 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat gelovigen leven door te vertrouwen op God. Wat zet hij daartegenover?",
-            antwoorden: ["Door wat ze met hun ogen kunnen zien", "Door heel rijk te zijn", "Door heel sterk te zijn", "Door wat anderen van hen vinden"],
-            correct: "Door wat ze met hun ogen kunnen zien",
+            antwoorden: ["Wat ze met hun ogen kunnen zien", "Hoe rijk ze zijn", "Hoe sterk ze zijn", "Wat anderen van hen vinden"],
+            correct: "Wat ze met hun ogen kunnen zien",
             bijbelplaats: "2 Korintiërs 5:7"
         },
         {
@@ -3061,7 +3061,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
-            antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over hoeveel talen hij spreekt"],
+            antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over hoe goed hij een toespraak kan houden"],
             correct: "Over de Heer en over wat God door hem doet",
             bijbelplaats: "2 Korintiërs 10:17"
         },
