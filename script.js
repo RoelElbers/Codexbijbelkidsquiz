@@ -2892,8 +2892,8 @@ vragenData["Handelingen"] = {
 // Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
 // Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
 // =====================================================================
-// 1 & 2 Korintiërs — vragenpool (48 vragen: beginner 16, advanced 15,
-// expert 17)
+// 1 & 2 Korintiërs — vragenpool (47 vragen: beginner 16, advanced 16,
+// expert 15)
 // De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
 // zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
 // =====================================================================
@@ -3088,6 +3088,13 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["De eerste vrucht van de oogst, het bewijs dat de rest eraan komt", "De grootste vrucht van de hele oogst", "De laatste schoof die van het veld werd gehaald", "Het zaad dat je apart houdt voor volgend jaar"],
             correct: "De eerste vrucht van de oogst, het bewijs dat de rest eraan komt",
             bijbelplaats: "1 Korintiërs 15:20"
+        },
+        {
+            vraag: "Hoeveel keer leed Paulus schipbreuk, schrijft hij in 2 Korintiërs?",
+            antwoorden: ["Nooit", "Eén keer", "Drie keer", "Tien keer"],
+            correct: "Drie keer",
+            bijbelplaats: "2 Korintiërs 11:25",
+            uitleg: "Een schipbreuk is als je schip op zee vergaat, bijvoorbeeld door een zware storm of doordat het op de rotsen loopt. Paulus reisde veel over zee en maakte dat maar liefst drie keer mee."
         }
     ],
     expert: [
@@ -3104,9 +3111,9 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 13:12"
         },
         {
-            vraag: "Geloof, hoop en liefde blijven, zegt Paulus. Maar welke van de drie noemt hij de grootste?",
-            antwoorden: ["Het geloof", "De hoop", "De liefde", "Alle drie even groot"],
-            correct: "De liefde",
+            vraag: "Geloof, hoop en liefde blijven, zegt Paulus. Wat zegt hij daarbij?",
+            antwoorden: ["Het geloof is de grootste", "De hoop is de grootste", "De liefde is de grootste", "Ze zijn alle drie even groot"],
+            correct: "De liefde is de grootste",
             bijbelplaats: "1 Korintiërs 13:13"
         },
         {
@@ -3122,20 +3129,20 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 13:14"
         },
         {
-            vraag: "Paulus schrijft dat de boodschap van het kruis voor sommige mensen dwaas lijkt. Wat is diezelfde boodschap volgens hem voor wie gered wordt?",
+            vraag: "Voor sommige mensen is de boodschap van het kruis onzin, schrijft Paulus. Maar wat is die boodschap voor wie erin gelooft?",
             antwoorden: ["Gods kracht", "Gods geheim", "Gods wet", "Gods belofte"],
             correct: "Gods kracht",
             bijbelplaats: "1 Korintiërs 1:18"
         },
         {
-            vraag: "Omdat Jezus is opgestaan, hoeft wie bij hem hoort niet bang te zijn voor de dood. Hoe spreekt Paulus de dood spottend toe?",
+            vraag: "Omdat Jezus is opgestaan, hoeft wie bij Hem hoort niet bang te zijn voor de dood. Wat roept Paulus de dood toe?",
             antwoorden: ["\"Dood, waar is je overwinning? Je hebt verloren!\"", "\"Dood, jij bent de sterkste van allemaal.\"", "\"Dood, jij wint het altijd.\"", "\"Dood, niemand kan jou verslaan.\""],
             correct: "\"Dood, waar is je overwinning? Je hebt verloren!\"",
             bijbelplaats: "1 Korintiërs 15:55-57"
         },
         {
             vraag: "Paulus schrijft dat ons lichaam met de jaren zwakker wordt, maar dat er van binnen iets anders gebeurt. Wat gebeurt er volgens hem van binnen?",
-            antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "Van buiten worden we juist steeds mooier"],
+            antwoorden: ["Van binnen worden we elke dag vernieuwd", "Van binnen worden we ook zwakker", "Er verandert niets", "Van binnen gaan we ons steeds meer zorgen maken"],
             correct: "Van binnen worden we elke dag vernieuwd",
             bijbelplaats: "2 Korintiërs 4:16"
         },
@@ -3144,19 +3151,6 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Of het nog moeilijker mocht worden", "Of God het wilde weghalen", "Of iemand anders het mocht krijgen", "Of hij het voor altijd mocht houden"],
             correct: "Of God het wilde weghalen",
             bijbelplaats: "2 Korintiërs 12:8"
-        },
-        {
-            vraag: "Wat zegt Paulus over zwak en sterk zijn, dat verrassend klinkt?",
-            antwoorden: ["Alleen de sterkste telt", "Juist als ik zwak ben, ben ik sterk (door God)", "Zwak zijn is altijd slecht", "Wie sterk genoeg is, heeft God helemaal niet meer nodig"],
-            correct: "Juist als ik zwak ben, ben ik sterk (door God)",
-            bijbelplaats: "2 Korintiërs 12:10"
-        },
-        {
-            vraag: "Hoeveel keer leed Paulus schipbreuk, schrijft hij in 2 Korintiërs?",
-            antwoorden: ["Nooit", "Eén keer", "Drie keer", "Tien keer"],
-            correct: "Drie keer",
-            bijbelplaats: "2 Korintiërs 11:25",
-            uitleg: "Een schipbreuk is als je schip op zee vergaat, bijvoorbeeld door een zware storm of doordat het op de rotsen loopt. Paulus reisde veel over zee en maakte dat maar liefst drie keer mee."
         },
         {
             vraag: "Paulus schrijft dat de gelovigen zelf een soort \"brief\" zijn. Waarmee is die geschreven?",
@@ -3172,17 +3166,17 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus begint zijn brief door de Korintiërs \"heiligen\" te noemen — en bespreekt daarna bladzijdenlang hun ruzies. Wat betekende dat woord bij hem?",
-            antwoorden: ["Apart gezet voor God; het gold voor iedereen", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
-            correct: "Apart gezet voor God; het gold voor iedereen",
+            antwoorden: ["Apart gezet voor God; Paulus noemt zo alle gelovigen in Korinte", "Mensen die nog nooit iets verkeerds hadden gedaan", "De leiders die het bestuur van de gemeente vormden", "Gelovigen die al gestorven en begraven waren"],
+            correct: "Apart gezet voor God; Paulus noemt zo alle gelovigen in Korinte",
             bijbelplaats: "1 Korintiërs 1:2",
-            uitleg: "Het woord heilig zegt niet hoe braaf je bent, maar bij wie je hoort. In de brieven slaat het steeds op alle gelovigen samen; pas veel later werd het door de kerk ook gebruikt voor bijzondere gelovigen die als voorbeeld gelden."
+            uitleg: "Het woord heilig zegt in de eerste plaats niet hoe braaf iemand is, maar bij wie hij hoort: apart gezet voor God. Daarom kan Paulus de gemeente in Korinte zo aanspreken en meteen daarna schrijven wat er allemaal misgaat. Het is dus een begin en geen eindstand — hij roept hen in dezelfde brief op om ook echt zo te gaan leven."
         },
         {
             vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
             antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
             correct: "Wat van de tempeloffers overbleef, ging naar de markt",
             bijbelplaats: "1 Korintiërs 10:25",
-            uitleg: "In een Griekse stad liep bijna al het vlees via de tempels. Vlees kopen op de markt of ergens gaan eten was voor de eerste christenen dus een echte vraag en geen theorie."
+            uitleg: "In een Griekse stad als Korinte liep bijna al het vlees via de tempels. Dieren werden geslacht bij het altaar van een god — in Korinte waren dat er veel, met Apollo en Aphrodite voorop. Een deel werd op het altaar verbrand, een deel was voor de priesters, en wat overbleef ging naar de vleesmarkt of werd opgediend in de eetzalen bij de tempel. Wie vlees kocht, wist dus vaak niet of het geofferd was. Voor de eerste christenen was dit geen theorie maar een dagelijkse vraag: kun je op de markt kopen, en kun je bij iemand gaan eten die je uitnodigt?"
         },
         {
             vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
@@ -3192,7 +3186,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus schrijft dat God de Geest als onderpand heeft gegeven. Wat is een onderpand?",
-            antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een zegel waarmee een brief werd dichtgemaakt", "Een bewijs dat een schuld helemaal is afbetaald"],
+            antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een boek waarin alle beloften zijn opgeschreven", "Een bewijs dat een schuld helemaal is afbetaald"],
             correct: "Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt",
             bijbelplaats: "2 Korintiërs 1:22"
         }
