@@ -19,6 +19,11 @@ afgeweken, mislukt of opgevallen — dat hoort bij het werk zelf.
 - **Eén milestone per commit.** Niet meerdere losse wijzigingen samen.
 - Schrijf het commitbericht naar een tijdelijk bestand en gebruik
   `git commit -F <bestand>`, zodat er geen editor nodig is.
+- **Nooit bankgegevens (IBAN, rekeningnummers), wachtwoorden, API-sleutels of
+  tokens (Mollie, Forminit, GitHub) in de repo zetten.** De repository is
+  openbaar en de hele map wordt via GitHub Pages gepubliceerd; alles wat
+  gecommit wordt, is voor iedereen leesbaar, ook in de geschiedenis. Zulke
+  gegevens horen alleen in de instellingen van de betreffende dienst.
 
 ## Cache-buster in `index.html`
 
