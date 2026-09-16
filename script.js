@@ -3967,7 +3967,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:21"
         },
         {
-            vraag: "In het lied over Jezus schrijft Paulus dat uiteindelijk alle mensen iets zullen doen. Wat zullen zij doen?",
+            vraag: "In zijn brief aan de Filippenzen schrijft Paulus dat uiteindelijk iedereen iets zal doen. Wat zal iedereen doen?",
             antwoorden: ["Knielen en belijden dat Jezus Heer is", "Vluchten en zich ergens gaan verbergen", "Zwijgen van angst", "Een offer brengen"],
             correct: "Knielen en belijden dat Jezus Heer is",
             bijbelplaats: "Filippenzen 2:10-11"
@@ -3985,9 +3985,9 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:1"
         },
         {
-            vraag: "Wat wil Paulus dat de Filippenzen vasthouden, ook als hij er zelf niet bij is?",
-            antwoorden: ["Eensgezindheid", "Hun goede naam", "Hun gewoonten", "Hun bezittingen"],
-            correct: "Eensgezindheid",
+            vraag: "Paulus weet niet of hij de Filippenzen weer zal zien. Hoe wil hij dat zij samen blijven staan?",
+            antwoorden: ["Eensgezind, strijdend voor het geloof in het evangelie", "Ieder voor zichzelf, zodat er geen ruzie ontstaat", "Vooral bezig met hun goede naam in de stad", "Zo onopvallend mogelijk, zodat niemand hen lastigvalt"],
+            correct: "Eensgezind, strijdend voor het geloof in het evangelie",
             bijbelplaats: "Filippenzen 1:27"
         },
         {
@@ -3998,14 +3998,14 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond nu \"verlies\" is. Waarmee vergelijkt hij die oude dingen zelfs?",
-            antwoorden: ["Met vuilnis", "Met stof", "Met rook", "Met zand"],
-            correct: "Met vuilnis",
+            antwoorden: ["Met afval", "Met stof", "Met rook", "Met zand"],
+            correct: "Met afval",
             bijbelplaats: "Filippenzen 3:8"
         },
         {
-            vraag: "Hoe verraste Paulus' gevangenschap iedereen? Wié hoorden er juist dóór hem van Christus?",
-            antwoorden: ["Zelfs de soldaten van de keizerlijke wacht", "Alleen zijn medegevangenen", "De rijke kooplieden die hem in zijn cel bezochten", "Niemand, hij zat afgezonderd"],
-            correct: "Zelfs de soldaten van de keizerlijke wacht",
+            vraag: "Paulus schrijft dat zijn gevangenschap juist hielp om het goede nieuws bekend te maken. Bij wie was inmiddels bekend dat hij vanwege Christus gevangen zat?",
+            antwoorden: ["Bij de hele keizerlijke garde en bij vele anderen", "Alleen bij zijn medegevangenen", "Alleen bij de leiders van de gemeente in Filippi", "Bij bijna niemand, omdat hij volledig afgezonderd zat"],
+            correct: "Bij de hele keizerlijke garde en bij vele anderen",
             bijbelplaats: "Filippenzen 1:13"
         },
         {
@@ -4022,10 +4022,10 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft dat hij \"uitgegoten wordt als een plengoffer\". Wat was een plengoffer?",
-            antwoorden: ["Wijn die bij een offer over het altaar ging", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
-            correct: "Wijn die bij een offer over het altaar ging",
+            antwoorden: ["Wijn die bij een offer werd uitgegoten", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
+            correct: "Wijn die bij een offer werd uitgegoten",
             bijbelplaats: "Filippenzen 2:17",
-            uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit over het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
+            uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit bij het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
         },
         {
             vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
@@ -4034,10 +4034,10 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 3:20"
         },
         {
-            vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar in die tijd?",
-            antwoorden: ["Een krans van bladeren, gevlochten op zijn hoofd", "Een gouden beker gevuld met wijn", "Een zilveren munt uit de stadskas", "Een nieuw stel kleren van de stadsbestuurders"],
-            correct: "Een krans van bladeren, gevlochten op zijn hoofd",
-            bijbelplaats: "Filippenzen 3:14"
+            vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd?",
+            antwoorden: ["Een krans van gevlochten bladeren", "Een gouden beker gevuld met wijn", "Een zilveren munt uit de stadskas", "Een nieuw stel kleren van de stadsbestuurders"],
+            correct: "Een krans van gevlochten bladeren",
+            bijbelplaats: "Filippenzen 3:14 · 1 Korintiërs 9:25"
         }
     ]
 };
