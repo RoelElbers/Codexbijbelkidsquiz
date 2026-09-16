@@ -4647,14 +4647,14 @@ vragenData["Kolossenzen & Filemon"] = {
     beginner: [
         {
             vraag: "Aan welke gemeente schreef Paulus de brief aan de Kolossenzen?",
-            antwoorden: ["De gemeente in Kolosse", "De gemeente in Laodicea", "De gemeente in Filippi", "De gemeente in Efeze"],
+            antwoorden: ["De gemeente in Kolosse", "De gemeente in Korinte", "De gemeente in Filippi", "De gemeente in Efeze"],
             correct: "De gemeente in Kolosse",
             bijbelplaats: "Kolossenzen 1:2"
         },
         {
-            vraag: "Vanuit welke situatie schreef Paulus zijn brief aan de Kolossenzen?",
-            antwoorden: ["Vanuit de gevangenis", "Vanuit de tempel", "Vanuit een schip op zee", "Vanuit zijn werkplaats"],
-            correct: "Vanuit de gevangenis",
+            vraag: "In welke situatie bevond Paulus zich toen hij de brief aan de Kolossenzen schreef?",
+            antwoorden: ["Hij zat gevangen", "Hij werkte in de tempel", "Hij reisde met een schip over zee", "Hij werkte in zijn werkplaats"],
+            correct: "Hij zat gevangen",
             bijbelplaats: "Kolossenzen 4:18"
         },
         {
@@ -4676,13 +4676,13 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 3:13"
         },
         {
-            vraag: "Wie schreef de brief aan de Kolossenzen?",
-            antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
-            correct: "Paulus",
+            vraag: "Wie wordt naast Paulus als mede-afzender van de brief aan de Kolossenzen genoemd?",
+            antwoorden: ["Timoteüs", "Petrus", "Johannes", "Jakobus"],
+            correct: "Timoteüs",
             bijbelplaats: "Kolossenzen 1:1"
         },
         {
-            vraag: "Wat voor soort tekst is de brief aan Filemon?",
+            vraag: "Wat voor soort bijbelboek is Filemon?",
             antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een verslag van een van de grote reizen", "Een gebed"],
             correct: "Een korte, persoonlijke brief",
             bijbelplaats: "Filemon 1"
@@ -4700,15 +4700,15 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 3:15"
         },
         {
-            vraag: "Waaraan moeten de gelovigen trouw blijven, dankbaar en waakzaam?",
+            vraag: "Paulus schrijft aan de Kolossenzen dat ze ergens trouw aan moeten blijven, dankbaar en waakzaam. Waaraan moeten ze volgens hem trouw blijven?",
             antwoorden: ["Aan het gebed", "Aan het werk", "Aan de regels", "Aan de tempel"],
             correct: "Aan het gebed",
             bijbelplaats: "Kolossenzen 4:2"
         },
         {
-            vraag: "Onesimus was bij Paulus in de gevangenis gaan geloven. Hoe noemt Paulus hem daarom?",
-            antwoorden: ["Zijn kind, dat in de gevangenis \"geboren\" werd", "Zijn dienaar", "Zijn leerling", "Zijn medegevangene die ook op straf wachtte"],
-            correct: "Zijn kind, dat in de gevangenis \"geboren\" werd",
+            vraag: "Paulus noemt Onesimus zijn \"kind\" in het geloof. Waarom noemt hij hem zo?",
+            antwoorden: ["Omdat Onesimus bij Paulus in de gevangenis tot geloof was gekomen", "Omdat Paulus hem als baby had opgevoed", "Omdat Onesimus familie van Paulus was", "Omdat Onesimus nog maar een kind was"],
+            correct: "Omdat Onesimus bij Paulus in de gevangenis tot geloof was gekomen",
             bijbelplaats: "Filemon 10"
         },
         {
@@ -4719,8 +4719,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus uit hun oude leven wegdoen?",
-            antwoorden: ["Slechte dingen zoals jaloezie en woede", "Alle leuke dingen", "Elk contact met mensen die anders geloven", "Alles wat je vroeger geleerd hebt"],
-            correct: "Slechte dingen zoals jaloezie en woede",
+            antwoorden: ["Slechte dingen zoals woede, kwaadspreken en gemene taal", "Alle leuke dingen", "Elk contact met mensen die anders geloven", "Alles wat je vroeger geleerd hebt"],
+            correct: "Slechte dingen zoals woede, kwaadspreken en gemene taal",
             bijbelplaats: "Kolossenzen 3:8"
         },
         {
@@ -4730,7 +4730,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:12-13"
         },
         {
-            vraag: "Aan het slot van zijn brief aan de Kolossenzen groet Paulus een trouwe medewerker die ook arts was. Hoe heette deze dokter?",
+            vraag: "Aan het slot van zijn brief aan de Kolossenzen doet Paulus de groeten van een geliefde medewerker die arts was. Hoe heette deze arts?",
             antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
             correct: "Lukas",
             bijbelplaats: "Kolossenzen 4:14"
