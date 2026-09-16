@@ -4846,10 +4846,10 @@ vragenData["Kolossenzen & Filemon"] = {
     ],
     expert: [
         {
-            vraag: "Paulus schrijft deze brief aan een gemeente die hij zelf nooit heeft bezocht. Epafras, een man uit Kolosse, had daar het goede nieuws gebracht en was daarna naar Paulus gereisd om verslag te doen. Wat betekent dat voor Paulus' band met de Kolossenzen?",
-            antwoorden: ["Hij had de meesten van hen nog nooit ontmoet", "Hij had de gemeente zelf gesticht", "Hij had er jarenlang gewoond", "Hij kende iedereen daar al vanaf zijn jeugd"],
-            correct: "Hij had de meesten van hen nog nooit ontmoet",
-            bijbelplaats: "Kolossenzen 1:7 en 2:1"
+            vraag: "Uit Kolossenzen blijkt dat niet Paulus, maar Epafras de gelovigen daar het goede nieuws had gebracht. Wat zegt dat over Paulus' band met hen?",
+            antwoorden: ["Hij kende veel van hen nog niet persoonlijk", "Hij had de gemeente zelf gesticht en kende iedereen", "Hij had jarenlang in Kolosse gewoond", "Hij was daar als kind opgegroeid"],
+            correct: "Hij kende veel van hen nog niet persoonlijk",
+            bijbelplaats: "Kolossenzen 1:7-8 en 2:1"
         },
         {
             vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door Hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
@@ -4876,9 +4876,9 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 2:2-3"
         },
         {
-            vraag: "Paulus is bang dat de Kolossenzen zich laten inpakken. Hij waarschuwt hen zoals een herder die een wolf ziet aankomen: let op dat niemand jullie als buit meesleept. Waarmee zouden die mensen hen meeslepen?",
-            antwoorden: ["Met filosofie en holle woorden van mensen", "Met mooie beloften over rijkdom en macht", "Met soldaten van de keizer", "Met valse wonderen"],
-            correct: "Met filosofie en holle woorden van mensen",
+            vraag: "Paulus waarschuwt de Kolossenzen dat niemand hen \"als buit meesleept\". Waarmee kan dat volgens hem gebeuren?",
+            antwoorden: ["Met filosofie en holle misleiding die alleen op mensen berust", "Met mooie beloften over rijkdom en macht", "Met soldaten van de keizer", "Met verhalen over verre landen"],
+            correct: "Met filosofie en holle misleiding die alleen op mensen berust",
             bijbelplaats: "Kolossenzen 2:8"
         },
         {
@@ -4888,15 +4888,15 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 2:12"
         },
         {
-            vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In een enkele zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
+            vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In één zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
             antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
             correct: "God heeft het doorgestreept en aan het kruis genageld",
             bijbelplaats: "Kolossenzen 2:14"
         },
         {
-            vraag: "In Kolosse liep een leer rond die heel vroom leek, maar die Christus stilletjes opzijschoof. Paulus waarschuwt er streng tegen. Wat wilden die leraren dat de gelovigen deden?",
-            antwoorden: ["Engelen aanbidden", "De keizer aanbidden", "De zon aanbidden", "De tempel aanbidden"],
-            correct: "Engelen aanbidden",
+            vraag: "Paulus waarschuwt de Kolossenzen voor mensen die zich bezighouden met zelfvernedering en met een verkeerde vorm van aanbidding. Wat aanbaden zij?",
+            antwoorden: ["Engelen", "De keizer", "De zon", "De tempel"],
+            correct: "Engelen",
             bijbelplaats: "Kolossenzen 2:18"
         },
         {
@@ -4906,22 +4906,22 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 3:10"
         },
         {
-            vraag: "In de gemeente van Kolosse zaten mensen door elkaar die in de gewone wereld nooit samen aan tafel zouden zijn gegaan: Joden en Grieken, slaven en vrije burgers. Paulus zegt dat zulke verschillen in Christus wegvallen. Hoe vat hij dat samen?",
-            antwoorden: ["Christus is alles, en in allen", "Christus kiest de Grieken uit", "Christus telt alleen de vrije mensen", "Christus maakt iedereen tot Jood"],
+            vraag: "Paulus noemt allerlei verschillen tussen mensen: Griek of Jood, slaaf of vrij. Hoe vat hij samen wat in Christus het belangrijkste is?",
+            antwoorden: ["Christus is alles, en in allen", "Christus kiest alleen de Grieken uit", "Christus telt alleen vrije mensen", "Christus maakt iedereen tot Jood"],
             correct: "Christus is alles, en in allen",
             bijbelplaats: "Kolossenzen 3:11"
         },
         {
             vraag: "Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed?",
-            antwoorden: ["Dat God een deur zou openen voor zijn boodschap", "Dat hij snel uit de gevangenis zou komen", "Dat hij gezond zou blijven", "Dat hij Kolosse eindelijk zou kunnen bezoeken"],
+            antwoorden: ["Dat God een deur zou openen voor zijn boodschap", "Dat de Kolossenzen hem geld zouden sturen", "Dat hij gezond zou blijven", "Dat zijn brief veilig zou aankomen"],
             correct: "Dat God een deur zou openen voor zijn boodschap",
             bijbelplaats: "Kolossenzen 4:3"
         },
         {
-            vraag: "Paulus geeft raad over hoe je omgaat met mensen die niet geloven: wees wijs en gebruik je tijd goed. En dan zegt hij ook nog iets over de manier waarop je praat. Hoe moet je spreken?",
-            antwoorden: ["Vriendelijk, en als het ware gekruid met zout", "Streng en hard, zodat ze meteen ontzag voor je hebben", "Zwijgzaam, zo min mogelijk", "Luid, zodat iedereen het hoort"],
-            correct: "Vriendelijk, en als het ware gekruid met zout",
-            bijbelplaats: "Kolossenzen 4:6"
+            vraag: "Hoe moeten de gelovigen volgens Paulus in zijn brief aan de Kolossenzen spreken met andere mensen?",
+            antwoorden: ["Met woorden vol genade, als het ware met zout gekruid", "Streng en hard, zodat mensen ontzag krijgen", "Zo weinig mogelijk", "Zo luid mogelijk"],
+            correct: "Met woorden vol genade, als het ware met zout gekruid",
+            bijbelplaats: "Kolossenzen 4:5-6"
         },
         {
             vraag: "Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen?",
@@ -4936,9 +4936,9 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 14"
         },
         {
-            vraag: "Onesimus was weggelopen bij zijn meester, en dat was in die tijd een ernstige misdaad. Toch schrijft Paulus voorzichtig dat er misschien iets goeds in schuilt. Wat oppert hij?",
-            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder", "Dat hij Paulus in de gevangenis kon verzorgen", "Dat hij op zijn vlucht veel van de grote wijde wereld heeft gezien", "Dat hij Filemon een lesje wilde leren"],
-            correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet als slaaf maar als broeder",
+            vraag: "Onesimus was een tijd van Filemon gescheiden geweest. Paulus oppert voorzichtig dat daar misschien iets goeds uit voortkomt. Welk goeds zou daaruit kunnen voortkomen?",
+            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet meer alleen als slaaf maar als geliefde broeder", "Dat Onesimus voortaan helemaal alleen kon leven", "Dat Filemon hem nooit meer hoefde te zien", "Dat Onesimus nu rijk zou worden"],
+            correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet meer alleen als slaaf maar als geliefde broeder",
             bijbelplaats: "Filemon 15-16"
         },
         {
@@ -4946,7 +4946,7 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
             correct: "Het begin van een nieuwe maand, met een feest",
             bijbelplaats: "Kolossenzen 2:16",
-            uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Omdat die kalender nog steeds meetelt, valt Pasen ook nu elk jaar op een andere datum."
+            uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Ook Pasen hangt nog steeds af van de maan, en valt daarom elk jaar op een andere datum."
         }
     ]
 };
