@@ -6317,7 +6317,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
-            antwoorden: ["Het brood dat God Zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
+            antwoorden: ["Het brood dat God Zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinaï", "Het graan dat men bewaarde voor jaren van hongersnood"],
             correct: "Het brood dat God Zijn volk in de woestijn elke ochtend gaf",
             bijbelplaats: "Openbaring 2:17"
         },
