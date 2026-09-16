@@ -22,7 +22,7 @@
 
 /* eslint-disable no-unused-vars */
 
-// --- Woorden: het woordenboek (44 termen, alfabetisch) ----------------------
+// --- Woorden: het woordenboek (45 termen, alfabetisch) ----------------------
 const ONTDEK_WOORDENBOEK = [
     { term: "Allerheiligste", uitleg: "Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen." },
     { term: "Altaar", uitleg: "Een verhoogde plek, vaak van steen, waar offers aan God werden gebracht." },
@@ -35,6 +35,7 @@ const ONTDEK_WOORDENBOEK = [
     { term: "Gelijkenis", uitleg: "Een kort verhaaltje dat Jezus vertelde om iets groots uit te leggen met iets gewoons. Door over schapen, zaadjes of een verloren muntje te vertellen, maakte hij een diepe les ineens begrijpelijk. Het bekendste voorbeeld is misschien wel het verhaal van de verloren zoon." },
     { term: "Gemeente", uitleg: "In de Bijbel is een gemeente de groep christenen die in één stad bij elkaar hoort, bijvoorbeeld \"de gemeente in Filippi\". Er waren toen nog geen kerkgebouwen: de mensen kwamen gewoon bij elkaar thuis. Vandaag gebruiken christenen hier twee woorden voor. Sommige groepen noemen zich een kerk — bijvoorbeeld de Katholieke Kerk, de Protestantse Kerk of de Orthodoxe Kerk. Andere groepen noemen zich een gemeente — bijvoorbeeld evangelische gemeenten, baptistengemeenten en pinkstergemeenten. Allebei is goed. Het gaat namelijk niet om het gebouw of om de naam, maar om de mensen die samen bij Jezus horen. En dat zijn ze allemaal. <em>Zie ook: kerk.</em>" },
     { term: "Genade", uitleg: "Iets goeds krijgen wat je niet verdiend hebt; onverdiende vriendelijkheid. Het is een cadeau, geen beloning — je hoeft er niets voor te presteren. In de Bijbel gaat het vaak over Gods genade: dat hij goed is voor mensen, ook als ze het niet \"verdiend\" hebben." },
+    { term: "Gerechtigheid", uitleg: "doen wat goed en rechtvaardig is in de ogen van God; eerlijk en goed omgaan met andere mensen." },
     { term: "Heiden", uitleg: "In de Bijbel: iemand die niet bij het Joodse volk hoorde en de God van Israël (nog) niet kende — het betekent gewoon \"niet-Jood\". Het was geen scheldwoord, gewoon een aanduiding. Bijzonder is dat Jezus juist ook heidenen hielp — iets wat veel mensen toen verbaasde." },
     { term: "Heilige Geest", uitleg: "De Heilige Geest is God zelf: de derde persoon van de Drie-eenheid. Christenen geloven in één God in drie personen — de Vader, de Zoon (Jezus) en de Heilige Geest — die samen tóch één God zijn. De Heilige Geest werkt in mensen: hij geeft moed en troost en helpt hen om dichter bij God te leven. Je kunt hem niet zien, net zomin als je de wind ziet, maar je merkt wel wat hij doet." },
     { term: "Hemelvaart", uitleg: "Het moment waarop Jezus, na zijn opstanding, omhoogging naar de hemel en niet langer op aarde bij zijn leerlingen bleef. Christenen herdenken dit op Hemelvaartsdag — voor veel kinderen ook gewoon een vrije donderdag." },

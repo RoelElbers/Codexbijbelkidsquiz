@@ -3658,9 +3658,9 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:17"
         },
         {
-            vraag: "Vanuit welke plek schreef Paulus zijn brief aan de Efeziërs?",
-            antwoorden: ["Op een schip", "In de gevangenis", "In een paleis", "Op reis door de woestijn"],
-            correct: "In de gevangenis",
+            vraag: "In welke situatie bevond Paulus zich toen hij deze brief schreef?",
+            antwoorden: ["Hij was op reis met een schip", "Hij zat gevangen", "Hij verbleef in een paleis", "Hij reisde door de woestijn"],
+            correct: "Hij zat gevangen",
             bijbelplaats: "Efeziërs 4:1"
         },
         {
@@ -3674,7 +3674,7 @@ vragenData["Efeziërs"] = {
             antwoorden: ["Behandel hen goed en dreig niet, want jullie hebben dezelfde Heer in de hemel", "Wees streng, anders luisteren ze niet", "Laat hen het zwaarste werk doen, daar zijn ze voor", "Stuur hen weg zodra ze een fout maken"],
             correct: "Behandel hen goed en dreig niet, want jullie hebben dezelfde Heer in de hemel",
             bijbelplaats: "Efeziërs 6:9",
-            uitleg: "Een slaaf in de Romeinse tijd was niet vrij: hij was eigendom van iemand anders en kon niet zomaar weggaan. Toch was het anders dan de slavernij die je uit de geschiedenisboeken kent. Het had niets met huidskleur te maken, slaven deden allerlei soorten werk — ook als schrijver, boekhouder of leraar — en veel van hen werden na verloop van tijd vrijgelaten. In een grote stad was een flink deel van de bewoners slaaf. Het bijzondere aan Paulus is dat hij hen rechtstreeks aanspreekt, alsof ze er gewoon bij horen. En tegen de meesters zegt hij: jullie hebben dezelfde Heer in de hemel. Voor God staan ze dus naast elkaar."
+            uitleg: "Een slaaf in het Romeinse Rijk was niet vrij: hij was eigendom van iemand anders. Slaven konden heel verschillende soorten werk doen, van zwaar lichamelijk werk tot werk als schrijver, boekhouder of leraar. Opvallend is dat Paulus hen rechtstreeks aanspreekt én tegen hun meesters zegt dat zij dezelfde Heer in de hemel hebben. Voor God staat de meester dus niet boven de slaaf."
         },
         {
             vraag: "Paulus sluit zijn gebed af met een lofprijzing op God. Wat zegt hij daarin over wat God kan doen?",
@@ -3707,15 +3707,16 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 2:4"
         },
         {
-            vraag: "Wat zegt Paulus tegen ouders?",
-            antwoorden: ["Maak je kinderen niet boos, maar voed ze liefdevol op", "Wees zo streng mogelijk en straf elke fout meteen hard af", "Laat je kinderen aan hun lot over", "Geef ze alles wat ze willen"],
-            correct: "Maak je kinderen niet boos, maar voed ze liefdevol op",
-            bijbelplaats: "Efeziërs 6:4"
+            vraag: "Paulus noemt een gebod waaraan een belofte verbonden is. Welk gebod is dat?",
+            antwoorden: ["Houd de sabbat in ere", "Eer je vader en je moeder", "Steel niet", "Leg geen vals getuigenis af"],
+            correct: "Eer je vader en je moeder",
+            bijbelplaats: "Efeziërs 6:2-3",
+            uitleg: "Bij het gebod \"Eer je vader en je moeder\" hoort een bijzondere belofte: dat het je goed zal gaan en dat je lang zult leven op aarde. Paulus haalt hier een gebod uit de wet van Mozes aan en wijst erop dat er meteen een belofte aan verbonden is."
         },
         {
             vraag: "Waar staat het \"borstpantser\" (harnas) van de wapenrusting voor?",
-            antwoorden: ["Het goede doen (gerechtigheid)", "Veel macht", "Slimmer zijn dan alle anderen", "Hard werken"],
-            correct: "Het goede doen (gerechtigheid)",
+            antwoorden: ["De gerechtigheid", "De macht", "De slimheid", "Het harde werken"],
+            correct: "De gerechtigheid",
             bijbelplaats: "Efeziërs 6:14"
         },
         {
@@ -3725,10 +3726,10 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:12"
         },
         {
-            vraag: "Wat is volgens Paulus het teken (zegel) dat je echt bij God hoort?",
-            antwoorden: ["Een gouden ring", "De Heilige Geest", "Een brief", "Een mooi kleed"],
-            correct: "De Heilige Geest",
-            bijbelplaats: "Efeziërs 1:13-14"
+            vraag: "Paulus schrijft over Gods grote plan met de wereld. Wat wil God uiteindelijk in Christus bijeenbrengen?",
+            antwoorden: ["Alles in de hemel en op aarde", "Alleen het volk Israël", "Alleen de mensen die in Efeze wonen", "Alle legers van het Romeinse Rijk"],
+            correct: "Alles in de hemel en op aarde",
+            bijbelplaats: "Efeziërs 1:10"
         },
         {
             vraag: "Waar staat de \"gordel\" in de wapenrusting van God voor?",
@@ -3737,11 +3738,11 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:14"
         },
         {
-            vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke muur dachten zijn lezers?",
-            antwoorden: ["Een muur in de tempel waar niet-Joden niet voorbij mochten", "De stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Een muur die de rijke wijk en de arme wijk uit elkaar hield", "De muur rond het paleis van de Romeinse stadhouder"],
-            correct: "Een muur in de tempel waar niet-Joden niet voorbij mochten",
+            vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke echte muur kan dit beeld de lezers hebben herinnerd?",
+            antwoorden: ["Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten", "Aan de stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Aan een muur tussen de rijke en arme wijk", "Aan de muur rond het paleis van de Romeinse stadhouder"],
+            correct: "Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten",
             bijbelplaats: "Efeziërs 2:14",
-            uitleg: "Op het tempelplein stond een lage stenen afscheiding met borden erop, in het Grieks en het Latijn, dat vreemdelingen niet verder mochten. Twee van die borden zijn later teruggevonden. Paulus zegt dus niet iets vaags: hij wijst op een muur die zijn lezers zelf gezien hadden."
+            uitleg: "Op het tempelplein in Jeruzalem stond een stenen afscheiding waar niet-Joden niet voorbij mochten. Er stonden waarschuwingsborden bij; twee zulke inscripties zijn teruggevonden. Die muur kan Paulus' beeld heel herkenbaar hebben gemaakt. Zijn belangrijkste punt is dat Christus de scheiding tussen Joden en niet-Joden heeft doorbroken."
         },
         {
             vraag: "Paulus schrijft dat de gelovigen met de Geest \"verzegeld\" zijn. Wat deed men in die tijd met een zegel?",
