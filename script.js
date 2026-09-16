@@ -4760,13 +4760,14 @@ vragenData["Kolossenzen & Filemon"] = {
             vraag: "Wat vraagt Paulus aan Filemon over Onesimus?",
             antwoorden: ["Om hem terug te ontvangen als een broeder", "Om hem te straffen", "Om hem weg te sturen", "Om hem vrij te laten en te laten gaan waar hij wil"],
             correct: "Om hem terug te ontvangen als een broeder",
-            bijbelplaats: "Filemon 17"
+            bijbelplaats: "Filemon 16-17"
         },
         {
             vraag: "De naam Onesimus betekent \"nuttig\". Welke woordgrap maakt Paulus daarmee?",
             antwoorden: ["Vroeger was hij onbruikbaar, nu juist heel bruikbaar", "Hij zou zijn naam pas veel later helemaal waarmaken", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
             correct: "Vroeger was hij onbruikbaar, nu juist heel bruikbaar",
-            bijbelplaats: "Filemon 11"
+            bijbelplaats: "Filemon 11",
+            uitleg: "Onesimus is een Griekse naam en betekent 'nuttig'. Paulus schrijft dat hij vroeger achrēstos was, 'onbruikbaar', en nu euchrēstos, 'heel bruikbaar'. Voor iemand die Grieks sprak, klonk dat als een knipoog bij zijn naam."
         },
         {
             vraag: "Wat biedt Paulus aan over de schuld die Onesimus misschien nog had?",
@@ -4782,7 +4783,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus noemt Christus het \"hoofd\". Waarvan is Hij het hoofd?",
-            antwoorden: ["Van de kerk, Zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de engelen"],
+            antwoorden: ["Van de kerk, Zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de synagoge"],
             correct: "Van de kerk, Zijn lichaam",
             bijbelplaats: "Kolossenzen 1:18"
         },
@@ -4802,13 +4803,15 @@ vragenData["Kolossenzen & Filemon"] = {
             vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan is Hij volgens Paulus de eerstgeborene?",
             antwoorden: ["Van heel de schepping", "Van de familie van Jozef", "Van de twaalf leerlingen", "Van de gemeente in Kolosse"],
             correct: "Van heel de schepping",
-            bijbelplaats: "Kolossenzen 1:15"
+            bijbelplaats: "Kolossenzen 1:15",
+            uitleg: "Het woord eerstgeborene betekent in de Bijbel niet altijd degene die letterlijk als eerste geboren werd. Het kan ook wijzen op rang, eer en gezag. Een duidelijk voorbeeld staat in Psalm 89:28. Daar noemt God de koning uit het huis van David Zijn \"eerstgeborene\" en legt Hij meteen uit wat daarmee bedoeld wordt: de hoogste van de koningen der aarde.\n\nDat helpt om Kolossenzen 1:15 te begrijpen. Wanneer Paulus Christus \"de eerstgeborene van heel de schepping\" noemt, bedoelt hij dat Christus boven de hele schepping staat. Dat blijkt ook uit wat Paulus onmiddellijk daarna schrijft: alles is door Christus geschapen en Hij bestaat vóór alles."
         },
         {
-            vraag: "Paulus noemt Marcus familie van een bekende medewerker. Van wie is Marcus de neef?",
-            antwoorden: ["Van Barnabas", "Van Petrus", "Van Paulus", "Van Timoteüs"],
-            correct: "Van Barnabas",
-            bijbelplaats: "Kolossenzen 4:10"
+            vraag: "Paulus noemt Marcus familie van Barnabas. Welke familieband hadden zij?",
+            antwoorden: ["Ze waren neven van elkaar: Marcus was een zoon van een oom of tante van Barnabas", "Ze waren broers", "Barnabas was de vader van Marcus", "Marcus was de oom van Barnabas"],
+            correct: "Ze waren neven van elkaar: Marcus was een zoon van een oom of tante van Barnabas",
+            bijbelplaats: "Kolossenzen 4:10",
+            uitleg: "Paulus gebruikt het Griekse woord anepsios. Dat betekent: de zoon van een oom of tante. In het Nederlands zeggen we daar ook 'neef' tegen, net als tegen de zoon van een broer of zus. Daarom staat er in sommige oudere vertalingen iets anders."
         },
         {
             vraag: "Paulus vraagt de Kolossenzen om hun brief ook in een andere stad te laten voorlezen. Welke stad noemt hij?",
@@ -4817,7 +4820,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:16"
         },
         {
-            vraag: "Waar was Paulus zo zeker van toen hij Filemon schreef?",
+            vraag: "Waar was Paulus zo zeker van toen hij aan Filemon schreef?",
             antwoorden: ["Dat Filemon zelfs méér zou doen dan hij vroeg", "Dat Filemon zijn verzoek zonder meer zou weigeren", "Dat ze elkaar snel weer zouden zien", "Dat Filemon niets zou doen"],
             correct: "Dat Filemon zelfs méér zou doen dan hij vroeg",
             bijbelplaats: "Filemon 21"
@@ -4829,10 +4832,10 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 2:9"
         },
         {
-            vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen bij elkaar?",
+            vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen buiten Jeruzalem meestal bij elkaar?",
             antwoorden: ["In gewone woonhuizen, want kerkgebouwen bestonden nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
             correct: "In gewone woonhuizen, want kerkgebouwen bestonden nog niet",
-            bijbelplaats: "Filemon 2"
+            bijbelplaats: "Filemon 2 · Romeinen 16:5 · 1 Korintiërs 16:19"
         },
         {
             vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse rijk?",
