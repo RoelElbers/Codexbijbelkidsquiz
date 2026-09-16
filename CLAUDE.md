@@ -199,9 +199,12 @@ letter gebruikt. De spelling van het spel gaat hier voor die van de vertaling.
 - `uw` in een gebod dat de **hoorder** aanspreekt: `Heb de Heer uw God lief`,
   `Eer uw vader en moeder`.
 
-Let op: staan in één vraag álle vier de antwoorden in de mond van Jezus, dan
-krijgen ook de afleiders een hoofdletter. De hoofdletter is dus geen aanwijzing
-voor welk antwoord goed is.
+De hoofdletter bij God, Jezus en de Heilige Geest geldt ook in foute
+antwoorden, en wordt nooit als weggever gezien: zo schrijven we God altijd. Een
+hoofdletter die alleen in het goede antwoord of alleen in een afleider staat, is
+dus geen reden om een vraag aan te passen. Controleer bij nieuwe vragen alleen
+of verwijzingen naar God, Jezus of de Geest overal een hoofdletter hebben, ook
+in de afleiders.
 
 ## Plaatsingsregel — gewone pool of Verborgen Schat
 
