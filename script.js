@@ -3469,8 +3469,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Waarom koos God ons uit, schrijft Paulus?",
-            antwoorden: ["Omdat we het verdienden", "Omdat we sterk waren", "Omdat hij ons liefheeft", "Omdat we rijk waren"],
-            correct: "Omdat hij ons liefheeft",
+            antwoorden: ["Omdat we het verdienden", "Omdat we sterk waren", "Omdat Hij ons liefheeft", "Omdat we rijk waren"],
+            correct: "Omdat Hij ons liefheeft",
             bijbelplaats: "Efeziërs 1:4-5"
         },
         {
@@ -3493,7 +3493,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt: leg je oude, verkeerde gewoonten af, net als oude kleren. Wat trek je daarvoor in de plaats aan?",
-            antwoorden: ["Een nieuw leven, zoals God het bedoeld heeft", "Precies dezelfde oude gewoonten weer", "Je trekt hele mooie nieuwe kleren aan", "Een verkleedkostuum om je anders voor te doen"],
+            antwoorden: ["Een nieuw leven, zoals God het bedoeld heeft", "Precies dezelfde oude gewoonten weer", "Je trekt hele mooie nieuwe kleren aan", "Een kostuum om je te verkleden en je anders voor te doen"],
             correct: "Een nieuw leven, zoals God het bedoeld heeft",
             bijbelplaats: "Efeziërs 4:22-24"
         },
