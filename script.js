@@ -2082,8 +2082,8 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus schrijft dat je iets van God kunt herkennen in de wereld om je heen. Waarin kun je volgens hem iets van God zien?",
-            antwoorden: ["In de natuur die Hij gemaakt heeft", "In de gebouwen van de stad", "In de boeken van geleerden", "In de wetten van de keizer"],
-            correct: "In de natuur die Hij gemaakt heeft",
+            antwoorden: ["In alles wat er geschapen is", "In de gebouwen van de stad", "In de boeken van geleerden", "In de wetten van de keizer"],
+            correct: "In alles wat er geschapen is",
             bijbelplaats: "Romeinen 1:20"
         },
         {
@@ -5389,7 +5389,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Als je wijsheid nodig hebt, wat moet je dan volgens Jakobus doen?",
-            antwoorden: ["God erom vragen, want Hij geeft het graag", "Wachten tot je ouder en ervarener bent", "Zorgen dat je eerst genoeg geleerd hebt", "Vertrouw alleen op je eigen verstand"],
+            antwoorden: ["God erom vragen, want Hij geeft het graag", "Wachten tot je ouder en ervarener bent", "Zorgen dat je eerst genoeg geleerd hebt", "Alleen op je eigen verstand vertrouwen"],
             correct: "God erom vragen, want Hij geeft het graag",
             bijbelplaats: "Jakobus 1:5"
         },
@@ -5948,8 +5948,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Soms klaagt je eigen hart je aan en voel je je schuldig, ook als je alles al aan God verteld hebt. Wat schrijft Johannes tegen wie dat overkomt?",
-            antwoorden: ["God is groter dan je hart, en Hij weet alles", "Dan heb je vast toch nog iets verkeerds gedaan", "Dan moet je het nog een keer vragen", "Dan luister je naar de verkeerde stem"],
-            correct: "God is groter dan je hart, en Hij weet alles",
+            antwoorden: ["God is groter dan je hart en weet alles", "Dan heb je vast toch nog iets verkeerds gedaan", "Dan moet je het nog een keer vragen", "Dan luister je naar de verkeerde stem"],
+            correct: "God is groter dan je hart en weet alles",
             bijbelplaats: "1 Johannes 3:20"
         },
         {
