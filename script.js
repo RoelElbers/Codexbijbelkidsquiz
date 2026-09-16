@@ -3764,7 +3764,7 @@ vragenData["Filippenzen"] = {
     beginner: [
         {
             vraag: "Paulus geeft raad over waar je je gedachten mee vult. Waar moet je volgens hem aan blijven denken?",
-            antwoorden: ["Aan alles wat waar, mooi en goed is", "Alleen aan je eigen problemen", "Alleen aan wat er morgen gebeurt", "Zo min mogelijk"],
+            antwoorden: ["Aan alles wat waar, mooi en goed is", "Alleen aan je eigen problemen", "Alleen aan wat er morgen gebeurt", "Aan alles wat je zelf nog graag wilt hebben"],
             correct: "Aan alles wat waar, mooi en goed is",
             bijbelplaats: "Filippenzen 4:8"
         },
@@ -3781,7 +3781,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:4"
         },
         {
-            vraag: "Twee vrouwen in Filippi hadden onenigheid. Wat vraagt Paulus hun?",
+            vraag: "Twee vrouwen in Filippi hadden onenigheid. Wat vraagt Paulus aan ze om te doen?",
             antwoorden: ["Om het weer eens te worden", "Om de gemeente te verlaten", "Om te zwijgen", "Om te kiezen wie gelijk heeft"],
             correct: "Om het weer eens te worden",
             bijbelplaats: "Filippenzen 4:2"
@@ -3814,16 +3814,16 @@ vragenData["Filippenzen"] = {
             vraag: "Als je bidt in plaats van je zorgen te maken, wat zal je hart dan bewaren?",
             antwoorden: ["De vrede van God", "Een sterke muur", "Goede vrienden", "Veel geluk"],
             correct: "De vrede van God",
-            bijbelplaats: "Filippenzen 4:7"
+            bijbelplaats: "Filippenzen 4:6-7"
         },
         {
-            vraag: "In het lied schrijft Paulus dat élke knie zal buigen. Op welke plaatsen gebeurt dat volgens hem?",
+            vraag: "Paulus schrijft in zijn brief aan de Filippenzen dat élke knie voor Jezus zal buigen. Op welke plaatsen gebeurt dat volgens hem?",
             antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In alle grote steden van het Romeinse rijk", "In Jeruzalem en Filippi"],
             correct: "In de hemel, op de aarde én onder de aarde",
             bijbelplaats: "Filippenzen 2:10"
         },
         {
-            vraag: "Paulus schrijft dat hij alles aankan, dankzij iemand die hem steeds kracht geeft. Wie geeft hem die kracht?",
+            vraag: "Paulus schrijft dat hij alles aankan, omdat iemand hem kracht geeft voor alles wat hij moet doen. Wie geeft hem die kracht?",
             antwoorden: ["Christus", "De keizer", "Zijn vrienden in Filippi", "De engelen"],
             correct: "Christus",
             bijbelplaats: "Filippenzen 4:13"
@@ -3848,7 +3848,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft in zijn brief aan de Filippenzen een korte, bemoedigende zin over waar de Heer is. Wat schrijft hij?",
-            antwoorden: ["De Heer is dichtbij", "De Heer is machtig", "De Heer is goed", "De Heer is trouw"],
+            antwoorden: ["De Heer is dichtbij", "De Heer is ver weg", "De Heer is alleen in de tempel", "De Heer woont in Jeruzalem"],
             correct: "De Heer is dichtbij",
             bijbelplaats: "Filippenzen 4:5"
         },
@@ -3859,9 +3859,9 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:3"
         },
         {
-            vraag: "Paulus zegt: probeer net zo te denken en te doen als iemand anders. Als wie moeten de gelovigen worden?",
-            antwoorden: ["Als Jezus Christus", "Als koning David", "Als de profeet Mozes", "Als de engelen"],
-            correct: "Als Jezus Christus",
+            vraag: "Paulus zegt dat de gelovigen dezelfde houding moeten hebben als iemand anders. Wie moeten zij als voorbeeld nemen?",
+            antwoorden: ["Jezus Christus", "Koning David", "De profeet Mozes", "De engelen"],
+            correct: "Jezus Christus",
             bijbelplaats: "Filippenzen 2:5"
         }
     ],
