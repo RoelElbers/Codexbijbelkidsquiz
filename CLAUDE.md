@@ -156,7 +156,12 @@ Een voornaamwoord dat naar God, Jezus of de Heilige Geest verwijst, krijgt een
 - het **werkwoord** `zijn` — `ze zijn blij`, `moet zijn`, `geroepen zijn`. Dit
   is veruit de grootste groep valse treffers; let er extra op.
 - `zich` en `zichzelf`.
-- zelfstandige naamwoorden: `Vader`, `Zoon`, `Heer` staan al goed.
+- **zelfstandige naamwoorden** krijgen alleen een hoofdletter als het een
+  titel of naam is voor God of Jezus: `de Vader`, `de Zoon`, `de Zoon van God`,
+  `de Heer`. Algemene woorden blijven klein, ook als ze in de context naar
+  Jezus verwijzen: `een zoon baren`, `de goede herder`, `een koning`.
+  Voornaamwoorden volgen wél altijd de hoofdletterregel — `een zoon baren, en
+  men zal Hem Immanuël noemen`.
 - `hij`/`hem`/`zijn` voor **andere personen** — ook in een zin die over Jezus
   of God gaat. Denk aan Paulus, Petrus, Pilatus, Mozes, Jozef, Johannes.
 - **personages in gelijkenissen** (de vader, de koning, de herder, de
@@ -205,6 +210,18 @@ hoofdletter die alleen in het goede antwoord of alleen in een afleider staat, is
 dus geen reden om een vraag aan te passen. Controleer bij nieuwe vragen alleen
 of verwijzingen naar God, Jezus of de Geest overal een hoofdletter hebben, ook
 in de afleiders.
+
+#### Namen die bij het nalopen als goddelijke naam tellen
+
+Een controle op deze regel zoekt eerst naar blokken waarin God of Jezus wordt
+genoemd. Gebruik deze lijst; hij is bewust ruim:
+
+> God, Gods, Jezus, Christus, Heer, Heere, Heilige Geest, Geest, Messias,
+> **Immanuël**, Vader, Zoon, Lam, Verlosser, Redder, Heiland, Zaligmaker,
+> Schepper, Gezalfde, Alfa, Omega
+
+`Immanuël` stond er eerst niet bij. Daardoor bleef de vraag bij Matteüs 1:23
+bij een eerdere controle buiten beeld: dat blok noemt Jezus nergens anders.
 
 ## Plaatsingsregel — gewone pool of Verborgen Schat
 

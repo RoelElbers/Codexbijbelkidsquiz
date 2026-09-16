@@ -456,7 +456,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 1:17"
             },
             {
-                vraag: "Welke profeet wordt aangehaald: De maagd zal zwanger zijn en een zoon baren, en men zal hem Immanuël noemen?",
+                vraag: "Welke profeet wordt aangehaald: De maagd zal zwanger zijn en een zoon baren, en men zal Hem Immanuël noemen?",
                 antwoorden: ["Jesaja", "Jeremia", "Daniël", "Maleachi"],
                 correct: "Jesaja",
                 bijbelplaats: "Matteüs 1:22-23"
@@ -582,7 +582,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin.\n\nHet bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
             },
             {
-                vraag: "Johannes de Doper zegt over degene die na hem komt: hij heeft de wan in zijn hand. Wat is een wan?",
+                vraag: "Johannes de Doper zegt over degene die na hem komt: Hij heeft de wan in Zijn hand. Wat is een wan?",
                 antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een grote mand om de oogst mee naar de schuur te dragen"],
                 correct: "Een schep om graan op te gooien, zodat de wind het kaf wegblaast",
                 bijbelplaats: "Matteüs 3:12"
@@ -6438,7 +6438,7 @@ vragenData["Openbaring"] = {
             uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
         },
         {
-            vraag: "Johannes ziet iemand met veel \"diademen\" op zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
+            vraag: "Johannes ziet iemand met veel \"diademen\" op Zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
             antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
             correct: "Een diadeem was een band die alleen een koning droeg",
             bijbelplaats: "Openbaring 19:12",
