@@ -3658,7 +3658,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:17"
         },
         {
-            vraag: "In welke situatie bevond Paulus zich toen hij deze brief schreef?",
+            vraag: "In welke situatie bevond Paulus zich toen hij de brief aan de Efeziërs schreef?",
             antwoorden: ["Hij was op reis met een schip", "Hij zat gevangen", "Hij verbleef in een paleis", "Hij reisde door de woestijn"],
             correct: "Hij zat gevangen",
             bijbelplaats: "Efeziërs 4:1"
