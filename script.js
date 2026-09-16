@@ -438,7 +438,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 20:20-21"
             },
             {
-                vraag: "Met welke maaltijd, een Joods feest, vierde Jezus het laatste avondmaal met Zijn leerlingen?",
+                vraag: "Met welke maaltijd, een Joods feest, vierde Jezus het Laatste Avondmaal met Zijn leerlingen?",
                 antwoorden: ["Het Loofhuttenfeest", "Het Pesach (Paasmaal)", "Het Wekenfeest", "De sabbatsmaaltijd"],
                 correct: "Het Pesach (Paasmaal)",
                 bijbelplaats: "Matteüs 26:17"
@@ -749,7 +749,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 11:15-17"
             },
             {
-                vraag: "Wat at en dronk Jezus met Zijn leerlingen tijdens het laatste avondmaal, met de woorden 'Dit is mijn lichaam' en 'Dit is mijn bloed'?",
+                vraag: "Wat at en dronk Jezus met Zijn leerlingen tijdens het Laatste Avondmaal, met de woorden 'Dit is mijn lichaam' en 'Dit is mijn bloed'?",
                 antwoorden: ["Brood en wijn", "Vis en water", "Vijgen en honing", "Druiven en olie"],
                 correct: "Brood en wijn",
                 bijbelplaats: "Marcus 14:22-24"
@@ -1841,7 +1841,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Petrus", "Johannes", "Andreas", "Tomas"],
                 correct: "Johannes",
                 bijbelplaats: "Johannes 13:23, 19:26, 21:24 · Irenaeus, Tegen de ketterijen 3.1.1",
-                uitleg: "Deze leerling wordt nooit bij naam genoemd. Aan het slot van het evangelie staat wel dat híj het is die dit alles heeft opgeschreven (Johannes 21:24). Rond het jaar 180 schrijft de kerkvader Irenaeus dat het om Johannes gaat, de leerling die bij het laatste avondmaal naast Jezus lag."
+                uitleg: "Deze leerling wordt nooit bij naam genoemd. Aan het slot van het evangelie staat wel dat híj het is die dit alles heeft opgeschreven (Johannes 21:24). Rond het jaar 180 schrijft de kerkvader Irenaeus dat het om Johannes gaat, de leerling die bij het Laatste Avondmaal naast Jezus lag."
             },
             {
                 vraag: "Na Zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden Hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",
@@ -3036,7 +3036,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 13:2"
         },
         {
-            vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het laatste avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
+            vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het Laatste Avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
             antwoorden: ["Om Jezus, die Zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tien geboden die Mozes kreeg", "Om God te danken voor de oogst en het dagelijkse eten"],
             correct: "Om Jezus, die Zijn lichaam en bloed voor ons heeft gegeven",
             bijbelplaats: "1 Korintiërs 11:23-26"
@@ -7764,7 +7764,7 @@ function openSchatkist(niveau) {
 // 'bijbelplaats' en verschijnt na het antwoorden via checkAntwoord().
 const verborgenSchatVragen = [
     {
-        vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het laatste avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
+        vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het Laatste Avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
         antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
         correct: "Marcus",
         bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem"
