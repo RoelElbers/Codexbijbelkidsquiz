@@ -3282,45 +3282,45 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft iets opvallends over zijn eigen leven: hij zegt dat hij eigenlijk niet meer zelf leeft. Wat bedoelt hij daarmee?",
-            antwoorden: ["Christus leeft in hem; zijn oude leven ging met Christus mee het kruis op", "Hij bedoelt dat hij zich sindsdien precies aan alle regels van de wet houdt", "Hij is oud geworden en denkt dat hij niet lang meer te leven heeft", "Hij leeft alleen nog voor zijn werk en gunt zichzelf niets meer"],
+            antwoorden: ["Christus leeft in hem; zijn oude leven ging met Christus mee het kruis op", "Hij bedoelt dat hij zich sindsdien precies aan alle regels van de wet houdt", "Hij is oud geworden en denkt dat hij niet lang meer te leven heeft", "Hij leeft alleen nog voor zijn werk en heeft weinig tijd meer voor iets anders"],
             correct: "Christus leeft in hem; zijn oude leven ging met Christus mee het kruis op",
             bijbelplaats: "Galaten 2:20"
         },
         {
             vraag: "Paulus gebruikt het beeld van zaaien en oogsten. Wat bedoelt hij ongeveer?",
-            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet vooral in het juiste seizoen zaaien en oogsten", "Als je veel oogst, kan je veel eten", "Het maakt niet uit wat je doet"],
+            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet vooral in het juiste seizoen zaaien en oogsten", "Als je veel oogst, kun je veel eten", "Wie hard werkt, wordt vanzelf rijk"],
             correct: "Wat je doet, heeft gevolgen; doe daarom het goede",
             bijbelplaats: "Galaten 6:7-9"
         },
         {
             vraag: "Wat zegt Paulus dat je moet blijven doen, ook als het moeilijk wordt?",
-            antwoorden: ["Snel opgeven", "Niet moe worden van het goeddoen", "Alleen aan jezelf denken", "Wachten op anderen"],
+            antwoorden: ["Blijven wachten tot iemand anders het probleem oplost", "Niet moe worden van het goeddoen", "Zorgen dat anderen zien hoeveel moeite je doet", "Wachten tot je weer zin krijgt om iets goeds te doen"],
             correct: "Niet moe worden van het goeddoen",
             bijbelplaats: "Galaten 6:9"
         },
         {
-            vraag: "Paulus vertelt dat hij een andere bekende apostel eens openlijk moest terechtwijzen, omdat die zich anders ging gedragen tegenover niet-Joodse gelovigen. Wie was dat?",
-            antwoorden: ["Petrus", "Johannes", "Jakobus", "Barnabas"],
-            correct: "Petrus",
+            vraag: "In Antiochië at Petrus eerst gewoon samen met niet-Joodse gelovigen. Toen er andere Joodse gelovigen kwamen, trok hij zich terug en at hij niet meer met hen. Wat deed Paulus toen?",
+            antwoorden: ["Hij sprak Petrus er openlijk op aan", "Hij zei niets, omdat Petrus eerder apostel was geworden dan hij", "Hij besloot voortaan zelf ook niet meer met niet-Joden te eten", "Hij vertrok uit Antiochië om verdere ruzie te voorkomen"],
+            correct: "Hij sprak Petrus er openlijk op aan",
             bijbelplaats: "Galaten 2:11-14"
         },
         {
-            vraag: "Paulus had de Galaten het evangelie verkondigd. Toch luisterden sommigen al snel naar een ánder evangelie. Wat vond Paulus daarvan?",
-            antwoorden: ["Hij was streng: er is maar één echt evangelie", "Hij vond het prima, het maakte niet uit", "Hij wist niet wat hij ervan moest denken", "Hij liet de Galaten zelf maar kiezen"],
+            vraag: "Paulus had de Galaten geleerd dat je door geloof in Jezus bij God mag horen. Maar daarna kwamen er leraren die zeiden dat geloven in Jezus niet genoeg was: je moest je óók aan de Joodse wet houden. Hoe reageerde Paulus daarop?",
+            antwoorden: ["Hij was streng: er is maar één echt evangelie", "Hij vond het prima; iedereen mocht daar zelf over beslissen", "Hij wist niet zeker welke boodschap de juiste was", "Hij vond dat de Galaten beide manieren maar moesten proberen"],
             correct: "Hij was streng: er is maar één echt evangelie",
             bijbelplaats: "Galaten 1:6-7",
-            uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Je moet je ook aan de Joodse wet gaan houden, anders hoor je er niet echt bij. Paulus noemt dat een ánder evangelie, en hij is er streng over. Want als je er zelf nog iets bij moet doen, dan was wat Jezus deed blijkbaar niet genoeg — en dat is precies waar de hele brief over gaat."
+            uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Je moet je ook aan de Joodse wet houden om echt bij God te horen. Paulus noemt dat een ander evangelie en wijst het scherp af. Want als mensen zich óók nog aan de regels uit de wet van Mozes moeten houden om bij God te horen, dan zou wat Jezus heeft gedaan volgens Paulus niet genoeg zijn."
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
-            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Alleen de mensen die rechtstreeks van Abraham afstammen tellen mee", "Alleen mensen die heel sterk zijn horen erbij", "Alleen belangrijke mensen mogen bij God horen"],
+            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham horen bij God", "Abraham hoorde bij God omdat hij nooit iets verkeerd deed"],
             correct: "Ook wij mogen bij God horen door te geloven, net als Abraham",
             bijbelplaats: "Galaten 3:6-7"
         },
         {
             vraag: "Paulus schrijft dat God zijn Zoon stuurde toen de tijd er rijp voor was. Hoe kwam Gods Zoon volgens hem in de wereld?",
-            antwoorden: ["Geboren uit een vrouw, levend onder de wet, net als ieder ander", "Geboren in het paleis van de koning, met alle eer die daarbij hoort", "Als een profeet die pas als volwassene voor het eerst optrad", "Alleen zichtbaar voor wie in Hem geloofde"],
-            correct: "Geboren uit een vrouw, levend onder de wet, net als ieder ander",
+            antwoorden: ["Geboren uit een vrouw en onder de wet, zoals ieder Joods kind", "Geboren in het paleis van de koning, met alle eer die daarbij hoort", "Als een profeet die pas als volwassene voor het eerst optrad", "Als een engel die vanuit de hemel neerdaalde"],
+            correct: "Geboren uit een vrouw en onder de wet, zoals ieder Joods kind",
             bijbelplaats: "Galaten 4:4"
         },
         {
@@ -3331,7 +3331,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat je je kunt laten leiden door de Geest, óf door je eigen verkeerde verlangens. Wat raadt hij aan?",
-            antwoorden: ["Doe altijd wat je zelf wilt", "Laat je leiden door de Geest", "Volg de menigte", "Denk nergens over na"],
+            antwoorden: ["Doe altijd wat je zelf wilt", "Laat je leiden door de Geest", "Doe gewoon wat iedereen ook doet", "Denk nergens over na"],
             correct: "Laat je leiden door de Geest",
             bijbelplaats: "Galaten 5:16"
         },
