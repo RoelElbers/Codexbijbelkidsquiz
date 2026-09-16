@@ -141,6 +141,35 @@ dus ook `correct` mee. `bijbelplaats` blijft ongewijzigd.
 > wordt: `Paulus zegt dat het bij alles wat je doet om één ding gaat. Waar
 > gaat het hem om?` — antwoorden `["Dat je het in liefde doet", …]`
 
+### Hoofdletter bij verwijzingen naar God, Jezus en de Heilige Geest
+
+Een voornaamwoord dat naar God, Jezus of de Heilige Geest verwijst, krijgt een
+**hoofdletter**. Dat geldt overal waar spelers tekst zien: `script.js`
+(`vraag`, `antwoorden`, `correct`, `uitleg`), `ontdekken-inhoud.js`,
+`lang/nl.js` en de HTML-pagina's.
+
+- `hij`, `hem` → `Hij`, `Hem`
+- bezittelijk `zijn` → `Zijn` (`Zijn leerlingen`, `Zijn dood`)
+
+**Wat er níet onder valt.** Hier gaat het bij het nalopen het vaakst mis:
+
+- het **werkwoord** `zijn` — `ze zijn blij`, `moet zijn`, `geroepen zijn`. Dit
+  is veruit de grootste groep valse treffers; let er extra op.
+- `zich` en `zichzelf`.
+- zelfstandige naamwoorden: `Vader`, `Zoon`, `Heer` staan al goed.
+- `hij`/`hem`/`zijn` voor **andere personen** — ook in een zin die over Jezus
+  of God gaat. Denk aan Paulus, Petrus, Pilatus, Mozes, Jozef, Johannes.
+- **personages in gelijkenissen** (de vader, de koning, de herder, de
+  bruidegom), ook al staan ze symbolisch voor God.
+
+Eén uitzondering op die laatste regel staat bewust in de pool: de goede herder
+in Johannes 10:11 kreeg wél een hoofdletter, omdat Jezus daar van zichzelf zegt
+dát Hij het is.
+
+**Wijzigt een tekst in `antwoorden`, dan wijzigt dezelfde tekst in `correct`
+mee.** Controleer na afloop dat elk `correct`-antwoord nog letterlijk in zijn
+`antwoorden`-lijst staat.
+
 ## Plaatsingsregel — gewone pool of Verborgen Schat
 
 Waar materiaal terechtkomt hangt af van hoe vast de herkomst ervan ligt.

@@ -150,7 +150,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 2:1"
             },
             {
-                vraag: "Hoeveel leerlingen (apostelen) koos Jezus uit om hem te volgen?",
+                vraag: "Hoeveel leerlingen (apostelen) koos Jezus uit om Hem te volgen?",
                 antwoorden: ["7", "10", "12", "40"],
                 correct: "12",
                 bijbelplaats: "Matteüs 10:1-4"
@@ -168,20 +168,20 @@ const vragenData = {
                 bijbelplaats: "Matteüs 9:9"
             },
             {
-                vraag: "Hoe heet het gebed dat Jezus zijn leerlingen leerde bidden?",
+                vraag: "Hoe heet het gebed dat Jezus Zijn leerlingen leerde bidden?",
                 antwoorden: ["Het Onzevader", "Het Weesgegroet", "De Geloofsbelijdenis", "Het Avondgebed"],
                 correct: "Het Onzevader",
                 bijbelplaats: "Matteüs 6:9-13"
             },
             {
-                vraag: "Wie kwamen er na de geboorte van Jezus naar hem op zoek, geleid door een ster?",
+                vraag: "Wie kwamen er na de geboorte van Jezus naar Hem op zoek, geleid door een ster?",
                 antwoorden: ["Herders", "Wijzen uit het oosten", "Engelen", "Priesters uit de grote tempel"],
                 correct: "Wijzen uit het oosten",
                 bijbelplaats: "Matteüs 2:1-2"
             },
             {
                 vraag: "Wat deed Jezus toen er een storm op het meer was en de leerlingen bang werden?",
-                antwoorden: ["Hij ging gewoon weer verder slapen toen ze hem wakker maakten", "Hij sprak een woord, en de storm hield op", "Hij stapte uit de boot en liep over het water naar de overkant", "Hij nam zelf het roer over"],
+                antwoorden: ["Hij ging gewoon weer verder slapen toen ze Hem wakker maakten", "Hij sprak een woord, en de storm hield op", "Hij stapte uit de boot en liep over het water naar de overkant", "Hij nam zelf het roer over"],
                 correct: "Hij sprak een woord, en de storm hield op",
                 bijbelplaats: "Matteüs 8:23-27"
             },
@@ -192,7 +192,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 3:16"
             },
             {
-                vraag: "Hoeveel dagen vastte Jezus in de woestijn voordat hij op de proef werd gesteld?",
+                vraag: "Hoeveel dagen vastte Jezus in de woestijn voordat Hij op de proef werd gesteld?",
                 antwoorden: ["7 dagen", "12 dagen", "40 dagen", "100 dagen"],
                 correct: "40 dagen",
                 bijbelplaats: "Matteüs 4:1-2"
@@ -210,7 +210,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 26:14-16"
             },
             {
-                vraag: "Wat antwoordde Jezus toen hem werd gevraagd wat het grootste gebod is?",
+                vraag: "Wat antwoordde Jezus toen Hem werd gevraagd wat het grootste gebod is?",
                 antwoorden: ["Heb God lief, en je naaste als jezelf", "Breng elke dag trouw een offer in de tempel", "Eer je vader en moeder", "Houd de sabbat heilig"],
                 correct: "Heb God lief, en je naaste als jezelf",
                 bijbelplaats: "Matteüs 22:37-39"
@@ -230,7 +230,7 @@ const vragenData = {
                 uitleg: "Jezus zei tegen hen: 'Kom, volg mij, dan zal ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
             },
             {
-                vraag: "Wat zei Jezus toen mensen de kinderen bij hem wilden weghouden?",
+                vraag: "Wat zei Jezus toen mensen de kinderen bij Hem wilden weghouden?",
                 antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
                 correct: "Laat de kinderen bij mij komen",
                 bijbelplaats: "Matteüs 19:13-14"
@@ -240,7 +240,7 @@ const vragenData = {
                 antwoorden: ["Op de rots", "Op het zand", "Op het water", "Op harde kleigrond"],
                 correct: "Op de rots",
                 bijbelplaats: "Matteüs 7:24-27",
-                uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar zijn woorden luistert én ze ook doet."
+                uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar Zijn woorden luistert én ze ook doet."
             },
             {
                 vraag: "Jezus vergeleek het koninkrijk van God met een heel klein zaadje dat uitgroeit tot een grote plant. Welk zaadje?",
@@ -257,30 +257,30 @@ const vragenData = {
             },
             {
                 vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
-                antwoorden: ["Wacht hier tot hij terugkomt", "Hij is opgestaan, hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
-                correct: "Hij is opgestaan, hij is hier niet",
+                antwoorden: ["Wacht hier tot Hij terugkomt", "Hij is opgestaan, Hij is hier niet", "Hij slaapt, kom later terug", "Rol de steen weer voor het graf"],
+                correct: "Hij is opgestaan, Hij is hier niet",
                 bijbelplaats: "Matteüs 28:5-6"
             },
             {
-                vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei hij?",
+                vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei Hij?",
                 antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Behandel anderen precies zoals zij jou behandeld hebben"],
                 correct: "Behandel anderen zoals je zelf behandeld wilt worden",
                 bijbelplaats: "Matteüs 7:12"
             },
             {
-                vraag: "Jezus zei dat zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
+                vraag: "Jezus zei dat Zijn volgelingen als een bepaald ingrediënt moeten zijn — iets dat eten smaak geeft en bewaart. Met welk ingrediënt vergeleek Hij hen?",
                 antwoorden: ["Zout", "Suiker", "Peper", "Meel"],
                 correct: "Zout",
                 bijbelplaats: "Matteüs 5:13"
             },
             {
-                vraag: "Jezus zei tegen zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
+                vraag: "Jezus zei tegen Zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
                 antwoorden: ["het licht", "het vuur", "de wind", "het zout"],
                 correct: "het licht",
                 bijbelplaats: "Matteüs 5:14"
             },
             {
-                vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde hij daarmee?",
+                vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde Hij daarmee?",
                 antwoorden: ["Dat ze een grotere boot nodig hadden", "Dat ze mensen bij God zouden brengen", "Dat ze leraren op een school zouden worden", "Dat ze reddingszwemmers zouden worden"],
                 correct: "Dat ze mensen bij God zouden brengen",
                 bijbelplaats: "Matteüs 4:19"
@@ -342,8 +342,8 @@ const vragenData = {
                 bijbelplaats: "Matteüs 2:13"
             },
             {
-                vraag: "Wat was de laatste opdracht die Jezus aan zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
-                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Niets, hij nam gewoon afscheid", "Schrijf een boek"],
+                vraag: "Wat was de laatste opdracht die Jezus aan Zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
+                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Niets, Hij nam gewoon afscheid", "Schrijf een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
             },
@@ -372,7 +372,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
             },
             {
-                vraag: "Jezus riep zijn eerste leerlingen bij het meer. Wat deden ze toen hij zei 'volg mij'?",
+                vraag: "Jezus riep Zijn eerste leerlingen bij het meer. Wat deden ze toen Hij zei 'volg mij'?",
                 antwoorden: ["Ze vroegen eerst of ze hun boot mochten verkopen", "Ze lieten meteen hun netten achter en gingen mee", "Ze gingen eerst afscheid nemen van hun familie", "Ze zeiden dat ze de volgende dag zouden komen"],
                 correct: "Ze lieten meteen hun netten achter en gingen mee",
                 bijbelplaats: "Matteüs 4:18-22"
@@ -426,19 +426,19 @@ const vragenData = {
         ],
         expert: [
             {
-                vraag: "Wie verschenen er naast Jezus toen hij op de berg van gedaante veranderde?",
+                vraag: "Wie verschenen er naast Jezus toen Hij op de berg van gedaante veranderde?",
                 antwoorden: ["Mozes en Abraham", "Mozes en Elia", "Twee aartsengelen", "Elia en Abraham"],
                 correct: "Mozes en Elia",
                 bijbelplaats: "Matteüs 17:3"
             },
             {
                 vraag: "Wat vroeg de moeder van Jakobus en Johannes aan Jezus voor haar zonen?",
-                antwoorden: ["Of ze wat meer mochten uitrusten, want ze was bang dat haar zonen te vermoeid waren", "Of ze links en rechts van hem mochten zitten in zijn koninkrijk", "Of ze naar huis mochten", "Of ze meer brood kregen"],
-                correct: "Of ze links en rechts van hem mochten zitten in zijn koninkrijk",
+                antwoorden: ["Of ze wat meer mochten uitrusten, want ze was bang dat haar zonen te vermoeid waren", "Of ze links en rechts van Hem mochten zitten in Zijn koninkrijk", "Of ze naar huis mochten", "Of ze meer brood kregen"],
+                correct: "Of ze links en rechts van Hem mochten zitten in Zijn koninkrijk",
                 bijbelplaats: "Matteüs 20:20-21"
             },
             {
-                vraag: "Met welke maaltijd, een Joods feest, vierde Jezus het laatste avondmaal met zijn leerlingen?",
+                vraag: "Met welke maaltijd, een Joods feest, vierde Jezus het laatste avondmaal met Zijn leerlingen?",
                 antwoorden: ["Het Loofhuttenfeest", "Het Pesach (Paasmaal)", "Het Wekenfeest", "De sabbatsmaaltijd"],
                 correct: "Het Pesach (Paasmaal)",
                 bijbelplaats: "Matteüs 26:17"
@@ -468,7 +468,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 1:23"
             },
             {
-                vraag: "Welke twee broers, vissers, riep Jezus als eersten om hem te volgen?",
+                vraag: "Welke twee broers, vissers, riep Jezus als eersten om Hem te volgen?",
                 antwoorden: ["Petrus en Andreas", "Jakobus en Johannes", "Filippus en Bartolomeüs", "Tomas en Matteüs"],
                 correct: "Petrus en Andreas",
                 bijbelplaats: "Matteüs 4:18-20"
@@ -517,10 +517,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Jakob", "Mattan", "Eleazar", "Achim"],
                 correct: "Jakob",
                 bijbelplaats: "Matteüs 1:16",
-                uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om zijn vader op aarde te zijn."
+                uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om Zijn vader op aarde te zijn."
             },
             {
-                vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van zijn eigen opstanding. Over welke profeet ging het?",
+                vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van Zijn eigen opstanding. Over welke profeet ging het?",
                 antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
                 correct: "Jona",
                 bijbelplaats: "Matteüs 12:39-40"
@@ -656,11 +656,11 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 18:30"
             },
             {
-                vraag: "Een zieke vrouw raakte \"de zoom van zijn kleed\" aan. Wat zat daar precies?",
+                vraag: "Een zieke vrouw raakte \"de zoom van Zijn kleed\" aan. Wat zat daar precies?",
                 antwoorden: ["Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken", "De gouden rand die alleen leraren mochten dragen", "Een strook met daarop zijn naam geborduurd", "De rand die je opvouwde om er geld in te bewaren"],
                 correct: "Kwastjes die elke Joodse man aan zijn mantel droeg, om aan de geboden te denken",
                 bijbelplaats: "Matteüs 9:20",
-                uitleg: "In Numeri 15 staat dat het volk kwastjes aan de hoeken van hun kleren moest maken, met een blauwe draad erin. Ze waren bedoeld als geheugensteun: zie je ze, dan denk je aan Gods geboden. Jezus droeg ze dus gewoon, zoals iedere Joodse man. Later verwijt hij sommige leiders dat ze hun kwastjes extra lang maken — hetzelfde verwijt als bij de brede gebedsriemen: goed bedoeld, maar bedoeld om gezien te worden."
+                uitleg: "In Numeri 15 staat dat het volk kwastjes aan de hoeken van hun kleren moest maken, met een blauwe draad erin. Ze waren bedoeld als geheugensteun: zie je ze, dan denk je aan Gods geboden. Jezus droeg ze dus gewoon, zoals iedere Joodse man. Later verwijt Hij sommige leiders dat ze hun kwastjes extra lang maken — hetzelfde verwijt als bij de brede gebedsriemen: goed bedoeld, maar bedoeld om gezien te worden."
             },
             {
                 vraag: "Jezus verwijst naar David, die de \"toonbroden\" at. Wat waren dat?",
@@ -679,7 +679,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij hadden een dokter laten halen en wachtten tot die kwam", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
                 correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
                 bijbelplaats: "Matteüs 9:23",
-                uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten hem uit. Toen nam hij haar hand en stond ze op."
+                uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten Hem uit. Toen nam Hij haar hand en stond ze op."
             },
             {
                 vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
@@ -695,7 +695,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 9:17"
             },
             {
-                vraag: "Op een sabbat liepen Jezus en zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
+                vraag: "Op een sabbat liepen Jezus en Zijn leerlingen door de korenvelden. De leerlingen hadden honger en plukten aren. Wat is een aar?",
                 antwoorden: ["De top van de graanhalm, waar de korrels in zitten", "De sikkel waarmee het graan werd afgesneden", "De bundel stro die na het maaien overblijft", "Het smalle pad dat dwars door de akker loopt"],
                 correct: "De top van de graanhalm, waar de korrels in zitten",
                 bijbelplaats: "Matteüs 12:1"
@@ -718,7 +718,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 2:15-16"
             },
             {
-                vraag: "Hoeveel apostelen koos Jezus uit om hem te vergezellen?",
+                vraag: "Hoeveel apostelen koos Jezus uit om Hem te vergezellen?",
                 antwoorden: ["7", "10", "12", "40"],
                 correct: "12",
                 bijbelplaats: "Marcus 3:13-19"
@@ -730,26 +730,26 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 5:41-42"
             },
             {
-                vraag: "Wat deed Jezus toen mensen kinderen bij hem brachten en de leerlingen dat wilden tegenhouden?",
-                antwoorden: ["Hij liet ze wegsturen, want ze maakten veel te veel lawaai", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk, die vonden dat ze terug moesten komen als ze wat ouder waren", "Hij zei dat ze de volgende dag terug mochten komen, want hij was net begonnen met een lange preek"],
+                vraag: "Wat deed Jezus toen mensen kinderen bij Hem brachten en de leerlingen dat wilden tegenhouden?",
+                antwoorden: ["Hij liet ze wegsturen, want ze maakten veel te veel lawaai", "Hij omarmde de kinderen en zegende hen", "Hij gaf de leerlingen gelijk, die vonden dat ze terug moesten komen als ze wat ouder waren", "Hij zei dat ze de volgende dag terug mochten komen, want Hij was net begonnen met een lange preek"],
                 correct: "Hij omarmde de kinderen en zegende hen",
                 bijbelplaats: "Marcus 10:13-16"
             },
             {
-                vraag: "Op welk dier reed Jezus toen hij Jeruzalem binnenkwam?",
+                vraag: "Op welk dier reed Jezus toen Hij Jeruzalem binnenkwam?",
                 antwoorden: ["Een muildier", "Een kameel", "Een veulen van een ezel", "Een groot wit strijdpaard"],
                 correct: "Een veulen van een ezel",
                 bijbelplaats: "Marcus 11:7",
-                uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet hij zien wat voor koning hij wilde zijn."
+                uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet Hij zien wat voor koning Hij wilde zijn."
             },
             {
-                vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na zijn intocht, wat ophef veroorzaakte?",
+                vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na Zijn intocht, wat ophef veroorzaakte?",
                 antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij deelde brood en geld uit aan alle arme mensen daar"],
                 correct: "Hij joeg de geldwisselaars en duivenverkopers eruit",
                 bijbelplaats: "Marcus 11:15-17"
             },
             {
-                vraag: "Wat at en dronk Jezus met zijn leerlingen tijdens het laatste avondmaal, met de woorden 'Dit is mijn lichaam' en 'Dit is mijn bloed'?",
+                vraag: "Wat at en dronk Jezus met Zijn leerlingen tijdens het laatste avondmaal, met de woorden 'Dit is mijn lichaam' en 'Dit is mijn bloed'?",
                 antwoorden: ["Brood en wijn", "Vis en water", "Vijgen en honing", "Druiven en olie"],
                 correct: "Brood en wijn",
                 bijbelplaats: "Marcus 14:22-24"
@@ -797,7 +797,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
             },
             {
-                vraag: "Bij de doop van Jezus daalde de Heilige Geest op hem neer. In de gedaante van welk dier?",
+                vraag: "Bij de doop van Jezus daalde de Heilige Geest op Hem neer. In de gedaante van welk dier?",
                 antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
                 correct: "Een duif",
                 bijbelplaats: "Marcus 1:10"
@@ -811,25 +811,25 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         ],
         advanced: [
             {
-                vraag: "Wat zei Petrus toen Jezus aan zijn leerlingen vroeg wie hij volgens hen was?",
+                vraag: "Wat zei Petrus toen Jezus aan Zijn leerlingen vroeg wie Hij volgens hen was?",
                 antwoorden: ["U bent een profeet", "U bent de messias", "U bent Mozes' opvolger", "U bent de zoon van Jozef"],
                 correct: "U bent de messias",
                 bijbelplaats: "Marcus 8:29"
             },
             {
-                vraag: "Wat zei Jezus dat iemand moet doen die hem wil volgen?",
+                vraag: "Wat zei Jezus dat iemand moet doen die Hem wil volgen?",
                 antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Elke dag naar de tempel in Jeruzalem gaan om daar te bidden"],
                 correct: "Zichzelf verloochenen en zijn kruis op zich nemen",
                 bijbelplaats: "Marcus 8:34"
             },
             {
                 vraag: "Wat deden de leerlingen toen Jezus over het water op hen toe kwam?",
-                antwoorden: ["Ze sprongen overboord en zwommen naar Jezus toe", "Ze schreeuwden van angst, want ze dachten dat het een spook was", "Ze roeiden zo hard mogelijk de andere kant op", "Ze schreeuwden naar hem en vroegen wie hij was"],
+                antwoorden: ["Ze sprongen overboord en zwommen naar Jezus toe", "Ze schreeuwden van angst, want ze dachten dat het een spook was", "Ze roeiden zo hard mogelijk de andere kant op", "Ze schreeuwden naar Hem en vroegen wie Hij was"],
                 correct: "Ze schreeuwden van angst, want ze dachten dat het een spook was",
                 bijbelplaats: "Marcus 6:49-50"
             },
             {
-                vraag: "Wat antwoordde Jezus toen iemand hem vroeg wat het belangrijkste gebod was?",
+                vraag: "Wat antwoordde Jezus toen iemand Hem vroeg wat het belangrijkste gebod was?",
                 antwoorden: ["Heb de Heer uw God lief met heel uw hart en uw naaste als uzelf", "Houd je aan alle voorschriften over rein en onrein voedsel", "Eer uw vader en moeder", "Houd de sabbat heilig"],
                 correct: "Heb de Heer uw God lief met heel uw hart en uw naaste als uzelf",
                 bijbelplaats: "Marcus 12:29-31"
@@ -841,14 +841,14 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 11:12-14, 20-21"
             },
             {
-                vraag: "Wat zag Jezus een arme weduwe in de tempel doen, wat hij prees als groter dan wat alle rijken gaven?",
+                vraag: "Wat zag Jezus een arme weduwe in de tempel doen, wat Hij prees als groter dan wat alle rijken gaven?",
                 antwoorden: ["Ze bracht een duif als offer", "Ze gaf twee kleine muntjes, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
                 correct: "Ze gaf twee kleine muntjes, alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44",
                 uitleg: "Die muntjes heetten lepta, en ze waren samen maar heel weinig waard — omgerekend zo'n twee tot drie euro, precies één quadrans. Eén lepton was het allerkleinste muntje dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
             },
             {
-                vraag: "Welke leerling sprak Jezus rechtstreeks aan toen hij zijn leerlingen in Getsemane slapend aantrof?",
+                vraag: "Welke leerling sprak Jezus rechtstreeks aan toen Hij Zijn leerlingen in Getsemane slapend aantrof?",
                 antwoorden: ["Jakobus", "Petrus", "Tomas", "Johannes"],
                 correct: "Petrus",
                 bijbelplaats: "Marcus 14:37"
@@ -887,7 +887,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 12:28"
             },
             {
-                vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen hij sprak over waken. Welke vier waren dat?",
+                vraag: "De Romeinen verdeelden de nacht in vier 'wachten'. Jezus noemde ze toen Hij sprak over waken. Welke vier waren dat?",
                 antwoorden: ["'s Ochtends, 's middags, 's avonds en 's nachts", "De avond, middernacht, het hanengekraai en de vroege ochtend", "De schemering, het eerste licht, de dageraad en de zonsopgang", "Het eerste, tweede, derde en vierde uur"],
                 correct: "De avond, middernacht, het hanengekraai en de vroege ochtend",
                 bijbelplaats: "Marcus 13:35"
@@ -910,10 +910,10 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
                 correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
                 bijbelplaats: "Marcus 6:3",
-                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nEen van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot zijn dertigste was dit gewoon zijn werk."
+                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nEen van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot Zijn dertigste was dit gewoon Zijn werk."
             },
             {
-                vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos hij juist die twee?",
+                vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos Hij juist die twee?",
                 antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
                 correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
                 bijbelplaats: "Marcus 10:25"
@@ -925,7 +925,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 1:40"
             },
             {
-                vraag: "Als Jezus een dove man geneest, zegt hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
+                vraag: "Als Jezus een dove man geneest, zegt Hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
                 antwoorden: ["Ga open", "Sta op", "Wees stil", "Kom hier"],
                 correct: "Ga open",
                 bijbelplaats: "Marcus 7:34"
@@ -955,7 +955,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 9:42"
             },
             {
-                vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij hem kruisigen. Waarom deed hij dat volgens Marcus?",
+                vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij Hem kruisigen. Waarom deed hij dat volgens Marcus?",
                 antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Hij was zelf bang geworden voor Jezus"],
                 correct: "Hij wilde het volk zijn zin geven",
                 bijbelplaats: "Marcus 15:15"
@@ -993,20 +993,20 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
             },
             {
-                vraag: "Welk Aramees woord sprak Jezus uit toen hij het dochtertje van Jaïrus opwekte uit de dood?",
+                vraag: "Welk Aramees woord sprak Jezus uit toen Hij het dochtertje van Jaïrus opwekte uit de dood?",
                 antwoorden: ["Korban", "Talita koemi", "Effata", "Maranata"],
                 correct: "Talita koemi",
                 bijbelplaats: "Marcus 5:41",
                 uitleg: "Talita koemi betekent 'Meisje, sta op'. Marcus schrijft vaker een Aramees woord op zoals Jezus het uitsprak, en zet de vertaling er meteen achter — hij schreef voor lezers die die taal niet kenden. Zo doet hij het ook bij effata ('Ga open') en abba ('Vader')."
             },
             {
-                vraag: "Welke drie leerlingen nam Jezus mee de berg op bij zijn verheerlijking, en ook mee naar Getsemane?",
+                vraag: "Welke drie leerlingen nam Jezus mee de berg op bij Zijn verheerlijking, en ook mee naar Getsemane?",
                 antwoorden: ["Petrus, Andreas en Filippus", "Petrus, Jakobus en Johannes", "Petrus, Johannes en Matteüs", "Jakobus, Johannes en Tomas"],
                 correct: "Petrus, Jakobus en Johannes",
                 bijbelplaats: "Marcus 9:2 en 14:33"
             },
             {
-                vraag: "Jezus riep aan het kruis in zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
+                vraag: "Jezus riep aan het kruis in Zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
                 antwoorden: ["Mijn God, mijn God, waarom hebt U mij verlaten?", "Meisje, sta op", "Ga open", "Kom, onze Heer!"],
                 correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
@@ -1062,7 +1062,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 bijbelplaats: "Marcus 15:33-34"
             },
             {
-                vraag: "Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde hij daarmee?",
+                vraag: "Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde Hij daarmee?",
                 antwoorden: [
                     "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
                     "Dat een rijke nooit gered kan worden",
@@ -1118,7 +1118,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
                 correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
                 bijbelplaats: "Marcus 7:24",
-                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed.\n\nDat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw hem aanspreekt over de kruimels onder de tafel."
+                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed.\n\nDat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw Hem aanspreekt over de kruimels onder de tafel."
             },
             {
                 vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
@@ -1215,9 +1215,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 2:8-14"
             },
             {
-                vraag: "Wat deed Jezus toen hij twaalf jaar oud was, en zijn ouders hem na drie dagen zoeken terugvonden in Jeruzalem?",
-                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen", "Hij hielp bij het schoonmaken van de tempel", "Hij speelde met andere kinderen"],
-                correct: "Hij zat in de tempel tussen de leraren, hij luisterde en stelde vragen",
+                vraag: "Wat deed Jezus toen Hij twaalf jaar oud was, en Zijn ouders Hem na drie dagen zoeken terugvonden in Jeruzalem?",
+                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, Hij luisterde en stelde vragen", "Hij hielp bij het schoonmaken van de tempel", "Hij speelde met andere kinderen"],
+                correct: "Hij zat in de tempel tussen de leraren, Hij luisterde en stelde vragen",
                 bijbelplaats: "Lucas 2:41-47"
             },
             {
@@ -1233,7 +1233,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 10:30-37"
             },
             {
-                vraag: "Jezus kwam op bezoek bij twee zussen. De één was druk met het eten, de ander zat aan zijn voeten te luisteren. Hoe heetten ze?",
+                vraag: "Jezus kwam op bezoek bij twee zussen. De één was druk met het eten, de ander zat aan Zijn voeten te luisteren. Hoe heetten ze?",
                 antwoorden: ["Lea en Rachel", "Marta en Maria", "Hanna en Naomi", "Mirjam en Sara"],
                 correct: "Marta en Maria",
                 bijbelplaats: "Lucas 10:38-42"
@@ -1289,15 +1289,15 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 19:8"
             },
             {
-                vraag: "Wat zei Jezus tegen de misdadiger die naast hem was gekruisigd en hem vroeg aan hem te denken wanneer hij in zijn koninkrijk kwam?",
+                vraag: "Wat zei Jezus tegen de misdadiger die naast Hem was gekruisigd en Hem vroeg aan Hem te denken wanneer Hij in Zijn koninkrijk kwam?",
                 antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan mij", "Daar kan ik nu niets meer aan doen"],
                 correct: "Vandaag zul je met mij in het paradijs zijn",
                 bijbelplaats: "Lucas 23:43"
             },
             {
                 vraag: "Wat gebeurde er toen twee leerlingen op weg waren naar het dorp Emmaüs, na de opstanding?",
-                antwoorden: ["Ze zagen in de verte twee engelen die hun de weg naar huis wezen", "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
-                correct: "Jezus zelf kwam met hen meelopen, maar ze herkenden hem pas toen hij het brood brak",
+                antwoorden: ["Ze zagen in de verte twee engelen die hun de weg naar huis wezen", "Jezus zelf kwam met hen meelopen, maar ze herkenden Hem pas toen Hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
+                correct: "Jezus zelf kwam met hen meelopen, maar ze herkenden Hem pas toen Hij het brood brak",
                 bijbelplaats: "Lucas 24:13-31"
             },
             {
@@ -1307,7 +1307,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 10:31-32"
             },
             {
-                vraag: "Uit zijn vele leerlingen koos Jezus een kleinere, bijzondere groep die hij eropuit stuurde. Hoe noemde hij die?",
+                vraag: "Uit Zijn vele leerlingen koos Jezus een kleinere, bijzondere groep die Hij eropuit stuurde. Hoe noemde Hij die?",
                 antwoorden: ["Apostelen", "Profeten", "Schriftgeleerden", "Farizeeën"],
                 correct: "Apostelen",
                 bijbelplaats: "Lucas 6:13"
@@ -1341,7 +1341,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
                 correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
                 bijbelplaats: "Lucas 4:17",
-                uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen.\n\nLucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon hij te spreken."
+                uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen.\n\nLucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon Hij te spreken."
             },
             {
                 vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
@@ -1473,7 +1473,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was ongeveer 220 liter, zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een schuld waar een gewone boer nooit aan kon komen."
             },
             {
-                vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde hij die?",
+                vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde Hij die?",
                 antwoorden: ["Het nieuwe verbond", "De grote belofte", "De heilige wet", "Het laatste gebod"],
                 correct: "Het nieuwe verbond",
                 bijbelplaats: "Lucas 22:20"
@@ -1572,19 +1572,19 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
     "Johannes": {
         beginner: [
             {
-                vraag: "Hoe noemde Johannes de Doper Jezus toen hij hem zag aankomen?",
+                vraag: "Hoe noemde Johannes de Doper Jezus toen hij Hem zag aankomen?",
                 antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet Elia, teruggekeerd uit de hemel", "De rabbi"],
                 correct: "Het Lam van God dat de zonde van de wereld wegneemt",
                 bijbelplaats: "Johannes 1:29"
             },
             {
                 vraag: "Bij welke gelegenheid veranderde Jezus water in wijn?",
-                antwoorden: ["Op zijn verjaardag", "Bij een bruiloft in Kana", "In de tempel", "Bij een feest in Jeruzalem"],
+                antwoorden: ["Op Zijn verjaardag", "Bij een bruiloft in Kana", "In de tempel", "Bij een feest in Jeruzalem"],
                 correct: "Bij een bruiloft in Kana",
                 bijbelplaats: "Johannes 2:1-11"
             },
             {
-                vraag: "Jezus zat moe bij een waterput toen er iemand water kwam putten. Met wie raakte hij daar in gesprek?",
+                vraag: "Jezus zat moe bij een waterput toen er iemand water kwam putten. Met wie raakte Hij daar in gesprek?",
                 antwoorden: ["Een Samaritaanse vrouw", "Maria", "Marta", "De moeder van Johannes de Doper"],
                 correct: "Een Samaritaanse vrouw",
                 bijbelplaats: "Johannes 4:5-26"
@@ -1622,8 +1622,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: 'Wat is een "discipel"?',
-                antwoorden: ["Een leerling van Jezus die met hem meeging en van hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een dienaar die in de tempel het heilige vuur brandend hield"],
-                correct: "Een leerling van Jezus die met hem meeging en van hem leerde",
+                antwoorden: ["Een leerling van Jezus die met Hem meeging en van Hem leerde", "Een priester in de tempel", "Een Romeinse soldaat", "Een dienaar die in de tempel het heilige vuur brandend hield"],
+                correct: "Een leerling van Jezus die met Hem meeging en van Hem leerde",
                 bijbelplaats: "Johannes 1:35-40"
             },
             {
@@ -1663,7 +1663,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 10:27"
             },
             {
-                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met hem te praten?",
+                vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met Hem te praten?",
                 antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
                 correct: "Nikodemus",
                 bijbelplaats: "Johannes 3:1-2"
@@ -1689,19 +1689,19 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 6:1-13"
             },
             {
-                vraag: "Wat zei Jezus tegen Marta voordat hij Lazarus opwekte?",
+                vraag: "Wat zei Jezus tegen Marta voordat Hij Lazarus opwekte?",
                 antwoorden: ["Ik ben de weg en de waarheid", "Ik ben de opstanding en het leven", "Ik ben de goede herder", "Ik ben het licht van de wereld"],
                 correct: "Ik ben de opstanding en het leven",
                 bijbelplaats: "Johannes 11:25"
             },
             {
-                vraag: "Waaraan zouden de mensen volgens Jezus kunnen zien dat iemand bij hem hoort?",
+                vraag: "Waaraan zouden de mensen volgens Jezus kunnen zien dat iemand bij Hem hoort?",
                 antwoorden: ["Dat ze veel bidden", "Dat ze elkaar liefhebben", "Dat ze veel kennis hebben", "Dat ze rijk zijn"],
                 correct: "Dat ze elkaar liefhebben",
                 bijbelplaats: "Johannes 13:34-35"
             },
             {
-                vraag: "Wat beloofde Jezus aan zijn leerlingen te zenden na zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
+                vraag: "Wat beloofde Jezus aan Zijn leerlingen te zenden na Zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
                 antwoorden: ["Engelen", "De Heilige Geest", "Een profeet", "Een nieuw boek"],
                 correct: "De Heilige Geest",
                 bijbelplaats: "Johannes 14:16-17, 14:26"
@@ -1725,7 +1725,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 3:1"
             },
             {
-                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat de schapen alleen langs hem naar binnen konden. Hoe noemde hij zichzelf in dat beeld?",
+                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat de schapen alleen langs Hem naar binnen konden. Hoe noemde Hij zichzelf in dat beeld?",
                 antwoorden: ["De deur", "De muur", "Het dak", "Het raam"],
                 correct: "De deur",
                 bijbelplaats: "Johannes 10:7-9"
@@ -1743,7 +1743,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 6:35"
             },
             {
-                vraag: "Jezus zei dat wie bij hem blijft, veel vrucht draagt. Wat zijn de gelovigen in dat beeld?",
+                vraag: "Jezus zei dat wie bij Hem blijft, veel vrucht draagt. Wat zijn de gelovigen in dat beeld?",
                 antwoorden: ["De ranken", "De bladeren", "De wortels", "De druiven"],
                 correct: "De ranken",
                 bijbelplaats: "Johannes 15:5"
@@ -1755,9 +1755,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 1:38"
             },
             {
-                vraag: "Jezus wast de voeten van zijn leerlingen. Waarom was dat zo opvallend?",
-                antwoorden: ["In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester", "Het mocht alleen op de sabbat gebeuren en het was geen sabbat", "Het was een taak van de gastvrouw, niet van een man", "Het gebeurde normaal pas na de maaltijd, niet ervoor"],
-                correct: "In een huis was dit werk voor de laagste bediende, en hij deed het als hun meester",
+                vraag: "Jezus wast de voeten van Zijn leerlingen. Waarom was dat zo opvallend?",
+                antwoorden: ["In een huis was dit werk voor de laagste bediende, en Hij deed het als hun meester", "Het mocht alleen op de sabbat gebeuren en het was geen sabbat", "Het was een taak van de gastvrouw, niet van een man", "Het gebeurde normaal pas na de maaltijd, niet ervoor"],
+                correct: "In een huis was dit werk voor de laagste bediende, en Hij deed het als hun meester",
                 bijbelplaats: "Johannes 13:5"
             },
             {
@@ -1781,7 +1781,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         ],
         expert: [
             {
-                vraag: "Tomas zei tegen Jezus dat de leerlingen niet wisten waar hij heen ging. Wat antwoordde Jezus daarop?",
+                vraag: "Tomas zei tegen Jezus dat de leerlingen niet wisten waar Hij heen ging. Wat antwoordde Jezus daarop?",
                 antwoorden: ["Ik ben de goede herder", "Ik ben de weg, de waarheid en het leven", "Ik ben het brood dat leven geeft", "Ik ben de opstanding en het eeuwige leven"],
                 correct: "Ik ben de weg, de waarheid en het leven",
                 bijbelplaats: "Johannes 14:5-6"
@@ -1830,7 +1830,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 5:1-9"
             },
             {
-                vraag: "Filippus bracht zijn vriend Natanaël bij Jezus. Nog voor ze elkaar gesproken hadden, zei Jezus dat hij hem al eerder had gezien. Waar had hij hem gezien?",
+                vraag: "Filippus bracht zijn vriend Natanaël bij Jezus. Nog voor ze elkaar gesproken hadden, zei Jezus dat Hij hem al eerder had gezien. Waar had Hij hem gezien?",
                 antwoorden: ["Onder de vijgenboom", "In de tempel, terwijl hij bad", "Op de markt", "Op het land, aan het werk"],
                 correct: "Onder de vijgenboom",
                 bijbelplaats: "Johannes 1:47-49",
@@ -1844,7 +1844,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Deze leerling wordt nooit bij naam genoemd. Aan het slot van het evangelie staat wel dat híj het is die dit alles heeft opgeschreven (Johannes 21:24). Rond het jaar 180 schrijft de kerkvader Irenaeus dat het om Johannes gaat, de leerling die bij het laatste avondmaal naast Jezus lag."
             },
             {
-                vraag: "Na zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",
+                vraag: "Na Zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden Hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",
                 antwoorden: ["Vijftig el (ruim twintig meter)", "Honderd el (ongeveer vijftig meter)", "Tweehonderd el (ongeveer honderd meter)", "Vijfhonderd el (ruim tweehonderd meter)"],
                 correct: "Tweehonderd el (ongeveer honderd meter)",
                 bijbelplaats: "Johannes 21:8",
@@ -1908,14 +1908,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 8:58"
             },
             {
-                vraag: "Jezus zei: 'Ik ben de goede herder.' Wat doet de goede herder volgens Hem voor zijn schapen?",
+                vraag: "Jezus zei: 'Ik ben de goede herder.' Wat doet de goede herder volgens Hem voor Zijn schapen?",
                 antwoorden: [
-                    "Hij geeft zijn leven voor de schapen",
+                    "Hij geeft Zijn leven voor de schapen",
                     "Hij verkoopt ze",
                     "Hij laat ze alleen",
                     "Hij laat ze door een knecht in de gaten houden"
                 ],
-                correct: "Hij geeft zijn leven voor de schapen",
+                correct: "Hij geeft Zijn leven voor de schapen",
                 bijbelplaats: "Johannes 10:11"
             },
             {
@@ -1931,7 +1931,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 2:6"
             },
             {
-                vraag: "Jezus werd na zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd hij eerst bij Annas gebracht?",
+                vraag: "Jezus werd na Zijn arrestatie eerst naar Annas gebracht en daarna naar Kajafas, die dat jaar hogepriester was. Waarom werd Hij eerst bij Annas gebracht?",
                 antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
                 correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
                 bijbelplaats: "Johannes 18:13",
@@ -1983,7 +1983,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
             },
             {
-                vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze hem na de opstanding bij het graf zag?",
+                vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze Hem na de opstanding bij het graf zag?",
                 antwoorden: ["De bewaker van het graf", "De tuinman", "Een soldaat", "Een vreemde"],
                 correct: "De tuinman",
                 bijbelplaats: "Johannes 20:15"
@@ -2175,8 +2175,8 @@ vragenData["Romeinen"] = {
     advanced: [
         {
             vraag: "Waarmee heeft God ons hart gevuld, schrijft Paulus?",
-            antwoorden: ["Met niets", "Met zijn liefde, door de Heilige Geest", "Met wijsheid over alle dingen op aarde", "Met angst"],
-            correct: "Met zijn liefde, door de Heilige Geest",
+            antwoorden: ["Met niets", "Met Zijn liefde, door de Heilige Geest", "Met wijsheid over alle dingen op aarde", "Met angst"],
+            correct: "Met Zijn liefde, door de Heilige Geest",
             bijbelplaats: "Romeinen 5:5"
         },
         {
@@ -2192,7 +2192,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 7:24-25"
         },
         {
-            vraag: "Paulus redeneert van groot naar klein: als God zelfs zijn eigen Zoon gaf, wat volgt daaruit dan?",
+            vraag: "Paulus redeneert van groot naar klein: als God zelfs Zijn eigen Zoon gaf, wat volgt daaruit dan?",
             antwoorden: ["Dan zal Hij ons ook al het andere geven", "Dan hoeven wij verder niets meer te doen", "Dan mogen wij Hem vragen wat we maar willen", "Dan is Hij ons verder niets meer verschuldigd"],
             correct: "Dan zal Hij ons ook al het andere geven",
             bijbelplaats: "Romeinen 8:32"
@@ -2402,7 +2402,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:3-6"
         },
         {
-            vraag: "Na zijn opstanding liet Jezus zich nog een hele tijd aan zijn leerlingen zien en sprak hij met hen over het koninkrijk van God. Hoeveel dagen duurde dat?",
+            vraag: "Na Zijn opstanding liet Jezus zich nog een hele tijd aan Zijn leerlingen zien en sprak Hij met hen over het koninkrijk van God. Hoeveel dagen duurde dat?",
             antwoorden: ["Drie dagen", "Honderd dagen", "Veertig dagen", "Zeven dagen"],
             correct: "Veertig dagen",
             bijbelplaats: "Handelingen 1:3"
@@ -3037,8 +3037,8 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Bij het avondmaal — bij katholieken de eucharistie — delen de gelovigen brood en wijn, zoals Jezus dat bij het laatste avondmaal heeft ingesteld. Waar gaat het daarbij vooral om?",
-            antwoorden: ["Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tien geboden die Mozes kreeg", "Om God te danken voor de oogst en het dagelijkse eten"],
-            correct: "Om Jezus, die zijn lichaam en bloed voor ons heeft gegeven",
+            antwoorden: ["Om Jezus, die Zijn lichaam en bloed voor ons heeft gegeven", "Om de schepping van de wereld", "Om de tien geboden die Mozes kreeg", "Om God te danken voor de oogst en het dagelijkse eten"],
+            correct: "Om Jezus, die Zijn lichaam en bloed voor ons heeft gegeven",
             bijbelplaats: "1 Korintiërs 11:23-26"
         },
         {
@@ -3318,7 +3318,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:6-7"
         },
         {
-            vraag: "Paulus schrijft dat God zijn Zoon stuurde toen de tijd er rijp voor was. Hoe kwam Gods Zoon volgens hem in de wereld?",
+            vraag: "Paulus schrijft dat God Zijn Zoon stuurde toen de tijd er rijp voor was. Hoe kwam Gods Zoon volgens hem in de wereld?",
             antwoorden: ["Geboren uit een vrouw en onder de wet, zoals ieder Joods kind", "Geboren in het paleis van de koning, met alle eer die daarbij hoort", "Als een profeet die pas als volwassene voor het eerst optrad", "Als een engel die vanuit de hemel neerdaalde"],
             correct: "Geboren uit een vrouw en onder de wet, zoals ieder Joods kind",
             bijbelplaats: "Galaten 4:4"
@@ -3392,7 +3392,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:24-25"
         },
         {
-            vraag: "God zond de Geest van zijn Zoon in ons hart. Wat roept die Geest volgens Paulus?",
+            vraag: "God zond de Geest van Zijn Zoon in ons hart. Wat roept die Geest volgens Paulus?",
             antwoorden: ["\"Abba, Vader!\"", "\"Heer, ontferm U!\"", "\"Halleluja!\"", "\"Vrede zij met u!\""],
             correct: "\"Abba, Vader!\"",
             bijbelplaats: "Galaten 4:6"
@@ -3621,8 +3621,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus knielt en bidt dat God de gelovigen van binnen sterk maakt. Waardoor worden zij sterk gemaakt?",
-            antwoorden: ["Door alles voor hen makkelijk te maken", "Door zijn Geest", "Door hun spieren sterk te maken", "Door alleen nog maar gezond voedsel te eten"],
-            correct: "Door zijn Geest",
+            antwoorden: ["Door alles voor hen makkelijk te maken", "Door Zijn Geest", "Door hun spieren sterk te maken", "Door alleen nog maar gezond voedsel te eten"],
+            correct: "Door Zijn Geest",
             bijbelplaats: "Efeziërs 3:16"
         },
         {
@@ -3889,7 +3889,7 @@ vragenData["Filippenzen"] = {
             antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rijke heerser", "Die van een legeraanvoerder"],
             correct: "Die van een dienaar",
             bijbelplaats: "Filippenzen 2:7",
-            uitleg: "Filippenzen 2:6-11 wordt vaak een lied genoemd. De regels lopen ritmisch, en het lijkt erop dat Paulus hier iets aanhaalt wat de eerste christenen al samen zongen of opzegden. Het gaat eerst omlaag: Jezus laat zijn hoge plaats los, wordt mens en kiest de laagste plek van allemaal. Daarna keert het om, en juist daarom geeft God hem de hoogste naam."
+            uitleg: "Filippenzen 2:6-11 wordt vaak een lied genoemd. De regels lopen ritmisch, en het lijkt erop dat Paulus hier iets aanhaalt wat de eerste christenen al samen zongen of opzegden. Het gaat eerst omlaag: Jezus laat Zijn hoge plaats los, wordt mens en kiest de laagste plek van allemaal. Daarna keert het om, en juist daarom geeft God Hem de hoogste naam."
         },
         {
             vraag: "Welke jonge medewerker prijst Paulus omdat die echt om de gemeente geeft?",
@@ -3934,11 +3934,11 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:12"
         },
         {
-            vraag: "In het lied over Jezus schrijft Paulus dat God hem iets gaf wat boven alles uitgaat. Wat gaf God hem?",
+            vraag: "In het lied over Jezus schrijft Paulus dat God Hem iets gaf wat boven alles uitgaat. Wat gaf God Hem?",
             antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een troon van puur goud in de hemel", "Een prachtig paleis"],
             correct: "De hoogste naam, boven alle namen",
             bijbelplaats: "Filippenzen 2:9",
-            uitleg: "Deze regel komt uit hetzelfde lied over Jezus (Filippenzen 2:6-11), en wel uit het punt waar het omslaat. Eerst gaat het helemaal omlaag, tot de dood toe; dan geeft God hem de naam die boven alle namen staat. Een naam is in de Bijbel meer dan een woord waarmee je iemand roept — hij zegt wie iemand is en hoeveel gezag hij heeft."
+            uitleg: "Deze regel komt uit hetzelfde lied over Jezus (Filippenzen 2:6-11), en wel uit het punt waar het omslaat. Eerst gaat het helemaal omlaag, tot de dood toe; dan geeft God Hem de naam die boven alle namen staat. Een naam is in de Bijbel meer dan een woord waarmee je iemand roept — hij zegt wie iemand is en hoeveel gezag hij heeft."
         },
         {
             vraag: "Paulus vertelt over zijn leven vóór hij Jezus volgde. Tot welke Joodse groep hoorde hij?",
@@ -4782,8 +4782,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus noemt Christus het \"hoofd\". Waarvan is Hij het hoofd?",
-            antwoorden: ["Van de kerk, zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de engelen"],
-            correct: "Van de kerk, zijn lichaam",
+            antwoorden: ["Van de kerk, Zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de engelen"],
+            correct: "Van de kerk, Zijn lichaam",
             bijbelplaats: "Kolossenzen 1:18"
         },
         {
@@ -4799,7 +4799,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 1:13"
         },
         {
-            vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan is hij volgens Paulus de eerstgeborene?",
+            vraag: "Paulus noemt Christus de \"eerstgeborene\". Waarvan is Hij volgens Paulus de eerstgeborene?",
             antwoorden: ["Van heel de schepping", "Van de familie van Jozef", "Van de twaalf leerlingen", "Van de gemeente in Kolosse"],
             correct: "Van heel de schepping",
             bijbelplaats: "Kolossenzen 1:15"
@@ -4849,7 +4849,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 1:7 en 2:1"
         },
         {
-            vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
+            vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door Hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
             antwoorden: ["Ook de dingen die je niet kunt zien", "Alleen de aarde en de zee", "Alleen de mensen en de dieren", "Alleen wat mooi en goed is"],
             correct: "Ook de dingen die je niet kunt zien",
             bijbelplaats: "Kolossenzen 1:16"
@@ -4879,9 +4879,9 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 2:8"
         },
         {
-            vraag: "Paulus legt uit wat er bij de doop eigenlijk gebeurt: je wordt verbonden met iets wat Christus zelf heeft meegemaakt. Met welke twee gebeurtenissen uit zijn leven vergelijkt Paulus de doop?",
-            antwoorden: ["Met hem begraven worden, en met hem opstaan", "Met hem geboren worden en opgroeien", "Met hem de woestijn in gaan", "Met hem naar de hemel opstijgen"],
-            correct: "Met hem begraven worden, en met hem opstaan",
+            vraag: "Paulus legt uit wat er bij de doop eigenlijk gebeurt: je wordt verbonden met iets wat Christus zelf heeft meegemaakt. Met welke twee gebeurtenissen uit Zijn leven vergelijkt Paulus de doop?",
+            antwoorden: ["Met Hem begraven worden, en met Hem opstaan", "Met Hem geboren worden en opgroeien", "Met Hem de woestijn in gaan", "Met Hem naar de hemel opstijgen"],
+            correct: "Met Hem begraven worden, en met Hem opstaan",
             bijbelplaats: "Kolossenzen 2:12"
         },
         {
@@ -4997,8 +4997,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën begint met een beroemde zin: vroeger sprak God vele malen en op allerlei manieren tot de mensen door de profeten. Door wie spreekt Hij nu tot ons?",
-            antwoorden: ["Door zijn Zoon", "Door zijn engelen", "Door de koningen van Israël", "Door de boeken van de wet"],
-            correct: "Door zijn Zoon",
+            antwoorden: ["Door Zijn Zoon", "Door Zijn engelen", "Door de koningen van Israël", "Door de boeken van de wet"],
+            correct: "Door Zijn Zoon",
             bijbelplaats: "Hebreeën 1:1-2"
         },
         {
@@ -5124,7 +5124,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 10:24-25"
         },
         {
-            vraag: "Waar ging Jezus volgens Hebreeën zitten, nadat Hij zijn werk had volbracht?",
+            vraag: "Waar ging Jezus volgens Hebreeën zitten, nadat Hij Zijn werk had volbracht?",
             antwoorden: ["Aan de rechterhand van God", "Aan de linkerhand van God", "Aan de voeten van God", "Voor de troon van God"],
             correct: "Aan de rechterhand van God",
             bijbelplaats: "Hebreeën 10:12"
@@ -5137,7 +5137,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat laat de brief aan de Hebreeën vooral steeds zien over Jezus?",
-            antwoorden: ["Dat Jezus groter is dan alles en iedereen", "Dat Jezus minder is dan de engelen", "Dat Jezus vooral een strenge rechter is", "Dat Jezus zijn werk nog moet beginnen"],
+            antwoorden: ["Dat Jezus groter is dan alles en iedereen", "Dat Jezus minder is dan de engelen", "Dat Jezus vooral een strenge rechter is", "Dat Jezus Zijn werk nog moet beginnen"],
             correct: "Dat Jezus groter is dan alles en iedereen",
             bijbelplaats: "Hebreeën 1:4"
         },
@@ -5242,7 +5242,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets bijzonders zijn. Wat zijn ze volgens de brief?",
-            antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van zijn verbond", "Een plicht die je moet vervullen"],
+            antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van Zijn verbond", "Een plicht die je moet vervullen"],
             correct: "Een offer waar Hij blij mee is",
             bijbelplaats: "Hebreeën 13:16"
         },
@@ -5264,7 +5264,7 @@ vragenData["Hebreeën"] = {
             antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
             correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
             bijbelplaats: "Hebreeën 9:7",
-            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: hij ging één keer naar binnen, en dat was genoeg voor altijd."
+            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: Hij ging één keer naar binnen, en dat was genoeg voor altijd."
         },
         {
             vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
@@ -5425,7 +5425,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 1:6"
         },
         {
-            vraag: "Aan wat voor mensen geeft God volgens Jakobus zijn genade?",
+            vraag: "Aan wat voor mensen geeft God volgens Jakobus Zijn genade?",
             antwoorden: ["Aan mensen die nederig zijn", "Aan mensen die trots zijn", "Aan mensen die sterk zijn", "Aan mensen die veel weten"],
             correct: "Aan mensen die nederig zijn",
             bijbelplaats: "Jakobus 4:6"
@@ -5482,7 +5482,7 @@ vragenData["Jakobus"] = {
             antwoorden: ["De koninklijke wet", "De gouden wet", "De oude wet", "De eerste wet"],
             correct: "De koninklijke wet",
             bijbelplaats: "Jakobus 2:8",
-            uitleg: "Koninklijk betekent hier: van de koning. Jakobus bedoelt God als koning — dit is de wet van zijn koninkrijk, de regel waar alle andere regels aan opgehangen worden. Je hoort ook wel spreken over de \"gouden regel\"; dat is een andere uitdrukking, voor: behandel anderen zoals je zelf behandeld wilt worden."
+            uitleg: "Koninklijk betekent hier: van de koning. Jakobus bedoelt God als koning — dit is de wet van Zijn koninkrijk, de regel waar alle andere regels aan opgehangen worden. Je hoort ook wel spreken over de \"gouden regel\"; dat is een andere uitdrukking, voor: behandel anderen zoals je zelf behandeld wilt worden."
         },
         {
             vraag: "Jakobus zegt dat het gebed van een gelovige veel kan doen. Welke profeet bad, en daarna regende het drieëneenhalf jaar niet?",
@@ -5592,7 +5592,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 12"
         },
         {
-            vraag: "Petrus schrijft dat Jezus onze fouten (zonden) heeft gedragen. Waar deed hij dat volgens Petrus?",
+            vraag: "Petrus schrijft dat Jezus onze fouten (zonden) heeft gedragen. Waar deed Hij dat volgens Petrus?",
             antwoorden: ["Aan het kruis", "In de tempel", "Op een berg", "In de woestijn"],
             correct: "Aan het kruis",
             bijbelplaats: "1 Petrus 2:24"
@@ -5619,8 +5619,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
-            antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
-            correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor hem",
+            antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor Hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
+            correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor Hem",
             bijbelplaats: "2 Petrus 3:8",
             uitleg: "Petrus schrijft dit aan mensen die ongeduldig werden: waarom duurt het zo lang voordat Jezus terugkomt? Zijn antwoord is niet dat God traag is, maar dat God niet in onze tijd leeft. Wat voor ons eindeloos lang lijkt, is dat voor Hem niet. In het vers erna legt hij uit waarom het dan toch duurt: God geeft mensen de tijd."
         }
@@ -5670,8 +5670,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus zegt dat Christus ons een voorbeeld heeft nagelaten. Met welk beeld zegt hij hoe wij Hem moeten volgen?",
-            antwoorden: ["Door in zijn voetstappen te treden", "Door zijn juk te dragen", "Door zijn kruis op te nemen", "Door in zijn licht te wandelen"],
-            correct: "Door in zijn voetstappen te treden",
+            antwoorden: ["Door in Zijn voetstappen te treden", "Door Zijn juk te dragen", "Door Zijn kruis op te nemen", "Door in Zijn licht te wandelen"],
+            correct: "Door in Zijn voetstappen te treden",
             bijbelplaats: "1 Petrus 2:21"
         },
         {
@@ -5682,8 +5682,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft: jullie zijn niet vrijgekocht met goud of zilver, maar met iets veel kostbaarders van Christus, als van een lam zonder gebrek. Waarmee dan wel?",
-            antwoorden: ["Met zijn bloed", "Met zijn woord", "Met zijn brood", "Met zijn water"],
-            correct: "Met zijn bloed",
+            antwoorden: ["Met Zijn bloed", "Met Zijn woord", "Met Zijn brood", "Met Zijn water"],
+            correct: "Met Zijn bloed",
             bijbelplaats: "1 Petrus 1:18-19"
         },
         {
@@ -5756,8 +5756,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
-            antwoorden: ["\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
-            correct: "\"Waar blijft de belofte van zijn komst? Alles blijft zoals het altijd was.\"",
+            antwoorden: ["\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
+            correct: "\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"",
             bijbelplaats: "2 Petrus 3:3-4"
         },
         {
@@ -5867,9 +5867,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:6-7"
         },
         {
-            vraag: "Hoe liet God volgens Johannes zijn grote liefde aan ons zien?",
-            antwoorden: ["Hij stuurde zijn enige Zoon naar de wereld", "Hij bouwde een prachtige tempel", "Hij liet een groot teken zien aan de hemel", "Hij gaf de mensen een koning"],
-            correct: "Hij stuurde zijn enige Zoon naar de wereld",
+            vraag: "Hoe liet God volgens Johannes Zijn grote liefde aan ons zien?",
+            antwoorden: ["Hij stuurde Zijn enige Zoon naar de wereld", "Hij bouwde een prachtige tempel", "Hij liet een groot teken zien aan de hemel", "Hij gaf de mensen een koning"],
+            correct: "Hij stuurde Zijn enige Zoon naar de wereld",
             bijbelplaats: "1 Johannes 4:9"
         },
         {
@@ -5930,8 +5930,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Waaraan kunnen wij volgens Johannes zeker weten dat God in ons blijft en wij in Hem?",
-            antwoorden: ["Hij heeft ons zijn Geest gegeven", "Hij heeft ons zijn Zoon gegeven", "Hij heeft ons zijn geboden gegeven", "Hij heeft ons zijn naam gegeven"],
-            correct: "Hij heeft ons zijn Geest gegeven",
+            antwoorden: ["Hij heeft ons Zijn Geest gegeven", "Hij heeft ons Zijn Zoon gegeven", "Hij heeft ons Zijn geboden gegeven", "Hij heeft ons Zijn naam gegeven"],
+            correct: "Hij heeft ons Zijn Geest gegeven",
             bijbelplaats: "1 Johannes 4:13"
         },
         {
@@ -5942,8 +5942,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Waaraan hebben wij volgens Johannes geleerd wat liefde is?",
-            antwoorden: ["Doordat Jezus zijn leven voor ons gaf", "Doordat God de wereld heeft geschapen", "Doordat God ons zijn geboden gaf", "Doordat God ons geduldig verdraagt"],
-            correct: "Doordat Jezus zijn leven voor ons gaf",
+            antwoorden: ["Doordat Jezus Zijn leven voor ons gaf", "Doordat God de wereld heeft geschapen", "Doordat God ons Zijn geboden gaf", "Doordat God ons geduldig verdraagt"],
+            correct: "Doordat Jezus Zijn leven voor ons gaf",
             bijbelplaats: "1 Johannes 3:16"
         },
         {
@@ -5975,8 +5975,8 @@ vragenData["Brieven van Johannes"] = {
     expert: [
         {
             vraag: "Johannes begint zijn eerste brief niet met zijn naam, maar met een verrassende bewering. Hij wil duidelijk maken dat hij zijn verhaal niet van horen zeggen heeft. Wat zegt hij over het Woord van het leven?",
-            antwoorden: ["Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt", "Hij heeft het in een visioen van een engel te horen gekregen", "Hij heeft het van Petrus gehoord", "Hij heeft het bij de profeten gelezen"],
-            correct: "Hij heeft hem zelf gehoord, gezien en zelfs aangeraakt",
+            antwoorden: ["Hij heeft Hem zelf gehoord, gezien en zelfs aangeraakt", "Hij heeft het in een visioen van een engel te horen gekregen", "Hij heeft het van Petrus gehoord", "Hij heeft het bij de profeten gelezen"],
+            correct: "Hij heeft Hem zelf gehoord, gezien en zelfs aangeraakt",
             bijbelplaats: "1 Johannes 1:1"
         },
         {
@@ -6067,14 +6067,14 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes schrijft dat Gods geboden niet zwaar zijn, geen last om te dragen. In de zin die daarop volgt legt hij uit hoe dat komt. Wat schrijft hij daar?",
-            antwoorden: ["Wie uit God geboren is, overwint de wereld", "God vraagt maar weinig van ons", "God past zijn geboden aan wat je aankunt", "Je hoeft ze pas te houden als je volwassen bent"],
+            antwoorden: ["Wie uit God geboren is, overwint de wereld", "God vraagt maar weinig van ons", "God past Zijn geboden aan wat je aankunt", "Je hoeft ze pas te houden als je volwassen bent"],
             correct: "Wie uit God geboren is, overwint de wereld",
             bijbelplaats: "1 Johannes 5:3-4"
         },
         {
             vraag: "Johannes moedigt de gelovigen aan om vrijmoedig tot God te bidden: je mag alles vragen. Maar hij noemt er één voorwaarde bij. Welke voorwaarde is dat?",
-            antwoorden: ["Dat we vragen wat overeenkomt met zijn wil", "Dat we hard genoeg spreken, zodat God het kan horen", "Dat we het precies drie keer achter elkaar vragen", "Dat we het 's ochtends vroeg vragen, als God nog tijd heeft"],
-            correct: "Dat we vragen wat overeenkomt met zijn wil",
+            antwoorden: ["Dat we vragen wat overeenkomt met Zijn wil", "Dat we hard genoeg spreken, zodat God het kan horen", "Dat we het precies drie keer achter elkaar vragen", "Dat we het 's ochtends vroeg vragen, als God nog tijd heeft"],
+            correct: "Dat we vragen wat overeenkomt met Zijn wil",
             bijbelplaats: "1 Johannes 5:14"
         },
         {
@@ -6149,7 +6149,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:1"
         },
         {
-            vraag: "In de nieuwe wereld troost God zijn mensen zoals een vader zijn kind troost. Johannes schrijft dat God iets van hun gezicht wegveegt, en dat het daarna nooit meer terugkomt. Wat veegt God weg?",
+            vraag: "In de nieuwe wereld troost God Zijn mensen zoals een vader zijn kind troost. Johannes schrijft dat God iets van hun gezicht wegveegt, en dat het daarna nooit meer terugkomt. Wat veegt God weg?",
             antwoorden: ["De tranen", "Het stof", "Het zweet", "De modder"],
             correct: "De tranen",
             bijbelplaats: "Openbaring 21:4"
@@ -6167,7 +6167,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 5:6"
         },
         {
-            vraag: "God spreekt vanaf zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: ‘Zie, Ik maak alles …’ Hoe gaat die zin verder?",
+            vraag: "God spreekt vanaf Zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: ‘Zie, Ik maak alles …’ Hoe gaat die zin verder?",
             antwoorden: ["nieuw", "goed", "af", "groot"],
             correct: "nieuw",
             bijbelplaats: "Openbaring 21:5"
@@ -6197,7 +6197,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 7:9"
         },
         {
-            vraag: "Openbaring eindigt met een belofte van Jezus zelf, vlak voor het laatste gebed van het boek. Wat zegt Hij over zijn terugkomst?",
+            vraag: "Openbaring eindigt met een belofte van Jezus zelf, vlak voor het laatste gebed van het boek. Wat zegt Hij over Zijn terugkomst?",
             antwoorden: ["‘Ik kom spoedig’", "‘Ik kom nog lang niet’", "‘Wacht maar duizend jaar’", "‘Ik kom pas als iedereen gelooft’"],
             correct: "‘Ik kom spoedig’",
             bijbelplaats: "Openbaring 22:20"
@@ -6209,7 +6209,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:3"
         },
         {
-            vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt hij?",
+            vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt Hij?",
             antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
             correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
             bijbelplaats: "Openbaring 2:10"
@@ -6253,7 +6253,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:25"
         },
         {
-            vraag: "In de hemel klinkt luid gejuich: het grote feest kan beginnen, want het Lam en zijn gemeente horen nu voorgoed bij elkaar. Met welk feest wordt die ontmoeting vergeleken?",
+            vraag: "In de hemel klinkt luid gejuich: het grote feest kan beginnen, want het Lam en Zijn gemeente horen nu voorgoed bij elkaar. Met welk feest wordt die ontmoeting vergeleken?",
             antwoorden: ["Een bruiloftsfeest", "Een verjaardagsfeest", "Een oogstfeest", "Een afscheidsfeest"],
             correct: "Een bruiloftsfeest",
             bijbelplaats: "Openbaring 19:7-9"
@@ -6317,8 +6317,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
-            antwoorden: ["Het brood dat God zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
-            correct: "Het brood dat God zijn volk in de woestijn elke ochtend gaf",
+            antwoorden: ["Het brood dat God Zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinai", "Het graan dat men bewaarde voor jaren van hongersnood"],
+            correct: "Het brood dat God Zijn volk in de woestijn elke ochtend gaf",
             bijbelplaats: "Openbaring 2:17"
         },
         {
@@ -7777,14 +7777,14 @@ const verborgenSchatVragen = [
     },
     {
         vraag: 'Jezus noemt zichzelf "de Alfa en de Omega". Wat bedoelt hij daarmee?',
-        antwoorden: ["Dat hij uit Griekenland kwam", "Dat hij de wijste van allemaal is", "Dat hij er is vanaf het begin tot het einde van alles", "Dat hij twee namen had"],
-        correct: "Dat hij er is vanaf het begin tot het einde van alles",
+        antwoorden: ["Dat Hij uit Griekenland kwam", "Dat Hij de wijste van allemaal is", "Dat Hij er is vanaf het begin tot het einde van alles", "Dat Hij twee namen had"],
+        correct: "Dat Hij er is vanaf het begin tot het einde van alles",
         bijbelplaats: "Openbaring 22:13"
     },
     {
         vraag: 'In Openbaring wordt Jezus "het Lam" genoemd. Waarom juist een lam?',
-        antwoorden: ["Omdat hij zichzelf opofferde, zoals een offerlam", "Omdat hij geboren werd in een stal", "Omdat hij veel van schapen hield", "Omdat hij verlegen en stil was"],
-        correct: "Omdat hij zichzelf opofferde, zoals een offerlam",
+        antwoorden: ["Omdat Hij zichzelf opofferde, zoals een offerlam", "Omdat Hij geboren werd in een stal", "Omdat Hij veel van schapen hield", "Omdat Hij verlegen en stil was"],
+        correct: "Omdat Hij zichzelf opofferde, zoals een offerlam",
         bijbelplaats: "Openbaring 5:6-12"
     },
     {
@@ -7866,21 +7866,21 @@ const verborgenSchatVragen = [
     {
         vraag: "Bij Jezus' arrestatie sloeg Petrus met een zwaard het oor af van Malchus, de dienaar van de hogepriester. Wat gebeurde er daarna?",
         antwoorden: [
-            "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
+            "Jezus raakte het oor aan en genas de man die Hem kwam arresteren",
             "Petrus werd meteen gevangengenomen en pas de volgende dag vrijgelaten",
             "De soldaten sloegen Petrus neer en bonden hem vast",
             "Jezus beval Petrus dat hij weg moest gaan"
         ],
-        correct: "Jezus raakte het oor aan en genas de man die hem kwam arresteren",
+        correct: "Jezus raakte het oor aan en genas de man die Hem kwam arresteren",
         bijbelplaats: "Lucas 22:50-51 en Johannes 18:10",
-        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die hij geneest, is iemand die gekomen was om hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
+        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die Hij geneest, is iemand die gekomen was om Hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
     },
     {
         vraag: "Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?",
         antwoorden: ["Hebreeën", "Romeinen", "Galaten", "Efeziërs"],
         correct: "Hebreeën",
         bijbelplaats: "naam van het boek",
-        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in hem samen."
+        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in Hem samen."
     },
     {
         vraag: "Veel mensen hebben gehoord dat \"het oog van de naald\" een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als hij eerst zijn bagage aflegde. Wat blijkt er als je de oudste christelijke uitleggers erop naslaat?",
