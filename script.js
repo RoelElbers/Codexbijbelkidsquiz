@@ -3867,9 +3867,9 @@ vragenData["Filippenzen"] = {
     ],
     advanced: [
         {
-            vraag: "Vanuit welke plek schreef Paulus zijn brief aan de Filippenzen?",
-            antwoorden: ["In de gevangenis", "Op reis met een schip", "In de tempel", "Thuis in Nazaret"],
-            correct: "In de gevangenis",
+            vraag: "In welke situatie bevond Paulus zich toen hij de brief aan de Filippenzen schreef?",
+            antwoorden: ["Hij zat gevangen", "Hij was op reis met een schip", "Hij werkte in de tempel", "Hij woonde rustig thuis"],
+            correct: "Hij zat gevangen",
             bijbelplaats: "Filippenzen 1:13"
         },
         {
@@ -3898,25 +3898,25 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 2:20-22"
         },
         {
-            vraag: "Paulus schrijft dat hij een geheim heeft geleerd: of hij nu veel heeft of weinig. Wat heeft hij geleerd?",
+            vraag: "Paulus schrijft dat hij een geheim heeft geleerd voor tijden waarin hij veel heeft en tijden waarin hij weinig heeft. Wat is dat geheim?",
             antwoorden: ["Tevreden zijn in elke situatie", "Altijd meer willen hebben", "Alleen blij zijn als hij rijk is", "Nooit iemand om hulp vragen"],
             correct: "Tevreden zijn in elke situatie",
             bijbelplaats: "Filippenzen 4:11-12"
         },
         {
             vraag: "Paulus zegt dat alles wat hij vroeger belangrijk vond, nu niets meer waard is. Waarom denkt hij daar zo over?",
-            antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij door zijn gevangenschap alles heeft verloren", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
+            antwoorden: ["Omdat het kennen van Christus het allerkostbaarst is", "Omdat hij liever arm en onbekend wilde leven", "Omdat hij oud is geworden", "Omdat anderen het hem afpakten"],
             correct: "Omdat het kennen van Christus het allerkostbaarst is",
             bijbelplaats: "Filippenzen 3:8"
         },
         {
-            vraag: "Paulus schrijft dat het echte \"thuis\" van de gelovigen ergens anders is dan de stad waar zij wonen. Waar is dat volgens hem?",
+            vraag: "Paulus schrijft dat gelovigen een ander burgerschap hebben dan alleen dat van het land waarin ze wonen. Waar is hun burgerschap?",
             antwoorden: ["In de hemel", "In Rome", "In Jeruzalem", "In Filippi"],
             correct: "In de hemel",
             bijbelplaats: "Filippenzen 3:20"
         },
         {
-            vraag: "De Filippenzen hadden Paulus geholpen toen hij in de gevangenis zat. Hoe reageert hij daarop?",
+            vraag: "De Filippenzen hadden Paulus geld en andere hulp gestuurd. Hoe reageert hij daarop?",
             antwoorden: ["Hij bedankt hen hartelijk", "Hij stuurt het terug", "Hij weigert het", "Hij vraagt om meer"],
             correct: "Hij bedankt hen hartelijk",
             bijbelplaats: "Filippenzen 4:14-16"
@@ -3934,8 +3934,8 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:12"
         },
         {
-            vraag: "In het lied over Jezus schrijft Paulus dat God Hem iets gaf wat boven alles uitgaat. Wat gaf God Hem?",
-            antwoorden: ["De hoogste naam, boven alle namen", "Een koninkrijk op aarde", "Een troon van puur goud in de hemel", "Een prachtig paleis"],
+            vraag: "In zijn brief aan de Filippenzen schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat gaf God Hem?",
+            antwoorden: ["De hoogste naam, boven alle namen", "Een groot landgoed in Galilea", "Een schatkist vol goud en zilver", "Een prachtig paleis"],
             correct: "De hoogste naam, boven alle namen",
             bijbelplaats: "Filippenzen 2:9",
             uitleg: "Deze regel komt uit hetzelfde lied over Jezus (Filippenzen 2:6-11), en wel uit het punt waar het omslaat. Eerst gaat het helemaal omlaag, tot de dood toe; dan geeft God Hem de naam die boven alle namen staat. Een naam is in de Bijbel meer dan een woord waarmee je iemand roept — hij zegt wie iemand is en hoeveel gezag hij heeft."
