@@ -3363,13 +3363,13 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "In Antiochië sprak Paulus Petrus openlijk tegen. Wat was er gebeurd?",
-            antwoorden: ["Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug", "Petrus wilde het goede nieuws alleen nog aan Joden vertellen", "Petrus stuurde de niet-Joodse gelovigen weg uit de gemeente", "Petrus zei openlijk dat Paulus geen echte apostel van Jezus genoemd mocht worden"],
+            antwoorden: ["Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug", "Petrus wilde het goede nieuws alleen nog aan Joden vertellen", "Petrus stuurde de niet-Joodse gelovigen weg uit de gemeente", "Petrus weigerde nog langer samen met Paulus te reizen"],
             correct: "Petrus at eerst gewoon mee met niet-Joodse gelovigen, maar trok zich later uit angst terug",
             bijbelplaats: "Galaten 2:11-14"
         },
         {
             vraag: "Paulus vraagt verbaasd: \"Wie heeft jullie betoverd?\" Waarom is hij zo verbaasd?",
-            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden onderling ruzie gekregen over geld", "Ze meenden nu dat ze zichzelf konden redden door zich alleen maar heel streng aan alle regels te houden"],
+            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden onderling ruzie gekregen over geld", "Ze dachten ineens dat Paulus nooit een echte apostel was geweest"],
             correct: "Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen",
             bijbelplaats: "Galaten 3:1-3"
         },
@@ -3387,8 +3387,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat de wet vroeger een taak had, zoals een oppasser die op je let tot je groot genoeg bent. Wat gebeurde er toen Christus kwam?",
-            antwoorden: ["De wet had zijn taak gedaan en had ons naar Christus gebracht", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
-            correct: "De wet had zijn taak gedaan en had ons naar Christus gebracht",
+            antwoorden: ["De wet had zijn taak als oppasser gedaan; die tijd was nu voorbij", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
+            correct: "De wet had zijn taak als oppasser gedaan; die tijd was nu voorbij",
             bijbelplaats: "Galaten 3:24-25"
         },
         {
@@ -3422,8 +3422,8 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 6:7-8"
         },
         {
-            vraag: "Wat zegt Paulus dat écht telt, belangrijker dan of je je aan bepaalde regels houdt?",
-            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Uit welk land je komt", "Hoeveel regels van de wet je precies volgt"],
+            vraag: "Paulus schrijft over de besnijdenis, een belangrijk Joods teken van het verbond met God. Uiteindelijk zegt hij dat besneden of onbesneden zijn niet het belangrijkste is. Wat telt volgens hem wél?",
+            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Hoeveel geld je aan de armen geeft", "Hoe vaak je naar de tempel bent geweest"],
             correct: "Dat je een nieuwe schepping bent",
             bijbelplaats: "Galaten 6:15"
         },
@@ -3432,7 +3432,7 @@ vragenData["Galaten"] = {
             antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de zegelring waarmee een rijke zijn brieven dichtmaakte", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
             correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
             bijbelplaats: "Galaten 6:17",
-            uitleg: "Paulus doelt op de littekens die hij overhield aan de mishandelingen onderweg. Wie ze zag, zag bij wie hij hoorde. Voor Paulus was dat een sterker bewijs dan alle mooie papieren waarmee zijn tegenstanders zwaaiden."
+            uitleg: "In die tijd kregen slaven soms een merkteken met de naam van hun eigenaar. Waarschijnlijk bedoelt Paulus de littekens die hij had overgehouden aan vervolging en mishandelingen vanwege zijn werk voor Jezus. Hij noemt ze zijn \"merktekens van Jezus\": tekens aan zijn lichaam die lieten zien bij wie hij hoorde."
         },
         {
             vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
