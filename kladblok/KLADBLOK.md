@@ -58,6 +58,8 @@
 - 2026-09-01 — De 44 woordenboektermen hebben geen bijbelplaats. Het lexicon-
   formaat in ontdekken-inhoud.js heeft er een optioneel veld voor en de renderer
   laat de regel weg als hij ontbreekt; invullen is inhoudelijk werk per term.
+- 2026-09-16 — Feesten door het jaar — nieuw Ontdekken-onderwerp, uit te voeren
+  na Openbaring; uitgewerkt in kladblok/feesten-door-het-jaar.md.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
