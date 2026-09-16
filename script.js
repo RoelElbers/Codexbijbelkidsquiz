@@ -3387,8 +3387,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat de wet vroeger een taak had, zoals een oppasser die op je let tot je groot genoeg bent. Wat gebeurde er toen Christus kwam?",
-            antwoorden: ["De wet had zijn taak als oppasser gedaan; die tijd was nu voorbij", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
-            correct: "De wet had zijn taak als oppasser gedaan; die tijd was nu voorbij",
+            antwoorden: ["Nu Christus er was, had de wet zijn taak als oppasser gedaan", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
+            correct: "Nu Christus er was, had de wet zijn taak als oppasser gedaan",
             bijbelplaats: "Galaten 3:24-25"
         },
         {
