@@ -3524,10 +3524,10 @@ vragenData["Efeziërs"] = {
     ],
     advanced: [
         {
-            vraag: "Hoe word je volgens Paulus bij God gered?",
-            antwoorden: ["Door Gods genade, als een geschenk", "Door heel sterk te zijn", "Door alles zelf te verdienen", "Door ver te reizen"],
-            correct: "Door Gods genade, als een geschenk",
-            bijbelplaats: "Efeziërs 2:8"
+            vraag: "Paulus schrijft dat gelovigen door God zijn \"verzegeld\", als teken dat ze bij Hem horen. Waarmee zijn ze verzegeld?",
+            antwoorden: ["Met de Heilige Geest", "Met een teken op hun voorhoofd", "Met een brief die Paulus zelf ondertekende", "Met olie uit de tempel"],
+            correct: "Met de Heilige Geest",
+            bijbelplaats: "Efeziërs 1:13"
         },
         {
             vraag: "Hoe moet je volgens Paulus met elkaar práten?",
@@ -3560,15 +3560,15 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:1-2"
         },
         {
-            vraag: "Iedereen in de gemeente kreeg zijn eigen gaven. Waarvoor zijn die gaven bedoeld?",
+            vraag: "Paulus schrijft dat Christus verschillende mensen in de gemeente bijzondere taken en gaven geeft. Waarvoor zijn die bedoeld?",
             antwoorden: ["Om de gemeente samen op te bouwen", "Om over op te scheppen", "Om alleen zelf beter te worden", "Om anderen jaloers te maken"],
             correct: "Om de gemeente samen op te bouwen",
             bijbelplaats: "Efeziërs 4:11-12"
         },
         {
-            vraag: "Paulus bidt dat de gelovigen iets gaan begrijpen. Wat hoopt hij dat zij leren begrijpen?",
-            antwoorden: ["Hoe groot Gods liefde is", "Hoe je de baas wordt", "Hoe je de sterkste wordt", "Hoe je beroemd wordt"],
-            correct: "Hoe groot Gods liefde is",
+            vraag: "Paulus bidt dat de gelovigen leren begrijpen hoe breed, lang, hoog en diep iets is. Waar heeft hij het over?",
+            antwoorden: ["De liefde van Christus", "De afmetingen van de tempel", "De afstand tussen Efeze en Jeruzalem", "De zee waar Paulus met zijn schip overheen reisde"],
+            correct: "De liefde van Christus",
             bijbelplaats: "Efeziërs 3:18-19"
         },
         {
@@ -3578,9 +3578,9 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 4:4-6"
         },
         {
-            vraag: "Wat raadt Paulus aan om te blijven doen, naast het aantrekken van de wapenrusting?",
-            antwoorden: ["Slapen", "Bidden", "Wachten", "Zwijgen"],
-            correct: "Bidden",
+            vraag: "Paulus heeft de hele wapenrusting van God beschreven. Wat zegt hij dat de gelovigen daarbij steeds moeten blijven doen?",
+            antwoorden: ["Bidden en daarbij waakzaam blijven", "Hun wapenrusting aan iedereen laten zien", "Iedere avond controleren of hun schild nog heel is", "Wachten tot de strijd vanzelf voorbijgaat"],
+            correct: "Bidden en daarbij waakzaam blijven",
             bijbelplaats: "Efeziërs 6:18"
         },
         {
@@ -3590,14 +3590,14 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 5:15-16"
         },
         {
-            vraag: "Paulus zegt dat je niet gered wordt door je eigen goede daden. Waar zijn die goede daden dan wél voor?",
-            antwoorden: ["God heeft ons gemaakt om goed te doen; het is het gevolg van de redding, niet de oorzaak", "Ze zijn nergens voor nodig", "Ze tellen mee als je er genoeg verzamelt", "Ze maken je belangrijker dan andere gelovigen"],
-            correct: "God heeft ons gemaakt om goed te doen; het is het gevolg van de redding, niet de oorzaak",
-            bijbelplaats: "Efeziërs 2:10"
+            vraag: "Paulus zegt dat redding een geschenk van God is. Wat zegt hij direct daarna over goede daden?",
+            antwoorden: ["God heeft ons een nieuw leven gegeven waarin we het goede mogen doen", "Goede daden zijn daarna helemaal niet meer belangrijk", "Je moet er zoveel mogelijk verzamelen om bij God te blijven horen", "Ze zijn vooral bedoeld om te laten zien dat je beter bent dan anderen"],
+            correct: "God heeft ons een nieuw leven gegeven waarin we het goede mogen doen",
+            bijbelplaats: "Efeziërs 2:8-10"
         },
         {
             vraag: "Paulus vergelijkt de gemeente — alle gelovigen samen, de kerk — met een gebouw. De hoeksteen is de allerbelangrijkste steen, waar het hele gebouw op rust en stevig blijft staan. Wie is die hoeksteen?",
-            antwoorden: ["Paulus", "Jezus Christus", "Petrus", "De koning"],
+            antwoorden: ["Abraham", "Jezus Christus", "Mozes", "De koning"],
             correct: "Jezus Christus",
             bijbelplaats: "Efeziërs 2:20"
         },
@@ -3617,7 +3617,7 @@ vragenData["Efeziërs"] = {
             vraag: "Wat bedoelt Paulus met \"leef als kinderen van het licht\"?",
             antwoorden: ["Doe wat goed, eerlijk en waar is", "Slaap overdag", "Blijf binnen", "Alleen naar buiten gaan als het licht is"],
             correct: "Doe wat goed, eerlijk en waar is",
-            bijbelplaats: "Efeziërs 5:9"
+            bijbelplaats: "Efeziërs 5:8-9"
         },
         {
             vraag: "Paulus knielt en bidt dat God de gelovigen van binnen sterk maakt. Waardoor worden zij sterk gemaakt?",
