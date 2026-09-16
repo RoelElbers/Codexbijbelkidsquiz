@@ -227,12 +227,12 @@ const vragenData = {
                 antwoorden: ["Vissers", "Boeren", "Soldaten", "Bakkers"],
                 correct: "Vissers",
                 bijbelplaats: "Matteüs 4:18-20",
-                uitleg: "Jezus zei tegen hen: 'Kom, volg mij, dan zal ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
+                uitleg: "Jezus zei tegen hen: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
             },
             {
                 vraag: "Wat zei Jezus toen mensen de kinderen bij Hem wilden weghouden?",
-                antwoorden: ["Laat de kinderen bij mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
-                correct: "Laat de kinderen bij mij komen",
+                antwoorden: ["Laat de kinderen bij Mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
+                correct: "Laat de kinderen bij Mij komen",
                 bijbelplaats: "Matteüs 19:13-14"
             },
             {
@@ -588,7 +588,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 3:12"
             },
             {
-                vraag: "Jezus zegt: neem mijn juk op je, want mijn juk is zacht. Wat is een juk?",
+                vraag: "Jezus zegt: neem Mijn juk op je, want Mijn juk is zacht. Wat is een juk?",
                 antwoorden: ["Een houten balk over de nek van twee dieren die samen trekken", "Een dikke wollen mantel die herders 's nachts omsloegen", "Een leren riem om een zware last mee op je rug te binden", "Een grote steen waarmee de ingang van een put werd afgesloten"],
                 correct: "Een houten balk over de nek van twee dieren die samen trekken",
                 bijbelplaats: "Matteüs 11:29-30"
@@ -749,7 +749,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 11:15-17"
             },
             {
-                vraag: "Wat at en dronk Jezus met Zijn leerlingen tijdens het Laatste Avondmaal, met de woorden 'Dit is mijn lichaam' en 'Dit is mijn bloed'?",
+                vraag: "Wat at en dronk Jezus met Zijn leerlingen tijdens het Laatste Avondmaal, met de woorden 'Dit is Mijn lichaam' en 'Dit is Mijn bloed'?",
                 antwoorden: ["Brood en wijn", "Vis en water", "Vijgen en honing", "Druiven en olie"],
                 correct: "Brood en wijn",
                 bijbelplaats: "Marcus 14:22-24"
@@ -987,7 +987,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 5:9"
             },
             {
-                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel over de stem die roept in de woestijn komt daar inderdaad vandaan. Maar de regel ervoor — 'Ik zend mijn bode voor je uit' — komt uit een ander boek. Uit welk boek komt die regel?",
+                vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel over de stem die roept in de woestijn komt daar inderdaad vandaan. Maar de regel ervoor — 'Ik zend Mijn bode voor Je uit' — komt uit een ander boek. Uit welk boek komt die regel?",
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
                 bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
@@ -1007,8 +1007,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Jezus riep aan het kruis in Zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
-                antwoorden: ["Mijn God, mijn God, waarom hebt U mij verlaten?", "Meisje, sta op", "Ga open", "Kom, onze Heer!"],
-                correct: "Mijn God, mijn God, waarom hebt U mij verlaten?",
+                antwoorden: ["Mijn God, Mijn God, waarom hebt U Mij verlaten?", "Meisje, sta op", "Ga open", "Kom, onze Heer!"],
+                correct: "Mijn God, Mijn God, waarom hebt U Mij verlaten?",
                 bijbelplaats: "Marcus 15:34"
             },
             {
@@ -1290,8 +1290,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat zei Jezus tegen de misdadiger die naast Hem was gekruisigd en Hem vroeg aan Hem te denken wanneer Hij in Zijn koninkrijk kwam?",
-                antwoorden: ["Vandaag zul je met mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan mij", "Daar kan ik nu niets meer aan doen"],
-                correct: "Vandaag zul je met mij in het paradijs zijn",
+                antwoorden: ["Vandaag zul je met Mij in het paradijs zijn", "Je krijgt wat je verdiend hebt", "Vraag het straks maar aan God zelf, niet aan Mij", "Daar kan Ik nu niets meer aan doen"],
+                correct: "Vandaag zul je met Mij in het paradijs zijn",
                 bijbelplaats: "Lucas 23:43"
             },
             {
@@ -1714,8 +1714,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Volg mij", "Heb je mij lief? Zorg voor mijn schapen", "Vrees niet", "Ga nu de hele wijde wereld in en vertel over mij"],
-                correct: "Heb je mij lief? Zorg voor mijn schapen",
+                antwoorden: ["Volg Mij", "Heb je Mij lief? Zorg voor Mijn schapen", "Vrees niet", "Ga nu de hele wijde wereld in en vertel over Mij"],
+                correct: "Heb je Mij lief? Zorg voor Mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             },
             {
@@ -6424,14 +6424,14 @@ vragenData["Openbaring"] = {
             uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
         },
         {
-            vraag: "Jezus noemt Antipas van Pergamum \"mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
+            vraag: "Jezus noemt Antipas van Pergamum \"Mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
             antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
             correct: "Martelaar",
             bijbelplaats: "Openbaring 2:13",
             uitleg: "Het Griekse woord is martys (<span class='grieks'>μάρτυς</span>), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
         },
         {
-            vraag: "Jezus zegt: ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
+            vraag: "Jezus zegt: Ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
             antwoorden: ["Dat je bepaalde wie er binnen mocht komen", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
             correct: "Dat je bepaalde wie er binnen mocht komen",
             bijbelplaats: "Openbaring 3:7",

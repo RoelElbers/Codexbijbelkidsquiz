@@ -170,6 +170,39 @@ dát Hij het is.
 mee.** Controleer na afloop dat elk `correct`-antwoord nog letterlijk in zijn
 `antwoorden`-lijst staat.
 
+#### Ook de eerste persoon en de aanspreekvorm
+
+De regel geldt niet alleen voor verwijzingen ín de derde persoon. Hij geldt ook:
+
+- **als God, Jezus of de Geest zélf spreekt** — `ik`, `mij`, `me`, `mijn`,
+  `m'n`, `mijzelf`, `mezelf` worden `Ik`, `Mij`, `Me`, `Mijn`, `M'n`,
+  `Mijzelf`, `Mezelf`. Bijvoorbeeld: `Kom, volg Mij`, `Dit is Mijn lichaam`,
+  `Weid Mijn schapen`, `Mijn trouwe getuige`.
+- **als iemand God of Jezus aanspreekt** — `u`, `uw`, `jij`, `je`, `jou`,
+  `jouw` worden `U`, `Uw`, `Jij`, `Je`, `Jou`, `Jouw`.
+
+**Ook in letterlijke citaten**, ook waar de bijbelvertaling zelf een kleine
+letter gebruikt. De spelling van het spel gaat hier voor die van de vertaling.
+
+**Wat er níet onder valt:**
+
+- **woorden van andere sprekers**: Paulus (`in mijn lichaam`), Petrus, Maria,
+  profeten die over zichzelf spreken, mensen die bidden (`help mij`,
+  `Heer, ik ben niet waardig`).
+- **aanspreekvormen tegen een engel** blijven klein, óók als die engel namens
+  God spreekt. Zo blijft in Maria's antwoord aan Gabriël `Laat er met mij
+  gebeuren wat u gezegd hebt` allebei klein.
+- **personages in gelijkenissen die zelf spreken** (de vader, de koning).
+- `je`, `jij`, `jou` die **het kind of de lezer** aanspreken. Dit is veruit de
+  grootste groep valse treffers — van de bijna duizend kandidaten in ronde 2
+  viel het overgrote deel hierin. Let er extra op.
+- `uw` in een gebod dat de **hoorder** aanspreekt: `Heb de Heer uw God lief`,
+  `Eer uw vader en moeder`.
+
+Let op: staan in één vraag álle vier de antwoorden in de mond van Jezus, dan
+krijgen ook de afleiders een hoofdletter. De hoofdletter is dus geen aanwijzing
+voor welk antwoord goed is.
+
 ## Plaatsingsregel — gewone pool of Verborgen Schat
 
 Waar materiaal terechtkomt hangt af van hoe vast de herkomst ervan ligt.
