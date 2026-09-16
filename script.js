@@ -3919,7 +3919,7 @@ vragenData["Filippenzen"] = {
             vraag: "De Filippenzen hadden Paulus geld en andere hulp gestuurd. Hoe reageert hij daarop?",
             antwoorden: ["Hij bedankt hen hartelijk", "Hij stuurt het terug", "Hij weigert het", "Hij vraagt om meer"],
             correct: "Hij bedankt hen hartelijk",
-            bijbelplaats: "Filippenzen 4:14-16"
+            bijbelplaats: "Filippenzen 4:14-18"
         },
         {
             vraag: "Paulus is ervan overtuigd dat God iets zal afmaken bij de gelovigen in Filippi. Wat zal God afmaken?",
