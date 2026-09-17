@@ -4979,8 +4979,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Jezus is in alles op de proef gesteld, net als wij. Wat is volgens Hebreeën het grote verschil met ons?",
-            antwoorden: ["Hij deed het zonder ooit te zondigen", "Hij werd nooit echt verzocht", "Hij voelde geen pijn of verdriet", "Hij had het altijd makkelijk"],
-            correct: "Hij deed het zonder ooit te zondigen",
+            antwoorden: ["Hij zondigde nooit", "Hij werd nooit echt verzocht", "Hij voelde geen pijn of verdriet", "Hij had het altijd makkelijk"],
+            correct: "Hij zondigde nooit",
             bijbelplaats: "Hebreeën 4:15"
         },
         {
@@ -5033,12 +5033,12 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat zal God volgens Hebreeën niet vergeten?",
-            antwoorden: ["Het goede dat je uit liefde voor anderen doet", "Elke keer dat je een fout maakte", "Hoeveel je van anderen hebt gekregen", "Hoe vaak je gelijk had"],
-            correct: "Het goede dat je uit liefde voor anderen doet",
+            antwoorden: ["Het goede dat je uit liefde voor God voor anderen doet", "Elke keer dat je een fout maakte", "Hoeveel je van anderen hebt gekregen", "Hoe vaak je gelijk had"],
+            correct: "Het goede dat je uit liefde voor God voor anderen doet",
             bijbelplaats: "Hebreeën 6:10"
         },
         {
-            vraag: "Wat doet God volgens Hebreeën met de fouten die Hij vergeeft?",
+            vraag: "Wat doet God volgens Hebreeën met de zonden die Hij vergeeft?",
             antwoorden: ["Hij denkt er niet meer aan", "Hij bewaart ze voor later", "Hij vertelt ze aan anderen", "Hij straft ze alsnog een beetje"],
             correct: "Hij denkt er niet meer aan",
             bijbelplaats: "Hebreeën 10:17"
@@ -5062,14 +5062,14 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 10:36"
         },
         {
-            vraag: "Hebreeën zegt dat er één ding nodig is om God te kunnen behagen, en dat het zonder dat niemand lukt. Wat is dat?",
+            vraag: "Wat is volgens Hebreeën onmisbaar om God te behagen?",
             antwoorden: ["Geloof", "Geld", "Kracht", "Wijsheid"],
             correct: "Geloof",
             bijbelplaats: "Hebreeën 11:6"
         },
         {
             vraag: "Welke sterke man, die zijn kracht van God kreeg, wordt in Hebreeën 11 genoemd als voorbeeld van geloof?",
-            antwoorden: ["Simson", "Goliat", "Absalom", "Esau"],
+            antwoorden: ["Simson", "Goliat", "Absalom", "Nimrod"],
             correct: "Simson",
             bijbelplaats: "Hebreeën 11:32"
         }
