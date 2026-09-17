@@ -4059,16 +4059,16 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             kist: false
         },
         {
-            vraag: "Paulus geeft een hele korte opdracht over bidden, van maar twee woorden. Hoe vaak moet je volgens hem bidden?",
-            antwoorden: ["Zonder ophouden", "Elke ochtend en elke avond", "Drie keer per dag", "Zo vaak als je eraan denkt"],
-            correct: "Zonder ophouden",
+            vraag: "Paulus geeft een heel korte opdracht over bidden. Wat schrijft hij?",
+            antwoorden: ["Bid zonder ophouden", "Bid elke ochtend en elke avond", "Bid drie keer per dag", "Bid zo vaak als je eraan denkt"],
+            correct: "Bid zonder ophouden",
             bijbelplaats: "1 Tessalonicenzen 5:17"
         },
         {
-            vraag: "Wie schreef de brieven aan de Tessalonicenzen?",
-            antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
-            correct: "Paulus",
-            bijbelplaats: "1 Tessalonicenzen 1:1"
+            vraag: "Welke drie personen worden aan het begin van de brieven aan de Tessalonicenzen als afzenders genoemd?",
+            antwoorden: ["Paulus, Silvanus en Timoteüs", "Paulus, Petrus en Johannes", "Paulus, Barnabas en Marcus", "Paulus, Lukas en Titus"],
+            correct: "Paulus, Silvanus en Timoteüs",
+            bijbelplaats: "1 Tessalonicenzen 1:1; 2 Tessalonicenzen 1:1"
         },
         {
             vraag: "Wat voor soort teksten zijn 1 en 2 Tessalonicenzen?",
@@ -4078,8 +4078,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus geeft in één kort zinnetje aan hoe de gelovigen mogen zijn. Wat schrijft hij?",
-            antwoorden: ["Wees altijd blij", "Wees altijd stil", "Wees altijd voorzichtig", "Wees altijd streng"],
-            correct: "Wees altijd blij",
+            antwoorden: ["Wees altijd verheugd", "Wees altijd stil", "Wees altijd voorzichtig", "Wees altijd streng"],
+            correct: "Wees altijd verheugd",
             bijbelplaats: "1 Tessalonicenzen 5:16"
         },
         {
@@ -4090,8 +4090,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "In de tweede brief vraagt Paulus de Tessalonicenzen ergens voor te bidden. Waarvoor moeten zij bidden?",
-            antwoorden: ["Dat het goede nieuws zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat Paulus veilig door al zijn vele reizen komt", "Dat Paulus beroemd wordt"],
-            correct: "Dat het goede nieuws zich snel verspreidt",
+            antwoorden: ["Dat het woord van de Heer zich snel verspreidt", "Dat ze met rust gelaten worden", "Dat Paulus veilig door al zijn vele reizen komt", "Dat Paulus beroemd wordt"],
+            correct: "Dat het woord van de Heer zich snel verspreidt",
             bijbelplaats: "2 Tessalonicenzen 3:1"
         },
         {
@@ -4122,7 +4122,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Paulus schrijft dat gelovigen die gestorven zijn, niet voor altijd weg zijn. Wat gebeurt er met hen wanneer Jezus terugkomt?",
             antwoorden: ["Ze zullen weer opstaan en leven", "Ze blijven voor altijd slapen", "Ze worden sterren aan de hemel", "Er gebeurt verder niets"],
             correct: "Ze zullen weer opstaan en leven",
-            bijbelplaats: "1 Tessalonicenzen 4:14"
+            bijbelplaats: "1 Tessalonicenzen 4:14-16"
         },
         {
             vraag: "Hoe noemt Paulus de gelovigen, omdat ze niet bij het donker maar bij het licht horen?",
@@ -4131,15 +4131,15 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:5"
         },
         {
-            vraag: "Aan het slot van zijn tweede brief aan de Tessalonicenzen wenst Paulus de gelovigen rust toe. Hoe noemt hij God daarbij?",
+            vraag: "Aan het slot van zijn tweede brief spreekt Paulus een zegen uit over de Tessalonicenzen. Hoe noemt hij de Heer daarbij?",
             antwoorden: ["De Heer van de vrede", "De Heer van de legers", "De Heer van de tempel", "De Heer van de oogst"],
             correct: "De Heer van de vrede",
             bijbelplaats: "2 Tessalonicenzen 3:16"
         },
         {
-            vraag: "Paulus vraagt de gelovigen ergens goed aan vast te houden. Waaraan?",
-            antwoorden: ["Aan alles wat ze van hem geleerd hebben", "Aan hun bezittingen", "Aan hun oude gewoontes", "Aan hun plek in de stad"],
-            correct: "Aan alles wat ze van hem geleerd hebben",
+            vraag: "Paulus vraagt de gelovigen stevig vast te houden aan wat ze geleerd hebben. Van wie hadden ze dat onderwijs gekregen?",
+            antwoorden: ["Van Paulus en zijn medewerkers", "Van de Romeinse bestuurders", "Van hun oude leraren", "Van de priesters in Jeruzalem"],
+            correct: "Van Paulus en zijn medewerkers",
             bijbelplaats: "2 Tessalonicenzen 2:15"
         }
     ],
