@@ -4534,7 +4534,7 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Iemand die leiding gaf aan een gemeente en toezicht hield", "Iemand die bij de stadspoort de wacht hield", "Iemand die de boeken van de gemeente bijhield", "Iemand die de zieken bezocht en eten rondbracht"],
             correct: "Iemand die leiding gaf aan een gemeente en toezicht hield",
             bijbelplaats: "1 Timoteüs 3:1-2",
-            uitleg: "Het Griekse woord is episkopos: iemand die toezicht houdt. Via het Latijn is daar later ons woord \"bisschop\" uit ontstaan. In de brieven van Paulus gaat het om iemand die leiding gaf aan een plaatselijke gemeente of kerk. Hoe die taak er nu uitziet, verschilt per kerk: een katholieke bisschop geeft leiding aan de kerken in een hele regio, en in veel protestantse kerken houden ouderlingen toezicht op de gemeente."
+            uitleg: "Het Griekse woord is episkopos: iemand die toezicht houdt. Via het Latijn is daar later ons woord \"bisschop\" uit ontstaan. In de brieven van Paulus gaat het om iemand die leiding gaf aan een plaatselijke gemeente of kerk. Hoe die taak er nu uitziet, verschilt per kerk. In de Katholieke Kerk is de bisschop de leider van een bisdom: een gebied met veel parochies. Katholieken zien de bisschoppen als opvolgers van de apostelen. In veel protestantse kerken houden ouderlingen toezicht op de gemeente."
         }
     ],
     expert: [
