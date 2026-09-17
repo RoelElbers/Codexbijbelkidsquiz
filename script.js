@@ -4342,7 +4342,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
 };
 
 // =========================================================================
-// Timoteüs & Titus — vragenpool (46 vragen: beginner 14, advanced 15,
+// Timoteüs & Titus — vragenpool (47 vragen: beginner 15, advanced 15,
 // expert 17). Gebundeld boek: 1 & 2 Timoteüs + Titus, één quiz, één trofee
 // (trofee_timoteus_titus). vragenData["Timoteüs & Titus"] met drie niveaus
 // (beginner/advanced/expert). Per vraag: vraag, antwoorden[], correct (exact
@@ -4359,16 +4359,16 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 4:12"
         },
         {
-            vraag: "Wat schrijft Paulus over de hele Schrift?",
-            antwoorden: ["Ze is door God ingegeven en nuttig om van te leren", "Ze is door wijze mensen bedacht en mooi om te lezen", "Ze is door engelen geschreven en moeilijk te snappen", "Ze is door koningen bewaard en alleen voor priesters"],
-            correct: "Ze is door God ingegeven en nuttig om van te leren",
+            vraag: "Wat schrijft 2 Timoteüs over de Schrift?",
+            antwoorden: ["Ze is door God geïnspireerd en nuttig om van te leren", "Ze is door wijze mensen bedacht en mooi om te lezen", "Ze is door engelen geschreven en moeilijk te snappen", "Ze is door koningen bewaard en alleen voor priesters"],
+            correct: "Ze is door God geïnspireerd en nuttig om van te leren",
             bijbelplaats: "2 Timoteüs 3:16"
         },
         {
-            vraag: "Wie schreef de brieven aan Timoteüs en Titus?",
+            vraag: "Welke naam staat aan het begin van 1 en 2 Timoteüs en Titus als afzender?",
             antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
             correct: "Paulus",
-            bijbelplaats: "1 Timoteüs 1:1"
+            bijbelplaats: "1 Timoteüs 1:1; 2 Timoteüs 1:1; Titus 1:1"
         },
         {
             vraag: "Wat voor soort teksten zijn 1 en 2 Timoteüs en Titus?",
@@ -4383,9 +4383,9 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 2:1-2"
         },
         {
-            vraag: "Wat moeten Titus en de gelovigen volgens Paulus volop doen?",
-            antwoorden: ["Goede dingen doen voor anderen", "Veel kennis verzamelen", "Vaak en lang bidden", "De wet uit hun hoofd leren"],
-            correct: "Goede dingen doen voor anderen",
+            vraag: "Wat moeten de gelovigen volgens Paulus volop blijven doen?",
+            antwoorden: ["Zich erop toeleggen het goede te doen", "Veel kennis verzamelen", "Vaak en lang bidden", "De wet uit hun hoofd leren"],
+            correct: "Zich erop toeleggen het goede te doen",
             bijbelplaats: "Titus 3:8"
         },
         {
@@ -4402,38 +4402,44 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Wat wil God volgens Paulus voor alle mensen?",
-            antwoorden: ["Dat ze gered worden", "Dat ze het zelf verdienen", "Dat alleen de besten gered worden", "Dat ze veel weten"],
+            antwoorden: ["Dat ze gered worden", "Dat ze het zelf verdienen", "Dat alleen de besten gered worden", "Dat ze rijk worden"],
             correct: "Dat ze gered worden",
             bijbelplaats: "1 Timoteüs 2:4"
         },
         {
-            vraag: "Paulus zegt dat Titus de mensen moet leren hoe ze tegen iedereen moeten zijn. Hoe moeten zij volgens hem zijn?",
+            vraag: "Paulus zegt dat Titus de mensen moet leren hoe ze met iedereen moeten omgaan. Hoe moeten zij volgens hem zijn?",
             antwoorden: ["Vriendelijk en vredelievend", "Streng en hard", "Op je hoede, en zo min mogelijk zeggen", "Slim en gehaaid"],
             correct: "Vriendelijk en vredelievend",
             bijbelplaats: "Titus 3:2"
         },
         {
-            vraag: "Wat moet Timoteüs volgens Paulus goed bewaren, als een kostbare schat die hem is toevertrouwd?",
-            antwoorden: ["Het geloof en het goede nieuws", "Zijn eigen ideeën", "De regels van de keizer", "De verhalen van vroeger"],
-            correct: "Het geloof en het goede nieuws",
+            vraag: "Timoteüs moet het goede bewaren dat hem is toevertrouwd. Wie helpt hem daarbij volgens Paulus?",
+            antwoorden: ["De Heilige Geest", "De keizer", "Zijn eigen kracht", "De soldaten van Rome"],
+            correct: "De Heilige Geest",
             bijbelplaats: "2 Timoteüs 1:14"
         },
         {
-            vraag: "Paulus schrijft dat de liefde voor geld de wortel is van alle kwaad. Waarom kiest hij het woord \"wortel\"?",
-            antwoorden: ["Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds", "Een wortel zit in de grond en is dus vies", "Een wortel is het kleinste deel van een plant", "Een wortel is eetbaar en dus verleidelijk"],
-            correct: "Uit een wortel groeit alles wat erboven zit — zo groeit uit geldzucht van alles verkeerds",
+            vraag: "Paulus vergelijkt geldzucht met een wortel. Waarom past dat beeld zo goed?",
+            antwoorden: ["Uit een wortel groeit van alles — zo kunnen uit geldzucht allerlei verkeerde dingen groeien", "Een wortel zit in de grond en is dus vies", "Een wortel is het kleinste deel van een plant", "Een wortel is eetbaar en dus verleidelijk"],
+            correct: "Uit een wortel groeit van alles — zo kunnen uit geldzucht allerlei verkeerde dingen groeien",
             bijbelplaats: "1 Timoteüs 6:10"
         },
         {
-            vraag: "Paulus schrijft: ik heb de goede strijd gestreden, ik heb de wedloop volbracht. Waar haalt hij dat beeld vandaan?",
-            antwoorden: ["Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd", "Uit het leger, waar hij zelf gediend had", "Uit de landbouw, waar hij als jongen werkte", "Uit de rechtszaal, waar hij vaak had gestaan"],
-            correct: "Uit de sport: hardlopen en worstelen bij de wedstrijden van die tijd",
+            vraag: "Paulus schrijft: \"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht.\" Waar komt dat beeld vandaan?",
+            antwoorden: ["Uit de sportwedstrijden van die tijd", "Uit het leger", "Uit de landbouw", "Uit de rechtszaal"],
+            correct: "Uit de sportwedstrijden van die tijd",
             bijbelplaats: "2 Timoteüs 4:7"
         },
         {
             vraag: "Paulus schrijft aan Timoteüs: laat niemand op je neerkijken omdat je jong bent. Wat zegt dat over Timoteüs?",
             antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
             correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
+            bijbelplaats: "1 Timoteüs 4:12"
+        },
+        {
+            vraag: "Paulus zegt dat Timoteüs ondanks zijn jonge leeftijd een voorbeeld moet zijn. Waarin moet hij dat voorbeeld geven?",
+            antwoorden: ["In wat hij zegt, zijn levenswijze, liefde, geloof en zuiverheid", "Alleen in hoe goed hij kan spreken", "Alleen in hoeveel Bijbelteksten hij kent", "Vooral in hoe streng hij anderen terechtwijst"],
+            correct: "In wat hij zegt, zijn levenswijze, liefde, geloof en zuiverheid",
             bijbelplaats: "1 Timoteüs 4:12"
         }
     ],
