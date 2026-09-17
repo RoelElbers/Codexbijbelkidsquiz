@@ -5418,11 +5418,11 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 1:23-24"
         },
         {
-            vraag: "Jakobus zegt: sluit je aan bij God. En wat moet je volgens hem met de duivel doen, zodat die van je wegvlucht?",
+            vraag: "Jakobus zegt: stel je onder Gods leiding. Wat moet je volgens hem met de duivel doen, zodat die van je wegvlucht?",
             antwoorden: ["Hem weerstaan", "Hem overschreeuwen", "Hem negeren", "Hem wegjagen"],
             correct: "Hem weerstaan",
             bijbelplaats: "Jakobus 4:7",
-            uitleg: "Weerstaan is iets anders dan wegjagen. Je hoeft de duivel niet zelf te verslaan of te verjagen — je zegt nee en gaat niet met hem mee. Jakobus zegt dat hij dán uit zichzelf op de vlucht slaat. Let ook op de volgorde in het vers: eerst sluit je je aan bij God, pas daarna houd je stand."
+            uitleg: "Weerstaan is iets anders dan wegjagen. Je hoeft de duivel niet zelf te verslaan of te verjagen — je zegt nee en gaat niet met hem mee. Jakobus zegt dat hij dán uit zichzelf op de vlucht slaat. Let ook op de volgorde in het vers: eerst stel je je onder Gods leiding, pas daarna houd je stand."
         },
         {
             vraag: "Welke man uit het Oude Testament noemt Jakobus als voorbeeld van iemand die in groot lijden geduldig bleef?",
@@ -5443,11 +5443,11 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 4:6"
         },
         {
-            vraag: "Jakobus noemt een rijtje eigenschappen van de wijsheid die van God komt. Eén daarvan zet hij met opzet vooraan, als allereerste. Welke is dat?",
-            antwoorden: ["Rein", "Vredelievend", "Barmhartig", "Onpartijdig"],
-            correct: "Rein",
+            vraag: "Jakobus noemt een rijtje eigenschappen van de wijsheid die van God komt. Welke eigenschap noemt hij als eerste?",
+            antwoorden: ["Zuiver", "Vredelievend", "Barmhartig", "Onpartijdig"],
+            correct: "Zuiver",
             bijbelplaats: "Jakobus 3:17",
-            uitleg: "Alle vier de eigenschappen staan in dit ene vers, maar Jakobus zet er één met opzet vooraan. Het Griekse woord dat hij gebruikt, hagnos, betekent schoon van binnen, zonder verborgen bijbedoelingen. De ene Bijbel vertaalt dat met \"rein\", de andere met \"zuiver\" — allebei goed."
+            uitleg: "Jakobus noemt als eerste eigenschap van de wijsheid van God dat zij zuiver is. Het Griekse woord hagnos betekent rein of zuiver; welk van de twee er in jouw bijbel staat, hangt van de vertaling af. Daarna noemt hij onder andere vredelievendheid, mildheid, ontferming en onpartijdigheid."
         },
         {
             vraag: "Jakobus vraagt: ben je wijs? Waaraan moet dat volgens hem te zien zijn?",
