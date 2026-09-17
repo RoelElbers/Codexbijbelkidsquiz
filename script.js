@@ -5350,7 +5350,7 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:14"
         },
         {
-            vraag: "Jakobus zegt: laat je 'ja' gewoon 'ja' zijn en je 'nee' gewoon 'nee'. Wat bedoelt hij daarmee?",
+            vraag: "Jakobus zegt: laat je \"ja\" gewoon \"ja\" zijn en je \"nee\" gewoon \"nee\". Wat bedoelt hij daarmee?",
             antwoorden: ["Wees eerlijk en betrouwbaar", "Praat zo veel mogelijk", "Beloof altijd van alles", "Zeg liever helemaal niets"],
             correct: "Wees eerlijk en betrouwbaar",
             bijbelplaats: "Jakobus 5:12"
@@ -5362,15 +5362,15 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:16"
         },
         {
-            vraag: "Stel dat iemand bij God en het goede pad wegloopt. Wat moet je volgens Jakobus proberen te doen?",
-            antwoorden: ["Hem vol liefde weer terugbrengen", "Hem voorgoed wegsturen", "Net doen of je niets ziet", "Elke keer als je hem ziet, flink in discussie gaan"],
-            correct: "Hem vol liefde weer terugbrengen",
+            vraag: "Stel dat iemand bij God vandaan loopt en het goede pad verlaat. Wat moet je volgens Jakobus proberen te doen?",
+            antwoorden: ["Die persoon vol liefde weer terugbrengen", "Die persoon voorgoed wegsturen", "Net doen of je niets ziet", "Elke keer flink in discussie gaan"],
+            correct: "Die persoon vol liefde weer terugbrengen",
             bijbelplaats: "Jakobus 5:19-20"
         },
         {
-            vraag: "Jakobus zegt: maak jezelf klein voor God. Wat zal God dan doen?",
-            antwoorden: ["Hij zal je groot maken", "Hij zal je met rust laten", "Hij zal je nog kleiner maken", "Hij zal nu voortaan over je heen kijken"],
-            correct: "Hij zal je groot maken",
+            vraag: "Jakobus zegt dat we nederig voor God moeten zijn. Wat zal God dan doen?",
+            antwoorden: ["Hij zal je verhogen", "Hij zal je met rust laten", "Hij zal je vergeten", "Hij zal je steeds verder naar beneden halen"],
+            correct: "Hij zal je verhogen",
             bijbelplaats: "Jakobus 4:10"
         },
         {
