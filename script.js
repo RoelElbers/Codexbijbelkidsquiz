@@ -5210,11 +5210,11 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 1:4"
         },
         {
-            vraag: "Jezus wordt hogepriester genoemd 'naar de orde van' een geheimzinnige koning-priester uit de tijd van Abraham. Hoe heet hij?",
+            vraag: "Jezus wordt hogepriester genoemd \"naar de orde van\" een geheimzinnige koning-priester uit de tijd van Abraham. Hoe heet hij?",
             antwoorden: ["Melchisedek", "Aäron", "Levi", "Henoch"],
             correct: "Melchisedek",
             bijbelplaats: "Hebreeën 7:1-3",
-            uitleg: "Melchisedek komt in het Oude Testament maar in één klein verhaal voor: hij is koning van Salem én priester, en hij zegent Abraham (Genesis 14:18-20). Over zijn familie staat er niets, en juist dat valt de schrijver van Hebreeën op: Melchisedek hoort niet bij de priesterfamilie van Levi. 'Naar de orde van Melchisedek' betekent dan ook: van dezelfde soort als hij. Jezus is dus priester op een heel andere manier dan de priesters in de tempel."
+            uitleg: "Melchisedek komt in het Oude Testament maar in één klein verhaal voor: hij is koning van Salem én priester, en hij zegent Abraham (Genesis 14:18-20). Over zijn familie staat er niets, en juist dat valt de schrijver van Hebreeën op: Melchisedek hoort niet bij de priesterfamilie van Levi. \"Naar de orde van Melchisedek\" betekent dan ook: van dezelfde soort als hij. Jezus is dus priester op een heel andere manier dan de priesters in de tempel."
         },
         {
             vraag: "Over welke man zegt Hebreeën dat hij door zijn geloof de dood niet zag, maar door God werd weggenomen?",
@@ -5247,10 +5247,10 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:11"
         },
         {
-            vraag: "Aan welke groep gelovigen is de brief aan de Hebreeën vooral gericht?",
-            antwoorden: ["Joodse christenen", "Romeinse soldaten", "Griekse filosofen", "Egyptische priesters"],
-            correct: "Joodse christenen",
-            bijbelplaats: "naam van het boek"
+            vraag: "De brief zelf zegt niet dat hij \"aan de Hebreeën\" is geschreven. Waarom kreeg hij later waarschijnlijk toch die naam?",
+            antwoorden: ["Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond", "Omdat alle personen in de brief Hebreeuws spreken", "Omdat de brief in Jeruzalem is gevonden", "Omdat de schrijver zichzelf \"de Hebreeër\" noemt"],
+            correct: "Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond",
+            bijbelplaats: "algemeen; zie o.a. Hebreeën 7-10"
         },
         {
             vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets bijzonders zijn. Wat zijn ze volgens de brief?",
@@ -5269,14 +5269,14 @@ vragenData["Hebreeën"] = {
             antwoorden: ["Een heiligdom dat het volk door de woestijn meedroeg", "De tent waarin de hogepriester woonde, naast de tempel", "Een tent op het tempelplein waar de offerdieren stonden", "De tent waarin Abraham God ontmoette bij de eiken"],
             correct: "Een heiligdom dat het volk door de woestijn meedroeg",
             bijbelplaats: "Hebreeën 9:2",
-            uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: uit elkaar te halen, mee te dragen en weer op te bouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
+            uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: een heiligdom dat je uit elkaar kon halen, meedragen en weer opbouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
         },
         {
             vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
             antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
             correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
             bijbelplaats: "Hebreeën 9:7",
-            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de kleine ruimte achter het voorhangsel waar verder niemand ooit kwam. Hij bracht daar bloed van een offerdier, voor zijn eigen fouten en die van het hele volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met alles wat er misgegaan was — vandaar ons woord zondebok. De schrijver van Hebreeën gebruikt dat beeld om iets over Jezus te zeggen: Hij ging één keer naar binnen, en dat was genoeg voor altijd."
+            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de ruimte achter het voorhangsel waar verder niemand mocht komen. Daar bracht hij een offer voor zijn eigen zonden en die van het volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met de zonden van het volk — daar komt het beeld van de zondebok vandaan. Hebreeën vergelijkt dit jaarlijkse ritueel met Jezus: wat de hogepriester ieder jaar opnieuw deed, heeft Jezus volgens de brief met Zijn offer eens en voorgoed volbracht."
         },
         {
             vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
@@ -5299,10 +5299,10 @@ vragenData["Hebreeën"] = {
             uitleg: "In het Grieks werd het woord voor wolk ook gebruikt voor een geweldige menigte mensen, ongeveer zoals wij spreken van een zee van mensen. Hebreeën bedoelt dus geen wolk aan de hemel, maar een menigte die niet te tellen is."
         },
         {
-            vraag: "De schrijver van de brief aan de Hebreeën spreekt over een \"lofoffer\" dat we God brengen. Wat wordt daar geofferd?",
-            antwoorden: ["Woorden: het uitspreken en bezingen van Gods naam", "Een lam zonder gebreken op het altaar", "Het eerste deel van het graan uit de oogst", "Een gouden schaal met wierook erin"],
-            correct: "Woorden: het uitspreken en bezingen van Gods naam",
-            bijbelplaats: "Hebreeën 13:15"
+            vraag: "Abraham was bereid Isaak te offeren. Waarom kon hij volgens Hebreeën toch blijven vertrouwen op Gods belofte?",
+            antwoorden: ["Hij geloofde dat God Isaak zelfs uit de dood kon opwekken", "Hij dacht dat God zijn belofte ook via Ismaël kon nakomen", "Hij dacht dat Sara daarna nog een zoon zou krijgen", "Hij verwachtte dat Isaak zelf zou kunnen ontsnappen"],
+            correct: "Hij geloofde dat God Isaak zelfs uit de dood kon opwekken",
+            bijbelplaats: "Hebreeën 11:17-19"
         },
         {
             vraag: "De schrijver van de brief aan de Hebreeën zegt dat zijn lezers nog melk nodig hebben in plaats van vast voedsel. Wat bedoelt hij?",
