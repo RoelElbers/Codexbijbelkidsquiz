@@ -4445,16 +4445,16 @@ vragenData["Timoteüs & Titus"] = {
     ],
     advanced: [
         {
-            vraag: "Paulus schreef zijn brieven meestal aan een hele gemeente. Wat is er anders aan 1 en 2 Timoteüs en Titus?",
-            antwoorden: ["Ze zijn aan één persoon geschreven", "Ze zijn aan de leiders van alle Joodse synagogen geschreven", "Ze zijn aan alle kerken tegelijk geschreven", "Ze zijn aan kinderen geschreven"],
-            correct: "Ze zijn aan één persoon geschreven",
-            bijbelplaats: "1 Timoteüs 1:1"
+            vraag: "Aan wie zijn 1 en 2 Timoteüs en Titus gericht?",
+            antwoorden: ["Elk aan één persoon", "Aan de leiders van alle Joodse synagogen", "Aan alle gemeenten tegelijk", "Aan de keizer in Rome"],
+            correct: "Elk aan één persoon",
+            bijbelplaats: "1 Timoteüs 1:1-2; 2 Timoteüs 1:1-2; Titus 1:1-4"
         },
         {
             vraag: "Waaraan moet Timoteüs volgens Paulus vasthouden, wat hij van jongs af aan kent?",
             antwoorden: ["De heilige Schrift", "De wetten van Rome", "De verhalen van zijn vrienden", "De liederen van de tempel"],
             correct: "De heilige Schrift",
-            bijbelplaats: "2 Timoteüs 3:15"
+            bijbelplaats: "2 Timoteüs 3:14-15"
         },
         {
             vraag: "Hoe moet Titus volgens Paulus de mensen het goede leren?",
@@ -4469,39 +4469,40 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "1 Timoteüs 6:12"
         },
         {
-            vraag: "Wat zegt Paulus dat \"de wortel van alle kwaad\" is?",
-            antwoorden: ["De liefde voor geld", "Luiheid", "Onwetendheid", "Hoogmoed"],
-            correct: "De liefde voor geld",
-            bijbelplaats: "1 Timoteüs 6:10"
+            vraag: "Waarop moeten rijke mensen volgens Paulus hun hoop stellen?",
+            antwoorden: ["Op God", "Op hun rijkdom", "Op hun eigen verstand", "Op invloedrijke mensen"],
+            correct: "Op God",
+            bijbelplaats: "1 Timoteüs 6:17"
         },
         {
             vraag: "Hoe moet een leider van de gemeente volgens Paulus zijn?",
-            antwoorden: ["Betrouwbaar en gastvrij, niet snel boos", "Streng en gevreesd, zodat niemand tegenspreekt", "Rijk en machtig, met veel aanzien", "Slim en gehaaid, altijd op zijn voordeel uit"],
-            correct: "Betrouwbaar en gastvrij, niet snel boos",
+            antwoorden: ["Gastvrij, beheerst en vriendelijk", "Streng en gevreesd, zodat niemand tegenspreekt", "Rijk en machtig, met veel aanzien", "Slim en gehaaid, altijd op zijn voordeel uit"],
+            correct: "Gastvrij, beheerst en vriendelijk",
             bijbelplaats: "1 Timoteüs 3:2-3"
         },
         {
-            vraag: "Aan het eind van zijn leven schrijft Paulus een beroemd geworden zin over hoe hij op zijn leven terugkijkt. Welke zin schrijft hij?",
-            antwoorden: ["\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"", "\"Ik heb gedaan wat ik kon, de rest laat ik aan anderen\"", "\"Ik heb veel gestreden, maar het was tevergeefs\"", "\"Ik heb de wet gehouden en alle regels bewaard\""],
-            correct: "\"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht\"",
+            vraag: "Paulus schrijft: \"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht.\" Wat zegt hij direct daarna?",
+            antwoorden: ["Ik heb het geloof behouden", "Ik heb al mijn vijanden verslagen", "Ik heb alles begrepen", "Ik heb mijn vrijheid teruggekregen"],
+            correct: "Ik heb het geloof behouden",
             bijbelplaats: "2 Timoteüs 4:7"
         },
         {
             vraag: "Hoe noemt Paulus Timoteüs en Titus in zijn brieven?",
             antwoorden: ["Mijn kind in het geloof", "Mijn trouwe leerling en volgeling", "Mijn dienaar", "Mijn vriend"],
             correct: "Mijn kind in het geloof",
-            bijbelplaats: "1 Timoteüs 1:2"
+            bijbelplaats: "1 Timoteüs 1:2; Titus 1:4"
         },
         {
             vraag: "Paulus schrijft aan Timoteüs dat God ons geen geest van angst heeft gegeven. Welke drie dingen noemt hij in plaats daarvan?",
             antwoorden: ["Kracht, liefde en bezonnenheid", "Macht, rijkdom en aanzien", "Geloof, hoop en liefde", "Wijsheid, geduld en vrede"],
             correct: "Kracht, liefde en bezonnenheid",
-            bijbelplaats: "2 Timoteüs 1:7"
+            bijbelplaats: "2 Timoteüs 1:7",
+            uitleg: "Bezonnen zijn betekent: rustig nadenken voordat je iets zegt of doet, en je niet laten meeslepen door angst of boosheid. Het Griekse woord dat Paulus gebruikt, heeft te maken met een helder en gezond verstand. In sommige vertalingen staat hier daarom \"zelfbeheersing\" of \"gematigdheid\". Paulus bedoelt: wie op God vertrouwt, hoeft niet in paniek te raken, maar kan kalm en verstandig blijven."
         },
         {
-            vraag: "Timoteüs kon door zijn geloof in de problemen komen. Waarvoor moet hij zich volgens Paulus niet schamen?",
-            antwoorden: ["Het goede nieuws van Jezus", "Zijn eenvoudige afkomst", "Zijn gebrek aan kennis", "De spot van anderen"],
-            correct: "Het goede nieuws van Jezus",
+            vraag: "Waarvoor moet Timoteüs zich volgens Paulus niet schamen?",
+            antwoorden: ["Voor het getuigenis over Jezus", "Voor zijn eenvoudige afkomst", "Voor zijn gebrek aan kennis", "Voor de spot van anderen"],
+            correct: "Voor het getuigenis over Jezus",
             bijbelplaats: "2 Timoteüs 1:8"
         },
         {
@@ -4518,21 +4519,22 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus schrijft aan Titus dat God ons niet redt om wat wij goed gedaan hebben, maar uit barmhartigheid. Met welk beeld beschrijft hij dat?",
-            antwoorden: ["Een bad waarin je opnieuw geboren wordt", "Een weegschaal waarop je goede daden worden geteld", "Een poort die alleen opengaat voor wie genoeg gedaan heeft", "Een boek waarin al je fouten worden bijgehouden"],
-            correct: "Een bad waarin je opnieuw geboren wordt",
+            antwoorden: ["Een bad waarin je opnieuw geboren en vernieuwd wordt door de Heilige Geest", "Een weegschaal waarop je goede daden worden geteld", "Een poort die alleen opengaat voor wie genoeg gedaan heeft", "Een boek waarin al je fouten worden bijgehouden"],
+            correct: "Een bad waarin je opnieuw geboren en vernieuwd wordt door de Heilige Geest",
             bijbelplaats: "Titus 3:5"
         },
         {
             vraag: "Paulus schrijft dat hij in boeien zit, maar dat Gods woord niet geboeid is. Wat waren boeien?",
-            antwoorden: ["IJzeren kettingen om polsen of enkels van een gevangene", "Dikke touwen waarmee schepen werden vastgelegd", "De houten balken van een cel", "De zegels waarmee een gevangenis werd afgesloten"],
-            correct: "IJzeren kettingen om polsen of enkels van een gevangene",
+            antwoorden: ["Kettingen of banden waarmee een gevangene werd vastgemaakt", "Dikke touwen waarmee schepen werden vastgelegd", "De houten balken van een cel", "De zegels waarmee een gevangenis werd afgesloten"],
+            correct: "Kettingen of banden waarmee een gevangene werd vastgemaakt",
             bijbelplaats: "2 Timoteüs 2:9"
         },
         {
             vraag: "Paulus schrijft over wie \"opziener\" wil worden. Wat was dat voor iemand?",
             antwoorden: ["Iemand die leiding gaf aan een gemeente en toezicht hield", "Iemand die bij de stadspoort de wacht hield", "Iemand die de boeken van de gemeente bijhield", "Iemand die de zieken bezocht en eten rondbracht"],
             correct: "Iemand die leiding gaf aan een gemeente en toezicht hield",
-            bijbelplaats: "1 Timoteüs 3:1"
+            bijbelplaats: "1 Timoteüs 3:1-2",
+            uitleg: "Het Griekse woord is episkopos: iemand die toezicht houdt. Via het Latijn is daar later ons woord \"bisschop\" uit ontstaan. In de brieven van Paulus gaat het om iemand die leiding gaf aan een plaatselijke gemeente of kerk. Hoe die taak er nu uitziet, verschilt per kerk: een katholieke bisschop geeft leiding aan de kerken in een hele regio, en in veel protestantse kerken houden ouderlingen toezicht op de gemeente."
         }
     ],
     expert: [
