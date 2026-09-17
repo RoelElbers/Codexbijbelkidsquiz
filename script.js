@@ -3955,9 +3955,9 @@ vragenData["Filippenzen"] = {
     ],
     expert: [
         {
-            vraag: "In welk gebied lag de stad Filippi?",
-            antwoorden: ["Macedonië", "Egypte", "Galilea", "Syrië"],
-            correct: "Macedonië",
+            vraag: "In welk land liggen de resten van de stad Filippi tegenwoordig?",
+            antwoorden: ["Griekenland", "Italië", "Turkije", "Israël"],
+            correct: "Griekenland",
             bijbelplaats: "Handelingen 16:12"
         },
         {
@@ -4145,9 +4145,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
     ],
     advanced: [
         {
-            vraag: "Hoe begint Paulus bijna elke keer als hij aan de Tessalonicenzen denkt?",
-            antwoorden: ["Met danken voor hen", "Met een waarschuwing", "Met een verwijt", "Met een vraag"],
-            correct: "Met danken voor hen",
+            vraag: "Wat doet Paulus telkens wanneer hij aan de Tessalonicenzen denkt en voor hen bidt?",
+            antwoorden: ["Hij dankt God voor hen", "Hij waarschuwt God voor hen", "Hij klaagt over hen", "Hij vraagt waarom ze hem niet schrijven"],
+            correct: "Hij dankt God voor hen",
             bijbelplaats: "1 Tessalonicenzen 1:2"
         },
         {
@@ -4158,15 +4158,16 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus doen, wat er ook gebeurt?",
-            antwoorden: ["Dankbaar blijven", "Flink en dapper zijn", "Zelf een oplossing bedenken", "Anderen om raad vragen"],
-            correct: "Dankbaar blijven",
+            antwoorden: ["God blijven danken", "Flink en dapper blijven", "Zelf een oplossing bedenken", "Anderen om raad vragen"],
+            correct: "God blijven danken",
             bijbelplaats: "1 Tessalonicenzen 5:18"
         },
         {
-            vraag: "Paulus prijst de Tessalonicenzen omdat hun geloof bekend is geworden. Tot hoe ver reikte die bekendheid?",
-            antwoorden: ["Tot in heel Macedonië en nog verder", "Alleen in hun eigen stad", "Alleen in Jeruzalem", "Tot in het paleis van de keizer in Rome"],
-            correct: "Tot in heel Macedonië en nog verder",
-            bijbelplaats: "1 Tessalonicenzen 1:8"
+            vraag: "Paulus schrijft dat het geloof van de Tessalonicenzen overal bekend was geworden. Waar noemt hij hun geloof eerst als voorbeeld?",
+            antwoorden: ["In Macedonië en Achaje, en zelfs daarbuiten", "In Galatië en Frygië, en zelfs daarbuiten", "In Syrië en Cilicië, en zelfs daarbuiten", "In Egypte en Arabië, en zelfs daarbuiten"],
+            correct: "In Macedonië en Achaje, en zelfs daarbuiten",
+            bijbelplaats: "1 Tessalonicenzen 1:7-8",
+            uitleg: "Macedonië en Achaje waren twee provincies van het Romeinse Rijk. Samen besloegen ze een groot deel van het huidige Griekenland. Tessalonica en Filippi lagen in Macedonië, Athene en Korinte in Achaje. Alle vier liggen nu in Griekenland."
         },
         {
             vraag: "Paulus geeft een stevige regel over werken die hij zelf een gebod noemt. Wat zegt hij over wie niet wíl werken?",
@@ -4175,10 +4176,10 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 3:10"
         },
         {
-            vraag: "Vlak vóór Paulus naar Tessalonica kwam, was hij in een andere stad slecht behandeld en gevangengezet. In welke stad?",
+            vraag: "Vlak vóór Paulus naar Tessalonica kwam, was hij in een andere stad slecht behandeld en gevangengezet. In welke stad was dat?",
             antwoorden: ["Filippi", "Rome", "Athene", "Korinte"],
             correct: "Filippi",
-            bijbelplaats: "1 Tessalonicenzen 2:2"
+            bijbelplaats: "1 Tessalonicenzen 2:2; Handelingen 16:22-24"
         },
         {
             vraag: "Paulus schrijft: zorg dat niemand kwaad met kwaad vergeldt. Wat moeten de gelovigen in plaats daarvan doen?",
@@ -4193,21 +4194,21 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 5:21"
         },
         {
-            vraag: "Paulus wil niet dat de gelovigen verdrietig zijn over gestorvenen zoals mensen \"zonder hoop\". Wat hebben de gelovigen wél?",
-            antwoorden: ["Hoop: bij de komst van Jezus zien ze elkaar weer", "Het vertrouwen dat de tijd alle wonden heelt", "Alleen de herinneringen aan wie ze gekend hebben", "De troost dat ze het verdriet samen kunnen dragen"],
-            correct: "Hoop: bij de komst van Jezus zien ze elkaar weer",
-            bijbelplaats: "1 Tessalonicenzen 4:13"
+            vraag: "Paulus wil niet dat de gelovigen verdrietig zijn over gestorvenen zoals mensen \"zonder hoop\". Welke hoop geeft hij hun?",
+            antwoorden: ["Dat de gestorven gelovigen zullen opstaan en samen met de anderen bij de Heer zullen zijn", "Dat de tijd alle verdriet vanzelf wegneemt", "Dat gestorven mensen sterren aan de hemel worden", "Dat ze hen nooit meer zullen missen"],
+            correct: "Dat de gestorven gelovigen zullen opstaan en samen met de anderen bij de Heer zullen zijn",
+            bijbelplaats: "1 Tessalonicenzen 4:13-17"
         },
         {
-            vraag: "Waar kwamen de Tessalonicenzen vandaan vóór ze gingen geloven? Wat lieten ze achter?",
-            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "De grote feesten ter ere van de keizer", "Hun familie"],
+            vraag: "Wat lieten de Tessalonicenzen achter toen zij zich tot God keerden?",
+            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun familie", "Hun huizen en bezittingen"],
             correct: "De afgoden, om de levende God te dienen",
             bijbelplaats: "1 Tessalonicenzen 1:9"
         },
         {
-            vraag: "In welk land lag de stad Tessalonica?",
-            antwoorden: ["Macedonië", "Klein-Azië", "Judea", "Italië"],
-            correct: "Macedonië",
+            vraag: "In welk land ligt de stad Tessalonica tegenwoordig?",
+            antwoorden: ["Griekenland", "Italië", "Turkije", "Israël"],
+            correct: "Griekenland",
             bijbelplaats: "Handelingen 17:1"
         },
         {
@@ -4230,8 +4231,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun?",
-            antwoorden: ["Rust, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Wraak met het zwaard"],
-            correct: "Rust, wanneer Jezus verschijnt",
+            antwoorden: ["Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Wraak met het zwaard"],
+            correct: "Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt",
             bijbelplaats: "2 Tessalonicenzen 1:7"
         },
         {
