@@ -22,7 +22,7 @@
 
 /* eslint-disable no-unused-vars */
 
-// --- Woorden: het woordenboek (50 termen, alfabetisch) ----------------------
+// --- Woorden: het woordenboek (51 termen, alfabetisch) ----------------------
 const ONTDEK_WOORDENBOEK = [
     { term: "Allerheiligste", uitleg: "Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen." },
     { term: "Altaar", uitleg: "Een verhoogde plek, vaak van steen, waar offers aan God werden gebracht." },
@@ -53,6 +53,7 @@ const ONTDEK_WOORDENBOEK = [
     { term: "Opziener", uitleg: "Iemand die toezicht houdt; van het Griekse <em>episkopos</em>. Via het Latijn is daar later ons woord \"bisschop\" uit ontstaan. In de brieven van Paulus gaat het om iemand die leiding gaf aan een plaatselijke gemeente of kerk. Hoe die taak er nu uitziet, verschilt per kerk. In de Katholieke Kerk is de bisschop de leider van een bisdom: een gebied met veel parochies. Katholieken zien de bisschoppen als opvolgers van de apostelen. In veel protestantse kerken houden ouderlingen toezicht op de gemeente. <em>Zie ook: bisschop, gemeente, kerk.</em>" },
     { term: "Ouderling", uitleg: "Een ervaren gelovige die samen met anderen leiding geeft aan een gemeente. Het woord betekent eigenlijk \"oudere\", van het Griekse <em>presbyteros</em>. Paulus vraagt Titus om in elke stad zulke oudsten aan te stellen. In veel protestantse kerken houden ouderlingen nog steeds toezicht op de gemeente en zorgen ze voor de mensen die erbij horen. <em>Zie ook: opziener, bisschop.</em>" },
     { term: "Pasen (Pesach)", uitleg: "Pesach is het Joodse feest waarop het volk viert dat God hen lang geleden uit de slavernij in Egypte bevrijdde. Jezus vierde dit feest ook. Voor christenen kreeg Pasen er later een tweede betekenis bij: het feest van Jezus' opstanding." },
+    { term: "Perkament", uitleg: "Dun bewerkte dierenhuid waarop vroeger werd geschreven. Het was sterker en duurzamer dan papyrus. In 2 Timoteüs vraagt Paulus of Timoteüs de boekrollen en vooral de perkamenten wil meebrengen." },
     { term: "Priester", uitleg: "In de tijd van de Bijbel was een priester iemand die in de tempel dienst deed: hij bracht offers aan God en zegende het volk. De priesters kwamen uit de familie van Aäron, uit de stam Levi. De belangrijkste van hen was de hogepriester. In de Katholieke Kerk is een priester vandaag iemand die gewijd is om de mis te leiden en te zorgen voor de gelovigen in een parochie. Ook de orthodoxe kerken kennen priesters. <em>Zie ook: hogepriester, tempel, offer.</em>" },
     { term: "Profeet", uitleg: "Iemand die namens God spreekt. Geen waarzegger met een glazen bol: een profeet voorspelt niet zomaar wat er gaat gebeuren, maar roept de mensen vooral op om naar God te luisteren — ook als ze dat liever niet horen. Een waarschuwing is meestal een laatste kans om het anders te doen. Toen de profeet Jona aankondigde dat de stad Nineve zou vergaan, kregen de inwoners spijt en veranderden ze hun leven — en toen liet God het onheil niet doorgaan. Dat laat zien dat God het aangekondigde onheil eigenlijk niet wíl: liever ziet Hij dat mensen veranderen. (Jona baalde daar trouwens flink van.)" },
     { term: "Rechtvaardig", uitleg: "Eerlijk en betrouwbaar; iemand die anderen eerlijk behandelt en leeft zoals God het bedoelt." },

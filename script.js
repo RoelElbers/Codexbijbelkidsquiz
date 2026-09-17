@@ -4540,74 +4540,74 @@ vragenData["Timoteüs & Titus"] = {
     expert: [
         {
             vraag: "Paulus kijkt in zijn brief aan Timoteüs terug op zijn eigen verleden, en hij verzacht niets. Hoe noemt hij zichzelf zoals hij vroeger was?",
-            antwoorden: ["Een godslasteraar en een vervolger", "Een vrome farizeeër", "Een goede Jood", "Een rechtvaardig man die altijd Gods wet volgde"],
-            correct: "Een godslasteraar en een vervolger",
+            antwoorden: ["Een godslasteraar en vervolger die anderen kwaad deed", "Een vrome farizeeër", "Een goede Jood", "Een rechtvaardig man die altijd Gods wet volgde"],
+            correct: "Een godslasteraar en vervolger die anderen kwaad deed",
             bijbelplaats: "1 Timoteüs 1:13"
         },
         {
             vraag: "In welke stad had Paulus Timoteüs achtergelaten om de gemeente te helpen?",
-            antwoorden: ["Efeze", "Kreta", "Korinte", "Rome"],
+            antwoorden: ["Efeze", "Alexandrië", "Korinte", "Rome"],
             correct: "Efeze",
             bijbelplaats: "1 Timoteüs 1:3"
         },
         {
             vraag: "Paulus waarschuwt tegen de jacht op geld met een nuchtere waarheid over geboorte en dood. Wat schrijft hij?",
-            antwoorden: ["We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee", "Het geld zelf is de wortel van alle kwaad in de wereld", "Rijke mensen kunnen het koninkrijk van God niet binnengaan", "Wie veel weggeeft, krijgt van God vanzelf meer terug"],
+            antwoorden: ["We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee", "Wie veel bezit heeft, hoeft zich geen zorgen te maken", "Rijke mensen kunnen het koninkrijk van God niet binnengaan", "Wie veel weggeeft, krijgt van God vanzelf meer terug"],
             correct: "We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee",
             bijbelplaats: "1 Timoteüs 6:7"
         },
         {
-            vraag: "Midden in zijn brief barst Paulus ineens uit in een lofzang op God. Met welke titel noemt hij God daar?",
+            vraag: "Tegen het einde van 1 Timoteüs staat een lofzang op God. Met welke titel wordt God daar genoemd?",
             antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots waarop Israël altijd kon bouwen", "De Vader van alle licht aan de hemel", "De Wijnstok waar de gelovigen als ranken aan zitten"],
             correct: "De Koning der koningen en de Heer der heren",
             bijbelplaats: "1 Timoteüs 6:15"
         },
-{
+        {
             vraag: "Paulus zegt tegen Timoteüs: \"wakker het vuur weer aan.\" Wat bedoelt hij?",
             antwoorden: ["Gebruik de gave die God je heeft gegeven", "Word vuriger in het straffen van zonde", "Vernieuw je band met de gemeente", "Bid dag en nacht zonder ophouden"],
             correct: "Gebruik de gave die God je heeft gegeven",
             bijbelplaats: "2 Timoteüs 1:6"
         },
         {
-            vraag: "Paulus vergelijkt het werken voor Christus met drie beroepen: iemand die vecht, iemand die rent, en iemand die op het land werkt. Welke drie beroepen noemt hij?",
+            vraag: "Paulus gebruikt in 2 Timoteüs drie beelden uit het gewone leven voor iemand die Christus dient. Welke drie noemt hij?",
             antwoorden: ["Een soldaat, een sportman en een boer", "Een koning, een priester en een profeet", "Een visser, een herder en een timmerman", "Een koopman, een schrijver en een arts"],
             correct: "Een soldaat, een sportman en een boer",
             bijbelplaats: "2 Timoteüs 2:3-6"
         },
         {
-            vraag: "Paulus schrijft zijn laatste brief aan Timoteüs vanuit de gevangenis, geboeid als een misdadiger. En dan zet hij daar één zin tegenover die alles omdraait. Wat schrijft hij?",
-            antwoorden: ["Maar het woord van God zit niet gevangen", "Maar ik zal binnenkort vrijkomen", "Maar de bewakers zijn tot geloof gekomen", "Maar mijn straf is niet zo zwaar"],
-            correct: "Maar het woord van God zit niet gevangen",
+            vraag: "Paulus zit als een misdadiger in boeien. Welke opvallende tegenstelling noemt hij direct daarna?",
+            antwoorden: ["Hij is geboeid, maar Gods woord niet", "Hij zit gevangen, maar zijn vrienden zijn vrij", "Hij wordt gestraft, maar zijn bewakers geloven", "Hij is geboeid, maar zal snel worden vrijgelaten"],
+            correct: "Hij is geboeid, maar Gods woord niet",
             bijbelplaats: "2 Timoteüs 2:9"
         },
         {
-            vraag: "In een groot huis staan voorwerpen van goud en zilver, maar ook van hout en aardewerk. Paulus gebruikt dat beeld voor de gemeente. Wat moet iemand volgens hem doen om een kostbaar voorwerp te worden?",
+            vraag: "In een groot huis staan voorwerpen van goud en zilver, maar ook van hout en aardewerk. Wat moet iemand volgens Paulus doen om een voorwerp voor bijzonder gebruik te worden?",
             antwoorden: ["Zichzelf reinigen van het verkeerde", "Rijk worden", "Veel leren", "Een zo hoog mogelijke functie in de gemeente krijgen"],
             correct: "Zichzelf reinigen van het verkeerde",
             bijbelplaats: "2 Timoteüs 2:20-21"
         },
-{
+        {
             vraag: "Paulus schrijft dat er voor hem een \"krans\" klaarligt. Wat voor krans?",
             antwoorden: ["De krans van de gerechtigheid", "Een krans van bloemen", "Een gouden kroon", "De lauwerkrans van de keizer"],
             correct: "De krans van de gerechtigheid",
             bijbelplaats: "2 Timoteüs 4:8"
         },
         {
-            vraag: "Aan het eind van zijn leven schrijft Paulus verdrietig over Demas, een medewerker die hem in de steek heeft gelaten. Wat was de reden dat Demas wegging?",
+            vraag: "In 2 Timoteüs schrijft Paulus verdrietig over Demas, een medewerker die hem in de steek heeft gelaten. Wat was de reden dat Demas wegging?",
             antwoorden: ["Hij hield meer van deze wereld", "Hij werd ziek", "Hij was het niet eens met Paulus' leer", "Hij werd zelf gevangengenomen"],
             correct: "Hij hield meer van deze wereld",
             bijbelplaats: "2 Timoteüs 4:10"
         },
         {
-            vraag: "Paulus schrijft in zijn laatste brief, aan Timoteüs, dat bijna iedereen bij hem weg is. Wie was er nog wél bij hem?",
+            vraag: "Wie zegt Paulus in 2 Timoteüs dat nog bij hem is?",
             antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
             correct: "Alleen Lukas",
             bijbelplaats: "2 Timoteüs 4:11"
         },
         {
-            vraag: "In zijn laatste brief vraagt Paulus aan Timoteüs om iets praktisch voor hem mee te nemen. Wat moet hij meebrengen?",
-            antwoorden: ["Zijn mantel en zijn boeken", "Brood en water", "Een zwaard en een schild", "Goud en zilver"],
-            correct: "Zijn mantel en zijn boeken",
+            vraag: "Welke spullen vraagt Paulus aan Timoteüs om voor hem mee te brengen?",
+            antwoorden: ["Zijn mantel, zijn boekrollen en vooral de perkamenten", "Brood, water en een olielamp", "Een zwaard, een schild en zijn brieven", "Goud, zilver en wierook"],
+            correct: "Zijn mantel, zijn boekrollen en vooral de perkamenten",
             bijbelplaats: "2 Timoteüs 4:13"
         },
         {
@@ -4623,21 +4623,21 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "Titus 1:5"
         },
         {
-            vraag: "Paulus geeft Titus raad voor vier verschillende groepen in de gemeente, en tegen elke groep zegt hij iets anders. Welke vier groepen zijn dat?",
-            antwoorden: ["Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen", "Priesters, schriftgeleerden, profeten en de oudsten van het volk", "Joden, Grieken, slaven en vrijen", "Armen, rijken, zieken en gezonden"],
+            vraag: "Welke vier leeftijdsgroepen spreekt Paulus achter elkaar aan in Titus 2?",
+            antwoorden: ["Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen", "Oudere mannen, oudere vrouwen, kinderen en tieners", "Volwassen mannen, volwassen vrouwen, jongens en meisjes", "Ouderen, volwassenen, jongeren en kinderen"],
             correct: "Oudere mannen, oudere vrouwen, jonge vrouwen en jonge mannen",
             bijbelplaats: "Titus 2:2-6"
         },
         {
             vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
-            antwoorden: ["Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël, op een halve dagreis varen", "Een onbewoond eiland waar schepen alleen schuilden bij storm"],
-            correct: "Een groot Grieks eiland met veel steden en havens, waar Paulus meerdere gemeenten achterliet",
+            antwoorden: ["Een groot eiland in de Middellandse Zee met veel steden en havens", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël", "Een onbewoond eiland waar schepen alleen bij storm kwamen"],
+            correct: "Een groot eiland in de Middellandse Zee met veel steden en havens",
             bijbelplaats: "Titus 1:5",
-            uitleg: "Kreta is met ruim tweehonderd kilometer lengte het grootste Griekse eiland en lag midden op de vaarroutes tussen Egypte, Griekenland en Italië. Er waren tientallen steden, en al vanaf Pinksteren woonden er Joden — Handelingen noemt Kretenzers bij de volken die in Jeruzalem waren. Dat Paulus schrijft dat Titus in elke stad oudsten moest aanstellen zegt dus iets: het ging niet om één gemeente, maar om een eiland vol verspreide groepjes gelovigen."
+            uitleg: "Kreta is een groot eiland in de Middellandse Zee met veel steden en havens. In de tijd van Paulus hoorde het bij het Romeinse Rijk en lag het aan belangrijke vaarroutes.\n\nOp Kreta woonden al eeuwen Joodse gemeenschappen. In Handelingen worden ook Kretenzers genoemd die met Pinksteren in Jeruzalem waren. Dat is iets anders dan de groepen gelovigen in Jezus waarover Paulus later aan Titus schrijft. Titus kreeg de opdracht om in verschillende steden oudsten aan te stellen voor deze gemeenten. Sommige van die eerste christenen kunnen Joods zijn geweest, maar de Bijbel vertelt niet precies hoe die gemeenten op Kreta waren ontstaan."
         },
         {
-            vraag: "In zijn laatste brief vraagt Paulus of Timoteüs ook de perkamenten wil meebrengen. Wat is perkament?",
-            antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boeken in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
+            vraag: "In de tijd van Paulus werd er vaak op perkament geschreven. Wat is perkament?",
+            antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boekrollen in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
             correct: "Dun bewerkte dierenhuid om op te schrijven",
             bijbelplaats: "2 Timoteüs 4:13"
         }
