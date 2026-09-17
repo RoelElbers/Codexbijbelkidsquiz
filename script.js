@@ -5076,19 +5076,19 @@ vragenData["Hebreeën"] = {
     ],
     advanced: [
         {
-            vraag: "De brief aan de Hebreeën vergelijkt Jezus met de man die één keer per jaar het allerheiligste van de tempel binnenging om daar voor het hele volk te offeren. Welke titel geeft de brief Hem daarom?",
+            vraag: "De brief aan de Hebreeën vergelijkt Jezus met de man die één keer per jaar het allerheiligste binnenging om daar voor het hele volk te offeren. Welke titel geeft de brief Hem daarom?",
             antwoorden: ["Hogepriester", "Leviet", "Schriftgeleerde", "Tempelwachter"],
             correct: "Hogepriester",
-            bijbelplaats: "Hebreeën 4:14"
+            bijbelplaats: "Hebreeën 4:14; 9:7"
         },
         {
-            vraag: "Door het geloof vielen de muren van een stad om nadat het volk er zeven dagen omheen was getrokken. Welke stad?",
+            vraag: "Door het geloof vielen de muren van een stad om nadat het volk er zeven dagen omheen was getrokken. Welke stad was dat?",
             antwoorden: ["Jericho", "Jeruzalem", "Babylon", "Nineve"],
             correct: "Jericho",
             bijbelplaats: "Hebreeën 11:30"
         },
         {
-            vraag: "Hebreeën zegt: 'Jezus Christus is gisteren en vandaag dezelfde en tot in eeuwigheid.' Wat betekent dat?",
+            vraag: "Hebreeën zegt: \"Jezus Christus is gisteren en vandaag dezelfde en tot in eeuwigheid.\" Wat betekent dat?",
             antwoorden: ["Hij verandert nooit", "Hij komt elke dag terug", "Hij was er pas vanaf Kerst", "Hij is anders voor elk volk"],
             correct: "Hij verandert nooit",
             bijbelplaats: "Hebreeën 13:8"
@@ -5124,7 +5124,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:1"
         },
         {
-            vraag: "Door het geloof trok het volk dwars door een zee, alsof het droog land was. Welke zee?",
+            vraag: "Door het geloof trok het volk dwars door een zee, alsof het droog land was. Welke zee was dat?",
             antwoorden: ["De Rode Zee", "De Dode Zee", "Het meer van Galilea", "De Middellandse Zee"],
             correct: "De Rode Zee",
             bijbelplaats: "Hebreeën 11:29"
@@ -5148,10 +5148,10 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:25-26"
         },
         {
-            vraag: "Wat laat de brief aan de Hebreeën vooral steeds zien over Jezus?",
-            antwoorden: ["Dat Jezus groter is dan alles en iedereen", "Dat Jezus minder is dan de engelen", "Dat Jezus vooral een strenge rechter is", "Dat Jezus Zijn werk nog moet beginnen"],
-            correct: "Dat Jezus groter is dan alles en iedereen",
-            bijbelplaats: "Hebreeën 1:4"
+            vraag: "Hebreeën vergelijkt Jezus met de engelen, met Mozes en met de priesters en hun offers. Wat wil de brief daarmee vooral laten zien?",
+            antwoorden: ["Dat Jezus boven hen uitgaat en hun werk tot vervulling brengt", "Dat Jezus minder belangrijk is dan de engelen", "Dat Jezus alleen gekomen is om nieuwe regels te geven", "Dat de oude offers belangrijker zijn dan Jezus"],
+            correct: "Dat Jezus boven hen uitgaat en hun werk tot vervulling brengt",
+            bijbelplaats: "Hebreeën 1:4; 3:3; 7:22-28"
         },
         {
             vraag: "Hebreeën noemt Jezus degene die ons geloof begint. Wat doet Hij er volgens dezelfde zin nog meer mee?",
@@ -5172,9 +5172,9 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 2:14-15"
         },
         {
-            vraag: "Hebreeën zegt dat we God geen dieren meer hoeven te offeren. Wat mogen we Hem in plaats daarvan brengen?",
-            antwoorden: ["Een lofzang waarin we Hem danken", "Een groot geldbedrag voor de tempel", "Een streng vasten van veertig dagen", "Een lange pelgrimsreis"],
-            correct: "Een lofzang waarin we Hem danken",
+            vraag: "Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een \"lofoffer\". Waaruit bestaat dat volgens Hebreeën?",
+            antwoorden: ["Uit woorden waarmee we Gods naam prijzen en belijden", "Uit een dier dat op het altaar wordt gebracht", "Uit geld dat aan de tempel wordt gegeven", "Uit veertig dagen vasten"],
+            correct: "Uit woorden waarmee we Gods naam prijzen en belijden",
             bijbelplaats: "Hebreeën 13:15"
         },
         {
