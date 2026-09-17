@@ -4276,7 +4276,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat \"gerechtigheid\". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen?",
-            antwoorden: ["Geloof en liefde", "Gerechtigheid", "Goud en zilver", "Moed en kracht"],
+            antwoorden: ["Geloof en liefde", "Ook gerechtigheid", "Goud en zilver", "Moed en kracht"],
             correct: "Geloof en liefde",
             bijbelplaats: "1 Tessalonicenzen 5:8"
         },
@@ -4311,30 +4311,30 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 3:11"
         },
         {
-            vraag: "Voor de terugkomst van Jezus gebruikt Paulus het woord \"komst\". In het Grieks was dat een heel gewoon woord. Waarvoor gebruikte men het?",
-            antwoorden: ["Voor het bezoek van een koning aan een stad", "Voor de thuiskomst van een soldaat na de oorlog", "Voor de dag waarop een schip binnenliep", "Voor het uur waarop een gast aan tafel aanschoof"],
-            correct: "Voor het bezoek van een koning aan een stad",
+            vraag: "Voor de terugkomst van Jezus gebruikt Paulus het Griekse woord parousia, dat \"komst\" of \"aanwezigheid\" betekent. Voor welke bijzondere gebeurtenis kon dat woord ook gebruikt worden?",
+            antwoorden: ["Voor het officiële bezoek van een koning of keizer aan een stad", "Voor de ondertekening van een vredesverdrag", "Voor de dag waarop een schip werd gebouwd", "Voor het begin van een sportwedstrijd"],
+            correct: "Voor het officiële bezoek van een koning of keizer aan een stad",
             bijbelplaats: "1 Tessalonicenzen 2:19",
-            uitleg: "Parousia betekent letterlijk \"aanwezigheid\", maar in de steden van het Romeinse rijk was het de vaste term voor een staatsbezoek van de keizer of een koning. Er werden munten voor geslagen en poorten voor versierd. Dat Paulus juist dát woord voor Jezus kiest, zegt dus iets over wie volgens hem de echte koning is."
+            uitleg: "Parousia betekent \"komst\" of \"aanwezigheid\". Het woord kon ook gebruikt worden voor het officiële bezoek van een koning of keizer aan een stad. Zo'n bezoek was een grote gebeurtenis: de stad maakte zich klaar om de belangrijke bezoeker te ontvangen. Er werden munten voor geslagen en poorten voor versierd. Paulus gebruikt hetzelfde woord wanneer hij schrijft over de komst van Jezus."
         },
         {
             vraag: "Paulus schrijft: \"bemoedig de kleinmoedigen.\" Wat betekent dat Griekse woord letterlijk?",
             antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig moed hebben in de strijd", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
             correct: "Mensen met een kleine ziel",
             bijbelplaats: "1 Tessalonicenzen 5:14",
-            uitleg: "Het Griekse woord is samengesteld uit \"weinig\" en \"ziel\". Het gaat niet over lafheid, maar over mensen bij wie de moed in de schoenen is gezakt — die het even niet meer zien zitten. Ons woord kleinmoedig is langs het Latijn precies dezelfde samenstelling. Paulus noemt hen in één adem met wie het zwaar hebben, en zegt: hou vol met hen, wees geduldig."
+            uitleg: "Het Griekse woord bestaat uit woorden voor \"klein/weinig\" en \"ziel\". Daarmee worden mensen bedoeld die de moed hebben verloren of het even niet meer zien zitten. Het gaat dus niet over lafheid in de strijd, maar over een ziel die zich klein en moedeloos voelt. Paulus zegt niet dat je hen streng moet aanpakken, maar juist dat je hen moet bemoedigen."
         },
         {
             vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia bestond al eeuwen in elke Griekse stad. Wat was het toen?",
             antwoorden: ["De vergadering waarop de burgers samen beslisten", "De school waar de jongens van de stad les kregen", "Het bestuur dat door de keizer was aangesteld", "De tempel waar men de goden van de stad diende"],
             correct: "De vergadering waarop de burgers samen beslisten",
             bijbelplaats: "1 Tessalonicenzen 1:1",
-            uitleg: "Ekklesia betekent letterlijk \"de opgeroepenen\". Een omroeper trok door de stad en riep de burgers bijeen op het marktplein. Daar stemden ze over de dingen die iedereen aangingen: nieuwe wetten, oorlog of vrede, en wie het komende jaar de stad zou besturen. In Handelingen 19 staat het woord nog in die gewone betekenis, voor de volksoploop in Efeze. Noemden de eerste christenen zich zo, dan zeiden ze dus niet \"wij zijn een gebouw\", maar \"wij zijn opgeroepen en horen erbij\"."
+            uitleg: "Ekklesia was al lang vóór het christendom een gewoon Grieks woord voor een vergadering. In Griekse steden kon het de bijeenkomst zijn waarin burgers over zaken van de stad beslisten. De eerste christenen gebruikten datzelfde woord voor hun eigen gemeenschap of samenkomst. Daarom kan het in Nederlandse Bijbels worden vertaald met \"gemeente\" of \"kerk\"."
         },
         {
-            vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Uit welke wereld komt dat Griekse woord?",
-            antwoorden: ["Uit het leger: een soldaat die uit het gelid loopt", "Uit de rechtszaal: iemand die zijn eed en belofte breekt", "Uit de haven: een schip zonder vaste route", "Uit de landbouw: een os die zijn juk afwerpt"],
-            correct: "Uit het leger: een soldaat die uit het gelid loopt",
+            vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Welk beeld past bij het Griekse woord dat hij gebruikt?",
+            antwoorden: ["Een soldaat die uit het gelid loopt", "Een rechter die zijn hamer kwijt is", "Een schip dat zijn anker laat vallen", "Een boer die zijn akker omploegt"],
+            correct: "Een soldaat die uit het gelid loopt",
             bijbelplaats: "2 Tessalonicenzen 3:6",
             uitleg: "Het woord betekent letterlijk \"niet op zijn plek\". Wie uit het gelid stapte bracht de hele linie in gevaar. Paulus gebruikt het voor gemeenteleden die gestopt waren met werken — niet omdat werken het belangrijkste in het leven is, maar omdat de anderen hun last moesten dragen."
         }
