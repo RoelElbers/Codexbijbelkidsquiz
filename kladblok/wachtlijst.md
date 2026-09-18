@@ -29,7 +29,23 @@ elk antwoord herhaald hoeft te worden.*
 - **Lege rubrieken in de Ontdekken-hub.** "Wie is wie" en "Waar gebeurde het"
   hebben `onderwerpen: []` (`script.js` r. 8842–8843). De knoppen staan er wel
   en zijn niet vergrendeld, dus ze leiden naar een leeg lijstscherm. Ze horen
-  vergrendeld te zijn zolang de rubrieken leeg zijn.
+  vergrendeld te zijn zolang de rubrieken leeg zijn. Zie het punt hieronder
+  over het opnieuw indelen van de Ontdekken-hub: met de eerste vulling is
+  "Wie is wie" niet leeg meer en blijft alleen "Waar gebeurde het" over.
+- **Ontdekken-hub opnieuw indelen: Ontdekken → rubriek → onderwerp →
+  artikel.** De eerste twee lagen bestaan al (`ontdekRubrieken` met
+  `onderwerpen[]`); wat ontbreekt is een artikellaag met eigen config, zoals
+  `ONTDEK_WOORDENBOEK` die nu al heeft. Per artikel: `id`, `titel`,
+  `onderwerp`, `samenvatting`, `tekst`, `zieOok`, `zichtbaar` (half af werk
+  kan dan in het bestand blijven staan) en `volgorde`. Een rubriek met weinig
+  artikelen slaat de onderwerplaag over en toont meteen de artikelen. Het
+  woordenboek wordt een rubriek als alle andere. Rubrieksnamen open houden
+  ("Wie is wie", niet "De twaalf apostelen"), zodat één artikel al genoeg is
+  en het menu niet onaf lijkt. Eerste vulling: artikel "Jakobus de
+  Rechtvaardige" in de rubriek Wie is wie, onderwerp apostelen; tekst staat in
+  de chat van 18 september 2026. Raakt twee bestaande punten: het punt
+  hierboven over lege rubrieken en het punt onderaan over eigen webadressen
+  (de artikel-`id` kan meteen als slug voor een latere URL dienen).
 - **Avatarbeschrijvingen liggen klaar, maar er is geen plek om ze te tonen.**
   De set is sinds 07-09 compleet: alle tien de avatars hebben een alinea. De
   parkeerreden — een halve set — is daarmee vervallen. Wat ontbreekt is de
@@ -59,3 +75,7 @@ Om vindbaar te worden op zoekopdrachten als "wat is een plengoffer" zouden die
 artikelen eigen HTML-pagina's moeten worden, zoals de kerkpagina's dat al zijn.
 Dat is bouwwerk, geen opschoning, en het staat los van de release van
 1 oktober.
+
+Zie het punt over het opnieuw indelen van de Ontdekken-hub, onder "Bouw en
+gedrag van het spel": de artikel-`id` uit die indeling kan meteen als slug voor
+zo'n latere URL dienen.
