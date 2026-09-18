@@ -5472,7 +5472,7 @@ vragenData["Jakobus"] = {
     ],
     expert: [
         {
-            vraag: "Welk klein lichaamsdeel kan volgens Jakobus veel goeds én veel kwaads doen, net zoals een klein vuurtje een hele bos in brand kan zetten?",
+            vraag: "Welk klein lichaamsdeel kan volgens Jakobus veel goeds én veel kwaads doen, net zoals een klein vuurtje een heel bos in brand kan zetten?",
             antwoorden: ["de tong", "het oog", "de hand", "de voet"],
             correct: "de tong",
             bijbelplaats: "Jakobus 3:5-6"
@@ -5487,20 +5487,21 @@ vragenData["Jakobus"] = {
             vraag: "In het boek Handelingen komt een Jakobus voor die een belangrijke leider was onder de eerste christenen. In welke stad leidde hij de gemeente?",
             antwoorden: ["Jeruzalem", "Rome", "Antiochië", "Korinte"],
             correct: "Jeruzalem",
-            bijbelplaats: "Handelingen 15:13 · Galaten 2:9"
+            bijbelplaats: "Handelingen 15:13 · Galaten 2:9",
+            uitleg: "Jakobus was een belangrijke leider van de eerste christelijke gemeente in Jeruzalem. In het Nieuwe Testament wordt hij \"de broer van de Heer\" genoemd. Later kreeg hij de bijnaam Jakobus de Rechtvaardige.\n\nIn de talen van de Bijbel kon het woord dat wij met \"broer\" vertalen ook een andere naaste verwant aanduiden. Een duidelijk voorbeeld is Abraham en Lot. Lot was de neef van Abraham, maar Abraham zegt toch tegen hem: \"wij zijn broers\" (Genesis 13:8). Sommige moderne Bijbelvertalingen vertalen dit daarom met: \"wij zijn familie\".\n\n\"De broer van de Heer\" betekent dus niet vanzelf dat Jakobus een zoon van Maria en Jozef was. In deze quiz houden we de oude uitleg aan dat hij een naaste verwant van Jezus was, waarschijnlijk een neef. Dat past bij wat de evangelisten schrijven. Matteüs noemt de broers van Jezus bij naam: Jakobus, Jozef, Simon en Judas (Matteüs 13:55). Bij het kruis staat \"Maria, de moeder van Jakobus en Jozef\" — dezelfde twee namen, maar zij is een andere Maria dan de moeder van Jezus, die in datzelfde vers apart genoemd wordt (Matteüs 27:56, Marcus 15:40). Ook valt op dat er bij de geboorte van Jezus en bij de zoektocht naar de twaalfjarige Jezus in de tempel nergens andere kinderen genoemd worden.\n\nAndere christenen lezen \"broer\" hier wél als een broer. De Bijbel zelf legt de familieband niet uit."
         },
         {
-            vraag: "Jakobus haalt het gebod 'heb je naaste lief als jezelf' aan en geeft die wet een bijzondere naam. Hoe noemt hij hem?",
+            vraag: "Jakobus haalt het gebod \"heb je naaste lief als jezelf\" aan en geeft die wet een bijzondere naam. Hoe noemt hij hem?",
             antwoorden: ["De koninklijke wet", "De gouden wet", "De oude wet", "De eerste wet"],
             correct: "De koninklijke wet",
             bijbelplaats: "Jakobus 2:8",
-            uitleg: "Koninklijk betekent hier: van de koning. Jakobus bedoelt God als koning — dit is de wet van Zijn koninkrijk, de regel waar alle andere regels aan opgehangen worden. Je hoort ook wel spreken over de \"gouden regel\"; dat is een andere uitdrukking, voor: behandel anderen zoals je zelf behandeld wilt worden."
+            uitleg: "Jakobus noemt \"heb je naaste lief als jezelf\" de koninklijke wet. Koninklijk laat zien hoe belangrijk deze wet is en dat ze hoort bij het leven onder Gods koningschap. De \"gouden regel\" is iets anders: behandel anderen zoals je zelf behandeld wilt worden."
         },
         {
-            vraag: "Jakobus zegt dat het gebed van een gelovige veel kan doen. Welke profeet bad, en daarna regende het drieëneenhalf jaar niet?",
-            antwoorden: ["Elia", "Elisa", "Jesaja", "Jeremia"],
-            correct: "Elia",
-            bijbelplaats: "Jakobus 5:17"
+            vraag: "Na drieënhalf jaar droogte bad Elia opnieuw. Wat gebeurde er toen?",
+            antwoorden: ["De hemel gaf regen en de aarde bracht weer vruchten voort", "De droogte duurde nog drie jaar", "Er kwam een sprinkhanenplaag over het land", "De Jordaan droogde helemaal op"],
+            correct: "De hemel gaf regen en de aarde bracht weer vruchten voort",
+            bijbelplaats: "Jakobus 5:17-18"
         },
         {
             vraag: "Wat ontvangt volgens Jakobus de mens die moeilijke tijden geduldig doorstaat en van God blijft houden?",
@@ -5510,7 +5511,7 @@ vragenData["Jakobus"] = {
             uitleg: "Een kroon was in die tijd niet alleen iets voor koningen. Wie een hardloopwedstrijd won, kreeg een krans op zijn hoofd. Jakobus gebruikt dat beeld: wie volhoudt, krijgt van God niet zomaar een prijs, maar het leven zelf als erekrans."
         },
         {
-            vraag: "Welke man uit het Oude Testament wordt door Jakobus 'een vriend van God' genoemd, omdat zijn geloof bleek uit wat hij deed?",
+            vraag: "Welke man uit het Oude Testament wordt door Jakobus \"een vriend van God\" genoemd, omdat zijn geloof bleek uit wat hij deed?",
             antwoorden: ["Abraham", "Noach", "Mozes", "Henoch"],
             correct: "Abraham",
             bijbelplaats: "Jakobus 2:23"
@@ -5534,17 +5535,17 @@ vragenData["Jakobus"] = {
             bijbelplaats: "Jakobus 5:9"
         },
         {
-            vraag: "Jakobus schrijft aan de twaalf stammen \"in de verstrooiing\". Wat betekent dat?",
-            antwoorden: ["De Joden die buiten Israël woonden, verspreid over het hele rijk", "De gelovigen die zich verstopt hielden voor vervolging", "De stammen die onderling ruzie hadden gekregen", "De mensen die hun geloof waren kwijtgeraakt"],
-            correct: "De Joden die buiten Israël woonden, verspreid over het hele rijk",
+            vraag: "Jakobus schrijft aan de \"twaalf stammen in de verstrooiing\". Met welke groep worden deze woorden meestal in verband gebracht?",
+            antwoorden: ["Met christenen van Joodse afkomst die verspreid in verschillende gebieden leefden", "Met Joden die nog nooit van Jezus hadden gehoord", "Met christenen die zich voor vervolging verborgen hielden", "Met de twaalf stammen die onderling ruzie hadden gekregen"],
+            correct: "Met christenen van Joodse afkomst die verspreid in verschillende gebieden leefden",
             bijbelplaats: "Jakobus 1:1",
-            uitleg: "Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin. Sommigen waren ooit weggevoerd, anderen waren voor handel of werk vertrokken. Zo ontstonden Joodse gemeenschappen in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord daarvoor is diaspora, verstrooiing — alsof zaad is uitgestrooid over een groot veld. Juist door die verspreiding kon het christelijk geloof zich later zo snel verbreiden: Paulus vond in elke stad die hij bezocht al een synagoge waar hij kon beginnen."
+            uitleg: "\"Verstrooiing\", of diaspora, werd gebruikt voor Joden die verspreid buiten het land Israël leefden. Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin: in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord diaspora betekent verstrooiing, alsof zaad is uitgestrooid over een groot veld.\n\nJakobus schrijft aan volgelingen van Jezus. Daarom worden de \"twaalf stammen in de verstrooiing\" meestal in verband gebracht met christenen met een Joodse achtergrond die verspreid in verschillende gebieden leefden. Sommige uitleggers verstaan de twaalf stammen nog ruimer als een beeld voor alle christenen."
         },
         {
-            vraag: "Jakobus vergelijkt de tong met twee kleine dingen die iets groots sturen. Welke twee zijn dat?",
-            antwoorden: ["Het bit in de bek van een paard en het roer van een schip", "De sleutel van een poort en het slot van een kist", "De pen van een schrijver en het zegel van een koning", "De vonk van een vuursteen en de lont van een lamp"],
-            correct: "Het bit in de bek van een paard en het roer van een schip",
-            bijbelplaats: "Jakobus 3:3-5"
+            vraag: "Jakobus beschrijft wat volgens God zuivere godsdienst is. Voor welke mensen moeten gelovigen volgens hem bijzonder zorgen?",
+            antwoorden: ["Voor wezen en weduwen die het moeilijk hebben", "Voor rijke mensen die veel aan de gemeente geven", "Voor Romeinse soldaten die na hun diensttijd naar huis terugkeerden", "Voor reizigers die naar Jeruzalem gaan"],
+            correct: "Voor wezen en weduwen die het moeilijk hebben",
+            bijbelplaats: "Jakobus 1:27"
         }
     ]
 };
