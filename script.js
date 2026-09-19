@@ -5550,7 +5550,7 @@ vragenData["Jakobus"] = {
     ]
 };
 
-// Petrus & Judas — vragenpool (42 vragen: beginner 13, advanced 15, expert 14)
+// Petrus & Judas — vragenpool (44 vragen: beginner 13, advanced 17, expert 14)
 // Algemene brieven. Bundel uit 1 & 2 Petrus en Judas — gedeeld thema:
 // waarschuwing tegen dwaalleraars. Formaat gelijk aan de andere boeken:
 // vragenData["Petrus & Judas"] met drie niveaus (beginner/advanced/expert).
@@ -5640,11 +5640,11 @@ vragenData["Petrus & Judas"] = {
     ],
     advanced: [
         {
-            vraag: "Waarmee vergelijkt Petrus de duivel, die rondsluipt en zoekt wie hij kan pakken?",
+            vraag: "Petrus waarschuwt de gelovigen met een krachtig beeld: de duivel gaat rond als welk dier?",
             antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
             correct: "Een brullende leeuw",
             bijbelplaats: "1 Petrus 5:8",
-            uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Een leeuw brult vooral als hij op jacht is, en dat geluid draagt kilometers ver: het maakt bang en zorgt dat je in paniek de verkeerde kant op rent. Petrus kiest dat beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. Jakobus zegt het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
+            uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Zijn gebrul draagt onder gunstige omstandigheden zo'n acht kilometer ver: daarmee laat hij horen dat dit zijn gebied is, en wie het hoort schrikt en weet niet waar het dier zit. Petrus kiest dat dreigende beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. Jakobus zegt het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
         },
         {
             vraag: "Waar kijken de gelovigen volgens Petrus naar uit, waar alles goed en eerlijk zal zijn?",
@@ -5653,22 +5653,24 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 3:13"
         },
         {
-            vraag: "Sommige mensen spotten: waarom is de Heer nog niet teruggekomen? Welke uitleg geeft Petrus?",
-            antwoorden: ["Hij wil dat niemand verloren gaat", "Hij is het vergeten", "Hij komt wel, maar gewoon wat later", "Hij wil de dwaalleraars eerst ontmaskeren"],
-            correct: "Hij wil dat niemand verloren gaat",
+            vraag: "Petrus schrijft dat God geduldig is met de mensen. Wat wil God volgens hem bereiken?",
+            antwoorden: ["Dat niemand verloren gaat en iedereen tot inkeer komt", "Dat de dwaalleraars zichzelf verraden", "Dat de gelovigen leren wachten", "Dat de wereld nog een tijd rustig blijft"],
+            correct: "Dat niemand verloren gaat en iedereen tot inkeer komt",
             bijbelplaats: "2 Petrus 3:9"
         },
         {
             vraag: "Petrus zegt: heb elkaar vurig lief, want de liefde bedekt iets. Wat bedekt de liefde volgens hem?",
             antwoorden: ["Veel zonden", "Helemaal niets", "Alleen kleine foutjes", "Alleen je eigen fouten"],
             correct: "Veel zonden",
-            bijbelplaats: "1 Petrus 4:8"
+            bijbelplaats: "1 Petrus 4:8",
+            uitleg: "Petrus bedoelt niet dat je verkeerde dingen moet verbergen. Liefde helpt om elkaar te vergeven en niet ieder foutje tegen elkaar te blijven gebruiken."
         },
         {
             vraag: "Petrus zegt dat je altijd bereid moet zijn om je te verantwoorden als iemand ernaar vraagt. Waarover moet je dan kunnen vertellen?",
             antwoorden: ["Over de hoop die in je leeft", "Over de fouten die je hebt gemaakt", "Over de regels die je volgt", "Over de kerk waar je bij hoort"],
             correct: "Over de hoop die in je leeft",
-            bijbelplaats: "1 Petrus 3:15"
+            bijbelplaats: "1 Petrus 3:15",
+            uitleg: "Met die hoop bedoelt Petrus het vertrouwen dat je op God hebt en de verwachting van wat Hij heeft beloofd."
         },
         {
             vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: 'Wees …, want Ik ben …'",
@@ -5684,7 +5686,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus zegt dat Christus ons een voorbeeld heeft nagelaten. Met welk beeld zegt hij hoe wij Hem moeten volgen?",
-            antwoorden: ["Door in Zijn voetstappen te treden", "Door Zijn juk te dragen", "Door Zijn kruis op te nemen", "Door in Zijn licht te wandelen"],
+            antwoorden: ["Door in Zijn voetstappen te treden", "Door Zijn mantel te dragen", "Door Zijn woorden uit je hoofd te leren", "Door de weg te nemen die Hij heeft aangewezen"],
             correct: "Door in Zijn voetstappen te treden",
             bijbelplaats: "1 Petrus 2:21"
         },
@@ -5695,10 +5697,11 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 3:9"
         },
         {
-            vraag: "Petrus schrijft: jullie zijn niet vrijgekocht met goud of zilver, maar met iets veel kostbaarders van Christus, als van een lam zonder gebrek. Waarmee dan wel?",
-            antwoorden: ["Met Zijn bloed", "Met Zijn woord", "Met Zijn brood", "Met Zijn water"],
-            correct: "Met Zijn bloed",
-            bijbelplaats: "1 Petrus 1:18-19"
+            vraag: "Petrus schrijft dat gelovigen niet met goud of zilver zijn vrijgekocht. Wat was volgens hem veel kostbaarder?",
+            antwoorden: ["Het kostbare bloed van Christus, als van een lam zonder gebrek", "De schatten van de tempel", "De wijsheid van de priesters", "De rijkdom van koningen"],
+            correct: "Het kostbare bloed van Christus, als van een lam zonder gebrek",
+            bijbelplaats: "1 Petrus 1:18-19",
+            uitleg: "Vrijkopen betekende in die tijd iets heel concreets: voor een slaaf werd een prijs betaald, en daarna was hij vrij. Petrus gebruikt dat beeld, maar draait het om. De prijs was geen goud of zilver, want daar koop je gewone dingen mee. Hij noemt het kostbare bloed van Christus, en vergelijkt Hem met een lam zonder gebrek, zoals het lam dat bij Pesach werd geslacht."
         },
         {
             vraag: "Petrus noemt een rijtje eigenschappen die je bij je geloof moet voegen. Welke zet hij als laatste, als kroon op alles?",
@@ -5729,6 +5732,18 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Met levende stenen", "Met sterke pilaren", "Met houten balken", "Met hoge muren"],
             correct: "Met levende stenen",
             bijbelplaats: "1 Petrus 2:5"
+        },
+        {
+            vraag: "Petrus vergelijkt het woord van de profeten met iets dat schijnt op een donkere plaats. Aan welk voorwerp denkt hij daarbij?",
+            antwoorden: ["Met een lamp", "Met een fakkel", "Met een vuurtoren", "Met een bliksemflits"],
+            correct: "Met een lamp",
+            bijbelplaats: "2 Petrus 1:19"
+        },
+        {
+            vraag: "Petrus schrijft dat je een gave van God in bruikleen hebt, zoals een goede beheerder. Wat betekent dat?",
+            antwoorden: ["Je gebruikt hem om anderen te dienen", "Je mag hem houden omdat je hem verdiend hebt", "Je bewaart hem tot je volwassen bent", "Je laat ermee zien dat je beter bent dan anderen"],
+            correct: "Je gebruikt hem om anderen te dienen",
+            bijbelplaats: "1 Petrus 4:10"
         }
     ],
     expert: [
