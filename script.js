@@ -5617,11 +5617,11 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 2:5"
         },
         {
-            vraag: "Petrus schrijft dat de duivel rondgaat als een brullende leeuw. Waarom juist een leeuw?",
-            antwoorden: ["Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver", "Leeuwen kwamen alleen 's nachts en waren daarom eng", "De leeuw was het teken van de Romeinse keizer", "Leeuwen werden in de tempel gebruikt als versiering"],
-            correct: "Een leeuw was het gevaarlijkste roofdier dat men kende, en zijn gebrul hoorde je van ver",
-            bijbelplaats: "1 Petrus 5:8",
-            uitleg: "In het gebied waar Petrus' lezers woonden kwamen echt leeuwen voor. Een leeuw brult vooral als hij op jacht is: het geluid maakt bang en zorgt dat je in paniek de verkeerde kant op rent. Petrus kiest dat beeld met opzet, maar hij zegt er meteen bij: blijf nuchter en waakzaam. Gebrul is nog geen sprong."
+            vraag: "Petrus schrijft dat ons geloof wordt beproefd zoals iets kostbaars in het vuur wordt gezuiverd. Wat noemt hij als voorbeeld?",
+            antwoorden: ["Goud", "Zilver", "IJzer", "Edelstenen"],
+            correct: "Goud",
+            bijbelplaats: "1 Petrus 1:7",
+            uitleg: "Goud werd sterk verhit om het te zuiveren. Onzuiverheden konden daardoor worden verwijderd. Petrus gebruikt dat als beeld: moeilijke tijden kunnen laten zien hoe sterk en echt je geloof is. En volgens Petrus is geloof uiteindelijk zelfs kostbaarder dan goud."
         },
         {
             vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
@@ -5635,7 +5635,7 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor Hem", "God heeft duizend jaar nodig om iets te doen", "Elke dag telt bij God duizend keer mee", "De wereld bestaat precies duizend jaar"],
             correct: "God rekent de tijd anders dan wij; wat lang duurt voor ons, is dat niet voor Hem",
             bijbelplaats: "2 Petrus 3:8",
-            uitleg: "Petrus schrijft dit aan mensen die ongeduldig werden: waarom duurt het zo lang voordat Jezus terugkomt? Zijn antwoord is niet dat God traag is, maar dat God niet in onze tijd leeft. Wat voor ons eindeloos lang lijkt, is dat voor Hem niet. In het vers erna legt hij uit waarom het dan toch duurt: God geeft mensen de tijd."
+            uitleg: "Petrus schrijft dit aan mensen die ongeduldig werden: waarom duurt het zo lang voordat Jezus terugkomt? Zijn antwoord is niet dat God traag is. God is niet aan de tijd gebonden zoals wij. Wat voor ons heel lang lijkt, is voor Hem niet hetzelfde. In het vers erna legt Petrus uit waarom God nog wacht: Hij is geduldig en geeft mensen de tijd."
         }
     ],
     advanced: [
@@ -5643,7 +5643,8 @@ vragenData["Petrus & Judas"] = {
             vraag: "Waarmee vergelijkt Petrus de duivel, die rondsluipt en zoekt wie hij kan pakken?",
             antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
             correct: "Een brullende leeuw",
-            bijbelplaats: "1 Petrus 5:8"
+            bijbelplaats: "1 Petrus 5:8",
+            uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Een leeuw brult vooral als hij op jacht is, en dat geluid draagt kilometers ver: het maakt bang en zorgt dat je in paniek de verkeerde kant op rent. Petrus kiest dat beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. Jakobus zegt het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
         },
         {
             vraag: "Waar kijken de gelovigen volgens Petrus naar uit, waar alles goed en eerlijk zal zijn?",
