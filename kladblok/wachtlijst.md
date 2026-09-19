@@ -79,3 +79,19 @@ Dat is bouwwerk, geen opschoning, en het staat los van de release van
 Zie het punt over het opnieuw indelen van de Ontdekken-hub, onder "Bouw en
 gedrag van het spel": de artikel-`id` uit die indeling kan meteen als slug voor
 zo'n latere URL dienen.
+
+## Groter werk: Engelse versie later mogelijk maken
+
+`lang/nl.js` bevat de UI-teksten al, dus die stap is gezet. Wat nog aan het
+Nederlands vastzit:
+
+1. **De vragenpools staan in `script.js`** en zijn niet vertaalbaar maar
+   herschrijfbaar — ze hangen aan Nederlandse vertaalkeuzes.
+2. **Boeknamen zijn tegelijk sleutel en weergave** (`vragenData`, `boekNaarKey`,
+   bestandsnamen van trofeeën). Dat vraagt om een taalvrije sleutel met een
+   aparte weergavenaam.
+3. **De denominatielijn gaat uit van het Nederlandse kerklandschap** en werkt
+   anders in het Engels.
+
+Nu geen voorbereidend werk doen, wel de afspraak: **elke nieuwe structuur krijgt
+een taalvrije id als sleutel en de zichtbare tekst in een apart veld.**
