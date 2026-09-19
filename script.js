@@ -5860,7 +5860,8 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes zegt: als we onze fouten (zonden) eerlijk aan God vertellen, wat doet God dan volgens hem?",
             antwoorden: ["Hij vergeeft ze en maakt ons weer schoon", "Hij vergeeft ze als we het niet meer doen", "Hij vergeeft ze na verloop van tijd", "Hij vergeeft alleen onze kleine zonden"],
             correct: "Hij vergeeft ze en maakt ons weer schoon",
-            bijbelplaats: "1 Johannes 1:9"
+            bijbelplaats: "1 Johannes 1:9",
+            uitleg: "Je zonden belijden betekent dat je eerlijk tegen God zegt wat je verkeerd hebt gedaan. Dat doe je niet om God iets te vertellen wat Hij nog niet weet, maar omdat het opgeruimd staat tussen jullie. Hoe gelovigen dat doen, verschilt. De een bidt het thuis. In de kerk spreken de gelovigen het vaak samen uit, aan het begin van de dienst; dat heet een schuldbelijdenis. In de Katholieke Kerk bestaat daarnaast de biecht."
         },
         {
             vraag: "Johannes zegt: laten we niet liefhebben met alleen mooie woorden. Hoe moeten we het dan wél doen?",
@@ -5878,7 +5879,8 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Wat verdrijft volgens Johannes de angst helemaal?",
             antwoorden: ["De volmaakte liefde", "Een sterk geloof", "Veel kennis van God", "Het houden van de geboden"],
             correct: "De volmaakte liefde",
-            bijbelplaats: "1 Johannes 4:18"
+            bijbelplaats: "1 Johannes 4:18",
+            uitleg: "Johannes zegt dat liefde en angst uiteindelijk niet bij elkaar passen. Waar de liefde volmaakt wordt, hoeft angst niet de baas te zijn. In de verzen eromheen denkt Johannes ook aan angst voor oordeel en straf, maar zijn woorden gaan verder: wie steeds meer leert vertrouwen op Gods liefde, hoeft niet door angst beheerst te worden. Dat betekent niet dat een gelovige nooit bang kan zijn; Johannes laat zien welke kant Gods liefde met een mens op wil."
         },
         {
             vraag: "Johannes schrijft over de Zoon, Jezus. Wat heeft volgens hem iedereen die de Zoon heeft?",
@@ -5899,7 +5901,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:1"
         },
         {
-            vraag: "Johannes gebruikt het beeld van wandelen. Wie met God leeft, wandelt in het licht. Hoe noemt hij het leven van wie niet met God leeft?",
+            vraag: "Johannes gebruikt het beeld van wandelen. Iemand zegt dat hij bij God hoort, maar leeft daar niet naar. Welk beeld gebruikt Johannes daarvoor?",
             antwoorden: ["Wandelen in het donker", "Wandelen in de woestijn", "Wandelen op een doodlopende weg", "Wandelen zonder ergens aan te komen"],
             correct: "Wandelen in het donker",
             bijbelplaats: "1 Johannes 1:6-7"
@@ -5914,7 +5916,8 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes heeft nog veel te vertellen, maar hij wil het niet allemaal met pen en inkt opschrijven. Wat wil hij liever doen?",
             antwoorden: ["Zelf bij hen langskomen en het persoonlijk vertellen", "Iemand anders het laten opschrijven", "Wachten tot ze zelf naar hem toe komen", "Het geheimhouden voor de anderen"],
             correct: "Zelf bij hen langskomen en het persoonlijk vertellen",
-            bijbelplaats: "2 Johannes 12; 3 Johannes 13"
+            bijbelplaats: "2 Johannes 12; 3 Johannes 13",
+            uitleg: "Johannes noemt zijn schrijfgerei zelf: in de ene brief papier en inkt, in de andere inkt en pen. Dat papier was papyrus, gemaakt van een rietplant, en de pen was een rietstengel die schuin was afgesneden. Johannes zegt eigenlijk: ik kan nog veel meer opschrijven, maar ik kom liever zelf langs om met jullie te praten. Daardoor merk je dat deze Bijbelboeken echte brieven waren tussen mensen die elkaar kenden."
         }
     ],
     advanced: [
