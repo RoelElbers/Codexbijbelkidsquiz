@@ -55,6 +55,18 @@ elk antwoord herhaald hoeft te worden.*
   paragraaf, voor de twee keuzes die daarbij horen.
 - **`BETA_MODUS` op `false`.** `script.js` r. 4. Zolang die op `true` staat toont
   het startscherm het "TESTVERSIE"-lint. Moet om vóór de release.
+- **Aanhalingstekens in antwoorden gelijktrekken binnen een pool.** Bij Brieven
+  van Johannes brons staan bij vraag 8 alle vier de antwoorden tussen enkele
+  aanhalingstekens ('Mijn kinderen' enz.), terwijl vraag 7 ze alleen om één
+  woord in het goede antwoord heeft ('kinderen'). Aanhalingstekens in maar één
+  optie trekken de aandacht en kunnen een aanwijzing worden. Meenemen bij het
+  doorlopen van die pool, en daarna breder nakijken: staan er elders
+  antwoordsets waarin maar één optie aanhalingstekens heeft?
+- **Brieven van Johannes is scheef verdeeld: 11 brons, 15 zilver, 26 goud.**
+  Goud is twee keer zo groot als bij de andere boeken en brons de kleinste van
+  de game, waardoor in brons bijna elke vraag elke ronde langskomt. Bij het
+  doorlopen van goud nagaan of er vragen bij zitten die eigenlijk brons of
+  zilver zijn.
 
 ## Vragenwerk
 
