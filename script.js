@@ -5550,7 +5550,7 @@ vragenData["Jakobus"] = {
     ]
 };
 
-// Petrus & Judas — vragenpool (44 vragen: beginner 13, advanced 17, expert 14)
+// Petrus & Judas — vragenpool (45 vragen: beginner 13, advanced 17, expert 15)
 // Algemene brieven. Bundel uit 1 & 2 Petrus en Judas — gedeeld thema:
 // waarschuwing tegen dwaalleraars. Formaat gelijk aan de andere boeken:
 // vragenData["Petrus & Judas"] met drie niveaus (beginner/advanced/expert).
@@ -5760,9 +5760,9 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "Judas 24"
         },
         {
-            vraag: "Welke titel geeft Petrus aan Jezus, die over alle gelovigen waakt?",
-            antwoorden: ["De opperherder", "De goede herder", "De grote herder", "De trouwe herder"],
-            correct: "De opperherder",
+            vraag: "Welke bijzondere titel geeft Petrus aan Jezus, die over alle gelovigen waakt?",
+            antwoorden: ["De hoogste herder (Opperherder)", "De herder van de apostelen", "De tempelherder", "De herder van Jeruzalem"],
+            correct: "De hoogste herder (Opperherder)",
             bijbelplaats: "1 Petrus 5:4"
         },
         {
@@ -5805,7 +5805,8 @@ vragenData["Petrus & Judas"] = {
             vraag: "Judas haalt een profetie aan van een man uit de oertijd, de zevende vanaf Adam. Wie was die man?",
             antwoorden: ["Henoch", "Noach", "Metusalem", "Set"],
             correct: "Henoch",
-            bijbelplaats: "Judas 14"
+            bijbelplaats: "Judas 14",
+            uitleg: "Judas haalt hier een oude profetie van Henoch aan. Deze woorden zijn ook bekend uit het oude Boek Henoch, een Joods geschrift uit de eeuwen rond de tijd van Jezus. In de meeste christelijke Bijbels staat dit boek niet. In Ethiopië is dat anders: de Ethiopisch-Orthodoxe Tewahedo Kerk heeft het Boek Henoch wel in haar Bijbel staan."
         },
         {
             vraag: "Petrus richt zijn eerste brief aan gelovigen die verspreid wonen. Hoe noemt hij hen?",
@@ -5814,16 +5815,17 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 1:1"
         },
         {
-            vraag: "In de tweede brief van Petrus staat een verhaal over een profeet die verkeerd bezig was. Wat deed zijn ezel om hem te waarschuwen?",
+            vraag: "Petrus verwijst naar het verhaal van Bileam, die de verkeerde weg opging. Wat deed zijn ezel om hem te waarschuwen?",
             antwoorden: ["De ezel begon te praten", "De ezel vloog weg", "De ezel werd onzichtbaar", "De ezel veranderde in goud"],
             correct: "De ezel begon te praten",
-            bijbelplaats: "2 Petrus 2:16"
+            bijbelplaats: "2 Petrus 2:15-16"
         },
         {
             vraag: "Judas vertelt over een aartsengel die met de duivel streed over het lichaam van Mozes. Hoe heet die aartsengel?",
             antwoorden: ["Michaël", "Gabriël", "Rafaël", "Uriël"],
             correct: "Michaël",
-            bijbelplaats: "Judas 9"
+            bijbelplaats: "Judas 9",
+            uitleg: "Dit verhaal over Michaël en het lichaam van Mozes staat niet in het Oude Testament zelf. Judas verwijst hier naar een oude Joodse overlevering. Vroege christelijke schrijvers brachten het verhaal in verband met een oud geschrift dat de Opneming van Mozes wordt genoemd. Van dat werk is tegenwoordig niet alles bewaard gebleven. Judas gebruikt het verhaal om te laten zien dat zelfs de aartsengel Michaël niet op eigen gezag de duivel veroordeelde, maar het oordeel aan God overliet."
         },
         {
             vraag: "Petrus schrijft: \"omgord de lendenen van je verstand\". Waar komt dat beeld vandaan?",
@@ -5831,6 +5833,13 @@ vragenData["Petrus & Judas"] = {
             correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
             bijbelplaats: "1 Petrus 1:13",
             uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel, zodat hij vrij kon bewegen. Het beeld betekent dus: maak je klaar om aan de slag te gaan. Het bijzondere is dat Petrus het niet over je benen heeft maar over je denken — houd je gedachten bij elkaar in plaats van ze alle kanten op te laten waaien."
+        },
+        {
+            vraag: "Aan het einde van zijn eerste brief stuurt Petrus groeten vanuit een plaats die hij \"Babylon\" noemt. Welke stad wordt daarmee vrijwel zeker bedoeld?",
+            antwoorden: ["Rome", "Jeruzalem", "Antiochië", "Alexandrië"],
+            correct: "Rome",
+            bijbelplaats: "1 Petrus 5:13",
+            uitleg: "Petrus schrijft letterlijk dat hij groeten stuurt vanuit \"Babylon\". Toch bedoelt hij vrijwel zeker Rome. De oude stad Babylon aan de Eufraat was in zijn tijd al grotendeels verlaten, en geen enkele oude bron plaatst Petrus daar. De vroege christenen verbinden hem juist met Rome, waar hij volgens die overlevering ook gestorven is. \"Babylon\" was toen een bijnaam voor Rome: de grote stad die macht heeft over de wereld en Gods volk vervolgt. Ook Openbaring gebruikt die naam zo."
         }
     ]
 };
