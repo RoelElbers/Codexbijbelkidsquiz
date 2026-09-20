@@ -5901,7 +5901,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:1"
         },
         {
-            vraag: "Johannes gebruikt het beeld van wandelen. Iemand zegt dat hij bij God hoort, maar leeft daar niet naar. Welk beeld gebruikt Johannes daarvoor?",
+            vraag: "Johannes gebruikt het beeld van wandelen. Iemand zegt dat hij bij God hoort, maar leeft daar niet naar. Hoe wandelt zo iemand volgens Johannes?",
             antwoorden: ["Wandelen in het donker", "Wandelen in de woestijn", "Wandelen op een doodlopende weg", "Wandelen zonder ergens aan te komen"],
             correct: "Wandelen in het donker",
             bijbelplaats: "1 Johannes 1:6-7"
@@ -5937,11 +5937,12 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes geeft een test waarmee je kunt nagaan of iemand de waarheid spreekt. Wat moet zo iemand erkennen over Jezus?",
             antwoorden: ["Dat Hij echt mens is geworden, van vlees en bloed", "Dat Hij uit de hemel is neergedaald", "Dat Hij de Zoon van David is", "Dat Hij de grootste profeet is"],
             correct: "Dat Hij echt mens is geworden, van vlees en bloed",
-            bijbelplaats: "1 Johannes 4:2"
+            bijbelplaats: "1 Johannes 4:2",
+            uitleg: "Johannes waarschuwde voor leraren die niet wilden geloven dat Jezus echt als mens van vlees en bloed was gekomen. Daarom vindt hij dit zo belangrijk: Jezus leek niet alleen mens, Hij is werkelijk mens geworden."
         },
         {
             vraag: "Johannes zegt zelf waarom hij zijn brief geschreven heeft. Waar moesten zijn lezers zeker van worden?",
-            antwoorden: ["Dat zij het eeuwige leven hebben", "Dat hun zonden vergeven zijn", "Dat Jezus terugkomt", "Dat zij gelijk hebben tegenover de dwaalleraars"],
+            antwoorden: ["Dat zij het eeuwige leven hebben", "Dat zij zelf nooit meer iets verkeerds zouden doen", "Dat hun gemeente de belangrijkste gemeente was", "Dat zij alle moeilijke vragen over God konden beantwoorden"],
             correct: "Dat zij het eeuwige leven hebben",
             bijbelplaats: "1 Johannes 5:13"
         },
@@ -5949,7 +5950,7 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes waarschuwt voor de antichrist, iemand die tégen Christus ingaat en de mensen wil misleiden. Hij noemt één ding waaraan je zo iemand kunt herkennen. Waaraan herken je hem volgens Johannes?",
             antwoorden: ["Hij ontkent dat Jezus de Christus is", "Hij komt pas helemaal aan het einde van de tijd", "Hij is erg machtig", "Hij noemt zichzelf koning over de hele wereld"],
             correct: "Hij ontkent dat Jezus de Christus is",
-            bijbelplaats: "1 Johannes 2:18"
+            bijbelplaats: "1 Johannes 2:18, 22"
         },
         {
             vraag: "Johannes sluit zijn eerste brief af met een korte, krachtige waarschuwing. Waarvoor moeten de gelovigen oppassen?",
@@ -5979,7 +5980,8 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke drie dingen noemt hij?",
             antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "De grote liefde voor geld, de jacht op macht en het verlangen naar roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
             correct: "De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed",
-            bijbelplaats: "1 Johannes 2:16"
+            bijbelplaats: "1 Johannes 2:16",
+            uitleg: "Johannes waarschuwt voor verlangens die een mens kunnen gaan beheersen en voor een houding waarin je jezelf centraal zet.\n\nTrots: jezelf beter of belangrijker vinden dan een ander.\n\nHoogmoed: jezelf boven God plaatsen; leven alsof jij uiteindelijk zelf bepaalt wat goed is en God niet nodig hebt."
         },
         {
             vraag: "Waaraan hebben wij volgens Johannes geleerd wat liefde is?",
@@ -5989,7 +5991,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Soms klaagt je eigen hart je aan en voel je je schuldig, ook als je alles al aan God verteld hebt. Wat schrijft Johannes tegen wie dat overkomt?",
-            antwoorden: ["God is groter dan je hart en weet alles", "Dan heb je vast toch nog iets verkeerds gedaan", "Dan moet je het nog een keer vragen", "Dan luister je naar de verkeerde stem"],
+            antwoorden: ["God is groter dan je hart en weet alles", "Dan heb je vast toch nog iets verkeerds gedaan", "Dan moet je nog een keer om vergeving vragen", "Dan luister je naar de verkeerde stem"],
             correct: "God is groter dan je hart en weet alles",
             bijbelplaats: "1 Johannes 3:20"
         },
@@ -5998,7 +6000,7 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Er werd olie over iemands hoofd gegoten", "Er werd water over iemands handen gegoten", "Er werd een ring aan iemands vinger geschoven", "Er werd een mantel om iemands schouders gelegd"],
             correct: "Er werd olie over iemands hoofd gegoten",
             bijbelplaats: "1 Johannes 2:20",
-            uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt het beeld om hen moed te geven — jullie horen er echt bij."
+            uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt dit beeld voor iets dat de gelovigen van God hebben ontvangen en waardoor zij de waarheid kunnen herkennen en niet zomaar met misleiding hoeven mee te gaan."
         },
         {
             vraag: "Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat?",
@@ -6008,7 +6010,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes geeft aan het begin van zijn brief een boodschap door die hij van Jezus zelf gehoord heeft: in God is helemaal geen duisternis. Wat is God dan wél, volgens die boodschap?",
-            antwoorden: ["Licht", "Geest", "Vuur", "Waarheid"],
+            antwoorden: ["Licht", "Een spiegel", "Een schaduw", "Een echo"],
             correct: "Licht",
             bijbelplaats: "1 Johannes 1:5"
         }
