@@ -7851,15 +7851,15 @@ const verborgenSchatVragen = [
         bijbelplaats: "Openbaring 12:14"
     },
     {
-        vraag: "In Openbaring ziet Johannes vier levende wezens rond Gods troon: een leeuw, een rund, een mens en een arend. Uit het visioen van welke profeet komt dit beeld oorspronkelijk?",
+        vraag: "In Openbaring ziet Johannes vier levende wezens rond Gods troon: een leeuw, een jonge stier, een mens en een arend. Uit het visioen van welke profeet komt dit beeld oorspronkelijk?",
         antwoorden: ["Jesaja", "Ezechiël", "Daniël", "Jeremia"],
         correct: "Ezechiël",
         bijbelplaats: "Ezechiël 1:10 · Openbaring 4:7"
     },
     {
         vraag: "Helemaal aan het begin van de Bijbel, in het paradijs, staat een bijzondere boom. Aan het einde van Openbaring staat diezelfde boom er weer. Welke boom is dat?",
-        antwoorden: ["De olijfboom", "De vijgenboom", "De boom des levens", "De boom van kennis van goed en kwaad"],
-        correct: "De boom des levens",
+        antwoorden: ["De olijfboom", "De vijgenboom", "De boom van het leven", "De boom van kennis van goed en kwaad"],
+        correct: "De boom van het leven",
         bijbelplaats: "Genesis 2:9 · Openbaring 22:2"
     },
     {
@@ -7921,11 +7921,11 @@ const verborgenSchatVragen = [
         reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die Hij geneest, is iemand die gekomen was om Hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
     },
     {
-        vraag: "Welke brief in het Nieuwe Testament is al aan zijn naam te herkennen als een brief aan christenen met een Joodse achtergrond?",
-        antwoorden: ["Hebreeën", "Romeinen", "Galaten", "Efeziërs"],
-        correct: "Hebreeën",
+        vraag: "Het boek Hebreeën dankt zijn naam aan een oud woord. Wat betekent \"Hebreeën\"?",
+        antwoorden: ["Een oude aanduiding voor het Joodse volk", "De inwoners van de stad Hebron", "Mensen die in tenten woonden", "De priesters die in de tempel dienden"],
+        correct: "Een oude aanduiding voor het Joodse volk",
         bijbelplaats: "naam van het boek",
-        reveal: "De naam verraadt het al! Hebreeën is een oude aanduiding voor het Joodse volk. De titel is er trouwens pas later boven gezet; de brief zelf noemt nergens aan wie hij gericht is. Maar de inhoud wijst die kant op: het gaat uitgebreid over de tempel, de offers en het priesterschap — de wereld waarin de lezers waren opgegroeid. En juist daarvan laat de schrijver zien dat Jezus de vervulling is: alles waar die eeuwenoude gebruiken naar vooruitwezen, komt in Hem samen."
+        reveal: "Hebreeën is een oude naam voor het Joodse volk; je komt hem al tegen bij Abraham. De titel boven de brief is er later boven gezet, want de brief zelf noemt nergens aan wie hij gericht is. Wie de brief leest, begrijpt wel waarom die naam gekozen is: het gaat bladzijden lang over de tempel, de offers en het priesterschap."
     },
     {
         vraag: "Veel mensen hebben gehoord dat \"het oog van de naald\" een klein poortje in Jeruzalem was, waar een kameel alleen doorheen kon als hij eerst zijn bagage aflegde. Wat blijkt er als je de oudste christelijke uitleggers erop naslaat?",
