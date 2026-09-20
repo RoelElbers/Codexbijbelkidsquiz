@@ -6029,8 +6029,8 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 1:7"
         },
         {
-            vraag: "Johannes zegt: als we beweren dat we geen zonde hebben — wat is er dan aan de hand?",
-            antwoorden: ["Dan bedriegen we onszelf en is de waarheid niet in ons", "Dan zijn we goed op weg", "Dan hebben we er zelf nog niet goed over nagedacht", "Dan moeten we onze broer of zus vragen om ons te helpen onze zonden te zien"],
+            vraag: "Johannes schrijft over mensen die beweren dat ze geen zonde hebben. Wat zegt hij daarover?",
+            antwoorden: ["Dan bedriegen we onszelf en is de waarheid niet in ons", "Dan zijn we goed op weg", "Dan hebben we er zelf nog niet goed over nagedacht", "Dan moeten we onze broer of zus vragen om ons te vertellen wat wij allemaal verkeerd doen"],
             correct: "Dan bedriegen we onszelf en is de waarheid niet in ons",
             bijbelplaats: "1 Johannes 1:8"
         },
@@ -6070,11 +6070,11 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Zij zullen aan Hem gelijk zijn", "Zij zullen Hem eindelijk begrijpen", "Zij zullen naast Hem mogen staan", "Zij zullen een nieuwe naam krijgen"],
             correct: "Zij zullen aan Hem gelijk zijn",
             bijbelplaats: "1 Johannes 3:2",
-            uitleg: "Alle Nederlandse Bijbels vertalen dit met \"aan Hem gelijk zijn\", maar dat klinkt sterker dan Johannes bedoelt. Het Griekse woord dat hij gebruikt, homoios, betekent \"lijkend op, van dezelfde soort\". Je wordt dus niet God, je gaat op Hem lijken. Johannes zegt er meteen bij hoe dat komt: omdat we Hem dan zien zoals Hij werkelijk is. Je kent het van iemand met een idool — wie lang genoeg naar iemand opkijkt, gaat vanzelf op hem lijken: in hoe hij praat, hoe hij loopt, wat hij belangrijk vindt."
+            uitleg: "Alle Nederlandse Bijbels vertalen dit met \"aan Hem gelijk zijn\", maar dat klinkt sterker dan Johannes bedoelt. Het Griekse woord dat hij gebruikt, homoios, betekent \"lijkend op, van dezelfde soort\". Je wordt dus niet God, je gaat op Hem lijken. Johannes zegt er meteen bij hoe dat komt: omdat we Hem dan zien zoals Hij werkelijk is. Je kent het van iemand met een idool — wie lang genoeg naar iemand opkijkt, gaat vanzelf op hem lijken: in hoe hij praat, hoe hij zich kleedt, wat hij belangrijk vindt."
         },
         {
             vraag: "In één korte zin zegt Johannes waarvoor de Zoon van God op aarde verschenen is. Wat was volgens hem het doel?",
-            antwoorden: ["Om de werken van de duivel te verbreken", "Om een nieuw koninkrijk op aarde te stichten", "Om de wet van Mozes uit te leggen", "Om de tempel te herbouwen"],
+            antwoorden: ["Om de werken van de duivel te verbreken", "Om als aardse koning vanuit Jeruzalem te regeren", "Om de Romeinen uit Israël te verdrijven", "Om de wet van Mozes af te schaffen en door nieuwe regels te vervangen"],
             correct: "Om de werken van de duivel te verbreken",
             bijbelplaats: "1 Johannes 3:8"
         },
@@ -6091,7 +6091,7 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 3:15"
         },
         {
-            vraag: "Johannes schetst een situatie: iemand heeft genoeg geld, ziet zijn broeder gebrek lijden, en sluit zijn hart voor hem. Wat concludeert Johannes daaruit?",
+            vraag: "Johannes schetst een situatie: iemand heeft genoeg om van te leven, ziet een broeder of zuster die echt gebrek lijdt, en sluit zijn hart voor hem. Wat concludeert Johannes daaruit?",
             antwoorden: ["Dan blijft de liefde van God niet in hem", "Dan is dat zijn eigen zaak", "Dan mag hij het later nog goedmaken", "Dan hoeft hij alleen voor hem te bidden"],
             correct: "Dan blijft de liefde van God niet in hem",
             bijbelplaats: "1 Johannes 3:17"
@@ -6109,9 +6109,9 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 4:12"
         },
         {
-            vraag: "Johannes schrijft dat Gods geboden niet zwaar zijn, geen last om te dragen. In de zin die daarop volgt legt hij uit hoe dat komt. Wat schrijft hij daar?",
-            antwoorden: ["Wie uit God geboren is, overwint de wereld", "God vraagt maar weinig van ons", "God past Zijn geboden aan wat je aankunt", "Je hoeft ze pas te houden als je volwassen bent"],
-            correct: "Wie uit God geboren is, overwint de wereld",
+            vraag: "Johannes schrijft dat Gods geboden niet zwaar zijn. Wat zegt hij direct daarna over iemand die uit God geboren is?",
+            antwoorden: ["Die overwint de wereld", "Die hoeft geen geboden meer te houden", "Die doet nooit meer iets verkeerd", "Die begrijpt vanzelf alles wat God wil"],
+            correct: "Die overwint de wereld",
             bijbelplaats: "1 Johannes 5:3-4"
         },
         {
@@ -6136,7 +6136,8 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes geeft in zijn tweede brief een strenge raad over dwaalleraars die langskomen en niet bij de leer van Christus blijven. Wat moeten de gelovigen met zulke mensen doen?",
             antwoorden: ["Hen niet in huis nemen en niet begroeten", "Met hen in gesprek gaan over de waarheid", "Hen doorsturen naar de oudsten", "Hun te eten geven en dan laten gaan"],
             correct: "Hen niet in huis nemen en niet begroeten",
-            bijbelplaats: "2 Johannes 10"
+            bijbelplaats: "2 Johannes 10",
+            uitleg: "In de tijd van Johannes reisden leraren van plaats naar plaats en sliepen zij vaak bij mensen thuis. Wie zo'n leraar onderdak gaf, hielp hem daarmee ook om zijn boodschap verder te verspreiden. Johannes zegt dus niet dat je onvriendelijk moet zijn tegen iedereen die anders denkt. Hij waarschuwt de gemeente dat ze dwaalleraars geen plek en steun moeten geven om hun leer te verspreiden."
         },
         {
             vraag: "Johannes prijst Gajus, omdat die rondreizende gelovigen gastvrij ontving, ook al kende hij hen niet. Waarom is dat volgens Johannes zo belangrijk?",
@@ -6165,13 +6166,13 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes noemt Jezus de \"verzoening\" voor onze zonden. Het Nederlandse woord verzoening hangt samen met het woord zoen. Hoe zit dat?",
-            antwoorden: ["Zoen betekende eerst vrede, en pas veel later een kus", "Zoen is een verkorting van verzoening en kwam later", "Zoen komt van een oud woord dat zoet betekende", "Beide woorden zijn uit het Latijn vertaald"],
-            correct: "Zoen betekende eerst vrede, en pas veel later een kus",
+            antwoorden: ["Zoen betekende eerst verzoening of vrede, en pas later een kus", "Zoen is een verkorting van verzoening en kwam later", "Zoen komt van een oud woord dat zoet betekende", "Beide woorden zijn uit het Latijn vertaald"],
+            correct: "Zoen betekende eerst verzoening of vrede, en pas later een kus",
             bijbelplaats: "1 Johannes 2:2",
             uitleg: "In het Middelnederlands was een \"soene\" een vrede of een goedmaking. Een zoenoffer was een offer om vrede te sluiten en zoengeld was geld waarmee je een ruzie afkocht. Pas veel later ging het woord de kus betekenen die bij zo'n verzoening hoorde. Als Johannes Jezus de verzoening noemt, bedoelt hij: door Hem is de breuk tussen God en mensen goedgemaakt."
         },
         {
-            vraag: "Johannes schrijft dat hij zijn brief stuurt zodat zijn lezers helemaal bij hem horen en alles met hem delen. Het Griekse woord dat hij daarvoor gebruikt, koinonia, kwam ook uit de handel. Wat betekende het daar?",
+            vraag: "Johannes schrijft dat gelovigen bij elkaar én bij God horen en samen in het geloof delen. Het Griekse woord daarvoor is koinonia. Dat woord werd ook gebruikt bij handel en samenwerking. Wat kon het daar betekenen?",
             antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
             correct: "Samen eigenaar zijn van één zaak",
             bijbelplaats: "1 Johannes 1:3",
