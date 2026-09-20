@@ -6345,7 +6345,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Een onthulling: iets wordt zichtbaar wat eerst verborgen was", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
             correct: "Een onthulling: iets wordt zichtbaar wat eerst verborgen was",
             bijbelplaats: "Openbaring 1:1",
-            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent \"onthulling\" of \"openbaring\": iets wat verborgen was, wordt zichtbaar gemaakt. Je kunt het vergelijken met een doek dat wordt weggetrokken, zoals bij de onthulling van een standbeeld. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent \"onthulling\" of \"openbaring\": iets wat verborgen was, wordt zichtbaar gemaakt. Je kunt het vergelijken met een doek dat wordt weggetrokken, zoals bij de onthulling van een standbeeld. Van datzelfde woord komt ons woord \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
         },
         {
             vraag: "Zeven engelen blazen in Openbaring op een bazuin. Waarvoor gebruikte men zo'n luid blaasinstrument vooral?",
