@@ -6010,7 +6010,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes geeft aan het begin van zijn brief een boodschap door die hij van Jezus zelf gehoord heeft: in God is helemaal geen duisternis. Wat is God dan wél, volgens die boodschap?",
-            antwoorden: ["Licht", "Een spiegel", "Een schaduw", "Een echo"],
+            antwoorden: ["Licht", "Schaduw", "Nevel", "Rook"],
             correct: "Licht",
             bijbelplaats: "1 Johannes 1:5"
         }
