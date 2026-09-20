@@ -6460,7 +6460,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
             correct: "De gebeden van de gelovigen",
             bijbelplaats: "Openbaring 5:8",
-            uitleg: "In de tempel werd reukwerk voor God gebrand. Ook in Psalm 141 wordt gebed vergeleken met reukwerk dat voor God opstijgt. Johannes gebruikt hetzelfde beeld voor de gouden schalen die de oudsten vasthouden."
+            uitleg: "In de tempel werd reukwerk voor God gebrand. Ook in Psalm 141 wordt gebed vergeleken met reukwerk dat voor God opstijgt. Johannes gebruikt hetzelfde beeld: hij legt zelf uit dat de gouden schalen met reukwerk de gebeden van de gelovigen voorstellen."
         },
         {
             vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
