@@ -67,6 +67,14 @@ elk antwoord herhaald hoeft te worden.*
   de game, waardoor in brons bijna elke vraag elke ronde langskomt. Bij het
   doorlopen van goud nagaan of er vragen bij zitten die eigenlijk brons of
   zilver zijn.
+- **Losgekoppelde Ontdekken-artikelen nalopen.** Sinds de Verborgen Schat is
+  herzien, verwijst niets meer naar acht artikelen: over de Alfa en de Omega,
+  het Lam, het einde van de Bijbel, de boom des levens, de zeven gemeenten, het
+  nieuwe Jeruzalem, het oor van Malchus en de brief aan de Hebreeën. De laatste
+  twee zijn placeholders met de tekst "Deze uitleg wordt nog geschreven". Per
+  artikel beslissen: verwijderen, of onderbrengen bij de nieuwe indeling van de
+  Ontdekken-hub (zie het punt daarover). Meenemen bij die herindeling, niet los
+  oppakken.
 
 ## Vragenwerk
 
