@@ -6289,7 +6289,8 @@ vragenData["Openbaring"] = {
             vraag: "In zijn eerste visioen ziet Johannes Jezus staan tussen zeven gouden kandelaars. Hij begrijpt er niets van, en Jezus legt zelf uit wat die kandelaars betekenen. Waar staan de zeven kandelaars voor?",
             antwoorden: ["De zeven gemeenten die de brieven krijgen", "De zeven dagen van de schepping", "De zeven aartsengelen", "De zeven heuvels van Rome"],
             correct: "De zeven gemeenten die de brieven krijgen",
-            bijbelplaats: "Openbaring 1:20"
+            bijbelplaats: "Openbaring 1:20",
+            uitleg: "Jezus legt in het visioen zelf uit wat de kandelaars betekenen: de zeven gemeenten. Het beeld laat zien dat Hij midden tussen Zijn gemeenten staat, niet ver weg erboven."
         },
         {
             vraag: "In het nieuwe Jeruzalem hoeft niemand ooit nog een lamp aan te doen, en de poorten gaan nooit meer dicht. Wat bestaat daar niet meer?",
@@ -6305,8 +6306,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Johannes is zo onder de indruk van de engel die hem alles laat zien, dat hij voor hem op de knieën valt om hem te aanbidden. Wat zegt de engel dan?",
-            antwoorden: ["‘Doe dat niet! Aanbid alleen God.’", "‘Goed zo, ga door.’", "‘Buig nog dieper.’", "‘Sta op en volg mij naar de hoge hemel.’"],
-            correct: "‘Doe dat niet! Aanbid alleen God.’",
+            antwoorden: ["\"Doe dat niet! Aanbid alleen God.\"", "\"Goed zo, ga door.\"", "\"Buig nog dieper.\"", "\"Sta op en volg mij naar de hoge hemel.\""],
+            correct: "\"Doe dat niet! Aanbid alleen God.\"",
             bijbelplaats: "Openbaring 22:8-9"
         },
         {
@@ -6328,7 +6329,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 2:17"
         },
         {
-            vraag: "Rondom Gods troon zitten vierentwintig oudsten op hun eigen tronen. Als zij God aanbidden, staan ze op en leggen ze iets voor de troon neer. Wat leggen zij daar neer?",
+            vraag: "Rondom Gods troon zitten vierentwintig oudsten op hun eigen tronen. Als zij God aanbidden, vallen ze voor Hem neer en leggen ze iets voor de troon. Wat leggen zij daar neer?",
             antwoorden: ["Hun kronen", "Hun pen", "Hun portemonnee", "Hun sleutels"],
             correct: "Hun kronen",
             bijbelplaats: "Openbaring 4:10"
@@ -6341,24 +6342,24 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Het laatste boek van de Bijbel heet \"Openbaring\". Wat betekent dat woord?",
-            antwoorden: ["Het wegtrekken van een doek, zodat je ziet wat er is", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
-            correct: "Het wegtrekken van een doek, zodat je ziet wat er is",
+            antwoorden: ["Een onthulling: iets wordt zichtbaar wat eerst verborgen was", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
+            correct: "Een onthulling: iets wordt zichtbaar wat eerst verborgen was",
             bijbelplaats: "Openbaring 1:1",
-            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent onthulling — precies wat er gebeurt als bij de inwijding van een standbeeld het doek eraf gaat. Van datzelfde woord komt ons \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent \"onthulling\" of \"openbaring\": iets wat verborgen was, wordt zichtbaar gemaakt. Je kunt het vergelijken met een doek dat wordt weggetrokken, zoals bij de onthulling van een standbeeld. Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
         },
         {
-            vraag: "Zeven engelen blazen in Openbaring op een bazuin. Wat voor instrument was dat?",
-            antwoorden: ["Een hoorn waarop men één hard signaal blies, geen melodie", "Een lange trompet van zilver, alleen voor muziek in de tempel", "Een grote trommel die het ritme van een lange optocht aangaf", "Een fluit die de zangers in de tempel begeleidde"],
-            correct: "Een hoorn waarop men één hard signaal blies, geen melodie",
+            vraag: "Zeven engelen blazen in Openbaring op een bazuin. Waarvoor gebruikte men zo'n luid blaasinstrument vooral?",
+            antwoorden: ["Om een duidelijk signaal te geven, bijvoorbeeld bij gevaar, een bijeenkomst of een belangrijke gebeurtenis", "Om rustige achtergrondmuziek te spelen tijdens een maaltijd", "Om zangers precies de melodie voor te spelen", "Om kinderen te leren hoe muzieknoten klonken"],
+            correct: "Om een duidelijk signaal te geven, bijvoorbeeld bij gevaar, een bijeenkomst of een belangrijke gebeurtenis",
             bijbelplaats: "Openbaring 8:6",
-            uitleg: "Meestal was het een ramshoorn. Je blies erop om te waarschuwen voor gevaar, om een feest te openen of om te melden dat de koning eraan kwam. Een bazuin in Openbaring betekent dus niet muziek, maar: let op, er gaat iets beginnen."
+            uitleg: "Een bazuin of trompet kon gebruikt worden om een krachtig signaal te geven: bijvoorbeeld om mensen bijeen te roepen, voor gevaar te waarschuwen of een belangrijke gebeurtenis aan te kondigen. In Openbaring kondigt het blazen van de bazuinen telkens aan dat er iets belangrijks gaat gebeuren."
         },
         {
             vraag: "In de hemel klinkt \"Halleluja\". Wat betekent dat woord?",
             antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
             correct: "Prijs de HEER, in het Hebreeuws",
             bijbelplaats: "Openbaring 19:1",
-            uitleg: "Halleluja is geen Grieks maar Hebreeuws: <span class='hebreeuws'>הַלְלוּ יָהּ</span>. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen is het woord nooit vertaald; het klinkt in elke taal ter wereld hetzelfde. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+            uitleg: "Halleluja is geen Grieks maar Hebreeuws: <span class='hebreeuws'>הַלְלוּ יָהּ</span>. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen hebben veel talen het woord vrijwel onvertaald overgenomen. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
@@ -6373,11 +6374,11 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 1:8"
         },
         {
-            vraag: "Johannes schrijft dat hij op het eiland Patmos was. Waarom zat hij daar?",
-            antwoorden: ["Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en teruggekeerd", "Hij was er heen gevlucht voor een storm op zee"],
-            correct: "Hij was er verbannen vanwege zijn geloof, ver van de gemeenten die hij kende",
+            vraag: "Johannes schrijft dat hij op het eiland Patmos was vanwege \"het woord van God en het getuigenis van Jezus\". Waarom verbleef hij daar volgens oude christelijke overlevering?",
+            antwoorden: ["Hij was erheen verbannen vanwege zijn geloof en verkondiging", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en was teruggekeerd naar zijn streek", "Hij was erheen gevlucht voor een storm op zee"],
+            correct: "Hij was erheen verbannen vanwege zijn geloof en verkondiging",
             bijbelplaats: "Openbaring 1:9",
-            uitleg: "Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Johannes schrijft zelf dat hij daar was \"vanwege het woord van God en het getuigenis van Jezus\" — hij zat er dus om wat hij verkondigde. De kerkvader Irenaeus schrijft dat dit gebeurde onder keizer Domitianus, rond het jaar 95. Juist vanaf dat afgelegen eiland schrijft hij brieven aan zeven gemeenten op het vasteland, die hij niet meer kon bezoeken."
+            uitleg: "Johannes schrijft zelf dat hij op Patmos was \"vanwege het woord van God en het getuigenis van Jezus\". Oude christelijke overlevering vertelt dat hij naar het eiland was verbannen; Eusebius plaatst dat in de tijd van keizer Domitianus, aan het einde van de eerste eeuw. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. Vanaf daar schrijft Johannes aan de zeven gemeenten in Klein-Azië."
         },
         {
             vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
