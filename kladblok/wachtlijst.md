@@ -55,6 +55,14 @@ elk antwoord herhaald hoeft te worden.*
   paragraaf, voor de twee keuzes die daarbij horen.
 - **`BETA_MODUS` op `false`.** `script.js` r. 4. Zolang die op `true` staat toont
   het startscherm het "TESTVERSIE"-lint. Moet om vóór de release.
+- **Krullende aanhalingstekens vervangen door rechte.** De regel staat in
+  `CLAUDE.md`; pools worden bijgewerkt zodra ze inhoudelijk worden doorgelopen.
+  Al gedaan: de pools die tot nu toe zijn afgerond. Nog open op 20-09-2026:
+  36 voorkomens in `script.js`, allemaal in Openbaring — 26 in brons (bij de
+  vragen over 3:20, 21:5, 4:8, 22:20 en 21:3) en 10 in zilver (bij 22:8-9).
+  Als de laatste pool is doorgelopen, nagaan of er nog iets overblijft,
+  bijvoorbeeld in losse pools zoals `metgezellenVragen` of in
+  `ontdekken-inhoud.js`.
 - **Aanhalingstekens in antwoorden gelijktrekken binnen een pool.** Bij Brieven
   van Johannes brons staan bij vraag 8 alle vier de antwoorden tussen enkele
   aanhalingstekens ('Mijn kinderen' enz.), terwijl vraag 7 ze alleen om één
