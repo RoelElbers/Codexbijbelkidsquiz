@@ -4107,9 +4107,9 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "1 Tessalonicenzen 1:4"
         },
         {
-            vraag: "Paulus zegt: leef rustig en bemoei je met je eigen werk. Waarmee moeten de gelovigen hun brood verdienen?",
-            antwoorden: ["Met hun eigen handen", "Met bedelen", "Met lenen", "Met niksdoen"],
-            correct: "Met hun eigen handen",
+            vraag: "Paulus zegt: leef rustig en doe je eigen werk. Hoe moeten de gelovigen volgens hem zelf voor hun levensonderhoud zorgen?",
+            antwoorden: ["Door met hun eigen handen te werken", "Door te bedelen", "Door geld te lenen", "Door niets te doen"],
+            correct: "Door met hun eigen handen te werken",
             bijbelplaats: "1 Tessalonicenzen 4:11"
         },
         {
