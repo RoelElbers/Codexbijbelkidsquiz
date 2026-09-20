@@ -146,6 +146,21 @@ dus ook `correct` mee. `bijbelplaats` blijft ongewijzigd.
 > wordt: `Paulus zegt dat het bij alles wat je doet om één ding gaat. Waar
 > gaat het hem om?` — antwoorden `["Dat je het in liefde doet", …]`
 
+### Rechte aanhalingstekens
+
+Aanhalingstekens in `vraag`, `antwoorden`, `correct` en `uitleg` zijn **altijd
+recht** (in JavaScript geschreven als `\"`), nooit krullend (`“ ” ‘ ’`).
+Krullende tekens zijn ooit ingeslopen door tekst uit Word en uit chats te
+plakken. Ze zijn slecht doorzoekbaar — een grep op een citaat vindt dan de ene
+vraag wel en de andere niet — en een enkel aanhalingsteken rond één
+antwoordoptie kan de aandacht trekken.
+
+Pools worden hierop bijgewerkt **op het moment dat ze inhoudelijk worden
+doorgelopen**, niet in één grote schoonmaakactie.
+
+Het beletselteken (`…`) en gedachtestreepjes (`—`) blijven wél staan; die zijn
+bewust gebruikt.
+
 ### Hoofdletter bij verwijzingen naar God, Jezus en de Heilige Geest
 
 Een voornaamwoord dat naar God, Jezus of de Heilige Geest verwijst, krijgt een
