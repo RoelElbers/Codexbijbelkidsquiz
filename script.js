@@ -7812,67 +7812,36 @@ const verborgenSchatVragen = [
         vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het Laatste Avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
         antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
         correct: "Marcus",
-        bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem"
-    },
-    {
-        vraag: 'Wat betekent het woord "apocalyps" eigenlijk?',
-        antwoorden: ["Een grote ramp", "Onthulling of openbaring", "Het einde van de wereld", "Een droom of visioen"],
-        correct: "Onthulling of openbaring",
-        bijbelplaats: "Openbaring 1:1"
-    },
-    {
-        vraag: 'Jezus noemt zichzelf "de Alfa en de Omega". Wat bedoelt hij daarmee?',
-        antwoorden: ["Dat Hij uit Griekenland kwam", "Dat Hij de wijste van allemaal is", "Dat Hij er is vanaf het begin tot het einde van alles", "Dat Hij twee namen had"],
-        correct: "Dat Hij er is vanaf het begin tot het einde van alles",
-        bijbelplaats: "Openbaring 22:13"
-    },
-    {
-        vraag: 'In Openbaring wordt Jezus "het Lam" genoemd. Waarom juist een lam?',
-        antwoorden: ["Omdat Hij zichzelf opofferde, zoals een offerlam", "Omdat Hij geboren werd in een stal", "Omdat Hij veel van schapen hield", "Omdat Hij verlegen en stil was"],
-        correct: "Omdat Hij zichzelf opofferde, zoals een offerlam",
-        bijbelplaats: "Openbaring 5:6-12"
+        bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem",
+        reveal: "In de Syrisch-orthodoxe Sint-Markuskerk in Jeruzalem staat een oude steen met een inscriptie, gevonden in 1940 en meestal in de zesde eeuw gedateerd. Daarop staat dat dit het huis was van Maria, de moeder van Johannes Marcus, en de plek van het Laatste Avondmaal. In Handelingen 12:12 lees je inderdaad dat de gelovigen in Jeruzalem samenkwamen in het huis van Maria, de moeder van Johannes Marcus. Of het echt dezelfde plek is, weten we niet: er is ook een andere kerk die zegt de bovenzaal te bewaren. Maar de steen laat zien hoe vroeg men al probeerde te onthouden waar het gebeurd was."
     },
     {
         vraag: "Het getal zeven komt overal voor in Openbaring (zeven gemeenten, zegels, bazuinen). Waar staat zeven symbolisch voor?",
         antwoorden: ["Geluk", "Het aantal apostelen", "Volheid of compleetheid", "De zeven dagen van de week"],
         correct: "Volheid of compleetheid",
-        bijbelplaats: "Genesis 2:2-3"
-    },
-    {
-        vraag: "Hoe eindigt de Bijbel, in het boek Openbaring?",
-        antwoorden: ["Met de schepping van de wereld", "Met een nieuwe hemel en een nieuwe aarde, waar God bij de mensen woont", "Met de dood van Jezus aan het kruis", "Met de tien geboden"],
-        correct: "Met een nieuwe hemel en een nieuwe aarde, waar God bij de mensen woont",
-        bijbelplaats: "Openbaring 21:1-4"
+        bijbelplaats: "Genesis 2:2-3",
+        reveal: "Zeven is het getal van compleetheid. Dat begint al op de eerste bladzijde van de Bijbel: in zes dagen maakt God de wereld, en op de zevende is alles af. Johannes gebruikt het getal daarna overal in Openbaring: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen, zeven sterren. Hij telt meer dan vijftig keer tot zeven. Hij bedoelt er niet mee dat er toevallig precies zeven gemeenten waren, maar dat het om het geheel gaat: alle gemeenten, de hele wereld, van begin tot eind."
     },
     {
         vraag: 'In Openbaring en in het boek Daniël komt de geheimzinnige uitdrukking "een tijd, tijden en een halve tijd" voor. Welke tijdsduur wordt daarmee bedoeld?',
         antwoorden: ["Zeven jaar", "Drieënhalf jaar", "Drie en een halve dag", "Duizend jaar"],
         correct: "Drieënhalf jaar",
-        bijbelplaats: "Openbaring 12:14"
+        bijbelplaats: "Openbaring 12:14",
+        reveal: "Een tijd is een jaar, tijden zijn twee jaar, en een halve tijd is een half jaar: samen drieënhalf jaar. Het bijzondere is dat Openbaring diezelfde periode ook op twee andere manieren opschrijft: 42 maanden en 1260 dagen. Drie keer hetzelfde, steeds anders geteld. En let op het getal: drieënhalf is precies de helft van zeven, het getal van compleetheid. De moeilijke tijd is dus echt zwaar, maar hij is half, niet heel. Wanneer die tijd precies valt, daarover denken christenen heel verschillend."
     },
     {
         vraag: "In Openbaring ziet Johannes vier levende wezens rond Gods troon: een leeuw, een jonge stier, een mens en een arend. Uit het visioen van welke profeet komt dit beeld oorspronkelijk?",
         antwoorden: ["Jesaja", "Ezechiël", "Daniël", "Jeremia"],
         correct: "Ezechiël",
-        bijbelplaats: "Ezechiël 1:10 · Openbaring 4:7"
-    },
-    {
-        vraag: "Helemaal aan het begin van de Bijbel, in het paradijs, staat een bijzondere boom. Aan het einde van Openbaring staat diezelfde boom er weer. Welke boom is dat?",
-        antwoorden: ["De olijfboom", "De vijgenboom", "De boom van het leven", "De boom van kennis van goed en kwaad"],
-        correct: "De boom van het leven",
-        bijbelplaats: "Genesis 2:9 · Openbaring 22:2"
-    },
-    {
-        vraag: "Johannes schrijft Openbaring als een brief. Aan hoeveel gemeenten richt hij zich aan het begin?",
-        antwoorden: ["Eén", "Drie", "Zeven", "Twaalf"],
-        correct: "Zeven",
-        bijbelplaats: "Openbaring 1:4, 11"
+        bijbelplaats: "Ezechiël 1:10 · Openbaring 4:7",
+        reveal: "Ezechiël zag bij een rivier in Babylonië vier wezens met vier gezichten: een mens, een leeuw, een stier en een arend. Zo'n zeshonderd jaar later ziet Johannes ze terug rond Gods troon. Christenen zijn die vier later gaan verbinden met de vier evangelisten, en zo kwamen ze in kerken terecht: op glas-in-loodramen, boven deuren en op oude boekbanden. De verdeling die in onze kerken het bekendst werd, komt van Hiëronymus: de mens bij Matteüs, de leeuw bij Marcus, de stier bij Lucas en de arend bij Johannes. Kijk maar eens omhoog als je in een oude kerk staat."
     },
     {
         vraag: "Aan het einde van Openbaring ziet Johannes een schitterende stad uit de hemel neerdalen, waar God voorgoed bij de mensen woont. Hoe heet die stad?",
         antwoorden: ["Het hemelse Babylon", "Het nieuwe Eden", "De gouden tempel", "Het nieuwe Jeruzalem"],
         correct: "Het nieuwe Jeruzalem",
-        bijbelplaats: "Openbaring 21:2"
+        bijbelplaats: "Openbaring 21:2",
+        reveal: "Even verderop meet een engel de stad op, en dan blijkt ze een kubus te zijn: even lang als breed als hoog. Die vorm bestond al eerder. In de tempel had één ruimte precies die maat: het allerheiligste, waar God woonde en waar maar één keer per jaar iemand binnen mocht. In het nieuwe Jeruzalem heeft de hele stad die vorm. Daarom is er ook geen tempel meer nodig: er is geen apart heilig kamertje meer, want alles is heilig en iedereen woont erin."
     },
     {
         vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke bijnaam is dat?",
@@ -7933,6 +7902,48 @@ const verborgenSchatVragen = [
         correct: "Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort",
         bijbelplaats: "Marcus 10:25-27 · Origenes, Chrysostomus en Augustinus over deze tekst",
         reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op — in preken, niet in de oudste bronnen. Wat Jezus waarschijnlijk juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+    },
+    {
+        vraag: "Paulus dicteerde zijn brieven meestal aan een schrijver. In de brief aan de Romeinen doet die schrijver iets bijzonders: hij groet de lezers even zelf. Hoe heette hij?",
+        antwoorden: ["Tertius", "Timoteüs", "Lucas", "Silvanus"],
+        correct: "Tertius",
+        bijbelplaats: "Romeinen 16:22",
+        reveal: "Midden in de rij groeten staat ineens een zin in de ik-vorm van iemand anders: \"Ik, Tertius, die deze brief geschreven heb, groet u.\" Even kijkt de man achter de pen om het hoekje. Schrijven was vakwerk: je zat gebogen over een vel papyrus, met een rietpen en inkt, en je schreef op wat de ander hardop zei. Paulus dicteerde, Tertius schreef, en aan het eind mocht hij zelf ook iets zeggen."
+    },
+    {
+        vraag: "Aan het eind van de brief aan de Galaten neemt Paulus de pen zelf over. Wat zegt hij daar zelf over?",
+        antwoorden: ["Dat hij met grote letters schrijft", "Dat zijn handschrift het mooiste is", "Dat hij het in het Hebreeuws schrijft", "Dat hij het in het donker moet doen"],
+        correct: "Dat hij met grote letters schrijft",
+        bijbelplaats: "Galaten 6:11",
+        reveal: "\"Kijk eens met wat grote letters ik u eigenhandig schrijf.\" Paulus dicteerde zijn brieven, maar het slot schreef hij vaak zelf, als een handtekening. Bij de Galaten valt dat extra op, want zijn eigen letters waren blijkbaar veel groter dan die van de geoefende schrijver. Waarom, staat er niet bij. Sommigen denken aan zijn ogen, anderen aan nadruk: zoals wij iets in hoofdletters zetten."
+    },
+    {
+        vraag: "Van het Nieuwe Testament is een piepklein stukje papyrus bewaard, kleiner dan een bankpasje, en het is het oudste dat we hebben. Uit welk bijbelboek komt het?",
+        antwoorden: ["Johannes", "Matteüs", "Handelingen", "Romeinen"],
+        correct: "Johannes",
+        bijbelplaats: "Johannes 18:31-33, 37-38 · papyrusfragment P52, John Rylands Library, Manchester",
+        reveal: "Op het snippertje staan een paar regels uit het verhoor van Jezus door Pilatus, aan beide kanten beschreven. Het wordt meestal in de tweede eeuw gedateerd, al verschillen geleerden over het precieze jaar. Het is gevonden in Egypte, ver van de plek waar Johannes schreef. Dat laat zien hoe snel deze teksten werden overgeschreven en meegenomen, de hele Middellandse Zee over."
+    },
+    {
+        vraag: "Als je een bijbeltekst opzoekt, gebruik je een hoofdstuk en een vers. Sinds wanneer staan die nummers erin?",
+        antwoorden: ["Pas honderden jaren na de apostelen", "De schrijvers zetten ze er zelf in", "Vanaf de eerste vertaling in het Latijn", "Sinds de boekdrukkunst in China"],
+        correct: "Pas honderden jaren na de apostelen",
+        bijbelplaats: "algemeen",
+        reveal: "De apostelen schreven doorlopende tekst, zonder nummers en meestal zonder spaties tussen de woorden: INDENBEGINNEWASHETWOORD. Voor ons is dat puzzelen, maar men las toen bijna altijd hardop, en dan hoor je vanzelf waar een woord ophoudt. De hoofdstukken zoals wij ze kennen komen van Stephen Langton, rond het jaar 1200. De versnummers kwamen er pas in 1551 bij, van de Franse drukker Robert Estienne. Handig om iets terug te vinden, maar bedenk wel: een vers is geen zin die los bedoeld was."
+    },
+    {
+        vraag: "In de tijd van de eerste christenen schreef vrijwel iedereen op boekrollen. Wat deden de christenen anders?",
+        antwoorden: ["Zij schreven hun teksten in een boek met bladzijden", "Zij schreven alles op kleitabletten", "Zij schreven alleen op de muren van huizen", "Zij leerden alles uit hun hoofd en schreven niets op"],
+        correct: "Zij schreven hun teksten in een boek met bladzijden",
+        bijbelplaats: "algemeen",
+        reveal: "Een boekrol lees je uitrollend, met twee handen. De christenen kozen al vroeg voor de codex: losse vellen op elkaar, aan één kant vastgemaakt, precies zoals een boek van nu. Het scheelde ruimte en je kon er sneller iets in terugzoeken. Van de oudste christelijke handschriften is bijna alles een codex, terwijl de boeken van andere schrijvers uit diezelfde tijd bijna allemaal rollen zijn."
+    },
+    {
+        vraag: "Op oude christelijke graven en muren staat vaak een vis getekend. Waarom juist een vis?",
+        antwoorden: ["De Griekse letters van \"vis\" zijn de beginletters van een korte geloofszin", "Omdat de apostelen allemaal visser waren", "Omdat vis het enige eten was dat mocht", "Omdat een vis het teken van de tempel was"],
+        correct: "De Griekse letters van \"vis\" zijn de beginletters van een korte geloofszin",
+        bijbelplaats: "oude christelijke grafschriften en muurschilderingen",
+        reveal: "Het Griekse woord voor vis is ichthus. Neem je de vijf letters los, dan vormen ze de beginletters van vijf Griekse woorden: Jezus Christus, Gods Zoon, Redder. De hele belijdenis past dus in één tekeningetje van een vis. Je vindt het terug in de catacomben van Rome en op oude grafstenen, soms alleen die ene simpele kromme lijn."
     }
 ];
 
