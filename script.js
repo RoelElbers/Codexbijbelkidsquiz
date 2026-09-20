@@ -6187,7 +6187,7 @@ vragenData["Brieven van Johannes"] = {
 vragenData["Openbaring"] = {
     beginner: [
         {
-            vraag: "Aan het einde van zijn visioen ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet?",
+            vraag: "Aan het einde van Openbaring ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet?",
             antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een nieuwe zon en een nieuwe maan", "Een gouden berg boven de wolken", "Een groot schip op een wilde zee"],
             correct: "Een nieuwe hemel en een nieuwe aarde",
             bijbelplaats: "Openbaring 21:1"
@@ -6199,9 +6199,9 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:4"
         },
         {
-            vraag: "In een brief aan een gemeente zegt Jezus: ‘Ik sta voor de deur en Ik klop.’ Wat gebeurt er als iemand die deur voor Hem opendoet?",
-            antwoorden: ["Jezus komt bij hem binnen", "Jezus groet even snel en is daarna weer weg", "Jezus blijft buiten staan", "Jezus is weer weg als de deur geopend wordt"],
-            correct: "Jezus komt bij hem binnen",
+            vraag: "In een brief aan een gemeente zegt Jezus: \"Ik sta voor de deur en Ik klop.\" Wat gebeurt er als iemand die deur voor Hem opendoet?",
+            antwoorden: ["Jezus komt binnen en brengt tijd met hem door aan tafel", "Jezus groet even snel en is daarna weer weg", "Jezus blijft buiten staan", "Jezus is weer weg als de deur geopend wordt"],
+            correct: "Jezus komt binnen en brengt tijd met hem door aan tafel",
             bijbelplaats: "Openbaring 3:20"
         },
         {
@@ -6211,13 +6211,13 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 5:6"
         },
         {
-            vraag: "God spreekt vanaf Zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: ‘Zie, Ik maak alles …’ Hoe gaat die zin verder?",
+            vraag: "God spreekt vanaf Zijn troon, en het is een van de kortste en mooiste zinnen van het hele boek: \"Zie, Ik maak alles …\" Hoe gaat die zin verder?",
             antwoorden: ["nieuw", "goed", "af", "groot"],
             correct: "nieuw",
             bijbelplaats: "Openbaring 21:5"
         },
         {
-            vraag: "Openbaring is een bijzonder boek: het vertelt hoe het met de wereld aflopen zal. Welke plaats heeft het in de Bijbel?",
+            vraag: "Openbaring is een bijzonder boek vol visioenen over God, Jezus en wat er uiteindelijk met de wereld zal gebeuren. Welke plaats heeft het in de Bijbel?",
             antwoorden: ["Het is het allerlaatste boek van de hele Bijbel", "Het is het eerste boek van het Nieuwe Testament", "Het staat precies in het midden van de Bijbel", "Het staat vlak na de vier evangeliën"],
             correct: "Het is het allerlaatste boek van de hele Bijbel",
             bijbelplaats: "algemeen"
@@ -6229,9 +6229,9 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 7:9"
         },
         {
-            vraag: "Bij de troon van God staan vier bijzondere wezens die dag en nacht hetzelfde lied zingen, steeds weer opnieuw. Welke woorden zingen zij?",
-            antwoorden: ["‘Heilig, heilig, heilig’", "‘Sterk, sterk, sterk’", "‘Hoog, hoog, hoog’", "‘Ver, ver, ver’"],
-            correct: "‘Heilig, heilig, heilig’",
+            vraag: "Bij de troon van God staan vier bijzondere wezens die dag en nacht dezelfde woorden blijven roepen. Welke woorden zijn dat?",
+            antwoorden: ["\"Heilig, heilig, heilig\"", "\"Sterk, sterk, sterk\"", "\"Hoog, hoog, hoog\"", "\"Ver, ver, ver\""],
+            correct: "\"Heilig, heilig, heilig\"",
             bijbelplaats: "Openbaring 4:8"
         },
         {
@@ -6242,12 +6242,12 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Openbaring eindigt met een belofte van Jezus zelf, vlak voor het laatste gebed van het boek. Wat zegt Hij over Zijn terugkomst?",
-            antwoorden: ["‘Ik kom spoedig’", "‘Ik kom nog lang niet’", "‘Wacht maar duizend jaar’", "‘Ik kom pas als iedereen gelooft’"],
-            correct: "‘Ik kom spoedig’",
+            antwoorden: ["\"Ik kom spoedig\"", "\"Ik kom nog lang niet\"", "\"Wacht maar duizend jaar\"", "\"Ik kom pas als iedereen gelooft\""],
+            correct: "\"Ik kom spoedig\"",
             bijbelplaats: "Openbaring 22:20"
         },
         {
-            vraag: "Johannes hoort een luide stem bij de troon die vertelt wat het allermooiste is van de nieuwe wereld — mooier nog dan de gouden straten: ‘Zie, Ik zal zelf … bij de mensen.’ Hoe gaat het verder?",
+            vraag: "Johannes hoort een luide stem bij de troon die vertelt wat het allermooiste is van de nieuwe wereld — mooier nog dan de gouden straten: \"Zie, Ik zal zelf … bij de mensen.\" Hoe gaat het verder?",
             antwoorden: ["wonen", "langskomen", "wegblijven", "af en toe komen logeren"],
             correct: "wonen",
             bijbelplaats: "Openbaring 21:3"
@@ -6256,7 +6256,8 @@ vragenData["Openbaring"] = {
             vraag: "Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt Hij?",
             antwoorden: ["De krans die de winnaar van een wedstrijd op zijn hoofd kreeg", "De gouden kroon van een koning", "De doornenkroon die Jezus zelf droeg", "Een kroon van zilver, zoals de priesters droegen"],
             correct: "De krans die de winnaar van een wedstrijd op zijn hoofd kreeg",
-            bijbelplaats: "Openbaring 2:10"
+            bijbelplaats: "Openbaring 2:10",
+            uitleg: "Het Griekse woord dat hier voor kroon wordt gebruikt, kan de overwinningskrans zijn die een winnaar bij een wedstrijd kreeg. Het beeld betekent dus: wie trouw blijft, ontvangt van God de echte overwinning."
         },
         {
             vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Waarvoor gebruikte men een zegel?",
