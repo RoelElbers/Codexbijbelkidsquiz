@@ -6395,10 +6395,10 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 22:1-2"
         },
         {
-            vraag: "God noemt zichzelf de alfa en de omega — de eerste en de laatste letter van een alfabet. Van welk alfabet?",
-            antwoorden: ["Het Griekse", "Het Hebreeuwse", "Het Latijnse", "Het Egyptische"],
-            correct: "Het Griekse",
-            bijbelplaats: "Openbaring 1:8"
+            vraag: "Op de twaalf poorten van het nieuwe Jeruzalem staan twaalf namen geschreven. Van wie zijn die namen?",
+            antwoorden: ["Van de twaalf stammen van Israël", "Van de twaalf apostelen", "Van twaalf engelen", "Van twaalf koningen van Israël"],
+            correct: "Van de twaalf stammen van Israël",
+            bijbelplaats: "Openbaring 21:12"
         },
         {
             vraag: "Wat Johannes rondom de troon ziet, doet denken aan het teken dat God ooit aan Noach gaf. Wat zag hij?",
@@ -6411,7 +6411,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["De stralende morgenster", "De vallende ster", "De avondster", "De noorderster"],
             correct: "De stralende morgenster",
             bijbelplaats: "Openbaring 22:16",
-            uitleg: "De morgenster is geen ster maar de planeet Venus. Zij staat laag aan de oostelijke hemel en is het laatste lichtpunt dat nog schijnt als het al begint te schemeren — het teken dat de nacht voorbij is en de zon eraan komt. Johannes schrijft aan mensen die het zwaar hadden. Dat Jezus zichzelf zo noemt, betekent dus: het donker duurt niet eeuwig."
+            uitleg: "De morgenster die je vlak voor zonsopgang helder aan de oostelijke hemel kunt zien, is meestal de planeet Venus. Haar verschijning kondigt als het ware aan dat de nacht bijna voorbij is en de nieuwe dag eraan komt. Johannes schrijft aan mensen die het zwaar hadden. Dat Jezus zichzelf de stralende morgenster noemt, geeft daarom een beeld van hoop: het donker duurt niet eeuwig."
         },
         {
             vraag: "De stadsmuur van het nieuwe Jeruzalem heeft twaalf poorten, en elke poort is uit één stuk gemaakt van hetzelfde bijzondere materiaal. Welk materiaal is dat?",
@@ -6438,7 +6438,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 10:9-10"
         },
         {
-            vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Elk wezen heeft een eigen gezicht: het ene lijkt op een leeuw, een ander op een stier, een ander op een arend. Waar lijkt het overgebleven wezen op?",
+            vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Elk wezen heeft een eigen gezicht: het ene lijkt op een leeuw, een ander op een jonge stier, een ander op een arend. Waar lijkt het overgebleven wezen op?",
             antwoorden: ["Een mens", "Een paard", "Een slang", "Een vis"],
             correct: "Een mens",
             bijbelplaats: "Openbaring 4:7"
@@ -6460,14 +6460,14 @@ vragenData["Openbaring"] = {
             antwoorden: ["De gebeden van de gelovigen", "De liederen die in de hemel klinken", "De namen van de twaalf stammen", "De offers uit de oude tempel"],
             correct: "De gebeden van de gelovigen",
             bijbelplaats: "Openbaring 5:8",
-            uitleg: "In de tempel werd elke dag reukwerk verbrand, en de rook die opsteeg was het beeld van gebed dat omhooggaat. Openbaring houdt dat beeld vast en voegt er iets aan toe: de gebeden komen aan, en ze worden bewaard."
+            uitleg: "In de tempel werd reukwerk voor God gebrand. Ook in Psalm 141 wordt gebed vergeleken met reukwerk dat voor God opstijgt. Johannes gebruikt hetzelfde beeld voor de gouden schalen die de oudsten vasthouden."
         },
         {
             vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
             antwoorden: ["Feest en overwinning: zo haalde men een winnaar binnen", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
             correct: "Feest en overwinning: zo haalde men een winnaar binnen",
             bijbelplaats: "Openbaring 7:9",
-            uitleg: "Met palmtakken zwaaide men voor een winnaar of een koning die de stad binnenkwam — dezelfde takken als bij de intocht in Jeruzalem. Ook bij het Loofhuttenfeest droeg men takken. De menigte staat dus niet stil te wachten, die viert feest."
+            uitleg: "Palmtakken hoorden bij feest en overwinning. Ze werden gebruikt bij de ontvangst van overwinnaars, en ook bij het Joodse Loofhuttenfeest. In het evangelie van Johannes zwaait de menigte ook met palmtakken wanneer Jezus als koning Jeruzalem binnenkomt. De mensen voor Gods troon staan hier dus niet in rouw: ze vieren Gods overwinning."
         },
         {
             vraag: "Jezus noemt Antipas van Pergamum \"Mijn trouwe getuige\". Uit dat Griekse woord voor getuige is een Nederlands woord ontstaan. Welk Nederlands woord is dat?",
@@ -6477,25 +6477,24 @@ vragenData["Openbaring"] = {
             uitleg: "Het Griekse woord is martys (<span class='grieks'>μάρτυς</span>), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
         },
         {
-            vraag: "Jezus zegt: Ik heb de sleutels. Wat liet het bezit van de sleutels in die tijd zien?",
-            antwoorden: ["Dat je bepaalde wie er binnen mocht komen", "Dat je het huis met eigen geld had laten bouwen", "Dat je bij de poortwacht in dienst was genomen", "Dat je als gast een ereplaats aan tafel kreeg"],
-            correct: "Dat je bepaalde wie er binnen mocht komen",
+            vraag: "Jezus zegt dat Hij \"de sleutel van David\" heeft. Wat betekent dat beeld?",
+            antwoorden: ["Dat Hij het gezag heeft om te openen en te sluiten", "Dat Hij de tempeldeuren iedere ochtend zelf opende", "Dat Hij alle huizen in Jeruzalem kon binnengaan", "Dat Hij de sleutel van koning Davids paleis bewaarde"],
+            correct: "Dat Hij het gezag heeft om te openen en te sluiten",
             bijbelplaats: "Openbaring 3:7",
-            uitleg: "In een groot huis droeg de rentmeester de sleutels aan zijn gordel. Hij besliste wie er binnenkwam en wie niet. Sleutels waren dus geen gereedschap maar een teken van gezag — vandaar dat het beeld telkens terugkomt zodra het over macht gaat."
+            uitleg: "Een belangrijke sleutel was vroeger ook een teken van gezag. Openbaring verwijst hier naar Jesaja 22:22: iemand krijgt de sleutel van het huis van David en mag openen en sluiten. Jezus zegt daarom: wat Hij opent kan niemand sluiten, en wat Hij sluit kan niemand openen."
         },
         {
             vraag: "Johannes ziet iemand met veel \"diademen\" op Zijn hoofd. Wat was het verschil met de krans die een winnaar kreeg?",
-            antwoorden: ["Een diadeem was een band die alleen een koning droeg", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem kreeg je pas na je dood"],
-            correct: "Een diadeem was een band die alleen een koning droeg",
+            antwoorden: ["Een diadeem was een koninklijke hoofdband, een teken van koningschap", "Een diadeem was van hout en werd bij feesten gedragen", "Een diadeem werd van verse bloemen en blaadjes gevlochten", "Een diadeem was een versierde band die alleen bij bruiloften werd gedragen"],
+            correct: "Een diadeem was een koninklijke hoofdband, een teken van koningschap",
             bijbelplaats: "Openbaring 19:12",
-            uitleg: "Het Grieks gebruikt twee verschillende woorden. Stephanos (<span class='grieks'>στέφανος</span>) was de krans van bladeren voor wie de wedstrijd won; diadema (<span class='grieks'>διάδημα</span>) was een band van stof of goud om het hoofd van een koning. In het Nederlands zeggen we voor allebei kroon, waardoor het verschil verdwijnt."
+            uitleg: "Het Grieks gebruikt twee verschillende woorden. Stephanos (<span class='grieks'>στέφανος</span>) was onder andere de krans die een winnaar bij een wedstrijd kreeg. Diadema (<span class='grieks'>διάδημα</span>) was een koninklijke hoofdband of kroon, een teken van koningschap. In het Nederlands vertalen we beide vaak met \"kroon\", waardoor dat verschil minder zichtbaar wordt."
         },
         {
-            vraag: "Jezus verwijt de gemeente van Laodicea dat zij \"lauw\" is. Waarom begrepen juist die mensen dat beeld meteen?",
-            antwoorden: ["Hun water kwam van ver en was onderweg lauw geworden", "Zij hadden geen bron en dronken alleen regenwater", "Hun stad lag in een dal waar het altijd warm bleef", "Zij kookten hun water eerst en lieten het staan"],
-            correct: "Hun water kwam van ver en was onderweg lauw geworden",
-            bijbelplaats: "Openbaring 3:16",
-            uitleg: "Laodicea haalde zijn water door een lange leiding uit de heuvels; het kwam lauw en kalkig aan. Even verderop lag Hiërapolis met warme bronnen waar zieken heen gingen, en Kolosse met koud bergwater. Warm was goed, koud was goed — lauw water spuugde je uit."
+            vraag: "De gemeente van Laodicea dacht dat ze rijk was en niets nodig had. Wat raadt Jezus hun juist aan van Hem te krijgen?",
+            antwoorden: ["Goud, witte kleren en zalf voor hun ogen", "Een nieuwe tempel, een kroon en een zwaard", "Brood, wijn en olijfolie", "Een huis, een akker en een kudde schapen"],
+            correct: "Goud, witte kleren en zalf voor hun ogen",
+            bijbelplaats: "Openbaring 3:17-18"
         }
     ]
 };
