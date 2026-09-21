@@ -864,7 +864,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wat zei de Romeinse hoofdman die bij het kruis stond, toen Jezus stierf?",
-                antwoorden: ["Hij was een goed mens", "Werkelijk deze mens was Gods Zoon", "Wat een trieste dag", "Dit was vast een groot profeet uit vroeger tijden"],
+                antwoorden: ["Nu kunnen we eindelijk terug naar de kazerne", "Werkelijk deze mens was Gods Zoon", "Wat een trieste dag is dit voor Jeruzalem", "Dit was vast een groot profeet uit vroeger tijden"],
                 correct: "Werkelijk deze mens was Gods Zoon",
                 bijbelplaats: "Marcus 15:39"
             },
@@ -970,7 +970,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Waar begint het Marcus-evangelie mee?",
-                antwoorden: ["Het begin van het verhaal van Jezus", "Het begin van het evangelie van Jezus Christus de Zoon van God", "Het geslachtsregister van Jezus, helemaal terug tot aan koning David", "Lang geleden"],
+                antwoorden: ["Het begin van het verhaal van Jezus", "Het begin van het evangelie van Jezus Christus de Zoon van God", "Het geslachtsregister van Jezus, helemaal terug tot aan koning David", "Er was eens, lang geleden, in een land hier ver vandaan"],
                 correct: "Het begin van het evangelie van Jezus Christus de Zoon van God",
                 bijbelplaats: "Marcus 1:1"
             },
@@ -982,7 +982,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Hoe noemde de bezetene in het gebied van de Gerasenen de demonen die in hem zaten?",
-                antwoorden: ["Wij zijn de heersers van heel dit gebied", "Legioen, want we zijn met velen", "Storm", "Beëlzebul"],
+                antwoorden: ["Wij zijn de heersers van heel dit gebied", "Legioen, want we zijn met velen", "Storm, want we razen als de wind", "Beëlzebul"],
                 correct: "Legioen, want we zijn met velen",
                 bijbelplaats: "Marcus 5:9"
             },
