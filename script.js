@@ -1573,7 +1573,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         beginner: [
             {
                 vraag: "Hoe noemde Johannes de Doper Jezus toen hij Hem zag aankomen?",
-                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet Elia, teruggekeerd uit de hemel", "De rabbi"],
+                antwoorden: ["De koning der Joden", "Het Lam van God dat de zonde van de wereld wegneemt", "De grote profeet Elia, teruggekeerd uit de hemel", "De nieuwe rabbi uit Nazaret, over wie iedereen sprak"],
                 correct: "Het Lam van God dat de zonde van de wereld wegneemt",
                 bijbelplaats: "Johannes 1:29"
             },
@@ -1672,7 +1672,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         advanced: [
             {
                 vraag: "Hoe begint het evangelie van Johannes?",
-                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister", "Met de vlucht van Jozef en Maria naar het land Egypte"],
+                antwoorden: ["Met de geboorte van Jezus", "Met de woorden 'In het begin was het Woord'", "Met een geslachtsregister vanaf Abraham", "Met de vlucht van Jozef en Maria naar het land Egypte"],
                 correct: "Met de woorden 'In het begin was het Woord'",
                 bijbelplaats: "Johannes 1:1"
             },
@@ -1714,7 +1714,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Volg Mij", "Heb je Mij lief? Zorg voor Mijn schapen", "Vrees niet", "Ga nu de hele wijde wereld in en vertel over Mij"],
+                antwoorden: ["Waarom heb je Mij verloochend? Beloof dat het nooit meer gebeurt", "Heb je Mij lief? Zorg voor Mijn schapen", "Ga terug naar je boot en vis voortaan weer voor jezelf", "Ga nu de hele wijde wereld in en vertel over Mij"],
                 correct: "Heb je Mij lief? Zorg voor Mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             },
