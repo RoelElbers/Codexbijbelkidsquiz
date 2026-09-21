@@ -1203,14 +1203,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Waarin werd het pasgeboren kindje Jezus gelegd?",
-                antwoorden: ["In een mand van gevlochten riet", "Op een bed", "In een voederbak", "In een mooi versierd houten wiegje"],
+                antwoorden: ["In een mand van gevlochten riet", "Op een zacht bed in de herberg", "In een voederbak", "In een mooi versierd houten wiegje"],
                 correct: "In een voederbak",
                 bijbelplaats: "Lucas 2:7",
                 uitleg: "In oudere Bijbels heet zo'n voederbak een kribbe. Het was een stenen of houten bak waar de dieren uit aten. Lucas vertelt er meteen bij waarom Jezus daarin lag: er was voor hen geen plaats in het gastenverblijf."
             },
             {
                 vraag: "Aan wie verschenen de engelen om als eersten te vertellen dat Jezus geboren was?",
-                antwoorden: ["Aan de soldaten die de weg bewaakten", "Aan priesters", "Aan herders in het veld", "Aan vissers aan de oever van een meer"],
+                antwoorden: ["Aan de soldaten die de weg bewaakten", "Aan priesters in de tempel van Jeruzalem", "Aan herders in het veld", "Aan vissers aan de oever van een meer"],
                 correct: "Aan herders in het veld",
                 bijbelplaats: "Lucas 2:8-14"
             },
@@ -1246,7 +1246,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat liet de vader doen toen de verloren zoon thuiskwam?",
-                antwoorden: ["Hij gaf hem werk", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf iedereen de opdracht om hem te negeren", "Hij stuurde hem terug waar hij vandaan gekomen was"],
+                antwoorden: ["Hij nam hem aan als knecht, zoals de zoon zelf had gevraagd", "Hij liet het gemeste kalf slachten en hield een feestmaal", "Hij gaf iedereen de opdracht om hem te negeren", "Hij stuurde hem terug waar hij vandaan gekomen was"],
                 correct: "Hij liet het gemeste kalf slachten en hield een feestmaal",
                 bijbelplaats: "Lucas 15:23"
             }
@@ -1266,7 +1266,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat deed de vader toen hij zijn zoon in de verte zag aankomen?",
-                antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet, omhelsde hem en kuste hem", "Hij vroeg eerst waar al het geld was gebleven", "Hij stuurde hem weg"],
+                antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet, omhelsde hem en kuste hem", "Hij vroeg eerst waar al het geld was gebleven", "Hij stuurde hem weg, want zijn kans had hij gehad"],
                 correct: "Hij rende hem tegemoet, omhelsde hem en kuste hem",
                 bijbelplaats: "Lucas 15:20"
             },
@@ -1284,7 +1284,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat deed Zacheüs nadat Jezus bij hem te gast was geweest?",
-                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij gaf alles wat hij had weg aan anderen", "Hij werd priester"],
+                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij gaf alles wat hij had weg aan anderen", "Hij stopte met zijn werk en werd priester in de tempel"],
                 correct: "Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst",
                 bijbelplaats: "Lucas 19:8"
             },
@@ -1296,7 +1296,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat gebeurde er toen twee leerlingen op weg waren naar het dorp Emmaüs, na de opstanding?",
-                antwoorden: ["Ze zagen in de verte twee engelen die hun de weg naar huis wezen", "Jezus zelf kwam met hen meelopen, maar ze herkenden Hem pas toen Hij het brood brak", "Ze raakten verdwaald", "Ze kwamen Petrus tegen"],
+                antwoorden: ["Ze zagen in de verte twee engelen die hun de weg naar huis wezen", "Jezus zelf kwam met hen meelopen, maar ze herkenden Hem pas toen Hij het brood brak", "Ze raakten verdwaald in het donker en kwamen nooit in Emmaüs aan", "Ze kwamen onderweg Petrus tegen, die hun alles vertelde"],
                 correct: "Jezus zelf kwam met hen meelopen, maar ze herkenden Hem pas toen Hij het brood brak",
                 bijbelplaats: "Lucas 24:13-31"
             },
@@ -1326,7 +1326,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
-                antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Een schat verstoppen", "Een brief verscheuren"],
+                antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Iets verstoppen, zoals een schat die niemand meer mag vinden", "Iets kapotmaken, zoals een brief die je verscheurt"],
                 correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
                 bijbelplaats: "Lucas 15:18"
             },
@@ -1385,7 +1385,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat overkwam Zacharias toen hij de engel Gabriël niet geloofde over de geboorte van zijn zoon?",
-                antwoorden: ["Hij werd blind", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw", "Hij kon een jaar lang de tempel niet meer in"],
+                antwoorden: ["Hij werd blind tot de dag dat zijn zoon werd geboren", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw van schrik en moest de tempel uit gedragen worden", "Hij kon een jaar lang de tempel niet meer in"],
                 correct: "Hij kon niet meer spreken tot zijn zoon werd geboren",
                 bijbelplaats: "Lucas 1:18-22"
             },
