@@ -325,7 +325,7 @@ const vragenData = {
             },
             {
                 vraag: "In de gelijkenis van de talenten: wat deed de dienaar die maar één talent had gekregen?",
-                antwoorden: ["Hij verdubbelde het", "Hij begroef het in de grond", "Hij gaf het weg", "Hij ging ermee gokken en had alles verloren"],
+                antwoorden: ["Hij ging ermee handelen en verdiende er nog een talent bij", "Hij begroef het in de grond", "Hij gaf het weg aan de armen in zijn dorp", "Hij ging ermee gokken en had alles verloren"],
                 correct: "Hij begroef het in de grond",
                 bijbelplaats: "Matteüs 25:14-30"
             },
@@ -343,7 +343,7 @@ const vragenData = {
             },
             {
                 vraag: "Wat was de laatste opdracht die Jezus aan Zijn leerlingen gaf, ook wel het zendingsbevel genoemd?",
-                antwoorden: ["Bouw een tempel", "Maak alle volken tot leerlingen en doop hen", "Niets, Hij nam gewoon afscheid", "Schrijf een boek"],
+                antwoorden: ["Bouw in Jeruzalem een nieuwe, grote tempel", "Maak alle volken tot leerlingen en doop hen", "Niets, Hij nam gewoon afscheid", "Schrijf alles wat Ik gedaan heb op in een boek"],
                 correct: "Maak alle volken tot leerlingen en doop hen",
                 bijbelplaats: "Matteüs 28:18-20"
             },
@@ -367,7 +367,7 @@ const vragenData = {
             },
             {
                 vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
-                antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een slechte koning", "Iemand zonder huis", "Een gewone Jood, iemand zonder openbare religieuze functie"],
+                antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een koning die slecht regeerde over zijn volk", "Iemand zonder huis, die van plaats naar plaats trok", "Een gewone Jood, iemand zonder openbare religieuze functie"],
                 correct: "Iemand die niet bij het Joodse volk hoorde",
                 bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
             },
@@ -445,7 +445,7 @@ const vragenData = {
             },
             {
                 vraag: "Waarmee begint het evangelie van Matteüs?",
-                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met een verhaal over de schepping", "Met de aankondiging van de engel aan Maria", "Met een lied"],
+                antwoorden: ["Met een geslachtsregister vanaf Abraham", "Met een verhaal over de schepping", "Met de aankondiging van de engel aan Maria", "Met een lofzang op God, zoals in de Psalmen"],
                 correct: "Met een geslachtsregister vanaf Abraham",
                 bijbelplaats: "Matteüs 1:1-17"
             },
@@ -481,7 +481,7 @@ const vragenData = {
             },
             {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
-                antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht", "Bij het eerste hanengekraai"],
+                antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht, precies midden in de nacht", "Bij het eerste hanengekraai"],
                 correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
                 bijbelplaats: "Matteüs 14:25",
                 uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.
@@ -563,7 +563,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Jezus zei dat je een lamp niet onder een korenmaat zet, maar op een standaard. Wat was een korenmaat?",
-                antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een zak waarin je graan naar de markt droeg", "Een lengtemaat"],
+                antwoorden: ["Een mand om vissen mee te vangen", "Een maatbak om graan af te meten", "Een zak waarin je graan naar de markt droeg", "Een lengtemaat waarmee men akkers afmat"],
                 correct: "Een maatbak om graan af te meten",
                 bijbelplaats: "Matteüs 5:15",
                 uitleg: "Een korenmaat was een maatbak om graan af te meten, zo'n negen liter groot. Jezus bedoelde: je steekt een lamp niet aan om hem daarna te bedekken — je zet hem juist hoog, zodat iedereen het licht ziet."
