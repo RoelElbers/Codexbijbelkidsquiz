@@ -5113,7 +5113,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Waarmee vergelijkt Hebreeën het woord van God, omdat het scherp is en diep in je hart kan kijken?",
-            antwoorden: ["Een tweesnijdend zwaard", "Een spiegel", "Een fel brandende fakkel in het donker", "Een sleutel"],
+            antwoorden: ["Een tweesnijdend zwaard", "Een vergrootglas waarmee je alles van dichtbij ziet", "Een weegschaal die alles precies afweegt", "Een sleutel die elke deur opent"],
             correct: "Een tweesnijdend zwaard",
             bijbelplaats: "Hebreeën 4:12"
         },
@@ -5173,7 +5173,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een \"lofoffer\". Waaruit bestaat dat volgens Hebreeën?",
-            antwoorden: ["Uit woorden waarmee we Gods naam prijzen en belijden", "Uit een dier dat op het altaar wordt gebracht", "Uit geld dat aan de tempel wordt gegeven", "Uit veertig dagen vasten"],
+            antwoorden: ["Uit woorden waarmee we Gods naam prijzen en belijden", "Uit een dier dat op het altaar wordt gebracht", "Uit geld dat aan de tempel wordt gegeven", "Uit veertig dagen vasten zonder eten of drinken"],
             correct: "Uit woorden waarmee we Gods naam prijzen en belijden",
             bijbelplaats: "Hebreeën 13:15"
         },
