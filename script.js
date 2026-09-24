@@ -2955,8 +2955,8 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 9:7"
         },
         {
-            vraag: "Paulus maakte op zijn reizen veel moeilijke dingen mee om over Jezus te vertellen. Wat overkwam hem onder andere?",
-            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie en geen werk", "Hij bleef veilig thuis", "Hij mocht rustig in een mooi groot paleis wonen"],
+            vraag: "Paulus schrijft in 2 Korintiërs wat hij allemaal meemaakte om het goede nieuws over Jezus te brengen. Hoe was zijn leven in die jaren?",
+            antwoorden: ["Hij leed schipbreuk en was vaak in gevaar", "Hij had altijd vakantie en geen werk", "Hij bleef veilig thuis bij zijn familie in Tarsus", "Hij mocht rustig in een mooi groot paleis wonen"],
             correct: "Hij leed schipbreuk en was vaak in gevaar",
             bijbelplaats: "2 Korintiërs 11:25-26"
         },
@@ -2986,7 +2986,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Wat raadt Paulus de gelovigen aan om te doen, om dichtbij God te blijven?",
-            antwoorden: ["Zoveel mogelijk goede daden aan iedereen laten zien", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken", "Alleen aan zichzelf denken"],
+            antwoorden: ["Zoveel mogelijk goede daden aan iedereen laten zien", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken en gewoon doorgaan", "Alleen aan zichzelf denken"],
             correct: "Zichzelf eerlijk onderzoeken in het geloof",
             bijbelplaats: "2 Korintiërs 13:5"
         },
@@ -3000,13 +3000,13 @@ vragenData["1 & 2 Korintiërs"] = {
     advanced: [
         {
             vraag: "Paulus vergelijkt het geloof met een wedstrijd. Wat moet je doen om de prijs te winnen?",
-            antwoorden: ["Stoppen halverwege", "Wachten op anderen", "Doorzetten, net als een hardloper die doorrent", "Alleen meedoen als je zeker weet dat je zult winnen"],
+            antwoorden: ["Stoppen halverwege", "Wachten op anderen, zodat je samen over de finish komt", "Doorzetten, net als een hardloper die doorrent", "Alleen meedoen als je zeker weet dat je zult winnen"],
             correct: "Doorzetten, net als een hardloper die doorrent",
             bijbelplaats: "1 Korintiërs 9:24"
         },
         {
             vraag: "Aan het slot van zijn eerste brief aan de Korintiërs geeft Paulus vier korte bevelen achter elkaar, als een aanmoediging voor onderweg. Wat draagt hij hun daar op?",
-            antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand", "Als het moeilijk wordt, geef dan maar snel op"],
+            antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand, zelfs niet op elkaar", "Als het moeilijk wordt, geef dan maar snel op"],
             correct: "Sta vast in het geloof en wees moedig",
             bijbelplaats: "1 Korintiërs 16:13"
         },
@@ -3018,7 +3018,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "De mensen in Korinte kozen partij: \"ik ben van Paulus\", \"ik ben van Apollos\". Wat vond Paulus daarvan?",
-            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze een preekwedstrijd moesten organiseren, om te kijken wie de beste was", "Dat het niet uitmaakte"],
+            antwoorden: ["Dat ze allemaal partij voor hem moesten kiezen", "Dat ze juist één moesten zijn, niet verdeeld", "Dat ze een preekwedstrijd moesten organiseren, om te kijken wie de beste was", "Dat het niet uitmaakte bij wie ze hoorden"],
             correct: "Dat ze juist één moesten zijn, niet verdeeld",
             bijbelplaats: "1 Korintiërs 1:12-13"
         },
@@ -3055,7 +3055,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "God zei tegen Paulus toen hij het moeilijk had: \"Mijn genade is genoeg.\" Wanneer is Gods kracht juist sterk?",
-            antwoorden: ["Juist als wij zwak zijn", "Alleen als wij sterk zijn", "Alleen bij belangrijke mensen", "Nooit"],
+            antwoorden: ["Juist als wij zwak zijn", "Alleen als wij sterk zijn", "Alleen bij belangrijke mensen", "Alleen als wij eerst goed ons best doen"],
             correct: "Juist als wij zwak zijn",
             bijbelplaats: "2 Korintiërs 12:9"
         },
@@ -3079,7 +3079,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van Hem houden. Hoe bijzonder is dat?",
-            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Ongeveer zoals de mooiste dag die je ooit hebt gehad", "Alleen voor belangrijke mensen"],
+            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Ongeveer zoals de mooiste dag die je ooit hebt gehad", "Alleen voor belangrijke mensen, zoals koningen en priesters"],
             correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
             bijbelplaats: "1 Korintiërs 2:9"
         },
