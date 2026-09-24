@@ -4396,7 +4396,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus vraagt of Marcus naar hem toe gebracht kan worden. Waarom wil hij dat Marcus komt?",
-            antwoorden: ["Omdat Marcus nuttig is voor het werk", "Omdat Marcus de weg goed kent", "Omdat Marcus ziek is", "Omdat Marcus sterk is"],
+            antwoorden: ["Omdat Marcus nuttig is voor het werk", "Omdat Marcus de weg goed kent", "Omdat Marcus ziek is en verzorging nodig heeft", "Omdat Marcus sterk is en zware dingen kan dragen"],
             correct: "Omdat Marcus nuttig is voor het werk",
             bijbelplaats: "2 Timoteüs 4:11"
         },
@@ -4540,7 +4540,7 @@ vragenData["Timoteüs & Titus"] = {
     expert: [
         {
             vraag: "Paulus kijkt in zijn brief aan Timoteüs terug op zijn eigen verleden, en hij verzacht niets. Hoe noemt hij zichzelf zoals hij vroeger was?",
-            antwoorden: ["Een godslasteraar en vervolger die anderen kwaad deed", "Een vrome farizeeër", "Een goede Jood", "Een rechtvaardig man die altijd Gods wet volgde"],
+            antwoorden: ["Een godslasteraar en vervolger die anderen kwaad deed", "Een tollenaar die geld van anderen afpakte", "Een Romeinse soldaat die christenen bewaakte", "Een visser die nooit over God nadacht"],
             correct: "Een godslasteraar en vervolger die anderen kwaad deed",
             bijbelplaats: "1 Timoteüs 1:13"
         },
@@ -4594,7 +4594,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "In 2 Timoteüs schrijft Paulus verdrietig over Demas, een medewerker die hem in de steek heeft gelaten. Wat was de reden dat Demas wegging?",
-            antwoorden: ["Hij hield meer van deze wereld", "Hij werd ziek", "Hij was het niet eens met Paulus' leer", "Hij werd zelf gevangengenomen"],
+            antwoorden: ["Hij hield meer van deze wereld", "Hij werd ziek en moest naar huis", "Hij was het niet eens met Paulus' leer", "Hij werd zelf gevangengenomen"],
             correct: "Hij hield meer van deze wereld",
             bijbelplaats: "2 Timoteüs 4:10"
         },
