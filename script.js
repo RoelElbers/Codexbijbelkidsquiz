@@ -5564,7 +5564,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Judas sluit zijn brief af met een aanmoediging. Waarin moeten de gelovigen zichzelf bewaren?",
-            antwoorden: ["In de liefde van God", "In het gebed", "In de leer van de apostelen", "In de tempel van God"],
+            antwoorden: ["In de liefde van God", "In de wetten van Mozes", "In de leer van de apostelen", "In de tempel van God"],
             correct: "In de liefde van God",
             bijbelplaats: "Judas 21"
         },
@@ -5735,8 +5735,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus vergelijkt het woord van de profeten met iets dat schijnt op een donkere plaats. Aan welk voorwerp denkt hij daarbij?",
-            antwoorden: ["Met een lamp", "Met een fakkel", "Met een vuurtoren", "Met een bliksemflits"],
-            correct: "Met een lamp",
+            antwoorden: ["Aan een lamp", "Aan een fakkel", "Aan een vuurtoren", "Aan een bliksemflits"],
+            correct: "Aan een lamp",
             bijbelplaats: "2 Petrus 1:19"
         },
         {
@@ -5779,7 +5779,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft dat gelovigen opnieuw geboren zijn. Wat hebben zij daardoor volgens hem gekregen?",
-            antwoorden: ["Een levende hoop", "Een onvergankelijke erfenis", "Een nieuwe naam", "Een vaste belofte"],
+            antwoorden: ["Een levende hoop", "Een eigen stuk land", "Een nieuwe naam", "Een tweede verjaardag"],
             correct: "Een levende hoop",
             bijbelplaats: "1 Petrus 1:3"
         },
