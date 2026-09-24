@@ -4189,7 +4189,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus met alles doen voordat ze het aannemen?",
-            antwoorden: ["Alles onderzoeken en het goede vasthouden", "Alles meteen geloven", "Alles wat nieuw of vreemd is meteen verwerpen", "Alles vergeten"],
+            antwoorden: ["Alles onderzoeken en het goede vasthouden", "Alles meteen geloven wat iemand vertelt", "Alles wat nieuw of vreemd is meteen verwerpen", "Alles vergeten wat ze gehoord hebben"],
             correct: "Alles onderzoeken en het goede vasthouden",
             bijbelplaats: "1 Tessalonicenzen 5:21"
         },
@@ -4201,7 +4201,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Wat lieten de Tessalonicenzen achter toen zij zich tot God keerden?",
-            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun familie", "Hun huizen en bezittingen"],
+            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun familie en hun geboortestad", "Hun huizen en bezittingen"],
             correct: "De afgoden, om de levende God te dienen",
             bijbelplaats: "1 Tessalonicenzen 1:9"
         },
@@ -4219,7 +4219,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen gaan zij dan?",
-            antwoorden: ["De wolken in, de Heer tegemoet", "De tempel in", "Naar de allerhoogste top van de heilige berg Sion", "De hemelpoort door"],
+            antwoorden: ["De wolken in, de Heer tegemoet", "Naar de tempel in Jeruzalem", "Naar de allerhoogste top van de heilige berg Sion", "De hemelpoort door"],
             correct: "De wolken in, de Heer tegemoet",
             bijbelplaats: "1 Tessalonicenzen 4:17"
         },
@@ -4231,7 +4231,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun?",
-            antwoorden: ["Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt", "Rijkdom op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Wraak met het zwaard"],
+            antwoorden: ["Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt", "Rijkdom en een groot huis hier op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Een zwaard om zelf wraak te nemen"],
             correct: "Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt",
             bijbelplaats: "2 Tessalonicenzen 1:7"
         },
