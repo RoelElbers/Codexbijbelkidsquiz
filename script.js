@@ -6382,7 +6382,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
-            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide", "Een rechthoek"],
+            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide, zoals in Egypte", "Een lange rechthoek, zoals een voetbalveld"],
             correct: "Een kubus (een vierkant blok)",
             bijbelplaats: "Openbaring 21:16"
         }
