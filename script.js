@@ -3219,7 +3219,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Wat is volgens Paulus het goede nieuws dat hij brengt?",
-            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen, want iedereen moet een keer naar Jeruzalem", "Dat je alles alleen moet doen"],
+            antwoorden: ["Dat je je precies aan alle oude regels van de wet moet houden", "Dat je bij God mág horen door op Jezus te vertrouwen", "Dat je ver moet reizen, want iedereen moet een keer naar Jeruzalem", "Dat je alles alleen moet doen, zonder hulp van anderen"],
             correct: "Dat je bij God mág horen door op Jezus te vertrouwen",
             bijbelplaats: "Galaten 2:16"
         },
@@ -3256,7 +3256,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft dat we vooral goed moeten doen aan andere mensen. Voor wie in het bijzonder?",
-            antwoorden: ["Alleen voor de sterkste mensen", "Alleen voor mensen die we niet kennen", "Voor iedereen, en zeker voor andere gelovigen", "Alleen voor onszelf"],
+            antwoorden: ["Alleen voor de sterkste mensen", "Alleen voor mensen die we niet kennen", "Voor iedereen, en zeker voor andere gelovigen", "Alleen voor onszelf en onze eigen familie"],
             correct: "Voor iedereen, en zeker voor andere gelovigen",
             bijbelplaats: "Galaten 6:10"
         },
@@ -3423,7 +3423,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft over de besnijdenis, een belangrijk Joods teken van het verbond met God. Uiteindelijk zegt hij dat besneden of onbesneden zijn niet het belangrijkste is. Wat telt volgens hem wél?",
-            antwoorden: ["Hoe oud je bent", "Dat je een nieuwe schepping bent", "Hoeveel geld je aan de armen geeft", "Hoe vaak je naar de tempel bent geweest"],
+            antwoorden: ["Hoe oud je bent en hoe lang je al gelooft", "Dat je een nieuwe schepping bent", "Hoeveel geld je aan de armen geeft", "Hoe vaak je naar de tempel bent geweest"],
             correct: "Dat je een nieuwe schepping bent",
             bijbelplaats: "Galaten 6:15"
         },
