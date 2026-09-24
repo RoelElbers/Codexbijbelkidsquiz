@@ -5345,7 +5345,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Wat moet je volgens Jakobus doen als je ziek bent?",
-            antwoorden: ["De leiders van de gemeente vragen om voor je te bidden", "Het stil voor jezelf houden", "Alleen proberen ziek te zijn als je naar school moet", "Tegen niemand iets zeggen"],
+            antwoorden: ["De leiders van de gemeente vragen om voor je te bidden", "Het stil voor jezelf houden", "Alleen proberen ziek te zijn als je naar school moet", "Naar de tempel in Jeruzalem reizen om te offeren"],
             correct: "De leiders van de gemeente vragen om voor je te bidden",
             bijbelplaats: "Jakobus 5:14"
         },
@@ -5407,7 +5407,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus waarschuwt: behandel een rijke bezoeker niet beter dan een arme. Welke fout maak je dan?",
-            antwoorden: ["Je bent partijdig en trekt mensen voor", "Je bent te gastvrij", "Je vergeet om je gasten iets te drinken aan te bieden", "Je bent te vrijgevig"],
+            antwoorden: ["Je bent partijdig en trekt mensen voor", "Je bent te gastvrij voor mensen die je niet kent", "Je vergeet om je gasten iets te drinken aan te bieden", "Je bent te vrijgevig met wat je hebt"],
             correct: "Je bent partijdig en trekt mensen voor",
             bijbelplaats: "Jakobus 2:1-4"
         },
@@ -5473,8 +5473,8 @@ vragenData["Jakobus"] = {
     expert: [
         {
             vraag: "Welk klein lichaamsdeel kan volgens Jakobus veel goeds én veel kwaads doen, net zoals een klein vuurtje een heel bos in brand kan zetten?",
-            antwoorden: ["de tong", "het oog", "de hand", "de voet"],
-            correct: "de tong",
+            antwoorden: ["De tong", "Het oog", "De hand", "De voet"],
+            correct: "De tong",
             bijbelplaats: "Jakobus 3:5-6"
         },
         {
@@ -5929,8 +5929,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Hoe mogen wij volgens Johannes genoemd worden, omdat God zo veel van ons houdt?",
-            antwoorden: ["kinderen van God", "dienaren van de koning", "vrienden van de wereld", "helden van het volk"],
-            correct: "kinderen van God",
+            antwoorden: ["Kinderen van God", "Dienaren van de koning", "Vrienden van de wereld", "Helden van het volk"],
+            correct: "Kinderen van God",
             bijbelplaats: "1 Johannes 3:1"
         },
         {
