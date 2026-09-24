@@ -7810,14 +7810,14 @@ function openSchatkist(niveau) {
 const verborgenSchatVragen = [
     {
         vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het Laatste Avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
-        antwoorden: ["Marcus", "Mattheüs", "Lucas", "Johannes"],
+        antwoorden: ["Marcus", "Matteüs", "Lucas", "Johannes"],
         correct: "Marcus",
         bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem",
         reveal: "In de Syrisch-orthodoxe Sint-Markuskerk in Jeruzalem staat een oude steen met een inscriptie, gevonden in 1940 en meestal in de zesde eeuw gedateerd. Daarop staat dat dit het huis was van Maria, de moeder van Johannes Marcus, en de plek van het Laatste Avondmaal. In Handelingen 12:12 lees je inderdaad dat de gelovigen in Jeruzalem samenkwamen in het huis van Maria, de moeder van Johannes Marcus. Of het echt dezelfde plek is, weten we niet: er is ook een andere kerk die zegt de bovenzaal te bewaren. Maar de steen laat zien hoe vroeg men al probeerde te onthouden waar het gebeurd was."
     },
     {
         vraag: "Het getal zeven komt overal voor in Openbaring (zeven gemeenten, zegels, bazuinen). Waar staat zeven symbolisch voor?",
-        antwoorden: ["Geluk", "Het aantal apostelen", "Volheid of compleetheid", "De zeven dagen van de week"],
+        antwoorden: ["Geluk, zoals mensen dat nu van het getal zeven zeggen", "Het aantal apostelen", "Volheid of compleetheid", "De zeven dagen van de week"],
         correct: "Volheid of compleetheid",
         bijbelplaats: "Genesis 2:2-3",
         reveal: "Zeven is het getal van compleetheid. Dat begint al op de eerste bladzijde van de Bijbel: in zes dagen maakt God de wereld, en op de zevende is alles af. Johannes gebruikt het getal daarna overal in Openbaring: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen, zeven sterren. Hij telt meer dan vijftig keer tot zeven. Hij bedoelt er niet mee dat er toevallig precies zeven gemeenten waren, maar dat het om het geheel gaat: alle gemeenten, de hele wereld, van begin tot eind."
