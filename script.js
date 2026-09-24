@@ -6267,7 +6267,7 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Helemaal aan het begin van Openbaring stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
-            antwoorden: ["Ik ben het begin en het einde", "Ik ben de oudste", "Ik ben de sterkste", "Ik ben de eerste die er ooit was"],
+            antwoorden: ["Ik ben het begin en het einde", "Ik ben de koning van het alfabet", "Ik ben de leraar van alle talen", "Ik ken alle letters uit Mijn hoofd"],
             correct: "Ik ben het begin en het einde",
             bijbelplaats: "Openbaring 1:8"
         }
