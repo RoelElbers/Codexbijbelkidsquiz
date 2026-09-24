@@ -5948,7 +5948,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes waarschuwt voor de antichrist, iemand die tégen Christus ingaat en de mensen wil misleiden. Hij noemt één ding waaraan je zo iemand kunt herkennen. Waaraan herken je hem volgens Johannes?",
-            antwoorden: ["Hij ontkent dat Jezus de Christus is", "Hij komt pas helemaal aan het einde van de tijd", "Hij is erg machtig", "Hij noemt zichzelf koning over de hele wereld"],
+            antwoorden: ["Hij ontkent dat Jezus de Christus is", "Hij komt pas helemaal aan het einde van de tijd", "Hij is erg machtig en heeft een groot leger", "Hij noemt zichzelf koning over de hele wereld"],
             correct: "Hij ontkent dat Jezus de Christus is",
             bijbelplaats: "1 Johannes 2:18, 22"
         },
@@ -6153,7 +6153,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "De derde brief eindigt met een vuistregel van maar een paar woorden. Wat schrijft Johannes?",
-            antwoorden: ["Volg niet het kwade na, maar het goede", "Volg je eigen hart", "Volg de meerderheid", "Volg de oudste van de gemeente"],
+            antwoorden: ["Volg niet het kwade na, maar het goede", "Volg je eigen hart", "Volg de meerderheid, dan zit je altijd goed", "Volg de oudste van de gemeente"],
             correct: "Volg niet het kwade na, maar het goede",
             bijbelplaats: "3 Johannes 11"
         },
