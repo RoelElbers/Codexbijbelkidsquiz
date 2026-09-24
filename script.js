@@ -3782,13 +3782,13 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Twee vrouwen in Filippi hadden onenigheid. Wat vraagt Paulus aan ze om te doen?",
-            antwoorden: ["Om het weer eens te worden", "Om de gemeente te verlaten", "Om te zwijgen", "Om te kiezen wie gelijk heeft"],
+            antwoorden: ["Om het weer eens te worden", "Om de gemeente te verlaten", "Om voortaan niets meer tegen elkaar te zeggen", "Om te kiezen wie gelijk heeft"],
             correct: "Om het weer eens te worden",
             bijbelplaats: "Filippenzen 4:2"
         },
         {
             vraag: "Paulus zegt dat de gelovigen mogen schijnen \"als lichten\". Waar doen zij dat volgens hem?",
-            antwoorden: ["In de wereld om hen heen", "Alleen in de kerk", "Alleen thuis", "Alleen op zondag"],
+            antwoorden: ["In de wereld om hen heen", "Alleen in de kerk", "Alleen thuis, bij hun eigen familie", "Alleen op zondag"],
             correct: "In de wereld om hen heen",
             bijbelplaats: "Filippenzen 2:15"
         },
@@ -3800,7 +3800,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Hoe kun je volgens Paulus het beste naar een ander kijken?",
-            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Vooral letten op de fouten van anderen", "Een ander ontwijken"],
+            antwoorden: ["De ander belangrijker vinden dan jezelf", "Jezelf altijd voorop zetten", "Vooral letten op de fouten van anderen", "Een ander zoveel mogelijk ontwijken"],
             correct: "De ander belangrijker vinden dan jezelf",
             bijbelplaats: "Filippenzen 2:3"
         },
@@ -3880,7 +3880,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Wat moet je volgens Paulus doen in plaats van je zorgen maken?",
-            antwoorden: ["Bidden en je zorgen aan God vertellen", "Wachten tot het overgaat", "Zo snel mogelijk vluchten voor het probleem", "Erover blijven piekeren"],
+            antwoorden: ["Bidden en je zorgen aan God vertellen", "Wachten tot het overgaat", "Zo snel mogelijk vluchten voor het probleem", "Erover blijven piekeren tot je een oplossing vindt"],
             correct: "Bidden en je zorgen aan God vertellen",
             bijbelplaats: "Filippenzen 4:6"
         },
@@ -3935,7 +3935,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "In zijn brief aan de Filippenzen schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat gaf God Hem?",
-            antwoorden: ["De hoogste naam, boven alle namen", "Een groot landgoed in Galilea", "Een schatkist vol goud en zilver", "Een prachtig paleis"],
+            antwoorden: ["De hoogste naam, boven alle namen", "Een groot landgoed in Galilea", "Een schatkist vol goud en zilver", "Een prachtig paleis in Jeruzalem"],
             correct: "De hoogste naam, boven alle namen",
             bijbelplaats: "Filippenzen 2:9",
             uitleg: "Deze regel komt uit hetzelfde lied over Jezus (Filippenzen 2:6-11), en wel uit het punt waar het omslaat. Eerst gaat het helemaal omlaag, tot de dood toe; dan geeft God Hem de naam die boven alle namen staat. Een naam is in de Bijbel meer dan een woord waarmee je iemand roept — hij zegt wie iemand is en hoeveel gezag hij heeft."
