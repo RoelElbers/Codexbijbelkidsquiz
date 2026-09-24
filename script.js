@@ -2428,7 +2428,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In Samaria vertelde Filippus over Jezus en genas hij zieke mensen. Hoe reageerde de stad?",
-            antwoorden: ["De mensen werden boos", "Niemand luisterde", "Er was grote blijdschap", "Ze stuurden hem weg"],
+            antwoorden: ["De mensen werden boos", "Niemand luisterde naar hem", "Er was grote blijdschap", "Ze stuurden hem weg"],
             correct: "Er was grote blijdschap",
             bijbelplaats: "Handelingen 8:5-8"
         },
@@ -2446,13 +2446,13 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Na de schipbreuk bij Malta bleef Paulus nog een tijd op het eiland. Wat deed hij daar voor de mensen?",
-            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
+            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen met het eerste schip dat langskwam", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
             correct: "Hij genas veel zieke mensen",
             bijbelplaats: "Handelingen 28:8-9"
         },
         {
             vraag: "Wat was de taak van Paulus en Barnabas toen de Heilige Geest hen uitzond?",
-            antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een tempel bouwen", "Soldaat worden", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
+            antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een nieuwe tempel bouwen in Antiochië", "Soldaat worden in het leger van de keizer", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
             correct: "Naar andere landen reizen om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13:2-4"
         },
@@ -2488,7 +2488,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Saulus, die later Paulus werd genoemd, moest vluchten uit Damascus. Hoe kwam hij de stad uit?",
-            antwoorden: ["Door een poort die open stond", "Via een tunnel", "In een mand werd hij over de muur naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
+            antwoorden: ["Door een poort die open stond", "Via een geheime tunnel onder de stadsmuur", "In een mand werd hij over de muur naar beneden gelaten", "Over een brug, waar hij ongezien kon ontsnappen"],
             correct: "In een mand werd hij over de muur naar beneden gelaten",
             bijbelplaats: "Handelingen 9:23-25"
         }
@@ -2568,7 +2568,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op zijn reis naar Rome kwam Paulus in een zware storm op zee. Wat gebeurde er met het schip en de mensen?",
-            antwoorden: ["Iedereen verdronk", "Het schip bleef heel", "Het schip verging, maar alle mensen kwamen veilig aan land", "Ze wisten het schip nog net veilig de haven binnen te varen"],
+            antwoorden: ["Paulus bad, de storm ging liggen en ze voeren verder naar Rome", "De mast brak, maar ze roeiden het schip zelf naar de kust van Italië", "Het schip verging, maar alle mensen kwamen veilig aan land", "Ze wisten het schip nog net veilig de haven binnen te varen"],
             correct: "Het schip verging, maar alle mensen kwamen veilig aan land",
             bijbelplaats: "Handelingen 27:41-44"
         },
@@ -2592,7 +2592,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Op het eiland Malta beet er een gevaarlijke slang in Paulus' hand. Wat gebeurde er met hem?",
-            antwoorden: ["Hij werd ziek", "Hij viel flauw", "Er gebeurde niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
+            antwoorden: ["Zijn hand zwol op, precies zoals de eilanders al verwachtten", "Hij viel flauw en moest dagenlang in bed blijven", "Er gebeurde niets, hij bleef ongedeerd", "Hij werd zo ziek dat hij er bijna aan doodging"],
             correct: "Er gebeurde niets, hij bleef ongedeerd",
             bijbelplaats: "Handelingen 28:3-6"
         },
@@ -2674,7 +2674,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
-            antwoorden: ["Hij zei niets", "Hij liep weg", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
+            antwoorden: ["Hij zei niets, want hij was bang voor de mannen met het plan", "Hij liep weg en ging terug naar zijn familie in Tarsus", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
             correct: "Hij waarschuwde Paulus en de soldaten",
             bijbelplaats: "Handelingen 23:16"
         }
@@ -2707,13 +2707,13 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk?",
-            antwoorden: ["Ze was kapster", "Ze verkocht kostbare purperen stof", "Ze werkte voor een rijke vrouw en hielp in de huishouding", "Ze was koningin"],
+            antwoorden: ["Ze had een kapsalon aan het marktplein", "Ze verkocht kostbare purperen stof", "Ze werkte voor een rijke vrouw en hielp in de huishouding", "Ze was koningin van de stad Filippi"],
             correct: "Ze verkocht kostbare purperen stof",
             bijbelplaats: "Handelingen 16:14"
         },
         {
             vraag: "Paulus en Silas zaten gevangen in Filippi. Wat deden ze midden in de nacht?",
-            antwoorden: ["Ze sliepen diep", "Ze baden en zongen liederen voor God", "Ze waren boos en schreeuwden zo hard dat de hele gevangenis hen kon horen", "Ze bedachten een plan om te vluchten"],
+            antwoorden: ["Ze sliepen diep, want ze waren doodmoe van de reis", "Ze baden en zongen liederen voor God", "Ze waren boos en schreeuwden zo hard dat de hele gevangenis hen kon horen", "Ze bedachten een plan om te vluchten"],
             correct: "Ze baden en zongen liederen voor God",
             bijbelplaats: "Handelingen 16:25"
         },
