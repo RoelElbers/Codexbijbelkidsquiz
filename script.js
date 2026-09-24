@@ -2050,7 +2050,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat noemt Paulus het grootste geschenk van God aan de mensen?",
-            antwoorden: ["Een lang leven vol rijkdom, eer en macht", "Een mooi huis", "Het eeuwige leven door Jezus Christus", "Veel land"],
+            antwoorden: ["Een lang leven vol rijkdom, eer en macht", "Een mooi huis om met je familie in te wonen", "Het eeuwige leven door Jezus Christus", "Veel land met akkers en kuddes schapen"],
             correct: "Het eeuwige leven door Jezus Christus",
             bijbelplaats: "Romeinen 6:23"
         },
@@ -2187,7 +2187,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus merkt dat hij het goede niet altijd zelf voor elkaar krijgt. Wie of wat kan hem daaruit redden, zegt hij?",
-            antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand", "Jezus Christus, onze Heer", "Zich helemaal toewijden aan de wet van Mozes"],
+            antwoorden: ["Hijzelf, als hij maar hard genoeg probeert", "Niemand, hij moet er zijn hele leven mee blijven worstelen", "Jezus Christus, onze Heer", "Zich helemaal toewijden aan de wet van Mozes"],
             correct: "Jezus Christus, onze Heer",
             bijbelplaats: "Romeinen 7:24-25"
         },
@@ -2235,13 +2235,13 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat raadt Paulus aan over vrede met andere mensen?",
-            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt en vertrouwt", "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt", "Praat liever met niemand", "Vrede is niet belangrijk"],
+            antwoorden: ["Sluit alleen vrede met de mensen die jij zelf aardig vindt en vertrouwt", "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt", "Praat liever met niemand, dan krijg je ook geen ruzie", "Vrede is niet belangrijk, als je maar gelijk krijgt"],
             correct: "Probeer met iedereen in vrede te leven, voor zover het van jou afhangt",
             bijbelplaats: "Romeinen 12:18"
         },
         {
             vraag: "Paulus zegt: laat de daden van het donker achter je en leef in het licht. Wat bedoelt hij daarmee?",
-            antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Blijf binnen tot het buiten weer licht wordt"],
+            antwoorden: ["Doe verkeerde dingen liever in het geheim", "Slaap zoveel mogelijk, dan doe je ook niets verkeerd", "Leef eerlijk en goed, alsof het klaarlichte dag is", "Blijf binnen tot het buiten weer licht wordt"],
             correct: "Leef eerlijk en goed, alsof het klaarlichte dag is",
             bijbelplaats: "Romeinen 13:12"
         },
@@ -2260,7 +2260,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
-            antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij woonde er", "Ja, hij was er geboren", "Nee, en hij wilde er nooit heen"],
+            antwoorden: ["Nee, maar hij wilde er graag heen", "Ja, hij had de gemeente in Rome zelf opgericht", "Ja, hij was er geboren en opgegroeid", "Nee, en hij wilde er nooit heen"],
             correct: "Nee, maar hij wilde er graag heen",
             bijbelplaats: "Romeinen 1:10-13",
             kist: false
@@ -2275,7 +2275,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Voor werk krijg je loon. Maar Gods vergeving is geen loon, zegt Paulus. Wat is het dan?",
-            antwoorden: ["Iets wat je krijgt nadat je er heel lang voor hebt gewerkt", "Iets wat je koopt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een prijs voor wie wint"],
+            antwoorden: ["Iets wat je krijgt nadat je er heel lang voor hebt gewerkt", "Iets wat je koopt als je genoeg geld gespaard hebt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een ruil: jij brengt God een offer en Hij geeft je vergeving terug"],
             correct: "Een geschenk dat je krijgt door op God te vertrouwen",
             bijbelplaats: "Romeinen 4:4-5"
         },
@@ -2287,7 +2287,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarom moet je een ander niet te snel veroordelen, zegt Paulus?",
-            antwoorden: ["Omdat je eerst een lijstje moet maken van alles wat hij fout deed", "Omdat anderen niet meetellen", "Omdat we allemaal eens voor God zullen staan", "Omdat andere mensen jou anders ook zullen veroordelen"],
+            antwoorden: ["Omdat je eerst een lijstje moet maken van alles wat hij fout deed", "Omdat anderen toch nooit zullen veranderen", "Omdat we allemaal eens voor God zullen staan", "Omdat andere mensen jou anders ook zullen veroordelen"],
             correct: "Omdat we allemaal eens voor God zullen staan",
             bijbelplaats: "Romeinen 14:10-12"
         },
@@ -2344,7 +2344,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
-            antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het", "Tot ziens"],
+            antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het, maar zeker is het niet", "Tot ziens, tot de volgende keer"],
             correct: "Zo is het, het staat vast",
             bijbelplaats: "Romeinen 1:25"
         },
