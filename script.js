@@ -4680,7 +4680,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe moeten de gelovigen elkaar behandelen als iemand iets verkeerd doet?",
-            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen", "Doen alsof er helemaal niets gebeurd is", "Gewoon de ander terugpakken"],
+            antwoorden: ["Elkaar vergeven, zoals de Heer hen vergaf", "Elkaar streng straffen, zodat het niet nog eens gebeurt", "Doen alsof er helemaal niets gebeurd is", "Gewoon de ander terugpakken"],
             correct: "Elkaar vergeven, zoals de Heer hen vergaf",
             bijbelplaats: "Kolossenzen 3:13"
         },
@@ -4692,7 +4692,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Wat voor soort bijbelboek is Filemon?",
-            antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een verslag van een van de grote reizen", "Een gebed"],
+            antwoorden: ["Een korte, persoonlijke brief", "Een lang evangelie", "Een verslag van een van de grote reizen", "Een lang gebed voor de hele kerk"],
             correct: "Een korte, persoonlijke brief",
             bijbelplaats: "Filemon 1"
         },
@@ -4928,7 +4928,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Hoe moeten de gelovigen volgens Paulus in zijn brief aan de Kolossenzen spreken met andere mensen?",
-            antwoorden: ["Met woorden vol genade, als het ware met zout gekruid", "Streng en hard, zodat mensen ontzag krijgen", "Zo weinig mogelijk", "Zo luid mogelijk"],
+            antwoorden: ["Met woorden vol genade, als het ware met zout gekruid", "Streng en hard, zodat mensen ontzag krijgen", "Zo weinig mogelijk, alleen als het echt moet", "Zo luid mogelijk, dan luisteren ze wel"],
             correct: "Met woorden vol genade, als het ware met zout gekruid",
             bijbelplaats: "Kolossenzen 4:5-6"
         },
