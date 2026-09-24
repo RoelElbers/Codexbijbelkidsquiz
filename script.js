@@ -3511,7 +3511,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Hoe vaak en waarvoor moeten gelovigen God danken, zegt Paulus?",
-            antwoorden: ["Altijd, en voor alles", "Bijna nooit", "Alleen op zondag", "Alleen als het goed gaat"],
+            antwoorden: ["Altijd, en voor alles", "Bijna nooit, want God weet het toch al", "Alleen op zondag", "Alleen als het goed gaat"],
             correct: "Altijd, en voor alles",
             bijbelplaats: "Efeziërs 5:20"
         },
@@ -3549,7 +3549,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt tegen de gelovigen dat zij de wapenrusting van God moeten aandoen. Waarvoor hebben zij die nodig?",
-            antwoorden: ["Om staande te blijven tegen het kwaad", "Om oorlog te voeren tegen mensen", "Om indruk te maken", "Gewoon zomaar, dan zie je er leuk uit"],
+            antwoorden: ["Om staande te blijven tegen het kwaad", "Om oorlog te voeren tegen mensen", "Om indruk te maken op andere mensen", "Gewoon zomaar, dan zie je er leuk uit"],
             correct: "Om staande te blijven tegen het kwaad",
             bijbelplaats: "Efeziërs 6:11"
         },
@@ -3615,7 +3615,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat bedoelt Paulus met \"leef als kinderen van het licht\"?",
-            antwoorden: ["Doe wat goed, eerlijk en waar is", "Slaap overdag", "Blijf binnen", "Alleen naar buiten gaan als het licht is"],
+            antwoorden: ["Doe wat goed, eerlijk en waar is", "Slaap overdag en blijf 's nachts wakker", "Draag alleen nog lichte, witte kleren", "Alleen naar buiten gaan als het licht is"],
             correct: "Doe wat goed, eerlijk en waar is",
             bijbelplaats: "Efeziërs 5:8-9"
         },
@@ -3639,7 +3639,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt: je oude gewoonten afleggen is niet genoeg. Wat moet er ook nieuw worden, van binnen?",
-            antwoorden: ["Je gedachten, je manier van denken", "Je naam", "De vrienden en de mensen met wie je elke dag omgaat", "Je kleren"],
+            antwoorden: ["Je gedachten, je manier van denken", "Je naam, zodat niemand je meer herkent", "De vrienden en de mensen met wie je elke dag omgaat", "Je kleren, zodat je er netjes uitziet"],
             correct: "Je gedachten, je manier van denken",
             bijbelplaats: "Efeziërs 4:23"
         }
