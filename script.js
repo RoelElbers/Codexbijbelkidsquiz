@@ -2432,7 +2432,7 @@ vragenData["Handelingen"] = {
             vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
             antwoorden: ["Dat hij beter voor zichzelf moest zorgen en meer moest eten", "Dat ook mensen die geen Jood waren erbij mochten horen", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
             correct: "Dat ook mensen die geen Jood waren erbij mochten horen",
-            bijbelplaats: "Handelingen 10:9-15",
+            bijbelplaats: "Handelingen 10:9-15, 28",
             uitleg: "In het visioen zei God dat Petrus dieren die volgens de Joodse wet verboden waren om te eten, nu wél mocht eten. Kort daarna begreep Petrus waar het God echt om ging: net zoals Hij dat eten niet langer afkeurde, wilde God ook geen enkel mens buitensluiten — ook mensen die geen Jood waren, mogen erbij horen."
         },
         {
@@ -2507,7 +2507,7 @@ vragenData["Handelingen"] = {
             vraag: "Wie schreef het boek Handelingen?",
             antwoorden: ["Petrus", "Lucas", "Paulus", "Marcus"],
             correct: "Lucas",
-            bijbelplaats: "Handelingen 1:1"
+            bijbelplaats: "Handelingen 1:1 · Lucas 1:3"
         },
         {
             vraag: "Wat konden de leerlingen ineens doen toen ze de Heilige Geest kregen?",
@@ -2537,7 +2537,7 @@ vragenData["Handelingen"] = {
             vraag: "Paulus maakte verschillende grote reizen. Vanuit welke stad vertrok hij steeds?",
             antwoorden: ["Antiochië", "Jeruzalem", "Damascus", "Tarsus"],
             correct: "Antiochië",
-            bijbelplaats: "Handelingen 13:1-3"
+            bijbelplaats: "Handelingen 13:1-3; 15:35-40; 18:22-23"
         },
         {
             vraag: "Toen Jezus omhoogging naar de hemel, stonden er opeens twee mannen in witte kleren bij de leerlingen. Wat zeiden zij?",
@@ -2685,7 +2685,7 @@ vragenData["Handelingen"] = {
             vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
             antwoorden: ["Hij zei niets, want hij was bang voor de mannen met het plan", "Hij liep weg en ging terug naar zijn familie in Tarsus", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
             correct: "Hij waarschuwde Paulus en de soldaten",
-            bijbelplaats: "Handelingen 23:16"
+            bijbelplaats: "Handelingen 23:16-22"
         }
     ],
     expert: [
@@ -2796,14 +2796,14 @@ vragenData["Handelingen"] = {
             vraag: "Paulus werd overgezet op een schip uit Alexandrië, op weg naar Italië. Wat vervoerde zo'n schip vooral?",
             antwoorden: ["Graan uit Egypte, waarmee de stad Rome werd gevoed", "Marmer voor de bouw van tempels", "Soldaten die met verlof gingen", "Wilde dieren voor de spelen in het theater"],
             correct: "Graan uit Egypte, waarmee de stad Rome werd gevoed",
-            bijbelplaats: "Handelingen 27:6",
+            bijbelplaats: "Handelingen 27:6, 38",
             uitleg: "Egypte was de graanschuur van het rijk. Elk jaar voeren grote vrachtschepen graan naar Rome, want de stad had ruim een miljoen inwoners en kon zichzelf niet voeden. Die schepen waren de grootste van hun tijd — er konden honderden mensen mee. Daarom staat er ook dat er 276 opvarenden waren toen het schip verging: dat is geen legerkonvooi, maar één vrachtschip vol graan en passagiers."
         },
         {
             vraag: "Op het Wekenfeest waren er in Jeruzalem \"Joden en proselieten\". Wat is een proseliet?",
             antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
             correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
-            bijbelplaats: "Handelingen 2:10",
+            bijbelplaats: "Handelingen 2:10-11",
             uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende ging naar de synagoge en hield zich aan de belangrijkste geboden, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden, nam een rituele wassing en gold daarna volledig als Jood.\n\nLucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
         },
         {
@@ -2817,7 +2817,7 @@ vragenData["Handelingen"] = {
             vraag: "De Heilige Geest kwam op de dag dat de Joden het Wekenfeest vierden. Waar komt die naam vandaan?",
             antwoorden: ["Het viel zeven weken na Pesach, aan het eind van de graanoogst", "Het duurde zeven weken achter elkaar", "Men vastte er zeven weken op vooruit", "Het werd elke zeven weken opnieuw gevierd, het hele jaar door"],
             correct: "Het viel zeven weken na Pesach, aan het eind van de graanoogst",
-            bijbelplaats: "Handelingen 2:1",
+            bijbelplaats: "Handelingen 2:1 · Leviticus 23:15-16",
             uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentēkostē, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan.\n\nHet christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
         },
         {
