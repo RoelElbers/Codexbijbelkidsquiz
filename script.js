@@ -4033,14 +4033,14 @@ vragenData["Filippenzen"] = {
             vraag: "Paulus schrijft dat hij \"uitgegoten wordt als een plengoffer\". Wat was een plengoffer?",
             antwoorden: ["Wijn die bij een offer werd uitgegoten", "Olie waarmee de priester het altaar insmeerde", "Water dat men over de handen goot", "Meel dat men op het altaarvuur strooide"],
             correct: "Wijn die bij een offer werd uitgegoten",
-            bijbelplaats: "Filippenzen 2:17",
+            bijbelplaats: "Filippenzen 2:17 · Numeri 15:5",
             uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit bij het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
         },
         {
             vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
             antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
             correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
-            bijbelplaats: "Filippenzen 3:20"
+            bijbelplaats: "Filippenzen 3:20 · Handelingen 16:12"
         },
         {
             vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd?",
