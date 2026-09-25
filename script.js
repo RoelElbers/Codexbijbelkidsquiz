@@ -1322,7 +1322,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
                 antwoorden: ["De bevrijding uit de slavernij in Egypte", "De inwijding van de tempel door de Makkabeeën", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
                 correct: "De bevrijding uit de slavernij in Egypte",
-                bijbelplaats: "Lucas 22:1 (het Laatste Avondmaal was een Pesachmaaltijd)"
+                bijbelplaats: "Lucas 22:1 · Exodus 12:17"
             },
             {
                 vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
@@ -1347,7 +1347,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
                 antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
                 correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
-                bijbelplaats: "Lucas 10:33",
+                bijbelplaats: "Lucas 10:33 · Johannes 4:9",
                 uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — er is zelfs een keer een Samaritaanse tempel verwoest door Joden. Wie in Galilea naar Jeruzalem reisde, maakte liever een omweg dan door Samaria te lopen.\n\nDat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
             },
             {
@@ -1482,7 +1482,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij twee tortelduiven. Wat zegt dat over hen?",
                 antwoorden: ["Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen", "Dat zij uit een priesterfamilie kwamen en daarom duiven moesten offeren", "Dat zij een lange reis hadden gemaakt en geen lam konden meenemen", "Dat het lente was, want duiven werden alleen in het voorjaar geofferd"],
                 correct: "Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen",
-                bijbelplaats: "Lucas 2:24"
+                bijbelplaats: "Lucas 2:24 · Leviticus 12:8"
             },
             {
                 vraag: "Zacharias was priester en moest het reukoffer brengen in de tempel. Wat deed hij daarbij?",
@@ -1514,7 +1514,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
                 antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pasen", "De wet zei er niets over"],
                 correct: "Eén vastendag per jaar, op Grote Verzoendag",
-                bijbelplaats: "Lucas 18:12",
+                bijbelplaats: "Lucas 18:12 · Leviticus 16:29",
                 uitleg: "De wet van Mozes kende maar één verplichte vastendag per jaar: Grote Verzoendag (Leviticus 16). Twee keer per week vasten was iets wat vrome farizeeën zichzelf oplegden, bovenop wat gevraagd werd — en juist daar gaat de gelijkenis over. De veertigdagentijd voor Pasen bestond toen nog niet; dat is een christelijk gebruik dat pas eeuwen later ontstond."
             },
             {
@@ -1552,7 +1552,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
                 antwoorden: ["Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben", "Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
                 correct: "Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben",
-                bijbelplaats: "Lucas 15:15"
+                bijbelplaats: "Lucas 15:15 · Leviticus 11:7"
             },
             {
                 vraag: "In de gelijkenis van de verloren zoon had de jongen willen eten van de peulen die de varkens kregen. Wat waren dat?",
@@ -1568,7 +1568,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             }
         ]
     },
-    // Johannes — vragenpool (65 vragen: beginner 16, advanced 18, expert 31)
+    // Johannes — vragenpool (66 vragen: beginner 16, advanced 18, expert 32)
     "Johannes": {
         beginner: [
             {
@@ -1854,13 +1854,15 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Je kunt in de Dode Zee gaan zwemmen zonder ooit te zinken: je blijft er vanzelf drijven, alsof het water je draagt. Hoe kan dat?",
                 antwoorden: ["Er zit zoveel zout in het water dat het je omhoog duwt", "Het water is er zo koud dat het je omhoog stuwt", "Er borrelt van onderaf steeds lucht uit de bodem omhoog", "Het meer is overal zo ondiep dat je gewoon kunt staan"],
                 correct: "Er zit zoveel zout in het water dat het je omhoog duwt",
+                bijbelplaats: "Genesis 14:3",
                 uitleg: "Het water zit zó vol zout dat er geen vis of plant in kan leven — vandaar de naam. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
             },
             {
-                vraag: "Hoeveel grote rivieren en meren had Israël in de tijd van de Bijbel?",
-                antwoorden: ["2 rivieren en 3 meren", "1 rivier en 2 meren", "1 rivier en 3 meren", "3 rivieren en 1 meer"],
-                correct: "1 rivier en 3 meren",
-                uitleg: "Israël was een droog land, dus er was weinig water. Er is maar één grote rivier: de Jordaan. En er waren drie meren: het Meer van Galilea en de Dode Zee zijn de bekende twee, en in het noorden lag nog een klein meer, het Hulameer. De Jordaan verbindt het Meer van Galilea met de Dode Zee.\n\nHet Hulameer bestaat vandaag bijna niet meer: in de jaren vijftig is het grotendeels drooggelegd om er landbouwgrond van te maken. Later is een klein deel weer onder water gezet, als natuurgebied waar trekvogels rusten."
+                vraag: "De Jordaan is de belangrijkste rivier uit de Bijbel. Hij stroomt van het noorden naar het zuiden door het land. Waar komt hij uiteindelijk uit?",
+                antwoorden: ["In de Dode Zee, die zelf geen uitgang heeft", "In de Middellandse Zee, bij de haven van Jafo", "In de Rode Zee, waar Mozes het volk doorheen leidde", "In de Eufraat, de grote rivier in het oosten"],
+                correct: "In de Dode Zee, die zelf geen uitgang heeft",
+                bijbelplaats: "Jozua 3:16",
+                uitleg: "De Jordaan ontspringt in het noorden, aan de voet van de berg Hermon. Onderweg stroomt hij door het meer van Galilea. De Bijbel noemt dat meer ook het meer van Gennesaret (Lucas 5:1) of het meer van Tiberias (Johannes 6:1). Daarna loopt de Jordaan verder naar het zuiden en komt uit in de Dode Zee.\n\nDe Dode Zee heeft geen uitgang: het water kan nergens heen en verdampt in de hitte. Het zout blijft achter, en daarom is het water daar zo zout dat je er vanzelf in blijft drijven.\n\nIn de tijd van Jezus lag er in het noorden nog een klein meer, het Hulameer, waar de Jordaan ook doorheen stroomde. Het Hulameer bestaat vandaag bijna niet meer: in de jaren vijftig is het grotendeels drooggelegd om er landbouwgrond van te maken. Later is een klein deel weer onder water gezet, als natuurgebied waar trekvogels rusten."
             },
             {
                 vraag: "In het evangelie van Johannes hebben de wonderen van Jezus een eigen, bijzondere naam. Hoe noemt Johannes ze?",
@@ -1987,6 +1989,13 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["De bewaker van het graf", "De tuinman", "Een soldaat", "Een vreemde"],
                 correct: "De tuinman",
                 bijbelplaats: "Johannes 20:15"
+            },
+            {
+                vraag: "Het meer van Galilea heeft in de Bijbel meer dan één naam. Welke van deze namen hoort er níet bij?",
+                antwoorden: ["Het meer van Gennesaret", "Het meer van Tiberias", "Het meer van Kinneret", "De Zoutzee"],
+                correct: "De Zoutzee",
+                bijbelplaats: "Lucas 5:1 · Johannes 6:1 · Numeri 34:11",
+                uitleg: "Het meer heeft in de Bijbel verschillende namen. In het Oude Testament heet het het meer van Kinneret (Numeri 34:11). Die naam komt misschien van het Hebreeuwse woord voor een harp, omdat het meer die vorm heeft. Lucas noemt het het meer van Gennesaret (Lucas 5:1), naar de vruchtbare vlakte aan de westoever. Johannes noemt het ook het meer van Tiberias (Johannes 6:1), naar de stad die Herodes Antipas aan de oever bouwde en vernoemde naar keizer Tiberius.\n\nDe Zoutzee is een andere naam, maar dan voor de Dode Zee (Genesis 14:3)."
             }
         ]
     }
