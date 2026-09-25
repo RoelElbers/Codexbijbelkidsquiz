@@ -5468,7 +5468,7 @@ vragenData["Jakobus"] = {
             vraag: "Jakobus verwijt rijke landeigenaars dat zij het loon van hun maaiers achterhielden. Waarom was dat zo erg?",
             antwoorden: ["Een dagloner leefde van die dag en had niets achter de hand", "Maaiers mochten volgens de wet geen loon vragen, alleen eten", "Het loon van de oogst hoorde eerst naar de priesters te gaan", "Wie op het land werkte, kreeg altijd graan en nooit geld"],
             correct: "Een dagloner leefde van die dag en had niets achter de hand",
-            bijbelplaats: "Jakobus 5:4",
+            bijbelplaats: "Jakobus 5:4 · Deuteronomium 24:15",
             uitleg: "De wet van Mozes schreef het letterlijk voor: betaal een dagloner nog dezelfde dag, want hij heeft niets achter de hand. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
         },
         {
@@ -5685,7 +5685,7 @@ vragenData["Petrus & Judas"] = {
             vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: 'Wees …, want Ik ben …'",
             antwoorden: ["heilig", "sterk", "wijs", "streng"],
             correct: "heilig",
-            bijbelplaats: "1 Petrus 1:16"
+            bijbelplaats: "1 Petrus 1:16 · Leviticus 19:2"
         },
         {
             vraag: "Petrus schrijft over de dag waarop de Heer terugkomt. Waarmee vergelijkt hij die dag?",
@@ -5722,7 +5722,7 @@ vragenData["Petrus & Judas"] = {
             vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die zijn eigen broer doodde uit jaloezie. Wie was die man?",
             antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
             correct: "Kaïn",
-            bijbelplaats: "Judas 11"
+            bijbelplaats: "Judas 11 · Genesis 4:8"
         },
         {
             vraag: "Petrus zegt: verlang naar het zuivere woord van God, net zoals een pasgeboren baby ergens naar verlangt. Waar verlangt die baby naar?",
