@@ -3135,7 +3135,7 @@ vragenData["1 & 2 Korintiërs"] = {
             vraag: "Paulus eindigt 2 Korintiërs met een zegen. Wat wenst hij de gelovigen toe?",
             antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Veel geld en macht", "Een lang leven vol roem", "Zoveel wijsheid dat ze slimmer worden dan alle andere gelovigen"],
             correct: "De genade van Jezus, de liefde van God en de verbondenheid van de Geest",
-            bijbelplaats: "2 Korintiërs 13:14"
+            bijbelplaats: "2 Korintiërs 13:13"
         },
         {
             vraag: "Voor sommige mensen is de boodschap van het kruis onzin, schrijft Paulus. Maar wat is die boodschap voor wie erin gelooft?",
