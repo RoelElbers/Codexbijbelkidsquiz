@@ -4287,7 +4287,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat \"gerechtigheid\". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen?",
             antwoorden: ["Geloof en liefde", "Ook gerechtigheid", "Goud en zilver", "Moed en kracht"],
             correct: "Geloof en liefde",
-            bijbelplaats: "1 Tessalonicenzen 5:8"
+            bijbelplaats: "1 Tessalonicenzen 5:8 · Efeziërs 6:14"
         },
         {
             vraag: "Aan het eind van 2 Tessalonicenzen doet Paulus zelf iets met zijn eigen hand, als een soort handtekening. Wat doet hij?",
@@ -4963,7 +4963,7 @@ vragenData["Kolossenzen & Filemon"] = {
             vraag: "Paulus noemt dingen waarover niemand de Kolossenzen mag veroordelen: eten, drinken, feestdagen, \"nieuwe maan\" en sabbat. Wat was die nieuwe maan?",
             antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
             correct: "Het begin van een nieuwe maand, met een feest",
-            bijbelplaats: "Kolossenzen 2:16",
+            bijbelplaats: "Kolossenzen 2:16 · Numeri 28:11",
             uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Ook Pasen hangt nog steeds af van de maan, en valt daarom elk jaar op een andere datum."
         }
     ]
