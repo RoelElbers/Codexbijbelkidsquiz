@@ -459,7 +459,7 @@ const vragenData = {
                 vraag: "Welke profeet wordt aangehaald: De maagd zal zwanger zijn en een zoon baren, en men zal Hem Immanuël noemen?",
                 antwoorden: ["Jesaja", "Jeremia", "Daniël", "Maleachi"],
                 correct: "Jesaja",
-                bijbelplaats: "Matteüs 1:22-23"
+                bijbelplaats: "Matteüs 1:22-23 · Jesaja 7:14"
             },
             {
                 vraag: "Wat betekent de naam Immanuël, die in Matteüs wordt uitgelegd?",
@@ -540,7 +540,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                     "Bij zonsopgang — het uur van het ochtendoffer"
                 ],
                 correct: "Ongeveer drie uur 's middags — ook het vaste uur waarop men naar de tempel ging om te bidden",
-                bijbelplaats: "Matteüs 27:46-50",
+                bijbelplaats: "Matteüs 27:46-50 · Handelingen 3:1",
                 uitleg: "Het 'negende uur' is ongeveer drie uur 's middags. Op dat uur stierf Jezus aan het kruis. Het was ook een vast gebedsuur: in het boek Handelingen lezen we dat Petrus en Johannes 'op het negende uur, het uur van het gebed' naar de tempel gingen (Handelingen 3:1)."
             },
             {
@@ -764,7 +764,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: 'Wat betekent het woord "Messias"?',
                 antwoorden: ['De beloofde redder ("de gezalfde")', "De koning van de Romeinen", "De leider van de tempel", "Een hemelse engel"],
                 correct: 'De beloofde redder ("de gezalfde")',
-                bijbelplaats: "Marcus 8:29"
+                bijbelplaats: "Marcus 8:29 · Johannes 1:41"
             },
             {
                 vraag: 'Wat betekent het woord "evangelie"?',
@@ -791,10 +791,10 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
             },
             {
-                vraag: "Een arme weduwe gooide twee heel kleine muntjes in de offerkist. Wat zei Jezus daarover?",
-                antwoorden: ["Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had", "Dat zij de volgende keer wat meer moest meebrengen", "Dat God haar geld zou verdubbelen als beloning", "Dat niemand mocht zien wat een ander in de offerkist deed"],
-                correct: "Dat zij meer gaf dan alle rijken, want zij gaf alles wat ze had",
-                bijbelplaats: "Marcus 12:41-44 (de arme weduwe)"
+                vraag: "In de tempel zag Jezus een arme weduwe iets in de offerkist gooien. Hoeveel muntjes waren het?",
+                antwoorden: ["Twee", "Eén", "Vijf", "Tien"],
+                correct: "Twee",
+                bijbelplaats: "Marcus 12:42"
             },
             {
                 vraag: "Bij de doop van Jezus daalde de Heilige Geest op Hem neer. In de gedaante van welk dier?",
@@ -1039,7 +1039,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 vraag: "In de tijd van de Bijbel liep Israël van Dan in het noorden tot Berseba in het zuiden. Hoeveel kilometer was dat ongeveer?",
                 antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
                 correct: "Ongeveer 240 kilometer",
-                bijbelplaats: "1 Koningen 4:25",
+                bijbelplaats: "1 Koningen 5:5",
                 uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen.\n\nDie uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
             },
             {
@@ -1053,7 +1053,7 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
                 antwoorden: ["Christus", "Rabbi", "Profeet", "Immanuël"],
                 correct: "Christus",
-                bijbelplaats: "Marcus 8:29"
+                bijbelplaats: "Marcus 8:29 · Johannes 1:41"
             },
             {
                 vraag: 'Volgens Marcus stierf Jezus op het "negende uur". Hoe laat was dat ongeveer?',
