@@ -2123,7 +2123,7 @@ vragenData["Romeinen"] = {
             vraag: "Paulus haalt een oude belofte aan, over iedereen die de naam van de Heer aanroept. Wat belooft God zo iemand?",
             antwoorden: ["Dat hij gered wordt", "Dat hij alles zal begrijpen", "Dat zijn wensen vervuld worden", "Dat hij een teken zal zien"],
             correct: "Dat hij gered wordt",
-            bijbelplaats: "Romeinen 10:13"
+            bijbelplaats: "Romeinen 10:13 · Joël 3:5"
         },
         {
             vraag: "Hoe ontstaat geloof volgens Paulus?",
@@ -2147,7 +2147,7 @@ vragenData["Romeinen"] = {
             vraag: "Paulus herhaalt een bekende regel uit de wet van Mozes. Wie moet je volgens die regel liefhebben als jezelf?",
             antwoorden: ["Je naaste", "Je koning", "Je leraar", "Je baas"],
             correct: "Je naaste",
-            bijbelplaats: "Romeinen 13:9"
+            bijbelplaats: "Romeinen 13:9 · Leviticus 19:18"
         },
         {
             vraag: "Tegen het eind van zijn brief wenst Paulus de gelovigen vreugde en vrede toe, en noemt God daarbij met een mooie naam. Welke naam geeft hij God?",
@@ -2323,7 +2323,7 @@ vragenData["Romeinen"] = {
             vraag: "Welk echtpaar groet Paulus, dat samen met hem in het werk hielp?",
             antwoorden: ["Maria en Jozef", "Zacharias en Elisabet", "Priscilla en Aquila", "Abraham en Sara"],
             correct: "Priscilla en Aquila",
-            bijbelplaats: "Romeinen 16:3"
+            bijbelplaats: "Romeinen 16:3 · Handelingen 18:2"
         },
         {
             vraag: "Paulus sprak zijn brief aan de Romeinen hardop uit, terwijl een schrijver die Tertius heette alles opschreef. En dan gebeurt er aan het eind iets bijzonders. Wat doet Tertius?",
