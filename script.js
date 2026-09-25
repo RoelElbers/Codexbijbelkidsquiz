@@ -6008,7 +6008,7 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes schrijft dat de gelovigen \"een zalving\" hebben gekregen. Wat gebeurde er vroeger bij een zalving?",
             antwoorden: ["Er werd olie over iemands hoofd gegoten", "Er werd water over iemands handen gegoten", "Er werd een ring aan iemands vinger geschoven", "Er werd een mantel om iemands schouders gelegd"],
             correct: "Er werd olie over iemands hoofd gegoten",
-            bijbelplaats: "1 Johannes 2:20",
+            bijbelplaats: "1 Johannes 2:20 · 1 Samuël 16:13",
             uitleg: "Koningen en priesters werden met olie gezalfd als teken dat God hen voor een taak had aangewezen. Johannes zegt iets verrassends: niet alleen leiders, maar álle gelovigen hebben die zalving gekregen. Hij gebruikt dit beeld voor iets dat de gelovigen van God hebben ontvangen en waardoor zij de waarheid kunnen herkennen en niet zomaar met misleiding hoeven mee te gaan."
         },
         {
@@ -6374,7 +6374,7 @@ vragenData["Openbaring"] = {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
             antwoorden: ["Het brood dat God Zijn volk in de woestijn elke ochtend gaf", "Het meel waarvan de priesters de toonbroden bakten", "De honing die men vond in de rotsen bij Sinaï", "Het graan dat men bewaarde voor jaren van hongersnood"],
             correct: "Het brood dat God Zijn volk in de woestijn elke ochtend gaf",
-            bijbelplaats: "Openbaring 2:17"
+            bijbelplaats: "Openbaring 2:17 · Exodus 16:15, 21"
         },
         {
             vraag: "God noemt zichzelf \"de alfa en de omega\". Waar komen die twee woorden vandaan?",
@@ -6413,7 +6413,7 @@ vragenData["Openbaring"] = {
             vraag: "Wat Johannes rondom de troon ziet, doet denken aan het teken dat God ooit aan Noach gaf. Wat zag hij?",
             antwoorden: ["Een regenboog", "Een muur van vuur", "Een dikke mist", "Een rij sterren"],
             correct: "Een regenboog",
-            bijbelplaats: "Openbaring 4:3"
+            bijbelplaats: "Openbaring 4:3 · Genesis 9:13"
         },
         {
             vraag: "Helemaal aan het einde van Openbaring stelt Jezus zichzelf voor met een naam waar een ster in zit. Welke naam gebruikt Hij voor zichzelf?",
@@ -6489,7 +6489,7 @@ vragenData["Openbaring"] = {
             vraag: "Jezus zegt dat Hij \"de sleutel van David\" heeft. Wat betekent dat beeld?",
             antwoorden: ["Dat Hij het gezag heeft om te openen en te sluiten", "Dat Hij de tempeldeuren iedere ochtend zelf opende", "Dat Hij alle huizen in Jeruzalem kon binnengaan", "Dat Hij de sleutel van koning Davids paleis bewaarde"],
             correct: "Dat Hij het gezag heeft om te openen en te sluiten",
-            bijbelplaats: "Openbaring 3:7",
+            bijbelplaats: "Openbaring 3:7 · Jesaja 22:22",
             uitleg: "Een belangrijke sleutel was vroeger ook een teken van gezag. Openbaring verwijst hier naar Jesaja 22:22: iemand krijgt de sleutel van het huis van David en mag openen en sluiten. Jezus zegt daarom: wat Hij opent kan niemand sluiten, en wat Hij sluit kan niemand openen."
         },
         {
