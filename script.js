@@ -369,7 +369,7 @@ const vragenData = {
                 vraag: 'Wat betekende het woord "heiden" in de Bijbel?',
                 antwoorden: ["Iemand die niet bij het Joodse volk hoorde", "Een koning die slecht regeerde over zijn volk", "Iemand zonder huis, die van plaats naar plaats trok", "Een gewone Jood, iemand zonder openbare religieuze functie"],
                 correct: "Iemand die niet bij het Joodse volk hoorde",
-                bijbelplaats: "Matteüs 10:5 (de uitzending van de twaalf)"
+                bijbelplaats: "Matteüs 10:5"
             },
             {
                 vraag: "Jezus riep Zijn eerste leerlingen bij het meer. Wat deden ze toen Hij zei 'volg mij'?",
@@ -572,7 +572,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "Hoe lang moest een gewone arbeider ongeveer werken om één talent te verdienen?",
                 antwoorden: ["Ongeveer 4,5 jaar", "Vijftien tot twintig jaar", "Een paar maanden", "Ongeveer een jaar"],
                 correct: "Vijftien tot twintig jaar",
-                bijbelplaats: "Matteüs 25:14-30 (de gelijkenis van de talenten)"
+                bijbelplaats: "Matteüs 25:14-30"
             },
             {
                 vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
@@ -788,7 +788,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: 'Wat is een "wonder" in de Bijbel?',
                 antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
                 correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
-                bijbelplaats: "Marcus 4:39 (Jezus stilt de storm)"
+                bijbelplaats: "Marcus 4:39"
             },
             {
                 vraag: "In de tempel zag Jezus een arme weduwe iets in de offerkist gooien. Hoeveel muntjes waren het?",
@@ -966,7 +966,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Wat is een opvallend woord dat in het evangelie van Marcus heel vaak voorkomt, en dat de snelheid van zijn verhaal aangeeft?",
                 antwoorden: ["Vrede", "Meteen (of terstond)", "Wacht", "Zwijg"],
                 correct: "Meteen (of terstond)",
-                bijbelplaats: "Marcus 1:10, 1:18 en vele andere plaatsen"
+                bijbelplaats: "Marcus 1:10, 18 en vele andere plaatsen"
             },
             {
                 vraag: "Waar begint het Marcus-evangelie mee?",
@@ -990,7 +990,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel over de stem die roept in de woestijn komt daar inderdaad vandaan. Maar de regel ervoor — 'Ik zend Mijn bode voor Je uit' — komt uit een ander boek. Uit welk boek komt die regel?",
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
-                bijbelplaats: "Marcus 1:2-3 (samengesteld uit Maleachi 3:1 en Jesaja 40:3)"
+                bijbelplaats: "Marcus 1:2-3 · Maleachi 3:1 · Jesaja 40:3"
             },
             {
                 vraag: "Welk Aramees woord sprak Jezus uit toen Hij het dochtertje van Jaïrus opwekte uit de dood?",
@@ -1003,7 +1003,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Welke drie leerlingen nam Jezus mee de berg op bij Zijn verheerlijking, en ook mee naar Getsemane?",
                 antwoorden: ["Petrus, Andreas en Filippus", "Petrus, Jakobus en Johannes", "Petrus, Johannes en Matteüs", "Jakobus, Johannes en Tomas"],
                 correct: "Petrus, Jakobus en Johannes",
-                bijbelplaats: "Marcus 9:2 en 14:33"
+                bijbelplaats: "Marcus 9:2; 14:33"
             },
             {
                 vraag: "Jezus riep aan het kruis in Zijn eigen taal: 'Eloï, Eloï, lema sabachtani.' Wat betekenen deze woorden?",
@@ -1242,7 +1242,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: 'Jezus vertelde vaak een "gelijkenis". Wat is dat?',
                 antwoorden: ["Een kort verhaal om iets belangrijks mee uit te leggen", "Een lang lied dat je samen in de tempel hoort te zingen", "Een gebed dat je elke dag hardop uitspreekt", "Een regel waar iedereen zich aan moest houden"],
                 correct: "Een kort verhaal om iets belangrijks mee uit te leggen",
-                bijbelplaats: "Lucas 15:3 (o.a. de verloren zoon)"
+                bijbelplaats: "Lucas 15:3"
             },
             {
                 vraag: "Wat liet de vader doen toen de verloren zoon thuiskwam?",
@@ -1630,7 +1630,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: 'Wat betekent het woord "opstanding"?',
                 antwoorden: ["Weer levend worden na de dood", "Omhooggaan naar de hemel", "Een lange reis maken", "Een groot feest vieren"],
                 correct: "Weer levend worden na de dood",
-                bijbelplaats: "Johannes 11:25 (Jezus bij het graf van Lazarus)"
+                bijbelplaats: "Johannes 11:25"
             },
             {
                 vraag: "Wat was de tempel?",
@@ -1704,7 +1704,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Wat beloofde Jezus aan Zijn leerlingen te zenden na Zijn vertrek, ook wel 'de Trooster' of 'de Pleitbezorger' genoemd?",
                 antwoorden: ["Engelen", "De Heilige Geest", "Een profeet", "Een nieuw boek"],
                 correct: "De Heilige Geest",
-                bijbelplaats: "Johannes 14:16-17, 14:26"
+                bijbelplaats: "Johannes 14:16-17, 26"
             },
             {
                 vraag: "Wat schreef Pilatus op het bordje boven het kruis, in drie talen?",
@@ -1840,7 +1840,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "In het evangelie van Johannes komt telkens een leerling voor die 'de leerling van wie Jezus hield' wordt genoemd, zonder dat zijn naam erbij staat. Wie is het volgens de vroege kerk?",
                 antwoorden: ["Petrus", "Johannes", "Andreas", "Tomas"],
                 correct: "Johannes",
-                bijbelplaats: "Johannes 13:23, 19:26, 21:24 · Irenaeus, Tegen de ketterijen 3.1.1",
+                bijbelplaats: "Johannes 13:23; 19:26; 21:24 · Irenaeus, Tegen de ketterijen 3.1.1",
                 uitleg: "Deze leerling wordt nooit bij naam genoemd. Aan het slot van het evangelie staat wel dat híj het is die dit alles heeft opgeschreven (Johannes 21:24). Rond het jaar 180 schrijft de kerkvader Irenaeus dat het om Johannes gaat, de leerling die bij het Laatste Avondmaal naast Jezus lag."
             },
             {
@@ -1874,7 +1874,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
                 antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld, genoeg voor een heel huis", "Een tijdsmaat"],
                 correct: "Een gewicht (ongeveer 300 gram)",
-                bijbelplaats: "Johannes 12:3 (de zalving in Betanië)",
+                bijbelplaats: "Johannes 12:3",
                 uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
             },
             {
@@ -1900,7 +1900,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes waarschijnlijk ontstaan?",
                 antwoorden: ["Als eerste", "Als tweede", "Als derde", "Als laatste"],
                 correct: "Als laatste",
-                bijbelplaats: "NT algemeen",
+                bijbelplaats: "algemeen",
                 uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
             },
             {
@@ -2310,7 +2310,7 @@ vragenData["Romeinen"] = {
             vraag: "Paulus wilde naar een ver land reizen en onderweg de christenen in Rome bezoeken. Naar welk land wilde hij?",
             antwoorden: ["Spanje", "Egypte", "Griekenland", "Gallië"],
             correct: "Spanje",
-            bijbelplaats: "Romeinen 15:24,28"
+            bijbelplaats: "Romeinen 15:24, 28"
         },
         {
             vraag: "Aan het eind van zijn brief beveelt Paulus een vrouw aan die Febe heet. Zij diende de gemeente en was nu op reis naar Rome, waarschijnlijk met deze brief in haar hand. Wat vraagt Paulus aan de Romeinen?",
@@ -2420,7 +2420,7 @@ vragenData["Handelingen"] = {
             vraag: "Sommige leiders werden boos en zeiden dat de apostelen moesten stoppen met vertellen over Jezus. Wat deden Petrus en de anderen?",
             antwoorden: ["Ze stopten er meteen mee", "Ze verstopten zich en verschenen niet meer in het openbaar", "Ze bleven toch elke dag over Jezus vertellen", "Ze verhuisden naar een ander land"],
             correct: "Ze bleven toch elke dag over Jezus vertellen",
-            bijbelplaats: "Handelingen 5:29,42"
+            bijbelplaats: "Handelingen 5:29, 42"
         },
         {
             vraag: "In de dagen vóór Pinksteren kwamen de leerlingen steeds bij elkaar. Wat deden ze dan vaak samen?",
@@ -3554,7 +3554,7 @@ vragenData["Efeziërs"] = {
             vraag: "Paulus vergelijkt de liefde tussen man en vrouw met iets veel groters. Waarmee vergelijkt hij die?",
             antwoorden: ["Met de liefde tussen Christus en de gemeente", "Met de vriendschap tussen twee koningen", "Met de band tussen een leraar en zijn leerling", "Met de trouw van een dienaar aan zijn heer"],
             correct: "Met de liefde tussen Christus en de gemeente",
-            bijbelplaats: "Efeziërs 5:25,32"
+            bijbelplaats: "Efeziërs 5:25, 32"
         },
         {
             vraag: "Paulus zegt tegen de gelovigen dat zij de wapenrusting van God moeten aandoen. Waarvoor hebben zij die nodig?",
@@ -4077,7 +4077,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Welke drie personen worden aan het begin van de brieven aan de Tessalonicenzen als afzenders genoemd?",
             antwoorden: ["Paulus, Silvanus en Timoteüs", "Paulus, Petrus en Johannes", "Paulus, Barnabas en Marcus", "Paulus, Lukas en Titus"],
             correct: "Paulus, Silvanus en Timoteüs",
-            bijbelplaats: "1 Tessalonicenzen 1:1; 2 Tessalonicenzen 1:1"
+            bijbelplaats: "1 Tessalonicenzen 1:1 · 2 Tessalonicenzen 1:1"
         },
         {
             vraag: "Wat voor soort teksten zijn 1 en 2 Tessalonicenzen?",
@@ -4188,7 +4188,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Vlak vóór Paulus naar Tessalonica kwam, was hij in een andere stad slecht behandeld en gevangengezet. In welke stad was dat?",
             antwoorden: ["Filippi", "Rome", "Athene", "Korinte"],
             correct: "Filippi",
-            bijbelplaats: "1 Tessalonicenzen 2:2; Handelingen 16:22-24"
+            bijbelplaats: "1 Tessalonicenzen 2:2 · Handelingen 16:22-24"
         },
         {
             vraag: "Paulus schrijft: zorg dat niemand kwaad met kwaad vergeldt. Wat moeten de gelovigen in plaats daarvan doen?",
@@ -4377,7 +4377,7 @@ vragenData["Timoteüs & Titus"] = {
             vraag: "Welke naam staat aan het begin van 1 en 2 Timoteüs en Titus als afzender?",
             antwoorden: ["Paulus", "Petrus", "Johannes", "Jakobus"],
             correct: "Paulus",
-            bijbelplaats: "1 Timoteüs 1:1; 2 Timoteüs 1:1; Titus 1:1"
+            bijbelplaats: "1 Timoteüs 1:1 · 2 Timoteüs 1:1 · Titus 1:1"
         },
         {
             vraag: "Wat voor soort teksten zijn 1 en 2 Timoteüs en Titus?",
@@ -4457,7 +4457,7 @@ vragenData["Timoteüs & Titus"] = {
             vraag: "Aan wie zijn 1 en 2 Timoteüs en Titus gericht?",
             antwoorden: ["Elk aan één persoon", "Aan de leiders van alle Joodse synagogen", "Aan alle gemeenten tegelijk", "Aan de keizer in Rome"],
             correct: "Elk aan één persoon",
-            bijbelplaats: "1 Timoteüs 1:1-2; 2 Timoteüs 1:1-2; Titus 1:1-4"
+            bijbelplaats: "1 Timoteüs 1:1-2 · 2 Timoteüs 1:1-2 · Titus 1:1-4"
         },
         {
             vraag: "Waaraan moet Timoteüs volgens Paulus vasthouden, wat hij van jongs af aan kent?",
@@ -4499,7 +4499,7 @@ vragenData["Timoteüs & Titus"] = {
             vraag: "Hoe noemt Paulus Timoteüs en Titus in zijn brieven?",
             antwoorden: ["Mijn kind in het geloof", "Mijn trouwe leerling en volgeling", "Mijn dienaar", "Mijn vriend"],
             correct: "Mijn kind in het geloof",
-            bijbelplaats: "1 Timoteüs 1:2; Titus 1:4"
+            bijbelplaats: "1 Timoteüs 1:2 · Titus 1:4"
         },
         {
             vraag: "Paulus schrijft aan Timoteüs dat God ons geen geest van angst heeft gegeven. Welke drie dingen noemt hij in plaats daarvan?",
@@ -4867,7 +4867,7 @@ vragenData["Kolossenzen & Filemon"] = {
             vraag: "Uit Kolossenzen blijkt dat niet Paulus, maar Epafras de gelovigen daar het goede nieuws had gebracht. Wat zegt dat over Paulus' band met hen?",
             antwoorden: ["Hij kende veel van hen nog niet persoonlijk", "Hij had de gemeente zelf gesticht en kende iedereen", "Hij had jarenlang in Kolosse gewoond", "Hij was daar als kind opgegroeid"],
             correct: "Hij kende veel van hen nog niet persoonlijk",
-            bijbelplaats: "Kolossenzen 1:7-8 en 2:1"
+            bijbelplaats: "Kolossenzen 1:7-8; 2:1"
         },
         {
             vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door Hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
@@ -5259,7 +5259,7 @@ vragenData["Hebreeën"] = {
             vraag: "De brief zelf zegt niet dat hij \"aan de Hebreeën\" is geschreven. Waarom kreeg hij later waarschijnlijk toch die naam?",
             antwoorden: ["Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond", "Omdat alle personen in de brief Hebreeuws spreken", "Omdat de brief in Jeruzalem is gevonden", "Omdat de schrijver zichzelf \"de Hebreeër\" noemt"],
             correct: "Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond",
-            bijbelplaats: "algemeen; zie o.a. Hebreeën 7-10"
+            bijbelplaats: "algemeen · Hebreeën 7-10"
         },
         {
             vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets bijzonders zijn. Wat zijn ze volgens de brief?",
@@ -5925,7 +5925,7 @@ vragenData["Brieven van Johannes"] = {
             vraag: "Johannes heeft nog veel te vertellen, maar hij wil het niet allemaal met pen en inkt opschrijven. Wat wil hij liever doen?",
             antwoorden: ["Zelf bij hen langskomen en het persoonlijk vertellen", "Iemand anders het laten opschrijven", "Wachten tot ze zelf naar hem toe komen", "Het geheimhouden voor de anderen"],
             correct: "Zelf bij hen langskomen en het persoonlijk vertellen",
-            bijbelplaats: "2 Johannes 12; 3 Johannes 13",
+            bijbelplaats: "2 Johannes 12 · 3 Johannes 13",
             uitleg: "Johannes noemt zijn schrijfgerei zelf: in de ene brief papier en inkt, in de andere inkt en pen. Dat papier was papyrus, gemaakt van een rietplant, en de pen was een rietstengel die schuin was afgesneden. Johannes zegt eigenlijk: ik kan nog veel meer opschrijven, maar ik kom liever zelf langs om met jullie te praten. Daardoor merk je dat deze Bijbelboeken echte brieven waren tussen mensen die elkaar kenden."
         }
     ],
@@ -6133,7 +6133,7 @@ vragenData["Brieven van Johannes"] = {
             vraag: "De schrijver van de tweede en derde brief van Johannes noemt zichzelf niet bij naam, maar met een titel. Welke titel gebruikt hij?",
             antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
             correct: "'de oudste'",
-            bijbelplaats: "2 Johannes 1; 3 Johannes 1"
+            bijbelplaats: "2 Johannes 1 · 3 Johannes 1"
         },
         {
             vraag: "In zijn tweede brief waarschuwt Johannes voor misleiders die de wereld zijn ingegaan. Wat beweren zij?",
@@ -7895,7 +7895,7 @@ const verborgenSchatVragen = [
             "Jezus beval Petrus dat hij weg moest gaan"
         ],
         correct: "Jezus raakte het oor aan en genas de man die Hem kwam arresteren",
-        bijbelplaats: "Lucas 22:50-51 en Johannes 18:10",
+        bijbelplaats: "Lucas 22:50-51 · Johannes 18:10",
         reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die Hij geneest, is iemand die gekomen was om Hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
     },
     {
