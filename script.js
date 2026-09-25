@@ -7698,7 +7698,7 @@ const metgezellenVragen = [
         vraag: "In de derde brief prijst Johannes een man die gastvrij is voor rondreizende gelovigen. Hoe heet hij?",
         antwoorden: ["Gajus", "Petrus", "Lucas", "Marcus"],
         correct: "Gajus",
-        bijbelplaats: "3 Johannes 1"
+        bijbelplaats: "3 Johannes 1, 5-8"
     },
     {
         vraag: "In zijn derde brief schrijft Johannes over een man in de gemeente die graag de eerste wilde zijn. Hij wilde niet naar Johannes luisteren en weigerde rondreizende gelovigen te ontvangen. Hoe heette hij?",
@@ -7835,7 +7835,7 @@ const verborgenSchatVragen = [
         vraag: 'In Openbaring en in het boek Daniël komt de geheimzinnige uitdrukking "een tijd, tijden en een halve tijd" voor. Welke tijdsduur wordt daarmee bedoeld?',
         antwoorden: ["Zeven jaar", "Drieënhalf jaar", "Drie en een halve dag", "Duizend jaar"],
         correct: "Drieënhalf jaar",
-        bijbelplaats: "Openbaring 12:14",
+        bijbelplaats: "Openbaring 12:14 · Daniël 7:25",
         reveal: "Een tijd is een jaar, tijden zijn twee jaar, en een halve tijd is een half jaar: samen drieënhalf jaar. Het bijzondere is dat Openbaring diezelfde periode ook op twee andere manieren opschrijft: 42 maanden en 1260 dagen. Drie keer hetzelfde, steeds anders geteld. En let op het getal: drieënhalf is precies de helft van zeven, het getal van compleetheid. De moeilijke tijd is dus echt zwaar, maar hij is half, niet heel. Wanneer die tijd precies valt, daarover denken christenen heel verschillend."
     },
     {
@@ -7902,7 +7902,7 @@ const verborgenSchatVragen = [
         vraag: "Het boek Hebreeën dankt zijn naam aan een oud woord. Wat betekent \"Hebreeën\"?",
         antwoorden: ["Een oude aanduiding voor het Joodse volk", "De inwoners van de stad Hebron", "Mensen die in tenten woonden", "De priesters die in de tempel dienden"],
         correct: "Een oude aanduiding voor het Joodse volk",
-        bijbelplaats: "naam van het boek",
+        bijbelplaats: "Genesis 14:13 · 2 Korintiërs 11:22 · Filippenzen 3:5",
         reveal: "Hebreeën is een oude naam voor het Joodse volk; je komt hem al tegen bij Abraham. De titel boven de brief is er later boven gezet, want de brief zelf noemt nergens aan wie hij gericht is. Wie de brief leest, begrijpt wel waarom die naam gekozen is: het gaat bladzijden lang over de tempel, de offers en het priesterschap."
     },
     {
