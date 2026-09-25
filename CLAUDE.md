@@ -243,6 +243,26 @@ genoemd. Gebruik deze lijst; hij is bewust ruim:
 `Immanuël` stond er eerst niet bij. Daardoor bleef de vraag bij Matteüs 1:23
 bij een eerdere controle buiten beeld: dat blok noemt Jezus nergens anders.
 
+### Bijbelplaatsen
+
+- Nummering volgens **Nederlandse bijbels** (NBV, NBG, Willibrord). Die wijkt
+  op een paar plekken af van de Engelse, bijvoorbeeld 1 Koningen 5:5 (Engels
+  4:25), Handelingen 2:10-11 en 2 Korintiërs 13:13 (Engels 13:14). Controleer
+  bij twijfel de Nederlandse telling.
+- Verzen uit **hetzelfde hoofdstuk**: komma + spatie, hoofdstuk niet herhalen:
+  `Romeinen 15:24, 28`
+- **Ander hoofdstuk uit hetzelfde boek**: puntkomma, boeknaam één keer:
+  `Marcus 9:2; 14:33`
+- **Ander bijbelboek of bron buiten de Bijbel**: ` · ` met volledige boeknaam:
+  `1 Timoteüs 1:2 · Titus 1:4`
+- **Geen toelichting tussen haakjes**; wat het verhaal is, staat in de vraag of
+  de uitleg.
+- Vragen over de Bijbel als geheel: `algemeen`.
+- Staat het antwoord **niet in het vers uit het eigen boek** maar elders in de
+  Bijbel, dan komt die tweede plaats erbij na ` · `.
+- **Uitzondering:** de bijbelplaatsen in `avatarInfo` volgen
+  `kladblok/KLADBLOK-avatarbeschrijvingen.md` en worden daar gewijzigd.
+
 ## Plaatsingsregel — gewone pool of Verborgen Schat
 
 Waar materiaal terechtkomt hangt af van hoe vast de herkomst ervan ligt.
