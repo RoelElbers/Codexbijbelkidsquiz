@@ -3392,7 +3392,7 @@ vragenData["Galaten"] = {
             vraag: "In het derde hoofdstuk van zijn brief aan de Galaten haalt Paulus de profeet Habakuk aan om te laten zien dat je niet door de wet bij God gaat horen. Wat zegt dat citaat?",
             antwoorden: ["Wie rechtvaardig is, zal leven door geloof", "Wie de wet kent, zal leven door de wet", "Wie zich aan de geboden houdt, zal lang leven", "Wie volhoudt tot het einde, zal gered worden"],
             correct: "Wie rechtvaardig is, zal leven door geloof",
-            bijbelplaats: "Galaten 3:11"
+            bijbelplaats: "Galaten 3:11 · Habakuk 2:4"
         },
         {
             vraag: "Paulus zegt dat de wet vroeger een taak had, zoals een oppasser die op je let tot je groot genoeg bent. Wat gebeurde er toen Christus kwam?",
@@ -3750,7 +3750,7 @@ vragenData["Efeziërs"] = {
             vraag: "Paulus schrijft dat Christus \"de muur die scheiding maakte\" heeft afgebroken. Aan welke echte muur kan dit beeld de lezers hebben herinnerd?",
             antwoorden: ["Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten", "Aan de stadsmuur van Jeruzalem, met voor elk volk een eigen poort", "Aan een muur tussen de rijke en arme wijk", "Aan de muur rond het paleis van de Romeinse stadhouder"],
             correct: "Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten",
-            bijbelplaats: "Efeziërs 2:14",
+            bijbelplaats: "Efeziërs 2:14 · Handelingen 21:28-29",
             uitleg: "Op het tempelplein in Jeruzalem stond een stenen afscheiding waar niet-Joden niet voorbij mochten. Er stonden waarschuwingsborden bij; twee zulke inscripties zijn teruggevonden. Die muur kan Paulus' beeld heel herkenbaar hebben gemaakt. Zijn belangrijkste punt is dat Christus de scheiding tussen Joden en niet-Joden heeft doorbroken."
         },
         {
