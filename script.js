@@ -4641,7 +4641,7 @@ vragenData["Timoteüs & Titus"] = {
             vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
             antwoorden: ["Een groot eiland in de Middellandse Zee met veel steden en havens", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël", "Een onbewoond eiland waar schepen alleen bij storm kwamen"],
             correct: "Een groot eiland in de Middellandse Zee met veel steden en havens",
-            bijbelplaats: "Titus 1:5",
+            bijbelplaats: "Titus 1:5 · Handelingen 27:7-12",
             uitleg: "Kreta is een groot eiland in de Middellandse Zee met veel steden en havens. In de tijd van Paulus hoorde het bij het Romeinse Rijk en lag het aan belangrijke vaarroutes.\n\nOp Kreta woonden al eeuwen Joodse gemeenschappen. In Handelingen worden ook Kretenzers genoemd die met Pinksteren in Jeruzalem waren. Dat is iets anders dan de groepen gelovigen in Jezus waarover Paulus later aan Titus schrijft. Titus kreeg de opdracht om in verschillende steden oudsten aan te stellen voor deze gemeenten. Sommige van die eerste christenen kunnen Joods zijn geweest, maar de Bijbel vertelt niet precies hoe die gemeenten op Kreta waren ontstaan."
         },
         {
@@ -5284,7 +5284,7 @@ vragenData["Hebreeën"] = {
             vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
             antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
             correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
-            bijbelplaats: "Hebreeën 9:7",
+            bijbelplaats: "Hebreeën 9:7 · Leviticus 23:27",
             uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de ruimte achter het voorhangsel waar verder niemand mocht komen. Daar bracht hij een offer voor zijn eigen zonden en die van het volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met de zonden van het volk — daar komt het beeld van de zondebok vandaan. Hebreeën vergelijkt dit jaarlijkse ritueel met Jezus: wat de hogepriester ieder jaar opnieuw deed, heeft Jezus volgens de brief met Zijn offer eens en voorgoed volbracht."
         },
         {
