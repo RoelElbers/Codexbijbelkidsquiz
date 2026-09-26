@@ -8652,7 +8652,8 @@ const ontdekRubrieken = [
           { id: "wie-bestuur", naam: "Bestuur en rechtspraak", type: "lexicon", inhoud: ONTDEK_WIE_BESTUUR },
           { id: "wie-leger", naam: "Leger en bewaking", type: "lexicon", inhoud: ONTDEK_WIE_LEGER },
           { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL },
-          { id: "wie-groepen", naam: "Groepen en stromingen", type: "lexicon", inhoud: ONTDEK_WIE_GROEPEN }
+          { id: "wie-groepen", naam: "Groepen en stromingen", type: "lexicon", inhoud: ONTDEK_WIE_GROEPEN },
+          { id: "wie-gemeenten", naam: "Taken in de eerste gemeenten", type: "lexicon", inhoud: ONTDEK_WIE_GEMEENTEN }
       ] },
     { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
 
