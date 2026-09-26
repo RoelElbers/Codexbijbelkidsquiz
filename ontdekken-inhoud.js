@@ -204,9 +204,9 @@ const ONTDEK_WIE_HERODES = [
             ["4 v.Chr. – 6 n.Chr.", "Archelaüs", "etnarch van Judea en Samaria", "Matteüs 2:22"],
             ["4 v.Chr. – 39 n.Chr.", "Herodes Antipas", "tetrarch van Galilea", "Lucas 3:1; 23:7"],
             ["4 v.Chr. – 34 n.Chr.", "Filippus", "tetrarch in het noordoosten", "Lucas 3:1"],
-            ["vanaf 6 n.Chr.", "Romeinse stadhouders, onder wie Pontius Pilatus (26 – 36)", "bestuurders van Judea", "Matteüs 27:2"],
+            ["vanaf 6 n.Chr.", "Romeinse stadhouders, zoals Pilatus", "bestuurders van Judea", "Matteüs 27:2"],
             ["41 – 44 n.Chr.", "Herodes Agrippa", "weer koning over het hele land", "Handelingen 12:1"],
-            ["vanaf ongeveer 50 n.Chr.", "Agrippa, zijn zoon", "koning in het noorden", "Handelingen 25:13"]
+            ["vanaf 50 n.Chr.", "Agrippa, zijn zoon", "koning in het noorden", "Handelingen 25:13"]
         ]
     } },
     { noot: "Drie van hen heten in de Bijbel gewoon Herodes. Kijk dus bij elk verhaal goed welke Herodes er bedoeld wordt." }
