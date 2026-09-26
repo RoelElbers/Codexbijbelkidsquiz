@@ -8831,9 +8831,11 @@ function rendeerOntdekInhoud(onderwerp) {
                 }
                 e = regel;
             }
+            // Tekst en bijbelplaats samen in één blok, zodat zichtbaar is welke
+            // bijbelplaats bij welk lemma hoort.
             let r = `<p class="naslag-item"><span class="naslag-term">${e.term}</span> — ${e.uitleg}</p>`;
             if (e.bijbelplaats) r += `<div class="bijbelplaats">Lees het na in: ${e.bijbelplaats}</div>`;
-            return r;
+            return `<div class="naslag-lemma">${r}</div>`;
         }).join("");
     }
 

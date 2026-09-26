@@ -2194,6 +2194,16 @@ height: 22%;
     margin: 0 0 24px;
     font-size: 1.1rem;
 }
+/* Onderste Terug-knop in Ontdekken: stond tegen de laatste bijbelplaats of het
+   laatste lijstitem aan. Vaste ruimte van 2em erboven; de ondermarge van het
+   laatste blok vervalt, zodat de ruimte overal even groot is. */
+#ontdek-lijst-terug-onder,
+#ontdek-detail-terug-onder {
+    margin-top: 2em;
+}
+#ontdek-detail > :last-child {
+    margin-bottom: 0;
+}
 
 /* === Vragen & uitleg: lijst van vragen ===================================== */
 .vu-lijst {
@@ -2299,6 +2309,21 @@ height: 22%;
     color: rgba(243, 236, 216, 0.75);
     font-size: 1.05rem;
     margin: 0 0 14px;
+}
+/* Eén lemma in een lexicon (woordenboek, Wie is wie): tekst en bijbelplaats
+   samen in één blok. Alleen binnen .naslag-lemma, zodat .naslag-item,
+   .naslag-term en .bijbelplaats in de artikelen en de quiz niet veranderen. */
+.naslag-lemma {
+    margin-bottom: 1.6em;      /* duidelijke ruimte tot het volgende lemma */
+}
+.naslag-lemma .naslag-item {
+    margin-bottom: 0.3em;      /* bijbelplaats dicht onder de eigen tekst */
+}
+.naslag-lemma .naslag-term {
+    font-size: 1.25em;         /* het woord zelf springt er meer uit */
+}
+.naslag-lemma > :last-child {
+    margin-bottom: 0;          /* lemma zonder bijbelplaats: geen extra marge */
 }
 /* Kleurvierkant op een eigen regel, binnen de <p> van het lemma, direct onder
    de zin waarin het staat (bv. purper); de tekst erna gaat op een nieuwe regel
