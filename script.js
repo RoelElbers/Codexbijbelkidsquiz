@@ -1143,8 +1143,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
-                antwoorden: ["Zij wisselden geld uit andere landen om, want de tempelbelasting moest met één bepaald soort zilveren munt betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
-                correct: "Zij wisselden geld uit andere landen om, want de tempelbelasting moest met één bepaald soort zilveren munt betaald worden",
+                antwoorden: ["Zij wisselden geld om in de munt voor de tempelbelasting", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
+                correct: "Zij wisselden geld om in de munt voor de tempelbelasting",
                 bijbelplaats: "Marcus 11:15",
                 uitleg: "Pelgrims kwamen uit het hele Romeinse Rijk naar Jeruzalem, met allerlei munten op zak. De tempelbelasting moest met zilvergeld uit de stad Tyrus betaald worden. Vaak hoor je dat Romeinse munten niet mochten omdat de keizer erop stond, maar op de munten uit Tyrus stond zelf een heidense god. Het ging dus om het zuivere zilver, niet om het plaatje."
             },
