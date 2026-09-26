@@ -200,13 +200,13 @@ const ONTDEK_WIE_HERODES = [
     { tabel: {
         koppen: ["Wanneer", "Wie", "Titel en gebied", "In de Bijbel"],
         rijen: [
-            ["tot 4 v.Chr.", "Herodes de Grote", "koning over het hele land", "Matteüs 2:1"],
-            ["4 v.Chr. – 6 n.Chr.", "Archelaüs", "etnarch van Judea en Samaria", "Matteüs 2:22"],
-            ["4 v.Chr. – 39 n.Chr.", "Herodes Antipas", "tetrarch van Galilea", "Lucas 3:1; 23:7"],
-            ["4 v.Chr. – 34 n.Chr.", "Filippus", "tetrarch in het noordoosten", "Lucas 3:1"],
-            ["vanaf 6 n.Chr.", "Romeinse stadhouders, zoals Pilatus", "bestuurders van Judea", "Matteüs 27:2"],
-            ["41 – 44 n.Chr.", "Herodes Agrippa", "weer koning over het hele land", "Handelingen 12:1"],
-            ["vanaf 50 n.Chr.", "Agrippa, zijn zoon", "koning in het noorden", "Handelingen 25:13"]
+            ["tot 4 v.Chr.", "Herodes de Grote", "koning over het hele land", "Matteüs&nbsp;2:1"],
+            ["4 v.Chr. – 6 n.Chr.", "Archelaüs", "etnarch van Judea en Samaria", "Matteüs&nbsp;2:22"],
+            ["4 v.Chr. – 39 n.Chr.", "Herodes Antipas", "tetrarch van Galilea", "Lucas&nbsp;3:1;&nbsp;23:7"],
+            ["4 v.Chr. – 34 n.Chr.", "Filippus", "tetrarch in het noordoosten", "Lucas&nbsp;3:1"],
+            ["vanaf 6 n.Chr.", "Romeinse stadhouders, zoals Pilatus", "bestuurders van Judea", "Matteüs&nbsp;27:2"],
+            ["41 – 44 n.Chr.", "Herodes Agrippa", "weer koning over het hele land", "Handelingen&nbsp;12:1"],
+            ["vanaf 50 n.Chr.", "Agrippa, zijn zoon", "koning in het noorden", "Handelingen&nbsp;25:13"]
         ]
     } },
     { noot: "Drie van hen heten in de Bijbel gewoon Herodes. Kijk dus bij elk verhaal goed welke Herodes er bedoeld wordt." }
