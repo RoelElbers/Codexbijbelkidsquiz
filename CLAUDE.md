@@ -279,6 +279,12 @@ engel daarheen werd gestuurd; over haar afkomst staat er niets. Dat ze opgroeide
 in de tempel in Jeruzalem komt uit het Protevangelium van Jakobus en blijft
 daarom uit de gewone tekst.
 
+**In Ontdekken mag overlevering wél, mits benoemd.** In Ontdekken mag
+overlevering naast wat de Bijbel zelf vertelt, mits de tekst duidelijk zegt dat
+het overlevering is ("volgens de overlevering", "in de westerse overlevering",
+"oude verhalen"). De Bijbel en de overlevering lopen in één lemma nooit
+ongemerkt door elkaar.
+
 ## Controleren
 
 **Node.js v24 LTS staat op dit systeem.** Draai na elke wijziging in
