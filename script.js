@@ -8649,7 +8649,8 @@ const ontdekRubrieken = [
 
     { id: "wie", naam: "Wie is wie",
       onderwerpen: [
-          { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL }
+          { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL },
+          { id: "wie-groepen", naam: "Groepen en stromingen", type: "lexicon", inhoud: ONTDEK_WIE_GROEPEN }
       ] },
     { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
 
