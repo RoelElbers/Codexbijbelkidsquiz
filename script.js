@@ -8650,6 +8650,7 @@ const ontdekRubrieken = [
     { id: "wie", naam: "Wie is wie",
       onderwerpen: [
           { id: "wie-bestuur", naam: "Bestuur en rechtspraak", type: "lexicon", inhoud: ONTDEK_WIE_BESTUUR },
+          { id: "wie-leger", naam: "Leger en bewaking", type: "lexicon", inhoud: ONTDEK_WIE_LEGER },
           { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL },
           { id: "wie-groepen", naam: "Groepen en stromingen", type: "lexicon", inhoud: ONTDEK_WIE_GROEPEN }
       ] },
