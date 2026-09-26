@@ -1143,9 +1143,10 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
-                antwoorden: ["Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
-                correct: "Zij wisselden Romeins geld om, want de tempelbelasting mocht niet met keizersmunten betaald worden",
-                bijbelplaats: "Marcus 11:15"
+                antwoorden: ["Zij wisselden geld uit andere landen om, want de tempelbelasting moest met één bepaald soort zilveren munt betaald worden", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
+                correct: "Zij wisselden geld uit andere landen om, want de tempelbelasting moest met één bepaald soort zilveren munt betaald worden",
+                bijbelplaats: "Marcus 11:15",
+                uitleg: "Pelgrims kwamen uit het hele Romeinse Rijk naar Jeruzalem, met allerlei munten op zak. De tempelbelasting moest met zilvergeld uit de stad Tyrus betaald worden. Vaak hoor je dat Romeinse munten niet mochten omdat de keizer erop stond, maar op de munten uit Tyrus stond zelf een heidense god. Het ging dus om het zuivere zilver, niet om het plaatje."
             },
             {
                 vraag: "Jezus zegt dat de tempel een huis van gebed moet zijn voor alle volken. In welk deel van de tempel stonden de handelaars?",
@@ -8646,7 +8647,10 @@ const ontdekRubrieken = [
           { id: "woordenboek", naam: "Woordenboek", type: "lexicon", inhoud: ONTDEK_WOORDENBOEK }
       ] },
 
-    { id: "wie",  naam: "Wie is wie",        onderwerpen: [] },
+    { id: "wie", naam: "Wie is wie",
+      onderwerpen: [
+          { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL }
+      ] },
     { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
 
     { id: "hoe", naam: "Hoe leefden ze toen",
@@ -8810,6 +8814,17 @@ function rendeerOntdekInhoud(onderwerp) {
 
     if (onderwerp.type === "lexicon") {
         return inhoud.map((e) => {
+            // Een verwijzing toont de regel met dezelfde term uit een ander
+            // lexicon, zodat de tekst maar op één plek staat.
+            if (e.verwijstNaar) {
+                const doel = vindOntdekOnderwerp(e.verwijstNaar);
+                const regel = doel && (doel.inhoud || []).find((d) => d.term === e.term && !d.verwijstNaar);
+                if (!regel) {
+                    console.warn(`Ontdekken: verwijzing "${e.term}" naar "${e.verwijstNaar}" niet gevonden.`);
+                    return "";
+                }
+                e = regel;
+            }
             let r = `<p class="naslag-item"><span class="naslag-term">${e.term}</span> — ${e.uitleg}</p>`;
             if (e.bijbelplaats) r += `<div class="bijbelplaats">Lees het na in: ${e.bijbelplaats}</div>`;
             return r;

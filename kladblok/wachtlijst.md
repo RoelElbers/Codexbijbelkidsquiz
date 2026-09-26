@@ -26,12 +26,11 @@ elk antwoord herhaald hoeft te worden.*
 
 ## Bouw en gedrag van het spel
 
-- **Lege rubrieken in de Ontdekken-hub.** "Wie is wie" en "Waar gebeurde het"
-  hebben `onderwerpen: []` (`script.js` r. 8842–8843). De knoppen staan er wel
-  en zijn niet vergrendeld, dus ze leiden naar een leeg lijstscherm. Ze horen
-  vergrendeld te zijn zolang de rubrieken leeg zijn. Zie het punt hieronder
-  over het opnieuw indelen van de Ontdekken-hub: met de eerste vulling is
-  "Wie is wie" niet leeg meer en blijft alleen "Waar gebeurde het" over.
+- **Lege rubriek in de Ontdekken-hub.** "Waar gebeurde het" heeft
+  `onderwerpen: []` (`script.js` r. 8654). De knop staat er wel en is niet
+  vergrendeld, dus hij leidt naar een leeg lijstscherm. Hij hoort vergrendeld
+  te zijn zolang de rubriek leeg is. ("Wie is wie" is sinds 26-09 gevuld met
+  Tempel en synagoge.)
 - **Ontdekken-hub opnieuw indelen: Ontdekken → rubriek → onderwerp →
   artikel.** De eerste twee lagen bestaan al (`ontdekRubrieken` met
   `onderwerpen[]`); wat ontbreekt is een artikellaag met eigen config, zoals
