@@ -78,6 +78,20 @@ elk antwoord herhaald hoeft te worden.*
   staand) valt de ronde fullscreen-knop rechtsboven over het begin van de tekst
   in het naslagvak van Ontdekken. Bestond al vóór Wie is wie. Meenemen bij het
   opnieuw indelen van het menu / de tabletondersteuning.
+- **Verborgen Schat: vragen zonder koppeling naar hun artikel.** Acht vragen
+  hebben een artikel in `ONTDEK_SCHAT`, maar geen `catecheseId`, zodat de knop
+  op de onthullingskaart ontbreekt: de bovenzaal, het getal zeven, "een tijd,
+  tijden en een halve tijd", de vier levende wezens, het nieuwe Jeruzalem, het
+  oor van Malchus, de brief aan de Hebreeën en het oog van de naald. Bij
+  Malchus en Hebreeën is het artikel nog een placeholder ("Deze uitleg wordt
+  nog geschreven"). Zes artikelen hebben geen vraag: apocalyps, de Alfa en de
+  Omega, het Lam, hoe de Bijbel eindigt, de boom des levens en de zeven
+  gemeenten. Zes vragen hebben geen artikel: Tertius, de grote letters in
+  Galaten, papyrus P52, hoofdstuk- en versnummers, de codex en de vis. Raakt
+  het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven. Daarnaast
+  heten de knop en de melding op de onthullingskaart nog "Catechese"
+  ("Binnenkort kun je hier meer ontdekken in de Catechese"), terwijl dat nu
+  Ontdekken heet.
 
 ## Vragenwerk
 

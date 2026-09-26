@@ -356,4 +356,16 @@ const ONTDEK_SCHAT = [
           { item: "Toch klopt er iets niet. Als je de oudste christelijke uitleggers erop naslaat, mensen als Origenes, Chrysostomus en Augustinus, dan bespreken die deze tekst uitgebreid, maar noemt geen van hen een poort. Het verhaal duikt pas veel later op, in preken." },
           { item: "Wat Jezus waarschijnlijk juist bedoelde, is dat het beeld ónmogelijk is. Een enorme kameel door een piepklein naaldgaatje: dat kán niet. En dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk." }
       ] },
+    // Vragen over de Dode Zeerollen en de Essenen.
+    { id: "was-johannes-de-doper-een-essener", naam: "Was Johannes de Doper een Essener?", type: "artikel",
+      inhoud: [
+          { item: "Volgens het verhaal van de vinders zocht in 1947 een herdersjongen in de woestijn bij de Dode Zee naar een verdwaalde geit. Hij gooide een steen in een grot en hoorde iets breken. In de grot stonden kruiken, en daarin zaten oeroude boekrollen. Later werden in elf grotten in de buurt nog veel meer rollen en stukjes gevonden, samen zo'n negenhonderd geschriften. Ze worden de Dode Zeerollen genoemd." },
+          { item: "Het is een van de belangrijkste vondsten ooit. Tussen de rollen zitten stukken van bijna alle boeken van het Oude Testament. Eén rol bevat het hele boek Jesaja en is ongeveer duizend jaar ouder dan de oudste Hebreeuwse Bijbel die men tot dan toe kende. En wat bleek: de tekst is bijna precies hetzelfde. De Bijbel is al die eeuwen dus heel zorgvuldig overgeschreven." },
+          { kop: "Wie waren de Essenen?" },
+          { item: "De meeste geleerden denken dat de rollen hoorden bij een Joodse groep die de Essenen heette. Het Nieuwe Testament noemt hen nergens, maar schrijvers uit die tijd, zoals de Joodse geschiedschrijver Josefus, vertellen veel over hen. De Essenen leefden heel streng. Ze deelden al hun bezit, droegen witte kleren, aten samen en namen elke dag een bad om rein te zijn voor God. Een groep van hen woonde afgezonderd in de woestijn bij de Dode Zee, dicht bij de plek waar de rollen lagen." },
+          { kop: "En Johannes de Doper?" },
+          { item: "Was Johannes de Doper een Essener? Dat weten we niet. De Bijbel zegt er niets over, en geen enkele oude schrijver ook. Toch zijn er opvallende overeenkomsten. Johannes leefde in dezelfde woestijn, vlak bij de Jordaan (Lucas 1:80). De Essenen legden uit waarom ze de woestijn in trokken met een tekst uit Jesaja: bereid in de woestijn de weg van de Heer. Precies die tekst gebruikte Johannes voor zichzelf (Johannes 1:23). Bij allebei speelde water een grote rol. En Johannes at sprinkhanen, terwijl in een van de rollen een regel staat over hoe je sprinkhanen moest klaarmaken." },
+          { item: "Er is ook een groot verschil. De Essenen trokken zich terug en hielden anderen buiten. Johannes zocht juist iedereen op: tollenaars, soldaten, gewone mensen. Ook zijn doop was anders: geen dagelijks bad, maar één keer, als teken dat je je leven wilde omkeren (Lucas 3:3, 10-14)." },
+          { noot: "Of Johannes ooit bij de Essenen hoorde, blijft dus een raadsel. Maar dankzij de rollen weten we veel beter in wat voor wereld Johannes en Jezus leefden." }
+      ] },
 ];

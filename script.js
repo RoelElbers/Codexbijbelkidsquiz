@@ -7954,6 +7954,22 @@ const verborgenSchatVragen = [
         correct: "De Griekse letters van \"vis\" zijn de beginletters van een korte geloofszin",
         bijbelplaats: "oude christelijke grafschriften en muurschilderingen",
         reveal: "Het Griekse woord voor vis is ichthus. Neem je de vijf letters los, dan vormen ze de beginletters van vijf Griekse woorden: Jezus Christus, Gods Zoon, Redder. De hele belijdenis past dus in één tekeningetje van een vis. Je vindt het terug in de catacomben van Rome en op oude grafstenen, soms alleen die ene simpele kromme lijn."
+    },
+    {
+        vraag: "In 1947 werden in een grot bij de Dode Zee kruiken met oeroude boekrollen gevonden. Eén rol bevat het hele boek Jesaja. Wat bleek daar bijzonder aan?",
+        antwoorden: ["Hij was zo'n duizend jaar ouder dan alle bekende Hebreeuwse bijbels, en toch bijna gelijk", "Hij bevatte hoofdstukken van Jesaja die niemand ooit eerder had gelezen", "Hij was niet in het Hebreeuws geschreven, maar in het Latijn", "Hij bleek door de profeet Jesaja zelf geschreven te zijn"],
+        correct: "Hij was zo'n duizend jaar ouder dan alle bekende Hebreeuwse bijbels, en toch bijna gelijk",
+        bijbelplaats: "Dode Zeerollen, grote Jesajarol, Israël Museum, Jeruzalem",
+        reveal: "De rol is van perkament, ruim zeven meter lang, en bevat alle 66 hoofdstukken van Jesaja. Toen geleerden hem naast de Hebreeuwse Bijbel legden die we al kenden, bleken de verschillen heel klein: vooral woorden die anders gespeld waren. Duizend jaar lang hebben schrijvers de tekst dus heel zorgvuldig overgeschreven. Je kunt de rol nu zien in Jeruzalem, in een museumgebouw waarvan het dak de vorm heeft van het deksel van zo'n kruik.",
+        catecheseId: "was-johannes-de-doper-een-essener"
+    },
+    {
+        vraag: "De Essenen, een Joodse groep uit de tijd van Jezus, legden met een tekst uit Jesaja uit waarom ze in de woestijn gingen wonen. Welke persoon uit de Bijbel gebruikte diezelfde tekst voor zichzelf?",
+        antwoorden: ["Johannes de Doper", "Paulus", "Petrus", "Mozes"],
+        correct: "Johannes de Doper",
+        bijbelplaats: "Jesaja 40:3 · Johannes 1:23 · Gemeenteregel uit Qumran",
+        reveal: "De tekst luidt: bereid in de woestijn de weg van de Heer. Toen men Johannes vroeg wie hij was, antwoordde hij met precies deze woorden. De Essenen schreven dezelfde tekst in hun regelboek, dat in een grot bij de Dode Zee is teruggevonden. Was Johannes een van hen? Dat weten we niet, maar er zijn opvallende overeenkomsten.",
+        catecheseId: "was-johannes-de-doper-een-essener"
     }
 ];
 

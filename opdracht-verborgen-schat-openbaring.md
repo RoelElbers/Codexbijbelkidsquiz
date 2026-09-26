@@ -2,7 +2,7 @@
 
 > **Afgerond op 11 augustus 2026.** Alle zes vragen staan in het spel. De pool is sindsdien verder gegroeid; de actuele stand vind je in script.js en in verborgen-schat-vragen-bijbelkidsquiz.md.
 
-*Zes meerkeuzevragen om als speelbare vragen aan de Verborgen Schat toe te voegen. Samen met de bestaande bovenzaal-vraag kwam de Verborgen Schat daarmee op zeven vragen; inmiddels telt de pool er 16.*
+*Zes meerkeuzevragen om als speelbare vragen aan de Verborgen Schat toe te voegen. Samen met de bestaande bovenzaal-vraag kwam de Verborgen Schat daarmee op zeven vragen; inmiddels telt de pool er 19.*
 
 ---
 
