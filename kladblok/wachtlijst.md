@@ -74,6 +74,10 @@ elk antwoord herhaald hoeft te worden.*
   artikel beslissen: verwijderen, of onderbrengen bij de nieuwe indeling van de
   Ontdekken-hub (zie het punt daarover). Meenemen bij die herindeling, niet los
   oppakken.
+- **Fullscreen-knop over de naslagtekst op de tablet.** Op 820×1180 (tablet
+  staand) valt de ronde fullscreen-knop rechtsboven over het begin van de tekst
+  in het naslagvak van Ontdekken. Bestond al vóór Wie is wie. Meenemen bij het
+  opnieuw indelen van het menu / de tabletondersteuning.
 
 ## Vragenwerk
 

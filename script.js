@@ -8654,7 +8654,8 @@ const ontdekRubrieken = [
           { id: "wie-tempel", naam: "Tempel en synagoge", type: "lexicon", inhoud: ONTDEK_WIE_TEMPEL },
           { id: "wie-groepen", naam: "Groepen en stromingen", type: "lexicon", inhoud: ONTDEK_WIE_GROEPEN },
           { id: "wie-gemeenten", naam: "Taken in de eerste gemeenten", type: "lexicon", inhoud: ONTDEK_WIE_GEMEENTEN },
-          { id: "wie-beroepen", naam: "Beroepen en werk", type: "lexicon", inhoud: ONTDEK_WIE_BEROEPEN }
+          { id: "wie-beroepen", naam: "Beroepen en werk", type: "lexicon", inhoud: ONTDEK_WIE_BEROEPEN },
+          { id: "wie-huishouden", naam: "Huishouden en dienst", type: "lexicon", inhoud: ONTDEK_WIE_HUISHOUDEN }
       ] },
     { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
 
