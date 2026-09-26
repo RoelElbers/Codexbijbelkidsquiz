@@ -2300,6 +2300,18 @@ height: 22%;
     font-size: 1.05rem;
     margin: 0 0 14px;
 }
+/* Klein kleurvierkant midden in de lopende tekst (bv. purper). De kleur zelf
+   staat inline in de tekst (style="background:…"), zodat dezelfde klasse voor
+   elke kleur werkt. Rand in het goud van .naslag-term. */
+.naslag-kleurvlak {
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    vertical-align: middle;
+    border: 1px solid #ffd86b;
+    border-radius: 3px;
+    margin: 0 0.2em;
+}
 
 /* Klein, rustig tabelletje binnen een naslagpagina (bv. de nachtwaken) —
    overzichtelijker dan dezelfde rijtjes in een lopende zin. */
