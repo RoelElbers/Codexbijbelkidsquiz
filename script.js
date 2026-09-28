@@ -2341,7 +2341,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus noemt zijn boodschap het \"evangelie\", een woord dat toen al bestond. Wat betekende het in de gewone taal?",
-            antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Het loon dat een bode voor zijn bericht kreeg"],
+            antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Een lied dat soldaten zongen als ze naar huis gingen"],
             correct: "Goed nieuws dat een bode kwam brengen, zoals een overwinning",
             bijbelplaats: "Romeinen 1:1",
             uitleg: "Bij een overwinning of de geboorte van een keizerszoon liet men door het hele rijk goed bericht omroepen. Dat de christenen juist dat woord kozen voor hun boodschap was een gewaagde keuze: het echte goede nieuws komt niet uit Rome."
@@ -4607,7 +4607,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus schrijft dat er voor hem een \"krans\" klaarligt. Wat voor krans?",
-            antwoorden: ["De krans van de gerechtigheid", "Een krans van bloemen", "Een gouden kroon", "De lauwerkrans van de keizer"],
+            antwoorden: ["De krans van de gerechtigheid", "Een krans van bloemen", "Een krans van veren", "De lauwerkrans van de keizer"],
             correct: "De krans van de gerechtigheid",
             bijbelplaats: "2 Timoteüs 4:8"
         },
@@ -6025,7 +6025,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke drie dingen noemt hij?",
-            antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "De grote liefde voor geld, de jacht op macht en het verlangen naar roem", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
+            antwoorden: ["De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed", "Muziek, dans en spel", "Luiheid, jaloezie en boosheid", "Geld, geweld en leugen"],
             correct: "De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed",
             bijbelplaats: "1 Johannes 2:16",
             uitleg: "Johannes waarschuwt voor verlangens die een mens kunnen gaan beheersen en voor een houding waarin je jezelf centraal zet.\n\nTrots: jezelf beter of belangrijker vinden dan een ander.\n\nHoogmoed: jezelf boven God plaatsen; leven alsof jij uiteindelijk zelf bepaalt wat goed is en God niet nodig hebt."

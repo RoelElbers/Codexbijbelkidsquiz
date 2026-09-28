@@ -99,9 +99,6 @@ elk antwoord herhaald hoeft te worden.*
   Kolossenzen, Tessalonicenzen en Timoteüs & Titus, maar dan boekbreed:
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
-- **Geld-afleiders.** Ronde 1 en 2 (17 afleiders) en 2 Tessalonicenzen 1:7
-  zijn gedaan op 28-09. De rest staat in `kladblok/geld-afleiders.md`, met een
-  statuskolom per vraag.
 - **Boek-voor-boek-ronde.** Eerstvolgende: **Romeinen**.
 
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
