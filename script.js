@@ -3454,7 +3454,7 @@ vragenData["Galaten"] = {
 };
 
 // =====================================================================
-// Efeziërs — vragenpool (49 vragen: beginner 12, advanced 20, expert 17)
+// Efeziërs — vragenpool (50 vragen: beginner 12, advanced 20, expert 18)
 // Formaat gelijk aan de evangeliën. vragenData bestaat hier al.
 // =====================================================================
 vragenData["Efeziërs"] = {
@@ -3759,6 +3759,13 @@ vragenData["Efeziërs"] = {
             antwoorden: ["Men drukte een merkteken in was, om te tonen van wie iets was", "Men bond een koord om een pak heen zodat het dicht bleef", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
             correct: "Men drukte een merkteken in was, om te tonen van wie iets was",
             bijbelplaats: "Efeziërs 1:13"
+        },
+        {
+            vraag: "In Efeziërs 2:10 schrijft Paulus dat wij Gods maaksel zijn. Welk Nederlands woord komt van dezelfde Griekse stam als het woord dat hij gebruikt?",
+            antwoorden: ["Poëzie", "Politiek", "Pedagoog", "Paleis"],
+            correct: "Poëzie",
+            bijbelplaats: "Efeziërs 2:10",
+            uitleg: "Paulus gebruikt het woord poiēma, \"wat gemaakt is\", \"kunstwerk\". Het komt van hetzelfde werkwoord als poiēsis, waar ons woord \"poëzie\" vandaan komt. Wij zijn dus Gods kunstwerk. \"Politiek\" en \"pedagoog\" komen ook uit het Grieks, maar van andere woorden."
         }
     ]
 };
@@ -4041,7 +4048,8 @@ vragenData["Filippenzen"] = {
             vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
             antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
             correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
-            bijbelplaats: "Filippenzen 3:20 · Handelingen 16:12"
+            bijbelplaats: "Filippenzen 3:20 · Handelingen 16:12, 21",
+            uitleg: "Het Griekse woord politeuma betekent \"burgerschap\". De inwoners van Filippi hoorden bij Rome, ook al lag Rome ver weg. In Handelingen 16:21 noemen ze zichzelf trots \"Romeinen\". Paulus zegt dat christenen net zo bij de hemel horen, ook al wonen ze op aarde."
         },
         {
             vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd?",
@@ -4655,7 +4663,7 @@ vragenData["Timoteüs & Titus"] = {
 };
 
 // =========================================================================
-// Kolossenzen & Filemon — vragenpool (49 vragen: beginner 15, advanced 17,
+// Kolossenzen & Filemon — vragenpool (53 vragen: beginner 16, advanced 20,
 // expert 17). Gebundeld boek: één quiz, één trofee (trofee_kolossenzen_filemon).
 // Formaat gelijk aan de andere boeken: vragenData["Kolossenzen & Filemon"] met
 // drie niveaus (beginner / advanced / expert). Per vraag: vraag, antwoorden[],
@@ -4753,6 +4761,13 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
             correct: "Lukas",
             bijbelplaats: "Kolossenzen 4:14"
+        },
+        {
+            vraag: "In Kolossenzen 2:14 schrijft Paulus dat God het schuldbewijs dat tegen ons getuigde, heeft uitgewist en aan het kruis heeft genageld. Wat was zo'n schuldbewijs?",
+            antwoorden: ["Een briefje dat iemand zelf ondertekende, waarop stond hoeveel hij nog moest betalen", "Een lijst met alle wetten die in de stad golden", "Een vonnis dat de rechter uitsprak over iemand die iets had gestolen", "Een bord dat de schuldeiser aan de deur van de schuldenaar spijkerde"],
+            correct: "Een briefje dat iemand zelf ondertekende, waarop stond hoeveel hij nog moest betalen",
+            bijbelplaats: "Kolossenzen 2:14",
+            uitleg: "Het Griekse woord cheirographon betekent letterlijk \"handschrift\": een schuldbekentenis die je met je eigen hand tekende. Inkt op papyrus kon je wegwassen. Zo wist God de schuld volledig uit."
         }
     ],
     advanced: [
@@ -4861,6 +4876,27 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Hij was eigendom van zijn meester en kon gekocht en verkocht worden", "Hij was een knecht die elk jaar opnieuw zijn loon afsprak", "Hij was een gevangene die na zijn straf weer vrij kwam", "Hij was een leerling die bij zijn meester in huis een vak leerde"],
             correct: "Hij was eigendom van zijn meester en kon gekocht en verkocht worden",
             bijbelplaats: "Filemon 16"
+        },
+        {
+            vraag: "In Kolossenzen 3:15 staat dat de vrede van Christus in je hart moet beslissen. Het Griekse woord dat Paulus daar gebruikt, komt uit de sport. Wie had die taak bij een wedstrijd?",
+            antwoorden: ["De scheidsrechter, die besliste wie er gewonnen had", "De trainer, die de sporters voor de wedstrijd klaarmaakte", "De toeschouwers, die met hun gejuich de winnaar kozen", "De sterkste sporter, die de anderen vertelde wat ze moesten doen"],
+            correct: "De scheidsrechter, die besliste wie er gewonnen had",
+            bijbelplaats: "Kolossenzen 3:15",
+            uitleg: "Het woord brabeuō betekent \"scheidsrechter zijn\". Als je twijfelt wat je moet doen, laat Paulus de vrede van Christus de knoop doorhakken."
+        },
+        {
+            vraag: "In Kolossenzen 2:15 beschrijft Paulus de overwinning van Christus met een beeld uit Rome: een veldheer die na een grote overwinning een triomftocht hield. Wat gebeurde er tijdens zo'n optocht?",
+            antwoorden: ["De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee", "De veldheer liet zijn vijanden vrij en gaf hun een geschenk mee naar huis", "Elke soldaat kreeg een stuk land buiten de stad als beloning", "De veldheer rende door de hele stad om te laten zien hoe snel hij was"],
+            correct: "De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee",
+            bijbelplaats: "Kolossenzen 2:15 · 2 Korintiërs 2:14",
+            uitleg: "Het werkwoord thriambeuō betekent \"in een triomftocht meevoeren\". Iedereen in de stad kon dan zien wie er gewonnen had. Paulus zegt: de machten die tegen God ingingen, zijn aan het kruis overwonnen, voor ieder zichtbaar."
+        },
+        {
+            vraag: "In Kolossenzen 3:11 noemt Paulus de Scythen. Wat voor volk waren dat?",
+            antwoorden: ["Een ruitervolk uit het noorden, dat de Grieken als erg onbeschaafd zagen", "Een volk van kooplieden uit Egypte, dat handel dreef in graan", "Een Joodse groep die in de woestijn leefde en veel bad", "Een volk dat zijn hele leven op boten woonde en nooit aan land kwam"],
+            correct: "Een ruitervolk uit het noorden, dat de Grieken als erg onbeschaafd zagen",
+            bijbelplaats: "Kolossenzen 3:11",
+            uitleg: "De Scythen leefden ten noorden van de Zwarte Zee. Voor Grieken en Romeinen waren zij het voorbeeld van een wild volk. Paulus noemt ze juist om te zeggen dat ook zij in Christus erbij horen, net als Griek en Jood."
         }
     ],
     expert: [
