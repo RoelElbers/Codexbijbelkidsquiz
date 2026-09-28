@@ -2319,6 +2319,9 @@ height: 22%;
 .naslag-lemma .naslag-item {
     margin-bottom: 0.3em;      /* bijbelplaats dicht onder de eigen tekst */
 }
+.naslag-lemma .naslag-item + .naslag-item {
+    margin-top: 0.9em;         /* tussen alinea's: zelfde witregel als #vu-detail .uitleg p */
+}
 .naslag-lemma .naslag-term {
     font-size: 1.25em;         /* het woord zelf springt er meer uit */
 }
