@@ -2841,7 +2841,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten, ook niet voor het feest", "Je haar laten groeien tot het op de grond kwam", "Zeven dagen vasten in de woestijn"],
             correct: "Je hoofd kaalscheren en offers brengen in de tempel",
             bijbelplaats: "Handelingen 21:23-26",
-            uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
+            uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde schoor je je hoofd kaal en verbrandde je het haar bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
         },
         {
             vraag: "Cornelius wordt \"godvrezend\" genoemd. Wat waren godvrezenden?",
@@ -3443,7 +3443,7 @@ vragenData["Galaten"] = {
             antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de tatoeage van een zeeman die al in veel havens was geweest", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
             correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
             bijbelplaats: "Galaten 6:17",
-            uitleg: "In die tijd kregen slaven soms een merkteken met de naam van hun eigenaar. Waarschijnlijk bedoelt Paulus de littekens die hij had overgehouden aan vervolging en mishandelingen vanwege zijn werk voor Jezus. Hij noemt ze zijn \"merktekens van Jezus\": tekens aan zijn lichaam die lieten zien bij wie hij hoorde."
+            uitleg: "In die tijd kregen slaven soms een merkteken met de naam van hun eigenaar. Paulus bedoelt de littekens die hij had overgehouden aan vervolging en mishandelingen vanwege zijn werk voor Jezus. Hij noemt ze zijn \"merktekens van Jezus\": tekens aan zijn lichaam die lieten zien bij wie hij hoorde."
         },
         {
             vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
