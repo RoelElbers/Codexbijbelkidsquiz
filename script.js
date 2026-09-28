@@ -2279,8 +2279,8 @@ vragenData["Romeinen"] = {
     expert: [
         {
             vraag: "In Romeinen 11 vergelijkt Paulus Gods volk met een olijfboom. Wat bedoelt hij als hij zegt dat gelovigen uit andere volken als 'wilde takken' worden geënt?",
-            antwoorden: ["Ook mensen die geen Jood zijn, mogen bij Gods volk horen", "Alleen Joden kunnen echt bij God horen", "De oude takken, Israël, tellen niet meer mee", "Paulus had zich vergist, hij bedoelde iets anders"],
-            correct: "Ook mensen die geen Jood zijn, mogen bij Gods volk horen",
+            antwoorden: ["Ook mensen die geen Jood zijn, krijgen deel aan wat God aan Israël beloofde", "Alleen Joden kunnen echt bij God horen", "De oude takken, Israël, tellen niet meer mee", "Paulus had zich vergist, hij bedoelde iets anders"],
+            correct: "Ook mensen die geen Jood zijn, krijgen deel aan wat God aan Israël beloofde",
             bijbelplaats: "Romeinen 11:17-24"
         },
         {
@@ -2431,10 +2431,10 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Petrus kreeg een bijzonder visioen van een groot laken vol allerlei dieren. Wat leerde God hem daarmee?",
-            antwoorden: ["Dat hij beter voor zichzelf moest zorgen en meer moest eten", "Dat ook mensen die geen Jood waren erbij mochten horen", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
-            correct: "Dat ook mensen die geen Jood waren erbij mochten horen",
-            bijbelplaats: "Handelingen 10:9-15, 28",
-            uitleg: "In het visioen zei God dat Petrus dieren die volgens de Joodse wet verboden waren om te eten, nu wél mocht eten. Kort daarna begreep Petrus waar het God echt om ging: net zoals Hij dat eten niet langer afkeurde, wilde God ook geen enkel mens buitensluiten — ook mensen die geen Jood waren, mogen erbij horen."
+            antwoorden: ["Dat hij beter voor zichzelf moest zorgen en meer moest eten", "Dat hij ook bij mensen die geen Jood waren mocht binnengaan en met hen mocht eten", "Dat hij zelf voedsel moest gaan verbouwen", "Dat hij alleen nog groenten mocht eten"],
+            correct: "Dat hij ook bij mensen die geen Jood waren mocht binnengaan en met hen mocht eten",
+            bijbelplaats: "Handelingen 10:9-15, 28; 11:3",
+            uitleg: "Volgens de wet van Mozes mocht een Jood sommige dieren niet eten. Joden hielden zich daar trouw aan, en omdat het eten bij niet-Joden niet volgens die regels was, gingen ze niet bij hen aan tafel. In het visioen zei God dat Petrus die dieren nu wél mocht eten. Kort daarna werd Petrus uitgenodigd door Cornelius, een Romeinse officier. Hij ging bij hem binnen, vertelde hem over Jezus en bleef er nog een paar dagen. Zo begreep Petrus dat het goede nieuws ook bedoeld was voor mensen die geen Jood waren."
         },
         {
             vraag: "In Samaria vertelde Filippus over Jezus en genas hij zieke mensen. Hoe reageerde de stad?",
@@ -2847,7 +2847,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom liever bij de tempel wegbleven", "Priesters die alleen in de tempel mochten dienen"],
             correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
             bijbelplaats: "Handelingen 10:2",
-            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet.\n\nCornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem werd voor het eerst hardop uitgesproken dat zulke buitenstaanders erbij mochten horen zonder eerst Jood te worden."
+            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet.\n\nCornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem werd voor het eerst hardop uitgesproken dat zulke buitenstaanders in Gods volk werden opgenomen zonder eerst Jood te worden."
         },
         {
             vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
@@ -2936,9 +2936,9 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus zegt dat de gemeente samen één lichaam vormt, met veel verschillende delen. Wat wil hij daarmee zeggen?",
-            antwoorden: ["Iedereen hoort erbij en heeft elkaar nodig", "Ieder deel moet vooral zijn eigen ding doen", "De belangrijkste delen zitten vanbinnen", "Een groot lichaam werkt beter dan een klein"],
-            correct: "Iedereen hoort erbij en heeft elkaar nodig",
-            bijbelplaats: "1 Korintiërs 12:12"
+            antwoorden: ["Elk deel is nodig, ook het deel dat klein of zwak lijkt", "Ieder deel moet vooral zijn eigen ding doen", "De belangrijkste delen zitten vanbinnen", "Een groot lichaam werkt beter dan een klein"],
+            correct: "Elk deel is nodig, ook het deel dat klein of zwak lijkt",
+            bijbelplaats: "1 Korintiërs 12:12, 22"
         },
         {
             vraag: "Paulus plantte en iemand anders gaf water. Maar wie liet alles écht groeien?",
@@ -3323,9 +3323,9 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
-            antwoorden: ["Ook wij mogen bij God horen door te geloven, net als Abraham", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham horen bij God", "Abraham hoorde bij God omdat hij nooit iets verkeerd deed"],
-            correct: "Ook wij mogen bij God horen door te geloven, net als Abraham",
-            bijbelplaats: "Galaten 3:6-7"
+            antwoorden: ["Wie gelooft zoals Abraham, is een kind van God", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham horen bij God", "Abraham hoorde bij God omdat hij nooit iets verkeerd deed"],
+            correct: "Wie gelooft zoals Abraham, is een kind van God",
+            bijbelplaats: "Galaten 3:6-7, 26"
         },
         {
             vraag: "Paulus schrijft dat God Zijn Zoon stuurde toen de tijd er rijp voor was. Hoe kwam Gods Zoon volgens hem in de wereld?",
@@ -4896,7 +4896,7 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Een ruitervolk uit het noorden, dat de Grieken als erg onbeschaafd zagen", "Een volk van kooplieden uit Egypte, dat handel dreef in graan", "Een Joodse groep die in de woestijn leefde en veel bad", "Een volk dat zijn hele leven op boten woonde en nooit aan land kwam"],
             correct: "Een ruitervolk uit het noorden, dat de Grieken als erg onbeschaafd zagen",
             bijbelplaats: "Kolossenzen 3:11",
-            uitleg: "De Scythen leefden ten noorden van de Zwarte Zee. Voor Grieken en Romeinen waren zij het voorbeeld van een wild volk. Paulus noemt ze juist om te zeggen dat ook zij in Christus erbij horen, net als Griek en Jood."
+            uitleg: "De Scythen leefden ten noorden van de Zwarte Zee. Voor Grieken en Romeinen waren zij het voorbeeld van een wild volk. Paulus noemt ze juist om te zeggen dat in Christus ook zij één zijn met de anderen, net als Griek en Jood: Christus is alles en in allen."
         }
     ],
     expert: [
