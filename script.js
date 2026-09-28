@@ -1697,7 +1697,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Waaraan zouden de mensen volgens Jezus kunnen zien dat iemand bij Hem hoort?",
-                antwoorden: ["Dat ze veel bidden", "Dat ze elkaar liefhebben", "Dat ze veel kennis hebben", "Dat ze rijk zijn"],
+                antwoorden: ["Dat ze veel bidden", "Dat ze elkaar liefhebben", "Dat ze veel kennis hebben", "Dat ze altijd witte kleren dragen"],
                 correct: "Dat ze elkaar liefhebben",
                 bijbelplaats: "Johannes 13:34-35"
             },
@@ -2098,7 +2098,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus zegt dat je door te geloven in Jezus iets moois krijgt in je verhouding met God. Wat krijg je dan?",
-            antwoorden: ["Vrede met God", "Macht over andere mensen", "Een leven zonder tegenslag", "Rijkdom en aanzien"],
+            antwoorden: ["Vrede met God", "Macht over andere mensen", "Een leven zonder tegenslag", "Een vaste plek vooraan in de synagoge"],
             correct: "Vrede met God",
             bijbelplaats: "Romeinen 5:1"
         },
@@ -2152,7 +2152,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Tegen het eind van zijn brief wenst Paulus de gelovigen vreugde en vrede toe, en noemt God daarbij met een mooie naam. Welke naam geeft hij God?",
-            antwoorden: ["De God van de hoop", "De God van de rijkdom", "De God van de regels", "De God van de stilte"],
+            antwoorden: ["De God van de hoop", "De God van de feesten", "De God van de regels", "De God van de stilte"],
             correct: "De God van de hoop",
             bijbelplaats: "Romeinen 15:13"
         },
@@ -2990,7 +2990,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus noemt de gelovigen \"gezanten\" (boodschappers) van Christus. Wat is hun taak?",
-            antwoorden: ["De mensen dwingen om voortaan in Jezus te geloven", "Geld inzamelen voor zichzelf", "Namens Christus mensen oproepen om vrede met God te sluiten", "Vooral veel reizen, en belangrijke mensen bezoeken"],
+            antwoorden: ["De mensen dwingen om voortaan in Jezus te geloven", "Op de markt luid roepen dat de wereld vergaat", "Namens Christus mensen oproepen om vrede met God te sluiten", "Vooral veel reizen, en belangrijke mensen bezoeken"],
             correct: "Namens Christus mensen oproepen om vrede met God te sluiten",
             bijbelplaats: "2 Korintiërs 5:20"
         },
@@ -3053,13 +3053,13 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus waarschuwt dat kennis je trots kan maken. Wat bouwt mensen volgens hem wél op?",
-            antwoorden: ["Liefde", "Geld", "Macht", "Hard werken"],
+            antwoorden: ["Liefde", "Kennis", "Macht", "Hard werken"],
             correct: "Liefde",
             bijbelplaats: "1 Korintiërs 8:1"
         },
         {
             vraag: "Paulus zegt dat gelovigen leven door te vertrouwen op God. Wat zet hij daartegenover?",
-            antwoorden: ["Wat ze met hun ogen kunnen zien", "Hoe rijk ze zijn", "Hoe sterk ze zijn", "Wat anderen van hen vinden"],
+            antwoorden: ["Wat ze met hun ogen kunnen zien", "Wat de sterren voorspellen", "Hoe sterk ze zijn", "Wat anderen van hen vinden"],
             correct: "Wat ze met hun ogen kunnen zien",
             bijbelplaats: "2 Korintiërs 5:7"
         },
@@ -3134,7 +3134,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Paulus eindigt 2 Korintiërs met een zegen. Wat wenst hij de gelovigen toe?",
-            antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Veel geld en macht", "Een lang leven vol roem", "Zoveel wijsheid dat ze slimmer worden dan alle andere gelovigen"],
+            antwoorden: ["De genade van Jezus, de liefde van God en de verbondenheid van de Geest", "Een goede oogst en mooi weer", "Een lang leven vol roem", "Zoveel wijsheid dat ze slimmer worden dan alle andere gelovigen"],
             correct: "De genade van Jezus, de liefde van God en de verbondenheid van de Geest",
             bijbelplaats: "2 Korintiërs 13:13"
         },
@@ -3298,7 +3298,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus gebruikt het beeld van zaaien en oogsten. Wat bedoelt hij ongeveer?",
-            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet vooral in het juiste seizoen zaaien en oogsten", "Als je veel oogst, kun je veel eten", "Wie hard werkt, wordt vanzelf rijk"],
+            antwoorden: ["Wat je doet, heeft gevolgen; doe daarom het goede", "Je moet vooral in het juiste seizoen zaaien en oogsten", "Als je veel oogst, kun je veel eten", "Iedere gelovige moet een eigen moestuin hebben"],
             correct: "Wat je doet, heeft gevolgen; doe daarom het goede",
             bijbelplaats: "Galaten 6:7-9"
         },
@@ -3479,7 +3479,7 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Waarom koos God ons uit, schrijft Paulus?",
-            antwoorden: ["Omdat we het verdienden", "Omdat we sterk waren", "Omdat Hij ons liefheeft", "Omdat we rijk waren"],
+            antwoorden: ["Omdat we het verdienden", "Omdat we sterk waren", "Omdat Hij ons liefheeft", "Omdat we er zelf om vroegen"],
             correct: "Omdat Hij ons liefheeft",
             bijbelplaats: "Efeziërs 1:4-5"
         },
@@ -4249,7 +4249,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun?",
-            antwoorden: ["Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt", "Rijkdom en een groot huis hier op aarde", "Een groot leger om zich mee te kunnen verdedigen", "Een zwaard om zelf wraak te nemen"],
+            antwoorden: ["Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt", "Een schip waarmee ze naar een ver land kunnen vluchten", "Een groot leger om zich mee te kunnen verdedigen", "Een zwaard om zelf wraak te nemen"],
             correct: "Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt",
             bijbelplaats: "2 Tessalonicenzen 1:7"
         },
@@ -4482,7 +4482,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus roept Timoteüs op om iets vast te grijpen waartoe God hem geroepen heeft. Wat moet hij vastgrijpen?",
-            antwoorden: ["Het eeuwige leven", "De leiding over de gemeente", "De rijkdom van de kerk", "De wet van Mozes"],
+            antwoorden: ["Het eeuwige leven", "De leiding over de gemeente", "Het gereedschap waarmee Paulus tenten maakte", "De wet van Mozes"],
             correct: "Het eeuwige leven",
             bijbelplaats: "1 Timoteüs 6:12"
         },
@@ -4494,7 +4494,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Hoe moet een leider van de gemeente volgens Paulus zijn?",
-            antwoorden: ["Gastvrij, beheerst en vriendelijk", "Streng en gevreesd, zodat niemand tegenspreekt", "Rijk en machtig, met veel aanzien", "Slim en gehaaid, altijd op zijn voordeel uit"],
+            antwoorden: ["Gastvrij, beheerst en vriendelijk", "Streng en gevreesd, zodat niemand tegenspreekt", "Altijd vrolijk en grappig, zodat iedereen hem aardig vindt", "Slim en gehaaid, altijd op zijn voordeel uit"],
             correct: "Gastvrij, beheerst en vriendelijk",
             bijbelplaats: "1 Timoteüs 3:2-3"
         },
@@ -4512,7 +4512,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus schrijft aan Timoteüs dat God ons geen geest van angst heeft gegeven. Welke drie dingen noemt hij in plaats daarvan?",
-            antwoorden: ["Kracht, liefde en bezonnenheid", "Macht, rijkdom en aanzien", "Geloof, hoop en liefde", "Wijsheid, geduld en vrede"],
+            antwoorden: ["Kracht, liefde en bezonnenheid", "Vrolijkheid, geluk en gezondheid", "Geloof, hoop en liefde", "Wijsheid, geduld en vrede"],
             correct: "Kracht, liefde en bezonnenheid",
             bijbelplaats: "2 Timoteüs 1:7",
             uitleg: "Bezonnen zijn betekent: rustig nadenken voordat je iets zegt of doet, en je niet laten meeslepen door angst of boosheid. Het Griekse woord dat Paulus gebruikt, heeft te maken met een helder en gezond verstand. In sommige vertalingen staat hier daarom \"zelfbeheersing\" of \"gematigdheid\". Paulus bedoelt: wie op God vertrouwt, hoeft niet in paniek te raken, maar kan kalm en verstandig blijven."
@@ -4992,7 +4992,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Onesimus was een tijd van Filemon gescheiden geweest. Paulus oppert voorzichtig dat daar misschien iets goeds uit voortkomt. Welk goeds zou daaruit kunnen voortkomen?",
-            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet meer alleen als slaaf maar als geliefde broeder", "Dat Onesimus voortaan helemaal alleen kon leven", "Dat Filemon hem nooit meer hoefde te zien", "Dat Onesimus nu rijk zou worden"],
+            antwoorden: ["Dat Filemon hem nu voorgoed terugkrijgt, niet meer alleen als slaaf maar als geliefde broeder", "Dat Onesimus voortaan helemaal alleen kon leven", "Dat Filemon hem nooit meer hoefde te zien", "Dat Onesimus nu de grote stad Rome had gezien"],
             correct: "Dat Filemon hem nu voorgoed terugkrijgt, niet meer alleen als slaaf maar als geliefde broeder",
             bijbelplaats: "Filemon 15-16"
         },
@@ -5073,7 +5073,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Waar moeten de gelovigen volgens Hebreeën met iedereen naar streven?",
-            antwoorden: ["Naar vrede", "Naar hun eigen gelijk", "Naar de hoogste plaats", "Naar zoveel mogelijk bezit"],
+            antwoorden: ["Naar vrede", "Naar hun eigen gelijk", "Naar de hoogste plaats", "Naar een eigen huis in Jeruzalem"],
             correct: "Naar vrede",
             bijbelplaats: "Hebreeën 12:14"
         },
@@ -5091,7 +5091,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat blijft er volgens Hebreeën nog over voor het volk van God?",
-            antwoorden: ["Een rust die God heeft beloofd", "Een beloning voor wie het hardst werkt", "Een leven zonder moeite hier op aarde", "Een plek alleen voor de sterksten"],
+            antwoorden: ["Een rust die God heeft beloofd", "Een nieuw land aan de andere kant van de zee", "Een leven zonder moeite hier op aarde", "Een plek alleen voor de sterksten"],
             correct: "Een rust die God heeft beloofd",
             bijbelplaats: "Hebreeën 4:9"
         },
@@ -5109,7 +5109,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat is volgens Hebreeën onmisbaar om God te behagen?",
-            antwoorden: ["Geloof", "Geld", "Kracht", "Wijsheid"],
+            antwoorden: ["Geloof", "Een goede afkomst", "Kracht", "Wijsheid"],
             correct: "Geloof",
             bijbelplaats: "Hebreeën 11:6"
         },
@@ -6187,7 +6187,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes prijst Gajus, omdat die rondreizende gelovigen gastvrij ontving, ook al kende hij hen niet. Waarom is dat volgens Johannes zo belangrijk?",
-            antwoorden: ["Zo word je zelf medewerker van de waarheid", "Zo word je rijk gezegend", "Zo krijg je aanzien in de gemeente", "Zo hoef je zelf niet ver weg te gaan om deze mensen te bezoeken"],
+            antwoorden: ["Zo word je zelf medewerker van de waarheid", "Zo leer je mensen uit andere landen kennen", "Zo krijg je aanzien in de gemeente", "Zo hoef je zelf niet ver weg te gaan om deze mensen te bezoeken"],
             correct: "Zo word je zelf medewerker van de waarheid",
             bijbelplaats: "3 Johannes 8"
         },
