@@ -2903,8 +2903,8 @@ vragenData["Handelingen"] = {
 // Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
 // Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
 // =====================================================================
-// 1 & 2 Korintiërs — vragenpool (47 vragen: beginner 16, advanced 16,
-// expert 15)
+// 1 & 2 Korintiërs — vragenpool (49 vragen: beginner 16, advanced 16,
+// expert 17)
 // De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
 // zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
 // =====================================================================
@@ -3200,6 +3200,18 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt", "Een geschenk dat je terug moet geven als je het niet goed gebruikt", "Een boek waarin alle beloften zijn opgeschreven", "Een bewijs dat een schuld helemaal is afbetaald"],
             correct: "Een eerste deel dat je alvast krijgt, als zekerheid dat de rest volgt",
             bijbelplaats: "2 Korintiërs 1:22"
+        },
+        {
+            vraag: "In de eerste brief aan de Korintiërs geeft Paulus vooral antwoord op vragen en problemen van de gemeente. Welk onderwerp neemt in de tweede brief aan de Korintiërs veel meer ruimte in?",
+            antwoorden: ["Paulus zelf: hij legt uit waarom hij echt een apostel is en vertelt over zijn zwakheid en zijn lijden", "Hoe de gemeente een schip moest kopen om het evangelie over zee te brengen", "Een lijst van alle koningen van Israël, van Saul tot de laatste koning", "Welke dieren Noach in de ark meenam en hoe hij ze te eten gaf"],
+            correct: "Paulus zelf: hij legt uit waarom hij echt een apostel is en vertelt over zijn zwakheid en zijn lijden",
+            bijbelplaats: "1 Korintiërs 1:11; 7:1 · 2 Korintiërs 10:7-8; 11:23-30; 12:9-10"
+        },
+        {
+            vraag: "Paulus schreef de gemeente in Korinte meer brieven dan de twee die in de Bijbel staan. Hoe weten we dat?",
+            antwoorden: ["Paulus noemt in zijn brieven zelf een eerdere brief die hij hun al had geschreven", "Lucas vertelt het in de Handelingen van de apostelen", "De derde brief aan de Korintiërs staat, als bijlage, achter in het boek Openbaring", "De gemeente in Korinte hing al zijn brieven op in de synagoge"],
+            correct: "Paulus noemt in zijn brieven zelf een eerdere brief die hij hun al had geschreven",
+            bijbelplaats: "1 Korintiërs 5:9"
         }
     ]
 };

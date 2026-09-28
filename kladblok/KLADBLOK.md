@@ -60,6 +60,14 @@
   laat de regel weg als hij ontbreekt; invullen is inhoudelijk werk per term.
 - 2026-09-16 — Feesten door het jaar — nieuw Ontdekken-onderwerp, uit te voeren
   na Openbaring; uitgewerkt in kladblok/feesten-door-het-jaar.md.
+- 2026-09-29 — Open vragen 2 Korintiërs, mogelijk voor Ontdekken: (1) wie waren
+  de tegenstanders van Paulus in 2 Kor 10-13 en wie bedoelt hij met de
+  'aartsapostelen' / 'die geweldige apostelen' (2 Kor 11:5; 12:11)? Drie
+  lezingen: de Twaalf zonder spot (Chrysostomus, oudere uitleg), de indringers
+  in Korinte met ironie (Meyer, meeste modernen), of Jeruzalem op de
+  achtergrond (Käsemann, Barrett). (2) Welke brief is de tranenbrief van
+  2 Kor 2:4: 1 Korintiërs zelf (oudere uitleg), een verloren brief, of
+  2 Kor 10-13? Bij beide punten geen partij kiezen in een gewone boekvraag.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
