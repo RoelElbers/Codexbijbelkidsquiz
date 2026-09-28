@@ -744,7 +744,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na Zijn intocht, wat ophef veroorzaakte?",
-                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij deelde brood en geld uit aan alle arme mensen daar"],
+                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij vroeg de priesters de tempel feestelijk te versieren"],
                 correct: "Hij joeg de geldwisselaars en duivenverkopers eruit",
                 bijbelplaats: "Marcus 11:15-17"
             },
@@ -818,7 +818,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Wat zei Jezus dat iemand moet doen die Hem wil volgen?",
-                antwoorden: ["Veel bezit verzamelen", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Elke dag naar de tempel in Jeruzalem gaan om daar te bidden"],
+                antwoorden: ["Eerst een jaar in de leer gaan bij een rabbi", "Zichzelf verloochenen en zijn kruis op zich nemen", "Op een berg gaan wonen", "Elke dag naar de tempel in Jeruzalem gaan om daar te bidden"],
                 correct: "Zichzelf verloochenen en zijn kruis op zich nemen",
                 bijbelplaats: "Marcus 8:34"
             },
@@ -1362,7 +1362,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
         expert: [
             {
                 vraag: "Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden?",
-                antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
+                antwoorden: ["Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is", "Dat Lucas zelf alles met eigen ogen had gezien", "Dat Theofilus het boek zou voorlezen in de tempel", "Dat Theofilus zelf ook een evangelie zou schrijven"],
                 correct: "Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is",
                 bijbelplaats: "Lucas 1:1-4"
             },
@@ -1679,7 +1679,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt?",
-                antwoorden: ["Eeuwig leven", "Een lang leven op aarde", "Grote rijkdom", "Genezing van ziekten"],
+                antwoorden: ["Eeuwig leven", "Een lang leven op aarde", "Dat je nooit meer water uit de put hoeft te halen", "Genezing van ziekten"],
                 correct: "Eeuwig leven",
                 bijbelplaats: "Johannes 4:13-14"
             },
@@ -2215,7 +2215,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Waarover waren de gelovigen in Rome het met elkaar oneens?",
-            antwoorden: ["Over wat je wel en niet mocht eten, en welke dagen bijzonder waren", "Over wie de leider van de gemeente moest zijn na Paulus", "Over hoeveel geld ieder moest geven", "Over de vraag of Jezus echt was opgestaan"],
+            antwoorden: ["Over wat je wel en niet mocht eten, en welke dagen bijzonder waren", "Over wie de leider van de gemeente moest zijn na Paulus", "Over hoe laat de samenkomst moest beginnen", "Over de vraag of Jezus echt was opgestaan"],
             correct: "Over wat je wel en niet mocht eten, en welke dagen bijzonder waren",
             bijbelplaats: "Romeinen 14:2-6"
         },
@@ -3379,7 +3379,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus vraagt verbaasd: \"Wie heeft jullie betoverd?\" Waarom is hij zo verbaasd?",
-            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden onderling ruzie gekregen over geld", "Ze dachten ineens dat Paulus nooit een echte apostel was geweest"],
+            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden een eerdere brief van Paulus kwijtgemaakt", "Ze dachten ineens dat Paulus nooit een echte apostel was geweest"],
             correct: "Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen",
             bijbelplaats: "Galaten 3:1-3"
         },
@@ -5207,7 +5207,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken?",
-            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Aan de mensen die al veel geld aan de armen gaven", "Aan de leiders van de gemeente", "Aan mensen die ver weg op reis zijn"],
+            antwoorden: ["Aan mensen die gevangenzitten en slecht behandeld worden", "Aan de vissers die 's nachts op het meer werken", "Aan de leiders van de gemeente", "Aan mensen die ver weg op reis zijn"],
             correct: "Aan mensen die gevangenzitten en slecht behandeld worden",
             bijbelplaats: "Hebreeën 13:3"
         },

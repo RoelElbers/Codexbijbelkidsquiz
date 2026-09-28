@@ -65,16 +65,16 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 12 | Wat deed Jezus in de tempel in Jeruzalem, kort na Zijn intocht, wat ophef veroorzaakte? | Hij ging stil bidden<br>✅ Hij joeg de geldwisselaars en duivenverkopers eruit<br>Hij gaf een lange toespraak<br>**Hij deelde brood en geld uit aan alle arme mensen daar** | Marcus 11:15-17 |  |
-| 13 | Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat? | ✅ Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen<br>Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen<br>**Al je geld weggeven aan de tempel**<br>Naar een ander land verhuizen | Marcus 1:4 |  |
+| 12 | Wat deed Jezus in de tempel in Jeruzalem, kort na Zijn intocht, wat ophef veroorzaakte? | Hij ging stil bidden<br>✅ Hij joeg de geldwisselaars en duivenverkopers eruit<br>Hij gaf een lange toespraak<br>Hij vroeg de priesters de tempel feestelijk te versieren | Marcus 11:15-17 | vervangen |
+| 13 | Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat? | ✅ Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen<br>Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen<br>**Al je geld weggeven aan de tempel**<br>Naar een ander land verhuizen | Marcus 1:4 | blijft |
 
 ### zilver
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 14 | Wat zei Jezus dat iemand moet doen die Hem wil volgen? | **Veel bezit verzamelen**<br>✅ Zichzelf verloochenen en zijn kruis op zich nemen<br>Op een berg gaan wonen<br>Elke dag naar de tempel in Jeruzalem gaan om daar te bidden | Marcus 8:34 |  |
+| 14 | Wat zei Jezus dat iemand moet doen die Hem wil volgen? | Eerst een jaar in de leer gaan bij een rabbi<br>✅ Zichzelf verloochenen en zijn kruis op zich nemen<br>Op een berg gaan wonen<br>Elke dag naar de tempel in Jeruzalem gaan om daar te bidden | Marcus 8:34 | vervangen |
 | 15 | Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan? | Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar<br>✅ De sabbat is er voor de mens, en niet de mens voor de sabbat<br>De sabbat geldt alleen voor de priesters<br>**Op de sabbat mag je geen werk doen waar je voor betaald wordt** | Marcus 2:27 |  |
-| 16 | De vrouwen kochten welriekende kruiden om Jezus te zalven. Wat wilden zij daarmee laten zien? | ✅ Eerbied en genegenheid voor iemand die hun dierbaar was<br>Dat zij geloofden dat Jezus uit de dood zou opstaan<br>**Dat zij rijker waren dan de andere leerlingen van Jezus**<br>Dat zij niet bang waren voor de wachters bij het graf | Marcus 16:1 |  |
+| 16 | De vrouwen kochten welriekende kruiden om Jezus te zalven. Wat wilden zij daarmee laten zien? | ✅ Eerbied en genegenheid voor iemand die hun dierbaar was<br>Dat zij geloofden dat Jezus uit de dood zou opstaan<br>**Dat zij rijker waren dan de andere leerlingen van Jezus**<br>Dat zij niet bang waren voor de wachters bij het graf | Marcus 16:1 | blijft |
 | 17 | De mensen noemen Jezus "de timmerman". Wat maakte een timmerman in die tijd vooral? | ✅ Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis<br>**Alleen meubels voor rijke families in de stad**<br>Vooral boten, want het meer was dichtbij<br>Beelden en versieringen voor de tempel | Marcus 6:3 |  |
 | 18 | Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos Hij juist die twee? | ✅ De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening<br>De kameel was een onrein dier en de naald een heilig voorwerp<br>**Kamelen waren duur, dus alleen rijken hadden er een**<br>Beide waren dingen die iedereen dagelijks om zich heen zag | Marcus 10:25 |  |
 | 19 | Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn? | ✅ Je had een ernstige huidziekte en moest buiten het dorp wonen<br>Je was blind geboren en moest bedelen langs de kant van de weg<br>Je kon niet lopen en moest overal naartoe gedragen worden<br>**Je had al je bezit verloren en werkte als dagloner op het land** | Marcus 1:40 |  |
@@ -111,7 +111,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 31 | Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden? | ✅ Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is<br>**Dat Theofilus hem rijk zou belonen voor al het werk dat hij had gedaan**<br>Dat Theofilus het boek zou voorlezen in de tempel<br>Dat Theofilus zelf ook een evangelie zou schrijven | Lucas 1:1-4 |  |
+| 31 | Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden? | ✅ Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is<br>Dat Lucas zelf alles met eigen ogen had gezien<br>Dat Theofilus het boek zou voorlezen in de tempel<br>Dat Theofilus zelf ook een evangelie zou schrijven | Lucas 1:1-4 | vervangen |
 | 32 | Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen? | ✅ Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen<br>**Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel**<br>In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan<br>Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan | Lucas 10:1-9 |  |
 | 33 | In de gelijkenis van de onrechtvaardige rentmeester laat de rentmeester twee schuldenaren hun schuld verlagen. Waarin waren die schulden uitgedrukt? | **Goud en zilver**<br>✅ Olie en tarwe<br>Wijn en brood<br>**Geld en land** | Lucas 16:6-7 |  |
 | 34 | De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend? | ✅ Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben<br>Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde<br>**Het was het slechtst betaalde werk dat er bestond**<br>Alleen kinderen deden dat werk, geen volwassen mannen | Lucas 15:15 · Leviticus 11:7 |  |
@@ -122,7 +122,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 35 | Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt? | ✅ Eeuwig leven<br>Een lang leven op aarde<br>**Grote rijkdom**<br>Genezing van ziekten | Johannes 4:13-14 |  |
+| 35 | Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt? | ✅ Eeuwig leven<br>Een lang leven op aarde<br>Dat je nooit meer water uit de put hoeft te halen<br>Genezing van ziekten | Johannes 4:13-14 | vervangen |
 
 ### goud
 
@@ -144,7 +144,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 40 | Waarover waren de gelovigen in Rome het met elkaar oneens? | ✅ Over wat je wel en niet mocht eten, en welke dagen bijzonder waren<br>Over wie de leider van de gemeente moest zijn na Paulus<br>**Over hoeveel geld ieder moest geven**<br>Over de vraag of Jezus echt was opgestaan | Romeinen 14:2-6 |  |
+| 40 | Waarover waren de gelovigen in Rome het met elkaar oneens? | ✅ Over wat je wel en niet mocht eten, en welke dagen bijzonder waren<br>Over wie de leider van de gemeente moest zijn na Paulus<br>Over hoe laat de samenkomst moest beginnen<br>Over de vraag of Jezus echt was opgestaan | Romeinen 14:2-6 | vervangen |
 
 ### goud
 
@@ -180,7 +180,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 51 | Paulus vergelijkt de schat van het goede nieuws met iets kostbaars in iets gewoons. Waarin zit die schat? | **In een gouden kist**<br>In een groot kasteel<br>✅ In kruiken van klei<br>In een diepe put | 2 Korintiërs 4:7 |  |
-| 52 | Paulus sluit het grote hoofdstuk over de opstanding in zijn eerste brief aan de Korintiërs af met een bemoediging. Wat zegt hij daar over hun werk voor God? | ✅ Dat het nooit voor niets is<br>Dat het zinloos is<br>Dat alleen sterke mensen het mogen doen<br>**Dat ze er flink voor betaald zullen krijgen** | 1 Korintiërs 15:58 |  |
+| 52 | Paulus sluit het grote hoofdstuk over de opstanding in zijn eerste brief aan de Korintiërs af met een bemoediging. Wat zegt hij daar over hun werk voor God? | ✅ Dat het nooit voor niets is<br>Dat het zinloos is<br>Dat alleen sterke mensen het mogen doen<br>**Dat ze er flink voor betaald zullen krijgen** | 1 Korintiërs 15:58 | blijft |
 
 ## Galaten
 
@@ -188,8 +188,8 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 53 | Paulus vraagt verbaasd: "Wie heeft jullie betoverd?" Waarom is hij zo verbaasd? | ✅ Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen<br>Ze waren teruggekeerd naar het vereren van afgoden<br>**Ze hadden onderling ruzie gekregen over geld**<br>Ze dachten ineens dat Paulus nooit een echte apostel was geweest | Galaten 3:1-3 |  |
-| 54 | Paulus gebruikt Abraham als voorbeeld van hoe je bij God hoort. Wat maakt Abraham juist tot dat voorbeeld? | ✅ Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend<br>Hij hield zich al precies aan de hele wet van Mozes<br>**Hij was heel rijk en machtig en had veel bezit**<br>Hij bouwde met zijn eigen handen de allereerste tempel voor God in Jeruzalem | Galaten 3:6-7 |  |
+| 53 | Paulus vraagt verbaasd: "Wie heeft jullie betoverd?" Waarom is hij zo verbaasd? | ✅ Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen<br>Ze waren teruggekeerd naar het vereren van afgoden<br>Ze hadden een eerdere brief van Paulus kwijtgemaakt<br>Ze dachten ineens dat Paulus nooit een echte apostel was geweest | Galaten 3:1-3 | vervangen |
+| 54 | Paulus gebruikt Abraham als voorbeeld van hoe je bij God hoort. Wat maakt Abraham juist tot dat voorbeeld? | ✅ Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend<br>Hij hield zich al precies aan de hele wet van Mozes<br>**Hij was heel rijk en machtig en had veel bezit**<br>Hij bouwde met zijn eigen handen de allereerste tempel voor God in Jeruzalem | Galaten 3:6-7 | blijft |
 | 55 | Paulus schrijft over de besnijdenis, een belangrijk Joods teken van het verbond met God. Uiteindelijk zegt hij dat besneden of onbesneden zijn niet het belangrijkste is. Wat telt volgens hem wél? | Hoe oud je bent en hoe lang je al gelooft<br>✅ Dat je een nieuwe schepping bent<br>**Hoeveel geld je aan de armen geeft**<br>Hoe vaak je naar de tempel bent geweest | Galaten 6:15 |  |
 | 56 | Paulus sluit zijn brief af: "ik draag de merktekens van Jezus in mijn lichaam". Waaraan deed dat toen denken? | ✅ Aan een teken waaraan je zag bij wie iemand hoorde<br>**Aan de zegelring waarmee een rijke zijn brieven dichtmaakte**<br>Aan het sieraad van een vrijgelaten gevangene<br>Aan de kleuren waaraan je zag uit welke stad iemand kwam | Galaten 6:17 |  |
 
@@ -258,7 +258,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 75 | Wat wil God volgens Paulus voor alle mensen? | ✅ Dat ze gered worden<br>**Dat ze het zelf verdienen**<br>Dat alleen de besten gered worden<br>**Dat ze rijk worden** | 1 Timoteüs 2:4 |  |
+| 75 | Wat wil God volgens Paulus voor alle mensen? | ✅ Dat ze gered worden<br>**Dat ze het zelf verdienen**<br>Dat alleen de besten gered worden<br>**Dat ze rijk worden** | 1 Timoteüs 2:4 | blijft |
 
 ### zilver
 
@@ -308,7 +308,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 91 | Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken? | ✅ Aan mensen die gevangenzitten en slecht behandeld worden<br>**Aan de mensen die al veel geld aan de armen gaven**<br>Aan de leiders van de gemeente<br>Aan mensen die ver weg op reis zijn | Hebreeën 13:3 |  |
+| 91 | Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken? | ✅ Aan mensen die gevangenzitten en slecht behandeld worden<br>Aan de vissers die 's nachts op het meer werken<br>Aan de leiders van de gemeente<br>Aan mensen die ver weg op reis zijn | Hebreeën 13:3 | vervangen |
 | 92 | Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een "lofoffer". Waaruit bestaat dat volgens Hebreeën? | ✅ Uit woorden waarmee we Gods naam prijzen en belijden<br>Uit een dier dat op het altaar wordt gebracht<br>**Uit geld dat aan de tempel wordt gegeven**<br>Uit veertig dagen vasten zonder eten of drinken | Hebreeën 13:15 |  |
 
 ## Jakobus
