@@ -876,7 +876,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Jezus genas op de sabbat, de rustdag, en kreeg daar kritiek op. Hoe keek Jezus tegen de sabbat aan?",
-                antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "Op de sabbat mag je geen werk doen waar je voor betaald wordt"],
+                antwoorden: ["Wie op de sabbat werkt of geneest, overtreedt de wet van Mozes zwaar", "De sabbat is er voor de mens, en niet de mens voor de sabbat", "De sabbat geldt alleen voor de priesters", "Op de sabbat moet je de hele dag in de synagoge blijven"],
                 correct: "De sabbat is er voor de mens, en niet de mens voor de sabbat",
                 bijbelplaats: "Marcus 2:27"
             },
@@ -907,7 +907,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De mensen noemen Jezus \"de timmerman\". Wat maakte een timmerman in die tijd vooral?",
-                antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Alleen meubels voor rijke families in de stad", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
+                antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Vooral houten speelgoed voor de kinderen in het dorp", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
                 correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
                 bijbelplaats: "Marcus 6:3",
                 uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nEen van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot Zijn dertigste was dit gewoon Zijn werk."
@@ -920,7 +920,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn?",
-                antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had al je bezit verloren en werkte als dagloner op het land"],
+                antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had hoge koorts en moest dagenlang in bed blijven"],
                 correct: "Je had een ernstige huidziekte en moest buiten het dorp wonen",
                 bijbelplaats: "Marcus 1:40"
             },
@@ -1404,7 +1404,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen?",
-                antwoorden: ["Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen", "Geld en voedsel inzamelen voor de armen in Jeruzalem en dat afdragen aan de tempel", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan"],
+                antwoorden: ["Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen", "Een lijst maken van alle zieken, zodat Jezus later bij hen langs kon gaan", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan"],
                 correct: "Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen",
                 bijbelplaats: "Lucas 10:1-9",
                 uitleg: "Het verschil zit in één woord. In het Grieks staat er <span class='grieks'>ἑβδομήκοντα</span> (hebdomēkonta), 'zeventig', en in de meeste handschriften staat daar <span class='grieks'>δύο</span> (duo) achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds.\n\nDaarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet.\n\nBeide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
@@ -2061,7 +2061,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat noemt Paulus het grootste geschenk van God aan de mensen?",
-            antwoorden: ["Een lang leven vol rijkdom, eer en macht", "Een mooi huis om met je familie in te wonen", "Het eeuwige leven door Jezus Christus", "Veel land met akkers en kuddes schapen"],
+            antwoorden: ["Een goede gezondheid tot je oud bent", "Een mooi huis om met je familie in te wonen", "Het eeuwige leven door Jezus Christus", "Veel land met akkers en kuddes schapen"],
             correct: "Het eeuwige leven door Jezus Christus",
             bijbelplaats: "Romeinen 6:23"
         },
@@ -2718,7 +2718,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk?",
-            antwoorden: ["Ze had een kapsalon aan het marktplein", "Ze verkocht kostbare purperen stof", "Ze werkte voor een rijke vrouw en hielp in de huishouding", "Ze was koningin van de stad Filippi"],
+            antwoorden: ["Ze had een kapsalon aan het marktplein", "Ze verkocht kostbare purperen stof", "Ze gaf les aan een school voor meisjes", "Ze was koningin van de stad Filippi"],
             correct: "Ze verkocht kostbare purperen stof",
             bijbelplaats: "Handelingen 16:14"
         },
@@ -2810,7 +2810,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
-            antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De gemeente had geld nodig en zij moesten het bij de rijke leden gaan innen", "Er moest iemand de brieven van Paulus rondbrengen"],
+            antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De apostelen wilden elk jaar een tijd met vakantie en hadden vervangers nodig", "Er moest iemand de brieven van Paulus rondbrengen"],
             correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
             bijbelplaats: "Handelingen 6:1-3",
             uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
@@ -3434,7 +3434,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft over de besnijdenis, een belangrijk Joods teken van het verbond met God. Uiteindelijk zegt hij dat besneden of onbesneden zijn niet het belangrijkste is. Wat telt volgens hem wél?",
-            antwoorden: ["Hoe oud je bent en hoe lang je al gelooft", "Dat je een nieuwe schepping bent", "Hoeveel geld je aan de armen geeft", "Hoe vaak je naar de tempel bent geweest"],
+            antwoorden: ["Hoe oud je bent en hoe lang je al gelooft", "Dat je een nieuwe schepping bent", "Of je Grieks of Hebreeuws spreekt", "Hoe vaak je naar de tempel bent geweest"],
             correct: "Dat je een nieuwe schepping bent",
             bijbelplaats: "Galaten 6:15"
         },
@@ -4220,7 +4220,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Wat lieten de Tessalonicenzen achter toen zij zich tot God keerden?",
-            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun familie en hun geboortestad", "Hun huizen en bezittingen"],
+            antwoorden: ["De afgoden, om de levende God te dienen", "De tempel in Jeruzalem", "Hun familie en hun geboortestad", "Hun werk op de markt"],
             correct: "De afgoden, om de levende God te dienen",
             bijbelplaats: "1 Tessalonicenzen 1:9"
         },
@@ -6090,7 +6090,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes geeft een eenvoudige toets voor iedereen die beweert dat hij in God blijft. Wat moet zo iemand dan doen?",
-            antwoorden: ["Leven zoals Jezus geleefd heeft", "Elke dag naar de tempel gaan", "De boeken van Mozes uit het hoofd leren", "Al zijn bezit weggeven"],
+            antwoorden: ["Leven zoals Jezus geleefd heeft", "Elke dag naar de tempel gaan", "De boeken van Mozes uit het hoofd leren", "Elke week een dag vasten"],
             correct: "Leven zoals Jezus geleefd heeft",
             bijbelplaats: "1 Johannes 2:6"
         },
