@@ -8888,7 +8888,13 @@ function rendeerOntdekInhoud(onderwerp) {
             }
             // Tekst en bijbelplaats samen in één blok, zodat zichtbaar is welke
             // bijbelplaats bij welk lemma hoort.
-            let r = `<p class="naslag-item"><span class="naslag-term">${e.term}</span> — ${e.uitleg}</p>`;
+            // Een witregel (\n\n) in de uitleg begint een nieuwe alinea, zoals
+            // bij de uitleg van quizvragen; de term staat voor de eerste.
+            let r = String(e.uitleg).split(/\n\s*\n/).filter((a) => a.trim() !== "")
+                .map((a, i) => i === 0
+                    ? `<p class="naslag-item"><span class="naslag-term">${e.term}</span> — ${a}</p>`
+                    : `<p class="naslag-item">${a}</p>`)
+                .join("");
             if (e.bijbelplaats) r += `<div class="bijbelplaats">Lees het na in: ${e.bijbelplaats}</div>`;
             return `<div class="naslag-lemma">${r}</div>`;
         }).join("");
