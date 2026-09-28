@@ -1952,7 +1952,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
                 correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
                 bijbelplaats: "Johannes 19:20",
-                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven.\n\nLatijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
+                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse Rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven.\n\nLatijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
             },
             {
                 vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
@@ -2359,11 +2359,11 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 1:25"
         },
         {
-            vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
+            vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse Rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
             antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
             correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
             bijbelplaats: "Romeinen 8:15",
-            uitleg: "Adoptie was in het Romeinse rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
+            uitleg: "Adoptie was in het Romeinse Rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
         },
         {
             vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
@@ -2747,7 +2747,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:26-27"
         },
         {
-            vraag: "De profeet Agabus kwam naar de gemeente in Antiochië en voorspelde dat er iets ergs zou komen over het hele Romeinse rijk. Wat voorspelde hij?",
+            vraag: "De profeet Agabus kwam naar de gemeente in Antiochië en voorspelde dat er iets ergs zou komen over het hele Romeinse Rijk. Wat voorspelde hij?",
             antwoorden: ["Een grote storm", "Een grote hongersnood", "Een oorlog", "Een grote plaag"],
             correct: "Een grote hongersnood",
             bijbelplaats: "Handelingen 11:28",
@@ -3835,7 +3835,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft in zijn brief aan de Filippenzen dat élke knie voor Jezus zal buigen. Op welke plaatsen gebeurt dat volgens hem?",
-            antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In alle grote steden van het Romeinse rijk", "In Jeruzalem en Filippi"],
+            antwoorden: ["In de hemel, op de aarde én onder de aarde", "In Israël en Rome", "In alle grote steden van het Romeinse Rijk", "In Jeruzalem en Filippi"],
             correct: "In de hemel, op de aarde én onder de aarde",
             bijbelplaats: "Filippenzen 2:10"
         },
@@ -4817,7 +4817,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus noemt Christus het \"hoofd\". Waarvan is Hij het hoofd?",
-            antwoorden: ["Van de kerk, Zijn lichaam", "Van het Romeinse rijk", "Van de tempel", "Van de synagoge"],
+            antwoorden: ["Van de kerk, Zijn lichaam", "Van het Romeinse Rijk", "Van de tempel", "Van de synagoge"],
             correct: "Van de kerk, Zijn lichaam",
             bijbelplaats: "Kolossenzen 1:18"
         },
@@ -4872,7 +4872,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 2 · Romeinen 16:5 · 1 Korintiërs 16:19"
         },
         {
-            vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse rijk?",
+            vraag: "Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse Rijk?",
             antwoorden: ["Hij was eigendom van zijn meester en kon gekocht en verkocht worden", "Hij was een knecht die elk jaar opnieuw zijn loon afsprak", "Hij was een gevangene die na zijn straf weer vrij kwam", "Hij was een leerling die bij zijn meester in huis een vak leerde"],
             correct: "Hij was eigendom van zijn meester en kon gekocht en verkocht worden",
             bijbelplaats: "Filemon 16"
