@@ -114,7 +114,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | 31 | Lucas begint zijn evangelie met een opdracht aan een man die Theofilus heet, en legt daarin uit waarom hij dit boek schreef. Wat noemt hij als reden? | ✅ Dat Theofilus zeker zou weten dat wat hij geleerd had betrouwbaar is<br>Dat Lucas zelf alles met eigen ogen had gezien<br>Dat Theofilus het boek zou voorlezen in de tempel<br>Dat Theofilus zelf ook een evangelie zou schrijven | Lucas 1:1-4 | vervangen |
 | 32 | Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen? | ✅ Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen<br>Een lijst maken van alle zieken, zodat Jezus later bij hen langs kon gaan<br>In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan<br>Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan | Lucas 10:1-9 | vervangen |
 | 33 | In de gelijkenis van de onrechtvaardige rentmeester laat de rentmeester twee schuldenaren hun schuld verlagen. Waarin waren die schulden uitgedrukt? | **Goud en zilver**<br>✅ Olie en tarwe<br>Wijn en brood<br>**Geld en land** | Lucas 16:6-7 |  |
-| 34 | De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend? | ✅ Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben<br>Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde<br>**Het was het slechtst betaalde werk dat er bestond**<br>Alleen kinderen deden dat werk, geen volwassen mannen | Lucas 15:15 · Leviticus 11:7 |  |
+| 34 | De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend? | ✅ Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben<br>Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde<br>**Het was het slechtst betaalde werk dat er bestond**<br>Alleen kinderen deden dat werk, geen volwassen mannen | Lucas 15:15 · Leviticus 11:7 | blijft |
 
 ## Johannes
 
@@ -161,7 +161,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 43 | Bij de tempelpoort zat een man die niet kon lopen. Wat deed Petrus voor hem? | **Hij gaf hem een goudstuk**<br>Hij liep voorbij<br>Hij stuurde hem door naar de priesters in de tempel<br>✅ Hij genas hem in de naam van Jezus | Handelingen 3:6-8 |  |
 | 44 | Een man, Simon, wilde de kracht van de Heilige Geest met geld kopen. Wat zei Petrus tegen hem? | **Dat hij meer moest betalen**<br>✅ Dat Gods gave nooit met geld te koop is<br>**Dat hij het geld eerst aan de armen moest geven**<br>Dat hij later terug moest komen, na overleg met de andere apostelen | Handelingen 8:18-20 |  |
-| 45 | Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij? | Om door de Joodse raad in Jeruzalem zelf berecht te worden<br>Om met rust gelaten te worden<br>✅ Om zijn zaak door de keizer in Rome te laten behandelen<br>**Om voor geld vrijgekocht te kunnen worden** | Handelingen 25:11 |  |
+| 45 | Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij? | Om door de Joodse raad in Jeruzalem zelf berecht te worden<br>Om met rust gelaten te worden<br>✅ Om zijn zaak door de keizer in Rome te laten behandelen<br>Om met een schip naar zijn geboortestad Tarsus te mogen | Handelingen 25:11 | vervangen |
 | 46 | De eerste gelovigen hadden "alles gemeenschappelijk". Wat betekende dat in de praktijk? | ✅ Wie bezit had, verkocht het als er iemand tekortkwam<br>**Niemand mocht nog iets bezitten, alles moest weg**<br>Ze woonden allemaal samen in één groot huis<br>Ze deelden alleen het brood bij de maaltijd | Handelingen 2:44-45 |  |
 
 ### goud
@@ -171,7 +171,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | 47 | Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk? | Ze had een kapsalon aan het marktplein<br>✅ Ze verkocht kostbare purperen stof<br>Ze gaf les aan een school voor meisjes<br>Ze was koningin van de stad Filippi | Handelingen 16:14 | vervangen |
 | 48 | Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen? | ✅ Hij was Romeins burger, en die had het recht zijn zaak in Rome te laten behandelen<br>Hij was priester geweest en had daardoor bijzondere rechten<br>**Hij had de gouverneur betaald voor die gunst**<br>Iedere gevangene mocht dat vragen, maar het werd bijna nooit werkelijk toegestaan | Handelingen 25:11 |  |
 | 49 | De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig? | ✅ Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling<br>Er waren te weinig mensen om de tempel schoon te houden<br>De apostelen wilden elk jaar een tijd met vakantie en hadden vervangers nodig<br>Er moest iemand de brieven van Paulus rondbrengen | Handelingen 6:1-3 | vervangen |
-| 50 | Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte? | ✅ Je hoofd kaalscheren en offers brengen in de tempel<br>Een jaar lang de stad niet verlaten, ook niet voor het feest<br>**Al je bezit aan de tempel geven**<br>Zeven dagen vasten in de woestijn | Handelingen 21:23-26 |  |
+| 50 | Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte? | ✅ Je hoofd kaalscheren en offers brengen in de tempel<br>Een jaar lang de stad niet verlaten, ook niet voor het feest<br>Je haar laten groeien tot het op de grond kwam<br>Zeven dagen vasten in de woestijn | Handelingen 21:23-26 | vervangen |
 
 ## 1 & 2 Korintiërs
 
@@ -191,7 +191,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | 53 | Paulus vraagt verbaasd: "Wie heeft jullie betoverd?" Waarom is hij zo verbaasd? | ✅ Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen<br>Ze waren teruggekeerd naar het vereren van afgoden<br>Ze hadden een eerdere brief van Paulus kwijtgemaakt<br>Ze dachten ineens dat Paulus nooit een echte apostel was geweest | Galaten 3:1-3 | vervangen |
 | 54 | Paulus gebruikt Abraham als voorbeeld van hoe je bij God hoort. Wat maakt Abraham juist tot dat voorbeeld? | ✅ Hij geloofde God, en dat geloof werd hem als gerechtigheid toegerekend<br>Hij hield zich al precies aan de hele wet van Mozes<br>**Hij was heel rijk en machtig en had veel bezit**<br>Hij bouwde met zijn eigen handen de allereerste tempel voor God in Jeruzalem | Galaten 3:6-7 | blijft |
 | 55 | Paulus schrijft over de besnijdenis, een belangrijk Joods teken van het verbond met God. Uiteindelijk zegt hij dat besneden of onbesneden zijn niet het belangrijkste is. Wat telt volgens hem wél? | Hoe oud je bent en hoe lang je al gelooft<br>✅ Dat je een nieuwe schepping bent<br>Of je Grieks of Hebreeuws spreekt<br>Hoe vaak je naar de tempel bent geweest | Galaten 6:15 | vervangen |
-| 56 | Paulus sluit zijn brief af: "ik draag de merktekens van Jezus in mijn lichaam". Waaraan deed dat toen denken? | ✅ Aan een teken waaraan je zag bij wie iemand hoorde<br>**Aan de zegelring waarmee een rijke zijn brieven dichtmaakte**<br>Aan het sieraad van een vrijgelaten gevangene<br>Aan de kleuren waaraan je zag uit welke stad iemand kwam | Galaten 6:17 |  |
+| 56 | Paulus sluit zijn brief af: "ik draag de merktekens van Jezus in mijn lichaam". Waaraan deed dat toen denken? | ✅ Aan een teken waaraan je zag bij wie iemand hoorde<br>Aan de tatoeage van een zeeman die al in veel havens was geweest<br>Aan het sieraad van een vrijgelaten gevangene<br>Aan de kleuren waaraan je zag uit welke stad iemand kwam | Galaten 6:17 | vervangen |
 
 ## Efeziërs
 
@@ -208,7 +208,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 59 | Paulus sluit zijn gebed af met een lofprijzing op God. Wat zegt hij daarin over wat God kan doen? | ✅ Veel meer dan wij ooit kunnen vragen of bedenken<br>Precies dat wat wij Hem vragen, niet meer<br>**Alleen wat wij zelf eerst verdiend hebben**<br>Alleen dingen die wij kunnen begrijpen | Efeziërs 3:20 |  |
 | 60 | Paulus beschrijft eerst hoe ver de mensen van God af stonden. Dan draait hij de zin om met twee woorden: "Maar God…" Wat zegt hij daarna over Hem? | ✅ Dat Hij rijk is aan erbarmen en ons met een grote liefde heeft liefgehad<br>Dat Hij streng is en alleen tevreden over sterke mensen<br>Dat Hij ver weg is en moeilijk te bereiken<br>**Dat Hij vriendelijk is voor wie het verdient** | Efeziërs 2:4 |  |
-| 61 | Paulus schrijft dat Christus "de muur die scheiding maakte" heeft afgebroken. Aan welke echte muur kan dit beeld de lezers hebben herinnerd? | ✅ Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten<br>Aan de stadsmuur van Jeruzalem, met voor elk volk een eigen poort<br>**Aan een muur tussen de rijke en arme wijk**<br>Aan de muur rond het paleis van de Romeinse stadhouder | Efeziërs 2:14 · Handelingen 21:28-29 |  |
+| 61 | Paulus schrijft dat Christus "de muur die scheiding maakte" heeft afgebroken. Aan welke echte muur kan dit beeld de lezers hebben herinnerd? | ✅ Aan de afscheiding in de tempel waar niet-Joden niet voorbij mochten<br>Aan de stadsmuur van Jeruzalem, met voor elk volk een eigen poort<br>**Aan een muur tussen de rijke en arme wijk**<br>Aan de muur rond het paleis van de Romeinse stadhouder | Efeziërs 2:14 · Handelingen 21:28-29 | blijft |
 
 ## Filippenzen
 
@@ -250,7 +250,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 74 | Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat "gerechtigheid". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen? | ✅ Geloof en liefde<br>Ook gerechtigheid<br>**Goud en zilver**<br>Moed en kracht | 1 Tessalonicenzen 5:8 · Efeziërs 6:14 |  |
+| 74 | Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat "gerechtigheid". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen? | ✅ Geloof en liefde<br>Ook gerechtigheid<br>Wijsheid en kennis<br>Moed en kracht | 1 Tessalonicenzen 5:8 · Efeziërs 6:14 | vervangen |
 
 ## Timoteüs & Titus
 
@@ -274,7 +274,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | 78 | Paulus waarschuwt tegen de jacht op geld met een nuchtere waarheid over geboorte en dood. Wat schrijft hij? | ✅ We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee<br>**Wie veel bezit heeft, hoeft zich geen zorgen te maken**<br>**Rijke mensen kunnen het koninkrijk van God niet binnengaan**<br>Wie veel weggeeft, krijgt van God vanzelf meer terug | 1 Timoteüs 6:7 |  |
 | 79 | In een groot huis staan voorwerpen van goud en zilver, maar ook van hout en aardewerk. Wat moet iemand volgens Paulus doen om een voorwerp voor bijzonder gebruik te worden? | ✅ Zichzelf reinigen van het verkeerde<br>**Rijk worden**<br>Veel leren<br>Een zo hoog mogelijke functie in de gemeente krijgen | 2 Timoteüs 2:20-21 |  |
 | 80 | Paulus schrijft dat er voor hem een "krans" klaarligt. Wat voor krans? | ✅ De krans van de gerechtigheid<br>Een krans van bloemen<br>**Een gouden kroon**<br>De lauwerkrans van de keizer | 2 Timoteüs 4:8 |  |
-| 81 | Welke spullen vraagt Paulus aan Timoteüs om voor hem mee te brengen? | ✅ Zijn mantel, zijn boekrollen en vooral de perkamenten<br>Brood, water en een olielamp<br>Een zwaard, een schild en zijn brieven<br>**Goud, zilver en wierook** | 2 Timoteüs 4:13 |  |
+| 81 | Welke spullen vraagt Paulus aan Timoteüs om voor hem mee te brengen? | ✅ Zijn mantel, zijn boekrollen en vooral de perkamenten<br>Brood, water en een olielamp<br>Een zwaard, een schild en zijn brieven<br>Vijgen, dadels en een kruik honing | 2 Timoteüs 4:13 | vervangen |
 
 ## Kolossenzen & Filemon
 
@@ -299,7 +299,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 87 | In Kolosse liepen leraren rond die beweerden dat zij een geheime, hogere kennis bezaten die de gewone gelovigen misten. Paulus antwoordt dat er inderdaad een schat verborgen ligt, maar dan in Christus zelf. Wat ligt daar volgens hem verborgen? | ✅ Alle schatten van wijsheid en kennis<br>**Alle goud van de tempel**<br>Alle boeken van de profeten<br>Alle namen van de gelovigen | Kolossenzen 2:2-3 |  |
 | 88 | Paulus waarschuwt de Kolossenzen dat niemand hen "als buit meesleept". Waarmee kan dat volgens hem gebeuren? | ✅ Met filosofie en holle misleiding die alleen op mensen berust<br>**Met mooie beloften over rijkdom en macht**<br>Met soldaten van de keizer<br>Met verhalen over verre landen | Kolossenzen 2:8 |  |
-| 89 | Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed? | ✅ Dat God een deur zou openen voor zijn boodschap<br>**Dat de Kolossenzen hem geld zouden sturen**<br>Dat hij gezond zou blijven<br>Dat zijn brief veilig zou aankomen | Kolossenzen 4:3 |  |
+| 89 | Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed? | ✅ Dat God een deur zou openen voor zijn boodschap<br>Dat zijn bewakers vriendelijker zouden worden<br>Dat hij gezond zou blijven<br>Dat zijn brief veilig zou aankomen | Kolossenzen 4:3 | vervangen |
 | 90 | Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen? | ✅ De taak afmaken die hij van de Heer gekregen heeft<br>De brief voorlezen in de synagoge<br>Onesimus begeleiden op zijn terugreis<br>Paulus opzoeken in de gevangenis in Rome | Filemon 2 · Kolossenzen 4:17 | vervangen |
 
 ## Hebreeën
@@ -309,7 +309,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 91 | Hebreeën zegt: leef mee met wie het zwaar hebben, alsof je zelf in hun plaats zit. Aan wie moeten de gelovigen dan speciaal denken? | ✅ Aan mensen die gevangenzitten en slecht behandeld worden<br>Aan de vissers die 's nachts op het meer werken<br>Aan de leiders van de gemeente<br>Aan mensen die ver weg op reis zijn | Hebreeën 13:3 | vervangen |
-| 92 | Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een "lofoffer". Waaruit bestaat dat volgens Hebreeën? | ✅ Uit woorden waarmee we Gods naam prijzen en belijden<br>Uit een dier dat op het altaar wordt gebracht<br>**Uit geld dat aan de tempel wordt gegeven**<br>Uit veertig dagen vasten zonder eten of drinken | Hebreeën 13:15 |  |
+| 92 | Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een "lofoffer". Waaruit bestaat dat volgens Hebreeën? | ✅ Uit woorden waarmee we Gods naam prijzen en belijden<br>Uit een dier dat op het altaar wordt gebracht<br>Uit een mand met de eerste vruchten van de oogst<br>Uit veertig dagen vasten zonder eten of drinken | Hebreeën 13:15 | vervangen |
 
 ## Jakobus
 
@@ -377,7 +377,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 107 | Johannes geeft een eenvoudige toets voor iedereen die beweert dat hij in God blijft. Wat moet zo iemand dan doen? | ✅ Leven zoals Jezus geleefd heeft<br>Elke dag naar de tempel gaan<br>De boeken van Mozes uit het hoofd leren<br>Elke week een dag vasten | 1 Johannes 2:6 | vervangen |
 | 108 | Johannes waarschuwt dat er iets is waar de gelovigen hun hart niet aan mogen verliezen, want wie dat wél doet, heeft de liefde van de Vader niet in zich. Waar gaat die waarschuwing over? | ✅ De wereld<br>**Het geld**<br>De macht<br>De roem | 1 Johannes 2:15 |  |
-| 109 | In zijn derde brief schrijft Johannes over Diotrefes, een man die in de gemeente graag de eerste wilde zijn — hij speelde er de baas. Wat deed hij met rondreizende gelovigen die langskwamen? | ✅ Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit<br>**Hij liet hen eerst flink betalen voordat ze mochten overnachten**<br>Hij stuurde hen door naar Johannes<br>Hij nam hen op, maar liet hen niet spreken | 3 Johannes 9-10 |  |
+| 109 | In zijn derde brief schrijft Johannes over Diotrefes, een man die in de gemeente graag de eerste wilde zijn — hij speelde er de baas. Wat deed hij met rondreizende gelovigen die langskwamen? | ✅ Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit<br>Hij liet hen eerst een examen over de Schriften afleggen<br>Hij stuurde hen door naar Johannes<br>Hij nam hen op, maar liet hen niet spreken | 3 Johannes 9-10 | vervangen |
 | 110 | Johannes schrijft dat gelovigen bij elkaar én bij God horen en samen in het geloof delen. Het Griekse woord daarvoor is koinonia. Dat woord werd ook gebruikt bij handel en samenwerking. Wat kon het daar betekenen? | ✅ Samen eigenaar zijn van één zaak<br>**Geld lenen aan iemand die je goed vertrouwt**<br>Een afspraak door een schrijver laten vastleggen<br>**Voor iemand werken tegen een vast loon per dag** | 1 Johannes 1:3 |  |
 
 ## Openbaring

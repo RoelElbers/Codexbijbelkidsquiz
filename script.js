@@ -2615,7 +2615,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Omdat Paulus een Romeins burger was, mocht hij iets bijzonders vragen. Wat vroeg hij?",
-            antwoorden: ["Om door de Joodse raad in Jeruzalem zelf berecht te worden", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om voor geld vrijgekocht te kunnen worden"],
+            antwoorden: ["Om door de Joodse raad in Jeruzalem zelf berecht te worden", "Om met rust gelaten te worden", "Om zijn zaak door de keizer in Rome te laten behandelen", "Om met een schip naar zijn geboortestad Tarsus te mogen"],
             correct: "Om zijn zaak door de keizer in Rome te laten behandelen",
             bijbelplaats: "Handelingen 25:11"
         },
@@ -2838,7 +2838,7 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
-            antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten, ook niet voor het feest", "Al je bezit aan de tempel geven", "Zeven dagen vasten in de woestijn"],
+            antwoorden: ["Je hoofd kaalscheren en offers brengen in de tempel", "Een jaar lang de stad niet verlaten, ook niet voor het feest", "Je haar laten groeien tot het op de grond kwam", "Zeven dagen vasten in de woestijn"],
             correct: "Je hoofd kaalscheren en offers brengen in de tempel",
             bijbelplaats: "Handelingen 21:23-26",
             uitleg: "Zo'n gelofte staat beschreven in Numeri 6. Wie hem aflegde, zette zich een tijd lang apart voor God: geen wijn, geen druiven, en geen schaar of scheermes over je haar. Aan het einde knipte je je haar af en verbrandde je het bij het offer. Het lange haar was dus zichtbaar bewijs dat je middenin zo'n periode zat."
@@ -3440,7 +3440,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus sluit zijn brief af: \"ik draag de merktekens van Jezus in mijn lichaam\". Waaraan deed dat toen denken?",
-            antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de zegelring waarmee een rijke zijn brieven dichtmaakte", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
+            antwoorden: ["Aan een teken waaraan je zag bij wie iemand hoorde", "Aan de tatoeage van een zeeman die al in veel havens was geweest", "Aan het sieraad van een vrijgelaten gevangene", "Aan de kleuren waaraan je zag uit welke stad iemand kwam"],
             correct: "Aan een teken waaraan je zag bij wie iemand hoorde",
             bijbelplaats: "Galaten 6:17",
             uitleg: "In die tijd kregen slaven soms een merkteken met de naam van hun eigenaar. Waarschijnlijk bedoelt Paulus de littekens die hij had overgehouden aan vervolging en mishandelingen vanwege zijn werk voor Jezus. Hij noemt ze zijn \"merktekens van Jezus\": tekens aan zijn lichaam die lieten zien bij wie hij hoorde."
@@ -4295,7 +4295,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus gebruikt op twee plekken het beeld van een borstpantser. In zijn brief aan de Efeziërs is dat \"gerechtigheid\". Welk beeld gebruikt hij hier, in 1 Tessalonicenzen?",
-            antwoorden: ["Geloof en liefde", "Ook gerechtigheid", "Goud en zilver", "Moed en kracht"],
+            antwoorden: ["Geloof en liefde", "Ook gerechtigheid", "Wijsheid en kennis", "Moed en kracht"],
             correct: "Geloof en liefde",
             bijbelplaats: "1 Tessalonicenzen 5:8 · Efeziërs 6:14"
         },
@@ -4625,7 +4625,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Welke spullen vraagt Paulus aan Timoteüs om voor hem mee te brengen?",
-            antwoorden: ["Zijn mantel, zijn boekrollen en vooral de perkamenten", "Brood, water en een olielamp", "Een zwaard, een schild en zijn brieven", "Goud, zilver en wierook"],
+            antwoorden: ["Zijn mantel, zijn boekrollen en vooral de perkamenten", "Brood, water en een olielamp", "Een zwaard, een schild en zijn brieven", "Vijgen, dadels en een kruik honing"],
             correct: "Zijn mantel, zijn boekrollen en vooral de perkamenten",
             bijbelplaats: "2 Timoteüs 4:13"
         },
@@ -4969,7 +4969,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed?",
-            antwoorden: ["Dat God een deur zou openen voor zijn boodschap", "Dat de Kolossenzen hem geld zouden sturen", "Dat hij gezond zou blijven", "Dat zijn brief veilig zou aankomen"],
+            antwoorden: ["Dat God een deur zou openen voor zijn boodschap", "Dat zijn bewakers vriendelijker zouden worden", "Dat hij gezond zou blijven", "Dat zijn brief veilig zou aankomen"],
             correct: "Dat God een deur zou openen voor zijn boodschap",
             bijbelplaats: "Kolossenzen 4:3"
         },
@@ -5220,7 +5220,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën spreekt over een ander soort offer dat gelovigen God kunnen brengen: een \"lofoffer\". Waaruit bestaat dat volgens Hebreeën?",
-            antwoorden: ["Uit woorden waarmee we Gods naam prijzen en belijden", "Uit een dier dat op het altaar wordt gebracht", "Uit geld dat aan de tempel wordt gegeven", "Uit veertig dagen vasten zonder eten of drinken"],
+            antwoorden: ["Uit woorden waarmee we Gods naam prijzen en belijden", "Uit een dier dat op het altaar wordt gebracht", "Uit een mand met de eerste vruchten van de oogst", "Uit veertig dagen vasten zonder eten of drinken"],
             correct: "Uit woorden waarmee we Gods naam prijzen en belijden",
             bijbelplaats: "Hebreeën 13:15"
         },
@@ -6194,7 +6194,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "In zijn derde brief schrijft Johannes over Diotrefes, een man die in de gemeente graag de eerste wilde zijn — hij speelde er de baas. Wat deed hij met rondreizende gelovigen die langskwamen?",
-            antwoorden: ["Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen eerst flink betalen voordat ze mochten overnachten", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
+            antwoorden: ["Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit", "Hij liet hen eerst een examen over de Schriften afleggen", "Hij stuurde hen door naar Johannes", "Hij nam hen op, maar liet hen niet spreken"],
             correct: "Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit",
             bijbelplaats: "3 Johannes 9-10"
         },
