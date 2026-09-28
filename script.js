@@ -4774,7 +4774,7 @@ vragenData["Kolossenzen & Filemon"] = {
     advanced: [
         {
             vraag: "Waarmee moeten de gelovigen zich \"kleden\", schrijft Paulus?",
-            antwoorden: ["Met medelijden, vriendelijkheid en zachtmoedigheid", "Met mooie, dure kleren", "Met een ijzeren wapenrusting", "Met witte gewaden"],
+            antwoorden: ["Met medelijden, vriendelijkheid en zachtmoedigheid", "Met trots, zodat iedereen ziet wie ze zijn", "Met een ijzeren wapenrusting", "Met witte gewaden"],
             correct: "Met medelijden, vriendelijkheid en zachtmoedigheid",
             bijbelplaats: "Kolossenzen 3:12",
             uitleg: "Zachtmoedig betekent: niet ruw of hard, maar mild in de manier waarop je met anderen omgaat. Het heeft niets met zwak zijn te maken. Iemand die zachtmoedig is, kán best boos worden, maar kiest ervoor dat niet op een ander af te reageren. Paulus zet het hier in een rijtje met medelijden en vriendelijkheid: eigenschappen die je niet aan iemand ziet, maar wel merkt zodra het ergens om spant."
@@ -4887,7 +4887,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "In Kolossenzen 2:15 beschrijft Paulus de overwinning van Christus met een beeld uit Rome: een veldheer die na een grote overwinning een triomftocht hield. Wat gebeurde er tijdens zo'n optocht?",
-            antwoorden: ["De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee", "De veldheer liet zijn vijanden vrij en gaf hun een geschenk mee naar huis", "Elke soldaat kreeg een stuk land buiten de stad als beloning", "De veldheer rende door de hele stad om te laten zien hoe snel hij was"],
+            antwoorden: ["De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee", "De veldheer liet zijn vijanden vrij en gaf hun een geschenk mee naar huis", "De veldheer trok zich terug in de bergen om uit te rusten", "De veldheer rende door de hele stad om te laten zien hoe snel hij was"],
             correct: "De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee",
             bijbelplaats: "Kolossenzen 2:15 · 2 Korintiërs 2:14",
             uitleg: "Het werkwoord thriambeuō betekent \"in een triomftocht meevoeren\". Iedereen in de stad kon dan zien wie er gewonnen had. Paulus zegt: de machten die tegen God ingingen, zijn aan het kruis overwonnen, voor ieder zichtbaar."
@@ -6013,7 +6013,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee?",
-            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de mensen op aarde nooit echt gelukkig kunnen zijn", "Dat gelovigen niets mogen bezitten", "Dat de wereld nu al bezig is te vergaan"],
+            antwoorden: ["Dat alles wat de wereld te bieden heeft tijdelijk is", "Dat de mensen op aarde nooit echt gelukkig kunnen zijn", "Dat gelovigen niets mogen bezitten", "Dat je beter kunt verhuizen naar een ander land"],
             correct: "Dat alles wat de wereld te bieden heeft tijdelijk is",
             bijbelplaats: "1 Johannes 2:17"
         },
@@ -6101,10 +6101,11 @@ vragenData["Brieven van Johannes"] = {
             bijbelplaats: "1 Johannes 2:12-14"
         },
         {
-            vraag: "Johannes waarschuwt dat er iets is waar de gelovigen hun hart niet aan mogen verliezen, want wie dat wél doet, heeft de liefde van de Vader niet in zich. Waar gaat die waarschuwing over?",
-            antwoorden: ["De wereld", "Het geld", "De macht", "De roem"],
-            correct: "De wereld",
-            bijbelplaats: "1 Johannes 2:15"
+            vraag: "Johannes schrijft: \"Heb de wereld niet lief.\" Toch staat er ook dat God de wereld zo liefhad dat Hij Zijn Zoon gaf. Wat bedoelt Johannes hier met \"de wereld\"?",
+            antwoorden: ["Alles wat mensen van God afhoudt, zoals begeerte en pronken met wat je hebt", "De aarde, met alle planten en dieren die God gemaakt heeft", "De landen buiten Israël, waar de heidenen woonden", "De grote steden, omdat je in een dorp dichter bij God bent"],
+            correct: "Alles wat mensen van God afhoudt, zoals begeerte en pronken met wat je hebt",
+            bijbelplaats: "1 Johannes 2:15-16 · Johannes 3:16",
+            uitleg: "Het Griekse woord is kosmos, \"wereld\". Johannes gebruikt het hier niet voor de aarde of de mensen, want God heeft de wereld juist zo liefgehad dat Hij Zijn Zoon gaf. Hij bedoelt alles wat mensen van God afhoudt: begeerte, en pronken met wat je hebt."
         },
         {
             vraag: "Een groep mensen had de gemeente verlaten. Dat deed pijn, en Johannes trekt er een harde conclusie uit. Wat schrijft hij over hen?",
@@ -6235,7 +6236,7 @@ vragenData["Openbaring"] = {
     beginner: [
         {
             vraag: "Aan het einde van Openbaring ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet?",
-            antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een nieuwe zon en een nieuwe maan", "Een gouden berg boven de wolken", "Een groot schip op een wilde zee"],
+            antwoorden: ["Een nieuwe hemel en een nieuwe aarde", "Een nieuwe zon en een nieuwe maan", "Een stad diep onder de zee", "Een groot schip op een wilde zee"],
             correct: "Een nieuwe hemel en een nieuwe aarde",
             bijbelplaats: "Openbaring 21:1"
         },

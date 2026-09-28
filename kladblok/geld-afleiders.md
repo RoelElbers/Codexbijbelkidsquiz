@@ -86,7 +86,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 21 | Jezus zei dat het makkelijker is voor een kameel om door het oog van een naald te gaan dan voor een rijke om het Koninkrijk van God binnen te gaan. Wat bedoelde Hij daarmee? | ✅ Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk<br>**Dat een rijke nooit gered kan worden**<br>**Dat rijke mensen het moeilijker vinden om te delen**<br>Dat alleen arme mensen in de hemel komen | Marcus 10:25-27 |  |
 | 22 | In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar? | ✅ Zij wisselden geld om in de munt voor de tempelbelasting<br>**Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen**<br>**Zij bewaarden het geld van rijke families in de tempelkluis**<br>Zij telden de opbrengst van de offerkisten | Marcus 11:15 |  |
-| 23 | Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank? | ✅ Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst<br>Wijn die bedorven was en daarom werd weggegooid<br>Wijn uit de tempel, die alleen de priesters mochten drinken<br>**Een dure wijn die een rijke voorbijganger had meegebracht** | Marcus 15:36 |  |
+| 23 | Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank? | ✅ Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst<br>Wijn die bedorven was en daarom werd weggegooid<br>Wijn uit de tempel, die alleen de priesters mochten drinken<br>**Een dure wijn die een rijke voorbijganger had meegebracht** | Marcus 15:36 | blijft |
 
 ## Lucas
 
@@ -217,7 +217,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 62 | In zijn brief aan de Filippenzen geeft Paulus een korte regel voor alles wat de gelovigen doen. Op welke manier moeten ze alles doen? | ✅ Zonder mopperen en ruzie<br>Zonder op de anderen te wachten, zodat je als eerste klaar bent<br>Zonder erover na te denken<br>Zonder het aan iemand te vragen | Filippenzen 2:14 | vervangen |
-| 63 | In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan? | ✅ Die van een dienaar<br>Die van een koning<br>**Die van een rijke heerser**<br>Die van een legeraanvoerder | Filippenzen 2:7 |  |
+| 63 | In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan? | ✅ Die van een dienaar<br>Die van een koning<br>**Die van een rijke heerser**<br>Die van een legeraanvoerder | Filippenzen 2:7 | blijft |
 | 64 | Paulus schrijft dat hij een geheim heeft geleerd voor tijden waarin hij veel heeft en tijden waarin hij weinig heeft. Wat is dat geheim? | ✅ Tevreden zijn in elke situatie<br>Altijd meer willen hebben<br>**Alleen blij zijn als hij rijk is**<br>Nooit iemand om hulp vragen | Filippenzen 4:11-12 |  |
 | 65 | In zijn brief aan de Filippenzen schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat gaf God Hem? | ✅ De hoogste naam, boven alle namen<br>Een groot landgoed in Galilea<br>**Een schatkist vol goud en zilver**<br>Een prachtig paleis in Jeruzalem | Filippenzen 2:9 |  |
 
@@ -226,7 +226,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 66 | Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat schrijft hij over hen? | ✅ Dat ze samen met hem gestreden hebben voor het goede nieuws<br>**Dat ze de rijkste vrouwen van Filippi waren**<br>Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht<br>Dat ze allebei door Lydia waren opgevoed | Filippenzen 4:3 | blijft |
-| 67 | Hoe noemt Paulus de Filippenzen liefkozend, als beeld van hoe trots en blij hij met hen is? | ✅ Zijn blijdschap en erekrans<br>Zijn leerlingen<br>**Zijn allerkostbaarste bezit op deze aarde**<br>Zijn schapen | Filippenzen 4:1 |  |
+| 67 | Hoe noemt Paulus de Filippenzen liefkozend, als beeld van hoe trots en blij hij met hen is? | ✅ Zijn blijdschap en erekrans<br>Zijn leerlingen<br>**Zijn allerkostbaarste bezit op deze aarde**<br>Zijn schapen | Filippenzen 4:1 | blijft |
 | 68 | Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd? | ✅ Een krans van gevlochten bladeren<br>**Een gouden beker gevuld met wijn**<br>**Een zilveren munt uit de stadskas**<br>Een nieuw stel kleren van de stadsbestuurders | Filippenzen 3:14 · 1 Korintiërs 9:25 |  |
 
 ## 1 & 2 Tessalonicenzen
@@ -288,17 +288,17 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 83 | Waarmee moeten de gelovigen zich "kleden", schrijft Paulus? | ✅ Met medelijden, vriendelijkheid en zachtmoedigheid<br>**Met mooie, dure kleren**<br>Met een ijzeren wapenrusting<br>Met witte gewaden | Kolossenzen 3:12 |  |
+| 83 | Waarmee moeten de gelovigen zich "kleden", schrijft Paulus? | ✅ Met medelijden, vriendelijkheid en zachtmoedigheid<br>Met trots, zodat iedereen ziet wie ze zijn<br>Met een ijzeren wapenrusting<br>Met witte gewaden | Kolossenzen 3:12 | vervangen |
 | 84 | Wat biedt Paulus aan over de schuld die Onesimus misschien nog had? | ✅ Paulus zal het zelf betalen<br>**De schuld hoeft van niemand betaald te worden**<br>Filemon moet het kwijtschelden<br>Onesimus moet ervoor werken | Filemon 18-19 |  |
 | 85 | Paulus schrijft over Onesimus dat hij meer is dan een slaaf. Wat was iemands positie als slaaf in het Romeinse Rijk? | ✅ Hij was eigendom van zijn meester en kon gekocht en verkocht worden<br>**Hij was een knecht die elk jaar opnieuw zijn loon afsprak**<br>Hij was een gevangene die na zijn straf weer vrij kwam<br>Hij was een leerling die bij zijn meester in huis een vak leerde | Filemon 16 |  |
-| 86 | In Kolossenzen 2:15 beschrijft Paulus de overwinning van Christus met een beeld uit Rome: een veldheer die na een grote overwinning een triomftocht hield. Wat gebeurde er tijdens zo'n optocht? | ✅ De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee<br>De veldheer liet zijn vijanden vrij en gaf hun een geschenk mee naar huis<br>**Elke soldaat kreeg een stuk land buiten de stad als beloning**<br>De veldheer rende door de hele stad om te laten zien hoe snel hij was | Kolossenzen 2:15 · 2 Korintiërs 2:14 |  |
+| 86 | In Kolossenzen 2:15 beschrijft Paulus de overwinning van Christus met een beeld uit Rome: een veldheer die na een grote overwinning een triomftocht hield. Wat gebeurde er tijdens zo'n optocht? | ✅ De veldheer trok door de stad en voerde zijn overwonnen vijanden met zich mee<br>De veldheer liet zijn vijanden vrij en gaf hun een geschenk mee naar huis<br>De veldheer trok zich terug in de bergen om uit te rusten<br>De veldheer rende door de hele stad om te laten zien hoe snel hij was | Kolossenzen 2:15 · 2 Korintiërs 2:14 | vervangen |
 
 ### goud
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 87 | In Kolosse liepen leraren rond die beweerden dat zij een geheime, hogere kennis bezaten die de gewone gelovigen misten. Paulus antwoordt dat er inderdaad een schat verborgen ligt, maar dan in Christus zelf. Wat ligt daar volgens hem verborgen? | ✅ Alle schatten van wijsheid en kennis<br>**Alle goud van de tempel**<br>Alle boeken van de profeten<br>Alle namen van de gelovigen | Kolossenzen 2:2-3 |  |
-| 88 | Paulus waarschuwt de Kolossenzen dat niemand hen "als buit meesleept". Waarmee kan dat volgens hem gebeuren? | ✅ Met filosofie en holle misleiding die alleen op mensen berust<br>**Met mooie beloften over rijkdom en macht**<br>Met soldaten van de keizer<br>Met verhalen over verre landen | Kolossenzen 2:8 |  |
+| 88 | Paulus waarschuwt de Kolossenzen dat niemand hen "als buit meesleept". Waarmee kan dat volgens hem gebeuren? | ✅ Met filosofie en holle misleiding die alleen op mensen berust<br>**Met mooie beloften over rijkdom en macht**<br>Met soldaten van de keizer<br>Met verhalen over verre landen | Kolossenzen 2:8 | blijft |
 | 89 | Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed? | ✅ Dat God een deur zou openen voor zijn boodschap<br>Dat zijn bewakers vriendelijker zouden worden<br>Dat hij gezond zou blijven<br>Dat zijn brief veilig zou aankomen | Kolossenzen 4:3 | vervangen |
 | 90 | Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen? | ✅ De taak afmaken die hij van de Heer gekregen heeft<br>De brief voorlezen in de synagoge<br>Onesimus begeleiden op zijn terugreis<br>Paulus opzoeken in de gevangenis in Rome | Filemon 2 · Kolossenzen 4:17 | vervangen |
 
@@ -367,7 +367,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 104 | Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee? | ✅ Dat alles wat de wereld te bieden heeft tijdelijk is<br>Dat de mensen op aarde nooit echt gelukkig kunnen zijn<br>**Dat gelovigen niets mogen bezitten**<br>Dat de wereld nu al bezig is te vergaan | 1 Johannes 2:17 |  |
+| 104 | Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee? | ✅ Dat alles wat de wereld te bieden heeft tijdelijk is<br>Dat de mensen op aarde nooit echt gelukkig kunnen zijn<br>**Dat gelovigen niets mogen bezitten**<br>Dat je beter kunt verhuizen naar een ander land | 1 Johannes 2:17 | blijft (andere afleider vervangen) |
 | 105 | Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke drie dingen noemt hij? | ✅ De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed<br>**De grote liefde voor geld, de jacht op macht en het verlangen naar roem**<br>Luiheid, jaloezie en boosheid<br>**Geld, geweld en leugen** | 1 Johannes 2:16 |  |
 | 106 | Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat? | ✅ Heb elkaar lief<br>Blijf trouw aan de leer van de apostelen<br>Wees waakzaam, want het is het laatste uur<br>Leer alle psalmen uit je hoofd | 1 Johannes 3:11 | vervangen |
 
@@ -376,7 +376,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 107 | Johannes geeft een eenvoudige toets voor iedereen die beweert dat hij in God blijft. Wat moet zo iemand dan doen? | ✅ Leven zoals Jezus geleefd heeft<br>Elke dag naar de tempel gaan<br>De boeken van Mozes uit het hoofd leren<br>Elke week een dag vasten | 1 Johannes 2:6 | vervangen |
-| 108 | Johannes waarschuwt dat er iets is waar de gelovigen hun hart niet aan mogen verliezen, want wie dat wél doet, heeft de liefde van de Vader niet in zich. Waar gaat die waarschuwing over? | ✅ De wereld<br>**Het geld**<br>De macht<br>De roem | 1 Johannes 2:15 |  |
+| 108 | Johannes schrijft: "Heb de wereld niet lief." Toch staat er ook dat God de wereld zo liefhad dat Hij Zijn Zoon gaf. Wat bedoelt Johannes hier met "de wereld"? | ✅ Alles wat mensen van God afhoudt, zoals begeerte en pronken met wat je hebt<br>De aarde, met alle planten en dieren die God gemaakt heeft<br>De landen buiten Israël, waar de heidenen woonden<br>De grote steden, omdat je in een dorp dichter bij God bent | 1 Johannes 2:15-16 · Johannes 3:16 | vervangen |
 | 109 | In zijn derde brief schrijft Johannes over Diotrefes, een man die in de gemeente graag de eerste wilde zijn — hij speelde er de baas. Wat deed hij met rondreizende gelovigen die langskwamen? | ✅ Hij liet hen er niet in, en wie dat wél deed zette hij de gemeente uit<br>Hij liet hen eerst een examen over de Schriften afleggen<br>Hij stuurde hen door naar Johannes<br>Hij nam hen op, maar liet hen niet spreken | 3 Johannes 9-10 | vervangen |
 | 110 | Johannes schrijft dat gelovigen bij elkaar én bij God horen en samen in het geloof delen. Het Griekse woord daarvoor is koinonia. Dat woord werd ook gebruikt bij handel en samenwerking. Wat kon het daar betekenen? | ✅ Samen eigenaar zijn van één zaak<br>**Geld lenen aan iemand die je goed vertrouwt**<br>Een afspraak door een schrijver laten vastleggen<br>**Voor iemand werken tegen een vast loon per dag** | 1 Johannes 1:3 |  |
 
@@ -386,7 +386,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 111 | Aan het einde van Openbaring ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet? | ✅ Een nieuwe hemel en een nieuwe aarde<br>Een nieuwe zon en een nieuwe maan<br>**Een gouden berg boven de wolken**<br>Een groot schip op een wilde zee | Openbaring 21:1 |  |
+| 111 | Aan het einde van Openbaring ziet Johannes iets wat er nog nooit geweest is: de oude wereld verdwijnt, en er komt iets compleet nieuws voor in de plaats. Wat is dat wat hij ziet? | ✅ Een nieuwe hemel en een nieuwe aarde<br>Een nieuwe zon en een nieuwe maan<br>Een stad diep onder de zee<br>Een groot schip op een wilde zee | Openbaring 21:1 | vervangen |
 | 112 | Johannes ziet een enorme menigte voor de troon staan, met palmtakken in hun handen. Ze dragen allemaal kleren van dezelfde kleur. Welke kleur is dat? | ✅ Wit<br>Rood<br>Blauw<br>**Goud** | Openbaring 7:9 |  |
 | 113 | Jezus belooft: wie trouw blijft tot de dood, krijgt de kroon van het leven. Wat voor kroon bedoelt Hij? | ✅ De krans die de winnaar van een wedstrijd op zijn hoofd kreeg<br>**De gouden kroon van een koning**<br>De doornenkroon die Jezus zelf droeg<br>**Een kroon van zilver, zoals de priesters droegen** | Openbaring 2:10 |  |
 | 114 | Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Waarvoor gebruikte men een zegel? | ✅ Om iets dicht te houden, zodat je kon zien of iemand het geopend had<br>**Om te tonen hoe duur een boekrol was**<br>Om de bladzijden bij elkaar te houden<br>Om het papier tegen vocht te beschermen | Openbaring 5:1 |  |
@@ -403,4 +403,4 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 116 | Aan het einde van Openbaring ziet Johannes een schitterende stad uit de hemel neerdalen, waar God voorgoed bij de mensen woont. Hoe heet die stad? | Het hemelse Babylon<br>Het nieuwe Eden<br>**De gouden tempel**<br>✅ Het nieuwe Jeruzalem | Openbaring 21:2 |  |
+| 116 | Aan het einde van Openbaring ziet Johannes een schitterende stad uit de hemel neerdalen, waar God voorgoed bij de mensen woont. Hoe heet die stad? | Het hemelse Babylon<br>Het nieuwe Eden<br>**De gouden tempel**<br>✅ Het nieuwe Jeruzalem | Openbaring 21:2 | blijft |
