@@ -216,7 +216,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 62 | Hoe moeten de gelovigen volgens Paulus alles doen? | ✅ Zonder mopperen en ruzie<br>**Zonder ervoor betaald te worden**<br>Zonder erover na te denken<br>Zonder het aan iemand te vragen | Filippenzen 2:14 |  |
+| 62 | In zijn brief aan de Filippenzen geeft Paulus een korte regel voor alles wat de gelovigen doen. Op welke manier moeten ze alles doen? | ✅ Zonder mopperen en ruzie<br>Zonder op de anderen te wachten, zodat je als eerste klaar bent<br>Zonder erover na te denken<br>Zonder het aan iemand te vragen | Filippenzen 2:14 | vervangen |
 | 63 | In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan? | ✅ Die van een dienaar<br>Die van een koning<br>**Die van een rijke heerser**<br>Die van een legeraanvoerder | Filippenzen 2:7 |  |
 | 64 | Paulus schrijft dat hij een geheim heeft geleerd voor tijden waarin hij veel heeft en tijden waarin hij weinig heeft. Wat is dat geheim? | ✅ Tevreden zijn in elke situatie<br>Altijd meer willen hebben<br>**Alleen blij zijn als hij rijk is**<br>Nooit iemand om hulp vragen | Filippenzen 4:11-12 |  |
 | 65 | In zijn brief aan de Filippenzen schrijft Paulus dat God Jezus iets gaf wat boven alles uitgaat. Wat gaf God Hem? | ✅ De hoogste naam, boven alle namen<br>Een groot landgoed in Galilea<br>**Een schatkist vol goud en zilver**<br>Een prachtig paleis in Jeruzalem | Filippenzen 2:9 |  |
@@ -225,7 +225,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 66 | Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat schrijft hij over hen? | ✅ Dat ze samen met hem gestreden hebben voor het goede nieuws<br>**Dat ze de rijkste vrouwen van Filippi waren**<br>Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht<br>Dat ze allebei door Lydia waren opgevoed | Filippenzen 4:3 |  |
+| 66 | Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat schrijft hij over hen? | ✅ Dat ze samen met hem gestreden hebben voor het goede nieuws<br>**Dat ze de rijkste vrouwen van Filippi waren**<br>Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht<br>Dat ze allebei door Lydia waren opgevoed | Filippenzen 4:3 | blijft |
 | 67 | Hoe noemt Paulus de Filippenzen liefkozend, als beeld van hoe trots en blij hij met hen is? | ✅ Zijn blijdschap en erekrans<br>Zijn leerlingen<br>**Zijn allerkostbaarste bezit op deze aarde**<br>Zijn schapen | Filippenzen 4:1 |  |
 | 68 | Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd? | ✅ Een krans van gevlochten bladeren<br>**Een gouden beker gevuld met wijn**<br>**Een zilveren munt uit de stadskas**<br>Een nieuw stel kleren van de stadsbestuurders | Filippenzen 3:14 · 1 Korintiërs 9:25 |  |
 
@@ -242,7 +242,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 70 | Wat lieten de Tessalonicenzen achter toen zij zich tot God keerden? | ✅ De afgoden, om de levende God te dienen<br>De tempel in Jeruzalem<br>Hun familie en hun geboortestad<br>**Hun huizen en bezittingen** | 1 Tessalonicenzen 1:9 |  |
-| 71 | Wat moeten de gelovigen volgens Paulus blijven doen, ook als ze het moeilijk hebben? | ✅ Niet moe worden om goed te doen<br>Even pauze nemen tot het makkelijker wordt<br>**Alleen goed doen voor wie het verdient**<br>Wachten tot iemand anders begint | 2 Tessalonicenzen 3:13 |  |
+| 71 | Wat moeten de gelovigen volgens Paulus blijven doen, ook als ze het moeilijk hebben? | ✅ Niet moe worden om goed te doen<br>Even pauze nemen tot het makkelijker wordt<br>**Alleen goed doen voor wie het verdient**<br>Wachten tot iemand anders begint | 2 Tessalonicenzen 3:13 | blijft |
 | 72 | Paulus schrijft dat hij dag en nacht werkte toen hij bij de Tessalonicenzen was. Waarom deed hij dat? | ✅ Om niemand tot last te zijn<br>**Om rijk te worden**<br>Om beroemd te worden<br>Om de keizer te plezieren | 1 Tessalonicenzen 2:9 |  |
 | 73 | Paulus troost de gelovigen die vervolgd worden: God zal het rechtzetten. Wat belooft hij hun? | ✅ Rust en bevrijding van hun onderdrukking, wanneer Jezus verschijnt<br>Een schip waarmee ze naar een ver land kunnen vluchten<br>Een groot leger om zich mee te kunnen verdedigen<br>Een zwaard om zelf wraak te nemen | 2 Tessalonicenzen 1:7 | vervangen |
 
@@ -282,7 +282,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 82 | Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat? | ✅ Met bidden<br>Met bouwen<br>Met reizen<br>**Met geld inzamelen** | Kolossenzen 4:12-13 |  |
+| 82 | Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat? | ✅ Met bidden<br>Met bouwen<br>Met reizen<br>Met koken | Kolossenzen 4:12-13 | vervangen |
 
 ### zilver
 
@@ -300,7 +300,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | 87 | In Kolosse liepen leraren rond die beweerden dat zij een geheime, hogere kennis bezaten die de gewone gelovigen misten. Paulus antwoordt dat er inderdaad een schat verborgen ligt, maar dan in Christus zelf. Wat ligt daar volgens hem verborgen? | ✅ Alle schatten van wijsheid en kennis<br>**Alle goud van de tempel**<br>Alle boeken van de profeten<br>Alle namen van de gelovigen | Kolossenzen 2:2-3 |  |
 | 88 | Paulus waarschuwt de Kolossenzen dat niemand hen "als buit meesleept". Waarmee kan dat volgens hem gebeuren? | ✅ Met filosofie en holle misleiding die alleen op mensen berust<br>**Met mooie beloften over rijkdom en macht**<br>Met soldaten van de keizer<br>Met verhalen over verre landen | Kolossenzen 2:8 |  |
 | 89 | Paulus zit gevangen terwijl hij deze brief schrijft. Aan het eind vraagt hij de Kolossenzen om voor hem te bidden. Waarvoor vraagt hij precies gebed? | ✅ Dat God een deur zou openen voor zijn boodschap<br>**Dat de Kolossenzen hem geld zouden sturen**<br>Dat hij gezond zou blijven<br>Dat zijn brief veilig zou aankomen | Kolossenzen 4:3 |  |
-| 90 | Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen? | ✅ De taak afmaken die hij van de Heer gekregen heeft<br>De brief voorlezen in de synagoge<br>Onesimus begeleiden op zijn terugreis<br>**Het geld inzamelen voor Paulus' vrijlating** | Filemon 2 · Kolossenzen 4:17 |  |
+| 90 | Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen? | ✅ De taak afmaken die hij van de Heer gekregen heeft<br>De brief voorlezen in de synagoge<br>Onesimus begeleiden op zijn terugreis<br>Paulus opzoeken in de gevangenis in Rome | Filemon 2 · Kolossenzen 4:17 | vervangen |
 
 ## Hebreeën
 
@@ -330,7 +330,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
 | 95 | Jakobus haalt het gebod "heb je naaste lief als jezelf" aan en geeft die wet een bijzondere naam. Hoe noemt hij hem? | ✅ De koninklijke wet<br>**De gouden wet**<br>De oude wet<br>De eerste wet | Jakobus 2:8 |  |
-| 96 | Jakobus beschrijft wat volgens God zuivere godsdienst is. Voor welke mensen moeten gelovigen volgens hem bijzonder zorgen? | ✅ Voor wezen en weduwen die het moeilijk hebben<br>**Voor rijke mensen die veel aan de gemeente geven**<br>Voor Romeinse soldaten die na hun diensttijd naar huis terugkeerden<br>Voor reizigers die naar Jeruzalem gaan | Jakobus 1:27 |  |
+| 96 | Jakobus beschrijft wat volgens God zuivere godsdienst is. Voor welke mensen moeten gelovigen volgens hem bijzonder zorgen? | ✅ Voor wezen en weduwen die het moeilijk hebben<br>**Voor rijke mensen die veel aan de gemeente geven**<br>Voor Romeinse soldaten die na hun diensttijd naar huis terugkeerden<br>Voor reizigers die naar Jeruzalem gaan | Jakobus 1:27 | blijft |
 
 ## Petrus & Judas
 
@@ -338,8 +338,8 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 97 | Petrus zegt: wees gastvrij voor elkaar. Welke voorwaarde voegt hij daaraan toe? | ✅ Doe het zonder te mopperen<br>Doe het alleen als je zelf genoeg hebt<br>**Doe het vooral voor wie het verdient**<br>Doe het zonder er te veel tijd aan te besteden | 1 Petrus 4:9 |  |
-| 98 | Petrus gebruikt het beeld van een kleed dat je aantrekt. Wat moeten de gelovigen volgens hem tegenover elkaar aantrekken? | ✅ Nederigheid<br>**Dure kleren**<br>Een harnas<br>Een masker | 1 Petrus 5:5 |  |
+| 97 | Petrus zegt: wees gastvrij voor elkaar. Welke voorwaarde voegt hij daaraan toe? | ✅ Doe het zonder te mopperen<br>Doe het alleen als je zelf genoeg hebt<br>**Doe het vooral voor wie het verdient**<br>Doe het zonder er te veel tijd aan te besteden | 1 Petrus 4:9 | blijft |
+| 98 | Petrus schrijft dat de gelovigen zich in de omgang met elkaar met iets moeten bekleden, zoals je een kleed aantrekt. Waarmee moeten ze zich bekleden? | ✅ Nederigheid<br>**Dure kleren**<br>Een harnas<br>Een masker | 1 Petrus 5:5 | blijft (vraagzin aangepast) |
 | 99 | Petrus schrijft dat ons geloof wordt beproefd zoals iets kostbaars in het vuur wordt gezuiverd. Wat noemt hij als voorbeeld? | ✅ Goud<br>**Zilver**<br>IJzer<br>Edelstenen | 1 Petrus 1:7 |  |
 
 ### zilver
@@ -361,7 +361,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 
 | # | vraag | antwoorden | bijbelplaats | status |
 | --- | --- | --- | --- | --- |
-| 103 | Johannes zegt: laten we niet liefhebben met alleen mooie woorden. Hoe moeten we het dan wél doen? | ✅ Met daden, en in waarheid<br>**Met dure cadeaus**<br>Met veel beloften<br>Door er vaak met anderen over te praten | 1 Johannes 3:18 |  |
+| 103 | Johannes zegt: laten we niet liefhebben met alleen mooie woorden. Hoe moeten we het dan wél doen? | ✅ Met daden, en in waarheid<br>**Met dure cadeaus**<br>Met veel beloften<br>Door er vaak met anderen over te praten | 1 Johannes 3:18 | blijft |
 
 ### zilver
 
@@ -369,7 +369,7 @@ Woorden, met het aantal afleiders waarin ze voorkomen: geld 32, rijke 14, goud 1
 | --- | --- | --- | --- | --- |
 | 104 | Johannes zegt: de wereld gaat voorbij, met alles wat de mensen zo graag willen. Wat bedoelt hij daarmee? | ✅ Dat alles wat de wereld te bieden heeft tijdelijk is<br>Dat de mensen op aarde nooit echt gelukkig kunnen zijn<br>**Dat gelovigen niets mogen bezitten**<br>Dat de wereld nu al bezig is te vergaan | 1 Johannes 2:17 |  |
 | 105 | Johannes noemt drie dingen die 'uit de wereld' zijn en niet van de Vader komen. Welke drie dingen noemt hij? | ✅ De begeerte van de ogen, de begeerte van het lichaam en de hoogmoed<br>**De grote liefde voor geld, de jacht op macht en het verlangen naar roem**<br>Luiheid, jaloezie en boosheid<br>**Geld, geweld en leugen** | 1 Johannes 2:16 |  |
-| 106 | Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat? | ✅ Heb elkaar lief<br>Blijf trouw aan de leer van de apostelen<br>Wees waakzaam, want het is het laatste uur<br>**Deel je bezit met wie tekortkomt** | 1 Johannes 3:11 |  |
+| 106 | Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat? | ✅ Heb elkaar lief<br>Blijf trouw aan de leer van de apostelen<br>Wees waakzaam, want het is het laatste uur<br>Leer alle psalmen uit je hoofd | 1 Johannes 3:11 | vervangen |
 
 ### goud
 

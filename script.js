@@ -3891,8 +3891,8 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:13"
         },
         {
-            vraag: "Hoe moeten de gelovigen volgens Paulus alles doen?",
-            antwoorden: ["Zonder mopperen en ruzie", "Zonder ervoor betaald te worden", "Zonder erover na te denken", "Zonder het aan iemand te vragen"],
+            vraag: "In zijn brief aan de Filippenzen geeft Paulus een korte regel voor alles wat de gelovigen doen. Op welke manier moeten ze alles doen?",
+            antwoorden: ["Zonder mopperen en ruzie", "Zonder op de anderen te wachten, zodat je als eerste klaar bent", "Zonder erover na te denken", "Zonder het aan iemand te vragen"],
             correct: "Zonder mopperen en ruzie",
             bijbelplaats: "Filippenzen 2:14"
         },
@@ -4753,7 +4753,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus zegt dat zijn medewerker Epafras hard voor de Kolossenzen werkt. Waarmee doet hij dat?",
-            antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met geld inzamelen"],
+            antwoorden: ["Met bidden", "Met bouwen", "Met reizen", "Met koken"],
             correct: "Met bidden",
             bijbelplaats: "Kolossenzen 4:12-13"
         },
@@ -4981,7 +4981,7 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen?",
-            antwoorden: ["De taak afmaken die hij van de Heer gekregen heeft", "De brief voorlezen in de synagoge", "Onesimus begeleiden op zijn terugreis", "Het geld inzamelen voor Paulus' vrijlating"],
+            antwoorden: ["De taak afmaken die hij van de Heer gekregen heeft", "De brief voorlezen in de synagoge", "Onesimus begeleiden op zijn terugreis", "Paulus opzoeken in de gevangenis in Rome"],
             correct: "De taak afmaken die hij van de Heer gekregen heeft",
             bijbelplaats: "Filemon 2 · Kolossenzen 4:17"
         },
@@ -5628,7 +5628,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "1 Petrus 4:9"
         },
         {
-            vraag: "Petrus gebruikt het beeld van een kleed dat je aantrekt. Wat moeten de gelovigen volgens hem tegenover elkaar aantrekken?",
+            vraag: "Petrus schrijft dat de gelovigen zich in de omgang met elkaar met iets moeten bekleden, zoals je een kleed aantrekt. Waarmee moeten ze zich bekleden?",
             antwoorden: ["Nederigheid", "Dure kleren", "Een harnas", "Een masker"],
             correct: "Nederigheid",
             bijbelplaats: "1 Petrus 5:5"
@@ -6051,7 +6051,7 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes komt in zijn eerste brief steeds op één opdracht terug. Hij noemt het zelfs het gebod dat zijn lezers vanaf het begin al gehoord hebben. Welke opdracht is dat?",
-            antwoorden: ["Heb elkaar lief", "Blijf trouw aan de leer van de apostelen", "Wees waakzaam, want het is het laatste uur", "Deel je bezit met wie tekortkomt"],
+            antwoorden: ["Heb elkaar lief", "Blijf trouw aan de leer van de apostelen", "Wees waakzaam, want het is het laatste uur", "Leer alle psalmen uit je hoofd"],
             correct: "Heb elkaar lief",
             bijbelplaats: "1 Johannes 3:11"
         },
