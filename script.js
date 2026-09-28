@@ -1681,7 +1681,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 vraag: "Jezus belooft de Samaritaanse vrouw 'levend water'. Wat krijgt degene die daarvan drinkt?",
                 antwoorden: ["Eeuwig leven", "Een lang leven op aarde", "Dat je nooit meer water uit de put hoeft te halen", "Genezing van ziekten"],
                 correct: "Eeuwig leven",
-                bijbelplaats: "Johannes 4:13-14"
+                bijbelplaats: "Johannes 4:13-15 · Jeremia 2:13",
+                uitleg: "In het Grieks staat er hudōr zōn, \"levend water\". De Bijbel maakt verschil tussen gewoon water en levend water, in het Hebreeuws van het Oude Testament majim chajiem. Gewoon water stond stil, bijvoorbeeld in een regenbak die in de rots was uitgehakt. Levend water stroomde: het kwam uit een bron of een rivier, was fris en bleef altijd in beweging. De profeet Jeremia noemt God zelfs \"de bron van levend water\".\n\nDaarom denkt de Samaritaanse vrouw eerst aan gewoon drinkwater: dan hoeft ze niet meer elke dag naar de put te lopen (vers 15). Maar Jezus bedoelt iets anders: het leven dat Hij geeft en dat nooit opdroogt, het eeuwige leven."
             },
             {
                 vraag: "Hoeveel mensen voedde Jezus met vijf gerstebroden en twee vissen, volgens Johannes?",
