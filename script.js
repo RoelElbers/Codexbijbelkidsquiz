@@ -6428,7 +6428,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 2:17 · Exodus 16:15, 21"
         },
         {
-            vraag: "God noemt zichzelf \"de alfa en de omega\". Waar komen die twee woorden vandaan?",
+            vraag: "God noemt zichzelf \"de Alfa en de Omega\". Waar komen die twee woorden vandaan?",
             antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
             correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
             bijbelplaats: "Openbaring 1:8"
