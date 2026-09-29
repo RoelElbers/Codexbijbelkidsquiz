@@ -194,7 +194,7 @@ verwijst; `zich` bij mensen, dingen of `het woord van de Heer` blijft klein.
   bruidegom), ook al staan ze symbolisch voor God.
 
 Eén uitzondering op die laatste regel staat bewust in de pool: de goede herder
-in Johannes 10:11 kreeg wél een hoofdletter, omdat Jezus daar van zichzelf zegt
+in Johannes 10:11 kreeg wél een hoofdletter, omdat Jezus daar van Zichzelf zegt
 dát Hij het is.
 
 **Wijzigt een tekst in `antwoorden`, dan wijzigt dezelfde tekst in `correct`
