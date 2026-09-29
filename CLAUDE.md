@@ -193,9 +193,11 @@ verwijst; `zich` bij mensen, dingen of `het woord van de Heer` blijft klein.
 - **personages in gelijkenissen** (de vader, de koning, de herder, de
   bruidegom), ook al staan ze symbolisch voor God.
 
-Eén uitzondering op die laatste regel staat bewust in de pool: de goede herder
-in Johannes 10:11 kreeg wél een hoofdletter, omdat Jezus daar van Zichzelf zegt
-dát Hij het is.
+Bij de goede herder in Johannes 10:11 krijgen de voornaamwoorden wél een
+hoofdletter ("Zijn schapen", "Zijn leven"), omdat Jezus daar over Zichzelf
+spreekt. Het woord "herder" zelf blijft klein, net als de andere beelden die
+Jezus voor Zichzelf gebruikt (de ware wijnstok, de deur, het brood, het licht
+van de wereld).
 
 **Wijzigt een tekst in `antwoorden`, dan wijzigt dezelfde tekst in `correct`
 mee.** Controleer na afloop dat elk `correct`-antwoord nog letterlijk in zijn
