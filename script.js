@@ -5568,7 +5568,7 @@ vragenData["Jakobus"] = {
             vraag: "Na drieënhalf jaar droogte bad Elia opnieuw. Wat gebeurde er toen?",
             antwoorden: ["De hemel gaf regen en de aarde bracht weer vruchten voort", "De droogte duurde nog drie jaar", "Er kwam een sprinkhanenplaag over het land", "De Jordaan droogde helemaal op"],
             correct: "De hemel gaf regen en de aarde bracht weer vruchten voort",
-            bijbelplaats: "Jakobus 5:17-18"
+            bijbelplaats: "Jakobus 5:17-18 · 1 Koningen 18:42-45"
         },
         {
             vraag: "Wat ontvangt volgens Jakobus de mens die moeilijke tijden geduldig doorstaat en van God blijft houden?",
@@ -5885,7 +5885,7 @@ vragenData["Petrus & Judas"] = {
             vraag: "Petrus verwijst naar het verhaal van Bileam, die de verkeerde weg opging. Wat deed zijn ezel om hem te waarschuwen?",
             antwoorden: ["De ezel begon te praten", "De ezel vloog weg", "De ezel werd onzichtbaar", "De ezel veranderde in goud"],
             correct: "De ezel begon te praten",
-            bijbelplaats: "2 Petrus 2:15-16"
+            bijbelplaats: "2 Petrus 2:15-16 · Numeri 22:28"
         },
         {
             vraag: "Judas vertelt over een aartsengel die met de duivel streed over het lichaam van Mozes. Hoe heet die aartsengel?",
@@ -7955,7 +7955,7 @@ const verborgenSchatVragen = [
         ],
         correct: "Jezus raakte het oor aan en genas de man die Hem kwam arresteren",
         bijbelplaats: "Lucas 22:50-51 · Johannes 18:10",
-        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die Hij geneest, is iemand die gekomen was om Hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar was die familie geen onbekende in de kring rond Jezus."
+        reveal: "Dit is de laatste genezing van Jezus vóór het kruis — en de laatste mens die Hij geneest, is iemand die gekomen was om Hem op te pakken. Bijzonder is ook wie wat vertelt. Matteüs en Marcus schrijven alleen dat iemand toesloeg, zonder namen. Johannes is de enige die zegt dat het Petrus was en dat de dienaar Malchus heette. Hij schreef als laatste van de vier. Zou dat kunnen verklaren waarom hij wél namen durfde te noemen, terwijl Matteüs en Marcus die weglaten? En Lucas — die door Paulus \"de geliefde arts\" wordt genoemd (Kolossenzen 4:14) — is de enige die vertelt dat Jezus het oor aanraakte en genas. Hoe het verder met Malchus ging, staat nergens in de Bijbel. Wel valt op dat Johannes niet alleen zijn naam kent, maar even later ook een familielid van hem noemt (Johannes 18:26). Blijkbaar kende Johannes de mensen in het huis van de hogepriester goed. Hij vertelt ook over \"de andere leerling\" die daar bekend was en naar binnen mocht (Johannes 18:15-16), en daarmee wordt meestal Johannes zelf bedoeld."
     },
     {
         vraag: "Het boek Hebreeën dankt zijn naam aan een oud woord. Wat betekent \"Hebreeën\"?",
