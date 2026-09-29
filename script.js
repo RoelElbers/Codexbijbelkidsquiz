@@ -262,7 +262,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 28:5-6"
             },
             {
-                vraag: "Jezus gaf een gouden regel over hoe je met anderen omgaat. Wat zei Hij?",
+                vraag: "Jezus gaf een regel over hoe je met anderen omgaat, die later de gouden regel is gaan heten. Hoe luidt die regel?",
                 antwoorden: ["Behandel anderen zoals je zelf behandeld wilt worden", "Doe altijd wat de meesten doen", "Help alleen je beste vrienden", "Behandel anderen precies zoals zij jou behandeld hebben"],
                 correct: "Behandel anderen zoals je zelf behandeld wilt worden",
                 bijbelplaats: "Matteüs 7:12"
