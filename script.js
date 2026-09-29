@@ -287,9 +287,10 @@ const vragenData = {
             },
             {
                 vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
-                antwoorden: ["Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
-                correct: "Hij inde geld voor de Romeinen en mocht er zelf iets bovenop vragen",
-                bijbelplaats: "Matteüs 9:9"
+                antwoorden: ["Hij inde geld voor de heersers en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+                correct: "Hij inde geld voor de heersers en mocht er zelf iets bovenop vragen",
+                bijbelplaats: "Matteüs 9:9 · Lucas 3:12-13; 19:8",
+                uitleg: "Een tollenaar kocht het recht om tol en belasting te innen. Hij betaalde de heerser een vast bedrag en mocht houden wat hij daarboven binnenhaalde. Veel tollenaars vroegen daarom meer dan eerlijk was, en dat maakte ze niet geliefd. In Kafarnaüm, waar Matteüs zat, werd de tol geïnd voor Herodes Antipas, de tetrarch van Galilea. In Jericho, waar Zacheüs tollenaar was, ging het geld wel naar de Romeinen, want Judea werd toen rechtstreeks door hen bestuurd."
             }
         ],
         advanced: [
