@@ -4010,7 +4010,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Wie noemt Paulus aan het begin van de brief aan de Filippenzen als mede-afzender?",
-            antwoorden: ["Timoteüs", "Petrus", "Lukas", "Marcus"],
+            antwoorden: ["Timoteüs", "Petrus", "Lucas", "Marcus"],
             correct: "Timoteüs",
             bijbelplaats: "Filippenzen 1:1"
         },
@@ -4097,7 +4097,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Welke drie personen worden aan het begin van de brieven aan de Tessalonicenzen als afzenders genoemd?",
-            antwoorden: ["Paulus, Silvanus en Timoteüs", "Paulus, Petrus en Johannes", "Paulus, Barnabas en Marcus", "Paulus, Lukas en Titus"],
+            antwoorden: ["Paulus, Silvanus en Timoteüs", "Paulus, Petrus en Johannes", "Paulus, Barnabas en Marcus", "Paulus, Lucas en Titus"],
             correct: "Paulus, Silvanus en Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 1:1 · 2 Tessalonicenzen 1:1"
         },
@@ -4301,7 +4301,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Toen Paulus niet zelf naar Tessalonica kon komen, stuurde hij iemand anders om de gelovigen daar te bemoedigen. Wie stuurde hij?",
-            antwoorden: ["Timoteüs", "Lukas", "Marcus", "Demas"],
+            antwoorden: ["Timoteüs", "Lucas", "Marcus", "Demas"],
             correct: "Timoteüs",
             bijbelplaats: "1 Tessalonicenzen 3:2"
         },
@@ -4631,8 +4631,8 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Wie zegt Paulus in 2 Timoteüs dat nog bij hem is?",
-            antwoorden: ["Alleen Lukas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
-            correct: "Alleen Lukas",
+            antwoorden: ["Alleen Lucas", "Alleen Petrus", "Alleen Timoteüs", "Niemand"],
+            correct: "Alleen Lucas",
             bijbelplaats: "2 Timoteüs 4:11"
         },
         {
@@ -4771,8 +4771,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Aan het slot van zijn brief aan de Kolossenzen doet Paulus de groeten van een geliefde medewerker die arts was. Hoe heette deze arts?",
-            antwoorden: ["Lukas", "Marcus", "Demas", "Aristarchus"],
-            correct: "Lukas",
+            antwoorden: ["Lucas", "Marcus", "Demas", "Aristarchus"],
+            correct: "Lucas",
             bijbelplaats: "Kolossenzen 4:14"
         },
         {
@@ -7723,7 +7723,7 @@ const metgezellenVragen = [
     },
     {
         vraag: "Welke trouwe medewerker zou de Kolossenzen al het nieuws over Paulus komen vertellen?",
-        antwoorden: ["Tychikus", "Onesimus", "Lukas", "Demas"],
+        antwoorden: ["Tychikus", "Onesimus", "Lucas", "Demas"],
         correct: "Tychikus",
         bijbelplaats: "Kolossenzen 4:7"
     },
@@ -7735,13 +7735,13 @@ const metgezellenVragen = [
     },
     {
         vraag: "Paulus noemt een medewerker die \"samen met hem gevangenzit\". Wie was dat?",
-        antwoorden: ["Aristarchus", "Lukas", "Tychikus", "Onesimus"],
+        antwoorden: ["Aristarchus", "Lucas", "Tychikus", "Onesimus"],
         correct: "Aristarchus",
         bijbelplaats: "Kolossenzen 4:10"
     },
     {
         vraag: "In de brief aan Filemon noemt Paulus naast Filemon ook een vrouw en nog iemand uit het huis. Wie worden er gegroet?",
-        antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lukas", "Priscilla en Aquila"],
+        antwoorden: ["Apfia en Archippus", "Maria en Jozef", "Lydia en Lucas", "Priscilla en Aquila"],
         correct: "Apfia en Archippus",
         bijbelplaats: "Filemon 2"
     },
@@ -7771,7 +7771,7 @@ const metgezellenVragen = [
     },
     {
         vraag: "Een medewerker had Paulus in de steek gelaten omdat hij meer van de wereld hield. Wie was deze medewerker?",
-        antwoorden: ["Demas", "Lukas", "Timoteüs", "Titus"],
+        antwoorden: ["Demas", "Lucas", "Timoteüs", "Titus"],
         correct: "Demas",
         bijbelplaats: "2 Timoteüs 4:10"
     },
@@ -7783,19 +7783,19 @@ const metgezellenVragen = [
     },
     {
         vraag: "Paulus waarschuwt voor één man, een kopersmid, die hem veel kwaad deed. Hoe heette hij?",
-        antwoorden: ["Alexander", "Demas", "Lukas", "Titus"],
+        antwoorden: ["Alexander", "Demas", "Lucas", "Titus"],
         correct: "Alexander",
         bijbelplaats: "2 Timoteüs 4:14"
     },
     {
         vraag: "Paulus stuurt de brief aan de Filippenzen mee met een vriend die heel ziek was geweest. Hoe heette hij?",
-        antwoorden: ["Epafroditus", "Judas", "Tomas", "Lukas"],
+        antwoorden: ["Epafroditus", "Judas", "Tomas", "Lucas"],
         correct: "Epafroditus",
         bijbelplaats: "Filippenzen 2:25-27"
     },
     {
         vraag: "Wie noemt Paulus aan het begin van zijn brief aan de Tessalonicenzen als mede-afzenders, naast hemzelf?",
-        antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Marcus", "Lukas en Titus"],
+        antwoorden: ["Silvanus en Timoteüs", "Petrus en Johannes", "Barnabas en Marcus", "Lucas en Titus"],
         correct: "Silvanus en Timoteüs",
         bijbelplaats: "1 Tessalonicenzen 1:1"
     }
