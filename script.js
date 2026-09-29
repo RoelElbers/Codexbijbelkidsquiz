@@ -1693,7 +1693,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat zei Jezus tegen Marta voordat Hij Lazarus opwekte?",
-                antwoorden: ["Ik ben de weg en de waarheid", "Ik ben de opstanding en het leven", "Ik ben de goede herder", "Ik ben het licht van de wereld"],
+                antwoorden: ["Ik ben de weg, de waarheid en het leven", "Ik ben de opstanding en het leven", "Ik ben de goede herder", "Ik ben het licht van de wereld"],
                 correct: "Ik ben de opstanding en het leven",
                 bijbelplaats: "Johannes 11:25"
             },
@@ -1717,7 +1717,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Waarom heb je Mij verloochend? Beloof dat het nooit meer gebeurt", "Heb je Mij lief? Zorg voor Mijn schapen", "Ga terug naar je boot en vis voortaan weer voor jezelf", "Ga nu de hele wijde wereld in en vertel over Mij"],
+                antwoorden: ["Waarom heb je Mij verloochend? Beloof dat het nooit meer gebeurt", "Heb je Mij lief? Zorg voor Mijn schapen", "Ga terug naar je boot en vis voortaan weer voor jezelf", "Tel de vissen nog eens, want volgens Mij ontbreekt er één"],
                 correct: "Heb je Mij lief? Zorg voor Mijn schapen",
                 bijbelplaats: "Johannes 21:15-17"
             },
