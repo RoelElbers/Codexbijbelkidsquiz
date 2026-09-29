@@ -744,8 +744,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet Hij zien wat voor koning Hij wilde zijn."
             },
             {
-                vraag: "Wat deed Jezus in de tempel in Jeruzalem, kort na Zijn intocht, wat ophef veroorzaakte?",
-                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij gaf een lange toespraak", "Hij vroeg de priesters de tempel feestelijk te versieren"],
+                vraag: "Wat deed Jezus kort na Zijn intocht in de tempel van Jeruzalem, waardoor er veel ophef ontstond?",
+                antwoorden: ["Hij ging stil bidden", "Hij joeg de geldwisselaars en duivenverkopers eruit", "Hij hield een wedstrijd wie het mooiste gebed kon zeggen", "Hij vroeg de priesters de tempel feestelijk te versieren"],
                 correct: "Hij joeg de geldwisselaars en duivenverkopers eruit",
                 bijbelplaats: "Marcus 11:15-17"
             },
@@ -813,8 +813,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
         advanced: [
             {
                 vraag: "Wat zei Petrus toen Jezus aan Zijn leerlingen vroeg wie Hij volgens hen was?",
-                antwoorden: ["U bent een profeet", "U bent de messias", "U bent Mozes' opvolger", "U bent de zoon van Jozef"],
-                correct: "U bent de messias",
+                antwoorden: ["U bent een profeet", "U bent de Messias", "U bent Mozes' opvolger", "U bent de zoon van Jozef"],
+                correct: "U bent de Messias",
                 bijbelplaats: "Marcus 8:29"
             },
             {
