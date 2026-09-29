@@ -170,12 +170,18 @@ Een voornaamwoord dat naar God, Jezus of de Heilige Geest verwijst, krijgt een
 
 - `hij`, `hem` → `Hij`, `Hem`
 - bezittelijk `zijn` → `Zijn` (`Zijn leerlingen`, `Zijn dood`)
+- wederkerend `zich`, `zichzelf` → `Zich`, `Zichzelf` (`Jezus liet Zich zien`,
+  `God houdt Zich aan wat Hij beloofd heeft`, `het Lam dat Zichzelf gaf`)
+
+Die laatste regel volgt de lijn van de SV/HSV, niet die van de NBV. Het is een
+eigen, bewuste keuze van de game, in lijn met `Hij`/`Hem`/`Zijn`. Hij geldt
+alleen als het wederkerend voornaamwoord naar God, Jezus of de Heilige Geest
+verwijst; `zich` bij mensen, dingen of `het woord van de Heer` blijft klein.
 
 **Wat er níet onder valt.** Hier gaat het bij het nalopen het vaakst mis:
 
 - het **werkwoord** `zijn` — `ze zijn blij`, `moet zijn`, `geroepen zijn`. Dit
   is veruit de grootste groep valse treffers; let er extra op.
-- `zich` en `zichzelf`.
 - **zelfstandige naamwoorden** krijgen alleen een hoofdletter als het een
   titel of naam is voor God of Jezus: `de Vader`, `de Zoon`, `de Zoon van God`,
   `de Heer`. Algemene woorden blijven klein, ook als ze in de context naar

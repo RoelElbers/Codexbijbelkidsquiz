@@ -1403,7 +1403,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 3:23-38"
             },
             {
-                vraag: "Jezus stuurde tweeënzeventig leerlingen twee aan twee voor zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen?",
+                vraag: "Jezus stuurde tweeënzeventig leerlingen twee aan twee voor Zich uit — in sommige Bijbels staat zeventig. Wat moesten zij onderweg doen?",
                 antwoorden: ["Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen", "Een lijst maken van alle zieken, zodat Jezus later bij hen langs kon gaan", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan"],
                 correct: "Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen",
                 bijbelplaats: "Lucas 10:1-9",
@@ -1646,7 +1646,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 14:6"
             },
             {
-                vraag: "Jezus noemde zichzelf 'de goede ___'. Hoe noemde Hij zich?",
+                vraag: "Jezus noemde Zichzelf 'de goede ___'. Hoe noemde Hij Zich?",
                 antwoorden: ["herder", "koning", "leraar", "visser"],
                 correct: "herder",
                 bijbelplaats: "Johannes 10:11"
@@ -1710,7 +1710,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "Wat schreef Pilatus op het bordje boven het kruis, in drie talen?",
-                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "Hij noemde zichzelf koning"],
+                antwoorden: ["Misdadiger", "Jezus van Nazaret, de koning van de Joden", "Gekruisigd op streng bevel van de Romeinse keizer", "Hij noemde Zichzelf koning"],
                 correct: "Jezus van Nazaret, de koning van de Joden",
                 bijbelplaats: "Johannes 19:19-20"
             },
@@ -1727,13 +1727,13 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 3:1"
             },
             {
-                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat de schapen alleen langs Hem naar binnen konden. Hoe noemde Hij zichzelf in dat beeld?",
+                vraag: "Jezus vertelde over een schaapskooi waar de schapen 's nachts veilig binnen zijn. Hij zei dat de schapen alleen langs Hem naar binnen konden. Hoe noemde Hij Zichzelf in dat beeld?",
                 antwoorden: ["De deur", "De muur", "Het dak", "Het raam"],
                 correct: "De deur",
                 bijbelplaats: "Johannes 10:7-9"
             },
             {
-                vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant noemde Hij?",
+                vraag: "Jezus vergeleek Zichzelf met een plant: 'Ik ben de ware ___.' Welke plant noemde Hij?",
                 antwoorden: ["wijnstok", "olijfboom", "vijgenboom", "palmboom"],
                 correct: "wijnstok",
                 bijbelplaats: "Johannes 15:1"
@@ -1906,7 +1906,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
             },
             {
-                vraag: "Jezus zei iets bijzonders over zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
+                vraag: "Jezus zei iets bijzonders over Zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
                 antwoorden: ["Abraham", "Mozes", "David", "Noach"],
                 correct: "Abraham",
                 bijbelplaats: "Johannes 8:58"
@@ -2105,7 +2105,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Paulus schrijft iets bemoedigends voor de mensen die van God houden. Wat doet God volgens hem met alles wat er in hun leven gebeurt?",
-            antwoorden: ["Hij laat het meewerken tot iets goeds", "Hij laat het zomaar gebeuren", "God is een straffende God, dus af en toe straft Hij omdat Hij daar zin in heeft", "Hij houdt zich erbuiten"],
+            antwoorden: ["Hij laat het meewerken tot iets goeds", "Hij laat het zomaar gebeuren", "God is een straffende God, dus af en toe straft Hij omdat Hij daar zin in heeft", "Hij houdt Zich erbuiten"],
             correct: "Hij laat het meewerken tot iets goeds",
             bijbelplaats: "Romeinen 8:28"
         },
@@ -2240,7 +2240,7 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat doet Jezus volgens Paulus nu voor ons bij God?",
-            antwoorden: ["Hij is ons vergeten", "Hij komt voor ons op", "Hij klaagt ons aan", "Hij houdt zich afzijdig"],
+            antwoorden: ["Hij is ons vergeten", "Hij komt voor ons op", "Hij klaagt ons aan", "Hij houdt Zich afzijdig"],
             correct: "Hij komt voor ons op",
             bijbelplaats: "Romeinen 8:34"
         },
@@ -2413,7 +2413,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 9:3-6"
         },
         {
-            vraag: "Na Zijn opstanding liet Jezus zich nog een hele tijd aan Zijn leerlingen zien en sprak Hij met hen over het koninkrijk van God. Hoeveel dagen duurde dat?",
+            vraag: "Na Zijn opstanding liet Jezus Zich nog een hele tijd aan Zijn leerlingen zien en sprak Hij met hen over het koninkrijk van God. Hoeveel dagen duurde dat?",
             antwoorden: ["Drie dagen", "Honderd dagen", "Veertig dagen", "Zeven dagen"],
             correct: "Veertig dagen",
             bijbelplaats: "Handelingen 1:3"
@@ -3290,7 +3290,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 1:3"
         },
         {
-            vraag: "Paulus schrijft meteen aan het begin van zijn brief aan de Galaten dat Jezus zichzelf heeft gegeven. Waarvoor deed Hij dat, volgens Paulus?",
+            vraag: "Paulus schrijft meteen aan het begin van zijn brief aan de Galaten dat Jezus Zichzelf heeft gegeven. Waarvoor deed Hij dat, volgens Paulus?",
             antwoorden: ["Om ons te bevrijden uit de macht van het kwaad", "Om de Romeinen uit het land te verjagen", "Om de mensen zich weer strikt aan de wet van Mozes te laten houden", "Om een eind te maken aan de honger in het land"],
             correct: "Om ons te bevrijden uit de macht van het kwaad",
             bijbelplaats: "Galaten 1:4"
@@ -3915,7 +3915,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 4:6"
         },
         {
-            vraag: "In een beroemd lied schrijft Paulus dat Jezus zichzelf vernederde. Welke gestalte nam Jezus aan?",
+            vraag: "In een beroemd lied schrijft Paulus dat Jezus Zichzelf vernederde. Welke gestalte nam Jezus aan?",
             antwoorden: ["Die van een dienaar", "Die van een koning", "Die van een rijke heerser", "Die van een legeraanvoerder"],
             correct: "Die van een dienaar",
             bijbelplaats: "Filippenzen 2:7",
@@ -5318,7 +5318,7 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 13:16"
         },
         {
-            vraag: "Hebreeën geeft een reden om ergens stevig aan vast te houden: God houdt zich aan wat Hij beloofd heeft. Waaraan moeten de gelovigen daarom vasthouden?",
+            vraag: "Hebreeën geeft een reden om ergens stevig aan vast te houden: God houdt Zich aan wat Hij beloofd heeft. Waaraan moeten de gelovigen daarom vasthouden?",
             antwoorden: ["Aan de hoop die zij hebben uitgesproken", "Aan de regels die zij hebben geleerd", "Aan de leiders die zij hebben gekozen", "Aan de plannen die zij hebben gemaakt"],
             correct: "Aan de hoop die zij hebben uitgesproken",
             bijbelplaats: "Hebreeën 10:23"
@@ -5338,7 +5338,7 @@ vragenData["Hebreeën"] = {
             uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de ruimte achter het voorhangsel waar verder niemand mocht komen. Daar bracht hij een offer voor zijn eigen zonden en die van het volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met de zonden van het volk — daar komt het beeld van de zondebok vandaan. Hebreeën vergelijkt dit jaarlijkse ritueel met Jezus: wat de hogepriester ieder jaar opnieuw deed, heeft Jezus volgens de brief met Zijn offer eens en voorgoed volbracht."
         },
         {
-            vraag: "Hoe vaak moest Jezus volgens Hebreeën zichzelf offeren om de zonden weg te nemen?",
+            vraag: "Hoe vaak moest Jezus volgens Hebreeën Zichzelf offeren om de zonden weg te nemen?",
             antwoorden: ["Eén keer, voor altijd", "Elk jaar opnieuw", "Elke dag", "Elke sabbat"],
             correct: "Eén keer, voor altijd",
             bijbelplaats: "Hebreeën 9:28; 10:10"
@@ -5844,7 +5844,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
-            antwoorden: ["\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
+            antwoorden: ["\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit Zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
             correct: "\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"",
             bijbelplaats: "2 Petrus 3:3-4"
         },
@@ -6265,7 +6265,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 3:20"
         },
         {
-            vraag: "Steeds opnieuw ziet Johannes bij de troon een dier dat geslacht is en tóch leeft. Met dat dier wordt Jezus bedoeld, die zichzelf opofferde. Welk dier is het?",
+            vraag: "Steeds opnieuw ziet Johannes bij de troon een dier dat geslacht is en tóch leeft. Met dat dier wordt Jezus bedoeld, die Zichzelf opofferde. Welk dier is het?",
             antwoorden: ["Een lam", "Een duif", "Een adelaar", "Een vis"],
             correct: "Een lam",
             bijbelplaats: "Openbaring 5:6"
@@ -6326,7 +6326,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 5:1"
         },
         {
-            vraag: "Helemaal aan het begin van Openbaring stelt God zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
+            vraag: "Helemaal aan het begin van Openbaring stelt God Zichzelf voor met twee Griekse letters: de alfa en de omega — de eerste en de laatste letter van het alfabet. Wat wil God daarmee zeggen?",
             antwoorden: ["Ik ben het begin en het einde", "Ik ben de koning van het alfabet", "Ik ben de leraar van alle talen", "Ik ken alle letters uit Mijn hoofd"],
             correct: "Ik ben het begin en het einde",
             bijbelplaats: "Openbaring 1:8"
@@ -6428,7 +6428,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 2:17 · Exodus 16:15, 21"
         },
         {
-            vraag: "God noemt zichzelf \"de Alfa en de Omega\". Waar komen die twee woorden vandaan?",
+            vraag: "God noemt Zichzelf \"de Alfa en de Omega\". Waar komen die twee woorden vandaan?",
             antwoorden: ["Het zijn de eerste en de laatste letter van het Griekse alfabet", "Het zijn twee namen voor God uit het Hebreeuws", "Het zijn de namen van de eerste en de laatste engel", "Het zijn twee sterren die het jaar begonnen en eindigden"],
             correct: "Het zijn de eerste en de laatste letter van het Griekse alfabet",
             bijbelplaats: "Openbaring 1:8"
@@ -6467,11 +6467,11 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 4:3 · Genesis 9:13"
         },
         {
-            vraag: "Helemaal aan het einde van Openbaring stelt Jezus zichzelf voor met een naam waar een ster in zit. Welke naam gebruikt Hij voor zichzelf?",
+            vraag: "Helemaal aan het einde van Openbaring stelt Jezus Zichzelf voor met een naam waar een ster in zit. Welke naam gebruikt Hij voor Zichzelf?",
             antwoorden: ["De stralende morgenster", "De vallende ster", "De avondster", "De noorderster"],
             correct: "De stralende morgenster",
             bijbelplaats: "Openbaring 22:16",
-            uitleg: "De morgenster die je vlak voor zonsopgang helder aan de oostelijke hemel kunt zien, is meestal de planeet Venus. Haar verschijning kondigt als het ware aan dat de nacht bijna voorbij is en de nieuwe dag eraan komt. Johannes schrijft aan mensen die het zwaar hadden. Dat Jezus zichzelf de stralende morgenster noemt, geeft daarom een beeld van hoop: het donker duurt niet eeuwig."
+            uitleg: "De morgenster die je vlak voor zonsopgang helder aan de oostelijke hemel kunt zien, is meestal de planeet Venus. Haar verschijning kondigt als het ware aan dat de nacht bijna voorbij is en de nieuwe dag eraan komt. Johannes schrijft aan mensen die het zwaar hadden. Dat Jezus Zichzelf de stralende morgenster noemt, geeft daarom een beeld van hoop: het donker duurt niet eeuwig."
         },
         {
             vraag: "De stadsmuur van het nieuwe Jeruzalem heeft twaalf poorten, en elke poort is uit één stuk gemaakt van hetzelfde bijzondere materiaal. Welk materiaal is dat?",
