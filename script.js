@@ -3344,7 +3344,7 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom zag God hem als rechtvaardig. Wat leert Paulus daaruit?",
-            antwoorden: ["Wie gelooft zoals Abraham, is een kind van God", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham horen bij God", "Abraham hoorde bij God omdat hij nooit iets verkeerd deed"],
+            antwoorden: ["Wie gelooft zoals Abraham, is een kind van God", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham zijn kinderen van God", "God zag Abraham als rechtvaardig omdat hij nooit iets verkeerd deed"],
             correct: "Wie gelooft zoals Abraham, is een kind van God",
             bijbelplaats: "Galaten 3:6-7, 26"
         },
