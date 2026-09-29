@@ -1038,10 +1038,11 @@ def controle_vraagwoorden(bron, pools):
 #  10. Vraagzinregel
 # ---------------------------------------------------------------------------
 
-# Zolang de oude aanvulzinnen nog niet allemaal uitgeschreven zijn, is een
-# treffer een WAARSCHUWING en blijft de exitcode 0. Zet deze vlag op True zodra
-# de sweep klaar is; vanaf dan is een treffer een PROBLEEM.
-VRAAGZINREGEL_HARD = False
+# Tijdens de sweep langs de oude aanvulzinnen was een treffer een WAARSCHUWING
+# en bleef de exitcode 0. Sinds commit bf224f8 staat de teller op 0 (de laatste
+# gatenzin, 1 Petrus 1:16, is uitgeschreven) en geldt de regel hard: een
+# treffer is een PROBLEEM en geeft exitcode 1.
+VRAAGZINREGEL_HARD = True
 
 BELETSELTEKENS = ("…", "...")
 
