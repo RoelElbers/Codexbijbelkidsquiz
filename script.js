@@ -183,7 +183,8 @@ const vragenData = {
                 vraag: "Wat deed Jezus toen er een storm op het meer was en de leerlingen bang werden?",
                 antwoorden: ["Hij ging gewoon weer verder slapen toen ze Hem wakker maakten", "Hij sprak een woord, en de storm hield op", "Hij stapte uit de boot en liep over het water naar de overkant", "Hij nam zelf het roer over"],
                 correct: "Hij sprak een woord, en de storm hield op",
-                bijbelplaats: "Matteüs 8:23-27"
+                bijbelplaats: "Matteüs 8:23-27",
+                uitleg: "Toen de leerlingen Jezus wakker maakten, vroeg Hij waarom ze zo bang waren, en Hij noemde hen kleingelovig: mensen met maar weinig vertrouwen. Daarmee zegt Jezus niet dat bang zijn verkeerd is. Iedereen wordt weleens bang, zeker in een storm op het water. Het ging Hem om iets anders: ze waren even vergeten dat Hij zelf bij hen in de boot zat. Hij wilde dat ze op Hem leerden vertrouwen, juist als het spannend wordt."
             },
             {
                 vraag: "Wat gebeurde er toen Jezus gedoopt werd?",
