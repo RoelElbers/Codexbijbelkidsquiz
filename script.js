@@ -2452,14 +2452,14 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In de stad Lydda genas Petrus een man, Eneas, die al acht jaar verlamd op bed lag. Wat zei Petrus tegen hem?",
-            antwoorden: ["\"Kom morgen maar terug\"", "\"Jezus Christus geneest je, sta op\"", "\"Ik kan niets voor je doen\"", "\"Roep eerst een dokter\""],
-            correct: "\"Jezus Christus geneest je, sta op\"",
+            antwoorden: ["Kom morgen maar terug", "Jezus Christus geneest je, sta op", "Ik kan niets voor je doen", "Roep eerst een dokter"],
+            correct: "Jezus Christus geneest je, sta op",
             bijbelplaats: "Handelingen 9:33-34"
         },
         {
             vraag: "Na de schipbreuk bij Malta bleef Paulus nog een tijd op het eiland. Wat deed hij daar voor de mensen?",
-            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen met het eerste schip dat langskwam", "Hij genas veel zieke mensen", "Hij bleef op het strand liggen"],
-            correct: "Hij genas veel zieke mensen",
+            antwoorden: ["Hij bouwde een nieuw schip", "Hij vertrok meteen met het eerste schip dat langskwam", "Hij bad voor zieke mensen, legde hun de handen op, en ze werden genezen", "Hij bleef op het strand liggen"],
+            correct: "Hij bad voor zieke mensen, legde hun de handen op, en ze werden genezen",
             bijbelplaats: "Handelingen 28:8-9"
         },
         {
@@ -2475,9 +2475,9 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 4:36"
         },
         {
-            vraag: "De leerlingen waren op de Pinksterdag met elkaar in één huis bij elkaar. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
-            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als harde wind en vlammetjes als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
-            correct: "Een geluid als harde wind en vlammetjes als van vuur",
+            vraag: "De leerlingen waren op de Pinksterdag bij elkaar in één huis. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
+            antwoorden: ["Regen en onweer", "Muziek en gezang", "Een geluid als van een harde wind, en tongen als van vuur", "Een aardbeving die het hele huis flink deed schudden"],
+            correct: "Een geluid als van een harde wind, en tongen als van vuur",
             bijbelplaats: "Handelingen 2:2-3"
         },
         {
@@ -2686,8 +2686,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
-            antwoorden: ["Hij zei niets, want hij was bang voor de mannen met het plan", "Hij liep weg en ging terug naar zijn familie in Tarsus", "Hij waarschuwde Paulus en de soldaten", "Hij stond aan de kant van deze slechte mensen"],
-            correct: "Hij waarschuwde Paulus en de soldaten",
+            antwoorden: ["Hij zei niets, want hij was bang voor de mannen met het plan", "Hij liep weg en ging terug naar zijn familie in Tarsus", "Hij waarschuwde Paulus, en daarna de Romeinse bevelhebber", "Hij stond aan de kant van deze slechte mensen"],
+            correct: "Hij waarschuwde Paulus, en daarna de Romeinse bevelhebber",
             bijbelplaats: "Handelingen 23:16-22"
         }
     ],
@@ -2877,7 +2877,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Hij maakte huiden van geslachte dieren tot leer", "Hij verkocht wol op de markt", "Hij maakte schoenen voor de soldaten", "Hij verzorgde de dieren die geofferd werden"],
             correct: "Hij maakte huiden van geslachte dieren tot leer",
             bijbelplaats: "Handelingen 9:43",
-            uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte kalk, urine en hondenmest om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met dode dieren, en dat maakte hem volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
+            uitleg: "Leerlooien was zwaar werk en het stonk enorm — men gebruikte onder meer kalk en urine om het haar van de huid te krijgen. Daarom stond het huis van een leerlooier meestal buiten het dorp, dicht bij zee. Bovendien werkte hij dagelijks met huiden van dode dieren, en wie een dood dier aanraakte, was volgens de wet onrein. Dat Petrus bij zo iemand logeerde, is dus een detail dat Lucas niet toevallig noemt: vlak daarna krijgt Petrus het visioen over rein en onrein."
         },
         {
             vraag: "Tijdens de storm lieten de zeelieden een peillood zakken. Waarvoor diende dat?",
