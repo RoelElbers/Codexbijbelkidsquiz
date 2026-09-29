@@ -187,8 +187,8 @@ const vragenData = {
             },
             {
                 vraag: "Wat gebeurde er toen Jezus gedoopt werd?",
-                antwoorden: ["Er kwam een storm op", "De hemel ging open en er daalde een duif neer", "Er verscheen een grote regenboog aan de hemel", "Er klonk een bazuin"],
-                correct: "De hemel ging open en er daalde een duif neer",
+                antwoorden: ["Er kwam een storm op", "De hemel ging open en de Geest van God daalde als een duif op Hem neer", "Er verscheen een grote regenboog aan de hemel", "Er klonk een bazuin"],
+                correct: "De hemel ging open en de Geest van God daalde als een duif op Hem neer",
                 bijbelplaats: "Matteüs 3:16"
             },
             {
@@ -243,7 +243,7 @@ const vragenData = {
                 uitleg: "De man die op zand bouwde, zag zijn huis instorten toen de storm kwam. Wie op de rots bouwt, staat stevig — Jezus bedoelde: zo is het als je naar Zijn woorden luistert én ze ook doet."
             },
             {
-                vraag: "Jezus vergeleek het koninkrijk van God met een heel klein zaadje dat uitgroeit tot een grote plant. Welk zaadje?",
+                vraag: "Jezus vergeleek het koninkrijk van de hemel met een heel klein zaadje dat uitgroeit tot een grote plant. Welk zaadje noemde Hij?",
                 antwoorden: ["Een mosterdzaadje", "Een appelpit", "Een graankorrel", "Een druivenpit"],
                 correct: "Een mosterdzaadje",
                 bijbelplaats: "Matteüs 13:31-32"
@@ -308,9 +308,9 @@ const vragenData = {
             },
             {
                 vraag: "Wat gebeurde er op het moment dat Jezus aan het kruis stierf?",
-                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het werd donker en het voorhangsel van de tempel scheurde", "Alle lampen in de tempel gingen tegelijk uit", "De klokken van de tempel begonnen te luiden"],
-                correct: "Het werd donker en het voorhangsel van de tempel scheurde",
-                bijbelplaats: "Matteüs 27:45-51"
+                antwoorden: ["Er kwamen allemaal duiven aangevlogen", "Het voorhangsel van de tempel scheurde en de aarde beefde", "Alle lampen in de tempel gingen tegelijk uit", "De klokken van de tempel begonnen te luiden"],
+                correct: "Het voorhangsel van de tempel scheurde en de aarde beefde",
+                bijbelplaats: "Matteüs 27:50-51"
             },
             {
                 vraag: "In de Bijbel staat dat Petrus Jezus 'verloochende'. Wat betekent dat?",
