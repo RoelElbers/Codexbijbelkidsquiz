@@ -3148,8 +3148,8 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Omdat Jezus is opgestaan, hoeft wie bij Hem hoort niet bang te zijn voor de dood. Wat roept Paulus de dood toe?",
-            antwoorden: ["\"Dood, waar is je overwinning? Je hebt verloren!\"", "\"Dood, jij bent de sterkste van allemaal.\"", "\"Dood, jij wint het altijd.\"", "\"Dood, niemand kan jou verslaan.\""],
-            correct: "\"Dood, waar is je overwinning? Je hebt verloren!\"",
+            antwoorden: ["Dood, waar is je overwinning? Je hebt verloren!", "Dood, jij bent de sterkste van allemaal", "Dood, jij wint het altijd", "Dood, niemand kan jou verslaan"],
+            correct: "Dood, waar is je overwinning? Je hebt verloren!",
             bijbelplaats: "1 Korintiërs 15:55-57"
         },
         {
@@ -3417,8 +3417,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "God zond de Geest van Zijn Zoon in ons hart. Wat roept die Geest volgens Paulus?",
-            antwoorden: ["\"Abba, Vader!\"", "\"Heer, ontferm U!\"", "\"Halleluja!\"", "\"Vrede zij met u!\""],
-            correct: "\"Abba, Vader!\"",
+            antwoorden: ["Abba, Vader!", "Heer, ontferm U!", "Halleluja!", "Vrede zij met u!"],
+            correct: "Abba, Vader!",
             bijbelplaats: "Galaten 4:6"
         },
         {
@@ -5845,8 +5845,8 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "In zijn tweede brief waarschuwt Petrus dat er in de laatste dagen spotters zullen komen. Wat roepen ze?",
-            antwoorden: ["\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"", "\"Wij hebben Hem toch nooit gezien?\"", "\"God bemoeit Zich niet met de mensen.\"", "\"Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes.\""],
-            correct: "\"Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was.\"",
+            antwoorden: ["Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was", "Wij hebben Hem toch nooit gezien?", "God bemoeit Zich niet met de mensen", "Al die oude verhalen over wonderen en tekenen zijn gewoon verzonnen sprookjes"],
+            correct: "Waar blijft de belofte van Zijn komst? Alles blijft zoals het altijd was",
             bijbelplaats: "2 Petrus 3:3-4"
         },
         {
@@ -5956,8 +5956,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes spreekt de gelovigen in zijn brief steeds aan met hetzelfde liefdevolle woord. Welk woord gebruikt hij?",
-            antwoorden: ["'Mijn kinderen'", "'Mijn vrienden'", "'Mijn broeders'", "'Mijn leerlingen'"],
-            correct: "'Mijn kinderen'",
+            antwoorden: ["Mijn kinderen", "Mijn vrienden", "Mijn broeders", "Mijn leerlingen"],
+            correct: "Mijn kinderen",
             bijbelplaats: "1 Johannes 2:1"
         },
         {
@@ -6183,8 +6183,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "De schrijver van de tweede en derde brief van Johannes noemt zichzelf niet bij naam, maar met een titel. Welke titel gebruikt hij?",
-            antwoorden: ["'de oudste'", "'de koning'", "'de profeet'", "'de herder'"],
-            correct: "'de oudste'",
+            antwoorden: ["De oudste", "De koning", "De profeet", "De herder"],
+            correct: "De oudste",
             bijbelplaats: "2 Johannes 1 · 3 Johannes 1"
         },
         {
@@ -6291,8 +6291,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Bij de troon van God staan vier bijzondere wezens die dag en nacht dezelfde woorden blijven roepen. Welke woorden zijn dat?",
-            antwoorden: ["\"Heilig, heilig, heilig\"", "\"Sterk, sterk, sterk\"", "\"Hoog, hoog, hoog\"", "\"Ver, ver, ver\""],
-            correct: "\"Heilig, heilig, heilig\"",
+            antwoorden: ["Heilig, heilig, heilig", "Sterk, sterk, sterk", "Hoog, hoog, hoog", "Ver, ver, ver"],
+            correct: "Heilig, heilig, heilig",
             bijbelplaats: "Openbaring 4:8"
         },
         {
@@ -6303,8 +6303,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Openbaring eindigt met een belofte van Jezus zelf, vlak voor het laatste gebed van het boek. Wat zegt Hij over Zijn terugkomst?",
-            antwoorden: ["\"Ik kom spoedig\"", "\"Ik kom nog lang niet\"", "\"Wacht maar duizend jaar\"", "\"Ik kom pas als iedereen gelooft\""],
-            correct: "\"Ik kom spoedig\"",
+            antwoorden: ["Ik kom spoedig", "Ik kom nog lang niet", "Wacht maar duizend jaar", "Ik kom pas als iedereen gelooft"],
+            correct: "Ik kom spoedig",
             bijbelplaats: "Openbaring 22:20"
         },
         {
@@ -6367,8 +6367,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Johannes is zo onder de indruk van de engel die hem alles laat zien, dat hij voor hem op de knieën valt om hem te aanbidden. Wat zegt de engel dan?",
-            antwoorden: ["\"Doe dat niet! Aanbid alleen God.\"", "\"Goed zo, ga door.\"", "\"Buig nog dieper.\"", "\"Sta op en volg mij naar de hoge hemel.\""],
-            correct: "\"Doe dat niet! Aanbid alleen God.\"",
+            antwoorden: ["Doe dat niet! Aanbid alleen God", "Goed zo, ga door", "Buig nog dieper", "Sta op en volg mij naar de hoge hemel"],
+            correct: "Doe dat niet! Aanbid alleen God",
             bijbelplaats: "Openbaring 22:8-9"
         },
         {

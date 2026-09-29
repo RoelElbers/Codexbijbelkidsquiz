@@ -1296,6 +1296,59 @@ def controle_kopcommentaar(bron, pools):
 
 
 # ---------------------------------------------------------------------------
+#  12. Antwoorden zonder aanhalingstekens eromheen
+# ---------------------------------------------------------------------------
+
+# Een antwoord hoort niet in zijn geheel tussen aanhalingstekens te staan, ook
+# niet als het een uitspraak is ("Ik kom spoedig" in plaats van "\"Ik kom
+# spoedig\""). Acht vragen stonden zo in de pool; die zijn rechtgezet. Deze
+# controle zorgt dat het niet ongemerkt terugkomt. Een WAARSCHUWING, geen
+# PROBLEEM: het spel werkt er gewoon mee, het is een kwestie van vorm.
+# Aanhalingstekens midden in een antwoord blijven toegestaan.
+
+AANHALINGSTEKENS = "\"'“”‘’„«»"
+
+
+def _tussen_aanhalingstekens(tekst):
+    t = (tekst or "").strip()
+    return (len(t) >= 2 and t[0] in AANHALINGSTEKENS
+            and t[-1] in AANHALINGSTEKENS)
+
+
+def controle_antwoordcitaten(bron, pools):
+    kop(12, "Antwoorden — geen aanhalingstekens rond een heel antwoord")
+
+    meldingen = []
+    gescand = 0
+    treffers = 0
+
+    for bronnaam, boek, niveau, index, vraag in _vraagbronnen(bron, pools,
+                                                              meldingen):
+        gescand += 1
+        velden = [("antwoord", a) for a in (vraag.get("antwoorden") or [])
+                  if isinstance(a, str)]
+        if isinstance(vraag.get("correct"), str):
+            velden.append(("correct", vraag["correct"]))
+        for veld, tekst in velden:
+            if _tussen_aanhalingstekens(tekst):
+                treffers += 1
+                waarschuwing("%s tussen aanhalingstekens — %s / %s / %s / "
+                             "index %d: %s" % (veld, bronnaam, boek, niveau,
+                                               index, tekst))
+
+    for melding in meldingen:
+        waarschuwing("parser: %s" % melding)
+
+    info("gescand: %-22s %d vragen" % ("TOTAAL", gescand))
+    if not treffers:
+        ok("geen enkel antwoord of correct staat in zijn geheel tussen "
+           "aanhalingstekens.")
+    else:
+        info("Haal de aanhalingstekens weg in 'antwoorden' én in 'correct', "
+             "zodat 'correct' letterlijk in de lijst blijft staan.")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -1339,6 +1392,7 @@ def main():
     controle_vraagwoorden(bron, pools)
     controle_vraagzin(bron, pools)
     controle_kopcommentaar(bron, pools)
+    controle_antwoordcitaten(bron, pools)
 
     schrijf()
     schrijf("=" * 78)
