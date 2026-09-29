@@ -5006,7 +5006,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Filemon 2 · Kolossenzen 4:17"
         },
         {
-            vraag: "Paulus had Onesimus makkelijk bij zich kunnen houden, want hij had veel aan hem. Toch stuurt hij hem terug, en hij wil niets beslissen zonder Filemon eerst te vragen. Waarom niet?",
+            vraag: "Paulus had Onesimus makkelijk bij zich kunnen houden, want hij had veel aan hem. Toch stuurt hij hem terug, en hij wil niets beslissen zonder Filemon eerst te vragen. Waarom wil hij het Filemon eerst vragen?",
             antwoorden: ["Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen", "Omdat hij zelf niet wist wat het beste was", "Omdat hij bang was dat Filemon naar de rechter zou stappen", "Omdat hij bang was dat Filemon anders juist heel erg boos op hem zou worden"],
             correct: "Omdat het goede dat Filemon doet vrijwillig moet zijn, en niet gedwongen",
             bijbelplaats: "Filemon 14"
