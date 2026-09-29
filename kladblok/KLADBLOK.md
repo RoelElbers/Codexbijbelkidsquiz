@@ -95,9 +95,6 @@ worden bij een volgende wijziging.*
   een echte betaling). Het aandachtspunt is dus niet dat er nog iets moet,
   maar dat hernoemen of verplaatsen ze stil breekt: geen enkele href of src
   in het project wijst ernaar, dus een zoekactie in de repo vindt niets.
-- 2026-09-29 — De hele game nalopen op niet afgeronde vraagzinnen
-  (aanleiding 29 sept 2026: korte slotvragen als 'Welke plant?' en
-  'Wat zei Hij?' bij de invulvragen).
 
 ## Besloten: niet doen
 - Telefoonondersteuning — bewust uitgesteld, mogelijk nooit.
@@ -108,3 +105,7 @@ worden bij een volgende wijziging.*
 
 ## Gedaan
 - (afgeronde punten hierheen schuiven met de datum van afronden)
+- 2026-09-29 (afgerond 2026-09-29) — De hele game nalopen op niet afgeronde
+  vraagzinnen (aanleiding: korte slotvragen als 'Welke plant?' en 'Wat zei
+  Hij?' bij de invulvragen). Alle pools doorgelopen; de lijst met criteria,
+  per boek afgevinkt, staat in kladblok/slotvragen.md.
