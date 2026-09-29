@@ -865,8 +865,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wat zei de Romeinse hoofdman die bij het kruis stond, toen Jezus stierf?",
-                antwoorden: ["Nu kunnen we eindelijk terug naar de kazerne", "Werkelijk deze mens was Gods Zoon", "Wat een trieste dag is dit voor Jeruzalem", "Dit was vast een groot profeet uit vroeger tijden"],
-                correct: "Werkelijk deze mens was Gods Zoon",
+                antwoorden: ["Nu kunnen we eindelijk terug naar de kazerne", "Werkelijk, deze mens was Gods Zoon", "Wat een trieste dag is dit voor Jeruzalem", "Dit was vast een groot profeet uit vroeger tijden"],
+                correct: "Werkelijk, deze mens was Gods Zoon",
                 bijbelplaats: "Marcus 15:39"
             },
             {
