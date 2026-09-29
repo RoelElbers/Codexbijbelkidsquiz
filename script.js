@@ -4210,8 +4210,8 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus geeft een stevige regel over werken die hij zelf een gebod noemt. Wat zegt hij over wie niet wíl werken?",
-            antwoorden: ["Die hoeft ook niet te eten", "Die moet uit de gemeente gezet worden", "Die moet het dubbel goedmaken", "Die moet door de anderen onderhouden worden"],
-            correct: "Die hoeft ook niet te eten",
+            antwoorden: ["Die zal ook niet eten", "Die moet uit de gemeente gezet worden", "Die moet het dubbel goedmaken", "Die moet door de anderen onderhouden worden"],
+            correct: "Die zal ook niet eten",
             bijbelplaats: "2 Tessalonicenzen 3:10"
         },
         {
