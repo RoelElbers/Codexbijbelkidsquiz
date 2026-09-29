@@ -5732,7 +5732,7 @@ vragenData["Petrus & Judas"] = {
             uitleg: "Met die hoop bedoelt Petrus het vertrouwen dat je op God hebt en de verwachting van wat Hij heeft beloofd."
         },
         {
-            vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: 'Wees …, want Ik ben …'",
+            vraag: "Petrus herhaalt een opdracht van God uit het Oude Testament: 'Wees …, want Ik ben …' Welk woord hoort op beide plekken?",
             antwoorden: ["heilig", "sterk", "wijs", "streng"],
             correct: "heilig",
             bijbelplaats: "1 Petrus 1:16 · Leviticus 19:2"
