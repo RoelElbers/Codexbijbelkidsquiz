@@ -1285,9 +1285,9 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 19:1-4"
             },
             {
-                vraag: "Wat deed Zacheüs nadat Jezus bij hem te gast was geweest?",
-                antwoorden: ["Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij gaf alles wat hij had weg aan anderen", "Hij stopte met zijn werk en werd priester in de tempel"],
-                correct: "Hij gaf de helft van zijn bezit aan de armen en betaalde vier keer terug aan wie hij had afgeperst",
+                vraag: "Wat deed Zacheüs toen Jezus bij hem te gast was?",
+                antwoorden: ["Hij beloofde de helft van zijn bezit aan de armen te geven en vier keer terug te betalen aan wie hij had afgeperst", "Hij beloofde plechtig beterschap, maar hield stiekem toch al zijn afgeperste geld gewoon voor zichzelf", "Hij gaf alles wat hij had weg aan anderen", "Hij stopte met zijn werk en werd priester in de tempel"],
+                correct: "Hij beloofde de helft van zijn bezit aan de armen te geven en vier keer terug te betalen aan wie hij had afgeperst",
                 bijbelplaats: "Lucas 19:8"
             },
             {
