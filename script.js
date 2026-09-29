@@ -2904,8 +2904,8 @@ vragenData["Handelingen"] = {
 // Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
 // Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
 // =====================================================================
-// 1 & 2 Korintiërs — vragenpool (49 vragen: beginner 16, advanced 16,
-// expert 17)
+// 1 & 2 Korintiërs — vragenpool (50 vragen: beginner 16, advanced 16,
+// expert 18)
 // De sleutel "1 & 2 Korintiërs" is exact de `naam` uit boekenplanken.paulus,
 // zodat openBoek(boek.naam) de juiste pool vindt. vragenData bestaat hier al.
 // =====================================================================
@@ -2979,7 +2979,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 10:31"
         },
         {
-            vraag: "Er zijn veel verschillende gaven (talenten) in de gemeente. Wat zegt Paulus daarover?",
+            vraag: "Er zijn veel verschillende gaven in de gemeente. Wat zegt Paulus daarover?",
             antwoorden: ["Ze komen allemaal van dezelfde Geest", "Alleen Paulus heeft ze", "Ze zijn niet belangrijk", "Je krijgt ze pas als je heel oud bent geworden"],
             correct: "Ze komen allemaal van dezelfde Geest",
             bijbelplaats: "1 Korintiërs 12:4"
@@ -3072,7 +3072,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 12:9"
         },
         {
-            vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover wel?",
+            vraag: "Paulus schept niet op over zichzelf, maar ergens anders over. Waarover schept hij wel op?",
             antwoorden: ["Over alle wonderen die hij zelf heeft verricht", "Over zijn eigen kracht", "Over de Heer en over wat God door hem doet", "Over hoe goed hij een toespraak kan houden"],
             correct: "Over de Heer en over wat God door hem doet",
             bijbelplaats: "2 Korintiërs 10:17"
@@ -3213,6 +3213,13 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Paulus noemt in zijn brieven zelf een eerdere brief die hij hun al had geschreven", "Lucas vertelt het in de Handelingen van de apostelen", "De derde brief aan de Korintiërs staat, als bijlage, achter in het boek Openbaring", "De gemeente in Korinte hing al zijn brieven op in de synagoge"],
             correct: "Paulus noemt in zijn brieven zelf een eerdere brief die hij hun al had geschreven",
             bijbelplaats: "1 Korintiërs 5:9"
+        },
+        {
+            vraag: "Paulus schrijft in zijn tweede brief aan de Korintiërs dat hij vijf keer \"veertig slagen min één\" heeft gekregen. Waarom was het er één minder dan veertig?",
+            antwoorden: ["De wet stond hoogstens veertig slagen toe, en zo bleef men daar zeker onder", "Paulus kreeg één slag minder omdat hij Romeins burger was", "Veertig was een heilig getal, en dat mocht niet bij een straf gebruikt worden", "Degene die sloeg, raakte na negenendertig slagen altijd de tel kwijt"],
+            correct: "De wet stond hoogstens veertig slagen toe, en zo bleef men daar zeker onder",
+            bijbelplaats: "2 Korintiërs 11:24 · Deuteronomium 25:3",
+            uitleg: "De wet van Mozes zegt dat iemand die gestraft wordt niet meer dan veertig slagen mag krijgen, zodat hij niet vernederd wordt. Door er negenendertig te geven, bleef men altijd binnen die grens. Zo wordt het meestal uitgelegd. De Joodse wetgeleerden leidden het getal negenendertig ook af uit de manier waarop ze deze woorden van de wet lazen. Veertig is in de Bijbel een bijzonder getal, maar de wet noemt het hier gewoon als grens. Het was een straf die de synagoge gaf, binnen de eigen gemeenschap."
         }
     ]
 };
