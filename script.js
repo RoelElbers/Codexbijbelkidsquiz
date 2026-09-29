@@ -1267,7 +1267,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 15:11-32"
             },
             {
-                vraag: "Wat deed de vader toen hij zijn zoon in de verte zag aankomen?",
+                vraag: "In de gelijkenis van de verloren zoon: wat deed de vader toen hij zijn zoon in de verte zag aankomen?",
                 antwoorden: ["Hij weigerde hem binnen te laten", "Hij rende hem tegemoet, omhelsde hem en kuste hem", "Hij vroeg eerst waar al het geld was gebleven", "Hij stuurde hem weg, want zijn kans had hij gehad"],
                 correct: "Hij rende hem tegemoet, omhelsde hem en kuste hem",
                 bijbelplaats: "Lucas 15:20"
@@ -1481,7 +1481,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 22:20"
             },
             {
-                vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij twee tortelduiven. Wat zegt dat over hen?",
+                vraag: "Toen Jozef en Maria Jezus naar de tempel brachten, offerden zij duiven. Wat zegt dat over hen?",
                 antwoorden: ["Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen", "Dat zij uit een priesterfamilie kwamen en daarom duiven moesten offeren", "Dat zij een lange reis hadden gemaakt en geen lam konden meenemen", "Dat het lente was, want duiven werden alleen in het voorjaar geofferd"],
                 correct: "Dat zij arm waren, want duiven waren het offer voor wie geen lam kon betalen",
                 bijbelplaats: "Lucas 2:24 · Leviticus 12:8"
