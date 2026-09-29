@@ -3343,7 +3343,7 @@ vragenData["Galaten"] = {
             uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Je moet je ook aan de Joodse wet houden om echt bij God te horen. Paulus noemt dat een ander evangelie en wijst het scherp af. Want als mensen zich óók nog aan de regels uit de wet van Mozes moeten houden om bij God te horen, dan zou wat Jezus heeft gedaan volgens Paulus niet genoeg zijn."
         },
         {
-            vraag: "Abraham vertrouwde op God, en daarom hoorde hij bij God. Wat leert Paulus daaruit?",
+            vraag: "Abraham vertrouwde op God, en daarom zag God hem als rechtvaardig. Wat leert Paulus daaruit?",
             antwoorden: ["Wie gelooft zoals Abraham, is een kind van God", "Wie bij God wil horen, moet eerst van huis weggaan, net als Abraham", "Vooral de nakomelingen van Abraham horen bij God", "Abraham hoorde bij God omdat hij nooit iets verkeerd deed"],
             correct: "Wie gelooft zoals Abraham, is een kind van God",
             bijbelplaats: "Galaten 3:6-7, 26"
