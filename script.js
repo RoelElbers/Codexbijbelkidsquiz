@@ -277,7 +277,7 @@ const vragenData = {
                 vraag: "Jezus zei tegen Zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
                 antwoorden: ["het licht", "het vuur", "de wind", "het zout"],
                 correct: "het licht",
-                bijbelplaats: "Matteüs 5:14"
+                bijbelplaats: "Matteüs 5:14, 16"
             },
             {
                 vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde Hij daarmee?",
@@ -526,7 +526,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 12:39-40"
             },
             {
-                vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak hij ze uit?',
+                vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak Hij ze uit?',
                 antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
                 correct: "De Bergrede",
                 bijbelplaats: "Matteüs 5:3"
@@ -779,7 +779,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Marcus 1:4"
             },
             {
-                vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde hij daarmee?',
+                vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde Hij daarmee?',
                 antwoorden: ["Het land Israël op de kaart", "Dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
                 correct: "Dat mensen met elkaar omgaan zoals God het bedoeld heeft",
                 bijbelplaats: "Marcus 1:15"
@@ -1652,7 +1652,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 10:11"
             },
             {
-                vraag: "Jezus zei: 'Ik ben het licht van de ___.' Wat zei Hij?",
+                vraag: "Jezus zei: 'Ik ben het licht van de ___.' Welk woord hoort op de open plek?",
                 antwoorden: ["wereld", "hemel", "nacht", "zon"],
                 correct: "wereld",
                 bijbelplaats: "Johannes 8:12"
@@ -1733,7 +1733,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Johannes 10:7-9"
             },
             {
-                vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant?",
+                vraag: "Jezus vergeleek zichzelf met een plant: 'Ik ben de ware ___.' Welke plant noemde Hij?",
                 antwoorden: ["wijnstok", "olijfboom", "vijgenboom", "palmboom"],
                 correct: "wijnstok",
                 bijbelplaats: "Johannes 15:1"
@@ -1887,7 +1887,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
             },
             {
-                vraag: 'Jezus zat moe bij de put toen hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
+                vraag: 'Jezus zat moe bij de put toen Hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
                 antwoorden: [
                     "Rond het middaguur (12 uur)",
                     "'s Ochtends vroeg (9 uur)",
@@ -6307,7 +6307,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 22:20"
         },
         {
-            vraag: "Johannes hoort een luide stem bij de troon die vertelt wat het allermooiste is van de nieuwe wereld — mooier nog dan de gouden straten: \"Zie, Ik zal zelf … bij de mensen.\" Hoe gaat het verder?",
+            vraag: "Johannes hoort een luide stem bij de troon die vertelt wat het allermooiste is van de nieuwe wereld — mooier nog dan de gouden straten: \"Gods woning is bij de mensen: Hij zal bij hen …\" Hoe gaat het verder?",
             antwoorden: ["wonen", "langskomen", "wegblijven", "af en toe komen logeren"],
             correct: "wonen",
             bijbelplaats: "Openbaring 21:3"
