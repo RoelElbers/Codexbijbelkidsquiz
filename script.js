@@ -3447,7 +3447,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 5:22"
         },
         {
-            vraag: "Paulus zegt met het beeld van zaaien en oogsten dat je op twee manieren kunt leven. Welke twee?",
+            vraag: "Paulus zegt met het beeld van zaaien en oogsten dat je op twee manieren kunt leven. Welke twee manieren zijn dat?",
             antwoorden: ["Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt op vruchtbare grond zaaien óf juist op de harde, droge grond ernaast"],
             correct: "Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest",
             bijbelplaats: "Galaten 6:7-8"
