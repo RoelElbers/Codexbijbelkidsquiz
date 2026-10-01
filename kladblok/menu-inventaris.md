@@ -165,8 +165,8 @@ in de code is niets gewijzigd.
 | De verschillende kerken | `kerken.html` | 38 | 55 | *(geen h2/h3)* | `index.html` (knop "De verschillende kerken"), `kerken-katholiek.html`, `kerken-protestant.html`, `kerken-katholiek-onderwerpen.html` |
 | De katholieke kerk *(voorportaal)* | `kerken-katholiek.html` | 36 | 37 | *(geen h2/h3)* | `kerken.html` (knop "Ik ben katholiek"), `kerken-protestant.html`, `kerken-protestant-kerken.html` |
 | De katholieke kerk *(onderwerpenmenu)* | `kerken-katholiek-onderwerpen.html` | 40 | 33 | *(geen h2/h3)* | `kerken-katholiek.html` (knop "Verder →") en alle vier de katholieke onderwerp-pagina's |
-| De zeven sacramenten | `kerken-katholiek-sacramenten.html` | 135 | 831 | h2: Drie sacramenten om erbij te horen; Twee sacramenten om beter te worden; Twee sacramenten om je leven aan iets te geven; Zeven keer God — h3: Het doopsel; De eucharistie en de eerste communie; Het vormsel; De biecht; De ziekenzalving; De wijding; Het huwelijk | `kerken-katholiek-onderwerpen.html` (knop "De sacramenten") |
-| Petrus en de paus | `kerken-katholiek-petrus.html` | 118 | 627 | h2: De sleutels; Weid mijn schapen; En daarna?; De paus van nu; Waarom het bijzonder is | `kerken-katholiek-onderwerpen.html` (knop "Petrus en de paus") |
+| De zeven sacramenten | `kerken-katholiek-sacramenten.html` | 135 | 831 | h2: Drie sacramenten om christen te worden; Twee sacramenten om beter te worden; Twee sacramenten om je leven aan iets te geven; Zeven keer God — h3: Het doopsel; De eucharistie en de eerste communie; Het vormsel; De biecht; De ziekenzalving; De wijding; Het huwelijk | `kerken-katholiek-onderwerpen.html` (knop "De sacramenten") |
+| Petrus en de paus | `kerken-katholiek-petrus.html` | 118 | 627 | h2: De sleutels; Weid Mijn schapen; En daarna?; De paus van nu; Waarom het bijzonder is | `kerken-katholiek-onderwerpen.html` (knop "Petrus en de paus") |
 | Maria | `kerken-katholiek-maria.html` | 155 | 738 | h2: Ja; Haar lied; Op de bruiloft; Onder het kruis; In de bovenzaal; Waarom katholieken tot Maria bidden; De rozenkrans; Zij wijst altijd verder | `kerken-katholiek-onderwerpen.html` (knop "Maria") |
 | De heilige Mis | `kerken-katholiek-mis.html` | 142 | 856 | h2: Het eerste deel: luisteren; Het tweede deel: de eucharistie; De communie; Wat je ziet, ruikt en hoort; Waarom elke zondag; Wat je daarna doet; Eén tafel | `kerken-katholiek-onderwerpen.html` (knop "De heilige Mis") |
 | De protestantse kerken *(voorportaal)* | `kerken-protestant.html` | 37 | 37 | *(geen h2/h3)* | `kerken.html` (knop "Ik ben protestant"), `kerken-katholiek.html`, `kerken-katholiek-onderwerpen.html`, de vier katholieke onderwerp-pagina's, `kerken-protestant-kerken.html` |
@@ -280,7 +280,7 @@ onderwerpen — de vier erbij staan in "Wat opvalt", punt 3:
 **`kerken-katholiek-sacramenten.html`** — zeven sacramenten, gegroepeerd in
 drie blokken:
 
-- Drie sacramenten om erbij te horen: Het doopsel / De eucharistie en de eerste communie / Het vormsel
+- Drie sacramenten om christen te worden: Het doopsel / De eucharistie en de eerste communie / Het vormsel
 - Twee sacramenten om beter te worden: De biecht / De ziekenzalving
 - Twee sacramenten om je leven aan iets te geven: De wijding / Het huwelijk
 - Zeven keer God *(afsluiting)*
