@@ -3,7 +3,7 @@
 // true is. Gaat pas op false bij de openbare release op 1 oktober 2026 — niet
 // eerder, ook niet als de game al af is. Tot die datum is de site wel
 // bereikbaar, maar nog niet openbaar aangekondigd.
-const BETA_MODUS = true;
+const BETA_MODUS = false;
 
 // --- Donatie-lantaarn (linksonder op het startscherm) -----------------------
 // De lantaarn is klikbaar en voelt klikbaar (warme hover-gloed), maar donaties
