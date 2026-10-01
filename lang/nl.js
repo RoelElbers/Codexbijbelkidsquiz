@@ -52,7 +52,7 @@ const NL = {
                 kop: "Wat is dit",
                 items: [
                     "De Bijbelkidsquiz is een spel waarmee kinderen de Bijbel leren kennen door te spelen. Ruim achthonderd vragen over het hele Nieuwe Testament, verdeeld over achttien quizzen op drie niveaus, met trofeeën om te verdienen en een schatkamer om te vullen.",
-                    "De quiz is bewust breed opgezet. De vragen gaan over wat katholieken, protestanten en evangelischen samen in de Bijbel lezen, en de antwoorden komen uit de Bijbeltekst zelf.",
+                    "De quiz is bewust breed opgezet. De vragen gaan over wat katholieken, protestanten en evangelischen samen in de Bijbel lezen, en de antwoorden komen uit de Bijbeltekst zelf. Die teksten geven we weer in eigen woorden, zo dicht mogelijk bij het Hebreeuws en het Grieks.",
                     "Spelen is gratis. Er is geen account, geen reclame en er wordt niets over je bijgehouden."
                 ]
             },
