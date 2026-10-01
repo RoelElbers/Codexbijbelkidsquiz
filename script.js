@@ -1328,7 +1328,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 bijbelplaats: "Lucas 22:1 · Exodus 12:17"
             },
             {
-                vraag: 'Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?',
+                vraag: 'Iets verkeerds doen heet in de Bijbel zonde. Met welk beeld wordt het Griekse woord daarvoor vaak uitgelegd?',
                 antwoorden: ["Je doel missen, zoals een pijl die net naast de roos schiet", "Verliezen, zoals een speler die de wedstrijd niet wint", "Iets verstoppen, zoals een schat die niemand meer mag vinden", "Iets kapotmaken, zoals een brief die je verscheurt"],
                 correct: "Je doel missen, zoals een pijl die net naast de roos schiet",
                 bijbelplaats: "Lucas 15:18"
@@ -1466,14 +1466,14 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Ongeveer 1 liter", "Ongeveer 22 liter", "Ongeveer 100 liter", "Ongeveer 1000 liter"],
                 correct: "Ongeveer 22 liter",
                 bijbelplaats: "Lucas 16:6",
-                uitleg: "In het Grieks heet deze maat <span class='grieks'>βάτος</span> (batos), naar de Hebreeuwse maat bat. Eén vat was ongeveer 22 liter, zo'n twee volle emmers. Honderd vat olie is dus ruim tweeduizend liter — en tien van die vaten samen vormden één kor."
+                uitleg: "In het Grieks heet deze maat <span class='grieks'>βάτος</span> (batos), naar de Hebreeuwse maat bat. Eén vat was volgens de meeste schattingen ongeveer 22 liter, zo'n twee volle emmers; sommige geleerden komen hoger uit. Honderd vat olie is dus ruim tweeduizend liter — en tien van die vaten samen vormden één kor."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand honderd zakken tarwe schuldig. Ongeveer hoeveel ging er in één zo'n zak?",
                 antwoorden: ["Ongeveer 220 liter", "Ongeveer 22 liter", "Ongeveer 50 liter", "Ongeveer 2200 liter"],
                 correct: "Ongeveer 220 liter",
                 bijbelplaats: "Lucas 16:7",
-                uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was ongeveer 220 liter, zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een schuld waar een gewone boer nooit aan kon komen."
+                uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was volgens de meeste schattingen ongeveer 220 liter, zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een schuld waar een gewone boer nooit aan kon komen."
             },
             {
                 vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde Hij die?",
@@ -1609,7 +1609,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Petrus", "Lazarus", "Johannes", "Nikodemus"],
                 correct: "Lazarus",
                 bijbelplaats: "Johannes 11:1-44",
-                uitleg: "In het Nieuwe Testament komen twee mannen met de naam Lazarus voor, en ze hebben niets met elkaar te maken. Deze Lazarus is een echte vriend van Jezus, de broer van Marta en Maria uit Betanië. De andere is een bedelaar in een gelijkenis die Jezus vertelt bij Lucas. De naam betekent 'God helpt' en kwam in die tijd veel voor."
+                uitleg: "In het Nieuwe Testament komen twee mannen met de naam Lazarus voor, en ze hebben niets met elkaar te maken. Deze Lazarus is een echte vriend van Jezus, de broer van Marta en Maria uit Betanië. De andere is een bedelaar in een gelijkenis die Jezus vertelt bij Lucas. De naam is een vorm van Eleazar en betekent 'God heeft geholpen'. Hij kwam in die tijd veel voor."
             },
             {
                 vraag: "Wat zagen de leerlingen Jezus doen toen zij 's avonds in de boot het meer overstaken?",
@@ -1876,8 +1876,8 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: '"Pond" betekent niet altijd geld. Waar gaat het bij het "pond kostbare olie" om?',
-                antwoorden: ["Een gewicht (ongeveer 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld, genoeg voor een heel huis", "Een tijdsmaat"],
-                correct: "Een gewicht (ongeveer 300 gram)",
+                antwoorden: ["Een gewicht (ruim 300 gram)", "Een gewicht (1 kilo)", "Een grote som geld, genoeg voor een heel huis", "Een tijdsmaat"],
+                correct: "Een gewicht (ruim 300 gram)",
                 bijbelplaats: "Johannes 12:3",
                 uitleg: "Het woord dat hier met 'pond' vertaald wordt, is een gewichtsmaat van ongeveer 327 gram (een Romeins pond) — het gaat dus om het gewicht van de olie, niet om geld."
             },
@@ -1955,7 +1955,7 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
                 correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
                 bijbelplaats: "Johannes 19:20",
-                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koem, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse Rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven.\n\nLatijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
+                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koemi, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse Rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven.\n\nLatijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
             },
             {
                 vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
@@ -2780,7 +2780,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["De hoogste Joodse rechtbank", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
             correct: "De hoogste Joodse rechtbank",
             bijbelplaats: "Handelingen 5:27",
-            uitleg: "Deze raad heette in het Grieks het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
+            uitleg: "Deze raad heette het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
         },
         {
             vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
@@ -2829,7 +2829,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
             correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
             bijbelplaats: "Handelingen 18:3",
-            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat er geen regen doorheen kwam. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar.\n\nOf hij zelf met die stof werkte of eerder met leer, weten we niet zeker: het woord dat Lucas gebruikt kan allebei betekenen. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
+            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat het de regen goed tegenhield. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar.\n\nOf hij zelf met die stof werkte of eerder met leer, weten we niet zeker: het woord dat Lucas gebruikt kan allebei betekenen. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
         },
         {
             vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
@@ -4820,10 +4820,10 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "De naam Onesimus betekent \"nuttig\". Welke woordgrap maakt Paulus daarmee?",
-            antwoorden: ["Vroeger was hij onbruikbaar, nu juist heel bruikbaar", "Hij zou zijn naam pas veel later helemaal waarmaken", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
-            correct: "Vroeger was hij onbruikbaar, nu juist heel bruikbaar",
+            antwoorden: ["Vroeger was hij onbruikbaar, nu juist goed bruikbaar", "Hij zou zijn naam pas veel later helemaal waarmaken", "Zijn naam paste niet bij hem", "Hij moest nog nuttig worden"],
+            correct: "Vroeger was hij onbruikbaar, nu juist goed bruikbaar",
             bijbelplaats: "Filemon 11",
-            uitleg: "Onesimus is een Griekse naam en betekent 'nuttig'. Paulus schrijft dat hij vroeger achrēstos was, 'onbruikbaar', en nu euchrēstos, 'heel bruikbaar'. Voor iemand die Grieks sprak, klonk dat als een knipoog bij zijn naam."
+            uitleg: "Onesimus is een Griekse naam en betekent 'nuttig'. Paulus schrijft dat hij vroeger achrēstos was, 'onbruikbaar', en nu euchrēstos, 'goed bruikbaar'. Voor iemand die Grieks sprak, klonk dat als een knipoog bij zijn naam."
         },
         {
             vraag: "Wat biedt Paulus aan over de schuld die Onesimus misschien nog had?",
@@ -6245,7 +6245,7 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Samen eigenaar zijn van één zaak", "Geld lenen aan iemand die je goed vertrouwt", "Een afspraak door een schrijver laten vastleggen", "Voor iemand werken tegen een vast loon per dag"],
             correct: "Samen eigenaar zijn van één zaak",
             bijbelplaats: "1 Johannes 1:3",
-            uitleg: "Koinonia gebruikte men voor zakenpartners die samen een schip of een bedrijf bezaten — allebei helemaal betrokken, allebei verantwoordelijk. Vissers met één gezamenlijk net heetten koinonoi (Lucas 5:10). Het woord betekent dus meer dan gezelligheid: je hoort er echt bij en deelt in alles."
+            uitleg: "Koinonia gebruikte men voor zakenpartners die samen een schip of een bedrijf bezaten — allebei helemaal betrokken, allebei verantwoordelijk. Lucas noemt Jakobus en Johannes de koinonoi van Simon: zijn compagnons in het vissersbedrijf (Lucas 5:10). Het woord betekent dus meer dan gezelligheid: je hoort er echt bij en deelt in alles."
         }
     ]
 };

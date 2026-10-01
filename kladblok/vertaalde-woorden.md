@@ -1540,10 +1540,38 @@ Besluiten over de punten uit controle 1. In de game is nog niets aangepast; wat 
 - **Ekklesia** — in de correctieronde "betekent letterlijk" vervangen door "het woord is gevormd uit *ek* ('uit') en *kaleō* ('roepen')"; in de tijd van het Nieuwe Testament betekende het gewoon "vergadering".
 - **Maranata** — "Kom, Heer!" blijft te verdedigen (Openbaring 22:20 geeft dezelfde roep in het Grieks: 'Kom, Heer Jezus!'). Bij de correctieronde bekijken of "onze" erbij moet ("Kom, onze Heer!").
 
-## Controle 2 — (nog te doen)
+## Controle 2 — ChatGPT (diepgaand onderzoek), delen 1–5, 1 okt 2026
 
-*Ruimte voor een tweede controle door een andere chatbot, met dezelfde indeling.*
+Gecontroleerd met de zes bestanden in `kladblok/controle-chatgpt/`, zonder de uitkomsten van controle 1. Deel 6 (Nederlandse herkomst) gaf twee keer een onbetrouwbaar resultaat, omdat zes onderzoeken tegelijk waren gestart, en is niet meegenomen. De uitkomsten staan in de chat van 1 okt 2026.
 
-## Controle 3 — (nog te doen)
+## Controle 3 — Gemini, deel 6, 1 okt 2026
 
-*Ruimte voor een derde controle door een andere chatbot, met dezelfde indeling.*
+Deel 6 (Nederlandse herkomst, 30 woorden): **29 KLOPT**, **1 KLOPT NIET** (zonde), in lijn met controle 1.
+
+## Correctieronde 1 (1 okt 2026)
+
+Doorgevoerd op grond van controle 1, de beoordeling daarvan en controles 2 en 3. Eén regel per wijziging.
+
+1. **Sanhedrin** (Handelingen, uitleg bij de Hoge Raad): "Deze raad heette in het Grieks het Sanhedrin." → "Deze raad heette het Sanhedrin."
+2. **zonde** (Lucas, vraag): "Het woord "zonde" betekent eigenlijk iets verkeerds doen. Met welk beeld wordt dat oude woord vaak uitgelegd?" → "Iets verkeerds doen heet in de Bijbel zonde. Met welk beeld wordt het Griekse woord daarvoor vaak uitgelegd?" De antwoorden zijn gelijk gebleven.
+3. **vat** (Lucas, uitleg): "ongeveer 22 liter" → "volgens de meeste schattingen ongeveer 22 liter … ; sommige geleerden komen hoger uit."
+4. **kor** (Lucas, uitleg): "ongeveer 220 liter" → "volgens de meeste schattingen ongeveer 220 liter".
+5. **pond** (Johannes, antwoorden en correct): "Een gewicht (ongeveer 300 gram)" → "Een gewicht (ruim 300 gram)", twee keer.
+6. **Talita koemi** (Johannes, uitleg over de drie talen): "Talita koem," → "Talita koemi,".
+7. **koinonoi** (Brieven van Johannes, uitleg): "Vissers met één gezamenlijk net heetten koinonoi" → "Lucas noemt Jakobus en Johannes de koinonoi van Simon: zijn compagnons in het vissersbedrijf (Lucas 5:10)."
+8. **Lazarus** (Johannes, uitleg): "De naam betekent 'God helpt'" → "De naam is een vorm van Eleazar en betekent 'God heeft geholpen'."
+9. **Onesimus** (Filemon, antwoorden, correct en uitleg van die ene vraag): "heel bruikbaar" → "goed bruikbaar", drie keer.
+10. **cilicium** (Handelingen, uitleg bij de tentenmaker): "zo dicht dat er geen regen doorheen kwam" → "zo dicht dat het de regen goed tegenhield".
+11. **zonde** (Woordenboek): "Het oude woord betekent eigenlijk "je doel missen"" → "Het Griekse woord voor zonde, *hamartia*, en het Hebreeuwse *chata* betekenen eigenlijk "je doel missen"".
+12. **kerk/ekklesia** (Woordenboek › Kerk): "Dat betekent letterlijk "de groep die bij elkaar geroepen is" — van *ek* … en *kaleō* …" → "Het woord is gevormd uit *ek* ("uit") en *kaleō* ("roepen"), en betekende "vergadering"." Daarbij *ekklèsia* → *ekklesia*, vier keer.
+13. **Sadduceeën** (Woordenboek): "Hun naam komt van Sadok" → "Hun naam wordt meestal in verband gebracht met Sadok".
+14. **economie** (Woordenboek › Rentmeester): "en daar komt ons woord economie vandaan" → "Van hetzelfde woord komt *oikonomia*, het regelen van het huis, en daaruit is ons woord economie ontstaan."
+15. **apocalyps** (Verborgen Schat, artikel): "het wegtrekken van een sluier, zodat je ziet wat eerst verborgen was" → "zoals wanneer je een sluier wegtrekt en ziet wat eerst verborgen was".
+16. **Vulgaat** (sacramentenpagina, Het huwelijk): "de Latijnse Bijbel" → "de oude Latijnse Bijbel, de Vulgaat".
+
+Daarbij:
+
+- Bij het **Sanhedrin** is het Griekse *synedrion* bewust niet genoemd: het verklaart geen Nederlands woord.
+- **Talita koemi** is de vaste schrijfwijze in de game.
+- Het gedeelde cachenummer in `index.html` is van 324 naar 325 gegaan.
+- **Ronde 2** (de nuances uit de controles) volgt nog.
