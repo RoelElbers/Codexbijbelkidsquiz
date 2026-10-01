@@ -260,3 +260,9 @@ hr {
     outline: 2px solid var(--goud);
     outline-offset: 3px;
 }
+
+/* Ruimte boven een kop als iemand via een anker (#wijding enz.)
+   naar een sectie springt. */
+h2[id], h3[id] {
+    scroll-margin-top: 1.5rem;
+}
