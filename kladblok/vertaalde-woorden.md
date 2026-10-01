@@ -1465,3 +1465,85 @@ Nederlandse woorden waarvan de game de herkomst geeft ("daar komt ons woord … 
 - **Drie manieren van transcriberen.** Grieks staat soms met lengtestreepjes (*tektōn*, *pentēkostē*, *poiēma*, *paidagōgos*, *archōn*), soms zonder (*ekklesia*, *parakletos*, *parousia*, *koinonia*, *episkopos*), en één keer met een accent (*ekklèsia*). Ook *kyriakon* en *kuriakon* staan naast elkaar. Bij een paar woorden staat het Griekse schrift erbij (τέκτων, ἀποκάλυψις, μάρτυς, στέφανος, διάδημα, βάτος, κόρος, ἐκκλησία, κυριακόν), bij de meeste niet.
 - **Taal niet altijd genoemd.** Bij Hosanna, Rabbi, Getsemane, Boanerges, Barnabas, Immanuël, Lazarus en Siloam geeft de game de betekenis, maar niet uit welke taal het woord komt. Bij Abba en Effata gebeurt dat wel, maar alleen in de uitleg bij een andere vraag.
 - **Overlap tussen woordenboek en vragen.** Bij episkopos, ekklesia, kerk, tetrarch, apostel en evangelie geven woordenboek en vragen dezelfde uitleg, soms woordelijk (Opziener in Wie is wie en de uitleg bij Timoteüs & Titus · gevorderd · vraag 15 zijn vrijwel gelijk).
+
+---
+
+# Controles van de woordverklaringen
+
+Elke controle krijgt een eigen sectie, met dezelfde indeling: KLOPT NIET, KLOPT MAAR KAN PRECIEZER, KLOPT, met de grondslag erbij. De inventaris hierboven blijft zoals hij is; correcties gebeuren in de game zelf.
+
+## Controle 1 — Claude Code (1 okt 2026, uit het geheugen, niet nageslagen)
+
+Getoetst aan de standaardwerken zoals ik ze ken: BDAG (Grieks), HALOT en Gesenius (Hebreeuws), Jastrow en Sokoloff (Aramees), Lewis & Short (Latijn), Philippa e.a., *Etymologisch Woordenboek van het Nederlands* (EWN), en het NA28-apparaat voor de tekstvarianten. Die werken zijn bij deze controle níet opengeslagen; elk oordeel is "naar mijn beste weten". Waar ik twijfel, staat dat erbij.
+
+Uitkomst over de 136 woorden: **2 KLOPT NIET**, **26 KLOPT MAAR KAN PRECIEZER**, **108 KLOPT**.
+
+### KLOPT NIET (2)
+
+- **Sanhedrin** — Handelingen · expert · 13: "Deze raad heette in het Grieks het Sanhedrin". In het Grieks van het Nieuwe Testament staat *synedrion*; *Sanhedrin* is het Hebreeuws-Aramese leenwoord daarvan (zo in de Misjna). Het woordenboek heeft het wél goed ("komt van het Griekse *synedrion*: 'samen zitten'"). *Grondslag: BDAG s.v. συνέδριον; Jastrow s.v. סנהדרין.*
+- **zonde** — woordenboek: "Het oude woord betekent eigenlijk 'je doel missen'". Dat geldt niet voor het Nederlandse woord *zonde* (Germaans \*sundjō, "schuld"). "Je doel missen" hoort bij het Griekse *hamartanō*/*hamartia* en het Hebreeuwse *chata*/*chatta't*. Juist dus, mits de taal genoemd wordt. De vraag bij Lucas (gevorderd · 13) is voorzichtiger ("met welk beeld wordt dat oude woord vaak uitgelegd") en kan blijven. *Grondslag: EWN s.v. zonde; BDAG s.v. ἁμαρτάνω; HALOT s.v. חטא.*
+
+### KLOPT, MAAR KAN PRECIEZER (26)
+
+**Grieks**
+
+- **apostolos** — "Griekse werkwoord voor wegsturen" klopt letterlijk (*apostellō*), maar "uitzenden" dekt het beter; "wegsturen" klinkt afwijzend. *BDAG.*
+- **batos / koros** — de inhoud is onzeker. Schattingen voor een bat lopen van ±22 tot ±40 liter (Josephus komt op ±39). Bij Maten staat "Sommige geleerden komen hoger uit", maar de vragen noemen 22 en 220 liter als feit. *Grondslag: Anchor Bible Dictionary, "Weights and Measures".*
+- **ekklesia / ekklèsia** — gangbare transcriptie is *ekklēsia*; *ekklèsia* met accent is geen standaard. "Letterlijk de groep die bij elkaar geroepen is" rekt het woord op: *ek* = "uit", *ekkaleō* = "(burgers) oproepen"; in de tijd van het Nieuwe Testament betekende het gewoon "vergadering". *BDAG.*
+- **kyriakon / kuriakon** — betekenis klopt; *kyriakon* en *kyrios* zijn de gangbaarder schrijfwijzen. *EWN s.v. kerk.*
+- **homoios** — "lijkend op, van dezelfde soort" klopt, maar *homoios* kan ook gewoon "gelijk aan" betekenen. "Klinkt sterker dan Johannes bedoelt" is dus uitleg, geen feit over het woord. *BDAG.*
+- **martys** — betekenis en herkomst van *martelaar* kloppen. Maar bij Antipas (Openbaring 2:13), die gedood werd, zien veel uitleggers juist het begin van de betekenis "martelaar"; "nog in de oude zin" is daarom discutabel. *BDAG s.v. μάρτυς.*
+- **oikonomos → economie** (ook bij Nederlandse herkomst) — *economie* komt van *oikonomia* ("huishouding, beheer"), het verwante zelfstandig naamwoord, niet van *oikonomos* zelf. *EWN.*
+- **politeuma** — "burgerschap" is verdedigbaar; BDAG geeft "staat, burgergemeenschap" (ook een kolonie van burgers in den vreemde), wat bij het beeld van Filippi nog beter past.
+- **pond** — *litra* ≈ 327 gram. Het goede antwoord zegt "ongeveer 300 gram"; beter gelijktrekken met de uitleg.
+- **uitdoven** (*sbennymi*) — "blussen, uitdoven" klopt, maar het woord wordt ook gebruikt voor lampen die vanzelf uitgaan (Matteüs 25:8). Dat het "bewust" gebeurt, komt uit de gebiedende vorm in 1 Tessalonicenzen 5:19, niet uit het woord. *BDAG.*
+
+**Hebreeuws en Aramees**
+
+- **Hosanna** — preciezer: "Red toch!" (*hoshi'a na*, Psalm 118:25). De game noemt de taal niet. *HALOT.*
+- **Maranata** — dubbelzinnig: *marana tha*, "Onze Heer, kom!", of *maran atha*, "onze Heer komt/is gekomen". "Kom, Heer!" volgt de gangbare lezing, maar laat "onze" weg. *BDAG s.v. μαρανα θα.*
+- **Messias** (Marcus · beginner · 10) — het goede antwoord "De beloofde redder" geeft de rol; de letterlijke betekenis "de gezalfde" staat alleen tussen haakjes. *HALOT s.v. משׁיח.*
+- **Talita koemi / koem** — beide schrijfwijzen zijn echte lezingen van Marcus 5:41. De oudste handschriften (Sinaïticus, Vaticanus) en NA28 hebben *koum*, latere *koumi*; de NBV heeft "Talita koem". Kiezen dus, geen fout herstellen. *Grondslag: NA28-apparaat.*
+
+**Namen**
+
+- **Farizeeën (perushim)** en **Sadduceeën (Sadok)** — de gangbare afleidingen, maar niet zeker. Voor de sadduceeën wordt ook *tsaddiqim* ("rechtvaardigen") genoemd. *Anchor Bible Dictionary.*
+- **Hebreeën** — het antwoord zegt waar het woord naar verwijst; de herkomst (van Eber, of van *'ever*, "de overkant") is onzeker en wordt niet gegeven. *HALOT s.v. עברי.*
+- **Petrus** — strikt is *petros* "steen" en *petra* "rots"; in het Koinè-Grieks lopen ze in elkaar over. De Petrus-pagina noemt niet dat Petrus Grieks is. *BDAG.*
+
+**Nederlandse herkomst**
+
+- **el** — *el* betekende oorspronkelijk "onderarm"; *elleboog* is juist van *el* afgeleid. "Daar komt de naam vandaan" (de afstand van elleboog tot vingertoppen) klopt in de kern. *EWN s.v. el, elleboog.*
+- **aarts-**, **priester**, **Pinksteren**, **engel** — allemaal via het (kerk)Latijn binnengekomen. De game slaat die tussenstap over, behalve bij *bisschop*. *EWN.*
+- **penning** — klopt in de kern: in de Statenvertaling is *penning* een algemeen woord voor een munt. De afzonderlijke verzen (Matteüs 5:26 en 10:29; Marcus 12:42, waar de quadrans "oortje" heet) heb ik niet nagelezen.
+
+### KLOPT (108)
+
+**Grieks** (BDAG, tenzij anders vermeld): achrēstos/euchrēstos, alfa en omega, anepsios, apokalypsis, archiereus/archi-, architektōn, assarion, bezonnenheid (*sōphronismos*), brabeuō, broer (in het Hebreeuws *'ach* zeker; in het Grieks vooral via de Septuagint), cheirographon, chrisma, Christus, stephanos/diadema (Trench, *Synonyms*), diakonos, diaspora, didrachme, doulos, episkopos, euangelion (ook het "keizerlijke" gebruik, zoals in de inscriptie van Priëne), hagios, hagnos, hebdomēkonta/duo (Vaticanus 72, Sinaïticus 70: klopt; Genesis 10 in de Septuagint telt 72 volken), hudōr zōn, ichthus, kleinmoedigen (*oligopsychos*), koinonia/koinonoi (Lucas 5:10), kosmos, lepton/lepta, mysterion → sacramentum (Vulgaat, Efeziërs 5:32), ongeregeld (*ataktos*), overste (*chiliarchos*), paidagōgos, parakletos (*paraklētos* is gangbaarder), parousia, pentēkostē, poiēma/poiēsis, polis/archōn, presbyteros/presbyteroi, prosēlytos, stadion (±185 m), synagōgē, tektōn (Justinus, *Dialoog* 88), tetrarch, thriambeuō, wolk (*nephos* voor een menigte, ook klassiek), zeloot.
+
+**Hebreeuws** (HALOT, Gesenius): Amen, bat (maar zie de onzekerheid bij batos), Halleluja (ook "vier keer op één plek", Openbaring 19:1–6), Jom Kipoer, majim chajiem (Jeremia 2:13), qadosj, Rabbi/rabboeni ("Meester" volgt Johannes' eigen uitleg in Johannes 1:38; "mijn meester" is letterlijker; beide kloppen).
+
+**Aramees** (Jastrow, Sokoloff): Abba, Effata.
+
+**Latijn** (Lewis & Short): Caesar/"kaisar", centurio/centum, cilicium, ecclesia → église/iglesia/chiesa, Ite missa est/missa (van *mittere*), pastor, pretorium, sacramentum, sanctus.
+
+**Namen**: Areopagus/Marsheuvel, Babylon als schuilnaam voor Rome, Baptisten (*baptizō*), Barnabas en Boanerges (de betekenis is de eigen uitleg van Lucas en Marcus; de Semitische herkomst erachter is omstreden), Dekapolis, Dode Zee, Epicureeërs, Gennesaret, Getsemane (*gat shemanim*), Immanuël, Kananeeër (*qan'ana*), Kandake (titel van de koningin van Meroë), Kefas, Kinneret (de game zegt zelf "misschien"; de afleiding van "harp" is populair maar onzeker), Lazarus (*El'azar*), Onesimus, Siloam, Stoïcijnen, Tabita/Dorkas, Tiberias.
+
+**Nederlandse herkomst** (EWN): apocalyps, architect, bende, bisschop, keizer, kerk, martelaar, Mis, nachtwaak, pastoor/pastor, pedagoog, poëzie, politiek/politie, sacrament, simonie, sint, stadion, stoïcijns, voorspraak, Wekenfeest, zondebok, zoen/verzoening.
+
+## Beoordeling controle 1 (Roel en Claude in de chat, 1 okt 2026)
+
+Besluiten over de punten uit controle 1. In de game is nog niets aangepast; wat hieronder "in de correctieronde" staat, gebeurt later.
+
+- **Petrus** — niet aanpassen. *Petros*/*petra* ("steen"/"rots") speelt hier niet: Jezus sprak Aramees, en *Kefa* betekent rots. Johannes 1:42 zegt zelf dat Kefas vertaald Petrus is. "Petrus betekent rots" blijft staan.
+- **Batos/koros** — de inhoud is echt onzeker: de archeologie komt op ongeveer 22 liter per bat, Josephus op ongeveer 39 liter. In de correctieronde de vragen zo aanpassen dat ze 22 en 220 liter niet als vast feit noemen.
+- **Ekklesia** — in de correctieronde "betekent letterlijk" vervangen door "het woord is gevormd uit *ek* ('uit') en *kaleō* ('roepen')"; in de tijd van het Nieuwe Testament betekende het gewoon "vergadering".
+- **Maranata** — "Kom, Heer!" blijft te verdedigen (Openbaring 22:20 geeft dezelfde roep in het Grieks: 'Kom, Heer Jezus!'). Bij de correctieronde bekijken of "onze" erbij moet ("Kom, onze Heer!").
+
+## Controle 2 — (nog te doen)
+
+*Ruimte voor een tweede controle door een andere chatbot, met dezelfde indeling.*
+
+## Controle 3 — (nog te doen)
+
+*Ruimte voor een derde controle door een andere chatbot, met dezelfde indeling.*
