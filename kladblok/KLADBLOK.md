@@ -88,7 +88,7 @@ worden bij een volgende wijziging.*
   Weesgegroet.
 - 2026-08-16 — TERUGKEREND CONTROLEPUNT bij een nieuwe paus: het blok "De paus
   van nu" op kerken-katholiek-petrus.html noemt naam, verkiezingsjaar, land en
-  motto, en draagt eronder een .datum-regel "Bijgewerkt in augustus 2026". Bij
+  motto, en draagt eronder een .datum-regel "Bijgewerkt in oktober 2026". Bij
   een pauswissel moeten die vier gegevens én die datumregel mee. Niets in de
   code signaleert dat het verouderd is; het staat er gewoon te verouderen.
 - 2026-08-15 — Beide bedankpagina's werken, maar worden aangeroepen vanaf een
