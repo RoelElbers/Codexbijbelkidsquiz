@@ -150,7 +150,7 @@ const vragenData = {
                 bijbelplaats: "Matteüs 2:1"
             },
             {
-                vraag: "Hoeveel leerlingen (apostelen) koos Jezus uit om Hem te volgen?",
+                vraag: "Hoeveel apostelen koos Jezus uit om Hem te volgen?",
                 antwoorden: ["7", "10", "12", "40"],
                 correct: "12",
                 bijbelplaats: "Matteüs 10:1-4"
