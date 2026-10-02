@@ -221,7 +221,7 @@ const vragenData = {
                 antwoorden: ["Jezus", "Mozes", "Abraham", "Koning David"],
                 correct: "Jezus",
                 bijbelplaats: "Matteüs 2:1",
-                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt waarschijnlijk net niet — geleerden denken een paar jaar eerder, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf zíjn geboorte."
+                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt waarschijnlijk net niet — geleerden denken een paar jaar eerder, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
             },
             {
                 vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
@@ -231,7 +231,7 @@ const vragenData = {
                 uitleg: "Jezus zei tegen hen: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
             },
             {
-                vraag: "Wat zei Jezus toen mensen de kinderen bij Hem wilden weghouden?",
+                vraag: "Wat zei Jezus toen Zijn leerlingen de kinderen bij Hem wilden weghouden?",
                 antwoorden: ["Laat de kinderen bij Mij komen", "Kom morgen maar terug", "Kinderen moeten stil zijn", "Ga maar naar huis"],
                 correct: "Laat de kinderen bij Mij komen",
                 bijbelplaats: "Matteüs 19:13-14"
@@ -254,7 +254,7 @@ const vragenData = {
                 antwoorden: ["Hij laat de negenennegentig achter om dat ene te zoeken", "Hij vergeet dat ene schaap en telt gewoon rustig verder", "Hij koopt een nieuw schaap", "Hij wacht tot het vanzelf terugkomt"],
                 correct: "Hij laat de negenennegentig achter om dat ene te zoeken",
                 bijbelplaats: "Matteüs 18:12-14",
-                uitleg: "Met dit verhaal liet Jezus zien dat God ieder mens belangrijk vindt — juist ook die ene die verdwaald is geraakt."
+                uitleg: "Jezus liet zien dat God ieder mens belangrijk vindt — juist ook die ene die verdwaald is geraakt."
             },
             {
                 vraag: "Wat vertelde de engel aan de vrouwen die op de paasmorgen bij het graf van Jezus kwamen?",
@@ -275,10 +275,10 @@ const vragenData = {
                 bijbelplaats: "Matteüs 5:13"
             },
             {
-                vraag: "Jezus zei tegen Zijn volgelingen: 'Jullie zijn het ___ van de wereld; laat het schijnen voor de mensen.' Wat zei Hij dat ze waren?",
-                antwoorden: ["het licht", "het vuur", "de wind", "het zout"],
+                vraag: "Jezus zei tegen Zijn volgelingen: 'Jullie zijn het ___ van de wereld.' Wat zei Hij dat ze waren?",
+                antwoorden: ["het licht", "het vuur", "de wind", "het water"],
                 correct: "het licht",
-                bijbelplaats: "Matteüs 5:14, 16"
+                bijbelplaats: "Matteüs 5:14"
             },
             {
                 vraag: "Jezus zei tegen de vissers dat ze voortaan 'vissers van mensen' zouden zijn. Wat bedoelde Hij daarmee?",
@@ -288,8 +288,8 @@ const vragenData = {
             },
             {
                 vraag: "Matteüs zat bij het tolhuis toen Jezus hem riep. Wat deed een tollenaar?",
-                antwoorden: ["Hij inde geld voor de heersers en mocht er zelf iets bovenop vragen", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
-                correct: "Hij inde geld voor de heersers en mocht er zelf iets bovenop vragen",
+                antwoorden: ["Hij inde geld voor de heersers en vroeg vaak meer dan mocht", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
+                correct: "Hij inde geld voor de heersers en vroeg vaak meer dan mocht",
                 bijbelplaats: "Matteüs 9:9 · Lucas 3:12-13; 19:8",
                 uitleg: "Een tollenaar kocht het recht om tol en belasting te innen. Hij betaalde de heerser een vast bedrag en mocht houden wat hij daarboven binnenhaalde. Veel tollenaars vroegen daarom meer dan eerlijk was, en dat maakte ze niet geliefd. In Kafarnaüm, waar Matteüs zat, werd de tol geïnd voor Herodes Antipas, de tetrarch van Galilea. In Jericho, waar Zacheüs tollenaar was, ging het geld wel naar de Romeinen, want Judea werd toen rechtstreeks door hen bestuurd."
             }
