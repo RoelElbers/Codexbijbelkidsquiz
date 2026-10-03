@@ -8,18 +8,17 @@ Alleen vastgesteld, niets aangepast in de game.
 
 - Vragen met een uitleg: 185, allemaal in `vragenData` (de Verborgen Schat heeft `reveal`, geen `uitleg`).
 - Daarvan hoogstens 300 tekens: **64**.
-- Daarvan **niet op zichzelf staand: 19** (⚠ hieronder). 11 beginnen met een verwijzing (B), 8 leunen op kennis uit de vraag of het antwoord (L).
-- Op zichzelf staand: **45**.
+- Daarvan **niet op zichzelf staand: 18** (⚠ hieronder). 10 beginnen met een verwijzing (B), 8 leunen op kennis uit de vraag of het antwoord (L).
+- Op zichzelf staand: **46**.
 
 Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die van de platte tekst. Het vraagnummer is de positie in de pool van dat boek en niveau, in de volgorde van `script.js`. Het goede antwoord staat **vet**. De beoordeling "op zichzelf staand" is met de hand gedaan: zou een kind de uitleg begrijpen als het de vraag niet meer voor zich had?
 
-## Niet op zichzelf staand (19)
+## Niet op zichzelf staand (18)
 
 - **#2** Matteüs · beginner · vraag 14 — B: "Jezus zei tegen hen": wie "hen" zijn (Petrus en Andreas) staat alleen in de vraag.
 - **#4** Matteüs · beginner · vraag 18 — B: "Met dit verhaal" verwijst naar de gelijkenis in de vraag.
 - **#5** Matteüs · expert · vraag 14 — B: Begint met het antwoord als uitroep ("Jakob!"); dat werkt alleen direct na de vraag.
 - **#9** Marcus · gevorderd · vraag 6 — B: "Die muntjes" en "haar" verwijzen naar het antwoord en de weduwe uit de vraag.
-- **#11** Marcus · expert · vraag 10 — B: "dit muntje" verwijst naar de vraag; de uitleg noemt niet dat het om de gift van de weduwe gaat.
 - **#13** Lucas · beginner · vraag 5 — L: "zo'n voederbak" en "daarin" veronderstellen het antwoord.
 - **#15** Lucas · expert · vraag 17 — B: "deze maat" verwijst naar het vat uit de vraag.
 - **#16** Johannes · expert · vraag 5 — L: "Elk vat" en "Zes vaten" veronderstellen de vraag; de metreet komt uit het niets.
@@ -127,15 +126,13 @@ Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die v
 
 **Uitleg:** Talita koemi betekent 'Meisje, sta op'. Marcus schrijft vaker een Aramees woord op zoals Jezus het uitsprak, en zet de vertaling er meteen achter — hij schreef voor lezers die die taal niet kenden. Zo doet hij het ook bij effata ('Ga open') en abba ('Vader').
 
-### #11 — Marcus · expert · vraag 10 (207 tekens) ⚠
+### #11 — Marcus · expert · vraag 10 (250 tekens)
 
 **Vraag:** De arme weduwe gooide twee van de allerkleinste muntjes in de offerkist. Hoe heetten die muntjes?
 
 **Antwoorden:** Denariën · **Lepta** · Ponden · Talenten
 
-**Uitleg:** In het Grieks heet dit muntje een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je in Ontdekken bij Geld, onder Grieks geld.
-
-⚠ **Niet op zichzelf staand (B):** "dit muntje" verwijst naar de vraag; de uitleg noemt niet dat het om de gift van de weduwe gaat.
+**Uitleg:** Het muntje dat de arme weduwe gaf, heet in het Grieks een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je in Ontdekken bij Geld, onder Grieks geld.
 
 ### #12 — Marcus · expert · vraag 31 (227 tekens)
 

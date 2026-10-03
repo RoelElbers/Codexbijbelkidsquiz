@@ -1024,7 +1024,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Denariën", "Lepta", "Ponden", "Talenten"],
                 correct: "Lepta",
                 bijbelplaats: "Marcus 12:42",
-                uitleg: "In het Grieks heet dit muntje een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je in Ontdekken bij Geld, onder Grieks geld."
+                uitleg: "Het muntje dat de arme weduwe gaf, heet in het Grieks een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je in Ontdekken bij Geld, onder Grieks geld."
             },
             {
                 vraag: "De Romeinen verdeelden de nacht in 'nachtwaken'. In hoeveel wachten, en hoe lang duurde elk ongeveer?",
