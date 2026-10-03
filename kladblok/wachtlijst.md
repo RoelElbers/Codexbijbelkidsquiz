@@ -100,11 +100,6 @@ elk antwoord herhaald hoeft te worden.*
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
 - **Boek-voor-boek-ronde.** Eerstvolgende: **Romeinen**.
-- **Uitleg bij de weduwe-vraag verwijst naar een kop die niet meer bestaat.**
-  `script.js` r. 1027 eindigt op "lees je bij Geld in de Bijbel". Die kop is op
-  3 oktober 2026 vervallen; het scherm heet "Geld". Zelfde zin in
-  `kladblok/korte-uitleggen.md` r. 136.
-
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar

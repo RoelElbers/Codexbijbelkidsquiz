@@ -133,7 +133,7 @@ Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die v
 
 **Antwoorden:** Denariën · **Lepta** · Ponden · Talenten
 
-**Uitleg:** In het Grieks heet dit muntje een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je bij Geld in de Bijbel.
+**Uitleg:** In het Grieks heet dit muntje een lepton; twee lepta waren samen precies één quadrans. In oudere Nederlandse Bijbels heet het een penning — wat dat woord daar precies aanduidt, lees je in Ontdekken bij Geld, onder Grieks geld.
 
 ⚠ **Niet op zichzelf staand (B):** "dit muntje" verwijst naar de vraag; de uitleg noemt niet dat het om de gift van de weduwe gaat.
 
