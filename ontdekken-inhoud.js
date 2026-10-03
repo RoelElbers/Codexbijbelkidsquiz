@@ -219,20 +219,25 @@ const ONTDEK_WIE_HERODES = [
 const ONTDEK_HOE_INLEIDING = "Sommige maten kennen we vrij precies, andere niet — dan zeggen we dat er eerlijk bij. En oud geld omrekenen naar euro's van nu is eigenlijk niet te doen, want toen was alles anders. Daarom rekenen we vaak in \"daglonen\": wat een gewone arbeider op één dag verdiende.";
 
 const ONTDEK_GELD = [
-    { kop: "Geld in de Bijbel" },
     { noot: "Reken je dit heel ruw om naar Nederland in 2026, met een flinke marge, dan kom je ongeveer op de bedragen hieronder — uitgaand van een dagloon van zo'n 150 à 200 euro. Exacte bedragen zijn het niet, maar ze geven je wel een idee." },
-    { item: "<span class=\"naslag-term\">Romeins geld</span> — het geld van de keizer" },
-    { item: "<span class=\"naslag-term\">Denarie</span> — € 150 à 200, het loon voor één hele dag werken. Naar zilver: ongeveer € 7. Een zilveren muntje van vier gram met het hoofd van de keizer erop. Jezus vroeg om zo'n munt toen Hem gevraagd werd of je belasting moest betalen (Matteüs 22:19). In de gelijkenis van de arbeiders krijgt iedereen er één voor een dag werken (Matteüs 20:2). Kijk eens naar het verschil tussen die twee bedragen: het zilver in de munt is bijna niets waard, maar je verdiende er wél een hele dag mee." },
-    { item: "<span class=\"naslag-term\">As</span> — € 10 à 12, een zestiende dagloon, ongeveer een half uur werken. Voor één as kocht je twee mussen, en tóch vergeet God er geen enkele van (Matteüs 10:29). In het Grieks heet deze munt assarion. In veel Bijbels staat \"stuiver\" of \"duit\"." },
+
+    { kop: "Romeins geld" },
+    { noot: "Het geld van de keizer" },
     { item: "<span class=\"naslag-term\">Quadrans</span> — € 2 à 3, een vierenzestigste dagloon, ongeveer tien minuten werken (Matteüs 5:26)." },
+    { item: "<span class=\"naslag-term\">As</span> — € 10 à 12, een zestiende dagloon, ongeveer een half uur werken. Voor één as kocht je twee mussen, en tóch vergeet God er geen enkele van (Matteüs 10:29). In het Grieks heet deze munt assarion. In veel Bijbels staat \"stuiver\" of \"duit\"." },
+    { item: "<span class=\"naslag-term\">Denarie</span> — € 150 à 200, het loon voor één hele dag werken. Naar zilver: ongeveer € 7. Een zilveren muntje van vier gram met het hoofd van de keizer erop. Jezus vroeg om zo'n munt toen Hem gevraagd werd of je belasting moest betalen (Matteüs 22:19). In de gelijkenis van de arbeiders krijgt iedereen er één voor een dag werken (Matteüs 20:2). Kijk eens naar het verschil tussen die twee bedragen: het zilver in de munt is bijna niets waard, maar je verdiende er wél een hele dag mee." },
+
+    { kop: "Grieks geld" },
+    { noot: "Het geld van de handel" },
     { item: "<span class=\"naslag-term\">Lepton</span> — € 1 à 2, een honderdachtentwintigste dagloon. Het allerkleinste muntje dat er bestond. De arme weduwe gaf er twee, en Jezus zei dat zij het meeste had gegeven (Marcus 12:42, Lucas 21:2). Twee lepta zijn samen precies een quadrans. In oudere Nederlandse Bijbels heet dit muntje een penning. Maar diezelfde Bijbels noemen ook de denarie een penning, en de quadrans, en het muntje waarvoor je twee mussen kocht. Dat komt doordat penning daar geen naam van één munt is, maar gewoon 'geldstuk' betekent — een keuze die vierhonderd jaar geleden goed te begrijpen was, omdat de vertalers de muntnamen gebruikten die hun lezers kenden. In de kanttekeningen leggen ze er netjes bij uit wat elke munt waard was. Alleen wie de kanttekening niet leest, denkt al snel dat het overal om kleingeld gaat." },
-    { item: "<span class=\"naslag-term\">Grieks geld</span> — het geld van de handel" },
     { item: "<span class=\"naslag-term\">Drachme</span> — € 150 à 200, ongeveer één dagloon. Naar zilver: ongeveer € 8. Bijna hetzelfde waard als een denarie. De vrouw die haar tiende drachme kwijtraakt, keert daarvoor haar hele huis om (Lucas 15:8)." },
     { item: "<span class=\"naslag-term\">Didrachme</span> — € 300 à 400, twee daglonen. Naar zilver: ongeveer € 16. Twee drachmen, en precies het bedrag van de tempelbelasting (Matteüs 17:24)." },
     { item: "<span class=\"naslag-term\">Stater</span> — € 600 à 800, vier daglonen. Naar zilver: ongeveer € 30. Petrus vond er een in de bek van een vis, genoeg voor de tempelbelasting van hen beiden (Matteüs 17:27)." },
     { item: "<span class=\"naslag-term\">Pond</span> — € 15.000 à 20.000, honderd daglonen: ruim drie maanden werken. Naar zilver: ongeveer € 800. Tien dienaren krijgen er elk één om mee te handelen (Lucas 19:13). In het Grieks heet dit een mina." },
     { item: "<span class=\"naslag-term\">Talent</span> — € 900.000 à 1,2 miljoen, zesduizend daglonen. Naar zilver: ongeveer € 48.000. De allergrootste geldmaat. Daar zou een arbeider vijftien tot twintig jaar voor moeten werken. Als gewicht aan zilver of goud was een talent ongeveer 33 kilo (van zo'n 20 tot 40 kilo). In de gelijkenis van de onbarmhartige dienaar is iemand tienduizend talenten schuldig (Matteüs 18:24). Dat is met opzet een onmogelijk bedrag: je zou er tweehonderdduizend jaar voor moeten werken." },
-    { item: "<span class=\"naslag-term\">Tempelgeld</span> — geld apart" },
+
+    { kop: "Tempelgeld" },
+    { noot: "Geld apart" },
     { item: "Iedere volwassen man betaalde één keer per jaar een halve sikkel voor de tempel. Die regel staat al in het Oude Testament (Exodus 30:13). In de tijd van Jezus was dat bedrag twee daglonen: € 300 à 400. In het Nieuwe Testament heet die belasting daarom de didrachme — twee drachmen (Matteüs 17:24)." },
     { item: "Maar betalen mocht alleen met één bepaald soort zilvergeld. Pelgrims kwamen met munten uit allerlei landen; daarom zaten er geldwisselaars op het tempelplein, en daarom kon je er niet omheen (Matteüs 21:12)." },
     { item: "Wat de Bijbel er niet bij zegt: met wélk geld er dan wél betaald werd. Archeologen hebben ontdekt dat het meestal zilvergeld uit de stad Tyrus was, omdat dat het zuiverste zilver had. Maar die naam staat niet in de Bijbel zelf. Opvallend: op die munten stond zelf een afbeelding van een heidense god. Het ging dus niet om het plaatje, maar om het zilver." },
