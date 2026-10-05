@@ -10715,6 +10715,7 @@ function maakTerugblik() {
             gegeven: q.gegevenAntwoord,
             correct: q.correct,
             uitleg: q.uitleg,
+            bijbelplaats: q.bijbelplaats,
             sleutel: uitlegSleutel(q.vraag),
             goed: q.gegevenAntwoord === q.correct
         }));
@@ -10738,6 +10739,12 @@ function startTerugblik() {
     } else {
         toonTerugblikOverzicht();
     }
+}
+
+// De bijbelplaats onder het goede antwoord, in dezelfde notatie als in de quiz
+// na het antwoorden. Zonder bijbelplaats vervalt de regel.
+function terugblikBijbelplaatsHtml(bijbelplaats) {
+    return bijbelplaats ? `<div class="bijbelplaats tb-bijbelplaats">Lees het na in: ${bijbelplaats}</div>` : "";
 }
 
 // De uitleg in alinea's, zoals op de Vragen & uitleg-pagina.
@@ -10769,6 +10776,7 @@ function toonTerugblikFout() {
         <div class="tb-antwoord tb-antwoord-goed">
             <span class="tb-label">Het goede antwoord</span>${item.correct}
         </div>
+        ${terugblikBijbelplaatsHtml(item.bijbelplaats)}
         ${terugblikUitlegHtml(item.uitleg)}
         <div class="tb-knoppen">
             <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">Volgende →</button>
@@ -10839,6 +10847,7 @@ function openTerugblikTegel(i) {
         <div class="tb-antwoord tb-antwoord-goed">
             <span class="tb-label">Het goede antwoord</span>${item.correct}
         </div>
+        ${terugblikBijbelplaatsHtml(item.bijbelplaats)}
         ${terugblikUitlegHtml(item.uitleg)}
         <div class="tb-knoppen tb-knoppen-rij">
             <button class="answer-btn tb-knop" onclick="toonTerugblikOverzicht()">← Overzicht</button>
