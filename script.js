@@ -986,14 +986,15 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Marcus opent met een citaat dat hij toeschrijft aan de profeet Jesaja. De regel over de stem die roept in de woestijn komt daar inderdaad vandaan. Maar de regel ervoor — 'Ik zend Mijn bode voor Je uit' — komt uit een ander boek. Uit welk boek komt die regel?",
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
-                bijbelplaats: "Marcus 1:2-3 · Maleachi 3:1 · Jesaja 40:3"
+                bijbelplaats: "Marcus 1:2-3 · Maleachi 3:1 · Exodus 23:20 · Jesaja 40:3",
+                uitleg: "Marcus brengt hier woorden uit verschillende boeken samen. 'Ik zend Mijn bode voor Je uit' komt uit Maleachi, en ook in Exodus belooft God dat Hij een bode voor Zijn volk uit zendt. De stem die roept in de woestijn komt uit Jesaja. Marcus noemt alleen Jesaja, de bekendste van de profeten. In sommige oudere bijbels, zoals de Statenvertaling, staat er 'in de profeten'."
             },
             {
-                vraag: "Welk Aramees woord sprak Jezus uit toen Hij het dochtertje van Jaïrus opwekte uit de dood?",
+                vraag: "Welke Aramese woorden sprak Jezus uit toen Hij het dochtertje van Jaïrus opwekte uit de dood?",
                 antwoorden: ["Korban", "Talita koemi", "Effata", "Maranata"],
                 correct: "Talita koemi",
                 bijbelplaats: "Marcus 5:41",
-                uitleg: "Talita koemi betekent 'Meisje, sta op'. Marcus schrijft vaker een Aramees woord op zoals Jezus het uitsprak, en zet de vertaling er meteen achter — hij schreef voor lezers die die taal niet kenden. Zo doet hij het ook bij effata ('Ga open') en abba ('Vader')."
+                uitleg: "Talita koemi betekent 'Meisje, ik zeg je, sta op'. Marcus schrijft vaker Aramese woorden op zoals Jezus ze uitsprak, en zet de vertaling er meteen achter — hij schreef voor lezers die die taal niet kenden. Zo doet hij het ook bij effata ('Ga open') en abba ('Vader')."
             },
             {
                 vraag: "Welke drie leerlingen nam Jezus mee de berg op bij Zijn verheerlijking, en ook mee naar Getsemane?",
@@ -1025,25 +1026,21 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Vier wachten van elk ongeveer drie uur", "Drie wachten van elk ongeveer vier uur", "Twee wachten van elk ongeveer zes uur", "Zes wachten van elk ongeveer twee uur"],
                 correct: "Vier wachten van elk ongeveer drie uur",
                 bijbelplaats: "Marcus 13:35",
-                uitleg: `De Romeinen verdeelden de nacht — van zonsondergang tot zonsopgang — in vier gelijke stukken, de 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen.
-
-Omdat de nacht in de winter langer is dan in de zomer, duurde een nachtwaak niet altijd even lang: in de winter bijna drieënhalf uur, in de zomer nog geen tweeënhalf. Gemiddeld over het jaar kwam het uit op ongeveer drie uur.
-
-Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waakzaam blijven.`
+                uitleg: "De Romeinen verdeelden de nacht — van zonsondergang tot zonsopgang — in vier gelijke stukken, de 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen.\n\nOmdat de nacht in de winter langer is dan in de zomer, duurde een nachtwaak niet altijd even lang: in de winter bijna drieënhalf uur, in de zomer nog geen tweeënhalf. Gemiddeld over het jaar kwam het uit op ongeveer drie uur.\n\nIn Marcus 13:35 noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waakzaam blijven."
             },
             {
                 vraag: "In de tijd van de Bijbel liep Israël van Dan in het noorden tot Berseba in het zuiden. Hoeveel kilometer was dat ongeveer?",
                 antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
                 correct: "Ongeveer 240 kilometer",
-                bijbelplaats: "1 Koningen 5:5",
-                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Je kon het dus in een paar dagen te voet doorkruisen.\n\nDie uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
+                bijbelplaats: "Rechters 20:1 · 1 Samuel 3:20",
+                uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Die breedte kon je in een paar dagen te voet doorkruisen.\n\nDie uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
             },
             {
-                vraag: "In de Bijbel lezen we dat Jezus soms een hoge berg opging. Wat is de hoogste berg in het land van de Bijbel?",
+                vraag: "Vlak voor de verheerlijking op de berg was Jezus bij Caesarea Filippi, aan de voet van de hoogste berg in de wijde omtrek. Welke berg is dat?",
                 antwoorden: ["De berg Tabor", "De berg Sinaï", "De berg Hermon", "De Olijfberg"],
                 correct: "De berg Hermon",
-                bijbelplaats: "Marcus 9:2",
-                uitleg: "De hoogste berg in het land van de Bijbel is de Hermon, helemaal in het noorden, ongeveer 2.800 meter hoog — zo hoog dat er zelfs sneeuw op ligt. De bergen uit de evangeliën zijn veel lager.\n\nDe berg Tabor, die vaak bij het verhaal van de gedaanteverandering wordt genoemd, is maar ongeveer 575 meter. De Olijfberg bij Jeruzalem, bekend van Palmpasen en de hof van Getsemane, komt tot ongeveer 800 meter boven de zeespiegel, maar dat komt vooral doordat Jeruzalem zelf al hoog in de bergen ligt: boven de stad steekt hij maar zo'n honderd meter uit.\n\nEn de beroemde berg Sinaï, waar Mozes de tien geboden kreeg, is met ongeveer 2.300 meter ook hoog. Wel is niet helemaal zeker welke berg de echte Sinaï is; meestal wordt de Jebel Musa in de Sinaï-woestijn aangewezen. In elk geval ligt die berg niet in Israël zelf, maar ver weg in de woestijn."
+                bijbelplaats: "Marcus 8:27; 9:2",
+                uitleg: "De Hermon is met ongeveer 2.800 meter de hoogste berg van de streek, zo hoog dat er zelfs sneeuw op ligt. Aan zijn voet ligt Caesarea Filippi, waar Petrus zei dat Jezus de Messias is.\n\nOp welke berg de verheerlijking plaatsvond, zegt Marcus niet. Al sinds de vierde eeuw wijst de traditie de berg Tabor aan, een losstaande berg van ongeveer 575 meter. Veel uitleggers denken ook aan de Hermon, omdat Jezus vlak daarvoor aan de voet ervan was."
             },
             {
                 vraag: '"Messias" is Hebreeuws voor "de gezalfde". Welk woord betekent precies hetzelfde, maar dan in het Grieks?',
@@ -1067,15 +1064,14 @@ Later in Marcus noemt Jezus deze vier wachten stuk voor stuk, als beeld voor waa
                 ],
                 correct: "Dat het uit eigen kracht onmogelijk is — alleen bij God is het mogelijk",
                 bijbelplaats: "Marcus 10:25-27",
-                uitleg: `Het is een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: "Wie kan er dan nog gered worden?" Jezus antwoordt: "Bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
-
-En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle macht je uiterste best doet en het dan maar net redt. Het gaat om overgave: je handen openen en het aan God geven. Niemand — rijk of arm — kan zichzelf redden, en dat hoeft ook niet. Gods genade is een geschenk, en dat geschenk ligt klaar voor iedereen die ervoor openstaat. Wat voor jou onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging: je hoeft het niet alleen te doen.`
+                uitleg: "Het is een onmogelijk beeld: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán gewoon niet — en dat is precies de bedoeling. De leerlingen schrikken ervan en vragen: \"Wie kan er dan nog gered worden?\" Jezus antwoordt: \"Bij mensen is dit onmogelijk, maar bij God is alles mogelijk.\"\n\nEn juist daar zit het hoopvolle. Niemand — rijk of arm — kan zichzelf redden. Maar wat voor mensen onmogelijk is, maakt God mogelijk. Het is dus geen sombere boodschap, maar een uitnodiging om op God te vertrouwen."
             },
             {
                 vraag: "Bij Jezus' intocht in Jeruzalem roepen de mensen \"Hosanna!\". Wat riepen ze daarmee eigenlijk?",
                 antwoorden: ["Red ons", "Vrede zij met jou", "Leve de koning", "Dank aan God"],
                 correct: "Red ons",
-                bijbelplaats: "Marcus 11:9"
+                bijbelplaats: "Marcus 11:9 · Psalm 118:25",
+                uitleg: "Hosanna is een Hebreeuws woord uit Psalm 118 en betekent letterlijk 'red toch'. In de tijd van Jezus riep men het ook als feestelijke begroeting, om God te loven. Maar eigenlijk is het een gebed om redding."
             },
             {
                 vraag: "Jakobus en Johannes kregen van Jezus de bijnaam Boanerges. Marcus vertelt erbij wat dat betekent. Wat is het?",
@@ -1100,55 +1096,56 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
                 antwoorden: ["Bij zonsondergang, dus de avond hoorde al bij de volgende dag", "Om middernacht, net als bij ons", "Bij zonsopgang, als het licht werd", "Om twaalf uur 's middags"],
                 correct: "Bij zonsondergang, dus de avond hoorde al bij de volgende dag",
                 bijbelplaats: "Marcus 15:42",
-                uitleg: "Dat verklaart de haast rond de begrafenis van Jezus. Hij stierf op vrijdagmiddag, en zodra de zon onderging begon de sabbat — dan mocht er niet meer gewerkt worden. Jozef van Arimatea had dus maar een paar uur. Om diezelfde reden kwamen de vrouwen pas zondagochtend terug met specerijen: eerder konden ze niet."
+                uitleg: "Dat verklaart de haast rond de begrafenis van Jezus. Hij stierf op vrijdagmiddag, en zodra de zon onderging begon de sabbat — dan mocht er niet meer gewerkt worden. Jozef van Arimatea had dus maar een paar uur. Ook de vrouwen moesten wachten tot de sabbat voorbij was; vroeg op zondagmorgen gingen zij naar het graf."
             },
             {
                 vraag: "De genezen man ging het verhaal vertellen in \"Dekapolis\". Wat was dat?",
-                antwoorden: ["Een gebied met tien Griekse steden ten oosten van het meer van Galilea", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
-                correct: "Een gebied met tien Griekse steden ten oosten van het meer van Galilea",
-                bijbelplaats: "Marcus 5:20",
-                uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden ten oosten en zuiden van het meer van Galilea, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom er in dat gebied varkens werden gehouden, wat in Joods gebied ondenkbaar was.\n\nDe man die door Jezus was genezen ging dus niet naar zijn eigen volk om het te vertellen, maar naar tien Griekse steden — hij was daarmee de eerste die het nieuws buiten Israël bracht."
+                antwoorden: ["Een gebied met tien Griekse steden, de meeste ten oosten van het meer van Galilea en de Jordaan", "De tiende wijk van Jeruzalem", "Een groep van tien dorpen rond Nazaret", "Het gebied waar tien stammen van Israël woonden"],
+                correct: "Een gebied met tien Griekse steden, de meeste ten oosten van het meer van Galilea en de Jordaan",
+                bijbelplaats: "Marcus 5:19-20",
+                uitleg: "Dekapolis betekent letterlijk tien steden. Het was een groep Griekse steden, de meeste ten oosten van het meer van Galilea en de Jordaan, gesticht in de eeuwen vóór Jezus. Er woonden vooral niet-Joden, met Griekse tempels, theaters en badhuizen. Dat verklaart ook waarom daar varkens werden gehouden; Joden deden dat niet, want varkens waren voor hen onrein.\n\nDe man kwam zelf uit dat gebied. Jezus stuurde hem terug naar huis, naar zijn eigen mensen, om te vertellen wat God voor hem had gedaan. Zo werd het nieuws over Jezus verteld in een streek waar vooral niet-Joden woonden."
             },
             {
                 vraag: "Jezus reisde naar het gebied van Tyrus en Sidon. Wat voor gebied was dat?",
                 antwoorden: ["Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden", "Twee dorpen vlak bij Nazaret", "Het bergland waar de Samaritanen woonden", "Twee Romeinse legerkampen in de woestijn"],
                 correct: "Havensteden aan de kust, buiten Israël, waar vooral niet-Joden woonden",
                 bijbelplaats: "Marcus 7:24",
-                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed.\n\nDat Jezus juist daarheen ging, is dus geen toevallige omweg: het is het gebied waar een Joodse leraar niet werd verwacht. En het is daar dat de Syro-Fenicische vrouw Hem aanspreekt over de kruimels onder de tafel."
+                uitleg: "Twee oude havensteden aan de kust van het huidige Libanon, buiten Israël. Ze leefden van de zeehandel en van purperverf, gewonnen uit zeeslakken — vandaar dat purper zo duur was. In het Oude Testament komen ze vaak voor als het toonbeeld van rijkdom en hoogmoed.\n\nDaarmee kwam Jezus in een gebied waar een Joodse leraar niet werd verwacht. Marcus vertelt dat Hij daar onopgemerkt wilde blijven, maar dat lukte niet: juist daar spreekt de Syro-Fenicische vrouw Hem aan over de kruimels onder de tafel."
             },
             {
-                vraag: "Tijdens de storm lag Jezus achterin de boot te slapen op een kussen. Wat was dat voor plek?",
+                vraag: "Tijdens de storm lag Jezus in de boot te slapen. Waar lag Hij?",
                 antwoorden: ["Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten", "De ruimte onder het dek, waar de lading werd bewaard", "Een net dat achterin was opgehangen om op te liggen", "De voorplecht, waar het droogst was"],
                 correct: "Het verhoogde achterdek, waar de stuurman zat en waar een kussen lag om op te zitten",
                 bijbelplaats: "Marcus 4:38",
-                uitleg: "Een vissersboot op het meer van Galilea was zo'n acht meter lang, met een klein verhoogd dek achterin. Daar zat de stuurman, en daar lag een leren kussen om op te zitten of tegenaan te leunen. Marcus is de enige evangelist die dat kussen noemt. Papias, een bisschop uit de tweede eeuw, schrijft dat Marcus opschreef wat Petrus vertelde — en Petrus was die nacht wél in de boot."
+                uitleg: "In 1986 werd in het meer van Galilea een vissersboot uit de tijd van Jezus gevonden, ruim acht meter lang. Zo'n boot had achterin een klein dek waar de stuurman zat; daar lag vermoedelijk ook het kussen. Volgens Papias, een bisschop uit de tweede eeuw, schreef Marcus op wat Petrus vertelde. Zo'n klein detail als dat kussen kan goed afkomstig zijn van iemand die er zelf bij was."
             },
             {
                 vraag: "Op het meer van Galilea stak plotseling een zware storm op. Hoe kon dat zo snel gaan?",
                 antwoorden: ["Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden", "Er lopen warme bronnen onder het meer die het water doen koken", "Het meer staat in verbinding met de zee, waardoor er vloedgolven komen", "De storm kwam altijd rond dezelfde tijd van het jaar"],
                 correct: "Het meer ligt diep tussen de heuvels, en koude wind valt daar ineens naar beneden",
                 bijbelplaats: "Marcus 4:37",
-                uitleg: "Wind ontstaat doordat warme en koude lucht op elkaar botsen. Warme lucht is licht en stijgt op, koude lucht is zwaar en zakt naar beneden. Waar die twee elkaar tegenkomen gaat de lucht bewegen, en hoe groter het verschil, hoe harder het waait.\n\nBij het meer van Galilea komt dat verschil bijna dagelijks terug. Het meer ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels, en boven het water hangt warme lucht. Waait er over de bergen koude lucht aan, dan stort die de kom in, duwt de warme lucht omhoog en jaagt het water op. Bij ons ontstaat op dezelfde manier een onweersbui, als een koufront over warme lucht schuift. In die smalle kom gaat het alleen veel sneller: binnen een half uur kan een spiegelglad meer veranderen in golven van meer dan een meter."
+                uitleg: "Het meer van Galilea ligt ruim tweehonderd meter onder zeeniveau, in een kom tussen hoge heuvels, en boven het water is de lucht vaak warm. Koude lucht is zwaarder dan warme. Komt er vanaf de hoogvlakten eromheen koelere lucht aan, dan stroomt die als een waterval de kom in en jaagt het water op. Zo kan een spiegelglad meer in korte tijd veranderen in een woeste watervlakte met hoge golven."
             },
             {
                 vraag: "Vier mannen braken het dak open om een verlamde bij Jezus te brengen. Hoe kon dat zomaar?",
                 antwoorden: ["Daken waren plat, van balken met takken en aangestampte leem ertussen", "Daken waren van dunne planken die je opzij kon schuiven", "Er zat altijd een luik in, om lucht binnen te laten", "Het huis was nog in aanbouw en had nog geen echt dak"],
                 correct: "Daken waren plat, van balken met takken en aangestampte leem ertussen",
                 bijbelplaats: "Marcus 2:4",
-                uitleg: "Een gewoon huis had een plat dak van houten balken, met daaroverheen riet, takken en een laag aangestampte leem. Je kwam er via een trap aan de buitenkant, en je gebruikte het dak om te slapen in de zomer of om vruchten te drogen. Zo'n dak openbreken was dus geen sloopwerk, maar het moest daarna wel opnieuw dichtgemaakt worden — Marcus vertelt niet voor niets dat het huis vol stond."
+                uitleg: "Een gewoon huis had meestal een plat dak van houten balken, met daaroverheen riet, takken en een laag aangestampte leem. Je kwam er via een trap aan de buitenkant, en je gebruikte het dak om te slapen in de zomer of om vruchten te drogen. Zo'n dak openbreken was flink werk, maar het kon, en daarna kon het weer worden hersteld. Jezus zag in wat de vier mannen deden hoeveel vertrouwen ze hadden."
             },
             {
                 vraag: "In de tempel joeg Jezus de geldwisselaars weg. Wat deden die daar?",
                 antwoorden: ["Zij wisselden geld om in de munt voor de tempelbelasting", "Zij leenden geld uit aan pelgrims die te weinig hadden meegenomen", "Zij bewaarden het geld van rijke families in de tempelkluis", "Zij telden de opbrengst van de offerkisten"],
                 correct: "Zij wisselden geld om in de munt voor de tempelbelasting",
-                bijbelplaats: "Marcus 11:15",
-                uitleg: "Pelgrims kwamen uit het hele Romeinse Rijk naar Jeruzalem, met allerlei munten op zak. De tempelbelasting moest met zilvergeld uit de stad Tyrus betaald worden. Vaak hoor je dat Romeinse munten niet mochten omdat de keizer erop stond, maar op de munten uit Tyrus stond zelf een heidense god. Het ging dus om het zuivere zilver, niet om het plaatje."
+                bijbelplaats: "Marcus 11:15 · Exodus 30:13",
+                uitleg: "Pelgrims kwamen uit het hele Romeinse Rijk naar Jeruzalem, met allerlei munten op zak. Volgens de Joodse voorschriften moest de tempelbelasting met zilvergeld uit de stad Tyrus betaald worden. Vaak hoor je dat Romeinse munten niet mochten omdat de keizer erop stond, maar op de munten uit Tyrus stond zelf een heidense god. Het ging dus om het zuivere zilver, niet om het plaatje."
             },
             {
                 vraag: "Jezus zegt dat de tempel een huis van gebed moet zijn voor alle volken. In welk deel van de tempel stonden de handelaars?",
                 antwoorden: ["In het buitenste plein, het enige deel waar niet-Joden mochten komen", "In het heiligdom zelf, vlak bij het altaar", "In de zuilengang van de hogepriester", "Op het dak, waar veel ruimte was"],
                 correct: "In het buitenste plein, het enige deel waar niet-Joden mochten komen",
-                bijbelplaats: "Marcus 11:17"
+                bijbelplaats: "Marcus 11:17",
+                uitleg: "Marcus noemt de plek zelf niet, maar de handel vond plaats op het grote buitenste plein van de tempel. Dat was het enige deel waar ook niet-Joden mochten komen om te bidden. Daarom zegt Jezus dat de tempel een huis van gebed moet zijn voor alle volken: juist hún plek was een markt geworden."
             },
             {
                 vraag: "Een niet-Joodse vrouw vroeg Jezus haar dochter te genezen. Zij zei dat zelfs de honden onder de tafel de kruimels eten. Wat bedoelde ze daarmee?",
@@ -1158,16 +1155,16 @@ En juist daar zit het mooie en hoopvolle. Het gaat er níet om dat je uit alle m
             },
             {
                 vraag: "De hogepriester scheurde zijn kleren toen hij Jezus hoorde. Wat betekende dat gebaar?",
-                antwoorden: ["Diepe verontwaardiging of verdriet, zichtbaar voor iedereen", "Dat hij zijn ambt neerlegde en wegging", "Dat hij het te warm had in de rechtszaal", "Dat hij de wet niet langer wilde volgen"],
-                correct: "Diepe verontwaardiging of verdriet, zichtbaar voor iedereen",
-                bijbelplaats: "Marcus 14:63"
+                antwoorden: ["Dat hij vond dat Jezus God had gelasterd: een teken van diepe verontwaardiging", "Dat hij zijn ambt neerlegde en wegging", "Dat hij het te warm had in de rechtszaal", "Dat hij de wet niet langer wilde volgen"],
+                correct: "Dat hij vond dat Jezus God had gelasterd: een teken van diepe verontwaardiging",
+                bijbelplaats: "Marcus 14:63-64"
             },
             {
                 vraag: "Aan het kruis kreeg Jezus zure wijn aangeboden op een spons. Wat was dat voor drank?",
                 antwoorden: ["Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst", "Wijn die bedorven was en daarom werd weggegooid", "Wijn uit de tempel, die alleen de priesters mochten drinken", "Een dure wijn die een rijke voorbijganger had meegebracht"],
                 correct: "Goedkope wijn met water, wat de soldaten zelf dronken tegen de dorst",
-                bijbelplaats: "Marcus 15:36",
-                uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Het was dus geen pesterij: iemand deelde wat hij zelf bij zich had. Eerder had Jezus wijn met mirre geweigerd — dat was wél bedoeld als verdoving."
+                bijbelplaats: "Marcus 15:23, 36",
+                uitleg: "Soldaten dronken posca, verdunde wijn die zuur smaakte maar goed de dorst leste. Marcus vertelt dat iemand een spons in die zure wijn doopte en Jezus te drinken gaf. Eerder had Jezus wijn met mirre geweigerd. Waarom die werd aangeboden, zegt Marcus niet; vaak wordt gedacht dat hij de pijn moest verzachten."
             }
         ]
     },
