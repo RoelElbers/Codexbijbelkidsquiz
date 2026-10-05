@@ -95,8 +95,12 @@ images/**/*.png
 #                                          als "images/wolk" + N + ".png"; N komt
 #                                          uit WOLKEN_CONFIG (1 t/m 5) en uit het
 #                                          afstelpaneel (lus n = 1..5).
+#   og-image.png                           index.html, og:image (deelafbeelding;
+#                                          niet door het spel geladen maar door
+#                                          sociale media, dus wél publiceren)
 # Wijzigt een van die plekken, pas dan ook deze lijst aan.
 !images/wolk[1-5].png
 !images/startschermzonderwolken.png
 !images/voorgrond_scherm2_transparante_lucht.png
 !images/voorgrond_transparante_lucht.png
+!images/og-image.png
