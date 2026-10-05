@@ -8155,6 +8155,11 @@ function checkAntwoord(antwoord) {
     const alGescoord = beantwoordeVragen.has(huidigeVraag);
     beantwoordeVragen.add(huidigeVraag);
 
+    // Het eerste antwoord ook op de vraag zelf bewaren, voor de terugblik na de
+    // ronde. `vragen` bestaat uit kopieën die bij elke ronde opnieuw gemaakt
+    // worden, dus dit hoeft nergens gewist te worden en raakt vragenData niet.
+    if (!alGescoord) huidig.gegevenAntwoord = antwoord;
+
     let melding;
     if (antwoord === huidig.correct) {
         melding = "✅ Goed gedaan!";
@@ -10617,6 +10622,9 @@ function eindScherm() {
 
     const titel = alleGoed ? "Quiz voltooid!" : "Bijna gelukt!";
 
+    // Terugblik met uitleg na de ronde (zie startTerugblik). null = niets te tonen.
+    terugblik = maakTerugblik();
+
     const scoreRegel = `Je had er ${score} van de ${vragen.length} goed.`;
 
     const xpRegel = `Je hebt dit level ${score * 100} XP verdiend.`;
@@ -10643,10 +10651,205 @@ function eindScherm() {
 
         <p class="quiz-question">${slotRegel}</p>
 
-        <button class="answer-btn" onclick="terugNaarStartscherm()">
-            Terug naar startscherm
-        </button>
+        ${terugblik
+            ? `<button class="answer-btn" onclick="startTerugblik()">Verder</button>`
+            : `<button class="answer-btn" onclick="terugNaarStartscherm()">Terug naar startscherm</button>`}
     `;
+}
+
+// --- Terugblik na de ronde ----------------------------------------------------
+// Na het eindscherm van een meetellende ronde (boekquiz of schatkist; niet de
+// oefenmodus en niet de Verborgen Schat) kan de speler de uitleg lezen die in
+// de quiz zelf bewust niet getoond wordt. Alleen vragen MET uitleg doen mee.
+//
+// Deel 1: elke fout beantwoorde vraag, één pagina per vraag, alleen "Volgende".
+//         Bewust geen knop om dit deel over te slaan: het goede antwoord komt
+//         altijd langs.
+// Deel 2: tegels voor de goed beantwoorde vragen. Al gelezen uitleg staat er
+//         standaard niet bij; een knop haalt die erbij. "Klaar" sluit af.
+// Een leeg deel wordt overgeslagen; zijn beide leeg, dan is er geen terugblik
+// en houdt het eindscherm zijn gewone knop terug naar het startscherm.
+//
+// Wat gelezen is, wordt per speler bewaard onder speler_<id>_uitleg_gelezen.
+// Vragen hebben geen eigen id; de sleutel is een korte hash van de vraagtekst
+// (dezelfde herkenning als het ontdubbelen in kiesWillekeurigeVragen). Wordt
+// een vraagtekst later herschreven, dan telt die uitleg weer als nieuw.
+// Lezen levert bewust geen punten of andere beloning op.
+
+let terugblik = null;
+
+function uitlegSleutel(vraagTekst) {
+    // FNV-1a, 32 bits: kort, stabiel en ruim uniek genoeg voor ~1000 vragen.
+    let h = 0x811c9dc5;
+    for (let i = 0; i < vraagTekst.length; i++) {
+        h ^= vraagTekst.charCodeAt(i);
+        h = Math.imul(h, 0x01000193) >>> 0;
+    }
+    return h.toString(36);
+}
+
+function leesGelezenUitleg() {
+    try {
+        const lijst = JSON.parse(localStorage.getItem(profielSleutel("uitleg_gelezen")));
+        return new Set(Array.isArray(lijst) ? lijst : []);
+    } catch (e) {
+        return new Set();
+    }
+}
+
+function markeerUitlegGelezen(sleutel) {
+    const gelezen = leesGelezenUitleg();
+    if (gelezen.has(sleutel)) return;
+    gelezen.add(sleutel);
+    localStorage.setItem(profielSleutel("uitleg_gelezen"), JSON.stringify([...gelezen]));
+}
+
+// Stelt de terugblik voor de zojuist gespeelde ronde samen. Geeft null terug
+// als er niets te tonen is.
+function maakTerugblik() {
+    const gelezen = leesGelezenUitleg();
+    const metUitleg = vragen
+        .filter((q) => q.uitleg && q.gegevenAntwoord !== undefined)
+        .map((q) => ({
+            vraag: q.vraag,
+            gegeven: q.gegevenAntwoord,
+            correct: q.correct,
+            uitleg: q.uitleg,
+            sleutel: uitlegSleutel(q.vraag),
+            goed: q.gegevenAntwoord === q.correct
+        }));
+    metUitleg.forEach((item) => { item.alGelezen = gelezen.has(item.sleutel); });
+
+    const fout = metUitleg.filter((item) => !item.goed);
+    const goed = metUitleg.filter((item) => item.goed);
+    // Of een tegel standaard zichtbaar is, hangt af van de stand bij het begin
+    // van de terugblik (alGelezen). Een tegel die je nu opent, blijft dus in
+    // het overzicht staan, met een vinkje.
+    const heeftNieuweTegels = goed.some((item) => !item.alGelezen);
+
+    if (fout.length === 0 && !heeftNieuweTegels) return null;
+    return { fout, goed, heeftNieuweTegels, foutIndex: 0, toonGelezen: false };
+}
+
+function startTerugblik() {
+    if (!terugblik) { terugNaarStartscherm(); return; }
+    if (terugblik.fout.length > 0) {
+        toonTerugblikFout();
+    } else {
+        toonTerugblikOverzicht();
+    }
+}
+
+// De uitleg in alinea's, zoals op de Vragen & uitleg-pagina.
+function terugblikUitlegHtml(uitleg) {
+    const alineas = String(uitleg).split(/\n\s*\n/).filter((a) => a.trim() !== "");
+    return `<div class="uitleg tb-uitleg">` + alineas.map((a) => `<p>${a}</p>`).join("") + `</div>`;
+}
+
+function toonTerugblikPagina(html) {
+    const quizBox = document.querySelector("#quiz-scherm .quiz-box");
+    if (!quizBox) return;
+    quizBox.innerHTML = html;
+    quizBox.scrollTop = 0;
+}
+
+// Deel 1: één fout beantwoorde vraag.
+function toonTerugblikFout() {
+    const nr = terugblik.foutIndex;
+    const item = terugblik.fout[nr];
+    markeerUitlegGelezen(item.sleutel);
+
+    toonTerugblikPagina(`
+        <h2 class="quiz-title">Terugblik</h2>
+        <p class="tb-stap">Fout beantwoord · ${nr + 1} van ${terugblik.fout.length}</p>
+        <p class="tb-vraag">${item.vraag}</p>
+        <div class="tb-antwoord tb-antwoord-fout">
+            <span class="tb-label">Jouw antwoord</span>${item.gegeven}
+        </div>
+        <div class="tb-antwoord tb-antwoord-goed">
+            <span class="tb-label">Het goede antwoord</span>${item.correct}
+        </div>
+        ${terugblikUitlegHtml(item.uitleg)}
+        <div class="tb-knoppen">
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">Volgende →</button>
+        </div>
+    `);
+}
+
+function terugblikFoutVolgende() {
+    terugblik.foutIndex++;
+    if (terugblik.foutIndex < terugblik.fout.length) {
+        toonTerugblikFout();
+    } else if (terugblik.heeftNieuweTegels) {
+        toonTerugblikOverzicht();
+    } else {
+        sluitTerugblik();
+    }
+}
+
+// De tegels die nu in het overzicht staan, in vaste volgorde.
+function terugblikTegels() {
+    return terugblik.goed.filter((item) => terugblik.toonGelezen || !item.alGelezen);
+}
+
+// Deel 2: het overzicht.
+function toonTerugblikOverzicht() {
+    const gelezen = leesGelezenUitleg();
+    const tegels = terugblikTegels().map((item, i) => {
+        const merk = gelezen.has(item.sleutel)
+            ? `<span class="tb-merk tb-merk-gelezen" aria-label="gelezen">✓</span>`
+            : `<span class="tb-merk tb-merk-nieuw">nieuw</span>`;
+        return `<button type="button" class="tb-tegel" onclick="openTerugblikTegel(${i})">${merk}<span class="tb-tegel-vraag">${item.vraag}</span></button>`;
+    }).join("");
+
+    // De wisselknop alleen als er eerder gelezen uitleg is om bij te halen.
+    const heeftGelezen = terugblik.goed.some((item) => item.alGelezen);
+    const wissel = heeftGelezen
+        ? `<button class="answer-btn tb-knop" onclick="wisselTerugblikGelezen()">${terugblik.toonGelezen ? "Verberg wat ik al gelezen heb" : "Toon ook wat ik al gelezen heb"}</button>`
+        : "";
+
+    toonTerugblikPagina(`
+        <h2 class="quiz-title">Terugblik</h2>
+        <p class="tb-stap">Bij deze vragen hoort uitleg. Tik op een vraag om die te lezen.</p>
+        <div class="tb-tegels">${tegels}</div>
+        <div class="tb-knoppen">
+            ${wissel}
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="sluitTerugblik()">Klaar</button>
+        </div>
+    `);
+}
+
+function wisselTerugblikGelezen() {
+    terugblik.toonGelezen = !terugblik.toonGelezen;
+    toonTerugblikOverzicht();
+}
+
+// Uitleg van één tegel; "Volgende" opent de volgende tegel uit het overzicht,
+// na de laatste is de terugblik klaar.
+function openTerugblikTegel(i) {
+    const tegels = terugblikTegels();
+    const item = tegels[i];
+    if (!item) { sluitTerugblik(); return; }
+    markeerUitlegGelezen(item.sleutel);
+
+    toonTerugblikPagina(`
+        <h2 class="quiz-title">Terugblik</h2>
+        <p class="tb-stap">Goed beantwoord · ${i + 1} van ${tegels.length}</p>
+        <p class="tb-vraag">${item.vraag}</p>
+        <div class="tb-antwoord tb-antwoord-goed">
+            <span class="tb-label">Het goede antwoord</span>${item.correct}
+        </div>
+        ${terugblikUitlegHtml(item.uitleg)}
+        <div class="tb-knoppen tb-knoppen-rij">
+            <button class="answer-btn tb-knop" onclick="toonTerugblikOverzicht()">← Overzicht</button>
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="openTerugblikTegel(${i + 1})">Volgende →</button>
+        </div>
+    `);
+}
+
+function sluitTerugblik() {
+    terugblik = null;
+    terugNaarStartscherm();
 }
 
 function updateXPBalk() {
