@@ -10712,7 +10712,7 @@ function maakTerugblik() {
     const metUitleg = vragen
         .filter((q) => q.uitleg && q.gegevenAntwoord !== undefined)
         .map((q) => ({
-            vraag: q.vraag,
+            vraagTekst: q.vraag,
             gegeven: q.gegevenAntwoord,
             correct: q.correct,
             uitleg: q.uitleg,
@@ -10770,7 +10770,7 @@ function toonTerugblikFout() {
     toonTerugblikPagina(`
         <h2 class="quiz-title">Terugblik</h2>
         <p class="tb-stap">Fout beantwoord · ${nr + 1} van ${terugblik.fout.length}</p>
-        <p class="tb-vraag">${item.vraag}</p>
+        <p class="tb-vraag">${item.vraagTekst}</p>
         <div class="tb-antwoord tb-antwoord-fout">
             <span class="tb-label">Jouw antwoord</span>${item.gegeven}
         </div>
@@ -10808,7 +10808,7 @@ function toonTerugblikOverzicht() {
         const merk = gelezen.has(item.sleutel)
             ? `<span class="tb-merk tb-merk-gelezen" aria-label="gelezen">✓</span>`
             : `<span class="tb-merk tb-merk-nieuw">nieuw</span>`;
-        return `<button type="button" class="tb-tegel" onclick="openTerugblikTegel(${i})">${merk}<span class="tb-tegel-vraag">${item.vraag}</span></button>`;
+        return `<button type="button" class="tb-tegel" onclick="openTerugblikTegel(${i})">${merk}<span class="tb-tegel-vraag">${item.vraagTekst}</span></button>`;
     }).join("");
 
     // De wisselknop alleen als er eerder gelezen uitleg is om bij te halen.
@@ -10844,7 +10844,7 @@ function openTerugblikTegel(i) {
     toonTerugblikPagina(`
         <h2 class="quiz-title">Terugblik</h2>
         <p class="tb-stap">Goed beantwoord · ${i + 1} van ${tegels.length}</p>
-        <p class="tb-vraag">${item.vraag}</p>
+        <p class="tb-vraag">${item.vraagTekst}</p>
         <div class="tb-antwoord tb-antwoord-goed">
             <span class="tb-label">Het goede antwoord</span>${item.correct}
         </div>
