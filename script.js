@@ -733,8 +733,8 @@ const vragenData = {
                 vraag: "Op welk dier reed Jezus toen Hij Jeruzalem binnenkwam?",
                 antwoorden: ["Een muildier", "Een kameel", "Een veulen van een ezel", "Een groot wit strijdpaard"],
                 correct: "Een veulen van een ezel",
-                bijbelplaats: "Marcus 11:7",
-                uitleg: "Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel — een teken van vrede. Zo liet Hij zien wat voor koning Hij wilde zijn."
+                bijbelplaats: "Marcus 11:7 · Johannes 12:14-15",
+                uitleg: "Marcus spreekt alleen van een veulen; dat het een jonge ezel was, lezen we bij Matteüs en Johannes. Een koning die ten oorlog trok kwam meestal op een paard. Jezus koos bewust een ezel, zoals de profeet Zacharia had aangekondigd: een nederige koning die vrede brengt. Zo liet Hij zien wat voor koning Hij wilde zijn."
             },
             {
                 vraag: "Wat deed Jezus kort na Zijn intocht in de tempel van Jeruzalem, waardoor er veel ophef ontstond?",
@@ -768,20 +768,20 @@ const vragenData = {
             },
             {
                 vraag: 'Johannes de Doper riep de mensen op tot "bekering". Wat betekent dat?',
-                antwoorden: ["Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen", "Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
-                correct: "Je leven omdraaien: stoppen met het verkeerde en het goede gaan doen",
+                antwoorden: ["Je omkeren naar God: stoppen met het verkeerde en een nieuwe weg inslaan", "Jezelf onderdompelen in de rivier en daarna nooit meer iets verkeerds doen", "Al je geld weggeven aan de tempel", "Naar een ander land verhuizen"],
+                correct: "Je omkeren naar God: stoppen met het verkeerde en een nieuwe weg inslaan",
                 bijbelplaats: "Marcus 1:4"
             },
             {
                 vraag: 'Jezus sprak heel vaak over het "koninkrijk van God". Wat bedoelde Hij daarmee?',
-                antwoorden: ["Het land Israël op de kaart", "Dat mensen met elkaar omgaan zoals God het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
-                correct: "Dat mensen met elkaar omgaan zoals God het bedoeld heeft",
+                antwoorden: ["Het land Israël op de kaart", "Dat God als koning regeert, en mensen gaan leven zoals Hij het bedoeld heeft", "Het paleis van koning Herodes", "Een groot en machtig koninkrijk dat Jezus met een sterk leger zou veroveren op de Romeinen"],
+                correct: "Dat God als koning regeert, en mensen gaan leven zoals Hij het bedoeld heeft",
                 bijbelplaats: "Marcus 1:15"
             },
             {
                 vraag: 'Wat is een "wonder" in de Bijbel?',
-                antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
-                correct: "Iets bijzonders dat je niet gewoon kunt verklaren, en dat Gods kracht laat zien",
+                antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Een bijzondere gebeurtenis die je niet gewoon kunt verklaren, en die Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
+                correct: "Een bijzondere gebeurtenis die je niet gewoon kunt verklaren, en die Gods kracht laat zien",
                 bijbelplaats: "Marcus 4:39"
             },
             {
@@ -794,7 +794,7 @@ const vragenData = {
                 vraag: "Bij de doop van Jezus daalde de Heilige Geest op Hem neer. In de gedaante van welk dier?",
                 antwoorden: ["Een arend", "Een duif", "Een gans", "Een mus"],
                 correct: "Een duif",
-                bijbelplaats: "Marcus 1:10"
+                bijbelplaats: "Marcus 1:10 · Lucas 3:22"
             },
             {
                 vraag: "Welke gelijkenis vertelde Jezus over een man die zaad zaaide op vier verschillende soorten grond?",
@@ -839,7 +839,7 @@ const vragenData = {
                 antwoorden: ["Ze bracht een duif als offer", "Ze gaf twee kleine muntjes, alles wat ze had", "Ze zong vaak mooie liederen in de tempel", "Ze maakte de tempel schoon"],
                 correct: "Ze gaf twee kleine muntjes, alles wat ze had",
                 bijbelplaats: "Marcus 12:41-44",
-                uitleg: "Die muntjes heetten lepta, en ze waren samen maar heel weinig waard — omgerekend zo'n twee tot drie euro, precies één quadrans. Eén lepton was het allerkleinste muntje dat er was. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
+                uitleg: "Die muntjes heetten lepta. Een lepton was het kleinste muntje dat er in omloop was; twee lepta waren samen precies één quadrans, zegt Marcus — heel weinig geld. Toch prees Jezus haar het meest, want de rijken gaven van hun overvloed, maar zij gaf alles wat ze had."
             },
             {
                 vraag: "Welke leerling sprak Jezus rechtstreeks aan toen Hij Zijn leerlingen in Getsemane slapend aantrof?",
@@ -891,7 +891,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Eerbied en genegenheid voor iemand die hun dierbaar was", "Dat zij geloofden dat Jezus uit de dood zou opstaan", "Dat zij rijker waren dan de andere leerlingen van Jezus", "Dat zij niet bang waren voor de wachters bij het graf"],
                 correct: "Eerbied en genegenheid voor iemand die hun dierbaar was",
                 bijbelplaats: "Marcus 16:1",
-                uitleg: "Wat men in Israël deed was het lichaam wikkelen in linnen doeken met welriekende kruiden en harsen ertussen — mirre en aloë vooral. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde.\n\nBij Jezus was daar op de vrijdag geen tijd voor, want de sabbat begon. Daarom kochten de vrouwen zaterdagavond kruiden en gingen zij zondag bij het eerste licht op weg: dit was het laatste wat zij nog voor Hem konden doen."
+                uitleg: "Een lichaam werd bij de begrafenis in linnen doeken gewikkeld, vaak met geurige kruiden. Dat was een teken van eerbied en genegenheid, geen poging om het lichaam te bewaren zoals in Egypte gebeurde. Marcus vertelt dat Jozef van Arimatea Jezus op vrijdag haastig in linnen wikkelde, vlak voordat de sabbat begon; Johannes voegt eraan toe dat Nikodemus mirre en aloë meebracht.\n\nToen de sabbat voorbij was, op zaterdagavond, kochten de vrouwen nog geurige olie, en zondag bij het eerste licht gingen zij op weg: dit was het laatste wat zij nog voor Hem konden doen."
             },
             {
                 vraag: "De farizeeën verweten de leerlingen dat zij met ongewassen handen aten. Waar ging dat om?",
@@ -904,19 +904,20 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis", "Vooral houten speelgoed voor de kinderen in het dorp", "Vooral boten, want het meer was dichtbij", "Beelden en versieringen voor de tempel"],
                 correct: "Deuren, balken, ploegen en jukken voor de ossen — alles van hout in dorp en huis",
                 bijbelplaats: "Marcus 6:3",
-                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nEen van de eerste christenen, Justinus, schrijft dat Jezus juist ploegen en jukken maakte. Jozef had hetzelfde vak en Jezus leerde het van hem. Tot Zijn dertigste was dit gewoon Zijn werk."
+                uitleg: "Marcus gebruikt hier het Griekse woord <span class='grieks'>τέκτων</span> (tektōn). Dat is breder dan ons 'timmerman': het betekent vakman of bouwer — iemand die met zijn handen maakt wat een dorp nodig heeft. Meestal ging het om hout: deuren en dakbalken, ploegen en jukken voor de ossen.\n\nJustinus, een christen uit de tweede eeuw, vertelt dat Jezus ploegen en jukken maakte — zo werd het in de vroege kerk doorverteld. Matteüs noemt ook Jozef een timmerman, en een zoon leerde meestal het vak van zijn vader. Volgens Lucas was Jezus ongeveer dertig toen Hij begon te preken; tot dan was dit gewoon Zijn werk."
             },
             {
                 vraag: "Jezus zegt dat een kameel makkelijker door het oog van een naald gaat dan een rijke het koninkrijk binnen. Waarom koos Hij juist die twee?",
-                antwoorden: ["De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening", "De kameel was een onrein dier en de naald een heilig voorwerp", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
-                correct: "De kameel was het grootste dier dat men in dat gebied kende, en het naaldoog de kleinste opening",
+                antwoorden: ["Zo maakte Hij een onmogelijk beeld: iets heel groots door een piepklein gaatje", "Naalden waren in die tijd zo groot dat een jonge kameel er bijna doorheen paste", "Kamelen waren duur, dus alleen rijken hadden er een", "Beide waren dingen die iedereen dagelijks om zich heen zag"],
+                correct: "Zo maakte Hij een onmogelijk beeld: iets heel groots door een piepklein gaatje",
                 bijbelplaats: "Marcus 10:25"
             },
             {
                 vraag: "Bij Jezus komt een man die melaats is. Wat betekende het in die tijd om melaats te zijn?",
-                antwoorden: ["Je had een ernstige huidziekte en moest buiten het dorp wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had hoge koorts en moest dagenlang in bed blijven"],
-                correct: "Je had een ernstige huidziekte en moest buiten het dorp wonen",
-                bijbelplaats: "Marcus 1:40"
+                antwoorden: ["Je had een huidziekte waardoor je onrein was en apart van anderen moest wonen", "Je was blind geboren en moest bedelen langs de kant van de weg", "Je kon niet lopen en moest overal naartoe gedragen worden", "Je had hoge koorts en moest dagenlang in bed blijven"],
+                correct: "Je had een huidziekte waardoor je onrein was en apart van anderen moest wonen",
+                bijbelplaats: "Marcus 1:40-42 · Leviticus 13:45-46",
+                uitleg: "In de Bijbel is 'melaatsheid' een verzamelnaam voor allerlei huidaandoeningen, niet één bepaalde ziekte. Wie zo'n aandoening had, gold als onrein en moest volgens de wet van Mozes apart van anderen wonen, buiten de woonplaats. Daarom is het zo bijzonder wat Jezus doet: Hij raakt de man aan."
             },
             {
                 vraag: "Als Jezus een dove man geneest, zegt Hij \"Effata\". Marcus schrijft de vertaling er meteen bij. Wat betekent het?",
@@ -926,9 +927,10 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Toen Jezus stierf, scheurde het voorhangsel van de tempel in tweeën. Wat was het voorhangsel?",
-                antwoorden: ["Een groot gordijn dat het allerheiligste deel van de tempel afsloot", "De brede stenen trap die naar de ingang van de tempel omhoogliep", "Het dak boven de binnenplaats waar de mensen samenkwamen", "De poort waardoor alleen priesters naar binnen mochten"],
-                correct: "Een groot gordijn dat het allerheiligste deel van de tempel afsloot",
-                bijbelplaats: "Marcus 15:38"
+                antwoorden: ["Een groot gordijn in het heiligdom van de tempel", "De brede stenen trap die naar de ingang van de tempel omhoogliep", "Het dak boven de binnenplaats waar de mensen samenkwamen", "De poort waardoor alleen priesters naar binnen mochten"],
+                correct: "Een groot gordijn in het heiligdom van de tempel",
+                bijbelplaats: "Marcus 15:38",
+                uitleg: "Het tempelgebouw had twee grote gordijnen: één bij de ingang van het heiligdom, en één voor het allerheiligste, waar alleen de hogepriester één keer per jaar naar binnen mocht. Marcus zegt niet welk van de twee scheurde. Veel uitleggers denken aan het binnenste, omdat de brief aan de Hebreeën dat gordijn verbindt met de weg naar God die door Jezus is geopend."
             },
             {
                 vraag: "In de gelijkenis plant een man een wijngaard, graaft een kuil voor de wijnpers en bouwt een wachttoren. Waarvoor diende die toren?",
@@ -949,10 +951,10 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Marcus 9:42"
             },
             {
-                vraag: "Pilatus vond geen schuld in Jezus, en toch liet hij Hem kruisigen. Waarom deed hij dat volgens Marcus?",
-                antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Hij was zelf bang geworden voor Jezus"],
+                vraag: "Pilatus vroeg wat Jezus eigenlijk verkeerd had gedaan, en toch liet hij Hem kruisigen. Waarom deed hij dat volgens Marcus?",
+                antwoorden: ["Hij wilde het volk zijn zin geven", "De keizer in Rome had het hem bevolen", "De Romeinse wet liet hem geen keus", "Jezus had hem in het openbaar beledigd"],
                 correct: "Hij wilde het volk zijn zin geven",
-                bijbelplaats: "Marcus 15:15"
+                bijbelplaats: "Marcus 15:14-15"
             }
         ],
         expert: [
@@ -7963,7 +7965,7 @@ const verborgenSchatVragen = [
         antwoorden: ["Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort", "Zij beschrijven precies waar de poort in de stadsmuur stond", "Zij schrijven dat de poort in hun eigen tijd al was afgebroken", "Zij vertellen dat Jezus zelf die poort vaak gebruikte"],
         correct: "Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort",
         bijbelplaats: "Marcus 10:25-27 · Origenes, Chrysostomus en Augustinus over deze tekst",
-        reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op — in preken, niet in de oudste bronnen. Wat Jezus waarschijnlijk juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+        reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op — in preken, niet in de oudste bronnen. Wat Jezus juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
     },
     {
         vraag: "Paulus dicteerde zijn brieven meestal aan een schrijver. In de brief aan de Romeinen doet die schrijver iets bijzonders: hij groet de lezers even zelf. Hoe heette hij?",
