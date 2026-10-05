@@ -2384,7 +2384,7 @@ vragenData["Romeinen"] = {
 };
 
 // =====================================================================
-// Handelingen — vragenpool (79 vragen: beginner 19, advanced 30, expert 30)
+// Handelingen — vragenpool (79 vragen: beginner 18, advanced 30, expert 31)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
 // bijbelplaats. vragenData bestaat hier al, dus toevoegen mag.
 // =====================================================================
@@ -2468,12 +2468,6 @@ vragenData["Handelingen"] = {
             antwoorden: ["Naar andere landen reizen om over Jezus te vertellen", "Een nieuwe tempel bouwen in Antiochië", "Soldaat worden in het leger van de keizer", "In Jeruzalem blijven om daar de grote tempel te bewaken"],
             correct: "Naar andere landen reizen om over Jezus te vertellen",
             bijbelplaats: "Handelingen 13:2-4"
-        },
-        {
-            vraag: "Barnabas verkocht een stuk land en bracht het geld naar de apostelen. Wat betekent de bijnaam Barnabas, die de apostelen hem gaven?",
-            antwoorden: ["Zoon van de vertroosting", "Zoon van de donder", "Zoon van het licht", "Zoon van de vrede"],
-            correct: "Zoon van de vertroosting",
-            bijbelplaats: "Handelingen 4:36"
         },
         {
             vraag: "De leerlingen waren op de Pinksterdag bij elkaar in één huis. Opeens was er iets te horen én iets te zien. Wat gebeurde er toen?",
@@ -2897,6 +2891,13 @@ vragenData["Handelingen"] = {
             antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
             correct: "De eerste naam voor de volgelingen van Jezus",
             bijbelplaats: "Handelingen 9:2"
+        },
+        {
+            vraag: "Barnabas verkocht een stuk land en bracht het geld naar de apostelen. Wat betekent de bijnaam Barnabas, die de apostelen hem gaven?",
+            antwoorden: ["Zoon van de vertroosting", "Zoon van de donder", "Zoon van het licht", "Zoon van de vrede"],
+            correct: "Zoon van de vertroosting",
+            bijbelplaats: "Handelingen 4:36",
+            uitleg: "Barnabas heette eigenlijk Jozef. 'Zoon van' betekent hier: iemand die zo is. Het Griekse woord in zijn bijnaam, paraklèsis (<span class='grieks'>παράκλησις</span>), betekent zowel troost als bemoediging. Allebei passen ze bij hem: toen de christenen in Jeruzalem bang waren voor Saulus, nam Barnabas het voor hem op, en in Antiochië bemoedigde hij iedereen om trouw te blijven aan de Heer."
         }
     ]
 };
