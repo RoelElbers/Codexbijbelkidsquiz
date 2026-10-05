@@ -8,7 +8,7 @@ in `avatarNamen` (`script.js` r. 7196) hebben er een, dus de reden om te parkere
 — een halve set — is vervallen.
 
 **Vorm:** één alinea per avatar, één concreet beeld, geen moraal aan het slot.
-Geschreven voor kinderen van 10–12, neutrale formulering, geen confessioneel
+Geschreven voor kinderen van 8–12, neutrale formulering, geen confessioneel
 gekleurde termen.
 
 ## Mozes — Exodus 3

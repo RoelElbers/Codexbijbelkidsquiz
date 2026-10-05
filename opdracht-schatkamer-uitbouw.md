@@ -2,7 +2,7 @@
 
 ## Context van het project
 
-Dit is Bijbelkidsquiz (bijbelkidsquiz.nl), een gratis browsergebaseerde Nederlandse bijbelquiz voor kinderen van 10–12 jaar. Vanilla HTML/CSS/JS, geen frameworks, geen build-stap. Visuele stijl: diepblauw en goud, Cinzel voor koppen, sfeer van een gotische schatkamer/kathedraal. Het spel gebruikt een CSS transform-scale wrapper voor responsief schalen tussen venster en fullscreen.
+Dit is Bijbelkidsquiz (bijbelkidsquiz.nl), een gratis browsergebaseerde Nederlandse bijbelquiz voor kinderen van 8–12 jaar. Vanilla HTML/CSS/JS, geen frameworks, geen build-stap. Visuele stijl: diepblauw en goud, Cinzel voor koppen, sfeer van een gotische schatkamer/kathedraal. Het spel gebruikt een CSS transform-scale wrapper voor responsief schalen tussen venster en fullscreen.
 
 Bestaande relevante onderdelen die je in de codebase zult aantreffen:
 
