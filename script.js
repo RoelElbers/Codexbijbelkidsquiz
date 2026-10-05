@@ -140,7 +140,7 @@ function openTabblad(url) {
 //
 // Buiten de nummering liep nog een losse ronde over de drie talen van Israël.
 const vragenData = {
-    // Matteüs — vragenpool (87 vragen: beginner 24, advanced 21, expert 42)
+    // Matteüs — vragenpool (87 vragen: beginner 24, advanced 22, expert 41)
     "Matteüs": {
         beginner: [
             {
@@ -217,11 +217,11 @@ const vragenData = {
                 bijbelplaats: "Matteüs 22:37-39"
             },
             {
-                vraag: "Onze jaartelling — zoals het jaar 2026 'na Christus' — telt vanaf de geboorte van wie?",
+                vraag: "Onze jaartelling — zoals het jaar 2000 'na Christus' — telt vanaf de geboorte van wie?",
                 antwoorden: ["Jezus", "Mozes", "Abraham", "Koning David"],
                 correct: "Jezus",
                 bijbelplaats: "Matteüs 2:1",
-                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt net niet: Jezus werd een paar jaar eerder geboren, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
+                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, door een monnik die Dionysius heette, in het jaar 525. Het exacte geboortejaar klopt net niet: Jezus werd een paar jaar eerder geboren, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
             },
             {
                 vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
@@ -291,7 +291,7 @@ const vragenData = {
                 antwoorden: ["Hij inde geld voor de heersers en vroeg vaak meer dan mocht", "Hij bewaakte de stadspoort en controleerde wie er binnenkwam", "Hij hield de administratie bij van de tempel in Jeruzalem", "Hij verkocht offerdieren aan de mensen die naar de tempel gingen"],
                 correct: "Hij inde geld voor de heersers en vroeg vaak meer dan mocht",
                 bijbelplaats: "Matteüs 9:9 · Lucas 3:12-13; 19:8",
-                uitleg: "Een tollenaar kocht het recht om tol en belasting te innen. Hij betaalde de heerser een vast bedrag en mocht houden wat hij daarboven binnenhaalde. Veel tollenaars vroegen daarom meer dan eerlijk was, en dat maakte ze niet geliefd. In Kafarnaüm, waar Matteüs zat, werd de tol geïnd voor Herodes Antipas, de tetrarch van Galilea. In Jericho, waar Zacheüs tollenaar was, ging het geld wel naar de Romeinen, want Judea werd toen rechtstreeks door hen bestuurd."
+                uitleg: "Een tollenaar kocht vaak het recht om tol en belasting te innen. Hij betaalde de heerser een vast bedrag en mocht houden wat hij daarboven binnenhaalde. Veel tollenaars vroegen daarom meer dan eerlijk was, en dat maakte ze niet geliefd. In Kafarnaüm, waar Matteüs zat, werd de tol geïnd voor Herodes Antipas, de tetrarch van Galilea. In Jericho, waar Zacheüs tollenaar was, werd geïnd voor het Romeinse bestuur, want Judea werd toen rechtstreeks door de Romeinen bestuurd."
             }
         ],
         advanced: [
@@ -381,24 +381,24 @@ const vragenData = {
             },
             {
                 vraag: "Jozef van Arimatea gaf zijn eigen nieuwe graf aan Jezus. Waarom was dat zo bijzonder?",
-                antwoorden: ["Zo'n graf hoorde bij één familie en ging over van vader op zoon", "Omdat het naast het graf van koning David lag", "Omdat er al een profeet in begraven lag", "Omdat hij het van de Romeinen had gekregen"],
-                correct: "Zo'n graf hoorde bij één familie en ging over van vader op zoon",
-                bijbelplaats: "Matteüs 27:60",
-                uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
+                antwoorden: ["Zo'n graf was bedoeld voor de eigen familie, generatie na generatie", "Omdat het naast het graf van koning David lag", "Omdat er al een profeet in begraven lag", "Omdat hij het van de Romeinen had gekregen"],
+                correct: "Zo'n graf was bedoeld voor de eigen familie, generatie na generatie",
+                bijbelplaats: "Matteüs 27:57-60",
+                uitleg: "Een graf als dat van Jozef was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Zulke graven hadden vooral rijkere families. Binnen liepen stenen banken langs de wanden, en de ingang werd afgesloten met een zware steen. Zo'n graf was bedoeld voor een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea legde Jezus in zijn eigen nieuwe graf, terwijl Jezus niet tot zijn familie hoorde."
             },
             {
                 vraag: "Pilatus wordt \"stadhouder\" of \"landvoogd\" genoemd. Wat was zijn taak?",
-                antwoorden: ["Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken", "Hij was de burgemeester van Jeruzalem en hield toezicht op de markten", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting voor de keizer in Rome"],
-                correct: "Hij bestuurde Judea namens Rome en had het laatste woord bij rechtszaken",
-                bijbelplaats: "Matteüs 27:2",
-                uitleg: "Judea was geen gewone provincie maar een onrustig grensgebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee, en kwam alleen naar de stad tijdens de grote feesten, wanneer er honderdduizenden pelgrims waren en de kans op onrust het grootst was.\n\nHij had één bevoegdheid die de Joodse leiders niet hadden: het doodvonnis. Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
+                antwoorden: ["Hij bestuurde Judea namens Rome en was er de hoogste rechter", "Hij was de burgemeester van Jeruzalem en hield toezicht op de markten", "Hij was de opperpriester van de Romeinse tempel", "Hij inde de belasting voor de keizer in Rome"],
+                correct: "Hij bestuurde Judea namens Rome en was er de hoogste rechter",
+                bijbelplaats: "Matteüs 27:2 · Johannes 18:31",
+                uitleg: "Judea was een klein maar onrustig gebied, en werd bestuurd door een prefect: een Romeinse ambtenaar met een eigen legereenheid. Pilatus woonde niet in Jeruzalem maar in Caesarea aan zee. Tijdens de grote feesten kwam hij naar de stad, want dan waren er enorme aantallen pelgrims en was de kans op onrust het grootst.\n\nHij had een bevoegdheid die de Joodse leiders niet hadden: volgens het evangelie van Johannes mochten zij zelf niemand ter dood brengen (Johannes 18:31). Precies daarom moest Jezus na het verhoor door de Hoge Raad alsnog bij hem komen."
             },
             {
                 vraag: "Jezus zegt: een stad op een berg kan niet verborgen blijven. Waarom bouwde men steden op een heuvel?",
                 antwoorden: ["Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen", "Omdat het daar koeler was in de zomer", "Omdat er boven op de heuvels in de winter sneeuw lag waar de kinderen konden spelen", "Omdat er op de heuvels meer water te vinden was"],
                 correct: "Om vijanden ver van tevoren te zien aankomen en je makkelijker te verdedigen",
                 bijbelplaats: "Matteüs 5:14",
-                uitleg: "Bijna elke oude stad in Israël lag op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem uren van tevoren aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt.\n\nEn omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
+                uitleg: "Veel oude steden in Israël lagen op een heuvel. Dat was geen kwestie van uitzicht maar van overleven: een vijand moest omhoog vechten, en jij zag hem al van ver aankomen. De muren stonden op de rand, zodat de helling zelf al een deel van de verdediging was. Water haalde men uit een bron beneden, soms via een tunnel die van binnenuit was uitgehakt.\n\nEn omdat die steden hoog en licht van kleur waren, waren ze bij helder weer van kilometers ver te zien. Precies dat gebruikt Jezus als beeld."
             },
             {
                 vraag: "Jezus zegt: laat geen bazuin voor je uit blazen als je een aalmoes geeft. Wat is een aalmoes?",
@@ -408,10 +408,10 @@ const vragenData = {
             },
             {
                 vraag: "Aan Petrus wordt gevraagd of Jezus de tempelbelasting betaalt. Waar was dat geld voor?",
-                antwoorden: ["Voor het onderhoud van de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen dat in Judea gelegerd was", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
-                correct: "Voor het onderhoud van de tempel, opgebracht door de Joden zelf",
-                bijbelplaats: "Matteüs 17:24",
-                uitleg: "Elke Joodse man van twintig jaar en ouder betaalde één keer per jaar een halve sikkel voor de tempel. Van dat geld werden de dagelijkse offers betaald, de wierook, de broden die in het heiligdom lagen en het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
+                antwoorden: ["Voor de offers en de dienst in de tempel, opgebracht door de Joden zelf", "Voor het leger van de Romeinen dat in Judea gelegerd was", "Voor de armen die bij de tempelpoort zaten", "Voor de reiskosten van de priesters"],
+                correct: "Voor de offers en de dienst in de tempel, opgebracht door de Joden zelf",
+                bijbelplaats: "Matteüs 17:24 · Exodus 30:13-16",
+                uitleg: "Joodse mannen van twintig jaar en ouder betaalden één keer per jaar een halve sikkel voor de tempel. Van dat geld werden vooral de dagelijkse offers betaald, de wierook en de broden die in het heiligdom lagen. Wat overbleef, ging onder meer naar het onderhoud van het gebouw. Het was dus geen belasting voor de Romeinen, maar geld dat de Joden zelf bijeenbrachten voor hun eigen tempel."
             },
             {
                 vraag: "In de gelijkenis huurt de eigenaar nog arbeiders in \"op het elfde uur\". Wat betekent dat?",
@@ -424,6 +424,12 @@ const vragenData = {
                 antwoorden: ["Daar wachtten dagloners tot iemand hen voor die dag inhuurde", "Daar werd de belasting geïnd en moesten zij hun beurt afwachten", "Daar deelden de rijken elke ochtend brood uit", "Daar kwamen zij samen om te bidden voor werk"],
                 correct: "Daar wachtten dagloners tot iemand hen voor die dag inhuurde",
                 bijbelplaats: "Matteüs 20:3"
+            },
+            {
+                vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak Hij ze uit?',
+                antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
+                correct: "De Bergrede",
+                bijbelplaats: "Matteüs 5:3-12"
             }
         ],
         expert: [
@@ -470,10 +476,10 @@ const vragenData = {
                 bijbelplaats: "Matteüs 1:23"
             },
             {
-                vraag: "Welke twee broers, vissers, riep Jezus als eersten om Hem te volgen?",
-                antwoorden: ["Petrus en Andreas", "Jakobus en Johannes", "Filippus en Bartolomeüs", "Tomas en Matteüs"],
-                correct: "Petrus en Andreas",
-                bijbelplaats: "Matteüs 4:18-20"
+                vraag: "Na Petrus en Andreas riep Jezus nog twee broers, die met hun vader Zebedeüs in de boot hun netten herstelden. Wie waren dat?",
+                antwoorden: ["Jakobus en Johannes", "Petrus en Andreas", "Filippus en Bartolomeüs", "Tomas en Matteüs"],
+                correct: "Jakobus en Johannes",
+                bijbelplaats: "Matteüs 4:21-22"
             },
             {
                 vraag: "Hoe groot was de schuld van de dienaar in de gelijkenis van de onbarmhartige dienaar?",
@@ -485,16 +491,8 @@ const vragenData = {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
                 antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht, precies midden in de nacht", "Bij het eerste hanengekraai"],
                 correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
-                bijbelplaats: "Matteüs 14:25",
-                uitleg: `In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.
-
-Rond de lente, de tijd waarin dit verhaal speelt, kwam het ongeveer hierop neer:
-1e nachtwaak: 18.00 – 21.00 uur
-2e nachtwaak: 21.00 – 24.00 uur
-3e nachtwaak: 24.00 – 3.00 uur
-4e nachtwaak: 3.00 – 6.00 uur
-
-Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het einde van de nacht, vlak voordat het licht werd.`
+                bijbelplaats: "Matteüs 14:25 · Johannes 6:4",
+                uitleg: "In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.\n\nDit verhaal speelt rond de lente, kort voor het Pesachfeest (Johannes 6:4). Dan kwam het ongeveer hierop neer:\n1e nachtwaak: 18.00 – 21.00 uur\n2e nachtwaak: 21.00 – 24.00 uur\n3e nachtwaak: 24.00 – 3.00 uur\n4e nachtwaak: 3.00 – 6.00 uur\n\nJezus kwam dus in de vierde nachtwaak over het water lopen: in het laatste deel van de nacht, ergens tussen drie en zes uur."
             },
             {
                 vraag: "Een denarie was een Romeinse zilveren munt. Hoeveel was die ongeveer waard?",
@@ -515,23 +513,17 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 13:33"
             },
             {
-                vraag: "Jozef was op aarde de vader van Jezus. Maar wie was Jozefs eigen vader — dus de opa van Jezus van vaderskant?",
+                vraag: "Jozef was op aarde de vader van Jezus. Wie was volgens Matteüs de vader van Jozef?",
                 antwoorden: ["Jakob", "Mattan", "Eleazar", "Achim"],
                 correct: "Jakob",
-                bijbelplaats: "Matteüs 1:16",
-                uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om Zijn vader op aarde te zijn."
+                bijbelplaats: "Matteüs 1:6, 16 · Lucas 3:23, 31, 38 · Romeinen 1:3",
+                uitleg: "Jakob! In het evangelie van Matteüs staat: \"Jakob was de vader van Jozef.\" En Jozef was de man van Maria. Jozef was niet de biologische vader van Jezus, maar door God uitgekozen om Zijn vader op aarde te zijn.\n\nVoor de eerste christenen was het belangrijk dat Jezus een nakomeling van koning David was. Dat was Hij op twee manieren. Via Jozef, Zijn vader op aarde, had Hij recht op de troon van David: de koninklijke afstamming. En Paulus schrijft dat Jezus ook als mens uit de familie van David kwam: de biologische afstamming (Romeinen 1:3).\n\nMatteüs en Lucas geven allebei een stamboom, maar die lopen anders. Matteüs begint bij Abraham en volgt de lijn van de koningen, via Salomo, de zoon van David. Lucas begint bij Jezus en gaat terug in de tijd, via Natan, een andere zoon van David, helemaal tot Adam. Bij Lucas heet de vader van Jozef dan ook Eli. Hoe de twee stambomen precies bij elkaar passen, weten we niet zeker."
             },
             {
                 vraag: "Jezus verwees naar een profeet die drie dagen in een grote vis zat, als beeld van Zijn eigen opstanding. Over welke profeet ging het?",
                 antwoorden: ["Jona", "Elia", "Jesaja", "Daniël"],
                 correct: "Jona",
                 bijbelplaats: "Matteüs 12:39-40"
-            },
-            {
-                vraag: 'De zaligsprekingen zijn uitspraken van Jezus die allemaal beginnen met "Gelukkig zijn…". Tijdens welke beroemde toespraak sprak Hij ze uit?',
-                antwoorden: ["De Bergrede", "De Woestijnpreek", "De Tempelrede", "De Zeepreek"],
-                correct: "De Bergrede",
-                bijbelplaats: "Matteüs 5:3"
             },
             {
                 vraag: "Het 'negende uur' was het uur waarop Jezus stierf. Hoe laat was dat ongeveer, en wat gebeurde er in de tempel op dat uur?",
@@ -578,14 +570,14 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
             },
             {
                 vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
-                antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
-                correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
-                bijbelplaats: "Matteüs 26:15 · Exodus 21:32",
-                uitleg: "Met een zilverstuk wordt hier een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin.\n\nHet bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die de eigenaar van een os moest betalen als zijn dier een slaaf had gedood — de prijs van een mensenleven dat niet als volwaardig werd geteld."
+                antwoorden: ["Als het sikkels waren: ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
+                correct: "Als het sikkels waren: ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
+                bijbelplaats: "Matteüs 26:15 · 27:9-10 · Zacharia 11:12-13",
+                uitleg: "Matteüs noemt dertig zilverstukken, maar zegt niet welke munt het was. Meestal denkt men aan de sikkel, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin.\n\nHet bedrag is niet toevallig: Matteüs vertelt zelf dat hiermee een oude profetie in vervulling ging (Matteüs 27:9-10). Bij de profeet Zacharia krijgt een herder precies dertig zilverstukken als loon, en dat geld wordt in de tempel voor de pottenbakker neergegooid (Zacharia 11:12-13)."
             },
             {
-                vraag: "Johannes de Doper zegt over degene die na hem komt: Hij heeft de wan in Zijn hand. Wat is een wan?",
-                antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een grote mand om de oogst mee naar de schuur te dragen"],
+                vraag: "Johannes de Doper zegt over degene die na hem komt: Hij heeft de wan in Zijn hand. Wat voor werktuig wordt hier met 'wan' bedoeld?",
+                antwoorden: ["Een schep om graan op te gooien, zodat de wind het kaf wegblaast", "Een grove zeef waarmee steentjes uit het gemalen meel werden gehaald", "Een zware houten hamer om de korenschoven mee los te kloppen", "Een lange stok met een punt, om de ossen over de dorsvloer te drijven"],
                 correct: "Een schep om graan op te gooien, zodat de wind het kaf wegblaast",
                 bijbelplaats: "Matteüs 3:12"
             },
@@ -605,7 +597,7 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "De wijzen uit het oosten brachten goud, wierook en mirre. Wat is mirre?",
                 antwoorden: ["Een kostbare hars die ook bij een begrafenis werd gebruikt", "Een dieprode verfstof waarmee mantels van koningen werden geverfd", "Een gouden schaal waarin men wierook liet branden", "Een zoete siroop van dadels die men bij feesten dronk"],
                 correct: "Een kostbare hars die ook bij een begrafenis werd gebruikt",
-                bijbelplaats: "Matteüs 2:11"
+                bijbelplaats: "Matteüs 2:11 · Johannes 19:39-40"
             },
             {
                 vraag: "Jezus verwijt sommige leiders dat ze hun gebedsriemen extra breed maken. Wat waren gebedsriemen?",
@@ -617,15 +609,15 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "Jezus zegt dat zout weggegooid wordt als het zijn kracht verliest. Hoe kan zout zijn smaak verliezen?",
                 antwoorden: ["Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over", "Zout wordt oud en verliest dan vanzelf zijn smaak", "Zout dat je te lang bewaart verandert in zand", "Zout verliest zijn smaak als er licht op valt"],
                 correct: "Het zout uit de Dode Zee zat vol andere mineralen; in vocht spoelde het zoute deel eruit en bleef er smakeloos gruis over",
-                bijbelplaats: "Matteüs 5:13",
-                uitleg: "Wat men zout noemde, waren brokken van de oever van de Dode Zee. Daar zit naast echt zout ook gips en kalk in. Echt zout lost sneller op dan die andere stoffen, dus lag zo'n brok lang in een vochtige voorraadkamer, dan trok het zoute eruit en bleef er korrelig gruis over dat nergens meer naar smaakte.\n\nWeggooien op het land kon niet — zout maakt grond onvruchtbaar — dus strooide men het op de paden. Vandaar dat Jezus zegt dat het wordt weggeworpen en vertrapt."
+                bijbelplaats: "Matteüs 5:13 · Lucas 14:34-35",
+                uitleg: "Wat men zout noemde, waren brokken van de oever van de Dode Zee. Daar zit naast echt zout ook gips en kalk in. Echt zout lost sneller op dan die andere stoffen, dus lag zo'n brok lang in een vochtige voorraadkamer, dan trok het zoute eruit en bleef er korrelig gruis over dat nergens meer naar smaakte.\n\nEen beetje goed zout werd soms op de akker of de mesthoop gebruikt, maar dit gruis was daar ook niet meer goed voor (Lucas 14:35). Dus strooide men het op de paden. Vandaar dat Jezus zegt dat het wordt weggeworpen en vertrapt."
             },
             {
                 vraag: "Jozef wilde Maria \"in stilte verlaten\" toen bleek dat zij zwanger was. Waarom was dat nodig, terwijl ze nog niet getrouwd waren?",
                 antwoorden: ["Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief", "Hij had haar bruidsschat al betaald en die moest hij terugvragen", "Ze woonden al samen, dus hij moest verhuizen", "Alleen een priester mocht een verloving beëindigen"],
                 correct: "Een verloving was al juridisch bindend; verbreken kon alleen met een officiële scheidbrief",
-                bijbelplaats: "Matteüs 1:19",
-                uitleg: "Trouwen ging in twee stappen. Eerst de verloving, waarbij de afspraak juridisch werd vastgelegd — vanaf dat moment heette je al man en vrouw en kon je alleen nog uit elkaar met een scheidbrief. Pas een jaar later haalde de bruidegom zijn bruid op en begon het feest en het samenwonen. Jozef en Maria zaten dus in die tussenperiode. Dat verklaart waarom Matteüs Jozef \"haar man\" noemt terwijl het huwelijk nog niet voltrokken was."
+                bijbelplaats: "Matteüs 1:19, 24",
+                uitleg: "Trouwen ging in twee stappen. Eerst de verloving, waarbij de afspraak juridisch werd vastgelegd — vanaf dat moment heette je al man en vrouw en kon je alleen nog uit elkaar met een scheidbrief. Pas na een tijd van voorbereiding, vaak zo'n jaar, haalde de bruidegom zijn bruid op en begon het feest en het samenwonen. Jozef en Maria zaten dus in die tussenperiode. Dat verklaart waarom Matteüs Jozef \"haar man\" noemt terwijl het huwelijk nog niet voltrokken was."
             },
             {
                 vraag: "Jezus hekelt leiders die zeggen: zweren bij de tempel telt niet, maar zweren bij het goud van de tempel wel. Wat was daar mis mee?",
@@ -634,28 +626,28 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 bijbelplaats: "Matteüs 23:16"
             },
             {
-                vraag: "De tien meisjes wachtten 's nachts tot de roep klonk: de bruidegom komt! Waarom een bruidegom lang op zich kon laten wachten, vertelt de gelijkenis niet — maar wat weten we wel over hoe een bruiloft begon?",
-                antwoorden: ["De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen", "Hij moest eerst de hele dag werken op het land", "Bruiloften begonnen altijd na middernacht", "Hij kwam van ver en reisde alleen 's nachts vanwege de hitte"],
-                correct: "De bruidegom haalde zijn bruid pas op als alles met haar familie geregeld was, en dat kon uitlopen",
-                bijbelplaats: "Matteüs 25:6"
+                vraag: "De tien meisjes wachtten 's nachts op de bruidegom, maar hij liet lang op zich wachten. Wat deden de meisjes in de tussentijd?",
+                antwoorden: ["Ze vielen allemaal in slaap", "De verstandige meisjes bleven wakker, de anderen vielen in slaap", "Ze zongen liederen om wakker te blijven", "Ze gingen om beurten op de uitkijk staan"],
+                correct: "Ze vielen allemaal in slaap",
+                bijbelplaats: "Matteüs 25:5"
             },
             {
                 vraag: "Jezus vertelt over een net dat wordt uitgeworpen en allerlei vissen vangt. Wat voor net was dat?",
-                antwoorden: ["Een lang sleepnet dat tussen twee boten door het water werd getrokken", "Een klein rond net dat je vanaf de oever uitwierp", "Een fuik die je 's nachts liet staan", "Een net dat je aan een lange stok voor je uit hield"],
-                correct: "Een lang sleepnet dat tussen twee boten door het water werd getrokken",
-                bijbelplaats: "Matteüs 13:47"
+                antwoorden: ["Een groot sleepnet, dat vol vissen naar het strand werd getrokken", "Een klein rond net dat je vanaf de oever uitwierp", "Een fuik die je 's nachts liet staan", "Een net dat je aan een lange stok voor je uit hield"],
+                correct: "Een groot sleepnet, dat vol vissen naar het strand werd getrokken",
+                bijbelplaats: "Matteüs 13:47-48"
             },
             {
-                vraag: "Van het geld van Judas kochten de priesters \"de akker van de pottenbakker\". Waarom lag daar een akker van een pottenbakker?",
-                antwoorden: ["Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard", "Daar stonden zijn ovens, ver van de stad vanwege de rook", "Daar verkocht hij zijn potten aan de pelgrims", "Daar werden gebroken potten begraven, want die waren onrein"],
-                correct: "Daar werd klei gegraven, en het uitgeputte land was daarna weinig meer waard",
+                vraag: "Van het geld van Judas kochten de priesters \"de akker van de pottenbakker\". Waarvoor gebruikten ze die akker?",
+                antwoorden: ["Als begraafplaats voor vreemdelingen", "Als werkplaats voor de pottenbakkers van de tempel", "Als marktplaats voor de pelgrims", "Als weiland voor de offerdieren"],
+                correct: "Als begraafplaats voor vreemdelingen",
                 bijbelplaats: "Matteüs 27:7"
             },
             {
-                vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon dat zomaar?",
-                antwoorden: ["Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht", "Nee, alleen een rechter mocht iemand opsluiten", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
-                correct: "Ja, wie zijn schuld niet betaalde kon worden opgesloten tot zijn familie het bedrag bijeenbracht",
-                bijbelplaats: "Matteüs 18:30"
+                vraag: "In de gelijkenis laat de dienaar zijn medeknecht in de gevangenis zetten tot hij betaalt. Kon iemand in die tijd echt gevangengezet worden voor een schuld?",
+                antwoorden: ["Ja, een schuldeiser kon iemand via de rechter laten opsluiten tot de schuld betaald was", "Nee, wie zijn schulden niet betaalde, werd het land uitgezet", "Ja, maar alleen bij schulden aan de koning", "Nee, schulden werden altijd na zeven jaar kwijtgescholden"],
+                correct: "Ja, een schuldeiser kon iemand via de rechter laten opsluiten tot de schuld betaald was",
+                bijbelplaats: "Matteüs 18:30 · 5:25-26"
             },
             {
                 vraag: "Een zieke vrouw raakte \"de zoom van Zijn kleed\" aan. Wat zat daar precies?",
@@ -681,14 +673,14 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 antwoorden: ["Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in", "Zij hadden een dokter laten halen en wachtten tot die kwam", "Zij oefenden voor de tempeldienst van de volgende dag", "Zij verjoegen met lawaai de dieren van het erf"],
                 correct: "Zij hoorden bij de rouw: men huurde muzikanten en klaagvrouwen in",
                 bijbelplaats: "Matteüs 9:23",
-                uitleg: "Rouwen deed je in het openbaar en met veel geluid. Zelfs de armste familie hoorde bij een sterfgeval minstens twee fluitspelers en één klaagvrouw in te huren; bij rijkere families waren het er veel meer. Stil verdriet kende men niet — luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten Hem uit. Toen nam Hij haar hand en stond ze op."
+                uitleg: "Rouwen deed je in het openbaar en met veel geluid. Men huurde fluitspelers en klaagvrouwen in. In de Joodse wetten die iets later zijn opgeschreven, staat zelfs dat een man bij de begrafenis van zijn vrouw, hoe arm hij ook was, minstens twee fluitspelers en één klaagvrouw moest inhuren. Luid misbaar was een teken van respect voor de gestorvene. Jezus stuurde hen allemaal weg en zei dat het meisje sliep. De mensen lachten Hem uit. Toen nam Hij haar hand en stond ze op."
             },
             {
                 vraag: "Jezus noemt sommige leiders \"witgepleisterde graven\". Waarom waren graven wit gekalkt?",
                 antwoorden: ["Zodat niemand er per ongeluk op stapte en onrein werd", "Zodat de familie het graf makkelijk kon terugvinden", "Omdat wit de kleur van de rouw was", "Omdat kalk het gesteente tegen regen beschermde"],
                 correct: "Zodat niemand er per ongeluk op stapte en onrein werd",
                 bijbelplaats: "Matteüs 23:27",
-                uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, vlak voor Pesach, als duizenden pelgrims naar Jeruzalem trokken. Dat witte kalk was dus geen versiering, maar een waarschuwingsbord. En zo bedoelt Jezus het ook: je kunt er van buiten keurig uitzien en toch niet leven zoals God het vraagt."
+                uitleg: "Wie een graf aanraakte, was zeven dagen onrein en kon dan niet meedoen aan de tempeldienst. Daarom werden graven elk voorjaar opnieuw wit gekalkt, een maand voor Pesach, zodat de duizenden pelgrims die dan naar Jeruzalem trokken er niet per ongeluk op stapten. Die witte kalk was dus geen versiering, maar een waarschuwingsbord. En zo bedoelt Jezus het ook: je kunt er van buiten keurig uitzien en toch niet leven zoals God het vraagt."
             },
             {
                 vraag: "Jezus zegt dat je jonge wijn niet in oude zakken doet. Waar waren die \"zakken\" van gemaakt?",
