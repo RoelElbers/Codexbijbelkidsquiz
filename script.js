@@ -987,7 +987,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Jeremia", "Maleachi", "Daniël", "Ezechiël"],
                 correct: "Maleachi",
                 bijbelplaats: "Marcus 1:2-3 · Maleachi 3:1 · Exodus 23:20 · Jesaja 40:3",
-                uitleg: "Marcus brengt hier woorden uit verschillende boeken samen. 'Ik zend Mijn bode voor Je uit' komt uit Maleachi, en ook in Exodus belooft God dat Hij een bode voor Zijn volk uit zendt. De stem die roept in de woestijn komt uit Jesaja. Marcus noemt alleen Jesaja, de bekendste van de profeten. In sommige oudere bijbels, zoals de Statenvertaling, staat er 'in de profeten'."
+                uitleg: "Marcus brengt hier woorden uit verschillende boeken samen. 'Ik zend Mijn bode voor Je uit' komt uit Maleachi, en ook in Exodus belooft God dat Hij een bode voor Zijn volk uitzendt. De stem die roept in de woestijn komt uit Jesaja. Marcus noemt alleen Jesaja, de bekendste van de profeten. In sommige oudere bijbels, zoals de Statenvertaling, staat er 'in de profeten'."
             },
             {
                 vraag: "Welke Aramese woorden sprak Jezus uit toen Hij het dochtertje van Jaïrus opwekte uit de dood?",
@@ -1032,7 +1032,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "In de tijd van de Bijbel liep Israël van Dan in het noorden tot Berseba in het zuiden. Hoeveel kilometer was dat ongeveer?",
                 antwoorden: ["Ongeveer 120 kilometer", "Ongeveer 400 kilometer", "Ongeveer 240 kilometer", "Ongeveer 750 kilometer"],
                 correct: "Ongeveer 240 kilometer",
-                bijbelplaats: "Rechters 20:1 · 1 Samuel 3:20",
+                bijbelplaats: "Rechters 20:1 · 1 Samuël 3:20",
                 uitleg: "Israël was in de tijd van de Bijbel verrassend klein. Van Dan in het noorden tot Berseba in het zuiden was het ongeveer 240 kilometer, en \"van Dan tot Berseba\" werd dan ook de vaste uitdrukking voor het hele land. Van west naar oost, van de zee tot de Jordaan, was het nog veel smaller: soms maar 50 tot 90 kilometer. Die breedte kon je in een paar dagen te voet doorkruisen.\n\nDie uitdrukking komt uit het Oude Testament; in de tijd van Jezus was het gebied verdeeld in Galilea, Samaria en Judea. Het Israël van vandaag is bijna twee keer zo lang."
             },
             {
@@ -6998,7 +6998,7 @@ const avatarInfo = {
         tekst: "Judith woonde in een stad die werd belegerd door een enorm leger. Het water raakte op en de mensen wilden zich overgeven. Zij niet. Ze trok haar rouwkleren uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in elke Bijbel vindt."
     },
     samuel: {
-        bijbelplaats: "1 Samuel 3",
+        bijbelplaats: "1 Samuël 3",
         tekst: "Samuel sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen wist Eli genoeg: dit was God, die Samuel riep. Ga terug, zei hij, en als je het weer hoort, zeg dan dat je luistert."
     },
     jozef: {

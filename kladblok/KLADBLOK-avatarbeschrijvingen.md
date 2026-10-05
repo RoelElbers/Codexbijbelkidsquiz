@@ -33,7 +33,7 @@ uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp
 af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in
 elke Bijbel vindt.
 
-## Samuel — 1 Samuel 3
+## Samuel — 1 Samuël 3
 
 Samuel sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen
 hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets
