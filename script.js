@@ -6955,7 +6955,7 @@ const avatarNamen = {
     mozes: "Mozes",
     esther: "Esther",
     judith: "Judith",
-    samuel: "Samuel",
+    samuel: "Samuël",
     jozef: "Jozef",
     elia: "Elia",
     ruth: "Ruth",
@@ -6999,7 +6999,7 @@ const avatarInfo = {
     },
     samuel: {
         bijbelplaats: "1 Samuël 3",
-        tekst: "Samuel sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen wist Eli genoeg: dit was God, die Samuel riep. Ga terug, zei hij, en als je het weer hoort, zeg dan dat je luistert."
+        tekst: "Samuël sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen wist Eli genoeg: dit was God, die Samuël riep. Ga terug, zei hij, en als je het weer hoort, zeg dan dat je luistert."
     },
     jozef: {
         bijbelplaats: "Genesis 37",

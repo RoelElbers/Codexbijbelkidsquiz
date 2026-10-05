@@ -33,12 +33,12 @@ uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp
 af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in
 elke Bijbel vindt.
 
-## Samuel — 1 Samuël 3
+## Samuël — 1 Samuël 3
 
-Samuel sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen
+Samuël sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen
 hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets
 gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen
-wist Eli genoeg: dit was God, die Samuel riep. Ga terug, zei hij, en als je het
+wist Eli genoeg: dit was God, die Samuël riep. Ga terug, zei hij, en als je het
 weer hoort, zeg dan dat je luistert.
 
 ## Jozef — Genesis 37
@@ -96,7 +96,7 @@ opgroeide staat niets in de Bijbel. Dat ze haar jeugd in de tempel in Jeruzalem
 doorbracht komt uit het Protevangelium van Jakobus en hoort volgens de
 plaatsingsregel niet in een gewone tekst thuis.
 
-Bij **Samuel** loopt de herhaling — drie keer opstaan in het donker — bewust door
+Bij **Samuël** loopt de herhaling — drie keer opstaan in het donker — bewust door
 in de zinsbouw. Niet inkorten.
 
 Bij uitbreiding naar nieuwe avatars dezelfde lengte en toon aanhouden.
