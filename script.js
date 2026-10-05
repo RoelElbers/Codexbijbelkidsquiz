@@ -221,7 +221,7 @@ const vragenData = {
                 antwoorden: ["Jezus", "Mozes", "Abraham", "Koning David"],
                 correct: "Jezus",
                 bijbelplaats: "Matteüs 2:1",
-                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt waarschijnlijk net niet — geleerden denken een paar jaar eerder, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
+                uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, en het exacte geboortejaar klopt net niet: Jezus werd een paar jaar eerder geboren, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
             },
             {
                 vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
@@ -302,9 +302,9 @@ const vragenData = {
                 bijbelplaats: "Matteüs 27:11-26"
             },
             {
-                vraag: "Het zaad viel in de gelijkenis van de zaaier op het pad, op de rotsbodem, tussen de distels en op de goede grond. Welke plek noemde Jezus níet?",
-                antwoorden: ["Op het pad", "Op de rotsbodem", "Tussen de distels", "In het water"],
-                correct: "In het water",
+                vraag: "In de gelijkenis van de zaaier valt het zaad op verschillende plekken. Welke plek noemde Jezus níet?",
+                antwoorden: ["Op het pad", "Op de rotsbodem", "Tussen de distels", "Langs de oever van het meer"],
+                correct: "Langs de oever van het meer",
                 bijbelplaats: "Matteüs 13:3-8"
             },
             {
@@ -381,7 +381,7 @@ const vragenData = {
             },
             {
                 vraag: "Jozef van Arimatea gaf zijn eigen nieuwe graf aan Jezus. Waarom was dat zo bijzonder?",
-                antwoorden: ["Zo'n graf hoorde bij één familie en ging over van vader op zoon", "Omdat hij het pas net had laten uithakken", "Omdat een graf in de rots heel duur was", "Omdat hij het van de Romeinen had gekregen"],
+                antwoorden: ["Zo'n graf hoorde bij één familie en ging over van vader op zoon", "Omdat het naast het graf van koning David lag", "Omdat er al een profeet in begraven lag", "Omdat hij het van de Romeinen had gekregen"],
                 correct: "Zo'n graf hoorde bij één familie en ging over van vader op zoon",
                 bijbelplaats: "Matteüs 27:60",
                 uitleg: "Een graf was geen kuil in de grond maar een kamer, uitgehakt in de zachte kalksteen rond Jeruzalem. Binnen liepen stenen banken langs de wanden, en voor de ingang rolde men een grote ronde steen. Zo'n graf hoorde bij een familie en werd van generatie op generatie gebruikt. Juist daarom valt op wat Matteüs vertelt: Jozef van Arimatea gaf zijn eigen nieuwe graf weg aan iemand die niet tot zijn familie hoorde."
@@ -580,8 +580,8 @@ Jezus kwam dus in de vierde nachtwaak over het water lopen: helemaal aan het ein
                 vraag: "Judas kreeg dertig zilverstukken. Wat was zo'n zilverstuk ongeveer waard?",
                 antwoorden: ["Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon", "Ongeveer één dagloon, net als een denarie", "Precies één jaarloon per stuk", "Het was geen echt geld, maar een tempelmunt zonder waarde"],
                 correct: "Ongeveer vier daglonen, dus dertig stuks waren zo'n vier maanden loon",
-                bijbelplaats: "Matteüs 26:15",
-                uitleg: "Met een zilverstuk wordt hier waarschijnlijk een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin.\n\nHet bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die je moest betalen als je slaaf door een dier gedood was — de prijs van een mensenleven dat niet als volwaardig werd geteld."
+                bijbelplaats: "Matteüs 26:15 · Exodus 21:32",
+                uitleg: "Met een zilverstuk wordt hier een sikkel bedoeld, de munt waarmee ook de tempelbelasting werd betaald. Eén sikkel was ongeveer vier daglonen waard, dus dertig sikkels kwamen neer op vier maanden loon voor een gewone arbeider. Veel geld, maar geen fortuin.\n\nHet bedrag is niet toevallig gekozen: in de wet van Mozes is dertig sikkels precies de vergoeding die de eigenaar van een os moest betalen als zijn dier een slaaf had gedood — de prijs van een mensenleven dat niet als volwaardig werd geteld."
             },
             {
                 vraag: "Johannes de Doper zegt over degene die na hem komt: Hij heeft de wan in Zijn hand. Wat is een wan?",
