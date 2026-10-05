@@ -6953,8 +6953,8 @@ function updateSchildpuntenWeergave() {
 
 const avatarNamen = {
     mozes: "Mozes",
-    esther: "Esther",
-    judith: "Judith",
+    esther: "Ester",
+    judith: "Judit",
     samuel: "Samuël",
     jozef: "Jozef",
     elia: "Elia",
@@ -6991,11 +6991,11 @@ const avatarInfo = {
     },
     esther: {
         bijbelplaats: "Ester 4 en 5",
-        tekst: "Esther was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning — ongevraagd, en dat mocht niet. Drie dagen bereidde ze zich voor. Daarna trok ze haar mooiste kleren aan en liep de troonzaal binnen."
+        tekst: "Ester was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning — ongevraagd, en dat mocht niet. Drie dagen bereidde ze zich voor. Daarna trok ze haar mooiste kleren aan en liep de troonzaal binnen."
     },
     judith: {
         bijbelplaats: "Het boek Judit",
-        tekst: "Judith woonde in een stad die werd belegerd door een enorm leger. Het water raakte op en de mensen wilden zich overgeven. Zij niet. Ze trok haar rouwkleren uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in elke Bijbel vindt."
+        tekst: "Judit woonde in een stad die werd belegerd door een enorm leger. Het water raakte op en de mensen wilden zich overgeven. Zij niet. Ze trok haar rouwkleren uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in elke Bijbel vindt."
     },
     samuel: {
         bijbelplaats: "1 Samuël 3",

@@ -18,16 +18,16 @@ zag branden die maar niet opbrandde. Hij liep erheen om beter te kijken, en toen
 klonk er een stem die hem bij zijn naam riep. Hij moest zijn sandalen uitdoen,
 want de grond waar hij stond was heilig.
 
-## Esther — Ester 4 en 5
+## Ester — Ester 4 en 5
 
-Esther was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse
+Ester was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse
 volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning — ongevraagd,
 en dat mocht niet. Drie dagen bereidde ze zich voor. Daarna trok ze haar mooiste
 kleren aan en liep de troonzaal binnen.
 
-## Judith — het boek Judit
+## Judit — het boek Judit
 
-Judith woonde in een stad die werd belegerd door een enorm leger. Het water
+Judit woonde in een stad die werd belegerd door een enorm leger. Het water
 raakte op en de mensen wilden zich overgeven. Zij niet. Ze trok haar rouwkleren
 uit, maakte zich mooi en liep de stadspoort uit, recht op het vijandelijke kamp
 af — en redde haar stad. Haar verhaal staat in het boek Judit, dat je niet in
@@ -86,7 +86,7 @@ veranderde haar hele leven: ze werd de vrouw van Isaak.
 
 ## Aandachtspunten
 
-Bij **Judith** is het slot van het verhaal bewust weggelaten; dat is te heftig
+Bij **Judit** is het slot van het verhaal bewust weggelaten; dat is te heftig
 voor deze leeftijd. De zin over het boek staat achteraan, zodat een kind eerst
 weet wie ze is en pas daarna waar ze te vinden is.
 
