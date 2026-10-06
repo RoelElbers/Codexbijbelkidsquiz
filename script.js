@@ -2898,9 +2898,6 @@ vragenData["Handelingen"] = {
     ]
 };
 
-// --- Uren van de dag: Pinksteren (verplaatst vanuit de Lucas-pool) -----------
-// Hoort inhoudelijk bij Handelingen (Handelingen 2:15). Staat hier, ná de
-// Handelingen-definitie, omdat vragenData["Handelingen"] hierboven pas ontstaat.
 // =====================================================================
 // 1 & 2 Korintiërs — vragenpool (50 vragen: beginner 16, advanced 16,
 // expert 18)
