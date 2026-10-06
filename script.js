@@ -1187,7 +1187,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Hoe heette de moeder van Johannes de Doper, een familielid van Maria?",
                 antwoorden: ["Marta", "Hanna", "Elisabet", "Salome"],
                 correct: "Elisabet",
-                bijbelplaats: "Lucas 1:36"
+                bijbelplaats: "Lucas 1:13, 36"
             },
             {
                 vraag: "Waarom moesten Jozef en Maria naar Betlehem reizen volgens Lucas?",
@@ -1210,7 +1210,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wat deed Jezus toen Hij twaalf jaar oud was, en Zijn ouders Hem na drie dagen zoeken terugvonden in Jeruzalem?",
-                antwoorden: ["Hij hielp in een winkel", "Hij zat in de tempel tussen de leraren, Hij luisterde en stelde vragen", "Hij hielp bij het schoonmaken van de tempel", "Hij speelde met andere kinderen"],
+                antwoorden: ["Hij hielp op de markt een koopman met het verkopen van zijn waren", "Hij zat in de tempel tussen de leraren, Hij luisterde en stelde vragen", "Hij hielp de tempeldienaren met het schoonmaken van de voorhof", "Hij speelde bij de stadspoort met kinderen die Hij onderweg had leren kennen"],
                 correct: "Hij zat in de tempel tussen de leraren, Hij luisterde en stelde vragen",
                 bijbelplaats: "Lucas 2:41-47"
             },
@@ -1227,7 +1227,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Lucas 10:30-37"
             },
             {
-                vraag: "Jezus kwam op bezoek bij twee zussen. De één was druk met het eten, de ander zat aan Zijn voeten te luisteren. Hoe heetten ze?",
+                vraag: "Jezus kwam op bezoek bij twee zussen. De één had het druk met het bedienen van de gasten, de ander zat aan Zijn voeten te luisteren. Hoe heetten ze?",
                 antwoorden: ["Lea en Rachel", "Marta en Maria", "Hanna en Naomi", "Mirjam en Sara"],
                 correct: "Marta en Maria",
                 bijbelplaats: "Lucas 10:38-42"
@@ -1313,7 +1313,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Lucas 4:16"
             },
             {
-                vraag: "Wat vierden de Joden met het feest Pesach (Pasen)?",
+                vraag: "Wat vierden de Joden met het feest Pesach, het Joodse paasfeest?",
                 antwoorden: ["De bevrijding uit de slavernij in Egypte", "De inwijding van de tempel door de Makkabeeën", "De bouw van de tempel", "De overwinning van koning David op de reus Goliat"],
                 correct: "De bevrijding uit de slavernij in Egypte",
                 bijbelplaats: "Lucas 22:1 · Exodus 12:17"
@@ -1328,28 +1328,29 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "De arme weduwe gaf twee lepta, de allerkleinste muntjes die er bestonden. Hoeveel was dat samen ongeveer in geld van nu?",
                 antwoorden: ["Ongeveer twee tot drie euro", "Ongeveer 100 euro", "Een dagloon (150-200 euro)", "Ongeveer 20 euro"],
                 correct: "Ongeveer twee tot drie euro",
-                bijbelplaats: "Lucas 21:1-4"
+                bijbelplaats: "Lucas 21:1-4",
+                uitleg: "Er gingen 128 lepta in één denarie, en een denarie was ongeveer het loon voor een dag werken. Twee lepta waren dus zo'n 1/64 van een dagloon: twee à drie euro. Hoe het andere geld van toen zich daartoe verhoudt, lees je in Ontdekken bij Geld, onder Grieks geld."
             },
             {
                 vraag: "In de synagoge van Nazaret kreeg Jezus de boekrol van Jesaja aangereikt. Hoe las men die?",
                 antwoorden: ["Je rolde hem met twee handen open tot je de goede plek had, en las staand voor", "Je sloeg hem open op de juiste bladzijde, zoals bij een boek", "De voorlezer kreeg de tekst voorgezegd en herhaalde die", "Men las nooit voor, de tekst werd uit het hoofd opgezegd"],
                 correct: "Je rolde hem met twee handen open tot je de goede plek had, en las staand voor",
                 bijbelplaats: "Lucas 4:17",
-                uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold rond twee stokken. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. Een rol met alleen het boek Jesaja was al zo'n zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen.\n\nLucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon Hij te spreken."
+                uitleg: "Een boekrol was een lange strook perkament of papyrus, opgerold tot een rol. Om iets terug te vinden rolde je met de ene hand op en met de andere af, tot je bij de goede plek was — bladzijden om te zoeken waren er niet. De grote Jesajarol die bij de Dode Zee werd gevonden, is ruim zeven meter lang. Voorlezen deed je staand, uit eerbied voor de tekst; daarna ging je zitten om uit te leggen.\n\nLucas vertelt precies dat: Jezus stond op om te lezen, rolde de boekrol op en ging zitten — en pas toen begon Hij te spreken."
             },
             {
                 vraag: "Dat juist een Samaritaan de gewonde man hielp, was voor de toehoorders schokkend. Waarom vonden zij dat zo verrassend?",
                 antwoorden: ["Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep", "Samaritanen waren rovers, dus men verwachtte hier het tegenovergestelde", "Samaritanen mochten volgens de wet geen gewonden aanraken", "Samaritanen waren Romeinse soldaten in dienst van de bezetter"],
                 correct: "Joden en Samaritanen gingen al eeuwen niet met elkaar om en wantrouwden elkaar diep",
                 bijbelplaats: "Lucas 10:33 · Johannes 4:9",
-                uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — er is zelfs een keer een Samaritaanse tempel verwoest door Joden. Wie in Galilea naar Jeruzalem reisde, maakte liever een omweg dan door Samaria te lopen.\n\nDat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
+                uitleg: "De Samaritanen waren verwanten van de Joden, met dezelfde eerste vijf bijbelboeken. Maar ze aanbaden God op de berg Gerizim in plaats van in Jeruzalem, en dat verschil liep hoog op — ruim een eeuw voor Jezus' geboorte liet de Joodse vorst Johannes Hyrkanus zelfs de Samaritaanse tempel verwoesten. Johannes schrijft dan ook dat Joden niet met Samaritanen omgingen (Johannes 4:9).\n\nDat maakt de gelijkenis scherp: de priester en de leviet horen erbij, en juist de buitenstaander doet wat nodig is."
             },
             {
-                vraag: "De farizeeër in de gelijkenis zegt dat hij tienden geeft van alles wat hij bezit. Wat zijn tienden?",
+                vraag: "De farizeeër in de gelijkenis zegt dat hij tienden geeft van alles wat hij binnenkrijgt. Wat zijn tienden?",
                 antwoorden: ["Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel", "Tien munten die je jaarlijks moest betalen", "De tiende dag van elke maand, die je apart hield", "De tien geboden die je uit je hoofd leerde"],
                 correct: "Een tiende deel van je oogst of inkomen, bestemd voor God en de tempel",
-                bijbelplaats: "Lucas 18:12",
-                uitleg: "Een tiende deel van de oogst was bestemd voor de levieten. Zij verzorgden de dienst in de tempel en hadden als enige stam geen eigen land gekregen, dus dit was hun inkomen. De levieten gaven daar zelf weer een tiende deel van door aan de priesters. Daarnaast was er elke drie jaar een tiende voor de armen, de weduwen, de wezen en de vreemdelingen.\n\nDe farizeeër uit de gelijkenis ging nog verder dan de wet vroeg: hij gaf van alles een tiende, tot aan de kruiden in zijn tuin toe."
+                bijbelplaats: "Lucas 18:12 · Lucas 11:42",
+                uitleg: "Een tiende deel van de oogst was bestemd voor de levieten. Zij verzorgden de dienst in de tempel en hadden als enige stam geen eigen land gekregen, dus dit was hun inkomen. De levieten gaven daar zelf weer een tiende deel van door aan de priesters. Daarnaast was er elke drie jaar een tiende voor de armen, de weduwen, de wezen en de vreemdelingen.\n\nDe farizeeër uit de gelijkenis gaf van al zijn inkomsten een tiende. Elders zegt Jezus dat de farizeeën zelfs van de kruiden in hun tuin een tiende gaven (Lucas 11:42)."
             }
         ],
         expert: [
@@ -1366,7 +1367,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Lucas 1:46-55"
             },
             {
-                vraag: "Hoe heet de lofzang van Zacharias, die hij uitsprak toen zijn tong weer losliet bij de geboorte van zijn zoon Johannes?",
+                vraag: "Hoe heet de lofzang van Zacharias, die hij uitsprak toen hij na de geboorte van zijn zoon Johannes weer kon spreken?",
                 antwoorden: ["Het Benedictus", "Het Magnificat", "Het Te Deum", "Het Sanctus"],
                 correct: "Het Benedictus",
                 bijbelplaats: "Lucas 1:67-79"
@@ -1379,9 +1380,9 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wat overkwam Zacharias toen hij de engel Gabriël niet geloofde over de geboorte van zijn zoon?",
-                antwoorden: ["Hij werd blind tot de dag dat zijn zoon werd geboren", "Hij kon niet meer spreken tot zijn zoon werd geboren", "Hij viel flauw van schrik en moest de tempel uit gedragen worden", "Hij kon een jaar lang de tempel niet meer in"],
-                correct: "Hij kon niet meer spreken tot zijn zoon werd geboren",
-                bijbelplaats: "Lucas 1:18-22"
+                antwoorden: ["Hij werd blind tot de dag dat zijn zoon werd geboren", "Hij kon niet meer spreken tot zijn zoon geboren was en Johannes werd genoemd", "Hij viel flauw van schrik en moest de tempel uit gedragen worden", "Hij kon een jaar lang de tempel niet meer in"],
+                correct: "Hij kon niet meer spreken tot zijn zoon geboren was en Johannes werd genoemd",
+                bijbelplaats: "Lucas 1:18-22, 57-64"
             },
             {
                 vraag: "Welke profeet wordt geciteerd over Johannes de Doper, die 'een stem die roept in de woestijn' is?",
@@ -1400,7 +1401,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen", "Een lijst maken van alle zieken, zodat Jezus later bij hen langs kon gaan", "In elke synagoge de boekrol van Jesaja voorlezen, zoals Jezus in Nazaret had gedaan", "Van huis tot huis trekken en in elke stad bij zo veel mogelijk gezinnen aan tafel gaan"],
                 correct: "Vooruitgaan naar elke stad waar Jezus nog zou komen, zieken genezen en Gods koninkrijk aankondigen",
                 bijbelplaats: "Lucas 10:1-9",
-                uitleg: "Het verschil zit in één woord. In het Grieks staat er <span class='grieks'>ἑβδομήκοντα</span> (hebdomēkonta), 'zeventig', en in een deel van de handschriften staat daar <span class='grieks'>δύο</span> (duo) achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze rond het jaar 350 met de hand geschreven, en allebei bestaan ze nog steeds.\n\nDaarom lees je in de ene Bijbel iets anders dan in de andere: de Nieuwe Bijbelvertaling en de Willibrordvertaling hebben 72, de Statenvertaling en de Herziene Statenvertaling 70. De meeste geleerden houden het op tweeënzeventig, omdat een overschrijver eerder een tweede cijfer weglaat dan er een bij verzint — maar zeker weten doen ze het niet.\n\nBeide getallen betekenen iets: tweeënzeventig is in oude Griekse bijbels het aantal volken op aarde, en zeventig het aantal oudsten dat Mozes uitkoos."
+                uitleg: "Het verschil zit in één woord. In het Grieks staat er <span class='grieks'>ἑβδομήκοντα</span> (hebdomēkonta), 'zeventig', en in een deel van de handschriften staat daar <span class='grieks'>δύο</span> (duo) achter: 'twee'. De twee beroemdste oude bijbelhandschriften zijn het er niet over eens: in de Codex Vaticanus staat tweeënzeventig, in de Codex Sinaïticus zeventig. Allebei zijn ze in de vierde eeuw met de hand geschreven, en allebei bestaan ze nog steeds.\n\nModerne Griekse tekstuitgaven kiezen meestal tweeënzeventig, maar zetten het woord 'twee' tussen haken: welk getal Lucas zelf schreef, weet niemand zeker.\n\nBeide getallen doen denken aan het Oude Testament: in de oude Griekse vertaling van Genesis 10 telt de lijst van volken op aarde er tweeënzeventig, en Mozes koos zeventig oudsten uit."
             },
             {
                 vraag: "Hoe heette de bedelaar in de gelijkenis over de rijke man, die in de schoot van Abraham terechtkwam?",
@@ -1431,7 +1432,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Tien stadiën", "Zestig stadiën", "Honderd stadiën", "Tweehonderd stadiën"],
                 correct: "Zestig stadiën",
                 bijbelplaats: "Lucas 24:13",
-                uitleg: "Zestig stadiën is ruim elf kilometer — een wandeling van zo'n twee tot drie uur. Dat verklaart waarom de twee leerlingen onderweg alle tijd hadden om met hun onbekende reisgenoot te praten, en waarom ze 's avonds aandrongen dat hij bleef eten: het was te ver om nog terug te lopen. Welk dorp Emmaüs precies was, weet niemand zeker; er zijn meerdere plaatsen die er aanspraak op maken."
+                uitleg: "Zestig stadiën is ruim elf kilometer — een wandeling van zo'n twee tot drie uur. Dat verklaart waarom de twee leerlingen onderweg alle tijd hadden om met hun onbekende reisgenoot te praten. In Emmaüs drongen ze aan dat Hij bleef, want het werd al avond. Toch liepen ze, toen ze Jezus hadden herkend, meteen dezelfde weg terug naar Jeruzalem. Welk dorp Emmaüs precies was, weet niemand zeker; er zijn meerdere plaatsen die er aanspraak op maken."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester laat de rentmeester twee schuldenaren hun schuld verlagen. Waarin waren die schulden uitgedrukt?",
@@ -1450,7 +1451,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Ongeveer 10 meter", "Ongeveer 185 meter", "Ongeveer 1 kilometer", "Ongeveer 5 kilometer"],
                 correct: "Ongeveer 185 meter",
                 bijbelplaats: "Lucas 24:13",
-                uitleg: "Een stadie was ongeveer 185 meter. Het Griekse woord is stadion, en daar komt ons woord voor het sportveld vandaan: de hardloopbaan in een Grieks stadion was precies één stadie lang. In Nederlandse Bijbels staat het meervoud stadiën; verwar het niet met stadium, want dat betekent iets heel anders."
+                uitleg: "Een stadie was ongeveer 185 meter; de precieze lengte verschilde per plaats. Het Griekse woord is stadion, en daar komt ons woord voor het sportveld vandaan: de hardloopbaan in een Grieks stadion was één stadie lang — in Olympia ruim 192 meter. In Nederlandse Bijbels staat het meervoud stadiën. Ook het woord stadium komt ervan: zo heette de renbaan in het Latijn. Later ging het 'fase' betekenen, zoals in 'een vroeg stadium' — een afstand is het dan niet meer."
             },
             {
                 vraag: "In de gelijkenis van de onrechtvaardige rentmeester was iemand honderd vat olie schuldig. Ongeveer hoeveel liter ging er in één vat?",
@@ -1464,7 +1465,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Ongeveer 220 liter", "Ongeveer 22 liter", "Ongeveer 50 liter", "Ongeveer 2200 liter"],
                 correct: "Ongeveer 220 liter",
                 bijbelplaats: "Lucas 16:7",
-                uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was volgens de meeste schattingen ongeveer 220 liter, zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een schuld waar een gewone boer nooit aan kon komen."
+                uitleg: "In het Grieks staat er <span class='grieks'>κόρος</span> (koros), een oude Hebreeuwse maat. Nederlandse Bijbels vertalen dat tegenwoordig met 'zakken'. Maar het was geen zak zoals wij die kennen: één kor was volgens de meeste schattingen ongeveer 220 liter. Omdat tussen de korrels lucht zit, weegt dat zo'n 170 kilo tarwe. Honderd van die zakken is dus ruim zeventien ton graan — een enorme schuld."
             },
             {
                 vraag: "Bij het Laatste Avondmaal sprak Jezus over een bijzondere afspraak tussen God en de mensen. Hoe noemde Hij die?",
@@ -1494,8 +1495,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Lucas noemt Herodes \"tetrarch\" van Galilea. Wat betekent dat woord?",
                 antwoorden: ["Bestuurder over een deel van een verdeeld rijk, lager in rang dan een koning", "Opperbevelhebber van het Romeinse leger in een provincie, benoemd door de keizer zelf", "Hogepriester die de tempeldienst in Jeruzalem leidde", "Rechter in de Hoge Raad, de hoogste Joodse rechtbank"],
                 correct: "Bestuurder over een deel van een verdeeld rijk, lager in rang dan een koning",
-                bijbelplaats: "Lucas 3:1",
-                uitleg: "Toen Herodes de Grote stierf, werd zijn rijk onder zijn zonen verdeeld. Geen van hen kreeg de titel koning; de keizer hield die in eigen hand. Ze werden tetrarch genoemd, letterlijk heerser over een vierde deel, maar in de praktijk was het gewoon de titel voor een vorst van lagere rang.\n\nLucas noemt in dit ene vers de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
+                bijbelplaats: "Lucas 3:1-2",
+                uitleg: "Toen Herodes de Grote stierf, verdeelde keizer Augustus zijn rijk onder drie zonen. Geen van hen kreeg de titel koning: Archelaüs werd etnarch, 'heerser over een volk', en Antipas en Filippus werden tetrarch. Tetrarch betekent letterlijk heerser over een vierde deel, maar in de praktijk was het de titel voor een vorst van lagere rang dan een koning.\n\nIn de eerste twee verzen van hoofdstuk 3 noemt Lucas de keizer, de stadhouder, drie tetrarchen én twee hogepriesters — hij zet het verhaal daarmee heel precies op de kaart van de wereldgeschiedenis."
             },
             {
                 vraag: "De Herodes die Jezus liet verhoren was niet dezelfde als de Herodes uit het kerstverhaal. Hoe zat dat?",
@@ -1506,15 +1507,15 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De farizeeër in de gelijkenis zegt dat hij twee keer per week vast. Wat vroeg de wet eigenlijk?",
-                antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pasen", "De wet zei er niets over"],
+                antwoorden: ["Eén vastendag per jaar, op Grote Verzoendag", "Elke week één dag, op de sabbat", "Vasten tijdens de hele veertig dagen voor Pesach", "De wet zei er niets over"],
                 correct: "Eén vastendag per jaar, op Grote Verzoendag",
                 bijbelplaats: "Lucas 18:12 · Leviticus 16:29",
-                uitleg: "De wet van Mozes kende maar één verplichte vastendag per jaar: Grote Verzoendag (Leviticus 16). Twee keer per week vasten was iets wat vrome farizeeën zichzelf oplegden, bovenop wat gevraagd werd — en juist daar gaat de gelijkenis over. De veertigdagentijd voor Pasen bestond toen nog niet; dat is een christelijk gebruik dat pas eeuwen later ontstond."
+                uitleg: "De wet van Mozes schreef maar één dag per jaar voor waarop iedereen zich moest verootmoedigen: Grote Verzoendag (Leviticus 16). Het woord vasten staat daar niet, maar zo werd het wel begrepen: je at en dronk die dag niets. Twee keer per week vasten was iets wat vrome farizeeën zichzelf oplegden, bovenop wat gevraagd werd — en daar was deze farizeeër trots op. Veertig dagen vasten voor Pesach kende de wet niet. Het doet denken aan de christelijke veertigdagentijd voor Pasen, maar die ontstond pas eeuwen later."
             },
             {
                 vraag: "Toen Jezus de vissers zag, waren zij hun netten aan het spoelen. Waarom deden zij dat?",
-                antwoorden: ["Om wier, slib en schelpen eruit te halen, anders zag de vis het net", "Om ze te wassen voordat ze thuis te drogen werden gehangen", "Om te kijken of er nog vis in was blijven zitten", "Om ze zwaarder te maken, zodat ze dieper zonken"],
-                correct: "Om wier, slib en schelpen eruit te halen, anders zag de vis het net",
+                antwoorden: ["Om wier, slib en vuil eruit te halen, zodat ze heel en bruikbaar bleven", "Om het zout eruit te spoelen na een nacht op het zoute meer", "Om te kijken of er nog vis in was blijven zitten", "Om de netten zwaarder te maken, zodat ze dieper zonken"],
+                correct: "Om wier, slib en vuil eruit te halen, zodat ze heel en bruikbaar bleven",
                 bijbelplaats: "Lucas 5:2"
             },
             {
@@ -1525,8 +1526,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Jezus zegt tegen Simon dat de satan hem wil \"zeven als tarwe\". Wat gebeurt er bij het zeven?",
-                antwoorden: ["Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
-                correct: "Het graan wordt heen en weer geschud, zodat het kaf en het vuil eruit vallen",
+                antwoorden: ["Het graan wordt in een zeef flink heen en weer geschud, zodat het van steentjes en vuil wordt gescheiden", "Het graan wordt fijngemalen tussen twee stenen", "Het graan wordt in water gelegd zodat het bederf bovendrijft", "Het graan wordt geteld en in zakken verdeeld"],
+                correct: "Het graan wordt in een zeef flink heen en weer geschud, zodat het van steentjes en vuil wordt gescheiden",
                 bijbelplaats: "Lucas 22:31"
             },
             {
@@ -1537,15 +1538,15 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De vader geeft zijn teruggekeerde zoon het beste kleed, een ring en sandalen. Wat betekende die ring?",
-                antwoorden: ["Gezag in huis: met een zegelring kon je namens de familie zaken doen", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden en dus het grootste erfdeel kreeg", "Dat hij zijn schulden had afbetaald"],
-                correct: "Gezag in huis: met een zegelring kon je namens de familie zaken doen",
+                antwoorden: ["Dat hij weer als zoon werd aangenomen, met eer en gezag in huis", "Dat hij verloofd was en snel zou trouwen", "Dat hij de oudste zoon was geworden en dus het grootste erfdeel kreeg", "Dat hij zijn schulden had afbetaald"],
+                correct: "Dat hij weer als zoon werd aangenomen, met eer en gezag in huis",
                 bijbelplaats: "Lucas 15:22",
-                uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. De zegelring stond voor volmacht: wie hem droeg, kon zijn zegel in zachte zegelwas drukken en zo namens de familie zaken doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat.\n\nDe zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Zijn vader laat hem niet uitpraten en geeft hem alles terug wat bij een zoon hoort."
+                uitleg: "Alle drie de geschenken zeggen iets. Het beste kleed is het eregewaad dat je een gast van aanzien gaf. Een ring hoorde bij iemand met aanzien en gezag; denk aan de farao die Jozef zijn ring gaf (Genesis 41:42). Vaak wordt gedacht aan een zegelring, waarmee je namens de familie zaken kon doen. En sandalen hoorden bij wie thuis is — blootsvoets liep je als je rouwde, gevangen was of niets bezat.\n\nDe zoon had onderweg bedacht dat hij zou vragen om dagloner te mogen worden, iemand die voor loon werkt en verder niets is. Maar dat zegt hij niet meer: zijn vader geeft hem alles terug wat bij een zoon hoort."
             },
             {
                 vraag: "De verloren zoon eindigt als varkenshoeder. Waarom is dat voor een Joodse lezer extra schrijnend?",
-                antwoorden: ["Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben", "Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
-                correct: "Varkens waren onreine dieren, waar een Jood niets mee te maken wilde hebben",
+                antwoorden: ["Varkens golden als onreine dieren; voor een Joodse toehoorder was dit werk diep vernederend", "Varkenshoeders moesten dag en nacht buiten blijven, ook als het stormde", "Het was het slechtst betaalde werk dat er bestond", "Alleen kinderen deden dat werk, geen volwassen mannen"],
+                correct: "Varkens golden als onreine dieren; voor een Joodse toehoorder was dit werk diep vernederend",
                 bijbelplaats: "Lucas 15:15 · Leviticus 11:7"
             },
             {
