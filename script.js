@@ -2011,17 +2011,6 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
 // antwoord->correct) en niveau "gevorderd"->advanced. Elke vraag is op het
 // evangelie in zijn bijbelplaats geplaatst. Pool-/hussel-/win-/scorelogica
 // blijft ongemoeid; de niveaus worden alleen groter.
-// --- Uren van de dag: drie bekende momenten ---------------------------------
-// Horen bij de naslagtabel "Maten, geld & tijd". Elk bij het bijbelboek van de
-// gebeurtenis. Het Pinkstervoorbeeld hoort bij Handelingen (Handelingen 2:15)
-// en staat als push ná de Handelingen-pool, omdat vragenData["Handelingen"]
-// hierboven nog niet bestaat.
-// === Johannes — de "Ik ben"-uitspraken (9 extra vragen) =====================
-// Het juiste antwoord staat in 'correct' op tekstinhoud; de antwoordvolgorde
-// wordt bij het trekken gehusseld (husselArray in kiesNiveau), dus de positie
-// in de array doet er niet toe.
-// === Matteüs & Johannes — beelden ("zout", "licht", "vissers van mensen",
-// "ranken", "schapen"). Juiste antwoord op inhoud; husselArray schudt de opties.
 // =====================================================================
 // Romeinen — vragenpool (55 vragen: beginner 24, advanced 15, expert 16)
 // Formaat gelijk aan de evangeliën: vraag / antwoorden / correct /
