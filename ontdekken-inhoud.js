@@ -31,7 +31,7 @@
 
 /* eslint-disable no-unused-vars */
 
-// --- Woorden: het woordenboek (60 termen, alfabetisch) ----------------------
+// --- Woorden: het woordenboek (61 termen, alfabetisch) ----------------------
 const ONTDEK_WOORDENBOEK = [
     { term: "Aanliggen", uitleg: "Zo at men bij een feestmaal: half liggend op een bank of kussens rond een lage tafel, steunend op de linkerelleboog, met de voeten naar buiten. De Joden hadden die gewoonte van de Grieken overgenomen. Zo kon Johannes bij het Laatste Avondmaal tegen Jezus aan leunen (Johannes 13:23), en kon Maria in Betanië Jezus' voeten zalven (Johannes 12:3)." },
     { term: "Allerheiligste", uitleg: "Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen." },
@@ -69,6 +69,7 @@ const ONTDEK_WOORDENBOEK = [
     { term: "Oudste (ouderling)", verwijstNaar: "wie-gemeenten" },
     { term: "Pasen (Pesach)", uitleg: "Pesach is het Joodse feest waarop het volk viert dat God hen lang geleden uit de slavernij in Egypte bevrijdde. Jezus vierde dit feest ook. Voor christenen kreeg Pasen er later een tweede betekenis bij: het feest van Jezus' opstanding." },
     { term: "Perkament", uitleg: "Dun bewerkte dierenhuid waarop vroeger werd geschreven. Het was sterker en duurzamer dan papyrus. In 2 Timoteüs vraagt Paulus of Timoteüs de boekrollen en vooral de perkamenten wil meebrengen." },
+    { term: "Pinksteren (Wekenfeest)", uitleg: "Het Wekenfeest was een Joods oogstfeest, zeven weken na Pesach: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden het <em>pentēkostē</em>, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Op dat feest kwam de Heilige Geest op de leerlingen (Handelingen 2:1-4). Daarom vieren christenen met Pinksteren de komst van de Heilige Geest." },
     { term: "Priester", verwijstNaar: "wie-tempel" },
     { term: "Profeet", verwijstNaar: "wie-gemeenten" },
     { term: "Proselieten", verwijstNaar: "wie-groepen" },
@@ -251,6 +252,7 @@ const ONTDEK_MATEN = [
     { kop: "Lengte" },
     { item: "<span class=\"naslag-term\">El</span> — ongeveer 45 centimeter, zo lang als de afstand van je elleboog tot je vingertoppen. Daar komt de naam vandaan. Omdat niet iedereen even lange armen heeft, was hij niet overal precies gelijk." },
     { item: "<span class=\"naslag-term\">Stadie</span> — een afstandsmaat van ongeveer 185 meter; de precieze lengte verschilde per plaats. Emmaüs lag zo'n zestig stadiën van Jeruzalem: ruim elf kilometer (Lucas 24:13). Het Griekse woord is stadion, en daar komt ons woord voor het sportveld vandaan: de hardloopbaan in een Grieks stadion was één stadie lang. Ook het woord stadium komt ervan: zo heette de renbaan in het Latijn. Later ging het 'fase' betekenen, zoals in 'een vroeg stadium'." },
+    { item: "<span class=\"naslag-term\">Sabbatsreis</span> — de afstand die je op sabbat mocht lopen: tweeduizend el, ongeveer negenhonderd meter. Lucas gebruikt die maat om te laten zien hoe dicht de Olijfberg bij Jeruzalem lag (Handelingen 1:12)." },
     { item: "<span class=\"naslag-term\">Mijl</span> — de Romeinse mijl was ongeveer 1.500 meter (anderhalve kilometer), oorspronkelijk duizend dubbele passen van een soldaat. Jezus zei: als iemand je dwingt één mijl mee te gaan, ga er dan twee." },
     { kop: "Inhoud" },
     { noot: "Hier weten we het minder zeker: er bestond geen officiële standaard, en de potten en vaten van toen waren niet allemaal even groot." },

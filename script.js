@@ -2495,10 +2495,11 @@ vragenData["Handelingen"] = {
     ],
     advanced: [
         {
-            vraag: "Wie schreef het boek Handelingen?",
+            vraag: "Wie schreef het boek Handelingen, volgens de vroege kerk?",
             antwoorden: ["Petrus", "Lucas", "Paulus", "Marcus"],
             correct: "Lucas",
-            bijbelplaats: "Handelingen 1:1 · Lucas 1:3"
+            bijbelplaats: "Handelingen 1:1 · Lucas 1:3",
+            uitleg: "Lucas noemt zijn naam nergens. Maar Handelingen begint, net als het evangelie van Lucas, met een opdracht aan Theofilus, en verwijst naar \"mijn eerste boek\" (Handelingen 1:1). Het zijn dus twee delen van één verhaal. Al vroeg schreef de kerk beide boeken toe aan Lucas, de arts die met Paulus meereisde."
         },
         {
             vraag: "Wat konden de leerlingen ineens doen toen ze de Heilige Geest kregen?",
@@ -2513,10 +2514,11 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 2:14"
         },
         {
-            vraag: "Hoe heette Paulus eerst, voordat hij Paulus genoemd werd?",
+            vraag: "In het begin van Handelingen noemt Lucas Paulus nog anders. Welke naam gebruikt hij daar voor hem?",
             antwoorden: ["Simon", "Saulus", "Silas", "Stefanus"],
             correct: "Saulus",
-            bijbelplaats: "Handelingen 13:9"
+            bijbelplaats: "Handelingen 13:9",
+            uitleg: "Paulus had twee namen: de Joodse naam Saulus en de Romeinse naam Paulus. Lucas noemt hem eerst Saulus, en vanaf Handelingen 13:9 — \"Saulus, die ook Paulus heet\" — alleen nog Paulus. Hij kreeg de naam Paulus dus niet bij zijn bekering, zoals vaak gedacht wordt."
         },
         {
             vraag: "Petrus zat gevangen. Wat gebeurde er 's nachts in de gevangenis?",
@@ -2525,7 +2527,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 12:7-10"
         },
         {
-            vraag: "Paulus maakte verschillende grote reizen. Vanuit welke stad vertrok hij steeds?",
+            vraag: "Vanuit welke stad vertrok Paulus op zijn eerste drie grote zendingsreizen?",
             antwoorden: ["Antiochië", "Jeruzalem", "Damascus", "Tarsus"],
             correct: "Antiochië",
             bijbelplaats: "Handelingen 13:1-3; 15:35-40; 18:22-23"
@@ -2625,21 +2627,21 @@ vragenData["Handelingen"] = {
             antwoorden: ["De zondag, de dag na de sabbat, waarop Jezus was opgestaan", "De maandag, het begin van de werkweek", "De zaterdag, dezelfde dag als de sabbat", "De vrijdagavond, als de sabbat begon"],
             correct: "De zondag, de dag na de sabbat, waarop Jezus was opgestaan",
             bijbelplaats: "Handelingen 20:7",
-            uitleg: "De Joodse week telde geen namen maar nummers: de eerste dag, de tweede dag, en zo verder tot de sabbat. De eerste dag van de week is dus wat wij zondag noemen. De eerste christenen bleven aanvankelijk gewoon op sabbat naar de synagoge gaan, maar kwamen daarnaast op die eerste dag bijeen om brood te breken — de dag waarop Jezus was opgestaan.\n\nOmdat een dag bij zonsondergang begon, viel zo'n samenkomst voor hun gevoel op zaterdagavond. Dat verklaart waarom Paulus in dit verhaal tot na middernacht doorpraat."
+            uitleg: "De Joodse week telde geen namen maar nummers: de eerste dag, de tweede dag, en zo verder tot de sabbat. De eerste dag van de week is dus wat wij zondag noemen. De eerste christenen bleven aanvankelijk gewoon op sabbat naar de synagoge gaan, maar kwamen daarnaast op die eerste dag bijeen om brood te breken — de dag waarop Jezus was opgestaan.\n\nWaarom praatte Paulus tot na middernacht door? Lucas vertelt het er zelf bij: Paulus wilde de volgende ochtend vertrekken, en dit was zijn laatste avond met de gemeente. Het was zondagavond."
         },
         {
             vraag: "In Antiochië werden de leerlingen voor het eerst \"christenen\" genoemd. Wat voor stad was dat?",
             antwoorden: ["Een grote handelsstad met Joden en niet-Joden in één gemeente", "Een klein bergdorp waar alleen Joodse families woonden", "De hoofdstad van Israël na Jeruzalem", "Een stad in Egypte, aan de monding van de Nijl"],
             correct: "Een grote handelsstad met Joden en niet-Joden in één gemeente",
             bijbelplaats: "Handelingen 11:26",
-            uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. Juist daar ontstond de eerste gemeente waarin Joden en niet-Joden samen aan tafel gingen — en dat maakte een nieuwe naam nodig, want de oude aanduiding als Joodse groep dekte de lading niet meer.\n\nVanuit Antiochië vertrok Paulus later op al zijn reizen."
+            uitleg: "Antiochië lag in het noorden, in het huidige Turkije, en was met een paar honderdduizend inwoners na Rome en Alexandrië de derde stad van het rijk. Er woonden veel Joden, maar ook Grieken en Syriërs door elkaar. In de gemeente daar kwamen Joden en niet-Joden samen (Handelingen 11:20-21). Waarom de leerlingen juist daar voor het eerst christenen werden genoemd, vertelt Lucas niet.\n\nVanuit Antiochië vertrok Paulus later op zijn grote zendingsreizen."
         },
         {
             vraag: "De eerste gelovigen hadden \"alles gemeenschappelijk\". Wat betekende dat in de praktijk?",
             antwoorden: ["Wie bezit had, verkocht het als er iemand tekortkwam", "Niemand mocht nog iets bezitten, alles moest weg", "Ze woonden allemaal samen in één groot huis", "Ze deelden alleen het brood bij de maaltijd"],
             correct: "Wie bezit had, verkocht het als er iemand tekortkwam",
             bijbelplaats: "Handelingen 2:44-45",
-            uitleg: "Er kwam geen kas en geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en bracht de opbrengst naar de apostelen. Later in Handelingen zegt Petrus dat ook met zoveel woorden tegen Ananias — het bezit was van hem geweest en hij had het mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen.\n\nEr stond ook iets tegenover. Wie kon meewerken, werkte mee: Paulus schrijft later aan de gemeente in Tessalonica dat wie niet wíl werken, ook niet hoeft te eten. Maar voor wie het niet kón — ouderen, zieken, weduwen zonder familie — zorgde de gemeente juist wel.\n\nDaar ging het in Handelingen 6 zelfs mis, toen sommige weduwen bij het uitdelen werden overgeslagen; daarom werden er zeven mannen aangewezen die het eerlijk gingen verdelen."
+            uitleg: "Er kwam geen regel dat je alles moest afstaan. Wat er gebeurde was praktischer: wie een stuk grond of een huis over had, verkocht het als er iemand tekortkwam, en legde de opbrengst aan de voeten van de apostelen. Zij deelden het uit aan wie iets nodig had (Handelingen 4:34-35). Later in Handelingen zegt Petrus tegen Ananias dat het bezit van hem was geweest en dat hij het had mogen houden. Het bijzondere zat dus niet in een verplichting, maar in de vanzelfsprekendheid: niemand liet een ander tekortkomen.\n\nEr stond ook iets tegenover. Wie kon meewerken, werkte mee: Paulus schrijft later aan de gemeente in Tessalonica dat wie niet wíl werken, ook niet hoeft te eten. Maar voor wie het niet kón — ouderen, zieken, weduwen zonder familie — zorgde de gemeente juist wel.\n\nDaar ging het in Handelingen 6 zelfs mis, toen sommige weduwen bij het uitdelen werden overgeslagen; daarom werden er zeven mannen aangewezen die het eerlijk gingen verdelen."
         },
         {
             vraag: "De apostelen legden de zeven mannen de handen op. Wat betekende dat gebaar?",
@@ -2668,9 +2670,10 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "In Troas viel een jongen, Eutychus, tijdens een lange toespraak in slaap en viel uit een hoog raam. Wat deed Paulus?",
-            antwoorden: ["Hij praatte gewoon door en deed alsof er niks aan de hand was", "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven", "Hij schrok en vluchtte weg", "Hij riep een dokter"],
-            correct: "Hij bad voor de jongen, en op zijn gebed kwam de jongen weer tot leven",
-            bijbelplaats: "Handelingen 20:9-12"
+            antwoorden: ["Hij praatte gewoon door en deed alsof er niks aan de hand was", "Hij ging naar beneden, sloeg zijn armen om hem heen en zei dat hij leefde", "Hij schrok en vluchtte weg", "Hij riep een dokter"],
+            correct: "Hij ging naar beneden, sloeg zijn armen om hem heen en zei dat hij leefde",
+            bijbelplaats: "Handelingen 20:9-12",
+            uitleg: "Eutychus was dood toen ze hem opraapten (Handelingen 20:9). Wat Paulus deed, lijkt op wat de profeet Elia deed bij een gestorven jongen: hij strekte zich over het kind uit en bad, en God gaf het kind het leven terug (1 Koningen 17:21-22). Lucas vertelt niet of Paulus daarbij ook bad, al zou dat goed passen bij wat Elia deed. Maar het was God die de jongen weer levend maakte."
         },
         {
             vraag: "Toen Paulus gevangenzat, hoorde zijn jonge neef van een plan om Paulus kwaad te doen. Wat deed hij?",
@@ -2706,7 +2709,7 @@ vragenData["Handelingen"] = {
             bijbelplaats: "Handelingen 13:2-3"
         },
         {
-            vraag: "Lydia was de eerste in de stad Filippi die in Jezus ging geloven. Wat was haar werk?",
+            vraag: "Lydia is de eerste in Filippi van wie Lucas vertelt dat ze in Jezus ging geloven. Wat was haar werk?",
             antwoorden: ["Ze had een kapsalon aan het marktplein", "Ze verkocht kostbare purperen stof", "Ze gaf les aan een school voor meisjes", "Ze was koningin van de stad Filippi"],
             correct: "Ze verkocht kostbare purperen stof",
             bijbelplaats: "Handelingen 16:14"
@@ -2767,7 +2770,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["De hoogste Joodse rechtbank", "De raad van de Romeinse gouverneur", "Een vergadering van alle inwoners van Jeruzalem", "De vergadering van de oudsten van één synagoge"],
             correct: "De hoogste Joodse rechtbank",
             bijbelplaats: "Handelingen 5:27",
-            uitleg: "Deze raad heette het Sanhedrin. Hij telde eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester, en vergaderde in een zaal bij de tempel. Het was de hoogste Joodse rechtbank, maar onder Romeins bestuur mocht hij geen doodvonnis meer uitvoeren. Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
+            uitleg: "Deze raad heette het Sanhedrin. Volgens de Joodse overlevering telde hij eenenzeventig leden — priesters, oudsten en schriftgeleerden — onder leiding van de hogepriester. Het was de hoogste Joodse raad en rechtbank, maar onder Romeins bestuur had hij niet het laatste woord: een doodvonnis kon hij niet zonder de Romeinen uitvoeren (Johannes 18:31). Daarom werd Jezus na het verhoor doorgestuurd naar Pilatus."
         },
         {
             vraag: "Paulus zegt: ik beroep mij op de keizer. Waarom kon hij dat doen?",
@@ -2795,14 +2798,14 @@ vragenData["Handelingen"] = {
             antwoorden: ["Iemand die geen Jood was maar wel helemaal Jood was geworden", "Iemand die alleen op feestdagen naar de tempel ging", "Een Jood die in het buitenland woonde", "Een leerling van een schriftgeleerde"],
             correct: "Iemand die geen Jood was maar wel helemaal Jood was geworden",
             bijbelplaats: "Handelingen 2:10-11",
-            uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende ging naar de synagoge en hield zich aan de belangrijkste geboden, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden, nam een rituele wassing en gold daarna volledig als Jood.\n\nLucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
+            uitleg: "Er waren twee soorten buitenstaanders die zich tot de God van Israël wendden. Een godvrezende kwam naar de synagoge en vereerde de God van Israël, maar bleef formeel buiten het volk. Een proseliet ging helemaal over: hij liet zich besnijden en gold daarna volledig als Jood.\n\nLucas noemt beide groepen apart — Cornelius was godvrezende, de mensen in dit vers waren proselieten. Dat onderscheid verklaart waarom de vraag of niet-Joden zich moesten laten besnijden later zo'n groot conflict werd."
         },
         {
             vraag: "De apostelen kozen zeven mannen voor een bepaalde taak. Waarom was dat nodig?",
             antwoorden: ["Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling", "Er waren te weinig mensen om de tempel schoon te houden", "De apostelen wilden elk jaar een tijd met vakantie en hadden vervangers nodig", "Er moest iemand de brieven van Paulus rondbrengen"],
             correct: "Griekssprekende weduwen werden overgeslagen bij de dagelijkse voedselverdeling",
             bijbelplaats: "Handelingen 6:1-3",
-            uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken en waren opgegroeid in Judea, en mensen die Grieks spraken en uit de diaspora kwamen. Die tweede groep voelde zich achtergesteld bij het eten voor de weduwen. Opvallend is de oplossing: alle zeven gekozen mannen hebben een Griekse naam — de apostelen gaven de taak dus juist aan de groep die zich benadeeld voelde."
+            uitleg: "In de eerste gemeente zaten twee groepen Joden door elkaar: mensen die Aramees spraken, en mensen die Grieks spraken en vaak uit andere delen van het rijk kwamen. Die tweede groep vond dat hun weduwen bij het dagelijks uitdelen van eten werden overgeslagen. Opvallend: alle zeven gekozen mannen hebben een Griekse naam. Dat bewijst niet dat ze allemaal uit die groep kwamen — ook in Judea droegen Joden Griekse namen — maar het kan het vertrouwen van de Griekssprekende gelovigen hebben geholpen."
         },
         {
             vraag: "De Heilige Geest kwam op de dag dat de Joden het Wekenfeest vierden. Waar komt die naam vandaan?",
@@ -2812,18 +2815,18 @@ vragenData["Handelingen"] = {
             uitleg: "Het Wekenfeest viel vijftig dagen na Pesach, aan het eind van de graanoogst: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden die dag pentēkostē, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan.\n\nHet christelijke Pinksteren is dus niet hetzelfde feest, maar valt er wel op — net zoals het lijden en opstaan van Jezus samenvielen met Pesach. Dat is geen toeval: wat christenen vieren, gebeurde op die Joodse feestdagen. En omdat Jeruzalem op zo'n feest vol pelgrims uit alle windstreken was, waren er die dag ook zoveel talen te horen."
         },
         {
-            vraag: "Paulus verdiende zijn brood als tentenmaker. Waarvan werden tenten in zijn streek vooral gemaakt?",
+            vraag: "Paulus verdiende zijn brood als tentenmaker. Van welke stof uit zijn geboortestreek Cilicië werden tenten vaak gemaakt?",
             antwoorden: ["Van geweven geitenhaar, een stevige stof die water tegenhield", "Van dunne planken die met touw aan elkaar zaten", "Van gedroogde rietmatten uit de moerassen", "Van geverfd linnen dat uit Egypte kwam"],
             correct: "Van geweven geitenhaar, een stevige stof die water tegenhield",
             bijbelplaats: "Handelingen 18:3",
-            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat het de regen goed tegenhield. De naam komt van Cilicië, de streek waar de geiten vandaan kwamen — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar.\n\nOf hij zelf met die stof werkte of eerder met leer, weten we niet zeker: het woord dat Lucas gebruikt kan allebei betekenen. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
+            uitleg: "De stof waarvan die tenten werden gemaakt, heette cilicium: geweven geitenhaar, ruw en stug, maar zo dicht dat het de regen goed tegenhield. De naam komt van Cilicië, de streek waar die stof vandaan kwam — en dat is precies de streek waar Paulus geboren was, want Tarsus lag daar.\n\nOf hij zelf met die stof werkte of eerder met leer, weten we niet zeker: het woord dat Lucas gebruikt kan allebei betekenen. Met dat werk verdiende hij onderweg zijn eigen brood, zodat hij niemand om geld hoefde te vragen."
         },
         {
             vraag: "Paulus werd meegenomen naar de Areopagus in Athene. Wat was dat voor plek?",
             antwoorden: ["Een rotsheuvel waar de raad van de stad bijeenkwam", "De grootste tempel van de stad", "De markt waar de kooplieden stonden", "Het theater waar toneelstukken werden opgevoerd"],
             correct: "Een rotsheuvel waar de raad van de stad bijeenkwam",
             bijbelplaats: "Handelingen 17:19",
-            uitleg: "De naam betekent \"heuvel van Ares\", de Griekse oorlogsgod — de Romeinen noemden hem Mars, vandaar dat je ook \"Marsheuvel\" leest. De raad die er vergaderde was eeuwenlang het hoogste bestuur van Athene en hield toezicht op wie er in de stad over goden en filosofie sprak. Paulus werd er dus niet gearresteerd, maar uitgenodigd om zijn zaak toe te lichten."
+            uitleg: "De naam betekent \"heuvel van Ares\", de Griekse oorlogsgod — de Romeinen noemden hem Mars, vandaar dat je ook \"Marsheuvel\" leest. De raad die oorspronkelijk op die heuvel vergaderde, droeg dezelfde naam: de Areopagus. Of Paulus op de heuvel zelf sprak of voor die raad werd gebracht, vertelt Lucas niet precies. Wel moest hij daar uitleggen wat hij leerde, omdat de Atheners zijn boodschap nieuw en vreemd vonden (Handelingen 17:19-20)."
         },
         {
             vraag: "Vier mannen in Jeruzalem hadden een gelofte gedaan. Paulus ging met hen mee naar de tempel en betaalde hun kosten. Wat hoorde er bij het einde van zo'n gelofte?",
@@ -2837,28 +2840,28 @@ vragenData["Handelingen"] = {
             antwoorden: ["Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden", "Joden die strenger leefden dan de anderen", "Mensen die bang waren voor Gods straf en daarom liever bij de tempel wegbleven", "Priesters die alleen in de tempel mochten dienen"],
             correct: "Niet-Joden die de God van Israël vereerden zonder helemaal Jood te worden",
             bijbelplaats: "Handelingen 10:2",
-            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, hielden zich aan de belangrijkste geboden en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet.\n\nCornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem werd voor het eerst hardop uitgesproken dat zulke buitenstaanders in Gods volk werden opgenomen zonder eerst Jood te worden."
+            uitleg: "Rond de synagogen in de Romeinse wereld hing een groep niet-Joden die de God van Israël vereerden: ze kwamen luisteren, probeerden naar Gods geboden te leven en gaven geld, maar lieten zich niet besnijden en bleven dus formeel buiten het volk. Lucas noemt hen godvrezenden. Wie wél helemaal overging heette een proseliet.\n\nCornelius hoorde bij de eerste groep, en juist daarom is zijn verhaal zo belangrijk: bij hem zegt Petrus hardop dat God geen onderscheid maakt tussen mensen, en ontvangen niet-Joden de Heilige Geest zonder eerst Jood te worden (Handelingen 10:34-35, 44-47)."
         },
         {
             vraag: "Lucas schrijft dat de Olijfberg \"een sabbatsreis\" van Jeruzalem lag. Wat is dat voor afstand?",
             antwoorden: ["Ongeveer een kilometer: zo ver mocht je op sabbat lopen", "Precies één dagreis te voet", "De afstand die een ezel op één dag aflegt", "De afstand van de tempel tot de stadsmuur"],
             correct: "Ongeveer een kilometer: zo ver mocht je op sabbat lopen",
             bijbelplaats: "Handelingen 1:12",
-            uitleg: "Op sabbat mocht je niet ver van huis gaan. De schriftgeleerden hadden die regel precies gemaakt: tweeduizend el vanaf de rand van je woonplaats, ongeveer negenhonderd meter. Lucas noemt die afstand niet zomaar — hij laat er zijn lezers mee weten dat de Olijfberg vlak bij Jeruzalem lag, en dat de leerlingen dus gewoon terug konden lopen zonder de sabbat te breken."
+            uitleg: "Op sabbat mocht je je stad of dorp eigenlijk niet uit (Exodus 16:29). Binnen je eigen woonplaats mocht je overal komen, ook naar de synagoge. Maar buiten de grens van je stad of dorp mocht je hooguit tweeduizend el lopen: ongeveer negenhonderd meter. Lucas gebruikt die maat om te laten zien hoe dicht de Olijfberg bij Jeruzalem lag."
         },
         {
             vraag: "In het visioen van Petrus worden dieren \"rein\" of \"onrein\" genoemd. Wat betekende dat?",
             antwoorden: ["Of je het volgens de wet van Mozes wel of niet mocht eten", "Of het dier wild was of door mensen gehouden werd", "Of het dier gezond of ziek was", "Of het dier jong of oud was"],
             correct: "Of je het volgens de wet van Mozes wel of niet mocht eten",
             bijbelplaats: "Handelingen 10:14",
-            uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt of ziek was geweest, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
+            uitleg: "In Leviticus 11 staat welke dieren wel en niet gegeten mochten worden. Het ging daarbij niet om vies of schoon, en ook niet om gezond of ongezond — het was een regel die het volk Israël anders maakte dan de volken om hen heen. Rein en onrein gold trouwens niet alleen voor eten. Wie een dode had aangeraakt, een bepaalde huidziekte had gehad of net een kind had gekregen, was ook een tijd onrein en moest wachten voordat hij weer naar de tempel mocht."
         },
         {
             vraag: "De zeelieden zochten een haven om te \"overwinteren\". Waarom voer men 's winters niet?",
             antwoorden: ["Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar", "Het water bevroor in die tijd", "De schepen moesten elk jaar gerepareerd worden, want hout ging in het water rotten", "Er waaide in de winter te weinig wind om te varen"],
             correct: "Stormen en slecht zicht maakten de zee te gevaarlijk; men wachtte tot het voorjaar",
             bijbelplaats: "Handelingen 27:12",
-            uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van november tot maart was de Middellandse Zee namelijk gesloten voor de scheepvaart. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je geen van beide. Bovendien waren de stormen zwaar.\n\nPaulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
+            uitleg: "Overwinteren betekende voor zeelieden: het schip in een beschutte haven leggen en daar de hele winter blijven liggen, bemanning en passagiers erbij. Van ongeveer november tot maart vermeed men lange zeereizen zoveel mogelijk. Schepen voeren op zicht — overdag op de kust, 's nachts op de sterren — en met winterse bewolking zag je vaak geen van beide. Bovendien waren de stormen zwaar.\n\nPaulus was als gevangene op weg naar Rome, en die reis liep precies tegen die periode aan. Daar ging het mis: men voer toch door, en het schip verging."
         },
         {
             vraag: "Petrus logeerde in Joppe bij Simon de leerlooier. Wat deed een leerlooier?",
@@ -2881,8 +2884,8 @@ vragenData["Handelingen"] = {
         },
         {
             vraag: "Voordat christenen \"christenen\" heetten, sprak men over mensen die bij \"de Weg\" hoorden. Wat werd daarmee bedoeld?",
-            antwoorden: ["De eerste naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
-            correct: "De eerste naam voor de volgelingen van Jezus",
+            antwoorden: ["Een vroege naam voor de volgelingen van Jezus", "De pelgrimsroute naar Jeruzalem", "De hoofdstraat waar de gelovigen samenkwamen", "De reis die Paulus naar Damascus maakte"],
+            correct: "Een vroege naam voor de volgelingen van Jezus",
             bijbelplaats: "Handelingen 9:2"
         },
         {
@@ -2890,7 +2893,7 @@ vragenData["Handelingen"] = {
             antwoorden: ["Zoon van de vertroosting", "Zoon van de donder", "Zoon van het licht", "Zoon van de vrede"],
             correct: "Zoon van de vertroosting",
             bijbelplaats: "Handelingen 4:36",
-            uitleg: "Barnabas heette eigenlijk Jozef. 'Zoon van' betekent hier: iemand die zo is. Het Griekse woord in zijn bijnaam, paraklèsis (<span class='grieks'>παράκλησις</span>), betekent zowel troost als bemoediging. Allebei passen ze bij hem: toen de christenen in Jeruzalem bang waren voor Saulus, nam Barnabas het voor hem op, en in Antiochië bemoedigde hij iedereen om trouw te blijven aan de Heer."
+            uitleg: "Barnabas heette eigenlijk Jozef. Lucas legt zijn bijnaam in het Grieks uit als \"zoon van de vertroosting\". 'Zoon van' betekent hier: iemand die zo is. Het Griekse woord dat Lucas gebruikt, paraklèsis (<span class='grieks'>παράκλησις</span>), betekent zowel troost als bemoediging. Allebei passen ze bij hem: toen de christenen in Jeruzalem bang waren voor Saulus, nam Barnabas het voor hem op, en in Antiochië bemoedigde hij iedereen om trouw te blijven aan de Heer."
         }
     ]
 };
