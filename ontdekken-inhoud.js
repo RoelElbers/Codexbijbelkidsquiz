@@ -31,11 +31,13 @@
 
 /* eslint-disable no-unused-vars */
 
-// --- Woorden: het woordenboek (58 termen, alfabetisch) ----------------------
+// --- Woorden: het woordenboek (60 termen, alfabetisch) ----------------------
 const ONTDEK_WOORDENBOEK = [
+    { term: "Aanliggen", uitleg: "Zo at men bij een feestmaal: half liggend op een bank of kussens rond een lage tafel, steunend op de linkerelleboog, met de voeten naar buiten. De Joden hadden die gewoonte van de Grieken overgenomen. Zo kon Johannes bij het Laatste Avondmaal tegen Jezus aan leunen (Johannes 13:23), en kon Maria in Betanië Jezus' voeten zalven (Johannes 12:3)." },
     { term: "Allerheiligste", uitleg: "Het meest heilige, afgesloten deel binnen in de tempel. Volgens de traditie was God daar zelf aanwezig, en alleen de hogepriester mocht er binnen." },
     { term: "Altaar", uitleg: "Een verhoogde plek, vaak van steen, waar offers aan God werden gebracht." },
     { term: "Apostel", verwijstNaar: "wie-gemeenten" },
+    { term: "Aramees", uitleg: "De taal die de meeste mensen in Israël in de tijd van Jezus thuis en op straat spraken. Het lijkt op Hebreeuws zoals Nederlands op Duits lijkt. Jezus sprak het ook: een paar van Zijn Aramese woorden staan nog in de evangeliën, zoals Talita koemi ('meisje, sta op', Marcus 5:41), Effata ('ga open', Marcus 7:34) en Abba ('vader', Marcus 14:36). Daarnaast spraken veel mensen Grieks, de grote taal van het oostelijke deel van het Romeinse Rijk. In die taal is het Nieuwe Testament geschreven." },
     { term: "Bekering", uitleg: "Je leven omdraaien: stoppen met de verkeerde kant op gaan en kiezen om het goede te doen, en zo bij God gaan horen. Je kunt het zien als een ommekeer van 180 graden — je loopt letterlijk de andere kant op. In de Bijbel hoort daar vaak spijt bij over wat je fout deed, en het verlangen om opnieuw te beginnen." },
     { term: "Bezonnenheid", uitleg: "Rustig en verstandig nadenken voordat je iets zegt of doet, en je niet laten meeslepen door angst of boosheid. Paulus schrijft aan Timoteüs dat God ons een geest van kracht, liefde en bezonnenheid heeft gegeven." },
     { term: "Bisschop", uitleg: "Een leider in de kerk. Het woord komt via het Latijn van het Griekse <em>episkopos</em>: iemand die toezicht houdt. In de Katholieke Kerk leidt een bisschop een bisdom, een gebied met veel parochies, zoals een herder die voor een grote kudde zorgt. Katholieken zien de bisschoppen als opvolgers van de apostelen. De bisschop van Rome is de paus. Een bisschop draagt bij plechtige vieringen een mijter (een hoge, puntige muts) en een staf die op een herdersstaf lijkt. Sint-Nicolaas was ook bisschop, in de stad Myra in het huidige Turkije. Daarom heeft Sinterklaas een mijter en een staf. Ook de orthodoxe kerken en sommige protestantse kerken kennen bisschoppen. <em>Zie ook: opziener, apostel.</em>" },

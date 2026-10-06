@@ -1659,7 +1659,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wie kwam er 's nachts in het geheim bij Jezus om met Hem te praten?",
-                antwoorden: ["Petrus", "Nikodemus", "Jozef van Arimatea", "Lazarus"],
+                antwoorden: ["Petrus", "Nikodemus", "Natanaël", "Lazarus"],
                 correct: "Nikodemus",
                 bijbelplaats: "Johannes 3:1-2"
             }
@@ -1679,10 +1679,10 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 uitleg: "In het Grieks staat er hudōr zōn, \"levend water\". De Bijbel maakt verschil tussen gewoon water en levend water, in het Hebreeuws van het Oude Testament majim chajiem. Gewoon water stond stil, bijvoorbeeld in een regenbak die in de rots was uitgehakt. Levend water stroomde: het kwam uit een bron of een rivier, was fris en bleef altijd in beweging. De profeet Jeremia noemt God zelfs \"de bron van levend water\".\n\nDaarom denkt de Samaritaanse vrouw eerst aan gewoon drinkwater: dan hoeft ze niet meer elke dag naar de put te lopen (vers 15). Maar Jezus bedoelt iets anders: het leven dat Hij geeft en dat nooit opdroogt, het eeuwige leven."
             },
             {
-                vraag: "Hoeveel mensen voedde Jezus met vijf gerstebroden en twee vissen, volgens Johannes?",
+                vraag: "Hoeveel mannen waren er volgens Johannes bij de broodvermenigvuldiging?",
                 antwoorden: ["Ongeveer 1000", "Ongeveer 2000", "Ongeveer 5000", "Ongeveer 10.000"],
                 correct: "Ongeveer 5000",
-                bijbelplaats: "Johannes 6:1-13"
+                bijbelplaats: "Johannes 6:10"
             },
             {
                 vraag: "Wat zei Jezus tegen Marta voordat Hij Lazarus opwekte?",
@@ -1709,9 +1709,9 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 bijbelplaats: "Johannes 19:19-20"
             },
             {
-                vraag: "Wat zei Jezus drie keer tegen Petrus na de opstanding bij het meer, na de wonderbaarlijke visvangst?",
-                antwoorden: ["Waarom heb je Mij verloochend? Beloof dat het nooit meer gebeurt", "Heb je Mij lief? Zorg voor Mijn schapen", "Ga terug naar je boot en vis voortaan weer voor jezelf", "Tel de vissen nog eens, want volgens Mij ontbreekt er één"],
-                correct: "Heb je Mij lief? Zorg voor Mijn schapen",
+                vraag: "Na de opstanding stelde Jezus Petrus bij het meer drie keer dezelfde vraag, en gaf hem daarbij telkens een opdracht. Wat vroeg en zei Hij?",
+                antwoorden: ["Waarom heb je Mij verloochend? Beloof dat het nooit meer gebeurt", "Heb je Mij lief? Zorg voor Mijn lammeren en schapen", "Waar zijn de anderen? Ga ze voor Mij halen", "Tel de vissen nog eens, want volgens Mij ontbreekt er één"],
+                correct: "Heb je Mij lief? Zorg voor Mijn lammeren en schapen",
                 bijbelplaats: "Johannes 21:15-17"
             },
             {
@@ -1764,7 +1764,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Wat zei Tomas toen hij Jezus na de opstanding zag?",
-                antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Ik geloof nu"],
+                antwoorden: ["Mijn Heer en mijn God!", "Het is echt Jezus!", "Vergeef mij", "Eerst wil ik Uw handen zien"],
                 correct: "Mijn Heer en mijn God!",
                 bijbelplaats: "Johannes 20:28"
             },
@@ -1798,14 +1798,15 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 vraag: "Het evangelie van Johannes beschrijft zeven bijzondere wonderen van Jezus. Welk wonder was het eerste?",
                 antwoorden: ["De genezing van de blindgeborene", "De bruiloft te Kana, water in wijn", "De opwekking van Lazarus", "De wonderbaarlijke visvangst"],
                 correct: "De bruiloft te Kana, water in wijn",
-                bijbelplaats: "Johannes 2:1-11"
+                bijbelplaats: "Johannes 2:1-11",
+                uitleg: "De eerste twee wonderen nummert Johannes zelf: het water dat wijn werd in Kana is het eerste (Johannes 2:11), de genezing van de zoon van een koninklijke ambtenaar het tweede (Johannes 4:54). Daarna telt hij niet verder; de zeven wonderen zijn een telling van latere uitleggers."
             },
             {
                 vraag: "Hoeveel stenen watervaten stonden er bij de bruiloft in Kana?",
                 antwoorden: ["3", "6", "7", "12"],
                 correct: "6",
                 bijbelplaats: "Johannes 2:6",
-                uitleg: "Een metreet was ongeveer 39 liter. Elk vat kon twee tot drie metreten bevatten, dus zo'n 80 tot 120 liter per stuk. Zes vaten samen leverden vijfhonderd tot zevenhonderd liter wijn — genoeg voor een heel dorp."
+                uitleg: "Een metreet was ongeveer 39 liter. Elk vat kon twee tot drie metreten bevatten, dus zo'n 80 tot 120 liter per stuk. Zes vaten samen leverden vijfhonderd tot zevenhonderd liter wijn — een enorme hoeveelheid."
             },
             {
                 vraag: "Hoeveel vissen telde de wonderbaarlijke vangst toen de leerlingen na de opstanding het net binnenhaalden?",
@@ -1830,7 +1831,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Onder de vijgenboom", "In de tempel, terwijl hij bad", "Op de markt", "Op het land, aan het werk"],
                 correct: "Onder de vijgenboom",
                 bijbelplaats: "Johannes 1:47-49",
-                uitleg: "Een vijgenboom gaf koele schaduw, en het was een geliefde plek om rustig te zitten lezen en bidden. Natanaël begreep meteen: deze man kent mij, terwijl we elkaar nooit ontmoet hebben."
+                uitleg: "Een vijgenboom gaf koele schaduw. In latere Joodse geschriften lees je dat leraren daar graag zaten om de heilige boeken te bestuderen. Wat Natanaël er precies deed, vertelt Johannes niet. Maar Natanaël begreep meteen: deze man kent mij, terwijl we elkaar nooit ontmoet hebben."
             },
             {
                 vraag: "In het evangelie van Johannes komt telkens een leerling voor die 'de leerling van wie Jezus hield' wordt genoemd, zonder dat zijn naam erbij staat. Wie is het volgens de vroege kerk?",
@@ -1841,17 +1842,17 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "Na Zijn opstanding stond Jezus op een ochtend onverwachts aan de oever, terwijl de leerlingen nog aan het vissen waren. Ze zagen wel iemand staan, maar herkenden Hem eerst niet. Hoe groot was de afstand tussen hun boot en de oever, volgens Johannes?",
-                antwoorden: ["Vijftig el (ruim twintig meter)", "Honderd el (ongeveer vijftig meter)", "Tweehonderd el (ongeveer honderd meter)", "Vijfhonderd el (ruim tweehonderd meter)"],
-                correct: "Tweehonderd el (ongeveer honderd meter)",
+                antwoorden: ["Vijftig el (ruim twintig meter)", "Honderd el (ruim veertig meter)", "Tweehonderd el (ongeveer negentig meter)", "Vijfhonderd el (ruim tweehonderd meter)"],
+                correct: "Tweehonderd el (ongeveer negentig meter)",
                 bijbelplaats: "Johannes 21:8",
-                uitleg: "Een el was ongeveer een halve meter, de lengte van een onderarm. Tweehonderd el is dus zo'n honderd meter — de lengte van een voetbalveld. Op die afstand zie je wel iemand staan, maar kun je geen gezichten herkennen. Pas toen het net vol zat, wist Johannes het zeker: het is de Heer."
+                uitleg: "Een el was ongeveer 45 centimeter, zo lang als de afstand van je elleboog tot je vingertoppen. Tweehonderd el is dus zo'n negentig meter — bijna de lengte van een voetbalveld. Pas toen het net vol zat, zei Johannes tegen Petrus: 'Het is de Heer!'"
             },
             {
                 vraag: "Je kunt in de Dode Zee gaan zwemmen zonder ooit te zinken: je blijft er vanzelf drijven, alsof het water je draagt. Hoe kan dat?",
                 antwoorden: ["Er zit zoveel zout in het water dat het je omhoog duwt", "Het water is er zo koud dat het je omhoog stuwt", "Er borrelt van onderaf steeds lucht uit de bodem omhoog", "Het meer is overal zo ondiep dat je gewoon kunt staan"],
                 correct: "Er zit zoveel zout in het water dat het je omhoog duwt",
                 bijbelplaats: "Genesis 14:3",
-                uitleg: "Het water zit zó vol zout dat er geen vis of plant in kan leven — vandaar de naam. Ze ligt bovendien op het laagste punt van de aarde: de oever ligt ruim 400 meter onder de zeespiegel. En omdat het een meer is en geen echte zee, merk je er niets van eb en vloed."
+                uitleg: "Het water zit zó vol zout dat er geen vissen of waterplanten in kunnen leven, alleen piepkleine organismen die tegen veel zout kunnen — vandaar de naam. De oever is bovendien de laagste plek op het land van de hele aarde: ruim 400 meter onder de zeespiegel."
             },
             {
                 vraag: "De Jordaan is de belangrijkste rivier uit de Bijbel. Hij stroomt van het noorden naar het zuiden door het land. Waar komt hij uiteindelijk uit?",
@@ -1878,7 +1879,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Driehonderd denarie", "Drie denarie", "Vijftig denarie", "Een paar muntjes"],
                 correct: "Driehonderd denarie",
                 bijbelplaats: "Johannes 12:5",
-                uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus prees de vrouw om haar liefde."
+                uitleg: "Driehonderd denarie was ongeveer een heel jaar aan daglonen — een enorm bedrag. Judas vond het verkwisting, maar Jezus nam het voor Maria op: zij had het gedaan met het oog op de dag van Zijn begrafenis (Johannes 12:7)."
             },
             {
                 vraag: 'Jezus zat moe bij de put toen Hij de Samaritaanse vrouw ontmoette. Het was "ongeveer het zesde uur". Hoe laat was dat?',
@@ -1890,14 +1891,14 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 ],
                 correct: "Rond het middaguur (12 uur)",
                 bijbelplaats: "Johannes 4:6",
-                uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Een ongewone tijd om water te halen, en Jezus was moe van de reis."
+                uitleg: "Geteld vanaf zonsopgang is het 'zesde uur' ongeveer twaalf uur 's middags: het heetst van de dag. Water putten deed men meestal tegen de avond, als het koeler was (Genesis 24:11). Dit was dus een ongewone tijd, en Jezus was moe van de reis."
             },
             {
-                vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes waarschijnlijk ontstaan?",
+                vraag: "De vier evangeliën zijn niet allemaal tegelijk geschreven. Als hoeveelste van de vier is het evangelie van Johannes ontstaan?",
                 antwoorden: ["Als eerste", "Als tweede", "Als derde", "Als laatste"],
                 correct: "Als laatste",
                 bijbelplaats: "algemeen",
-                uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Daarom heet het ook wel 'het vierde evangelie'."
+                uitleg: "Matteüs, Marcus en Lucas lijken veel op elkaar; ze worden de 'synoptische' evangeliën genoemd. Johannes is heel anders van stijl en wordt door de meeste geleerden als laatste gedateerd, rond het jaar 90 na Christus. Het heet ook wel 'het vierde evangelie'."
             },
             {
                 vraag: "Jezus zei iets bijzonders over Zichzelf: 'Voordat ___ er was, ben Ik.' Hij bedoelde dat Hij al lang vóór deze persoon bestond. Over wie ging het?",
@@ -1933,21 +1934,21 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon", "Er waren altijd twee hogepriesters tegelijk in dienst", "De een ging over de tempel, de ander over de synagogen", "Annas verving Kajafas als die ziek was"],
                 correct: "Annas was zelf eerder hogepriester geweest en hield veel invloed; Kajafas was zijn schoonzoon",
                 bijbelplaats: "Johannes 18:13",
-                uitleg: "In de tijd vóór de Romeinen bleef een hogepriester zijn leven lang in functie. Onder Romeins bestuur benoemde en ontsloeg de gouverneur hen echter naar believen. Annas was ongeveer tien jaar hogepriester geweest en werd afgezet, maar hij bleef achter de schermen de machtigste man in Jeruzalem: vijf van zijn zonen én zijn schoonzoon Kajafas werden na hem hogepriester.\n\nWie iets wilde regelen, ging dus eerst langs Annas. Dat verklaart ook waarom Lucas twee namen tegelijk noemt als hij vertelt wanneer Johannes de Doper begon."
+                uitleg: "Volgens de wet van Mozes bleef een hogepriester zijn leven lang in functie. Onder Romeins bestuur benoemde en ontsloeg de gouverneur hen echter naar believen. Annas was ongeveer tien jaar hogepriester geweest en werd afgezet, maar hij bleef achter de schermen de machtigste man in Jeruzalem: vijf van zijn zonen én zijn schoonzoon Kajafas werden na hem hogepriester.\n\nWie iets wilde regelen, ging dus eerst langs Annas. Johannes zegt er zelf bij dat Annas de schoonvader van Kajafas was (Johannes 18:13). Dat verklaart ook waarom Lucas twee namen tegelijk noemt als hij vertelt wanneer Johannes de Doper begon (Lucas 3:2)."
             },
             {
                 vraag: "Bij de arrestatie van Jezus kwam er een cohort mee, een afdeling van het Romeinse leger. Hoe groot was zo'n cohort?",
                 antwoorden: ["Een paar honderd soldaten, een tiende deel van een legioen", "Ongeveer tachtig man, zoveel als er in één tent sliepen", "Ongeveer tien soldaten met één aanvoerder", "Het hele Romeinse leger in Judea"],
                 correct: "Een paar honderd soldaten, een tiende deel van een legioen",
                 bijbelplaats: "Johannes 18:3",
-                uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel — vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
+                uitleg: "Het Romeinse leger was opgedeeld in legioenen van zo'n vijfduizend man, en elk legioen bestond weer uit tien cohorten. In Jeruzalem lag één cohort gelegerd, in de burcht Antonia naast de tempel. Vooral tijdens de feesten, wanneer de stad volstroomde met pelgrims en de kans op onrust het grootst was, hielden de soldaten van daaruit de tempel goed in de gaten. Johannes is de enige evangelist die vertelt dat er Romeinse soldaten meekwamen bij de arrestatie; de andere drie noemen alleen de tempelwacht."
             },
             {
                 vraag: "Welke talen sprak men in Israël in de tijd van Jezus?",
-                antwoorden: ["Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
-                correct: "Aramees in het dagelijks leven, Hebreeuws in de synagoge, en Grieks als wereldtaal",
+                antwoorden: ["Vooral Aramees, daarnaast Hebreeuws en Grieks", "Alleen Hebreeuws, want dat was de taal van de Bijbel", "Alleen Latijn, want de Romeinen waren de baas", "Aramees in het noorden en Grieks in het zuiden"],
+                correct: "Vooral Aramees, daarnaast Hebreeuws en Grieks",
                 bijbelplaats: "Johannes 19:20",
-                uitleg: "Thuis en op straat sprak men Aramees — dat is de taal van Talita koemi, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; het leek op Aramees zoals Nederlands op Duits lijkt. En Grieks was de taal waarin je handeldreef, reisde en brieven schreef in het hele oostelijke deel van het Romeinse Rijk — daarom is het hele Nieuwe Testament in het Grieks geschreven.\n\nLatijn hoorde bij het Romeinse leger en het formele bestuur. In dit deel van het rijk bestuurden de Romeinen namelijk gewoon in het Grieks: ook een tollenaar hield zijn boeken in het Grieks bij.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen."
+                uitleg: "Thuis en op straat sprak men meestal Aramees — dat is de taal van Talita koemi, Effata en Abba. Hebreeuws was de taal van de heilige boeken en werd voorgelezen in de synagoge; sommigen spraken het ook in het dagelijks leven. Het lijkt op Aramees zoals Nederlands op Duits lijkt. Grieks was de grote taal van het oostelijke deel van het Romeinse Rijk. Veel mensen spraken het, vooral in de steden en bij handel en reizen. Daarom zijn alle boeken van het Nieuwe Testament die we kennen in het Grieks geschreven.\n\nLatijn hoorde vooral bij het Romeinse leger en de Romeinse bestuurders.\n\nDat verklaart het bordje boven het kruis: Pilatus liet het opschrift in het Hebreeuws, Latijn en Grieks zetten, zodat iedereen het kon lezen. Met 'Hebreeuws' kan Johannes hier ook het Aramees bedoelen: hij gebruikt dat woord ook voor Aramese namen, zoals Golgota (Johannes 19:17)."
             },
             {
                 vraag: "Op de bruiloft in Kana proefde de \"ceremoniemeester\" de wijn. Wat was zijn taak?",
@@ -1957,8 +1958,8 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
             },
             {
                 vraag: "De vrouw bij de put zegt: \"U hebt niet eens een emmer, en de put is diep.\" Waarmee haalde je water uit een put?",
-                antwoorden: ["Een leren zak aan een lang touw, die je liet zakken en weer ophaalde", "Een houten bak op een hefboom", "Een koperen ketel die aan een ketting hing", "Een rieten mand met pek aan de binnenkant"],
-                correct: "Een leren zak aan een lang touw, die je liet zakken en weer ophaalde",
+                antwoorden: ["Een leren emmer aan een lang touw, die je liet zakken en weer ophaalde", "Een houten bak op een hefboom", "Een koperen ketel die aan een ketting hing", "Een rieten mand met pek aan de binnenkant"],
+                correct: "Een leren emmer aan een lang touw, die je liet zakken en weer ophaalde",
                 bijbelplaats: "Johannes 4:11"
             },
             {
@@ -1978,7 +1979,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Half liggend op kussens rond een lage tafel, steunend op één elleboog", "Rechtop op houten stoelen aan een hoge tafel", "Gehurkt op de vloer, zonder tafel", "Elk op een eigen matje, met het eten in het midden"],
                 correct: "Half liggend op kussens rond een lage tafel, steunend op één elleboog",
                 bijbelplaats: "Johannes 13:23",
-                uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Grieken en Romeinen hadden meegebracht. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat een vrouw ongemerkt bij Jezus' voeten kon komen zonder onder de tafel te kruipen."
+                uitleg: "Bij een gewone maaltijd zat men, maar bij een feestmaal lag men aan — een gewoonte die de Joden van de Grieken hadden overgenomen. Je lag op je linkerzij op een bank, met je hoofd naar de tafel en je voeten naar buiten. Daardoor had je hoofd vlak bij de borst van je buurman. Dat maakt twee dingen begrijpelijk: dat Johannes tegen Jezus aan kon leunen, en dat Maria in Betanië Jezus' voeten kon zalven zonder onder de tafel te kruipen (Johannes 12:3)."
             },
             {
                 vraag: "Wat dacht Maria Magdalena dat Jezus was toen ze Hem na de opstanding bij het graf zag?",
@@ -1991,7 +1992,7 @@ Jezus werd gekruisigd rond het Pesachfeest, in het voorjaar. Dag en nacht zijn d
                 antwoorden: ["Het meer van Gennesaret", "Het meer van Tiberias", "Het meer van Kinneret", "De Zoutzee"],
                 correct: "De Zoutzee",
                 bijbelplaats: "Lucas 5:1 · Johannes 6:1 · Numeri 34:11",
-                uitleg: "Het meer heeft in de Bijbel verschillende namen. In het Oude Testament heet het het meer van Kinneret (Numeri 34:11). Die naam komt misschien van het Hebreeuwse woord voor een harp, omdat het meer die vorm heeft. Lucas noemt het het meer van Gennesaret (Lucas 5:1), naar de vruchtbare vlakte aan de westoever. Johannes noemt het ook het meer van Tiberias (Johannes 6:1), naar de stad die Herodes Antipas aan de oever bouwde en vernoemde naar keizer Tiberius.\n\nDe Zoutzee is een andere naam, maar dan voor de Dode Zee (Genesis 14:3)."
+                uitleg: "Het meer heeft in de Bijbel verschillende namen. In het Oude Testament heet het het meer van Kinneret (Numeri 34:11). Die naam hoorde ook bij een oude stad aan de oever (Jozua 19:35). Vaak hoor je dat het meer zo heet omdat het de vorm van een harp heeft, in het Hebreeuws kinnor, maar daarover zijn de geleerden het niet eens. Lucas noemt het het meer van Gennesaret (Lucas 5:1), naar de vruchtbare vlakte aan de westoever. Johannes noemt het ook het meer van Tiberias (Johannes 6:1), naar de stad die Herodes Antipas aan de oever bouwde en vernoemde naar keizer Tiberius.\n\nDe Zoutzee is een andere naam, maar dan voor de Dode Zee (Genesis 14:3)."
             }
         ]
     }
