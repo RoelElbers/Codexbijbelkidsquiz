@@ -2044,10 +2044,11 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 3:23"
         },
         {
-            vraag: "Wat noemt Paulus het grootste geschenk van God aan de mensen?",
+            vraag: "Paulus schrijft over een geschenk van God. Wat is dat geschenk?",
             antwoorden: ["Een goede gezondheid tot je oud bent", "Een mooi huis om met je familie in te wonen", "Het eeuwige leven door Jezus Christus", "Veel land met akkers en kuddes schapen"],
             correct: "Het eeuwige leven door Jezus Christus",
-            bijbelplaats: "Romeinen 6:23"
+            bijbelplaats: "Romeinen 6:23",
+            uitleg: "Paulus zet hier twee dingen tegenover elkaar. De zonde betaalt loon, zoals een baas zijn knecht betaalt, en dat loon is de dood. Maar wat God geeft, is geen loon dat je verdient. Het is een geschenk: het eeuwige leven."
         },
         {
             vraag: "In Romeinen 8 schrijft Paulus iets bemoedigends over Gods liefde. Wat zegt hij daarover?",
@@ -2100,7 +2101,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 8:31"
         },
         {
-            vraag: "Paulus legt kort uit hoe je gered wordt: je gelooft in je hart, en je zegt hardop wie Jezus is. Wat zeg je dan over Hem?",
+            vraag: "Paulus schrijft dat je gered wordt als je in je hart gelooft dat God Jezus uit de dood heeft opgewekt, en hardop zegt wie Jezus is. Wat zeg je dan over Hem?",
             antwoorden: ["Dat Hij de Heer is", "Dat Hij de koning van Rome is", "Dat Hij een profeet is", "Dat Hij een engel is"],
             correct: "Dat Hij de Heer is",
             bijbelplaats: "Romeinen 10:9"
@@ -2113,8 +2114,8 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Hoe ontstaat geloof volgens Paulus?",
-            antwoorden: ["Door te luisteren naar het woord van God", "Door hard te werken", "Door veel te reizen en veel van de wereld te zien", "Door zoveel mogelijk goede daden te verzamelen"],
-            correct: "Door te luisteren naar het woord van God",
+            antwoorden: ["Door te luisteren naar de boodschap over Christus", "Door hard te werken", "Door veel te reizen en veel van de wereld te zien", "Door zoveel mogelijk goede daden te verzamelen"],
+            correct: "Door te luisteren naar de boodschap over Christus",
             bijbelplaats: "Romeinen 10:17"
         },
         {
@@ -2212,8 +2213,8 @@ vragenData["Romeinen"] = {
         },
         {
             vraag: "Wat zegt Paulus tegen iemand die snel een ander veroordeelt?",
-            antwoorden: ["Bedenk dat je zelf ook fouten maakt", "Je mag iedereen veroordelen, als je zelf maar niks fout doet", "Wijs de ander streng terecht waar anderen bij zijn", "Vertel aan iedereen wat die ander verkeerd deed"],
-            correct: "Bedenk dat je zelf ook fouten maakt",
+            antwoorden: ["Bedenk dat je zelf ook doet wat je de ander verwijt", "Je mag iedereen veroordelen, als je zelf maar niks fout doet", "Wijs de ander streng terecht waar anderen bij zijn", "Vertel aan iedereen wat die ander verkeerd deed"],
+            correct: "Bedenk dat je zelf ook doet wat je de ander verwijt",
             bijbelplaats: "Romeinen 2:1"
         },
         {
@@ -2251,7 +2252,7 @@ vragenData["Romeinen"] = {
             antwoorden: ["Iemand die wordt uitgezonden met een opdracht", "Iemand die de heilige boeken uit zijn hoofd geleerd heeft", "Iemand die voorgaat in het gebed", "Iemand die als eerste ging geloven"],
             correct: "Iemand die wordt uitgezonden met een opdracht",
             bijbelplaats: "Romeinen 1:1",
-            uitleg: "Het woord komt van het Griekse werkwoord voor wegsturen. Een gezant sprak met het gezag van degene die hem stuurde: zijn boodschap was niet zijn eigen mening. Daarom kon Paulus zeggen dat het evangelie dat hij bracht niet van hemzelf kwam."
+            uitleg: "Het woord komt van het Griekse werkwoord voor wegsturen. Een gezant sprak met het gezag van degene die hem stuurde: zijn boodschap was niet zijn eigen mening. Paulus zegt in dezelfde zin ook dat hij is uitverkoren om het evangelie van God te verkondigen. Het was dus niet zijn eigen boodschap."
         },
         {
             vraag: "Had Paulus de christenen in Rome al bezocht toen hij deze brief schreef?",
@@ -2272,7 +2273,7 @@ vragenData["Romeinen"] = {
             vraag: "Voor werk krijg je loon. Maar Gods vergeving is geen loon, zegt Paulus. Wat is het dan?",
             antwoorden: ["Iets wat je krijgt nadat je er heel lang voor hebt gewerkt", "Iets wat je koopt als je genoeg geld gespaard hebt", "Een geschenk dat je krijgt door op God te vertrouwen", "Een ruil: jij brengt God een offer en Hij geeft je vergeving terug"],
             correct: "Een geschenk dat je krijgt door op God te vertrouwen",
-            bijbelplaats: "Romeinen 4:4-5"
+            bijbelplaats: "Romeinen 4:4-8"
         },
         {
             vraag: "Wat raadt Paulus aan over hoe je over jezelf denkt?",
@@ -2312,7 +2313,7 @@ vragenData["Romeinen"] = {
             bijbelplaats: "Romeinen 16:3 · Handelingen 18:2"
         },
         {
-            vraag: "Paulus sprak zijn brief aan de Romeinen hardop uit, terwijl een schrijver die Tertius heette alles opschreef. En dan gebeurt er aan het eind iets bijzonders. Wat doet Tertius?",
+            vraag: "Paulus liet zijn brief aan de Romeinen opschrijven door een schrijver die Tertius heette. En dan gebeurt er aan het eind iets bijzonders. Wat doet Tertius?",
             antwoorden: ["Hij schrijft er even zijn eigen groet tussen", "Hij zet zijn handtekening onder de brief", "Hij vraagt Paulus om betaling", "Hij weigert het laatste stuk op te schrijven"],
             correct: "Hij schrijft er even zijn eigen groet tussen",
             bijbelplaats: "Romeinen 16:22"
@@ -2327,28 +2328,29 @@ vragenData["Romeinen"] = {
             vraag: "Paulus noemt zijn boodschap het \"evangelie\", een woord dat toen al bestond. Wat betekende het in de gewone taal?",
             antwoorden: ["Goed nieuws dat een bode kwam brengen, zoals een overwinning", "Een boek waarin het leven van een groot en machtig man beschreven werd", "Een plechtige brief van de keizer aan een stad ergens in zijn rijk", "Een lied dat soldaten zongen als ze naar huis gingen"],
             correct: "Goed nieuws dat een bode kwam brengen, zoals een overwinning",
-            bijbelplaats: "Romeinen 1:1",
-            uitleg: "Bij een overwinning of de geboorte van een keizerszoon liet men door het hele rijk goed bericht omroepen. Dat de christenen juist dat woord kozen voor hun boodschap was een gewaagde keuze: het echte goede nieuws komt niet uit Rome."
+            bijbelplaats: "Romeinen 1:1; 10:15 · Jesaja 52:7",
+            uitleg: "Als een leger had gewonnen, stuurde men een bode met het goede nieuws. Ook blijde berichten over de keizer heetten zo: in de provincie Asia noemde men de verjaardag van keizer Augustus zelfs het begin van het goede nieuws voor de wereld. Paulus kende het woord ook uit zijn eigen Bijbel. De profeet Jesaja schrijft over een bode die over de bergen komt aanlopen met het goede nieuws van vrede en redding, en Paulus haalt die woorden in deze brief zelf aan."
         },
         {
             vraag: "Paulus schrijft: groet elkaar met een heilige kus. Wat was dat?",
-            antwoorden: ["De gewone begroeting in die tijd, een kus op de wang", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
-            correct: "De gewone begroeting in die tijd, een kus op de wang",
+            antwoorden: ["Een kus als begroeting, als teken dat ze bij elkaar hoorden", "Een zegen die alleen een oudste mocht geven", "Een kus op de boekrol voor het voorlezen", "Een afscheid dat je alleen bij een sterfbed gaf"],
+            correct: "Een kus als begroeting, als teken dat ze bij elkaar hoorden",
             bijbelplaats: "Romeinen 16:16",
-            uitleg: "In de tijd van Paulus begroetten mensen elkaar met een kus op de wang, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders.\n\nRond de Middellandse Zee is de begroetingskus tot op vandaag heel gewoon. Paulus bedenkt hier dus niets nieuws: hij zegt tegen de gelovigen in Rome dat ze elkaar hartelijk mogen begroeten, zoals iedereen dat toen deed."
+            uitleg: "In de tijd van Paulus begroetten familieleden en goede vrienden elkaar met een kus, zoals wij een hand geven of zwaaien. Voor ons klinkt dat vreemd, en dat mag ook. Gewoontes verschillen nu eenmaal per land en per tijd: in Engeland rijdt iedereen links, en dat vinden wij raar — terwijl een Engels kind het net zo raar vindt dat wij rechts rijden. Geen van beide is beter of slechter, het is gewoon anders.\n\nRond de Middellandse Zee is de begroetingskus tot op vandaag heel gewoon. Paulus noemt hem een heilige kus: de gelovigen mochten elkaar begroeten als familie, want in Christus waren ze broers en zussen geworden. In de eerste kerken kreeg die kus al snel een vaste plek in de viering. Daar komt de vredeswens vandaan, die je in veel kerken nog steeds tegenkomt. In Nederland geven de mensen elkaar in de kerk meestal een hand, en in pinkster- en evangelische gemeenten omhelzen ze elkaar vaak."
         },
         {
             vraag: "Paulus sluit een zin af met \"Amen\". Dat woord komt uit het Hebreeuws. Wat betekent het?",
-            antwoorden: ["Zo is het, het staat vast", "Zo zij het, als het mag", "Wij hopen het, maar zeker is het niet", "Tot ziens, tot de volgende keer"],
+            antwoorden: ["Zo is het, het staat vast", "Hoera, het is feest", "Wij hopen het, maar zeker is het niet", "Tot ziens, tot de volgende keer"],
             correct: "Zo is het, het staat vast",
-            bijbelplaats: "Romeinen 1:25"
+            bijbelplaats: "Romeinen 1:25",
+            uitleg: "Amen komt van een Hebreeuws woord dat \"vast\" en \"betrouwbaar\" betekent. Wie amen zegt, zegt: zo is het, dit is waar. Na een gebed betekent het ook: zo zij het, laat het zo gebeuren."
         },
         {
             vraag: "Paulus schrijft dat gelovigen door God zijn aangenomen als kinderen. In het Romeinse Rijk bestond dat ook echt. Wat betekende het als iemand werd aangenomen?",
             antwoorden: ["Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon", "Hij mocht in huis wonen, maar erfde niets", "Hij bleef bediende, maar werd beter behandeld", "Hij kreeg een nieuwe naam, maar moest het huis verlaten"],
             correct: "Hij kreeg dezelfde naam en dezelfde erfenis als een eigen zoon",
-            bijbelplaats: "Romeinen 8:15",
-            uitleg: "Adoptie was in het Romeinse Rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Juist daarom kiest Paulus dit beeld — het zegt iets over hoe vast die verhouding ligt."
+            bijbelplaats: "Romeinen 8:15-17",
+            uitleg: "Adoptie was in het Romeinse Rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Paulus trekt zelf die lijn: wie kind van God is, is ook erfgenaam. Het beeld zegt iets over hoe vast die verhouding ligt."
         },
         {
             vraag: "Paulus schrijft dat alles wat vroeger is opgeschreven, er is om ons hoop te geven. Welk deel van de Bijbel bedoelt hij?",
