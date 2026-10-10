@@ -8438,7 +8438,7 @@ function vsRevealMeer() {
     }
     const meerMelding = document.getElementById("vs-reveal-meer-melding");
     if (meerMelding) {
-        meerMelding.textContent = "Binnenkort kun je hier meer ontdekken in de Catechese.";
+        meerMelding.textContent = "Binnenkort kun je hier meer over lezen in Ontdekken.";
         meerMelding.classList.add("zichtbaar");
     }
 }

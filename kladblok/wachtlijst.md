@@ -88,10 +88,7 @@ elk antwoord herhaald hoeft te worden.*
   Omega, het Lam, hoe de Bijbel eindigt, de boom des levens en de zeven
   gemeenten. Zes vragen hebben geen artikel: Tertius, de grote letters in
   Galaten, papyrus P52, hoofdstuk- en versnummers, de codex en de vis. Raakt
-  het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven. Daarnaast
-  heten de knop en de melding op de onthullingskaart nog "Catechese"
-  ("Binnenkort kun je hier meer ontdekken in de Catechese"), terwijl dat nu
-  Ontdekken heet.
+  het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven.
 - **Plakboek fase 1 draait op placeholders.** De sterren op het eindscherm
   zijn SVG-placeholders (`plakboekSterrenHtml()` in `script.js`, kleuren in
   `style.css` bij `.ps-ster`); de definitieve sterren maakt Roel. De melding
