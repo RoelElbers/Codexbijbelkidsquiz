@@ -4409,11 +4409,13 @@ height: 22%;
    TELEFOON — compacter quizscherm. Alleen op telefoons (smaller dan 600px, of
    liggend met een korte hoogte); computer en tablet blijven ongemoeid. Staat
    bewust ná de bestaande #quiz-scherm-regels met dezelfde selectors, zodat
-   deze bij gelijke specificiteit winnen, zonder !important.
+   deze bij gelijke specificiteit winnen, zonder !important. De bovenpadding
+   is groter dan de rest, zodat de titel onder de vaste hoekknoppen (Terug en
+   schermvullend) begint in plaats van erachter te verdwijnen.
 ========================================================================= */
 @media (max-width: 600px), (max-height: 500px) {
     #quiz-scherm .quiz-box {
-        padding: 20px 16px;
+        padding: 72px 16px 20px;
     }
     #quiz-scherm .quiz-title {
         font-size: 1.6rem;
