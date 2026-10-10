@@ -30,7 +30,19 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=368">
+    <link rel="stylesheet" href="style.css?v=369">
+
+    <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=1.
+         Twee verwijzingen dragen samen dit eigen nummer:
+             style.css : 2152   achtergrond.webp   (.album-zaal)
+             index.html: 711    boek.webp          (data-src van .album-boek)
+         (Regelnummers schuiven; zoek desnoods op "images/album/" in beide bestanden.)
+
+         Hoog dit nummer op zodra een bestand in images/album/ verandert. Een
+         nieuwe plaat houdt zijn bestandsnaam, dus zonder ophoging blijft een
+         bezoeker de oude uit zijn browsercache zien. Beide plekken gaan samen
+         omhoog. Los van de cache-buster en van de avatarteller: die liften
+         niet met elkaar mee. -->
 
     <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
          Dertien verwijzingen dragen samen dit eigen nummer:
@@ -696,7 +708,7 @@
              Tikken op het boek doet in deze fase nog niets. -->
         <div id="album-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="album-zaal">
-                <img class="album-boek" data-src="images/album/boek.webp" alt="" aria-hidden="true">
+                <img class="album-boek" data-src="images/album/boek.webp?v=1" alt="" aria-hidden="true">
                 <div id="album-sterren" class="album-sterren"></div>
                 <button class="schatkamer-terug" onclick="sluitAlbum()">Terug</button>
             </div>
@@ -753,9 +765,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=368"></script>
-    <script src="ontdekken-inhoud.js?v=368"></script>
-    <script src="script.js?v=368"></script>
+    <script src="lang/nl.js?v=369"></script>
+    <script src="ontdekken-inhoud.js?v=369"></script>
+    <script src="script.js?v=369"></script>
 
 </body>
 

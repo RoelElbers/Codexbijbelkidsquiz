@@ -75,6 +75,29 @@ het nummer elf keer voluit. Regelnummers schuiven — zoek desnoods op
 `Avatars/` in beide bestanden, dat vindt ze alle dertien. De toelichting bij
 de teller staat ook boven in `index.html`, naast die van de scèneplaten.
 
+### Albumteller — net als de avatarteller
+
+De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`
+en `boek.webp`) dragen ook een **eigen `?v=`-teller**, los van de cache-buster
+en los van de avatarteller.
+
+| teller | gaat omhoog zodra |
+| --- | --- |
+| **albumteller** | **een bestand in `images/album/` wijzigt** |
+
+Zelfde reden als bij de avatars: een nieuwe plaat houdt zijn bestandsnaam, dus
+zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
+
+**Twee plekken, altijd samen.**
+
+```
+style.css : 2152       achtergrond.webp (.album-zaal)
+index.html: 711        boek.webp (data-src van .album-boek)
+```
+
+Regelnummers schuiven — zoek desnoods op `images/album/` in beide bestanden.
+De toelichting staat ook boven in `index.html`, naast die van de avatars.
+
 ## Vervangingen in `script.js`
 
 Tekstvervangingen in `script.js` gaan via een **Python-script met een

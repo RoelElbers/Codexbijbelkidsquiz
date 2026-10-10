@@ -2149,7 +2149,7 @@ height: 22%;
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     overflow: hidden;
-    background: #0b1330 url("images/album/achtergrond.webp") center / 100% 100% no-repeat;
+    background: #0b1330 url("images/album/achtergrond.webp?v=1") center / 100% 100% no-repeat;
 }
 .album-sterren,
 .album-sterren .ps-sterren {
