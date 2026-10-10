@@ -88,16 +88,20 @@ De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`,
 Zelfde reden als bij de avatars: een nieuwe plaat houdt zijn bestandsnaam, dus
 zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 
-**Vier plekken, altijd samen.**
+**Zes plekken, altijd samen.** `boek-open.webp` staat er drie keer in: het
+hele open boek, de rechterhelft en de achterkant van de kaft (de linkerhelft).
 
 ```
 style.css : 2152       achtergrond.webp (.album-zaal)
-index.html: 715        boek.webp (data-src van .album-boek)
-index.html: 719        boek-open.webp (data-src van .album-open)
-index.html: 721        kaft-voor.webp (data-src van .album-kaft)
+index.html: 719        boek.webp (data-src van .album-boek)
+index.html: 724        boek-open.webp (data-src van .album-open)
+index.html: 726        boek-open.webp (de rechterhelft, .album-open-rechts)
+index.html: 730        kaft-voor.webp (voorkant van de kaft)
+index.html: 731        boek-open.webp (achterkant van de kaft)
 ```
 
-Regelnummers schuiven — zoek desnoods op `images/album/` in beide bestanden.
+Regelnummers schuiven — zoek desnoods op `images/album/` in beide bestanden;
+dat vindt ze alle zes.
 De toelichting staat ook boven in `index.html`, naast die van de avatars.
 
 ## Vervangingen in `script.js`

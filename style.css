@@ -2149,7 +2149,7 @@ height: 22%;
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     overflow: hidden;
-    background: #0b1330 url("images/album/achtergrond.webp?v=1") center / 100% 100% no-repeat;
+    background: #0b1330 url("images/album/achtergrond.webp?v=2") center / 100% 100% no-repeat;
 }
 .album-sterren,
 .album-sterren .ps-sterren {
@@ -2196,32 +2196,88 @@ height: 22%;
     -webkit-tap-highlight-color: transparent;
 }
 
-/* Fase 3a: het opengeslagen boek en de kaft die openklapt (zie openAlbumBoek
-   in script.js). Het open boek vult het hele 16:9-vak en dekt de bibliotheek
-   af; de kaft ligt erboven. De posities van de kafthouder zet
-   plaatsAlbumKaft() in procenten; perspective geeft de draai diepte. */
-.album-open {
+/* Fase 3a: het boek klapt open (zie openAlbumBoek in script.js). Van onder
+   naar boven: .album-dim dimt de bibliotheek, .album-open is het complete open
+   boek (eindstand), .album-open-rechts de rechterhelft daarvan (tijdens de
+   beweging), en daarboven de kaft: .album-kaft-vlucht (vliegt van het podium,
+   oorsprong linksboven, met perspective) > .album-kaft-draai (zwaait om de
+   rug, preserve-3d) > voor- en achterkant (backface-visibility: hidden).
+   De maten zet plaatsAlbumKaft() in procenten. Tijdens de beweging alleen
+   transform en opacity. In rust staan de lagen op opacity 0, niet op
+   visibility: hidden: een verborgen laag wordt bij het tonen opnieuw
+   opgebouwd, en dat gaf een hapering bij de eerste tik. */
+.album-dim,
+.album-open,
+.album-open-rechts,
+.album-kaft-vlucht {
     position: absolute;
+    pointer-events: none;
+    user-select: none;
+}
+.album-dim {
+    inset: 0;
+    background: #04060d;
+    opacity: 0;
+    will-change: opacity;
+}
+.album-open {
     inset: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    pointer-events: none;
-    user-select: none;
 }
-.album-kaft-houder {
-    position: absolute;
-    visibility: hidden;
-    transform-origin: 0 0;
-    perspective: calc(var(--game-breedte) * 1.2);
-    pointer-events: none;
-}
-.album-kaft {
-    display: block;
-    width: 100%;
+.album-open-rechts {
+    left: 50%;
+    top: 0;
+    width: 50%;
     height: 100%;
+    overflow: hidden;
     opacity: 0;
-    user-select: none;
+    will-change: opacity;
+}
+.album-open-rechts img {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+}
+.album-kaft-vlucht {
+    opacity: 0;
+    transform-origin: 0 0;
+    perspective: calc(var(--game-breedte) * 1.6);
+    will-change: transform, opacity;
+}
+.album-kaft-draai {
+    position: absolute;
+    inset: 0;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;          /* het scharnier: de rug */
+    will-change: transform;
+}
+.album-kaft-voor,
+.album-kaft-achter {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    overflow: hidden;
+}
+.album-kaft-voor {
+    overflow: visible;                /* de kaft heeft een transparante rand */
+}
+.album-kaft-achter {
+    transform: rotateY(180deg);       /* landt na -180° goed leesbaar */
+}
+.album-kaft-voor img,
+.album-kaft-achter img {
+    position: absolute;
+    display: block;
+    max-width: none;
+}
+/* Pas tikbaar als alle albumbeelden geladen en gedecodeerd zijn. */
+.album-zaal:not(.beelden-klaar) .album-boek {
+    cursor: progress;
 }
 /* Met het boek open: "Boek sluiten" in plaats van "Terug". */
 .album-zaal .album-sluit {

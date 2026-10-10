@@ -30,19 +30,21 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=371">
+    <link rel="stylesheet" href="style.css?v=372">
 
-    <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=1.
-         Vier verwijzingen dragen samen dit eigen nummer:
+    <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=2.
+         Zes verwijzingen dragen samen dit eigen nummer:
              style.css : 2152   achtergrond.webp   (.album-zaal)
-             index.html: 715    boek.webp          (data-src van .album-boek)
-             index.html: 719    boek-open.webp     (data-src van .album-open)
-             index.html: 721    kaft-voor.webp     (data-src van .album-kaft)
+             index.html: 719    boek.webp          (data-src van .album-boek)
+             index.html: 724    boek-open.webp     (data-src van .album-open)
+             index.html: 726    boek-open.webp     (de rechterhelft, .album-open-rechts)
+             index.html: 730    kaft-voor.webp     (voorkant van de kaft)
+             index.html: 731    boek-open.webp     (achterkant van de kaft: de linkerhelft)
          (Regelnummers schuiven; zoek desnoods op "images/album/" in beide bestanden.)
 
          Hoog dit nummer op zodra een bestand in images/album/ verandert. Een
          nieuwe plaat houdt zijn bestandsnaam, dus zonder ophoging blijft een
-         bezoeker de oude uit zijn browsercache zien. Alle vier de plekken gaan
+         bezoeker de oude uit zijn browsercache zien. Alle zes de plekken gaan
          samen omhoog. Los van de cache-buster en van de avatarteller: die liften
          niet met elkaar mee. -->
 
@@ -707,18 +709,27 @@
              images/album/; de posities komen uit albumIndeling in script.js.
              De beelden hebben data-src i.p.v. src: plaatsAlbumIndeling zet de src
              pas bij het openen, zodat spelers zonder plakboek ze niet laden.
-             Fase 3a: een tik op het boek laat het openklappen (openAlbumBoek):
-             de platte kaft (.album-kaft) vliegt over de rechterpagina van het
-             opengeslagen boek (.album-open) en draait dan open. Leeg tot fase 3b. -->
+             Fase 3a: een tik op het boek laat het openklappen (openAlbumBoek).
+             De kaft is een 3D-houder met twee kanten (voor: kaft-voor, achter:
+             de linkerhelft van boek-open) die om de rug openzwaait boven de
+             rechterhelft (.album-open-rechts); .album-dim dimt de bibliotheek.
+             Daarna neemt het complete beeld (.album-open) het over. Leeg tot fase 3b. -->
         <div id="album-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="album-zaal">
-                <img class="album-boek" data-src="images/album/boek.webp?v=1" alt="Bijbelkidsalbum openen"
+                <img class="album-boek" data-src="images/album/boek.webp?v=2" alt="Bijbelkidsalbum openen"
                      role="button" tabindex="0" onclick="openAlbumBoek()"
                      onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openAlbumBoek(); }">
                 <div id="album-sterren" class="album-sterren"></div>
-                <img class="album-open" data-src="images/album/boek-open.webp?v=1" alt="" aria-hidden="true">
-                <div class="album-kaft-houder" aria-hidden="true">
-                    <img class="album-kaft" data-src="images/album/kaft-voor.webp?v=1" alt="">
+                <div class="album-dim" aria-hidden="true"></div>
+                <img class="album-open" data-src="images/album/boek-open.webp?v=2" alt="" aria-hidden="true">
+                <div class="album-open-rechts" aria-hidden="true">
+                    <img data-src="images/album/boek-open.webp?v=2" alt="">
+                </div>
+                <div class="album-kaft-vlucht" aria-hidden="true">
+                    <div class="album-kaft-draai">
+                        <div class="album-kaft-voor"><img data-src="images/album/kaft-voor.webp?v=2" alt=""></div>
+                        <div class="album-kaft-achter"><img data-src="images/album/boek-open.webp?v=2" alt=""></div>
+                    </div>
                 </div>
                 <button class="schatkamer-terug album-terug" onclick="sluitAlbum()">Terug</button>
                 <button class="schatkamer-terug album-sluit" onclick="sluitAlbumBoek()">Boek sluiten</button>
@@ -776,9 +787,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=371"></script>
-    <script src="ontdekken-inhoud.js?v=371"></script>
-    <script src="script.js?v=371"></script>
+    <script src="lang/nl.js?v=372"></script>
+    <script src="ontdekken-inhoud.js?v=372"></script>
+    <script src="script.js?v=372"></script>
 
 </body>
 
