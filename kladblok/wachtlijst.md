@@ -96,11 +96,11 @@ elk antwoord herhaald hoeft te worden.*
   donatiezone van de lantaarn. Doneren gaat dan alleen via Instellingen →
   Steun de Bijbelkidsquiz en via de pagina Voor ouders en begeleiders.
   Bewuste keuze: geen geldvraag op het scherm van het kind, ook geen pop-up.
-- **Bijbelkidsalbum: achtergrond en boek zijn placeholders.** Het albumscherm
-  (`#album-scherm`, `.album-zaal` en `.album-boek` in `style.css`) heeft een
-  CSS-verloop als achtergrond en een CSS-boek; Roel maakt de echte
-  afbeeldingen. De plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
-  (`.album-opschrift`) wacht op Roels oordeel (screenshot in `tmp/`).
+- **Bijbelkidsalbum: plek van het opschrift onder de lantaarn.** Achtergrond
+  en boek van het albumscherm zijn definitief (`images/album/`). Alleen de
+  plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
+  (`.album-opschrift` in `style.css`) wacht nog op Roels oordeel (screenshot
+  `tmp/lantaarn-opschrift-voor-roel.png`).
 
 ## Vragenwerk
 

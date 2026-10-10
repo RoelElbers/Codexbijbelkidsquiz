@@ -11059,6 +11059,40 @@ function wisAlbumTimers() {
     albumTimers = [];
 }
 
+// Waar alles op de albumplaat staat, in procenten van het 16:9-vak (zoals de
+// trofeeën in de Schatkamer). Per ster: x = midden van de console, bodem =
+// bovenkant van de plank (de ster staat erop), naam = bovenkant van de naam,
+// net onder het gouden sierstuk. Boek: x = midden, top en hoogte van de hele
+// afbeelding (die heeft boven en onder een transparante rand). De maat van de
+// ster staat in de CSS (.ps-groot .ps-ster).
+const albumIndeling = {
+    plekken: {
+        brons:  { x: 40.0, bodem: 25.9, naam: 33.0 },
+        goud:   { x: 50.1, bodem: 21.2, naam: 28.4 },
+        zilver: { x: 60.1, bodem: 26.0, naam: 33.2 }
+    },
+    boek: { x: 50.0, top: 37.1, hoogte: 40.0 }
+};
+
+// Zet de posities uit albumIndeling als CSS-variabelen op de plekken en het boek.
+function plaatsAlbumIndeling(rij) {
+    rij.querySelectorAll(".ps-plek").forEach((plek) => {
+        const kleur = plakboekKleuren.find((k) => plek.classList.contains(`ps-${k}`));
+        const p = albumIndeling.plekken[kleur];
+        if (!p) return;
+        plek.style.setProperty("--x", p.x + "%");
+        plek.style.setProperty("--bodem", p.bodem + "%");
+        plek.style.setProperty("--naam", p.naam + "%");
+    });
+    const boek = document.querySelector("#album-scherm .album-boek");
+    if (boek) {
+        if (!boek.getAttribute("src") && boek.dataset.src) boek.src = boek.dataset.src;
+        boek.style.setProperty("--x", albumIndeling.boek.x + "%");
+        boek.style.setProperty("--top", albumIndeling.boek.top + "%");
+        boek.style.setProperty("--hoogte", albumIndeling.boek.hoogte + "%");
+    }
+}
+
 function openAlbum() {
     if (!plakboekAan) return;
     const scherm = document.getElementById("album-scherm");
@@ -11080,11 +11114,8 @@ function openAlbum() {
     bewaarOngezien([]);
     werkAlbumLantaarnBij();
 
-    const t = (typeof NL !== "undefined" && NL.plakboek) || null;
-    const titel = document.querySelector("#album-scherm .album-boek-titel");
-    if (titel && t) titel.textContent = t.albumNaam;
-
     houder.innerHTML = plakboekPodiumHtml(stand, null, "ps-groot");
+    plaatsAlbumIndeling(houder.firstElementChild);
     scherm.style.display = "flex";
     speelAlbumReeks(houder.firstElementChild, reeks);
 }

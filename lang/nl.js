@@ -51,7 +51,7 @@ const NL = {
     // =====================================================================
     plakboek: {
         setVol: "Alle drie de sterren! Je hebt een nieuw plaatje verdiend voor je Bijbelkidsalbum.",
-        // Opschrift onder de lantaarn en titel op het (gesloten) album.
+        // Opschrift onder de lantaarn.
         albumNaam: "Bijbelkidsalbum"
     },
 

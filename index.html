@@ -30,7 +30,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=367">
+    <link rel="stylesheet" href="style.css?v=368">
 
     <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
          Dertien verwijzingen dragen samen dit eigen nummer:
@@ -688,15 +688,16 @@
         <!-- Bijbelkidsalbum (plakboek fase 2): alleen bereikbaar met plakboekAan,
              via de lantaarn linksonder. Zelfde opzet als de Schatkamer-zaal:
              schermvullende overlay met een 16:9-vak. Bovenaan het podium met de
-             drie sterren (openAlbum vult #album-sterren), in het midden het
-             gesloten album. Achtergrond en boek zijn voorlopig placeholders
-             in CSS; tikken op het boek doet in deze fase nog niets. -->
+             drie sterren op de gouden consoles (openAlbum vult #album-sterren),
+             op het ronde podium het gesloten album. Achtergrond en boek staan in
+             images/album/; de posities komen uit albumIndeling in script.js.
+             Het boek heeft data-src i.p.v. src: plaatsAlbumIndeling zet de src
+             pas bij het openen, zodat spelers zonder plakboek het niet laden.
+             Tikken op het boek doet in deze fase nog niets. -->
         <div id="album-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="album-zaal">
+                <img class="album-boek" data-src="images/album/boek.webp" alt="" aria-hidden="true">
                 <div id="album-sterren" class="album-sterren"></div>
-                <div class="album-boek" aria-hidden="true">
-                    <span class="album-boek-titel"></span>
-                </div>
                 <button class="schatkamer-terug" onclick="sluitAlbum()">Terug</button>
             </div>
         </div>
@@ -752,9 +753,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=367"></script>
-    <script src="ontdekken-inhoud.js?v=367"></script>
-    <script src="script.js?v=367"></script>
+    <script src="lang/nl.js?v=368"></script>
+    <script src="ontdekken-inhoud.js?v=368"></script>
+    <script src="script.js?v=368"></script>
 
 </body>
 

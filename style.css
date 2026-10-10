@@ -2136,70 +2136,58 @@ height: 22%;
 /* =========================
    BIJBELKIDSALBUM — het albumscherm (plakboek fase 2)
    Zelfde opzet als de Schatkamer-zaal: .schatkamer-overlay dekt het hele
-   venster af, met daarin een 16:9-vak. Maten in --game-breedte of procenten
-   van het vak. Achtergrond en boek zijn placeholders in CSS; Roel maakt de
-   echte afbeeldingen. De sterrenrij staat zo laag dat de spiraal (125% van
-   de ster) ook bij de hoge Goud-plek binnen het vak blijft.
+   venster af, met daarin een 16:9-vak met images/album/achtergrond.webp.
+   De drie sterren staan op de gouden consoles van de plaat, het boek
+   (images/album/boek.webp) staat op het ronde podium. Alle posities komen
+   uit albumIndeling in script.js, als CSS-variabelen in procenten van het
+   vak (--x, --bodem, --naam; voor het boek --x, --top, --hoogte).
+   De ster wordt met margin gecentreerd, niet met transform: die is van de
+   invliegende spiraal.
 ========================= */
 .album-zaal {
     position: relative;
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     overflow: hidden;
-    background:
-        radial-gradient(ellipse 55% 50% at 50% 0%, rgba(255, 214, 140, 0.42), rgba(255, 180, 90, 0) 70%),
-        radial-gradient(ellipse 38% 34% at 50% 68%, rgba(255, 190, 110, 0.20), rgba(255, 190, 110, 0) 70%),
-        linear-gradient(180deg, #1c2b57 0%, #111b3c 55%, #070c1f 100%);
+    background: #0b1330 url("images/album/achtergrond.webp") center / 100% 100% no-repeat;
 }
-.album-sterren {
+.album-sterren,
+.album-sterren .ps-sterren {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 16%;
+    inset: 0;
+}
+.album-sterren .ps-sterren {
+    display: block;
+}
+.album-sterren .ps-plek,
+.album-sterren .ps-plek.ps-goud {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    pointer-events: none;
+}
+.album-sterren .ps-ster {
+    position: absolute;
+    left: var(--x);
+    top: calc(var(--bodem) - var(--game-breedte) * 0.0625);
+    margin-left: calc(var(--game-breedte) * -0.03125);
+}
+.album-sterren .ps-naam {
+    position: absolute;
+    left: var(--x);
+    top: var(--naam);
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 .album-boek {
     position: absolute;
-    left: 50%;
-    top: 37%;
+    left: var(--x, 50%);
+    top: var(--top, 37.1%);
+    height: var(--hoogte, 40%);
     transform: translateX(-50%);
-    width: calc(var(--game-breedte) * 0.24);
-    aspect-ratio: 3 / 4;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    border-radius: calc(var(--game-breedte) * 0.004) calc(var(--game-breedte) * 0.009)
-                   calc(var(--game-breedte) * 0.009) calc(var(--game-breedte) * 0.004);
-    background:
-        linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 9%, rgba(255, 255, 255, 0.06) 11%, rgba(0, 0, 0, 0) 14%),
-        radial-gradient(ellipse at 40% 30%, #7a4423 0%, #5b2f17 60%, #3e1f0e 100%);
-    box-shadow:
-        0 calc(var(--game-breedte) * 0.01) calc(var(--game-breedte) * 0.025) rgba(0, 0, 0, 0.6),
-        inset 0 0 0 calc(var(--game-breedte) * 0.0025) #c9a14a;
-}
-/* Gouden binnenlijst, zoals op een gebonden album. */
-.album-boek::before {
-    content: "";
-    position: absolute;
-    inset: 7% 8% 7% 13%;
-    border: calc(var(--game-breedte) * 0.0012) solid rgba(230, 190, 100, 0.75);
-    border-radius: calc(var(--game-breedte) * 0.003);
     pointer-events: none;
-}
-.album-boek-titel {
-    position: relative;
-    margin-left: 5%;
-    padding: 0 10%;
-    text-align: center;
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-weight: 700;
-    font-size: calc(var(--game-breedte) * 0.0175);
-    line-height: 1.25;
-    color: #f3cf6e;
-    text-shadow:
-        0 1px 0 rgba(255, 240, 190, 0.35),
-        0 2px 3px rgba(0, 0, 0, 0.7);
+    user-select: none;
 }
 
 /* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de
