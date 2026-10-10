@@ -36,8 +36,8 @@ const NL = {
     //   verder = bij 7 goed of minder
     // =====================================================================
     nalezenHulp: {
-        bijna: "Bijna! Kijk in Bijbeltraining bij {titel}. Bij Nalezen zie je alle vragen met de uitleg erbij, en bij Oefenen ga je ze rustig langs. Dan lukt het de volgende keer!",
-        verder: "Ga naar Bijbeltraining en kies {titel}. Bij Nalezen zie je alle vragen met de uitleg erbij, en bij Oefenen ga je ze rustig langs. Zo leer je de antwoorden, en de volgende ronde gaat een stuk beter.",
+        bijna: "Bijna! Kijk in Bijbeltraining bij {titel}. Bij Nalezen zie je alle vragen met de antwoorden erbij, en bij Oefenen ga je ze rustig langs. Dan lukt het de volgende keer!",
+        verder: "Ga naar Bijbeltraining en kies {titel}. Bij Nalezen zie je alle vragen met de antwoorden erbij, en bij Oefenen ga je ze rustig langs. Zo leer je de antwoorden, en de volgende ronde gaat een stuk beter.",
         knop: "Vragen nalezen"
     },
 

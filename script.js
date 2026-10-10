@@ -10644,16 +10644,18 @@ function eindScherm() {
     const xpRegel = `Je hebt dit level ${score * 100} XP verdiend.`;
 
     // Slotbericht hangt af van de modus: een evangelie-trofee of een schatkist.
-    const kistNamen = { brons: "bronzen", zilver: "zilveren", goud: "gouden" };
+    // Het bijvoeglijk naamwoord komt uit een vaste lijst: kleur + "en" geeft
+    // wel "zilveren" en "gouden", maar "bronsen" in plaats van "bronzen".
+    const kleurNamen = { brons: "bronzen", zilver: "zilveren", goud: "gouden" };
     let slotRegel;
     if (gekozenModus === "kist") {
         slotRegel = alleGoed
-            ? `Je verdient de ${kistNamen[trofeeKleur]} schatkist! 🏆`
-            : `Probeer het opnieuw om de ${kistNamen[trofeeKleur]} schatkist te verdienen!`;
+            ? `Je verdient de ${kleurNamen[trofeeKleur]} schatkist! 🏆`
+            : `Probeer het opnieuw om de ${kleurNamen[trofeeKleur]} schatkist te verdienen!`;
     } else {
         slotRegel = alleGoed
-            ? `Je verdient de ${trofeeKleur}en ${gekozenBoek}-trofee! 🏆`
-            : `Probeer het opnieuw om de ${trofeeKleur}en ${gekozenBoek}-trofee te halen!`;
+            ? `Je verdient de ${kleurNamen[trofeeKleur]} ${gekozenBoek}-trofee! 🏆`
+            : `Probeer het opnieuw om de ${kleurNamen[trofeeKleur]} ${gekozenBoek}-trofee te halen!`;
     }
 
     quizBox.innerHTML = `
