@@ -666,7 +666,7 @@ height: 22%;
     /* Warme, zonnige radial met een tikje rood en wat meer geel: gedempt
        maar uitnodigend. Volledig dekkend zodat het drukke startscherm niet
        meer doorschemert. */
-    background: radial-gradient(ellipse at 50% 40%, #f6dca8 0%, #ecc488 55%, #d9a86a 100%);
+    background: radial-gradient(ellipse at 50% 40%, #f6e1a8 0%, #eccb88 55%, #d9af6a 100%);
 
     display: flex;
     justify-content: center;
