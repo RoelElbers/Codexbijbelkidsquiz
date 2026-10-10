@@ -42,6 +42,18 @@ const NL = {
     },
 
     // =====================================================================
+    // Plakboek, fase 1: de sterren op het eindscherm (alleen met
+    // PLAKBOEK_ACTIEF of ?plakboek=aan).
+    //
+    // LET OP: OPVULTEKST. De definitieve tekst levert Roel.
+    //   setVol = tijdelijke melding zodra brons, zilver en goud alle drie
+    //            gehaald zijn (de set is vol, er komt een plaatje bij)
+    // =====================================================================
+    plakboek: {
+        setVol: "Alle drie de sterren! Daarmee verdien je een plaatje voor je plakboek."
+    },
+
+    // =====================================================================
     // Steun-scherm (Instellingen → Over dit spel → Steun de Bijbelkidsquiz)
     //
     // LET OP: alle zinnen hieronder zijn OPVULTEKST om de opmaak te kunnen

@@ -92,6 +92,12 @@ elk antwoord herhaald hoeft te worden.*
   heten de knop en de melding op de onthullingskaart nog "Catechese"
   ("Binnenkort kun je hier meer ontdekken in de Catechese"), terwijl dat nu
   Ontdekken heet.
+- **Plakboek fase 1 draait op placeholders.** De sterren op het eindscherm
+  zijn SVG-placeholders (`plakboekSterrenHtml()` in `script.js`, kleuren in
+  `style.css` bij `.ps-ster`); de definitieve sterren maakt Roel. De melding
+  bij een volle set (`NL.plakboek.setVol` in `lang/nl.js`) is opvultekst; de
+  definitieve tekst levert Roel. Het plakboek staat achter
+  `PLAKBOEK_ACTIEF = false` (testen met `?plakboek=aan`).
 
 ## Vragenwerk
 

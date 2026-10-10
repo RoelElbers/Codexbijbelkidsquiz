@@ -14,6 +14,14 @@ const BETA_MODUS = false;
 const DONATIE_ACTIEF = false;
 const DONATIE_URL = "";
 
+// --- Plakboek (fase 1: sterren) ---------------------------------------------
+// Zolang dit false is, is het plakboek onzichtbaar en wordt er niets
+// bijgehouden. Testen kan met ?plakboek=aan in de URL, zoals ?afstel=aan.
+// Alle plakboekcode kijkt naar plakboekAan, nooit rechtstreeks naar de vlag.
+const PLAKBOEK_ACTIEF = false;
+const plakboekAan = PLAKBOEK_ACTIEF ||
+    new URLSearchParams(window.location.search).get("plakboek") === "aan";
+
 // --- Geluid -----------------------------------------------------------------
 // Eenvoudig klikgeluid, in code opgewekt — geen geluidsbestand nodig, werkt ook
 // via file:///. De AAN/UIT-stand wordt onthouden in localStorage (standaard aan).
@@ -10610,6 +10618,13 @@ function eindScherm() {
         setKistStatus(trofeeKleur, "verdiend");
     }
 
+    // Plakboek: 10/10 in een boek- of schatkistronde levert een ster in de
+    // kleur van het niveau op (zie plakboekRondeAf). Doet niets zolang het
+    // plakboek uit staat.
+    const plakboek = alleGoed && trofeeKleur
+        ? plakboekRondeAf(trofeeKleur)
+        : { nieuw: null, setVol: false };
+
     const quizBox = document.querySelector("#quiz-scherm .quiz-box");
 
     const titel = alleGoed ? "Quiz voltooid!" : "Bijna gelukt!";
@@ -10647,6 +10662,8 @@ function eindScherm() {
         <p class="quiz-question">${xpRegel}</p>
 
         <p class="quiz-question">${slotRegel}</p>
+
+        ${plakboekSterrenHtml(plakboek)}
 
         ${terugblik ? "" : nalezenHulpHtml("quiz-question", "answer-btn")}
 
@@ -10906,6 +10923,68 @@ function openNalezenVanuitEindscherm() {
     onNiveau = hulp.niveau;
     bouwVuLijst();
     gaNaarScherm("vu-lijst-scherm");
+}
+
+// --- Plakboek, fase 1: sterren ------------------------------------------------
+// Drie sterplaatsen: brons, zilver en goud. Een boek- of schatkistronde met
+// alles goed vult de plaats van dat niveau, ook als de trofee of kist al
+// gewonnen is. Is de plaats al gevuld, dan gebeurt er niets extra. Zijn alle
+// drie gevuld, dan komt er één plaatje bij het tegoed en worden de plaatsen
+// weer leeg. Oefenmodus en Verborgen Schat komen hier niet langs (eigen tak
+// in eindScherm). De plaatjes zelf komen in een latere fase.
+//
+// Opslag per speler, in de stijl van trofee_/kist_/schildpunt_:
+//   speler_<id>_plakboek_ster_<brons|zilver|goud>  = "1"
+//   speler_<id>_plakboek_plaatjes_tegoed           = aantal, als tekst
+// Alleen met plakboekAan; in de demomodus (?demo=) wordt niets opgeslagen.
+const plakboekKleuren = ["brons", "zilver", "goud"];
+
+function heeftSter(kleur) {
+    return localStorage.getItem(profielSleutel(`plakboek_ster_${kleur}`)) === "1";
+}
+
+function leesPlaatjesTegoed() {
+    const aantal = parseInt(localStorage.getItem(profielSleutel("plakboek_plaatjes_tegoed")), 10);
+    return aantal > 0 ? aantal : 0;
+}
+
+// Verwerkt een gewonnen ronde. Geeft terug welke ster er nieuw bij kwam (of
+// null) en of de set daarmee vol werd.
+function plakboekRondeAf(kleur) {
+    const uitkomst = { nieuw: null, setVol: false };
+    if (!plakboekAan || demoNiveau || !plakboekKleuren.includes(kleur)) return uitkomst;
+    if (heeftSter(kleur)) return uitkomst;
+
+    localStorage.setItem(profielSleutel(`plakboek_ster_${kleur}`), "1");
+    uitkomst.nieuw = kleur;
+
+    if (plakboekKleuren.every(heeftSter)) {
+        localStorage.setItem(profielSleutel("plakboek_plaatjes_tegoed"), String(leesPlaatjesTegoed() + 1));
+        plakboekKleuren.forEach((k) => localStorage.removeItem(profielSleutel(`plakboek_ster_${k}`)));
+        uitkomst.setVol = true;
+    }
+    return uitkomst;
+}
+
+// De rij van drie sterren voor het eindscherm. Gehaald = in kleur, niet
+// gehaald = het donkere silhouet van de Schatkamer (.sk-schaduw). Een nieuwe
+// ster krijgt een korte verschijn-animatie. Bij een volle set staan alle drie
+// in kleur (de opslag is dan al leeg voor de volgende set), met een melding
+// die na een paar seconden wegvalt. Placeholder-ster in SVG; de definitieve
+// sterren maakt Roel.
+function plakboekSterrenHtml(uitkomst) {
+    if (!plakboekAan) return "";
+    const sterren = plakboekKleuren.map((kleur) => {
+        const gehaald = uitkomst.setVol || heeftSter(kleur);
+        const classes = ["ps-ster", kleur];
+        if (!gehaald) classes.push("sk-schaduw");
+        if (kleur === uitkomst.nieuw) classes.push("ps-ster-nieuw");
+        return `<svg class="${classes.join(" ")}" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8l3 6.5 7.1.8-5.3 4.8 1.5 7L12 17.3l-6.3 3.6 1.5-7L1.9 9.1l7.1-.8z"/></svg>`;
+    }).join("");
+
+    const t = (typeof NL !== "undefined" && NL.plakboek) || null;
+    const melding = uitkomst.setVol && t ? `<p class="ps-melding">${t.setVol}</p>` : "";
+    return `<div class="ps-sterren">${sterren}</div>${melding}`;
 }
 
 function updateXPBalk() {
