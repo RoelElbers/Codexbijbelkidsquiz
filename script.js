@@ -11084,9 +11084,11 @@ function plaatsAlbumIndeling(rij) {
         plek.style.setProperty("--bodem", p.bodem + "%");
         plek.style.setProperty("--naam", p.naam + "%");
     });
+    document.querySelectorAll("#album-scherm img[data-src]").forEach((img) => {
+        if (!img.getAttribute("src")) img.src = img.dataset.src;
+    });
     const boek = document.querySelector("#album-scherm .album-boek");
     if (boek) {
-        if (!boek.getAttribute("src") && boek.dataset.src) boek.src = boek.dataset.src;
         boek.style.setProperty("--x", albumIndeling.boek.x + "%");
         boek.style.setProperty("--top", albumIndeling.boek.top + "%");
         boek.style.setProperty("--hoogte", albumIndeling.boek.hoogte + "%");
@@ -11122,9 +11124,187 @@ function openAlbum() {
 
 function sluitAlbum() {
     wisAlbumTimers();
+    zetAlbumBoekDicht();
     const scherm = document.getElementById("album-scherm");
     if (scherm) scherm.style.display = "none";
     werkAlbumLantaarnBij();
+}
+
+// --- Plakboek, fase 3a: het boek klapt open -----------------------------------
+// Een tik op het schuine boek op het podium:
+//   1. het boek gaat over in de platte kaft (kaft-voor), die naar het midden
+//      vliegt en groeit tot hij precies over de rechterpagina valt;
+//   2. daaronder verschijnt het opengeslagen boek (boek-open), dat het hele
+//      16:9-vak vult; sterren, namen en de bibliotheek verdwijnen;
+//   3. de kaft draait om zijn linkerrand open (rotateY) en verdwijnt voorbij
+//      de helft van de draai.
+// Sluiten is dezelfde beweging achteruit. Alleen transform en opacity, via de
+// Web Animations API. Na elke beweging gaat de eindstand in de inline-stijl en
+// worden de animaties opgeruimd, zodat herhaald openen en sluiten schoon blijft.
+// Bij minder beweging: alleen een rustige overgang, zonder vlucht en draai.
+//
+// kaftDoel = de rechthoek van de rechterpagina op boek-open (% van het vak).
+// De kaft (zichtbaar deel ~0,73 breed/hoog) wordt daarvoor iets breder
+// getrokken dan hij is (de pagina is ~0,84). De *Zichtbaar-fracties zijn het
+// niet-transparante deel van kaft-voor.webp en boek.webp.
+const albumBoekIndeling = {
+    kaftDoel: { x0: 52.5, x1: 90.8, y0: 6.6, y1: 87.2 },
+    kaftZichtbaar: { x0: 54 / 1086, x1: 1030 / 1086, y0: 47 / 1448, y1: 1387 / 1448 },
+    boekZichtbaar: { x0: 105 / 1199, x1: 1113 / 1199, y0: 11 / 1312, y1: 1217 / 1312 }
+};
+let albumBoekStand = "dicht";      // dicht | bezig | open
+let albumBoekTimer = null;
+
+function albumBoekDelen() {
+    const zaal = document.querySelector("#album-scherm .album-zaal");
+    if (!zaal) return null;
+    return {
+        zaal,
+        boek: zaal.querySelector(".album-boek"),
+        sterren: zaal.querySelector(".album-sterren"),
+        open: zaal.querySelector(".album-open"),
+        houder: zaal.querySelector(".album-kaft-houder"),
+        kaft: zaal.querySelector(".album-kaft")
+    };
+}
+
+// Zet de kafthouder zo neer dat het zichtbare deel van de kaft precies op
+// kaftDoel ligt; het scharnier is de linkerrand van dat zichtbare deel.
+function plaatsAlbumKaft(d) {
+    const doel = albumBoekIndeling.kaftDoel, z = albumBoekIndeling.kaftZichtbaar;
+    const b = (doel.x1 - doel.x0) / (z.x1 - z.x0);
+    const h = (doel.y1 - doel.y0) / (z.y1 - z.y0);
+    d.houder.style.left = (doel.x0 - z.x0 * b) + "%";
+    d.houder.style.top = (doel.y0 - z.y0 * h) + "%";
+    d.houder.style.width = b + "%";
+    d.houder.style.height = h + "%";
+    d.kaft.style.transformOrigin = (z.x0 * 100) + "% 50%";
+}
+
+// De transform die de kafthouder (oorsprong linksboven) zo verkleint en
+// verschuift dat de kaft precies over het boek op het podium ligt.
+function albumKaftStartTransform(d) {
+    const hr = d.houder.getBoundingClientRect(), br = d.boek.getBoundingClientRect();
+    const kz = albumBoekIndeling.kaftZichtbaar, bz = albumBoekIndeling.boekZichtbaar;
+    const T = { x: hr.left + kz.x0 * hr.width, y: hr.top + kz.y0 * hr.height,
+                w: (kz.x1 - kz.x0) * hr.width, h: (kz.y1 - kz.y0) * hr.height };
+    const S = { x: br.left + bz.x0 * br.width, y: br.top + bz.y0 * br.height,
+                w: (bz.x1 - bz.x0) * br.width, h: (bz.y1 - bz.y0) * br.height };
+    const sx = S.w / T.w, sy = S.h / T.h;
+    const tx = S.x - hr.left - sx * (T.x - hr.left);
+    const ty = S.y - hr.top - sy * (T.y - hr.top);
+    return `translate(${tx}px, ${ty}px) scale(${sx}, ${sy})`;
+}
+
+function ruimAlbumBoekAnimatiesOp(d) {
+    [d.boek, d.sterren, d.open, d.houder, d.kaft].forEach((el) => el.getAnimations().forEach((a) => a.cancel()));
+}
+
+// Eindstanden. "open": het opengeslagen boek in beeld, de rest weg.
+function zetAlbumBoekStand(d, stand) {
+    const open = stand === "open";
+    d.boek.style.opacity = open ? "0" : "";
+    d.sterren.style.opacity = open ? "0" : "";
+    d.open.style.opacity = open ? "1" : "";
+    d.kaft.style.opacity = "";
+    d.houder.style.visibility = "";
+    d.houder.style.transform = "";
+    d.kaft.style.transform = "";
+    d.zaal.classList.toggle("boek-open", open);
+    albumBoekStand = open ? "open" : "dicht";
+}
+
+function zetAlbumBoekDicht() {
+    clearTimeout(albumBoekTimer);
+    const d = albumBoekDelen();
+    if (!d) return;
+    ruimAlbumBoekAnimatiesOp(d);
+    zetAlbumBoekStand(d, "dicht");
+}
+
+function openAlbumBoek() {
+    if (!plakboekAan || albumBoekStand !== "dicht") return;
+    const d = albumBoekDelen();
+    if (!d) return;
+    albumBoekStand = "bezig";
+    ruimAlbumBoekAnimatiesOp(d);
+    const rustig = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const vast = { fill: "forwards" };
+    let duur;
+
+    if (rustig) {
+        d.boek.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 400, ...vast });
+        d.sterren.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 400, ...vast });
+        d.open.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, ...vast });
+        duur = 400;
+    } else {
+        plaatsAlbumKaft(d);
+        d.houder.style.visibility = "visible";
+        const start = albumKaftStartTransform(d);
+        // 1. het boek wordt de platte kaft en vliegt naar de rechterpagina
+        d.houder.animate([{ transform: start }, { transform: "none" }],
+            { duration: 550, easing: "cubic-bezier(0.3, 0.1, 0.3, 1)", ...vast });
+        d.kaft.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 180, ...vast });
+        d.boek.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 180, ...vast });
+        d.sterren.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 450, ...vast });
+        // 2. het opengeslagen boek verschijnt eronder
+        d.open.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 450, duration: 300, ...vast });
+        // 3. de kaft draait om de rug open en verdwijnt voorbij de helft
+        d.kaft.animate([
+            { transform: "rotateY(0deg)", opacity: 1 },
+            { transform: "rotateY(-90deg)", opacity: 1, offset: 0.5 },
+            { transform: "rotateY(-90deg)", opacity: 0, offset: 0.501 },
+            { transform: "rotateY(-180deg)", opacity: 0 }
+        ], { delay: 750, duration: 650, easing: "ease-in-out", ...vast });
+        duur = 1400;
+    }
+    albumBoekTimer = setTimeout(() => {
+        zetAlbumBoekStand(d, "open");
+        ruimAlbumBoekAnimatiesOp(d);
+    }, duur + 30);
+}
+
+function sluitAlbumBoek() {
+    if (!plakboekAan || albumBoekStand !== "open") return;
+    const d = albumBoekDelen();
+    if (!d) return;
+    albumBoekStand = "bezig";
+    ruimAlbumBoekAnimatiesOp(d);
+    d.zaal.classList.remove("boek-open");
+    const rustig = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const vast = { fill: "forwards" };
+    let duur;
+
+    if (rustig) {
+        d.open.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 400, ...vast });
+        d.boek.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, ...vast });
+        d.sterren.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 400, ...vast });
+        duur = 400;
+    } else {
+        plaatsAlbumKaft(d);
+        d.houder.style.visibility = "visible";
+        const eind = albumKaftStartTransform(d);
+        // 1. de kaft klapt dicht over de rechterpagina
+        d.kaft.animate([
+            { transform: "rotateY(-180deg)", opacity: 0 },
+            { transform: "rotateY(-90deg)", opacity: 0, offset: 0.499 },
+            { transform: "rotateY(-90deg)", opacity: 1, offset: 0.5 },
+            { transform: "rotateY(0deg)", opacity: 1 }
+        ], { duration: 650, easing: "ease-in-out", ...vast });
+        // 2. het opengeslagen boek verdwijnt, de bibliotheek komt terug
+        d.open.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 600, duration: 300, ...vast });
+        d.sterren.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 800, duration: 450, ...vast });
+        // 3. de kaft krimpt terug naar het podium en wordt weer het schuine boek
+        d.houder.animate([{ transform: "none" }, { transform: eind }],
+            { delay: 650, duration: 550, easing: "cubic-bezier(0.3, 0.1, 0.3, 1)", ...vast });
+        d.kaft.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 1020, duration: 180, ...vast });
+        d.boek.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 1020, duration: 180, ...vast });
+        duur = 1200;
+    }
+    albumBoekTimer = setTimeout(() => {
+        zetAlbumBoekStand(d, "dicht");
+        ruimAlbumBoekAnimatiesOp(d);
+    }, duur + 30);
 }
 
 // Zet de stappen achter elkaar op de klok. Een vlucht duurt 1,75 s (0,25 s

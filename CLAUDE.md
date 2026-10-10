@@ -77,9 +77,9 @@ de teller staat ook boven in `index.html`, naast die van de scèneplaten.
 
 ### Albumteller — net als de avatarteller
 
-De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`
-en `boek.webp`) dragen ook een **eigen `?v=`-teller**, los van de cache-buster
-en los van de avatarteller.
+De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`,
+`boek.webp`, `boek-open.webp` en `kaft-voor.webp`) dragen ook een **eigen
+`?v=`-teller**, los van de cache-buster en los van de avatarteller.
 
 | teller | gaat omhoog zodra |
 | --- | --- |
@@ -88,11 +88,13 @@ en los van de avatarteller.
 Zelfde reden als bij de avatars: een nieuwe plaat houdt zijn bestandsnaam, dus
 zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 
-**Twee plekken, altijd samen.**
+**Vier plekken, altijd samen.**
 
 ```
 style.css : 2152       achtergrond.webp (.album-zaal)
-index.html: 711        boek.webp (data-src van .album-boek)
+index.html: 715        boek.webp (data-src van .album-boek)
+index.html: 719        boek-open.webp (data-src van .album-open)
+index.html: 721        kaft-voor.webp (data-src van .album-kaft)
 ```
 
 Regelnummers schuiven — zoek desnoods op `images/album/` in beide bestanden.
