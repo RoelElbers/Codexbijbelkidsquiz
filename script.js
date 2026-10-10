@@ -10665,7 +10665,7 @@ function eindScherm() {
 
         ${plakboekSterrenHtml(plakboek)}
 
-        ${terugblik ? "" : nalezenHulpHtml("quiz-question", "answer-btn")}
+        ${terugblik ? "" : nalezenHulpHtml("tb-hulp", "answer-btn")}
 
         ${terugblik
             ? `<button class="answer-btn" onclick="startTerugblik()">Verder</button>`
