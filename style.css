@@ -2205,6 +2205,11 @@ height: 22%;
 #ontdek-detail > :last-child {
     margin-bottom: 0;
 }
+/* Onderste Terug-knop in Nalezen: .naslag-terug geeft hem geen ruimte erboven,
+   dus hij stond direct onder het laatste vraagvak. Vaste 24px. */
+#vu-lijst-terug-onder {
+    margin-top: 24px;
+}
 
 /* === Vragen & uitleg: lijst van vragen ===================================== */
 .vu-lijst {
