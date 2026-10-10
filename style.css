@@ -2354,6 +2354,14 @@ height: 22%;
     border-color: #b9852f;
     font-weight: bold;
 }
+/* Hulpzin na een niet gehaalde ronde, boven "Vragen nalezen" en "Klaar". */
+#quiz-scherm .tb-hulp {
+    max-width: 640px;
+    margin: 8px auto 0;
+    font-size: 20px;
+    line-height: 1.45;
+    color: white;
+}
 #quiz-scherm .tb-tegels {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));

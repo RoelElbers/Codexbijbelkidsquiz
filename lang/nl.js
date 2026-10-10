@@ -28,6 +28,20 @@ const NL = {
     },
 
     // =====================================================================
+    // Hulp na een niet gehaalde boekronde (minder dan alles goed). Staat aan
+    // het eind van de terugblik, of op het eindscherm als er geen terugblik
+    // is. {titel} wordt ingevuld met boekNiveauTitel() uit script.js, dezelfde
+    // titel die Bijbeltraining toont (bijv. "Matteüs – Brons").
+    //   bijna  = bij 8 of 9 goed
+    //   verder = bij 7 goed of minder
+    // =====================================================================
+    nalezenHulp: {
+        bijna: "Bijna! Kijk in Bijbeltraining bij {titel}. Bij Nalezen zie je alle vragen met de uitleg erbij, en bij Oefenen ga je ze rustig langs. Dan lukt het de volgende keer!",
+        verder: "Ga naar Bijbeltraining en kies {titel}. Bij Nalezen zie je alle vragen met de uitleg erbij, en bij Oefenen ga je ze rustig langs. Zo leer je de antwoorden, en de volgende ronde gaat een stuk beter.",
+        knop: "Vragen nalezen"
+    },
+
+    // =====================================================================
     // Steun-scherm (Instellingen → Over dit spel → Steun de Bijbelkidsquiz)
     //
     // LET OP: alle zinnen hieronder zijn OPVULTEKST om de opmaak te kunnen

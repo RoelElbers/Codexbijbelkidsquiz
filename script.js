@@ -89,6 +89,13 @@ const niveauLabels = {
     expert: "Goud"
 };
 
+// De titel van één boek + niveau, bijv. "Matteüs – Brons" of "1 & 2 Korintiërs
+// – Zilver". Eén bron voor Bijbeltraining, Nalezen, de quiz en de hulpzin na
+// een niet gehaalde ronde, zodat die nooit uit elkaar lopen.
+function boekNiveauTitel(boek, niveau) {
+    return `${boek} – ${niveauLabels[niveau]}`;
+}
+
 /* Opent een URL in een nieuw tabblad.
    Bewust GEEN derde argument aan window.open: elke featuresstring —
    ook alleen "noopener" — laat de browser een popup openen in plaats
@@ -7687,7 +7694,7 @@ function kiesNiveau(niveau) {
     // Titel toont "Boek – Niveau", bijv. "Matteüs – Beginner"
     const quizTitle = document.getElementById("quiz-title");
     if (quizTitle) {
-        quizTitle.innerHTML = `${gekozenBoek} – ${niveauLabels[niveau]}`;
+        quizTitle.innerHTML = boekNiveauTitel(gekozenBoek, niveau);
     }
 
     // HUD verbergen tijdens de quiz
@@ -8659,7 +8666,7 @@ function kiesOnBoek(boek) {
 function kiesOnNiveau(niveau) {
     onNiveau = niveau;
     const titel = document.getElementById("modus-titel");
-    if (titel) titel.textContent = `${onBoek} – ${niveauLabels[niveau]}`;
+    if (titel) titel.textContent = boekNiveauTitel(onBoek, niveau);
     gaNaarScherm("modus-scherm");
 }
 
@@ -8947,7 +8954,7 @@ function isVerborgenSchatOntgrendeld() {
 // Read-only: leest alleen; kopieert niets. Een 💡-teken markeert vragen met uitleg.
 function bouwVuLijst() {
     const titel = document.getElementById("vu-lijst-titel");
-    if (titel) titel.textContent = `${onBoek} – ${niveauLabels[onNiveau]}`;
+    if (titel) titel.textContent = boekNiveauTitel(onBoek, onNiveau);
 
     const houder = document.getElementById("vu-lijst");
     if (!houder) return;
@@ -10610,6 +10617,11 @@ function eindScherm() {
     // Terugblik met uitleg na de ronde (zie startTerugblik). null = niets te tonen.
     terugblik = maakTerugblik();
 
+    // Hulpzin + "Vragen nalezen" bij een niet gehaalde boekronde (zie
+    // maakNalezenHulp). Staat aan het eind van de terugblik; is er geen
+    // terugblik, dan hier op het eindscherm.
+    nalezenHulp = maakNalezenHulp();
+
     const scoreRegel = `Je had er ${score} van de ${vragen.length} goed.`;
 
     const xpRegel = `Je hebt dit level ${score * 100} XP verdiend.`;
@@ -10635,6 +10647,8 @@ function eindScherm() {
         <p class="quiz-question">${xpRegel}</p>
 
         <p class="quiz-question">${slotRegel}</p>
+
+        ${terugblik ? "" : nalezenHulpHtml("quiz-question", "answer-btn")}
 
         ${terugblik
             ? `<button class="answer-btn" onclick="startTerugblik()">Verder</button>`
@@ -10750,6 +10764,8 @@ function toonTerugblikFout() {
     const nr = terugblik.foutIndex;
     const item = terugblik.fout[nr];
     markeerUitlegGelezen(item.sleutel);
+    // Volgt er geen overzicht, dan is dit de laatste pagina van de terugblik.
+    const isLaatst = nr === terugblik.fout.length - 1 && !terugblik.heeftNieuweTegels;
 
     toonTerugblikPagina(`
         <h2 class="quiz-title">Terugblik</h2>
@@ -10764,6 +10780,7 @@ function toonTerugblikFout() {
         ${terugblikBijbelplaatsHtml(item.bijbelplaats)}
         ${terugblikUitlegHtml(item.uitleg)}
         <div class="tb-knoppen">
+            ${isLaatst ? nalezenHulpHtml("tb-hulp", "answer-btn tb-knop") : ""}
             <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">Volgende →</button>
         </div>
     `);
@@ -10807,6 +10824,7 @@ function toonTerugblikOverzicht() {
         <div class="tb-tegels">${tegels}</div>
         <div class="tb-knoppen">
             ${wissel}
+            ${nalezenHulpHtml("tb-hulp", "answer-btn tb-knop")}
             <button class="answer-btn tb-knop tb-knop-hoofd" onclick="sluitTerugblik()">Klaar</button>
         </div>
     `);
@@ -10844,6 +10862,50 @@ function openTerugblikTegel(i) {
 function sluitTerugblik() {
     terugblik = null;
     terugNaarStartscherm();
+}
+
+// --- Hulp na een niet gehaalde ronde ------------------------------------------
+// Een zin die naar Bijbeltraining wijst, met een knop die meteen het Nalezen van
+// dit boek + niveau opent. Alleen bij een boekronde met minder dan alles goed;
+// niet bij de oefenmodus, de schatkist (vragen uit alle boeken) of de Verborgen
+// Schat — daar bestaat geen Nalezen bij één boek. De teksten staan in
+// NL.nalezenHulp (lang/nl.js).
+//
+// Plaats: aan het eind van de terugblik, zodat deel 1 (de fouten) verplicht
+// blijft. Is er geen terugblik, dan staat hij op het eindscherm.
+let nalezenHulp = null;
+
+// Legt boek, niveau en score vast in eindScherm(). null = niets tonen.
+function maakNalezenHulp() {
+    if (oefenModus || gekozenModus !== "boek") return null;
+    if (!gekozenBoek || !gekozenNiveau || score >= vragen.length) return null;
+    return { boek: gekozenBoek, niveau: gekozenNiveau, score };
+}
+
+// Zin + knop als HTML. Zin en knop krijgen de classes van het scherm waar ze
+// staan (eindscherm of terugblik). Leeg als er niets te tonen is.
+function nalezenHulpHtml(zinClass, knopClass) {
+    const t = (typeof NL !== "undefined" && NL.nalezenHulp) || null;
+    if (!nalezenHulp || !t) return "";
+    const zin = (nalezenHulp.score >= 8 ? t.bijna : t.verder)
+        .replace("{titel}", boekNiveauTitel(nalezenHulp.boek, nalezenHulp.niveau));
+    return `<p class="${zinClass}">${zin}</p>
+            <button class="${knopClass}" onclick="openNalezenVanuitEindscherm()">${t.knop}</button>`;
+}
+
+// Sluit de ronde netjes af en opent Nalezen van dit boek + niveau. De stack is
+// daarna leeg, dus Terug in de vragenlijst gaat naar het startscherm.
+function openNalezenVanuitEindscherm() {
+    const hulp = nalezenHulp;
+    if (!hulp) return;
+    nalezenHulp = null;
+    terugblik = null;
+    terugNaarStartscherm();          // leegt ook de stack en onBoek/onNiveau
+
+    onBoek = hulp.boek;
+    onNiveau = hulp.niveau;
+    bouwVuLijst();
+    gaNaarScherm("vu-lijst-scherm");
 }
 
 function updateXPBalk() {
