@@ -711,7 +711,7 @@ const vragenData = {
             }
         ]
     },
-    // Marcus — vragenpool (72 vragen: beginner 17, advanced 24, expert 31)
+    // Marcus — vragenpool (71 vragen: beginner 16, advanced 24, expert 31)
     "Marcus": {
         beginner: [
             {
@@ -798,12 +798,6 @@ const vragenData = {
                 antwoorden: ["Een spannend verhaal dat eigenlijk niemand echt gelooft", "Een bijzondere gebeurtenis die je niet gewoon kunt verklaren, en die Gods kracht laat zien", "Niets — wonderen bestaan gewoon niet", "Een natuurverschijnsel dat de mensen uit de Bijbel nog niet konden verklaren, zoals onweer"],
                 correct: "Een bijzondere gebeurtenis die je niet gewoon kunt verklaren, en die Gods kracht laat zien",
                 bijbelplaats: "Marcus 4:39"
-            },
-            {
-                vraag: "In de tempel zag Jezus een arme weduwe iets in de offerkist gooien. Hoeveel muntjes waren het?",
-                antwoorden: ["Twee", "Eén", "Vijf", "Tien"],
-                correct: "Twee",
-                bijbelplaats: "Marcus 12:42"
             },
             {
                 vraag: "Bij de doop van Jezus daalde de Heilige Geest op Hem neer. In de gedaante van welk dier?",
