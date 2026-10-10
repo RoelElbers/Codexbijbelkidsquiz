@@ -10661,13 +10661,13 @@ function eindScherm() {
     quizBox.innerHTML = `
         <h2 class="quiz-title">${titel}</h2>
 
+        ${plakboekSterrenHtml(plakboek)}
+
         <p class="quiz-question">${scoreRegel}</p>
 
         <p class="quiz-question">${xpRegel}</p>
 
         <p class="quiz-question">${slotRegel}</p>
-
-        ${plakboekSterrenHtml(plakboek)}
 
         ${terugblik ? "" : nalezenHulpHtml("tb-hulp", "answer-btn")}
 

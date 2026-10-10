@@ -2400,15 +2400,47 @@ height: 22%;
 #quiz-scherm .ps-brons  .ps-naam { color: #e0a06a; }
 #quiz-scherm .ps-zilver .ps-naam { color: #dfe5ee; }
 #quiz-scherm .ps-goud   .ps-naam { color: #ffd36b; }
+/* Een nieuwe ster vliegt binnen: twee rondjes in een spiraal naar zijn plek,
+   groeiend van klein naar normaal, dan een kort plopje met gouden gloed.
+   De spiraal is rotate(θ) translateX(r) rotate(-θ): elke functie wordt apart
+   geïnterpoleerd, dus de ster draait om zijn plek terwijl de straal
+   gelijkmatig naar 0 krimpt (eerste rondje 80→40px, tweede 40→0). De tweede
+   rotate houdt de ster zelf rechtop. Straal 80px: de rij staat direct onder
+   de titel, met ruim genoeg plek erboven binnen het quizvak (dat scrollt en
+   dus afsnijdt). Start na 0,25 s, totaal 1,5 s; de melding bij een volle
+   set wacht daarop (zie .ps-melding). */
 #quiz-scherm .ps-ster-nieuw {
-    animation: ps-ster-verschijn 1s ease-out 0.3s both;
+    animation: ps-ster-vlucht 1.5s 0.25s both;
 }
-@keyframes ps-ster-verschijn {
-    0%   { transform: scale(0) rotate(-40deg); opacity: 0; }
-    60%  { transform: scale(1.35) rotate(8deg); opacity: 1;
-           filter: drop-shadow(0 0 14px rgba(255, 230, 150, 0.95)); }
-    100% { transform: scale(1) rotate(0); opacity: 1;
-           filter: drop-shadow(0 0 4px rgba(255, 230, 150, 0.5)); }
+@keyframes ps-ster-vlucht {
+    0%   { transform: rotate(0deg) translateX(80px) rotate(0deg) scale(0.2);
+           opacity: 0;
+           filter: drop-shadow(0 0 0 rgba(255, 210, 80, 0));
+           animation-timing-function: cubic-bezier(0.25, 0.1, 0.35, 1); }
+    8%   { opacity: 1; }
+    72%  { transform: rotate(720deg) translateX(0px) rotate(-720deg) scale(1);
+           opacity: 1;
+           filter: drop-shadow(0 0 0 rgba(255, 210, 80, 0));
+           animation-timing-function: ease-out; }
+    84%  { transform: rotate(720deg) translateX(0px) rotate(-720deg) scale(1.25);
+           filter: drop-shadow(0 0 16px rgba(255, 210, 80, 0.95));
+           animation-timing-function: ease-in-out; }
+    100% { transform: rotate(720deg) translateX(0px) rotate(-720deg) scale(1);
+           opacity: 1;
+           filter: drop-shadow(0 0 5px rgba(255, 210, 80, 0.55)); }
+}
+/* Minder beweging gevraagd: geen spiraal, alleen een rustige fade-in. */
+@media (prefers-reduced-motion: reduce) {
+    #quiz-scherm .ps-ster-nieuw {
+        animation: ps-ster-fade 0.6s ease-out 0.25s both;
+    }
+    #quiz-scherm .ps-melding {
+        animation-delay: 0.85s;
+    }
+}
+@keyframes ps-ster-fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 /* Tijdelijke melding bij een volle set: komt op, blijft even staan en klapt
    daarna dicht, zodat de knoppen eronder weer op hun plek komen. */
@@ -2422,7 +2454,8 @@ height: 22%;
     color: #ffd86b;
     font-size: 20px;
     overflow: hidden;
-    animation: ps-melding 6s ease-in-out 1.2s both;
+    /* Wacht tot de invliegende ster geland is: 0,25 s + 1,5 s. */
+    animation: ps-melding 6s ease-in-out 1.75s both;
 }
 @keyframes ps-melding {
     0%   { opacity: 0; max-height: 8em; }
