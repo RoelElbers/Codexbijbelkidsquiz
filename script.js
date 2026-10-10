@@ -10978,20 +10978,27 @@ function plakboekRondeAf(kleur) {
     return uitkomst;
 }
 
-// De rij van drie sterren voor het eindscherm. Gehaald = in kleur, niet
-// gehaald = het donkere silhouet van de Schatkamer (.sk-schaduw). Een nieuwe
-// ster krijgt een korte verschijn-animatie. Bij een volle set staan alle drie
-// in kleur (de opslag is dan al leeg voor de volgende set), met een melding
-// die na een paar seconden wegvalt. Placeholder-ster in SVG; de definitieve
-// sterren maakt Roel.
+// De drie sterren voor het eindscherm, als podium: Brons links, Goud in het
+// midden (iets hoger), Zilver rechts, met de naam van het niveau eronder
+// (uit niveauLabels). Alle drie zijn dezelfde gele ster (#ps-ster-geel in
+// index.html). Gehaald = in kleur, niet gehaald = het donkere silhouet van de
+// Schatkamer (.sk-schaduw), alleen op de ster: de naam blijft leesbaar. Een
+// nieuwe ster krijgt een korte verschijn-animatie. Bij een volle set staan
+// alle drie in kleur (de opslag is dan al leeg voor de volgende set), met een
+// melding die na een paar seconden wegvalt.
+const plakboekPodium = ["brons", "goud", "zilver"];
+const plakboekNiveau = { brons: "beginner", zilver: "advanced", goud: "expert" };
+
 function plakboekSterrenHtml(uitkomst) {
     if (!plakboekAan) return "";
-    const sterren = plakboekKleuren.map((kleur) => {
+    const sterren = plakboekPodium.map((kleur) => {
         const gehaald = uitkomst.setVol || heeftSter(kleur);
-        const classes = ["ps-ster", kleur];
+        const classes = ["ps-ster"];
         if (!gehaald) classes.push("sk-schaduw");
         if (kleur === uitkomst.nieuw) classes.push("ps-ster-nieuw");
-        return `<svg class="${classes.join(" ")}" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1.8l3 6.5 7.1.8-5.3 4.8 1.5 7L12 17.3l-6.3 3.6 1.5-7L1.9 9.1l7.1-.8z"/></svg>`;
+        return `<div class="ps-plek ps-${kleur}">` +
+            `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg>` +
+            `<span class="ps-naam">${niveauLabels[plakboekNiveau[kleur]]}</span></div>`;
     }).join("");
 
     const t = (typeof NL !== "undefined" && NL.plakboek) || null;

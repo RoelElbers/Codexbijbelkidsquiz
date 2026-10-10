@@ -2366,24 +2366,40 @@ height: 22%;
     border-color: #b9852f;
     font-weight: bold;
 }
-/* Plakboek fase 1: de drie sterren op het eindscherm (alleen met
-   plakboekAan). Placeholder-sterren in SVG; niet gehaald = .sk-schaduw, het
-   silhouet uit de Schatkamer (zie daar). */
+/* Bijbelkidsalbum (plakboek) fase 1: de drie sterren op het eindscherm
+   (alleen met plakboekAan). Podium: Brons, Goud (16px hoger), Zilver, met de
+   naam eronder. De ster is #ps-ster-geel uit index.html. Niet gehaald =
+   .sk-schaduw op de ster, het silhouet uit de Schatkamer (zie daar); de naam
+   krijgt nooit schaduw. */
 #quiz-scherm .ps-sterren {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: 22px;
     margin: 10px 0 18px;
+}
+#quiz-scherm .ps-plek {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+#quiz-scherm .ps-plek.ps-goud {
+    margin-bottom: 16px;
 }
 #quiz-scherm .ps-ster {
     width: 64px;
     height: 64px;
-    stroke: rgba(0, 0, 0, 0.35);
-    stroke-width: 0.6;
 }
-#quiz-scherm .ps-ster.brons  { fill: #c8803c; }
-#quiz-scherm .ps-ster.zilver { fill: #d9e0ea; }
-#quiz-scherm .ps-ster.goud   { fill: #f3c969; }
+#quiz-scherm .ps-naam {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    line-height: 1.2;
+}
+#quiz-scherm .ps-brons  .ps-naam { color: #e0a06a; }
+#quiz-scherm .ps-zilver .ps-naam { color: #dfe5ee; }
+#quiz-scherm .ps-goud   .ps-naam { color: #ffd36b; }
 #quiz-scherm .ps-ster-nieuw {
     animation: ps-ster-verschijn 1s ease-out 0.3s both;
 }

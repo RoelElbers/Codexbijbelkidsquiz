@@ -30,7 +30,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=360">
+    <link rel="stylesheet" href="style.css?v=361">
 
     <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
          Dertien verwijzingen dragen samen dit eigen nummer:
@@ -73,6 +73,28 @@
 </head>
 
 <body>
+
+    <!-- Bijbelkidsalbum (plakboek): de gele ster op het eindscherm. Eén keer
+         gedefinieerd; elke ster verwijst ernaar met <use href="#ps-ster-geel">,
+         zodat de verloop-id's maar één keer in de pagina staan. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <polygon id="ps-vorm" points="100,26 122.92,72.45 174.18,79.9 137.09,116.05 145.85,167.1 100,143 54.15,167.1 62.91,116.05 25.82,79.9 77.08,72.45"/>
+        <clipPath id="ps-clip"><use href="#ps-vorm"/></clipPath>
+        <linearGradient id="ps-vul" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#FFF27A"/><stop offset="45%" stop-color="#FFD21F"/><stop offset="100%" stop-color="#FFA600"/>
+        </linearGradient>
+        <linearGradient id="ps-rand" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E08A00"/><stop offset="100%" stop-color="#B85A00"/>
+        </linearGradient>
+        <symbol id="ps-ster-geel" viewBox="0 0 200 200">
+          <use href="#ps-vorm" fill="url(#ps-rand)" stroke="url(#ps-rand)" stroke-width="22" stroke-linejoin="round"/>
+          <use href="#ps-vorm" fill="url(#ps-vul)" stroke="url(#ps-vul)" stroke-width="10" stroke-linejoin="round"/>
+          <g clip-path="url(#ps-clip)"><ellipse cx="82" cy="68" rx="58" ry="30" transform="rotate(-18 82 68)" fill="#FFF" opacity="0.38"/></g>
+          <circle cx="72" cy="86" r="5" fill="#FFF" opacity="0.85"/>
+        </symbol>
+      </defs>
+    </svg>
 
     <div id="game-container">
 
@@ -714,9 +736,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=360"></script>
-    <script src="ontdekken-inhoud.js?v=360"></script>
-    <script src="script.js?v=360"></script>
+    <script src="lang/nl.js?v=361"></script>
+    <script src="ontdekken-inhoud.js?v=361"></script>
+    <script src="script.js?v=361"></script>
 
 </body>
 
