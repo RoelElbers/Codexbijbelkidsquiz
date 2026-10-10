@@ -10792,7 +10792,8 @@ function toonTerugblikFout() {
     const item = terugblik.fout[nr];
     // Alleen echte uitleg telt als gelezen; een vraag zonder uitleg laat niets na.
     if (item.uitleg) markeerUitlegGelezen(item.sleutel);
-    // Volgt er geen overzicht, dan is dit de laatste pagina van de terugblik.
+    // Volgt er geen overzicht, dan is dit de laatste pagina van de terugblik:
+    // dan hulpzin + "Vragen nalezen", en heet de knop "Klaar" (hij sluit af).
     const isLaatst = nr === terugblik.fout.length - 1 && !terugblik.heeftNieuweTegels;
 
     toonTerugblikPagina(`
@@ -10809,7 +10810,7 @@ function toonTerugblikFout() {
         ${item.uitleg ? terugblikUitlegHtml(item.uitleg) : ""}
         <div class="tb-knoppen">
             ${isLaatst ? nalezenHulpHtml("tb-hulp", "answer-btn tb-knop") : ""}
-            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">Volgende →</button>
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">${isLaatst ? "Klaar" : "Volgende →"}</button>
         </div>
     `);
 }
