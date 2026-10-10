@@ -43,14 +43,14 @@ const NL = {
 
     // =====================================================================
     // Plakboek, fase 1: de sterren op het eindscherm (alleen met
-    // PLAKBOEK_ACTIEF of ?plakboek=aan).
+    // PLAKBOEK_ACTIEF of ?plakboek=aan). Het kind ziet het plakboek onder de
+    // naam "Bijbelkidsalbum"; in de code heet het plakboek.
     //
-    // LET OP: OPVULTEKST. De definitieve tekst levert Roel.
     //   setVol = tijdelijke melding zodra brons, zilver en goud alle drie
     //            gehaald zijn (de set is vol, er komt een plaatje bij)
     // =====================================================================
     plakboek: {
-        setVol: "Alle drie de sterren! Daarmee verdien je een plaatje voor je plakboek."
+        setVol: "Alle drie de sterren! Je hebt een nieuw plaatje verdiend voor je Bijbelkidsalbum."
     },
 
     // =====================================================================

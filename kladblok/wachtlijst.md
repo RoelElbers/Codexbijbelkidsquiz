@@ -89,12 +89,12 @@ elk antwoord herhaald hoeft te worden.*
   gemeenten. Zes vragen hebben geen artikel: Tertius, de grote letters in
   Galaten, papyrus P52, hoofdstuk- en versnummers, de codex en de vis. Raakt
   het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven.
-- **Plakboek fase 1 draait op placeholders.** De sterren op het eindscherm
-  zijn SVG-placeholders (`plakboekSterrenHtml()` in `script.js`, kleuren in
-  `style.css` bij `.ps-ster`); de definitieve sterren maakt Roel. De melding
-  bij een volle set (`NL.plakboek.setVol` in `lang/nl.js`) is opvultekst; de
-  definitieve tekst levert Roel. Het plakboek staat achter
-  `PLAKBOEK_ACTIEF = false` (testen met `?plakboek=aan`).
+- **Plakboek fase 1: de sterafbeeldingen zijn nog placeholders.** De sterren
+  op het eindscherm zijn SVG-placeholders (`plakboekSterrenHtml()` in
+  `script.js`, kleuren in `style.css` bij `.ps-ster`); de definitieve sterren
+  maakt Roel. De melding bij een volle set (`NL.plakboek.setVol`) is
+  definitief. Het kind ziet het plakboek als "Bijbelkidsalbum". Het plakboek
+  staat achter `PLAKBOEK_ACTIEF = false` (testen met `?plakboek=aan`).
 
 ## Vragenwerk
 
