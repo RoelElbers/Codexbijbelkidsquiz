@@ -2379,10 +2379,16 @@ height: 22%;
     margin: 10px 0 18px;
 }
 #quiz-scherm .ps-plek {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 4px;
+}
+/* De plek met de invliegende ster ligt boven de andere twee, zodat de ster
+   tijdens zijn spiraal over hun sterren en namen heen vliegt, niet eronder. */
+#quiz-scherm .ps-plek-nieuw {
+    z-index: 1;
 }
 #quiz-scherm .ps-plek.ps-goud {
     margin-bottom: 16px;

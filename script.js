@@ -10995,8 +10995,9 @@ function plakboekSterrenHtml(uitkomst) {
         const gehaald = uitkomst.setVol || heeftSter(kleur);
         const classes = ["ps-ster"];
         if (!gehaald) classes.push("sk-schaduw");
-        if (kleur === uitkomst.nieuw) classes.push("ps-ster-nieuw");
-        return `<div class="ps-plek ps-${kleur}">` +
+        const isNieuw = kleur === uitkomst.nieuw;
+        if (isNieuw) classes.push("ps-ster-nieuw");
+        return `<div class="ps-plek ps-${kleur}${isNieuw ? " ps-plek-nieuw" : ""}">` +
             `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg>` +
             `<span class="ps-naam">${niveauLabels[plakboekNiveau[kleur]]}</span></div>`;
     }).join("");
