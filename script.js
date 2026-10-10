@@ -11188,7 +11188,8 @@ function albumBoekDelen() {
         open: zaal.querySelector(".album-open"),
         rechts: zaal.querySelector(".album-open-rechts"),
         vlucht: zaal.querySelector(".album-kaft-vlucht"),
-        draai: zaal.querySelector(".album-kaft-draai")
+        draai: zaal.querySelector(".album-kaft-draai"),
+        gloed: zaal.querySelector(".album-boek-gloed")
     };
 }
 
@@ -11215,7 +11216,7 @@ function laadAlbumBeelden() {
 function warmAlbumBoekOp(d) {
     if (!d || albumRustig()) return Promise.resolve();
     plaatsAlbumKaft(d);
-    const lagen = [d.dim, d.open, d.rechts, d.vlucht];
+    const lagen = [d.dim, d.open, d.rechts, d.vlucht, d.gloed];
     const volgendeFrame = () => new Promise((r) => requestAnimationFrame(() => r()));
     lagen.forEach((el) => { el.style.opacity = "0.01"; });
     // eerst in de startstand op het podium, dan op ware grootte half gedraaid
@@ -11242,6 +11243,14 @@ function plaatsAlbumKaft(d) {
         left: (-kz.x0 * breedte) + "%", top: (-kz.y0 / kh * 100) + "%",
         width: breedte + "%", height: (100 / kh) + "%"
     });
+    // gloed: rond het schuine boek op het podium, ruim eromheen
+    const zr = d.zaal.getBoundingClientRect(), br = d.boek.getBoundingClientRect();
+    const gb = br.width * 1.7, gh = br.height * 1.35;
+    Object.assign(d.gloed.style, {
+        left: ((br.left + br.width / 2 - gb / 2 - zr.left) / zr.width * 100) + "%",
+        top: ((br.top + br.height / 2 - gh / 2 - zr.top) / zr.height * 100) + "%",
+        width: (gb / zr.width * 100) + "%", height: (gh / zr.height * 100) + "%"
+    });
     // achterkant: de linkerhelft van het open boek (rand tot rug)
     Object.assign(d.vlucht.querySelector(".album-kaft-achter img").style, {
         left: (-albumBoekIndeling.linkerRand / b * 100) + "%", top: (-r.y0 / h * 100) + "%",
@@ -11261,7 +11270,7 @@ function albumKaftStartTransform(d) {
 }
 
 function ruimAlbumBoekAnimatiesOp(d) {
-    [d.boek, d.dim, d.open, d.rechts, d.vlucht, d.draai].forEach((el) => el.getAnimations().forEach((a) => a.cancel()));
+    [d.boek, d.dim, d.open, d.rechts, d.vlucht, d.draai, d.gloed].forEach((el) => el.getAnimations().forEach((a) => a.cancel()));
 }
 
 // Eindstanden. "open": het complete open boek in beeld, de rest weg.
@@ -11308,18 +11317,22 @@ function openAlbumBoek() {
         d.rechts.style.visibility = "visible";
         const start = albumKaftStartTransform(d);
         const glijden = "cubic-bezier(0.25, 0.1, 0.25, 1)";
-        // a. het boek wordt de kaft en vliegt naar de rechterhelft; de bibliotheek dimt
-        // eerst de kaft over het boek heen, dan pas het boek eronder weg: geen dip
-        d.vlucht.animate([{ transform: start, opacity: 0 }, { opacity: 1, offset: 0.18 }, { transform: "none", opacity: 1 }],
-            { duration: 620, easing: glijden, ...vast });
-        d.boek.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 100, duration: 90, ...vast });
-        d.dim.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 600, easing: "ease-out", ...vast });
+        // a. op het podium vloeien het schuine boek en de platte kaft in elkaar over
+        //    (~250 ms, onder een korte gouden gloed die de wissel maskeert);
+        //    daarna vliegt de kaft naar de rechterhelft en dimt de bibliotheek.
+        d.gloed.animate([{ opacity: 0 }, { opacity: 0.9, offset: 0.3 }, { opacity: 0 }],
+            { duration: 520, easing: "ease-out", ...vast });
+        d.vlucht.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 250, easing: "ease-in-out", ...vast });
+        d.boek.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 80, duration: 250, easing: "ease-in-out", ...vast });
+        d.vlucht.animate([{ transform: start }, { transform: "none" }],
+            { delay: 160, duration: 620, easing: glijden, ...vast });
+        d.dim.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 160, duration: 600, easing: "ease-out", ...vast });
         // pas als de kaft ligt: de rechterhelft eronder
-        d.rechts.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 600, duration: 20, ...vast });
+        d.rechts.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 760, duration: 20, ...vast });
         // b. de kaft zwaait om de rug naar links; voorbij 90° de achterkant
         d.draai.animate([{ transform: "rotateY(0deg)" }, { transform: "rotateY(-180deg)" }],
-            { delay: 560, duration: 940, easing: "cubic-bezier(0.45, 0.05, 0.35, 1)", ...vast });
-        duur = 1500;
+            { delay: 720, duration: 900, easing: "cubic-bezier(0.45, 0.05, 0.35, 1)", ...vast });
+        duur = 1620;
     }
     albumBoekTimer = setTimeout(() => {
         zetAlbumBoekStand(d, "open");          // c. het complete beeld neemt het over
@@ -11353,15 +11366,19 @@ function sluitAlbumBoek() {
         // b terug: de kaft zwaait over de rug terug op de rechterpagina
         d.draai.animate([{ transform: "rotateY(-180deg)" }, { transform: "rotateY(0deg)" }],
             { duration: 720, easing: "cubic-bezier(0.45, 0.05, 0.35, 1)", ...vast });
-        d.vlucht.animate([{ opacity: 1 }, { opacity: 1 }], { duration: 1, ...vast });
         d.rechts.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 720, duration: 20, ...vast });
         // a terug: de kaft vliegt naar het podium, de bibliotheek komt terug
-        // eerst het boek terug onder de kaft, dan pas de kaft weg: geen dip
-        d.vlucht.animate([{ transform: "none", opacity: 1 }, { opacity: 1, offset: 0.83 }, { transform: eind, opacity: 0 }],
+        d.vlucht.animate([{ transform: "none" }, { transform: eind }],
             { delay: 700, duration: 480, easing: glijden, ...vast });
         d.dim.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 700, duration: 480, easing: "ease-in", ...vast });
-        d.boek.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 960, duration: 140, ...vast });
-        duur = 1180;
+        // landen: de platte kaft en het schuine boek vloeien ~250 ms in elkaar
+        // over (eerst het boek erbij, dan de kaft weg), onder een korte gouden
+        // gloed die het wisselmoment maskeert en daarna wegsterft.
+        d.boek.animate([{ opacity: 0 }, { opacity: 1 }], { delay: 1000, duration: 250, easing: "ease-in-out", ...vast });
+        d.vlucht.animate([{ opacity: 1 }, { opacity: 0 }], { delay: 1080, duration: 250, easing: "ease-in-out", ...vast });
+        d.gloed.animate([{ opacity: 0 }, { opacity: 0.9, offset: 0.35 }, { opacity: 0 }],
+            { delay: 1000, duration: 450, easing: "ease-out", ...vast });
+        duur = 1450;
     }
     albumBoekTimer = setTimeout(() => {
         zetAlbumBoekStand(d, "dicht");

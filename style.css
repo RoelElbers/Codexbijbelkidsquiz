@@ -2275,6 +2275,23 @@ height: 22%;
     display: block;
     max-width: none;
 }
+/* Korte gouden gloed rond het boek op het podium, op het moment dat het
+   schuine boek en de platte kaft in elkaar overgaan (begin van het openen,
+   einde van het sluiten). Een aparte laag met alleen opacity, geen filter op
+   het boek zelf; de maat zet plaatsAlbumKaft(). */
+.album-boek-gloed {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(
+        ellipse closest-side at 50% 50%,
+        rgba(255, 236, 170, 0.75) 0%,
+        rgba(255, 205, 110, 0.45) 40%,
+        rgba(255, 170, 60, 0.15) 70%,
+        rgba(255, 150, 40, 0) 100%
+    );
+    will-change: opacity;
+}
 /* Pas tikbaar als alle albumbeelden geladen en gedecodeerd zijn. */
 .album-zaal:not(.beelden-klaar) .album-boek {
     cursor: progress;
