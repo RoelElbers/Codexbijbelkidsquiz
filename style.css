@@ -2078,6 +2078,130 @@ height: 22%;
     opacity: 1;
 }
 
+/* =========================
+   BIJBELKIDSALBUM — de lantaarn (plakboek fase 2, alleen met plakboekAan)
+   Met plakboekAan opent de lantaarn het album. Het opschrift wordt dan door
+   initDonatieLantaarn in #game-container gezet, net onder de lantaarn. Staat
+   er een ster klaar die het kind nog niet in het album zag, dan krijgt de
+   zone .album-nieuw: een warme, rustig pulserende gloed, duidelijk sterker
+   dan de gewone flikkering. Zonder vlag bestaan beide niet.
+========================= */
+.album-opschrift {
+    position: absolute;
+    left: 6%;
+    top: 95.6%;
+    transform: translate(-50%, -50%);
+    z-index: 101;
+    white-space: nowrap;
+    pointer-events: none;
+
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0085);
+    letter-spacing: 0.03em;
+    color: #ffd86b;
+    text-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.95),
+        0 0 6px rgba(0, 0, 0, 0.8);
+}
+.donatie-zone.album-nieuw::after {
+    content: "";
+    position: absolute;
+    inset: -30% -75%;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 45%,
+        rgba(255, 248, 210, 0.9) 0%,
+        rgba(255, 220, 120, 0.8) 14%,
+        rgba(255, 175, 70, 0.55) 34%,
+        rgba(255, 140, 40, 0.22) 55%,
+        rgba(255, 120, 30, 0) 72%
+    );
+    mix-blend-mode: screen;
+    filter: blur(3px);
+    pointer-events: none;
+    animation: album-lantaarn-puls 2.2s ease-in-out infinite;
+}
+@keyframes album-lantaarn-puls {
+    0%, 100% { opacity: 0.6; transform: scale(0.9); }
+    50%      { opacity: 0.85; transform: scale(1.12); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .donatie-zone.album-nieuw::after {
+        animation: none;
+        opacity: 0.85;
+    }
+}
+
+/* =========================
+   BIJBELKIDSALBUM — het albumscherm (plakboek fase 2)
+   Zelfde opzet als de Schatkamer-zaal: .schatkamer-overlay dekt het hele
+   venster af, met daarin een 16:9-vak. Maten in --game-breedte of procenten
+   van het vak. Achtergrond en boek zijn placeholders in CSS; Roel maakt de
+   echte afbeeldingen. De sterrenrij staat zo laag dat de spiraal (125% van
+   de ster) ook bij de hoge Goud-plek binnen het vak blijft.
+========================= */
+.album-zaal {
+    position: relative;
+    width: min(100vw, calc(100vh * 16 / 9));
+    height: min(100vh, calc(100vw * 9 / 16));
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 55% 50% at 50% 0%, rgba(255, 214, 140, 0.42), rgba(255, 180, 90, 0) 70%),
+        radial-gradient(ellipse 38% 34% at 50% 68%, rgba(255, 190, 110, 0.20), rgba(255, 190, 110, 0) 70%),
+        linear-gradient(180deg, #1c2b57 0%, #111b3c 55%, #070c1f 100%);
+}
+.album-sterren {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 16%;
+}
+.album-boek {
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translateX(-50%);
+    width: calc(var(--game-breedte) * 0.24);
+    aspect-ratio: 3 / 4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: calc(var(--game-breedte) * 0.004) calc(var(--game-breedte) * 0.009)
+                   calc(var(--game-breedte) * 0.009) calc(var(--game-breedte) * 0.004);
+    background:
+        linear-gradient(90deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0) 9%, rgba(255, 255, 255, 0.06) 11%, rgba(0, 0, 0, 0) 14%),
+        radial-gradient(ellipse at 40% 30%, #7a4423 0%, #5b2f17 60%, #3e1f0e 100%);
+    box-shadow:
+        0 calc(var(--game-breedte) * 0.01) calc(var(--game-breedte) * 0.025) rgba(0, 0, 0, 0.6),
+        inset 0 0 0 calc(var(--game-breedte) * 0.0025) #c9a14a;
+}
+/* Gouden binnenlijst, zoals op een gebonden album. */
+.album-boek::before {
+    content: "";
+    position: absolute;
+    inset: 7% 8% 7% 13%;
+    border: calc(var(--game-breedte) * 0.0012) solid rgba(230, 190, 100, 0.75);
+    border-radius: calc(var(--game-breedte) * 0.003);
+    pointer-events: none;
+}
+.album-boek-titel {
+    position: relative;
+    margin-left: 5%;
+    padding: 0 10%;
+    text-align: center;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0175);
+    line-height: 1.25;
+    color: #f3cf6e;
+    text-shadow:
+        0 1px 0 rgba(255, 240, 190, 0.35),
+        0 2px 3px rgba(0, 0, 0, 0.7);
+}
+
 /* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de
    onzichtbare scherm-1-klikzones hebben z-index 100 (boven scherm 2's z-index
    40) en prikken er doorheen. Twee daarvan liggen over scherm-2-content en
@@ -2366,19 +2490,22 @@ height: 22%;
     border-color: #b9852f;
     font-weight: bold;
 }
-/* Bijbelkidsalbum (plakboek) fase 1: de drie sterren op het eindscherm
-   (alleen met plakboekAan). Podium: Brons, Goud (16px hoger), Zilver, met de
-   naam eronder. De ster is #ps-ster-geel uit index.html. Niet gehaald =
-   .sk-schaduw op de ster, het silhouet uit de Schatkamer (zie daar); de naam
-   krijgt nooit schaduw. */
-#quiz-scherm .ps-sterren {
+/* Bijbelkidsalbum (plakboek): de drie sterren als podium, op het eindscherm
+   (fase 1) en bovenaan het albumscherm (fase 2, .ps-groot). Alleen met
+   plakboekAan. Brons, Goud (hoger), Zilver, met de naam eronder. De ster is
+   #ps-ster-geel uit index.html. Niet gehaald = .sk-schaduw op de ster, het
+   silhouet uit de Schatkamer (zie daar); de naam krijgt nooit schaduw.
+   Op het album is alleen de maat anders (zie .ps-groot). */
+.ps-sterren {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 22px;
+}
+#quiz-scherm .ps-sterren {
     margin: 10px 0 18px;
 }
-#quiz-scherm .ps-plek {
+.ps-plek {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -2387,39 +2514,71 @@ height: 22%;
 }
 /* De plek met de invliegende ster ligt boven de andere twee, zodat de ster
    tijdens zijn spiraal over hun sterren en namen heen vliegt, niet eronder. */
-#quiz-scherm .ps-plek-nieuw {
+.ps-plek-nieuw {
     z-index: 1;
 }
-#quiz-scherm .ps-plek.ps-goud {
+.ps-plek.ps-goud {
     margin-bottom: 16px;
 }
-#quiz-scherm .ps-ster {
+.ps-ster {
     width: 64px;
     height: 64px;
 }
-#quiz-scherm .ps-naam {
+.ps-naam {
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-weight: 700;
     font-size: 0.85rem;
     line-height: 1.2;
 }
-#quiz-scherm .ps-brons  .ps-naam { color: #e0a06a; }
-#quiz-scherm .ps-zilver .ps-naam { color: #dfe5ee; }
-#quiz-scherm .ps-goud   .ps-naam { color: #ffd36b; }
+.ps-brons  .ps-naam { color: #e0a06a; }
+.ps-zilver .ps-naam { color: #dfe5ee; }
+.ps-goud   .ps-naam { color: #ffd36b; }
+
+/* Albummaat: 120px bij een toneel van 1920 breed, en alles in dezelfde
+   verhouding mee (gap, hoogteverschil, naam), schalend met het toneel. */
+.ps-groot {
+    gap: calc(var(--game-breedte) * 0.0215);
+}
+.ps-groot .ps-plek {
+    gap: calc(var(--game-breedte) * 0.004);
+}
+.ps-groot .ps-plek.ps-goud {
+    margin-bottom: calc(var(--game-breedte) * 0.0156);
+}
+.ps-groot .ps-ster {
+    width: calc(var(--game-breedte) * 0.0625);
+    height: calc(var(--game-breedte) * 0.0625);
+    transition: filter 0.9s ease;   /* rustig terug naar schaduw na een volle set */
+}
+.ps-groot .ps-naam {
+    font-size: calc(var(--game-breedte) * 0.0133);
+}
+/* Volle set op het album: de drie sterren stralen even samen. */
+.ps-groot.ps-straalt .ps-ster {
+    animation: ps-straal 1.2s ease-in-out both;
+}
+@keyframes ps-straal {
+    0%, 100% { transform: scale(1);
+               filter: drop-shadow(0 0 4px rgba(255, 210, 80, 0.5)); }
+    50%      { transform: scale(1.12);
+               filter: drop-shadow(0 0 22px rgba(255, 220, 110, 1)); }
+}
 /* Een nieuwe ster vliegt binnen: twee rondjes in een spiraal naar zijn plek,
    groeiend van klein naar normaal, dan een kort plopje met gouden gloed.
    De spiraal is rotate(θ) translateX(r) rotate(-θ): elke functie wordt apart
    geïnterpoleerd, dus de ster draait om zijn plek terwijl de straal
-   gelijkmatig naar 0 krimpt (eerste rondje 80→40px, tweede 40→0). De tweede
-   rotate houdt de ster zelf rechtop. Straal 80px: de rij staat direct onder
-   de titel, met ruim genoeg plek erboven binnen het quizvak (dat scrollt en
-   dus afsnijdt). Start na 0,25 s, totaal 1,5 s; de melding bij een volle
-   set wacht daarop (zie .ps-melding). */
-#quiz-scherm .ps-ster-nieuw {
+   gelijkmatig naar 0 krimpt (eerste rondje 125→62,5%, tweede 62,5→0). De
+   tweede rotate houdt de ster zelf rechtop. De straal staat in procenten van
+   de ster zelf: 80px op het eindscherm (ster 64px), en op het album schaalt
+   hij vanzelf mee met de grotere ster. Op het eindscherm staat de rij direct
+   onder de titel, met ruim genoeg plek erboven binnen het quizvak (dat
+   scrollt en dus afsnijdt). Start na 0,25 s, totaal 1,5 s; de melding bij een
+   volle set wacht daarop (zie .ps-melding). */
+.ps-ster-nieuw {
     animation: ps-ster-vlucht 1.5s 0.25s both;
 }
 @keyframes ps-ster-vlucht {
-    0%   { transform: rotate(0deg) translateX(80px) rotate(0deg) scale(0.2);
+    0%   { transform: rotate(0deg) translateX(125%) rotate(0deg) scale(0.2);
            opacity: 0;
            filter: drop-shadow(0 0 0 rgba(255, 210, 80, 0));
            animation-timing-function: cubic-bezier(0.25, 0.1, 0.35, 1); }
@@ -2437,8 +2596,11 @@ height: 22%;
 }
 /* Minder beweging gevraagd: geen spiraal, alleen een rustige fade-in. */
 @media (prefers-reduced-motion: reduce) {
-    #quiz-scherm .ps-ster-nieuw {
+    .ps-ster-nieuw {
         animation: ps-ster-fade 0.6s ease-out 0.25s both;
+    }
+    .ps-groot.ps-straalt .ps-ster {
+        animation: none;
     }
     #quiz-scherm .ps-melding {
         animation-delay: 0.85s;

@@ -50,7 +50,9 @@ const NL = {
     //            gehaald zijn (de set is vol, er komt een plaatje bij)
     // =====================================================================
     plakboek: {
-        setVol: "Alle drie de sterren! Je hebt een nieuw plaatje verdiend voor je Bijbelkidsalbum."
+        setVol: "Alle drie de sterren! Je hebt een nieuw plaatje verdiend voor je Bijbelkidsalbum.",
+        // Opschrift onder de lantaarn en titel op het (gesloten) album.
+        albumNaam: "Bijbelkidsalbum"
     },
 
     // =====================================================================

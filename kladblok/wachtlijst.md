@@ -89,6 +89,18 @@ elk antwoord herhaald hoeft te worden.*
   gemeenten. Zes vragen hebben geen artikel: Tertius, de grote letters in
   Galaten, papyrus P52, hoofdstuk- en versnummers, de codex en de vis. Raakt
   het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven.
+- **Donatiezone van de lantaarn weg zodra `PLAKBOEK_ACTIEF` op `true` gaat.**
+  Met de plakboekvlag is de lantaarn linksonder het Bijbelkidsalbum; zonder
+  vlag is hij nog de donatielantaarn (`.donatie-zone`, `initDonatieLantaarn`
+  in `script.js`). Gaat het album definitief live, dan verdwijnt de
+  donatiezone van de lantaarn. Doneren gaat dan alleen via Instellingen →
+  Steun de Bijbelkidsquiz en via de pagina Voor ouders en begeleiders.
+  Bewuste keuze: geen geldvraag op het scherm van het kind, ook geen pop-up.
+- **Bijbelkidsalbum: achtergrond en boek zijn placeholders.** Het albumscherm
+  (`#album-scherm`, `.album-zaal` en `.album-boek` in `style.css`) heeft een
+  CSS-verloop als achtergrond en een CSS-boek; Roel maakt de echte
+  afbeeldingen. De plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
+  (`.album-opschrift`) wacht op Roels oordeel (screenshot in `tmp/`).
 
 ## Vragenwerk
 

@@ -7404,6 +7404,7 @@ function laadProfielWeergave() {
     alleBoekKeys.forEach(toonTrofee);
     alleKistKeys.forEach(toonKist);
     werkVerborgenSchatBij();
+    werkAlbumLantaarnBij();
     updateAvatarWeergave();
 }
 
@@ -8496,6 +8497,9 @@ function terugNaarStartscherm() {
     // Verborgen schat verversen: net een kist verdiend in deze ronde kan de
     // diamanten kist onthullen zodra alle drie behaald zijn.
     werkVerborgenSchatBij();
+
+    // Lantaarn van het Bijbelkidsalbum: een net verdiende ster laat hem oplichten.
+    werkAlbumLantaarnBij();
 
     // De NT-prijzenkast live verversen, zodat een zojuist verdiende trofee
     // meteen zichtbaar is en niet pas na opnieuw scherm 2 binnenkomen.
@@ -10942,6 +10946,9 @@ function openNalezenVanuitEindscherm() {
 // Opslag per speler, in de stijl van trofee_/kist_/schildpunt_:
 //   speler_<id>_plakboek_ster_<brons|zilver|goud>  = "1"
 //   speler_<id>_plakboek_plaatjes_tegoed           = aantal, als tekst
+//   speler_<id>_plakboek_ongezien                  = JSON-lijst van wat het
+//       album nog niet heeft laten zien, in volgorde: een kleur per nieuwe
+//       ster, en "set" zodra een set vol werd (zie fase 2, openAlbum)
 // Alleen met plakboekAan; in de demomodus (?demo=) wordt niets opgeslagen.
 const plakboekKleuren = ["brons", "zilver", "goud"];
 
@@ -10963,12 +10970,16 @@ function plakboekRondeAf(kleur) {
 
     localStorage.setItem(profielSleutel(`plakboek_ster_${kleur}`), "1");
     uitkomst.nieuw = kleur;
+    const ongezien = leesOngezien();
+    ongezien.push(kleur);
 
     if (plakboekKleuren.every(heeftSter)) {
         localStorage.setItem(profielSleutel("plakboek_plaatjes_tegoed"), String(leesPlaatjesTegoed() + 1));
         plakboekKleuren.forEach((k) => localStorage.removeItem(profielSleutel(`plakboek_ster_${k}`)));
         uitkomst.setVol = true;
+        ongezien.push("set");
     }
+    bewaarOngezien(ongezien);
     return uitkomst;
 }
 
@@ -10983,22 +10994,151 @@ function plakboekRondeAf(kleur) {
 const plakboekPodium = ["brons", "goud", "zilver"];
 const plakboekNiveau = { brons: "beginner", zilver: "advanced", goud: "expert" };
 
-function plakboekSterrenHtml(uitkomst) {
-    if (!plakboekAan) return "";
+// Het podium zelf, gedeeld door het eindscherm en het albumscherm. gehaald =
+// Set van kleuren die in kleur staan; nieuw = de kleur die binnenvliegt (of
+// null); extraClass bepaalt de maat (leeg = eindscherm, "ps-groot" = album).
+function plakboekPodiumHtml(gehaald, nieuw, extraClass) {
     const sterren = plakboekPodium.map((kleur) => {
-        const gehaald = uitkomst.setVol || heeftSter(kleur);
         const classes = ["ps-ster"];
-        if (!gehaald) classes.push("sk-schaduw");
-        const isNieuw = kleur === uitkomst.nieuw;
+        if (!gehaald.has(kleur)) classes.push("sk-schaduw");
+        const isNieuw = kleur === nieuw;
         if (isNieuw) classes.push("ps-ster-nieuw");
         return `<div class="ps-plek ps-${kleur}${isNieuw ? " ps-plek-nieuw" : ""}">` +
             `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg>` +
             `<span class="ps-naam">${niveauLabels[plakboekNiveau[kleur]]}</span></div>`;
     }).join("");
+    return `<div class="ps-sterren${extraClass ? " " + extraClass : ""}">${sterren}</div>`;
+}
+
+function plakboekSterrenHtml(uitkomst) {
+    if (!plakboekAan) return "";
+    const gehaald = new Set(plakboekKleuren.filter((k) => uitkomst.setVol || heeftSter(k)));
 
     const t = (typeof NL !== "undefined" && NL.plakboek) || null;
     const melding = uitkomst.setVol && t ? `<p class="ps-melding">${t.setVol}</p>` : "";
-    return `<div class="ps-sterren">${sterren}</div>${melding}`;
+    return plakboekPodiumHtml(gehaald, uitkomst.nieuw, "") + melding;
+}
+
+// --- Plakboek, fase 2: de lantaarn en het albumscherm -------------------------
+// Alleen met plakboekAan. De lantaarn linksonder op het startscherm opent dan
+// het Bijbelkidsalbum (in plaats van de donatiemelding; zie initDonatieLantaarn)
+// en krijgt het opschrift "Bijbelkidsalbum". Staat er in plakboek_ongezien
+// nog iets, dan licht de lantaarn op (.album-nieuw). Bij het openen van het
+// album telt alles als gezien: de lijst gaat leeg en de gloed uit.
+//
+// Het album speelt de lijst in volgorde af: elke kleur vliegt binnen met de
+// spiraal van het eindscherm, en bij "set" stralen de drie sterren even en
+// vervagen ze daarna naar schaduw (de set begint opnieuw). Zijn er meer dan
+// één volle set verdiend sinds het vorige bezoek, dan speelt alleen de laatste
+// set af (plus wat daarna kwam). De beginstand volgt uit de huidige sterren,
+// achterwaarts teruggerekend door de lijst: een kleur was er toen nog niet,
+// en vóór een "set" waren alle drie gevuld.
+function leesOngezien() {
+    try {
+        const lijst = JSON.parse(localStorage.getItem(profielSleutel("plakboek_ongezien")));
+        return Array.isArray(lijst) ? lijst : [];
+    } catch (e) {
+        return [];
+    }
+}
+
+function bewaarOngezien(lijst) {
+    if (lijst.length) localStorage.setItem(profielSleutel("plakboek_ongezien"), JSON.stringify(lijst));
+    else localStorage.removeItem(profielSleutel("plakboek_ongezien"));
+}
+
+function werkAlbumLantaarnBij() {
+    if (!plakboekAan) return;
+    const zone = document.getElementById("donatie-zone");
+    if (zone) zone.classList.toggle("album-nieuw", leesOngezien().length > 0);
+}
+
+let albumTimers = [];
+function wisAlbumTimers() {
+    albumTimers.forEach(clearTimeout);
+    albumTimers = [];
+}
+
+function openAlbum() {
+    if (!plakboekAan) return;
+    const scherm = document.getElementById("album-scherm");
+    const houder = document.getElementById("album-sterren");
+    if (!scherm || !houder) return;
+    wisAlbumTimers();
+
+    let reeks = leesOngezien();
+    const sets = reeks.reduce((lijst, stap, i) => (stap === "set" ? lijst.concat(i) : lijst), []);
+    if (sets.length > 1) reeks = reeks.slice(sets[sets.length - 2] + 1);
+
+    const stand = new Set(plakboekKleuren.filter(heeftSter));
+    for (let i = reeks.length - 1; i >= 0; i--) {
+        if (reeks[i] === "set") plakboekKleuren.forEach((k) => stand.add(k));
+        else stand.delete(reeks[i]);
+    }
+
+    // Vanaf nu is alles gezien, ook als het album halverwege dichtgaat.
+    bewaarOngezien([]);
+    werkAlbumLantaarnBij();
+
+    const t = (typeof NL !== "undefined" && NL.plakboek) || null;
+    const titel = document.querySelector("#album-scherm .album-boek-titel");
+    if (titel && t) titel.textContent = t.albumNaam;
+
+    houder.innerHTML = plakboekPodiumHtml(stand, null, "ps-groot");
+    scherm.style.display = "flex";
+    speelAlbumReeks(houder.firstElementChild, reeks);
+}
+
+function sluitAlbum() {
+    wisAlbumTimers();
+    const scherm = document.getElementById("album-scherm");
+    if (scherm) scherm.style.display = "none";
+    werkAlbumLantaarnBij();
+}
+
+// Zet de stappen achter elkaar op de klok. Een vlucht duurt 1,75 s (0,25 s
+// wachten + 1,5 s spiraal, zie .ps-ster-nieuw); bij minder beweging is het
+// een fade-in van 0,85 s.
+function speelAlbumReeks(rij, reeks) {
+    if (!rij) return;
+    const rustig = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const VLUCHT = rustig ? 850 : 1750;
+    const STRAAL = rustig ? 600 : 1200;
+    const VERVAAG = 900;
+    let t = 0;
+    const plan = (ms, fn) => albumTimers.push(setTimeout(fn, ms));
+
+    reeks.forEach((stap) => {
+        if (stap === "set") {
+            plan(t, () => {
+                rij.querySelectorAll(".ps-ster").forEach((s) => s.classList.remove("ps-ster-nieuw", "sk-schaduw"));
+                rij.classList.add("ps-straalt");
+            });
+            t += STRAAL;
+            plan(t, () => {
+                rij.classList.remove("ps-straalt");
+                rij.querySelectorAll(".ps-ster").forEach((s) => s.classList.add("sk-schaduw"));
+            });
+            t += VERVAAG;
+        } else {
+            plan(t, () => vliegAlbumSterBinnen(rij, stap));
+            t += VLUCHT;
+        }
+    });
+}
+
+// Eén ster laten binnenvliegen. De klasse gaat er eerst af en na een
+// stijlberekening weer op, zodat dezelfde kleur na een volle set opnieuw kan
+// vliegen. De plek van de vliegende ster ligt boven de andere twee.
+function vliegAlbumSterBinnen(rij, kleur) {
+    const plek = rij.querySelector(`.ps-${kleur}`);
+    const ster = plek && plek.querySelector(".ps-ster");
+    if (!ster) return;
+    rij.querySelectorAll(".ps-plek-nieuw").forEach((p) => p.classList.remove("ps-plek-nieuw"));
+    ster.classList.remove("ps-ster-nieuw", "sk-schaduw");
+    void getComputedStyle(ster).animationName;
+    ster.classList.add("ps-ster-nieuw");
+    plek.classList.add("ps-plek-nieuw");
 }
 
 function updateXPBalk() {
@@ -11029,6 +11169,9 @@ alleKistKeys.forEach(toonKist);
 
 // Verborgen schat (diamanten kist) meteen in de juiste staat zetten.
 werkVerborgenSchatBij();
+
+// Lantaarn van het Bijbelkidsalbum (alleen met plakboekAan).
+werkAlbumLantaarnBij();
 
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.
@@ -11739,11 +11882,25 @@ if (BETA_MODUS) {
 // De klikzone (.donatie-zone) en de melding (.donatie-melding) staan in de HTML;
 // de hover-gloed zit in de CSS. Hier alleen het klikgedrag, gestuurd door de
 // vlaggen bovenaan. Uit -> in-stijl melding; aan -> DONATIE_URL in nieuwe tab.
+// Met plakboekAan is de lantaarn het Bijbelkidsalbum: een klik opent het
+// album en er komt een opschrift onder (zie fase 2 van het plakboek).
 (function initDonatieLantaarn() {
     const zone = document.getElementById("donatie-zone");
     if (!zone) return;
     const melding = document.getElementById("donatie-melding");
     let verbergTimer = null;
+
+    if (plakboekAan) {
+        const t = (typeof NL !== "undefined" && NL.plakboek) || null;
+        const naam = t ? t.albumNaam : "Bijbelkidsalbum";
+        zone.setAttribute("aria-label", naam);
+        zone.title = naam;
+        const opschrift = document.createElement("div");
+        opschrift.className = "album-opschrift";
+        opschrift.setAttribute("aria-hidden", "true");
+        opschrift.textContent = naam;
+        zone.after(opschrift);
+    }
 
     function toonMelding(tekst) {
         if (!melding) return;
@@ -11754,7 +11911,9 @@ if (BETA_MODUS) {
     }
 
     function activeer() {
-        if (DONATIE_ACTIEF && DONATIE_URL) {
+        if (plakboekAan) {
+            openAlbum();
+        } else if (DONATIE_ACTIEF && DONATIE_URL) {
             openTabblad(DONATIE_URL);
         } else {
             toonMelding("Steun dit project — binnenkort mogelijk!");
