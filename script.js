@@ -10634,7 +10634,9 @@ function eindScherm() {
 
     // Hulpzin + "Vragen nalezen" bij een niet gehaalde boekronde (zie
     // maakNalezenHulp). Staat aan het eind van de terugblik; is er geen
-    // terugblik, dan hier op het eindscherm.
+    // terugblik, dan hier op het eindscherm. Dat laatste is een vangnet: sinds
+    // deel 1 van de terugblik alle fouten bevat, heeft elke niet gehaalde
+    // ronde een terugblik.
     nalezenHulp = maakNalezenHulp();
 
     const scoreRegel = `Je had er ${score} van de ${vragen.length} goed.`;
@@ -10675,16 +10677,20 @@ function eindScherm() {
 
 // --- Terugblik na de ronde ----------------------------------------------------
 // Na het eindscherm van een meetellende ronde (boekquiz of schatkist; niet de
-// oefenmodus en niet de Verborgen Schat) kan de speler de uitleg lezen die in
-// de quiz zelf bewust niet getoond wordt. Alleen vragen MET uitleg doen mee.
+// oefenmodus en niet de Verborgen Schat) komen de fouten terug en kan de speler
+// de uitleg lezen die in de quiz zelf bewust niet getoond wordt.
 //
-// Deel 1: elke fout beantwoorde vraag, één pagina per vraag, alleen "Volgende".
-//         Bewust geen knop om dit deel over te slaan: het goede antwoord komt
-//         altijd langs.
-// Deel 2: tegels voor de goed beantwoorde vragen. Al gelezen uitleg staat er
-//         standaard niet bij; een knop haalt die erbij. "Klaar" sluit af.
-// Een leeg deel wordt overgeslagen; zijn beide leeg, dan is er geen terugblik
-// en houdt het eindscherm zijn gewone knop terug naar het startscherm.
+// Deel 1: ALLE fout beantwoorde vragen, met of zonder uitleg, één pagina per
+//         vraag, alleen "Volgende". Bewust geen knop om dit deel over te slaan:
+//         het goede antwoord komt altijd langs. Een vraag zonder uitleg toont
+//         vraag, antwoorden en bijbelplaats, zonder uitlegblok. Of een uitleg
+//         al gelezen is, speelt hier geen rol: een fout komt altijd terug.
+// Deel 2: tegels voor de goed beantwoorde vragen MET uitleg. Al gelezen uitleg
+//         staat er standaard niet bij; een knop haalt die erbij. "Klaar" sluit
+//         af.
+// Een leeg deel wordt overgeslagen. Zijn beide leeg (alles goed, en geen nieuwe
+// uitleg om te lezen), dan is er geen terugblik en houdt het eindscherm zijn
+// gewone knop terug naar het startscherm.
 //
 // Wat gelezen is, wordt per speler bewaard onder speler_<id>_uitleg_gelezen.
 // Vragen hebben geen eigen id; de sleutel is een korte hash van de vraagtekst
@@ -10724,21 +10730,23 @@ function markeerUitlegGelezen(sleutel) {
 // als er niets te tonen is.
 function maakTerugblik() {
     const gelezen = leesGelezenUitleg();
-    const metUitleg = vragen
-        .filter((q) => q.uitleg && q.gegevenAntwoord !== undefined)
+    const beantwoord = vragen
+        .filter((q) => q.gegevenAntwoord !== undefined)
         .map((q) => ({
             vraagTekst: q.vraag,
             gegeven: q.gegevenAntwoord,
             correct: q.correct,
-            uitleg: q.uitleg,
+            uitleg: q.uitleg || "",
             bijbelplaats: q.bijbelplaats,
             sleutel: uitlegSleutel(q.vraag),
             goed: q.gegevenAntwoord === q.correct
         }));
-    metUitleg.forEach((item) => { item.alGelezen = gelezen.has(item.sleutel); });
+    beantwoord.forEach((item) => { item.alGelezen = gelezen.has(item.sleutel); });
 
-    const fout = metUitleg.filter((item) => !item.goed);
-    const goed = metUitleg.filter((item) => item.goed);
+    // Deel 1: elke fout, met of zonder uitleg. alGelezen telt hier niet mee.
+    const fout = beantwoord.filter((item) => !item.goed);
+    // Deel 2: alleen goed beantwoorde vragen met uitleg.
+    const goed = beantwoord.filter((item) => item.goed && item.uitleg);
     // Of een tegel standaard zichtbaar is, hangt af van de stand bij het begin
     // van de terugblik (alGelezen). Een tegel die je nu opent, blijft dus in
     // het overzicht staan, met een vinkje.
@@ -10780,7 +10788,8 @@ function toonTerugblikPagina(html) {
 function toonTerugblikFout() {
     const nr = terugblik.foutIndex;
     const item = terugblik.fout[nr];
-    markeerUitlegGelezen(item.sleutel);
+    // Alleen echte uitleg telt als gelezen; een vraag zonder uitleg laat niets na.
+    if (item.uitleg) markeerUitlegGelezen(item.sleutel);
     // Volgt er geen overzicht, dan is dit de laatste pagina van de terugblik.
     const isLaatst = nr === terugblik.fout.length - 1 && !terugblik.heeftNieuweTegels;
 
@@ -10795,7 +10804,7 @@ function toonTerugblikFout() {
             <span class="tb-label">Het goede antwoord</span>${item.correct}
         </div>
         ${terugblikBijbelplaatsHtml(item.bijbelplaats)}
-        ${terugblikUitlegHtml(item.uitleg)}
+        ${item.uitleg ? terugblikUitlegHtml(item.uitleg) : ""}
         <div class="tb-knoppen">
             ${isLaatst ? nalezenHulpHtml("tb-hulp", "answer-btn tb-knop") : ""}
             <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">Volgende →</button>
