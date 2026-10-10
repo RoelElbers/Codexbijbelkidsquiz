@@ -37,7 +37,7 @@ const NL = {
     // =====================================================================
     nalezenHulp: {
         bijna: "Bijna! Kijk in Bijbeltraining bij {titel}. Bij Nalezen zie je alle vragen met de antwoorden erbij, en bij Oefenen ga je ze rustig langs. Dan lukt het de volgende keer!",
-        verder: "Ga naar Bijbeltraining en kies {titel}. Bij Nalezen zie je alle vragen met de antwoorden erbij, en bij Oefenen ga je ze rustig langs. Zo leer je de antwoorden, en de volgende ronde gaat een stuk beter.",
+        verder: "Ga naar Bijbeltraining en kies {titel}. Bij Nalezen zie je alle vragen met de antwoorden erbij, en bij Oefenen ga je ze rustig langs. Zo leer je ze uit je hoofd, en de volgende ronde gaat een stuk beter.",
         knop: "Vragen nalezen"
     },
 
