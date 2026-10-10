@@ -2156,6 +2156,11 @@ height: 22%;
     position: absolute;
     inset: 0;
 }
+/* De sterrenlaag beslaat het hele vak en ligt boven het boek op het podium;
+   zonder dit vangt hij elke klik en hover op het boek af. */
+.album-sterren {
+    pointer-events: none;
+}
 .album-sterren .ps-sterren {
     display: block;
 }
@@ -2227,6 +2232,10 @@ height: 22%;
 }
 .album-zaal.boek-open .album-terug {
     display: none;
+}
+/* Met het boek open is het (onzichtbare) boek op het podium niet tikbaar. */
+.album-zaal.boek-open .album-boek {
+    pointer-events: none;
 }
 
 /* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de
