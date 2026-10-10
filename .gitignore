@@ -63,6 +63,10 @@ __pycache__/
 toevoegen_reeks*.py
 
 # --- Tijdelijke / systeembestanden ---
+# tmp/: testscreenshots, testpagina's en andere wegwerpbestanden van
+# controles. Staat in de projectmap zodat er niet buiten gelezen hoeft te
+# worden, maar komt nooit in de repo (en dus ook niet op GitHub Pages).
+tmp/
 Thumbs.db
 desktop.ini
 .DS_Store
