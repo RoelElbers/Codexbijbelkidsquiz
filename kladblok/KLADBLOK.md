@@ -68,6 +68,13 @@
   achtergrond (Käsemann, Barrett). (2) Welke brief is de tranenbrief van
   2 Kor 2:4: 1 Korintiërs zelf (oudere uitleg), een verloren brief, of
   2 Kor 10-13? Bij beide punten geen partij kiezen in een gewone boekvraag.
+- 2026-10-11 — Plakboek (Bijbelkidsalbum): bij het opengeslagen boek
+  (schermvullend bladeren) vervaagt de Terug-knop na een paar seconden zonder
+  beweging naar ongeveer een derde zichtbaarheid; bij elke muisbeweging of
+  aanraking is hij meteen weer helemaal zichtbaar. Hij verdwijnt nooit helemaal,
+  want een kind moet hem altijd kunnen vinden. Daarna nagaan of dit ook moet
+  gelden voor de andere schermvullende schermen die .schatkamer-terug gebruiken
+  (Schatkamer, zalen), zodat het overal gelijk werkt.
 
 ## Goed om te weten
 *Staande aandachtspunten. Ze vragen geen actie, maar moeten wel meegewogen
