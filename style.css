@@ -2535,6 +2535,7 @@ height: 22%;
 /* Gegeven en goed antwoord: dezelfde rood/groen-kleuren als de antwoordknoppen
    in de quiz, maar als rustig blok in plaats van een knop. */
 #quiz-scherm .tb-antwoord {
+    box-sizing: border-box;   /* padding en rand binnen de 100%, niet erbuiten */
     width: 100%;
     max-width: 820px;
     margin: 0 auto 12px;
@@ -4691,9 +4692,10 @@ height: 22%;
 
 /* =========================================================================
    TELEFOON — compacter quizscherm. Alleen op telefoons (smaller dan 600px, of
-   liggend met een korte hoogte); computer en tablet blijven ongemoeid. Staat
-   bewust ná de bestaande #quiz-scherm-regels met dezelfde selectors, zodat
-   deze bij gelijke specificiteit winnen, zonder !important. De bovenpadding
+   liggend met een korte hoogte); computer en tablet blijven ongemoeid. Geldt
+   ook voor de terugblik na de ronde (.tb-*), die in hetzelfde quizvak staat.
+   Staat bewust ná de bestaande #quiz-scherm-regels met dezelfde selectors,
+   zodat deze bij gelijke specificiteit winnen, zonder !important. De bovenpadding
    is groter dan de rest, zodat de titel onder de vaste hoekknoppen (Terug en
    schermvullend) begint in plaats van erachter te verdwijnen.
 ========================================================================= */
@@ -4718,5 +4720,22 @@ height: 22%;
         font-size: 1rem;
         padding: 12px 16px;
         margin-top: 10px;
+    }
+
+    /* Terugblik: de vraag even groot als tijdens de quiz. */
+    #quiz-scherm .tb-vraag {
+        font-size: 1.2rem;
+    }
+    #quiz-scherm .tb-antwoord {
+        font-size: 1.1rem;
+    }
+    #quiz-scherm .tb-uitleg {
+        font-size: 18px;
+    }
+    #quiz-scherm .tb-hulp {
+        font-size: 18px;
+    }
+    #quiz-scherm .tb-bijbelplaats {
+        font-size: 16px;
     }
 }
