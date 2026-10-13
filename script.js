@@ -2977,9 +2977,9 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 3:6"
         },
         {
-            vraag: "Wat moeten de christenen volgens Paulus met alles doen?",
-            antwoorden: ["Alles met liefde doen", "Alles snel doen", "Alles alleen doen", "Alles voor zichzelf houden"],
-            correct: "Alles met liefde doen",
+            vraag: "Hoe moeten christenen volgens Paulus alles doen?",
+            antwoorden: ["Met liefde", "Zo snel mogelijk", "Helemaal in hun eentje", "Alleen als ze er zin in hebben"],
+            correct: "Met liefde",
             bijbelplaats: "1 Korintiërs 16:14"
         },
         {
@@ -3025,7 +3025,7 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "2 Korintiërs 5:20"
         },
         {
-            vraag: "Wat raadt Paulus de gelovigen aan om te doen, om dichtbij God te blijven?",
+            vraag: "Paulus geeft de gelovigen een opdracht over hun eigen geloof. Wat moeten ze doen?",
             antwoorden: ["Zoveel mogelijk goede daden aan iedereen laten zien", "Zichzelf eerlijk onderzoeken in het geloof", "Nergens over nadenken en gewoon doorgaan", "Alleen aan zichzelf denken"],
             correct: "Zichzelf eerlijk onderzoeken in het geloof",
             bijbelplaats: "2 Korintiërs 13:5"
@@ -3042,10 +3042,10 @@ vragenData["1 & 2 Korintiërs"] = {
             vraag: "Paulus vergelijkt het geloof met een wedstrijd. Wat moet je doen om de prijs te winnen?",
             antwoorden: ["Stoppen halverwege", "Wachten op anderen, zodat je samen over de finish komt", "Doorzetten, net als een hardloper die doorrent", "Alleen meedoen als je zeker weet dat je zult winnen"],
             correct: "Doorzetten, net als een hardloper die doorrent",
-            bijbelplaats: "1 Korintiërs 9:24"
+            bijbelplaats: "1 Korintiërs 9:24-27"
         },
         {
-            vraag: "Aan het slot van zijn eerste brief aan de Korintiërs geeft Paulus vier korte bevelen achter elkaar, als een aanmoediging voor onderweg. Wat draagt hij hun daar op?",
+            vraag: "Aan het slot van zijn eerste brief aan de Korintiërs geeft Paulus een paar korte bevelen achter elkaar, als een aanmoediging voor onderweg. Wat draagt hij hun onder andere op?",
             antwoorden: ["Sta vast in het geloof en wees moedig", "Pas je aan iedereen aan om vooral geen ruzie te krijgen", "Vertrouw op niemand, zelfs niet op elkaar", "Als het moeilijk wordt, geef dan maar snel op"],
             correct: "Sta vast in het geloof en wees moedig",
             bijbelplaats: "1 Korintiërs 16:13"
@@ -3067,7 +3067,7 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Dat je met respect en zorg met je lichaam en je leven omgaat", "Dat je nooit meer iets mag aanraken wat vies is", "Dat je voortaan alleen nog zachtjes en heel rustig mag praten", "Dat je je lichaam nooit meer moe mag maken"],
             correct: "Dat je met respect en zorg met je lichaam en je leven omgaat",
             bijbelplaats: "1 Korintiërs 6:19",
-            uitleg: "In de tijd van Paulus dachten sommige mensen dat alleen je ziel ertoe deed en dat je met je lichaam kon doen wat je wilde. Paulus keert dat om. Het lichaam is geen omhulsel dat je later afgooit, maar de plek waar Gods Geest woont, en daarom ga je er met eerbied mee om. Het hoort dus bij elkaar: hoe je vanbinnen leeft en hoe je met je lichaam omgaat. Datzelfde staat in de geloofsbelijdenis, waar christenen de opstanding van het lichaam belijden — niet alleen de ziel gaat verder."
+            uitleg: "In Korinte zeiden sommigen: \"Alles is mij toegestaan\" (1 Korintiërs 6:12). Zij dachten dat het er niet toe deed wat je met je lichaam deed. Paulus keert dat om. Het lichaam is geen omhulsel dat je later afgooit, maar de plek waar Gods Geest woont, en daarom ga je er met eerbied mee om. Het hoort dus bij elkaar: hoe je vanbinnen leeft en hoe je met je lichaam omgaat. Datzelfde staat in de geloofsbelijdenis, waar christenen de opstanding van het lichaam belijden — niet alleen de ziel gaat verder."
         },
         {
             vraag: "Stel dat iemand alles kan: profeteren, alles begrijpen, zelfs bergen verzetten. Wat is die persoon volgens Paulus als hij geen liefde heeft?",
@@ -3112,16 +3112,17 @@ vragenData["1 & 2 Korintiërs"] = {
             bijbelplaats: "1 Korintiërs 12:7"
         },
         {
-            vraag: "Wat zegt Paulus over de zwakste of minste delen van het lichaam?",
+            vraag: "Wat zegt Paulus over de delen van het lichaam die het zwakst lijken?",
             antwoorden: ["Ze krijgen minder eer dan de andere delen", "Ze mogen gerust worden weggelaten uit het lichaam", "Ze zijn juist heel belangrijk en nodig", "Ze moeten zo sterk mogelijk worden gemaakt"],
             correct: "Ze zijn juist heel belangrijk en nodig",
             bijbelplaats: "1 Korintiërs 12:22"
         },
         {
-            vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie van Hem houden. Hoe bijzonder is dat?",
-            antwoorden: ["Zo mooi dat geen mens het ooit heeft gezien of kan bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Ongeveer zoals de mooiste dag die je ooit hebt gehad", "Alleen voor belangrijke mensen, zoals koningen en priesters"],
-            correct: "Zo mooi dat geen mens het ooit heeft gezien of kan bedenken",
-            bijbelplaats: "1 Korintiërs 2:9"
+            vraag: "Paulus zegt dat God iets moois heeft klaargemaakt voor wie Hem liefhebben. Hoe bijzonder is dat?",
+            antwoorden: ["Zo bijzonder dat geen mens het uit zichzelf had kunnen bedenken", "Alleen te zien voor mensen die hun hele leven heel erg hun best doen", "Ongeveer zoals de mooiste dag die je ooit hebt gehad", "Alleen voor belangrijke mensen, zoals koningen en priesters"],
+            correct: "Zo bijzonder dat geen mens het uit zichzelf had kunnen bedenken",
+            bijbelplaats: "1 Korintiërs 2:9-10",
+            uitleg: "Paulus zegt er meteen achteraan dat God het door Zijn Geest aan ons bekend heeft gemaakt. Uit onszelf hadden we het nooit kunnen bedenken, maar God laat het ons zien."
         },
         {
             vraag: "Paulus noemt Jezus de \"eersteling\" van wie gestorven zijn. Dat woord komt uit de landbouw. Wat is een eersteling?",
@@ -3134,7 +3135,7 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["Nooit", "Eén keer", "Drie keer", "Tien keer"],
             correct: "Drie keer",
             bijbelplaats: "2 Korintiërs 11:25",
-            uitleg: "Een schipbreuk is als je schip op zee vergaat, bijvoorbeeld door een zware storm of doordat het op de rotsen loopt. Paulus reisde veel over zee en maakte dat maar liefst drie keer mee."
+            uitleg: "Een schipbreuk is als je schip op zee vergaat, bijvoorbeeld door een zware storm of doordat het op de rotsen loopt. Paulus reisde veel over zee en had dat toen al drie keer meegemaakt. De bekende schipbreuk bij Malta, waar Handelingen 27 over vertelt, kwam daar later nog bij."
         }
     ],
     expert: [
@@ -3170,7 +3171,7 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "Voor sommige mensen is de boodschap van het kruis onzin, schrijft Paulus. Maar wat is die boodschap voor wie erin gelooft?",
-            antwoorden: ["Gods kracht", "Gods geheim", "Gods wet", "Gods belofte"],
+            antwoorden: ["Gods kracht", "Een struikelblok", "Gods wet", "Gods belofte"],
             correct: "Gods kracht",
             bijbelplaats: "1 Korintiërs 1:18"
         },
@@ -3213,16 +3214,17 @@ vragenData["1 & 2 Korintiërs"] = {
         },
         {
             vraag: "In Korinte vroegen gelovigen zich af of ze vlees mochten eten \"dat aan afgoden geofferd was\". Hoe kwam dat vlees bij hen op tafel?",
-            antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Het werd alleen in de tempel zelf gegeten"],
+            antwoorden: ["Wat van de tempeloffers overbleef, ging naar de markt", "De priesters deelden het gratis uit aan de armen van de stad", "Elke slager moest zijn vee laten wijden", "Dat gebeurde niet, het werd alleen in de tempel zelf gegeten"],
             correct: "Wat van de tempeloffers overbleef, ging naar de markt",
-            bijbelplaats: "1 Korintiërs 10:25",
-            uitleg: "In een Griekse stad als Korinte liep veel vlees via de tempels. Dieren werden geslacht bij het altaar van een god — in Korinte waren dat er veel, met Apollo en Aphrodite voorop. Een deel werd op het altaar verbrand, een deel was voor de priesters, en wat overbleef ging naar de vleesmarkt of werd opgediend in de eetzalen bij de tempel. Wie vlees kocht, wist dus vaak niet of het geofferd was. Voor de eerste christenen was dit geen theorie maar een dagelijkse vraag: kun je op de markt kopen, en kun je bij iemand gaan eten die je uitnodigt?"
+            bijbelplaats: "1 Korintiërs 8:1; 10:25-28",
+            uitleg: "In een Griekse stad als Korinte werden veel dieren geslacht als offer voor een god. Een deel werd op het altaar verbrand, een deel was voor de priesters, en wat overbleef werd opgediend in de eetzalen bij de tempel of ging naar de vleesmarkt. Daar lag het naast vlees dat nooit geofferd was, dus wie vlees kocht, wist vaak niet waar het vandaan kwam. Voor de eerste christenen was dit geen theorie maar een dagelijkse vraag: kun je op de markt kopen, en kun je bij iemand gaan eten die je uitnodigt?"
         },
         {
             vraag: "Aan het slot van zijn brief schrijft Paulus één woord in het Aramees: \"Maranata\". Wat betekent het?",
             antwoorden: ["Kom, Heer!", "Vrede zij met u", "Wees waakzaam", "God is trouw"],
             correct: "Kom, Heer!",
-            bijbelplaats: "1 Korintiërs 16:22"
+            bijbelplaats: "1 Korintiërs 16:22",
+            uitleg: "Je kunt dit Aramese woord op twee manieren opdelen: marana tha, \"Kom, Heer!\", of maran atha, \"Onze Heer komt\". De meeste vertalingen kiezen \"Kom, Heer!\", omdat aan het eind van Openbaring hetzelfde gebed in het Grieks staat: \"Kom, Heer Jezus!\" (Openbaring 22:20). De eerste christenen baden het al bij hun samenkomsten."
         },
         {
             vraag: "Paulus schrijft dat God de Geest als onderpand heeft gegeven. Wat is een onderpand?",
@@ -3247,7 +3249,7 @@ vragenData["1 & 2 Korintiërs"] = {
             antwoorden: ["De wet stond hoogstens veertig slagen toe, en zo bleef men daar zeker onder", "Paulus kreeg één slag minder omdat hij Romeins burger was", "Veertig was een heilig getal, en dat mocht niet bij een straf gebruikt worden", "Degene die sloeg, raakte na negenendertig slagen altijd de tel kwijt"],
             correct: "De wet stond hoogstens veertig slagen toe, en zo bleef men daar zeker onder",
             bijbelplaats: "2 Korintiërs 11:24 · Deuteronomium 25:3",
-            uitleg: "De wet van Mozes zegt dat iemand die gestraft wordt niet meer dan veertig slagen mag krijgen, zodat hij niet vernederd wordt. Door er negenendertig te geven, bleef men altijd binnen die grens. Zo wordt het meestal uitgelegd. De Joodse wetgeleerden leidden het getal negenendertig ook af uit de manier waarop ze deze woorden van de wet lazen. Veertig is in de Bijbel een bijzonder getal, maar de wet noemt het hier gewoon als grens. Het was een straf die de synagoge gaf, binnen de eigen gemeenschap."
+            uitleg: "De wet van Mozes zegt dat iemand die gestraft wordt niet meer dan veertig slagen mag krijgen, zodat hij niet vernederd wordt. De Joodse wetgeleerden lazen die woorden zo dat het er negenendertig moesten zijn; zo staat het in de Misjna, het oudste boek met hun uitleg van de wet. Vaak wordt er ook bij gezegd dat men zo nooit per ongeluk over de grens van veertig heen ging. Het was een straf die de synagoge gaf, binnen de eigen gemeenschap."
         }
     ]
 };

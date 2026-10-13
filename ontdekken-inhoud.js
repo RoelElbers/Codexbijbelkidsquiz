@@ -31,7 +31,7 @@
 
 /* eslint-disable no-unused-vars */
 
-// --- Woorden: het woordenboek (63 termen, alfabetisch) ----------------------
+// --- Woorden: het woordenboek (64 termen, alfabetisch) ----------------------
 const ONTDEK_WOORDENBOEK = [
     { term: "Aanliggen", uitleg: "Zo at men bij een feestmaal: half liggend op een bank of kussens rond een lage tafel, steunend op de linkerelleboog, met de voeten naar buiten. De Joden hadden die gewoonte van de Grieken overgenomen. Zo kon Johannes bij het Laatste Avondmaal tegen Jezus aan leunen (Johannes 13:23), en kon Maria in Betanië Jezus' voeten zalven (Johannes 12:3)." },
     { term: "Aanneming (adoptie)", uitleg: "Adoptie was in het Romeinse Rijk een echte, wettelijke handeling, en hij ging ver. De aangenomen zoon kreeg de naam van zijn nieuwe vader en werd erfgenaam naast de eigen zonen: in de wet was er geen verschil meer tussen hem en een zoon die in het gezin geboren was. Paulus trekt zelf die lijn: wie kind van God is, is ook erfgenaam. Het beeld zegt iets over hoe vast die verhouding ligt.", bijbelplaats: "Romeinen 8:15-17" },
@@ -62,6 +62,7 @@ const ONTDEK_WOORDENBOEK = [
     { term: "Koninkrijk van God", uitleg: "Niet een land dat je op de kaart kunt aanwijzen, maar een manier om te zeggen: daar waar God de koning is en alles goed en eerlijk gaat. Jezus sprak er heel vaak over. Soms heet het ook \"het hemelrijk\" of \"het koninkrijk der hemelen\"." },
     { term: "Kruisiging", uitleg: "Een wrede Romeinse straf waarbij iemand aan een kruis werd vastgemaakt. Jezus werd op deze manier ter dood gebracht." },
     { term: "Leviet", verwijstNaar: "wie-tempel" },
+    { term: "Maranata", uitleg: "Een gebed in het Aramees, de taal die Jezus en Zijn leerlingen thuis spraken. Je kunt het woord op twee manieren opdelen: marana tha, \"Kom, Heer!\", of maran atha, \"Onze Heer komt\". De meeste vertalingen kiezen \"Kom, Heer!\", omdat aan het eind van Openbaring hetzelfde gebed in het Grieks staat: \"Kom, Heer Jezus!\" De eerste christenen baden het al bij hun samenkomsten. Paulus schrijft het aan het slot van zijn eerste brief aan de Korintiërs.", bijbelplaats: "1 Korintiërs 16:22 · Openbaring 22:20" },
     { term: "Martelaar", uitleg: "Iemand die aan zijn geloof vasthoudt, zelfs als hij daarvoor gedood wordt. Stefanus was de eerste in de vroege kerk." },
     { term: "Messias", uitleg: "Een Hebreeuws woord dat \"de gezalfde\" betekent: iemand die met olie gezalfd werd als teken dat God hem uitkoos, zoals vroeger bij koningen. De Messias is de beloofde redder op wie het volk lang wachtte. Christenen geloven dat Jezus die Messias is. In het Grieks heet \"de gezalfde\" trouwens \"Christus\" — dus Messias en Christus betekenen precies hetzelfde, alleen in een andere taal." },
     { term: "Offer", uitleg: "Iets waardevols dat je aan God geeft. Vroeger was dat vaak een dier, dat op het altaar in de tempel werd gebracht." },
