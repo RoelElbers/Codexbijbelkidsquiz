@@ -4745,3 +4745,17 @@ height: 22%;
         font-size: 16px;
     }
 }
+
+/* =========================================================================
+   TELEFOON RECHTOP — avatarraster in twee kolommen. Vier kolommen passen
+   niet op een smal scherm: de vierde viel weg en was niet te kiezen. Alleen
+   max-width (niet max-height): liggend is er breedte genoeg voor vier.
+   Staat ná de .avatar-keuze-regels, zodat hij zonder !important wint.
+   De spelerkiezer heeft een eigen kolomregel (#speler-kiezer-lijst) en
+   blijft hierbuiten.
+========================================================================= */
+@media (max-width: 600px) {
+    .avatar-keuze {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
