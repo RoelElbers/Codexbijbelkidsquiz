@@ -4674,11 +4674,17 @@ height: 22%;
         padding: 16px 0;
     }
 
-    /* Alle quiz-vakken: niet meer intern begrenzen/afkappen. */
+    /* Alle quiz-vakken: niet meer intern begrenzen/afkappen.
+       min-width: 0 — met overflow: visible wordt het vak als flex-item anders
+       nooit smaller dan zijn breedste inhoud (bv. de tegels van de terugblik)
+       en steekt het buiten het scherm. box-sizing: border-box — zodat 94vw
+       inclusief binnenruimte en rand is en er aan elke kant 3% marge blijft. */
     .quiz-box {
         max-width: 94vw !important;
         max-height: none !important;
         overflow: visible !important;
+        min-width: 0;
+        box-sizing: border-box;
     }
 
     /* Interne scroll-lijsten laten meegroeien met de pagina i.p.v. eigen scroll. */
