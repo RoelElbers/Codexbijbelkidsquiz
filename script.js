@@ -87,6 +87,39 @@ if (!document.fullscreenEnabled) {
     fullscreenBtn.style.display = "none";
 }
 
+// --- Draai-hint (telefoon rechtop) ---------------------------------------------
+// Of het bericht zichtbaar is, regelt de CSS (orientation: portrait en
+// max-width 600px). Hier alleen: de teksten uit NL.draaiHint invullen en dan
+// html.draai-hint-klaar zetten, zodat er nooit een lege schil verschijnt; en de
+// knop "Toch rechtop spelen", die html.draai-hint-weg zet. Die keuze geldt voor
+// de rest van de sessie (sessionStorage); werkt dat niet, dan alleen voor deze
+// pagina. Bij een nieuwe sessie verschijnt het bericht weer.
+const DRAAI_HINT_SLEUTEL = "draaiHintWeg";
+
+function initDraaiHint() {
+    const t = (typeof NL !== "undefined" && NL.draaiHint) || null;
+    if (!t || !document.getElementById("draai-hint")) return;
+    try {
+        if (sessionStorage.getItem(DRAAI_HINT_SLEUTEL) === "1") {
+            document.documentElement.classList.add("draai-hint-weg");
+        }
+    } catch (e) { /* geen sessionStorage: het bericht verschijnt gewoon */ }
+    document.getElementById("draai-hint-titel").textContent = t.titel;
+    document.getElementById("draai-hint-zin").textContent = t.zin;
+    document.getElementById("draai-hint-klein").textContent = t.klein;
+    document.getElementById("draai-hint-knop").textContent = t.knop;
+    document.documentElement.classList.add("draai-hint-klaar");
+}
+
+function verbergDraaiHint() {
+    document.documentElement.classList.add("draai-hint-weg");
+    try {
+        sessionStorage.setItem(DRAAI_HINT_SLEUTEL, "1");
+    } catch (e) { /* alleen de class: geldt tot de pagina herlaadt */ }
+}
+
+initDraaiHint();
+
 // Nette labels voor de niveaus (intern: beginner/advanced/expert)
 // Zichtbare namen van de drie niveaus: de trofeekleuren. De DATASLEUTELS
 // (beginner/advanced/expert) blijven ongewijzigd — die zitten in vragenData en

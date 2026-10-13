@@ -30,7 +30,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=380">
+    <link rel="stylesheet" href="style.css?v=381">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=2.
          Zes verwijzingen dragen samen dit eigen nummer:
@@ -785,12 +785,34 @@
 
     </div>
 
+    <!-- Draai-hint: op een telefoon rechtop is de game te klein, dus vraagt dit
+         bericht de telefoon te draaien. Alleen zichtbaar bij orientation:
+         portrait en max-width 600px (zie style.css), en pas nadat
+         initDraaiHint() in script.js de teksten uit lang/nl.js heeft ingevuld.
+         "Toch rechtop spelen" verbergt hem voor de rest van de sessie. Ligt
+         boven alles, ook de Schatkamer en het album. -->
+    <div id="draai-hint" role="dialog" aria-modal="true" aria-labelledby="draai-hint-titel">
+        <div class="draai-hint-paneel">
+            <svg class="draai-hint-telefoon" viewBox="0 0 64 64" width="72" height="72" aria-hidden="true">
+                <g class="draai-hint-kantel">
+                    <rect x="20" y="6" width="24" height="52" rx="5" fill="#14264f" stroke="#ffd86b" stroke-width="3"/>
+                    <rect x="24" y="13" width="16" height="36" rx="1.5" fill="#2b4a8c"/>
+                    <circle cx="32" cy="53" r="2" fill="#ffd86b"/>
+                </g>
+            </svg>
+            <h2 id="draai-hint-titel" class="draai-hint-titel"></h2>
+            <p id="draai-hint-zin" class="draai-hint-zin"></p>
+            <p id="draai-hint-klein" class="draai-hint-klein"></p>
+            <button type="button" id="draai-hint-knop" class="draai-hint-knop" onclick="verbergDraaiHint()"></button>
+        </div>
+    </div>
+
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=380"></script>
-    <script src="ontdekken-inhoud.js?v=380"></script>
-    <script src="script.js?v=380"></script>
+    <script src="lang/nl.js?v=381"></script>
+    <script src="ontdekken-inhoud.js?v=381"></script>
+    <script src="script.js?v=381"></script>
 
 </body>
 

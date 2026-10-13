@@ -4759,3 +4759,103 @@ height: 22%;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
+
+/* =========================================================================
+   DRAAI-HINT — telefoon rechtop. Standaard display: none, dus hij vangt geen
+   klikken af. Alleen zichtbaar op een smal scherm in staande stand, als
+   initDraaiHint() de teksten heeft ingevuld (html.draai-hint-klaar) en de
+   speler niet op "Toch rechtop spelen" heeft getikt (html.draai-hint-weg).
+   Liggend valt de mediaregel weg en verdwijnt het bericht vanzelf.
+   z-index boven alles, ook de schatkamer-overlays (1000), de schermvullend-
+   knop (1100) en de dev-panelen (3000).
+========================================================================= */
+#draai-hint {
+    display: none;
+}
+@media (orientation: portrait) and (max-width: 600px) {
+    html.draai-hint-klaar:not(.draai-hint-weg) #draai-hint {
+        position: fixed;
+        inset: 0;
+        z-index: 5000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 16px;
+        box-sizing: border-box;
+        overflow-y: auto;
+        background: rgba(5, 10, 28, 0.94);
+    }
+}
+.draai-hint-paneel {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 380px;
+    margin: auto;
+    padding: 28px 22px 24px;
+    text-align: center;
+    border-radius: 18px;
+    border: 2px solid #d8a93f;
+    background: linear-gradient(180deg, #14264f 0%, #0d1a38 100%);
+    box-shadow:
+        inset 0 0 30px rgba(0, 0, 0, 0.55),
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+.draai-hint-telefoon {
+    display: block;
+    margin: 0 auto 10px;
+}
+/* Kantelt langzaam van rechtop naar liggend en terug, als lus. */
+.draai-hint-kantel {
+    transform-box: view-box;
+    transform-origin: 50% 50%;
+    animation: draaiHintKantel 3.6s ease-in-out infinite;
+}
+@keyframes draaiHintKantel {
+    0%, 20%   { transform: rotate(0deg); }
+    45%, 75%  { transform: rotate(-90deg); }
+    100%      { transform: rotate(0deg); }
+}
+@media (prefers-reduced-motion: reduce) {
+    .draai-hint-kantel {
+        animation: none;
+    }
+}
+.draai-hint-titel {
+    margin: 0 0 12px;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: #ffd86b;
+    text-shadow: 0 0 12px rgba(255, 215, 120, 0.4),
+                 0 2px 3px rgba(0, 0, 0, 0.5);
+}
+.draai-hint-zin {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    color: #f3ecd8;
+}
+.draai-hint-klein {
+    margin: 0 0 20px;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: rgba(243, 236, 216, 0.75);
+}
+/* Gouden knop, dezelfde look als de gouden Terug-knoppen. */
+.draai-hint-knop {
+    padding: 10px 22px;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a120a;
+    cursor: pointer;
+    border: 2px solid #b07d1c;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #f6d98a 0%, #d8a93f 100%);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.45),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+.draai-hint-knop:hover {
+    background: linear-gradient(180deg, #ffe6a3 0%, #e6b94c 100%);
+}

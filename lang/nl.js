@@ -49,6 +49,17 @@ const NL = {
     //   setVol = tijdelijke melding zodra brons, zilver en goud alle drie
     //            gehaald zijn (de set is vol, er komt een plaatje bij)
     // =====================================================================
+    // =====================================================================
+    // Draai-hint: bericht op een telefoon rechtop (zie #draai-hint in
+    // index.html en initDraaiHint() in script.js).
+    // =====================================================================
+    draaiHint: {
+        titel: "Draai je telefoon",
+        zin: "De Bijbelkidsquiz is het beste speelbaar in liggende stand.",
+        klein: "Draait het beeld niet mee? Zet dan het automatisch draaien van je scherm aan.",
+        knop: "Toch rechtop spelen"
+    },
+
     plakboek: {
         setVol: "Alle drie de sterren! Je hebt een nieuw plaatje verdiend voor je Bijbelkidsalbum.",
         // Opschrift onder de lantaarn.
