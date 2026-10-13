@@ -3291,7 +3291,7 @@ vragenData["Galaten"] = {
             bijbelplaats: "Galaten 3:26"
         },
         {
-            vraag: "Paulus noemt drie paren mensen die bij God geen verschil meer maken. Welke drie paren noemt hij?",
+            vraag: "Paulus noemt drie paren mensen die in Christus allemaal één zijn. Welke drie paren noemt hij?",
             antwoorden: ["Jood en Griek, slaaf en vrije, man en vrouw", "Priester en gewone gelovige, geleerde en leerling, stad en dorp", "Jood en Samaritaan, kind en volwassene, herder en boer", "Romein en Griek, soldaat en burger, koopman en klant"],
             correct: "Jood en Griek, slaaf en vrije, man en vrouw",
             bijbelplaats: "Galaten 3:28"
@@ -3307,7 +3307,7 @@ vragenData["Galaten"] = {
             antwoorden: ["De vrucht van de Geest", "De gaven van de apostelen", "De wet van Mozes", "De gaven van de Geest"],
             correct: "De vrucht van de Geest",
             bijbelplaats: "Galaten 5:22",
-            uitleg: "Paulus schrijft \"de vrucht\", niet \"de vruchten\". Vlak ervoor noemt hij de verkeerde dingen wél in het meervoud: de werken van het vlees. Dat verschil is met opzet. De negen horen bij elkaar, als negen kanten van één ding — je kunt niet de vriendelijkheid uitkiezen en het geduld laten liggen."
+            uitleg: "Paulus schrijft \"de vrucht\", niet \"de vruchten\". Vlak ervoor noemt hij de verkeerde dingen wél in het meervoud: de werken van het vlees. De negen eigenschappen horen bij elkaar als één vrucht die de Geest laat groeien, en ze versterken elkaar."
         },
         {
             vraag: "Hoe wist Paulus zo zeker dat zijn boodschap klopte?",
@@ -3367,10 +3367,10 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus had de Galaten geleerd dat je door geloof in Jezus bij God mag horen. Maar daarna kwamen er leraren die zeiden dat geloven in Jezus niet genoeg was: je moest je óók aan de Joodse wet houden. Hoe reageerde Paulus daarop?",
-            antwoorden: ["Hij was streng: er is maar één echt evangelie", "Hij vond het prima; iedereen mocht daar zelf over beslissen", "Hij wist niet zeker welke boodschap de juiste was", "Hij vond dat de Galaten beide manieren maar moesten proberen"],
-            correct: "Hij was streng: er is maar één echt evangelie",
+            antwoorden: ["Hij was er streng op tegen: er is maar één echt evangelie", "Hij vond het prima; iedereen mocht daar zelf over beslissen", "Hij wist niet zeker welke boodschap de juiste was", "Hij vond dat de Galaten beide manieren maar moesten proberen"],
+            correct: "Hij was er streng op tegen: er is maar één echt evangelie",
             bijbelplaats: "Galaten 1:6-7",
-            uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Je moet je ook aan de Joodse wet houden om echt bij God te horen. Paulus noemt dat een ander evangelie en wijst het scherp af. Want als mensen zich óók nog aan de regels uit de wet van Mozes moeten houden om bij God te horen, dan zou wat Jezus heeft gedaan volgens Paulus niet genoeg zijn."
+            uitleg: "Er waren leraren naar Galatië gekomen die zeiden: geloven in Jezus is mooi, maar niet genoeg. Wie geen Jood was, moest zich ook laten besnijden en volgens de wet van Mozes gaan leven om echt bij God te horen. Paulus noemt dat een ander evangelie en wijst het scherp af. Als dat nodig zou zijn, dan zou wat Jezus heeft gedaan niet genoeg zijn."
         },
         {
             vraag: "Abraham vertrouwde op God, en daarom zag God hem als rechtvaardig. Wat leert Paulus daaruit?",
@@ -3388,7 +3388,8 @@ vragenData["Galaten"] = {
             vraag: "Wat is belangrijker dan alle regels, zegt Paulus — waar draait het echt om?",
             antwoorden: ["Geloof dat zich laat zien in liefde", "Hoeveel kennis je verzamelt", "Hoe sterk en machtig je bent", "Uit welk land of volk je komt"],
             correct: "Geloof dat zich laat zien in liefde",
-            bijbelplaats: "Galaten 5:6"
+            bijbelplaats: "Galaten 5:6",
+            uitleg: "Paulus schrijft dit over de vraag of niet-Joodse gelovigen besneden moesten worden. De besnijdenis was het teken waarmee Joodse jongens bij het verbond van God met Abraham gingen horen (Genesis 17). Paulus zegt: daar gaat het niet om. Het gaat om geloof dat zich laat zien in liefde."
         },
         {
             vraag: "Paulus zegt dat je je kunt laten leiden door de Geest, óf door je eigen verkeerde verlangens. Wat raadt hij aan?",
@@ -3412,7 +3413,7 @@ vragenData["Galaten"] = {
     expert: [
         {
             vraag: "Paulus zegt dat hij niet probeert om bij mensen in de smaak te vallen. Bij wie wil hij het juist goed doen?",
-            antwoorden: ["Bij de koning", "Bij God", "Bij de mensen die het hardst roepen", "Bij iedereen behalve God"],
+            antwoorden: ["Bij de koning", "Bij God", "Bij de mensen die het hardst roepen", "Bij de apostelen in Jeruzalem"],
             correct: "Bij God",
             bijbelplaats: "Galaten 1:10"
         },
@@ -3420,7 +3421,8 @@ vragenData["Galaten"] = {
             vraag: "Paulus vertelt hoe God hém riep. Wat was Gods bedoeling met Paulus?",
             antwoorden: ["Dat hij het goede nieuws over Jezus zou brengen aan alle volken", "Dat hij een nieuw boek met strenge regels zou schrijven", "Dat hij de oude tempel opnieuw zou opbouwen", "Dat hij alleen in zijn eigen stad zou blijven"],
             correct: "Dat hij het goede nieuws over Jezus zou brengen aan alle volken",
-            bijbelplaats: "Galaten 1:15-16"
+            bijbelplaats: "Galaten 1:15-16 · Romeinen 11:13 · Handelingen 13:5",
+            uitleg: "Paulus vertelde het goede nieuws aan iedereen, maar zijn grote opdracht lag buiten Israël. In Galaten 1:16 schrijft hij dat God hem riep om Jezus bekend te maken bij de volken die geen Joden waren. In zijn brief aan de Romeinen noemt hij zichzelf daarom een apostel voor de niet-Joodse volken (Romeinen 11:13). Toch ging hij in elke nieuwe stad eerst naar de synagoge, naar de Joden (Handelingen 13:5)."
         },
         {
             vraag: "In Antiochië sprak Paulus Petrus openlijk tegen. Wat was er gebeurd?",
@@ -3430,8 +3432,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus vraagt verbaasd: \"Wie heeft jullie betoverd?\" Waarom is hij zo verbaasd?",
-            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden een eerdere brief van Paulus kwijtgemaakt", "Ze dachten ineens dat Paulus nooit een echte apostel was geweest"],
-            correct: "Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding weer van de wet afhangen",
+            antwoorden: ["Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding van de wet afhangen", "Ze waren teruggekeerd naar het vereren van afgoden", "Ze hadden een eerdere brief van Paulus kwijtgemaakt", "Ze dachten ineens dat Paulus nooit een echte apostel was geweest"],
+            correct: "Christus was hun duidelijk verkondigd, en tóch lieten ze hun redding van de wet afhangen",
             bijbelplaats: "Galaten 3:1-3"
         },
         {
@@ -3448,8 +3450,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat de wet vroeger een taak had, zoals een oppasser die op je let tot je groot genoeg bent. Wat gebeurde er toen Christus kwam?",
-            antwoorden: ["Nu Christus er was, had de wet zijn taak als oppasser gedaan", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
-            correct: "Nu Christus er was, had de wet zijn taak als oppasser gedaan",
+            antwoorden: ["Nu Christus er was, had de wet zijn taak als oppasser vervuld", "De wet werd juist nog veel strenger dan daarvoor", "De wet verdween, en niemand hoefde meer iets goeds te doen", "De wet ging voortaan alleen nog over eten en drinken"],
+            correct: "Nu Christus er was, had de wet zijn taak als oppasser vervuld",
             bijbelplaats: "Galaten 3:24-25"
         },
         {
@@ -3460,8 +3462,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt dat je geen slaaf meer bent, maar een kind van God. Wat hoort daar volgens hem ook bij?",
-            antwoorden: ["Je bent erfgenaam: alles wat God belooft, is ook voor jou", "Je bent nu de baas over anderen", "Je hoeft niets meer te doen", "Je staat nu een stuk hoger dan de mensen die de wet nog volgen"],
-            correct: "Je bent erfgenaam: alles wat God belooft, is ook voor jou",
+            antwoorden: ["Je bent erfgenaam: wat God aan Zijn kinderen belooft, is ook voor jou", "Je bent nu de baas over anderen", "Je hoeft niets meer te doen", "Je staat nu een stuk hoger dan de mensen die de wet nog volgen"],
+            correct: "Je bent erfgenaam: wat God aan Zijn kinderen belooft, is ook voor jou",
             bijbelplaats: "Galaten 4:7"
         },
         {
@@ -3478,8 +3480,8 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus zegt met het beeld van zaaien en oogsten dat je op twee manieren kunt leven. Welke twee manieren zijn dat?",
-            antwoorden: ["Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt op vruchtbare grond zaaien óf juist op de harde, droge grond ernaast"],
-            correct: "Je kunt leven zoals je zelf wilt, óf je laten leiden door Gods Geest",
+            antwoorden: ["Je kunt je laten leiden door je verkeerde verlangens, óf door Gods Geest", "Je kunt 's ochtends óf 's avonds zaaien", "Je kunt op klei óf op zand zaaien", "Je kunt op vruchtbare grond zaaien óf juist op de harde, droge grond ernaast"],
+            correct: "Je kunt je laten leiden door je verkeerde verlangens, óf door Gods Geest",
             bijbelplaats: "Galaten 6:7-8"
         },
         {
@@ -3497,9 +3499,10 @@ vragenData["Galaten"] = {
         },
         {
             vraag: "Paulus schrijft: kijk eens met wat grote letters ik jullie eigenhandig schrijf. Waarom is dat bijzonder?",
-            antwoorden: ["De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf", "Hij was zijn bril kwijt en kon niet kleiner schrijven", "Grote letters betekenden dat de brief voorgelezen moest worden", "Hij had geen inkt meer en moest krassen in het papier"],
-            correct: "De rest van de brief was door een schrijver opgeschreven; dit slot schreef Paulus zelf",
-            bijbelplaats: "Galaten 6:11"
+            antwoorden: ["Paulus liet zijn brieven meestal opschrijven door een schrijver; dit slot schreef hij zelf", "Hij was zijn bril kwijt en kon niet kleiner schrijven", "Grote letters betekenden dat de brief voorgelezen moest worden", "Hij had geen inkt meer en moest krassen in het papier"],
+            correct: "Paulus liet zijn brieven meestal opschrijven door een schrijver; dit slot schreef hij zelf",
+            bijbelplaats: "Galaten 6:11 · Romeinen 16:22 · 2 Tessalonicenzen 3:17",
+            uitleg: "Paulus dicteerde zijn brieven meestal aan een schrijver. In de brief aan de Romeinen doet die schrijver, Tertius, zelfs een eigen groet (Romeinen 16:22). Het slot schreef Paulus vaak eigenhandig, als een handtekening. Hij noemt dat zelf het kenmerk van al zijn brieven (2 Tessalonicenzen 3:17)."
         }
     ]
 };
