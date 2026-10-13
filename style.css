@@ -4859,3 +4859,60 @@ height: 22%;
 .draai-hint-knop:hover {
     background: linear-gradient(180deg, #ffe6a3 0%, #e6b94c 100%);
 }
+
+/* =========================================================================
+   TELEFOON LIGGEND — compacter quizscherm. Liggend is de hoofdstand op een
+   telefoon, maar met ~360-412px hoogte viel de vierde antwoordknop onder het
+   scherm. Alleen landscape én max-height 500px: tablets en computers (ook
+   1024x768) en telefoons rechtop vallen hierbuiten. Staat ná de andere
+   telefoonblokken, zodat het bij gelijke specificiteit wint.
+   - Bovenpadding klein: de titelregel staat tussen de Terug-knop en de
+     schermvullend-knop in plaats van eronder.
+   - Titel en XP op één regel: alleen zolang er een vraag staat (#score-balk
+     bestaat; het eindscherm en de terugblik schrijven het vak opnieuw en
+     hebben hem niet). Het vak wordt dan een wikkelende rij: titel en XP naast
+     elkaar, al het andere over de volle breedte eronder.
+   - #resultaat zonder min-height: die reserveerde ~126px lege ruimte onder
+     de laatste knop, zodat de knoppen niet verspringen als de feedback
+     verschijnt. Die verschijnt ONDER de knoppen, dus er verspringt niets;
+     het vak groeit alleen mee.
+   - Antwoordknoppen blijven onder elkaar over de volle breedte (bewust geen
+     2x2: de antwoorden zijn meestal zinnen).
+========================================================================= */
+@media (orientation: landscape) and (max-height: 500px) {
+    #quiz-scherm .quiz-box {
+        padding-top: 16px;
+    }
+    #quiz-scherm:has(#score-balk) .quiz-box {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: flex-start;
+        column-gap: 10px;
+    }
+    #quiz-scherm:has(#score-balk) .quiz-box > * {
+        flex: 0 0 100%;
+    }
+    #quiz-scherm:has(#score-balk) .quiz-box > .quiz-title,
+    #quiz-scherm:has(#score-balk) .quiz-box > #score-balk {
+        flex: 0 1 auto;
+        margin-bottom: 0;
+    }
+    #quiz-scherm #score-balk::before {
+        content: "· ";
+    }
+    #quiz-scherm .quiz-question {
+        font-size: 1.1rem;
+        margin: 16px auto 10px;    /* vrij van de onderkant van de Terug-knop */
+    }
+    #quiz-scherm .answer-btn {
+        font-size: 0.95rem;
+        padding: 8px 16px;
+        margin-top: 8px;
+    }
+    #quiz-scherm #resultaat {
+        min-height: 0;
+        margin-top: 10px;
+    }
+}
