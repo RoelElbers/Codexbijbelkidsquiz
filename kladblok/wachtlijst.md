@@ -7,6 +7,10 @@ elk antwoord herhaald hoeft te worden.*
 
 ## Opschoning
 
+- **Vrijgaveregels in `.claude/settings.local.json` opschonen.** Er staan er
+  432, opgebouwd met "altijd toestaan" (o.a. losse Python-, `Start-Process`- en
+  `curl`-aanroepen die zonder vraag code draaien). Aparte klus, gesignaleerd bij
+  de /doctor-check van 13 oktober 2026.
 - **De twee bronbestanden zijn gewaarschuwd, niet opgeschoond.**
   `verborgen-schat-vragen-bijbelkidsquiz.md` (zes zinnen met "overlevering") en
   `verborgen-schat-naslag-bijbelkidsquiz.md` (drie echte treffers). Ze dragen
