@@ -4916,3 +4916,42 @@ height: 22%;
         margin-top: 10px;
     }
 }
+
+/* =========================================================================
+   TELEFOON — niveauscherm en stopvenster op telefoonmaat. Beide gebruikten
+   nog de computermaten (titel 4rem, knoppen 2rem en ~85px hoog), waardoor
+   ze liggend twee keer zo hoog waren als het scherm. Knoppen blijven onder
+   elkaar; alleen de maten gaan omlaag. De metalen brons/zilver/goud-look en
+   de kleuren komen uit de bestaande regels en blijven staan. Staat ná de
+   regels met dezelfde selectors (o.a. #niveau-scherm .niveau-beginner met
+   padding 23px), zodat dit blok bij gelijke specificiteit wint.
+========================================================================= */
+@media (max-width: 600px), (max-height: 500px) {
+    #niveau-scherm .quiz-box,
+    #ronde-stop-scherm .quiz-box {
+        padding: 16px 24px;
+    }
+    /* Zijpadding: de titel staat ter hoogte van de schermvullend-knop
+       rechtsboven; een lange boeknaam breekt zo af vóór die knop. */
+    #niveau-scherm .quiz-title,
+    #ronde-stop-scherm .quiz-title {
+        font-size: 1.6rem;
+        margin: 0 0 8px;
+        padding: 0 44px;
+    }
+    #niveau-scherm .quiz-question,
+    #ronde-stop-scherm .quiz-question {
+        font-size: 1.1rem;
+        margin: 0 0 12px;
+    }
+    #niveau-scherm .answer-btn,
+    #ronde-stop-scherm .answer-btn {
+        font-size: 1.1rem;
+        padding: 11px 16px;
+        margin: 8px auto 0;
+    }
+    #niveau-scherm .niveau-hint {
+        font-size: 1rem;
+        margin: 6px auto 0;
+    }
+}
