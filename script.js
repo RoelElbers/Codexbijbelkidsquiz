@@ -10670,7 +10670,7 @@ function eindScherm() {
         ${terugblik ? "" : nalezenHulpHtml("tb-hulp", "answer-btn")}
 
         ${terugblik
-            ? `<button class="answer-btn" onclick="startTerugblik()">Verder</button>`
+            ? `<button class="answer-btn" onclick="startTerugblik()">Bekijk je antwoorden en de uitleg</button>`
             : `<button class="answer-btn" onclick="terugNaarStartscherm()">Terug naar startscherm</button>`}
     `;
 }
@@ -10681,13 +10681,14 @@ function eindScherm() {
 // de uitleg lezen die in de quiz zelf bewust niet getoond wordt.
 //
 // Deel 1: ALLE fout beantwoorde vragen, met of zonder uitleg, één pagina per
-//         vraag, alleen "Volgende". Bewust geen knop om dit deel over te slaan:
+//         vraag, alleen een knop vooruit. Bewust geen knop om dit deel over te slaan:
 //         het goede antwoord komt altijd langs. Een vraag zonder uitleg toont
 //         vraag, antwoorden en bijbelplaats, zonder uitlegblok. Of een uitleg
 //         al gelezen is, speelt hier geen rol: een fout komt altijd terug.
 // Deel 2: tegels voor de goed beantwoorde vragen MET uitleg. Al gelezen uitleg
-//         staat er standaard niet bij; een knop haalt die erbij. "Klaar" sluit
-//         af.
+//         staat er standaard niet bij; een knop haalt die erbij. Een uitleg
+//         gaat altijd terug naar de lijst (de laatste alleen nog daarheen);
+//         "Terug naar startscherm" in de lijst sluit af.
 // Een leeg deel wordt overgeslagen. Zijn beide leeg (alles goed, en geen nieuwe
 // uitleg om te lezen), dan is er geen terugblik en houdt het eindscherm zijn
 // gewone knop terug naar het startscherm.
@@ -10790,9 +10791,15 @@ function toonTerugblikFout() {
     const item = terugblik.fout[nr];
     // Alleen echte uitleg telt als gelezen; een vraag zonder uitleg laat niets na.
     if (item.uitleg) markeerUitlegGelezen(item.sleutel);
-    // Volgt er geen overzicht, dan is dit de laatste pagina van de terugblik:
-    // dan hulpzin + "Vragen nalezen", en heet de knop "Klaar" (hij sluit af).
-    const isLaatst = nr === terugblik.fout.length - 1 && !terugblik.heeftNieuweTegels;
+    // Drie gevallen voor de knop: nog een fout te gaan ("Volgende vraag →"),
+    // de laatste fout met daarna de lijst ("Naar je goede antwoorden →"), of
+    // de laatste fout zonder lijst. Dat laatste is de laatste pagina van de
+    // terugblik: dan hulpzin + "Vragen nalezen", en "Terug naar startscherm".
+    const isLaatsteFout = nr === terugblik.fout.length - 1;
+    const isLaatst = isLaatsteFout && !terugblik.heeftNieuweTegels;
+    const knopTekst = !isLaatsteFout ? "Volgende vraag →"
+        : isLaatst ? "Terug naar startscherm"
+        : "Naar je goede antwoorden →";
 
     toonTerugblikPagina(`
         <h2 class="quiz-title">Terugblik</h2>
@@ -10808,7 +10815,7 @@ function toonTerugblikFout() {
         ${item.uitleg ? terugblikUitlegHtml(item.uitleg) : ""}
         <div class="tb-knoppen">
             ${isLaatst ? nalezenHulpHtml("tb-hulp", "answer-btn tb-knop") : ""}
-            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">${isLaatst ? "Klaar" : "Volgende →"}</button>
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="terugblikFoutVolgende()">${knopTekst}</button>
         </div>
     `);
 }
@@ -10852,7 +10859,7 @@ function toonTerugblikOverzicht() {
         <div class="tb-knoppen">
             ${wissel}
             ${nalezenHulpHtml("tb-hulp", "answer-btn tb-knop")}
-            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="sluitTerugblik()">Klaar</button>
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="sluitTerugblik()">Terug naar startscherm</button>
         </div>
     `);
 }
@@ -10862,8 +10869,10 @@ function wisselTerugblikGelezen() {
     toonTerugblikOverzicht();
 }
 
-// Uitleg van één tegel; "Volgende" opent de volgende tegel uit het overzicht,
-// na de laatste is de terugblik klaar.
+// Uitleg van één tegel; "Volgende uitleg →" opent de volgende tegel uit het
+// overzicht. Bij de laatste tegel is er alleen "← Terug naar de lijst", zodat
+// de laatste uitleg nooit rechtstreeks naar het startscherm gaat en "Vragen
+// nalezen" in de lijst niet wordt overgeslagen.
 function openTerugblikTegel(i) {
     const tegels = terugblikTegels();
     const item = tegels[i];
@@ -10880,8 +10889,10 @@ function openTerugblikTegel(i) {
         ${terugblikBijbelplaatsHtml(item.bijbelplaats)}
         ${terugblikUitlegHtml(item.uitleg)}
         <div class="tb-knoppen tb-knoppen-rij">
-            <button class="answer-btn tb-knop" onclick="toonTerugblikOverzicht()">← Overzicht</button>
-            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="openTerugblikTegel(${i + 1})">Volgende →</button>
+            ${i === tegels.length - 1
+                ? `<button class="answer-btn tb-knop tb-knop-hoofd" onclick="toonTerugblikOverzicht()">← Terug naar de lijst</button>`
+                : `<button class="answer-btn tb-knop" onclick="toonTerugblikOverzicht()">← Terug naar de lijst</button>
+            <button class="answer-btn tb-knop tb-knop-hoofd" onclick="openTerugblikTegel(${i + 1})">Volgende uitleg →</button>`}
         </div>
     `);
 }
