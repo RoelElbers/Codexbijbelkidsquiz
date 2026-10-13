@@ -11,6 +11,16 @@ een antwoord niet af met een opsomming van wat er nog openstaat, tenzij er
 expliciet naar gevraagd wordt. Meld wel altijd wat er in de huidige opdracht is
 afgeweken, mislukt of opgevallen — dat hoort bij het werk zelf.
 
+**Opdrachten letterlijk uitvoeren; wat opvalt melden, niet zelf wijzigen.**
+Opdrachten worden vaak in Claude (chat) opgesteld en hier als tekst geplakt.
+Voer ze letterlijk uit. Klopt er inhoudelijk iets niet — een bijbelplaats die
+de bewering in de uitleg niet draagt, een antwoord dat schuurt met de uitleg —
+meld dat dan na afloop onder **"Opgevallen (niet aangepast)"**, met een
+concreet voorstel, en wijzig het niet ongevraagd. Of het wordt aangepast, is
+een eigen beslissing en een eigen opdracht. Zo ving de controle bij Galaten
+G2 dat Handelingen 13:5 over één stad gaat (Salamis), terwijl de uitleg "in
+elke nieuwe stad" zegt; Handelingen 17:2 noemt het als Paulus' gewoonte.
+
 ## Commits
 
 - **Geen `Co-Authored-By`-trailer.** Deze repository gebruikt die conventie niet.
