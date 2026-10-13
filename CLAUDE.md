@@ -19,6 +19,12 @@ afgeweken, mislukt of opgevallen — dat hoort bij het werk zelf.
 - **Eén milestone per commit.** Niet meerdere losse wijzigingen samen.
 - Schrijf het commitbericht naar een tijdelijk bestand en gebruik
   `git commit -F <bestand>`, zodat er geen editor nodig is.
+- **Vóór elke push eerst tonen welke commits er meegaan:**
+  `git log origin/main..HEAD --oneline`. Zit er een commit bij die niet in de
+  huidige opdracht is gemaakt, vraag dan eerst of die mee mag, en push pas
+  daarna. Er wordt soms in twee vensters tegelijk gewerkt, en een push neemt
+  alles mee wat er op `main` klaarstaat, ook commits uit een ander venster of
+  commits waarbij eerder "niet pushen" is gezegd.
 - **Nooit bankgegevens (IBAN, rekeningnummers), wachtwoorden, API-sleutels of
   tokens (Mollie, Forminit, GitHub) in de repo zetten.** De repository is
   openbaar en de hele map wordt via GitHub Pages gepubliceerd; alles wat
