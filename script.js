@@ -3421,8 +3421,8 @@ vragenData["Galaten"] = {
             vraag: "Paulus vertelt hoe God hém riep. Wat was Gods bedoeling met Paulus?",
             antwoorden: ["Dat hij het goede nieuws over Jezus zou brengen aan alle volken", "Dat hij een nieuw boek met strenge regels zou schrijven", "Dat hij de oude tempel opnieuw zou opbouwen", "Dat hij alleen in zijn eigen stad zou blijven"],
             correct: "Dat hij het goede nieuws over Jezus zou brengen aan alle volken",
-            bijbelplaats: "Galaten 1:15-16 · Romeinen 11:13 · Handelingen 13:5",
-            uitleg: "Paulus vertelde het goede nieuws aan iedereen, maar zijn grote opdracht lag buiten Israël. In Galaten 1:16 schrijft hij dat God hem riep om Jezus bekend te maken bij de volken die geen Joden waren. In zijn brief aan de Romeinen noemt hij zichzelf daarom een apostel voor de niet-Joodse volken (Romeinen 11:13). Toch ging hij in elke nieuwe stad eerst naar de synagoge, naar de Joden (Handelingen 13:5)."
+            bijbelplaats: "Galaten 1:15-16 · Romeinen 11:13 · Handelingen 17:2",
+            uitleg: "Paulus vertelde het goede nieuws aan iedereen, maar zijn grote opdracht lag buiten Israël. In Galaten 1:16 schrijft hij dat God hem riep om Jezus bekend te maken bij de volken die geen Joden waren. In zijn brief aan de Romeinen noemt hij zichzelf daarom een apostel voor de niet-Joodse volken (Romeinen 11:13). Toch ging hij in elke nieuwe stad eerst naar de synagoge, naar de Joden (Handelingen 17:2)."
         },
         {
             vraag: "In Antiochië sprak Paulus Petrus openlijk tegen. Wat was er gebeurd?",
