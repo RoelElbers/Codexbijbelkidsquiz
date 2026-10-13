@@ -78,7 +78,7 @@ de teller staat ook boven in `index.html`, naast die van de scèneplaten.
 ### Albumteller — net als de avatarteller
 
 De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`,
-`boek.webp`, `boek-open.webp` en `kaft-voor.webp`) dragen ook een **eigen
+`boek.webp`, `boek-open.webp`, `kaft-voor.webp` en `lantaarn-terug.webp`) dragen ook een **eigen
 `?v=`-teller**, los van de cache-buster en los van de avatarteller.
 
 | teller | gaat omhoog zodra |
@@ -88,19 +88,20 @@ De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`,
 Zelfde reden als bij de avatars: een nieuwe plaat houdt zijn bestandsnaam, dus
 zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 
-**Zes plekken, altijd samen.** `boek-open.webp` staat er drie keer in: het
+**Zeven plekken, altijd samen.** `boek-open.webp` staat er drie keer in: het
 hele open boek, de rechterhelft en de achterkant van de kaft (de linkerhelft).
 
 ```
 style.css    achtergrond.webp (.album-zaal)
 index.html   boek.webp (data-src van .album-boek)
+index.html   lantaarn-terug.webp (de Terug-lantaarn linksonder)
 index.html   boek-open.webp (data-src van .album-open)
 index.html   boek-open.webp (de rechterhelft, .album-open-rechts)
 index.html   kaft-voor.webp (voorkant van de kaft)
 index.html   boek-open.webp (achterkant van de kaft)
 ```
 
-Zoek op `images/album/` in beide bestanden; dat vindt ze alle zes (plus de
+Zoek op `images/album/` in beide bestanden; dat vindt ze alle zeven (plus de
 toelichtingen in commentaar).
 De toelichting staat ook boven in `index.html`, naast die van de avatars.
 

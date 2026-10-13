@@ -11108,14 +11108,17 @@ function wisAlbumTimers() {
 // bovenkant van de plank (de ster staat erop), naam = bovenkant van de naam,
 // net onder het gouden sierstuk. Boek: x = midden, top en hoogte van de hele
 // afbeelding (die heeft boven en onder een transparante rand). De maat van de
-// ster staat in de CSS (.ps-groot .ps-ster).
+// ster staat in de CSS (.ps-groot .ps-ster). Lantaarn (de Terug-knop): x =
+// midden, bodem = onderkant en hoogte van de vierkante afbeelding; af te
+// stellen met ?afstel=aan (zie initAlbumLantaarnAfstel).
 const albumIndeling = {
     plekken: {
         brons:  { x: 40.0, bodem: 25.9, naam: 33.0 },
         goud:   { x: 50.1, bodem: 21.2, naam: 28.4 },
         zilver: { x: 60.1, bodem: 26.0, naam: 33.2 }
     },
-    boek: { x: 50.0, top: 37.1, hoogte: 40.0 }
+    boek: { x: 50.0, top: 37.1, hoogte: 40.0 },
+    lantaarn: { x: 6.0, bodem: 92.0, hoogte: 18.0 }
 };
 
 // Zet de posities uit albumIndeling als CSS-variabelen op de plekken en het boek.
@@ -11137,6 +11140,130 @@ function plaatsAlbumIndeling(rij) {
         boek.style.setProperty("--top", albumIndeling.boek.top + "%");
         boek.style.setProperty("--hoogte", albumIndeling.boek.hoogte + "%");
     }
+    plaatsAlbumLantaarn();
+}
+
+// De lantaarn volgt albumIndeling.lantaarn; een opgeslagen afstelpositie
+// overrulet die, net als bij de trofeeën in de Schatkamer.
+function albumLantaarnPositie() {
+    return leesAfstelPosities()["album:lantaarn"] || albumIndeling.lantaarn;
+}
+
+function plaatsAlbumLantaarn() {
+    const lantaarn = document.querySelector("#album-scherm .album-lantaarn");
+    if (!lantaarn) return;
+    const pos = albumLantaarnPositie();
+    lantaarn.style.setProperty("--x", pos.x + "%");
+    lantaarn.style.setProperty("--bodem", pos.bodem + "%");
+    lantaarn.style.setProperty("--hoogte", pos.hoogte + "%");
+}
+
+// Afstelmodus (?afstel=aan) voor de lantaarn in de albumzaal. Slepen =
+// verplaatsen, pijltjes = 0,1% (Shift = 1%), + / - of scroll = grootte. De
+// stand wordt bewaard zoals de Schatkamer-posities en staat rechtsonder in de
+// zaal als regel om in albumIndeling te plakken. Een klik zonder slepen is
+// nog steeds Terug.
+function initAlbumLantaarnAfstel() {
+    const zaal = document.querySelector("#album-scherm .album-zaal");
+    const lantaarn = zaal && zaal.querySelector(".album-lantaarn");
+    if (!lantaarn) return;
+    zaal.classList.add("afstel");
+    const scherm = document.getElementById("album-scherm");
+    const SCHAAL_STAP = 0.2;
+    const info = document.createElement("div");
+    info.className = "album-afstel-info";
+    info.innerHTML = '<div class="album-afstel-regel"></div>' +
+        '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% ' +
+        '(Shift = 1%) &middot; + / &minus; of scroll = grootte</div>' +
+        '<button type="button">Reset</button>';
+    zaal.appendChild(info);
+    const regel = info.querySelector(".album-afstel-regel");
+    let pos = { ...albumLantaarnPositie() };
+    let geselecteerd = false;
+    let netGesleept = false;
+
+    function toon() {
+        regel.textContent = `lantaarn: { x: ${pos.x.toFixed(1)}, bodem: ${pos.bodem.toFixed(1)}, hoogte: ${pos.hoogte.toFixed(1)} }`;
+    }
+    function zet() {
+        pos = { x: +pos.x.toFixed(2), bodem: +pos.bodem.toFixed(2), hoogte: Math.max(1, +pos.hoogte.toFixed(2)) };
+        const opgeslagen = leesAfstelPosities();
+        opgeslagen["album:lantaarn"] = pos;
+        schrijfAfstelPosities(opgeslagen);
+        plaatsAlbumLantaarn();
+        toon();
+    }
+    function selecteer(aan) {
+        geselecteerd = aan;
+        lantaarn.classList.toggle("afstel-geselecteerd", aan);
+    }
+
+    info.querySelector("button").addEventListener("click", () => {
+        const opgeslagen = leesAfstelPosities();
+        delete opgeslagen["album:lantaarn"];
+        schrijfAfstelPosities(opgeslagen);
+        pos = { ...albumIndeling.lantaarn };
+        plaatsAlbumLantaarn();
+        toon();
+    });
+
+    zaal.addEventListener("pointerdown", (e) => {
+        if (info.contains(e.target)) return;
+        if (!lantaarn.contains(e.target)) { selecteer(false); return; }
+        e.preventDefault();
+        selecteer(true);
+        const r = zaal.getBoundingClientRect();
+        const start = { ...pos }, muisX = e.clientX, muisY = e.clientY;
+        netGesleept = false;
+        function beweeg(ev) {
+            if (Math.abs(ev.clientX - muisX) + Math.abs(ev.clientY - muisY) > 3) netGesleept = true;
+            pos.x = start.x + (ev.clientX - muisX) / r.width * 100;
+            pos.bodem = start.bodem + (ev.clientY - muisY) / r.height * 100;
+            plaatsAlbumLantaarnTijdelijk();
+        }
+        function los() {
+            document.removeEventListener("pointermove", beweeg);
+            document.removeEventListener("pointerup", los);
+            if (netGesleept) zet();
+        }
+        document.addEventListener("pointermove", beweeg);
+        document.addEventListener("pointerup", los);
+    });
+    function plaatsAlbumLantaarnTijdelijk() {
+        lantaarn.style.setProperty("--x", pos.x + "%");
+        lantaarn.style.setProperty("--bodem", pos.bodem + "%");
+        toon();
+    }
+    // Na slepen geen Terug: de klik wordt in de capture-fase al tegengehouden.
+    zaal.addEventListener("click", (e) => {
+        if (netGesleept && lantaarn.contains(e.target)) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+        netGesleept = false;
+    }, true);
+
+    lantaarn.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        selecteer(true);
+        pos.hoogte += e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP;
+        zet();
+    }, { passive: false });
+
+    document.addEventListener("keydown", (e) => {
+        if (!geselecteerd || scherm.style.display === "none") return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        if (e.key === "ArrowLeft")       pos.x -= stap;
+        else if (e.key === "ArrowRight") pos.x += stap;
+        else if (e.key === "ArrowUp")    pos.bodem -= stap;
+        else if (e.key === "ArrowDown")  pos.bodem += stap;
+        else if (e.key === "+" || e.key === "=") pos.hoogte += SCHAAL_STAP;
+        else if (e.key === "-" || e.key === "_") pos.hoogte -= SCHAAL_STAP;
+        else raak = false;
+        if (raak) { e.preventDefault(); zet(); }
+    });
+    toon();
 }
 
 function openAlbum() {
@@ -11506,6 +11633,7 @@ werkVerborgenSchatBij();
 
 // Lantaarn van het Bijbelkidsalbum (alleen met plakboekAan).
 werkAlbumLantaarnBij();
+if (afstelModus && plakboekAan) initAlbumLantaarnAfstel();
 
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.

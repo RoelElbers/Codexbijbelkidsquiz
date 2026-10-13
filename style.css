@@ -2161,7 +2161,7 @@ height: 22%;
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     overflow: hidden;
-    background: #0b1330 url("images/album/achtergrond.webp?v=2") center / 100% 100% no-repeat;
+    background: #0b1330 url("images/album/achtergrond.webp?v=3") center / 100% 100% no-repeat;
 }
 .album-sterren,
 .album-sterren .ps-sterren {
@@ -2206,6 +2206,133 @@ height: 22%;
     cursor: pointer;              /* fase 3a: tikken klapt het boek open */
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+}
+
+/* De Terug-lantaarn linksonder op de vloer (images/album/lantaarn-terug.webp,
+   vierkant). Positie en maat uit albumIndeling.lantaarn: --x = midden,
+   --bodem = onderkant van de afbeelding, --hoogte = hoogte, alles in procenten
+   van het vak. Daaronder een zachte schaduw onder het plateau, erboven de
+   warme gloed bij aanwijzen (zelfde tinten als .donatie-zone::before op het
+   startscherm) en onder de lantaarn het opschrift, in de stijl van de
+   sterrennamen (.ps-groot .ps-naam, de goudtint). */
+.album-lantaarn {
+    position: absolute;
+    left: var(--x, 6%);
+    top: calc(var(--bodem, 92%) - var(--hoogte, 18%));
+    height: var(--hoogte, 18%);
+    aspect-ratio: 1 / 1;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    /* de algemene button-stijl zweeft, schaalt en krijgt een schaduw; hier niet */
+    animation: none;
+    transition: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.album-lantaarn:hover {
+    transform: translateX(-50%);
+    box-shadow: none;
+}
+.album-lantaarn:focus-visible {
+    outline: none;                /* de gloed is de focusaanwijzing */
+}
+.album-lantaarn img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+/* Het plateau beslaat ~63% van de breedte en eindigt op ~97,5% van de hoogte. */
+.album-lantaarn-schaduw {
+    position: absolute;
+    left: 50%;
+    bottom: -1%;
+    width: 74%;
+    height: 9%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(
+        ellipse closest-side at 50% 50%,
+        rgba(2, 4, 12, 0.75) 0%,
+        rgba(2, 4, 12, 0.45) 55%,
+        rgba(2, 4, 12, 0) 100%
+    );
+    pointer-events: none;
+}
+.album-lantaarn-gloed {
+    position: absolute;
+    inset: 10%;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 50% 45%,
+        rgba(255, 240, 180, 0.75) 0%,
+        rgba(255, 190, 90, 0.45) 30%,
+        rgba(255, 140, 45, 0.22) 55%,
+        rgba(255, 120, 30, 0) 78%
+    );
+    mix-blend-mode: screen;
+    filter: blur(calc(var(--game-breedte) * 0.0016));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+.album-lantaarn:hover .album-lantaarn-gloed,
+.album-lantaarn:focus-visible .album-lantaarn-gloed {
+    opacity: 1;
+}
+/* Afstelmodus (?afstel=aan, zie initAlbumLantaarnAfstel): de lantaarn is
+   sleepbaar, rechtsonder staat de regel voor albumIndeling. */
+.album-zaal.afstel .album-lantaarn {
+    cursor: move;
+    touch-action: none;
+}
+.album-zaal .album-lantaarn.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+}
+.album-afstel-info {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    z-index: 20;
+    padding: 8px 10px;
+    background: rgba(8, 14, 30, 0.93);
+    color: #e8eefc;
+    font: 12px/1.45 ui-monospace, Menlo, Consolas, monospace;
+    border: 1px solid #36dfff;
+    border-radius: 8px;
+    user-select: text;
+}
+.album-afstel-info .afstel-hint { margin-top: 4px; font-size: 11px; opacity: 0.7; }
+.album-afstel-info button {
+    margin-top: 6px;
+    font: 11px ui-monospace, Menlo, Consolas, monospace;
+    padding: 4px 8px;
+    color: #08101e;
+    background: #36dfff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.album-lantaarn-opschrift {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0133);
+    line-height: 1.2;
+    color: #ffd36b;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
 /* Fase 3a: het boek klapt open (zie openAlbumBoek in script.js). Van onder
@@ -2308,15 +2435,17 @@ height: 22%;
 .album-zaal:not(.beelden-klaar) .album-boek {
     cursor: progress;
 }
-/* Met het boek open: "Boek sluiten" in plaats van "Terug". */
+/* Met het boek open: "Boek sluiten" in plaats van de Terug-lantaarn. De
+   lantaarn ligt dan onder het donkere dimvlak; visibility haalt hem ook uit
+   de tabvolgorde. */
 .album-zaal .album-sluit {
     display: none;
 }
 .album-zaal.boek-open .album-sluit {
     display: block;
 }
-.album-zaal.boek-open .album-terug {
-    display: none;
+.album-zaal.boek-open .album-lantaarn {
+    visibility: hidden;
 }
 /* Met het boek open is het (onzichtbare) boek op het podium niet tikbaar. */
 .album-zaal.boek-open .album-boek {
