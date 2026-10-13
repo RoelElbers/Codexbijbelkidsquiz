@@ -30,8 +30,8 @@ afgeweken, mislukt of opgevallen — dat hoort bij het werk zelf.
 `style.css`, `lang/nl.js`, `ontdekken-inhoud.js` en `script.js` dragen **samen
 één nummer** en gaan **altijd samen omhoog**, ook als er maar één van de vier is
 gewijzigd. Nooit per bestand ophogen, nooit terug in nummer. Lees de huidige
-stand uit `index.html` zelf (regel 22 voor de stylesheet, onderaan `<body>` voor
-de drie scripts).
+stand uit `index.html` zelf (in `<head>` voor de stylesheet, onderaan `<body>`
+voor de drie scripts).
 
 `ontdekken-inhoud.js` staat bewust vóór `script.js`: `ontdekRubrieken` verwijst
 naar de constanten uit dat bestand.
@@ -63,16 +63,16 @@ bezoeker in het ene scherm het nieuwe portret en in het andere het oude. Dat
 is bij testen niet te betrappen, want dan is de cache toch vers.
 
 ```
-index.html: 107        het startschermportret
-index.html: 266-302    de tien keuzeknoppen
-script.js : 7214       const AVATAR_VERSIE
-script.js : 7394       updateAvatarWeergave()
-script.js : 7561       de spelerkiezer
+index.html   het startschermportret (avatarframe linksboven)
+index.html   de tien keuzeknoppen (Nieuw spel)
+script.js    const AVATAR_VERSIE
+script.js    updateAvatarWeergave()
+script.js    de spelerkiezer
 ```
 
 De twee plekken in `script.js` lezen `AVATAR_VERSIE`; in `index.html` staat
-het nummer elf keer voluit. Regelnummers schuiven — zoek desnoods op
-`Avatars/` in beide bestanden, dat vindt ze alle dertien. De toelichting bij
+het nummer elf keer voluit. Zoek op `Avatars/` in beide bestanden, dat vindt
+ze alle dertien (plus de toelichtingen in commentaar). De toelichting bij
 de teller staat ook boven in `index.html`, naast die van de scèneplaten.
 
 ### Albumteller — net als de avatarteller
@@ -92,16 +92,16 @@ zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 hele open boek, de rechterhelft en de achterkant van de kaft (de linkerhelft).
 
 ```
-style.css : 2152       achtergrond.webp (.album-zaal)
-index.html: 719        boek.webp (data-src van .album-boek)
-index.html: 724        boek-open.webp (data-src van .album-open)
-index.html: 726        boek-open.webp (de rechterhelft, .album-open-rechts)
-index.html: 730        kaft-voor.webp (voorkant van de kaft)
-index.html: 731        boek-open.webp (achterkant van de kaft)
+style.css    achtergrond.webp (.album-zaal)
+index.html   boek.webp (data-src van .album-boek)
+index.html   boek-open.webp (data-src van .album-open)
+index.html   boek-open.webp (de rechterhelft, .album-open-rechts)
+index.html   kaft-voor.webp (voorkant van de kaft)
+index.html   boek-open.webp (achterkant van de kaft)
 ```
 
-Regelnummers schuiven — zoek desnoods op `images/album/` in beide bestanden;
-dat vindt ze alle zes.
+Zoek op `images/album/` in beide bestanden; dat vindt ze alle zes (plus de
+toelichtingen in commentaar).
 De toelichting staat ook boven in `index.html`, naast die van de avatars.
 
 ## Vervangingen in `script.js`
