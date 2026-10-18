@@ -297,6 +297,16 @@ genoemd. Gebruik deze lijst; hij is bewust ruim:
 `Immanuël` stond er eerst niet bij. Daardoor bleef de vraag bij Matteüs 1:23
 bij een eerdere controle buiten beeld: dat blok noemt Jezus nergens anders.
 
+### Hoofdletter bij "Bijbel"
+
+"Bijbel" krijgt een hoofdletter als de tekst bedoeld wordt, ook in
+samenstellingen en afleidingen: Bijbelquiz, Bijbelspel, Bijbeltekst,
+Bijbelplaats, Bijbels. Uitzondering: gaat het om een exemplaar van het
+boek, dan klein (een bijbel kopen, pak uw eigen bijbel erbij,
+bijbelpapier). Dit is de officiële spelling (Woordenlijst), geen
+eerbiedshoofdletter. De veldnaam bijbelplaats in de code wordt nooit
+aangepast; de regel geldt alleen voor tekst die de speler of bezoeker leest.
+
 ### Bijbelplaatsen
 
 - Nummering volgens **Nederlandse bijbels** (NBV, NBG, Willibrord). Die wijkt
