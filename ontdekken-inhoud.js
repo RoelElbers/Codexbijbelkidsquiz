@@ -272,7 +272,7 @@ const ONTDEK_TIJD = [
     { kop: "Tijd" },
     { item: "<span class=\"naslag-term\">Uren</span> — de tijdsaanduidingen in de Bijbel werken anders dan onze moderne klok. In de tijd van Jezus begon de dag bij zonsopgang, ongeveer om 6.00 uur. De tijd tot zonsondergang werd in twaalf uren verdeeld. De tabel laat zien rond welk tijdstip op onze klok elk Bijbels uur ongeveer uitkomt." },
     { tabel: { koppen: ["Bijbels uur", "Onze tijd (ongeveer)"], rijen: [["1e uur", "07.00"], ["2e uur", "08.00"], ["3e uur", "09.00"], ["4e uur", "10.00"], ["5e uur", "11.00"], ["6e uur", "12.00"], ["7e uur", "13.00"], ["8e uur", "14.00"], ["9e uur", "15.00"], ["10e uur", "16.00"], ["11e uur", "17.00"], ["12e uur", "18.00 (zonsondergang)"]] } },
-    { noot: "Goed om te weten: bij de Romeinen en de Joden begon het eerste uur eigenlijk al bij zonsopgang, rond 6.00 uur. In de meeste bijbelcommentaren wordt het eerste uur echter rond 7.00 uur gerekend. Wij volgen hier die gangbare indeling — zo blijven de bekende voorbeelden hieronder (zoals het negende uur rond 15.00 uur) goed kloppen." },
+    { noot: "Goed om te weten: het eerste uur begon bij zonsopgang, rond 6.00 uur, en liep tot ongeveer 7.00 uur. De tabel noemt steeds het tijdstip waarop een uur afliep, zoals de meeste Bijbelcommentaren dat doen. Zo komt het negende uur uit rond 15.00 uur." },
     { item: "<span class=\"naslag-term\">Bekende voorbeelden</span>" },
     { item: "<span class=\"naslag-term\">Het derde uur</span> → ongeveer 9.00 uur. Bij Pinksteren zei Petrus: \"Het is pas het derde uur van de dag\" (Handelingen 2:15)." },
     { item: "<span class=\"naslag-term\">Het zesde uur</span> → ongeveer 12.00 uur. Rond het middaguur sprak Jezus bij de put met de Samaritaanse vrouw (Johannes 4:6)." },
