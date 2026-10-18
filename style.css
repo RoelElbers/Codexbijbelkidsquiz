@@ -100,6 +100,16 @@ h1 {
     animation: glowPulse 3s infinite ease-in-out;
 }
 
+.sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 p {
     font-size: 22px;
     color: #f8e6b0;
@@ -3678,6 +3688,8 @@ height: 22%;
     box-shadow: none;
     animation: none;
 }
+
+a.tekst-link { width: fit-content; text-align: center; }
 
 .tekst-link:hover,
 .speler-kiezer-link:hover {
