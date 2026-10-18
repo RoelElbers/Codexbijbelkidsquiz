@@ -537,10 +537,10 @@ const vragenData = {
             },
             {
                 vraag: "Op welk moment van de nacht kwam Jezus over het water naar de leerlingen toe, volgens Matteüs?",
-                antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht, precies midden in de nacht", "Bij het eerste hanengekraai"],
+                antwoorden: ["Vlak na het invallen van de duisternis, aan het begin van de avond", "Tijdens de vierde nachtwaak, aan het einde van de nacht", "Rond middernacht, precies midden in de nacht", "Toen de leerlingen net waren weggevaren en de storm nog moest beginnen"],
                 correct: "Tijdens de vierde nachtwaak, aan het einde van de nacht",
                 bijbelplaats: "Matteüs 14:25 · Johannes 6:4",
-                uitleg: "In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.\n\nDit verhaal speelt rond de lente, kort voor het Pesachfeest (Johannes 6:4). Dan liep de eerste nachtwaak ongeveer van 18.00 tot 21.00 uur, de tweede tot middernacht, de derde tot 3.00 uur en de vierde van 3.00 tot 6.00 uur.\n\nJezus kwam dus in de vierde nachtwaak over het water lopen: in het laatste deel van de nacht, ergens tussen drie en zes uur."
+                uitleg: "In Jezus' tijd verdeelden de Romeinen de nacht in vier 'nachtwaken'. Zo wisten de wachters wanneer ze elkaar moesten aflossen. De nacht liep van zonsondergang tot zonsopgang, en die werd in vier gelijke stukken verdeeld — in de winter waren die stukken dus wat langer dan in de zomer.\n\nDit verhaal speelt rond de lente, kort voor het Pesachfeest (Johannes 6:4). Dan zijn dag en nacht ongeveer even lang. De eerste nachtwaak liep dan van zo'n 18.00 tot 21.00 uur, de tweede tot middernacht, de derde tot 3.00 uur en de vierde van 3.00 tot 6.00 uur.\n\nJezus kwam dus in de vierde nachtwaak over het water lopen: in het laatste deel van de nacht, ergens tussen drie en zes uur."
             },
             {
                 vraag: "Een denarie was een Romeinse zilveren munt. Hoeveel was die ongeveer waard?",
