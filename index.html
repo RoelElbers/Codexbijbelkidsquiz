@@ -636,13 +636,13 @@
                 <p class="quiz-question">Over dit spel</p>
                 <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openSteun()">Steun de Bijbelkidsquiz</button>
 
-                <!-- Losse HTML-pagina's, geen spelschermen. Bewust <button> met
-                     openTabblad() en niet een <a>: knoppen in dit spel erven hun
-                     lettertype van de browser, dus een <a> zou in een ander font
-                     renderen (zelfde reden als in vulSteunScherm). Nieuw tabblad,
-                     zodat een lopende quizronde niet verloren gaat; openTabblad()
-                     in script.js verbreekt de koppeling met dit venster. Steunen
-                     staat hier bewust niet bij — die link zit al in het steunscherm. -->
+                <!-- Losse HTML-pagina's, geen spelschermen. Echte <a>-links (okt 2026),
+                     zodat zoekmachines ze volgen. Het font-probleem van een kale <a>
+                     speelt hier niet: .tekst-link zet het lettertype zelf (nagemeten:
+                     zelfde font, maat en positie als de oude knoppen). Nieuw tabblad,
+                     zodat een lopende quizronde niet verloren gaat; rel="noopener"
+                     verbreekt de koppeling met dit venster. Steunen staat hier bewust
+                     niet bij — die link zit al in het steunscherm. -->
                 <a class="tekst-link" href="contact.html" target="_blank" rel="noopener">Contact</a>
                 <a class="tekst-link" href="privacyverklaring.html" target="_blank" rel="noopener">Privacyverklaring</a>
                 <a class="tekst-link" href="voor-ouders.html" target="_blank" rel="noopener">Voor ouders en begeleiders</a>
