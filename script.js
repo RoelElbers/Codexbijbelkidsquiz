@@ -4128,7 +4128,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Aan welke gemeente schreef Paulus deze twee brieven?",
             antwoorden: ["De gemeente in Tessalonica", "De gemeente in Filippi", "De gemeente in Korinte", "De gemeente in Berea"],
             correct: "De gemeente in Tessalonica",
-            bijbelplaats: "1 Tessalonicenzen 1:1",
+            bijbelplaats: "1 Tessalonicenzen 1:1 · 2 Tessalonicenzen 1:1",
             kist: false
         },
         {
@@ -4171,7 +4171,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Wat wenst Paulus de Tessalonicenzen toe aan het begin van zijn brieven?",
             antwoorden: ["Genade en vrede", "Geluk en gezondheid", "Kracht en roem", "Rust en stilte"],
             correct: "Genade en vrede",
-            bijbelplaats: "1 Tessalonicenzen 1:1"
+            bijbelplaats: "1 Tessalonicenzen 1:1 · 2 Tessalonicenzen 1:2"
         },
         {
             vraag: "Hoe spreekt Paulus de gelovigen telkens liefdevol aan?",
@@ -4205,7 +4205,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Aan het slot van zijn tweede brief spreekt Paulus een zegen uit over de Tessalonicenzen. Hoe noemt hij de Heer daarbij?",
-            antwoorden: ["De Heer van de vrede", "De Heer van de legers", "De Heer van de tempel", "De Heer van de oogst"],
+            antwoorden: ["De Heer van de vrede", "De Heer van de stad", "De Heer van de tempel", "De Heer van de markt"],
             correct: "De Heer van de vrede",
             bijbelplaats: "2 Tessalonicenzen 3:16"
         },
@@ -4256,7 +4256,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus schrijft: zorg dat niemand kwaad met kwaad vergeldt. Wat moeten de gelovigen in plaats daarvan doen?",
-            antwoorden: ["Altijd het goede doen, voor elkaar en voor iedereen", "Het loslaten en er niet meer aan denken", "Het aan God overlaten, die rechtvaardig oordeelt", "Uit de buurt blijven van wie kwaad doet"],
+            antwoorden: ["Altijd het goede doen, voor elkaar en voor iedereen", "Het loslaten en er niet meer aan denken", "Wachten tot de ander eerst iets goeds doet", "Uit de buurt blijven van wie kwaad doet"],
             correct: "Altijd het goede doen, voor elkaar en voor iedereen",
             bijbelplaats: "1 Tessalonicenzen 5:15"
         },
@@ -4292,7 +4292,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen gaan zij dan?",
-            antwoorden: ["De wolken in, de Heer tegemoet", "Naar de tempel in Jeruzalem", "Naar de allerhoogste top van de heilige berg Sion", "De hemelpoort door"],
+            antwoorden: ["De wolken in, de Heer tegemoet", "Naar de tempel in Jeruzalem", "Naar de allerhoogste top van de heilige berg Sion", "Naar een berg buiten de stad"],
             correct: "De wolken in, de Heer tegemoet",
             bijbelplaats: "1 Tessalonicenzen 4:17"
         },
@@ -4309,11 +4309,11 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             bijbelplaats: "2 Tessalonicenzen 1:7"
         },
         {
-            vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld denkt hij bij dat woord?",
-            antwoorden: ["Aan een vuur waar iemand water overheen gooit", "Aan een olielamp die na een lange nacht leegraakt", "Aan een fakkel die van hand tot hand gaat", "Aan een kaars die je mee naar buiten neemt"],
-            correct: "Aan een vuur waar iemand water overheen gooit",
+            vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld doet het woord \"uitdoven\" denken?",
+            antwoorden: ["Aan een vuur of een lamp die brandt", "Aan een muur die omvalt", "Aan een schip dat zinkt", "Aan een boom die wordt omgehakt"],
+            correct: "Aan een vuur of een lamp die brandt",
             bijbelplaats: "1 Tessalonicenzen 5:19",
-            uitleg: "Het Griekse werkwoord werd gebruikt voor het blussen van een brand. Dat is iets anders dan opraken: bij blussen doet iemand het bewust. In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt dus niet dat de Geest vanzelf verdwijnt, maar dat mensen er water overheen kunnen gooien."
+            uitleg: "Het Griekse werkwoord betekent \"uitdoven\" of \"blussen\". Het werd gebruikt voor een vuur, maar ook voor een lamp die uitgaat, zoals bij de tien meisjes met hun lampen (Matteüs 25:8). In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt de gelovigen dat ze het werk van de Geest niet mogen tegenhouden. Meteen daarna schrijft hij: veracht de profetieën niet."
         }
     ],
     expert: [
@@ -4337,7 +4337,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Paulus prijst de Tessalonicenzen om drie dingen die bij elkaar horen: hun geloof, hun liefde en nog iets. Wat is dat derde?",
-            antwoorden: ["Hun hoop", "Hun wijsheid", "Hun kennis", "Hun geduld"],
+            antwoorden: ["Hun hoop", "Hun wijsheid", "Hun kennis", "Hun eerlijkheid"],
             correct: "Hun hoop",
             bijbelplaats: "1 Tessalonicenzen 1:3"
         },
@@ -4388,28 +4388,28 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             antwoorden: ["Voor het officiële bezoek van een koning of keizer aan een stad", "Voor de ondertekening van een vredesverdrag", "Voor de dag waarop een schip werd gebouwd", "Voor het begin van een sportwedstrijd"],
             correct: "Voor het officiële bezoek van een koning of keizer aan een stad",
             bijbelplaats: "1 Tessalonicenzen 2:19",
-            uitleg: "Parousia betekent \"komst\" of \"aanwezigheid\". Het woord kon ook gebruikt worden voor het officiële bezoek van een koning of keizer aan een stad. Zo'n bezoek was een grote gebeurtenis: de stad maakte zich klaar om de belangrijke bezoeker te ontvangen. Er werden munten voor geslagen en poorten voor versierd. Paulus gebruikt hetzelfde woord wanneer hij schrijft over de komst van Jezus."
+            uitleg: "Parousia betekent \"komst\" of \"aanwezigheid\". Het woord kon ook gebruikt worden voor het officiële bezoek van een koning of keizer aan een stad. Zo'n bezoek was een grote gebeurtenis: de stad maakte zich klaar om de belangrijke bezoeker feestelijk te ontvangen. Soms werden er zelfs speciale munten geslagen ter herinnering aan zo'n bezoek. Paulus gebruikt hetzelfde woord wanneer hij schrijft over de komst van Jezus."
         },
         {
             vraag: "Paulus schrijft: \"bemoedig de kleinmoedigen.\" Wat betekent dat Griekse woord letterlijk?",
-            antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig moed hebben in de strijd", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
+            antwoorden: ["Mensen met een kleine ziel", "Mensen die weinig weten van de Bijbel", "Mensen die klein van gestalte zijn", "Mensen die pas kort geloven"],
             correct: "Mensen met een kleine ziel",
             bijbelplaats: "1 Tessalonicenzen 5:14",
-            uitleg: "Het Griekse woord bestaat uit woorden voor \"klein/weinig\" en \"ziel\". Daarmee worden mensen bedoeld die de moed hebben verloren of het even niet meer zien zitten. Het gaat dus niet over lafheid in de strijd, maar over een ziel die zich klein en moedeloos voelt. Paulus zegt niet dat je hen streng moet aanpakken, maar juist dat je hen moet bemoedigen."
+            uitleg: "Het Griekse woord bestaat uit woorden voor \"klein/weinig\" en \"ziel\". Daarmee worden mensen bedoeld die de moed hebben verloren of het even niet meer zien zitten: een ziel die zich klein en moedeloos voelt. Paulus zegt niet dat je hen streng moet aanpakken, maar juist dat je hen moet bemoedigen."
         },
         {
-            vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia bestond al eeuwen in elke Griekse stad. Wat was het toen?",
+            vraag: "Paulus schrijft aan de \"gemeente\" van Tessalonica; in andere vertalingen staat daar \"kerk\". Het Griekse woord ekklesia werd al eeuwen vóór het christendom gebruikt. Wat kon het in een Griekse stad betekenen?",
             antwoorden: ["De vergadering waarop de burgers samen beslisten", "De school waar de jongens van de stad les kregen", "Het bestuur dat door de keizer was aangesteld", "De tempel waar men de goden van de stad diende"],
             correct: "De vergadering waarop de burgers samen beslisten",
             bijbelplaats: "1 Tessalonicenzen 1:1",
-            uitleg: "Ekklesia was al lang vóór het christendom een gewoon Grieks woord voor een vergadering. In Griekse steden kon het de bijeenkomst zijn waarin burgers over zaken van de stad beslisten. De eerste christenen gebruikten datzelfde woord voor hun eigen gemeenschap of samenkomst. Daarom kan het in Nederlandse Bijbels worden vertaald met \"gemeente\" of \"kerk\"."
+            uitleg: "Ekklesia was al lang vóór het christendom een gewoon Grieks woord voor een vergadering. In Griekse steden kon het de bijeenkomst zijn waarin burgers over zaken van de stad beslisten. In de Griekse vertaling van het Oude Testament was het ook het woord voor de samenkomst van Gods volk. De eerste christenen gebruikten datzelfde woord voor hun eigen gemeenschap. Daarom kan het in Nederlandse Bijbels worden vertaald met \"gemeente\" of \"kerk\"."
         },
         {
             vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Welk beeld past bij het Griekse woord dat hij gebruikt?",
             antwoorden: ["Een soldaat die uit het gelid loopt", "Een rechter die zijn hamer kwijt is", "Een schip dat zijn anker laat vallen", "Een boer die zijn akker omploegt"],
             correct: "Een soldaat die uit het gelid loopt",
             bijbelplaats: "2 Tessalonicenzen 3:6",
-            uitleg: "Het woord betekent letterlijk \"niet op zijn plek\". Wie uit het gelid stapte bracht de hele linie in gevaar. Paulus gebruikt het voor gemeenteleden die gestopt waren met werken — niet omdat werken het belangrijkste in het leven is, maar omdat de anderen hun last moesten dragen."
+            uitleg: "Het Griekse woord betekent \"wanordelijk\", \"uit de rij\". Het hoort bij een woord dat ook gebruikt werd voor de opstelling van soldaten: wie uit het gelid stapte, bracht de hele linie in gevaar. Paulus gebruikt het voor mensen die niet wilden werken en zich met andermans zaken bemoeiden, zodat de anderen hun last moesten dragen. Het gaat dus niet om mensen die niet kúnnen werken."
         }
     ]
 };
