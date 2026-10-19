@@ -4789,8 +4789,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus noemt Onesimus zijn \"kind\" in het geloof. Waarom noemt hij hem zo?",
-            antwoorden: ["Omdat Onesimus bij Paulus in de gevangenis tot geloof was gekomen", "Omdat Paulus hem als baby had opgevoed", "Omdat Onesimus familie van Paulus was", "Omdat Onesimus nog maar een kind was"],
-            correct: "Omdat Onesimus bij Paulus in de gevangenis tot geloof was gekomen",
+            antwoorden: ["Omdat Onesimus door Paulus tot geloof was gekomen, terwijl Paulus gevangenzat", "Omdat Paulus hem als baby had opgevoed", "Omdat Onesimus familie van Paulus was", "Omdat Onesimus nog maar een kind was"],
+            correct: "Omdat Onesimus door Paulus tot geloof was gekomen, terwijl Paulus gevangenzat",
             bijbelplaats: "Filemon 10"
         },
         {
@@ -4822,7 +4822,7 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["Een briefje dat iemand zelf ondertekende, waarop stond hoeveel hij nog moest betalen", "Een lijst met alle wetten die in de stad golden", "Een vonnis dat de rechter uitsprak over iemand die iets had gestolen", "Een bord dat de schuldeiser aan de deur van de schuldenaar spijkerde"],
             correct: "Een briefje dat iemand zelf ondertekende, waarop stond hoeveel hij nog moest betalen",
             bijbelplaats: "Kolossenzen 2:14",
-            uitleg: "Het Griekse woord cheirographon betekent letterlijk \"handschrift\": een schuldbekentenis die je met je eigen hand tekende. Inkt op papyrus kon je wegwassen. Zo wist God de schuld volledig uit."
+            uitleg: "Het Griekse woord cheirographon betekent letterlijk \"handschrift\". Zo noemde men een schuldbekentenis die iemand met eigen hand schreef of tekende. De inkt van toen kon je met water van de papyrus afwassen, en Paulus gebruikt precies dat woord: uitwissen. Zo wist God de schuld volledig uit."
         }
     ],
     advanced: [
@@ -4922,8 +4922,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus groet \"de gemeente die bij jou aan huis samenkomt\". Waar kwamen de eerste christenen buiten Jeruzalem meestal bij elkaar?",
-            antwoorden: ["In gewone woonhuizen, want kerkgebouwen bestonden nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
-            correct: "In gewone woonhuizen, want kerkgebouwen bestonden nog niet",
+            antwoorden: ["In gewone woonhuizen, want speciale kerkgebouwen waren er nog niet", "In de tempel van Jeruzalem, elke week opnieuw", "In het theater van de stad, omdat daar ruimte was", "In de bibliotheek van de stad, waar de boekrollen lagen"],
+            correct: "In gewone woonhuizen, want speciale kerkgebouwen waren er nog niet",
             bijbelplaats: "Filemon 2 · Romeinen 16:5 · 1 Korintiërs 16:19"
         },
         {
@@ -4937,7 +4937,7 @@ vragenData["Kolossenzen & Filemon"] = {
             antwoorden: ["De scheidsrechter, die besliste wie er gewonnen had", "De trainer, die de sporters voor de wedstrijd klaarmaakte", "De toeschouwers, die met hun gejuich de winnaar kozen", "De sterkste sporter, die de anderen vertelde wat ze moesten doen"],
             correct: "De scheidsrechter, die besliste wie er gewonnen had",
             bijbelplaats: "Kolossenzen 3:15",
-            uitleg: "Het woord brabeuō betekent \"scheidsrechter zijn\". Als je twijfelt wat je moet doen, laat Paulus de vrede van Christus de knoop doorhakken."
+            uitleg: "Het woord brabeuō betekent \"scheidsrechter zijn\". Paulus laat de vrede van Christus de knoop doorhakken: als je twijfelt wat je moet doen, maar ook als je het met elkaar oneens bent, want jullie zijn samen geroepen tot één lichaam."
         },
         {
             vraag: "In Kolossenzen 2:15 beschrijft Paulus de overwinning van Christus met een beeld uit Rome: een veldheer die na een grote overwinning een triomftocht hield. Wat gebeurde er tijdens zo'n optocht?",
@@ -4956,10 +4956,10 @@ vragenData["Kolossenzen & Filemon"] = {
     ],
     expert: [
         {
-            vraag: "Uit Kolossenzen blijkt dat niet Paulus, maar Epafras de gelovigen daar het goede nieuws had gebracht. Wat zegt dat over Paulus' band met hen?",
+            vraag: "Uit Kolossenzen blijkt dat de gelovigen daar het goede nieuws niet van Paulus, maar van Epafras hadden geleerd. Wat zegt dat over Paulus' band met hen?",
             antwoorden: ["Hij kende veel van hen nog niet persoonlijk", "Hij had de gemeente zelf gesticht en kende iedereen", "Hij had jarenlang in Kolosse gewoond", "Hij was daar als kind opgegroeid"],
             correct: "Hij kende veel van hen nog niet persoonlijk",
-            bijbelplaats: "Kolossenzen 1:7-8; 2:1"
+            bijbelplaats: "Kolossenzen 1:7; 2:1"
         },
         {
             vraag: "Paulus schrijft een lofzang op Christus, waarin hij zegt dat alles door Hem geschapen is: in de hemel en op de aarde. En dan voegt hij er iets aan toe wat je makkelijk over het hoofd ziet. Wat rekent hij er ook bij?",
@@ -4980,10 +4980,10 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 1:27"
         },
         {
-            vraag: "In Kolosse liepen leraren rond die beweerden dat zij een geheime, hogere kennis bezaten die de gewone gelovigen misten. Paulus antwoordt dat er inderdaad een schat verborgen ligt, maar dan in Christus zelf. Wat ligt daar volgens hem verborgen?",
+            vraag: "Paulus waarschuwt de Kolossenzen voor mensen die hen met mooie praatjes willen misleiden. Hij schrijft dat de echte schatten verborgen liggen in Christus zelf. Welke schatten zijn dat volgens hem?",
             antwoorden: ["Alle schatten van wijsheid en kennis", "Alle goud van de tempel", "Alle boeken van de profeten", "Alle namen van de gelovigen"],
             correct: "Alle schatten van wijsheid en kennis",
-            bijbelplaats: "Kolossenzen 2:2-3"
+            bijbelplaats: "Kolossenzen 2:2-4"
         },
         {
             vraag: "Paulus waarschuwt de Kolossenzen dat niemand hen \"als buit meesleept\". Waarmee kan dat volgens hem gebeuren?",
@@ -4998,9 +4998,9 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 2:12"
         },
         {
-            vraag: "Paulus gebruikt het beeld van een schuldbriefje: een lijst waarop alles staat wat wij verkeerd hebben gedaan, en die tegen ons getuigt. Zo'n briefje kun je bewaren, of doorverkopen, of laten afbetalen. In één zin vertelt Paulus wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
-            antwoorden: ["God heeft het doorgestreept en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
-            correct: "God heeft het doorgestreept en aan het kruis genageld",
+            vraag: "Paulus gebruikt het beeld van een schuldbriefje dat tegen ons getuigt. In één zin vertelt hij wat God ermee gedaan heeft. Wat gebeurde er met dat briefje?",
+            antwoorden: ["God heeft het uitgewist en aan het kruis genageld", "God bewaart het tot het laatste oordeel", "God heeft het aan de engelen gegeven", "God laat ons het zelf afbetalen"],
+            correct: "God heeft het uitgewist en aan het kruis genageld",
             bijbelplaats: "Kolossenzen 2:14"
         },
         {
@@ -5034,7 +5034,7 @@ vragenData["Kolossenzen & Filemon"] = {
             bijbelplaats: "Kolossenzen 4:5-6"
         },
         {
-            vraag: "Paulus groet in de brief aan Filemon ook ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen?",
+            vraag: "Paulus richt de brief aan Filemon ook aan ene Archippus, en noemt hem een medestrijder. Diezelfde Archippus krijgt aan het eind van de brief aan de Kolossenzen een korte, dringende boodschap. Wat moet hij doen?",
             antwoorden: ["De taak afmaken die hij van de Heer gekregen heeft", "De brief voorlezen in de synagoge", "Onesimus begeleiden op zijn terugreis", "Paulus opzoeken in de gevangenis in Rome"],
             correct: "De taak afmaken die hij van de Heer gekregen heeft",
             bijbelplaats: "Filemon 2 · Kolossenzen 4:17"
@@ -5055,7 +5055,7 @@ vragenData["Kolossenzen & Filemon"] = {
             vraag: "Paulus noemt dingen waarover niemand de Kolossenzen mag veroordelen: eten, drinken, feestdagen, \"nieuwe maan\" en sabbat. Wat was die nieuwe maan?",
             antwoorden: ["Het begin van een nieuwe maand, met een feest", "De nacht waarin het paaslam geslacht moest worden", "De laatste dag van het jaar", "De avond waarop de sabbat begon en het werk stopte"],
             correct: "Het begin van een nieuwe maand, met een feest",
-            bijbelplaats: "Kolossenzen 2:16 · Numeri 28:11",
+            bijbelplaats: "Kolossenzen 2:16 · Numeri 10:10; 28:11",
             uitleg: "De Joodse kalender liep mee met de maan. Zodra de nieuwe maansikkel gezien werd, begon de maand, en dat werd gevierd met bazuingeschal en offers. Ook Pasen hangt nog steeds af van de maan, en valt daarom elk jaar op een andere datum."
         }
     ]
