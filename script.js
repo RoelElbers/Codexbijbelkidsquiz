@@ -11318,7 +11318,11 @@ function initAlbumPaginaAfstel() {
         zet();
     }, { passive: false });
 
+    // Zolang het album open is, zijn de toetsen van het album: de handlers van
+    // de Schatkamer-afstelling (later geregistreerd) krijgen ze dan niet, zodat
+    // een daar nog geselecteerde trofee niet onzichtbaar meeschuift.
     document.addEventListener("keydown", (e) => {
+        if (scherm.style.display !== "none") e.stopImmediatePropagation();
         if (!sel || !sel.isConnected || scherm.style.display === "none" || !zaal.classList.contains("boek-open")) return;
         const stap = e.shiftKey ? 1 : 0.1;
         const vak = sel.dataset.deel !== "titel";
@@ -11504,6 +11508,7 @@ function openAlbum() {
     bouwAlbumPagina();               // vóór plaatsAlbumIndeling: die zet de src
     plaatsAlbumIndeling(houder.firstElementChild);
     scherm.style.display = "flex";
+    document.body.classList.add("album-in-beeld");   // verbergt het Schatkamer-afstelpaneel
     laadAlbumBeelden();
     speelAlbumReeks(houder.firstElementChild, reeks);
 }
@@ -11513,6 +11518,7 @@ function sluitAlbum() {
     zetAlbumBoekDicht();
     const scherm = document.getElementById("album-scherm");
     if (scherm) scherm.style.display = "none";
+    document.body.classList.remove("album-in-beeld");
     werkAlbumLantaarnBij();
 }
 
@@ -12604,7 +12610,17 @@ if (BETA_MODUS) {
 })();
 
 // Afstelmodus (?afstel=aan): open meteen de zaal en activeer de afstel-UI.
-if (afstelModus) openSchatkamer();
+// Met het plakboek aan blijft het startscherm in beeld, zodat de albumlantaarn
+// linksonder bereikbaar is; het paneel staat er dan al wel, en de Schatkamer
+// gaat open via zijn gewone zone. Zonder plakboek verandert er niets.
+if (afstelModus && plakboekAan) startAfstelOpStartscherm();
+else if (afstelModus) openSchatkamer();
+
+function startAfstelOpStartscherm() {
+    const zaalEl = document.querySelector("#zaal-scherm .sk-zaal");
+    bouwZaal(zaalEl, schatkamerZalen.nt);
+    initAfstel(zaalEl);
+}
 
 // =========================================================================
 // FAKKEL-GLOED — decoratieve, "levende" gloed op de fakkels van het
