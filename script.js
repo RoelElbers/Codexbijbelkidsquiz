@@ -4789,9 +4789,10 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus noemt Onesimus zijn \"kind\" in het geloof. Waarom noemt hij hem zo?",
-            antwoorden: ["Omdat Onesimus door Paulus tot geloof was gekomen, terwijl Paulus gevangenzat", "Omdat Paulus hem als baby had opgevoed", "Omdat Onesimus familie van Paulus was", "Omdat Onesimus nog maar een kind was"],
-            correct: "Omdat Onesimus door Paulus tot geloof was gekomen, terwijl Paulus gevangenzat",
-            bijbelplaats: "Filemon 10"
+            antwoorden: ["Omdat Onesimus door hem tot geloof was gekomen", "Omdat Paulus hem als baby had opgevoed", "Omdat Onesimus familie van Paulus was", "Omdat Onesimus nog maar een kind was"],
+            correct: "Omdat Onesimus door hem tot geloof was gekomen",
+            bijbelplaats: "Filemon 10",
+            uitleg: "Paulus zat gevangen toen Onesimus door hem tot geloof kwam. Daarom noemt hij hem zijn kind: geen kind van vlees en bloed, maar een kind in het geloof."
         },
         {
             vraag: "Hoe moeten de gelovigen volgens Paulus zingen tot God?",
@@ -4981,8 +4982,8 @@ vragenData["Kolossenzen & Filemon"] = {
         },
         {
             vraag: "Paulus waarschuwt de Kolossenzen voor mensen die hen met mooie praatjes willen misleiden. Hij schrijft dat de echte schatten verborgen liggen in Christus zelf. Welke schatten zijn dat volgens hem?",
-            antwoorden: ["Alle schatten van wijsheid en kennis", "Alle goud van de tempel", "Alle boeken van de profeten", "Alle namen van de gelovigen"],
-            correct: "Alle schatten van wijsheid en kennis",
+            antwoorden: ["Alle wijsheid en kennis", "Alle goud van de tempel", "Alle boeken van de profeten", "Alle namen van de gelovigen"],
+            correct: "Alle wijsheid en kennis",
             bijbelplaats: "Kolossenzen 2:2-4"
         },
         {
