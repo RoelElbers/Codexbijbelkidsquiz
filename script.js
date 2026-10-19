@@ -4426,10 +4426,11 @@ vragenData["1 & 2 Tessalonicenzen"] = {
 vragenData["Timoteüs & Titus"] = {
     beginner: [
         {
-            vraag: "Wat moet Timoteüs volgens Paulus zijn voor de andere gelovigen?",
-            antwoorden: ["Een goed voorbeeld", "Een wijze leraar", "Een sterke leider", "Een goede spreker"],
-            correct: "Een goed voorbeeld",
-            bijbelplaats: "1 Timoteüs 4:12"
+            vraag: "Van wie had Timoteüs volgens Paulus zijn geloof meegekregen?",
+            antwoorden: ["Van zijn grootmoeder en zijn moeder", "Van zijn vader en zijn grootvader", "Van de priesters in de tempel", "Van een verhalenverteller op de markt"],
+            correct: "Van zijn grootmoeder en zijn moeder",
+            bijbelplaats: "2 Timoteüs 1:5 · Handelingen 16:1",
+            uitleg: "Paulus noemt ze bij naam: grootmoeder Loïs en moeder Eunike. Volgens Handelingen was de moeder van Timoteüs een Joodse vrouw die in Jezus geloofde, en zijn vader een Griek. Zo kreeg Timoteüs het geloof thuis mee."
         },
         {
             vraag: "Wat schrijft 2 Timoteüs over de Schrift?",
@@ -4457,13 +4458,13 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Wat moeten de gelovigen volgens Paulus volop blijven doen?",
-            antwoorden: ["Zich erop toeleggen het goede te doen", "Veel kennis verzamelen", "Vaak en lang bidden", "De wet uit hun hoofd leren"],
+            antwoorden: ["Zich erop toeleggen het goede te doen", "Veel kennis verzamelen", "Grote feesten organiseren", "De wet uit hun hoofd leren"],
             correct: "Zich erop toeleggen het goede te doen",
             bijbelplaats: "Titus 3:8"
         },
         {
             vraag: "Paulus zegt dat er één God is en één \"middelaar\" tussen God en mensen. Wie is die middelaar?",
-            antwoorden: ["Jezus Christus", "Mozes", "Abraham", "De hogepriester"],
+            antwoorden: ["Jezus Christus", "Mozes", "Abraham", "De hogepriester in de tempel"],
             correct: "Jezus Christus",
             bijbelplaats: "1 Timoteüs 2:5"
         },
@@ -4499,14 +4500,15 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus schrijft: \"Ik heb de goede strijd gestreden, ik heb de wedloop volbracht.\" Waar komt dat beeld vandaan?",
-            antwoorden: ["Uit de sportwedstrijden van die tijd", "Uit het leger", "Uit de landbouw", "Uit de rechtszaal"],
+            antwoorden: ["Uit de sportwedstrijden van die tijd", "Uit de scheepvaart", "Uit de landbouw", "Uit de rechtszaal"],
             correct: "Uit de sportwedstrijden van die tijd",
-            bijbelplaats: "2 Timoteüs 4:7"
+            bijbelplaats: "2 Timoteüs 4:7-8",
+            uitleg: "Het Griekse woord voor \"strijd\" werd ook gebruikt voor een sportwedstrijd. Paulus denkt aan een sporter die tot de finish doorzet. In het volgende vers noemt hij de krans die de winnaar kreeg."
         },
         {
             vraag: "Paulus schrijft aan Timoteüs: laat niemand op je neerkijken omdat je jong bent. Wat zegt dat over Timoteüs?",
-            antwoorden: ["Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
-            correct: "Hij had een taak gekregen die mensen meestal pas op oudere leeftijd kregen",
+            antwoorden: ["Hij was nog vrij jong, maar had al een belangrijke taak als leider", "Hij was nog een kind en mocht niet meedoen", "Hij was pas net gelovig geworden", "Hij was jonger dan alle andere gelovigen"],
+            correct: "Hij was nog vrij jong, maar had al een belangrijke taak als leider",
             bijbelplaats: "1 Timoteüs 4:12"
         },
         {
@@ -4570,7 +4572,7 @@ vragenData["Timoteüs & Titus"] = {
             antwoorden: ["Kracht, liefde en bezonnenheid", "Vrolijkheid, geluk en gezondheid", "Geloof, hoop en liefde", "Wijsheid, geduld en vrede"],
             correct: "Kracht, liefde en bezonnenheid",
             bijbelplaats: "2 Timoteüs 1:7",
-            uitleg: "Bezonnen zijn betekent: rustig nadenken voordat je iets zegt of doet, en je niet laten meeslepen door angst of boosheid. Het Griekse woord dat Paulus gebruikt, heeft te maken met een helder en gezond verstand. In sommige vertalingen staat hier daarom \"zelfbeheersing\" of \"gematigdheid\". Paulus bedoelt: wie op God vertrouwt, hoeft niet in paniek te raken, maar kan kalm en verstandig blijven."
+            uitleg: "Bezonnen zijn betekent: rustig nadenken voordat je iets zegt of doet, en je niet laten meeslepen door angst of boosheid. Het Griekse woord dat Paulus gebruikt, heeft te maken met een helder en gezond verstand. In sommige vertalingen staat hier daarom \"zelfbeheersing\" of \"gematigdheid\". Paulus moedigt Timoteüs aan om zich niet door angst te laten tegenhouden: God geeft hem kracht, liefde en bezonnenheid om zijn taak te doen."
         },
         {
             vraag: "Waarvoor moet Timoteüs zich volgens Paulus niet schamen?",
@@ -4580,7 +4582,7 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Welke \"betrouwbare uitspraak\" geeft Paulus door — waarvoor kwam Christus in de wereld?",
-            antwoorden: ["Om zondaars te redden", "Om koning te worden", "Om de tempel te bouwen", "Om regels te geven"],
+            antwoorden: ["Om zondaars te redden", "Om de Romeinen uit het land te verdrijven", "Om de tempel te bouwen", "Om regels te geven"],
             correct: "Om zondaars te redden",
             bijbelplaats: "1 Timoteüs 1:15"
         },
@@ -4625,13 +4627,13 @@ vragenData["Timoteüs & Titus"] = {
         },
         {
             vraag: "Paulus waarschuwt tegen de jacht op geld met een nuchtere waarheid over geboorte en dood. Wat schrijft hij?",
-            antwoorden: ["We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee", "Wie veel bezit heeft, hoeft zich geen zorgen te maken", "Rijke mensen kunnen het koninkrijk van God niet binnengaan", "Wie veel weggeeft, krijgt van God vanzelf meer terug"],
+            antwoorden: ["We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee", "Wie veel bezit heeft, hoeft zich geen zorgen te maken", "Wie veel geld heeft, kan alles kopen waar hij gelukkig van wordt", "Wie arm geboren wordt, blijft altijd arm"],
             correct: "We hebben niets meegebracht in de wereld, en nemen er ook niets uit mee",
             bijbelplaats: "1 Timoteüs 6:7"
         },
         {
             vraag: "Tegen het einde van 1 Timoteüs staat een lofzang op God. Met welke titel wordt God daar genoemd?",
-            antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots waarop Israël altijd kon bouwen", "De Vader van alle licht aan de hemel", "De Wijnstok waar de gelovigen als ranken aan zitten"],
+            antwoorden: ["De Koning der koningen en de Heer der heren", "De Rots waarop Israël altijd kon bouwen", "De Beschermer van alle zeevaarders", "De Wijnstok waar de gelovigen als ranken aan zitten"],
             correct: "De Koning der koningen en de Heer der heren",
             bijbelplaats: "1 Timoteüs 6:15"
         },
@@ -4684,8 +4686,8 @@ vragenData["Timoteüs & Titus"] = {
             bijbelplaats: "2 Timoteüs 4:13"
         },
         {
-            vraag: "Toen Paulus zich voor de rechter moest verdedigen, kwam er niemand voor hem op. Al zijn vrienden lieten hem in de steek. Wat schrijft hij daarover?",
-            antwoorden: ["Ik bid dat het hun niet wordt aangerekend", "Ik zal het hun nooit vergeven", "God zal hen zwaar straffen", "Ik had het kunnen weten"],
+            vraag: "Toen Paulus zich voor de rechter moest verdedigen, kwam er niemand voor hem op. Iedereen liet hem in de steek. Wat schrijft hij daarover?",
+            antwoorden: ["Ik bid dat het hun niet wordt aangerekend", "Ik zal het hun nooit vergeven", "Ik ga nooit meer met hen praten", "Ik had het kunnen weten"],
             correct: "Ik bid dat het hun niet wordt aangerekend",
             bijbelplaats: "2 Timoteüs 4:16"
         },
@@ -4705,11 +4707,11 @@ vragenData["Timoteüs & Titus"] = {
             vraag: "Paulus liet Titus achter op Kreta. Wat voor eiland was dat?",
             antwoorden: ["Een groot eiland in de Middellandse Zee met veel steden en havens", "Een klein rotseiland waar bijna niemand woonde", "Een eiland vlak voor de kust van Israël", "Een onbewoond eiland waar schepen alleen bij storm kwamen"],
             correct: "Een groot eiland in de Middellandse Zee met veel steden en havens",
-            bijbelplaats: "Titus 1:5 · Handelingen 27:7-12",
+            bijbelplaats: "Titus 1:5 · Handelingen 2:11; 27:7-12",
             uitleg: "Kreta is een groot eiland in de Middellandse Zee met veel steden en havens. In de tijd van Paulus hoorde het bij het Romeinse Rijk en lag het aan belangrijke vaarroutes.\n\nOp Kreta woonden al eeuwen Joodse gemeenschappen. In Handelingen worden ook Kretenzers genoemd die met Pinksteren in Jeruzalem waren. Dat is iets anders dan de groepen gelovigen in Jezus waarover Paulus later aan Titus schrijft. Titus kreeg de opdracht om in verschillende steden oudsten aan te stellen voor deze gemeenten. Sommige van die eerste christenen kunnen Joods zijn geweest, maar de Bijbel vertelt niet precies hoe die gemeenten op Kreta waren ontstaan."
         },
         {
-            vraag: "In de tijd van Paulus werd er vaak op perkament geschreven. Wat is perkament?",
+            vraag: "In de tijd van Paulus schreven mensen onder andere op perkament. Wat is perkament?",
             antwoorden: ["Dun bewerkte dierenhuid om op te schrijven", "Fijn geweven linnen om boekrollen in te wikkelen", "Dunne houten plankjes met was erop", "Geperst riet uit Egypte"],
             correct: "Dun bewerkte dierenhuid om op te schrijven",
             bijbelplaats: "2 Timoteüs 4:13"

@@ -72,7 +72,7 @@ const ONTDEK_WOORDENBOEK = [
     { term: "Opziener", verwijstNaar: "wie-gemeenten" },
     { term: "Oudste (ouderling)", verwijstNaar: "wie-gemeenten" },
     { term: "Pasen (Pesach)", uitleg: "Pesach is het Joodse feest waarop het volk viert dat God hen lang geleden uit de slavernij in Egypte bevrijdde. Jezus vierde dit feest ook. Voor christenen kreeg Pasen er later een tweede betekenis bij: het feest van Jezus' opstanding." },
-    { term: "Perkament", uitleg: "Dun bewerkte dierenhuid waarop vroeger werd geschreven. Het was sterker en duurzamer dan papyrus. In 2 Timoteüs vraagt Paulus of Timoteüs de boekrollen en vooral de perkamenten wil meebrengen." },
+    { term: "Perkament", uitleg: "Dun bewerkte dierenhuid waarop vroeger werd geschreven. Het was sterker en duurzamer dan papyrus, maar ook duurder; daarom schreef men meestal op papyrus. In 2 Timoteüs vraagt Paulus of Timoteüs de boekrollen en vooral de perkamenten wil meebrengen." },
     { term: "Pinksteren (Wekenfeest)", uitleg: "Het Wekenfeest was een Joods oogstfeest, zeven weken na Pesach: men bracht de eerste broden van de nieuwe tarwe naar de tempel. Griekssprekende Joden noemden het <em>pentēkostē</em>, \"de vijftigste\", en daar komt ons woord Pinksteren vandaan. Op dat feest kwam de Heilige Geest op de leerlingen (Handelingen 2:1-4). Daarom vieren christenen met Pinksteren de komst van de Heilige Geest." },
     { term: "Priester", verwijstNaar: "wie-tempel" },
     { term: "Profeet", verwijstNaar: "wie-gemeenten" },
