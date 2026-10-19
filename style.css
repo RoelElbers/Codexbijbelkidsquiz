@@ -2172,7 +2172,7 @@ height: 22%;
     width: min(100vw, calc(100vh * 16 / 9));
     height: min(100vh, calc(100vw * 9 / 16));
     overflow: hidden;
-    background: #0b1330 url("images/album/achtergrond.webp?v=3") center / 100% 100% no-repeat;
+    background: #0b1330 url("images/album/achtergrond.webp?v=4") center / 100% 100% no-repeat;
 }
 .album-sterren,
 .album-sterren .ps-sterren {
@@ -2461,6 +2461,110 @@ height: 22%;
 /* Met het boek open is het (onzichtbare) boek op het podium niet tikbaar. */
 .album-zaal.boek-open .album-boek {
     pointer-events: none;
+}
+
+/* Fase 3b: de pagina in het open boek (bouwAlbumPagina in script.js). De
+   posities komen uit albumPaginas als --x (midden), --top (bovenkant) en
+   --maat (breedte van het vak), in procenten van het vak. De laag verschijnt
+   zacht zodra het boek open ligt (.boek-open) en is zonder overgang weg zodra
+   die klasse eraf gaat ("Boek sluiten"). */
+.album-pagina {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0;
+}
+.album-zaal.boek-open .album-pagina {
+    opacity: 1;
+    transition: opacity 0.6s ease-out;
+}
+.album-pagina-titel {
+    position: absolute;
+    left: var(--x);
+    top: var(--top);
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+}
+.album-pagina-titel-tekst {
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0215);
+    line-height: 1.15;
+    color: #3d2512;
+}
+/* Dun gouden lijntje met een ruitje eronder. */
+.album-pagina-sier {
+    position: relative;
+    width: 70%;
+    height: calc(var(--game-breedte) * 0.0011);
+    margin-top: calc(var(--game-breedte) * 0.0045);
+    background: linear-gradient(90deg, rgba(184, 138, 46, 0), #b88a2e 18%, #d9b45a 50%, #b88a2e 82%, rgba(184, 138, 46, 0));
+}
+.album-pagina-sier::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: calc(var(--game-breedte) * 0.0042);
+    width: calc(var(--game-breedte) * 0.0055);
+    height: calc(var(--game-breedte) * 0.0055);
+    background: #c79a3c;
+    transform: translateX(-50%) rotate(45deg);
+}
+.album-vak {
+    position: absolute;
+    left: var(--x);
+    top: var(--top);
+    width: var(--maat);
+    margin: 0;
+    transform: translateX(-50%);
+}
+/* Niet gewonnen: alleen de gouden omlijning (Panini-stijl). */
+.album-vak-kader {
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    border: calc(var(--game-breedte) * 0.0012) solid #c79a3c;
+    border-radius: calc(var(--game-breedte) * 0.002);
+}
+/* Gewonnen: het plaatje met een dunne gouden rand en een zachte schaduw. */
+.album-vak-gewonnen .album-vak-kader {
+    border-color: #c99d3e;
+    box-shadow: 0 calc(var(--game-breedte) * 0.002) calc(var(--game-breedte) * 0.007) rgba(40, 22, 6, 0.38);
+    overflow: hidden;
+}
+.album-vak-kader img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.album-vak-naam {
+    margin-top: calc(var(--game-breedte) * 0.004);
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0105);
+    line-height: 1.2;
+    color: #3d2512;
+    text-align: center;
+}
+/* Afstelmodus (?afstel=aan, zie initAlbumPaginaAfstel): titel en vakken zijn
+   sleepbaar in het open boek. Het paneel van de pagina staat er alleen met
+   het boek open, dat van de lantaarn alleen met het boek dicht. */
+.album-zaal.afstel.boek-open .album-pagina [data-deel] {
+    pointer-events: auto;
+    cursor: move;
+    touch-action: none;
+}
+.album-pagina .afstel-geselecteerd {
+    outline: 2px solid #36dfff;
+    outline-offset: 2px;
+}
+.album-zaal:not(.boek-open) .album-pagina-afstel,
+.album-zaal.boek-open .album-afstel-info:not(.album-pagina-afstel) {
+    display: none;
 }
 
 /* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de

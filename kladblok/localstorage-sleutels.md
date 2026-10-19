@@ -55,6 +55,7 @@ geen voortgang.
 | `speler_<id>_schildpunt_<boekKey>_<niveau>` | is dit schildpunt al verdiend | alleen `"1"`; afwezig = nog niet verdiend | Het aantal punten op het schild. Elk boek+niveau telt hooguit één keer. | `setSchildpuntVerdiend()`, r. 7230–7232 (setItem r. 7231); sleutel via `schildKey()`, r. 7222–7224 |
 | `speler_<id>_kist_<kistKey>` | is deze schatkist verdiend | `"vergrendeld"` / `"verdiend"` (`kistVolgorde`, r. 6973). Onbekend telt als `"vergrendeld"`. | Of de kist op het startscherm en in de zaal vol of donker is — **en of de Verborgen Schat speelbaar is**: `magVerborgenSchatSpelen()` (r. 7035–7039) eist dat alle drie op `"verdiend"` staan. | `setKistStatus()`, r. 6999–7008 (setItem r. 7006) |
 | `speler_<id>_verborgenschat_voltooid` | is de Verborgen Schat ontdekt | exact `"waar"`; elke andere waarde telt als niet ontdekt | De diamanten kist gaat van donker silhouet naar vol (startscherm én schatkamer), en de knop "Verborgen Schat" in Naslag & uitleg ontgrendelt (`isVerborgenSchatOntgrendeld()`, r. 8825–8827) | `eindScherm()`, r. 10694 — alleen bij 10 van de 10 goed |
+| `speler_<id>_plakboek_plaatjes` | welke albumplaatjes gewonnen zijn (plakboek, fase 3b) | JSON-lijst van plaatje-id's uit `albumPaginas`, bijv. `["os-en-ezel","lam-van-god"]`; afwezig of kapotte JSON = nog niets gewonnen | Welke vakken in het opengeslagen Bijbelkidsalbum een plaatje tonen; de rest toont alleen de gouden omlijning met de naam (`leesGewonnenPlaatjes()`, `bouwAlbumPagina()`). Alleen met `plakboekAan`. | nog nergens: het omzetten van het tegoed in plaatjes komt in een latere fase |
 
 **`<boekKey>`** — de achttien korte sleutels uit `boekNaarKey` (r. 7049–7068).
 Ze zijn gelijk aan de achttien `sleutel: "trofee_…"`-waarden in de
@@ -97,14 +98,15 @@ verhuist ze naar het eerste profiel. Daarna zijn ze weg.
 Zo ja, dan wordt oude voortgang overgenomen in een eerste profiel; zo nee, dan
 toont het spel het Nieuw-spel-scherm.
 
-## Twee schakelaars die localStorage helemaal overslaan
+## Drie schakelaars die localStorage helemaal overslaan
 
-Relevant voor het doel "voortgang zetten zonder te spelen": er bestaan al twee
+Relevant voor het doel "voortgang zetten zonder te spelen": er bestaan al drie
 URL-parameters die niets opslaan maar de weergave forceren.
 
 | Parameter | Wat het doet | Waar |
 |---|---|---|
 | `?demo=brons` / `?demo=zilver` / `?demo=goud` | `demoNiveau` (r. 7083–7086). `getTrofeeNiveau()` en `getKistStatus()` geven dan **altijd** dat niveau terug, en `setTrofeeNiveau()` slaat niets op. Alle trofeeën en kisten zien er behaald uit. | r. 7083, 7089, 6994, 7097 |
+| `?album=alles` | `albumAlles` (alleen samen met `?plakboek=aan`). Alle plaatjes in het Bijbelkidsalbum tellen als gewonnen; `speler_<id>_plakboek_plaatjes` wordt niet gelezen en niet geschreven. | `bouwAlbumPagina()` |
 | `?afstel=aan` | `afstelModus` (r. 9483). Onder meer: `openVerborgenSchat()` laat de ronde ook toe als de kisten nog niet verdiend zijn (r. 8186), en de kisten worden altijd onthuld getoond. | r. 9483 |
 
 Let op het verschil met wat STAP B gaat doen: `?demo=` **toont** alles als

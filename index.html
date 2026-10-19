@@ -32,10 +32,10 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=390">
+    <link rel="stylesheet" href="style.css?v=391">
 
-    <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=3.
-         Zeven verwijzingen dragen samen dit eigen nummer:
+    <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
+         Acht verwijzingen dragen samen dit eigen nummer:
              style.css : 2164   achtergrond.webp    (.album-zaal)
              index.html: 720    boek.webp           (data-src van .album-boek)
              index.html: 730    lantaarn-terug.webp (de Terug-lantaarn linksonder)
@@ -43,11 +43,15 @@
              index.html: 737    boek-open.webp      (de rechterhelft, .album-open-rechts)
              index.html: 741    kaft-voor.webp      (voorkant van de kaft)
              index.html: 742    boek-open.webp      (achterkant van de kaft: de linkerhelft)
-         (Regelnummers schuiven; zoek desnoods op "images/album/" in beide bestanden.)
+             script.js : 11137  const ALBUM_VERSIE  (de plaatjes in images/album/dieren/:
+                                os-en-ezel, duif-bij-de-doop, lam-van-god,
+                                ezelsveulen en leeuw-van-juda, via albumPaginas)
+         (Regelnummers schuiven; zoek desnoods op "images/album/" in index.html en
+         style.css, en op ALBUM_VERSIE in script.js.)
 
          Hoog dit nummer op zodra een bestand in images/album/ verandert. Een
          nieuwe plaat houdt zijn bestandsnaam, dus zonder ophoging blijft een
-         bezoeker de oude uit zijn browsercache zien. Alle zeven de plekken gaan
+         bezoeker de oude uit zijn browsercache zien. Alle acht de plekken gaan
          samen omhoog. Los van de cache-buster en van de avatarteller: die liften
          niet met elkaar mee. -->
 
@@ -727,10 +731,13 @@
              De kaft is een 3D-houder met twee kanten (voor: kaft-voor, achter:
              de linkerhelft van boek-open) die om de rug openzwaait boven de
              rechterhelft (.album-open-rechts); .album-dim dimt de bibliotheek.
-             Daarna neemt het complete beeld (.album-open) het over. Leeg tot fase 3b. -->
+             Daarna neemt het complete beeld (.album-open) het over.
+             Fase 3b: in het open boek staan de titel en de plaatjes van de
+             pagina (#album-pagina). bouwAlbumPagina vult die uit albumPaginas
+             in script.js; een nieuwe pagina is daar een extra object. -->
         <div id="album-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="album-zaal">
-                <img class="album-boek" data-src="images/album/boek.webp?v=3" alt="Bijbelkidsalbum openen"
+                <img class="album-boek" data-src="images/album/boek.webp?v=4" alt="Bijbelkidsalbum openen"
                      role="button" tabindex="0" onclick="openAlbumBoek()"
                      onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openAlbumBoek(); }">
                 <div id="album-sterren" class="album-sterren"></div>
@@ -740,22 +747,25 @@
                      albumIndeling.lantaarn (plaatsAlbumIndeling). -->
                 <button type="button" class="album-lantaarn" aria-label="Terug" onclick="sluitAlbum()">
                     <span class="album-lantaarn-schaduw" aria-hidden="true"></span>
-                    <img data-src="images/album/lantaarn-terug.webp?v=3" alt="" draggable="false">
+                    <img data-src="images/album/lantaarn-terug.webp?v=4" alt="" draggable="false">
                     <span class="album-lantaarn-gloed" aria-hidden="true"></span>
                     <span class="album-lantaarn-opschrift" aria-hidden="true">Terug</span>
                 </button>
                 <div class="album-dim" aria-hidden="true"></div>
-                <img class="album-open" data-src="images/album/boek-open.webp?v=3" alt="" aria-hidden="true">
+                <img class="album-open" data-src="images/album/boek-open.webp?v=4" alt="" aria-hidden="true">
                 <div class="album-open-rechts" aria-hidden="true">
-                    <img data-src="images/album/boek-open.webp?v=3" alt="">
+                    <img data-src="images/album/boek-open.webp?v=4" alt="">
                 </div>
                 <div class="album-kaft-vlucht" aria-hidden="true">
                     <div class="album-kaft-draai">
-                        <div class="album-kaft-voor"><img data-src="images/album/kaft-voor.webp?v=3" alt=""></div>
-                        <div class="album-kaft-achter"><img data-src="images/album/boek-open.webp?v=3" alt=""></div>
+                        <div class="album-kaft-voor"><img data-src="images/album/kaft-voor.webp?v=4" alt=""></div>
+                        <div class="album-kaft-achter"><img data-src="images/album/boek-open.webp?v=4" alt=""></div>
                     </div>
                 </div>
                 <div class="album-boek-gloed" aria-hidden="true"></div>
+                <!-- De pagina in het open boek: verschijnt pas als het openklappen
+                     klaar is (.boek-open), en is meteen weg bij "Boek sluiten". -->
+                <div id="album-pagina" class="album-pagina"></div>
                 <button class="schatkamer-terug album-sluit" onclick="sluitAlbumBoek()">Boek sluiten</button>
             </div>
         </div>
@@ -833,9 +843,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=390"></script>
-    <script src="ontdekken-inhoud.js?v=390"></script>
-    <script src="script.js?v=390"></script>
+    <script src="lang/nl.js?v=391"></script>
+    <script src="ontdekken-inhoud.js?v=391"></script>
+    <script src="script.js?v=391"></script>
 
 </body>
 
