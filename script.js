@@ -4292,7 +4292,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
         },
         {
             vraag: "Bij de komst van Jezus worden de levende gelovigen volgens Paulus \"opgenomen\". Waarheen gaan zij dan?",
-            antwoorden: ["De wolken in, de Heer tegemoet", "Naar de tempel in Jeruzalem", "Naar de allerhoogste top van de heilige berg Sion", "Naar een berg buiten de stad"],
+            antwoorden: ["De wolken in, de Heer tegemoet", "Naar de tempel in Jeruzalem", "Naar de allerhoogste top van de heilige berg Sion", "Naar de haven van Tessalonica"],
             correct: "De wolken in, de Heer tegemoet",
             bijbelplaats: "1 Tessalonicenzen 4:17"
         },
@@ -4312,7 +4312,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Paulus schrijft: \"Doof de Geest niet uit.\" Aan wat voor beeld doet het woord \"uitdoven\" denken?",
             antwoorden: ["Aan een vuur of een lamp die brandt", "Aan een muur die omvalt", "Aan een schip dat zinkt", "Aan een boom die wordt omgehakt"],
             correct: "Aan een vuur of een lamp die brandt",
-            bijbelplaats: "1 Tessalonicenzen 5:19",
+            bijbelplaats: "1 Tessalonicenzen 5:19-20",
             uitleg: "Het Griekse werkwoord betekent \"uitdoven\" of \"blussen\". Het werd gebruikt voor een vuur, maar ook voor een lamp die uitgaat, zoals bij de tien meisjes met hun lampen (Matteüs 25:8). In de Bijbel wordt de Geest vaker met vuur vergeleken — denk aan de vlammen op de Pinksterdag. Paulus waarschuwt de gelovigen dat ze het werk van de Geest niet mogen tegenhouden. Meteen daarna schrijft hij: veracht de profetieën niet."
         }
     ],
@@ -4408,7 +4408,7 @@ vragenData["1 & 2 Tessalonicenzen"] = {
             vraag: "Paulus waarschuwt voor mensen die \"ongeregeld\" leven. Welk beeld past bij het Griekse woord dat hij gebruikt?",
             antwoorden: ["Een soldaat die uit het gelid loopt", "Een rechter die zijn hamer kwijt is", "Een schip dat zijn anker laat vallen", "Een boer die zijn akker omploegt"],
             correct: "Een soldaat die uit het gelid loopt",
-            bijbelplaats: "2 Tessalonicenzen 3:6",
+            bijbelplaats: "2 Tessalonicenzen 3:6, 11",
             uitleg: "Het Griekse woord betekent \"wanordelijk\", \"uit de rij\". Het hoort bij een woord dat ook gebruikt werd voor de opstelling van soldaten: wie uit het gelid stapte, bracht de hele linie in gevaar. Paulus gebruikt het voor mensen die niet wilden werken en zich met andermans zaken bemoeiden, zodat de anderen hun last moesten dragen. Het gaat dus niet om mensen die niet kúnnen werken."
         }
     ]
