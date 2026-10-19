@@ -3876,13 +3876,13 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 2:3"
         },
         {
-            vraag: "Wat belooft Paulus dat God zal doen voor wie Hem vertrouwt?",
+            vraag: "Wat belooft Paulus dat God zal doen voor de gelovigen?",
             antwoorden: ["Geven wat je echt nodig hebt", "Al je wensen vervullen", "Je beroemd maken", "Je nooit laten werken"],
             correct: "Geven wat je echt nodig hebt",
             bijbelplaats: "Filippenzen 4:19"
         },
         {
-            vraag: "Als je bidt in plaats van je zorgen te maken, wat zal je hart dan bewaren?",
+            vraag: "Als je bidt in plaats van je zorgen te maken, wat waakt er dan volgens Paulus over je hart en je gedachten?",
             antwoorden: ["De vrede van God", "Een sterke muur", "Goede vrienden", "Veel geluk"],
             correct: "De vrede van God",
             bijbelplaats: "Filippenzen 4:6-7"
@@ -3894,10 +3894,11 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 2:10"
         },
         {
-            vraag: "Paulus schrijft dat hij alles aankan, omdat iemand hem kracht geeft voor alles wat hij moet doen. Wie geeft hem die kracht?",
+            vraag: "Paulus schrijft dat hij met alles kan omgaan, of hij nu veel heeft of weinig, omdat iemand hem de kracht geeft. Wie geeft hem die kracht?",
             antwoorden: ["Christus", "De keizer", "Zijn vrienden in Filippi", "De engelen"],
             correct: "Christus",
-            bijbelplaats: "Filippenzen 4:13"
+            bijbelplaats: "Filippenzen 4:12-13",
+            uitleg: "Paulus zit gevangen als hij dit schrijft. Hij weet wat het is om honger te hebben, en ook wat het is om meer dan genoeg te hebben. Door Christus kan hij het allemaal aan en blijft hij tevreden. Het gaat dus niet om alles kunnen wat je wilt, maar om sterk blijven in alles wat er gebeurt."
         },
         {
             vraag: "Hoe wil Paulus dat de gelovigen bekendstaan bij alle mensen om hen heen?",
@@ -4013,7 +4014,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus vertelt over zijn leven vóór hij Jezus volgde. Tot welke Joodse groep hoorde hij?",
-            antwoorden: ["De farizeeën", "De sadduceeën", "De schriftgeleerden", "De essenen"],
+            antwoorden: ["De farizeeën", "De sadduceeën", "De herodianen", "De essenen"],
             correct: "De farizeeën",
             bijbelplaats: "Filippenzen 3:5"
         },
@@ -4033,7 +4034,7 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft over zijn eigen leven: voor hem is leven Christus. En wat is sterven dan volgens hem?",
-            antwoorden: ["Winst", "Verlies", "Rust", "Het einde"],
+            antwoorden: ["Winst", "Verlies", "Iets om bang voor te zijn", "Het einde"],
             correct: "Winst",
             bijbelplaats: "Filippenzen 1:21"
         },
@@ -4062,7 +4063,7 @@ vragenData["Filippenzen"] = {
             bijbelplaats: "Filippenzen 1:27"
         },
         {
-            vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die ruzie met elkaar hadden, om het weer eens te worden. Maar hij schrijft ook iets moois over deze twee ruziënde vrouwen. Wat schrijft hij over hen?",
+            vraag: "Paulus vraagt Euodia en Syntyche, twee vrouwen in Filippi die onenigheid hadden, om weer eensgezind te zijn. Maar hij schrijft ook iets moois over hen. Wat schrijft hij over deze twee vrouwen?",
             antwoorden: ["Dat ze samen met hem gestreden hebben voor het goede nieuws", "Dat ze de rijkste vrouwen van Filippi waren", "Dat ze in hun eentje de hele gemeente in Filippi hadden gesticht", "Dat ze allebei door Lydia waren opgevoed"],
             correct: "Dat ze samen met hem gestreden hebben voor het goede nieuws",
             bijbelplaats: "Filippenzen 4:3"
@@ -4075,8 +4076,8 @@ vragenData["Filippenzen"] = {
         },
         {
             vraag: "Paulus schrijft dat zijn gevangenschap juist hielp om het goede nieuws bekend te maken. Bij wie was inmiddels bekend dat hij vanwege Christus gevangen zat?",
-            antwoorden: ["Bij de hele keizerlijke garde en bij vele anderen", "Alleen bij zijn medegevangenen", "Alleen bij de leiders van de gemeente in Filippi", "Bij bijna niemand, omdat hij volledig afgezonderd zat"],
-            correct: "Bij de hele keizerlijke garde en bij vele anderen",
+            antwoorden: ["Bij iedereen in het Romeinse hoofdkwartier en bij alle anderen", "Alleen bij zijn medegevangenen", "Alleen bij de leiders van de gemeente in Filippi", "Bij bijna niemand, omdat hij volledig afgezonderd zat"],
+            correct: "Bij iedereen in het Romeinse hoofdkwartier en bij alle anderen",
             bijbelplaats: "Filippenzen 1:13"
         },
         {
@@ -4099,11 +4100,11 @@ vragenData["Filippenzen"] = {
             uitleg: "Een plengoffer was een offer van vloeistof, meestal wijn. De priester goot die uit bij het altaar of over een ander offer heen. Anders dan bij brood of vlees at niemand er iets van: de wijn liep weg en was op. Zulke offers kende men in de tempel in Jeruzalem, en Grieken en Romeinen deden het ook. Paulus zit gevangen als hij dit schrijft en weet niet of hij levend vrijkomt. Met dat beeld zegt hij: ik geef mezelf helemaal weg, voor God en voor jullie geloof, en ik houd niets voor mezelf achter."
         },
         {
-            vraag: "Filippi was een Romeinse kolonie: de inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
+            vraag: "Filippi was een Romeinse kolonie: veel inwoners hadden het Romeinse burgerrecht, terwijl de stad Rome honderden kilometers verderop lag. Met dat beeld schrijft Paulus dat ons burgerschap in de hemel is. Wat wil hij daarmee zeggen?",
             antwoorden: ["Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft", "Je moet zo snel mogelijk verhuizen naar de plek waar je thuishoort", "Je hoeft je niets aan te trekken van de stad waarin je woont", "Je bent pas echt burger als je die reis zelf hebt gemaakt"],
             correct: "Je hoort ergens thuis waar je nog niet woont, en dat bepaalt hoe je hier leeft",
             bijbelplaats: "Filippenzen 3:20 · Handelingen 16:12, 21",
-            uitleg: "Het Griekse woord politeuma betekent \"burgerschap\". De inwoners van Filippi hoorden bij Rome, ook al lag Rome ver weg. In Handelingen 16:21 noemen ze zichzelf trots \"Romeinen\". Paulus zegt dat christenen net zo bij de hemel horen, ook al wonen ze op aarde."
+            uitleg: "Het Griekse woord politeuma betekent \"burgerschap\". Filippi hoorde bij Rome, ook al lag Rome ver weg: de stad had Romeinse wetten en een Romeins bestuur. In Handelingen 16:21 noemen sommige inwoners zich trots \"Romeinen\". Paulus zegt dat christenen net zo bij de hemel horen, ook al wonen ze op aarde."
         },
         {
             vraag: "Paulus vergelijkt het geloof met een hardloopwedstrijd en spreekt over de prijs. Wat kreeg de winnaar bij de grote wedstrijden in die tijd?",
