@@ -3539,8 +3539,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Wat raadt Paulus aan over boos zijn?",
-            antwoorden: ["Blijf niet boos; maak het goed voordat de dag voorbij is", "Blijf net zo lang boos tot de ander toegeeft", "Doe gewoon iets vervelends terug", "Krop je boosheid op en hou je net zo lang in totdat je ontploft"],
-            correct: "Blijf niet boos; maak het goed voordat de dag voorbij is",
+            antwoorden: ["Doe niets verkeerds als je boos bent, en blijf niet boos tot de zon ondergaat", "Blijf net zo lang boos tot de ander toegeeft", "Doe gewoon iets vervelends terug", "Krop je boosheid op en hou je net zo lang in totdat je ontploft"],
+            correct: "Doe niets verkeerds als je boos bent, en blijf niet boos tot de zon ondergaat",
             bijbelplaats: "Efeziërs 4:26"
         },
         {
@@ -3601,14 +3601,14 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus schrijft dat God een geheim heeft bekendgemaakt dat eeuwenlang verborgen was. Wat is dat geheim?",
-            antwoorden: ["Dat ook niet-Joodse volken er helemaal bij horen", "Dat niemand precies weet wanneer Jezus terugkomt", "Dat de tempel op een dag zou worden afgebroken", "Dat God een nieuwe wet zou geven, strenger dan die van Mozes"],
-            correct: "Dat ook niet-Joodse volken er helemaal bij horen",
-            bijbelplaats: "Efeziërs 3:6"
+            antwoorden: ["Dat ook niet-Joden door Christus samen met de Joden delen in Gods beloften", "Dat niemand precies weet wanneer Jezus terugkomt", "Dat de tempel op een dag zou worden afgebroken", "Dat God een nieuwe wet zou geven, strenger dan die van Mozes"],
+            correct: "Dat ook niet-Joden door Christus samen met de Joden delen in Gods beloften",
+            bijbelplaats: "Efeziërs 3:5-6, 9"
         },
         {
             vraag: "Paulus vergelijkt de liefde tussen man en vrouw met iets veel groters. Waarmee vergelijkt hij die?",
-            antwoorden: ["Met de liefde tussen Christus en de gemeente", "Met de vriendschap tussen twee koningen", "Met de band tussen een leraar en zijn leerling", "Met de trouw van een dienaar aan zijn heer"],
-            correct: "Met de liefde tussen Christus en de gemeente",
+            antwoorden: ["Met de liefde tussen Christus en de kerk", "Met de vriendschap tussen twee koningen", "Met de band tussen een leraar en zijn leerling", "Met de trouw van een dienaar aan zijn heer"],
+            correct: "Met de liefde tussen Christus en de kerk",
             bijbelplaats: "Efeziërs 5:25, 32"
         },
         {
@@ -3673,8 +3673,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus zegt dat we elkaar de waarheid mogen zeggen — maar wél in liefde. Wat betekent dat?",
-            antwoorden: ["Eerlijk zijn, maar altijd vriendelijk en met zorg voor de ander", "Gewoon alles zeggen wat je vindt, ook als het hard aankomt", "Alleen zorgen dat je nooit meer liegt", "De waarheid maar beter voor jezelf houden"],
-            correct: "Eerlijk zijn, maar altijd vriendelijk en met zorg voor de ander",
+            antwoorden: ["Eerlijk zijn, en het zeggen met liefde en zorg voor de ander", "Gewoon alles zeggen wat je vindt, ook als het hard aankomt", "Alleen zorgen dat je nooit meer liegt", "De waarheid maar beter voor jezelf houden"],
+            correct: "Eerlijk zijn, en het zeggen met liefde en zorg voor de ander",
             bijbelplaats: "Efeziërs 4:15"
         },
         {
@@ -3725,7 +3725,7 @@ vragenData["Efeziërs"] = {
             vraag: "In welke situatie bevond Paulus zich toen hij de brief aan de Efeziërs schreef?",
             antwoorden: ["Hij was op reis met een schip", "Hij zat gevangen", "Hij verbleef in een paleis", "Hij reisde door de woestijn"],
             correct: "Hij zat gevangen",
-            bijbelplaats: "Efeziërs 4:1"
+            bijbelplaats: "Efeziërs 3:1; 4:1; 6:20"
         },
         {
             vraag: "Joden en niet-Joden waren vroeger gescheiden. Wat is er door Christus gebeurd?",
@@ -3747,7 +3747,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 3:20"
         },
         {
-            vraag: "Welk onderdeel van de wapenrusting is de \"helm\"?",
+            vraag: "Waar staat de \"helm\" in de wapenrusting van God voor?",
             antwoorden: ["De kracht", "De redding", "De roem", "De macht"],
             correct: "De redding",
             bijbelplaats: "Efeziërs 6:17"
@@ -3759,7 +3759,7 @@ vragenData["Efeziërs"] = {
             bijbelplaats: "Efeziërs 6:15"
         },
         {
-            vraag: "Vroeger waren de gelovigen ver van God. Wat is er veranderd?",
+            vraag: "Paulus schrijft aan gelovigen die geen Jood waren dat zij vroeger \"ver weg\" waren. Wat is er veranderd?",
             antwoorden: ["Ze zijn dichtbij gekomen, door het bloed van Christus", "Ze moesten zelf de lange weg terug afleggen", "Ze kwamen pas dichtbij na veel goede daden", "Ze waren verdwaald en vonden de weg niet terug"],
             correct: "Ze zijn dichtbij gekomen, door het bloed van Christus",
             bijbelplaats: "Efeziërs 2:13"
@@ -3810,8 +3810,8 @@ vragenData["Efeziërs"] = {
         },
         {
             vraag: "Paulus schrijft dat de gelovigen met de Geest \"verzegeld\" zijn. Wat deed men in die tijd met een zegel?",
-            antwoorden: ["Men drukte een merkteken in was, om te tonen van wie iets was", "Men bond een koord om een pak heen zodat het dicht bleef", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
-            correct: "Men drukte een merkteken in was, om te tonen van wie iets was",
+            antwoorden: ["Men drukte een merkteken in was, bijvoorbeeld om te tonen van wie iets was", "Men betaalde ermee op de markt, net als met een munt", "Men schreef een naam op de buitenkant van een brief", "Men legde een steen op een document zodat het niet wegwaaide"],
+            correct: "Men drukte een merkteken in was, bijvoorbeeld om te tonen van wie iets was",
             bijbelplaats: "Efeziërs 1:13"
         },
         {
@@ -3819,7 +3819,7 @@ vragenData["Efeziërs"] = {
             antwoorden: ["Poëzie", "Politiek", "Pedagoog", "Paleis"],
             correct: "Poëzie",
             bijbelplaats: "Efeziërs 2:10",
-            uitleg: "Paulus gebruikt het woord poiēma, \"wat gemaakt is\", \"kunstwerk\". Het komt van hetzelfde werkwoord als poiēsis, waar ons woord \"poëzie\" vandaan komt. Wij zijn dus Gods kunstwerk. \"Politiek\" en \"pedagoog\" komen ook uit het Grieks, maar van andere woorden."
+            uitleg: "Paulus gebruikt het woord poiēma, \"iets wat gemaakt is\". Het komt van hetzelfde werkwoord als poiēsis, waar ons woord \"poëzie\" vandaan komt. Je kunt dus beeldend zeggen: wij zijn Gods kunstwerk. \"Politiek\" en \"pedagoog\" komen ook uit het Grieks, maar van andere woorden."
         }
     ]
 };
