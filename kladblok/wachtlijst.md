@@ -113,6 +113,21 @@ elk antwoord herhaald hoeft te worden.*
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
 - **Boek-voor-boek-ronde.** Eerstvolgende: **Romeinen**.
+- **Jakobus B5 (ziek zijn, Jakobus 5:14-15):** het antwoord blijft
+  neutraal ("bidden"). De uitleg moet de gebruiken per kerk naast elkaar
+  noemen: ziekenzalving in de katholieke en orthodoxe kerk; gebed en soms
+  handoplegging in protestantse kerken, in sommige ook zalving met olie.
+  Eventueel aangevuld met genezing (5:15), zorgvuldig geformuleerd: God geneest
+  soms, zonder de belofte dat Hij het altijd doet. Er hoort een idee bij voor
+  een woordenboeklemma "Zalven". De concepten staan in de chat van 20 okt 2026.
+- **Jakobus G3 (Jakobus, de broer van de Heer):** de uitleg herzien.
+  De zin "die in datzelfde vers apart genoemd wordt (Matteüs 27:56, Marcus
+  15:40)" klopt niet: in die verzen wordt de moeder van Jezus niet genoemd;
+  dat ze bij het kruis stond, staat in Johannes 19:25. Daarnaast afwegen: Roels
+  lijn van sept 2026 ("niet kiezen is ook een keuze": de lezing van een naaste
+  verwant, met erkenning van andere visies) tegenover de voorstellen van
+  ChatGPT en Magisterium om de katholieke, orthodoxe en protestantse uitleg
+  neutraal naast elkaar te zetten.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
