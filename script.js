@@ -5077,7 +5077,7 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Welke leider, die het volk Israël uit Egypte bracht, wordt in Hebreeën 11 geprezen om zijn geloof?",
-            antwoorden: ["Mozes", "Jozua", "Aäron", "Gideon"],
+            antwoorden: ["Mozes", "Jozua", "Elia", "Nehemia"],
             correct: "Mozes",
             bijbelplaats: "Hebreeën 11:24-27"
         },
@@ -5180,7 +5180,7 @@ vragenData["Hebreeën"] = {
     ],
     advanced: [
         {
-            vraag: "De brief aan de Hebreeën vergelijkt Jezus met de man die één keer per jaar het allerheiligste binnenging om daar voor het hele volk te offeren. Welke titel geeft de brief Hem daarom?",
+            vraag: "De brief aan de Hebreeën vergelijkt Jezus met de man die één keer per jaar het allerheiligste binnenging om daar te offeren voor zichzelf en voor het volk. Welke titel geeft de brief Hem daarom?",
             antwoorden: ["Hogepriester", "Leviet", "Schriftgeleerde", "Tempelwachter"],
             correct: "Hogepriester",
             bijbelplaats: "Hebreeën 4:14; 9:7"
@@ -5253,8 +5253,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Hebreeën vergelijkt Jezus met de engelen, met Mozes en met de priesters en hun offers. Wat wil de brief daarmee vooral laten zien?",
-            antwoorden: ["Dat Jezus boven hen uitgaat en hun werk tot vervulling brengt", "Dat Jezus minder belangrijk is dan de engelen", "Dat Jezus alleen gekomen is om nieuwe regels te geven", "Dat de oude offers belangrijker zijn dan Jezus"],
-            correct: "Dat Jezus boven hen uitgaat en hun werk tot vervulling brengt",
+            antwoorden: ["Dat Jezus boven hen allemaal uitgaat", "Dat Jezus minder belangrijk is dan de engelen", "Dat Jezus alleen gekomen is om nieuwe regels te geven", "Dat de oude offers belangrijker zijn dan Jezus"],
+            correct: "Dat Jezus boven hen allemaal uitgaat",
             bijbelplaats: "Hebreeën 1:4; 3:3; 7:22-28"
         },
         {
@@ -5295,8 +5295,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Volgens Hebreeën mogen we naar God toe gaan om hulp te krijgen wanneer we die nodig hebben. Hoe mogen we bij Hem komen?",
-            antwoorden: ["Met vertrouwen, zonder angst", "Alleen als we nooit fouten maken", "Alleen één keer per jaar", "Alleen als je priester bent"],
-            correct: "Met vertrouwen, zonder angst",
+            antwoorden: ["Vrijmoedig en vol vertrouwen", "Alleen als we nooit fouten maken", "Alleen één keer per jaar", "Alleen als je priester bent"],
+            correct: "Vrijmoedig en vol vertrouwen",
             bijbelplaats: "Hebreeën 4:16"
         }
     ],
@@ -5317,8 +5317,8 @@ vragenData["Hebreeën"] = {
             vraag: "Jezus wordt hogepriester genoemd \"naar de orde van\" een geheimzinnige koning-priester uit de tijd van Abraham. Hoe heet hij?",
             antwoorden: ["Melchisedek", "Aäron", "Levi", "Henoch"],
             correct: "Melchisedek",
-            bijbelplaats: "Hebreeën 7:1-3",
-            uitleg: "Melchisedek komt in het Oude Testament maar in één klein verhaal voor: hij is koning van Salem én priester, en hij zegent Abraham (Genesis 14:18-20). Over zijn familie staat er niets, en juist dat valt de schrijver van Hebreeën op: Melchisedek hoort niet bij de priesterfamilie van Levi. \"Naar de orde van Melchisedek\" betekent dan ook: van dezelfde soort als hij. Jezus is dus priester op een heel andere manier dan de priesters in de tempel."
+            bijbelplaats: "Hebreeën 7:1-3, 17 · Psalm 110:4",
+            uitleg: "Melchisedek komt in het Oude Testament maar in één klein verhaal voor: hij is koning van Salem én priester, en hij zegent Abraham (Genesis 14:18-20). Later noemt Psalm 110 hem nog één keer: daar staat dat iemand voor altijd priester zal zijn, net als Melchisedek. Die psalm haalt Hebreeën aan voor Jezus. Over de afkomst en familie van Melchisedek vertelt de Bijbel niets, en juist dat valt de schrijver van Hebreeën op: Melchisedek hoort niet bij de priesterfamilie van Levi. \"Naar de orde van Melchisedek\" betekent dan ook: van dezelfde soort als hij. Jezus is dus priester op een heel andere manier dan de priesters in de tempel."
         },
         {
             vraag: "Over welke man zegt Hebreeën dat hij door zijn geloof de dood niet zag, maar door God werd weggenomen?",
@@ -5334,8 +5334,8 @@ vragenData["Hebreeën"] = {
         },
         {
             vraag: "Wat is bijzonder aan de brief aan de Hebreeën?",
-            antwoorden: ["We weten niet zeker wie hem geschreven heeft", "Hij is het kortste bijbelboek", "Hij noemt Jezus nergens", "Het is de langste brief uit de Bijbel"],
-            correct: "We weten niet zeker wie hem geschreven heeft",
+            antwoorden: ["Hij noemt nergens wie hem geschreven heeft", "Hij is het kortste Bijbelboek", "Hij noemt Jezus nergens", "Het is de langste brief uit de Bijbel"],
+            correct: "Hij noemt nergens wie hem geschreven heeft",
             bijbelplaats: "algemeen"
         },
         {
@@ -5351,14 +5351,14 @@ vragenData["Hebreeën"] = {
             bijbelplaats: "Hebreeën 11:11"
         },
         {
-            vraag: "De brief zelf zegt niet dat hij \"aan de Hebreeën\" is geschreven. Waarom kreeg hij later waarschijnlijk toch die naam?",
+            vraag: "De brief zelf noemt niet aan wie hij geschreven is. Waarom past de latere titel \"Aan de Hebreeën\" goed bij de inhoud?",
             antwoorden: ["Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond", "Omdat alle personen in de brief Hebreeuws spreken", "Omdat de brief in Jeruzalem is gevonden", "Omdat de schrijver zichzelf \"de Hebreeër\" noemt"],
             correct: "Omdat de brief heel uitgebreid spreekt over de Joodse Schriften, priesters, offers en het verbond",
             bijbelplaats: "algemeen · Hebreeën 7-10"
         },
         {
             vraag: "Hebreeën zegt dat goeddoen en delen met anderen voor God iets bijzonders zijn. Wat zijn ze volgens de brief?",
-            antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van Zijn verbond", "Een plicht die je moet vervullen"],
+            antwoorden: ["Een offer waar Hij blij mee is", "Een gebed dat Hij altijd verhoort", "Een teken van Zijn verbond", "Een manier om indruk te maken op anderen"],
             correct: "Een offer waar Hij blij mee is",
             bijbelplaats: "Hebreeën 13:16"
         },
@@ -5373,14 +5373,14 @@ vragenData["Hebreeën"] = {
             antwoorden: ["Een heiligdom dat het volk door de woestijn meedroeg", "De tent waarin de hogepriester woonde, naast de tempel", "Een tent op het tempelplein waar de offerdieren stonden", "De tent waarin Abraham God ontmoette bij de eiken"],
             correct: "Een heiligdom dat het volk door de woestijn meedroeg",
             bijbelplaats: "Hebreeën 9:2",
-            uitleg: "Eeuwen vóór de tempel van Salomo was dit de plek waar men God ontmoette: een heiligdom dat je uit elkaar kon halen, meedragen en weer opbouwen. Hebreeën gebruikt die tent om te laten zien dat alles wat daar gebeurde vooruitwees naar Jezus."
+            uitleg: "Eeuwen vóór de tempel van Salomo was dit het heiligdom van Israël, ook wel \"de tent van de ontmoeting\" genoemd: hier woonde God te midden van Zijn volk en brachten de priesters de offers. Je kon de tent uit elkaar halen, meedragen en weer opbouwen. Hebreeën gebruikt de tent, de priesters en de offers om uit te leggen wat Jezus heeft gedaan en waarom Zijn offer zo bijzonder is."
         },
         {
             vraag: "De brief aan de Hebreeën noemt de dag waarop de hogepriester één keer per jaar het allerheiligste binnenging. Welke dag was dat?",
             antwoorden: ["De Grote Verzoendag, de enige dag waarop dat mocht", "Het Pesachfeest, aan het begin van het voorjaar", "De eerste dag van elke maand", "Elke sabbat, na de ochtenddienst"],
             correct: "De Grote Verzoendag, de enige dag waarop dat mocht",
-            bijbelplaats: "Hebreeën 9:7 · Leviticus 23:27",
-            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de ruimte achter het voorhangsel waar verder niemand mocht komen. Daar bracht hij een offer voor zijn eigen zonden en die van het volk. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met de zonden van het volk — daar komt het beeld van de zondebok vandaan. Hebreeën vergelijkt dit jaarlijkse ritueel met Jezus: wat de hogepriester ieder jaar opnieuw deed, heeft Jezus volgens de brief met Zijn offer eens en voorgoed volbracht."
+            bijbelplaats: "Hebreeën 9:7 · Leviticus 16:2-22; 23:27",
+            uitleg: "De Grote Verzoendag, in het Hebreeuws Jom Kipoer, was de belangrijkste vastendag van het jaar. Op die ene dag ging de hogepriester het allerheiligste binnen, de ruimte achter het voorhangsel waar verder niemand mocht komen. Daar bracht hij het bloed van een offer, voor zijn eigen zonden en die van het volk. Dat klinkt vreemd, maar in de Bijbel staat bloed voor het leven: er werd een leven gegeven, zodat de zonden vergeven konden worden. Daarna werd een tweede bok de woestijn in gestuurd, symbolisch beladen met de zonden van het volk — daar komt het beeld van de zondebok vandaan. Hebreeën vergelijkt dit jaarlijkse ritueel met Jezus: wat de hogepriester ieder jaar opnieuw deed, heeft Jezus volgens de brief met Zijn offer eens en voorgoed volbracht."
         },
         {
             vraag: "Hoe vaak moest Jezus volgens Hebreeën Zichzelf offeren om de zonden weg te nemen?",
@@ -5396,11 +5396,11 @@ vragenData["Hebreeën"] = {
             uitleg: "Een middelaar is iemand die tussen twee partijen in staat en hen weer bij elkaar brengt, zoals iemand die bemiddelt als er ruzie is. Hebreeën zegt dat Jezus dat doet tussen God en de mensen."
         },
         {
-            vraag: "Hebreeën zegt dat alle geloofshelden die ons zijn voorgegaan als getuigen om ons heen staan. Met welk beeld beschrijft de brief die grote groep?",
+            vraag: "Hebreeën zegt dat de geloofsgetuigen die ons zijn voorgegaan ons omringen. Met welk beeld beschrijft de Griekse tekst die grote groep?",
             antwoorden: ["Een wolk", "Een zee", "Een leger", "Een rij"],
             correct: "Een wolk",
             bijbelplaats: "Hebreeën 12:1",
-            uitleg: "In het Grieks werd het woord voor wolk ook gebruikt voor een geweldige menigte mensen, ongeveer zoals wij spreken van een zee van mensen. Hebreeën bedoelt dus geen wolk aan de hemel, maar een menigte die niet te tellen is."
+            uitleg: "Het Griekse woord voor \"wolk\" werd ook beeldend gebruikt voor een heel grote menigte, ongeveer zoals wij spreken van \"een zee van mensen\". Daarom staat er in de ene vertaling \"een wolk van getuigen\" en in de andere \"een menigte geloofsgetuigen\". Bedoeld zijn de gelovigen uit hoofdstuk 11, zoals Abraham, Sara, Mozes en Rachab. Hun voorbeeld moedigt ons aan om zelf ook vol te houden."
         },
         {
             vraag: "Abraham was bereid Isaak te offeren. Waarom kon hij volgens Hebreeën toch blijven vertrouwen op Gods belofte?",
