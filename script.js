@@ -5479,7 +5479,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus zegt tegen de gelovigen: wees geduldig en verlies de moed niet, want iemand zal terugkomen. Op wiens komst moeten zij wachten?",
-            antwoorden: ["De Heer", "De koning", "De profeet", "De leraar"],
+            antwoorden: ["De Heer", "De keizer", "De profeet", "De leraar"],
             correct: "De Heer",
             bijbelplaats: "Jakobus 5:7-8"
         },
@@ -5523,10 +5523,10 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus zegt: stel je onder Gods leiding. Wat moet je volgens hem met de duivel doen, zodat die van je wegvlucht?",
-            antwoorden: ["Hem weerstaan", "Hem overschreeuwen", "Hem negeren", "Hem wegjagen"],
+            antwoorden: ["Hem weerstaan", "Hem overschreeuwen", "Hem negeren", "Hem uitdagen en bespotten"],
             correct: "Hem weerstaan",
             bijbelplaats: "Jakobus 4:7",
-            uitleg: "Weerstaan is iets anders dan wegjagen. Je hoeft de duivel niet zelf te verslaan of te verjagen — je zegt nee en gaat niet met hem mee. Jakobus zegt dat hij dán uit zichzelf op de vlucht slaat. Let ook op de volgorde in het vers: eerst stel je je onder Gods leiding, pas daarna houd je stand."
+            uitleg: "Weerstaan betekent: stevig blijven staan en niet meegaan met het kwaad. Je hoeft de duivel niet zelf te verslaan. Let ook op de volgorde in het vers: eerst stel je je onder Gods leiding, daarna houd je stand. Dan belooft Jakobus dat de duivel van je wegvlucht."
         },
         {
             vraag: "Welke man uit het Oude Testament noemt Jakobus als voorbeeld van iemand die in groot lijden geduldig bleef?",
@@ -5564,14 +5564,14 @@ vragenData["Jakobus"] = {
             antwoorden: ["Een dagloner leefde van die dag en had niets achter de hand", "Maaiers mochten volgens de wet geen loon vragen, alleen eten", "Het loon van de oogst hoorde eerst naar de priesters te gaan", "Wie op het land werkte, kreeg altijd graan en nooit geld"],
             correct: "Een dagloner leefde van die dag en had niets achter de hand",
             bijbelplaats: "Jakobus 5:4 · Deuteronomium 24:15",
-            uitleg: "De wet van Mozes schreef het letterlijk voor: betaal een dagloner nog dezelfde dag, want hij heeft niets achter de hand. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
+            uitleg: "De wet van Mozes schreef het voor: betaal een dagloner nog dezelfde dag, vóór zonsondergang, want hij is arm en rekent op dat geld. Jakobus beschuldigt de rijken dus niet alleen van gierigheid, maar van het overtreden van de wet."
         },
         {
             vraag: "Jakobus zegt: de boer wacht geduldig op de vroege en de late regen. Wat bedoelde hij daarmee?",
             antwoorden: ["De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst", "De regen 's ochtends vroeg en die laat in de avond", "De regen van dit jaar en die van volgend jaar", "De eerste regen van een jonge boer en de laatste van een oude boer"],
             correct: "De regen aan het begin en aan het eind van het groeiseizoen, allebei nodig voor de oogst",
             bijbelplaats: "Jakobus 5:7",
-            uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt in oktober en november: pas dan wordt de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen — precies op tijd om het graan te laten rijpen. Blijft die late regen uit, dan is de hele oogst mislukt. De boer moet dus een half jaar lang geduld hebben."
+            uitleg: "In Israël regent het niet het hele jaar door. De vroege regen valt meestal in oktober en november: na de droge zomer maakt die de grond zacht genoeg om te ploegen en te zaaien. Daarna volgt de winter, en in maart en april komt de late regen, die het graan helpt rijpen. Bleef die late regen uit, dan kon de oogst mislukken. De boer moest dus maandenlang geduld hebben."
         }
     ],
     expert: [
@@ -5634,7 +5634,7 @@ vragenData["Jakobus"] = {
         },
         {
             vraag: "Jakobus waarschuwt: mopper niet op elkaar. Wie staat er volgens hem al voor de deur?",
-            antwoorden: ["De Rechter", "De koning", "De leraar", "De herder"],
+            antwoorden: ["De Rechter", "De bode", "De leraar", "De belastingontvanger"],
             correct: "De Rechter",
             bijbelplaats: "Jakobus 5:9"
         },
@@ -5643,7 +5643,7 @@ vragenData["Jakobus"] = {
             antwoorden: ["Met christenen van Joodse afkomst die verspreid in verschillende gebieden leefden", "Met Joden die nog nooit van Jezus hadden gehoord", "Met christenen die zich voor vervolging verborgen hielden", "Met de twaalf stammen die onderling ruzie hadden gekregen"],
             correct: "Met christenen van Joodse afkomst die verspreid in verschillende gebieden leefden",
             bijbelplaats: "Jakobus 1:1",
-            uitleg: "\"Verstrooiing\", of diaspora, werd gebruikt voor Joden die verspreid buiten het land Israël leefden. Al eeuwen vóór Jezus woonden er meer Joden buiten Israël dan erin: in Egypte, Babylonië, Klein-Azië, Griekenland en Rome, elk met een eigen synagoge. Het Griekse woord diaspora betekent verstrooiing, alsof zaad is uitgestrooid over een groot veld.\n\nJakobus schrijft aan volgelingen van Jezus. Daarom worden de \"twaalf stammen in de verstrooiing\" meestal in verband gebracht met christenen met een Joodse achtergrond die verspreid in verschillende gebieden leefden. Sommige uitleggers verstaan de twaalf stammen nog ruimer als een beeld voor alle christenen."
+            uitleg: "\"Verstrooiing\", of diaspora, werd gebruikt voor Joden die verspreid buiten het land Israël leefden. In de tijd van Jezus woonden er al heel veel Joden buiten Israël: in Egypte, Babylonië, Klein-Azië, Griekenland en Rome. Op veel plaatsen hadden zij een eigen synagoge. Het Griekse woord diaspora betekent verstrooiing, alsof zaad is uitgestrooid over een groot veld.\n\nJakobus schrijft aan volgelingen van Jezus. Daarom worden de \"twaalf stammen in de verstrooiing\" meestal in verband gebracht met christenen met een Joodse achtergrond die verspreid in verschillende gebieden leefden. Sommige uitleggers verstaan de twaalf stammen nog ruimer als een beeld voor alle christenen."
         },
         {
             vraag: "Jakobus beschrijft wat volgens God zuivere godsdienst is. Voor welke mensen moeten gelovigen volgens hem bijzonder zorgen?",
