@@ -113,22 +113,15 @@ elk antwoord herhaald hoeft te worden.*
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
 - **Boek-voor-boek-ronde.** Eerstvolgende: **Romeinen**.
-- **Jakobus B5 (ziek zijn, Jakobus 5:14-15):** het antwoord blijft
-  neutraal ("bidden"). De uitleg moet de gebruiken per kerk naast elkaar
-  noemen: ziekenzalving in de katholieke en orthodoxe kerk; gebed en soms
-  handoplegging in protestantse kerken, in sommige ook zalving met olie.
-  Eventueel aangevuld met genezing (5:15), zorgvuldig geformuleerd: God geneest
-  soms, zonder de belofte dat Hij het altijd doet. Er hoort een idee bij voor
-  een woordenboeklemma "Zalven". De concepten staan in de chat van 20 okt 2026.
 - **Nieuwe Ontdekken-rubriek "Eén Bijbel, verschillende lezingen" (werknaam):**
   een plek voor teksten die christenen verschillend lezen, waar elke traditie
   vanuit haar eigen teksten wordt beschreven, zonder dat de game kiest. Hier
   past een lang artikel; in het woordenboek zou het te lang worden. Eerste
   onderwerpen: de broers van Jezus (Jakobus G3; de uitleg daar wordt dan kort,
-  met een verwijzing), de ziekenzalving (Jakobus B5). Later bijvoorbeeld: doop,
-  avondmaal en eucharistie, Petrus en de rots (Matteüs 16:18), de paasdatum.
-  Nagaan of een vraag aan zo'n artikel gekoppeld kan worden, zoals bij de
-  Verborgen Schat (catecheseId). Het punt "Jakobus B5" blijft apart staan.
+  met een verwijzing) en de ziekenzalving (Jakobus B5); beide zijn hieronder
+  uitgewerkt. Later bijvoorbeeld: doop, avondmaal en eucharistie, Petrus en de
+  rots (Matteüs 16:18), de paasdatum. Nagaan of een vraag aan zo'n artikel
+  gekoppeld kan worden, zoals bij de Verborgen Schat (catecheseId).
   Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
   21 okt 2026):
   - Katholiek: "broer" kan ook een naaste verwant zijn (Abraham en Lot,
@@ -162,6 +155,21 @@ elk antwoord herhaald hoeft te worden.*
     van Jozef en Simeon als neef van de Heer. Epiphanius van Salamis was een
     bisschop uit de 4e eeuw. Apocriefe geschriften, zoals het Protevangelie van
     Jakobus, NIET als bron noemen: dat kan ouders afschrikken.
+  - Artikel over de ziekenzalving en het bidden voor zieken (Jakobus B5,
+    Jakobus 5:14-15):
+    - De kerken geven hier heel verschillend invulling aan; elke kerk
+      beschrijven vanuit wat zij zelf waardevol vindt: de ziekenzalving in de
+      katholieke en de orthodoxe kerk; gebed en soms handoplegging in
+      protestantse kerken, in sommige ook zalving met olie.
+    - Genezing (Jakobus 5:15) zorgvuldig noemen: God geneest soms, zonder de
+      belofte dat Hij het altijd doet. Concept: "Soms geneest God iemand, zoals
+      in de Bijbel; soms helpt Hij de zieke op een andere manier en staat Hij
+      naast hem."
+    - Bij B5 blijft het antwoord neutraal ("bidden"); de uitleg daar wordt
+      kort, met een verwijzing naar het artikel.
+    - Idee voor een woordenboeklemma "Zalven" (koningen, priesters en
+      profeten; Messias, "de gezalfde"; Jakobus 5:14). De concepten staan in de
+      chat van 20 okt 2026.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
