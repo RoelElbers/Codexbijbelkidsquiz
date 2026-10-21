@@ -122,39 +122,40 @@ elk antwoord herhaald hoeft te worden.*
   uitgewerkt. Later bijvoorbeeld: doop, avondmaal en eucharistie, Petrus en de
   rots (Matteüs 16:18), de paasdatum. Nagaan of een vraag aan zo'n artikel
   gekoppeld kan worden, zoals bij de Verborgen Schat (catecheseId).
-  Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
-  21 okt 2026):
-  - Katholiek: "broer" kan ook een naaste verwant zijn (Abraham en Lot,
-    Genesis 13:8); Maria, de moeder van Jakobus en Jozef (Matteüs 27:56),
-    mogelijk dezelfde als Maria van Klopas (Johannes 19:25); Maria wordt aan
-    de leerling toevertrouwd (Johannes 19:26-27); geen andere kinderen bij
-    Bethlehem, de vlucht naar Egypte en de terugkeer ("het kind en Zijn
-    moeder", Matteüs 2:13-14, 21) of de twaalfjarige Jezus in de tempel
-    (Lucas 2:41-51); Lucas had Maria als bron. De kerk herdenkt Jakobus en
-    Simeon als verwanten van de Heer (Hegesippus, 2e eeuw).
-    - Twee zussen die allebei Maria heten ligt niet voor de hand; daarom lezen
-      veel uitleggers "zuster" in Johannes 19:25 als verwante. Volgens
-      Hegesippus (2e eeuw) was Klopas een broer van Jozef; als Maria van Klopas
-      zijn vrouw was, was zij de schoonzus van Maria. (Johannes 19:25 kan
-      gelezen worden met drie of met vier vrouwen bij het kruis; deze
-      redenering gaat uit van drie.)
-  - Orthodox: zonen van Jozef uit een eerder huwelijk (verdedigd door
-    Epiphanius van Salamis, 4e eeuw, in zijn Panarion; ook Eusebius,
-    Kerkgeschiedenis 2.1, noemt Jakobus een zoon van Jozef).
-  - Protestants: jongere broers en zussen, zonen en dochters van Maria en
-    Jozef; Jezus heet "eerstgeboren" (Lucas 2:7), "totdat" (Matteüs 1:25), de
-    broers worden bij naam genoemd (Matteüs 13:55, Marcus 6:3) en komen vaker
-    terug (Johannes 7:5, Handelingen 1:14, 1 Korintiërs 9:5).
-  - Goed om te weten: Luther, Calvijn en Zwingli hielden vast aan Maria's
-    blijvende maagdelijkheid; de lezing "echte broers" werd onder protestanten
-    pas later de meest gangbare.
-  - Bronnen in het artikel bij naam noemen, met een korte uitleg wie het
-    waren. Hegesippus (2e eeuw) schreef de geschiedenis van de eerste gemeenten
-    op; zijn werk is verloren, maar zijn woorden zijn bewaard bij Eusebius,
-    Kerkgeschiedenis 3.11 en 4.22 (rond 325). Daar staan ook Klopas als broer
-    van Jozef en Simeon als neef van de Heer. Epiphanius van Salamis was een
-    bisschop uit de 4e eeuw. Apocriefe geschriften, zoals het Protevangelie van
-    Jakobus, NIET als bron noemen: dat kan ouders afschrikken.
+  - Artikel over de broers van Jezus (Jakobus G3):
+    Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
+    21 okt 2026):
+    - Katholiek: "broer" kan ook een naaste verwant zijn (Abraham en Lot,
+      Genesis 13:8); Maria, de moeder van Jakobus en Jozef (Matteüs 27:56),
+      mogelijk dezelfde als Maria van Klopas (Johannes 19:25); Maria wordt aan
+      de leerling toevertrouwd (Johannes 19:26-27); geen andere kinderen bij
+      Bethlehem, de vlucht naar Egypte en de terugkeer ("het kind en Zijn
+      moeder", Matteüs 2:13-14, 21) of de twaalfjarige Jezus in de tempel
+      (Lucas 2:41-51); Lucas had Maria als bron. De kerk herdenkt Jakobus en
+      Simeon als verwanten van de Heer (Hegesippus, 2e eeuw).
+      - Twee zussen die allebei Maria heten ligt niet voor de hand; daarom lezen
+        veel uitleggers "zuster" in Johannes 19:25 als verwante. Volgens
+        Hegesippus (2e eeuw) was Klopas een broer van Jozef; als Maria van Klopas
+        zijn vrouw was, was zij de schoonzus van Maria. (Johannes 19:25 kan
+        gelezen worden met drie of met vier vrouwen bij het kruis; deze
+        redenering gaat uit van drie.)
+    - Orthodox: zonen van Jozef uit een eerder huwelijk (verdedigd door
+      Epiphanius van Salamis, 4e eeuw, in zijn Panarion; ook Eusebius,
+      Kerkgeschiedenis 2.1, noemt Jakobus een zoon van Jozef).
+    - Protestants: jongere broers en zussen, zonen en dochters van Maria en
+      Jozef; Jezus heet "eerstgeboren" (Lucas 2:7), "totdat" (Matteüs 1:25), de
+      broers worden bij naam genoemd (Matteüs 13:55, Marcus 6:3) en komen vaker
+      terug (Johannes 7:5, Handelingen 1:14, 1 Korintiërs 9:5).
+    - Goed om te weten: Luther, Calvijn en Zwingli hielden vast aan Maria's
+      blijvende maagdelijkheid; de lezing "echte broers" werd onder protestanten
+      pas later de meest gangbare.
+    - Bronnen in het artikel bij naam noemen, met een korte uitleg wie het
+      waren. Hegesippus (2e eeuw) schreef de geschiedenis van de eerste gemeenten
+      op; zijn werk is verloren, maar zijn woorden zijn bewaard bij Eusebius,
+      Kerkgeschiedenis 3.11 en 4.22 (rond 325). Daar staan ook Klopas als broer
+      van Jozef en Simeon als neef van de Heer. Epiphanius van Salamis was een
+      bisschop uit de 4e eeuw. Apocriefe geschriften, zoals het Protevangelie van
+      Jakobus, NIET als bron noemen: dat kan ouders afschrikken.
   - Artikel over de ziekenzalving en het bidden voor zieken (Jakobus B5,
     Jakobus 5:14-15):
     - De kerken geven hier heel verschillend invulling aan; elke kerk
