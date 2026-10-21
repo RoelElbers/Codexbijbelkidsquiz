@@ -6304,8 +6304,8 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:4"
         },
         {
-            vraag: "In een brief aan een gemeente zegt Jezus: \"Ik sta voor de deur en Ik klop.\" Wat gebeurt er als iemand die deur voor Hem opendoet?",
-            antwoorden: ["Jezus komt binnen en brengt tijd met hem door aan tafel", "Jezus groet even snel en is daarna weer weg", "Jezus blijft buiten staan", "Jezus is weer weg als de deur geopend wordt"],
+            vraag: "In Zijn brief aan de gemeente in Laodicea zegt Jezus: \"Ik sta voor de deur en Ik klop.\" Wat gebeurt er als iemand die deur voor Hem opendoet?",
+            antwoorden: ["Jezus komt binnen en brengt tijd met hem door aan tafel", "Jezus groet even snel en is daarna weer weg", "Jezus blijft buiten staan", "Jezus stuurt een engel in Zijn plaats naar binnen"],
             correct: "Jezus komt binnen en brengt tijd met hem door aan tafel",
             bijbelplaats: "Openbaring 3:20"
         },
@@ -6388,10 +6388,10 @@ vragenData["Openbaring"] = {
             vraag: "Johannes ziet een boekrol die met zeven zegels is dichtgemaakt. Niemand in de hemel of op de aarde kan hem openen; mensen zijn er zelfs verdrietig over. Wie blijkt het uiteindelijk wél te mogen doen?",
             antwoorden: ["Het Lam (Jezus)", "De sterkste engel, aartsengel Michaël", "De oudste in de hemel", "Johannes zelf"],
             correct: "Het Lam (Jezus)",
-            bijbelplaats: "Openbaring 5:1-5"
+            bijbelplaats: "Openbaring 5:1-7"
         },
         {
-            vraag: "In zijn eerste visioen ziet Johannes Jezus staan tussen zeven gouden kandelaars. Hij begrijpt er niets van, en Jezus legt zelf uit wat die kandelaars betekenen. Waar staan de zeven kandelaars voor?",
+            vraag: "In zijn eerste visioen ziet Johannes Jezus staan tussen zeven gouden kandelaars. Jezus legt zelf uit wat die kandelaars betekenen. Waar staan de zeven kandelaars voor?",
             antwoorden: ["De zeven gemeenten die de brieven krijgen", "De zeven dagen van de schepping", "De zeven aartsengelen", "De zeven heuvels van Rome"],
             correct: "De zeven gemeenten die de brieven krijgen",
             bijbelplaats: "Openbaring 1:20",
@@ -6450,7 +6450,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Een onthulling: iets wordt zichtbaar wat eerst verborgen was", "Een boodschap die alleen door priesters gelezen mocht worden", "Het einde van alles wat er ooit op de aarde geweest is", "Een lied dat bij het slot van een boek hoort"],
             correct: "Een onthulling: iets wordt zichtbaar wat eerst verborgen was",
             bijbelplaats: "Openbaring 1:1",
-            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent \"onthulling\" of \"openbaring\": iets wat verborgen was, wordt zichtbaar gemaakt. Je kunt het vergelijken met een doek dat wordt weggetrokken, zoals bij de onthulling van een standbeeld. Van datzelfde woord komt ons woord \"apocalyps\". Het boek gaat er dus niet in de eerste plaats over wat er later komt, maar over wie er nu werkelijk koning is. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
+            uitleg: "Het Griekse woord is apokalypsis (<span class='grieks'>ἀποκάλυψις</span>) en betekent \"onthulling\" of \"openbaring\": iets wat verborgen was, wordt zichtbaar gemaakt. Je kunt het vergelijken met een doek dat wordt weggetrokken, zoals bij de onthulling van een standbeeld. Van datzelfde woord komt ons woord \"apocalyps\". Openbaring laat zien wie werkelijk koning is, en vertelt over Gods beloften voor de toekomst. Daarom staat het vol beelden: die laten zien wat je met het blote oog niet ziet."
         },
         {
             vraag: "Zeven engelen blazen in Openbaring op een bazuin. Waarvoor gebruikte men zo'n luid blaasinstrument vooral?",
@@ -6464,7 +6464,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Prijs de HEER, in het Hebreeuws", "Zo is het, dat staat vast en het is waar", "De Heer komt — kom toch, Heer Jezus", "Red ons toch, kom ons te hulp"],
             correct: "Prijs de HEER, in het Hebreeuws",
             bijbelplaats: "Openbaring 19:1",
-            uitleg: "Halleluja is geen Grieks maar Hebreeuws: <span class='hebreeuws'>הַלְלוּ יָהּ</span>. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen hebben veel talen het woord vrijwel onvertaald overgenomen. In heel Openbaring staat het maar op één plek — daar dan wel vier keer achter elkaar."
+            uitleg: "Halleluja is geen Grieks maar Hebreeuws: <span class='hebreeuws'>הַלְלוּ יָהּ</span>. Hallelu betekent \"prijst\", en Jah is de verkorte vorm van Gods naam. Net als amen hebben veel talen het woord vrijwel onvertaald overgenomen. In heel Openbaring staat het alleen in hoofdstuk 19, maar daar klinkt het wel vier keer in één groot hemels loflied."
         },
         {
             vraag: "Wie overwint, krijgt \"verborgen manna\". Wat was manna oorspronkelijk?",
@@ -6483,11 +6483,11 @@ vragenData["Openbaring"] = {
             antwoorden: ["Hij was erheen verbannen vanwege zijn geloof en verkondiging", "Hij was er op vakantie om uit te rusten", "Hij was er geboren en was teruggekeerd naar zijn streek", "Hij was erheen gevlucht voor een storm op zee"],
             correct: "Hij was erheen verbannen vanwege zijn geloof en verkondiging",
             bijbelplaats: "Openbaring 1:9",
-            uitleg: "Johannes schrijft zelf dat hij op Patmos was \"vanwege het woord van God en het getuigenis van Jezus\". Oude christelijke overlevering vertelt dat hij naar het eiland was verbannen; Eusebius plaatst dat in de tijd van keizer Domitianus, aan het einde van de eerste eeuw. De Romeinen gebruikten zulke eilanden als ballingsoord: je werd er niet opgesloten, maar je mocht er niet weg. Patmos is een klein, rotsachtig eiland voor de kust van het huidige Turkije. Vanaf daar schrijft Johannes aan de zeven gemeenten in Klein-Azië."
+            uitleg: "Johannes schrijft zelf dat hij op Patmos was \"vanwege het woord van God en het getuigenis van Jezus\". Oude christelijke overlevering vertelt dat hij naar het eiland was verbannen; Eusebius plaatst dat in de tijd van keizer Domitianus, aan het einde van de eerste eeuw. De Romeinen gebruikten zulke eilanden als ballingsoord: wie verbannen was, mocht niet zomaar terugkeren. Patmos is een klein, rotsachtig Grieks eiland, vlak voor de kust van Turkije. Vanaf daar schrijft Johannes aan de zeven gemeenten in Klein-Azië."
         },
         {
             vraag: "Een engel met een gouden meetlat meet de stad op. De lengte, de breedte en de hoogte blijken precies gelijk te zijn. Welke vorm had de stad dus?",
-            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een piramide, zoals in Egypte", "Een lange rechthoek, zoals een voetbalveld"],
+            antwoorden: ["Een kubus (een vierkant blok)", "Een hoge, spitse punt zoals een toren", "Een ring, zoals een donut", "Een lange rechthoek, zoals een voetbalveld"],
             correct: "Een kubus (een vierkant blok)",
             bijbelplaats: "Openbaring 21:16"
         }
@@ -6525,7 +6525,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:21"
         },
         {
-            vraag: "In het oude Jeruzalem stond één gebouw dat het middelpunt van alles was: de plaats waar je God ging opzoeken. Johannes speurt de nieuwe stad af, maar vindt het nergens — want daar woont God zelf tussen de mensen. Wat ontbreekt er in het nieuwe Jeruzalem?",
+            vraag: "In het oude Jeruzalem stond het belangrijkste heiligdom van Israël. In het nieuwe Jeruzalem ziet Johannes het nergens, want God en het Lam zijn er zelf het heiligdom. Wat ontbreekt er in het nieuwe Jeruzalem?",
             antwoorden: ["De tempel", "De stadsmuur", "De poorten", "De rivier"],
             correct: "De tempel",
             bijbelplaats: "Openbaring 21:22"
@@ -6538,12 +6538,12 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "Een engel geeft Johannes een klein boekrolletje en zegt dat hij het moet opeten. Hoe smaakt het in zijn mond?",
-            antwoorden: ["Zo zoet als honing", "Zo bitter als spruitjes", "Zo zout als zeewater", "Zo zuur als een citroen"],
+            antwoorden: ["Zo zoet als honing", "Zo droog als papier", "Zo zout als zeewater", "Zo zuur als een citroen"],
             correct: "Zo zoet als honing",
             bijbelplaats: "Openbaring 10:9-10"
         },
         {
-            vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Elk wezen heeft een eigen gezicht: het ene lijkt op een leeuw, een ander op een jonge stier, een ander op een arend. Waar lijkt het overgebleven wezen op?",
+            vraag: "Rondom Gods troon ziet Johannes vier levende wezens. Het eerste lijkt op een leeuw, het tweede op een jonge stier en het vierde op een vliegende arend. Waar lijkt het gezicht van het derde wezen op?",
             antwoorden: ["Een mens", "Een paard", "Een slang", "Een vis"],
             correct: "Een mens",
             bijbelplaats: "Openbaring 4:7"
@@ -6569,8 +6569,8 @@ vragenData["Openbaring"] = {
         },
         {
             vraag: "De grote menigte voor de troon houdt palmtakken vast. Wat betekende dat gebaar toen?",
-            antwoorden: ["Feest en overwinning: zo haalde men een winnaar binnen", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
-            correct: "Feest en overwinning: zo haalde men een winnaar binnen",
+            antwoorden: ["Een teken van feest en overwinning", "Verdriet, zoals men vroeger bij een begrafenis takken droeg", "Dat men van ver gekomen was, als teken van de reis", "Dat men om regen vroeg in een droge tijd"],
+            correct: "Een teken van feest en overwinning",
             bijbelplaats: "Openbaring 7:9",
             uitleg: "Palmtakken hoorden bij feest en overwinning. Ze werden gebruikt bij de ontvangst van overwinnaars, en ook bij het Joodse Loofhuttenfeest. In het evangelie van Johannes zwaait de menigte ook met palmtakken wanneer Jezus als koning Jeruzalem binnenkomt. De mensen voor Gods troon staan hier dus niet in rouw: ze vieren Gods overwinning."
         },
@@ -6579,7 +6579,7 @@ vragenData["Openbaring"] = {
             antwoorden: ["Martelaar", "Missionaris", "Monnik", "Mysterie"],
             correct: "Martelaar",
             bijbelplaats: "Openbaring 2:13",
-            uitleg: "Het Griekse woord is martys (<span class='grieks'>μάρτυς</span>), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. Omdat zo veel van die getuigen hun trouw met hun leven bekochten, ging het woord langzaam iets anders betekenen. In Openbaring staat het nog in de oude zin."
+            uitleg: "Het Griekse woord is martys (<span class='grieks'>μάρτυς</span>), en dat betekende gewoon getuige — iemand die vertelt wat hij zelf gezien heeft, zoals voor de rechter. De eerste christenen gebruikten het voor wie over Jezus vertelde en trouw bleef, ook als dat hun leven kostte. Zo kreeg het woord later de betekenis martelaar. Antipas is daar een voorbeeld van: Jezus noemt hem Zijn trouwe getuige, en hij werd om die trouw gedood."
         },
         {
             vraag: "Jezus zegt dat Hij \"de sleutel van David\" heeft. Wat betekent dat beeld?",
