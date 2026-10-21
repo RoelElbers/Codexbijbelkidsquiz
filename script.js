@@ -5718,7 +5718,7 @@ vragenData["Petrus & Judas"] = {
             vraag: "In zijn tweede brief noemt Petrus een man die met zijn gezin door de ark gered werd toen de grote watervloed kwam. Over welke man gaat het?",
             antwoorden: ["Noach", "Mozes", "Abraham", "David"],
             correct: "Noach",
-            bijbelplaats: "2 Petrus 2:5"
+            bijbelplaats: "2 Petrus 2:5 · Genesis 7:13"
         },
         {
             vraag: "Petrus schrijft dat ons geloof wordt beproefd zoals iets kostbaars in het vuur wordt gezuiverd. Wat noemt hij als voorbeeld?",
@@ -5729,10 +5729,10 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus noemt de gelovigen \"vreemdelingen en bijwoners\". Wat is een bijwoner?",
-            antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die tijdelijk bij familie inwoont na een verhuizing"],
+            antwoorden: ["Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land", "Iemand die naast de kerk woont", "Iemand die twee huizen heeft", "Iemand die de bijen van het dorp verzorgt"],
             correct: "Iemand die ergens woont zonder er thuis te horen, zoals een gast in een vreemd land",
             bijbelplaats: "1 Petrus 2:11",
-            uitleg: "Een bijwoner was in de oudheid een echt bestaande positie. Je woonde met toestemming in een stad, je werkte er en je betaalde er belasting, maar je was er geen burger van: je mocht niet meestemmen en je familiegraf lag ergens anders. Petrus gebruikt dat woord voor de gelovigen. Je woont hier echt en je hoort erbij, en tegelijk ligt je eigenlijke thuis ergens anders."
+            uitleg: "Een bijwoner was in de oudheid iemand die in een stad of land woonde zonder er burger te zijn. Hij woonde en werkte er, maar had niet dezelfde rechten als de burgers. Petrus gebruikt dat woord voor de gelovigen: je woont hier echt en doet volop mee, en tegelijk ligt je eigenlijke thuis bij God."
         },
         {
             vraag: "Petrus schrijft dat bij God duizend jaar is als één dag. Wat wil hij daarmee zeggen?",
@@ -5748,7 +5748,7 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
             correct: "Een brullende leeuw",
             bijbelplaats: "1 Petrus 5:8",
-            uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Zijn gebrul draagt onder gunstige omstandigheden zo'n acht kilometer ver: daarmee laat hij horen dat dit zijn gebied is, en wie het hoort schrikt en weet niet waar het dier zit. Petrus kiest dat dreigende beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. Jakobus zegt het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
+            uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Zijn gebrul draagt onder gunstige omstandigheden zo'n acht kilometer ver: daarmee laat hij horen dat dit zijn gebied is, en wie het hoort schrikt. Petrus kiest dat dreigende beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. In zijn brief zegt Jakobus het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
         },
         {
             vraag: "Waar kijken de gelovigen volgens Petrus naar uit, waar alles goed en eerlijk zal zijn?",
@@ -5790,7 +5790,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus zegt dat Christus ons een voorbeeld heeft nagelaten. Met welk beeld zegt hij hoe wij Hem moeten volgen?",
-            antwoorden: ["Door in Zijn voetstappen te treden", "Door Zijn mantel te dragen", "Door Zijn woorden uit je hoofd te leren", "Door de weg te nemen die Hij heeft aangewezen"],
+            antwoorden: ["Door in Zijn voetstappen te treden", "Door Zijn mantel te dragen", "Door Zijn woorden uit je hoofd te leren", "Door Zijn sandalen aan te trekken"],
             correct: "Door in Zijn voetstappen te treden",
             bijbelplaats: "1 Petrus 2:21"
         },
@@ -5804,8 +5804,8 @@ vragenData["Petrus & Judas"] = {
             vraag: "Petrus schrijft dat gelovigen niet met goud of zilver zijn vrijgekocht. Wat was volgens hem veel kostbaarder?",
             antwoorden: ["Het kostbare bloed van Christus, als van een lam zonder gebrek", "De schatten van de tempel", "De wijsheid van de priesters", "De rijkdom van koningen"],
             correct: "Het kostbare bloed van Christus, als van een lam zonder gebrek",
-            bijbelplaats: "1 Petrus 1:18-19",
-            uitleg: "Vrijkopen betekende in die tijd iets heel concreets: voor een slaaf werd een prijs betaald, en daarna was hij vrij. Petrus gebruikt dat beeld, maar draait het om. De prijs was geen goud of zilver, want daar koop je gewone dingen mee. Hij noemt het kostbare bloed van Christus, en vergelijkt Hem met een lam zonder gebrek, zoals het lam dat bij Pesach werd geslacht."
+            bijbelplaats: "1 Petrus 1:18-19 · Exodus 12:5",
+            uitleg: "Vrijkopen betekende in die tijd iets heel concreets: voor een slaaf of gevangene kon een prijs betaald worden, zodat hij vrij werd. Petrus gebruikt dat beeld voor wat Jezus deed. Geen goud of zilver kon deze vrijheid kopen: Jezus gaf Zijn eigen leven. Petrus vergelijkt Hem met een lam zonder gebrek, net als het paaslam, dat ook zonder gebrek moest zijn (Exodus 12:5)."
         },
         {
             vraag: "Petrus noemt een rijtje eigenschappen die je bij je geloof moet voegen. Welke zet hij als laatste, als kroon op alles?",
@@ -5814,7 +5814,7 @@ vragenData["Petrus & Judas"] = {
             bijbelplaats: "2 Petrus 1:5-7"
         },
         {
-            vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die zijn eigen broer doodde uit jaloezie. Wie was die man?",
+            vraag: "Judas noemt een slecht voorbeeld uit het Oude Testament: een man die in woede zijn eigen broer doodde. Wie was die man?",
             antwoorden: ["Kaïn", "Esau", "Saul", "Achab"],
             correct: "Kaïn",
             bijbelplaats: "Judas 11 · Genesis 4:8"
@@ -5827,7 +5827,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Judas vergelijkt mensen die mooie praatjes hebben maar niets goeds doen met bomen. Wat hebben die bomen volgens hem niet?",
-            antwoorden: ["Vruchten", "Bladeren", "Wortels", "Schaduw"],
+            antwoorden: ["Vruchten", "Bladeren", "Vogelnestjes", "Schaduw"],
             correct: "Vruchten",
             bijbelplaats: "Judas 12"
         },
@@ -5853,14 +5853,14 @@ vragenData["Petrus & Judas"] = {
     expert: [
         {
             vraag: "Judas roept de gelovigen op om iets te doen voor het geloof dat eens en voorgoed aan hen is toevertrouwd. Waartoe roept hij hen op?",
-            antwoorden: ["Ervoor strijden", "Het zorgvuldig bewaren", "Het aan anderen doorgeven", "Het steeds beter leren kennen"],
+            antwoorden: ["Ervoor strijden", "Het geheimhouden voor mensen buiten de gemeente", "Het aanpassen, zodat het beter bij de tijd past", "Het aan de apostelen overlaten"],
             correct: "Ervoor strijden",
             bijbelplaats: "Judas 3"
         },
         {
-            vraag: "Judas eindigt met een lofprijzing op God, die machtig is om te zorgen dat je niet valt. Wat zegt hij dat God met jou doet?",
-            antwoorden: ["Hij houdt je staande", "Hij houdt je stil", "Hij houdt je klein", "Hij houdt je verborgen"],
-            correct: "Hij houdt je staande",
+            vraag: "Judas eindigt zijn brief met een lofprijzing op Gods macht. Wat kan God volgens Judas voor de gelovigen doen?",
+            antwoorden: ["Hen behoeden voor struikelen en vol vreugde bij Zich brengen", "Hen voor alle moeilijkheden op aarde sparen", "Hen meteen alle geheimen van de hemel laten begrijpen", "Hen nooit meer laten twijfelen"],
+            correct: "Hen behoeden voor struikelen en vol vreugde bij Zich brengen",
             bijbelplaats: "Judas 24"
         },
         {
@@ -5895,7 +5895,7 @@ vragenData["Petrus & Judas"] = {
         },
         {
             vraag: "Petrus schrijft iets verrassends: er is een groep die ernaar verlangt de geheimen van Gods redding beter te begrijpen. Wie zijn dat?",
-            antwoorden: ["De engelen", "De koningen", "De apostelen", "De profeten"],
+            antwoorden: ["De engelen", "De kooplieden", "De apostelen", "De Romeinse keizers"],
             correct: "De engelen",
             bijbelplaats: "1 Petrus 1:12"
         },
@@ -5936,14 +5936,14 @@ vragenData["Petrus & Judas"] = {
             antwoorden: ["Van het opbinden van je lange kleed met je gordel, om te werken", "Van het aantrekken van een riem waaraan het zwaard werd gehangen", "Van het vastbinden van een lastdier voordat het op weg gaat", "Van het strak spannen van een boog voor het schieten"],
             correct: "Van het opbinden van je lange kleed met je gordel, om te werken",
             bijbelplaats: "1 Petrus 1:13",
-            uitleg: "Men droeg kleren tot op de enkels. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel, zodat hij vrij kon bewegen. Het beeld betekent dus: maak je klaar om aan de slag te gaan. Het bijzondere is dat Petrus het niet over je benen heeft maar over je denken — houd je gedachten bij elkaar in plaats van ze alle kanten op te laten waaien."
+            uitleg: "Veel mensen droegen een lang kleed. Wie ging werken of op reis ging, trok het kleed omhoog en stopte het in zijn gordel, zodat hij vrij kon bewegen. Het beeld betekent dus: maak je klaar om aan de slag te gaan. Het bijzondere is dat Petrus het niet over je benen heeft maar over je denken — houd je gedachten bij elkaar in plaats van ze alle kanten op te laten waaien."
         },
         {
-            vraag: "Aan het einde van zijn eerste brief stuurt Petrus groeten vanuit een plaats die hij \"Babylon\" noemt. Welke stad wordt daarmee vrijwel zeker bedoeld?",
+            vraag: "Aan het einde van zijn eerste brief stuurt Petrus groeten vanuit een plaats die hij \"Babylon\" noemt. Welke stad wordt daarmee volgens de gangbare uitleg bedoeld?",
             antwoorden: ["Rome", "Jeruzalem", "Antiochië", "Alexandrië"],
             correct: "Rome",
             bijbelplaats: "1 Petrus 5:13",
-            uitleg: "Petrus schrijft letterlijk dat hij groeten stuurt vanuit \"Babylon\". Toch bedoelt hij vrijwel zeker Rome. De oude stad Babylon aan de Eufraat was in zijn tijd al grotendeels verlaten, en geen enkele oude bron plaatst Petrus daar. De vroege christenen verbinden hem juist met Rome, waar hij volgens die overlevering ook gestorven is. \"Babylon\" was toen een bijnaam voor Rome: de grote stad die macht heeft over de wereld en Gods volk vervolgt. Ook Openbaring gebruikt die naam zo."
+            uitleg: "Petrus schrijft letterlijk dat hij groeten stuurt vanuit \"Babylon\". Volgens de gangbare uitleg bedoelt hij daarmee Rome. Babylon was vroeger de hoofdstad van het machtige rijk dat Jeruzalem verwoestte en Gods volk in ballingschap wegvoerde. In de tijd van de eerste christenen was Rome de grote wereldmacht, en zo werd \"Babylon\" een bijnaam voor Rome. Ook Openbaring gebruikt die naam zo. De vroege christenen verbinden Petrus met Rome, waar hij volgens hun overlevering ook gestorven is. De kerkhistoricus Eusebius (rond 325) schrijft al dat Petrus met \"Babylon\" Rome bedoelde."
         }
     ]
 };
