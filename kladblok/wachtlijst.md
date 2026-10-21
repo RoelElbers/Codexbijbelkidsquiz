@@ -120,14 +120,34 @@ elk antwoord herhaald hoeft te worden.*
   Eventueel aangevuld met genezing (5:15), zorgvuldig geformuleerd: God geneest
   soms, zonder de belofte dat Hij het altijd doet. Er hoort een idee bij voor
   een woordenboeklemma "Zalven". De concepten staan in de chat van 20 okt 2026.
-- **Jakobus G3 (Jakobus, de broer van de Heer):** de uitleg herzien.
-  De zin "die in datzelfde vers apart genoemd wordt (Matteüs 27:56, Marcus
-  15:40)" klopt niet: in die verzen wordt de moeder van Jezus niet genoemd;
-  dat ze bij het kruis stond, staat in Johannes 19:25. Daarnaast afwegen: Roels
-  lijn van sept 2026 ("niet kiezen is ook een keuze": de lezing van een naaste
-  verwant, met erkenning van andere visies) tegenover de voorstellen van
-  ChatGPT en Magisterium om de katholieke, orthodoxe en protestantse uitleg
-  neutraal naast elkaar te zetten.
+- **Nieuwe Ontdekken-rubriek "Eén Bijbel, verschillende lezingen" (werknaam):**
+  een plek voor teksten die christenen verschillend lezen, waar elke traditie
+  vanuit haar eigen teksten wordt beschreven, zonder dat de game kiest. Hier
+  past een lang artikel; in het woordenboek zou het te lang worden. Eerste
+  onderwerpen: de broers van Jezus (Jakobus G3; de uitleg daar wordt dan kort,
+  met een verwijzing), de ziekenzalving (Jakobus B5). Later bijvoorbeeld: doop,
+  avondmaal en eucharistie, Petrus en de rots (Matteüs 16:18), de paasdatum.
+  Nagaan of een vraag aan zo'n artikel gekoppeld kan worden, zoals bij de
+  Verborgen Schat (catecheseId). Het punt "Jakobus B5" blijft apart staan.
+  Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
+  21 okt 2026):
+  - Katholiek: "broer" kan ook een naaste verwant zijn (Abraham en Lot,
+    Genesis 13:8); Maria, de moeder van Jakobus en Jozef (Matteüs 27:56),
+    mogelijk dezelfde als Maria van Klopas (Johannes 19:25); Maria wordt aan
+    de leerling toevertrouwd (Johannes 19:26-27); geen andere kinderen bij
+    Bethlehem, de vlucht naar Egypte en de terugkeer ("het kind en Zijn
+    moeder", Matteüs 2:13-14, 21) of de twaalfjarige Jezus in de tempel
+    (Lucas 2:41-51); Lucas had Maria als bron. De kerk herdenkt Jakobus en
+    Simeon als verwanten van de Heer (Hegesippus, 2e eeuw).
+  - Orthodox: zonen van Jozef uit een eerder huwelijk (overlevering,
+    Protevangelie van Jakobus, 2e eeuw).
+  - Protestants: jongere broers en zussen, zonen en dochters van Maria en
+    Jozef; Jezus heet "eerstgeboren" (Lucas 2:7), "totdat" (Matteüs 1:25), de
+    broers worden bij naam genoemd (Matteüs 13:55, Marcus 6:3) en komen vaker
+    terug (Johannes 7:5, Handelingen 1:14, 1 Korintiërs 9:5).
+  - Goed om te weten: Luther, Calvijn en Zwingli hielden vast aan Maria's
+    blijvende maagdelijkheid; de lezing "echte broers" werd onder protestanten
+    pas later de meest gangbare.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
