@@ -119,9 +119,10 @@ elk antwoord herhaald hoeft te worden.*
   past een lang artikel; in het woordenboek zou het te lang worden. Eerste
   onderwerpen: de broers van Jezus (Jakobus G3; de uitleg daar wordt dan kort,
   met een verwijzing) en de ziekenzalving (Jakobus B5); beide zijn hieronder
-  uitgewerkt. Later bijvoorbeeld: doop, avondmaal en eucharistie, Petrus en de
-  rots (Matteüs 16:18), de paasdatum. Nagaan of een vraag aan zo'n artikel
-  gekoppeld kan worden, zoals bij de Verborgen Schat (catecheseId).
+  uitgewerkt. Later bijvoorbeeld: doop, avondmaal en eucharistie, de biecht en
+  de schuldbelijdenis, Petrus en de rots (Matteüs 16:18), de paasdatum. Nagaan
+  of een vraag aan zo'n artikel gekoppeld kan worden, zoals bij de Verborgen
+  Schat (catecheseId).
   - Artikel over de broers van Jezus (Jakobus G3):
     Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
     21 okt 2026):
@@ -171,6 +172,19 @@ elk antwoord herhaald hoeft te worden.*
     - Idee voor een woordenboeklemma "Zalven" (koningen, priesters en
       profeten; Messias, "de gezalfde"; Jakobus 5:14). De concepten staan in de
       chat van 20 okt 2026.
+  - Artikel over de biecht en de schuldbelijdenis (Brieven van Johannes B2,
+    1 Johannes 1:9):
+    - De uitleg bij B2 is op 21 okt 2026 weggehaald; dit onderwerp krijgt een
+      plek in de rubriek. Magisterium wees erop dat ook de orthodoxe kerk de
+      biecht als sacrament kent, en sommige protestantse kerken een persoonlijke
+      belijdenis bij een predikant.
+    - Oude uitlegtekst van B2: Je zonden belijden betekent dat je eerlijk tegen
+      God zegt wat je verkeerd hebt gedaan. Dat doe je niet om God iets te
+      vertellen wat Hij nog niet weet, maar omdat het opgeruimd staat tussen
+      jullie. Hoe gelovigen dat doen, verschilt. De een bidt het thuis. In de
+      kerk spreken de gelovigen het vaak samen uit, aan het begin van de dienst;
+      dat heet een schuldbelijdenis. In de Katholieke Kerk bestaat daarnaast de
+      biecht.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
