@@ -5984,7 +5984,7 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["De volmaakte liefde", "Een sterk geloof", "Veel kennis van God", "Het houden van de geboden"],
             correct: "De volmaakte liefde",
             bijbelplaats: "1 Johannes 4:17-18",
-            uitleg: "Johannes zegt dat liefde en angst uiteindelijk niet bij elkaar passen. In de verzen hieromheen spreekt hij over de dag van het oordeel, en hij schrijft dat angst met straf te maken heeft (1 Johannes 4:17-18). Wie leert vertrouwen op Gods liefde, hoeft daar niet bang voor te zijn. Dat betekent niet dat een gelovige nooit bang kan zijn; Johannes laat zien welke kant Gods liefde met een mens op wil."
+            uitleg: "Johannes zegt dat liefde en angst uiteindelijk niet bij elkaar passen. In de verzen hieromheen spreekt hij over de dag van het oordeel, en hij schrijft dat angst met straf te maken heeft. Wie leert vertrouwen op Gods liefde, hoeft daar niet bang voor te zijn. Dat betekent niet dat een gelovige nooit bang kan zijn; Johannes laat zien welke kant Gods liefde met een mens op wil."
         },
         {
             vraag: "Johannes schrijft over de Zoon, Jezus. Wat heeft volgens hem iedereen die de Zoon heeft?",
@@ -6153,8 +6153,8 @@ vragenData["Brieven van Johannes"] = {
         },
         {
             vraag: "Johannes spreekt in één passage de gelovigen achter elkaar aan met drie verschillende namen, en hij zegt tegen elk iets anders. Welke drie namen gebruikt hij?",
-            antwoorden: ["Kinderen, jongeren en ouderen", "Mannen, vrouwen en kinderen", "Armen, rijken en slaven", "Joden, Grieken en Romeinen"],
-            correct: "Kinderen, jongeren en ouderen",
+            antwoorden: ["Kinderen, jongeren en vaders", "Mannen, vrouwen en kinderen", "Armen, rijken en slaven", "Joden, Grieken en Romeinen"],
+            correct: "Kinderen, jongeren en vaders",
             bijbelplaats: "1 Johannes 2:12-14"
         },
         {
@@ -6175,7 +6175,7 @@ vragenData["Brieven van Johannes"] = {
             antwoorden: ["Zij zullen aan Hem gelijk zijn", "Zij zullen Hem eindelijk begrijpen", "Zij zullen naast Hem mogen staan", "Zij zullen een nieuwe naam krijgen"],
             correct: "Zij zullen aan Hem gelijk zijn",
             bijbelplaats: "1 Johannes 3:2",
-            uitleg: "Het Griekse woord dat Johannes gebruikt, homoios, betekent \"gelijkend op\" of \"zoals\". Dat betekent niet dat wij God worden, maar dat wij op een bijzondere manier op Christus zullen lijken. Hoe dat precies zal zijn, weten we nog niet; Johannes zegt zelf dat dat nog niet bekend is. Eén ding weet hij wel zeker: we zullen Hem zien zoals Hij werkelijk is."
+            uitleg: "Het Griekse woord dat Johannes gebruikt, homoios, betekent \"gelijk aan\" of \"lijkend op\". Dat betekent niet dat wij God worden, maar dat wij op een bijzondere manier op Christus zullen lijken. Hoe dat precies zal zijn, weten we nog niet; Johannes zegt zelf dat dat nog niet bekend is. Eén ding weet hij wel zeker: we zullen Hem zien zoals Hij werkelijk is."
         },
         {
             vraag: "In één korte zin zegt Johannes waarvoor de Zoon van God op aarde verschenen is. Wat was volgens hem het doel?",
