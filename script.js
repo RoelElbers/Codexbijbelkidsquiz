@@ -6525,7 +6525,7 @@ vragenData["Openbaring"] = {
             bijbelplaats: "Openbaring 21:21"
         },
         {
-            vraag: "In het oude Jeruzalem stond het belangrijkste heiligdom van Israël. In het nieuwe Jeruzalem ziet Johannes het nergens, want God en het Lam zijn er zelf het heiligdom. Wat ontbreekt er in het nieuwe Jeruzalem?",
+            vraag: "Johannes beschrijft het nieuwe Jeruzalem heel uitgebreid. Toch ziet hij één gebouw er niet, omdat God en het Lam zelf die plaats innemen. Wat ontbreekt er in het nieuwe Jeruzalem?",
             antwoorden: ["De tempel", "De stadsmuur", "De poorten", "De rivier"],
             correct: "De tempel",
             bijbelplaats: "Openbaring 21:22"
