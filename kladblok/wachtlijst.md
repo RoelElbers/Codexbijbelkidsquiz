@@ -139,8 +139,15 @@ elk antwoord herhaald hoeft te worden.*
     moeder", Matteüs 2:13-14, 21) of de twaalfjarige Jezus in de tempel
     (Lucas 2:41-51); Lucas had Maria als bron. De kerk herdenkt Jakobus en
     Simeon als verwanten van de Heer (Hegesippus, 2e eeuw).
-  - Orthodox: zonen van Jozef uit een eerder huwelijk (overlevering,
-    Protevangelie van Jakobus, 2e eeuw).
+    - Twee zussen die allebei Maria heten ligt niet voor de hand; daarom lezen
+      veel uitleggers "zuster" in Johannes 19:25 als verwante. Volgens
+      Hegesippus (2e eeuw) was Klopas een broer van Jozef; als Maria van Klopas
+      zijn vrouw was, was zij de schoonzus van Maria. (Johannes 19:25 kan
+      gelezen worden met drie of met vier vrouwen bij het kruis; deze
+      redenering gaat uit van drie.)
+  - Orthodox: zonen van Jozef uit een eerder huwelijk (verdedigd door
+    Epiphanius van Salamis, 4e eeuw, in zijn Panarion; ook Eusebius,
+    Kerkgeschiedenis 2.1, noemt Jakobus een zoon van Jozef).
   - Protestants: jongere broers en zussen, zonen en dochters van Maria en
     Jozef; Jezus heet "eerstgeboren" (Lucas 2:7), "totdat" (Matteüs 1:25), de
     broers worden bij naam genoemd (Matteüs 13:55, Marcus 6:3) en komen vaker
@@ -148,6 +155,13 @@ elk antwoord herhaald hoeft te worden.*
   - Goed om te weten: Luther, Calvijn en Zwingli hielden vast aan Maria's
     blijvende maagdelijkheid; de lezing "echte broers" werd onder protestanten
     pas later de meest gangbare.
+  - Bronnen in het artikel bij naam noemen, met een korte uitleg wie het
+    waren. Hegesippus (2e eeuw) schreef de geschiedenis van de eerste gemeenten
+    op; zijn werk is verloren, maar zijn woorden zijn bewaard bij Eusebius,
+    Kerkgeschiedenis 3.11 en 4.22 (rond 325). Daar staan ook Klopas als broer
+    van Jozef en Simeon als neef van de Heer. Epiphanius van Salamis was een
+    bisschop uit de 4e eeuw. Apocriefe geschriften, zoals het Protevangelie van
+    Jakobus, NIET als bron noemen: dat kan ouders afschrikken.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
