@@ -5747,7 +5747,7 @@ vragenData["Petrus & Judas"] = {
             vraag: "Petrus waarschuwt de gelovigen met een krachtig beeld: de duivel gaat rond als welk dier?",
             antwoorden: ["Een brullende leeuw", "Een sluwe vos", "Een gladde slang", "Een zwarte raaf"],
             correct: "Een brullende leeuw",
-            bijbelplaats: "1 Petrus 5:8",
+            bijbelplaats: "1 Petrus 5:8, 10 · Jakobus 4:7",
             uitleg: "Een leeuw was een van de gevaarlijkste roofdieren die men in de wereld van Petrus kende. Zijn gebrul draagt onder gunstige omstandigheden zo'n acht kilometer ver: daarmee laat hij horen dat dit zijn gebied is, en wie het hoort schrikt. Petrus kiest dat dreigende beeld met opzet voor de duivel, maar hij laat het er niet bij. Blijf nuchter en waakzaam, schrijft hij, en bied weerstand: gebrul is nog geen sprong. Je hoeft het ook niet alleen te doen. Een paar zinnen verder belooft Petrus dat God zelf je sterk en standvastig zal maken. In zijn brief zegt Jakobus het nog korter: verzet je tegen de duivel, en hij vlucht van je weg."
         },
         {
@@ -5861,7 +5861,8 @@ vragenData["Petrus & Judas"] = {
             vraag: "Judas eindigt zijn brief met een lofprijzing op Gods macht. Wat kan God volgens Judas voor de gelovigen doen?",
             antwoorden: ["Hen behoeden voor struikelen en vol vreugde bij Zich brengen", "Hen voor alle moeilijkheden op aarde sparen", "Hen meteen alle geheimen van de hemel laten begrijpen", "Hen nooit meer laten twijfelen"],
             correct: "Hen behoeden voor struikelen en vol vreugde bij Zich brengen",
-            bijbelplaats: "Judas 24"
+            bijbelplaats: "Judas 24",
+            uitleg: "Struikelen betekent hier niet dat je over een steen valt, maar dat je van God afdwaalt. Judas schrijft dat God machtig is om je daarvoor te bewaren, en dat Hij je op het eind vol vreugde bij Zich brengt."
         },
         {
             vraag: "Welke bijzondere titel geeft Petrus aan Jezus, die over alle gelovigen waakt?",
