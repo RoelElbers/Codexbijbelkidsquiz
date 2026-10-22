@@ -240,7 +240,7 @@ const ONTDEK_GELD = [
     { noot: "Het geld van de keizer" },
     { item: "<span class=\"naslag-term\">Quadrans</span> — €&nbsp;2 à 3, een vierenzestigste dagloon, ongeveer tien minuten werken (Matteüs 5:26)." },
     { item: "<span class=\"naslag-term\">As</span> — €&nbsp;10 à 12, een zestiende dagloon, ongeveer een half uur werken. Voor één as kocht je twee mussen, en tóch vergeet God er geen enkele van (Matteüs 10:29). In het Grieks heet deze munt assarion. In veel Bijbels staat \"stuiver\" of \"duit\"." },
-    { item: "<span class=\"naslag-term\">Denarie</span> — €&nbsp;150 à 200, het loon voor één hele dag werken. Naar zilver: ongeveer €&nbsp;7. Een zilveren muntje van zo'n vier gram met het hoofd van de keizer erop. Jezus vroeg om zo'n munt toen Hem gevraagd werd of je belasting moest betalen (Matteüs 22:19). In de gelijkenis van de arbeiders krijgt iedereen er één voor een dag werken (Matteüs 20:2). Dat verschil is groot: het zilver zelf is bijna niets waard, maar het was het loon van een hele dag werk." },
+    { item: "<span class=\"naslag-term\">Denarie</span> — €&nbsp;150 à 200, het loon voor één hele dag werken. Naar zilver: ongeveer €&nbsp;7. Dat verschil is groot: het zilver zelf is bijna niets waard, maar het was het loon van een hele dag werk. Een zilveren muntje van zo'n vier gram met het hoofd van de keizer erop. Jezus vroeg om zo'n munt toen Hem gevraagd werd of je belasting moest betalen (Matteüs 22:19). In de gelijkenis van de arbeiders krijgt iedereen er één voor een dag werken (Matteüs 20:2)." },
 
     { kop: "Grieks geld" },
     { noot: "Het geld van de handel" },
