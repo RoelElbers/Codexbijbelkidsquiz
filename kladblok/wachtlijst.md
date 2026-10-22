@@ -120,7 +120,7 @@ elk antwoord herhaald hoeft te worden.*
   onderwerpen: de broers van Jezus (Jakobus G3; de uitleg daar wordt dan kort,
   met een verwijzing) en de ziekenzalving (Jakobus B5); beide zijn hieronder
   uitgewerkt. Later bijvoorbeeld: doop, avondmaal en eucharistie, de biecht en
-  de schuldbelijdenis, Petrus en de rots (Matteüs 16:18), de paasdatum. Nagaan
+  de schuldbelijdenis, de heiligen en de voorbede, Petrus en de rots (Matteüs 16:18), de paasdatum. Nagaan
   of een vraag aan zo'n artikel gekoppeld kan worden, zoals bij de Verborgen
   Schat (catecheseId).
   - Artikel over de broers van Jezus (Jakobus G3):
@@ -185,6 +185,11 @@ elk antwoord herhaald hoeft te worden.*
       kerk spreken de gelovigen het vaak samen uit, aan het begin van de dienst;
       dat heet een schuldbelijdenis. In de Katholieke Kerk bestaat daarnaast de
       biecht.
+- **Onzevader, nieuwe katholieke tekst:** nagaan hoe de game het Onzevader
+  citeert, nu de katholieke Kerk een nieuwe Nederlandse tekst gebruikt.
+  Aanleiding: het woordenboeklemma "Verzoeking" (22 okt 2026), waar een zin
+  met "Leid ons niet in verzoeking" bewust nog is weggelaten. Daarna bepalen
+  of die zin terugkomt, en in welke vorm.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
