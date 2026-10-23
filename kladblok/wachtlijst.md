@@ -168,9 +168,9 @@ elk antwoord herhaald hoeft te worden.*
       naast hem."
     - Bij B5 blijft het antwoord neutraal ("bidden"); de uitleg daar wordt
       kort, met een verwijzing naar het artikel.
-    - Idee voor een woordenboeklemma "Zalven" (koningen, priesters en
-      profeten; Messias, "de gezalfde"; Jakobus 5:14). De concepten staan in de
-      chat van 20 okt 2026.
+    - Het woordenboeklemma "Zalven" staat sinds 23 okt 2026 in het Woordenboek
+      (koningen, priesters, Messias, Jakobus 5:14). In het artikel ernaar
+      verwijzen.
   - Artikel over de biecht en de schuldbelijdenis (Brieven van Johannes B2,
     1 Johannes 1:9):
     - De uitleg bij B2 is op 21 okt 2026 weggehaald; dit onderwerp krijgt een
