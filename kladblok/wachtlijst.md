@@ -184,6 +184,41 @@ elk antwoord herhaald hoeft te worden.*
       kerk spreken de gelovigen het vaak samen uit, aan het begin van de dienst;
       dat heet een schuldbelijdenis. In de Katholieke Kerk bestaat daarnaast de
       biecht.
+  - Artikel over het Onzevader (aanleiding: lemma Verzoeking, 23 okt 2026):
+    - Het belangrijkste gebed van de christenen; dit artikel mag uitgebreid
+      zijn.
+    - Twee versies in de Bijbel: Matteüs 6:9-13 en Lucas 11:2-4. Het slot "Want
+      van U is het koninkrijk…" staat niet in de oudste handschriften van
+      Matteüs, maar wel al in de Didache (hoofdstuk 8), die ook zegt dat
+      christenen het drie keer per dag baden.
+    - De zesde bede: het Griekse peirasmos betekent zowel verleiding als
+      beproeving. Jakobus 1:13: God verleidt niemand; God kan wel beproeven
+      (Abraham; Deuteronomium 8:2).
+      - Katholiek Nederland en Vlaanderen, sinds Advent 2016: "en breng ons
+        niet in beproeving" (daarvoor: "en leid ons niet in bekoring"). De
+        invoering ging niet zonder discussie.
+      - Protestants (NBG51, HSV): "en leid ons niet in verzoeking". NBV21:
+        "breng ons niet in beproeving".
+      - Frankrijk, sinds Advent 2017: "Et ne nous laisse pas entrer en
+        tentation" (laat ons niet binnengaan in de verleiding).
+      - Paus Franciscus, interview met TV2000, december 2017: "leid ons niet in
+        verzoeking" is geen goede vertaling; een vader brengt zijn kind niet in
+        verleiding. Hij noemde de Franse oplossing als goed voorbeeld.
+      - Italië, sinds 2020: "non abbandonarci alla tentazione" (laat ons niet
+        alleen in de verleiding).
+      - Duitsland: de bisschoppen besloten in 2018 "führe uns nicht in
+        Versuchung" te houden.
+      - Engels: katholiek "lead us not into temptation"; de oecumenische tekst
+        (ELLC, 1988) "save us from the time of trial"; NRSV "do not bring us to
+        the time of trial". Bij "the time of trial" denken veel uitleggers aan
+        de grote beproeving aan het einde.
+    - Verder: "verlos ons van de boze" (protestants) of "van het kwade"
+      (katholiek): het Griekse woord kan allebei betekenen. En "schuld" of
+      "schulden".
+    - Bronnen: rkkerk.nl (invoering 2016), Kerknet en NRL (toelichting), NOS
+      (verzet 2016), Catholic News Agency en America Magazine (paus Franciscus,
+      dec 2017; Duitsland, jan 2018). Bij het schrijven ook de Franse en
+      Italiaanse officiële documenten erbij nemen.
 - **Onzevader, nieuwe katholieke tekst:** nagaan hoe de game het Onzevader
   citeert, nu de katholieke Kerk een nieuwe Nederlandse tekst gebruikt.
   Aanleiding: het woordenboeklemma "Verzoeking" (22 okt 2026), waar een zin
