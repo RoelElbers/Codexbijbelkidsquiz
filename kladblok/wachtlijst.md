@@ -124,8 +124,7 @@ elk antwoord herhaald hoeft te worden.*
   of een vraag aan zo'n artikel gekoppeld kan worden, zoals bij de Verborgen
   Schat (catecheseId).
   - Artikel over de broers van Jezus (Jakobus G3):
-    Argumenten voor het artikel over de broers van Jezus (besproken op 20 en
-    21 okt 2026):
+    Argumenten (besproken op 20 en 21 okt 2026):
     - Katholiek: "broer" kan ook een naaste verwant zijn (Abraham en Lot,
       Genesis 13:8); Maria, de moeder van Jakobus en Jozef (Matteüs 27:56),
       mogelijk dezelfde als Maria van Klopas (Johannes 19:25); Maria wordt aan
