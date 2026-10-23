@@ -219,11 +219,10 @@ elk antwoord herhaald hoeft te worden.*
       (verzet 2016), Catholic News Agency en America Magazine (paus Franciscus,
       dec 2017; Duitsland, jan 2018). Bij het schrijven ook de Franse en
       Italiaanse officiële documenten erbij nemen.
-- **Onzevader, nieuwe katholieke tekst:** nagaan hoe de game het Onzevader
-  citeert, nu de katholieke Kerk een nieuwe Nederlandse tekst gebruikt.
-  Aanleiding: het woordenboeklemma "Verzoeking" (22 okt 2026), waar een zin
-  met "Leid ons niet in verzoeking" bewust nog is weggelaten. Daarna bepalen
-  of die zin terugkomt, en in welke vorm.
+    - Als het artikel er staat: in het woordenboeklemma "Verzoeking" (en
+      eventueel "Gebed") een <em>Zie ook</em> naar het artikel zetten. Het lemma
+      noemt het Onzevader bewust niet (besloten 23 okt 2026): het artikel krijgt
+      een eigen plek, zodat het niet herhaald of te kort behandeld wordt.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
