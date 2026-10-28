@@ -7915,39 +7915,44 @@ function openSchatkist(niveau) {
 // 'bijbelplaats' en verschijnt na het antwoorden via checkAntwoord().
 const verborgenSchatVragen = [
     {
-        vraag: "In een kerk in Jeruzalem staat een inscriptie uit de zesde eeuw. Die wijst een huis aan als de plek van het Laatste Avondmaal, en zegt dat het huis toebehoorde aan de moeder van een van de evangelisten. Om welke evangelist gaat het?",
-        antwoorden: ["Marcus", "Matteüs", "Lucas", "Johannes"],
-        correct: "Marcus",
-        bijbelplaats: "Handelingen 12:12 · inscriptie uit de 6e eeuw, Syrisch-orthodoxe Sint-Markuskerk te Jeruzalem",
-        reveal: "In de Syrisch-orthodoxe Sint-Markuskerk in Jeruzalem staat een oude steen met een inscriptie, gevonden in 1940 en meestal in de zesde eeuw gedateerd. Daarop staat dat dit het huis was van Maria, de moeder van Johannes Marcus, en de plek van het Laatste Avondmaal. In Handelingen 12:12 lees je inderdaad dat de gelovigen in Jeruzalem samenkwamen in het huis van Maria, de moeder van Johannes Marcus. Of het echt dezelfde plek is, weten we niet: er is ook een andere kerk die zegt de bovenzaal te bewaren. Maar de steen laat zien hoe vroeg men al probeerde te onthouden waar het gebeurd was."
+        vraag: "Toen Petrus 's nachts door een engel uit de gevangenis was bevrijd, klopte hij aan bij een huis waar veel gelovigen samen baden. Het meisje Rhode was zo blij dat ze vergat de deur open te doen. Het huis was van een vrouw die Maria heette. Wie was haar zoon?",
+        antwoorden: ["Johannes Marcus", "Barnabas", "Silas", "Timoteüs"],
+        correct: "Johannes Marcus",
+        bijbelplaats: "Handelingen 12:12-16 · Kolossenzen 4:10",
+        reveal: "Johannes Marcus is volgens de overlevering de schrijver van het evangelie van Marcus. Hij ging later mee op reis met Paulus en met zijn neef Barnabas. In het huis van zijn moeder kwamen de gelovigen in Jeruzalem samen om te bidden. Petrus wist dus precies waar hij midden in de nacht naartoe moest.",
+        catecheseId: "het-huis-waar-petrus-aanklopte"
     },
     {
         vraag: "Het getal zeven komt overal voor in Openbaring (zeven gemeenten, zegels, bazuinen). Waar staat zeven symbolisch voor?",
         antwoorden: ["Geluk, zoals mensen dat nu van het getal zeven zeggen", "Het aantal apostelen", "Volheid of compleetheid", "De zeven dagen van de week"],
         correct: "Volheid of compleetheid",
         bijbelplaats: "Genesis 2:2-3",
-        reveal: "Zeven is het getal van compleetheid. Dat begint al op de eerste bladzijde van de Bijbel: in zes dagen maakt God de wereld, en op de zevende is alles af. Johannes gebruikt het getal daarna overal in Openbaring: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen, zeven sterren. Hij telt meer dan vijftig keer tot zeven. Hij bedoelt er niet mee dat er toevallig precies zeven gemeenten waren, maar dat het om het geheel gaat: alle gemeenten, de hele wereld, van begin tot eind."
+        reveal: "Zeven is het getal van compleetheid. Dat begint al op de eerste bladzijde van de Bijbel: in zes dagen maakt God de wereld, en op de zevende is alles af. Johannes gebruikt het getal daarna overal in Openbaring: zeven gemeenten, zeven zegels, zeven bazuinen, zeven schalen, zeven sterren. Het getal zeven komt er meer dan vijftig keer in voor. De zeven gemeenten waren echte gemeenten, die hij bij naam noemt. Maar veel uitleggers zien er ook een beeld in van het geheel: alle gemeenten, de hele wereld, van begin tot eind.",
+        catecheseId: "waar-staat-het-getal-zeven-symbolisch-vo"
     },
     {
         vraag: 'In Openbaring en in het boek Daniël komt de geheimzinnige uitdrukking "een tijd, tijden en een halve tijd" voor. Welke tijdsduur wordt daarmee bedoeld?',
         antwoorden: ["Zeven jaar", "Drieënhalf jaar", "Drie en een halve dag", "Duizend jaar"],
         correct: "Drieënhalf jaar",
         bijbelplaats: "Openbaring 12:14 · Daniël 7:25",
-        reveal: "Een tijd is een jaar, tijden zijn twee jaar, en een halve tijd is een half jaar: samen drieënhalf jaar. Het bijzondere is dat Openbaring diezelfde periode ook op twee andere manieren opschrijft: 42 maanden en 1260 dagen. Drie keer hetzelfde, steeds anders geteld. En let op het getal: drieënhalf is precies de helft van zeven, het getal van compleetheid. De moeilijke tijd is dus echt zwaar, maar hij is half, niet heel. Wanneer die tijd precies valt, daarover denken christenen heel verschillend."
+        reveal: "Een tijd is een jaar, tijden zijn twee jaar, en een halve tijd is een half jaar: samen drieënhalf jaar. Het bijzondere is dat Openbaring diezelfde periode ook op twee andere manieren opschrijft: 42 maanden en 1260 dagen. Drie keer hetzelfde, steeds anders geteld. En let op het getal: drieënhalf is precies de helft van zeven, het getal van compleetheid. De moeilijke tijd is dus echt zwaar, maar hij is half, niet heel. Wanneer die tijd precies valt, daarover denken christenen heel verschillend.",
+        catecheseId: "wat-betekent-een-tijd-tijden-en-een-halv"
     },
     {
         vraag: "In Openbaring ziet Johannes vier levende wezens rond Gods troon: een leeuw, een jonge stier, een mens en een arend. Uit het visioen van welke profeet komt dit beeld oorspronkelijk?",
         antwoorden: ["Jesaja", "Ezechiël", "Daniël", "Jeremia"],
         correct: "Ezechiël",
         bijbelplaats: "Ezechiël 1:10 · Openbaring 4:7",
-        reveal: "Ezechiël zag bij een rivier in Babylonië vier wezens met vier gezichten: een mens, een leeuw, een stier en een arend. Zo'n zeshonderd jaar later ziet Johannes ze terug rond Gods troon. Christenen zijn die vier later gaan verbinden met de vier evangelisten, en zo kwamen ze in kerken terecht: op glas-in-loodramen, boven deuren en op oude boekbanden. De verdeling die in onze kerken het bekendst werd, komt van Hiëronymus: de mens bij Matteüs, de leeuw bij Marcus, de stier bij Lucas en de arend bij Johannes. Kijk maar eens omhoog als je in een oude kerk staat."
+        reveal: "Ezechiël zag bij een rivier in Babylonië vier wezens met vier gezichten: een mens, een leeuw, een stier en een arend. Bijna zevenhonderd jaar later ziet Johannes ze terug rond Gods troon, maar anders: bij Ezechiël heeft elk wezen vier gezichten, bij Johannes heeft elk wezen er één. Christenen zijn die vier later gaan verbinden met de vier evangelisten, en zo kwamen ze in kerken terecht: op glas-in-loodramen, boven deuren en op oude boekbanden. De verdeling die in onze kerken het bekendst werd, kennen we vooral van de kerkvader Hiëronymus: de mens bij Matteüs, de leeuw bij Marcus, de stier bij Lucas en de arend bij Johannes. Kijk maar eens omhoog als je in een oude kerk staat.",
+        catecheseId: "waar-komen-de-vier-levende-wezens-vandaa"
     },
     {
         vraag: "Aan het einde van Openbaring ziet Johannes een schitterende stad uit de hemel neerdalen, waar God voorgoed bij de mensen woont. Hoe heet die stad?",
         antwoorden: ["Het hemelse Babylon", "Het nieuwe Eden", "De gouden tempel", "Het nieuwe Jeruzalem"],
         correct: "Het nieuwe Jeruzalem",
         bijbelplaats: "Openbaring 21:2",
-        reveal: "Even verderop meet een engel de stad op, en dan blijkt ze een kubus te zijn: even lang als breed als hoog. Die vorm bestond al eerder. In de tempel had één ruimte precies die maat: het allerheiligste, waar God woonde en waar maar één keer per jaar iemand binnen mocht. In het nieuwe Jeruzalem heeft de hele stad die vorm. Daarom is er ook geen tempel meer nodig: er is geen apart heilig kamertje meer, want alles is heilig en iedereen woont erin."
+        reveal: "Even verderop meet een engel de stad op, en dan blijkt ze een kubus te zijn: even lang als breed als hoog. Die vorm bestond al eerder. In de tempel had één ruimte precies die maat: het allerheiligste, waar God woonde en waar maar één keer per jaar iemand binnen mocht. In het nieuwe Jeruzalem heeft de hele stad die vorm. Daarom is er ook geen tempel meer nodig: er is geen apart heilig kamertje meer, want alles is heilig en iedereen woont erin.",
+        catecheseId: "het-nieuwe-jeruzalem"
     },
     {
         vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke bijnaam is dat?",
@@ -8007,7 +8012,8 @@ const verborgenSchatVragen = [
         antwoorden: ["Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort", "Zij beschrijven precies waar de poort in de stadsmuur stond", "Zij schrijven dat de poort in hun eigen tijd al was afgebroken", "Zij vertellen dat Jezus zelf die poort vaak gebruikte"],
         correct: "Zij bespreken deze tekst uitgebreid, maar noemen nergens een poort",
         bijbelplaats: "Marcus 10:25-27 · Origenes, Chrysostomus en Augustinus over deze tekst",
-        reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op — in preken, niet in de oudste bronnen. Wat Jezus juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk."
+        reveal: "Het poortje-verhaal klinkt mooi, maar het duikt pas veel later op. De oudste vermelding die we kennen is een korte aantekening uit de middeleeuwen, ruim duizend jaar na Jezus. Wat Jezus juist bedoelde, is dat het beeld ónmogelijk is: een enorme kameel die door een piepklein naaldgaatje moet. Dat kán niet, en dat is precies de bedoeling. De leerlingen schrikken en vragen: wie kan er dan nog gered worden? Jezus antwoordt: bij mensen is dit onmogelijk, maar bij God is alles mogelijk.",
+        catecheseId: "het-oog-van-de-naald"
     },
     {
         vraag: "Paulus dicteerde zijn brieven meestal aan een schrijver. In de brief aan de Romeinen doet die schrijver iets bijzonders: hij groet de lezers even zelf. Hoe heette hij?",
@@ -8024,18 +8030,18 @@ const verborgenSchatVragen = [
         reveal: "\"Kijk eens met wat grote letters ik u eigenhandig schrijf.\" Paulus dicteerde zijn brieven, maar het slot schreef hij vaak zelf, als een handtekening. Bij de Galaten valt dat extra op, want zijn eigen letters waren blijkbaar veel groter dan die van de geoefende schrijver. Waarom, staat er niet bij. Sommigen denken aan zijn ogen, anderen aan nadruk: zoals wij iets in hoofdletters zetten."
     },
     {
-        vraag: "Van het Nieuwe Testament is een piepklein stukje papyrus bewaard, kleiner dan een bankpasje, en het is het oudste dat we hebben. Uit welk bijbelboek komt het?",
+        vraag: "In een bibliotheek in Manchester ligt een piepklein stukje papyrus, kleiner dan een bankpasje. Het is een van de oudste stukjes van het Nieuwe Testament die we hebben. Uit welk bijbelboek komt het?",
         antwoorden: ["Johannes", "Matteüs", "Handelingen", "Romeinen"],
         correct: "Johannes",
         bijbelplaats: "Johannes 18:31-33, 37-38 · papyrusfragment P52, John Rylands Library, Manchester",
-        reveal: "Op het snippertje staan een paar regels uit het verhoor van Jezus door Pilatus, aan beide kanten beschreven. Het wordt meestal in de tweede eeuw gedateerd, al verschillen geleerden over het precieze jaar. Het is gevonden in Egypte, ver van de plek waar Johannes schreef. Dat laat zien hoe snel deze teksten werden overgeschreven en meegenomen, de hele Middellandse Zee over."
+        reveal: "Op het snippertje staan een paar regels uit het verhoor van Jezus door Pilatus, aan beide kanten beschreven. Het wordt meestal in de tweede eeuw gedateerd; sommige onderzoekers denken dat het ook uit het begin van de derde eeuw kan zijn. Het is gevonden in Egypte, ver van Efeze, waar Johannes volgens de overlevering schreef. Dat laat zien dat zijn evangelie al vroeg werd overgeschreven en ver weg werd gelezen."
     },
     {
         vraag: "Als je een bijbeltekst opzoekt, gebruik je een hoofdstuk en een vers. Sinds wanneer staan die nummers erin?",
         antwoorden: ["Pas honderden jaren na de apostelen", "De schrijvers zetten ze er zelf in", "Vanaf de eerste vertaling in het Latijn", "Sinds de boekdrukkunst in China"],
         correct: "Pas honderden jaren na de apostelen",
         bijbelplaats: "algemeen",
-        reveal: "De apostelen schreven doorlopende tekst, zonder nummers en meestal zonder spaties tussen de woorden: INDENBEGINNEWASHETWOORD. Voor ons is dat puzzelen, maar men las toen bijna altijd hardop, en dan hoor je vanzelf waar een woord ophoudt. De hoofdstukken zoals wij ze kennen komen van Stephen Langton, rond het jaar 1200. De versnummers kwamen er pas in 1551 bij, van de Franse drukker Robert Estienne. Handig om iets terug te vinden, maar bedenk wel: een vers is geen zin die los bedoeld was."
+        reveal: "De eerste christenen schreven doorlopende tekst, zonder nummers en meestal zonder spaties tussen de woorden: INDENBEGINNEWASHETWOORD. Voor ons is dat puzzelen, maar wie gewend was zo te lezen, zag de woorden vanzelf. Vaak werd er ook hardop gelezen, en dan hoor je waar een woord ophoudt. De hoofdstukken zoals wij ze kennen komen van Stephen Langton, rond het jaar 1200. De versnummers kwamen er pas in 1551 bij, van de Franse drukker Robert Estienne. Handig om iets terug te vinden, maar bedenk wel: een vers is geen zin die los bedoeld was."
     },
     {
         vraag: "In de tijd van de eerste christenen schreef vrijwel iedereen op boekrollen. Wat deden de christenen anders?",
@@ -8053,18 +8059,18 @@ const verborgenSchatVragen = [
     },
     {
         vraag: "In 1947 werden in een grot bij de Dode Zee kruiken met oeroude boekrollen gevonden. Eén rol bevat het hele boek Jesaja. Wat bleek daar bijzonder aan?",
-        antwoorden: ["Hij was zo'n duizend jaar ouder dan alle bekende Hebreeuwse bijbels, en toch bijna gelijk", "Hij bevatte hoofdstukken van Jesaja die niemand ooit eerder had gelezen", "Hij was niet in het Hebreeuws geschreven, maar in het Latijn", "Hij bleek door de profeet Jesaja zelf geschreven te zijn"],
-        correct: "Hij was zo'n duizend jaar ouder dan alle bekende Hebreeuwse bijbels, en toch bijna gelijk",
+        antwoorden: ["Hij was zo'n duizend jaar ouder dan de oudste volledige Hebreeuwse bijbels, en toch grotendeels gelijk", "Hij bevatte hoofdstukken van Jesaja die niemand ooit eerder had gelezen", "Hij was niet in het Hebreeuws geschreven, maar in het Latijn", "Hij bleek door de profeet Jesaja zelf geschreven te zijn"],
+        correct: "Hij was zo'n duizend jaar ouder dan de oudste volledige Hebreeuwse bijbels, en toch grotendeels gelijk",
         bijbelplaats: "Dode Zeerollen, grote Jesajarol, Israël Museum, Jeruzalem",
-        reveal: "De rol is van perkament, ruim zeven meter lang, en bevat alle 66 hoofdstukken van Jesaja. Toen geleerden hem naast de Hebreeuwse Bijbel legden die we al kenden, bleken de verschillen heel klein: vooral woorden die anders gespeld waren. Duizend jaar lang hebben schrijvers de tekst dus heel zorgvuldig overgeschreven. Je kunt de rol nu zien in Jeruzalem, in een museumgebouw waarvan het dak de vorm heeft van het deksel van zo'n kruik.",
+        reveal: "De rol is van perkament, ruim zeven meter lang, en bevat alle 66 hoofdstukken van Jesaja. Toen geleerden hem naast de Hebreeuwse Bijbel legden die we al kenden, bleek de tekst grotendeels gelijk. De meeste verschillen gingen over spelling; soms was een woord of een zinnetje anders. Duizend jaar lang hebben schrijvers de tekst dus heel zorgvuldig overgeschreven. Je kunt de rol nu zien in Jeruzalem, in een museumgebouw waarvan het dak de vorm heeft van het deksel van zo'n kruik.",
         catecheseId: "was-johannes-de-doper-een-essener"
     },
     {
-        vraag: "De Essenen, een Joodse groep uit de tijd van Jezus, legden met een tekst uit Jesaja uit waarom ze in de woestijn gingen wonen. Welke persoon uit de Bijbel gebruikte diezelfde tekst voor zichzelf?",
+        vraag: "Een Joodse groep uit de tijd van Jezus, meestal de Essenen genoemd, legde in een regelboek met een tekst uit Jesaja uit waarom ze in de woestijn gingen wonen. Welke persoon uit de Bijbel gebruikte diezelfde tekst voor zichzelf?",
         antwoorden: ["Johannes de Doper", "Paulus", "Petrus", "Mozes"],
         correct: "Johannes de Doper",
         bijbelplaats: "Jesaja 40:3 · Johannes 1:23 · Gemeenteregel uit Qumran",
-        reveal: "De tekst luidt: bereid in de woestijn de weg van de Heer. Toen men Johannes vroeg wie hij was, antwoordde hij met precies deze woorden. De Essenen schreven dezelfde tekst in hun regelboek, dat in een grot bij de Dode Zee is teruggevonden. Was Johannes een van hen? Dat weten we niet, maar er zijn opvallende overeenkomsten.",
+        reveal: "De tekst luidt: bereid in de woestijn de weg van de Heer. Toen men Johannes vroeg wie hij was, antwoordde hij met precies deze woorden. Dezelfde tekst staat in het regelboek van deze groep, dat in een grot bij de Dode Zee is teruggevonden. Was Johannes een van hen? Dat weten we niet, maar er zijn opvallende overeenkomsten.",
         catecheseId: "was-johannes-de-doper-een-essener"
     }
 ];
