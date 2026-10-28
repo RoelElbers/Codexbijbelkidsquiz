@@ -229,6 +229,11 @@ elk antwoord herhaald hoeft te worden.*
       ouderling, diaken).
     - Het lemma "Priester" in Wie is wie bleef bewust ongewijzigd; als het
       artikel er staat, vanuit Priester, Oudste en Opziener ernaar verwijzen.
+- **Mariapagina (kerken-katholiek-maria.html): de Tenhemelopneming en
+  de Onbevlekte Ontvangenis.** Twee katholieke geloofspunten over Maria
+  die nu ontbreken (aanvulling uit de ChatGPT-controle van 28 okt 2026).
+  Nieuw werk, geen correctie: later uitschrijven, voorleggen en laten
+  controleren.
 - **Jaarlijks nalopen (veranderende gegevens):** zilverprijs (okt 2026: € 1,55 per gram) in
   Hoe leefden ze toen › Geld en in de woordenboeklemma's Denarie en Talent; het dagloon
   (€ 150–200); het aantal Samaritanen (Wie is wie); de tijden van zonsopgang en -ondergang
