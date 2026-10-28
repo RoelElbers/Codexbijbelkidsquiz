@@ -249,7 +249,7 @@ elk antwoord herhaald hoeft te worden.*
 
 - Voor ouders en begeleiders (voor-ouders.html), inclusief de uitleg over de
   bijbelteksten; moet blijven kloppen met kerken.html.
-- De donatiepagina en bedankt-donatie.html.
+- De donatiepagina (steunen.html) en bedankt-donatie.html.
 - De metgezellenvragen (Hemeltrap-pool), als die nog niet langs
   Magisterium/ChatGPT zijn gegaan.
 - Controle of er ergens nog "Gevorderd" staat naast "Advanced".
