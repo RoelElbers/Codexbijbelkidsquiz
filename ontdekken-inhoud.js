@@ -367,7 +367,6 @@ const ONTDEK_PATRONEN = [
 // - De vragen over de sandwich, de 153 vissen en Paulus verwijzen rechtstreeks
 //   naar Verborgen patronen; de drie verwijstNaar-regels hieronder zetten die
 //   artikelen ook in deze lijst.
-// - Malchus en Hebreeën: tekst nog te schrijven, nog niet aan hun vraag gekoppeld.
 // - Zonder vraag: apocalyps, Alfa en Omega, het Lam, het slot van de Bijbel,
 //   de boom des levens en de zeven gemeenten.
 const ONTDEK_SCHAT = [
@@ -388,12 +387,6 @@ const ONTDEK_SCHAT = [
     // Het artikel bestaat al in Verborgen patronen.
     { id: "de-153-vissen", naam: "De 153 vissen", verwijstNaar: "verborgen-getallen-153" },
     { id: "de-brieven-van-paulus", naam: "De volgorde van de brieven van Paulus", verwijstNaar: "verborgen-patronen-paulus-brieven" },
-
-    // Plek gemaakt, tekst nog te schrijven.
-    { id: "het-oor-van-malchus", naam: "Het oor van Malchus", type: "artikel",
-      inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
-    { id: "de-brief-aan-de-hebreeen", naam: "De brief aan de Hebree\u00ebn", type: "artikel",
-      inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
 
     // Het poortje-verhaal bij Marcus 10:25-27.
     { id: "het-oog-van-de-naald", naam: "Waarom \"het oog van de naald\" waarschijnlijk geen poortje was", type: "artikel",
