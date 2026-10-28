@@ -286,7 +286,10 @@ een taalvrije id als sleutel en de zichtbare tekst in een apart veld.**
   de gepubliceerde map halen (aparte map of privérepo, of Pages vanuit een
   aparte map laten publiceren). De code die de game zelf nodig heeft, is altijd
   via de browser in te zien; dat is eigen aan een website. Gesignaleerd 20
-  oktober 2026, samen met een ICT'er.
+  oktober 2026, samen met een ICT'er. Getest 28 oktober 2026: ja, alle vier
+  (wachtlijst.md, CLAUDE.md, de .docx, controleer-consistentie.py) gaven 200.
+  robots.txt schermt niets af en noemt /kladblok/ zelfs met naam. Oplossen samen
+  met het punt over de privérepo.
 - **GitHub-repo privé zetten (onderzoeken, nog niet doen).** Nu zijn de
   werkbestanden en de hele geschiedenis voor iedereen leesbaar. GitHub Pages
   vanuit een privérepo vereist een betaald GitHub-abonnement (Pro of hoger). Bij
