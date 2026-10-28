@@ -103,6 +103,10 @@ elk antwoord herhaald hoeft te worden.*
   plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
   (`.album-opschrift` in `style.css`) wacht nog op Roels oordeel (screenshot
   `tmp/lantaarn-opschrift-voor-roel.png`).
+- **Naslagvakken op lage desktopschermen.** Bij Steun, de Ontdekken-hub en het
+  Woordenboek valt op 1280×720 en 1366×768 de rand van het vak boven en onder
+  14–16px buiten beeld; de inhoud blijft bereikbaar (scrolt binnen het vak).
+  Voorstel: max-height met calc(100vh - 32px). Gesignaleerd 28 oktober 2026.
 
 ## Vragenwerk
 

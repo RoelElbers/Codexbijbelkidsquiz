@@ -4951,6 +4951,25 @@ a.tekst-link { width: fit-content; text-align: center; }
     }
 }
 
+/* Instellingen op een lage computer (bv. 1280×720, 1366×768): het vak (952px
+   hoog) past niet en de overlay scrolde daar niet, dus het kopje en de
+   Terug-knop vielen weg. Hier scrolt de overlay als geheel, net als op de
+   telefoon. margin: auto op het vak in plaats van centreren via de ouder:
+   past het vak niet, dan worden de automarges 0 en blijft de bovenkant
+   bereikbaar; past het wel, dan staat het gewoon in het midden. Pas vanaf
+   ~846px hoogte past alles; tot 880px valt het daarom hieronder, en vanaf
+   1600×900 verandert er niets. Telefoons hebben de regel hierboven. */
+@media (min-width: 769px) and (min-height: 501px) and (max-height: 880px) {
+    #instellingen-scherm {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        padding: 16px 0;
+    }
+    #instellingen-scherm > .quiz-box {
+        margin: auto;
+    }
+}
+
 /* =========================================================================
    TELEFOON — compacter quizscherm. Alleen op telefoons (smaller dan 600px, of
    liggend met een korte hoogte); computer en tablet blijven ongemoeid. Geldt
