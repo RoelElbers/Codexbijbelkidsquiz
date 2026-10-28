@@ -1,3 +1,5 @@
+// © 2026 Bijbelkids Quiz (bijbelkidsquiz.nl). Vrij te gebruiken voor les, catechese en Bijbelgroep; zie auteursrecht.html. Alle overige rechten voorbehouden.
+
 // --- Testversie -------------------------------------------------------------
 // Toont een rustig "TESTVERSIE"-lint linksonder op het startscherm zolang dit
 // true is. Gaat pas op false bij de openbare release op 1 oktober 2026 — niet

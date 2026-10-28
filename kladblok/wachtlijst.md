@@ -27,6 +27,10 @@ elk antwoord herhaald hoeft te worden.*
   *Zonde*. Verder alleen behandelen waar het bij een concrete vraag hoort. Niet
   op de kerkpagina's: die laten zien wat een traditie meebrengt en leggen geen
   leer uit.
+- **Eén vaste voettekst op alle pagina's.** De linkregel in de <footer>
+  verschilt nu per pagina (de kerkpagina's missen Steunen, contact en steunen
+  hebben ook Voor ouders en begeleiders). Gelijktrekken als aparte klus.
+  Gesignaleerd 28 oktober 2026.
 
 ## Bouw en gedrag van het spel
 

@@ -1,3 +1,5 @@
+// © 2026 Bijbelkids Quiz (bijbelkidsquiz.nl). Vrij te gebruiken voor les, catechese en Bijbelgroep; zie auteursrecht.html. Alle overige rechten voorbehouden.
+
 /* ============================================================================
    ontdekken-inhoud.js — de teksten van de Ontdekken-hub
    ----------------------------------------------------------------------------

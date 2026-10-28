@@ -128,6 +128,9 @@ footer {
     color: var(--tekst-gedempt);
 }
 
+/* De ©-regel onder de links, een fractie kleiner. */
+footer .copyright { font-size: 0.875rem; }
+
 [hidden] { display: none !important; }
 
 form { margin: 0 0 1rem; }
