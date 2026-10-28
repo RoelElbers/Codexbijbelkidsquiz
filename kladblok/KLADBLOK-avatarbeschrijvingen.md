@@ -21,9 +21,10 @@ want de grond waar hij stond was heilig.
 ## Ester — Ester 4 en 5
 
 Ester was koningin geworden, maar niemand aan het hof wist dat ze bij het Joodse
-volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning — ongevraagd,
-en dat mocht niet. Drie dagen bereidde ze zich voor. Daarna trok ze haar mooiste
-kleren aan en liep de troonzaal binnen.
+volk hoorde. Toen haar volk in gevaar kwam, moest ze naar de koning —
+ongevraagd, en dat mocht niet. Drie dagen vastte ze, samen met haar volk. Op de
+derde dag trok ze haar koninklijke kleren aan en ging in de binnenhof staan,
+recht tegenover de koning op zijn troon.
 
 ## Judit — het boek Judit
 
@@ -35,47 +36,48 @@ elke Bijbel vindt.
 
 ## Samuël — 1 Samuël 3
 
-Samuël sliep in de tempel, vlak bij de lamp die de hele nacht bleef branden. Toen
-hoorde hij zijn naam. Hij rende naar de oude priester Eli, maar die had niets
-gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer. En nog een keer. Toen
-wist Eli genoeg: dit was God, die Samuël riep. Ga terug, zei hij, en als je het
-weer hoort, zeg dan dat je luistert.
+Samuël sliep in het heiligdom van God. Het was nog nacht: de lamp van God
+brandde nog. Toen hoorde hij zijn naam. Hij rende naar de oude priester Eli,
+maar die had niets gezegd. Ga maar slapen, zei Eli. Het gebeurde nog een keer.
+En nog een keer. Toen wist Eli genoeg: dit was God, die Samuël riep. Ga terug,
+zei hij, en als je het weer hoort, zeg dan: Spreek, Heer, Uw dienaar luistert.
 
 ## Jozef — Genesis 37
 
-Jozef was de lieveling van zijn vader en kreeg een prachtig kleed dat zijn broers
-niet kregen. Bovendien had hij dromen. In de ene bogen de bundels graan van zijn
-broers zich voor die van hem. In de andere bogen de zon, de maan en elf sterren
-voor hem. Hij vertelde ze gewoon aan tafel, alsof het het nieuws van de dag was.
-Zijn broers vonden dat niet grappig.
+Jozef was de lieveling van zijn vader en kreeg een prachtig kleed dat zijn
+broers niet kregen. Bovendien had hij dromen. In de ene bogen de bundels graan
+van zijn broers zich voor die van hem. In de andere bogen de zon, de maan en elf
+sterren voor hem. Hij vertelde ze aan zijn broers, en de tweede ook aan zijn
+vader. Zijn broers vonden dat niet grappig.
 
 ## Elia — 1 Koningen 17
 
-Elia moest zich verstoppen bij een beek, ver van iedereen. Er groeide daar niets
-en er woonde niemand. Toch kreeg hij elke ochtend en elke avond eten: raven
-brachten hem brood en vlees, en uit de beek dronk hij. Tot op een dag de beek
-droogviel, omdat het al lang niet meer geregend had.
+Elia moest zich verstoppen bij de beek Kerit, ver van iedereen. Daar kreeg hij
+elke ochtend en elke avond eten: raven brachten hem brood en vlees, en uit de
+beek dronk hij. Tot op een dag de beek droogviel, omdat het al lang niet meer
+geregend had.
 
 ## Ruth — Ruth 2
 
 Ruth kwam als vreemdeling in een land waar ze niemand kende, samen met haar
-schoonmoeder Noömi. Ze hadden niets. Dus ging Ruth het veld in om aren te rapen
-die de maaiers hadden laten liggen — dat mocht, want zo hoorde het volgens de
-wet. Ze werkte de hele dag, en de eigenaar van het veld merkte haar op.
+schoonmoeder Noömi. Ze hadden bijna niets. Dus ging Ruth het veld in om aren te
+rapen die de maaiers hadden laten liggen — dat mocht, want zo hoorde het volgens
+de wet. Ze werkte de hele dag, en de eigenaar van het veld merkte haar op.
 
 ## Maria — Lucas 1
 
-Maria was een jonge vrouw en ze woonde in Nazaret, een dorp waar nooit iets
-bijzonders gebeurde. Toen stond er een engel voor haar die zei dat ze een zoon
-zou krijgen. Ze schrok en vroeg hoe dat kon. Het antwoord begreep ze niet
-helemaal, maar ze zei toch ja.
+Maria was een jonge vrouw en ze woonde in Nazaret, een klein dorp in Galilea.
+Toen stond er een engel voor haar die zei dat ze een zoon zou krijgen. Ze schrok
+en vroeg hoe dat kon. De engel vertelde dat de Heilige Geest over haar zou
+komen. En Maria zei ja.
 
 ## Debora — Rechters 4 en 5
 
 Debora was rechter én profetes. Ze zat onder een palmboom tussen Rama en Betel,
 en van heinde en ver kwamen mensen naar haar toe om hun ruzies te laten
 beslechten. Toen het volk in het nauw zat, riep zij Barak op om op te trekken —
-en na de overwinning zong ze het lied dat nog steeds in de Bijbel staat.
+en na de overwinning zong ze samen met Barak het lied dat nog steeds in de
+Bijbel staat.
 
 ## Rebekka — Genesis 24
 
