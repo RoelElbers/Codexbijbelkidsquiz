@@ -70,29 +70,21 @@ elk antwoord herhaald hoeft te worden.*
   de game, waardoor in brons bijna elke vraag elke ronde langskomt. Bij het
   doorlopen van goud nagaan of er vragen bij zitten die eigenlijk brons of
   zilver zijn.
-- **Losgekoppelde Ontdekken-artikelen nalopen.** Sinds de Verborgen Schat is
-  herzien, verwijst niets meer naar acht artikelen: over de Alfa en de Omega,
-  het Lam, het einde van de Bijbel, de boom des levens, de zeven gemeenten, het
-  nieuwe Jeruzalem, het oor van Malchus en de brief aan de Hebreeën. De laatste
-  twee zijn placeholders met de tekst "Deze uitleg wordt nog geschreven". Per
-  artikel beslissen: verwijderen, of onderbrengen bij de nieuwe indeling van de
-  Ontdekken-hub (zie het punt daarover). Meenemen bij die herindeling, niet los
-  oppakken.
+- **Verborgen Schat: vragen en artikelen zonder koppeling** (bijgewerkt 28 okt
+  2026, na de controleronde):
+  - Artikelen zonder vraag: apocalyps, Alfa en Omega, het Lam, hoe de Bijbel
+    eindigt, de boom des levens, de zeven gemeenten. Eventueel later een vraag
+    bij maken.
+  - Vragen zonder artikel: Malchus, Hebreeën, Tertius, Galaten (grote
+    letters), P52, hoofdstukken en verzen, de codex, de vis. Alleen een
+    artikel schrijven als het echt iets toevoegt aan de toelichting.
+  - De lege artikelen over Malchus en Hebreeën zijn op 28 okt 2026 weggehaald
+    (de oude Malchus-uitleg over een Romeinse soldaat en de doodstraf klopte
+    niet: Malchus was de dienaar van de hogepriester).
 - **Fullscreen-knop over de naslagtekst op de tablet.** Op 820×1180 (tablet
   staand) valt de ronde fullscreen-knop rechtsboven over het begin van de tekst
   in het naslagvak van Ontdekken. Bestond al vóór Wie is wie. Meenemen bij het
   opnieuw indelen van het menu / de tabletondersteuning.
-- **Verborgen Schat: vragen zonder koppeling naar hun artikel.** Acht vragen
-  hebben een artikel in `ONTDEK_SCHAT`, maar geen `catecheseId`, zodat de knop
-  op de onthullingskaart ontbreekt: de bovenzaal, het getal zeven, "een tijd,
-  tijden en een halve tijd", de vier levende wezens, het nieuwe Jeruzalem, het
-  oor van Malchus, de brief aan de Hebreeën en het oog van de naald. Bij
-  Malchus en Hebreeën is het artikel nog een placeholder ("Deze uitleg wordt
-  nog geschreven"). Zes artikelen hebben geen vraag: apocalyps, de Alfa en de
-  Omega, het Lam, hoe de Bijbel eindigt, de boom des levens en de zeven
-  gemeenten. Zes vragen hebben geen artikel: Tertius, de grote letters in
-  Galaten, papyrus P52, hoofdstuk- en versnummers, de codex en de vis. Raakt
-  het punt "Losgekoppelde Ontdekken-artikelen nalopen" hierboven.
 - **Donatiezone van de lantaarn weg zodra `PLAKBOEK_ACTIEF` op `true` gaat.**
   Met de plakboekvlag is de lantaarn linksonder het Bijbelkidsalbum; zonder
   vlag is hij nog de donatielantaarn (`.donatie-zone`, `initDonatieLantaarn`

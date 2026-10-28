@@ -277,6 +277,10 @@ onderwerpen — de vier erbij staan in "Wat opvalt", punt 3:
 - Het nieuwe Jeruzalem
 - De sandwich-techniek van Marcus
 
+28 okt 2026: de plekhouders Malchus en Hebreeën zijn weggehaald; de
+inscriptie-vraag is vervangen door de vraag over Rhode, met het artikel 'Het
+huis waar Petrus aanklopte'.
+
 **`kerken-katholiek-sacramenten.html`** — zeven sacramenten, gegroepeerd in
 drie blokken:
 
