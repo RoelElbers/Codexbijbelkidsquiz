@@ -101,8 +101,7 @@ elk antwoord herhaald hoeft te worden.*
 - **Bijbelkidsalbum: plek van het opschrift onder de lantaarn.** Achtergrond
   en boek van het albumscherm zijn definitief (`images/album/`). Alleen de
   plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
-  (`.album-opschrift` in `style.css`) wacht nog op Roels oordeel (screenshot
-  `tmp/lantaarn-opschrift-voor-roel.png`).
+  (`.album-opschrift` in `style.css`) wacht nog op Roels oordeel.
 - **Naslagvakken op lage desktopschermen.** Bij Steun, de Ontdekken-hub en het
   Woordenboek valt op 1280×720 en 1366×768 de rand van het vak boven en onder
   14–16px buiten beeld; de inhoud blijft bereikbaar (scrolt binnen het vak).
