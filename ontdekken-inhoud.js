@@ -385,17 +385,17 @@ const ONTDEK_SCHAT = [
     // Eén canonieke versie: het artikel in Verborgen patronen.
     { id: "de-sandwich-techniek-van-marcus", naam: "De sandwich-techniek van Marcus", verwijstNaar: "verborgen-patronen-sandwich" },
 
-    // Vragen 13 en 14: het artikel bestaat al in Verborgen patronen.
+    // Het artikel bestaat al in Verborgen patronen.
     { id: "de-153-vissen", naam: "De 153 vissen", verwijstNaar: "verborgen-getallen-153" },
     { id: "de-brieven-van-paulus", naam: "De volgorde van de brieven van Paulus", verwijstNaar: "verborgen-patronen-paulus-brieven" },
 
-    // Vragen 15 en 16: plek gemaakt, tekst nog te schrijven.
+    // Plek gemaakt, tekst nog te schrijven.
     { id: "het-oor-van-malchus", naam: "Het oor van Malchus", type: "artikel",
       inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
     { id: "de-brief-aan-de-hebreeen", naam: "De brief aan de Hebree\u00ebn", type: "artikel",
       inhoud: [ { item: "Deze uitleg wordt nog geschreven." } ] },
 
-    // Vraag 17: het poortje-verhaal bij Marcus 10:25-27.
+    // Het poortje-verhaal bij Marcus 10:25-27.
     { id: "het-oog-van-de-naald", naam: "Waarom \"het oog van de naald\" waarschijnlijk geen poortje was", type: "artikel",
       inhoud: [
           { item: "Je hoort het vaak: het oog van de naald zou een laag poortje in de muur van Jeruzalem zijn geweest, waar een kameel alleen doorheen kon als hij eerst alle bagage aflegde. Een mooi beeld — je moet je spullen loslaten om erdoor te komen." },
@@ -410,7 +410,7 @@ const ONTDEK_SCHAT = [
           { kop: "Wie waren de Essenen?" },
           { item: "De meeste geleerden denken dat de rollen hoorden bij een Joodse groep die de Essenen heette, al zijn niet alle onderzoekers het daarmee eens. Het Nieuwe Testament noemt hen nergens, maar schrijvers uit die tijd, zoals de Joodse geschiedschrijver Josefus, vertellen veel over hen. De Essenen leefden heel streng. Ze deelden al hun bezit, droegen witte kleren, aten samen en namen elke dag een bad om rein te zijn voor God. Een groep van hen woonde afgezonderd in de woestijn bij de Dode Zee, dicht bij de plek waar de rollen lagen." },
           { kop: "En Johannes de Doper?" },
-          { item: "Was Johannes de Doper een Essener? Dat weten we niet. De Bijbel zegt er niets over, en geen enkele oude schrijver ook. Toch zijn er opvallende overeenkomsten. Johannes leefde in dezelfde woestijn, vlak bij de Jordaan (Lucas 1:80). De Essenen legden uit waarom ze de woestijn in trokken met een tekst uit Jesaja: bereid in de woestijn de weg van de Heer. Precies die tekst gebruikte Johannes voor zichzelf (Johannes 1:23). Bij allebei speelde water een grote rol. En Johannes at sprinkhanen, terwijl in een van de rollen een regel staat over hoe je sprinkhanen moest klaarmaken." },
+          { item: "Was Johannes de Doper een Essener? Dat weten we niet. De Bijbel zegt er niets over, en geen enkele oude schrijver ook. Toch zijn er opvallende overeenkomsten. Johannes leefde in dezelfde woestijn, vlak bij de Jordaan (Lucas 1:80). De groep bij de Dode Zee legde in haar regelboek uit waarom ze de woestijn in trok, met een tekst uit Jesaja: bereid in de woestijn de weg van de Heer. Precies die tekst gebruikte Johannes voor zichzelf (Johannes 1:23). Bij allebei speelde water een grote rol. En Johannes at sprinkhanen, terwijl in een van de rollen een regel staat over hoe je sprinkhanen moest klaarmaken." },
           { item: "Er is ook een groot verschil. De groep bij de Dode Zee trok zich terug en liet nieuwe leden pas na een lange proeftijd toe. Johannes zocht juist iedereen op: tollenaars, soldaten, gewone mensen. Ook zijn doop was anders: geen dagelijks bad, maar een doop als teken dat je je leven wilde omkeren (Lucas 3:3, 10-14)." },
           { noot: "Of Johannes ooit bij de Essenen hoorde, blijft dus een raadsel. Maar dankzij de rollen weten we veel beter in wat voor wereld Johannes en Jezus leefden." }
       ] },
