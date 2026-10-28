@@ -7958,7 +7958,7 @@ const verborgenSchatVragen = [
         catecheseId: "verborgen-patronen-sandwich"
     },
     {
-        vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. De kerkvader Hiëronymus schrijft dat men in zijn tijd geloofde dat er precies zoveel soorten vissen bestonden. Welke verborgen boodschap zag men daarin?",
+        vraag: "In Johannes 21 vangen de leerlingen na de opstanding precies 153 grote vissen, en het volle net scheurt niet. De kerkvader Hiëronymus schrijft dat kenners van vissen precies zoveel soorten onderscheidden. Welke verborgen boodschap zag hij daarin?",
         antwoorden: [
             "De blijde boodschap mag aan alle volken gebracht worden",
             "De boodschap is alleen voor het volk Israël",
@@ -7966,8 +7966,8 @@ const verborgenSchatVragen = [
             "Het getal telt de jaren tot Jezus' terugkomst"
         ],
         correct: "De blijde boodschap mag aan alle volken gebracht worden",
-        bijbelplaats: "Johannes 21:11 · Hiëronymus, commentaar op Ezechiël",
-        reveal: "153 vissen, en het net scheurt niet! De kerkvader Hiëronymus vertelt dat men in zijn tijd geloofde dat er precies zoveel soorten vissen waren. De verborgen boodschap die men daarin zag: het goede nieuws is voor álle volken. Niet iedereen las het zo. Augustinus telde 1 + 2 + 3 en zo verder tot 17, en kwam ook precies op 153 uit. De oude uitleggers zochten allemaal iets achter dat getal, maar niet allemaal hetzelfde.",
+        bijbelplaats: "Johannes 21:11 · Hiëronymus, commentaar op Ezechiël 47",
+        reveal: "153 vissen, en het net scheurt niet! De kerkvader Hiëronymus vertelt dat kenners van vissen precies zoveel soorten onderscheidden: van elke soort zat er dus een in het net. De verborgen boodschap die hij daarin zag: het goede nieuws is voor álle volken. Niet iedereen las het zo. Augustinus telde 1 + 2 + 3 en zo verder tot 17, en kwam ook precies op 153 uit. De oude uitleggers zochten allemaal iets achter dat getal, maar niet allemaal hetzelfde.",
         catecheseId: "verborgen-getallen-153"
     },
     {
