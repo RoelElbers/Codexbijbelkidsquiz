@@ -81,6 +81,8 @@ elk antwoord herhaald hoeft te worden.*
   - De lege artikelen over Malchus en Hebreeën zijn op 28 okt 2026 weggehaald
     (de oude Malchus-uitleg over een Romeinse soldaat en de doodstraf klopte
     niet: Malchus was de dienaar van de hogepriester).
+  - Meenemen bij de herindeling van de Ontdekken-hub (zie het punt daarover),
+    niet los oppakken.
 - **Fullscreen-knop over de naslagtekst op de tablet.** Op 820×1180 (tablet
   staand) valt de ronde fullscreen-knop rechtsboven over het begin van de tekst
   in het naslagvak van Ontdekken. Bestond al vóór Wie is wie. Meenemen bij het
