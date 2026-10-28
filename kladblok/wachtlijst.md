@@ -239,6 +239,7 @@ elk antwoord herhaald hoeft te worden.*
   Hoe leefden ze toen › Geld en in de woordenboeklemma's Denarie en Talent; het dagloon
   (€ 150–200); het aantal Samaritanen (Wie is wie); de tijden van zonsopgang en -ondergang
   (Tijd); en bij Talent de vraag "vijftien tot twintig jaar" of "zo'n twintig jaar".
+
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
