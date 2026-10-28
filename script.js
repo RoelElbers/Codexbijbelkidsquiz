@@ -7953,8 +7953,8 @@ const verborgenSchatVragen = [
         vraag: "Marcus heeft een opvallende manier van vertellen: hij begint een verhaal, schuift er een ánder verhaal tussen, en keert dan terug naar het eerste. Dat doet hij vaker — bijvoorbeeld bij Jaïrus en de zieke vrouw, en bij de vijgenboom en de tempel. Geleerden gaven deze stijl een grappige bijnaam. Welke bijnaam is dat?",
         antwoorden: ["De trappen-techniek", "De sandwich-techniek", "De brug-techniek", "De ketting-techniek"],
         correct: "De sandwich-techniek",
-        bijbelplaats: "Marcus 5:21-43 · Marcus 11:12-25",
-        reveal: "Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — de twee verhalen eromheen helpen je dat te begrijpen. Met een moeilijk woord heet dit intercalatie.",
+        bijbelplaats: "Marcus 5:21-43; 11:12-25",
+        reveal: "Het mooiste zit 'm in het midden: net als bij een echte sandwich draait het om het beleg. Het verhaal dát Marcus ertussen schuift, is meestal waar het hem om te doen is — het verhaal eromheen, dat in tweeën is geknipt, helpt je dat te begrijpen. Met een moeilijk woord heet dit intercalatie.",
         catecheseId: "verborgen-patronen-sandwich"
     },
     {
@@ -7967,7 +7967,7 @@ const verborgenSchatVragen = [
         ],
         correct: "De blijde boodschap mag aan alle volken gebracht worden",
         bijbelplaats: "Johannes 21:11 · Hiëronymus, commentaar op Ezechiël",
-        reveal: "153 vissen, en het net scheurt niet! De kerkvader Hiëronymus vertelt dat men in zijn tijd geloofde dat er precies zoveel soorten vissen waren. De verborgen boodschap die men daarin zag: het goede nieuws is voor álle volken — en niemand gaat verloren. Niet iedereen las het zo. Augustinus telde 1 + 2 + 3 en zo verder tot 17, en kwam ook precies op 153 uit. De oude uitleggers zochten allemaal iets achter dat getal, maar niet allemaal hetzelfde.",
+        reveal: "153 vissen, en het net scheurt niet! De kerkvader Hiëronymus vertelt dat men in zijn tijd geloofde dat er precies zoveel soorten vissen waren. De verborgen boodschap die men daarin zag: het goede nieuws is voor álle volken. Niet iedereen las het zo. Augustinus telde 1 + 2 + 3 en zo verder tot 17, en kwam ook precies op 153 uit. De oude uitleggers zochten allemaal iets achter dat getal, maar niet allemaal hetzelfde.",
         catecheseId: "verborgen-getallen-153"
     },
     {
@@ -7979,7 +7979,7 @@ const verborgenSchatVragen = [
             "Op hoe belangrijk de brieven zijn"
         ],
         correct: "Op lengte: van de langste brief naar de kortste",
-        bijbelplaats: "1 Korintiërs 15:9 · Efeziërs 3:8 · 1 Timoteüs 1:15",
+        bijbelplaats: "algemeen · 1 Korintiërs 15:9 · Efeziërs 3:8 · 1 Timoteüs 1:15",
         reveal: "Wist je dit? Omdat de brieven op lengte staan en niet op tijd, zie je iets moois pas als je ze op volgorde van schrijven leest. Dan noemt Paulus zichzelf telkens kleiner: eerst \"de minste van de apostelen\" (1 Korintiërs), later \"de allerminste van alle gelovigen\" (Efeziërs), en aan het eind \"de grootste van de zondaars\" (1 Timoteüs). Hoe dichter Paulus bij God leefde, hoe kleiner hij zichzelf maakte.",
         catecheseId: "verborgen-patronen-paulus-brieven"
     },
