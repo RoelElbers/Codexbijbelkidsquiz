@@ -113,7 +113,6 @@ elk antwoord herhaald hoeft te worden.*
   Kolossenzen, Tessalonicenzen en Timoteüs & Titus, maar dan boekbreed:
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
-- **Boek-voor-boek-ronde.** Eerstvolgende: **Romeinen**.
 - **Nieuwe Ontdekken-rubriek "Eén Bijbel, verschillende lezingen" (werknaam):**
   een plek voor teksten die christenen verschillend lezen, waar elke traditie
   vanuit haar eigen teksten wordt beschreven, zonder dat de game kiest. Hier
@@ -245,6 +244,19 @@ elk antwoord herhaald hoeft te worden.*
   Hoe leefden ze toen › Geld en in de woordenboeklemma's Denarie en Talent; het dagloon
   (€ 150–200); het aantal Samaritanen (Wie is wie); de tijden van zonsopgang en -ondergang
   (Tijd); en bij Talent de vraag "vijftien tot twintig jaar" of "zo'n twintig jaar".
+
+## Controle door Magisterium en ChatGPT — nog te doen
+
+- Voor ouders en begeleiders (voor-ouders.html), inclusief de uitleg over de
+  bijbelteksten; moet blijven kloppen met kerken.html.
+- De donatiepagina en bedankt-donatie.html.
+- De metgezellenvragen (Hemeltrap-pool), als die nog niet langs
+  Magisterium/ChatGPT zijn gegaan.
+- Controle of er ergens nog "Gevorderd" staat naast "Advanced".
+
+Al gedaan: Ontdekken (Woordenboek, Wie is wie, Hoe leefden ze toen, Verborgen
+patronen, Verborgen Schat), de kerkenpagina's en de avatarteksten, afgerond 28
+okt 2026.
 
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 

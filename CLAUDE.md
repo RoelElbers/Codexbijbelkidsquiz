@@ -21,6 +21,10 @@ een eigen beslissing en een eigen opdracht. Zo ving de controle bij Galaten
 G2 dat Handelingen 13:5 over één stad gaat (Salamis), terwijl de uitleg "in
 elke nieuwe stad" zegt; Handelingen 17:2 noemt het als Paulus' gewoonte.
 
+**Werkstand:** `kladblok/werkstand.md` bevat de overdracht tussen werkdagen. Bij
+het begin van een sessie tonen; bij 'werkstand opslaan' de aangeleverde tekst
+erin zetten (vorige stand vervangen) en committen.
+
 ## Commits
 
 - **Geen `Co-Authored-By`-trailer.** Deze repository gebruikt die conventie niet.
