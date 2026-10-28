@@ -277,3 +277,25 @@ Nederlands vastzit:
 
 Nu geen voorbereidend werk doen, wel de afspraak: **elke nieuwe structuur krijgt
 een taalvrije id als sleutel en de zichtbare tekst in een apart veld.**
+
+## Beveiliging en openbaarheid
+
+- **Kunnen de werkbestanden via de site gedownload worden?** Testen in de
+  browser of bijv. https://bijbelkidsquiz.nl/kladblok/wachtlijst.md, /CLAUDE.md
+  en de .docx-bestanden in de hoofdmap te openen zijn. Zo ja: werkbestanden uit
+  de gepubliceerde map halen (aparte map of privérepo, of Pages vanuit een
+  aparte map laten publiceren). De code die de game zelf nodig heeft, is altijd
+  via de browser in te zien; dat is eigen aan een website. Gesignaleerd 20
+  oktober 2026, samen met een ICT'er.
+- **GitHub-repo privé zetten (onderzoeken, nog niet doen).** Nu zijn de
+  werkbestanden en de hele geschiedenis voor iedereen leesbaar. GitHub Pages
+  vanuit een privérepo vereist een betaald GitHub-abonnement (Pro of hoger). Bij
+  de overstap ook de regel in CLAUDE.md onder "Commits" bijwerken ("De
+  repository is openbaar"). De git-geschiedenis nooit verwijderen of
+  herschrijven: die is het bewijs van auteurschap. Gesignaleerd 20 oktober 2026.
+- **Tweestapsverificatie op het GitHub-account controleren.** Wie het account
+  overneemt, kan de live site aanpassen. GitHub → Settings → Password and
+  authentication. Gesignaleerd 28 oktober 2026.
+- **Kleine punten van de ICT'er.** Bij de controle van 28 oktober 2026 vond hij
+  de aanpak goed, met een paar kleine punten voor later. Die nog bij Roel
+  opvragen en hier uitschrijven.
