@@ -223,6 +223,18 @@ elk antwoord herhaald hoeft te worden.*
       eventueel "Gebed") een <em>Zie ook</em> naar het artikel zetten. Het lemma
       noemt het Onzevader bewust niet (besloten 23 okt 2026): het artikel krijgt
       een eigen plek, zodat het niet herhaald of te kort behandeld wordt.
+  - Artikel over ambt en priesterschap (aanleiding: Wie is wie, Priester en
+    Oudste, 28 okt 2026):
+    - In de katholieke en orthodoxe kerk is de priester gewijd; protestanten
+      spreken van het priesterschap van alle gelovigen (1 Petrus 2:9). Elke
+      traditie beschrijven vanuit wat zij zelf waardevol vindt.
+    - Ons woord "priester" komt via het Latijn van het Griekse presbyteros,
+      "oudste"; de tempelpriester heet in het Grieks hiereus.
+    - In het Nieuwe Testament overlappen "oudste" en "opziener" (Titus 1:5-7);
+      later ontwikkelden de kerken hun ambten verschillend (bisschop, priester,
+      ouderling, diaken).
+    - Het lemma "Priester" in Wie is wie bleef bewust ongewijzigd; als het
+      artikel er staat, vanuit Priester, Oudste en Opziener ernaar verwijzen.
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
 De artikelen en het woordenboek in de Ontdekken-hub zijn nu alleen bereikbaar
