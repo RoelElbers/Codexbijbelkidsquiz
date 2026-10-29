@@ -123,7 +123,9 @@ function maakZaalSpoor(nummer) {
     el.src = nummer.bestand;
     // stopt: wordt uitgefaded of opgeruimd. overgedragen: het volgende nummer
     // is al gestart.
-    const spoor = { el, gain: null, timer: null, stopt: false, overgedragen: false };
+    // blobUrl/afbreken: zie zetVolgendZaalNummerKlaar. gestart: play() is aangeroepen.
+    const spoor = { el, gain: null, timer: null, stopt: false, overgedragen: false,
+                    gestart: false, blobUrl: null, afbreken: null };
     if (zaalMuziekViaWebAudio) {
         const ctx = zaalAudioCtx();
         spoor.gain = ctx.createGain();
@@ -171,6 +173,7 @@ function fadeZaalSpoor(spoor, doel, duur) {
 // Spoor uitfaden en daarna stilzetten en opruimen.
 function laatZaalSpoorUitlopen(spoor, duur) {
     spoor.stopt = true;
+    if (spoor.afbreken) spoor.afbreken.abort();      // een lopende voorlaad-fetch stoppen
     zaalMuziekUitlopend.add(spoor);
     fadeZaalSpoor(spoor, 0, duur);
     setTimeout(() => {
@@ -179,17 +182,52 @@ function laatZaalSpoorUitlopen(spoor, duur) {
         spoor.el.removeAttribute("src");
         spoor.el.load();
         if (spoor.gain) spoor.gain.disconnect();
+        // Het nummer in het geheugen vrijgeven, anders groeit dat bij eindeloos
+        // afspelen met elk nummer mee.
+        if (spoor.blobUrl) URL.revokeObjectURL(spoor.blobUrl);
+        spoor.blobUrl = null;
         zaalMuziekUitlopend.delete(spoor);
     }, duur * 1000 + 100);
 }
 
-// Het volgende nummer alvast laten laden, zodat het bij de overgang meteen
-// kan klinken.
+// Het volgende nummer alvast binnenhalen, zodat het bij de overgang meteen
+// kan klinken. preload="auto" alleen is niet genoeg: live laadde Chrome er
+// niets mee, en Safari op iPad/iPhone negeert preload helemaal. Daarom haalt
+// fetch() het hele bestand op; als Blob in het geheugen wordt het de bron van
+// het <audio>-element (een blob-URL is same-origin, dus de GainNode werkt
+// gewoon). Mislukt de fetch (of via file:///), dan blijft de gewone src staan
+// met preload="auto", en begint het nummer zo nodig met de gewone fade-in.
+// Is het nummer al gestart voordat de fetch klaar is, dan blijft de gewone src
+// staan: een spelend element krijgt geen nieuwe bron.
 function zetVolgendZaalNummerKlaar() {
     const index = (zaalMuziekIndex + 1) % zaalMuziekLijst.length;
-    zaalMuziekVolgend = { index, spoor: maakZaalSpoor(zaalMuziekLijst[index]) };
-    zaalMuziekVolgend.spoor.el.preload = "auto";
-    zaalMuziekVolgend.spoor.el.load();
+    const nummer = zaalMuziekLijst[index];
+    const spoor = maakZaalSpoor(nummer);
+    zaalMuziekVolgend = { index, spoor };
+    const valTerug = () => {
+        if (spoor.stopt || spoor.gestart) return;
+        spoor.el.preload = "auto";
+        spoor.el.load();
+    };
+    if (!window.fetch || !window.AbortController) { valTerug(); return; }
+    spoor.afbreken = new AbortController();
+    fetch(nummer.bestand, { signal: spoor.afbreken.signal })
+        .then((antwoord) => {
+            if (!antwoord.ok) throw new Error("HTTP " + antwoord.status);
+            return antwoord.blob();
+        })
+        .then((blob) => {
+            spoor.afbreken = null;
+            if (spoor.stopt || spoor.gestart) return;
+            spoor.blobUrl = URL.createObjectURL(blob);
+            spoor.el.src = spoor.blobUrl;
+            spoor.el.preload = "auto";
+            spoor.el.load();
+        })
+        .catch(() => {
+            spoor.afbreken = null;
+            valTerug();
+        });
 }
 
 // Start een nummer (eventueel een al klaargezet spoor). De fade-in begint pas
@@ -209,6 +247,7 @@ function speelZaalNummer(index, klaar) {
         if (zaalMuziekVorige === vorige) zaalMuziekVorige = null;
         if (vorige && !vorige.stopt) laatZaalSpoorUitlopen(vorige, vorige.el.ended ? 0 : ZAAL_MUZIEK_CROSSFADE);
     }, { once: true });
+    spoor.gestart = true;
     const belofte = spoor.el.play();
     if (belofte) belofte.catch(() => {});   // geweigerd of geen bestand: gewoon stil
 }
