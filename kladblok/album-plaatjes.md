@@ -9,7 +9,7 @@ Werkwijze per plaatje (vastgesteld 29 okt 2026): eerst diepgaand onderzoek naar 
 | id | titel | bestand | gemaakt |
 |---|---|---|---|
 | tent-van-samenkomst | De tent van samenkomst | images/album/tempels/tent-van-samenkomst.webp | ChatGPT, 29 okt 2026, overzichtsversie met het kamp |
-| tempel-van-salomo | De eerste tempel (van Salomo) | images/album/tempels/tempel-van-salomo.webp | ChatGPT, 29 okt 2026, variant 5 |
+| tempel-van-salomo | De eerste tempel (van Salomo) | images/album/tempels/tempel-van-salomo.webp | ChatGPT, 29 okt 2026, nieuwe ronde (runderen in vier groepjes van drie, 1 Koningen 7:25) |
 | tempel-van-herodes | De tweede tempel (in de tijd van Jezus) | images/album/tempels/tempel-van-herodes.webp | ChatGPT, 29 okt 2026, variant 3 |
 
 Volgende reeks (idee): voorwerpen uit de tent en de tempels.
