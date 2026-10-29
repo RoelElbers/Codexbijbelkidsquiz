@@ -10623,6 +10623,7 @@ function openSchatkamer() {
     werkMuziekKnopBij();
     document.getElementById("zaal-scherm").style.display = "flex";
     gloeiDoorgangenOp("zaal-scherm");
+    startAanwijzerTeller();
     if (afstelModus) initAfstel(zaalEl);
     // Niet in de afstelstand: daar verbergen de paneelknoppen de zaal zonder
     // sluitZaal(), en dan zou de muziek doorspelen.
@@ -10633,6 +10634,7 @@ function openSchatkamer() {
 function sluitZaal() {
     verbergZaal();
     stopZaalMuziek();
+    toonAanwijzer();
 }
 // Alleen het beeld weg, de muziek loopt door (doorgang naar de albumzaal).
 function verbergZaal() {
@@ -11530,6 +11532,43 @@ function gloeiDoorgangenOp(schermId) {
     }, DOORGANG_OPGLOEI_WACHT_MS);
 }
 
+// --- Muisaanwijzer in de zalen ----------------------------------------------
+// In de Schatkamer-zaal en de albumzaal (ook met het boek open) verdwijnt de
+// aanwijzer na AANWIJZER_WEG_MS zonder muisbeweging, zodat het beeld rustig
+// blijft. Elke beweging haalt hem meteen terug en start de teller opnieuw.
+// Buiten de zalen is hij altijd zichtbaar. Alleen met een echte muis (pointer:
+// fine), niet in de afstelmodus. Klikken werkt gewoon: cursor: none verandert
+// niets aan het klikken.
+const AANWIJZER_WEG_MS = 3000;
+let aanwijzerTimer = null;
+const aanwijzerVerbergen = !afstelModus && window.matchMedia("(pointer: fine)").matches;
+
+function inEenZaal() {
+    return ["zaal-scherm", "album-scherm"].some((id) => {
+        const el = document.getElementById(id);
+        return el && el.style.display !== "none" && el.style.display !== "";
+    });
+}
+// Aanwijzer tonen en, als er een zaal open is, de teller (opnieuw) starten.
+function startAanwijzerTeller() {
+    clearTimeout(aanwijzerTimer);
+    document.body.classList.remove("aanwijzer-weg");
+    if (!aanwijzerVerbergen || !inEenZaal()) return;
+    aanwijzerTimer = setTimeout(() => {
+        if (inEenZaal()) document.body.classList.add("aanwijzer-weg");
+    }, AANWIJZER_WEG_MS);
+}
+// Bij het verlaten van de zalen: altijd zichtbaar, geen teller meer.
+function toonAanwijzer() {
+    clearTimeout(aanwijzerTimer);
+    document.body.classList.remove("aanwijzer-weg");
+}
+if (aanwijzerVerbergen) {
+    document.addEventListener("mousemove", () => {
+        if (document.body.classList.contains("aanwijzer-weg") || inEenZaal()) startAanwijzerTeller();
+    });
+}
+
 // Naar de andere zaal. Het beeld vervaagt in ZAAL_OVERGANG_MS; de muziek loopt
 // door, want beide zalen gebruiken ZALEN_MUZIEK. De albumzaal ligt in de DOM
 // boven de Schatkamer: heen faadt het album in, terug faadt het uit, met de
@@ -12058,12 +12097,14 @@ function openAlbum() {
     werkMuziekKnopBij();
     startZaalMuziek(ZALEN_MUZIEK);
     gloeiDoorgangenOp("album-scherm");
+    startAanwijzerTeller();
 }
 
 // Terug (de lantaarn): naar het startscherm, muziek uit.
 function sluitAlbum() {
     verbergAlbum();
     stopZaalMuziek();
+    toonAanwijzer();
 }
 // Alleen het beeld weg, de muziek loopt door (doorgang naar de Schatkamer).
 function verbergAlbum() {

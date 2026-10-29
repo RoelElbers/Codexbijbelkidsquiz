@@ -1578,6 +1578,15 @@ height: 22%;
     color: #ffd36b;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
+/* Muisaanwijzer weg in de zalen na een tijd zonder beweging (zie
+   startAanwijzerTeller in script.js). !important, want knoppen en zones
+   zetten zelf cursor: pointer. Alleen binnen de twee zaalschermen. */
+body.aanwijzer-weg #zaal-scherm,
+body.aanwijzer-weg #zaal-scherm *,
+body.aanwijzer-weg #album-scherm,
+body.aanwijzer-weg #album-scherm * {
+    cursor: none !important;
+}
 /* Met het boek open zijn de doorgangen weg, net als de lantaarn. */
 .album-zaal.boek-open .doorgang-zones {
     visibility: hidden;
