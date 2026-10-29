@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=421">
+    <link rel="stylesheet" href="style.css?v=422">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -631,12 +631,13 @@
             </div>
         </div>
 
-        <!-- Instellingen: voorlopig alleen geluid aan/uit. -->
+        <!-- Instellingen: geluid (de klikjes) en muziek (de zaalmuziek), los van elkaar aan/uit. -->
         <div id="instellingen-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box">
                 <h2 class="quiz-title">Instellingen</h2>
                 <p class="quiz-question">Geluid</p>
                 <button id="geluid-knop" class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="wisselGeluid()">Geluid: aan</button>
+                <button id="muziek-knop" class="answer-btn niveau-btn niveau-beginner menu-knop-blauw" onclick="wisselMuziek()">Muziek: aan</button>
 
                 <p class="quiz-question">Over dit spel</p>
                 <button class="answer-btn niveau-btn niveau-advanced menu-knop-blauw" onclick="openSteun()">Steun de Bijbelkidsquiz</button>
@@ -845,9 +846,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=421"></script>
-    <script src="ontdekken-inhoud.js?v=421"></script>
-    <script src="script.js?v=421"></script>
+    <script src="lang/nl.js?v=422"></script>
+    <script src="ontdekken-inhoud.js?v=422"></script>
+    <script src="script.js?v=422"></script>
 
 </body>
 

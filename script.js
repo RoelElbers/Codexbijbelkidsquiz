@@ -29,6 +29,8 @@ const plakboekAan = PLAKBOEK_ACTIEF ||
 // via file:///. De AAN/UIT-stand wordt onthouden in localStorage (standaard aan).
 let audioCtx = null;
 let geluidAan = (localStorage.getItem("geluidAan") !== "uit");
+// Zaalmuziek heeft een eigen schakelaar, los van de klikjes (standaard aan).
+let muziekAan = (localStorage.getItem("muziekAan") !== "uit");
 
 function speelKlik() {
     if (!geluidAan) return;
@@ -96,6 +98,7 @@ const ZAAL_MUZIEK_CROSSFADE = 2;
 // altijd via de GainNode.
 const zaalMuziekViaWebAudio = window.location.protocol !== "file:";
 
+let zaalMuziekGewenst = null;    // de lijst van de zaal waar de speler nu is, ook met muziek uit
 let zaalMuziekLijst = null;      // de lijst van de zaal die nu speelt
 let zaalMuziekIndex = 0;
 let zaalMuziekSpoor = null;      // het nummer dat nu speelt (of infadet)
@@ -174,9 +177,14 @@ function speelZaalNummer(index, fadeIn) {
     const spoor = maakZaalSpoor(zaalMuziekLijst[index]);
     zaalMuziekIndex = index;
     zaalMuziekSpoor = spoor;
+    // De fade-in begint pas als het nummer echt klinkt, niet bij de klik: op
+    // een trage verbinding zou hij anders al half voorbij zijn. Het spoor
+    // staat tot dan op 0. Is het intussen al uitgezet, dan niet meer omhoog.
+    spoor.el.addEventListener("playing", () => {
+        if (!spoor.doorGegeven) fadeZaalSpoor(spoor, ZAAL_MUZIEK_VOLUME, fadeIn);
+    }, { once: true });
     const belofte = spoor.el.play();
     if (belofte) belofte.catch(() => {});   // geweigerd of geen bestand: gewoon stil
-    fadeZaalSpoor(spoor, ZAAL_MUZIEK_VOLUME, fadeIn);
 }
 
 // Crossfade naar het volgende nummer in de lijst (na het laatste weer het eerste).
@@ -188,11 +196,13 @@ function speelVolgendZaalNummer() {
 }
 
 // Bij binnenkomst in een zaal: begin met een willekeurig nummer, daarna om en
-// om door de lijst. Met het geluid uit (Instellingen) blijft het stil.
+// om door de lijst. Met de muziek uit (Instellingen) blijft het stil; de zaal
+// wordt wel onthouden, zodat aanzetten in die zaal meteen laat infaden.
 function startZaalMuziek(lijst) {
-    if (!geluidAan || !lijst || lijst.length === 0) return;
+    zaalMuziekGewenst = lijst;
+    if (!muziekAan || !lijst || lijst.length === 0) return;
     if (zaalMuziekLijst === lijst && zaalMuziekSpoor) return;   // speelt al
-    stopZaalMuziek();
+    zetZaalMuziekStil();
     zaalMuziekLijst = lijst;
     try {
         speelZaalNummer(Math.floor(Math.random() * lijst.length), ZAAL_MUZIEK_FADE_IN);
@@ -201,7 +211,14 @@ function startZaalMuziek(lijst) {
     }
 }
 
+// Bij het verlaten van een zaal.
 function stopZaalMuziek() {
+    zaalMuziekGewenst = null;
+    zetZaalMuziekStil();
+}
+
+// Uitfaden en stilzetten; de zaal blijft onthouden (voor Muziek: uit/aan).
+function zetZaalMuziekStil() {
     if (zaalMuziekSpoor) laatZaalSpoorUitlopen(zaalMuziekSpoor, ZAAL_MUZIEK_FADE_UIT);
     zaalMuziekSpoor = null;
     zaalMuziekLijst = null;
@@ -10580,6 +10597,7 @@ function sluitSchatkamer() {
 
 function openInstellingen() {
     werkGeluidKnopBij();
+    werkMuziekKnopBij();
     document.getElementById("instellingen-scherm").style.display = "flex";
 }
 function sluitInstellingen() {
@@ -10728,8 +10746,21 @@ function vulUpdatesScherm() {
 function wisselGeluid() {
     geluidAan = !geluidAan;
     localStorage.setItem("geluidAan", geluidAan ? "aan" : "uit");
-    if (!geluidAan) stopZaalMuziek();
     werkGeluidKnopBij();
+}
+// Muziek staat los van Geluid. Uit in een zaal: uitfaden; aan: weer infaden.
+function wisselMuziek() {
+    muziekAan = !muziekAan;
+    localStorage.setItem("muziekAan", muziekAan ? "aan" : "uit");
+    if (muziekAan) startZaalMuziek(zaalMuziekGewenst);
+    else zetZaalMuziekStil();
+    werkMuziekKnopBij();
+}
+function werkMuziekKnopBij() {
+    const knop = document.getElementById("muziek-knop");
+    if (!knop) return;
+    knop.textContent = muziekAan ? "Muziek: aan" : "Muziek: uit";
+    knop.classList.toggle("geluid-uit", !muziekAan);
 }
 function werkGeluidKnopBij() {
     const knop = document.getElementById("geluid-knop");
