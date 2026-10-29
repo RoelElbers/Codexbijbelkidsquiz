@@ -53,15 +53,6 @@ elk antwoord herhaald hoeft te worden.*
   de chat van 18 september 2026. Raakt twee bestaande punten: het punt
   hierboven over lege rubrieken en het punt onderaan over eigen webadressen
   (de artikel-`id` kan meteen als slug voor een latere URL dienen).
-- **Avatarbeschrijvingen liggen klaar, maar er is geen plek om ze te tonen.**
-  De set is sinds 07-09 compleet: alle tien de avatars hebben een alinea. De
-  parkeerreden — een halve set — is daarmee vervallen. Wat ontbreekt is de
-  invoer zelf: `avatarNamen` (`script.js` r. 7196) koppelt een sleutel alleen
-  aan een weergavenaam, er is geen veld voor een beschrijving en geen scherm
-  dat er een toont. Zie `kladblok/KLADBLOK-avatarbeschrijvingen.md`, laatste
-  paragraaf, voor de twee keuzes die daarbij horen.
-- **`BETA_MODUS` op `false`.** `script.js` r. 4. Zolang die op `true` staat toont
-  het startscherm het "TESTVERSIE"-lint. Moet om vóór de release.
 - **Aanhalingstekens in antwoorden gelijktrekken binnen een pool.** Bij Brieven
   van Johannes brons staan bij vraag 8 alle vier de antwoorden tussen enkele
   aanhalingstekens ('Mijn kinderen' enz.), terwijl vraag 7 ze alleen om één
