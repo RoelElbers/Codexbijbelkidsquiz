@@ -1417,6 +1417,12 @@ height: 22%;
         box-shadow: inset 0 0 25px rgba(255, 210, 130, 0.22);
     }
 }
+/* De globale button:hover-regel vergroot en verschuift elke knop. Een zone hoort
+   bij het beeld en blijft staan: anders schuift het licht over de rand en
+   staat het opschrift rechtsonder niet meer gelijk met "Terug". */
+.doorgang-zone:hover {
+    transform: none;
+}
 .doorgang-zone.getikt,
 .doorgang-zone:focus-visible {
     background: rgba(255, 210, 130, 0.10);
@@ -1513,6 +1519,64 @@ height: 22%;
 .doorgang-zone.getikt .doorgang-opschrift,
 .doorgang-zone:focus-visible .doorgang-opschrift {
     opacity: 1;
+}
+/* Soort "rand-rechts" (rechtsonder in de albumzaal): geen gloed in een vak,
+   maar licht dat vanaf de rechterrand de zaal in valt, als door een open deur
+   net buiten beeld. Een zachte gloed langs de rand (.doorgang-licht) en een
+   lichtbaan die schuin over de vloer naar binnen loopt (::after, mag buiten de
+   klikzone vallen). Ademt, gloeit op en reageert op hover zoals de andere
+   zones. */
+.doorgang-rand-rechts {
+    border-radius: 0;
+}
+.doorgang-rand-rechts .doorgang-licht {
+    border-radius: 0;
+    background: radial-gradient(
+        ellipse 55% 75% at 100% 55%,
+        rgba(var(--licht), 0.8) 0%,
+        rgba(var(--licht), 0.35) 45%,
+        rgba(var(--licht), 0) 100%
+    );
+}
+.doorgang-rand-rechts .doorgang-licht::after {
+    content: "";
+    position: absolute;
+    left: -150%;
+    right: 0;
+    top: 22%;
+    bottom: 0;
+    clip-path: polygon(100% 0%, 100% 50%, 38% 100%, 0% 100%);
+    background: linear-gradient(
+        245deg,
+        rgba(var(--licht), 0.8) 0%,
+        rgba(var(--licht), 0.35) 50%,
+        rgba(var(--licht), 0) 100%
+    );
+    filter: blur(calc(var(--game-breedte) * 0.006));
+}
+.doorgang-rand-rechts::before {
+    left: -60%;
+    border-radius: 0;
+    background: radial-gradient(
+        ellipse 50% 70% at 100% 60%,
+        rgba(var(--licht), 0.9) 0%,
+        rgba(var(--licht), 0.4) 45%,
+        rgba(var(--licht), 0) 100%
+    );
+}
+/* Het opschrift als "Terug" onder de lantaarn: zelfde letter, kleur en
+   grootte, zonder plaatje; plaats via plaatsDoorgangZone. */
+.doorgang-rand-rechts .doorgang-opschrift {
+    transform: translateX(-50%);
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    font-size: calc(var(--game-breedte) * 0.0133);
+    line-height: 1.2;
+    color: #ffd36b;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 /* Met het boek open zijn de doorgangen weg, net als de lantaarn. */
 .album-zaal.boek-open .doorgang-zones {

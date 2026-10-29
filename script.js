@@ -11417,21 +11417,25 @@ const albumIndeling = {
 
 // --- Doorgangen tussen de Schatkamer en de albumzaal --------------------------
 // Bestaande plekken in het beeld zijn klikzones, zoals de trofeeënkasten: in de
-// Schatkamer de twee smalle wandvakken met de kandelaars, in de albumzaal de
-// twee trappen achter het boek. Een klik gaat met een overgang naar de zaal in
-// `naar`; zo kan een zone later ook naar een andere zaal leiden. Hoort bij het
-// album, dus alleen met plakboekAan. Per zone: left, top, breedte, hoogte in
-// procenten van het 16:9-vak. Af te stellen met ?plakboek=aan&afstel=aan (zie
+// Schatkamer de twee smalle wandvakken met de kandelaars, in de albumzaal
+// rechtsonder, het spiegelbeeld van de lantaarn (de twee uitgangen vormen een
+// paar). Een klik gaat met een overgang naar de zaal in `naar`; zo kan een
+// zone later ook naar een andere zaal leiden. Hoort bij het album, dus alleen
+// met plakboekAan. Per zone: left, top, breedte, hoogte in procenten van het
+// 16:9-vak. Af te stellen met ?plakboek=aan&afstel=aan (zie
 // initDoorgangAfstel). In elke zone ademt een zacht licht uit de volgende zaal;
 // bij hover of de eerste tik verschijnt het opschrift met de naam van die zaal.
+// soort "rand-rechts": geen gloed in een vak, maar licht dat vanaf de
+// rechterrand de zaal in valt, als door een open deur net buiten beeld; het
+// opschrift staat dan in de letter en op de hoogte van "Terug" onder de
+// lantaarn, gespiegeld (zie plaatsDoorgangZone).
 const zaalDoorgangen = {
     schatkamer: [
         { id: "links",  naar: "album", left: 25.5, top: 14.0, breedte: 4.3, hoogte: 53.5 },
         { id: "rechts", naar: "album", left: 70.2, top: 14.0, breedte: 4.3, hoogte: 53.5 }
     ],
     album: [
-        { id: "links",  naar: "schatkamer", left: 33.5, top: 52.0, breedte: 7.5, hoogte: 13.5 },
-        { id: "rechts", naar: "schatkamer", left: 59.0, top: 52.0, breedte: 7.5, hoogte: 13.5 }
+        { id: "rechtsonder", naar: "schatkamer", soort: "rand-rechts", left: 84.0, top: 68.0, breedte: 16.0, hoogte: 32.0 }
     ]
 };
 const zaalOpschrift = { album: "Bijbelkidsalbum", schatkamer: "Schatkamer" };
@@ -11452,6 +11456,16 @@ function plaatsDoorgangZone(knop, pos) {
     knop.style.top    = pos.top + "%";
     knop.style.width  = pos.breedte + "%";
     knop.style.height = pos.hoogte + "%";
+    // Rechtsonder in het album: het opschrift spiegelt "Terug" onder de
+    // lantaarn (midden op 100 - x, bovenkant op de onderkant van de lantaarn).
+    // Omgerekend naar procenten van de zone zelf, zodat het ook klopt na
+    // verslepen of schalen.
+    const opschrift = knop.querySelector(".doorgang-opschrift");
+    if (opschrift && knop.classList.contains("doorgang-rand-rechts")) {
+        const lantaarn = albumLantaarnPositie();
+        opschrift.style.left = ((100 - lantaarn.x - pos.left) / pos.breedte * 100) + "%";
+        opschrift.style.top  = ((lantaarn.bodem - pos.top) / pos.hoogte * 100) + "%";
+    }
 }
 
 // Bouwt de zones in beide zalen. Zonder plakboek blijven de houders leeg en
@@ -11464,7 +11478,7 @@ function bouwDoorgangZones() {
         (zaalDoorgangen[zaal] || []).forEach((zone) => {
             const knop = document.createElement("button");
             knop.type = "button";
-            knop.className = "doorgang-zone";
+            knop.className = "doorgang-zone" + (zone.soort ? " doorgang-" + zone.soort : "");
             knop.dataset.zone = zone.id;
             knop.setAttribute("aria-label", zaalNaarLabel[zone.naar]);
             knop.innerHTML = '<span class="doorgang-licht" aria-hidden="true"></span>' +
@@ -11565,7 +11579,7 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
     const r1 = (n) => n.toFixed(1);
     function toon() {
         regel.innerHTML = posities.map((p, i) =>
-            `{ id: "${zones[i].id}", naar: "${zones[i].naar}", left: ${r1(p.left)}, top: ${r1(p.top)}, breedte: ${r1(p.breedte)}, hoogte: ${r1(p.hoogte)} }`
+            `{ id: "${zones[i].id}", naar: "${zones[i].naar}", ${zones[i].soort ? `soort: "${zones[i].soort}", ` : ""}left: ${r1(p.left)}, top: ${r1(p.top)}, breedte: ${r1(p.breedte)}, hoogte: ${r1(p.hoogte)} }`
         ).join("<br>");
     }
     function zet(i) {
