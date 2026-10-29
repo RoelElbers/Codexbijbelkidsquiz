@@ -76,11 +76,13 @@ document.addEventListener("click", (e) => {
 });
 
 // --- Muziek in de zalen -----------------------------------------------------
-// Per zaal een lijst nummers. Een nummer toevoegen of vervangen = alleen de
-// lijst aanpassen. Een andere zaal (bijv. de albumzaal) krijgt een eigen lijst
-// en roept startZaalMuziek(EIGEN_LIJST) aan bij binnenkomst en
-// stopZaalMuziek() bij het verlaten; de speler zelf blijft hetzelfde.
-const SCHATKAMER_MUZIEK = [
+// De Schatkamer en de albumzaal delen één lijst, zodat het nummer doorloopt als
+// een kind via de doorgang van de ene zaal naar de andere gaat: startZaalMuziek
+// met de lijst die al speelt doet niets. Een nummer toevoegen of vervangen =
+// alleen de lijst aanpassen. Krijgt een zaal later een eigen lijst, dan roept
+// die startZaalMuziek(EIGEN_LIJST) aan bij binnenkomst en stopZaalMuziek() bij
+// het verlaten; de speler zelf blijft hetzelfde.
+const ZALEN_MUZIEK = [
     { titel: "Gloria", bestand: "audio/schatkamer/gloria-1.mp3" },
     { titel: "Gloria", bestand: "audio/schatkamer/gloria-2.mp3" }
 ];
@@ -10584,13 +10586,17 @@ function openSchatkamer() {
     if (afstelModus) initAfstel(zaalEl);
     // Niet in de afstelstand: daar verbergen de paneelknoppen de zaal zonder
     // sluitZaal(), en dan zou de muziek doorspelen.
-    else startZaalMuziek(SCHATKAMER_MUZIEK);
+    else startZaalMuziek(ZALEN_MUZIEK);
 }
 
 // Sluit de overzichtszaal: terug naar het startscherm.
 function sluitZaal() {
-    document.getElementById("zaal-scherm").style.display = "none";
+    verbergZaal();
     stopZaalMuziek();
+}
+// Alleen het beeld weg, de muziek loopt door (doorgang naar de albumzaal).
+function verbergZaal() {
+    document.getElementById("zaal-scherm").style.display = "none";
 }
 
 // Klik op een zone: de zaal zoomt op het klikgebied in (CSS-transitie op
@@ -11369,6 +11375,161 @@ const albumIndeling = {
     lantaarn: { x: 6.0, bodem: 92.0, hoogte: 18.0 }
 };
 
+// --- Doorgang tussen de Schatkamer en de albumzaal ---------------------------
+// Een boog op de muur van beide zalen; erdoor ga je naar de andere zaal. Hoort
+// bij het album, dus alleen met plakboekAan zichtbaar. Per zaal: x = midden,
+// bodem = onderkant, hoogte = hoogte van de boog, in procenten van het
+// 16:9-vak; de breedte volgt uit de verhouding in de CSS (.zaal-doorgang).
+// Af te stellen met ?afstel=aan (zie initDoorgangAfstel). Het plaatje
+// (images/doorgang-boog.webp) komt later; tot dan tekent de CSS een
+// eenvoudige boog. Het licht in de opening is altijd CSS, achter het plaatje.
+const zaalDoorgang = {
+    schatkamer: { x: 28.3, bodem: 68.0, hoogte: 24.0 },
+    album:      { x: 90.0, bodem: 90.0, hoogte: 34.0 }
+};
+const ZAAL_OVERGANG_MS = 500;
+let zaalOvergangBezig = false;
+
+function doorgangPositie(zaal) {
+    return leesAfstelPosities()["doorgang:" + zaal] || zaalDoorgang[zaal];
+}
+function plaatsDoorgang(knop, pos) {
+    knop.style.setProperty("--x", pos.x + "%");
+    knop.style.setProperty("--bodem", pos.bodem + "%");
+    knop.style.setProperty("--hoogte", pos.hoogte + "%");
+}
+// Zonder plakboek blijft de doorgang verborgen (hidden in de HTML).
+function toonDoorgangen() {
+    if (!plakboekAan) return;
+    document.querySelectorAll(".zaal-doorgang").forEach((knop) => {
+        plaatsDoorgang(knop, doorgangPositie(knop.dataset.zaal));
+        knop.hidden = false;
+    });
+}
+
+// Door de boog naar de andere zaal. Het beeld vervaagt in ZAAL_OVERGANG_MS;
+// de muziek loopt door, want beide zalen gebruiken ZALEN_MUZIEK. De albumzaal
+// ligt in de DOM boven de Schatkamer: heen faadt het album in, terug faadt
+// het uit, met de Schatkamer er al onder. Daarna is de vorige zaal dicht, dus
+// Terug (Schatkamer) en de lantaarn (album) gaan altijd naar het startscherm.
+function naarAndereZaal(doel) {
+    if (!plakboekAan || zaalOvergangBezig) return;
+    zaalOvergangBezig = true;
+    const album = document.getElementById("album-scherm");
+    let animatie;
+    if (doel === "album") {
+        openAlbum();
+        animatie = album.animate([{ opacity: 0 }, { opacity: 1 }], { duration: ZAAL_OVERGANG_MS, easing: "ease-in-out" });
+        animatie.onfinish = () => { verbergZaal(); zaalOvergangBezig = false; };
+    } else {
+        openSchatkamer();
+        animatie = album.animate([{ opacity: 1 }, { opacity: 0 }], { duration: ZAAL_OVERGANG_MS, easing: "ease-in-out", fill: "forwards" });
+        animatie.onfinish = () => { verbergAlbum(); animatie.cancel(); zaalOvergangBezig = false; };
+    }
+}
+
+// Afstelmodus (?afstel=aan) voor de doorgang, per zaal; zelfde bediening als
+// de lantaarn (initAlbumLantaarnAfstel). De stand wordt bewaard zoals de
+// andere afstelposities; de regel om in zaalDoorgang te plakken staat
+// rechtsonder in de zaal. Een klik zonder slepen gaat nog steeds door de boog.
+function initDoorgangAfstel(zaalEl, scherm, zaal) {
+    const knop = zaalEl && zaalEl.querySelector(".zaal-doorgang");
+    if (!knop) return;
+    zaalEl.classList.add("doorgang-afstel");
+    const SCHAAL_STAP = 0.2;
+    const info = document.createElement("div");
+    info.className = "album-afstel-info doorgang-afstel-info";
+    info.innerHTML = '<div class="album-afstel-regel"></div>' +
+        '<div class="afstel-hint">Doorgang: slepen = verplaatsen &middot; pijltjes = 0,1% ' +
+        '(Shift = 1%) &middot; + / &minus; of scroll = grootte</div>' +
+        '<button type="button">Reset</button>';
+    zaalEl.appendChild(info);
+    const regel = info.querySelector(".album-afstel-regel");
+    let pos = { ...doorgangPositie(zaal) };
+    let geselecteerd = false;
+    let netGesleept = false;
+
+    function toon() {
+        regel.textContent = `${zaal}: { x: ${pos.x.toFixed(1)}, bodem: ${pos.bodem.toFixed(1)}, hoogte: ${pos.hoogte.toFixed(1)} }`;
+    }
+    function zet() {
+        pos = { x: +pos.x.toFixed(2), bodem: +pos.bodem.toFixed(2), hoogte: Math.max(1, +pos.hoogte.toFixed(2)) };
+        const opgeslagen = leesAfstelPosities();
+        opgeslagen["doorgang:" + zaal] = pos;
+        schrijfAfstelPosities(opgeslagen);
+        plaatsDoorgang(knop, pos);
+        toon();
+    }
+    function selecteer(aan) {
+        geselecteerd = aan;
+        knop.classList.toggle("afstel-geselecteerd", aan);
+    }
+
+    info.querySelector("button").addEventListener("click", () => {
+        const opgeslagen = leesAfstelPosities();
+        delete opgeslagen["doorgang:" + zaal];
+        schrijfAfstelPosities(opgeslagen);
+        pos = { ...zaalDoorgang[zaal] };
+        plaatsDoorgang(knop, pos);
+        toon();
+    });
+
+    zaalEl.addEventListener("pointerdown", (e) => {
+        if (info.contains(e.target)) return;
+        if (!knop.contains(e.target)) { selecteer(false); return; }
+        e.preventDefault();
+        selecteer(true);
+        const r = zaalEl.getBoundingClientRect();
+        const start = { ...pos }, muisX = e.clientX, muisY = e.clientY;
+        netGesleept = false;
+        function beweeg(ev) {
+            if (Math.abs(ev.clientX - muisX) + Math.abs(ev.clientY - muisY) > 3) netGesleept = true;
+            pos.x = start.x + (ev.clientX - muisX) / r.width * 100;
+            pos.bodem = start.bodem + (ev.clientY - muisY) / r.height * 100;
+            plaatsDoorgang(knop, pos);
+            toon();
+        }
+        function los() {
+            document.removeEventListener("pointermove", beweeg);
+            document.removeEventListener("pointerup", los);
+            if (netGesleept) zet();
+        }
+        document.addEventListener("pointermove", beweeg);
+        document.addEventListener("pointerup", los);
+    });
+    // Na slepen niet naar de andere zaal: de klik wordt in de capture-fase al
+    // tegengehouden.
+    zaalEl.addEventListener("click", (e) => {
+        if (netGesleept && knop.contains(e.target)) {
+            e.stopPropagation();
+            e.preventDefault();
+        }
+        netGesleept = false;
+    }, true);
+
+    knop.addEventListener("wheel", (e) => {
+        e.preventDefault();
+        selecteer(true);
+        pos.hoogte += e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP;
+        zet();
+    }, { passive: false });
+
+    document.addEventListener("keydown", (e) => {
+        if (!geselecteerd || scherm.style.display === "none") return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        let raak = true;
+        if (e.key === "ArrowLeft")       pos.x -= stap;
+        else if (e.key === "ArrowRight") pos.x += stap;
+        else if (e.key === "ArrowUp")    pos.bodem -= stap;
+        else if (e.key === "ArrowDown")  pos.bodem += stap;
+        else if (e.key === "+" || e.key === "=") pos.hoogte += SCHAAL_STAP;
+        else if (e.key === "-" || e.key === "_") pos.hoogte -= SCHAAL_STAP;
+        else raak = false;
+        if (raak) { e.preventDefault(); zet(); }
+    });
+    toon();
+}
+
 // --- Plakboek, fase 3b: de pagina's in het opengeslagen boek -----------------
 // Elke dubbele pagina is één object in albumPaginas: een titel en een rij
 // plaatjes, in procenten van het 16:9-vak (gemeten op boek-open.webp). Titel:
@@ -11754,9 +11915,17 @@ function openAlbum() {
     document.body.classList.add("album-in-beeld");   // verbergt het Schatkamer-afstelpaneel
     laadAlbumBeelden();
     speelAlbumReeks(houder.firstElementChild, reeks);
+    werkMuziekKnopBij();
+    startZaalMuziek(ZALEN_MUZIEK);
 }
 
+// Terug (de lantaarn): naar het startscherm, muziek uit.
 function sluitAlbum() {
+    verbergAlbum();
+    stopZaalMuziek();
+}
+// Alleen het beeld weg, de muziek loopt door (doorgang naar de Schatkamer).
+function verbergAlbum() {
     wisAlbumTimers();
     zetAlbumBoekDicht();
     const scherm = document.getElementById("album-scherm");
@@ -12098,6 +12267,13 @@ werkVerborgenSchatBij();
 werkAlbumLantaarnBij();
 if (afstelModus && plakboekAan) initAlbumLantaarnAfstel();
 if (afstelModus && plakboekAan) initAlbumPaginaAfstel();
+
+// Doorgang tussen de Schatkamer en de albumzaal (alleen met plakboekAan).
+toonDoorgangen();
+if (afstelModus && plakboekAan) {
+    initDoorgangAfstel(document.querySelector("#zaal-scherm .sk-zaal"), document.getElementById("zaal-scherm"), "schatkamer");
+    initDoorgangAfstel(document.querySelector("#album-scherm .album-zaal"), document.getElementById("album-scherm"), "album");
+}
 
 // Avatar + spelernaam direct uit localStorage tonen, zodat ze tussen sessies
 // behouden blijven.

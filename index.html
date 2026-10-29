@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=423">
+    <link rel="stylesheet" href="style.css?v=424">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -718,10 +718,22 @@
                 <!-- Hierin plaatst bouwZaal() de klikbare zones. -->
                 <div class="sk-zones"></div>
 
+                <!-- Doorgang naar het Bijbelkidsalbum (alleen met plakboekAan; toonDoorgangen haalt
+                     hidden weg). Positie uit zaalDoorgang in script.js. Het licht
+                     is CSS; het plaatje images/doorgang-boog.webp komt later als
+                     <img> direct ná .doorgang-licht, in plaats van .doorgang-boog
+                     (de tijdelijke boog in CSS). -->
+                <button type="button" class="zaal-doorgang" data-zaal="schatkamer" hidden
+                        aria-label="Naar het Bijbelkidsalbum" onclick="naarAndereZaal('album')">
+                    <span class="doorgang-licht" aria-hidden="true"></span>
+                    <span class="doorgang-boog" aria-hidden="true"></span>
+                </button>
+
                 <button class="schatkamer-terug" onclick="sluitZaal()">Terug</button>
 
                 <!-- Muziek aan/uit, naast Terug: dezelfde schakelaar als in
-                     Instellingen (wisselMuziek). Uit = doorgestreepte noot. -->
+                     Instellingen (wisselMuziek). Uit = doorgestreepte noot.
+                     De albumzaal heeft er een op dezelfde plek. -->
                 <button class="zaal-muziek-knop" type="button" onclick="wisselMuziek()"
                         aria-label="Muziek" aria-pressed="true" title="Muziek uitzetten">
                     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -766,6 +778,28 @@
                     <img data-src="images/album/lantaarn-terug.webp?v=4" alt="" draggable="false">
                     <span class="album-lantaarn-gloed" aria-hidden="true"></span>
                     <span class="album-lantaarn-opschrift" aria-hidden="true">Terug</span>
+                </button>
+                <!-- Doorgang naar de Schatkamer (alleen met plakboekAan; toonDoorgangen haalt
+                     hidden weg). Positie uit zaalDoorgang in script.js. Het licht
+                     is CSS; het plaatje images/doorgang-boog.webp komt later als
+                     <img> direct ná .doorgang-licht, in plaats van .doorgang-boog
+                     (de tijdelijke boog in CSS). -->
+                <button type="button" class="zaal-doorgang" data-zaal="album" hidden
+                        aria-label="Naar de Schatkamer" onclick="naarAndereZaal('schatkamer')">
+                    <span class="doorgang-licht" aria-hidden="true"></span>
+                    <span class="doorgang-boog" aria-hidden="true"></span>
+                </button>
+                <!-- Muziek aan/uit, op dezelfde plek als in de Schatkamer. Met
+                     het boek open staat daar "Boek sluiten"; dan is hij weg. -->
+                <button class="zaal-muziek-knop" type="button" onclick="wisselMuziek()"
+                        aria-label="Muziek" aria-pressed="true" title="Muziek uitzetten">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="noot-steel" d="M9 18.5V6l10-2.5v12.2"/>
+                        <circle class="noot-kop" cx="6.6" cy="18.5" r="2.6"/>
+                        <circle class="noot-kop" cx="16.6" cy="15.7" r="2.6"/>
+                        <line class="streep-rand" x1="4" y1="3.5" x2="20.5" y2="20.5"/>
+                        <line class="streep" x1="4" y1="3.5" x2="20.5" y2="20.5"/>
+                    </svg>
                 </button>
                 <div class="album-dim" aria-hidden="true"></div>
                 <img class="album-open" data-src="images/album/boek-open.webp?v=4" alt="" aria-hidden="true">
@@ -859,9 +893,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=423"></script>
-    <script src="ontdekken-inhoud.js?v=423"></script>
-    <script src="script.js?v=423"></script>
+    <script src="lang/nl.js?v=424"></script>
+    <script src="ontdekken-inhoud.js?v=424"></script>
+    <script src="script.js?v=424"></script>
 
 </body>
 

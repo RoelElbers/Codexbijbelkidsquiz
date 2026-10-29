@@ -1301,13 +1301,15 @@ height: 22%;
 /* Muziek aan/uit in de Schatkamer-zaal: ronde knop direct rechts van Terug,
    in dezelfde gouden look, met een donkerblauwe noot. Terug is in rem/px
    gemaakt en daardoor overal 101 x 42 px breed/hoog; deze knop staat op
-   dezelfde top, 12 px ernaast, en 2 px hoger zodat de middens gelijk liggen.
+   dezelfde top, 12 px ernaast. Terug krijgt uit de algemene knopstijl
+   margin-top: 10px; met 8 px hier (2 px minder, want 4 px hoger) liggen de
+   middens gelijk.
    46 px: ruim boven de 44 px die een vinger op een tablet nodig heeft. */
 .zaal-muziek-knop {
     position: absolute;
     top: 4%;
     left: calc(3% + 101px + 12px);
-    margin-top: -2px;
+    margin-top: 8px;
     z-index: 10;
 
     width: 46px;
@@ -1363,6 +1365,114 @@ height: 22%;
 .zaal-muziek-knop.uit .noot-steel,
 .zaal-muziek-knop.uit .noot-kop {
     opacity: 0.55;
+}
+/* In de albumzaal staat op die plek "Boek sluiten" zodra het boek open is. */
+.album-zaal.boek-open .zaal-muziek-knop {
+    visibility: hidden;
+}
+
+/* Doorgang tussen de Schatkamer en de albumzaal (zaalDoorgang in script.js).
+   --x = midden, --bodem = onderkant, --hoogte = hoogte, in procenten van het
+   16:9-vak; de breedte volgt uit de verhouding 1 : 2. Het element is een
+   size-container, zodat de boog in cqw (procent van de eigen breedte) kan
+   meeschalen. Het licht in de opening ligt achter de boog: saffierblauw in de
+   Schatkamer, warm goud in de albumzaal, met een langzame gloed en iets
+   feller bij hover/aanraken. De boog zelf is tijdelijk CSS; het plaatje
+   images/doorgang-boog.webp komt er later voor in de plaats. */
+.zaal-doorgang {
+    --licht: 70, 140, 255;
+    position: absolute;
+    left: var(--x);
+    top: calc(var(--bodem) - var(--hoogte));
+    height: var(--hoogte);
+    aspect-ratio: 1 / 2;
+    min-height: 88px;
+    transform: translateX(-50%);
+    container-type: size;
+    z-index: 5;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.zaal-doorgang[hidden] {
+    display: none;
+}
+#album-scherm .zaal-doorgang {
+    --licht: 255, 190, 90;
+}
+.doorgang-licht {
+    position: absolute;
+    inset: 12cqw 12cqw 0 12cqw;
+    border-radius: 38cqw 38cqw 0 0;
+    background: radial-gradient(
+        ellipse 80% 70% at 50% 62%,
+        rgba(var(--licht), 1) 0%,
+        rgba(var(--licht), 0.8) 40%,
+        rgba(var(--licht), 0.45) 75%,
+        rgba(var(--licht), 0.3) 100%
+    );
+    animation: doorgangGloed 4.5s ease-in-out infinite;
+    transition: filter 0.3s ease;
+}
+.zaal-doorgang:hover .doorgang-licht,
+.zaal-doorgang:focus-visible .doorgang-licht,
+.zaal-doorgang:active .doorgang-licht {
+    filter: brightness(1.45) saturate(1.1);
+}
+@keyframes doorgangGloed {
+    0%, 100% { opacity: 0.7; }
+    50%      { opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .doorgang-licht {
+        animation: none;
+        opacity: 0.8;
+    }
+}
+/* Tijdelijke boog: een gouden rand om de opening, met een drempel eronder. */
+.doorgang-boog {
+    position: absolute;
+    inset: 0;
+    border: 12cqw solid #c9952f;
+    border-bottom: 0;
+    border-radius: 50cqw 50cqw 0 0;
+    box-shadow:
+        0 0 0 1.5cqw #6e4a0f,
+        inset 0 0 0 1.5cqw #f3d27a,
+        0 2cqw 6cqw rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+}
+.doorgang-boog::after {
+    content: "";
+    position: absolute;
+    left: -18cqw;
+    right: -18cqw;
+    bottom: -3cqw;
+    height: 5cqw;
+    border-radius: 2cqw;
+    background: linear-gradient(180deg, #f0cf7a 0%, #a8781f 100%);
+    box-shadow: 0 1.5cqw 3cqw rgba(0, 0, 0, 0.45);
+}
+/* Met het boek open is de doorgang weg, net als de lantaarn. */
+.album-zaal.boek-open .zaal-doorgang {
+    visibility: hidden;
+}
+/* Afstelmodus (?afstel=aan, zie initDoorgangAfstel). De regel staat
+   rechtsboven, zodat hij niet over die van de lantaarn valt. */
+.doorgang-afstel .zaal-doorgang {
+    cursor: move;
+    touch-action: none;
+}
+.zaal-doorgang.afstel-geselecteerd {
+    outline: 3px solid #36dfff;
+    outline-offset: 1px;
+}
+.album-afstel-info.doorgang-afstel-info {
+    bottom: auto;
+    top: 12px;
+    right: 80px;
 }
 
 /* =========================
