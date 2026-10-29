@@ -113,6 +113,21 @@ elk antwoord herhaald hoeft te worden.*
   Kolossenzen, Tessalonicenzen en Timoteüs & Titus, maar dan boekbreed:
   afleiders die hetzelfde beweren, scheve antwoordlengtes, vraagteksten die het
   antwoord weggeven.
+- **Woordvragen verder aanvullen.** De laatste genummerde reeks was 17
+  (beeldtaal van Openbaring), plus één ronde over de drie talen van Israël.
+  Reeksnummers staan niet meer in het bestand: een nieuwe ronde landt gewoon in
+  de pools van het eigen boek en niveau. De brieven (Galaten, Efeziërs,
+  Filippenzen, Kolossenzen) hebben er het minst. Afspraak: variatie, dus
+  woordvragen tussen de andere vragen, niet een pool vol woorduitleg.
+- **Nieuw Ontdekken-onderwerp "Feesten door het jaar" (werknaam).** Twee
+  delen: (1) een overzicht van de Joodse feesten naast de christelijke feesten;
+  (2) een uitgebreide uitleg over de paasdatum, ook waarom de orthodoxe kerken
+  Pasen vaak op een andere zondag vieren. Te lang voor het woordenboek; het
+  lemma "Pasen (Pesach)" krijgt alleen een korte aanvulling met een verwijzing.
+  Concepttekst: kladblok/feesten-door-het-jaar.md (16 september 2026); zie ook
+  kladblok/ontdekken-ontwerp.md over de plek in de hub. Afstemmen met de rubriek
+  "Eén Bijbel, verschillende lezingen" hieronder, waar de paasdatum ook als
+  later onderwerp staat: één plek uitschrijven, vanaf de andere verwijzen.
 - **Nieuwe Ontdekken-rubriek "Eén Bijbel, verschillende lezingen" (werknaam):**
   een plek voor teksten die christenen verschillend lezen, waar elke traditie
   vanuit haar eigen teksten wordt beschreven, zonder dat de game kiest. Hier
@@ -257,6 +272,33 @@ elk antwoord herhaald hoeft te worden.*
 Al gedaan: Ontdekken (Woordenboek, Wie is wie, Hoe leefden ze toen, Verborgen
 patronen, Verborgen Schat), de kerkenpagina's en de avatarteksten, afgerond 28
 okt 2026.
+
+## Bedrijf, PR en fondswerving
+
+- **"Bijbelkidsquiz" als extra handelsnaam inschrijven bij de KvK** (via Mijn
+  KVK). Nu staat alleen "Bijbelkids Quiz" ingeschreven. Daarna in
+  privacyverklaring.html (r. 27) de zin aanpassen die nu zegt dat Bijbelkidsquiz
+  de handelsnaam is van Bijbelkids Quiz, en nagaan of auteursrecht.html en de
+  copyrightregel in de voettekst dan mee moeten.
+- **Informatiemails aan NBG, KBS en Stichting HSV.** Informeren, geen
+  toestemming vragen: de game volgt geen bestaande vertaling maar geeft de tekst
+  vrij weer in eigentijdse taal, zonder horizontale uitleg (vergelijking in
+  kladblok/bijbelvertalingen-vergelijking.md: geen letterlijke overnames). Elke
+  mail vermeldt dat de andere twee ook geïnformeerd worden. Aanbod: op
+  voor-ouders.html een overzicht van de gangbare bijbels (ook jongeren- en
+  kinderbijbels) met foto en link naar de eigen uitgever, zonder er geld voor te
+  vragen. Sponsoring alleen ter sprake brengen als een organisatie enthousiast
+  reageert; verder kort en zakelijk.
+- **PR en samenwerking.** Bewust uitgesteld tot de opschoonrondes klaar zijn.
+  Organisaties benaderen, persoonlijk (met wat lobbyen) en breed. De namen staan
+  in Roels PR-overzicht op zijn eigen computer, bewust niet in deze openbare
+  repo. Uitgangspunt: van tien wijzen er negen af of reageren niet; met de ene
+  enthousiaste werk je samen. Toon van de mails: niet doordrukken, ruimte en
+  bedenktijd geven, vragen voorwaardelijk formuleren.
+- **Fondswerving verder uitwerken.** De game blijft gratis; volwassenen worden
+  uitgenodigd vrijwillig bij te dragen. Routes: christelijke
+  ondernemersnetwerken en artikelen in christelijke media die eindigen met een
+  steunoproep. Geen geldvraag op het scherm van het kind.
 
 ## Groter werk: eigen webadressen voor de Ontdekken-artikelen
 
