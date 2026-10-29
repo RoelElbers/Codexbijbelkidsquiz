@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=422">
+    <link rel="stylesheet" href="style.css?v=423">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -719,6 +719,19 @@
                 <div class="sk-zones"></div>
 
                 <button class="schatkamer-terug" onclick="sluitZaal()">Terug</button>
+
+                <!-- Muziek aan/uit, naast Terug: dezelfde schakelaar als in
+                     Instellingen (wisselMuziek). Uit = doorgestreepte noot. -->
+                <button class="zaal-muziek-knop" type="button" onclick="wisselMuziek()"
+                        aria-label="Muziek" aria-pressed="true" title="Muziek uitzetten">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path class="noot-steel" d="M9 18.5V6l10-2.5v12.2"/>
+                        <circle class="noot-kop" cx="6.6" cy="18.5" r="2.6"/>
+                        <circle class="noot-kop" cx="16.6" cy="15.7" r="2.6"/>
+                        <line class="streep-rand" x1="4" y1="3.5" x2="20.5" y2="20.5"/>
+                        <line class="streep" x1="4" y1="3.5" x2="20.5" y2="20.5"/>
+                    </svg>
+                </button>
             </div>
         </div>
 
@@ -846,9 +859,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=422"></script>
-    <script src="ontdekken-inhoud.js?v=422"></script>
-    <script src="script.js?v=422"></script>
+    <script src="lang/nl.js?v=423"></script>
+    <script src="ontdekken-inhoud.js?v=423"></script>
+    <script src="script.js?v=423"></script>
 
 </body>
 

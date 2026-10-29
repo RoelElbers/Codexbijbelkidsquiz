@@ -90,6 +90,7 @@ const ZAAL_MUZIEK_VOLUME = 0.5;
 const ZAAL_MUZIEK_FADE_IN = 2;
 const ZAAL_MUZIEK_FADE_UIT = 1;
 const ZAAL_MUZIEK_CROSSFADE = 2;
+const ZAAL_MUZIEK_VOORLADEN = 20;   // zoveel seconden voor het einde het volgende nummer laden
 
 // Volume en fades lopen via een GainNode van de Web Audio API, niet via
 // audio.volume: op iPad/iPhone is audio.volume alleen-lezen. Uitzondering:
@@ -102,6 +103,8 @@ let zaalMuziekGewenst = null;    // de lijst van de zaal waar de speler nu is, o
 let zaalMuziekLijst = null;      // de lijst van de zaal die nu speelt
 let zaalMuziekIndex = 0;
 let zaalMuziekSpoor = null;      // het nummer dat nu speelt (of infadet)
+let zaalMuziekVorige = null;     // het vorige nummer, dat doorspeelt tot het nieuwe klinkt
+let zaalMuziekVolgend = null;    // { index, spoor }: het klaargezette volgende nummer
 const zaalMuziekUitlopend = new Set();   // sporen die nog uitfaden
 
 function zaalAudioCtx() {
@@ -111,12 +114,14 @@ function zaalAudioCtx() {
 }
 
 // Eén nummer: een <audio> met preload="none", dus er wordt pas iets gedownload
-// als het nummer echt gaat spelen.
+// als het nummer echt gaat spelen of als volgend nummer wordt klaargezet.
 function maakZaalSpoor(nummer) {
     const el = new Audio();
     el.preload = "none";
     el.src = nummer.bestand;
-    const spoor = { el, gain: null, timer: null, doorGegeven: false };
+    // stopt: wordt uitgefaded of opgeruimd. overgedragen: het volgende nummer
+    // is al gestart.
+    const spoor = { el, gain: null, timer: null, stopt: false, overgedragen: false };
     if (zaalMuziekViaWebAudio) {
         const ctx = zaalAudioCtx();
         spoor.gain = ctx.createGain();
@@ -126,14 +131,17 @@ function maakZaalSpoor(nummer) {
     } else {
         el.volume = 0;
     }
-    // Vlak voor het einde het volgende nummer erover laten infaden.
+    // Ruim voor het einde het volgende nummer laten laden, en vlak voor het
+    // einde starten. Het overnemen zelf gebeurt pas als dat nummer klinkt.
     el.addEventListener("timeupdate", () => {
-        if (spoor !== zaalMuziekSpoor || spoor.doorGegeven || !el.duration) return;
-        if (el.duration - el.currentTime <= ZAAL_MUZIEK_CROSSFADE) speelVolgendZaalNummer();
+        if (spoor !== zaalMuziekSpoor || spoor.overgedragen || !el.duration) return;
+        const rest = el.duration - el.currentTime;
+        if (rest <= ZAAL_MUZIEK_VOORLADEN && !zaalMuziekVolgend) zetVolgendZaalNummerKlaar();
+        if (rest <= ZAAL_MUZIEK_CROSSFADE) speelVolgendZaalNummer();
     });
     // Vangnet als timeupdate het moment mist.
     el.addEventListener("ended", () => {
-        if (spoor === zaalMuziekSpoor && !spoor.doorGegeven) speelVolgendZaalNummer();
+        if (spoor === zaalMuziekSpoor && !spoor.overgedragen) speelVolgendZaalNummer();
     });
     return spoor;
 }
@@ -160,7 +168,7 @@ function fadeZaalSpoor(spoor, doel, duur) {
 
 // Spoor uitfaden en daarna stilzetten en opruimen.
 function laatZaalSpoorUitlopen(spoor, duur) {
-    spoor.doorGegeven = true;
+    spoor.stopt = true;
     zaalMuziekUitlopend.add(spoor);
     fadeZaalSpoor(spoor, 0, duur);
     setTimeout(() => {
@@ -173,26 +181,44 @@ function laatZaalSpoorUitlopen(spoor, duur) {
     }, duur * 1000 + 100);
 }
 
-function speelZaalNummer(index, fadeIn) {
-    const spoor = maakZaalSpoor(zaalMuziekLijst[index]);
+// Het volgende nummer alvast laten laden, zodat het bij de overgang meteen
+// kan klinken.
+function zetVolgendZaalNummerKlaar() {
+    const index = (zaalMuziekIndex + 1) % zaalMuziekLijst.length;
+    zaalMuziekVolgend = { index, spoor: maakZaalSpoor(zaalMuziekLijst[index]) };
+    zaalMuziekVolgend.spoor.el.preload = "auto";
+    zaalMuziekVolgend.spoor.el.load();
+}
+
+// Start een nummer (eventueel een al klaargezet spoor). De fade-in begint pas
+// als het echt klinkt, niet bij de klik: op een trage verbinding zou hij
+// anders al half voorbij zijn. Tot dan staat het spoor op 0. Pas op dat
+// moment gaat ook het vorige nummer uitfaden; tot dan speelt het gewoon door.
+// Is het vorige al afgelopen, dan is dit gewoon een fade-in.
+function speelZaalNummer(index, klaar) {
+    const spoor = klaar || maakZaalSpoor(zaalMuziekLijst[index]);
+    const vorige = zaalMuziekSpoor;
+    zaalMuziekVorige = vorige;
     zaalMuziekIndex = index;
     zaalMuziekSpoor = spoor;
-    // De fade-in begint pas als het nummer echt klinkt, niet bij de klik: op
-    // een trage verbinding zou hij anders al half voorbij zijn. Het spoor
-    // staat tot dan op 0. Is het intussen al uitgezet, dan niet meer omhoog.
     spoor.el.addEventListener("playing", () => {
-        if (!spoor.doorGegeven) fadeZaalSpoor(spoor, ZAAL_MUZIEK_VOLUME, fadeIn);
+        if (spoor.stopt) return;
+        fadeZaalSpoor(spoor, ZAAL_MUZIEK_VOLUME, vorige ? ZAAL_MUZIEK_CROSSFADE : ZAAL_MUZIEK_FADE_IN);
+        if (zaalMuziekVorige === vorige) zaalMuziekVorige = null;
+        if (vorige && !vorige.stopt) laatZaalSpoorUitlopen(vorige, vorige.el.ended ? 0 : ZAAL_MUZIEK_CROSSFADE);
     }, { once: true });
     const belofte = spoor.el.play();
     if (belofte) belofte.catch(() => {});   // geweigerd of geen bestand: gewoon stil
 }
 
-// Crossfade naar het volgende nummer in de lijst (na het laatste weer het eerste).
+// Naar het volgende nummer in de lijst (na het laatste weer het eerste).
 function speelVolgendZaalNummer() {
-    if (!zaalMuziekLijst) return;
-    const oud = zaalMuziekSpoor;
-    speelZaalNummer((zaalMuziekIndex + 1) % zaalMuziekLijst.length, ZAAL_MUZIEK_CROSSFADE);
-    if (oud) laatZaalSpoorUitlopen(oud, ZAAL_MUZIEK_CROSSFADE);
+    if (!zaalMuziekLijst || !zaalMuziekSpoor) return;
+    zaalMuziekSpoor.overgedragen = true;
+    if (!zaalMuziekVolgend) zetVolgendZaalNummerKlaar();
+    const { index, spoor } = zaalMuziekVolgend;
+    zaalMuziekVolgend = null;
+    speelZaalNummer(index, spoor);
 }
 
 // Bij binnenkomst in een zaal: begin met een willekeurig nummer, daarna om en
@@ -205,7 +231,7 @@ function startZaalMuziek(lijst) {
     zetZaalMuziekStil();
     zaalMuziekLijst = lijst;
     try {
-        speelZaalNummer(Math.floor(Math.random() * lijst.length), ZAAL_MUZIEK_FADE_IN);
+        speelZaalNummer(Math.floor(Math.random() * lijst.length), null);
     } catch (e) {
         // Lukt audio niet, dan gewoon stil.
     }
@@ -217,22 +243,36 @@ function stopZaalMuziek() {
     zetZaalMuziekStil();
 }
 
-// Uitfaden en stilzetten; de zaal blijft onthouden (voor Muziek: uit/aan).
+// Alles uitfaden en stilzetten: het huidige nummer, een vorig nummer dat nog
+// op de overname wacht en een klaargezet volgend nummer. De zaal blijft
+// onthouden (voor Muziek: uit/aan).
 function zetZaalMuziekStil() {
-    if (zaalMuziekSpoor) laatZaalSpoorUitlopen(zaalMuziekSpoor, ZAAL_MUZIEK_FADE_UIT);
+    zaalMuziekSporen().forEach((s) => { if (!s.stopt) laatZaalSpoorUitlopen(s, ZAAL_MUZIEK_FADE_UIT); });
+    if (zaalMuziekVolgend) laatZaalSpoorUitlopen(zaalMuziekVolgend.spoor, 0);
+    zaalMuziekVolgend = null;
+    zaalMuziekVorige = null;
     zaalMuziekSpoor = null;
     zaalMuziekLijst = null;
 }
 
+// Alle sporen die nu (kunnen) klinken.
+function zaalMuziekSporen() {
+    const sporen = new Set(zaalMuziekUitlopend);
+    if (zaalMuziekSpoor) sporen.add(zaalMuziekSpoor);
+    if (zaalMuziekVorige) sporen.add(zaalMuziekVorige);
+    return [...sporen];
+}
+
 // Tab of app op de achtergrond: pauzeren. Terug: verder waar hij was.
 document.addEventListener("visibilitychange", () => {
-    const sporen = [zaalMuziekSpoor, ...zaalMuziekUitlopend].filter(Boolean);
     if (document.hidden) {
-        sporen.forEach((s) => s.el.pause());
+        zaalMuziekSporen().forEach((s) => s.el.pause());
     } else if (zaalMuziekSpoor) {
         if (zaalMuziekViaWebAudio) zaalAudioCtx();
-        const belofte = zaalMuziekSpoor.el.play();
-        if (belofte) belofte.catch(() => {});
+        zaalMuziekSporen().filter((s) => !s.stopt && !s.el.ended).forEach((s) => {
+            const belofte = s.el.play();
+            if (belofte) belofte.catch(() => {});
+        });
     }
 });
 
@@ -10539,6 +10579,7 @@ function openSchatkamer() {
         zaalEl.classList.remove("zoomt");
         zaalEl.style.transformOrigin = "";
     }
+    werkMuziekKnopBij();
     document.getElementById("zaal-scherm").style.display = "flex";
     if (afstelModus) initAfstel(zaalEl);
     // Niet in de afstelstand: daar verbergen de paneelknoppen de zaal zonder
@@ -10756,11 +10797,19 @@ function wisselMuziek() {
     else zetZaalMuziekStil();
     werkMuziekKnopBij();
 }
+// Eén schakelaar, twee plekken: de knop in Instellingen en de ronde knop in
+// de Schatkamer-zaal.
 function werkMuziekKnopBij() {
     const knop = document.getElementById("muziek-knop");
-    if (!knop) return;
-    knop.textContent = muziekAan ? "Muziek: aan" : "Muziek: uit";
-    knop.classList.toggle("geluid-uit", !muziekAan);
+    if (knop) {
+        knop.textContent = muziekAan ? "Muziek: aan" : "Muziek: uit";
+        knop.classList.toggle("geluid-uit", !muziekAan);
+    }
+    document.querySelectorAll(".zaal-muziek-knop").forEach((k) => {
+        k.classList.toggle("uit", !muziekAan);
+        k.setAttribute("aria-pressed", muziekAan ? "true" : "false");
+        k.title = muziekAan ? "Muziek uitzetten" : "Muziek aanzetten";
+    });
 }
 function werkGeluidKnopBij() {
     const knop = document.getElementById("geluid-knop");

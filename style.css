@@ -1298,6 +1298,73 @@ height: 22%;
     background: linear-gradient(180deg, #ffe6a3 0%, #e6b94c 100%);
 }
 
+/* Muziek aan/uit in de Schatkamer-zaal: ronde knop direct rechts van Terug,
+   in dezelfde gouden look, met een donkerblauwe noot. Terug is in rem/px
+   gemaakt en daardoor overal 101 x 42 px breed/hoog; deze knop staat op
+   dezelfde top, 12 px ernaast, en 2 px hoger zodat de middens gelijk liggen.
+   46 px: ruim boven de 44 px die een vinger op een tablet nodig heeft. */
+.zaal-muziek-knop {
+    position: absolute;
+    top: 4%;
+    left: calc(3% + 101px + 12px);
+    margin-top: -2px;
+    z-index: 10;
+
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    border: 2px solid #b07d1c;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #f6d98a 0%, #d8a93f 100%);
+    box-shadow:
+        inset 0 2px 3px rgba(255, 255, 255, 0.45),
+        0 3px 6px rgba(0, 0, 0, 0.35);
+}
+.zaal-muziek-knop:hover {
+    background: linear-gradient(180deg, #ffe6a3 0%, #e6b94c 100%);
+}
+.zaal-muziek-knop svg {
+    width: 26px;
+    height: 26px;
+    overflow: visible;
+}
+.zaal-muziek-knop .noot-steel {
+    fill: none;
+    stroke: #1f3d73;
+    stroke-width: 2.2;
+    stroke-linejoin: round;
+}
+.zaal-muziek-knop .noot-kop {
+    fill: #1f3d73;
+}
+/* De streep krijgt een gouden rand, zodat hij los van de noot te zien is. */
+.zaal-muziek-knop .streep-rand,
+.zaal-muziek-knop .streep {
+    display: none;
+    stroke-linecap: round;
+}
+.zaal-muziek-knop .streep-rand {
+    stroke: #f0cf7a;
+    stroke-width: 5.5;
+}
+.zaal-muziek-knop .streep {
+    stroke: #1f3d73;
+    stroke-width: 2.4;
+}
+.zaal-muziek-knop.uit .streep-rand,
+.zaal-muziek-knop.uit .streep {
+    display: inline;
+}
+.zaal-muziek-knop.uit .noot-steel,
+.zaal-muziek-knop.uit .noot-kop {
+    opacity: 0.55;
+}
+
 /* =========================
    SCHATKAMER — standkleuren, silhouetten en placeholder-kunst
    De nieuwe NT-vitrines (kleurViaFilter) kleuren één zilveren basisafbeelding
