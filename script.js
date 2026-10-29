@@ -10622,6 +10622,7 @@ function openSchatkamer() {
     }
     werkMuziekKnopBij();
     document.getElementById("zaal-scherm").style.display = "flex";
+    gloeiDoorgangenOp("zaal-scherm");
     if (afstelModus) initAfstel(zaalEl);
     // Niet in de afstelstand: daar verbergen de paneelknoppen de zaal zonder
     // sluitZaal(), en dan zou de muziek doorspelen.
@@ -11437,6 +11438,10 @@ const zaalOpschrift = { album: "Bijbelkidsalbum", schatkamer: "Schatkamer" };
 const zaalNaarLabel = { album: "Naar het Bijbelkidsalbum", schatkamer: "Naar de Schatkamer" };
 const ZAAL_OVERGANG_MS = 500;
 let zaalOvergangBezig = false;
+// Bij elke binnenkomst lichten de doorgangen één keer op, zodra de zaal
+// helemaal in beeld is (na de overgang); daarna gaan ze verder met ademen.
+const DOORGANG_OPGLOEI_WACHT_MS = 1000;
+let doorgangOpgloeiTimer = null;
 let doorgangAanwijzer = "mouse";     // pointerType van de laatste aanraking van een zone
 
 function doorgangPositie(zaal, zone) {
@@ -11491,6 +11496,24 @@ function kiesDoorgang(knop, naar, e) {
 }
 function wisDoorgangTik() {
     document.querySelectorAll(".doorgang-zone.getikt").forEach((k) => k.classList.remove("getikt"));
+}
+
+// Eén keer opgloeien in de zaal die net binnenkomt (Schatkamer of album, ook
+// via de andere zaal). De klasse gaat bij binnenkomst eerst weg: bleef hij van
+// een vorig bezoek staan, dan zou de animatie al meteen lopen zodra de zaal
+// weer zichtbaar wordt, en daarna nog een keer. Niet bij "minder beweging".
+function gloeiDoorgangenOp(schermId) {
+    clearTimeout(doorgangOpgloeiTimer);
+    document.querySelectorAll(".doorgang-zones.opgloeien").forEach((h) => h.classList.remove("opgloeien"));
+    if (!plakboekAan || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    doorgangOpgloeiTimer = setTimeout(() => {
+        const scherm = document.getElementById(schermId);
+        const houder = scherm && scherm.querySelector(".doorgang-zones");
+        if (!houder || scherm.style.display === "none") return;
+        houder.classList.remove("opgloeien");
+        void houder.offsetWidth;                 // animatie opnieuw laten beginnen
+        houder.classList.add("opgloeien");
+    }, DOORGANG_OPGLOEI_WACHT_MS);
 }
 
 // Naar de andere zaal. Het beeld vervaagt in ZAAL_OVERGANG_MS; de muziek loopt
@@ -12020,6 +12043,7 @@ function openAlbum() {
     speelAlbumReeks(houder.firstElementChild, reeks);
     werkMuziekKnopBij();
     startZaalMuziek(ZALEN_MUZIEK);
+    gloeiDoorgangenOp("album-scherm");
 }
 
 // Terug (de lantaarn): naar het startscherm, muziek uit.

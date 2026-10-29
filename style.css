@@ -1449,10 +1449,39 @@ height: 22%;
     0%, 100% { opacity: 0.35; }
     50%      { opacity: 0.8; }
 }
+/* Eén keer opgloeien bij binnenkomst (gloeiDoorgangenOp in script.js): een
+   eigen laag boven het ademende licht, zodat dat er ongestoord onder doorloopt.
+   In rust onzichtbaar; met .opgloeien ongeveer 2 s omhoog en weer terug. */
+.doorgang-zone::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(
+        ellipse 55% 55% at 50% 55%,
+        rgba(var(--licht), 0.95) 0%,
+        rgba(var(--licht), 0.5) 45%,
+        rgba(var(--licht), 0) 100%
+    );
+    mix-blend-mode: screen;
+    opacity: 0;
+    pointer-events: none;
+}
+.doorgang-zones.opgloeien .doorgang-zone::before {
+    animation: doorgangOpgloeien 2s ease-in-out 1;
+}
+@keyframes doorgangOpgloeien {
+    0%   { opacity: 0; }
+    45%  { opacity: 1; }
+    100% { opacity: 0; }
+}
 @media (prefers-reduced-motion: reduce) {
     .doorgang-licht {
         animation: none;
         opacity: 0.6;
+    }
+    .doorgang-zones.opgloeien .doorgang-zone::before {
+        animation: none;
     }
 }
 .doorgang-opschrift {
