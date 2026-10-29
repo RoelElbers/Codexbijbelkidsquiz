@@ -73,6 +73,152 @@ document.addEventListener("click", (e) => {
     }
 });
 
+// --- Muziek in de zalen -----------------------------------------------------
+// Per zaal een lijst nummers. Een nummer toevoegen of vervangen = alleen de
+// lijst aanpassen. Een andere zaal (bijv. de albumzaal) krijgt een eigen lijst
+// en roept startZaalMuziek(EIGEN_LIJST) aan bij binnenkomst en
+// stopZaalMuziek() bij het verlaten; de speler zelf blijft hetzelfde.
+const SCHATKAMER_MUZIEK = [
+    { titel: "Gloria", bestand: "audio/schatkamer/gloria-1.mp3" },
+    { titel: "Gloria", bestand: "audio/schatkamer/gloria-2.mp3" }
+];
+
+// Achtergrondmuziek, dus rustig. Fades in seconden.
+const ZAAL_MUZIEK_VOLUME = 0.5;
+const ZAAL_MUZIEK_FADE_IN = 2;
+const ZAAL_MUZIEK_FADE_UIT = 1;
+const ZAAL_MUZIEK_CROSSFADE = 2;
+
+// Volume en fades lopen via een GainNode van de Web Audio API, niet via
+// audio.volume: op iPad/iPhone is audio.volume alleen-lezen. Uitzondering:
+// via file:/// levert Chrome een <audio> in Web Audio alleen stilte af (CORS),
+// dus lokaal openen valt terug op audio.volume. Online (https) speelt het
+// altijd via de GainNode.
+const zaalMuziekViaWebAudio = window.location.protocol !== "file:";
+
+let zaalMuziekLijst = null;      // de lijst van de zaal die nu speelt
+let zaalMuziekIndex = 0;
+let zaalMuziekSpoor = null;      // het nummer dat nu speelt (of infadet)
+const zaalMuziekUitlopend = new Set();   // sporen die nog uitfaden
+
+function zaalAudioCtx() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (audioCtx.state === "suspended") audioCtx.resume();
+    return audioCtx;
+}
+
+// Eén nummer: een <audio> met preload="none", dus er wordt pas iets gedownload
+// als het nummer echt gaat spelen.
+function maakZaalSpoor(nummer) {
+    const el = new Audio();
+    el.preload = "none";
+    el.src = nummer.bestand;
+    const spoor = { el, gain: null, timer: null, doorGegeven: false };
+    if (zaalMuziekViaWebAudio) {
+        const ctx = zaalAudioCtx();
+        spoor.gain = ctx.createGain();
+        spoor.gain.gain.value = 0;
+        ctx.createMediaElementSource(el).connect(spoor.gain);
+        spoor.gain.connect(ctx.destination);
+    } else {
+        el.volume = 0;
+    }
+    // Vlak voor het einde het volgende nummer erover laten infaden.
+    el.addEventListener("timeupdate", () => {
+        if (spoor !== zaalMuziekSpoor || spoor.doorGegeven || !el.duration) return;
+        if (el.duration - el.currentTime <= ZAAL_MUZIEK_CROSSFADE) speelVolgendZaalNummer();
+    });
+    // Vangnet als timeupdate het moment mist.
+    el.addEventListener("ended", () => {
+        if (spoor === zaalMuziekSpoor && !spoor.doorGegeven) speelVolgendZaalNummer();
+    });
+    return spoor;
+}
+
+// Volume van een spoor in `duur` seconden naar `doel` brengen.
+function fadeZaalSpoor(spoor, doel, duur) {
+    if (spoor.gain) {
+        const g = spoor.gain.gain;
+        const nu = audioCtx.currentTime;
+        g.cancelScheduledValues(nu);
+        g.setValueAtTime(g.value, nu);
+        g.linearRampToValueAtTime(doel, nu + duur);
+        return;
+    }
+    clearInterval(spoor.timer);
+    const start = spoor.el.volume;
+    const t0 = performance.now();
+    spoor.timer = setInterval(() => {
+        const f = Math.min(1, (performance.now() - t0) / (duur * 1000));
+        spoor.el.volume = start + (doel - start) * f;
+        if (f >= 1) clearInterval(spoor.timer);
+    }, 50);
+}
+
+// Spoor uitfaden en daarna stilzetten en opruimen.
+function laatZaalSpoorUitlopen(spoor, duur) {
+    spoor.doorGegeven = true;
+    zaalMuziekUitlopend.add(spoor);
+    fadeZaalSpoor(spoor, 0, duur);
+    setTimeout(() => {
+        clearInterval(spoor.timer);
+        spoor.el.pause();
+        spoor.el.removeAttribute("src");
+        spoor.el.load();
+        if (spoor.gain) spoor.gain.disconnect();
+        zaalMuziekUitlopend.delete(spoor);
+    }, duur * 1000 + 100);
+}
+
+function speelZaalNummer(index, fadeIn) {
+    const spoor = maakZaalSpoor(zaalMuziekLijst[index]);
+    zaalMuziekIndex = index;
+    zaalMuziekSpoor = spoor;
+    const belofte = spoor.el.play();
+    if (belofte) belofte.catch(() => {});   // geweigerd of geen bestand: gewoon stil
+    fadeZaalSpoor(spoor, ZAAL_MUZIEK_VOLUME, fadeIn);
+}
+
+// Crossfade naar het volgende nummer in de lijst (na het laatste weer het eerste).
+function speelVolgendZaalNummer() {
+    if (!zaalMuziekLijst) return;
+    const oud = zaalMuziekSpoor;
+    speelZaalNummer((zaalMuziekIndex + 1) % zaalMuziekLijst.length, ZAAL_MUZIEK_CROSSFADE);
+    if (oud) laatZaalSpoorUitlopen(oud, ZAAL_MUZIEK_CROSSFADE);
+}
+
+// Bij binnenkomst in een zaal: begin met een willekeurig nummer, daarna om en
+// om door de lijst. Met het geluid uit (Instellingen) blijft het stil.
+function startZaalMuziek(lijst) {
+    if (!geluidAan || !lijst || lijst.length === 0) return;
+    if (zaalMuziekLijst === lijst && zaalMuziekSpoor) return;   // speelt al
+    stopZaalMuziek();
+    zaalMuziekLijst = lijst;
+    try {
+        speelZaalNummer(Math.floor(Math.random() * lijst.length), ZAAL_MUZIEK_FADE_IN);
+    } catch (e) {
+        // Lukt audio niet, dan gewoon stil.
+    }
+}
+
+function stopZaalMuziek() {
+    if (zaalMuziekSpoor) laatZaalSpoorUitlopen(zaalMuziekSpoor, ZAAL_MUZIEK_FADE_UIT);
+    zaalMuziekSpoor = null;
+    zaalMuziekLijst = null;
+}
+
+// Tab of app op de achtergrond: pauzeren. Terug: verder waar hij was.
+document.addEventListener("visibilitychange", () => {
+    const sporen = [zaalMuziekSpoor, ...zaalMuziekUitlopend].filter(Boolean);
+    if (document.hidden) {
+        sporen.forEach((s) => s.el.pause());
+    } else if (zaalMuziekSpoor) {
+        if (zaalMuziekViaWebAudio) zaalAudioCtx();
+        const belofte = zaalMuziekSpoor.el.play();
+        if (belofte) belofte.catch(() => {});
+    }
+});
+
 const fullscreenBtn = document.getElementById("fullscreen-btn");
 
 fullscreenBtn.addEventListener("click", () => {
@@ -10378,11 +10524,15 @@ function openSchatkamer() {
     }
     document.getElementById("zaal-scherm").style.display = "flex";
     if (afstelModus) initAfstel(zaalEl);
+    // Niet in de afstelstand: daar verbergen de paneelknoppen de zaal zonder
+    // sluitZaal(), en dan zou de muziek doorspelen.
+    else startZaalMuziek(SCHATKAMER_MUZIEK);
 }
 
 // Sluit de overzichtszaal: terug naar het startscherm.
 function sluitZaal() {
     document.getElementById("zaal-scherm").style.display = "none";
+    stopZaalMuziek();
 }
 
 // Klik op een zone: de zaal zoomt op het klikgebied in (CSS-transitie op
@@ -10578,6 +10728,7 @@ function vulUpdatesScherm() {
 function wisselGeluid() {
     geluidAan = !geluidAan;
     localStorage.setItem("geluidAan", geluidAan ? "aan" : "uit");
+    if (!geluidAan) stopZaalMuziek();
     werkGeluidKnopBij();
 }
 function werkGeluidKnopBij() {

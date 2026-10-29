@@ -108,3 +108,7 @@ images/**/*.png
 !images/voorgrond_scherm2_transparante_lucht.png
 !images/voorgrond_transparante_lucht.png
 !images/og-image.png
+
+# Bronbestanden van muziek (WAV uit Suno, elk ruim 30 MB). Het spel laadt
+# alleen de MP3's ernaast; de bronnen blijven op de eigen schijf.
+audio/**/bron/
