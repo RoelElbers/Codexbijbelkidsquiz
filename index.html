@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=424">
+    <link rel="stylesheet" href="style.css?v=425">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -718,16 +718,10 @@
                 <!-- Hierin plaatst bouwZaal() de klikbare zones. -->
                 <div class="sk-zones"></div>
 
-                <!-- Doorgang naar het Bijbelkidsalbum (alleen met plakboekAan; toonDoorgangen haalt
-                     hidden weg). Positie uit zaalDoorgang in script.js. Het licht
-                     is CSS; het plaatje images/doorgang-boog.webp komt later als
-                     <img> direct ná .doorgang-licht, in plaats van .doorgang-boog
-                     (de tijdelijke boog in CSS). -->
-                <button type="button" class="zaal-doorgang" data-zaal="schatkamer" hidden
-                        aria-label="Naar het Bijbelkidsalbum" onclick="naarAndereZaal('album')">
-                    <span class="doorgang-licht" aria-hidden="true"></span>
-                    <span class="doorgang-boog" aria-hidden="true"></span>
-                </button>
+                <!-- Doorgangen naar het Bijbelkidsalbum: klikzones op bestaande plekken in het beeld,
+                     met een zacht licht en een opschrift. bouwDoorgangZones() vult
+                     dit uit zaalDoorgangen in script.js, alleen met plakboekAan. -->
+                <div class="doorgang-zones" data-zaal="schatkamer" hidden></div>
 
                 <button class="schatkamer-terug" onclick="sluitZaal()">Terug</button>
 
@@ -779,16 +773,10 @@
                     <span class="album-lantaarn-gloed" aria-hidden="true"></span>
                     <span class="album-lantaarn-opschrift" aria-hidden="true">Terug</span>
                 </button>
-                <!-- Doorgang naar de Schatkamer (alleen met plakboekAan; toonDoorgangen haalt
-                     hidden weg). Positie uit zaalDoorgang in script.js. Het licht
-                     is CSS; het plaatje images/doorgang-boog.webp komt later als
-                     <img> direct ná .doorgang-licht, in plaats van .doorgang-boog
-                     (de tijdelijke boog in CSS). -->
-                <button type="button" class="zaal-doorgang" data-zaal="album" hidden
-                        aria-label="Naar de Schatkamer" onclick="naarAndereZaal('schatkamer')">
-                    <span class="doorgang-licht" aria-hidden="true"></span>
-                    <span class="doorgang-boog" aria-hidden="true"></span>
-                </button>
+                <!-- Doorgangen naar de Schatkamer: klikzones op bestaande plekken in het beeld,
+                     met een zacht licht en een opschrift. bouwDoorgangZones() vult
+                     dit uit zaalDoorgangen in script.js, alleen met plakboekAan. -->
+                <div class="doorgang-zones" data-zaal="album" hidden></div>
                 <!-- Muziek aan/uit, op dezelfde plek als in de Schatkamer. Met
                      het boek open staat daar "Boek sluiten"; dan is hij weg. -->
                 <button class="zaal-muziek-knop" type="button" onclick="wisselMuziek()"
@@ -893,9 +881,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=424"></script>
-    <script src="ontdekken-inhoud.js?v=424"></script>
-    <script src="script.js?v=424"></script>
+    <script src="lang/nl.js?v=425"></script>
+    <script src="ontdekken-inhoud.js?v=425"></script>
+    <script src="script.js?v=425"></script>
 
 </body>
 

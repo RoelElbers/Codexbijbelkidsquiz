@@ -11375,46 +11375,94 @@ const albumIndeling = {
     lantaarn: { x: 6.0, bodem: 92.0, hoogte: 18.0 }
 };
 
-// --- Doorgang tussen de Schatkamer en de albumzaal ---------------------------
-// Een boog op de muur van beide zalen; erdoor ga je naar de andere zaal. Hoort
-// bij het album, dus alleen met plakboekAan zichtbaar. Per zaal: x = midden,
-// bodem = onderkant, hoogte = hoogte van de boog, in procenten van het
-// 16:9-vak; de breedte volgt uit de verhouding in de CSS (.zaal-doorgang).
-// Af te stellen met ?afstel=aan (zie initDoorgangAfstel). Het plaatje
-// (images/doorgang-boog.webp) komt later; tot dan tekent de CSS een
-// eenvoudige boog. Het licht in de opening is altijd CSS, achter het plaatje.
-const zaalDoorgang = {
-    schatkamer: { x: 28.3, bodem: 68.0, hoogte: 24.0 },
-    album:      { x: 90.0, bodem: 90.0, hoogte: 34.0 }
+// --- Doorgangen tussen de Schatkamer en de albumzaal --------------------------
+// Bestaande plekken in het beeld zijn klikzones, zoals de trofeeënkasten: in de
+// Schatkamer de twee smalle wandvakken met de kandelaars, in de albumzaal de
+// twee trappen achter het boek. Een klik gaat met een overgang naar de zaal in
+// `naar`; zo kan een zone later ook naar een andere zaal leiden. Hoort bij het
+// album, dus alleen met plakboekAan. Per zone: left, top, breedte, hoogte in
+// procenten van het 16:9-vak. Af te stellen met ?plakboek=aan&afstel=aan (zie
+// initDoorgangAfstel). In elke zone ademt een zacht licht uit de volgende zaal;
+// bij hover of de eerste tik verschijnt het opschrift met de naam van die zaal.
+const zaalDoorgangen = {
+    schatkamer: [
+        { id: "links",  naar: "album", left: 25.5, top: 14.0, breedte: 4.3, hoogte: 53.5 },
+        { id: "rechts", naar: "album", left: 70.2, top: 14.0, breedte: 4.3, hoogte: 53.5 }
+    ],
+    album: [
+        { id: "links",  naar: "schatkamer", left: 33.5, top: 52.0, breedte: 7.5, hoogte: 13.5 },
+        { id: "rechts", naar: "schatkamer", left: 59.0, top: 52.0, breedte: 7.5, hoogte: 13.5 }
+    ]
 };
+const zaalOpschrift = { album: "Bijbelkidsalbum", schatkamer: "Schatkamer" };
+const zaalNaarLabel = { album: "Naar het Bijbelkidsalbum", schatkamer: "Naar de Schatkamer" };
 const ZAAL_OVERGANG_MS = 500;
 let zaalOvergangBezig = false;
+let doorgangAanwijzer = "mouse";     // pointerType van de laatste aanraking van een zone
 
-function doorgangPositie(zaal) {
-    return leesAfstelPosities()["doorgang:" + zaal] || zaalDoorgang[zaal];
+function doorgangPositie(zaal, zone) {
+    return leesAfstelPosities()[`doorgang:${zaal}:${zone.id}`] || zone;
 }
-function plaatsDoorgang(knop, pos) {
-    knop.style.setProperty("--x", pos.x + "%");
-    knop.style.setProperty("--bodem", pos.bodem + "%");
-    knop.style.setProperty("--hoogte", pos.hoogte + "%");
+function plaatsDoorgangZone(knop, pos) {
+    knop.style.left   = pos.left + "%";
+    knop.style.top    = pos.top + "%";
+    knop.style.width  = pos.breedte + "%";
+    knop.style.height = pos.hoogte + "%";
 }
-// Zonder plakboek blijft de doorgang verborgen (hidden in de HTML).
-function toonDoorgangen() {
+
+// Bouwt de zones in beide zalen. Zonder plakboek blijven de houders leeg en
+// verborgen (hidden in de HTML): geen zones en geen licht.
+function bouwDoorgangZones() {
     if (!plakboekAan) return;
-    document.querySelectorAll(".zaal-doorgang").forEach((knop) => {
-        plaatsDoorgang(knop, doorgangPositie(knop.dataset.zaal));
-        knop.hidden = false;
+    document.querySelectorAll(".doorgang-zones").forEach((houder) => {
+        const zaal = houder.dataset.zaal;
+        houder.innerHTML = "";
+        (zaalDoorgangen[zaal] || []).forEach((zone) => {
+            const knop = document.createElement("button");
+            knop.type = "button";
+            knop.className = "doorgang-zone";
+            knop.dataset.zone = zone.id;
+            knop.setAttribute("aria-label", zaalNaarLabel[zone.naar]);
+            knop.innerHTML = '<span class="doorgang-licht" aria-hidden="true"></span>' +
+                '<span class="doorgang-opschrift" aria-hidden="true"></span>';
+            knop.querySelector(".doorgang-opschrift").textContent = zaalOpschrift[zone.naar];
+            plaatsDoorgangZone(knop, doorgangPositie(zaal, zone));
+            knop.addEventListener("pointerdown", (e) => { doorgangAanwijzer = e.pointerType; });
+            knop.addEventListener("click", (e) => kiesDoorgang(knop, zone.naar, e));
+            houder.appendChild(knop);
+        });
+        houder.hidden = false;
+    });
+    // Een tik buiten de zones haalt een getoond opschrift weer weg.
+    document.addEventListener("pointerdown", (e) => {
+        if (!e.target.closest(".doorgang-zone")) wisDoorgangTik();
     });
 }
 
-// Door de boog naar de andere zaal. Het beeld vervaagt in ZAAL_OVERGANG_MS;
-// de muziek loopt door, want beide zalen gebruiken ZALEN_MUZIEK. De albumzaal
-// ligt in de DOM boven de Schatkamer: heen faadt het album in, terug faadt
-// het uit, met de Schatkamer er al onder. Daarna is de vorige zaal dicht, dus
-// Terug (Schatkamer) en de lantaarn (album) gaan altijd naar het startscherm.
+// Op een aanraakscherm bestaat hover niet: de eerste tik toont het opschrift,
+// de tweede gaat erdoor. Met de muis (en met het toetsenbord, detail 0) gaat
+// een klik meteen naar de andere zaal.
+function kiesDoorgang(knop, naar, e) {
+    if (e.detail !== 0 && doorgangAanwijzer === "touch" && !knop.classList.contains("getikt")) {
+        wisDoorgangTik();
+        knop.classList.add("getikt");
+        return;
+    }
+    naarAndereZaal(naar);
+}
+function wisDoorgangTik() {
+    document.querySelectorAll(".doorgang-zone.getikt").forEach((k) => k.classList.remove("getikt"));
+}
+
+// Naar de andere zaal. Het beeld vervaagt in ZAAL_OVERGANG_MS; de muziek loopt
+// door, want beide zalen gebruiken ZALEN_MUZIEK. De albumzaal ligt in de DOM
+// boven de Schatkamer: heen faadt het album in, terug faadt het uit, met de
+// Schatkamer er al onder. Daarna is de vorige zaal dicht, dus Terug
+// (Schatkamer) en de lantaarn (album) gaan altijd naar het startscherm.
 function naarAndereZaal(doel) {
     if (!plakboekAan || zaalOvergangBezig) return;
     zaalOvergangBezig = true;
+    wisDoorgangTik();
     const album = document.getElementById("album-scherm");
     let animatie;
     if (doel === "album") {
@@ -11428,71 +11476,83 @@ function naarAndereZaal(doel) {
     }
 }
 
-// Afstelmodus (?afstel=aan) voor de doorgang, per zaal; zelfde bediening als
-// de lantaarn (initAlbumLantaarnAfstel). De stand wordt bewaard zoals de
-// andere afstelposities; de regel om in zaalDoorgang te plakken staat
-// rechtsonder in de zaal. Een klik zonder slepen gaat nog steeds door de boog.
+// Afstelmodus (?plakboek=aan&afstel=aan) voor de doorgangzones van één zaal.
+// Slepen = verplaatsen, Shift+slepen = grootte (rechtsonder trekken),
+// pijltjes = 0,1% (Shift = 1%), + / - of scroll = hoogte, [ / ] of
+// Shift+scroll = breedte. De stand wordt bewaard zoals de andere
+// afstelposities; de regels om in zaalDoorgangen te plakken staan rechtsboven
+// in de zaal. Een klik zonder slepen gaat nog steeds naar de andere zaal.
 function initDoorgangAfstel(zaalEl, scherm, zaal) {
-    const knop = zaalEl && zaalEl.querySelector(".zaal-doorgang");
-    if (!knop) return;
+    const knoppen = zaalEl ? [...zaalEl.querySelectorAll(".doorgang-zone")] : [];
+    if (knoppen.length === 0) return;
     zaalEl.classList.add("doorgang-afstel");
-    const SCHAAL_STAP = 0.2;
+    const zones = zaalDoorgangen[zaal];
+    const posities = zones.map((zone) => ({ ...doorgangPositie(zaal, zone) }));
+    const STAP = 0.2;
     const info = document.createElement("div");
     info.className = "album-afstel-info doorgang-afstel-info";
     info.innerHTML = '<div class="album-afstel-regel"></div>' +
-        '<div class="afstel-hint">Doorgang: slepen = verplaatsen &middot; pijltjes = 0,1% ' +
-        '(Shift = 1%) &middot; + / &minus; of scroll = grootte</div>' +
+        '<div class="afstel-hint">Doorgangen: slepen = verplaatsen &middot; Shift+slepen = grootte &middot; ' +
+        'pijltjes = 0,1% (Shift = 1%) &middot; + / &minus; = hoogte &middot; [ / ] = breedte</div>' +
         '<button type="button">Reset</button>';
     zaalEl.appendChild(info);
     const regel = info.querySelector(".album-afstel-regel");
-    let pos = { ...doorgangPositie(zaal) };
-    let geselecteerd = false;
+    let gekozen = -1;
     let netGesleept = false;
 
+    const r1 = (n) => n.toFixed(1);
     function toon() {
-        regel.textContent = `${zaal}: { x: ${pos.x.toFixed(1)}, bodem: ${pos.bodem.toFixed(1)}, hoogte: ${pos.hoogte.toFixed(1)} }`;
+        regel.innerHTML = posities.map((p, i) =>
+            `{ id: "${zones[i].id}", naar: "${zones[i].naar}", left: ${r1(p.left)}, top: ${r1(p.top)}, breedte: ${r1(p.breedte)}, hoogte: ${r1(p.hoogte)} }`
+        ).join("<br>");
     }
-    function zet() {
-        pos = { x: +pos.x.toFixed(2), bodem: +pos.bodem.toFixed(2), hoogte: Math.max(1, +pos.hoogte.toFixed(2)) };
+    function zet(i) {
+        const p = posities[i];
+        posities[i] = { id: zones[i].id, naar: zones[i].naar, left: +p.left.toFixed(2), top: +p.top.toFixed(2),
+            breedte: Math.max(1, +p.breedte.toFixed(2)), hoogte: Math.max(1, +p.hoogte.toFixed(2)) };
         const opgeslagen = leesAfstelPosities();
-        opgeslagen["doorgang:" + zaal] = pos;
+        opgeslagen[`doorgang:${zaal}:${zones[i].id}`] = posities[i];
         schrijfAfstelPosities(opgeslagen);
-        plaatsDoorgang(knop, pos);
+        plaatsDoorgangZone(knoppen[i], posities[i]);
         toon();
     }
-    function selecteer(aan) {
-        geselecteerd = aan;
-        knop.classList.toggle("afstel-geselecteerd", aan);
+    function selecteer(i) {
+        gekozen = i;
+        knoppen.forEach((k, j) => k.classList.toggle("afstel-geselecteerd", j === i));
     }
 
     info.querySelector("button").addEventListener("click", () => {
         const opgeslagen = leesAfstelPosities();
-        delete opgeslagen["doorgang:" + zaal];
+        zones.forEach((zone, i) => {
+            delete opgeslagen[`doorgang:${zaal}:${zone.id}`];
+            posities[i] = { ...zone };
+            plaatsDoorgangZone(knoppen[i], zone);
+        });
         schrijfAfstelPosities(opgeslagen);
-        pos = { ...zaalDoorgang[zaal] };
-        plaatsDoorgang(knop, pos);
         toon();
     });
 
     zaalEl.addEventListener("pointerdown", (e) => {
         if (info.contains(e.target)) return;
-        if (!knop.contains(e.target)) { selecteer(false); return; }
+        const i = knoppen.findIndex((k) => k.contains(e.target));
+        if (i < 0) { selecteer(-1); return; }
         e.preventDefault();
-        selecteer(true);
+        selecteer(i);
         const r = zaalEl.getBoundingClientRect();
-        const start = { ...pos }, muisX = e.clientX, muisY = e.clientY;
+        const start = { ...posities[i] }, muisX = e.clientX, muisY = e.clientY, schalen = e.shiftKey;
         netGesleept = false;
         function beweeg(ev) {
             if (Math.abs(ev.clientX - muisX) + Math.abs(ev.clientY - muisY) > 3) netGesleept = true;
-            pos.x = start.x + (ev.clientX - muisX) / r.width * 100;
-            pos.bodem = start.bodem + (ev.clientY - muisY) / r.height * 100;
-            plaatsDoorgang(knop, pos);
+            const dx = (ev.clientX - muisX) / r.width * 100, dy = (ev.clientY - muisY) / r.height * 100;
+            if (schalen) { posities[i].breedte = Math.max(1, start.breedte + dx); posities[i].hoogte = Math.max(1, start.hoogte + dy); }
+            else { posities[i].left = start.left + dx; posities[i].top = start.top + dy; }
+            plaatsDoorgangZone(knoppen[i], posities[i]);
             toon();
         }
         function los() {
             document.removeEventListener("pointermove", beweeg);
             document.removeEventListener("pointerup", los);
-            if (netGesleept) zet();
+            if (netGesleept) zet(i);
         }
         document.addEventListener("pointermove", beweeg);
         document.addEventListener("pointerup", los);
@@ -11500,32 +11560,36 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
     // Na slepen niet naar de andere zaal: de klik wordt in de capture-fase al
     // tegengehouden.
     zaalEl.addEventListener("click", (e) => {
-        if (netGesleept && knop.contains(e.target)) {
+        if (netGesleept && e.target.closest(".doorgang-zone")) {
             e.stopPropagation();
             e.preventDefault();
         }
         netGesleept = false;
     }, true);
 
-    knop.addEventListener("wheel", (e) => {
+    knoppen.forEach((knop, i) => knop.addEventListener("wheel", (e) => {
         e.preventDefault();
-        selecteer(true);
-        pos.hoogte += e.deltaY < 0 ? SCHAAL_STAP : -SCHAAL_STAP;
-        zet();
-    }, { passive: false });
+        selecteer(i);
+        if (e.shiftKey) posities[i].breedte += e.deltaY < 0 ? STAP : -STAP;
+        else posities[i].hoogte += e.deltaY < 0 ? STAP : -STAP;
+        zet(i);
+    }, { passive: false }));
 
     document.addEventListener("keydown", (e) => {
-        if (!geselecteerd || scherm.style.display === "none") return;
+        if (gekozen < 0 || scherm.style.display === "none") return;
+        const p = posities[gekozen];
         const stap = e.shiftKey ? 1 : 0.1;
         let raak = true;
-        if (e.key === "ArrowLeft")       pos.x -= stap;
-        else if (e.key === "ArrowRight") pos.x += stap;
-        else if (e.key === "ArrowUp")    pos.bodem -= stap;
-        else if (e.key === "ArrowDown")  pos.bodem += stap;
-        else if (e.key === "+" || e.key === "=") pos.hoogte += SCHAAL_STAP;
-        else if (e.key === "-" || e.key === "_") pos.hoogte -= SCHAAL_STAP;
+        if (e.key === "ArrowLeft")       p.left -= stap;
+        else if (e.key === "ArrowRight") p.left += stap;
+        else if (e.key === "ArrowUp")    p.top -= stap;
+        else if (e.key === "ArrowDown")  p.top += stap;
+        else if (e.key === "+" || e.key === "=") p.hoogte += STAP;
+        else if (e.key === "-" || e.key === "_") p.hoogte -= STAP;
+        else if (e.key === "]") p.breedte += STAP;
+        else if (e.key === "[") p.breedte -= STAP;
         else raak = false;
-        if (raak) { e.preventDefault(); zet(); }
+        if (raak) { e.preventDefault(); zet(gekozen); }
     });
     toon();
 }
@@ -12268,8 +12332,8 @@ werkAlbumLantaarnBij();
 if (afstelModus && plakboekAan) initAlbumLantaarnAfstel();
 if (afstelModus && plakboekAan) initAlbumPaginaAfstel();
 
-// Doorgang tussen de Schatkamer en de albumzaal (alleen met plakboekAan).
-toonDoorgangen();
+// Doorgangen tussen de Schatkamer en de albumzaal (alleen met plakboekAan).
+bouwDoorgangZones();
 if (afstelModus && plakboekAan) {
     initDoorgangAfstel(document.querySelector("#zaal-scherm .sk-zaal"), document.getElementById("zaal-scherm"), "schatkamer");
     initDoorgangAfstel(document.querySelector("#album-scherm .album-zaal"), document.getElementById("album-scherm"), "album");
