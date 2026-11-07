@@ -46,8 +46,8 @@ const NL = {
     // PLAKBOEK_ACTIEF of ?plakboek=aan). Het kind ziet het plakboek onder de
     // naam "Bijbelkidsalbum"; in de code heet het plakboek.
     //
-    //   setVol = tijdelijke melding zodra brons, zilver en goud alle drie
-    //            gehaald zijn (de set is vol, er komt een plaatje bij)
+    //   setVol = tijdelijke melding zodra de drie sterplekken vol zijn (de
+    //            set is vol, er komt een plaatje bij)
     // =====================================================================
     // =====================================================================
     // Draai-hint: bericht op een telefoon rechtop (zie #draai-hint in

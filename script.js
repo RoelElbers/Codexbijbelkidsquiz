@@ -10945,12 +10945,13 @@ function eindScherm() {
         setKistStatus(trofeeKleur, "verdiend");
     }
 
-    // Plakboek: 10/10 in een boek- of schatkistronde levert een ster in de
-    // kleur van het niveau op (zie plakboekRondeAf). Doet niets zolang het
-    // plakboek uit staat.
+    // Plakboek: 10/10 in een boek- of schatkistronde levert sterren op naar
+    // het niveau: brons 1, zilver 2, goud 3 (zie plakboekRondeAf). Zonder
+    // winst null: het eindscherm toont dan alleen de huidige stand. Doet
+    // niets zolang het plakboek uit staat.
     const plakboek = alleGoed && trofeeKleur
         ? plakboekRondeAf(trofeeKleur)
-        : { nieuw: null, setVol: false };
+        : null;
 
     const quizBox = document.querySelector("#quiz-scherm .quiz-box");
 
@@ -11276,24 +11277,34 @@ function openNalezenVanuitEindscherm() {
 }
 
 // --- Plakboek, fase 1: sterren ------------------------------------------------
-// Drie sterplaatsen: brons, zilver en goud. Een boek- of schatkistronde met
-// alles goed vult de plaats van dat niveau, ook als de trofee of kist al
-// gewonnen is. Is de plaats al gevuld, dan gebeurt er niets extra. Zijn alle
-// drie gevuld, dan komt er één plaatje bij het tegoed en worden de plaatsen
-// weer leeg. Oefenmodus en Verborgen Schat komen hier niet langs (eigen tak
-// in eindScherm). De plaatjes zelf komen in een latere fase.
+// Drie sterplekken. Een boek- of schatkistronde met alles goed levert sterren
+// op naar het niveau (plakboekSterrenPerKleur: brons 1, zilver 2, goud 3), ook
+// als de trofee of kist al gewonnen is. Zijn de drie plekken vol, dan komt er
+// één plaatje bij het tegoed en schuift wat er overblijft door naar de
+// volgende set: stand 2 + zilver = 4 geeft één plaatje en stand 1, stand 2 +
+// goud = 5 geeft één plaatje en stand 2. De stand is dus altijd 0, 1 of 2.
+// Oefenmodus en Verborgen Schat komen hier niet langs (eigen tak in
+// eindScherm). De plaatjes zelf komen in een latere fase.
 //
 // Opslag per speler, in de stijl van trofee_/kist_/schildpunt_:
-//   speler_<id>_plakboek_ster_<brons|zilver|goud>  = "1"
-//   speler_<id>_plakboek_plaatjes_tegoed           = aantal, als tekst
-//   speler_<id>_plakboek_ongezien                  = JSON-lijst van wat het
-//       album nog niet heeft laten zien, in volgorde: een kleur per nieuwe
-//       ster, en "set" zodra een set vol werd (zie fase 2, openAlbum)
+//   speler_<id>_plakboek_sterren         = sterren in de lopende set (0–2),
+//                                          als tekst
+//   speler_<id>_plakboek_plaatjes_tegoed = aantal, als tekst
+//   speler_<id>_plakboek_ongezien        = JSON-lijst van wat het album nog
+//       niet heeft laten zien, in volgorde: "ster" per nieuwe ster, en "set"
+//       zodra een set vol werd (zie fase 2, openAlbum). Stand 2 + zilver
+//       geeft ["ster", "set", "ster"].
 // Alleen met plakboekAan; in de demomodus (?demo=) wordt niets opgeslagen.
-const plakboekKleuren = ["brons", "zilver", "goud"];
+const plakboekSterrenPerKleur = { brons: 1, zilver: 2, goud: 3 };
 
-function heeftSter(kleur) {
-    return localStorage.getItem(profielSleutel(`plakboek_ster_${kleur}`)) === "1";
+// De stand van de lopende set; afwezig of ongeldig = 0. Ruimt meteen de
+// sleutels van de oude regel op (één ster per kleur,
+// speler_<id>_plakboek_ster_<brons|zilver|goud>). Het plakboek was toen nog
+// niet live, dus er hoeft niets omgerekend te worden.
+function leesPlakboekSterren() {
+    ["brons", "zilver", "goud"].forEach((k) => localStorage.removeItem(profielSleutel(`plakboek_ster_${k}`)));
+    const aantal = parseInt(localStorage.getItem(profielSleutel("plakboek_sterren")), 10);
+    return aantal >= 0 && aantal <= 2 ? aantal : 0;
 }
 
 function leesPlaatjesTegoed() {
@@ -11301,62 +11312,68 @@ function leesPlaatjesTegoed() {
     return aantal > 0 ? aantal : 0;
 }
 
-// Verwerkt een gewonnen ronde. Geeft terug welke ster er nieuw bij kwam (of
-// null) en of de set daarmee vol werd.
+// Verwerkt een gewonnen ronde. Geeft terug wat het eindscherm moet tonen:
+// voor = de stand vóór deze ronde, na = de stand erna, setVol = of er een set
+// vol werd. Meer dan één set per ronde kan niet: hooguit 2 + 3 = 5.
 function plakboekRondeAf(kleur) {
-    const uitkomst = { nieuw: null, setVol: false };
-    if (!plakboekAan || demoNiveau || !plakboekKleuren.includes(kleur)) return uitkomst;
-    if (heeftSter(kleur)) return uitkomst;
+    const erbij = plakboekSterrenPerKleur[kleur];
+    if (!plakboekAan || demoNiveau || !erbij) return null;
 
-    localStorage.setItem(profielSleutel(`plakboek_ster_${kleur}`), "1");
-    uitkomst.nieuw = kleur;
+    const voor = leesPlakboekSterren();
+    const uitkomst = { voor, na: voor, setVol: false };
     const ongezien = leesOngezien();
-    ongezien.push(kleur);
-
-    if (plakboekKleuren.every(heeftSter)) {
-        localStorage.setItem(profielSleutel("plakboek_plaatjes_tegoed"), String(leesPlaatjesTegoed() + 1));
-        plakboekKleuren.forEach((k) => localStorage.removeItem(profielSleutel(`plakboek_ster_${k}`)));
-        uitkomst.setVol = true;
-        ongezien.push("set");
+    for (let i = 0; i < erbij; i++) {
+        uitkomst.na++;
+        ongezien.push("ster");
+        if (uitkomst.na === 3) {
+            localStorage.setItem(profielSleutel("plakboek_plaatjes_tegoed"), String(leesPlaatjesTegoed() + 1));
+            uitkomst.na = 0;
+            uitkomst.setVol = true;
+            ongezien.push("set");
+        }
     }
+    localStorage.setItem(profielSleutel("plakboek_sterren"), String(uitkomst.na));
     bewaarOngezien(ongezien);
     return uitkomst;
 }
 
-// De drie sterren voor het eindscherm, als podium: Brons links, Goud in het
-// midden (iets hoger), Zilver rechts, met de naam van het niveau eronder
-// (uit niveauLabels). Alle drie zijn dezelfde gele ster (#ps-ster-geel in
-// index.html). Gehaald = in kleur, niet gehaald = het donkere silhouet van de
-// Schatkamer (.sk-schaduw), alleen op de ster: de naam blijft leesbaar. Een
-// nieuwe ster krijgt een korte verschijn-animatie. Bij een volle set staan
-// alle drie in kleur (de opslag is dan al leeg voor de volgende set), met een
-// melding die na een paar seconden wegvalt.
-const plakboekPodium = ["brons", "goud", "zilver"];
-const plakboekNiveau = { brons: "beginner", zilver: "advanced", goud: "expert" };
+// De drie sterren als podium: links, in het midden (iets hoger) en rechts.
+// Ze horen bij geen niveau; ze vullen in plakboekVulvolgorde: links, rechts,
+// en als laatste het midden. Alle drie zijn dezelfde gele ster (#ps-ster-geel
+// in index.html). Gehaald = in kleur, niet gehaald = het donkere silhouet van
+// de Schatkamer (.sk-schaduw). Een nieuwe ster krijgt een korte
+// verschijn-animatie. Bij een volle set staan alle drie in kleur, met een
+// melding die na een paar seconden wegvalt; het restje voor de volgende set
+// is daarna in het album en bij de volgende ronde te zien.
+const plakboekPlekken = ["links", "midden", "rechts"];
+const plakboekVulvolgorde = ["links", "rechts", "midden"];
 
 // Het podium zelf, gedeeld door het eindscherm en het albumscherm. gehaald =
-// Set van kleuren die in kleur staan; nieuw = de kleur die binnenvliegt (of
-// null); extraClass bepaalt de maat (leeg = eindscherm, "ps-groot" = album).
+// hoeveel plekken in kleur staan (in vulvolgorde); nieuw = lijst van plekken
+// die binnenvliegen; extraClass bepaalt de maat (leeg = eindscherm,
+// "ps-groot" = album).
 function plakboekPodiumHtml(gehaald, nieuw, extraClass) {
-    const sterren = plakboekPodium.map((kleur) => {
+    const sterren = plakboekPlekken.map((plek) => {
         const classes = ["ps-ster"];
-        if (!gehaald.has(kleur)) classes.push("sk-schaduw");
-        const isNieuw = kleur === nieuw;
+        if (plakboekVulvolgorde.indexOf(plek) >= gehaald) classes.push("sk-schaduw");
+        const isNieuw = nieuw.includes(plek);
         if (isNieuw) classes.push("ps-ster-nieuw");
-        return `<div class="ps-plek ps-${kleur}${isNieuw ? " ps-plek-nieuw" : ""}">` +
-            `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg>` +
-            `<span class="ps-naam">${niveauLabels[plakboekNiveau[kleur]]}</span></div>`;
+        return `<div class="ps-plek ps-${plek}${isNieuw ? " ps-plek-nieuw" : ""}">` +
+            `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg></div>`;
     }).join("");
     return `<div class="ps-sterren${extraClass ? " " + extraClass : ""}">${sterren}</div>`;
 }
 
+// uitkomst = wat plakboekRondeAf teruggaf, of null als er niets bij kwam.
 function plakboekSterrenHtml(uitkomst) {
     if (!plakboekAan) return "";
-    const gehaald = new Set(plakboekKleuren.filter((k) => uitkomst.setVol || heeftSter(k)));
+    if (!uitkomst) return plakboekPodiumHtml(leesPlakboekSterren(), [], "");
 
+    const gehaald = uitkomst.setVol ? 3 : uitkomst.na;
+    const nieuw = plakboekVulvolgorde.slice(uitkomst.voor, gehaald);
     const t = (typeof NL !== "undefined" && NL.plakboek) || null;
     const melding = uitkomst.setVol && t ? `<p class="ps-melding">${t.setVol}</p>` : "";
-    return plakboekPodiumHtml(gehaald, uitkomst.nieuw, "") + melding;
+    return plakboekPodiumHtml(gehaald, nieuw, "") + melding;
 }
 
 // --- Plakboek, fase 2: de lantaarn en het albumscherm -------------------------
@@ -11366,17 +11383,18 @@ function plakboekSterrenHtml(uitkomst) {
 // nog iets, dan licht de lantaarn op (.album-nieuw). Bij het openen van het
 // album telt alles als gezien: de lijst gaat leeg en de gloed uit.
 //
-// Het album speelt de lijst in volgorde af: elke kleur vliegt binnen met de
-// spiraal van het eindscherm, en bij "set" stralen de drie sterren even en
-// vervagen ze daarna naar schaduw (de set begint opnieuw). Zijn er meer dan
-// één volle set verdiend sinds het vorige bezoek, dan speelt alleen de laatste
-// set af (plus wat daarna kwam). De beginstand volgt uit de huidige sterren,
-// achterwaarts teruggerekend door de lijst: een kleur was er toen nog niet,
-// en vóór een "set" waren alle drie gevuld.
+// Het album speelt de lijst in volgorde af: elke "ster" vliegt met de spiraal
+// van het eindscherm binnen op de eerstvolgende lege plek, en bij "set"
+// stralen de drie sterren even en vervagen ze daarna naar schaduw (de set
+// begint opnieuw). Zijn er meer dan één volle set verdiend sinds het vorige
+// bezoek, dan speelt alleen de laatste set af (plus wat daarna kwam). De
+// beginstand volgt uit de huidige stand, achterwaarts teruggerekend door de
+// lijst: vóór een "ster" lag er één minder, vóór een "set" lagen er drie.
+// Andere waarden (de kleuren van de oude regel) worden overgeslagen.
 function leesOngezien() {
     try {
         const lijst = JSON.parse(localStorage.getItem(profielSleutel("plakboek_ongezien")));
-        return Array.isArray(lijst) ? lijst : [];
+        return Array.isArray(lijst) ? lijst.filter((s) => s === "ster" || s === "set") : [];
     } catch (e) {
         return [];
     }
@@ -11400,18 +11418,18 @@ function wisAlbumTimers() {
 }
 
 // Waar alles op de albumplaat staat, in procenten van het 16:9-vak (zoals de
-// trofeeën in de Schatkamer). Per ster: x = midden van de console, bodem =
-// bovenkant van de plank (de ster staat erop), naam = bovenkant van de naam,
-// net onder het gouden sierstuk. Boek: x = midden, top en hoogte van de hele
+// trofeeën in de Schatkamer). Per sterplek (links, midden = de hogere plank,
+// rechts): x = midden van de console, bodem = bovenkant van de plank (de ster
+// staat erop). Boek: x = midden, top en hoogte van de hele
 // afbeelding (die heeft boven en onder een transparante rand). De maat van de
 // ster staat in de CSS (.ps-groot .ps-ster). Lantaarn (de Terug-knop): x =
 // midden, bodem = onderkant en hoogte van de vierkante afbeelding; af te
 // stellen met ?afstel=aan (zie initAlbumLantaarnAfstel).
 const albumIndeling = {
     plekken: {
-        brons:  { x: 40.0, bodem: 25.9, naam: 33.0 },
-        goud:   { x: 50.1, bodem: 21.2, naam: 28.4 },
-        zilver: { x: 60.1, bodem: 26.0, naam: 33.2 }
+        links:  { x: 40.0, bodem: 25.9 },
+        midden: { x: 50.1, bodem: 21.2 },
+        rechts: { x: 60.1, bodem: 26.0 }
     },
     boek: { x: 50.0, top: 37.1, hoogte: 40.0 },
     lantaarn: { x: 6.0, bodem: 92.0, hoogte: 18.0 }
@@ -11924,12 +11942,11 @@ function initAlbumPaginaAfstel() {
 // Zet de posities uit albumIndeling als CSS-variabelen op de plekken en het boek.
 function plaatsAlbumIndeling(rij) {
     rij.querySelectorAll(".ps-plek").forEach((plek) => {
-        const kleur = plakboekKleuren.find((k) => plek.classList.contains(`ps-${k}`));
-        const p = albumIndeling.plekken[kleur];
+        const naam = plakboekPlekken.find((n) => plek.classList.contains(`ps-${n}`));
+        const p = albumIndeling.plekken[naam];
         if (!p) return;
         plek.style.setProperty("--x", p.x + "%");
         plek.style.setProperty("--bodem", p.bodem + "%");
-        plek.style.setProperty("--naam", p.naam + "%");
     });
     document.querySelectorAll("#album-scherm img[data-src]").forEach((img) => {
         if (!img.getAttribute("src")) img.src = img.dataset.src;
@@ -12077,23 +12094,21 @@ function openAlbum() {
     const sets = reeks.reduce((lijst, stap, i) => (stap === "set" ? lijst.concat(i) : lijst), []);
     if (sets.length > 1) reeks = reeks.slice(sets[sets.length - 2] + 1);
 
-    const stand = new Set(plakboekKleuren.filter(heeftSter));
-    for (let i = reeks.length - 1; i >= 0; i--) {
-        if (reeks[i] === "set") plakboekKleuren.forEach((k) => stand.add(k));
-        else stand.delete(reeks[i]);
-    }
+    let stand = leesPlakboekSterren();
+    for (let i = reeks.length - 1; i >= 0; i--) stand += reeks[i] === "set" ? 3 : -1;
+    stand = Math.min(Math.max(stand, 0), 2);
 
     // Vanaf nu is alles gezien, ook als het album halverwege dichtgaat.
     bewaarOngezien([]);
     werkAlbumLantaarnBij();
 
-    houder.innerHTML = plakboekPodiumHtml(stand, null, "ps-groot");
+    houder.innerHTML = plakboekPodiumHtml(stand, [], "ps-groot");
     bouwAlbumPagina();               // vóór plaatsAlbumIndeling: die zet de src
     plaatsAlbumIndeling(houder.firstElementChild);
     scherm.style.display = "flex";
     document.body.classList.add("album-in-beeld");   // verbergt het Schatkamer-afstelpaneel
     laadAlbumBeelden();
-    speelAlbumReeks(houder.firstElementChild, reeks);
+    speelAlbumReeks(houder.firstElementChild, reeks, stand);
     werkMuziekKnopBij();
     startZaalMuziek(ZALEN_MUZIEK);
     gloeiDoorgangenOp("album-scherm");
@@ -12373,18 +12388,21 @@ function sluitAlbumBoek() {
 
 // Zet de stappen achter elkaar op de klok. Een vlucht duurt 1,75 s (0,25 s
 // wachten + 1,5 s spiraal, zie .ps-ster-nieuw); bij minder beweging is het
-// een fade-in van 0,85 s.
-function speelAlbumReeks(rij, reeks) {
+// een fade-in van 0,85 s. stand = hoeveel plekken er bij het begin al
+// gevuld zijn; elke "ster" gaat naar de eerstvolgende lege plek.
+function speelAlbumReeks(rij, reeks, stand) {
     if (!rij) return;
     const rustig = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const VLUCHT = rustig ? 850 : 1750;
     const STRAAL = rustig ? 600 : 1200;
     const VERVAAG = 900;
     let t = 0;
+    let gevuld = stand;
     const plan = (ms, fn) => albumTimers.push(setTimeout(fn, ms));
 
     reeks.forEach((stap) => {
         if (stap === "set") {
+            gevuld = 0;
             plan(t, () => {
                 rij.querySelectorAll(".ps-ster").forEach((s) => s.classList.remove("ps-ster-nieuw", "sk-schaduw"));
                 rij.classList.add("ps-straalt");
@@ -12396,17 +12414,19 @@ function speelAlbumReeks(rij, reeks) {
             });
             t += VERVAAG;
         } else {
-            plan(t, () => vliegAlbumSterBinnen(rij, stap));
+            const plek = plakboekVulvolgorde[gevuld++];
+            if (!plek) return;
+            plan(t, () => vliegAlbumSterBinnen(rij, plek));
             t += VLUCHT;
         }
     });
 }
 
 // Eén ster laten binnenvliegen. De klasse gaat er eerst af en na een
-// stijlberekening weer op, zodat dezelfde kleur na een volle set opnieuw kan
+// stijlberekening weer op, zodat dezelfde plek na een volle set opnieuw kan
 // vliegen. De plek van de vliegende ster ligt boven de andere twee.
-function vliegAlbumSterBinnen(rij, kleur) {
-    const plek = rij.querySelector(`.ps-${kleur}`);
+function vliegAlbumSterBinnen(rij, naam) {
+    const plek = rij.querySelector(`.ps-${naam}`);
     const ster = plek && plek.querySelector(".ps-ster");
     if (!ster) return;
     rij.querySelectorAll(".ps-plek-nieuw").forEach((p) => p.classList.remove("ps-plek-nieuw"));

@@ -2483,7 +2483,7 @@ body.album-in-beeld #afstel-paneel {
    De drie sterren staan op de gouden consoles van de plaat, het boek
    (images/album/boek.webp) staat op het ronde podium. Alle posities komen
    uit albumIndeling in script.js, als CSS-variabelen in procenten van het
-   vak (--x, --bodem, --naam; voor het boek --x, --top, --hoogte).
+   vak (--x, --bodem; voor het boek --x, --top, --hoogte).
    De ster wordt met margin gecentreerd, niet met transform: die is van de
    invliegende spiraal.
 ========================= */
@@ -2508,7 +2508,7 @@ body.album-in-beeld #afstel-paneel {
     display: block;
 }
 .album-sterren .ps-plek,
-.album-sterren .ps-plek.ps-goud {
+.album-sterren .ps-plek.ps-midden {
     position: absolute;
     inset: 0;
     margin: 0;
@@ -2519,14 +2519,6 @@ body.album-in-beeld #afstel-paneel {
     left: var(--x);
     top: calc(var(--bodem) - var(--game-breedte) * 0.0625);
     margin-left: calc(var(--game-breedte) * -0.03125);
-}
-.album-sterren .ps-naam {
-    position: absolute;
-    left: var(--x);
-    top: var(--naam);
-    transform: translateX(-50%);
-    white-space: nowrap;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 .album-boek {
     position: absolute;
@@ -2544,8 +2536,7 @@ body.album-in-beeld #afstel-paneel {
    --bodem = onderkant van de afbeelding, --hoogte = hoogte, alles in procenten
    van het vak. Daaronder een zachte schaduw onder het plateau, erboven de
    warme gloed bij aanwijzen (zelfde tinten als .donatie-zone::before op het
-   startscherm) en onder de lantaarn het opschrift, in de stijl van de
-   sterrennamen (.ps-groot .ps-naam, de goudtint). */
+   startscherm) en onder de lantaarn het opschrift, in Cinzel en goudtint. */
 .album-lantaarn {
     position: absolute;
     left: var(--x, 6%);
@@ -3178,10 +3169,10 @@ body.album-in-beeld #afstel-paneel {
 }
 /* Bijbelkidsalbum (plakboek): de drie sterren als podium, op het eindscherm
    (fase 1) en bovenaan het albumscherm (fase 2, .ps-groot). Alleen met
-   plakboekAan. Brons, Goud (hoger), Zilver, met de naam eronder. De ster is
-   #ps-ster-geel uit index.html. Niet gehaald = .sk-schaduw op de ster, het
-   silhouet uit de Schatkamer (zie daar); de naam krijgt nooit schaduw.
-   Op het album is alleen de maat anders (zie .ps-groot). */
+   plakboekAan. Links, midden (hoger) en rechts, zonder opschrift: de plekken
+   horen bij geen niveau. De ster is #ps-ster-geel uit index.html. Niet
+   gehaald = .sk-schaduw op de ster, het silhouet uit de Schatkamer (zie
+   daar). Op het album is alleen de maat anders (zie .ps-groot). */
 .ps-sterren {
     display: flex;
     justify-content: center;
@@ -3203,41 +3194,29 @@ body.album-in-beeld #afstel-paneel {
 .ps-plek-nieuw {
     z-index: 1;
 }
-.ps-plek.ps-goud {
+.ps-plek.ps-midden {
     margin-bottom: 16px;
 }
 .ps-ster {
     width: 64px;
     height: 64px;
 }
-.ps-naam {
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-weight: 700;
-    font-size: 0.85rem;
-    line-height: 1.2;
-}
-.ps-brons  .ps-naam { color: #e0a06a; }
-.ps-zilver .ps-naam { color: #dfe5ee; }
-.ps-goud   .ps-naam { color: #ffd36b; }
 
 /* Albummaat: 120px bij een toneel van 1920 breed, en alles in dezelfde
-   verhouding mee (gap, hoogteverschil, naam), schalend met het toneel. */
+   verhouding mee (gap, hoogteverschil), schalend met het toneel. */
 .ps-groot {
     gap: calc(var(--game-breedte) * 0.0215);
 }
 .ps-groot .ps-plek {
     gap: calc(var(--game-breedte) * 0.004);
 }
-.ps-groot .ps-plek.ps-goud {
+.ps-groot .ps-plek.ps-midden {
     margin-bottom: calc(var(--game-breedte) * 0.0156);
 }
 .ps-groot .ps-ster {
     width: calc(var(--game-breedte) * 0.0625);
     height: calc(var(--game-breedte) * 0.0625);
     transition: filter 0.9s ease;   /* rustig terug naar schaduw na een volle set */
-}
-.ps-groot .ps-naam {
-    font-size: calc(var(--game-breedte) * 0.0133);
 }
 /* Volle set op het album: de drie sterren stralen even samen. */
 .ps-groot.ps-straalt .ps-ster {
