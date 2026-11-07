@@ -110,6 +110,7 @@ URL-parameters die niets opslaan maar de weergave forceren.
 |---|---|---|
 | `?demo=brons` / `?demo=zilver` / `?demo=goud` | `demoNiveau` (r. 7083–7086). `getTrofeeNiveau()` en `getKistStatus()` geven dan **altijd** dat niveau terug, en `setTrofeeNiveau()` slaat niets op. Alle trofeeën en kisten zien er behaald uit. | r. 7083, 7089, 6994, 7097 |
 | `?album=alles` | `albumAlles` (alleen samen met `?plakboek=aan`). Alle plaatjes in het Bijbelkidsalbum tellen als gewonnen; `speler_<id>_plakboek_plaatjes` wordt niet gelezen en niet geschreven. | `bouwAlbumPagina()` |
+| `?sterren=N&winst=brons\|zilver\|goud` | `plakboekTest` (alleen samen met `?plakboek=aan`; N is 0, 1 of 2). Zet `speler_<id>_plakboek_sterren` op N, maakt `speler_<id>_plakboek_ongezien` leeg en opent meteen het eindscherm van een 10/10-ronde (Matteüs) op dat niveau. Schrijft alleen de plakboeksleutels (`plakboek_sterren`, `plakboek_ongezien`, `plakboek_plaatjes_tegoed`): `eindScherm()` slaat met deze vlag geen XP, trofee, schildpunt of kist op. Daarna gaan `sterren=` en `winst=` uit de URL, zodat herladen het gewone spel geeft en het album de reeks van die ronde afspeelt. Ongeldige waarden: de vlag doet niets. | `startPlakboekTest()`, `eindScherm()` |
 | `?afstel=aan` | `afstelModus` (r. 9483). Onder meer: `openVerborgenSchat()` laat de ronde ook toe als de kisten nog niet verdiend zijn (r. 8186), en de kisten worden altijd onthuld getoond. | r. 9483 |
 
 Let op het verschil met wat STAP B gaat doen: `?demo=` **toont** alles als

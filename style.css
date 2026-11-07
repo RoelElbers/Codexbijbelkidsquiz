@@ -3287,7 +3287,10 @@ body.album-in-beeld #afstel-paneel {
     color: #ffd86b;
     font-size: 20px;
     overflow: hidden;
-    /* Wacht tot de invliegende ster geland is: 0,25 s + 1,5 s. */
+    /* Wacht tot de invliegende ster geland is: 0,25 s + 1,5 s. Vliegen er
+       meer na elkaar binnen, dan zet plakboekSterrenHtml de wachttijd inline
+       (tot de laatste geland is); ook de sterren na de eerste krijgen daar
+       hun eigen animation-delay. */
     animation: ps-melding 6s ease-in-out 1.75s both;
 }
 @keyframes ps-melding {

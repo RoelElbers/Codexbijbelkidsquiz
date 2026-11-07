@@ -10921,14 +10921,16 @@ function eindScherm() {
     // Het aantal goede antwoorden van deze ronde vastleggen, zodat de XP-balk
     // op het startscherm het ronderesultaat toont (terugNaarStartscherm reset
     // straks score/huidigeXP, daarom hier bewaren).
-    laatsteRondeGoed = score;
+    // De testvlag ?sterren=&winst= (plakboekTest) slaat alleen het plakboek
+    // op: geen XP, trofee, schildpunt of kist.
+    if (!plakboekTest) laatsteRondeGoed = score;
 
     // Alleen bij 10/10 verdient de speler de trofee voor dit boek + niveau.
     // setTrofeeNiveau downgradet nooit, dus een al behaalde hogere trofee blijft.
     // Bij 10/10 verdient de speler bovendien één schildpunt voor deze
     // boek+niveau-combinatie, maar alleen als dat punt nog niet eerder
     // verdiend was — opnieuw spelen levert geen extra punt op.
-    if (alleGoed && gekozenBoek && gekozenNiveau) {
+    if (alleGoed && gekozenBoek && gekozenNiveau && !plakboekTest) {
         const boekKey = boekNaarKey[gekozenBoek];
         if (boekKey && trofeeKleur) {
             setTrofeeNiveau(boekKey, trofeeKleur);
@@ -10941,7 +10943,7 @@ function eindScherm() {
 
     // Bij 10/10 in de schatkist-modus verdient de speler de schatkist van dit
     // niveau (brons/zilver/goud). setKistStatus werkt de prijzenkast meteen bij.
-    if (alleGoed && gekozenModus === "kist" && trofeeKleur) {
+    if (alleGoed && gekozenModus === "kist" && trofeeKleur && !plakboekTest) {
         setKistStatus(trofeeKleur, "verdiend");
     }
 
@@ -11342,24 +11344,39 @@ function plakboekRondeAf(kleur) {
 // en als laatste het midden. Alle drie zijn dezelfde gele ster (#ps-ster-geel
 // in index.html). Gehaald = in kleur, niet gehaald = het donkere silhouet van
 // de Schatkamer (.sk-schaduw). Een nieuwe ster krijgt een korte
-// verschijn-animatie. Bij een volle set staan alle drie in kleur, met een
-// melding die na een paar seconden wegvalt; het restje voor de volgende set
-// is daarna in het album en bij de volgende ronde te zien.
+// verschijn-animatie; geeft een ronde er meer, dan vliegen ze na elkaar
+// binnen in de vulvolgorde. Bij een volle set staan alle drie in kleur, met
+// een melding die verschijnt als de laatste ster geland is en na een paar
+// seconden wegvalt; het restje voor de volgende set is daarna in het album en
+// bij de volgende ronde te zien.
 const plakboekPlekken = ["links", "midden", "rechts"];
 const plakboekVulvolgorde = ["links", "rechts", "midden"];
 
+// Tijd tussen het begin van twee nieuwe sterren op het eindscherm, in
+// seconden, en wanneer de eerste geland is (0,25 s wachten + 1,5 s spiraal,
+// of 0,25 s + 0,6 s fade-in; zie .ps-ster-nieuw en .ps-melding in de CSS).
+const PS_START = 0.25;
+function psTiming() {
+    const rustig = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    return rustig ? { tussen: 0.3, geland: 0.85 } : { tussen: 0.6, geland: 1.75 };
+}
+
 // Het podium zelf, gedeeld door het eindscherm en het albumscherm. gehaald =
 // hoeveel plekken in kleur staan (in vulvolgorde); nieuw = lijst van plekken
-// die binnenvliegen; extraClass bepaalt de maat (leeg = eindscherm,
+// die binnenvliegen, in volgorde; tussen = seconden tussen hun starts (0 =
+// allemaal tegelijk); extraClass bepaalt de maat (leeg = eindscherm,
 // "ps-groot" = album).
-function plakboekPodiumHtml(gehaald, nieuw, extraClass) {
+function plakboekPodiumHtml(gehaald, nieuw, extraClass, tussen = 0) {
     const sterren = plakboekPlekken.map((plek) => {
         const classes = ["ps-ster"];
         if (plakboekVulvolgorde.indexOf(plek) >= gehaald) classes.push("sk-schaduw");
-        const isNieuw = nieuw.includes(plek);
+        const volgnr = nieuw.indexOf(plek);
+        const isNieuw = volgnr >= 0;
         if (isNieuw) classes.push("ps-ster-nieuw");
+        const vertraging = isNieuw && volgnr > 0 && tussen
+            ? ` style="animation-delay: ${(PS_START + volgnr * tussen).toFixed(2)}s"` : "";
         return `<div class="ps-plek ps-${plek}${isNieuw ? " ps-plek-nieuw" : ""}">` +
-            `<svg class="${classes.join(" ")}" aria-hidden="true"><use href="#ps-ster-geel"/></svg></div>`;
+            `<svg class="${classes.join(" ")}"${vertraging} aria-hidden="true"><use href="#ps-ster-geel"/></svg></div>`;
     }).join("");
     return `<div class="ps-sterren${extraClass ? " " + extraClass : ""}">${sterren}</div>`;
 }
@@ -11371,9 +11388,51 @@ function plakboekSterrenHtml(uitkomst) {
 
     const gehaald = uitkomst.setVol ? 3 : uitkomst.na;
     const nieuw = plakboekVulvolgorde.slice(uitkomst.voor, gehaald);
+    const { tussen, geland } = psTiming();
     const t = (typeof NL !== "undefined" && NL.plakboek) || null;
-    const melding = uitkomst.setVol && t ? `<p class="ps-melding">${t.setVol}</p>` : "";
-    return plakboekPodiumHtml(gehaald, nieuw, "") + melding;
+    // De melding wacht tot de laatste nieuwe ster geland is.
+    const wacht = (geland + Math.max(nieuw.length - 1, 0) * tussen).toFixed(2);
+    const melding = uitkomst.setVol && t
+        ? `<p class="ps-melding" style="animation-delay: ${wacht}s">${t.setVol}</p>` : "";
+    return plakboekPodiumHtml(gehaald, nieuw, "", tussen) + melding;
+}
+
+// Testvlag ?sterren=N&winst=brons|zilver|goud, alleen samen met
+// ?plakboek=aan: zet de stand van de lopende set op N (0–2) en opent meteen
+// het eindscherm van een 10/10-ronde (Matteüs) op dat niveau. Alleen de
+// plakboeksleutels worden geschreven (plakboek_sterren, plakboek_ongezien,
+// plakboek_plaatjes_tegoed); eindScherm slaat met deze vlag geen XP, trofee,
+// schildpunt of kist op. plakboek_ongezien begint leeg, zodat het album
+// precies deze ronde afspeelt. Daarna gaan sterren= en winst= uit de URL, zodat
+// herladen het gewone spel geeft en het album de reeks afspeelt. Ongeldige
+// waarden: de vlag doet niets.
+const plakboekTest = (() => {
+    if (!plakboekAan) return null;
+    const p = new URLSearchParams(window.location.search);
+    const kleur = p.get("winst");
+    const sterren = p.get("sterren");
+    if (!["brons", "zilver", "goud"].includes(kleur) || !/^[0-2]$/.test(sterren || "")) return null;
+    return { kleur, sterren: Number(sterren) };
+})();
+
+function startPlakboekTest() {
+    if (!plakboekTest || demoNiveau) return;
+    const niveau = Object.keys(niveauNaarTrofee).find((n) => niveauNaarTrofee[n] === plakboekTest.kleur);
+    localStorage.setItem(profielSleutel("plakboek_sterren"), String(plakboekTest.sterren));
+    bewaarOngezien([]);
+
+    const url = new URL(window.location.href);
+    url.searchParams.delete("sterren");
+    url.searchParams.delete("winst");
+    history.replaceState(null, "", url);
+
+    document.querySelectorAll(".quiz-overlay").forEach((el) => { el.style.display = "none"; });
+    openBoek("Matteüs", { vergrendel: false });
+    kiesNiveau(niveau);
+    vragen.forEach((q) => { q.gegevenAntwoord = q.correct; });
+    huidigeVraag = vragen.length;
+    score = vragen.length;
+    eindScherm();
 }
 
 // --- Plakboek, fase 2: de lantaarn en het albumscherm -------------------------
@@ -12467,6 +12526,10 @@ werkVerborgenSchatBij();
 
 // Lantaarn van het Bijbelkidsalbum (alleen met plakboekAan).
 werkAlbumLantaarnBij();
+
+// Testvlag ?sterren=&winst= (zie plakboekTest): pas na het laden, zodat het
+// opstarten van het startscherm het eindscherm niet meer overschrijft.
+if (plakboekTest) window.addEventListener("load", startPlakboekTest);
 if (afstelModus && plakboekAan) initAlbumLantaarnAfstel();
 if (afstelModus && plakboekAan) initAlbumPaginaAfstel();
 
