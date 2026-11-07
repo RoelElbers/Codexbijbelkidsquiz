@@ -3259,6 +3259,19 @@ body.album-in-beeld #afstel-paneel {
            opacity: 1;
            filter: drop-shadow(0 0 5px rgba(255, 210, 80, 0.55)); }
 }
+/* Silhouet onder een nieuwe ster die nog moet binnenvliegen: staat er tot de
+   vlucht begint (zelfde animation-delay, inline uit plakboekPodiumHtml) en
+   verdwijnt dan in één keer. Ligt precies op de plek van de ster. */
+.ps-wacht {
+    position: absolute;
+    left: 0;
+    top: 0;
+    animation: ps-wacht-weg 0.01s 0.25s both;
+}
+@keyframes ps-wacht-weg {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
 /* Minder beweging gevraagd: geen spiraal, alleen een rustige fade-in. */
 @media (prefers-reduced-motion: reduce) {
     .ps-ster-nieuw {

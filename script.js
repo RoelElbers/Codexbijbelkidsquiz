@@ -11365,7 +11365,9 @@ function psTiming() {
 // hoeveel plekken in kleur staan (in vulvolgorde); nieuw = lijst van plekken
 // die binnenvliegen, in volgorde; tussen = seconden tussen hun starts (0 =
 // allemaal tegelijk); extraClass bepaalt de maat (leeg = eindscherm,
-// "ps-groot" = album).
+// "ps-groot" = album). Onder een nieuwe ster ligt een silhouet (.ps-wacht)
+// met dezelfde vertraging: tot de vlucht begint, ziet de plek eruit als een
+// lege plek, en bij de start verdwijnt het.
 function plakboekPodiumHtml(gehaald, nieuw, extraClass, tussen = 0) {
     const sterren = plakboekPlekken.map((plek) => {
         const classes = ["ps-ster"];
@@ -11373,9 +11375,11 @@ function plakboekPodiumHtml(gehaald, nieuw, extraClass, tussen = 0) {
         const volgnr = nieuw.indexOf(plek);
         const isNieuw = volgnr >= 0;
         if (isNieuw) classes.push("ps-ster-nieuw");
-        const vertraging = isNieuw && volgnr > 0 && tussen
+        const vertraging = isNieuw
             ? ` style="animation-delay: ${(PS_START + volgnr * tussen).toFixed(2)}s"` : "";
-        return `<div class="ps-plek ps-${plek}${isNieuw ? " ps-plek-nieuw" : ""}">` +
+        const silhouet = isNieuw
+            ? `<svg class="ps-ster sk-schaduw ps-wacht"${vertraging} aria-hidden="true"><use href="#ps-ster-geel"/></svg>` : "";
+        return `<div class="ps-plek ps-${plek}${isNieuw ? " ps-plek-nieuw" : ""}">` + silhouet +
             `<svg class="${classes.join(" ")}"${vertraging} aria-hidden="true"><use href="#ps-ster-geel"/></svg></div>`;
     }).join("");
     return `<div class="ps-sterren${extraClass ? " " + extraClass : ""}">${sterren}</div>`;
