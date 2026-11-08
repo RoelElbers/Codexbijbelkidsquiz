@@ -11891,28 +11891,29 @@ const albumHoofdstukken = [
 // staat op elke dubbele pagina op dezelfde plek. Vakken: per pagina vier, per
 // rij van links naar rechts; x = midden, top = bovenkant van het vierkante
 // vak. maat = breedte van een vak, voor alle vakken gelijk. De naam staat
-// onder het vak. Nummers: het bladzijdenummer onderaan elke pagina, onder het
-// blauwe ruitje van de onderste sierlijst, in de strook papier tussen ruitje
-// en boekrand; x = midden, top = bovenkant van het cijfer. Hoekjes: de
+// onder het vak. Nummers: het bladzijdenummer onderaan elke pagina, in een
+// eigen rij midden boven het blauwe ruitje van de onderste sierlijst, tussen
+// de namen van de onderste rij en het ruitje; x = midden, top = bovenkant van
+// het cijfer. Hoekjes: de
 // gouden bladerhoekjes op de papierhoeken (linksonder = vorige, rechtsonder =
 // volgende); x en top = midden, maat = breedte. Titel, vakken en nummers zijn af te stellen met
 // ?afstel=aan (zie initAlbumPaginaAfstel).
 const albumRaster = {
     titel: { x: 29.2, top: 15.9 },
-    maat: 12.6,
+    maat: 11.7,
     vakken: {
         links: [
-            { x: 21.0, top: 25.0 }, { x: 37.6, top: 25.0 },
-            { x: 21.0, top: 53.5 }, { x: 37.6, top: 53.5 }
+            { x: 21.0, top: 24.3 }, { x: 37.6, top: 24.3 },
+            { x: 21.0, top: 51.3 }, { x: 37.6, top: 51.3 }
         ],
         rechts: [
-            { x: 62.6, top: 25.0 }, { x: 79.2, top: 25.0 },
-            { x: 62.6, top: 53.5 }, { x: 79.2, top: 53.5 }
+            { x: 62.6, top: 24.3 }, { x: 79.2, top: 24.3 },
+            { x: 62.6, top: 51.3 }, { x: 79.2, top: 51.3 }
         ]
     },
     nummers: {
-        links:  { x: 28.9, top: 85.3 },
-        rechts: { x: 71.1, top: 85.3 }
+        links:  { x: 28.9, top: 78.1 },
+        rechts: { x: 71.1, top: 78.1 }
     },
     hoekjes: {
         vorige:   { x: 10.3, top: 84.9 },
