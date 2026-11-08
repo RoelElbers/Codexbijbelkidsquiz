@@ -2916,10 +2916,10 @@ body.album-in-beeld #afstel-paneel {
 /* =========================
    ALBUMVENSTER: een plaatje uit het album groot (openAlbumVenster).
    Een eigen venster naar het voorbeeld van het avatar-detailvenster. Het
-   plaatje vult de volle hoogte van het scherm, zodat er bij het openen niets
-   van de tekst te zien is; naam, bijbelplaats en tekst staan eronder en komen
-   pas bij scrollen in beeld. Het pijltje onderaan wijst erop, alleen als er
-   een tekst is.
+   beeld vult het hele scherm, zodat er bij het openen niets van de tekst te
+   zien is; naam, bijbelplaats en tekst staan eronder en komen pas bij
+   scrollen in beeld. Het pijltje onderaan wijst erop, alleen als er een
+   bijbelplaats of tekst is.
 ========================= */
 .album-venster {
     position: fixed;
@@ -2944,8 +2944,13 @@ body.album-in-beeld #afstel-paneel {
     padding-bottom: 56px;
 }
 /* Een blok van schermhoogte met het plaatje in het midden. Op een staand
-   scherm is de breedte de grens; ook dan staat de tekst pas onder de vouw. */
+   scherm is de breedte de grens; ook dan staat de tekst pas onder de vouw.
+   isolation: de lagen hieronder (z-index) blijven binnen dit blok, zodat het
+   kruisje en het pijltje er altijd boven staan. */
 .album-venster-beeld {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     width: 100%;
     height: 100vh;
     height: 100dvh;
@@ -2953,7 +2958,21 @@ body.album-in-beeld #afstel-paneel {
     justify-content: center;
     align-items: center;
 }
-.album-venster-beeld img {
+/* Zonder brede versie: de zijkanten gevuld met hetzelfde plaatje, vergroot,
+   wazig en donkerder, zodat het plaatje zelf duidelijk vooraan staat. De
+   schaal houdt de vage rand van de blur buiten beeld. */
+.album-venster-achtergrond {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(28px) brightness(0.45);
+    transform: scale(1.15);
+}
+.album-venster-plaatje {
+    position: relative;
+    z-index: 1;
     display: block;
     box-sizing: border-box;
     width: min(100vh, 100vw);
@@ -2962,6 +2981,25 @@ body.album-in-beeld #afstel-paneel {
     height: auto;
     object-fit: cover;
     border: 2px solid #c99d3e;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
+}
+/* Met brede versie (16:9): vult het hele scherm, gecentreerd. Tussen 1:1 en
+   16:9 valt hooguit iets van de zijkanten weg, nooit iets van het vierkante
+   midden. Komt pas in beeld als hij geladen is (.breed-geladen). Dit is ook
+   de plek van de animatie van later. */
+.album-venster-breed {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.album-venster.breed-geladen .album-venster-breed {
+    opacity: 1;
 }
 .album-venster-tekstdeel {
     width: min(94vw, 1100px);
@@ -3052,7 +3090,7 @@ body.album-in-beeld #afstel-paneel {
     border-bottom: 2px solid #ffd86b;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-.album-venster.met-tekst .album-venster-pijl {
+.album-venster.met-toelichting .album-venster-pijl {
     display: block;
 }
 .album-venster.gescrold .album-venster-pijl {

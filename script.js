@@ -11795,7 +11795,11 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // plaatjes { id, naam, bestand }, met bestand = het pad vanaf images/album/.
 // Optioneel per plaatje: bijbelplaats en tekst (alinea's gescheiden door een
 // lege regel, dus "\n\n"). Die staan in het venster onder het grote plaatje
-// (openAlbumVenster); zonder tekst staat daar alleen de naam.
+// (openAlbumVenster); zonder tekst staat daar alleen de naam. Ook optioneel:
+// breed, het pad (vanaf images/album/) van een liggende versie van 16:9 met
+// het vierkante plaatje precies in het midden, in images/album/plaatjes-breed/
+// als webp van 1920 × 1080 (kwaliteit 82). Die vult in het venster het hele
+// scherm; zonder breed staat het vierkante plaatje op een wazige achtergrond.
 // De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
 // hoofdstuk begint op een nieuwe dubbele pagina, met 2 × 2 vakken per pagina,
 // dus 8 per dubbele pagina (eerst de linkerpagina, per rij van links naar
@@ -12126,16 +12130,25 @@ document.addEventListener("keydown", (e) => {
 
 // Het plaatje groot: klikken (of Enter) op een gewonnen plaatje in het open
 // boek opent #album-venster, een eigen venster over de albumzaal naar het
-// voorbeeld van het avatar-detailvenster (openAvatarDetail). Het plaatje vult
-// de hoogte van het scherm; naam, bijbelplaats en tekst staan eronder en komen
-// pas bij scrollen in beeld. Het is hetzelfde bestand als in het boek (met
-// ALBUM_VERSIE), dus al geladen. Sluiten: het kruisje, Escape, een klik naast
-// het plaatje, of de terug-knop (via een eigen stap in de geschiedenis). Het
-// boek blijft op dezelfde pagina en de focus gaat terug naar het vak.
+// voorbeeld van het avatar-detailvenster (openAvatarDetail). Het beeld vult
+// het hele scherm; naam, bijbelplaats en tekst staan eronder en komen pas bij
+// scrollen in beeld.
+//   - Met een brede versie (breed, 16:9): die vult het scherm (object-fit:
+//     cover). Tussen 1:1 en 16:9 valt hooguit iets van de zijkanten weg, nooit
+//     iets van het vierkante midden. Tot hij geladen is, staat de variant
+//     zonder brede versie eronder, met het plaatje op dezelfde plek.
+//   - Zonder brede versie: het vierkante plaatje op volle hoogte met een gouden
+//     randje, en de zijkanten gevuld met een vergrote, wazige en donkere kopie
+//     van hetzelfde plaatje (CSS-filter, geen extra bestand). Dat is hetzelfde
+//     bestand als in het boek (met ALBUM_VERSIE), dus al geladen.
+// Sluiten: het kruisje, Escape, een klik naast het plaatje (klikInAlbumVenster)
+// of de terug-knop (via een eigen stap in de geschiedenis). Het boek blijft op
+// dezelfde pagina en de focus gaat terug naar het vak.
 //
-// Later komt er een optioneel veld animatie (een video-URL) bij: die speelt
-// dan bij het openen in .album-venster-beeld in plaats van het plaatje en
-// eindigt op het stilstaande plaatje. Dat is nog niet gebouwd.
+// Later komt er een optioneel veld animatie (een video-URL) bij, ook in het
+// brede formaat: die speelt dan bij het openen op de plek van het brede beeld
+// (de laag van #album-venster-breed, ook object-fit: cover) en eindigt op het
+// stilstaande brede beeld. Dat is nog niet gebouwd.
 let albumVensterVak = null;          // het vak waar het venster vandaan kwam
 let albumVensterStap = false;        // openen zette een stap in de geschiedenis
 let albumVensterTerug = false;       // de history.back() van het sluiten loopt nog
@@ -12152,9 +12165,26 @@ function openAlbumVenster(vak) {
     if (!venster || !plaatje || albumBoekStand !== "open" || albumBladert || albumVensterOpen()) return;
     albumVensterVak = vak;
 
+    const bron = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
     const img = document.getElementById("album-venster-plaatje");
-    img.src = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
+    img.src = bron;
     img.alt = plaatje.naam;
+    document.querySelector("#album-venster .album-venster-achtergrond").src = bron;
+    // De brede versie ligt erboven en komt pas in beeld als hij geladen is;
+    // lukt dat niet, dan blijft de variant zonder brede versie staan.
+    const breed = document.getElementById("album-venster-breed");
+    venster.classList.remove("breed-geladen");
+    breed.onload = breed.onerror = null;
+    if (plaatje.breed) {
+        breed.hidden = false;
+        breed.onload = () => venster.classList.add("breed-geladen");
+        breed.onerror = () => { breed.hidden = true; };
+        breed.src = `images/album/${plaatje.breed}?v=${ALBUM_VERSIE}`;
+        if (breed.complete && breed.naturalWidth) venster.classList.add("breed-geladen");
+    } else {
+        breed.hidden = true;
+        breed.removeAttribute("src");
+    }
     document.getElementById("album-venster-naam").textContent = plaatje.naam;
     const plaats = document.getElementById("album-venster-plaats");
     plaats.textContent = plaatje.bijbelplaats || "";
@@ -12167,8 +12197,8 @@ function openAlbumVenster(vak) {
         tekst.appendChild(p);
     });
     tekst.hidden = !tekst.childElementCount;
-    // Het pijltje onderaan staat er alleen bij een tekst.
-    venster.classList.toggle("met-tekst", !tekst.hidden);
+    // Het pijltje onderaan staat er alleen als er onder de naam nog iets staat.
+    venster.classList.toggle("met-toelichting", !plaats.hidden || !tekst.hidden);
     venster.classList.remove("gescrold");
 
     venster.style.display = "block";
@@ -12184,6 +12214,21 @@ function openAlbumVenster(vak) {
             albumVensterStap = true;
         } catch (e) {}
     }
+}
+
+// Een klik naast het plaatje sluit het venster: op de wazige achtergrond, of
+// bij een brede versie op de aangevulde zijkanten, dus buiten het vierkante
+// midden. Dat midden is bij object-fit: cover van 16:9 zo hoog als het
+// getoonde beeld. Het plaatje zelf, de tekst en het kruisje sluiten niet.
+function klikInAlbumVenster(e) {
+    if (e.target.closest("#album-venster-plaatje, .album-venster-tekstdeel, .album-venster-sluit")) return;
+    if (e.target.id === "album-venster-breed") {
+        const r = e.target.getBoundingClientRect();
+        const zijde = 9 * Math.max(r.width / 16, r.height / 9);
+        if (Math.abs(e.clientX - (r.left + r.width / 2)) <= zijde / 2 &&
+            Math.abs(e.clientY - (r.top + r.height / 2)) <= zijde / 2) return;
+    }
+    sluitAlbumVenster();
 }
 
 // viaGeschiedenis: de terug-knop sloot het venster, de stap is dan al weg.
