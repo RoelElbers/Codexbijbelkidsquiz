@@ -114,7 +114,7 @@ zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 **Acht plekken, altijd samen.** `boek-open.webp` staat er drie keer in: het
 hele open boek, de rechterhelft en de achterkant van de kaft (de linkerhelft).
 De plaatjes van de pagina's hebben samen één plek: `bouwAlbumPagina()` plakt
-`ALBUM_VERSIE` achter elk bestand uit `albumPaginas`. Een nieuwe pagina krijgt
+`ALBUM_VERSIE` achter elk bestand uit `albumHoofdstukken`. Een nieuwe pagina krijgt
 dus vanzelf de teller mee.
 
 ```
@@ -125,7 +125,7 @@ index.html   boek-open.webp (data-src van .album-open)
 index.html   boek-open.webp (de rechterhelft, .album-open-rechts)
 index.html   kaft-voor.webp (voorkant van de kaft)
 index.html   boek-open.webp (achterkant van de kaft)
-script.js    const ALBUM_VERSIE (de plaatjes van albumPaginas)
+script.js    const ALBUM_VERSIE (de plaatjes van albumHoofdstukken)
 ```
 
 Zoek op `images/album/` in `index.html` en `style.css` en op `ALBUM_VERSIE` in
