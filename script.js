@@ -11827,7 +11827,8 @@ const albumHoofdstukken = [
         titel: "Op het land",
         plaatjes: [
             { id: "bo-006-01", naam: "De ploeg", bestand: "plaatjes/bo-006-01-ploeg-voorwerp.webp" },
-            { id: "bo-006-02", naam: "Ploegen met ossen", bestand: "plaatjes/bo-006-02-ploeg-in-gebruik.webp" },
+            { id: "bo-006-02", naam: "Ploegen met ossen", bestand: "plaatjes/bo-006-02-ploeg-in-gebruik.webp",
+              breed: "plaatjes-breed/bo-006-02-ploeg-in-gebruik.webp" },
             { id: "bo-007-01", naam: "Aren lezen", bestand: "plaatjes/bo-007-01-aren-lezen-overzicht.webp" },
             { id: "bo-007-02", naam: "Aren lezen van dichtbij", bestand: "plaatjes/bo-007-02-aren-lezen-closeup.webp" },
             { id: "bo-016-01", naam: "Een olijftak enten", bestand: "plaatjes/bo-016-01-olijftak-enten.webp" }
