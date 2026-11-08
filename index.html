@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=437">
+    <link rel="stylesheet" href="style.css?v=438">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -814,6 +814,30 @@
             </div>
         </div>
 
+        <!-- Albumvenster: een plaatje uit het album groot, over de albumzaal.
+             Gaat open door op een gewonnen plaatje in het open boek te klikken
+             (openAlbumVenster in script.js), die het vult uit
+             albumHoofdstukken. Naar het voorbeeld van het avatar-detailvenster.
+             Sluiten kan met het kruisje, met Escape, met een klik naast het
+             plaatje (de onclick hieronder) en met de terug-knop. -->
+        <div id="album-venster" class="album-venster" style="display: none;"
+             tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="album-venster-naam"
+             onclick="if (!event.target.closest('#album-venster-plaatje, .album-venster-tekstdeel, .album-venster-sluit')) sluitAlbumVenster();">
+            <button type="button" class="album-venster-sluit" aria-label="Sluiten"
+                    onclick="sluitAlbumVenster()">&times;</button>
+            <div class="album-venster-paneel">
+                <div class="album-venster-beeld">
+                    <img id="album-venster-plaatje" src="" alt="" draggable="false">
+                </div>
+                <div class="album-venster-tekstdeel">
+                    <h2 id="album-venster-naam" class="album-venster-naam"></h2>
+                    <p id="album-venster-plaats" class="album-venster-plaats" hidden></p>
+                    <div id="album-venster-tekst" class="album-venster-tekst" hidden></div>
+                </div>
+            </div>
+            <div class="album-venster-pijl" aria-hidden="true"></div>
+        </div>
+
         <!-- Schatkamer (trofeeënkamer): het vitrine-detailscherm. Komt als
              overlay over de overzichtszaal (en het startscherm). De inhoud van
              de vitrine (sokkels + naamplaatjes) wordt config-gedreven opgebouwd
@@ -887,9 +911,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=437"></script>
-    <script src="ontdekken-inhoud.js?v=437"></script>
-    <script src="script.js?v=437"></script>
+    <script src="lang/nl.js?v=438"></script>
+    <script src="ontdekken-inhoud.js?v=438"></script>
+    <script src="script.js?v=438"></script>
 
 </body>
 

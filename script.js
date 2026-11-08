@@ -11793,6 +11793,9 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // --- Plakboek, fase 3b: de pagina's in het opengeslagen boek -----------------
 // Het album bestaat uit hoofdstukken: een id, een titel en een geordende rij
 // plaatjes { id, naam, bestand }, met bestand = het pad vanaf images/album/.
+// Optioneel per plaatje: bijbelplaats en tekst (alinea's gescheiden door een
+// lege regel, dus "\n\n"). Die staan in het venster onder het grote plaatje
+// (openAlbumVenster); zonder tekst staat daar alleen de naam.
 // De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
 // hoofdstuk begint op een nieuwe dubbele pagina, met 2 × 2 vakken per pagina,
 // dus 8 per dubbele pagina (eerst de linkerpagina, per rij van links naar
@@ -12025,6 +12028,16 @@ function bouwAlbumPagina() {
                 img.alt = plaatje.naam;
                 img.draggable = false;
                 kader.appendChild(img);
+                // Klikken of Enter: het plaatje groot (openAlbumVenster). Niet
+                // in de afstelmodus, daar is het vak sleepbaar.
+                if (!afstelModus) {
+                    vak.classList.add("album-vak-klikbaar");
+                    vak.tabIndex = 0;
+                    vak.setAttribute("role", "button");
+                    vak.setAttribute("aria-label", `${plaatje.naam}, groot bekijken`);
+                    vak.setAttribute("onclick", "openAlbumVenster(this)");
+                    vak.setAttribute("onkeydown", "if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openAlbumVenster(this); }");
+                }
             }
             naam.textContent = plaatje.naam;
             toonNaam = heeft;
@@ -12088,6 +12101,7 @@ document.addEventListener("keydown", (e) => {
     if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
     const scherm = document.getElementById("album-scherm");
     if (!plakboekAan || !scherm || scherm.style.display === "none" || albumBoekStand !== "open") return;
+    if (albumVensterOpen()) return;      // dan scrollen de pijltjes het venster
     if (document.querySelector("#album-pagina .afstel-geselecteerd")) return;
     e.preventDefault();
     bladerAlbum(e.key === "ArrowRight" ? 1 : -1);
@@ -12107,6 +12121,97 @@ document.addEventListener("keydown", (e) => {
         start = null;
         if (Math.abs(dx) < zaal.clientWidth * 0.05 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
         bladerAlbum(dx < 0 ? 1 : -1);      // naar links vegen = volgende
+    });
+})();
+
+// Het plaatje groot: klikken (of Enter) op een gewonnen plaatje in het open
+// boek opent #album-venster, een eigen venster over de albumzaal naar het
+// voorbeeld van het avatar-detailvenster (openAvatarDetail). Het plaatje vult
+// de hoogte van het scherm; naam, bijbelplaats en tekst staan eronder en komen
+// pas bij scrollen in beeld. Het is hetzelfde bestand als in het boek (met
+// ALBUM_VERSIE), dus al geladen. Sluiten: het kruisje, Escape, een klik naast
+// het plaatje, of de terug-knop (via een eigen stap in de geschiedenis). Het
+// boek blijft op dezelfde pagina en de focus gaat terug naar het vak.
+//
+// Later komt er een optioneel veld animatie (een video-URL) bij: die speelt
+// dan bij het openen in .album-venster-beeld in plaats van het plaatje en
+// eindigt op het stilstaande plaatje. Dat is nog niet gebouwd.
+let albumVensterVak = null;          // het vak waar het venster vandaan kwam
+let albumVensterStap = false;        // openen zette een stap in de geschiedenis
+let albumVensterTerug = false;       // de history.back() van het sluiten loopt nog
+
+function albumVensterOpen() {
+    const venster = document.getElementById("album-venster");
+    return !!(venster && venster.style.display && venster.style.display !== "none");
+}
+
+function openAlbumVenster(vak) {
+    const venster = document.getElementById("album-venster");
+    const pagina = albumPaginas[albumPaginaNu];
+    const plaatje = pagina && pagina.plaatjes[albumVakDelen.indexOf(vak.dataset.deel)];
+    if (!venster || !plaatje || albumBoekStand !== "open" || albumBladert || albumVensterOpen()) return;
+    albumVensterVak = vak;
+
+    const img = document.getElementById("album-venster-plaatje");
+    img.src = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
+    img.alt = plaatje.naam;
+    document.getElementById("album-venster-naam").textContent = plaatje.naam;
+    const plaats = document.getElementById("album-venster-plaats");
+    plaats.textContent = plaatje.bijbelplaats || "";
+    plaats.hidden = !plaatje.bijbelplaats;
+    const tekst = document.getElementById("album-venster-tekst");
+    tekst.innerHTML = "";
+    (plaatje.tekst || "").split(/\n\s*\n/).map((a) => a.trim()).filter(Boolean).forEach((alinea) => {
+        const p = document.createElement("p");
+        p.textContent = alinea;
+        tekst.appendChild(p);
+    });
+    tekst.hidden = !tekst.childElementCount;
+    // Het pijltje onderaan staat er alleen bij een tekst.
+    venster.classList.toggle("met-tekst", !tekst.hidden);
+    venster.classList.remove("gescrold");
+
+    venster.style.display = "block";
+    venster.scrollTop = 0;
+    venster.focus();                 // anders scrollen de pijltjestoetsen niets
+    // Een eigen stap in de geschiedenis, zodat de terug-knop van de tablet het
+    // venster sluit in plaats van de pagina te verlaten. Niet als de
+    // history.back() van het vorige sluiten nog loopt: die zou anders deze
+    // nieuwe stap wegnemen.
+    if (!albumVensterTerug) {
+        try {
+            history.pushState({ albumVenster: true }, "");
+            albumVensterStap = true;
+        } catch (e) {}
+    }
+}
+
+// viaGeschiedenis: de terug-knop sloot het venster, de stap is dan al weg.
+function sluitAlbumVenster(viaGeschiedenis = false) {
+    const venster = document.getElementById("album-venster");
+    if (!venster || !albumVensterOpen()) return;
+    venster.style.display = "none";
+    if (albumVensterStap && !viaGeschiedenis) {
+        albumVensterTerug = true;
+        history.back();
+    }
+    albumVensterStap = false;
+    if (albumVensterVak && albumVensterVak.isConnected) albumVensterVak.focus();
+    albumVensterVak = null;
+}
+
+(function () {
+    const venster = document.getElementById("album-venster");
+    if (!venster) return;
+    venster.addEventListener("scroll", () => {
+        if (venster.scrollTop > 0) venster.classList.add("gescrold");
+    }, { passive: true });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && albumVensterOpen()) sluitAlbumVenster();
+    });
+    window.addEventListener("popstate", () => {
+        if (albumVensterTerug) { albumVensterTerug = false; return; }
+        if (albumVensterOpen()) sluitAlbumVenster(true);
     });
 })();
 
