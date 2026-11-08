@@ -11901,17 +11901,17 @@ const albumRaster = {
     maat: 12.6,
     vakken: {
         links: [
-            { x: 21.0, top: 26.5 }, { x: 37.6, top: 26.5 },
-            { x: 21.0, top: 55.0 }, { x: 37.6, top: 55.0 }
+            { x: 21.0, top: 25.0 }, { x: 37.6, top: 25.0 },
+            { x: 21.0, top: 53.5 }, { x: 37.6, top: 53.5 }
         ],
         rechts: [
-            { x: 62.6, top: 26.5 }, { x: 79.2, top: 26.5 },
-            { x: 62.6, top: 55.0 }, { x: 79.2, top: 55.0 }
+            { x: 62.6, top: 25.0 }, { x: 79.2, top: 25.0 },
+            { x: 62.6, top: 53.5 }, { x: 79.2, top: 53.5 }
         ]
     },
     nummers: {
-        links:  { x: 28.9, top: 79.4 },
-        rechts: { x: 71.1, top: 79.4 }
+        links:  { x: 28.9, top: 77.6 },
+        rechts: { x: 71.1, top: 77.6 }
     },
     hoekjes: {
         vorige:   { x: 10.3, top: 84.9 },
