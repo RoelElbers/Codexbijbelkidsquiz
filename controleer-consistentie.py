@@ -1349,6 +1349,76 @@ def controle_antwoordcitaten(bron, pools):
 
 
 # ---------------------------------------------------------------------------
+#  13. Bijbelkidsalbum: hoofdstukken
+# ---------------------------------------------------------------------------
+
+# albumHoofdstukken in script.js bepaalt de inhoud van het album; de dubbele
+# pagina's rekent de game daar zelf uit (2 x 2 vakken per pagina, elk
+# hoofdstuk op een nieuwe dubbele pagina). Een ontbrekend bestand of een
+# dubbele id is een PROBLEEM: dan toont het album een leeg plaatje of telt een
+# gewonnen plaatje dubbel. Een paar met hetzelfde BO-nummer (-01 en -02) hoort
+# direct na elkaar te staan en op een nieuwe rij te beginnen (binnen het
+# hoofdstuk op een even positie, 0-gebaseerd), zodat het samen één rij vult;
+# anders een WAARSCHUWING.
+
+ALBUM_MAP = os.path.join(IMAGES, "album")
+BO_CODE = re.compile(r"^(bo-\d+)-(\d+)$")
+
+
+def lees_albumhoofdstukken(bron):
+    return lees_literaal(bron, r"^const albumHoofdstukken = \[", "albumHoofdstukken")
+
+
+def controle_album(bron):
+    kop(13, "Bijbelkidsalbum: hoofdstukken")
+    hoofdstukken = lees_albumhoofdstukken(bron)
+    al_problemen, al_waarschuwingen = len(problemen), len(waarschuwingen)
+    plekken = {}        # id -> [(hoofdstuk-id, positie), ...]
+    aantal = 0
+    for hoofdstuk in hoofdstukken:
+        hid = hoofdstuk.get("id")
+        plaatjes = hoofdstuk.get("plaatjes", [])
+        info("%-26s %d plaatje(s)%s" % (hid, len(plaatjes), "" if plaatjes else " — wordt overgeslagen"))
+        for positie, plaatje in enumerate(plaatjes):
+            aantal += 1
+            pid = plaatje.get("id")
+            plekken.setdefault(pid, []).append((hid, positie))
+            bestand = plaatje.get("bestand", "")
+            if not os.path.isfile(os.path.join(ALBUM_MAP, *bestand.split("/"))):
+                probleem("albumplaatje '%s' (%s): bestand images/album/%s bestaat niet"
+                         % (pid, hid, bestand))
+
+    for pid, waar in plekken.items():
+        if len(waar) > 1:
+            probleem("albumplaatje-id '%s' komt %d keer voor: %s"
+                     % (pid, len(waar), ", ".join("%s #%d" % w for w in waar)))
+
+    paren = 0
+    for pid, waar in plekken.items():
+        m = BO_CODE.match(pid or "")
+        if not m or m.group(2) != "01":
+            continue
+        tweede = "%s-02" % m.group(1)
+        if tweede not in plekken:
+            continue
+        paren += 1
+        (h1, p1), (h2, p2) = waar[0], plekken[tweede][0]
+        if h1 != h2:
+            waarschuwing("paar %s / %s staat in verschillende hoofdstukken (%s, %s)"
+                         % (pid, tweede, h1, h2))
+        elif p2 != p1 + 1:
+            waarschuwing("paar %s / %s staat niet direct na elkaar (%s: positie %d en %d)"
+                         % (pid, tweede, h1, p1, p2))
+        elif p1 % 2:
+            waarschuwing("paar %s / %s begint niet op een nieuwe rij (%s: positie %d is oneven)"
+                         % (pid, tweede, h1, p1))
+
+    info("totaal: %d hoofdstukken, %d plaatjes, %d BO-paren" % (len(hoofdstukken), aantal, paren))
+    if len(problemen) == al_problemen and len(waarschuwingen) == al_waarschuwingen:
+        ok("elk albumbestand bestaat, elke id is uniek en elk paar vult een eigen rij.")
+
+
+# ---------------------------------------------------------------------------
 
 def main():
     schrijf("Consistentiecontrole boekregistratie — Bijbelkidsquiz")
@@ -1393,6 +1463,7 @@ def main():
     controle_vraagzin(bron, pools)
     controle_kopcommentaar(bron, pools)
     controle_antwoordcitaten(bron, pools)
+    controle_album(bron)
 
     schrijf()
     schrijf("=" * 78)

@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=432">
+    <link rel="stylesheet" href="style.css?v=433">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -44,9 +44,8 @@
              index.html: 737    boek-open.webp      (de rechterhelft, .album-open-rechts)
              index.html: 741    kaft-voor.webp      (voorkant van de kaft)
              index.html: 742    boek-open.webp      (achterkant van de kaft: de linkerhelft)
-             script.js : 11137  const ALBUM_VERSIE  (de plaatjes in images/album/dieren/:
-                                os-en-ezel, duif-bij-de-doop, lam-van-god,
-                                ezelsveulen en leeuw-van-juda, via albumPaginas)
+             script.js : 11137  const ALBUM_VERSIE  (alle plaatjes uit albumHoofdstukken,
+                                in images/album/dieren/ en images/album/plaatjes/)
          (Regelnummers schuiven; zoek desnoods op "images/album/" in index.html en
          style.css, en op ALBUM_VERSIE in script.js.)
 
@@ -755,8 +754,9 @@
              rechterhelft (.album-open-rechts); .album-dim dimt de bibliotheek.
              Daarna neemt het complete beeld (.album-open) het over.
              Fase 3b: in het open boek staan de titel en de plaatjes van de
-             pagina (#album-pagina). bouwAlbumPagina vult die uit albumPaginas
-             in script.js; een nieuwe pagina is daar een extra object. -->
+             dubbele pagina (#album-pagina). bouwAlbumPagina vult die uit
+             albumHoofdstukken en albumRaster in script.js; een nieuw plaatje is
+             daar een extra regel. De gouden hoekjes bladeren (bladerAlbum). -->
         <div id="album-scherm" class="schatkamer-overlay" style="display: none;">
             <div class="album-zaal">
                 <img class="album-boek" data-src="images/album/boek.webp?v=4" alt="Bijbelkidsalbum openen"
@@ -804,6 +804,12 @@
                 <!-- De pagina in het open boek: verschijnt pas als het openklappen
                      klaar is (.boek-open), en is meteen weg bij "Boek sluiten". -->
                 <div id="album-pagina" class="album-pagina"></div>
+                <!-- Bladeren: gouden hoekjes op de papierhoeken. Positie en maat uit
+                     albumRaster.hoekjes; op de eerste en laatste pagina is er één weg. -->
+                <button type="button" class="album-hoekje album-hoekje-vorige" aria-label="Vorige pagina"
+                        onclick="bladerAlbum(-1)" hidden></button>
+                <button type="button" class="album-hoekje album-hoekje-volgende" aria-label="Volgende pagina"
+                        onclick="bladerAlbum(1)" hidden></button>
                 <button class="schatkamer-terug album-sluit" onclick="sluitAlbumBoek()">Boek sluiten</button>
             </div>
         </div>
@@ -881,9 +887,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=432"></script>
-    <script src="ontdekken-inhoud.js?v=432"></script>
-    <script src="script.js?v=432"></script>
+    <script src="lang/nl.js?v=433"></script>
+    <script src="ontdekken-inhoud.js?v=433"></script>
+    <script src="script.js?v=433"></script>
 
 </body>
 

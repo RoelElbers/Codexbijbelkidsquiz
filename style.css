@@ -2774,9 +2774,10 @@ body.album-in-beeld #afstel-paneel {
     pointer-events: none;
 }
 
-/* Fase 3b: de pagina in het open boek (bouwAlbumPagina in script.js). De
-   posities komen uit albumPaginas als --x (midden), --top (bovenkant) en
-   --maat (breedte van het vak), in procenten van het vak. De laag verschijnt
+/* Fase 3b: de dubbele pagina in het open boek (bouwAlbumPagina in script.js).
+   De posities komen uit albumRaster als --x (midden) en --top (bovenkant), de
+   breedte van alle vakken als --maat op de laag, in procenten van het vak.
+   Bij het bladeren vervaagt de laag kort (bladerAlbum). De laag verschijnt
    zacht zodra het boek open ligt (.boek-open) en is zonder overgang weg zodra
    die klasse eraf gaat ("Boek sluiten"). */
 .album-pagina {
@@ -2803,7 +2804,7 @@ body.album-in-beeld #afstel-paneel {
 .album-pagina-titel-tekst {
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-weight: 700;
-    font-size: calc(var(--game-breedte) * 0.0215);
+    font-size: calc(var(--game-breedte) * 0.0215 * var(--titel-schaal, 1));
     line-height: 1.15;
     color: #3d2512;
 }
@@ -2876,6 +2877,89 @@ body.album-in-beeld #afstel-paneel {
 .album-zaal:not(.boek-open) .album-pagina-afstel,
 .album-zaal.boek-open .album-afstel-info:not(.album-pagina-afstel) {
     display: none;
+}
+/* Alleen in de afstelmodus: de vrije vakken van het raster, met hun deel
+   (links-0 … rechts-3) als naam. */
+.album-vak-vrij .album-vak-kader {
+    border: 2px dashed #36dfff;
+}
+.album-vak-vrij .album-vak-naam {
+    color: #1a7f99;
+}
+.album-afstel-raster {
+    margin: 6px 0 0;
+    font: inherit;
+    white-space: pre;
+}
+/* Bladeren: een gouden ezelsoor op de papierhoek, linksonder (vorige) en
+   rechtsonder (volgende). Positie en maat uit albumRaster.hoekjes. Alleen met
+   het boek open; op de eerste en laatste pagina is er één weg (hidden). */
+.album-hoekje {
+    position: absolute;
+    left: var(--x);
+    top: var(--top);
+    width: var(--maat);
+    aspect-ratio: 1 / 1;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+    animation: none;
+    cursor: pointer;
+    z-index: 6;
+    filter: drop-shadow(0 calc(var(--game-breedte) * 0.001) calc(var(--game-breedte) * 0.002) rgba(40, 22, 6, 0.55));
+    transition: transform 0.2s ease, filter 0.2s ease;
+}
+/* Horizontaal vegen is met het boek open van het album (bladeren), niet van
+   de browser (terugnavigeren of schuiven). */
+.album-zaal.boek-open {
+    touch-action: pan-y pinch-zoom;
+}
+.album-hoekje[hidden],
+.album-zaal:not(.boek-open) .album-hoekje {
+    display: none;
+}
+.album-hoekje::before,
+.album-hoekje::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+/* Het omgeslagen driehoekje, met de lichte kant langs de vouw. */
+.album-hoekje-volgende::before {
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    background: linear-gradient(315deg, #8a5f1c 0%, #c99d3e 45%, #f6dc8c 68%, #fff1c4 72%);
+}
+.album-hoekje-vorige::before {
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    background: linear-gradient(45deg, #8a5f1c 0%, #c99d3e 45%, #f6dc8c 68%, #fff1c4 72%);
+}
+/* Een klein pijlpuntje in de hoek. */
+.album-hoekje::after {
+    inset: auto;
+    bottom: 22%;
+    width: 22%;
+    height: 22%;
+    border-top: calc(var(--game-breedte) * 0.0014) solid #4a2c0c;
+    border-right: calc(var(--game-breedte) * 0.0014) solid #4a2c0c;
+}
+.album-hoekje-volgende::after {
+    right: 24%;
+    transform: rotate(45deg);
+}
+.album-hoekje-vorige::after {
+    left: 24%;
+    transform: rotate(-135deg);
+}
+.album-hoekje:hover,
+.album-hoekje:focus-visible {
+    transform: translate(-50%, -50%) scale(1.15);
+    box-shadow: none;
+    filter: drop-shadow(0 0 calc(var(--game-breedte) * 0.004) rgba(255, 214, 110, 0.95));
+    outline: none;
 }
 
 /* Scherm 2 (NT-overige) ligt als overlay over het startscherm, maar de

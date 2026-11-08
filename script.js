@@ -11791,28 +11791,145 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 }
 
 // --- Plakboek, fase 3b: de pagina's in het opengeslagen boek -----------------
-// Elke dubbele pagina is één object in albumPaginas: een titel en een rij
-// plaatjes, in procenten van het 16:9-vak (gemeten op boek-open.webp). Titel:
-// x = midden, top = bovenkant van de tekst. Plaatje: x = midden, top =
-// bovenkant van het vierkante vak, maat = breedte. De naam staat onder het
-// vak. De bestanden staan in images/album/<map>/ en vallen onder de
-// albumteller (ALBUM_VERSIE). Een nieuwe pagina = een extra object hier, geen
-// nieuwe HTML of CSS. Af te stellen met ?afstel=aan (zie initAlbumPaginaAfstel).
+// Het album bestaat uit hoofdstukken: een id, een titel en een geordende rij
+// plaatjes { id, naam, bestand }, met bestand = het pad vanaf images/album/.
+// De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
+// hoofdstuk begint op een nieuwe dubbele pagina, met 2 × 2 vakken per pagina,
+// dus 8 per dubbele pagina (eerst de linkerpagina, per rij van links naar
+// rechts). Past een hoofdstuk niet, dan loopt het door op de volgende dubbele
+// pagina, met dezelfde titel. Een hoofdstuk zonder plaatjes wordt overgeslagen.
+// Een paar met hetzelfde BO-nummer (-01 en -02) staat direct na elkaar op een
+// even plek, zodat het samen één rij vult (bewaakt door
+// controleer-consistentie.py). De bestanden vallen onder de albumteller
+// (ALBUM_VERSIE). Een nieuw plaatje = een regel hier, geen nieuwe HTML of CSS.
 const ALBUM_VERSIE = 4;
-const albumPaginas = [
+const albumHoofdstukken = [
     {
         id: "dieren",
-        map: "dieren",
-        titel: { tekst: "De dieren van de Bijbel", x: 29.2, top: 15.9 },
+        titel: "De dieren van de Bijbel",
         plaatjes: [
-            { id: "os-en-ezel", naam: "De os en de ezel", bestand: "os-en-ezel.webp", x: 20.5, top: 35.1, maat: 15.8 },
-            { id: "duif-bij-de-doop", naam: "De duif bij de doop", bestand: "duif-bij-de-doop.webp", x: 37.8, top: 35.1, maat: 15.8 },
-            { id: "lam-van-god", naam: "Het Lam van God", bestand: "lam-van-god.webp", x: 62.5, top: 15.9, maat: 14.7 },
-            { id: "ezelsveulen", naam: "Het ezelsveulen", bestand: "ezelsveulen.webp", x: 79.5, top: 15.9, maat: 14.7 },
-            { id: "leeuw-van-juda", naam: "De leeuw van Juda", bestand: "leeuw-van-juda.webp", x: 71.0, top: 50.5, maat: 14.7 }
+            { id: "os-en-ezel", naam: "De os en de ezel", bestand: "dieren/os-en-ezel.webp" },
+            { id: "duif-bij-de-doop", naam: "De duif bij de doop", bestand: "dieren/duif-bij-de-doop.webp" },
+            { id: "lam-van-god", naam: "Het Lam van God", bestand: "dieren/lam-van-god.webp" },
+            { id: "ezelsveulen", naam: "Het ezelsveulen", bestand: "dieren/ezelsveulen.webp" },
+            { id: "leeuw-van-juda", naam: "De leeuw van Juda", bestand: "dieren/leeuw-van-juda.webp" }
+        ]
+    },
+    {
+        id: "op-het-land",
+        titel: "Op het land",
+        plaatjes: [
+            { id: "bo-006-01", naam: "De ploeg", bestand: "plaatjes/bo-006-01-ploeg-voorwerp.webp" },
+            { id: "bo-006-02", naam: "Ploegen met ossen", bestand: "plaatjes/bo-006-02-ploeg-in-gebruik.webp" },
+            { id: "bo-007-01", naam: "Aren lezen", bestand: "plaatjes/bo-007-01-aren-lezen-overzicht.webp" },
+            { id: "bo-007-02", naam: "Aren lezen van dichtbij", bestand: "plaatjes/bo-007-02-aren-lezen-closeup.webp" },
+            { id: "bo-016-01", naam: "Een olijftak enten", bestand: "plaatjes/bo-016-01-olijftak-enten.webp" }
+        ]
+    },
+    {
+        id: "in-huis",
+        titel: "In huis",
+        plaatjes: [
+            { id: "bo-011-02", naam: "De vijzel", bestand: "plaatjes/bo-011-02-vijzel-in-gebruik.webp" }
+        ]
+    },
+    {
+        id: "herders-en-vissers",
+        titel: "Herders en vissers",
+        plaatjes: [
+            { id: "bo-057-01", naam: "De schaapskooi", bestand: "plaatjes/bo-057-01-schaapskooi-overzicht.webp" },
+            { id: "bo-057-02", naam: "De herder bij de schaapskooi", bestand: "plaatjes/bo-057-02-schaapskooi-in-gebruik.webp" }
+        ]
+    },
+    {
+        id: "strijders-en-wapens",
+        titel: "Strijders en wapens",
+        plaatjes: [
+            { id: "bo-036-01", naam: "De slinger van David", bestand: "plaatjes/bo-036-01-slinger-van-david-voorwerp.webp" },
+            { id: "bo-036-02", naam: "Werpen met de slinger", bestand: "plaatjes/bo-036-02-slinger-in-gebruik.webp" },
+            { id: "bo-040-01", naam: "De oorlogsolifant", bestand: "plaatjes/bo-040-01-oorlogsolifant-in-judea.webp" }
+        ]
+    },
+    {
+        id: "vakmensen-en-handel",
+        titel: "Vakmensen en handel",
+        plaatjes: []
+    },
+    {
+        id: "feesten-en-gebruiken",
+        titel: "Feesten en gebruiken",
+        plaatjes: [
+            { id: "bo-032-01", naam: "De loofhut", bestand: "plaatjes/bo-032-01-loofhut-voorwerp.webp" },
+            { id: "bo-032-02", naam: "Feest in de loofhut", bestand: "plaatjes/bo-032-02-loofhut-in-gebruik.webp" },
+            { id: "bo-037-01", naam: "De sandaal bij de stadspoort", bestand: "plaatjes/bo-037-01-sandaaloverdracht-bij-boaz.webp" }
+        ]
+    },
+    {
+        id: "priesters-en-eredienst",
+        titel: "De priesters en de eredienst",
+        plaatjes: [
+            { id: "bo-023-01", naam: "De tentpennen", bestand: "plaatjes/bo-023-01-tentpennen-in-gebruik.webp" },
+            { id: "bo-026-01", naam: "De hogepriester", bestand: "plaatjes/bo-026-01-hogepriester-met-efod-en-borststuk.webp" },
+            { id: "bo-022-01", naam: "Reukwerk maken", bestand: "plaatjes/bo-022-01-reukwerk-bereiden.webp" },
+            { id: "bo-022-02", naam: "Reukwerk op het gouden altaar", bestand: "plaatjes/bo-022-02-reukwerk-in-gebruik.webp" },
+            { id: "bo-042-01", naam: "De lier en de harp", bestand: "plaatjes/bo-042-01-bijbelse-lier-en-harp.webp" },
+            { id: "bo-042-02", naam: "Spelen op de lier", bestand: "plaatjes/bo-042-02-vrouw-bespeelt-bijbelse-lier.webp" }
+        ]
+    },
+    {
+        id: "van-pasen-tot-de-hemel",
+        titel: "Van Pasen tot de hemel",
+        plaatjes: [
+            { id: "bo-021-01", naam: "Kostbare nardusolie", bestand: "plaatjes/bo-021-01-nardusolie-flesje.webp" },
+            { id: "bo-054-01", naam: "Het graf met de rolsteen", bestand: "plaatjes/bo-054-01-rotsgraf-met-rolsteen.webp" }
         ]
     }
 ];
+
+// Eén raster voor elke dubbele pagina, in procenten van het 16:9-vak (gemeten
+// op boek-open.webp). Titel: x = midden, top = bovenkant van de tekst; hij
+// staat op elke dubbele pagina op dezelfde plek. Vakken: per pagina vier, per
+// rij van links naar rechts; x = midden, top = bovenkant van het vierkante
+// vak. maat = breedte van een vak, voor alle vakken gelijk. De naam staat
+// onder het vak. Hoekjes: de gouden bladerhoekjes op de papierhoeken
+// (linksonder = vorige, rechtsonder = volgende); x en top = midden, maat =
+// breedte. Titel en vakken zijn af te stellen met ?afstel=aan (zie
+// initAlbumPaginaAfstel).
+const albumRaster = {
+    titel: { x: 29.2, top: 15.9 },
+    maat: 12.6,
+    vakken: {
+        links: [
+            { x: 21.0, top: 26.5 }, { x: 37.6, top: 26.5 },
+            { x: 21.0, top: 55.0 }, { x: 37.6, top: 55.0 }
+        ],
+        rechts: [
+            { x: 62.6, top: 26.5 }, { x: 79.2, top: 26.5 },
+            { x: 62.6, top: 55.0 }, { x: 79.2, top: 55.0 }
+        ]
+    },
+    hoekjes: {
+        vorige:   { x: 10.3, top: 84.9 },
+        volgende: { x: 89.7, top: 84.9 },
+        maat: 2.8
+    }
+};
+const ALBUM_VAKKEN_PER_DUBBELE_PAGINA = 8;
+// De vakken in vulvolgorde, als data-deel: links-0 … links-3, rechts-0 … rechts-3.
+const albumVakDelen = ["links", "rechts"].flatMap((kant) =>
+    albumRaster.vakken[kant].map((_, i) => `${kant}-${i}`));
+
+// [{ hoofdstuk, plaatjes }] per dubbele pagina, in volgorde.
+function albumDubbelePaginas(hoofdstukken = albumHoofdstukken) {
+    const uit = [];
+    hoofdstukken.forEach((hoofdstuk) => {
+        for (let i = 0; i < hoofdstuk.plaatjes.length; i += ALBUM_VAKKEN_PER_DUBBELE_PAGINA) {
+            uit.push({ hoofdstuk, plaatjes: hoofdstuk.plaatjes.slice(i, i + ALBUM_VAKKEN_PER_DUBBELE_PAGINA) });
+        }
+    });
+    return uit;
+}
+const albumPaginas = albumDubbelePaginas();
 let albumPaginaNu = 0;
 
 // Testvlag ?album=alles (naast ?plakboek=aan): alle plaatjes tellen als
@@ -11830,64 +11947,151 @@ function leesGewonnenPlaatjes() {
     }
 }
 
-// Een opgeslagen afstelpositie overrulet de config, net als bij de lantaarn.
-function albumPaginaPositie(pagina, id) {
-    const basis = id === "titel" ? pagina.titel : pagina.plaatjes.find((p) => p.id === id);
-    return { ...basis, ...(leesAfstelPosities()[`album:${pagina.id}:${id}`] || {}) };
+// Een opgeslagen afstelpositie (album:raster:<deel>) overrulet het raster,
+// net als bij de lantaarn. deel = "titel" of een vak ("links-0" … "rechts-3").
+function albumRasterPositie(deel) {
+    let basis;
+    if (deel === "titel") basis = albumRaster.titel;
+    else {
+        const [kant, i] = deel.split("-");
+        basis = albumRaster.vakken[kant][+i];
+    }
+    return { ...basis, ...(leesAfstelPosities()[`album:raster:${deel}`] || {}) };
+}
+function albumRasterMaat() {
+    const opgeslagen = leesAfstelPosities()["album:raster:maat"];
+    return opgeslagen ? opgeslagen.maat : albumRaster.maat;
 }
 
 function plaatsAlbumPaginaDeel(el, pos) {
     el.style.setProperty("--x", pos.x + "%");
     el.style.setProperty("--top", pos.top + "%");
-    if (pos.maat !== undefined) el.style.setProperty("--maat", pos.maat + "%");
 }
 
-// Bouwt de titel en de vakken van de huidige pagina in #album-pagina. Gewonnen:
-// het plaatje (data-src, geladen bij het openen van het album) met de naam
-// eronder. Niet gewonnen: alleen de gouden omlijning met de naam.
+// Bouwt de titel en de vakken van de huidige dubbele pagina in #album-pagina
+// en zet de bladerhoekjes. Gewonnen: het plaatje (data-src, geladen bij het
+// openen van het album of bij het bladeren) met de naam eronder. Niet
+// gewonnen: alleen de gouden omlijning met de naam. In de afstelmodus krijgen
+// de vrije vakken een stippelkader, zodat het hele raster af te stellen is.
 function bouwAlbumPagina() {
     const houder = document.getElementById("album-pagina");
     const pagina = albumPaginas[albumPaginaNu];
     if (!houder || !pagina) return;
     const gewonnen = albumAlles ? null : leesGewonnenPlaatjes();
     houder.innerHTML = "";
+    houder.style.setProperty("--maat", albumRasterMaat() + "%");
 
     const titel = document.createElement("div");
     titel.className = "album-pagina-titel";
     titel.dataset.deel = "titel";
     titel.innerHTML = '<span class="album-pagina-titel-tekst"></span>' +
         '<span class="album-pagina-sier" aria-hidden="true"></span>';
-    titel.firstElementChild.textContent = pagina.titel.tekst;
-    plaatsAlbumPaginaDeel(titel, albumPaginaPositie(pagina, "titel"));
+    titel.firstElementChild.textContent = pagina.hoofdstuk.titel;
+    // Een lange titel krimpt (vanaf 25 tekens), zodat hij binnen de sierlijst
+    // blijft. Geteld en niet gemeten: bij het openen van het album is het
+    // scherm tijdens het opbouwen nog verborgen.
+    titel.style.setProperty("--titel-schaal", Math.min(1, 25 / pagina.hoofdstuk.titel.length).toFixed(3));
+    plaatsAlbumPaginaDeel(titel, albumRasterPositie("titel"));
     houder.appendChild(titel);
 
-    pagina.plaatjes.forEach((plaatje) => {
-        const heeft = !gewonnen || gewonnen.has(plaatje.id);
+    albumVakDelen.forEach((deel, i) => {
+        const plaatje = pagina.plaatjes[i];
+        if (!plaatje && !afstelModus) return;
         const vak = document.createElement("figure");
-        vak.className = "album-vak" + (heeft ? " album-vak-gewonnen" : "");
-        vak.dataset.deel = plaatje.id;
+        vak.dataset.deel = deel;
         const kader = document.createElement("div");
         kader.className = "album-vak-kader";
-        if (heeft) {
-            const img = document.createElement("img");
-            img.dataset.src = `images/album/${pagina.map}/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
-            img.alt = plaatje.naam;
-            img.draggable = false;
-            kader.appendChild(img);
-        }
         const naam = document.createElement("figcaption");
         naam.className = "album-vak-naam";
-        naam.textContent = plaatje.naam;
+        if (plaatje) {
+            const heeft = !gewonnen || gewonnen.has(plaatje.id);
+            vak.className = "album-vak" + (heeft ? " album-vak-gewonnen" : "");
+            if (heeft) {
+                const img = document.createElement("img");
+                img.dataset.src = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
+                img.alt = plaatje.naam;
+                img.draggable = false;
+                kader.appendChild(img);
+            }
+            naam.textContent = plaatje.naam;
+        } else {
+            vak.className = "album-vak album-vak-vrij";
+            naam.textContent = deel;
+        }
         vak.append(kader, naam);
-        plaatsAlbumPaginaDeel(vak, albumPaginaPositie(pagina, plaatje.id));
+        plaatsAlbumPaginaDeel(vak, albumRasterPositie(deel));
         houder.appendChild(vak);
+    });
+
+    const hoekjes = albumRaster.hoekjes;
+    [["vorige", albumPaginaNu > 0], ["volgende", albumPaginaNu < albumPaginas.length - 1]].forEach(([naam, zichtbaar]) => {
+        const knop = document.querySelector(`#album-scherm .album-hoekje-${naam}`);
+        if (!knop) return;
+        knop.hidden = !zichtbaar;
+        plaatsAlbumPaginaDeel(knop, hoekjes[naam]);
+        knop.style.setProperty("--maat", hoekjes.maat + "%");
     });
 }
 
-// Afstelmodus (?afstel=aan) voor de titel en de vakken in het opengeslagen
-// boek, zoals de lantaarn: slepen = verplaatsen, pijltjes = 0,1% (Shift =
-// 1%), + / - of scroll = maat (alleen de vakken). Rechtsonder staat de regel
-// om in albumPaginas te plakken. Het paneel is alleen zichtbaar met het boek open.
+// Bladeren: richting +1 = volgende, -1 = vorige dubbele pagina. De pagina
+// vervaagt kort, wordt opnieuw opgebouwd en komt terug zodra de nieuwe
+// plaatjes gedecodeerd zijn. Alleen met het boek open, en niet tijdens een
+// overgang.
+let albumBladert = false;
+function bladerAlbum(richting) {
+    const doel = albumPaginaNu + richting;
+    const houder = document.getElementById("album-pagina");
+    if (!plakboekAan || !houder || albumBladert || albumBoekStand !== "open") return;
+    if (doel < 0 || doel >= albumPaginas.length) return;
+    albumBladert = true;
+    const uit = houder.animate([{ opacity: 1 }, { opacity: 0 }], { duration: 160, easing: "ease-in", fill: "forwards" });
+    uit.finished.then(() => {
+        albumPaginaNu = doel;
+        bouwAlbumPagina();
+        const beelden = [...houder.querySelectorAll("img[data-src]")];
+        beelden.forEach((img) => { img.src = img.dataset.src; });
+        return Promise.all(beelden.map((img) => (img.decode ? img.decode().catch(() => {}) : null)));
+    }).catch(() => {}).then(() => {
+        uit.cancel();
+        const terug = houder.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 220, easing: "ease-out" });
+        return terug.finished;
+    }).catch(() => {}).then(() => { albumBladert = false; });
+}
+
+// Pijltjestoetsen en vegen (touch). In de afstelmodus gaan de pijltjes naar
+// het geselecteerde deel (initAlbumPaginaAfstel), niet naar het bladeren.
+document.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const scherm = document.getElementById("album-scherm");
+    if (!plakboekAan || !scherm || scherm.style.display === "none" || albumBoekStand !== "open") return;
+    if (document.querySelector("#album-pagina .afstel-geselecteerd")) return;
+    e.preventDefault();
+    bladerAlbum(e.key === "ArrowRight" ? 1 : -1);
+});
+(function () {
+    const zaal = document.querySelector("#album-scherm .album-zaal");
+    if (!zaal) return;
+    let start = null;
+    zaal.addEventListener("touchstart", (e) => {
+        start = e.touches.length === 1 && albumBoekStand === "open"
+            ? { x: e.touches[0].clientX, y: e.touches[0].clientY } : null;
+    }, { passive: true });
+    zaal.addEventListener("touchend", (e) => {
+        if (!start || e.changedTouches.length !== 1) return;
+        const dx = e.changedTouches[0].clientX - start.x;
+        const dy = e.changedTouches[0].clientY - start.y;
+        start = null;
+        if (Math.abs(dx) < zaal.clientWidth * 0.05 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
+        bladerAlbum(dx < 0 ? 1 : -1);      // naar links vegen = volgende
+    });
+})();
+
+// Afstelmodus (?afstel=aan) voor het raster in het opengeslagen boek, zoals de
+// lantaarn: slepen = verplaatsen (de titel of één vak), pijltjes = 0,1%
+// (Shift = 1%), + / - of scroll = maat van alle vakken samen. Het raster geldt
+// voor elke dubbele pagina; de vrije vakken staan er met een stippelkader bij.
+// Rechtsonder staat het hele raster om in albumRaster te plakken. Het paneel
+// is alleen zichtbaar met het boek open.
 function initAlbumPaginaAfstel() {
     const zaal = document.querySelector("#album-scherm .album-zaal");
     const houder = document.getElementById("album-pagina");
@@ -11897,59 +12101,81 @@ function initAlbumPaginaAfstel() {
     const info = document.createElement("div");
     info.className = "album-afstel-info album-pagina-afstel";
     info.innerHTML = '<div class="album-afstel-regel">Klik de titel of een vak om te selecteren.</div>' +
+        '<pre class="album-afstel-raster"></pre>' +
         '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% ' +
-        '(Shift = 1%) &middot; + / &minus; of scroll = maat</div>' +
-        '<button type="button">Reset deze pagina</button>';
+        '(Shift = 1%) &middot; + / &minus; of scroll = maat van alle vakken</div>' +
+        '<button type="button">Reset het raster</button>';
     zaal.appendChild(info);
     const regel = info.querySelector(".album-afstel-regel");
+    const rasterVak = info.querySelector(".album-afstel-raster");
     let sel = null;      // het geselecteerde element
-    let pos = null;      // zijn positie (config + override)
+    let pos = null;      // zijn positie (raster + override)
 
-    const pagina = () => albumPaginas[albumPaginaNu];
     const getal = (n) => n.toFixed(1);
+    const punt = (p) => `{ x: ${getal(p.x)}, top: ${getal(p.top)} }`;
+    function toonRaster() {
+        const kant = (k) => [0, 2].map((i) => "            " +
+            punt(albumRasterPositie(`${k}-${i}`)) + ", " + punt(albumRasterPositie(`${k}-${i + 1}`))).join(",\n");
+        rasterVak.textContent =
+            `    titel: ${punt(albumRasterPositie("titel"))},\n` +
+            `    maat: ${getal(albumRasterMaat())},\n` +
+            `    vakken: {\n        links: [\n${kant("links")}\n        ],\n` +
+            `        rechts: [\n${kant("rechts")}\n        ]\n    },`;
+    }
     function toon() {
-        if (!sel) return;
-        const id = sel.dataset.deel;
-        if (id === "titel") {
-            regel.textContent = `titel: { tekst: ${JSON.stringify(pos.tekst)}, x: ${getal(pos.x)}, top: ${getal(pos.top)} },`;
-        } else {
-            regel.textContent = `{ id: ${JSON.stringify(pos.id)}, naam: ${JSON.stringify(pos.naam)}, ` +
-                `bestand: ${JSON.stringify(pos.bestand)}, x: ${getal(pos.x)}, top: ${getal(pos.top)}, maat: ${getal(pos.maat)} },`;
-        }
+        regel.textContent = sel ? `${sel.dataset.deel}: ${punt(pos)}` : "Klik de titel of een vak om te selecteren.";
+        toonRaster();
     }
     function zet() {
-        const id = sel.dataset.deel;
         const opslag = { x: +pos.x.toFixed(2), top: +pos.top.toFixed(2) };
-        if (id !== "titel") opslag.maat = Math.max(1, +pos.maat.toFixed(2));
         Object.assign(pos, opslag);
         const opgeslagen = leesAfstelPosities();
-        opgeslagen[`album:${pagina().id}:${id}`] = opslag;
+        opgeslagen[`album:raster:${sel.dataset.deel}`] = opslag;
         schrijfAfstelPosities(opgeslagen);
         plaatsAlbumPaginaDeel(sel, pos);
+        toon();
+    }
+    function zetMaat(stap) {
+        const maat = Math.max(1, +(albumRasterMaat() + stap).toFixed(2));
+        const opgeslagen = leesAfstelPosities();
+        opgeslagen["album:raster:maat"] = { maat };
+        schrijfAfstelPosities(opgeslagen);
+        houder.style.setProperty("--maat", maat + "%");
         toon();
     }
     function selecteer(el) {
         if (sel) sel.classList.remove("afstel-geselecteerd");
         sel = el;
-        pos = el ? albumPaginaPositie(pagina(), el.dataset.deel) : null;
-        if (sel) { sel.classList.add("afstel-geselecteerd"); toon(); }
+        pos = el ? albumRasterPositie(el.dataset.deel) : null;
+        if (sel) sel.classList.add("afstel-geselecteerd");
+        toon();
     }
 
     info.querySelector("button").addEventListener("click", () => {
         const opgeslagen = leesAfstelPosities();
         Object.keys(opgeslagen).forEach((k) => {
-            if (k.startsWith(`album:${pagina().id}:`)) delete opgeslagen[k];
+            if (k.startsWith("album:raster:")) delete opgeslagen[k];
         });
         schrijfAfstelPosities(opgeslagen);
         selecteer(null);
         bouwAlbumPagina();
         houder.querySelectorAll("img[data-src]").forEach((img) => { img.src = img.dataset.src; });
-        regel.textContent = "Gereset naar albumPaginas.";
+        regel.textContent = "Gereset naar albumRaster.";
     });
 
-    // bouwAlbumPagina vervangt de elementen bij elk openen; daarom delegatie.
+    // bouwAlbumPagina vervangt de elementen bij elk openen en bladeren; daarom
+    // delegatie, en zoekt de selectie na het bladeren haar deel opnieuw op.
+    new MutationObserver(() => {
+        if (sel && !sel.isConnected) {
+            const nieuw = houder.querySelector(`[data-deel="${sel.dataset.deel}"]`);
+            sel = null;
+            selecteer(nieuw);
+        }
+    }).observe(houder, { childList: true });
+
     zaal.addEventListener("pointerdown", (e) => {
         if (info.contains(e.target) || !zaal.classList.contains("boek-open")) return;
+        if (e.target.closest(".album-hoekje")) return;
         const el = e.target.closest("#album-pagina [data-deel]");
         if (!el) { selecteer(null); return; }
         e.preventDefault();
@@ -11978,8 +12204,7 @@ function initAlbumPaginaAfstel() {
         if (!el || el.dataset.deel === "titel") return;
         e.preventDefault();
         if (el !== sel) selecteer(el);
-        pos.maat += e.deltaY < 0 ? MAAT_STAP : -MAAT_STAP;
-        zet();
+        zetMaat(e.deltaY < 0 ? MAAT_STAP : -MAAT_STAP);
     }, { passive: false });
 
     // Zolang het album open is, zijn de toetsen van het album: de handlers van
@@ -11995,11 +12220,12 @@ function initAlbumPaginaAfstel() {
         else if (e.key === "ArrowRight") pos.x += stap;
         else if (e.key === "ArrowUp")    pos.top -= stap;
         else if (e.key === "ArrowDown")  pos.top += stap;
-        else if (vak && (e.key === "+" || e.key === "=")) pos.maat += MAAT_STAP;
-        else if (vak && (e.key === "-" || e.key === "_")) pos.maat -= MAAT_STAP;
+        else if (vak && (e.key === "+" || e.key === "=")) { e.preventDefault(); zetMaat(MAAT_STAP); return; }
+        else if (vak && (e.key === "-" || e.key === "_")) { e.preventDefault(); zetMaat(-MAAT_STAP); return; }
         else raak = false;
         if (raak) { e.preventDefault(); zet(); }
     });
+    toon();
 }
 
 // Zet de posities uit albumIndeling als CSS-variabelen op de plekken en het boek.
@@ -12166,6 +12392,7 @@ function openAlbum() {
     werkAlbumLantaarnBij();
 
     houder.innerHTML = plakboekPodiumHtml(stand, [], "ps-groot");
+    albumPaginaNu = 0;               // elk bezoek begint op de eerste dubbele pagina
     bouwAlbumPagina();               // vóór plaatsAlbumIndeling: die zet de src
     plaatsAlbumIndeling(houder.firstElementChild);
     scherm.style.display = "flex";
