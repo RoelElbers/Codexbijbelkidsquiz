@@ -2854,7 +2854,8 @@ body.album-in-beeld #afstel-paneel {
     object-fit: cover;
 }
 /* Het bladzijdenummer onderaan elke pagina: zelfde inkt en letter als de
-   titel, veel kleiner. */
+   titel, veel kleiner, zodat het in de smalle strook papier onder het ruitje
+   van de sierlijst past zonder ruitje of boekrand te raken. */
 .album-pagina-nummer {
     position: absolute;
     left: var(--x);
@@ -2862,7 +2863,7 @@ body.album-in-beeld #afstel-paneel {
     transform: translateX(-50%);
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-weight: 700;
-    font-size: calc(var(--game-breedte) * 0.0105);
+    font-size: calc(var(--game-breedte) * 0.008);
     line-height: 1.2;
     color: #3d2512;
 }
