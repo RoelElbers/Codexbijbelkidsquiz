@@ -11891,10 +11891,11 @@ const albumHoofdstukken = [
 // staat op elke dubbele pagina op dezelfde plek. Vakken: per pagina vier, per
 // rij van links naar rechts; x = midden, top = bovenkant van het vierkante
 // vak. maat = breedte van een vak, voor alle vakken gelijk. De naam staat
-// onder het vak. Hoekjes: de gouden bladerhoekjes op de papierhoeken
-// (linksonder = vorige, rechtsonder = volgende); x en top = midden, maat =
-// breedte. Titel en vakken zijn af te stellen met ?afstel=aan (zie
-// initAlbumPaginaAfstel).
+// onder het vak. Nummers: het bladzijdenummer onderaan elke pagina; x =
+// midden, top = bovenkant van het cijfer. Hoekjes: de gouden bladerhoekjes op
+// de papierhoeken (linksonder = vorige, rechtsonder = volgende); x en top =
+// midden, maat = breedte. Titel, vakken en nummers zijn af te stellen met
+// ?afstel=aan (zie initAlbumPaginaAfstel).
 const albumRaster = {
     titel: { x: 29.2, top: 15.9 },
     maat: 12.6,
@@ -11907,6 +11908,10 @@ const albumRaster = {
             { x: 62.6, top: 26.5 }, { x: 79.2, top: 26.5 },
             { x: 62.6, top: 55.0 }, { x: 79.2, top: 55.0 }
         ]
+    },
+    nummers: {
+        links:  { x: 28.9, top: 79.4 },
+        rechts: { x: 71.1, top: 79.4 }
     },
     hoekjes: {
         vorige:   { x: 10.3, top: 84.9 },
@@ -11948,10 +11953,12 @@ function leesGewonnenPlaatjes() {
 }
 
 // Een opgeslagen afstelpositie (album:raster:<deel>) overrulet het raster,
-// net als bij de lantaarn. deel = "titel" of een vak ("links-0" … "rechts-3").
+// net als bij de lantaarn. deel = "titel", een vak ("links-0" … "rechts-3")
+// of een bladzijdenummer ("nummer-links", "nummer-rechts").
 function albumRasterPositie(deel) {
     let basis;
     if (deel === "titel") basis = albumRaster.titel;
+    else if (deel.startsWith("nummer-")) basis = albumRaster.nummers[deel.slice(7)];
     else {
         const [kant, i] = deel.split("-");
         basis = albumRaster.vakken[kant][+i];
@@ -11968,11 +11975,14 @@ function plaatsAlbumPaginaDeel(el, pos) {
     el.style.setProperty("--top", pos.top + "%");
 }
 
-// Bouwt de titel en de vakken van de huidige dubbele pagina in #album-pagina
-// en zet de bladerhoekjes. Gewonnen: het plaatje (data-src, geladen bij het
-// openen van het album of bij het bladeren) met de naam eronder. Niet
-// gewonnen: alleen de gouden omlijning met de naam. In de afstelmodus krijgen
-// de vrije vakken een stippelkader, zodat het hele raster af te stellen is.
+// Bouwt de titel, de vakken en de bladzijdenummers van de huidige dubbele
+// pagina in #album-pagina en zet de bladerhoekjes. Gewonnen: het plaatje
+// (data-src, geladen bij het openen van het album of bij het bladeren) met de
+// naam eronder. Niet gewonnen: alleen de gouden omlijning, zonder naam; de
+// naam komt pas samen met het plaatje. In de afstelmodus krijgen de vrije
+// vakken een stippelkader met hun deel als naam, zodat het hele raster af te
+// stellen is. Bladzijdenummers: links 2n + 1, rechts 2n + 2 (n = de dubbele
+// pagina, vanaf 0), ook op een pagina zonder plaatjes.
 function bouwAlbumPagina() {
     const houder = document.getElementById("album-pagina");
     const pagina = albumPaginas[albumPaginaNu];
@@ -12003,6 +12013,7 @@ function bouwAlbumPagina() {
         kader.className = "album-vak-kader";
         const naam = document.createElement("figcaption");
         naam.className = "album-vak-naam";
+        let toonNaam = true;
         if (plaatje) {
             const heeft = !gewonnen || gewonnen.has(plaatje.id);
             vak.className = "album-vak" + (heeft ? " album-vak-gewonnen" : "");
@@ -12014,13 +12025,24 @@ function bouwAlbumPagina() {
                 kader.appendChild(img);
             }
             naam.textContent = plaatje.naam;
+            toonNaam = heeft;
         } else {
             vak.className = "album-vak album-vak-vrij";
             naam.textContent = deel;
         }
-        vak.append(kader, naam);
+        vak.append(kader);
+        if (toonNaam) vak.append(naam);
         plaatsAlbumPaginaDeel(vak, albumRasterPositie(deel));
         houder.appendChild(vak);
+    });
+
+    ["links", "rechts"].forEach((kant, i) => {
+        const nummer = document.createElement("div");
+        nummer.className = "album-pagina-nummer";
+        nummer.dataset.deel = `nummer-${kant}`;
+        nummer.textContent = 2 * albumPaginaNu + i + 1;
+        plaatsAlbumPaginaDeel(nummer, albumRasterPositie(`nummer-${kant}`));
+        houder.appendChild(nummer);
     });
 
     const hoekjes = albumRaster.hoekjes;
@@ -12087,7 +12109,7 @@ document.addEventListener("keydown", (e) => {
 })();
 
 // Afstelmodus (?afstel=aan) voor het raster in het opengeslagen boek, zoals de
-// lantaarn: slepen = verplaatsen (de titel of één vak), pijltjes = 0,1%
+// lantaarn: slepen = verplaatsen (de titel, één vak of een nummer), pijltjes = 0,1%
 // (Shift = 1%), + / - of scroll = maat van alle vakken samen. Het raster geldt
 // voor elke dubbele pagina; de vrije vakken staan er met een stippelkader bij.
 // Rechtsonder staat het hele raster om in albumRaster te plakken. Het paneel
@@ -12100,7 +12122,7 @@ function initAlbumPaginaAfstel() {
     const MAAT_STAP = 0.1;
     const info = document.createElement("div");
     info.className = "album-afstel-info album-pagina-afstel";
-    info.innerHTML = '<div class="album-afstel-regel">Klik de titel of een vak om te selecteren.</div>' +
+    info.innerHTML = '<div class="album-afstel-regel">Klik de titel, een vak of een nummer om te selecteren.</div>' +
         '<pre class="album-afstel-raster"></pre>' +
         '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% ' +
         '(Shift = 1%) &middot; + / &minus; of scroll = maat van alle vakken</div>' +
@@ -12120,10 +12142,12 @@ function initAlbumPaginaAfstel() {
             `    titel: ${punt(albumRasterPositie("titel"))},\n` +
             `    maat: ${getal(albumRasterMaat())},\n` +
             `    vakken: {\n        links: [\n${kant("links")}\n        ],\n` +
-            `        rechts: [\n${kant("rechts")}\n        ]\n    },`;
+            `        rechts: [\n${kant("rechts")}\n        ]\n    },\n` +
+            `    nummers: {\n        links:  ${punt(albumRasterPositie("nummer-links"))},\n` +
+            `        rechts: ${punt(albumRasterPositie("nummer-rechts"))}\n    },`;
     }
     function toon() {
-        regel.textContent = sel ? `${sel.dataset.deel}: ${punt(pos)}` : "Klik de titel of een vak om te selecteren.";
+        regel.textContent = sel ? `${sel.dataset.deel}: ${punt(pos)}` : "Klik de titel, een vak of een nummer om te selecteren.";
         toonRaster();
     }
     function zet() {
@@ -12201,7 +12225,7 @@ function initAlbumPaginaAfstel() {
 
     houder.addEventListener("wheel", (e) => {
         const el = e.target.closest("[data-deel]");
-        if (!el || el.dataset.deel === "titel") return;
+        if (!el || !albumVakDelen.includes(el.dataset.deel)) return;
         e.preventDefault();
         if (el !== sel) selecteer(el);
         zetMaat(e.deltaY < 0 ? MAAT_STAP : -MAAT_STAP);
@@ -12214,7 +12238,7 @@ function initAlbumPaginaAfstel() {
         if (scherm.style.display !== "none") e.stopImmediatePropagation();
         if (!sel || !sel.isConnected || scherm.style.display === "none" || !zaal.classList.contains("boek-open")) return;
         const stap = e.shiftKey ? 1 : 0.1;
-        const vak = sel.dataset.deel !== "titel";
+        const vak = albumVakDelen.includes(sel.dataset.deel);
         let raak = true;
         if (e.key === "ArrowLeft")       pos.x -= stap;
         else if (e.key === "ArrowRight") pos.x += stap;

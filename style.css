@@ -2853,6 +2853,19 @@ body.album-in-beeld #afstel-paneel {
     height: 100%;
     object-fit: cover;
 }
+/* Het bladzijdenummer onderaan elke pagina: zelfde inkt en letter als de
+   titel, veel kleiner. */
+.album-pagina-nummer {
+    position: absolute;
+    left: var(--x);
+    top: var(--top);
+    transform: translateX(-50%);
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: calc(var(--game-breedte) * 0.0105);
+    line-height: 1.2;
+    color: #3d2512;
+}
 .album-vak-naam {
     margin-top: calc(var(--game-breedte) * 0.004);
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
