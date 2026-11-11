@@ -11804,9 +11804,9 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // zonder breed toont tijdelijk het oude vierkante bestand, bijgesneden tot
 // 16:9 (object-fit: cover).
 // De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
-// hoofdstuk begint op een nieuwe dubbele pagina, met twee kolommen vakken per
-// pagina (zie albumRaster.indelingen: 6 of 4 per pagina), eerst de
-// linkerpagina, per rij van links naar rechts. Past een hoofdstuk niet, dan loopt het door op de volgende dubbele
+// hoofdstuk begint op een nieuwe dubbele pagina, met 2 kolommen × 3 rijen
+// vakken per pagina, dus 12 per dubbele pagina (eerst de linkerpagina, per rij
+// van links naar rechts). Past een hoofdstuk niet, dan loopt het door op de volgende dubbele
 // pagina, met dezelfde titel. Een hoofdstuk zonder plaatjes wordt overgeslagen.
 // Een paar met hetzelfde BO-nummer (-01 en -02) staat direct na elkaar op een
 // even plek, zodat het samen één rij vult (bewaakt door
@@ -11903,9 +11903,8 @@ const albumHoofdstukken = [
 // kolommen, per rij van links naar rechts; x = midden, top = bovenkant van het
 // vak. maat = breedte van een vak, voor alle vakken gelijk; omdat het boek ook
 // 16:9 is, is een vak in % van de hoogte even hoog als het in % van de breedte
-// breed is. De naam staat onder het vak. Er zijn tijdelijk twee indelingen
-// naast elkaar, tot Roel er één kiest: A (2 kolommen × 3 rijen per pagina) en
-// B (2 × 2, grotere vakken). Standaard A; ?indeling=b toont B. Nummers: het
+// breed is. De naam staat onder het vak. Indeling: 2 kolommen × 3 rijen per
+// pagina (gekozen boven 2 × 2 met grotere vakken). Nummers: het
 // bladzijdenummer onderaan elke pagina, in een eigen rij midden boven het
 // blauwe ruitje van de onderste sierlijst, tussen de namen van de onderste rij
 // en het ruitje; x = midden, top = bovenkant van het cijfer. Hoekjes: de
@@ -11914,35 +11913,18 @@ const albumHoofdstukken = [
 // af te stellen met ?afstel=aan (zie initAlbumPaginaAfstel).
 const albumRaster = {
     titel: { x: 29.2, top: 15.9 },
-    indelingen: {
-        A: {
-            maat: 11.5,
-            vakken: {
-                links: [
-                    { x: 22.2, top: 24.3 }, { x: 36.2, top: 24.3 },
-                    { x: 22.2, top: 42.3 }, { x: 36.2, top: 42.3 },
-                    { x: 22.2, top: 60.3 }, { x: 36.2, top: 60.3 }
-                ],
-                rechts: [
-                    { x: 63.8, top: 24.3 }, { x: 77.8, top: 24.3 },
-                    { x: 63.8, top: 42.3 }, { x: 77.8, top: 42.3 },
-                    { x: 63.8, top: 60.3 }, { x: 77.8, top: 60.3 }
-                ]
-            }
-        },
-        B: {
-            maat: 14.5,
-            vakken: {
-                links: [
-                    { x: 21.0, top: 25.5 }, { x: 37.4, top: 25.5 },
-                    { x: 21.0, top: 48.0 }, { x: 37.4, top: 48.0 }
-                ],
-                rechts: [
-                    { x: 62.6, top: 25.5 }, { x: 79.0, top: 25.5 },
-                    { x: 62.6, top: 48.0 }, { x: 79.0, top: 48.0 }
-                ]
-            }
-        }
+    maat: 11.5,
+    vakken: {
+        links: [
+            { x: 22.2, top: 24.3 }, { x: 36.2, top: 24.3 },
+            { x: 22.2, top: 42.3 }, { x: 36.2, top: 42.3 },
+            { x: 22.2, top: 60.3 }, { x: 36.2, top: 60.3 }
+        ],
+        rechts: [
+            { x: 63.8, top: 24.3 }, { x: 77.8, top: 24.3 },
+            { x: 63.8, top: 42.3 }, { x: 77.8, top: 42.3 },
+            { x: 63.8, top: 60.3 }, { x: 77.8, top: 60.3 }
+        ]
     },
     nummers: {
         links:  { x: 28.9, top: 78.1 },
@@ -11954,14 +11936,9 @@ const albumRaster = {
         maat: 2.8
     }
 };
-const albumIndelingKeuze = (() => {
-    const keuze = (new URLSearchParams(window.location.search).get("indeling") || "").toUpperCase();
-    return albumRaster.indelingen[keuze] ? keuze : "A";
-})();
-const albumVakken = albumRaster.indelingen[albumIndelingKeuze];
-// De vakken in vulvolgorde, als data-deel: links-0, links-1, … rechts-0, …
+// De vakken in vulvolgorde, als data-deel: links-0 … links-5, rechts-0 … rechts-5.
 const albumVakDelen = ["links", "rechts"].flatMap((kant) =>
-    albumVakken.vakken[kant].map((_, i) => `${kant}-${i}`));
+    albumRaster.vakken[kant].map((_, i) => `${kant}-${i}`));
 const ALBUM_VAKKEN_PER_DUBBELE_PAGINA = albumVakDelen.length;
 
 // [{ hoofdstuk, plaatjes }] per dubbele pagina, in volgorde.
@@ -11992,28 +11969,22 @@ function leesGewonnenPlaatjes() {
     }
 }
 
-// Een opgeslagen afstelpositie overrulet het raster, net als bij de lantaarn.
-// deel = "titel", een vak ("links-0", "rechts-5" …) of een bladzijdenummer
-// ("nummer-links", "nummer-rechts"). De vakken en hun maat hebben een sleutel
-// per indeling (album:raster:A:links-0, album:raster:A:maat), titel en
-// nummers niet (album:raster:titel).
-function albumRasterSleutel(deel) {
-    return albumVakDelen.includes(deel) || deel === "maat"
-        ? `album:raster:${albumIndelingKeuze}:${deel}` : `album:raster:${deel}`;
-}
+// Een opgeslagen afstelpositie (album:raster:<deel>) overrulet het raster,
+// net als bij de lantaarn. deel = "titel", een vak ("links-0" … "rechts-5")
+// of een bladzijdenummer ("nummer-links", "nummer-rechts").
 function albumRasterPositie(deel) {
     let basis;
     if (deel === "titel") basis = albumRaster.titel;
     else if (deel.startsWith("nummer-")) basis = albumRaster.nummers[deel.slice(7)];
     else {
         const [kant, i] = deel.split("-");
-        basis = albumVakken.vakken[kant][+i];
+        basis = albumRaster.vakken[kant][+i];
     }
-    return { ...basis, ...(leesAfstelPosities()[albumRasterSleutel(deel)] || {}) };
+    return { ...basis, ...(leesAfstelPosities()[`album:raster:${deel}`] || {}) };
 }
 function albumRasterMaat() {
-    const opgeslagen = leesAfstelPosities()[albumRasterSleutel("maat")];
-    return opgeslagen ? opgeslagen.maat : albumVakken.maat;
+    const opgeslagen = leesAfstelPosities()["album:raster:maat"];
+    return opgeslagen ? opgeslagen.maat : albumRaster.maat;
 }
 
 // Het beeld van een plaatje: het brede beeld (16:9) als het er is, anders
@@ -12278,7 +12249,8 @@ function openAlbumVenster(vak) {
 }
 
 // Een klik naast het beeld sluit het venster: op de donkere achtergrond onder
-// de tekst. Het beeld zelf, de tekst en het kruisje sluiten niet.
+// de tekst. Het beeld zelf, de tekst en het kruisje sluiten niet; een klik op
+// het beeld doet bewust niets (later: de animatie opnieuw afspelen).
 function klikInAlbumVenster(e) {
     if (e.target.closest(".album-venster-doek, .album-venster-tekstdeel, .album-venster-sluit")) return;
     sluitAlbumVenster();
@@ -12354,17 +12326,17 @@ function initAlbumPaginaAfstel() {
     function toonRaster() {
         const kant = (k) => {
             const rijen = [];
-            for (let i = 0; i < albumVakken.vakken[k].length; i += 2) {
-                rijen.push("                    " + punt(albumRasterPositie(`${k}-${i}`)) + ", " +
+            for (let i = 0; i < albumRaster.vakken[k].length; i += 2) {
+                rijen.push("            " + punt(albumRasterPositie(`${k}-${i}`)) + ", " +
                     punt(albumRasterPositie(`${k}-${i + 1}`)));
             }
             return rijen.join(",\n");
         };
         rasterVak.textContent =
             `    titel: ${punt(albumRasterPositie("titel"))},\n` +
-            `        ${albumIndelingKeuze}: {\n            maat: ${getal(albumRasterMaat())},\n` +
-            `            vakken: {\n                links: [\n${kant("links")}\n                ],\n` +
-            `                rechts: [\n${kant("rechts")}\n                ]\n            }\n        }\n` +
+            `    maat: ${getal(albumRasterMaat())},\n` +
+            `    vakken: {\n        links: [\n${kant("links")}\n        ],\n` +
+            `        rechts: [\n${kant("rechts")}\n        ]\n    },\n` +
             `    nummers: {\n        links:  ${punt(albumRasterPositie("nummer-links"))},\n` +
             `        rechts: ${punt(albumRasterPositie("nummer-rechts"))}\n    },`;
     }
@@ -12376,7 +12348,7 @@ function initAlbumPaginaAfstel() {
         const opslag = { x: +pos.x.toFixed(2), top: +pos.top.toFixed(2) };
         Object.assign(pos, opslag);
         const opgeslagen = leesAfstelPosities();
-        opgeslagen[albumRasterSleutel(sel.dataset.deel)] = opslag;
+        opgeslagen[`album:raster:${sel.dataset.deel}`] = opslag;
         schrijfAfstelPosities(opgeslagen);
         plaatsAlbumPaginaDeel(sel, pos);
         toon();
@@ -12384,7 +12356,7 @@ function initAlbumPaginaAfstel() {
     function zetMaat(stap) {
         const maat = Math.max(1, +(albumRasterMaat() + stap).toFixed(2));
         const opgeslagen = leesAfstelPosities();
-        opgeslagen[albumRasterSleutel("maat")] = { maat };
+        opgeslagen["album:raster:maat"] = { maat };
         schrijfAfstelPosities(opgeslagen);
         houder.style.setProperty("--maat", maat + "%");
         toon();

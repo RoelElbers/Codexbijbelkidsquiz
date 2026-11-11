@@ -2866,11 +2866,13 @@ body.album-in-beeld #afstel-paneel {
     line-height: 1.2;
     color: #3d2512;
 }
+/* Minstens 12px, zodat de naam op een tablet leesbaar blijft; vanaf een
+   boekbreedte van ~1143px geldt de schaal (op 1920 breed 20px). */
 .album-vak-naam {
     margin-top: calc(var(--game-breedte) * 0.004);
     font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
     font-weight: 700;
-    font-size: calc(var(--game-breedte) * 0.0105);
+    font-size: max(12px, calc(var(--game-breedte) * 0.0105));
     line-height: 1.2;
     color: #3d2512;
     text-align: center;
