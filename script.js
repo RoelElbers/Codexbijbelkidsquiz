@@ -11796,14 +11796,17 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // Optioneel per plaatje: bijbelplaats en tekst (alinea's gescheiden door een
 // lege regel, dus "\n\n"). Die staan in het venster onder het grote plaatje
 // (openAlbumVenster); zonder tekst staat daar alleen de naam. Ook optioneel:
-// breed, het pad (vanaf images/album/) van een liggende versie van 16:9 met
-// het vierkante plaatje precies in het midden, in images/album/plaatjes-breed/
-// als webp van 1920 × 1080 (kwaliteit 82). Die vult in het venster het hele
-// scherm; zonder breed staat het vierkante plaatje op een wazige achtergrond.
+// breed, het pad (vanaf images/album/) van het brede beeld (16:9), in
+// images/album/plaatjes-breed/ als webp van 1920 × 1080 (kwaliteit 82). Dat is
+// voortaan het plaatje, in het boek én in het venster (albumBeeld): het boek
+// laadt de kleine versie met dezelfde naam uit plaatjes-breed-klein/ (640 ×
+// 360, gemaakt door tools/album-klein.py), het venster de grote. Een plaatje
+// zonder breed toont tijdelijk het oude vierkante bestand, bijgesneden tot
+// 16:9 (object-fit: cover).
 // De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
-// hoofdstuk begint op een nieuwe dubbele pagina, met 2 × 2 vakken per pagina,
-// dus 8 per dubbele pagina (eerst de linkerpagina, per rij van links naar
-// rechts). Past een hoofdstuk niet, dan loopt het door op de volgende dubbele
+// hoofdstuk begint op een nieuwe dubbele pagina, met twee kolommen vakken per
+// pagina (zie albumRaster.indelingen: 6 of 4 per pagina), eerst de
+// linkerpagina, per rij van links naar rechts. Past een hoofdstuk niet, dan loopt het door op de volgende dubbele
 // pagina, met dezelfde titel. Een hoofdstuk zonder plaatjes wordt overgeslagen.
 // Een paar met hetzelfde BO-nummer (-01 en -02) staat direct na elkaar op een
 // even plek, zodat het samen één rij vult (bewaakt door
@@ -11896,28 +11899,50 @@ const albumHoofdstukken = [
 
 // Eén raster voor elke dubbele pagina, in procenten van het 16:9-vak (gemeten
 // op boek-open.webp). Titel: x = midden, top = bovenkant van de tekst; hij
-// staat op elke dubbele pagina op dezelfde plek. Vakken: per pagina vier, per
-// rij van links naar rechts; x = midden, top = bovenkant van het vierkante
-// vak. maat = breedte van een vak, voor alle vakken gelijk. De naam staat
-// onder het vak. Nummers: het bladzijdenummer onderaan elke pagina, in een
-// eigen rij midden boven het blauwe ruitje van de onderste sierlijst, tussen
-// de namen van de onderste rij en het ruitje; x = midden, top = bovenkant van
-// het cijfer. Hoekjes: de
+// staat op elke dubbele pagina op dezelfde plek. Vakken: 16:9, per pagina twee
+// kolommen, per rij van links naar rechts; x = midden, top = bovenkant van het
+// vak. maat = breedte van een vak, voor alle vakken gelijk; omdat het boek ook
+// 16:9 is, is een vak in % van de hoogte even hoog als het in % van de breedte
+// breed is. De naam staat onder het vak. Er zijn tijdelijk twee indelingen
+// naast elkaar, tot Roel er één kiest: A (2 kolommen × 3 rijen per pagina) en
+// B (2 × 2, grotere vakken). Standaard A; ?indeling=b toont B. Nummers: het
+// bladzijdenummer onderaan elke pagina, in een eigen rij midden boven het
+// blauwe ruitje van de onderste sierlijst, tussen de namen van de onderste rij
+// en het ruitje; x = midden, top = bovenkant van het cijfer. Hoekjes: de
 // gouden bladerhoekjes op de papierhoeken (linksonder = vorige, rechtsonder =
-// volgende); x en top = midden, maat = breedte. Titel, vakken en nummers zijn af te stellen met
-// ?afstel=aan (zie initAlbumPaginaAfstel).
+// volgende); x en top = midden, maat = breedte. Titel, vakken en nummers zijn
+// af te stellen met ?afstel=aan (zie initAlbumPaginaAfstel).
 const albumRaster = {
     titel: { x: 29.2, top: 15.9 },
-    maat: 11.7,
-    vakken: {
-        links: [
-            { x: 21.0, top: 24.3 }, { x: 37.6, top: 24.3 },
-            { x: 21.0, top: 51.3 }, { x: 37.6, top: 51.3 }
-        ],
-        rechts: [
-            { x: 62.6, top: 24.3 }, { x: 79.2, top: 24.3 },
-            { x: 62.6, top: 51.3 }, { x: 79.2, top: 51.3 }
-        ]
+    indelingen: {
+        A: {
+            maat: 11.5,
+            vakken: {
+                links: [
+                    { x: 22.2, top: 24.3 }, { x: 36.2, top: 24.3 },
+                    { x: 22.2, top: 42.3 }, { x: 36.2, top: 42.3 },
+                    { x: 22.2, top: 60.3 }, { x: 36.2, top: 60.3 }
+                ],
+                rechts: [
+                    { x: 63.8, top: 24.3 }, { x: 77.8, top: 24.3 },
+                    { x: 63.8, top: 42.3 }, { x: 77.8, top: 42.3 },
+                    { x: 63.8, top: 60.3 }, { x: 77.8, top: 60.3 }
+                ]
+            }
+        },
+        B: {
+            maat: 14.5,
+            vakken: {
+                links: [
+                    { x: 21.0, top: 25.5 }, { x: 37.4, top: 25.5 },
+                    { x: 21.0, top: 48.0 }, { x: 37.4, top: 48.0 }
+                ],
+                rechts: [
+                    { x: 62.6, top: 25.5 }, { x: 79.0, top: 25.5 },
+                    { x: 62.6, top: 48.0 }, { x: 79.0, top: 48.0 }
+                ]
+            }
+        }
     },
     nummers: {
         links:  { x: 28.9, top: 78.1 },
@@ -11929,10 +11954,15 @@ const albumRaster = {
         maat: 2.8
     }
 };
-const ALBUM_VAKKEN_PER_DUBBELE_PAGINA = 8;
-// De vakken in vulvolgorde, als data-deel: links-0 … links-3, rechts-0 … rechts-3.
+const albumIndelingKeuze = (() => {
+    const keuze = (new URLSearchParams(window.location.search).get("indeling") || "").toUpperCase();
+    return albumRaster.indelingen[keuze] ? keuze : "A";
+})();
+const albumVakken = albumRaster.indelingen[albumIndelingKeuze];
+// De vakken in vulvolgorde, als data-deel: links-0, links-1, … rechts-0, …
 const albumVakDelen = ["links", "rechts"].flatMap((kant) =>
-    albumRaster.vakken[kant].map((_, i) => `${kant}-${i}`));
+    albumVakken.vakken[kant].map((_, i) => `${kant}-${i}`));
+const ALBUM_VAKKEN_PER_DUBBELE_PAGINA = albumVakDelen.length;
 
 // [{ hoofdstuk, plaatjes }] per dubbele pagina, in volgorde.
 function albumDubbelePaginas(hoofdstukken = albumHoofdstukken) {
@@ -11962,22 +11992,38 @@ function leesGewonnenPlaatjes() {
     }
 }
 
-// Een opgeslagen afstelpositie (album:raster:<deel>) overrulet het raster,
-// net als bij de lantaarn. deel = "titel", een vak ("links-0" … "rechts-3")
-// of een bladzijdenummer ("nummer-links", "nummer-rechts").
+// Een opgeslagen afstelpositie overrulet het raster, net als bij de lantaarn.
+// deel = "titel", een vak ("links-0", "rechts-5" …) of een bladzijdenummer
+// ("nummer-links", "nummer-rechts"). De vakken en hun maat hebben een sleutel
+// per indeling (album:raster:A:links-0, album:raster:A:maat), titel en
+// nummers niet (album:raster:titel).
+function albumRasterSleutel(deel) {
+    return albumVakDelen.includes(deel) || deel === "maat"
+        ? `album:raster:${albumIndelingKeuze}:${deel}` : `album:raster:${deel}`;
+}
 function albumRasterPositie(deel) {
     let basis;
     if (deel === "titel") basis = albumRaster.titel;
     else if (deel.startsWith("nummer-")) basis = albumRaster.nummers[deel.slice(7)];
     else {
         const [kant, i] = deel.split("-");
-        basis = albumRaster.vakken[kant][+i];
+        basis = albumVakken.vakken[kant][+i];
     }
-    return { ...basis, ...(leesAfstelPosities()[`album:raster:${deel}`] || {}) };
+    return { ...basis, ...(leesAfstelPosities()[albumRasterSleutel(deel)] || {}) };
 }
 function albumRasterMaat() {
-    const opgeslagen = leesAfstelPosities()["album:raster:maat"];
-    return opgeslagen ? opgeslagen.maat : albumRaster.maat;
+    const opgeslagen = leesAfstelPosities()[albumRasterSleutel("maat")];
+    return opgeslagen ? opgeslagen.maat : albumVakken.maat;
+}
+
+// Het beeld van een plaatje: het brede beeld (16:9) als het er is, anders
+// tijdelijk het oude vierkante plaatje (bijgesneden met object-fit: cover).
+// groot = het venster (plaatjes-breed/), anders het boek: de kleine versie met
+// dezelfde naam in plaatjes-breed-klein/ (tools/album-klein.py).
+function albumBeeld(plaatje, groot) {
+    const pad = !plaatje.breed ? plaatje.bestand
+        : groot ? plaatje.breed : plaatje.breed.replace(/^plaatjes-breed\//, "plaatjes-breed-klein/");
+    return `images/album/${pad}?v=${ALBUM_VERSIE}`;
 }
 
 function plaatsAlbumPaginaDeel(el, pos) {
@@ -12029,7 +12075,7 @@ function bouwAlbumPagina() {
             vak.className = "album-vak" + (heeft ? " album-vak-gewonnen" : "");
             if (heeft) {
                 const img = document.createElement("img");
-                img.dataset.src = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
+                img.dataset.src = albumBeeld(plaatje, false);
                 img.alt = plaatje.naam;
                 img.draggable = false;
                 kader.appendChild(img);
@@ -12131,32 +12177,56 @@ document.addEventListener("keydown", (e) => {
 
 // Het plaatje groot: klikken (of Enter) op een gewonnen plaatje in het open
 // boek opent #album-venster, een eigen venster over de albumzaal naar het
-// voorbeeld van het avatar-detailvenster (openAvatarDetail). Het beeld vult
-// het hele scherm; naam, bijbelplaats en tekst staan eronder en komen pas bij
-// scrollen in beeld.
-//   - Met een brede versie (breed, 16:9): die vult het scherm (object-fit:
-//     cover). Tussen 1:1 en 16:9 valt hooguit iets van de zijkanten weg, nooit
-//     iets van het vierkante midden. Tot hij geladen is, staat de variant
-//     zonder brede versie eronder, met het plaatje op dezelfde plek.
-//   - Zonder brede versie: het vierkante plaatje op volle hoogte met een gouden
-//     randje, en de zijkanten gevuld met een vergrote, wazige en donkere kopie
-//     van hetzelfde plaatje (CSS-filter, geen extra bestand). Dat is hetzelfde
-//     bestand als in het boek (met ALBUM_VERSIE), dus al geladen.
-// Sluiten: het kruisje, Escape, een klik naast het plaatje (klikInAlbumVenster)
+// voorbeeld van het avatar-detailvenster (openAvatarDetail). Het brede beeld
+// (albumBeeld, groot) bedekt het hele scherm: .album-venster-doek is 16:9 en
+// zo groot dat het scherm vol is, dus op een smaller scherm valt iets van de
+// zijkanten weg. Naam, bijbelplaats en tekst staan eronder en komen pas bij
+// scrollen in beeld. In het doek ligt eerst de kleine versie uit het boek (al
+// geladen); de grote komt erover zodra hij geladen is.
+// Openen en sluiten: het doek groeit vanuit zijn vak in het boek uit tot het
+// volle scherm en krimpt bij sluiten terug (albumVensterOvergang, ~0,4 s, alleen
+// transform en opacity). Met prefers-reduced-motion verschijnt het gewoon.
+// Sluiten: het kruisje, Escape, een klik naast het beeld (klikInAlbumVenster)
 // of de terug-knop (via een eigen stap in de geschiedenis). Het boek blijft op
 // dezelfde pagina en de focus gaat terug naar het vak.
 //
 // Later komt er een optioneel veld animatie (een video-URL) bij, ook in het
-// brede formaat: die speelt dan bij het openen op de plek van het brede beeld
-// (de laag van #album-venster-breed, ook object-fit: cover) en eindigt op het
-// stilstaande brede beeld. Dat is nog niet gebouwd.
+// brede formaat: die speelt dan bij het openen in het doek, op de plek van het
+// brede beeld (ook object-fit: cover), en eindigt op het stilstaande beeld.
+// Dat is nog niet gebouwd.
 let albumVensterVak = null;          // het vak waar het venster vandaan kwam
 let albumVensterStap = false;        // openen zette een stap in de geschiedenis
 let albumVensterTerug = false;       // de history.back() van het sluiten loopt nog
+let albumVensterSluit = false;       // de krimpbeweging van het sluiten loopt
+let albumVensterBewegingen = [];
 
 function albumVensterOpen() {
     const venster = document.getElementById("album-venster");
     return !!(venster && venster.style.display && venster.style.display !== "none");
+}
+
+// De groei (open = true) of krimp van het doek tussen het vak in het boek en
+// het volle scherm, met de donkere achtergrond, het kruisje en het pijltje
+// die in- of uitfaden. Geeft een Promise die klaar is als de beweging af is.
+function albumVensterOvergang(open, vak) {
+    albumVensterBewegingen.forEach((a) => a.cancel());
+    albumVensterBewegingen = [];
+    const venster = document.getElementById("album-venster");
+    const kader = vak && vak.isConnected && vak.querySelector(".album-vak-kader");
+    if (!kader || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return Promise.resolve();
+    const doek = venster.querySelector(".album-venster-doek");
+    const van = kader.getBoundingClientRect(), naar = doek.getBoundingClientRect();
+    const klein = `translate(${van.left + van.width / 2 - (naar.left + naar.width / 2)}px, ` +
+        `${van.top + van.height / 2 - (naar.top + naar.height / 2)}px) scale(${van.width / naar.width})`;
+    const opties = { duration: 400, easing: "cubic-bezier(0.25, 0.8, 0.25, 1)", fill: "forwards" };
+    const groei = [{ transform: klein }, { transform: "none" }];
+    const fade = [{ opacity: 0 }, { opacity: 1 }];
+    if (!open) { groei.reverse(); fade.reverse(); }
+    albumVensterBewegingen = [
+        doek.animate(groei, opties),
+        ...venster.querySelectorAll(".album-venster-achter, .album-venster-sluit, .album-venster-pijl")
+    ].map((x) => (x instanceof Animation ? x : x.animate(fade, opties)));
+    return Promise.all(albumVensterBewegingen.map((a) => a.finished)).catch(() => {});
 }
 
 function openAlbumVenster(vak) {
@@ -12166,26 +12236,13 @@ function openAlbumVenster(vak) {
     if (!venster || !plaatje || albumBoekStand !== "open" || albumBladert || albumVensterOpen()) return;
     albumVensterVak = vak;
 
-    const bron = `images/album/${plaatje.bestand}?v=${ALBUM_VERSIE}`;
-    const img = document.getElementById("album-venster-plaatje");
-    img.src = bron;
-    img.alt = plaatje.naam;
-    document.querySelector("#album-venster .album-venster-achtergrond").src = bron;
-    // De brede versie ligt erboven en komt pas in beeld als hij geladen is;
-    // lukt dat niet, dan blijft de variant zonder brede versie staan.
-    const breed = document.getElementById("album-venster-breed");
-    venster.classList.remove("breed-geladen");
-    breed.onload = breed.onerror = null;
-    if (plaatje.breed) {
-        breed.hidden = false;
-        breed.onload = () => venster.classList.add("breed-geladen");
-        breed.onerror = () => { breed.hidden = true; };
-        breed.src = `images/album/${plaatje.breed}?v=${ALBUM_VERSIE}`;
-        if (breed.complete && breed.naturalWidth) venster.classList.add("breed-geladen");
-    } else {
-        breed.hidden = true;
-        breed.removeAttribute("src");
-    }
+    venster.querySelector(".album-venster-klein").src = albumBeeld(plaatje, false);
+    const groot = document.getElementById("album-venster-plaatje");
+    venster.classList.remove("groot-geladen");
+    groot.onload = () => venster.classList.add("groot-geladen");
+    groot.alt = plaatje.naam;
+    groot.src = albumBeeld(plaatje, true);
+    if (groot.complete && groot.naturalWidth) venster.classList.add("groot-geladen");
     document.getElementById("album-venster-naam").textContent = plaatje.naam;
     const plaats = document.getElementById("album-venster-plaats");
     plaats.textContent = plaatje.bijbelplaats || "";
@@ -12205,6 +12262,9 @@ function openAlbumVenster(vak) {
     venster.style.display = "block";
     venster.scrollTop = 0;
     venster.focus();                 // anders scrollen de pijltjestoetsen niets
+    albumVensterOvergang(true, vak).then(() => {
+        if (!albumVensterSluit) { albumVensterBewegingen.forEach((a) => a.cancel()); albumVensterBewegingen = []; }
+    });
     // Een eigen stap in de geschiedenis, zodat de terug-knop van de tablet het
     // venster sluit in plaats van de pagina te verlaten. Niet als de
     // history.back() van het vorige sluiten nog loopt: die zou anders deze
@@ -12217,33 +12277,36 @@ function openAlbumVenster(vak) {
     }
 }
 
-// Een klik naast het plaatje sluit het venster: op de wazige achtergrond, of
-// bij een brede versie op de aangevulde zijkanten, dus buiten het vierkante
-// midden. Dat midden is bij object-fit: cover van 16:9 zo hoog als het
-// getoonde beeld. Het plaatje zelf, de tekst en het kruisje sluiten niet.
+// Een klik naast het beeld sluit het venster: op de donkere achtergrond onder
+// de tekst. Het beeld zelf, de tekst en het kruisje sluiten niet.
 function klikInAlbumVenster(e) {
-    if (e.target.closest("#album-venster-plaatje, .album-venster-tekstdeel, .album-venster-sluit")) return;
-    if (e.target.id === "album-venster-breed") {
-        const r = e.target.getBoundingClientRect();
-        const zijde = 9 * Math.max(r.width / 16, r.height / 9);
-        if (Math.abs(e.clientX - (r.left + r.width / 2)) <= zijde / 2 &&
-            Math.abs(e.clientY - (r.top + r.height / 2)) <= zijde / 2) return;
-    }
+    if (e.target.closest(".album-venster-doek, .album-venster-tekstdeel, .album-venster-sluit")) return;
     sluitAlbumVenster();
 }
 
 // viaGeschiedenis: de terug-knop sloot het venster, de stap is dan al weg.
+// Het doek krimpt terug naar zijn vak; daarvoor eerst terug naar boven, zodat
+// het hele beeld weer in beeld is.
 function sluitAlbumVenster(viaGeschiedenis = false) {
     const venster = document.getElementById("album-venster");
-    if (!venster || !albumVensterOpen()) return;
-    venster.style.display = "none";
+    if (!venster || !albumVensterOpen() || albumVensterSluit) return;
     if (albumVensterStap && !viaGeschiedenis) {
         albumVensterTerug = true;
         history.back();
     }
     albumVensterStap = false;
-    if (albumVensterVak && albumVensterVak.isConnected) albumVensterVak.focus();
+    const vak = albumVensterVak;
     albumVensterVak = null;
+    albumVensterSluit = true;
+    albumVensterBewegingen.forEach((a) => a.cancel());
+    venster.scrollTop = 0;
+    albumVensterOvergang(false, vak).then(() => {
+        venster.style.display = "none";
+        albumVensterBewegingen.forEach((a) => a.cancel());
+        albumVensterBewegingen = [];
+        albumVensterSluit = false;
+        if (vak && vak.isConnected) vak.focus();
+    });
 }
 
 (function () {
@@ -12289,13 +12352,19 @@ function initAlbumPaginaAfstel() {
     const getal = (n) => n.toFixed(1);
     const punt = (p) => `{ x: ${getal(p.x)}, top: ${getal(p.top)} }`;
     function toonRaster() {
-        const kant = (k) => [0, 2].map((i) => "            " +
-            punt(albumRasterPositie(`${k}-${i}`)) + ", " + punt(albumRasterPositie(`${k}-${i + 1}`))).join(",\n");
+        const kant = (k) => {
+            const rijen = [];
+            for (let i = 0; i < albumVakken.vakken[k].length; i += 2) {
+                rijen.push("                    " + punt(albumRasterPositie(`${k}-${i}`)) + ", " +
+                    punt(albumRasterPositie(`${k}-${i + 1}`)));
+            }
+            return rijen.join(",\n");
+        };
         rasterVak.textContent =
             `    titel: ${punt(albumRasterPositie("titel"))},\n` +
-            `    maat: ${getal(albumRasterMaat())},\n` +
-            `    vakken: {\n        links: [\n${kant("links")}\n        ],\n` +
-            `        rechts: [\n${kant("rechts")}\n        ]\n    },\n` +
+            `        ${albumIndelingKeuze}: {\n            maat: ${getal(albumRasterMaat())},\n` +
+            `            vakken: {\n                links: [\n${kant("links")}\n                ],\n` +
+            `                rechts: [\n${kant("rechts")}\n                ]\n            }\n        }\n` +
             `    nummers: {\n        links:  ${punt(albumRasterPositie("nummer-links"))},\n` +
             `        rechts: ${punt(albumRasterPositie("nummer-rechts"))}\n    },`;
     }
@@ -12307,7 +12376,7 @@ function initAlbumPaginaAfstel() {
         const opslag = { x: +pos.x.toFixed(2), top: +pos.top.toFixed(2) };
         Object.assign(pos, opslag);
         const opgeslagen = leesAfstelPosities();
-        opgeslagen[`album:raster:${sel.dataset.deel}`] = opslag;
+        opgeslagen[albumRasterSleutel(sel.dataset.deel)] = opslag;
         schrijfAfstelPosities(opgeslagen);
         plaatsAlbumPaginaDeel(sel, pos);
         toon();
@@ -12315,7 +12384,7 @@ function initAlbumPaginaAfstel() {
     function zetMaat(stap) {
         const maat = Math.max(1, +(albumRasterMaat() + stap).toFixed(2));
         const opgeslagen = leesAfstelPosities();
-        opgeslagen["album:raster:maat"] = { maat };
+        opgeslagen[albumRasterSleutel("maat")] = { maat };
         schrijfAfstelPosities(opgeslagen);
         houder.style.setProperty("--maat", maat + "%");
         toon();

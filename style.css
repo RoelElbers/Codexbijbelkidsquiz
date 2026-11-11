@@ -2836,7 +2836,7 @@ body.album-in-beeld #afstel-paneel {
 }
 /* Niet gewonnen: alleen de gouden omlijning (Panini-stijl). */
 .album-vak-kader {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 16 / 9;
     box-sizing: border-box;
     border: calc(var(--game-breedte) * 0.0012) solid #c79a3c;
     border-radius: calc(var(--game-breedte) * 0.002);
@@ -2892,7 +2892,7 @@ body.album-in-beeld #afstel-paneel {
     display: none;
 }
 /* Alleen in de afstelmodus: de vrije vakken van het raster, met hun deel
-   (links-0 … rechts-3) als naam. */
+   (links-0, links-1, … rechts-0, …) als naam. */
 .album-vak-vrij .album-vak-kader {
     border: 2px dashed #36dfff;
 }
@@ -2925,7 +2925,8 @@ body.album-in-beeld #afstel-paneel {
     position: fixed;
     inset: 0;
     z-index: 1001;                  /* boven #album-scherm (1000) */
-    background: #0b1330;            /* het donkerblauw van de albumzaal */
+    /* Geen eigen achtergrond: die is .album-venster-achter, zodat hij bij
+       het uitgroeien van het beeld kan infaden. */
 
     overflow-y: auto;               /* het venster zelf scrollt */
     overscroll-behavior: contain;
@@ -2943,10 +2944,16 @@ body.album-in-beeld #afstel-paneel {
     align-items: center;
     padding-bottom: 56px;
 }
-/* Een blok van schermhoogte met het plaatje in het midden. Op een staand
-   scherm is de breedte de grens; ook dan staat de tekst pas onder de vouw.
-   isolation: de lagen hieronder (z-index) blijven binnen dit blok, zodat het
-   kruisje en het pijltje er altijd boven staan. */
+/* De achtergrond: het donkerblauw van de albumzaal, vast achter alles. */
+.album-venster-achter {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: #0b1330;
+}
+/* Een blok van schermhoogte met het beeld. isolation: de lagen hieronder
+   (z-index) blijven binnen dit blok, zodat het kruisje en het pijltje er
+   altijd boven staan. */
 .album-venster-beeld {
     position: relative;
     isolation: isolate;
@@ -2954,51 +2961,39 @@ body.album-in-beeld #afstel-paneel {
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-/* Zonder brede versie: de zijkanten gevuld met hetzelfde plaatje, vergroot,
-   wazig en donkerder, zodat het plaatje zelf duidelijk vooraan staat. De
-   schaal houdt de vage rand van de blur buiten beeld. */
-.album-venster-achtergrond {
+/* Het doek: 16:9, gecentreerd en zo groot dat het scherm vol is (zoals
+   object-fit: cover). Op een smaller scherm valt iets van de zijkanten weg.
+   Groeit bij openen uit vanuit het vak in het boek (albumVensterOvergang). */
+.album-venster-doek {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: max(100vw, calc(100vh * 16 / 9));
+    width: max(100vw, calc(100dvh * 16 / 9));
+    aspect-ratio: 16 / 9;
+    margin-left: calc(max(100vw, calc(100vh * 16 / 9)) / -2);
+    margin-left: calc(max(100vw, calc(100dvh * 16 / 9)) / -2);
+    margin-top: calc(max(100vw, calc(100vh * 16 / 9)) * -9 / 32);
+    margin-top: calc(max(100vw, calc(100dvh * 16 / 9)) * -9 / 32);
+}
+/* Onder: de kleine versie uit het boek (al geladen); erover de grote, die pas
+   in beeld komt als hij geladen is (.groot-geladen). Een vierkant plaatje
+   zonder brede versie wordt met cover bijgesneden tot 16:9. Dit is ook de
+   plek van de animatie van later. */
+.album-venster-doek img {
     position: absolute;
     inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: blur(28px) brightness(0.45);
-    transform: scale(1.15);
-}
-.album-venster-plaatje {
-    position: relative;
-    z-index: 1;
     display: block;
-    box-sizing: border-box;
-    width: min(100vh, 100vw);
-    width: min(100dvh, 100vw);
-    aspect-ratio: 1 / 1;
-    height: auto;
-    object-fit: cover;
-    border: 2px solid #c99d3e;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
-}
-/* Met brede versie (16:9): vult het hele scherm, gecentreerd. Tussen 1:1 en
-   16:9 valt hooguit iets van de zijkanten weg, nooit iets van het vierkante
-   midden. Komt pas in beeld als hij geladen is (.breed-geladen). Dit is ook
-   de plek van de animatie van later. */
-.album-venster-breed {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+}
+.album-venster-groot {
     opacity: 0;
     transition: opacity 0.25s ease;
 }
-.album-venster.breed-geladen .album-venster-breed {
+.album-venster.groot-geladen .album-venster-groot {
     opacity: 1;
 }
 .album-venster-tekstdeel {

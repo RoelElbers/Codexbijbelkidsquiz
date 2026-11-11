@@ -33,7 +33,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=440">
+    <link rel="stylesheet" href="style.css?v=441">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -818,22 +818,25 @@
              Gaat open door op een gewonnen plaatje in het open boek te klikken
              (openAlbumVenster in script.js), die het vult uit
              albumHoofdstukken. Naar het voorbeeld van het avatar-detailvenster.
-             Sluiten kan met het kruisje, met Escape, met een klik naast het
-             plaatje (klikInAlbumVenster) en met de terug-knop. -->
+             Het beeld groeit uit vanuit zijn vak in het boek
+             (albumVensterOvergang). Sluiten kan met het kruisje, met Escape,
+             met een klik naast het beeld (klikInAlbumVenster) en met de
+             terug-knop. -->
         <div id="album-venster" class="album-venster" style="display: none;"
              tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="album-venster-naam"
              onclick="klikInAlbumVenster(event)">
+            <div class="album-venster-achter" aria-hidden="true"></div>
             <button type="button" class="album-venster-sluit" aria-label="Sluiten"
                     onclick="sluitAlbumVenster()">&times;</button>
             <div class="album-venster-paneel">
-                <!-- Zonder brede versie: het vierkante plaatje op een vergrote,
-                     wazige kopie van zichzelf. Met brede versie (breed): die
-                     ligt erover en vult het scherm; later ook de plek van de
+                <!-- Het doek (16:9, bedekt het scherm): eerst de kleine versie
+                     uit het boek, daarover de grote. Later ook de plek van de
                      animatie. -->
                 <div class="album-venster-beeld">
-                    <img class="album-venster-achtergrond" src="" alt="" aria-hidden="true" draggable="false">
-                    <img id="album-venster-plaatje" class="album-venster-plaatje" src="" alt="" draggable="false">
-                    <img id="album-venster-breed" class="album-venster-breed" src="" alt="" aria-hidden="true" draggable="false" hidden>
+                    <div class="album-venster-doek">
+                        <img class="album-venster-klein" src="" alt="" aria-hidden="true" draggable="false">
+                        <img id="album-venster-plaatje" class="album-venster-groot" src="" alt="" draggable="false">
+                    </div>
                 </div>
                 <div class="album-venster-tekstdeel">
                     <h2 id="album-venster-naam" class="album-venster-naam"></h2>
@@ -917,9 +920,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=440"></script>
-    <script src="ontdekken-inhoud.js?v=440"></script>
-    <script src="script.js?v=440"></script>
+    <script src="lang/nl.js?v=441"></script>
+    <script src="ontdekken-inhoud.js?v=441"></script>
+    <script src="script.js?v=441"></script>
 
 </body>
 

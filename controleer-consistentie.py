@@ -1387,6 +1387,19 @@ def controle_album(bron):
             if not os.path.isfile(os.path.join(ALBUM_MAP, *bestand.split("/"))):
                 probleem("albumplaatje '%s' (%s): bestand images/album/%s bestaat niet"
                          % (pid, hid, bestand))
+            # Het brede beeld en zijn kleine versie (tools/album-klein.py): het
+            # boek leidt het pad van de kleine versie af uit breed.
+            breed = plaatje.get("breed")
+            if breed:
+                klein = re.sub(r"^plaatjes-breed/", "plaatjes-breed-klein/", breed)
+                for pad, wat in ((breed, "brede bestand"), (klein, "kleine versie")):
+                    if pad == breed and not breed.startswith("plaatjes-breed/"):
+                        probleem("albumplaatje '%s' (%s): breed '%s' staat niet in plaatjes-breed/"
+                                 % (pid, hid, breed))
+                    elif not os.path.isfile(os.path.join(ALBUM_MAP, *pad.split("/"))):
+                        probleem("albumplaatje '%s' (%s): %s images/album/%s bestaat niet%s"
+                                 % (pid, hid, wat, pad,
+                                    " (draai tools/album-klein.py)" if pad == klein else ""))
 
     for pid, waar in plekken.items():
         if len(waar) > 1:
@@ -1415,7 +1428,8 @@ def controle_album(bron):
 
     info("totaal: %d hoofdstukken, %d plaatjes, %d BO-paren" % (len(hoofdstukken), aantal, paren))
     if len(problemen) == al_problemen and len(waarschuwingen) == al_waarschuwingen:
-        ok("elk albumbestand bestaat, elke id is uniek en elk paar vult een eigen rij.")
+        ok("elk albumbestand bestaat (ook de brede en hun kleine versies), elke id is uniek "
+           "en elk paar vult een eigen rij.")
 
 
 # ---------------------------------------------------------------------------
