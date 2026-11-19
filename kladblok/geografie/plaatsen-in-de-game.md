@@ -14,23 +14,22 @@ scheidingsteken, opent zo in Excel).
   Verborgen patronen en Verborgen Schat (niet het veld `bijbelplaats`).
 - **kerken\*.html**: de negen kerkpagina's, alleen de zichtbare tekst.
 
-Gezocht is op alle namen uit de vier kolommen van het register, tabblad
-Register, ontdubbeld, als heel woord. Deze inventaris is gemaakt met de
-werkversie (v1, `BijbelKidsQuiz_NT_geografisch_register_werkversie.xlsx`, nu
-alleen nog in de git-geschiedenis). Het huidige register in deze map is
-`BijbelKidsQuiz_NT_geografisch_register_v2.xlsx`. Namen van meer woorden gaan voor: "meer van
+Gezocht is op alle namen uit de vier kolommen van het register
+(`BijbelKidsQuiz_NT_geografisch_register_v2.xlsx`, tabblad Register, 184
+rijen), ontdubbeld, als heel woord. Een eerdere telling met de werkversie (v1,
+183 rijen) staat in de git-geschiedenis. Namen van meer woorden gaan voor: "meer van
 Galilea" telt niet ook nog als "Galilea", "Caesarea Filippi" niet ook als
 "Caesarea" en "Filippi". Bijbelboeken (Romeinen, Efeziërs, Filippenzen …)
 tellen niet mee. De niveaus heten in de CSV brons, zilver en goud.
 
 ## Hoeveel plaatsen
 
-**79 plaatsen uit het register** komen in de game voor (van de 183), samen
-**673 vermeldingen**: 482 in de vragen, 175 in Ontdekken en 16 op de
+**80 plaatsen uit het register** komen in de game voor (van de 184), samen
+**674 vermeldingen**: 483 in de vragen, 175 in Ontdekken en 16 op de
 kerkpagina's.
 
-Daarnaast staan er **48 plaatsnamen in de game die niet in het register
-staan** (120 vermeldingen), zie onder.
+Daarnaast staan er **47 plaatsnamen in de game die niet in het register
+staan** (119 vermeldingen), zie onder.
 
 Vier namen zijn niet aan één registerrij te koppelen, omdat het register ze
 splitst: **Antiochië** (Syrië of Pisidië), **Babylon** (historisch, 1 Petrus
@@ -59,10 +58,10 @@ Kanttekeningen bij de telling:
 - **Rome** staat ook op de kerkpagina's als zetel van de paus (7 keer).
 - **Myra** staat er één keer in, alleen bij Sint-Nicolaas (woordenboek), niet
   bij een gebeurtenis uit het Nieuwe Testament.
-- 15 plaatsen komen maar één keer voor, onder meer Berea, Troas, Lydda,
-  Siloam, Betesda en Syrië.
+- 16 plaatsen komen maar één keer voor, onder meer Berea, Troas, Lydda,
+  Siloam, Betesda, Salem en Syrië.
 - Zeven plaatsen staan alleen in Ontdekken of op de kerkpagina's, niet in een
-  vraag: Myra, Kanaän, Idumea, Kenchreeën, Tyatira, Filadelfia en Sardis.
+  vraag: Myra, Kanaän, Idumea, Kenchreeën, Tyatira, Filadelfia en Sardes.
 
 ## Spellingen die afwijken
 
@@ -70,22 +69,21 @@ Vergeleken met de kolommen NBV21, Willibrord 1995 en HSV in het register.
 Let op: het register is een werkversie, de spellingen daarin zijn nog niet
 gecontroleerd.
 
-**Afwijkend van NBV21:**
+**Afwijkend van NBV21:** geen. Twee opmerkingen:
 
-- **Sardis** — NBV21 en Willibrord: Sardes; alleen de HSV heeft Sardis.
-  Staat één keer in de game, in Ontdekken → Verborgen Schat → De zeven
-  gemeenten, in een rijtje waarin de andere zes namen wél de NBV21-vorm
-  hebben (Tyatira, niet Thyatira).
-  Sardis is op 19 november 2026 gelijkgetrokken naar Sardes (commit fa7c71b).
-- **Dekapolis** — NBV21: Decapolis; Willibrord en HSV: Dekapolis.
 - **Gerizim** — het register heeft geen spelling in NBV21, Willibrord of HSV:
   daar staat "deze berg" (Johannes 4:20). De naam komt in de game wel voor
   (2 keer).
+- **Dekapolis** — de game volgt hier het register: Dekapolis in alle drie de
+  kolommen. Let op: de NBV21-spelling in v2 komt van ChatGPT; in v1 stond
+  daar nog Decapolis. Roel heeft alleen de Willibrord-spelling zelf
+  nagekeken. Of de NBV21 Dekapolis of Decapolis heeft, is dus
+  nog niet bevestigd.
 
 **Afwijkend van alleen de HSV** (de game volgt hier NBV21 en Willibrord):
-Betanië, Betesda, Betlehem, Getsemane, Golgota, Kafarnaüm, Korinte, Lystra,
-Malta, Nazaret, Nineve, Pergamum, Tessalonica, Tyatira, Arimatea en meer van
-Galilea / Tiberias / Gennesaret (HSV: "zee van").
+Arimatea, Betanië, Betesda, Betlehem, Getsemane, Golgota, Kafarnaüm, Korinte,
+Lystra, Malta, Nazaret, Nineve, Pergamum, Sardes, Tessalonica, Tyatira en meer
+van Galilea / Tiberias / Gennesaret (HSV: "zee van").
 
 **Twee spellingen van dezelfde plaats in de game zelf:** niet gevonden. Wel
 staan er voor een paar plaatsen **verschillende namen** in de game:
@@ -109,7 +107,7 @@ volledige.
 Dode Zee (16), Romeinse Rijk (16, een rijk, geen plaats in strikte zin),
 Klein-Azië (6), Middellandse Zee (5), Babylonië (4), Hermon (4), Berseba (3),
 Zoutzee (2), Kinneret (2), Tabor (2), Perzië (2), Dan (3, "van Dan tot
-Berseba"), Hebron (1), Salem (1), Jafo (1), Gerasenen (1, hoort bij de
+Berseba"), Hebron (1), Jafo (1), Gerasenen (1, hoort bij de
 registerrij Gerasa), Marsheuvel (1), burcht Antonia (2), Stoa (1, in Athene),
 Eden (1, "het nieuwe Eden"), Olympia (1), Zwarte Zee (1), Gallië (1),
 Libanon (2).
@@ -121,5 +119,6 @@ Australië, Oeganda, Verenigde Staten, Chicago, Peru, Vaticaanstad,
 Sint-Pietersplein, Sixtijnse Kapel, Ghana, Suriname, Indonesië (elk 1).
 
 Voor het register zijn vooral de bijbelse kandidaten interessant: Dode Zee,
-Middellandse Zee, Klein-Azië, Hermon, Tabor, Berseba en Dan, Hebron en Salem
-komen in de vragen voor, maar hebben geen registerrij.
+Middellandse Zee, Klein-Azië, Hermon, Tabor, Berseba en Dan en Hebron komen
+in de vragen voor, maar hebben geen registerrij. (Salem stond hier eerst ook;
+die heeft in v2 een eigen rij.)
