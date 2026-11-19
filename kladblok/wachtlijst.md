@@ -34,11 +34,6 @@ elk antwoord herhaald hoeft te worden.*
 
 ## Bouw en gedrag van het spel
 
-- **Lege rubriek in de Ontdekken-hub.** "Waar gebeurde het" heeft
-  `onderwerpen: []` (`script.js` r. 8654). De knop staat er wel en is niet
-  vergrendeld, dus hij leidt naar een leeg lijstscherm. Hij hoort vergrendeld
-  te zijn zolang de rubriek leeg is. ("Wie is wie" is sinds 26-09 gevuld met
-  Tempel en synagoge.)
 - **Ontdekken-hub opnieuw indelen: Ontdekken → rubriek → onderwerp →
   artikel.** De eerste twee lagen bestaan al (`ontdekRubrieken` met
   `onderwerpen[]`); wat ontbreekt is een artikellaag met eigen config, zoals
@@ -50,9 +45,9 @@ elk antwoord herhaald hoeft te worden.*
   ("Wie is wie", niet "De twaalf apostelen"), zodat één artikel al genoeg is
   en het menu niet onaf lijkt. Eerste vulling: artikel "Jakobus de
   Rechtvaardige" in de rubriek Wie is wie, onderwerp apostelen; tekst staat in
-  de chat van 18 september 2026. Raakt twee bestaande punten: het punt
-  hierboven over lege rubrieken en het punt onderaan over eigen webadressen
-  (de artikel-`id` kan meteen als slug voor een latere URL dienen).
+  de chat van 18 september 2026. Raakt het punt onderaan over eigen
+  webadressen (de artikel-`id` kan meteen als slug voor een latere URL
+  dienen).
 - **Aanhalingstekens in antwoorden gelijktrekken binnen een pool.** Bij Brieven
   van Johannes brons staan bij vraag 8 alle vier de antwoorden tussen enkele
   aanhalingstekens ('Mijn kinderen' enz.), terwijl vraag 7 ze alleen om één

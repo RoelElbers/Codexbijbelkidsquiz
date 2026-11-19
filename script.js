@@ -9020,7 +9020,12 @@ const ontdekRubrieken = [
           { id: "wie-beroepen", naam: "Beroepen en werk", type: "lexicon", inhoud: ONTDEK_WIE_BEROEPEN },
           { id: "wie-huishouden", naam: "Huishouden en dienst", type: "lexicon", inhoud: ONTDEK_WIE_HUISHOUDEN }
       ] },
-    { id: "waar", naam: "Waar gebeurde het", onderwerpen: [] },
+    // Op slot zolang de rubriek leeg is: de knop staat er, maar opent niets.
+    // Komen er onderwerpen in, haal dan slot en slotHint weg.
+    { id: "waar", naam: "Waar gebeurde het",
+      slot: () => false,
+      slotHint: "Binnenkort",
+      onderwerpen: [] },
 
     { id: "hoe", naam: "Hoe leefden ze toen",
       inleiding: ONTDEK_HOE_INLEIDING,
