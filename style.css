@@ -1,9 +1,10 @@
 /* © 2026 Bijbelkids Quiz (bijbelkidsquiz.nl). Vrij te gebruiken voor les, catechese en Bijbelgroep; zie auteursrecht.html. Alle overige rechten voorbehouden. */
 
-/* Kleuren gesampled uit het geschilderde blauwe muzieknootje-knopje rechtsboven
-   in images/startschermzonderwolken.webp (knop-center ~1582,55; diameter ~85px).
-   Hier centraal gezet zodat de fullscreen-knop dezelfde familie deelt en de
-   tinten later bij te stellen zijn zonder in de PNG te hoeven meten. */
+/* Kleuren van de fullscreen-knop. Ooit gesampled uit het geschilderde blauwe
+   muzieknootje-embleem rechtsboven in de startplaat (center ~1582,55; diameter
+   ~85px). Dat embleem is op 19 nov 2026 uit de plaat gehaald (zie
+   tools/embleem_weg.py); de tinten zijn gebleven en staan hier vast, los van
+   de plaat. --knop-nootje is het goud van het icoon. */
 :root {
     --knop-blauw-licht: #005EC3;   /* glans bovenin het bolvlak */
     --knop-blauw-donker: #002155;  /* diep navy in het onderste deel */
@@ -57,8 +58,12 @@ body {
 
     /* ?v=N hier is de PLATEN-teller met een eigen ritme: alleen omhoog als deze
        plaat echt is vervangen, en nooit samen met de teller van style.css /
-       lang/nl.js / script.js. Volledige toelichting in index.html <head>. */
-    background-image: url("images/startschermzonderwolken.webp?v=2");
+       lang/nl.js / script.js. Volledige toelichting in index.html <head>.
+       Het muzieknootje-embleem rechtsboven is uit deze plaat gehaald
+       (tools/embleem_weg.py). Wordt de plaat ooit opnieuw geëxporteerd uit een
+       oud bronbestand, dan komt het nootje terug: daarna het script opnieuw
+       draaien. */
+    background-image: url("images/startschermzonderwolken.webp?v=3");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -222,10 +227,11 @@ button:hover {
 
     padding: 0;
 
-    /* Overschrijft de globale button{}-stijl (bruin/goud) met de tinten die uit
-       het geschilderde muzieknootje-knopje zijn gesampled, zodat de twee knoppen
-       één familie vormen: blauw bolvlak, gouden ring, goud icoon. De gouden glow
-       (box-shadow) erft de knop bewust van button{} — dezelfde verhouding. */
+    /* Overschrijft de globale button{}-stijl (bruin/goud) met de vaste
+       knoptinten uit :root: blauw bolvlak, gouden ring, goud icoon. Ze komen
+       van het geschilderde muzieknootje-embleem dat vroeger rechtsboven in de
+       startplaat stond (nu weg). De gouden glow (box-shadow) erft de knop
+       bewust van button{} — dezelfde verhouding. */
     background: linear-gradient(180deg, var(--knop-blauw-licht), var(--knop-blauw-donker));
     border: 2px solid var(--knop-goud);
     color: var(--knop-nootje);
@@ -532,7 +538,7 @@ height: 22%;
     /* GEEN fade-masker meer. De afscherming gebeurt nu door de voorgrondlaag
        (.voorgrond, z-index 3): dat is dezelfde scène met alléén de lucht
        weggesneden (transparant). Wolken driften dus over de hele hemel — óók
-       achter het logo, de banieren, de prijzenkast en het muzieknootje — maar
+       achter het logo, de banieren en de prijzenkast — maar
        worden door de voorgrond afgedekt zodra ze buiten de open lucht komen.
        Zo bedekken ze nooit architectuur of UI, en is de rechterkant niet langer
        een dode hoek. */

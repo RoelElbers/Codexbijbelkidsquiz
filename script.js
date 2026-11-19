@@ -14038,7 +14038,7 @@ function bouwWolkenLaag(config, prefix) {
     // ?v=N hieronder is de PLATEN-teller met een eigen ritme: alleen omhoog als
     // de plaat echt is vervangen, nooit samen met de teller van style.css /
     // lang/nl.js / script.js. Volledige toelichting in index.html <head>.
-    bg.src = "images/startschermzonderwolken.webp?v=2";   // avondhemel (scherm 1's scène)
+    bg.src = "images/startschermzonderwolken.webp?v=3";   // avondhemel (scherm 1's scène)
     bg.alt = "";
 
     const laag = bouwWolkenLaag(WOLKEN, "s2-");

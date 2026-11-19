@@ -178,7 +178,7 @@
             // style.css. Ze worden hier meteen opgehaald, nog voor style.css
             // binnen is.
             wachtOpBestanden: [
-                "images/startschermzonderwolken.webp?v=2"      // #game-container (style.css)
+                "images/startschermzonderwolken.webp?v=3"      // #game-container (style.css)
             ],
             // <img>-elementen van het startscherm. Ze tellen mee zodra ze in de
             // pagina verschijnen (ook als script.js ze maakt, zoals de wolken).
@@ -349,7 +349,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=445">
+    <link rel="stylesheet" href="style.css?v=446">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -393,13 +393,23 @@
          script.js, deze bij een wijziging in images/Avatars/. Laat ze niet
          meeliften met elkaar. -->
 
-    <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=2.
-         Vier verwijzingen dragen samen dit eigen nummer:
+    <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=3.
+         Vijf verwijzingen dragen samen dit eigen nummer:
              style.css : 61     startschermzonderwolken.webp
+             index.html: 181    startschermzonderwolken.webp               (laadscherm, wachtOpBestanden)
              index.html: 143    voorgrond_transparante_lucht.webp
              script.js : 14109  startschermzonderwolken.webp               (scherm 2)
-             script.js : 14116  voorgrond_scherm2_transparante_lucht.webp  (scherm 2)
+             script.js : 14116  voorgrond_scherm2_transparante_lucht.webp  (scherm 2, nog ?v=2)
          (Regelnummers schuiven; zoek desnoods op "?v=" in die drie bestanden.)
+         Dezelfde plaat draagt overal precies dezelfde URL, anders laadt de
+         browser hem dubbel. Bij ?v=3 (19 nov 2026) zijn alleen
+         startschermzonderwolken.webp en voorgrond_transparante_lucht.webp
+         vervangen; voorgrond_scherm2 is niet veranderd en bleef op ?v=2.
+
+         Het muzieknootje-embleem rechtsboven is uit die twee platen gehaald
+         met tools/embleem_weg.py. Worden ze ooit opnieuw geëxporteerd uit een
+         oud bronbestand, dan komt het nootje terug: draai het script dan
+         opnieuw (en hoog deze teller op).
 
          Hoog dit nummer ALLEEN op wanneer een van die platen echt is vervangen —
          de banier overgeschilderd, de scène opnieuw gerenderd. Nooit meeliften
@@ -464,11 +474,13 @@
              maar met de lucht weggesneden (transparant). Ligt boven de
              driftende wolkenlaag (zie script.js / .wolken-laag) en dekt die af
              behalve waar lucht is, zodat de wolken áchter logo, banieren,
-             prijzenkast en muzieknootje door lijken te drijven. Puur decoratief.
+             prijzenkast door lijken te drijven. Puur decoratief.
              Stacking via z-index in style.css (.voorgrond = 3). -->
         <!-- ?v=N hier is de PLATEN-teller, niet die van style.css/script.js —
-             zie de toelichting in de <head>. -->
-        <img class="voorgrond" src="images/voorgrond_transparante_lucht.webp?v=2" alt="" aria-hidden="true">
+             zie de toelichting in de <head>. Het muzieknootje-embleem
+             rechtsboven is uit deze plaat gehaald (tools/embleem_weg.py); een
+             nieuwe export uit een oud bronbestand brengt het terug. -->
+        <img class="voorgrond" src="images/voorgrond_transparante_lucht.webp?v=3" alt="" aria-hidden="true">
 
         <!-- Twee iconen in dezelfde knop; de CSS toont er precies één per state
              (expand = ga naar fullscreen, collapse = verlaat fullscreen). De
@@ -1235,9 +1247,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=445"></script>
-    <script src="ontdekken-inhoud.js?v=445"></script>
-    <script src="script.js?v=445"></script>
+    <script src="lang/nl.js?v=446"></script>
+    <script src="ontdekken-inhoud.js?v=446"></script>
+    <script src="script.js?v=446"></script>
 
 </body>
 

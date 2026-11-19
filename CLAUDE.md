@@ -132,6 +132,48 @@ Zoek op `images/album/` in `index.html` en `style.css` en op `ALBUM_VERSIE` in
 `script.js`; dat vindt ze alle acht (plus de toelichtingen in commentaar).
 De toelichting staat ook boven in `index.html`, naast die van de avatars.
 
+### Platenteller — de scèneplaten van het startscherm
+
+De grote scèneplaten van het startscherm (`startschermzonderwolken.webp`,
+`voorgrond_transparante_lucht.webp` en `voorgrond_scherm2_transparante_lucht.webp`
+in `images/`) dragen ook een **eigen `?v=`-teller**, los van de cache-buster,
+de avatarteller en de albumteller.
+
+| teller | gaat omhoog zodra |
+| --- | --- |
+| **platenteller** | **een van de scèneplaten echt wordt vervangen** |
+
+Zelfde reden als bij de avatars: een nieuwe plaat houdt zijn bestandsnaam.
+De platen zijn groot (samen ruim 1 MB), dus nooit meeliften met een andere
+teller: een onnodige ophoging laat elke bezoeker ze opnieuw downloaden.
+
+**Per plaat, niet per groep.** Een plaat die niet verandert, houdt zijn eigen
+nummer. Bij `?v=3` (19 nov 2026) zijn alleen `startschermzonderwolken.webp`
+en `voorgrond_transparante_lucht.webp` vervangen;
+`voorgrond_scherm2_transparante_lucht.webp` bleef op `?v=2`. Dezelfde plaat
+draagt wél overal precies dezelfde URL, anders laadt de browser hem dubbel.
+
+**Vijf plekken:**
+
+```
+style.css    startschermzonderwolken.webp (#game-container)
+index.html   startschermzonderwolken.webp (wachtOpBestanden in het laadscherm)
+index.html   voorgrond_transparante_lucht.webp (img.voorgrond)
+script.js    startschermzonderwolken.webp (scherm 2, de avondhemel)
+script.js    voorgrond_scherm2_transparante_lucht.webp (scherm 2)
+```
+
+Zoek op de bestandsnamen in `index.html`, `style.css` en `script.js`; dat
+vindt ze alle vijf (plus de toelichtingen in commentaar). De toelichting staat
+ook boven in `index.html` (DERDE, LOSSE TELLER).
+
+**Het muzieknootje-embleem is eruit gehaald.** Het geschilderde embleem
+rechtsboven is met `tools/embleem_weg.py` uit `startschermzonderwolken.webp`
+en `voorgrond_transparante_lucht.webp` gehaald. Wordt de startplaat ooit
+opnieuw geëxporteerd uit een oud bronbestand, dan komt het nootje terug: draai
+dat script dan opnieuw op de nieuwe plaat (één keer, op de plaat mét embleem)
+en hoog de platenteller op.
+
 ## Vervangingen in `script.js`
 
 Tekstvervangingen in `script.js` gaan via een **Python-script met een
