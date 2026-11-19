@@ -14,9 +14,11 @@ scheidingsteken, opent zo in Excel).
   Verborgen patronen en Verborgen Schat (niet het veld `bijbelplaats`).
 - **kerken\*.html**: de negen kerkpagina's, alleen de zichtbare tekst.
 
-Gezocht is op alle namen uit de vier kolommen van het register
-(`BijbelKidsQuiz_NT_geografisch_register_werkversie.xlsx`, tabblad Register),
-ontdubbeld, als heel woord. Namen van meer woorden gaan voor: "meer van
+Gezocht is op alle namen uit de vier kolommen van het register, tabblad
+Register, ontdubbeld, als heel woord. Deze inventaris is gemaakt met de
+werkversie (v1, `BijbelKidsQuiz_NT_geografisch_register_werkversie.xlsx`, nu
+alleen nog in de git-geschiedenis). Het huidige register in deze map is
+`BijbelKidsQuiz_NT_geografisch_register_v2.xlsx`. Namen van meer woorden gaan voor: "meer van
 Galilea" telt niet ook nog als "Galilea", "Caesarea Filippi" niet ook als
 "Caesarea" en "Filippi". Bijbelboeken (Romeinen, Efeziërs, Filippenzen …)
 tellen niet mee. De niveaus heten in de CSV brons, zilver en goud.
