@@ -82,13 +82,6 @@ elk antwoord herhaald hoeft te worden.*
   staand) valt de ronde fullscreen-knop rechtsboven over het begin van de tekst
   in het naslagvak van Ontdekken. Bestond al vóór Wie is wie. Meenemen bij het
   opnieuw indelen van het menu / de tabletondersteuning.
-- **Donatiezone van de lantaarn weg zodra `PLAKBOEK_ACTIEF` op `true` gaat.**
-  Met de plakboekvlag is de lantaarn linksonder het Bijbelkidsalbum; zonder
-  vlag is hij nog de donatielantaarn (`.donatie-zone`, `initDonatieLantaarn`
-  in `script.js`). Gaat het album definitief live, dan verdwijnt de
-  donatiezone van de lantaarn. Doneren gaat dan alleen via Instellingen →
-  Steun de Bijbelkidsquiz en via de pagina Voor ouders en begeleiders.
-  Bewuste keuze: geen geldvraag op het scherm van het kind, ook geen pop-up.
 - **Bijbelkidsalbum: plek van het opschrift onder de lantaarn.** Achtergrond
   en boek van het albumscherm zijn definitief (`images/album/`). Alleen de
   plek van het opschrift "Bijbelkidsalbum" onder de lantaarn
@@ -258,7 +251,6 @@ elk antwoord herhaald hoeft te worden.*
 - De donatiepagina (steunen.html) en bedankt-donatie.html.
 - De metgezellenvragen (Hemeltrap-pool), als die nog niet langs
   Magisterium/ChatGPT zijn gegaan.
-- Controle of er ergens nog "Gevorderd" staat naast "Advanced".
 
 Al gedaan: Ontdekken (Woordenboek, Wie is wie, Hoe leefden ze toen, Verborgen
 patronen, Verborgen Schat), de kerkenpagina's en de avatarteksten, afgerond 28

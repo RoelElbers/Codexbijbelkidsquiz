@@ -349,7 +349,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=444">
+    <link rel="stylesheet" href="style.css?v=445">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -562,13 +562,14 @@
              Zelfde patroon als .bijbeltraining-zone. -->
         <div class="instellingen-zone" onclick="openInstellingen()"></div>
 
-        <!-- Donatie-lantaarn (linksonder): onzichtbare klik-zone over de
-             geschilderde lantaarn, met warme hover-gloed (CSS). Klikgedrag zit in
-             script.js (initDonatieLantaarn), gestuurd door DONATIE_ACTIEF/DONATIE_URL.
-             Nog niet live: klik toont voorlopig een in-stijl melding. -->
-        <div class="donatie-zone" id="donatie-zone" role="button" tabindex="0"
-             aria-label="Steun dit project" title="Steun dit project"></div>
-        <div class="donatie-melding" id="donatie-melding" aria-live="polite"></div>
+        <!-- Lantaarn (linksonder): onzichtbare zone over de geschilderde
+             lantaarn. Zonder plakboekAan doet hij niets (geen gloed, geen
+             cursor, geen klik); doneren gaat via Instellingen → Steun de
+             Bijbelkidsquiz, bewust geen geldvraag op het scherm van het kind.
+             Met plakboekAan maakt initAlbumLantaarnZone (script.js) er een knop
+             van die het Bijbelkidsalbum opent. De klassenaam stamt nog uit de
+             tijd van de donatielantaarn. -->
+        <div class="donatie-zone" id="donatie-zone"></div>
 
         <!-- ===== Schermnavigatie: Evangeliën (scherm 1, dit startscherm) <->
              overige NT-boeken (scherm 2). Beide randpijlen én scherm 2 zitten
@@ -707,7 +708,7 @@
                     <label for="speler-naam-invoer" class="speler-naam-label">Naam:</label>
                     <input id="speler-naam-invoer" class="speler-naam-invoer"
                            type="text" autocomplete="off" maxlength="32"
-                           placeholder="Typ je volledige naam">
+                           placeholder="Typ je voornaam">
                 </div>
 
                 <button type="button" class="answer-btn niveau-btn niveau-expert" onclick="bevestigNieuwSpel()">Start</button>
@@ -995,8 +996,8 @@
              vulSteunScherm() in script.js bouwt #steun-inhoud daaruit op, zodat
              de teksten later vertaalbaar zijn. De teksten in de HTML hieronder
              zijn alleen een vangnet als het taalbestand niet laadt.
-             Terug staat boven én onder: de voortgangslijst groeit elke maand,
-             en dan is alleen een knop onderaan onhandig. -->
+             Terug staat boven én onder: het scherm is langer dan één
+             schermhoogte, en dan is alleen een knop onderaan onhandig. -->
         <div id="steun-scherm" class="quiz-overlay" style="display: none;">
             <div class="quiz-box naslag-box">
                 <h2 class="quiz-title" id="steun-titel">Steun de Bijbelkidsquiz</h2>
@@ -1007,23 +1008,6 @@
                 <p class="naslag-bron" id="steun-kvk">KVK: 42107479</p>
 
                 <button id="steun-terug-onder" class="answer-btn niveau-terug" onclick="sluitSteun()">Terug</button>
-            </div>
-        </div>
-
-        <!-- Alle updates: het volledige voortgangsoverzicht, geopend vanaf de
-             link "Bekijk alle updates" op het steunscherm. Zelfde leesscherm-
-             opzet als #steun-scherm; Terug keert terug naar Steun, niet naar
-             Instellingen. Inhoud komt uit NL.updates (lang/nl.js) via
-             vulUpdatesScherm(); de teksten hieronder zijn alleen een vangnet
-             als het taalbestand niet laadt. -->
-        <div id="updates-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box naslag-box">
-                <h2 class="quiz-title" id="updates-titel">Waar we nu staan</h2>
-                <button id="updates-terug-boven" class="answer-btn niveau-terug naslag-terug" onclick="sluitUpdates()">← Terug</button>
-
-                <div id="updates-inhoud"></div>
-
-                <button id="updates-terug-onder" class="answer-btn niveau-terug" onclick="sluitUpdates()">Terug</button>
             </div>
         </div>
 
@@ -1251,9 +1235,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=444"></script>
-    <script src="ontdekken-inhoud.js?v=444"></script>
-    <script src="script.js?v=444"></script>
+    <script src="lang/nl.js?v=445"></script>
+    <script src="ontdekken-inhoud.js?v=445"></script>
+    <script src="script.js?v=445"></script>
 
 </body>
 

@@ -2337,10 +2337,12 @@ body.album-in-beeld #afstel-paneel {
 }
 
 /* =========================
-   DONATIE-LANTAARN (linksonder)
-   Onzichtbare klik-zone over de geschilderde lantaarn, met een warme hover-gloed
-   in dezelfde tint als de fakkelgloed, zodat de lantaarn klikbaar voelt. Werkt
-   los van DONATIE_ACTIEF (voelt altijd klikbaar); het klikgedrag zit in script.js.
+   LANTAARN (linksonder)
+   Onzichtbare zone over de geschilderde lantaarn. Zonder plakboekAan doet hij
+   niets: geen cursor, geen gloed, klikken vallen erdoorheen. Met plakboekAan
+   zet initAlbumLantaarnZone (script.js) .album-aan erop: dan is het de knop
+   naar het Bijbelkidsalbum, met een warme hover-gloed in de tint van de
+   fakkelgloed. De klassenaam stamt nog uit de tijd van de donatielantaarn.
 ========================= */
 .donatie-zone {
     position: absolute;
@@ -2350,10 +2352,13 @@ body.album-in-beeld #afstel-paneel {
     height: 22%;
 
     background: transparent;
-    cursor: pointer;
     /* Zelfde laag als de menu-zones (boven voorgrond/fakkels), onder de
        quiz-overlays (999) zodat hij tijdens een quiz vanzelf uit gaat. */
     z-index: 100;
+    pointer-events: none;
+}
+.donatie-zone.album-aan {
+    cursor: pointer;
     pointer-events: auto;
 }
 
@@ -2383,48 +2388,15 @@ body.album-in-beeld #afstel-paneel {
     transition: opacity 0.3s ease;
     pointer-events: none;
 }
-.donatie-zone:hover::before,
-.donatie-zone:focus-visible::before {
-    opacity: 1;
-}
-
-/* In-stijl melding bij klik zolang donaties uit staan: een compacte pill-tooltip
-   (donker paneel + gouden rand + gouden cursieve tekst, in de stijl van de
-   naambordjes), net boven de lantaarn. De donkere achtergrond houdt 'm leesbaar
-   boven de drukke, warme vloer. Verschijnt/verdwijnt met een fade. */
-.donatie-melding {
-    position: absolute;
-    left: 1.5%;
-    bottom: 19%;
-    width: 15%;
-    z-index: 101;
-
-    padding: 0.45em 0.7em;
-    background: linear-gradient(180deg, rgba(28, 20, 10, 0.92), rgba(16, 11, 5, 0.92));
-    border: 1px solid rgba(255, 200, 110, 0.45);
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-
-    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
-    font-style: italic;
-    font-size: clamp(0.68rem, 1.25vh, 0.92rem);
-    line-height: 1.3;
-    text-align: center;
-    color: #ffd86b;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
-
-    opacity: 0;
-    transition: opacity 0.25s ease;
-    pointer-events: none;
-}
-.donatie-melding.zichtbaar {
+.donatie-zone.album-aan:hover::before,
+.donatie-zone.album-aan:focus-visible::before {
     opacity: 1;
 }
 
 /* =========================
    BIJBELKIDSALBUM — de lantaarn (plakboek fase 2, alleen met plakboekAan)
    Met plakboekAan opent de lantaarn het album. Het opschrift wordt dan door
-   initDonatieLantaarn in #game-container gezet, net onder de lantaarn. Staat
+   initAlbumLantaarnZone in #game-container gezet, net onder de lantaarn. Staat
    er een ster klaar die het kind nog niet in het album zag, dan krijgt de
    zone .album-nieuw: een warme, rustig pulserende gloed, duidelijk sterker
    dan de gewone flikkering. Zonder vlag bestaan beide niet.

@@ -7,15 +7,6 @@
 // bereikbaar, maar nog niet openbaar aangekondigd.
 const BETA_MODUS = false;
 
-// --- Donatie-lantaarn (linksonder op het startscherm) -----------------------
-// De lantaarn is klikbaar en voelt klikbaar (warme hover-gloed), maar donaties
-// staan nog UIT. Zodra de donatiepagina live is (bunq of Mollie): DONATIE_ACTIEF
-// op true en DONATIE_URL invullen — dat is de enige plek die je hoeft te wijzigen.
-// Uit  -> klik toont een in-stijl melding ("binnenkort mogelijk").
-// Aan  -> klik opent DONATIE_URL in een nieuw tabblad via openTabblad().
-const DONATIE_ACTIEF = false;
-const DONATIE_URL = "";
-
 // --- Plakboek (fase 1: sterren) ---------------------------------------------
 // Zolang dit false is, is het plakboek onzichtbaar en wordt er niets
 // bijgehouden. Testen kan met ?plakboek=aan in de URL, zoals ?afstel=aan.
@@ -7235,11 +7226,10 @@ function updateSchildpuntenWeergave() {
 // AVATAR + SPELERNAAM
 // =========================
 //
-// Vier vaste Bijbelfiguren als avatar. De keuze + volledige naam worden in
+// Vier vaste Bijbelfiguren als avatar. De keuze + voornaam worden in
 // localStorage bewaard, zodat ze tussen sessies behouden blijven. Op het
 // startscherm tonen we de avatar, de figuurnaam (rechts van het portret) en
-// de voornaam van de speler (balk onder de avatar). De volledige naam wordt
-// opgeslagen voor later gebruik in de Schatkamer.
+// de voornaam van de speler (balk onder de avatar).
 
 const avatarNamen = {
     mozes: "Mozes",
@@ -10743,20 +10733,6 @@ function vulSteunScherm() {
 
         (blok.items || []).forEach((item) => doel.appendChild(maakAlinea(item)));
 
-        // Blok met alleen het nieuwste voortgangsbericht + link naar het
-        // volledige overzicht. De lijst zelf staat in NL.updates.
-        if (blok.nieuwsteUpdate) {
-            const lijst = (typeof NL !== "undefined" && NL.updates && NL.updates.items) || [];
-            if (lijst.length) doel.appendChild(maakAlinea(lijst[0]));
-
-            const meer = document.createElement("button");
-            meer.type = "button";
-            meer.className = "tekst-link";
-            meer.textContent = blok.meerLabel || "Bekijk alle updates";
-            meer.onclick = openUpdates;
-            doel.appendChild(meer);
-        }
-
         if (blok.link) {
             // Bewust een <button> met openTabblad() en niet een <a>: knoppen in dit
             // spel erven hun lettertype van de browser, dus een <a> met dezelfde
@@ -10773,8 +10749,7 @@ function vulSteunScherm() {
 
 // Eén tekstregel voor de lees-schermen. Een gewone string wordt een alinea; een
 // item {datum, tekst} krijgt de datum in goud vooraan, zoals een lemma in het
-// woordenboek \u2014 zo leest een groeiende lijst als een tijdlijn. Gedeeld door
-// het steunscherm en het updatescherm, zodat beide er hetzelfde uitzien.
+// woordenboek \u2014 zo leest een groeiende lijst als een tijdlijn.
 function maakAlinea(item) {
     const p = document.createElement("p");
     p.className = "naslag-item";
@@ -10790,48 +10765,6 @@ function maakAlinea(item) {
     return p;
 }
 
-// --- Alle updates (Steun \u2192 Bekijk alle updates) ---------------------------
-// Zelfde patroon als openSteun()/sluitSteun(), maar met het steunscherm als
-// ouder: Terug keert dus terug naar Steun en niet naar Instellingen.
-function openUpdates() {
-    vulUpdatesScherm();
-    document.getElementById("steun-scherm").style.display = "none";
-    document.getElementById("updates-scherm").style.display = "flex";
-    const box = document.querySelector("#updates-scherm .quiz-box");
-    if (box) box.scrollTop = 0;
-}
-
-function sluitUpdates() {
-    document.getElementById("updates-scherm").style.display = "none";
-    document.getElementById("steun-scherm").style.display = "flex";
-}
-
-function vulUpdatesScherm() {
-    const doel = document.getElementById("updates-inhoud");
-    if (!doel) return;
-
-    const t = (typeof NL !== "undefined" && NL.updates) || null;
-    if (!t) return;   // taalbestand niet geladen: HTML-vangnet blijft staan
-
-    doel.innerHTML = "";
-
-    const zetTekst = (id, tekst) => {
-        const el = document.getElementById(id);
-        if (el && tekst) el.textContent = tekst;
-    };
-    zetTekst("updates-titel", t.titel);
-    zetTekst("updates-terug-boven", t.terugBoven);
-    zetTekst("updates-terug-onder", t.terugOnder);
-
-    if (t.intro) {
-        const intro = document.createElement("p");
-        intro.className = "naslag-noot";
-        intro.textContent = t.intro;
-        doel.appendChild(intro);
-    }
-
-    (t.items || []).forEach((item) => doel.appendChild(maakAlinea(item)));
-}
 function wisselGeluid() {
     geluidAan = !geluidAan;
     localStorage.setItem("geluidAan", geluidAan ? "aan" : "uit");
@@ -11441,7 +11374,7 @@ function startPlakboekTest() {
 
 // --- Plakboek, fase 2: de lantaarn en het albumscherm -------------------------
 // Alleen met plakboekAan. De lantaarn linksonder op het startscherm opent dan
-// het Bijbelkidsalbum (in plaats van de donatiemelding; zie initDonatieLantaarn)
+// het Bijbelkidsalbum (zie initAlbumLantaarnZone; zonder vlag doet hij niets)
 // en krijgt het opschrift "Bijbelkidsalbum". Staat er in plakboek_ongezien
 // nog iets, dan licht de lantaarn op (.album-nieuw). Bij het openen van het
 // album telt alles als gezien: de lijst gaat leeg en de gloed uit.
@@ -13709,48 +13642,32 @@ if (BETA_MODUS) {
     }
 }
 
-// --- Donatie-lantaarn: klikgedrag ------------------------------------------
-// De klikzone (.donatie-zone) en de melding (.donatie-melding) staan in de HTML;
-// de hover-gloed zit in de CSS. Hier alleen het klikgedrag, gestuurd door de
-// vlaggen bovenaan. Uit -> in-stijl melding; aan -> DONATIE_URL in nieuwe tab.
-// Met plakboekAan is de lantaarn het Bijbelkidsalbum: een klik opent het
-// album en er komt een opschrift onder (zie fase 2 van het plakboek).
-(function initDonatieLantaarn() {
+// --- Lantaarn linksonder: klikgedrag (alleen met plakboekAan) --------------
+// De zone (.donatie-zone; de naam stamt uit de tijd dat hier gedoneerd kon
+// worden) staat in de HTML. Zonder plakboekAan doet de lantaarn niets: geen
+// gloed, geen handcursor, geen klik. Doneren gaat via Instellingen → Steun de
+// Bijbelkidsquiz; bewust geen geldvraag op het scherm van het kind.
+// Met plakboekAan is de lantaarn het Bijbelkidsalbum: de zone wordt een knop
+// (.album-aan zet in de CSS cursor en gloed aan), een klik opent het album en
+// er komt een opschrift onder (zie fase 2 van het plakboek).
+(function initAlbumLantaarnZone() {
     const zone = document.getElementById("donatie-zone");
-    if (!zone) return;
-    const melding = document.getElementById("donatie-melding");
-    let verbergTimer = null;
+    if (!zone || !plakboekAan) return;
 
-    if (plakboekAan) {
-        const t = (typeof NL !== "undefined" && NL.plakboek) || null;
-        const naam = t ? t.albumNaam : "Bijbelkidsalbum";
-        zone.setAttribute("aria-label", naam);
-        zone.title = naam;
-        const opschrift = document.createElement("div");
-        opschrift.className = "album-opschrift";
-        opschrift.setAttribute("aria-hidden", "true");
-        opschrift.textContent = naam;
-        zone.after(opschrift);
-    }
+    const t = (typeof NL !== "undefined" && NL.plakboek) || null;
+    const naam = t ? t.albumNaam : "Bijbelkidsalbum";
+    zone.classList.add("album-aan");
+    zone.setAttribute("role", "button");
+    zone.tabIndex = 0;
+    zone.setAttribute("aria-label", naam);
+    zone.title = naam;
+    const opschrift = document.createElement("div");
+    opschrift.className = "album-opschrift";
+    opschrift.setAttribute("aria-hidden", "true");
+    opschrift.textContent = naam;
+    zone.after(opschrift);
 
-    function toonMelding(tekst) {
-        if (!melding) return;
-        melding.textContent = tekst;
-        melding.classList.add("zichtbaar");
-        clearTimeout(verbergTimer);
-        verbergTimer = setTimeout(() => melding.classList.remove("zichtbaar"), 3200);
-    }
-
-    function activeer() {
-        if (plakboekAan) {
-            openAlbum();
-        } else if (DONATIE_ACTIEF && DONATIE_URL) {
-            openTabblad(DONATIE_URL);
-        } else {
-            toonMelding("Steun dit project — binnenkort mogelijk!");
-        }
-    }
-
+    const activeer = () => openAlbum();
     zone.addEventListener("click", activeer);
     zone.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") { e.preventDefault(); activeer(); }
