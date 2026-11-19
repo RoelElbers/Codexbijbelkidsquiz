@@ -28,12 +28,328 @@
     <link rel="manifest" href="icons/site.webmanifest">
     <meta name="theme-color" content="#102a5c">
 
+    <!-- ===== LAADSCHERM =====
+         De speler ziet het spel pas als het startscherm volledig klaar is: geen
+         afbeelding die van boven naar beneden wordt ingetekend. Alles staat
+         hier inline (CSS, script, en de overlay als eerste kind van <body>), zodat
+         het werkt voordat style.css en script.js binnen zijn.
+
+         Verloop:
+         - De overlay begint zwart, net als de body. Is alles binnen
+           snelleStartMs (400 ms vanaf het openen van de pagina) klaar, dan
+           verdwijnt hij meteen en is het laadscherm nooit te zien geweest.
+         - Anders verschijnt het laadscherm: donkerblauw, gouden balk en
+           "De poort gaat open…". De balk loopt vol per afbeelding die
+           geladen en gedecodeerd is (img.decode()). Een afbeelding die
+           niet laadt, telt ook als klaar.
+         - Eenmaal zichtbaar blijft hij minstens minZichtbaarMs (600 ms) staan
+           en vervaagt dan in vervaagMs (500 ms). Na vangnetMs (40 s) gaat het
+           spel hoe dan ook open.
+         - Daarna, zonder dat de speler wacht: eerst de avatars van het
+           keuzescherm (data-src) en scherm 2 (via naStartscherm() in
+           script.js), daarna één voor één de Schatkamer.
+
+         Iets toevoegen: zet het in LAADSCHERM hieronder. Een <img> die in
+         index.html of via script.js op het startscherm komt, valt meestal al
+         onder een van de selectors van wachtOpElementen. Een CSS-achtergrond
+         moet als URL in wachtOpBestanden, en dan precies dezelfde URL (met
+         ?v=) als in style.css, anders laadt de browser hem twee keer. -->
+    <style>
+        #laadscherm {
+            position: fixed;
+            inset: 0;
+            z-index: 2147483000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(20px, 4vh, 38px);
+            background: #000;
+            transition: opacity 0.5s ease;
+        }
+        /* De nacht: diepblauw met een warme gloed achter de balk. */
+        #laadscherm::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background:
+                radial-gradient(ellipse 42% 30% at 50% 50%, rgba(255, 190, 90, 0.10), transparent 70%),
+                radial-gradient(ellipse at 50% 45%, #1a3a7a 0%, #102a5c 40%, #081a40 75%, #040c22 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        #laadscherm > * {
+            position: relative;
+            opacity: 0;
+            transition: opacity 0.35s ease 0.1s;
+        }
+        #laadscherm.ls-toon::before,
+        #laadscherm.ls-toon > * { opacity: 1; }
+        #laadscherm.ls-weg { opacity: 0; pointer-events: none; }
+
+        /* Het kader: een spitsboogvormige balk (lancetpunten links en rechts)
+           met een dubbele gouden rand, opgebouwd uit vier geneste lagen met
+           dezelfde vorm. --punt is hoe ver de punt uitsteekt. */
+        .ls-kader {
+            --punt: 24px;
+            position: relative;
+            width: min(560px, 74vw);
+            height: 42px;
+            filter: drop-shadow(0 0 16px rgba(255, 196, 92, 0.30));
+        }
+        .ls-kader > div {
+            position: absolute;
+            clip-path: polygon(0 50%, var(--punt) 0, calc(100% - var(--punt)) 0, 100% 50%, calc(100% - var(--punt)) 100%, var(--punt) 100%);
+        }
+        .ls-rand   { inset: 0; background: linear-gradient(180deg, #fff1c2 0%, #e6b552 30%, #9a6619 62%, #f2cd72 100%); }
+        .ls-donker { inset: 3px 4px; --punt: 22px; background: #0a1838; }
+        .ls-lijn   { inset: 6px 9px; --punt: 19px; background: linear-gradient(180deg, #f7dc8e, #b7832c); }
+        .ls-goot   { inset: 8px 12px; --punt: 17px; background: linear-gradient(180deg, #050d24, #0d1f4a); }
+        .ls-vulling {
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 0%;
+            background: linear-gradient(90deg, #7a4c0c 0%, #d39a2e 35%, #ffd977 75%, #fff4cf 100%);
+            box-shadow: 0 0 14px 2px rgba(255, 214, 120, 0.85);
+            transition: width 0.35s ease-out;
+            overflow: hidden;
+        }
+        /* Warm licht dat over de vulling strijkt. */
+        .ls-vulling::after {
+            content: "";
+            position: absolute;
+            top: 0; bottom: 0;
+            width: 40%;
+            left: -40%;
+            background: linear-gradient(90deg, transparent, rgba(255, 250, 225, 0.75), transparent);
+            animation: ls-glans 1.8s ease-in-out infinite;
+        }
+        @keyframes ls-glans { to { left: 110%; } }
+
+        /* Gotische afwerking: een ruit met een blauwe steen aan beide punten,
+           en een gouden haarlijn die naar buiten wegvloeit. */
+        .ls-kader::before,
+        .ls-kader::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            width: 16px;
+            height: 16px;
+            background:
+                radial-gradient(circle at 45% 40%, #8fb6ff 0 18%, #1d3f9a 34%, transparent 36%),
+                linear-gradient(135deg, #fff1c2, #d9a443 45%, #8c5a14);
+            transform: translateY(-50%) rotate(45deg);
+            box-shadow: 0 0 8px rgba(255, 200, 100, 0.5);
+        }
+        .ls-kader::before { left: -26px; }
+        .ls-kader::after  { right: -26px; }
+        .ls-haar {
+            position: absolute;
+            top: 50%;
+            height: 1px;
+            width: min(90px, 9vw);
+            pointer-events: none;
+        }
+        .ls-haar-links  { right: calc(100% + 34px); background: linear-gradient(270deg, #e6b552, transparent); }
+        .ls-haar-rechts { left: calc(100% + 34px);  background: linear-gradient(90deg, #e6b552, transparent); }
+
+        .ls-tekst {
+            margin: 0;
+            font-family: 'Cinzel', Georgia, 'Times New Roman', serif;
+            font-weight: 700;
+            font-size: clamp(18px, 2.4vw, 30px);
+            letter-spacing: 0.08em;
+            color: #f3d68a;
+            text-shadow: 0 0 14px rgba(255, 190, 80, 0.45), 0 2px 2px rgba(0, 0, 0, 0.6);
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .ls-vulling::after { animation: none; display: none; }
+            .ls-vulling { transition: none; }
+        }
+    </style>
+    <noscript><style>#laadscherm { display: none; }</style></noscript>
+    <link rel="preload" href="fonts/cinzel-700.woff2" as="font" type="font/woff2" crossorigin>
+    <script>
+    (function () {
+        // ---- CONFIG ---------------------------------------------------------
+        var LAADSCHERM = {
+            // Bestanden waar het startscherm op wacht en die niet als <img>
+            // in de pagina staan: CSS-achtergronden. Exact dezelfde URL als in
+            // style.css. Ze worden hier meteen opgehaald, nog voor style.css
+            // binnen is.
+            wachtOpBestanden: [
+                "images/startschermzonderwolken.webp?v=2"      // #game-container (style.css)
+            ],
+            // <img>-elementen van het startscherm. Ze tellen mee zodra ze in de
+            // pagina verschijnen (ook als script.js ze maakt, zoals de wolken).
+            // Verandert script.js de bron nog (het portret volgt het profiel,
+            // een verdiende kist), dan telt de nieuwe bron ook mee.
+            wachtOpElementen: [
+                "#game-container > img",                       // voorgrond, trofeeën, kisten, diamant
+                "#avatar-frame img",                           // kader + portret
+                "#game-container > .wolken-laag img"           // de wolken (bouwWolkenLaag)
+            ],
+            // Staat dit scherm bij het opstarten al open (een nieuw kind zonder
+            // profiel), dan wachten zijn afbeeldingen mee. Anders worden ze pas
+            // na het tonen van het startscherm geladen.
+            keuzescherm: "#nieuw-spel-scherm",
+            keuzeschermAfbeeldingen: "#nieuw-spel-scherm img[data-src]",
+            // Pas na het startscherm, rustig één voor één: de Schatkamer.
+            achtergrond: [
+                "images/schatkamer.webp",
+                "images/vitrine-evangelien.webp",
+                "images/vitrine-handelingen.webp",
+                "images/vitrine-paulusbrieven.webp",
+                "images/vitrine-algemenebrieven.webp",
+                "images/vitrine-openbaring.webp",
+                "images/kist-brons.webp",
+                "images/kist-zilver.webp",
+                "images/kist-goud.webp"
+            ],
+            snelleStartMs: 400,
+            minZichtbaarMs: 600,
+            vervaagMs: 500,
+            vangnetMs: 40000
+        };
+        // ---------------------------------------------------------------------
+
+        var totaal = 0, klaar = 0, getoond = 0, geopend = false, domKlaar = false, vangnet = false;
+        var getekend = 0;           // de balk loopt nooit terug, ook niet als het totaal groeit
+        var gevolgd = new WeakMap(); // <img> -> bron die al meetelt
+        var wachtrij = [];          // naStartscherm()-taken uit script.js
+        var keuzeAvatarsGeladen = null;
+        var nu = function () { return window.performance ? performance.now() : Date.now(); };
+        var el = function () { return document.getElementById("laadscherm"); };
+
+        // Taken die pas na het tonen van het startscherm mogen (script.js).
+        window.naStartscherm = function (taak) {
+            if (geopend) taak(); else wachtrij.push(taak);
+        };
+
+        function teken() {
+            var balk = document.querySelector("#laadscherm .ls-vulling");
+            if (!balk || !totaal) return;
+            getekend = Math.max(getekend, Math.min(100, (klaar / totaal) * 100));
+            balk.style.width = getekend + "%";
+        }
+
+        // Eén afbeelding laten meetellen: klaar na decode(), of bij een fout.
+        function telMee(img) {
+            totaal++;
+            var p = (img.decode ? img.decode() : Promise.resolve()).then(null, function () {});
+            return p.then(function () { klaar++; teken(); probeerOpen(); });
+        }
+        function bestand(url) {
+            var img = new Image();
+            img.src = url;
+            return telMee(img);
+        }
+        function element(img) {
+            var bron = img.getAttribute("src");
+            if (!bron || gevolgd.get(img) === bron) return Promise.resolve();
+            gevolgd.set(img, bron);
+            return telMee(img);
+        }
+        function zoekElementen() {
+            LAADSCHERM.wachtOpElementen.forEach(function (sel) {
+                document.querySelectorAll(sel).forEach(element);
+            });
+        }
+
+        function vulDataSrc(selector) {
+            var lijst = [];
+            document.querySelectorAll(selector).forEach(function (img) {
+                img.src = img.getAttribute("data-src");
+                img.removeAttribute("data-src");
+                lijst.push(img);
+            });
+            return lijst;
+        }
+
+        function toon() {
+            if (geopend || getoond) return;
+            var e = el();
+            if (!e) { setTimeout(toon, 50); return; }
+            e.classList.add("ls-toon");
+            getoond = nu();
+            teken();
+        }
+
+        function probeerOpen() {
+            if (domKlaar && klaar >= totaal) open();
+        }
+
+        function open() {
+            if (geopend) return;
+            var e = el();
+            if (getoond && !vangnet) {
+                var nog = LAADSCHERM.minZichtbaarMs - (nu() - getoond);
+                if (nog > 0) { setTimeout(open, nog); return; }
+            }
+            geopend = true;
+            if (e) {
+                if (getoond) {
+                    e.classList.add("ls-weg");
+                    setTimeout(function () { if (e.parentNode) e.parentNode.removeChild(e); }, LAADSCHERM.vervaagMs + 50);
+                } else {
+                    e.parentNode.removeChild(e);
+                }
+            }
+            naHetOpenen();
+        }
+
+        // Op de achtergrond, zonder dat de speler wacht.
+        function naHetOpenen() {
+            var avatars = vulDataSrc(LAADSCHERM.keuzeschermAfbeeldingen);
+            wachtrij.splice(0).forEach(function (taak) { try { taak(); } catch (f) { console.error(f); } });
+            var avatarsKlaar = keuzeAvatarsGeladen || Promise.all(avatars.map(function (img) {
+                return img.decode ? img.decode().then(null, function () {}) : null;
+            }));
+            var c = navigator.connection;
+            if (c && c.saveData) return;              // databesparing: niet voorladen
+            avatarsKlaar.then(function () {
+                var i = 0;
+                (function volgende() {
+                    if (i >= LAADSCHERM.achtergrond.length) return;
+                    var img = new Image();
+                    if ("fetchPriority" in img) img.fetchPriority = "low";
+                    img.onload = img.onerror = volgende;
+                    img.src = LAADSCHERM.achtergrond[i++];
+                })();
+            });
+        }
+
+        LAADSCHERM.wachtOpBestanden.forEach(bestand);
+
+        // Afbeeldingen meetellen zodra ze tijdens het opbouwen verschijnen, zodat
+        // de balk niet al vol staat terwijl de pagina nog binnenkomt.
+        var waker = window.MutationObserver ? new MutationObserver(zoekElementen) : null;
+        if (waker) waker.observe(document.documentElement, { childList: true, subtree: true });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            if (waker) waker.disconnect();
+            zoekElementen();
+            var scherm = document.querySelector(LAADSCHERM.keuzescherm);
+            if (scherm && getComputedStyle(scherm).display !== "none") {
+                var avatars = vulDataSrc(LAADSCHERM.keuzeschermAfbeeldingen);
+                keuzeAvatarsGeladen = Promise.all(avatars.map(element));
+            }
+            domKlaar = true;
+            teken();
+            probeerOpen();
+        });
+
+        setTimeout(toon, Math.max(0, LAADSCHERM.snelleStartMs - nu()));
+        setTimeout(function () { vangnet = true; open(); }, Math.max(0, LAADSCHERM.vangnetMs - nu()));
+    })();
+    </script>
+
     <!-- Cache-buster ?v=N: style.css, lang/nl.js, ontdekken-inhoud.js en script.js
          dragen ALTIJD hetzelfde nummer en gaan samen omhoog, ook als er maar een
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=443">
+    <link rel="stylesheet" href="style.css?v=444">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -55,9 +371,9 @@
          samen omhoog. Los van de cache-buster en van de avatarteller: die liften
          niet met elkaar mee. -->
 
-    <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=1.
+    <!-- VIERDE, LOSSE TELLER — de avatarportretten, nu ?v=2.
          Dertien verwijzingen dragen samen dit eigen nummer:
-             index.html: 107        avatar-mozes.webp   (startschermportret)
+             index.html: 172        avatar-mozes.webp (startschermportret)
              index.html: 266-302    de tien keuzeknoppen
              script.js : 7214       const AVATAR_VERSIE
              script.js : 7394       updateAvatarWeergave()
@@ -77,17 +393,17 @@
          script.js, deze bij een wijziging in images/Avatars/. Laat ze niet
          meeliften met elkaar. -->
 
-    <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=1.
+    <!-- DERDE, LOSSE TELLER — de scèneplaten van het startscherm, nu ?v=2.
          Vier verwijzingen dragen samen dit eigen nummer:
-             style.css : 51     startschermzonderwolken.png
-             index.html: 54     voorgrond_transparante_lucht.png
-             script.js : 11919  startschermzonderwolken.png               (scherm 2)
-             script.js : 11926  voorgrond_scherm2_transparante_lucht.png  (scherm 2)
+             style.css : 61     startschermzonderwolken.webp
+             index.html: 143    voorgrond_transparante_lucht.webp
+             script.js : 14109  startschermzonderwolken.webp               (scherm 2)
+             script.js : 14116  voorgrond_scherm2_transparante_lucht.webp  (scherm 2)
          (Regelnummers schuiven; zoek desnoods op "?v=" in die drie bestanden.)
 
          Hoog dit nummer ALLEEN op wanneer een van die platen echt is vervangen —
          de banier overgeschilderd, de scène opnieuw gerenderd. Nooit meeliften
-         met de teller hierboven: de drie platen zijn samen ~8,7 MB en een
+         met de teller hierboven: de drie platen zijn samen ~1,2 MB en een
          onnodige ophoging laat elke bezoeker die opnieuw downloaden. Andersom
          geldt hetzelfde: nieuwe platen veranderen niets aan de code, dus de
          teller hierboven blijft dan staan. De twee tellers lopen dus uit elkaar,
@@ -106,6 +422,18 @@
 </head>
 
 <body>
+<!-- Laadscherm: zie de toelichting en de CONFIG in <head>. Verdwijnt vanzelf. -->
+<div id="laadscherm" role="status" aria-live="polite">
+    <div class="ls-kader" aria-hidden="true">
+        <span class="ls-haar ls-haar-links"></span>
+        <div class="ls-rand"></div>
+        <div class="ls-donker"></div>
+        <div class="ls-lijn"></div>
+        <div class="ls-goot"><div class="ls-vulling"></div></div>
+        <span class="ls-haar ls-haar-rechts"></span>
+    </div>
+    <p class="ls-tekst">De poort gaat open…</p>
+</div>
 <h1 class="sr-only">Bijbelkidsquiz</h1>
 
     <!-- Bijbelkidsalbum (plakboek): de gele ster op het eindscherm. Eén keer
@@ -140,7 +468,7 @@
              Stacking via z-index in style.css (.voorgrond = 3). -->
         <!-- ?v=N hier is de PLATEN-teller, niet die van style.css/script.js —
              zie de toelichting in de <head>. -->
-        <img class="voorgrond" src="images/voorgrond_transparante_lucht.png?v=1" alt="" aria-hidden="true">
+        <img class="voorgrond" src="images/voorgrond_transparante_lucht.webp?v=2" alt="" aria-hidden="true">
 
         <!-- Twee iconen in dezelfde knop; de CSS toont er precies één per state
              (expand = ga naar fullscreen, collapse = verlaat fullscreen). De
@@ -169,7 +497,7 @@
 
             <!-- Avatarfoto, rond bijgesneden in de ronde opening. Standaard
                  Mozes; verandert via het Nieuw-spel-keuzescherm. -->
-            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp?v=1" alt="Avatar"
+            <img id="avatar-portret" class="avatar-portret" src="images/Avatars/avatar-mozes.webp?v=2" alt="Avatar"
                  role="button" tabindex="0" title="Lees over deze figuur"
                  onclick="openAvatarDetail()"
                  onkeydown="if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); openAvatarDetail(); }">
@@ -329,45 +657,48 @@
                 <h2 class="quiz-title">Nieuw spel</h2>
                 <p class="quiz-question">Kies je avatar</p>
 
+                <!-- De portretten staan op data-src: het laadscherm (zie <head>) vult
+                     ze pas na het startscherm, of meteen als dit scherm bij het
+                     opstarten al open staat (nog geen profiel). -->
                 <div class="avatar-keuze">
                     <button type="button" class="avatar-keuze-btn" data-avatar="mozes">
-                        <img src="images/Avatars/avatar-mozes.webp?v=1" alt="Mozes">
+                        <img data-src="images/Avatars/avatar-mozes.webp?v=2" alt="Mozes">
                         <span>Mozes</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="esther">
-                        <img src="images/Avatars/avatar-esther.webp?v=1" alt="Ester">
+                        <img data-src="images/Avatars/avatar-esther.webp?v=2" alt="Ester">
                         <span>Ester</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="judith">
-                        <img src="images/Avatars/avatar-judith.webp?v=1" alt="Judit">
+                        <img data-src="images/Avatars/avatar-judith.webp?v=2" alt="Judit">
                         <span>Judit</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="samuel">
-                        <img src="images/Avatars/avatar-samuel.webp?v=1" alt="Samuël">
+                        <img data-src="images/Avatars/avatar-samuel.webp?v=2" alt="Samuël">
                         <span>Samuël</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="jozef">
-                        <img src="images/Avatars/avatar-jozef.webp?v=1" alt="Jozef">
+                        <img data-src="images/Avatars/avatar-jozef.webp?v=2" alt="Jozef">
                         <span>Jozef</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="elia">
-                        <img src="images/Avatars/avatar-elia.webp?v=1" alt="Elia">
+                        <img data-src="images/Avatars/avatar-elia.webp?v=2" alt="Elia">
                         <span>Elia</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="ruth">
-                        <img src="images/Avatars/avatar-ruth.webp?v=1" alt="Ruth">
+                        <img data-src="images/Avatars/avatar-ruth.webp?v=2" alt="Ruth">
                         <span>Ruth</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="maria">
-                        <img src="images/Avatars/avatar-maria.webp?v=1" alt="Maria">
+                        <img data-src="images/Avatars/avatar-maria.webp?v=2" alt="Maria">
                         <span>Maria</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="debora">
-                        <img src="images/Avatars/avatar-debora.webp?v=1" alt="Debora">
+                        <img data-src="images/Avatars/avatar-debora.webp?v=2" alt="Debora">
                         <span>Debora</span>
                     </button>
                     <button type="button" class="avatar-keuze-btn" data-avatar="rebekka">
-                        <img src="images/Avatars/avatar-rebekka.webp?v=1" alt="Rebekka">
+                        <img data-src="images/Avatars/avatar-rebekka.webp?v=2" alt="Rebekka">
                         <span>Rebekka</span>
                     </button>
                 </div>
@@ -920,9 +1251,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=443"></script>
-    <script src="ontdekken-inhoud.js?v=443"></script>
-    <script src="script.js?v=443"></script>
+    <script src="lang/nl.js?v=444"></script>
+    <script src="ontdekken-inhoud.js?v=444"></script>
+    <script src="script.js?v=444"></script>
 
 </body>
 

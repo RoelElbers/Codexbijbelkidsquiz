@@ -1,7 +1,7 @@
 /* © 2026 Bijbelkids Quiz (bijbelkidsquiz.nl). Vrij te gebruiken voor les, catechese en Bijbelgroep; zie auteursrecht.html. Alle overige rechten voorbehouden. */
 
 /* Kleuren gesampled uit het geschilderde blauwe muzieknootje-knopje rechtsboven
-   in images/startschermzonderwolken.png (knop-center ~1582,55; diameter ~85px).
+   in images/startschermzonderwolken.webp (knop-center ~1582,55; diameter ~85px).
    Hier centraal gezet zodat de fullscreen-knop dezelfde familie deelt en de
    tinten later bij te stellen zijn zonder in de PNG te hoeven meten. */
 :root {
@@ -58,7 +58,7 @@ body {
     /* ?v=N hier is de PLATEN-teller met een eigen ritme: alleen omhoog als deze
        plaat echt is vervangen, en nooit samen met de teller van style.css /
        lang/nl.js / script.js. Volledige toelichting in index.html <head>. */
-    background-image: url("images/startschermzonderwolken.png?v=1");
+    background-image: url("images/startschermzonderwolken.webp?v=2");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -1115,7 +1115,7 @@ height: 22%;
     box-sizing: border-box;
 
     /* XP-balk hoogte — handmatig geijkt, niet zomaar wijzigen.
-       De gouden gleuf is GESCHILDERD in images/startschermzonderwolken.png en
+       De gouden gleuf is GESCHILDERD in images/startschermzonderwolken.webp en
        staat dus niet in de DOM; er valt niets aan te koppelen. Opgemeten in de
        gerenderde app bij 1920x1080:
          gouden bovenrand  app-rij 895-896

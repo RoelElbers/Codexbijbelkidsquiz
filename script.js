@@ -7259,7 +7259,7 @@ const avatarNamen = {
 // vervangen, dus zonder dit nummer blijft een bezoeker het oude portret uit
 // zijn browsercache zien. Hoog op zodra er iets in images/Avatars/ verandert,
 // en houd hem gelijk met de ?v= achter de avatar-URL's in index.html.
-const AVATAR_VERSIE = 1;
+const AVATAR_VERSIE = 2;
 
 const STANDAARD_AVATAR = "mozes";
 
@@ -13295,6 +13295,21 @@ const ntScherm2 = {
     ]
 };
 
+// Laadscherm (index.html): scherm 2 is bij het openen nog niet te zien, dus
+// zijn afbeeldingen hoeven daar niet op te wachten en mogen het startscherm
+// ook geen bandbreedte afsnoepen. window.naStartscherm() (van het laadscherm)
+// voert een taak uit zodra het startscherm getoond is, of meteen als dat al zo
+// is. Zonder laadscherm gewoon direct. Bewust een andere naam dan
+// naStartscherm: een functiedeclaratie hier zou window.naStartscherm
+// overschrijven.
+function naLaadscherm(taak) {
+    if (typeof window.naStartscherm === "function") window.naStartscherm(taak);
+    else taak();
+}
+function zetBronNaStart(img, url) {
+    naLaadscherm(() => { img.src = url; });
+}
+
 function bouwNtScherm2() {
     const houder = document.getElementById("nt2-boeken");
     if (!houder) return;
@@ -13305,7 +13320,7 @@ function bouwNtScherm2() {
         const plateau = document.createElement("img");
         plateau.className = "nt2-plateau";
         plateau.alt = "";
-        plateau.src = ntScherm2.plateauBron;
+        zetBronNaStart(plateau, ntScherm2.plateauBron);
         plateau.style.left = b.plateauX;
         plateau.style.bottom = b.plateauBodem;
         plateau.style.width = ntScherm2.plateauBreedte;
@@ -13323,7 +13338,7 @@ function bouwNtScherm2() {
         const boekImg = document.createElement("img");
         boekImg.className = "nt2-boek-img";
         boekImg.alt = b.naam;
-        boekImg.src = b.boek;
+        zetBronNaStart(boekImg, b.boek);
         knop.appendChild(boekImg);
 
         // 2b) Glow-host als APARTE <div> (geen <button>). Een <button> klipt zijn
@@ -13345,7 +13360,7 @@ function bouwNtScherm2() {
         const bord = document.createElement("img");
         bord.className = "nt2-bord";
         bord.alt = "";
-        bord.src = ntScherm2.bordBron;
+        zetBronNaStart(bord, ntScherm2.bordBron);
         bord.style.left = b.bordX;
         bord.style.bottom = b.bordBodem;
         bord.style.width = ntScherm2.bordBreedte;
@@ -13517,7 +13532,7 @@ function bouwNtKast(kast) {
     const paneel = kast.panelen[huidigKastPaneel];
 
     // Paneel-PNG als achtergrond (met nette placeholder-fallback als hij mist).
-    zetSchatkamerAchtergrond(houder, paneel.achtergrond, "");
+    naLaadscherm(() => zetSchatkamerAchtergrond(houder, paneel.achtergrond, ""));
 
     inhoud.innerHTML = "";
     paneel.groepen.forEach((groep, g) => {
@@ -13568,7 +13583,7 @@ function maakKastTrofee(nis, zone) {
     const stand = leesTrofeeStand(nis.sleutel);          // "geen"|"brons"|"zilver"|"goud"
     const img = document.createElement("img");
     img.className = "kast-trofee " + (stand === "geen" ? "sk-schaduw" : stand);
-    img.src = `images/${nis.basis}-zilver.webp`;
+    zetBronNaStart(img, `images/${nis.basis}-zilver.webp`);
     img.alt = nis.naam;
     img.addEventListener("error", () => {
         const sil = document.createElement("div");
@@ -13955,7 +13970,7 @@ function bouwFakkelConfigTekst() {
 // en exporteer het bijgewerkte WOLKEN-blok om hier terug te plakken.
 // =========================================================================
 
-// --- CONFIG: één regel per wolk. png = welke images/wolk<N>.png (1..5),
+// --- CONFIG: één regel per wolk. png = welke images/wolk<N>.webp (1..5),
 //     top = verticale positie (% van de toneelHOOGTE), breedte = % van het
 //     toneel, duur = driftsnelheid in seconden (groter = trager), vertraging
 //     schuift de startpositie in de cyclus (negatief = al onderweg), opacity
@@ -14011,7 +14026,7 @@ function bouwWolkenLaag(config, prefix) {
     config.forEach((w, i) => {
         const img = document.createElement("img");
         img.className = "wolk";
-        img.src = "images/wolk" + w.png + ".png";
+        img.src = "images/wolk" + w.png + ".webp";
         img.alt = "";
         img.style.setProperty("--wolk-top", w.top + "%");
         img.style.setProperty("--wolk-breedte", w.breedte + "%");
@@ -14086,12 +14101,12 @@ function bouwWolkenLaag(config, prefix) {
 // Scherm 2 krijgt de DIEPBLAUWE AVONDHEMEL van scherm 1. De scherm-1-platen
 // hebben echter de evangelie-boeken + gevulde prijzenkast INGEBAKKEN; die
 // dubbelden achter de losse NT-boeken/NT-kast. Daarom:
-//   - bg  = startschermzonderwolken.png    (scherm 1's avondscène = avondhemel)
-//   - voorgrond = voorgrond_scherm2_transparante_lucht.png
+//   - bg  = startschermzonderwolken.webp   (scherm 1's avondscène = avondhemel)
+//   - voorgrond = voorgrond_scherm2_transparante_lucht.webp
 //                 (KOPIE van de avond-voorgrond met de 4 evangelie-boeken
 //                  weg-geïnpaint; lucht blijft transparant)
 // De gevulde kast hoeft niet gepoetst: de NT-kast (nt2-kast) dekt die af. De
-// gedeelde scherm-1-voorgrond (voorgrond_transparante_lucht.png) blijft
+// gedeelde scherm-1-voorgrond (voorgrond_transparante_lucht.webp) blijft
 // ONAANGEROERD — er is op een kopie gewerkt.
 (function bouwWolkenScherm2() {
     const scherm2 = document.getElementById("nt-scherm-2");
@@ -14106,14 +14121,14 @@ function bouwWolkenLaag(config, prefix) {
     // ?v=N hieronder is de PLATEN-teller met een eigen ritme: alleen omhoog als
     // de plaat echt is vervangen, nooit samen met de teller van style.css /
     // lang/nl.js / script.js. Volledige toelichting in index.html <head>.
-    bg.src = "images/startschermzonderwolken.png?v=1";   // avondhemel (scherm 1's scène)
+    bg.src = "images/startschermzonderwolken.webp?v=2";   // avondhemel (scherm 1's scène)
     bg.alt = "";
 
     const laag = bouwWolkenLaag(WOLKEN, "s2-");
 
     const voor = document.createElement("img");
     voor.className = "voorgrond";          // hergebruikt de bestaande voorgrond-stijl (z-index 3)
-    voor.src = "images/voorgrond_scherm2_transparante_lucht.png?v=1";  // avondplaat, boeken weg-geïnpaint, lucht transparant (?v= = platen-teller)
+    zetBronNaStart(voor, "images/voorgrond_scherm2_transparante_lucht.webp?v=2");  // avondplaat, boeken weg-geïnpaint, lucht transparant (?v= = platen-teller)
     voor.alt = "";
 
     hemel.appendChild(bg);
@@ -14190,7 +14205,7 @@ function initWolkenAfstel(laag) {
             const i = +knop.dataset.wolk;
             const n = knop.dataset.png;
             const img = wolken[i];
-            img.src = "images/wolk" + n + ".png";
+            img.src = "images/wolk" + n + ".webp";
             img.dataset.png = n;
             // Actieve markering binnen deze rij verzetten.
             knop.parentElement.querySelectorAll("button").forEach((b) => b.classList.remove("actief"));
