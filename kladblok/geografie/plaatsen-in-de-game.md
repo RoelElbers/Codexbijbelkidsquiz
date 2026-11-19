@@ -74,6 +74,7 @@ gecontroleerd.
   Staat één keer in de game, in Ontdekken → Verborgen Schat → De zeven
   gemeenten, in een rijtje waarin de andere zes namen wél de NBV21-vorm
   hebben (Tyatira, niet Thyatira).
+  Sardis is op 19 november 2026 gelijkgetrokken naar Sardes (commit fa7c71b).
 - **Dekapolis** — NBV21: Decapolis; Willibrord en HSV: Dekapolis.
 - **Gerizim** — het register heeft geen spelling in NBV21, Willibrord of HSV:
   daar staat "deze berg" (Johannes 4:20). De naam komt in de game wel voor
