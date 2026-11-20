@@ -9000,9 +9000,16 @@ function kiesNalezen() {
 //   slotHint     regel onder een rubriek die nog op slot zit
 //
 // Eén onderwerp is óf inhoud (type "lexicon" / "artikel" + inhoud), óf een
+// kaart (type "kaart" + kaart: een kaartconfig uit ontdekken-inhoud.js), óf een
 // verwijzing (verwijstNaar: id van een onderwerp elders). Zo staat dezelfde
 // tekst nooit twee keer.
 // =========================
+
+// "Waar gebeurde het" blijft op slot tot de kaart is goedgekeurd. Dit is de
+// enige vlag: op true zetten opent de rubriek voor iedereen. Met ?afstel=aan
+// staat hij ook nu al open, om de namen op de kaart te kunnen afstellen.
+const WAAR_GEBEURDE_HET_OPEN = false;
+
 const ontdekRubrieken = [
     { id: "woorden", naam: "Woordenboek",
       onderwerpen: [
@@ -9020,12 +9027,14 @@ const ontdekRubrieken = [
           { id: "wie-beroepen", naam: "Beroepen en werk", type: "lexicon", inhoud: ONTDEK_WIE_BEROEPEN },
           { id: "wie-huishouden", naam: "Huishouden en dienst", type: "lexicon", inhoud: ONTDEK_WIE_HUISHOUDEN }
       ] },
-    // Op slot zolang de rubriek leeg is: de knop staat er, maar opent niets.
-    // Komen er onderwerpen in, haal dan slot en slotHint weg.
+    // Op slot tot WAAR_GEBEURDE_HET_OPEN (hierboven) op true staat. Eén
+    // onderwerp, dus de knop opent meteen de kaart.
     { id: "waar", naam: "Waar gebeurde het",
-      slot: () => false,
+      slot: () => WAAR_GEBEURDE_HET_OPEN || afstelModus,
       slotHint: "Binnenkort",
-      onderwerpen: [] },
+      onderwerpen: [
+          { id: "kaart-land", naam: "Het land in de tijd van Jezus", type: "kaart", kaart: ONTDEK_KAART_LAND }
+      ] },
 
     { id: "hoe", naam: "Hoe leefden ze toen",
       inleiding: ONTDEK_HOE_INLEIDING,
@@ -9168,6 +9177,12 @@ function openOntdekOnderwerp(id) {
     }
     if (!onderwerp) return;
 
+    // Een kaart heeft een eigen, breder scherm.
+    if (onderwerp.type === "kaart") {
+        openOntdekKaart(onderwerp.kaart);
+        return;
+    }
+
     const titel = document.getElementById("ontdek-detail-titel");
     if (titel) titel.textContent = onderwerp.naam;
 
@@ -9229,6 +9244,221 @@ function rendeerOntdekInhoud(onderwerp) {
         }
         return "";
     }).join("");
+}
+
+// --- Ontdekken: kaarten (Waar gebeurde het) ---------------------------------
+// Een kaart is een afbeelding met namen erop. Alles komt uit de kaartconfig in
+// ontdekken-inhoud.js (afbeelding, titel, plaatsen met naam/soort/x/y/tekst);
+// hier staat alleen hoe hij getoond wordt. De opmaak per soort (streek, stad,
+// water, berg) staat in style.css onder "KAARTEN".
+//
+// Posities zijn procenten van de kaart. In afstelmodus (?afstel=aan) zijn de
+// namen te verslepen; de nieuwe posities gaan naar localStorage en overrulen
+// de config (op dit apparaat), en "Exporteer posities" geeft ze terug om in
+// ontdekken-inhoud.js te zetten. Zelfde aanpak als de Schatkamer.
+const KAART_AFSTEL_OPSLAG = "afstel_kaartposities_v1";
+
+// De kaart die nu openstaat; nodig voor de afstel-export.
+let actieveKaart = null;
+
+function leesKaartAfstel() {
+    try { return JSON.parse(localStorage.getItem(KAART_AFSTEL_OPSLAG)) || {}; }
+    catch (e) { return {}; }
+}
+function schrijfKaartAfstel(map) {
+    try { localStorage.setItem(KAART_AFSTEL_OPSLAG, JSON.stringify(map)); } catch (e) { /* geen opslag */ }
+}
+// Afstel-sleutel per plaats: afbeelding + naam, zodat twee kaarten met
+// dezelfde plaatsnaam elkaar niet raken.
+function kaartAfstelSleutel(kaart, plaats) {
+    return kaart.afbeelding + "|" + plaats.naam;
+}
+
+function openOntdekKaart(kaart) {
+    if (!kaart) return;
+    actieveKaart = kaart;
+
+    const titel = document.getElementById("ontdek-kaart-titel");
+    if (titel) titel.textContent = kaart.titel;
+
+    bouwKaart(document.getElementById("ontdek-kaart"), kaart);
+    sluitKaartVenster();
+    gaNaarScherm("ontdek-kaart-scherm");
+    if (afstelModus) initKaartAfstel();
+}
+
+function bouwKaart(houder, kaart) {
+    if (!houder) return;
+    houder.innerHTML = "";
+    houder.classList.toggle("afstel", afstelModus);
+    houder.style.aspectRatio = kaart.breedte + " / " + kaart.hoogte;
+
+    const img = document.createElement("img");
+    img.className = "ontdek-kaart-beeld";
+    img.src = kaart.afbeelding;
+    img.alt = kaart.titel;
+    img.draggable = false;
+    houder.appendChild(img);
+
+    const afstel = leesKaartAfstel();
+    kaart.plaatsen.forEach((plaats) => {
+        const pos = afstel[kaartAfstelSleutel(kaart, plaats)] || plaats;
+        const heeftTekst = !!(plaats.tekst && plaats.tekst.trim());
+
+        // Met tekst een knop (aanklikbaar), zonder een gewone span.
+        const el = document.createElement(heeftTekst ? "button" : "span");
+        if (heeftTekst) {
+            el.type = "button";
+            el.addEventListener("click", (e) => {
+                if (afstelModus) return;            // in afstelmodus is klikken slepen
+                e.stopPropagation();
+                openKaartVenster(plaats);
+            });
+        }
+        el.className = "kaart-plaats kaart-" + plaats.soort + (heeftTekst ? " kaart-klikbaar" : "");
+        el.style.left = pos.x + "%";
+        el.style.top = pos.y + "%";
+        el.dataset.naam = plaats.naam;
+
+        // Stad: rondje; berg: driehoekje. Die staan op het punt zelf.
+        if (plaats.soort === "stad" || plaats.soort === "berg") {
+            const merk = document.createElement("span");
+            merk.className = "kaart-merk";
+            merk.setAttribute("aria-hidden", "true");
+            el.appendChild(merk);
+        }
+        const naam = document.createElement("span");
+        naam.className = "kaart-naam";
+        naam.textContent = plaats.naam;
+        el.appendChild(naam);
+
+        houder.appendChild(el);
+    });
+}
+
+// Het venstertje bij een plaats met tekst. Sluiten: kruisje, klik ernaast of Esc.
+function openKaartVenster(plaats) {
+    const venster = document.getElementById("kaart-venster");
+    if (!venster) return;
+    document.getElementById("kaart-venster-naam").textContent = plaats.naam;
+    document.getElementById("kaart-venster-tekst").innerHTML = String(plaats.tekst)
+        .split(/\n\s*\n/).filter((a) => a.trim() !== "").map((a) => `<p>${a}</p>`).join("");
+    venster.style.display = "flex";
+}
+function sluitKaartVenster() {
+    const venster = document.getElementById("kaart-venster");
+    if (venster) venster.style.display = "none";
+}
+(function koppelKaartVenster() {
+    const venster = document.getElementById("kaart-venster");
+    if (!venster) return;
+    // Klik op de donkere achtergrond (niet in het vak) sluit; het kruisje ook.
+    venster.addEventListener("click", (e) => {
+        if (e.target === venster || e.target.closest(".kaart-venster-sluit")) sluitKaartVenster();
+    });
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && venster.style.display !== "none") sluitKaartVenster();
+    });
+})();
+
+// Afstelmodus voor de kaart: namen slepen, posities zien en exporteren.
+// Eigen paneel (#kaart-afstel-paneel), los van het Schatkamer-paneel.
+function initKaartAfstel() {
+    const houder = document.getElementById("ontdek-kaart");
+    if (!houder || houder.dataset.afstelKlaar) return;
+    houder.dataset.afstelKlaar = "1";
+
+    const paneel = document.createElement("div");
+    paneel.id = "kaart-afstel-paneel";
+    paneel.innerHTML =
+        '<strong>Afstelmodus kaart</strong>' +
+        '<div id="kaart-afstel-info">Sleep een naam om hem te verplaatsen.</div>' +
+        '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% (Shift = 1%)</div>' +
+        '<div class="afstel-knoppen">' +
+        '<button type="button" id="kaart-afstel-export">Exporteer posities</button>' +
+        '<button type="button" id="kaart-afstel-reset">Reset</button></div>' +
+        '<textarea id="kaart-afstel-uitvoer" readonly style="display:none"></textarea>';
+    document.getElementById("ontdek-kaart-scherm").appendChild(paneel);
+    const infoEl = paneel.querySelector("#kaart-afstel-info");
+    const uitvoerEl = paneel.querySelector("#kaart-afstel-uitvoer");
+
+    let sel = null;
+    const plaatsVan = (el) => actieveKaart.plaatsen.find((p) => p.naam === el.dataset.naam);
+    function toonInfo() {
+        if (!sel) { infoEl.textContent = "Sleep een naam om hem te verplaatsen."; return; }
+        infoEl.innerHTML = "<b>" + sel.dataset.naam + "</b><br>x: " +
+            parseFloat(sel.style.left).toFixed(2) + " &middot; y: " + parseFloat(sel.style.top).toFixed(2);
+    }
+    function bewaar(el) {
+        const map = leesKaartAfstel();
+        map[kaartAfstelSleutel(actieveKaart, plaatsVan(el))] = {
+            x: +parseFloat(el.style.left).toFixed(2), y: +parseFloat(el.style.top).toFixed(2)
+        };
+        schrijfKaartAfstel(map);
+    }
+    function selecteer(el) {
+        if (sel) sel.classList.remove("afstel-geselecteerd");
+        sel = el;
+        if (sel) sel.classList.add("afstel-geselecteerd");
+        toonInfo();
+    }
+
+    houder.addEventListener("pointerdown", (e) => {
+        const el = e.target.closest(".kaart-plaats");
+        if (!el) { selecteer(null); return; }
+        e.preventDefault();
+        selecteer(el);
+        const r = houder.getBoundingClientRect();
+        const startX = parseFloat(el.style.left), startY = parseFloat(el.style.top);
+        const muisX = e.clientX, muisY = e.clientY;
+        let gesleept = false;
+        function beweeg(ev) {
+            gesleept = true;
+            el.style.left = (startX + (ev.clientX - muisX) / r.width * 100).toFixed(2) + "%";
+            el.style.top  = (startY + (ev.clientY - muisY) / r.height * 100).toFixed(2) + "%";
+            toonInfo();
+        }
+        function los() {
+            document.removeEventListener("pointermove", beweeg);
+            document.removeEventListener("pointerup", los);
+            if (gesleept) bewaar(el);
+        }
+        document.addEventListener("pointermove", beweeg);
+        document.addEventListener("pointerup", los);
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (!sel || huidigScherm !== "ontdek-kaart-scherm") return;
+        const stap = e.shiftKey ? 1 : 0.1;
+        const d = { ArrowLeft: [-stap, 0], ArrowRight: [stap, 0], ArrowUp: [0, -stap], ArrowDown: [0, stap] }[e.key];
+        if (!d) return;
+        e.preventDefault();
+        sel.style.left = (parseFloat(sel.style.left) + d[0]).toFixed(2) + "%";
+        sel.style.top  = (parseFloat(sel.style.top)  + d[1]).toFixed(2) + "%";
+        bewaar(sel); toonInfo();
+    });
+
+    // Export: de plaatsen-regels zoals ze in ontdekken-inhoud.js staan, met
+    // de huidige posities (afgesteld of uit de config).
+    paneel.querySelector("#kaart-afstel-export").addEventListener("click", () => {
+        const map = leesKaartAfstel();
+        const regels = actieveKaart.plaatsen.map((p) => {
+            const pos = map[kaartAfstelSleutel(actieveKaart, p)] || p;
+            return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
+                ', x: ' + (+pos.x) + ', y: ' + (+pos.y) + ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
+        });
+        uitvoerEl.value = regels.join(",\n");
+        uitvoerEl.style.display = "block";
+        uitvoerEl.select();
+    });
+    paneel.querySelector("#kaart-afstel-reset").addEventListener("click", () => {
+        const map = leesKaartAfstel();
+        actieveKaart.plaatsen.forEach((p) => delete map[kaartAfstelSleutel(actieveKaart, p)]);
+        schrijfKaartAfstel(map);
+        bouwKaart(houder, actieveKaart);
+        selecteer(null);
+        uitvoerEl.style.display = "none";
+    });
 }
 
 // --- Verborgen Schat: de vlag -----------------------------------------------
