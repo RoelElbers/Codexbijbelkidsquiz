@@ -5911,12 +5911,22 @@ a.tekst-link { width: fit-content; text-align: center; }
         0 0 8px rgba(255, 248, 232, 0.9);
 }
 
-/* Stad en berg: het merkje staat op het punt zelf, de naam ernaast. Het
-   merkje is 0.7em breed, dus een halve merkbreedte naar links. */
+/* Stad en berg: het element is zo groot als het merkje en staat met zijn
+   midden op het punt. De naam hangt er los aan, aan de kant uit het veld kant
+   (kant-rechts, -links, -boven, -onder); het merkje blijft dus op x/y. */
 .kaart-stad,
 .kaart-berg {
-    transform: translate(-0.35em, -50%);
+    display: block;
+    transform: translate(-50%, -50%);
 }
+.kaart-stad .kaart-naam,
+.kaart-berg .kaart-naam {
+    position: absolute;
+}
+.kant-rechts .kaart-naam { left: 100%;  top: 50%;    transform: translateY(-50%); margin-left: 0.3em; }
+.kant-links  .kaart-naam { right: 100%; top: 50%;    transform: translateY(-50%); margin-right: 0.3em; }
+.kant-boven  .kaart-naam { bottom: 100%; left: 50%;  transform: translateX(-50%); margin-bottom: 0.2em; }
+.kant-onder  .kaart-naam { top: 100%;   left: 50%;   transform: translateX(-50%); margin-top: 0.2em; }
 .kaart-stad {
     font-size: max(11px, 1.05cqw);
     font-weight: 700;
@@ -6054,6 +6064,9 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     cursor: pointer;
 }
 #kaart-afstel-paneel button:hover { background: #6fe9ff; }
+#kaart-afstel-paneel button:disabled { opacity: 0.35; cursor: default; }
+#kaart-afstel-paneel .kaart-afstel-kant button { background: #2a466e; color: #e8eefc; }
+#kaart-afstel-paneel .kaart-afstel-kant button.actief { background: #36dfff; color: #08101e; }
 #kaart-afstel-paneel #kaart-afstel-uitvoer {
     width: 306px;
     height: 150px;

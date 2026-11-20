@@ -421,10 +421,16 @@ const ONTDEK_SCHAT = [
 //           het midden van de naam
 //   tekst   optioneel; is hij gevuld, dan is de naam aanklikbaar en opent een
 //           venstertje met naam en tekst. Leeg = niet aanklikbaar.
+//   kant    optioneel, alleen bij stad en berg: waar de naam staat ten opzichte
+//           van het rondje of driehoekje: "rechts" (standaard), "links",
+//           "boven" of "onder". Het merkje zelf blijft op x/y.
 // Startwaarden uit kladblok/geografie/kaarten/onderleggers/overzicht-posities.csv
 // (soort "onzeker" staat hier als "stad"). Fijn afstellen met ?afstel=aan.
 const ONTDEK_KAART_LAND = {
-    afbeelding: "images/kaarten/kaart1-overzicht.webp",
+    // ?v=1: dit getal gaat omhoog als de kaart onder dezelfde bestandsnaam
+    // wordt vervangen, anders blijven bezoekers de oude uit hun browsercache
+    // zien.
+    afbeelding: "images/kaarten/kaart1-overzicht.webp?v=1",
     breedte: 1672,
     hoogte: 941,
     titel: "Het land in de tijd van Jezus",

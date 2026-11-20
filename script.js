@@ -9269,9 +9269,19 @@ function schrijfKaartAfstel(map) {
     try { localStorage.setItem(KAART_AFSTEL_OPSLAG, JSON.stringify(map)); } catch (e) { /* geen opslag */ }
 }
 // Afstel-sleutel per plaats: afbeelding + naam, zodat twee kaarten met
-// dezelfde plaatsnaam elkaar niet raken.
+// dezelfde plaatsnaam elkaar niet raken. Zonder ?v=, zodat afgestelde posities
+// blijven staan als het versienummer van de kaart omhooggaat.
 function kaartAfstelSleutel(kaart, plaats) {
-    return kaart.afbeelding + "|" + plaats.naam;
+    return kaart.afbeelding.split("?")[0] + "|" + plaats.naam;
+}
+
+// Waar de naam staat ten opzichte van het merkje (alleen stad en berg).
+const KAART_KANTEN = ["rechts", "links", "boven", "onder"];
+function kaartKant(plaats) {
+    return KAART_KANTEN.includes(plaats.kant) ? plaats.kant : "rechts";
+}
+function heeftKaartMerk(plaats) {
+    return plaats.soort === "stad" || plaats.soort === "berg";
 }
 
 function openOntdekKaart(kaart) {
@@ -9302,7 +9312,8 @@ function bouwKaart(houder, kaart) {
 
     const afstel = leesKaartAfstel();
     kaart.plaatsen.forEach((plaats) => {
-        const pos = afstel[kaartAfstelSleutel(kaart, plaats)] || plaats;
+        // Een afgestelde positie (en kant) gaat voor de config.
+        const pos = Object.assign({}, plaats, afstel[kaartAfstelSleutel(kaart, plaats)] || {});
         const heeftTekst = !!(plaats.tekst && plaats.tekst.trim());
 
         // Met tekst een knop (aanklikbaar), zonder een gewone span.
@@ -9320,8 +9331,11 @@ function bouwKaart(houder, kaart) {
         el.style.top = pos.y + "%";
         el.dataset.naam = plaats.naam;
 
-        // Stad: rondje; berg: driehoekje. Die staan op het punt zelf.
-        if (plaats.soort === "stad" || plaats.soort === "berg") {
+        // Stad: rondje; berg: driehoekje. Die staan op het punt zelf; de naam
+        // staat aan de kant uit het veld kant (standaard rechts).
+        if (heeftKaartMerk(plaats)) {
+            el.dataset.kant = kaartKant(pos);
+            el.classList.add("kant-" + el.dataset.kant);
             const merk = document.createElement("span");
             merk.className = "kaart-merk";
             merk.setAttribute("aria-hidden", "true");
@@ -9374,6 +9388,10 @@ function initKaartAfstel() {
         '<strong>Afstelmodus kaart</strong>' +
         '<div id="kaart-afstel-info">Sleep een naam om hem te verplaatsen.</div>' +
         '<div class="afstel-hint">Slepen = verplaatsen &middot; pijltjes = 0,1% (Shift = 1%)</div>' +
+        '<div class="afstel-hint">Naam van stad of berg: knoppen hieronder, of R / L / B / O</div>' +
+        '<div class="afstel-knoppen kaart-afstel-kant">' +
+        KAART_KANTEN.map((k) => '<button type="button" data-kant="' + k + '">' + k + '</button>').join("") +
+        '</div>' +
         '<div class="afstel-knoppen">' +
         '<button type="button" id="kaart-afstel-export">Exporteer posities</button>' +
         '<button type="button" id="kaart-afstel-reset">Reset</button></div>' +
@@ -9384,18 +9402,33 @@ function initKaartAfstel() {
 
     let sel = null;
     const plaatsVan = (el) => actieveKaart.plaatsen.find((p) => p.naam === el.dataset.naam);
+    const kantKnoppen = paneel.querySelectorAll(".kaart-afstel-kant button");
     function toonInfo() {
+        // Kantknoppen alleen bruikbaar bij een stad of berg; de actieve oplichten.
+        kantKnoppen.forEach((b) => {
+            b.disabled = !(sel && sel.dataset.kant);
+            b.classList.toggle("actief", !!sel && b.dataset.kant === sel.dataset.kant);
+        });
         if (!sel) { infoEl.textContent = "Sleep een naam om hem te verplaatsen."; return; }
         infoEl.innerHTML = "<b>" + sel.dataset.naam + "</b><br>x: " +
-            parseFloat(sel.style.left).toFixed(2) + " &middot; y: " + parseFloat(sel.style.top).toFixed(2);
+            parseFloat(sel.style.left).toFixed(2) + " &middot; y: " + parseFloat(sel.style.top).toFixed(2) +
+            (sel.dataset.kant ? " &middot; kant: " + sel.dataset.kant : "");
     }
     function bewaar(el) {
         const map = leesKaartAfstel();
-        map[kaartAfstelSleutel(actieveKaart, plaatsVan(el))] = {
-            x: +parseFloat(el.style.left).toFixed(2), y: +parseFloat(el.style.top).toFixed(2)
-        };
+        const pos = { x: +parseFloat(el.style.left).toFixed(2), y: +parseFloat(el.style.top).toFixed(2) };
+        if (el.dataset.kant) pos.kant = el.dataset.kant;
+        map[kaartAfstelSleutel(actieveKaart, plaatsVan(el))] = pos;
         schrijfKaartAfstel(map);
     }
+    function zetKant(kant) {
+        if (!sel || !sel.dataset.kant || !KAART_KANTEN.includes(kant)) return;
+        sel.classList.remove("kant-" + sel.dataset.kant);
+        sel.dataset.kant = kant;
+        sel.classList.add("kant-" + kant);
+        bewaar(sel); toonInfo();
+    }
+    kantKnoppen.forEach((b) => b.addEventListener("click", () => zetKant(b.dataset.kant)));
     function selecteer(el) {
         if (sel) sel.classList.remove("afstel-geselecteerd");
         sel = el;
@@ -9429,6 +9462,8 @@ function initKaartAfstel() {
 
     document.addEventListener("keydown", (e) => {
         if (!sel || huidigScherm !== "ontdek-kaart-scherm") return;
+        const toetsKant = { r: "rechts", l: "links", b: "boven", o: "onder" }[e.key.toLowerCase()];
+        if (toetsKant) { e.preventDefault(); zetKant(toetsKant); return; }
         const stap = e.shiftKey ? 1 : 0.1;
         const d = { ArrowLeft: [-stap, 0], ArrowRight: [stap, 0], ArrowUp: [0, -stap], ArrowDown: [0, stap] }[e.key];
         if (!d) return;
@@ -9442,10 +9477,14 @@ function initKaartAfstel() {
     // de huidige posities (afgesteld of uit de config).
     paneel.querySelector("#kaart-afstel-export").addEventListener("click", () => {
         const map = leesKaartAfstel();
+        // kant alleen bij stad en berg, en alleen als hij niet de standaard is.
         const regels = actieveKaart.plaatsen.map((p) => {
-            const pos = map[kaartAfstelSleutel(actieveKaart, p)] || p;
+            const pos = Object.assign({}, p, map[kaartAfstelSleutel(actieveKaart, p)] || {});
+            const kant = heeftKaartMerk(p) ? kaartKant(pos) : "rechts";
             return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
-                ', x: ' + (+pos.x) + ', y: ' + (+pos.y) + ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
+                ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
+                (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
+                ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
         });
         uitvoerEl.value = regels.join(",\n");
         uitvoerEl.style.display = "block";
