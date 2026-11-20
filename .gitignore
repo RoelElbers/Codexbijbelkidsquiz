@@ -105,3 +105,9 @@ _bronnen/
 # Bronbestanden van muziek (WAV uit Suno, elk ruim 30 MB). Het spel laadt
 # alleen de MP3's ernaast; de bronnen blijven op de eigen schijf.
 audio/**/bron/
+
+# Kaartgegevens van Natural Earth (ruim 30 MB) en de uitvoer van de
+# kaartscripts. De scripts en onderleggers gaan wél de repo in; zie
+# kladblok/geografie/kaarten/LEESMIJ.md voor waar data/ vandaan komt.
+kladblok/geografie/kaarten/data/
+kladblok/geografie/kaarten/uit/

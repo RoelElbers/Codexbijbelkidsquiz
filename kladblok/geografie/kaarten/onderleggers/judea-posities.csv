@@ -1,0 +1,15 @@
+naam;soort;breedte;lengte;x_procent;y_procent
+Jeruzalem;stad;31.778;35.235;49.28;57.2
+Betlehem;stad;31.704;35.207;47.95;64.6
+Betanië;stad;31.771;35.261;50.53;57.9
+Jericho;stad;31.86;35.44;59.08;49.0
+Joppe;stad;32.05;34.75;26.11;30.0
+Lydda;stad;31.95;34.89;32.8;40.0
+Emmaüs;onzeker;31.839;34.99;37.58;51.1
+Gerizim;berg;32.2;35.272;51.05;15.0
+Samaria;streek;32.25;35.1;42.83;10.0
+Judea;streek;31.55;35.0;38.05;80.0
+Perea;streek;31.95;35.72;72.46;40.0
+Jordaan;water;32.3;35.57;65.29;5.0
+Dode Zee;water;31.5;35.5;61.95;85.0
+Middellandse Zee;water;32.3;34.25;2.22;5.0
