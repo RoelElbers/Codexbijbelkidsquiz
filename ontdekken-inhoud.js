@@ -426,6 +426,8 @@ const ONTDEK_SCHAT = [
 //           "boven" of "onder". Het merkje zelf blijft op x/y.
 // Startwaarden uit kladblok/geografie/kaarten/onderleggers/overzicht-posities.csv
 // (soort "onzeker" staat hier als "stad"). Fijn afstellen met ?afstel=aan.
+// Betanië staat bewust niet op deze overzichtskaart: te dicht bij Jeruzalem;
+// hij komt op de detailkaart van Judea.
 const ONTDEK_KAART_LAND = {
     // ?v=1: dit getal gaat omhoog als de kaart onder dezelfde bestandsnaam
     // wordt vervangen, anders blijven bezoekers de oude uit hun browsercache
@@ -447,7 +449,6 @@ const ONTDEK_KAART_LAND = {
         // steden
         { naam: "Jeruzalem",           soort: "stad",   x: 47.85, y: 67.53, tekst: "" },
         { naam: "Betlehem",            soort: "stad",   x: 47.33, y: 70.43, tekst: "" },
-        { naam: "Betanië",             soort: "stad",   x: 48.34, y: 67.8,  tekst: "" },
         { naam: "Jericho",             soort: "stad",   x: 51.68, y: 64.31, tekst: "" },
         { naam: "Nazaret",             soort: "stad",   x: 49.07, y: 31.37, tekst: "" },
         { naam: "Kafarnaüm",           soort: "stad",   x: 54.2,  y: 24.31, tekst: "" },
