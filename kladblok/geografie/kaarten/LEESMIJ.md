@@ -3,6 +3,10 @@
 Gemaakt op 19–20 november 2026 (chat met Claude). Basis: echte kaartgegevens
 van Natural Earth (publiek domein): kustlijn, meren, rivieren.
 
+## Definitieve kaarten
+- `kaart1-definitief.webp` — de definitieve kaart 1 (ChatGPT, 20 nov 2026,
+  ligging gecontroleerd met de onderlegger).
+
 ## onderleggers/
 - `kaart1-onderlegger-zonder-namen.png` — kaart 1 (overzicht van het land in
   de tijd van Jezus), met streken in kleur en de gouden omtrek van het land.
