@@ -414,7 +414,8 @@ const ONTDEK_SCHAT = [
 
 // --- Waar gebeurde het: kaart 1, het land in de tijd van Jezus --------------
 // Eén kaart = afbeelding + titel + plaatsen. Per plaats:
-//   naam    zoals hij op de kaart staat
+//   naam    zoals hij op de kaart staat; "\n" in de naam geeft op de kaart
+//           een nieuwe regel (in het venstertje en de export een spatie)
 //   soort   "streek" | "stad" | "water" | "berg" — bepaalt de weergave
 //   x, y    positie in procenten van de breedte en de hoogte van de kaart:
 //           bij een stad en een berg het punt zelf, bij een streek en water
@@ -438,36 +439,35 @@ const ONTDEK_KAART_LAND = {
     titel: "Het land in de tijd van Jezus",
     plaatsen: [
         // streken
-        { naam: "Galilea",             soort: "streek", x: 48.13, y: 25.49, tekst: "" },
-        { naam: "Samaria",             soort: "streek", x: 45.33, y: 49.02, tekst: "" },
-        { naam: "Judea",               soort: "streek", x: 43.47, y: 76.47, tekst: "" },
-        { naam: "Idumea",              soort: "streek", x: 40.67, y: 92.16, tekst: "" },
-        { naam: "Perea",               soort: "streek", x: 56.9,  y: 60.78, tekst: "" },
-        { naam: "Dekapolis",           soort: "streek", x: 61.2,  y: 37.25, tekst: "" },
-        { naam: "Fenicië",             soort: "streek", x: 43.5,  y: 21,    tekst: "" },
-        { naam: "gebied van Filippus", soort: "streek", x: 66,    y: 19,    tekst: "" },
+        { naam: "Galilea",               soort: "streek", x: 48.8,  y: 17.5,  tekst: "" },
+        { naam: "Samaria",               soort: "streek", x: 45.5,  y: 44.0,  tekst: "" },
+        { naam: "Judea",                 soort: "streek", x: 40.2,  y: 71.0,  tekst: "" },
+        { naam: "Idumea",                soort: "streek", x: 42.2,  y: 84.9,  tekst: "" },
+        { naam: "Perea",                 soort: "streek", x: 57.0,  y: 72.0,  tekst: "" },
+        { naam: "Dekapolis",             soort: "streek", x: 61.2,  y: 37.25, tekst: "" },
+        { naam: "Fenicië",               soort: "streek", x: 37.1,  y: 31.0,  tekst: "" },
+        { naam: "gebied van\nFilippus",  soort: "streek", x: 64.3,  y: 18.0,  tekst: "" },
         // steden
-        { naam: "Jeruzalem",           soort: "stad",   x: 47.85, y: 67.53, tekst: "" },
-        { naam: "Betlehem",            soort: "stad",   x: 47.33, y: 70.43, tekst: "" },
-        { naam: "Jericho",             soort: "stad",   x: 51.68, y: 64.31, tekst: "" },
-        { naam: "Nazaret",             soort: "stad",   x: 49.07, y: 31.37, tekst: "" },
-        { naam: "Kafarnaüm",           soort: "stad",   x: 54.2,  y: 24.31, tekst: "" },
-        { naam: "Caesarea",            soort: "stad",   x: 41.42, y: 39.22, tekst: "" },
-        { naam: "Caesarea Filippi",    soort: "stad",   x: 56.42, y: 9.84,  tekst: "" },
-        { naam: "Joppe",               soort: "stad",   x: 38.8,  y: 56.86, tekst: "" },
-        { naam: "Lydda",               soort: "stad",   x: 41.42, y: 60.78, tekst: "" },
-        { naam: "Tyrus",               soort: "stad",   x: 47.13, y: 9.02,  tekst: "" },
-        { naam: "Kana",                soort: "stad",   x: 49.12, y: 28.63, tekst: "" },
-        { naam: "Betsaïda",            soort: "stad",   x: 55.24, y: 23.14, tekst: "" },
-        { naam: "Emmaüs",              soort: "stad",   x: 43.28, y: 65.14, tekst: "" },
+        { naam: "Jeruzalem",             soort: "stad",   x: 47.85, y: 67.53, tekst: "" },
+        { naam: "Betlehem",              soort: "stad",   x: 47.33, y: 70.43, tekst: "" },
+        { naam: "Jericho",               soort: "stad",   x: 51.68, y: 64.31, tekst: "" },
+        { naam: "Nazaret",               soort: "stad",   x: 49.07, y: 31.37, kant: "links", tekst: "" },
+        { naam: "Kafarnaüm",             soort: "stad",   x: 54.2,  y: 24.31, kant: "links", tekst: "" },
+        { naam: "Caesarea",              soort: "stad",   x: 41.42, y: 39.22, tekst: "" },
+        { naam: "Caesarea Filippi",      soort: "stad",   x: 56.42, y: 9.84,  tekst: "" },
+        { naam: "Joppe",                 soort: "stad",   x: 38.8,  y: 56.86, tekst: "" },
+        { naam: "Lydda",                 soort: "stad",   x: 41.42, y: 60.78, tekst: "" },
+        { naam: "Tyrus",                 soort: "stad",   x: 47.13, y: 9.02,  tekst: "" },
+        { naam: "Kana",                  soort: "stad",   x: 49.12, y: 28.63, tekst: "" },
+        { naam: "Betsaïda",              soort: "stad",   x: 55.24, y: 23.14, tekst: "" },
+        { naam: "Emmaüs",                soort: "stad",   x: 43.28, y: 65.14, tekst: "" },
         // bergen
-        { naam: "Gerizim",             soort: "berg",   x: 48.54, y: 50.98, tekst: "" },
-        { naam: "Tabor",               soort: "berg",   x: 50.75, y: 31.88, tekst: "" },
-        { naam: "Hermon",              soort: "berg",   x: 59.46, y: 3.29,  tekst: "" },
-        // water
-        { naam: "meer van Galilea",    soort: "water",  x: 54.48, y: 27.06, tekst: "" },
-        { naam: "Jordaan",             soort: "water",  x: 54.11, y: 47.06, tekst: "" },
-        { naam: "Dode Zee",            soort: "water",  x: 52.8,  y: 78.43, tekst: "" },
-        { naam: "Middellandse Zee",    soort: "water",  x: 29.47, y: 47.06, tekst: "" }
+        { naam: "Gerizim",               soort: "berg",   x: 48.54, y: 50.98, tekst: "" },
+        { naam: "Tabor",                 soort: "berg",   x: 50.75, y: 31.88, kant: "onder", tekst: "" },
+        { naam: "Hermon",                soort: "berg",   x: 65.1,  y: 4.3,   tekst: "" },  // op de getekende top
+        // water (het meer van Galilea staat op kaart 2)
+        { naam: "Jordaan",               soort: "water",  x: 56.0,  y: 46.5,  tekst: "" },
+        { naam: "Dode Zee",              soort: "water",  x: 52.8,  y: 78.43, tekst: "" },
+        { naam: "Middellandse Zee",      soort: "water",  x: 29.47, y: 47.06, tekst: "" }
     ]
 };

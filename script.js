@@ -9275,6 +9275,11 @@ function kaartAfstelSleutel(kaart, plaats) {
     return kaart.afbeelding.split("?")[0] + "|" + plaats.naam;
 }
 
+// Een naam met "\n" (regelafbreking op de kaart) als één regel, met een spatie.
+function kaartNaamPlat(naam) {
+    return String(naam).replace(/\s*\n\s*/g, " ");
+}
+
 // Waar de naam staat ten opzichte van het merkje (alleen stad en berg).
 const KAART_KANTEN = ["rechts", "links", "boven", "onder"];
 function kaartKant(plaats) {
@@ -9343,7 +9348,11 @@ function bouwKaart(houder, kaart) {
         }
         const naam = document.createElement("span");
         naam.className = "kaart-naam";
-        naam.textContent = plaats.naam;
+        // "\n" in de naam = nieuwe regel op de kaart.
+        plaats.naam.split("\n").forEach((regel, i) => {
+            if (i > 0) naam.appendChild(document.createElement("br"));
+            naam.appendChild(document.createTextNode(regel));
+        });
         el.appendChild(naam);
 
         houder.appendChild(el);
@@ -9354,7 +9363,7 @@ function bouwKaart(houder, kaart) {
 function openKaartVenster(plaats) {
     const venster = document.getElementById("kaart-venster");
     if (!venster) return;
-    document.getElementById("kaart-venster-naam").textContent = plaats.naam;
+    document.getElementById("kaart-venster-naam").textContent = kaartNaamPlat(plaats.naam);
     document.getElementById("kaart-venster-tekst").innerHTML = String(plaats.tekst)
         .split(/\n\s*\n/).filter((a) => a.trim() !== "").map((a) => `<p>${a}</p>`).join("");
     venster.style.display = "flex";
@@ -9410,7 +9419,7 @@ function initKaartAfstel() {
             b.classList.toggle("actief", !!sel && b.dataset.kant === sel.dataset.kant);
         });
         if (!sel) { infoEl.textContent = "Sleep een naam om hem te verplaatsen."; return; }
-        infoEl.innerHTML = "<b>" + sel.dataset.naam + "</b><br>x: " +
+        infoEl.innerHTML = "<b>" + kaartNaamPlat(sel.dataset.naam) + "</b><br>x: " +
             parseFloat(sel.style.left).toFixed(2) + " &middot; y: " + parseFloat(sel.style.top).toFixed(2) +
             (sel.dataset.kant ? " &middot; kant: " + sel.dataset.kant : "");
     }
@@ -9481,7 +9490,7 @@ function initKaartAfstel() {
         const regels = actieveKaart.plaatsen.map((p) => {
             const pos = Object.assign({}, p, map[kaartAfstelSleutel(actieveKaart, p)] || {});
             const kant = heeftKaartMerk(p) ? kaartKant(pos) : "rechts";
-            return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
+            return '        { naam: ' + JSON.stringify(kaartNaamPlat(p.naam)) + ', soort: ' + JSON.stringify(p.soort) +
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
                 ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
