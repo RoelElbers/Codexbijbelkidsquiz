@@ -449,7 +449,7 @@ const ONTDEK_KAART_LAND = {
         { naam: "gebied van\nFilippus",  soort: "streek", x: 64.3,  y: 18.0,  tekst: "" },
         // steden
         { naam: "Jeruzalem",             soort: "stad",   x: 47.85, y: 67.53, tekst: "" },
-        { naam: "Betlehem",              soort: "stad",   x: 47.33, y: 70.43, tekst: "" },
+        { naam: "Betlehem",              soort: "stad",   x: 47.33, y: 70.43, kant: "onder", tekst: "" },
         { naam: "Jericho",               soort: "stad",   x: 51.68, y: 64.31, tekst: "" },
         { naam: "Nazaret",               soort: "stad",   x: 49.07, y: 31.37, kant: "links", tekst: "" },
         { naam: "Kafarnaüm",             soort: "stad",   x: 54.2,  y: 24.31, kant: "links", tekst: "" },

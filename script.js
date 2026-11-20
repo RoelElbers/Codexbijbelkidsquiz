@@ -9008,7 +9008,7 @@ function kiesNalezen() {
 // "Waar gebeurde het" blijft op slot tot de kaart is goedgekeurd. Dit is de
 // enige vlag: op true zetten opent de rubriek voor iedereen. Met ?afstel=aan
 // staat hij ook nu al open, om de namen op de kaart te kunnen afstellen.
-const WAAR_GEBEURDE_HET_OPEN = false;
+const WAAR_GEBEURDE_HET_OPEN = true;
 
 const ontdekRubrieken = [
     { id: "woorden", naam: "Woordenboek",
