@@ -415,7 +415,7 @@ const ONTDEK_SCHAT = [
 // --- Waar gebeurde het: kaart 1, het land in de tijd van Jezus --------------
 // Eén kaart = afbeelding + titel + plaatsen. Per plaats:
 //   naam    zoals hij op de kaart staat; "\n" in de naam geeft op de kaart
-//           een nieuwe regel (in het venstertje en de export een spatie)
+//           een nieuwe regel (in het venstertje en het afstelpaneel een spatie)
 //   soort   "streek" | "stad" | "water" | "berg" — bepaalt de weergave
 //   x, y    positie in procenten van de breedte en de hoogte van de kaart:
 //           bij een stad en een berg het punt zelf, bij een streek en water

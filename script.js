@@ -9276,6 +9276,8 @@ function kaartAfstelSleutel(kaart, plaats) {
 }
 
 // Een naam met "\n" (regelafbreking op de kaart) als één regel, met een spatie.
+// Alleen voor het venstertje en het afstelpaneel; de export houdt de "\n",
+// zodat terugplakken en bewaarde afstelposities blijven werken.
 function kaartNaamPlat(naam) {
     return String(naam).replace(/\s*\n\s*/g, " ");
 }
@@ -9490,7 +9492,7 @@ function initKaartAfstel() {
         const regels = actieveKaart.plaatsen.map((p) => {
             const pos = Object.assign({}, p, map[kaartAfstelSleutel(actieveKaart, p)] || {});
             const kant = heeftKaartMerk(p) ? kaartKant(pos) : "rechts";
-            return '        { naam: ' + JSON.stringify(kaartNaamPlat(p.naam)) + ', soort: ' + JSON.stringify(p.soort) +
+            return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
                 ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
