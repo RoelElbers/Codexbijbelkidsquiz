@@ -1,6 +1,9 @@
 {
+  "id": "/",
   "name": "Bijbelkidsquiz",
   "short_name": "Bijbelkidsquiz",
+  "description": "Gratis Bijbelquiz over het Nieuwe Testament voor kinderen van de basisschool.",
+  "lang": "nl",
   "start_url": "../",
   "scope": "../",
   "display": "standalone",
@@ -16,6 +19,12 @@
       "src": "icon-512.png?v=19",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "icon-maskable-512.png?v=19",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
