@@ -5851,8 +5851,22 @@ a.tekst-link { width: fit-content; text-align: center; }
     container-type: inline-size;
     /* Zo breed als past: binnen 90% van de breedte, en zo dat de hele kaart
        met kop en marges in de hoogte past. 1672/941 = de beeldverhouding. */
-    width: min(90vw, calc((92vh - 130px) * 1672 / 941));
+    width: min(90vw, calc((92vh - 190px) * 1672 / 941));
     margin: 0 auto;
+}
+/* Regel onder de titel ("Tik op een naam ...") en de kleine grijze regel
+   onder de kaart. */
+.kaart-uitleg {
+    margin: -4px 0 12px;
+    text-align: center;
+    color: #f3ecd8;
+    font-size: clamp(1rem, 1.15vw, 1.25rem);
+}
+.kaart-voetnoot {
+    margin: 10px 0 0;
+    text-align: center;
+    color: #a8b2c8;
+    font-size: 0.9rem;
 }
 .ontdek-kaart-beeld {
     display: block;
@@ -6012,6 +6026,13 @@ a.tekst-link { width: fit-content; text-align: center; }
 .kaart-venster-tekst p {
     margin: 0 0 0.8em;
 }
+/* Bijbelplaats onder de tekst: klein en cursief. */
+.kaart-venster-plaats {
+    margin: 0.4em 0 0;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: #d8c99a;
+}
 .kaart-venster-sluit {
     position: absolute;
     top: 10px;
@@ -6094,6 +6115,14 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     }
     .kaart-kop .quiz-title {
         font-size: 1.15rem;
+    }
+    .kaart-uitleg {
+        margin: 0 0 8px;
+        font-size: 0.95rem;
+    }
+    .kaart-voetnoot {
+        margin-top: 6px;
+        font-size: 0.8rem;
     }
     .kaart-kop .naslag-terug {
         padding: 6px 14px;

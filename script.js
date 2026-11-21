@@ -9298,6 +9298,14 @@ function openOntdekKaart(kaart) {
     const titel = document.getElementById("ontdek-kaart-titel");
     if (titel) titel.textContent = kaart.titel;
 
+    // Optionele regels onder de titel en onder de kaart; leeg = weg.
+    [["ontdek-kaart-uitleg", kaart.uitleg], ["ontdek-kaart-voetnoot", kaart.voetnoot]].forEach(([id, tekst]) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        el.textContent = tekst || "";
+        el.style.display = tekst ? "" : "none";
+    });
+
     bouwKaart(document.getElementById("ontdek-kaart"), kaart);
     sluitKaartVenster();
     gaNaarScherm("ontdek-kaart-scherm");
@@ -9368,6 +9376,12 @@ function openKaartVenster(plaats) {
     document.getElementById("kaart-venster-naam").textContent = kaartNaamPlat(plaats.naam);
     document.getElementById("kaart-venster-tekst").innerHTML = String(plaats.tekst)
         .split(/\n\s*\n/).filter((a) => a.trim() !== "").map((a) => `<p>${a}</p>`).join("");
+    // Bijbelplaats klein en cursief onder de tekst; leeg = niet tonen.
+    const plaatsEl = document.getElementById("kaart-venster-plaats");
+    if (plaatsEl) {
+        plaatsEl.textContent = plaats.bijbelplaats || "";
+        plaatsEl.style.display = plaats.bijbelplaats ? "" : "none";
+    }
     venster.style.display = "flex";
 }
 function sluitKaartVenster() {
@@ -9495,7 +9509,8 @@ function initKaartAfstel() {
             return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
-                ', tekst: ' + JSON.stringify(p.tekst || "") + ' }';
+                ', tekst: ' + JSON.stringify(p.tekst || "") +
+                (p.bijbelplaats ? ', bijbelplaats: ' + JSON.stringify(p.bijbelplaats) : '') + ' }';
         });
         uitvoerEl.value = regels.join(",\n");
         uitvoerEl.style.display = "block";

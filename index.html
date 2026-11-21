@@ -349,7 +349,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=454">
+    <link rel="stylesheet" href="style.css?v=455">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -984,13 +984,16 @@
                     <button class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
                     <h2 class="quiz-title" id="ontdek-kaart-titel"></h2>
                 </div>
+                <p id="ontdek-kaart-uitleg" class="kaart-uitleg"></p>
                 <div id="ontdek-kaart" class="ontdek-kaart"></div>
+                <p id="ontdek-kaart-voetnoot" class="kaart-voetnoot"></p>
             </div>
             <div id="kaart-venster" class="kaart-venster" style="display: none;">
                 <div class="kaart-venster-vak" role="dialog" aria-modal="true" aria-labelledby="kaart-venster-naam">
                     <button type="button" class="kaart-venster-sluit" aria-label="Sluiten">&times;</button>
                     <h3 id="kaart-venster-naam" class="kaart-venster-naam"></h3>
                     <div id="kaart-venster-tekst" class="kaart-venster-tekst"></div>
+                    <p id="kaart-venster-plaats" class="kaart-venster-plaats"></p>
                 </div>
             </div>
         </div>
@@ -1268,9 +1271,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=454"></script>
-    <script src="ontdekken-inhoud.js?v=454"></script>
-    <script src="script.js?v=454"></script>
+    <script src="lang/nl.js?v=455"></script>
+    <script src="ontdekken-inhoud.js?v=455"></script>
+    <script src="script.js?v=455"></script>
 
 </body>
 

@@ -413,7 +413,8 @@ const ONTDEK_SCHAT = [
 ];
 
 // --- Waar gebeurde het: kaart 1, het land in de tijd van Jezus --------------
-// Eén kaart = afbeelding + titel + plaatsen. Per plaats:
+// Eén kaart = afbeelding + titel + plaatsen, met optioneel een regel onder de
+// titel (uitleg) en een kleine grijze regel onder de kaart (voetnoot). Per plaats:
 //   naam    zoals hij op de kaart staat; "\n" in de naam geeft op de kaart
 //           een nieuwe regel (in het venstertje en het afstelpaneel een spatie)
 //   soort   "streek" | "stad" | "water" | "berg" — bepaalt de weergave
@@ -422,6 +423,8 @@ const ONTDEK_SCHAT = [
 //           het midden van de naam
 //   tekst   optioneel; is hij gevuld, dan is de naam aanklikbaar en opent een
 //           venstertje met naam en tekst. Leeg = niet aanklikbaar.
+//   bijbelplaats  optioneel; klein en cursief onder de tekst in het
+//           venstertje. Leeg = niet tonen.
 //   kant    optioneel, alleen bij stad en berg: waar de naam staat ten opzichte
 //           van het rondje of driehoekje: "rechts" (standaard), "links",
 //           "boven" of "onder". Het merkje zelf blijft op x/y.
@@ -437,37 +440,39 @@ const ONTDEK_KAART_LAND = {
     breedte: 1672,
     hoogte: 941,
     titel: "Het land in de tijd van Jezus",
+    uitleg: "Tik op een naam om meer te ontdekken.",
+    voetnoot: "De grenzen van de streken zijn bij benadering getekend.",
     plaatsen: [
         // streken
-        { naam: "Galilea",               soort: "streek", x: 48.8,  y: 17.5,  tekst: "" },
-        { naam: "Samaria",               soort: "streek", x: 45.5,  y: 44.0,  tekst: "" },
-        { naam: "Judea",                 soort: "streek", x: 40.2,  y: 71.0,  tekst: "" },
-        { naam: "Idumea",                soort: "streek", x: 42.2,  y: 84.9,  tekst: "" },
-        { naam: "Perea",                 soort: "streek", x: 57.0,  y: 72.0,  tekst: "" },
-        { naam: "Dekapolis",             soort: "streek", x: 61.2,  y: 37.25, tekst: "" },
-        { naam: "Fenicië",               soort: "streek", x: 37.1,  y: 31.0,  tekst: "" },
-        { naam: "gebied van\nFilippus",  soort: "streek", x: 64.3,  y: 18.0,  tekst: "" },
+        { naam: "Galilea",               soort: "streek", x: 48.8,  y: 17.5,  tekst: "Het groene noorden, met heuvels, akkers en het meer. Hier groeide Jezus op, en hier deed Hij veel van wat de evangeliën vertellen. Hij gaf er onderwijs, genas zieken en riep aan het meer Zijn eerste leerlingen om Hem te volgen: de vissers Petrus, Andreas, Jakobus en Johannes.", bijbelplaats: "Matteüs 4:12-25 · Marcus 1:16-20" },
+        { naam: "Samaria",               soort: "streek", x: 45.5,  y: 44.0,  tekst: "Het heuvelland tussen Galilea en Judea, met akkers en olijfbomen. De Samaritanen geloofden net als de Joden in de God van Abraham, maar ze waren het oneens over waar je God moest aanbidden: in Jeruzalem of op hun eigen berg, de Gerizim. Door dat verschil en door een lange, moeilijke geschiedenis waren er vaak spanningen tussen Joden en Samaritanen. Toch vertelde Jezus juist over een Samaritaan die een ander helpt.", bijbelplaats: "Johannes 4:9, 20 · Lucas 10:30-37" },
+        { naam: "Judea",                 soort: "streek", x: 40.2,  y: 71.0,  tekst: "Het zuiden, met Jeruzalem en Betlehem. In het westen liggen heuvels met olijfgaarden, in het oosten een kale woestijn die afloopt naar de Dode Zee. In die woestijn trad Johannes de Doper op.", bijbelplaats: "Matteüs 3:1" },
+        { naam: "Idumea",                soort: "streek", x: 42.2,  y: 84.9,  tekst: "Het droge land ten zuiden van Judea. De naam Idumea komt van Edom, het volk dat afstamde van Esau, de broer van Jakob. Ook koning Herodes de Grote kwam uit een Idumese familie. Toen Jezus bekend werd, kwamen er zelfs uit Idumea mensen naar Hem toe.", bijbelplaats: "Marcus 3:8 · Genesis 36:1" },
+        { naam: "Perea",                 soort: "streek", x: 57.0,  y: 72.0,  tekst: "Het land aan de oostkant van de Jordaan. Net als Galilea werd Perea geregeerd door Herodes Antipas. Ook aan deze kant van de rivier doopte Johannes, en Jezus trok hier rond en gaf er onderwijs.", bijbelplaats: "Johannes 1:28; 10:40 · Marcus 10:1" },
+        { naam: "Dekapolis",             soort: "streek", x: 61.2,  y: 37.25, tekst: "Dekapolis is Grieks voor \"tien steden\": zo heette een groep Griekse steden in deze streek. Hier woonden veel niet-Joden, en er werden ook varkens gehouden, dieren die Joden volgens hun voedselwetten niet aten. Hier genas Jezus een man, die daarna in de hele Dekapolis vertelde wat Jezus voor hem gedaan had.", bijbelplaats: "Marcus 5:1-20; 7:31" },
+        { naam: "Fenicië",               soort: "streek", x: 37.1,  y: 31.0,  tekst: "Een smalle kuststrook in het noorden, met de havensteden Tyrus en Sidon. De Feniciërs waren beroemde zeevaarders en handelaars. Jezus kwam ook in deze streek, en genas daar de dochter van een vrouw die geen Joodse was.", bijbelplaats: "Marcus 7:24-30" },
+        { naam: "gebied van\nFilippus",  soort: "streek", x: 64.3,  y: 18.0,  tekst: "Dit gebied rond de Hermon werd geregeerd door Filippus, een zoon van koning Herodes de Grote. Let op: dit is een andere Filippus dan de apostel! Hij bouwde de stad Caesarea Filippi uit: Caesarea naar de keizer, Filippi naar hemzelf.", bijbelplaats: "Lucas 3:1 · Josephus, Joodse oudheden 18.28" },
         // steden
-        { naam: "Jeruzalem",             soort: "stad",   x: 47.85, y: 67.53, tekst: "" },
-        { naam: "Betlehem",              soort: "stad",   x: 47.33, y: 70.43, kant: "onder", tekst: "" },
-        { naam: "Jericho",               soort: "stad",   x: 51.68, y: 64.31, tekst: "" },
-        { naam: "Nazaret",               soort: "stad",   x: 49.07, y: 31.37, kant: "links", tekst: "" },
-        { naam: "Kafarnaüm",             soort: "stad",   x: 54.2,  y: 24.31, kant: "links", tekst: "" },
-        { naam: "Caesarea",              soort: "stad",   x: 41.42, y: 39.22, tekst: "" },
-        { naam: "Caesarea Filippi",      soort: "stad",   x: 56.42, y: 9.84,  tekst: "" },
-        { naam: "Joppe",                 soort: "stad",   x: 38.8,  y: 56.86, tekst: "" },
-        { naam: "Lydda",                 soort: "stad",   x: 41.42, y: 60.78, tekst: "" },
-        { naam: "Tyrus",                 soort: "stad",   x: 47.13, y: 9.02,  tekst: "" },
-        { naam: "Kana",                  soort: "stad",   x: 49.12, y: 28.63, tekst: "" },
-        { naam: "Betsaïda",              soort: "stad",   x: 55.24, y: 23.14, tekst: "" },
-        { naam: "Emmaüs",                soort: "stad",   x: 43.28, y: 65.14, tekst: "" },
+        { naam: "Jeruzalem",             soort: "stad",   x: 47.85, y: 67.53, tekst: "De belangrijkste stad van het land, met de tempel. Voor de grote feesten kwamen Joden van overal hiernaartoe, en ook Jezus ging er met Zijn ouders heen toen Hij twaalf was. Net buiten de stad stierf Jezus aan het kruis en stond Hij op uit de dood. Met Pinksteren kwam hier de Heilige Geest over de leerlingen, en begonnen zij overal over Jezus te vertellen.", bijbelplaats: "Lucas 2:41-42; 23:33; 24:1-6 · Handelingen 2:1-4" },
+        { naam: "Betlehem",              soort: "stad",   x: 47.33, y: 70.43, kant: "onder", tekst: "De stad van koning David. Hier werd Jezus geboren, zoals de profeet Micha al had gezegd. De naam betekent \"broodhuis\", en Jezus noemde Zichzelf later het brood van het leven.", bijbelplaats: "Lucas 2:4-7 · Matteüs 2:5-6 · Micha 5:1 · Johannes 6:35" },
+        { naam: "Jericho",               soort: "stad",   x: 51.68, y: 64.31, tekst: "De palmenstad, vlak bij de Jordaan en de Dode Zee, en een van de oudste steden ter wereld. Hier klom de tollenaar Zacheüs in een boom om Jezus te kunnen zien, en bij Jericho genas Jezus de blinde Bartimeüs.", bijbelplaats: "Deuteronomium 34:3 · Lucas 19:1-10 · Marcus 10:46-52" },
+        { naam: "Nazaret",               soort: "stad",   x: 49.07, y: 31.37, kant: "links", tekst: "Een klein dorp in de heuvels van Galilea. Hier kreeg Maria bezoek van de engel Gabriël, en hier groeide Jezus op. Toen Natanaël hoorde dat Jezus uit Nazaret kwam, vroeg hij verbaasd: kan er uit Nazaret iets goeds komen?", bijbelplaats: "Lucas 1:26-28; 2:51 · Johannes 1:46" },
+        { naam: "Kafarnaüm",             soort: "stad",   x: 54.2,  y: 24.31, kant: "links", tekst: "Een vissersplaats aan het meer van Galilea. Toen Jezus begon te preken, ging Hij hier wonen, en de evangeliën noemen het zelfs Zijn eigen stad. Hier stond het huis van Petrus, en hier genas Jezus veel zieken.", bijbelplaats: "Matteüs 4:13; 9:1 · Marcus 1:29-34" },
+        { naam: "Caesarea",              soort: "stad",   x: 41.42, y: 39.22, tekst: "Een grote havenstad die koning Herodes de Grote liet bouwen. Hier woonde de Romeinse bestuurder van Judea, Samaria en Idumea, zoals Pontius Pilatus. Hier liet de Romeinse officier Cornelius zich dopen, als een van de eerste niet-Joden, en hier zat Paulus twee jaar gevangen.", bijbelplaats: "Handelingen 10:1, 44-48; 23:33; 24:27" },
+        { naam: "Caesarea Filippi",      soort: "stad",   x: 56.42, y: 9.84,  tekst: "Een stad aan de voet van de Hermon, bij een van de bronnen van de Jordaan. In de omgeving van deze stad vroeg Jezus aan Zijn leerlingen wie zij dachten dat Hij was. Petrus antwoordde: U bent de Messias, de Zoon van de levende God.", bijbelplaats: "Matteüs 16:13-16" },
+        { naam: "Joppe",                 soort: "stad",   x: 38.8,  y: 56.86, tekst: "Een oude havenstad aan de Middellandse Zee. Vanuit Joppe probeerde de profeet Jona met een schip te vluchten. Later wekte Petrus hier Tabita op uit de dood, en op het dak van een huis kreeg hij een visioen van God.", bijbelplaats: "Jona 1:3 · Handelingen 9:36-42; 10:9-16" },
+        { naam: "Lydda",                 soort: "stad",   x: 41.42, y: 60.78, tekst: "Een stadje op de weg van Jeruzalem naar de kust. Hier genas Petrus Eneas, een man die al acht jaar verlamd in bed lag. Het nieuws ging snel rond, en veel mensen gingen in de Heer geloven.", bijbelplaats: "Handelingen 9:32-35" },
+        { naam: "Tyrus",                 soort: "stad",   x: 47.13, y: 9.02,  tekst: "Een rijke havenstad van de Feniciërs, beroemd om haar purperen verf, die gemaakt werd van zeeslakken. Die verf was zo duur dat vooral koningen en rijke mensen zich purperen kleren konden veroorloven. Paulus bleef hier een week bij de christenen, die hem daarna tot op het strand wegbrachten.", bijbelplaats: "Handelingen 21:3-6" },
+        { naam: "Kana",                  soort: "stad",   x: 49.12, y: 28.63, tekst: "Hier deed Jezus Zijn eerste wonder: op een bruiloft veranderde Hij water in wijn. Ook de leerling Natanaël kwam uit Kana. Waar het dorp precies lag, weten we niet zeker: verschillende plekken in Galilea komen ervoor in aanmerking.", bijbelplaats: "Johannes 2:1-11; 21:2" },
+        { naam: "Betsaïda",              soort: "stad",   x: 55.24, y: 23.14, tekst: "Een vissersplaats aan het meer van Galilea. Petrus, Andreas en de apostel Filippus kwamen hier vandaan. Vlak bij Betsaïda gaf Jezus vijfduizend mensen te eten. De andere Filippus, de zoon van Herodes, maakte er een stad van. Waar Betsaïda precies lag, zoeken archeologen nog steeds: er zijn twee plekken die ervoor in aanmerking komen.", bijbelplaats: "Johannes 1:44 · Lucas 9:10-17 · Josephus, Joodse oudheden 18.28" },
+        { naam: "Emmaüs",                soort: "stad",   x: 43.28, y: 65.14, tekst: "Op de dag dat Jezus opstond uit de dood, liepen twee leerlingen van Jeruzalem naar Emmaüs. Onderweg liep Jezus met hen mee, maar ze herkenden Hem pas toen Hij het brood brak. Waar Emmaüs precies lag, weten we niet zeker. In de oude handschriften van Lucas staan zelfs twee verschillende afstanden tot Jeruzalem: ongeveer elf en ongeveer dertig kilometer.", bijbelplaats: "Lucas 24:13-35" },
         // bergen
-        { naam: "Gerizim",               soort: "berg",   x: 48.54, y: 50.98, tekst: "" },
-        { naam: "Tabor",                 soort: "berg",   x: 50.75, y: 31.88, kant: "onder", tekst: "" },
-        { naam: "Hermon",                soort: "berg",   x: 65.1,  y: 4.3,   tekst: "" },  // op de getekende top
+        { naam: "Gerizim",               soort: "berg",   x: 48.54, y: 50.98, tekst: "De berg van de Samaritanen. Bij de waterput aan de voet van deze berg sprak Jezus met een Samaritaanse vrouw. Zij vertelde Hem dat haar volk God op deze berg aanbad. Tot op de dag van vandaag woont hier een kleine groep Samaritanen.", bijbelplaats: "Johannes 4:5-26" },
+        { naam: "Tabor",                 soort: "berg",   x: 50.75, y: 31.88, kant: "onder", tekst: "Een ronde berg die los in het landschap staat. Al in het Oude Testament verzamelde Barak hier op aanwijzing van Debora zijn leger. Sinds de vierde eeuw wijzen christenen de Tabor aan als de berg waar het gezicht van Jezus begon te stralen als de zon. De Bijbel zelf noemt de naam van die berg niet.", bijbelplaats: "Rechters 4:6-14 · Matteüs 17:1-8" },
+        { naam: "Hermon",                soort: "berg",   x: 65.1,  y: 4.3,   tekst: "De hoogste berg in de wijde omtrek, ruim 2800 meter hoog. In de winter ligt er sneeuw op de top. Het smeltwater van de Hermon voedt de bronnen van de Jordaan. In de Psalmen wordt de dauw van de Hermon bezongen als een zegen.", bijbelplaats: "Psalm 133:3" },  // op de getekende top
         // water (het meer van Galilea staat op kaart 2)
-        { naam: "Jordaan",               soort: "water",  x: 56.0,  y: 46.5,  tekst: "" },
-        { naam: "Dode Zee",              soort: "water",  x: 52.8,  y: 78.43, tekst: "" },
-        { naam: "Middellandse Zee",      soort: "water",  x: 29.47, y: 47.06, tekst: "" }
+        { naam: "Jordaan",               soort: "water",  x: 56.0,  y: 46.5,  tekst: "De belangrijkste rivier van het land. Hij stroomt van de Hermon door het meer van Galilea naar de Dode Zee. In de Jordaan doopte Johannes de mensen, en ook Jezus liet Zich hier dopen.", bijbelplaats: "Matteüs 3:5-6, 13-17" },
+        { naam: "Dode Zee",              soort: "water",  x: 52.8,  y: 78.43, tekst: "Een meer met zulk zout water dat je erin blijft drijven, zonder te zwemmen. Er kunnen geen vissen in leven; daarom heet het de Dode Zee. In de Bijbel heet het de Zoutzee. In de tijd van Jezus was het groter dan nu. Daarom is het op deze kaart langer dan op een kaart van vandaag.", bijbelplaats: "Genesis 14:3" },
+        { naam: "Middellandse Zee",      soort: "water",  x: 29.47, y: 47.06, tekst: "De grote zee aan de westkant. In de Bijbel heet hij gewoon de Grote Zee. Over deze zee maakte Paulus zijn lange reizen om overal over Jezus te vertellen, en een keer leed hij er zelfs schipbreuk.", bijbelplaats: "Jozua 1:4 · Handelingen 27:39-44" }
     ]
 };
