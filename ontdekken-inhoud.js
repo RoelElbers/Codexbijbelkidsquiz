@@ -430,9 +430,12 @@ const ONTDEK_SCHAT = [
 //           (precies zoals daar geschreven). Gevuld = onder de bijbelplaats
 //           een link "Lees meer in het woordenboek", die het lemma opent;
 //           Terug brengt weer bij de kaart.
-//   kant    optioneel, alleen bij stad en berg: waar de naam staat ten opzichte
-//           van het rondje of driehoekje: "rechts" (standaard), "links",
-//           "boven" of "onder". Het merkje zelf blijft op x/y.
+//   merk    optioneel, alleen bij water: true = een klein blauw rondje op x/y,
+//           met de naam ernaast zoals bij een stad (x/y is dan het punt
+//           zelf). Zonder merk staat de naam van het water midden op x/y.
+//   kant    optioneel, bij stad, berg en water met merk: waar de naam staat
+//           ten opzichte van het rondje of driehoekje: "rechts" (standaard),
+//           "links", "boven" of "onder". Het merkje zelf blijft op x/y.
 // Startwaarden uit kladblok/geografie/kaarten/onderleggers/overzicht-posities.csv
 // (soort "onzeker" staat hier als "stad"). Fijn afstellen met ?afstel=aan.
 // Betanië staat bewust niet op deze overzichtskaart: te dicht bij Jeruzalem;
@@ -475,8 +478,9 @@ const ONTDEK_KAART_LAND = {
         { naam: "Gerizim",               soort: "berg",   x: 48.54, y: 50.98, tekst: "De berg van de Samaritanen. Bij de waterput aan de voet van deze berg sprak Jezus met een Samaritaanse vrouw. Zij vertelde Hem dat haar volk God op deze berg aanbad. Tot op de dag van vandaag woont hier een kleine groep Samaritanen.", bijbelplaats: "Johannes 4:5-26" },
         { naam: "Tabor",                 soort: "berg",   x: 50.75, y: 31.88, kant: "onder", tekst: "Een ronde berg die los in het landschap staat. Al in het Oude Testament verzamelde Barak hier op aanwijzing van Debora zijn leger. Sinds de vierde eeuw wijzen christenen de Tabor aan als de berg waar het gezicht van Jezus begon te stralen als de zon. De Bijbel zelf noemt de naam van die berg niet.", bijbelplaats: "Rechters 4:6-14 · Matteüs 17:1-8" },
         { naam: "Hermon",                soort: "berg",   x: 65.1,  y: 4.3,   tekst: "De hoogste berg in de wijde omtrek, ruim 2800 meter hoog. In de winter ligt er sneeuw op de top. Het smeltwater van de Hermon voedt de bronnen van de Jordaan. In de Psalmen wordt de dauw van de Hermon bezongen als een zegen.", bijbelplaats: "Psalm 133:3" },  // op de getekende top
-        // water (het meer van Galilea staat op kaart 2)
-        { naam: "Jordaan",               soort: "water",  x: 56.0,  y: 46.5,  tekst: "De belangrijkste rivier van het land. Hij stroomt van de Hermon door het meer van Galilea naar de Dode Zee. In de Jordaan doopte Johannes de mensen, en ook Jezus liet Zich hier dopen.", bijbelplaats: "Matteüs 3:5-6, 13-17" },
+        // water
+        { naam: "meer van Galilea",      soort: "water",  x: 54.48, y: 27.06, merk: true, tekst: "Een groot meer met zoet water, ongeveer 21 kilometer lang. In de Bijbel heet het ook het meer van Gennesaret of het meer van Tiberias, en sommige vertalingen noemen het een zee. Petrus, Andreas, Jakobus en Johannes waren hier vissers. Op dit meer stilde Jezus de storm, en liep Hij over het water naar Zijn leerlingen.", bijbelplaats: "Marcus 1:16-20; 4:35-41; 6:45-51 · Lucas 5:1 · Johannes 6:1" },
+        { naam: "Jordaan",               soort: "water",  x: 56.8,  y: 46.5,  tekst: "De belangrijkste rivier van het land. Hij stroomt van de Hermon door het meer van Galilea naar de Dode Zee. In de Jordaan doopte Johannes de mensen, en ook Jezus liet Zich hier dopen.", bijbelplaats: "Matteüs 3:5-6, 13-17" },
         { naam: "Dode Zee",              soort: "water",  x: 52.8,  y: 78.43, tekst: "Een meer met zulk zout water dat je erin blijft drijven, zonder te zwemmen. Er kunnen geen vissen in leven; daarom heet het de Dode Zee. In de Bijbel heet het de Zoutzee. In de tijd van Jezus was het groter dan nu. Daarom is het op deze kaart langer dan op een kaart van vandaag.", bijbelplaats: "Genesis 14:3" },
         { naam: "Middellandse Zee",      soort: "water",  x: 29.47, y: 47.06, tekst: "De grote zee aan de westkant. In de Bijbel heet hij gewoon de Grote Zee. Over deze zee maakte Paulus zijn lange reizen om overal over Jezus te vertellen, en een keer leed hij er zelfs schipbreuk.", bijbelplaats: "Jozua 1:4 · Handelingen 27:39-44" }
     ]

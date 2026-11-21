@@ -9282,13 +9282,14 @@ function kaartNaamPlat(naam) {
     return String(naam).replace(/\s*\n\s*/g, " ");
 }
 
-// Waar de naam staat ten opzichte van het merkje (alleen stad en berg).
+// Waar de naam staat ten opzichte van het merkje (stad, berg, water met merk).
 const KAART_KANTEN = ["rechts", "links", "boven", "onder"];
 function kaartKant(plaats) {
     return KAART_KANTEN.includes(plaats.kant) ? plaats.kant : "rechts";
 }
 function heeftKaartMerk(plaats) {
-    return plaats.soort === "stad" || plaats.soort === "berg";
+    return plaats.soort === "stad" || plaats.soort === "berg" ||
+        (plaats.soort === "water" && plaats.merk === true);
 }
 
 function openOntdekKaart(kaart) {
@@ -9346,11 +9347,12 @@ function bouwKaart(houder, kaart) {
         el.style.top = pos.y + "%";
         el.dataset.naam = plaats.naam;
 
-        // Stad: rondje; berg: driehoekje. Die staan op het punt zelf; de naam
-        // staat aan de kant uit het veld kant (standaard rechts).
+        // Stad: rondje; berg: driehoekje; water met merk: blauw rondje. Die
+        // staan op het punt zelf; de naam staat aan de kant uit het veld kant
+        // (standaard rechts).
         if (heeftKaartMerk(plaats)) {
             el.dataset.kant = kaartKant(pos);
-            el.classList.add("kant-" + el.dataset.kant);
+            el.classList.add("met-merk", "kant-" + el.dataset.kant);
             const merk = document.createElement("span");
             merk.className = "kaart-merk";
             merk.setAttribute("aria-hidden", "true");
@@ -9539,12 +9541,14 @@ function initKaartAfstel() {
     // de huidige posities (afgesteld of uit de config).
     paneel.querySelector("#kaart-afstel-export").addEventListener("click", () => {
         const map = leesKaartAfstel();
-        // kant alleen bij stad en berg, en alleen als hij niet de standaard is.
+        // kant alleen bij een plaats met merkje, en alleen als hij niet de
+        // standaard is; merk alleen bij water dat er een heeft.
         const regels = actieveKaart.plaatsen.map((p) => {
             const pos = Object.assign({}, p, map[kaartAfstelSleutel(actieveKaart, p)] || {});
             const kant = heeftKaartMerk(p) ? kaartKant(pos) : "rechts";
             return '        { naam: ' + JSON.stringify(p.naam) + ', soort: ' + JSON.stringify(p.soort) +
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
+                (p.soort === "water" && p.merk === true ? ', merk: true' : '') +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
                 ', tekst: ' + JSON.stringify(p.tekst || "") +
                 (p.bijbelplaats ? ', bijbelplaats: ' + JSON.stringify(p.bijbelplaats) : '') +

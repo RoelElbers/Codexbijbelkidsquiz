@@ -5953,12 +5953,14 @@ a.tekst-link { width: fit-content; text-align: center; }
    midden op het punt. De naam hangt er los aan, aan de kant uit het veld kant
    (kant-rechts, -links, -boven, -onder); het merkje blijft dus op x/y. */
 .kaart-stad,
-.kaart-berg {
+.kaart-berg,
+.kaart-water.met-merk {
     display: block;
     transform: translate(-50%, -50%);
 }
 .kaart-stad .kaart-naam,
-.kaart-berg .kaart-naam {
+.kaart-berg .kaart-naam,
+.kaart-water.met-merk .kaart-naam {
     position: absolute;
 }
 .kant-rechts .kaart-naam { left: 100%;  top: 50%;    transform: translateY(-50%); margin-left: 0.3em; }
@@ -5983,16 +5985,25 @@ a.tekst-link { width: fit-content; text-align: center; }
     border: 0.13em solid #2e1c06;
 }
 
-/* Water en berg: cursief, iets kleiner. Berg met een klein driehoekje. */
-.kaart-water,
+/* Water: cursief, donkerblauw en iets groter dan een berg, zodat het als
+   water herkenbaar is. Optioneel een klein blauw rondje (merk: true).
+   Berg: cursief, met een klein driehoekje. */
+.kaart-water {
+    font-size: max(11.5px, 1.1cqw);
+    font-style: italic;
+    font-weight: 700;
+    color: #0b3d8c;
+}
+.kaart-water .kaart-merk {
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #9fd8ff 0%, #2a7fd4 60%, #0b3d8c 100%);
+    border: 0.12em solid #fff8e8;
+}
 .kaart-berg {
     font-size: max(10.5px, 0.95cqw);
     font-style: italic;
-}
-.kaart-water {
-    color: #0a3466;
-}
-.kaart-berg {
     color: #3f2709;
 }
 .kaart-berg .kaart-merk {
