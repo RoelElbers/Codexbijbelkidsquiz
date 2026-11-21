@@ -9505,25 +9505,39 @@ function zoomKaartRond(z, px, py, anim) {
     let gebaar = null;
     let gesleept = false;
 
+    // De afmetingen van de kaart worden bij elk gebaar en bij elke beweging
+    // vers opgevraagd (nooit onthouden): in fullscreen, na draaien of na een
+    // resize is het vlak anders groot. Het midden tussen twee vingers wordt
+    // daarom in procenten van de kaart onthouden, niet in pixels.
+    function kaartRect() {
+        return houder.getBoundingClientRect();
+    }
     function startGebaar() {
-        const r = houder.getBoundingClientRect();
+        const r = kaartRect();
         const p = [...wijzers.values()];
         if (p.length === 1) {
-            gebaar = { soort: "schuif", sx: p[0].x, sy: p[0].y, x0: kaartZoom.x, y0: kaartZoom.y, r };
+            gebaar = { soort: "schuif", sx: p[0].x, sy: p[0].y, x0: kaartZoom.x, y0: kaartZoom.y };
         } else if (p.length >= 2) {
+            const fx0 = ((p[0].x + p[1].x) / 2 - r.left) / r.width * 100;
+            const fy0 = ((p[0].y + p[1].y) / 2 - r.top) / r.height * 100;
             gebaar = {
-                soort: "knijp", r, z0: kaartZoom.z, x0: kaartZoom.x, y0: kaartZoom.y,
+                soort: "knijp", z0: kaartZoom.z,
                 d0: Math.max(1, Math.hypot(p[1].x - p[0].x, p[1].y - p[0].y)),
-                mx0: (p[0].x + p[1].x) / 2 - r.left, my0: (p[0].y + p[1].y) / 2 - r.top
+                // Het kaartpunt (in % van de hele kaart) onder het begin-midden.
+                cx: (fx0 - kaartZoom.x) / kaartZoom.z,
+                cy: (fy0 - kaartZoom.y) / kaartZoom.z
             };
         } else {
             gebaar = null;
         }
     }
-
     houder.addEventListener("pointerdown", (e) => {
         if (afstelModus) return;
         if (e.pointerType === "mouse" && e.button !== 0) return;
+        // De eerste vinger van een nieuwe aanraking (isPrimary): oude wijzers
+        // die nooit een pointerup of pointercancel kregen, mogen een nieuw
+        // gebaar niet verstoren.
+        if (e.isPrimary) wijzers.clear();
         if (wijzers.size === 0) gesleept = false;
         wijzers.set(e.pointerId, { x: e.clientX, y: e.clientY, soort: e.pointerType });
         startGebaar();
@@ -9532,6 +9546,8 @@ function zoomKaartRond(z, px, py, anim) {
     houder.addEventListener("pointermove", (e) => {
         if (!wijzers.has(e.pointerId) || !gebaar) return;
         wijzers.set(e.pointerId, { x: e.clientX, y: e.clientY, soort: e.pointerType });
+        const r = kaartRect();
+        if (!r.width || !r.height) return;
         if (gebaar.soort === "schuif") {
             const dx = e.clientX - gebaar.sx, dy = e.clientY - gebaar.sy;
             if (!gesleept) {
@@ -9542,18 +9558,17 @@ function zoomKaartRond(z, px, py, anim) {
                 try { houder.setPointerCapture(e.pointerId); } catch (err) { /* niet nodig */ }
             }
             houder.classList.add("kaart-sleept");
-            zetKaartZoom(kaartZoom.z, gebaar.x0 + dx / gebaar.r.width * 100, gebaar.y0 + dy / gebaar.r.height * 100);
+            zetKaartZoom(kaartZoom.z, gebaar.x0 + dx / r.width * 100, gebaar.y0 + dy / r.height * 100);
         } else {
             gesleept = true;
             try { houder.setPointerCapture(e.pointerId); } catch (err) { /* niet nodig */ }
             const p = [...wijzers.values()];
             const d = Math.hypot(p[1].x - p[0].x, p[1].y - p[0].y);
-            const mx = (p[0].x + p[1].x) / 2 - gebaar.r.left, my = (p[0].y + p[1].y) / 2 - gebaar.r.top;
+            const fx = ((p[0].x + p[1].x) / 2 - r.left) / r.width * 100;
+            const fy = ((p[0].y + p[1].y) / 2 - r.top) / r.height * 100;
             const z = Math.min(KAART_ZOOM_MAX, Math.max(1, gebaar.z0 * d / gebaar.d0));
             // Het kaartpunt dat onder het begin-midden lag, blijft onder de vingers.
-            const cx = (gebaar.mx0 / gebaar.r.width * 100 - gebaar.x0) / gebaar.z0;
-            const cy = (gebaar.my0 / gebaar.r.height * 100 - gebaar.y0) / gebaar.z0;
-            zetKaartZoom(z, mx / gebaar.r.width * 100 - cx * z, my / gebaar.r.height * 100 - cy * z);
+            zetKaartZoom(z, fx - gebaar.cx * z, fy - gebaar.cy * z);
         }
     });
 
@@ -9564,6 +9579,20 @@ function zoomKaartRond(z, px, py, anim) {
         startGebaar();
         if (wijzers.size === 0) houder.classList.remove("kaart-sleept");
     }
+
+    // Fullscreen aan/uit, draaien of een andere venstergrootte: de huidige
+    // zoomstand opnieuw toepassen, zodat de grenzen voor schuiven kloppen met
+    // het nieuwe vlak. Een lopend gebaar wordt niet afgebroken (een resize kan
+    // midden in een knijpbeweging komen), maar begint opnieuw vanaf de huidige
+    // stand en de huidige vingerposities.
+    function herberekenKaart() {
+        zetKaartZoom(kaartZoom.z, kaartZoom.x, kaartZoom.y);
+        if (gebaar) startGebaar();
+    }
+    document.addEventListener("fullscreenchange", herberekenKaart);
+    document.addEventListener("webkitfullscreenchange", herberekenKaart);
+    window.addEventListener("resize", herberekenKaart);
+    window.addEventListener("orientationchange", herberekenKaart);
     houder.addEventListener("pointerup", laatLos);
     houder.addEventListener("pointercancel", laatLos);
 
@@ -9587,6 +9616,73 @@ function zoomKaartRond(z, px, py, anim) {
             else zoomKaartRond(kaartZoom.z * (b.dataset.zoom === "in" ? 1.5 : 1 / 1.5), r.width / 2, r.height / 2, true);
         });
     }
+})();
+
+// --- Diagnose: ?gebaren=aan -------------------------------------------------
+// Alleen met die parameter in de adresbalk. Een klein lijstje rechtsboven
+// toont de binnenkomende pointer- en touch-events: soort, vingers, het
+// element waarop ze landen, en pointercancel opvallend in rood. Opeenvolgende
+// move-events worden samengevat (×aantal), anders loopt het lijstje vol.
+// Bovenaan staan fullscreen, vensterformaat, kaartformaat en zoomstand.
+(function gebarenDiagnose() {
+    if (new URLSearchParams(window.location.search).get("gebaren") !== "aan") return;
+    const paneel = document.createElement("div");
+    paneel.id = "gebaren-diagnose";
+    paneel.innerHTML = '<div class="gd-kop"></div><div class="gd-regels"></div>';
+    document.body.appendChild(paneel);
+    const kop = paneel.querySelector(".gd-kop");
+    const lijst = paneel.querySelector(".gd-regels");
+    const MAX = 16;
+    let laatste = null;
+
+    function doelNaam(el) {
+        if (!el || !el.tagName) return "?";
+        if (el.id) return "#" + el.id;
+        const plaats = el.closest && el.closest(".kaart-plaats");
+        if (plaats) return "naam:" + kaartNaamPlat(plaats.dataset.naam || "");
+        const k = typeof el.className === "string" && el.className.split(" ")[0];
+        return el.tagName.toLowerCase() + (k ? "." + k : "");
+    }
+    function toonKop() {
+        const k = document.getElementById("ontdek-kaart");
+        const r = k ? k.getBoundingClientRect() : null;
+        kop.textContent =
+            "fs:" + (document.fullscreenElement ? document.fullscreenElement.tagName.toLowerCase() : "nee") +
+            " venster:" + innerWidth + "x" + innerHeight +
+            " kaart:" + (r ? Math.round(r.width) + "x" + Math.round(r.height) : "-") +
+            " zoom:" + kaartZoom.z.toFixed(2) + " (" + kaartZoom.x.toFixed(0) + "," + kaartZoom.y.toFixed(0) + ")";
+    }
+    function regel(tekst, sleutel, rood) {
+        if (laatste && laatste.sleutel === sleutel && sleutel.indexOf("move") >= 0) {
+            laatste.aantal++;
+            laatste.el.textContent = tekst + " ×" + laatste.aantal;
+        } else {
+            const el = document.createElement("div");
+            el.textContent = tekst;
+            if (rood) el.className = "gd-rood";
+            lijst.insertBefore(el, lijst.firstChild);
+            while (lijst.childNodes.length > MAX) lijst.removeChild(lijst.lastChild);
+            laatste = { sleutel, el, aantal: 1 };
+        }
+        toonKop();
+    }
+    ["pointerdown", "pointermove", "pointerup", "pointercancel", "gotpointercapture", "lostpointercapture"].forEach((type) => {
+        document.addEventListener(type, (e) => {
+            const t = type.replace("pointer", "p.") + " " + e.pointerType + " id" + e.pointerId + " → " + doelNaam(e.target);
+            regel(t, type + e.pointerId + doelNaam(e.target), type === "pointercancel");
+        }, { capture: true, passive: true });
+    });
+    ["touchstart", "touchmove", "touchend", "touchcancel"].forEach((type) => {
+        document.addEventListener(type, (e) => {
+            const t = type.replace("touch", "t.") + " vingers:" + e.touches.length + " → " + doelNaam(e.target) +
+                (e.cancelable ? "" : " (niet annuleerbaar)");
+            regel(t, type + e.touches.length + doelNaam(e.target), type === "touchcancel");
+        }, { capture: true, passive: true });
+    });
+    ["fullscreenchange", "resize", "orientationchange"].forEach((type) => {
+        (type === "fullscreenchange" ? document : window).addEventListener(type, () => regel("** " + type, type + Date.now(), false));
+    });
+    toonKop();
 })();
 
 (function koppelKaartVenster() {

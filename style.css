@@ -6154,6 +6154,27 @@ a.tekst-link { width: fit-content; text-align: center; }
     cursor: pointer;
 }
 
+/* Diagnose-stand ?gebaren=aan: lijstje rechtsboven, onder de fullscreen-
+   knop. Vangt zelf geen aanrakingen af (pointer-events: none). */
+#gebaren-diagnose {
+    position: fixed;
+    top: 80px;
+    right: 8px;
+    z-index: 6000;
+    width: min(330px, 46vw);
+    padding: 6px 8px;
+    background: rgba(8, 14, 30, 0.86);
+    color: #e8eefc;
+    font: 10px/1.35 ui-monospace, Menlo, Consolas, monospace;
+    border: 1px solid #36dfff;
+    border-radius: 6px;
+    pointer-events: none;
+    text-align: left;
+    word-break: break-all;
+}
+#gebaren-diagnose .gd-kop { color: #36dfff; margin-bottom: 4px; }
+#gebaren-diagnose .gd-rood { color: #ff6b6b; font-weight: 700; }
+
 /* Het Schatkamer-afstelpaneel (linksboven) lag over de Terug-knop van de
    kaart; zolang de kaart openstaat, gaat het weg. */
 body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
