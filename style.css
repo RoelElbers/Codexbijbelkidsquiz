@@ -5822,59 +5822,83 @@ a.tekst-link { width: fit-content; text-align: center; }
    (liggend) leesbaar blijven. Donkere letters met een lichte rand eromheen
    (text-shadow), zodat ze op elke kleur van de kaart te lezen zijn.
 ========================================================================= */
-.kaart-box {
-    width: auto;
-    max-width: 96vw;
-    max-height: 96vh;
-    overflow: auto;
-    padding: 18px 28px 28px;
-    border-radius: 28px;
-}
-/* Terug links, titel in het midden; de lege derde kolom houdt hem daar. */
-.kaart-kop {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
+/* Het scherm: geen kader, de kaart vult het hele scherm met behoud van de
+   verhouding 1672/941. De rand die overblijft krijgt het donkerblauw van de
+   game. .kaart-vlak is precies zo groot als de kaart; Terug, titel en
+   voetnoot liggen daar in procenten overheen. */
+#ontdek-kaart-scherm {
+    background: #102a5c;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 14px;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
 }
-.kaart-kop .naslag-terug {
-    justify-self: start;
-    margin: 0;
-}
-.kaart-kop .quiz-title {
-    margin: 0;
-    font-size: clamp(1.5rem, 2.3vw, 2.4rem);
-}
-.ontdek-kaart {
+.kaart-vlak {
     position: relative;
     container-type: inline-size;
-    /* Zo breed als past: binnen 90% van de breedte, en zo dat de hele kaart
-       met kop en marges in de hoogte past. 1672/941 = de beeldverhouding. */
-    width: min(90vw, calc((92vh - 190px) * 1672 / 941));
-    margin: 0 auto;
+    width: min(100vw, 100vh * 1672 / 941);
+    width: min(100vw, 100dvh * 1672 / 941);
+    aspect-ratio: 1672 / 941;
+    flex: none;
 }
-/* Regel onder de titel ("Tik op een naam ...") en de kleine grijze regel
-   onder de kaart. */
-.kaart-uitleg {
-    margin: -4px 0 12px;
-    text-align: center;
-    color: #f3ecd8;
-    font-size: clamp(1rem, 1.15vw, 1.25rem);
-}
-.kaart-voetnoot {
-    margin: 10px 0 0;
-    text-align: center;
-    color: #a8b2c8;
-    font-size: 0.9rem;
+.ontdek-kaart {
+    position: absolute;
+    inset: 0;
+    container-type: inline-size;
 }
 .ontdek-kaart-beeld {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 14px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.45);
     user-select: none;
+}
+
+/* Terug linksboven, in de lucht. */
+.kaart-vlak .kaart-terug {
+    position: absolute;
+    left: 1.2%;
+    top: 2%;
+    z-index: 2;
+    margin: 0;
+}
+/* Titel en uitlegregel klein en gecentreerd bovenaan, met een lichte
+   schaduw zodat ze op lucht en land leesbaar blijven. Klikken gaan erdoor. */
+.kaart-kop {
+    position: absolute;
+    left: 50%;
+    top: 1.2%;
+    z-index: 2;
+    transform: translateX(-50%);
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.kaart-titel {
+    margin: 0;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: max(15px, 1.7cqw);
+    letter-spacing: 0.03em;
+}
+.kaart-uitleg {
+    margin: 0.2em 0 0;
+    font-size: max(11px, 0.95cqw);
+}
+/* Voetnoot klein rechtsonder, in het zand. */
+.kaart-voetnoot {
+    position: absolute;
+    right: 1.2%;
+    bottom: 1%;
+    z-index: 2;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: max(10px, 0.75cqw);
+    font-style: italic;
+    color: #3a2508;
+    text-shadow: 0 0 2px #fff8e8, 0 0 4px #fff8e8;
+    pointer-events: none;
 }
 
 /* Eén naam op de kaart. Standaard gecentreerd op zijn punt (streek, water);
@@ -6097,34 +6121,16 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     resize: vertical;
 }
 
-/* Telefoon en korte schermen: de overlay scrollt als geheel (zie TELEFOON /
-   KORTE SCHERMEN), dus de kaart mag de volle breedte nemen in plaats van zich
-   naar de hoogte te voegen. */
+/* Telefoon en korte schermen: de algemene overlayregels (scrollen, padding,
+   bovenaan uitlijnen) gelden hier niet; de kaart blijft schermvullend. */
 @media (max-width: 768px), (max-height: 500px) {
-    .kaart-box {
-        padding: 10px 12px 14px;
-        border-radius: 18px;
+    #ontdek-kaart-scherm {
+        align-items: center;
+        padding: 0;
+        overflow: hidden;
     }
-    .kaart-kop {
-        gap: 10px;
-        margin-bottom: 8px;
-    }
-    .kaart-kop .quiz-title {
-        font-size: 1.15rem;
-    }
-    .kaart-uitleg {
-        margin: 0 0 8px;
-        font-size: 0.95rem;
-    }
-    .kaart-voetnoot {
-        margin-top: 6px;
-        font-size: 0.8rem;
-    }
-    .kaart-kop .naslag-terug {
-        padding: 6px 14px;
-        font-size: 0.95rem;
-    }
-    .ontdek-kaart {
-        width: 88vw;
+    .kaart-vlak .kaart-terug {
+        padding: 5px 12px;
+        font-size: 0.85rem;
     }
 }

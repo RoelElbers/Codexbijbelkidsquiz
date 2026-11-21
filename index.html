@@ -349,7 +349,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=457">
+    <link rel="stylesheet" href="style.css?v=458">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -977,15 +977,16 @@
         <!-- Ontdekken: een kaart (Waar gebeurde het). Wordt door openOntdekKaart()
              gevuld uit de kaartconfig in ontdekken-inhoud.js. Het venstertje
              toont de tekst bij een aanklikbare plaats; klik ernaast of op het
-             kruisje sluit het. -->
+             kruisje sluit het. De kaart vult het scherm (16:9); Terug, titel en
+             voetnoot liggen eroverheen, op posities binnen .kaart-vlak. -->
         <div id="ontdek-kaart-scherm" class="quiz-overlay" style="display: none;">
-            <div class="quiz-box kaart-box">
-                <div class="kaart-kop">
-                    <button class="answer-btn niveau-terug naslag-terug" onclick="gaTerug()">&larr; Terug</button>
-                    <h2 class="quiz-title" id="ontdek-kaart-titel"></h2>
-                </div>
-                <p id="ontdek-kaart-uitleg" class="kaart-uitleg"></p>
+            <div class="kaart-vlak">
                 <div id="ontdek-kaart" class="ontdek-kaart"></div>
+                <button class="answer-btn niveau-terug naslag-terug kaart-terug" onclick="gaTerug()">&larr; Terug</button>
+                <div class="kaart-kop">
+                    <h2 id="ontdek-kaart-titel" class="kaart-titel"></h2>
+                    <p id="ontdek-kaart-uitleg" class="kaart-uitleg"></p>
+                </div>
                 <p id="ontdek-kaart-voetnoot" class="kaart-voetnoot"></p>
             </div>
             <div id="kaart-venster" class="kaart-venster" style="display: none;">
@@ -1271,9 +1272,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=457"></script>
-    <script src="ontdekken-inhoud.js?v=457"></script>
-    <script src="script.js?v=457"></script>
+    <script src="lang/nl.js?v=458"></script>
+    <script src="ontdekken-inhoud.js?v=458"></script>
+    <script src="script.js?v=458"></script>
 
 </body>
 
