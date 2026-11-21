@@ -6053,6 +6053,26 @@ a.tekst-link { width: fit-content; text-align: center; }
     font-style: italic;
     color: #d8c99a;
 }
+/* Link naar het woordenboek, onder de bijbelplaats. */
+.kaart-venster-woord {
+    display: inline-block;
+    margin: 0.9em 0 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    font: inherit;
+    font-size: 1rem;
+    color: #ffd86b;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    cursor: pointer;
+}
+.kaart-venster-woord:hover,
+.kaart-venster-woord:focus-visible {
+    color: #fff1c2;
+}
 .kaart-venster-sluit {
     position: absolute;
     top: 10px;

@@ -9382,7 +9382,42 @@ function openKaartVenster(plaats) {
         plaatsEl.textContent = plaats.bijbelplaats || "";
         plaatsEl.style.display = plaats.bijbelplaats ? "" : "none";
     }
+    // Link naar het woordenboek; alleen als het lemma echt bestaat.
+    const woordEl = document.getElementById("kaart-venster-woord");
+    if (woordEl) {
+        const lemma = plaats.woordenboek ? vindWoordenboekLemma(plaats.woordenboek) : null;
+        if (plaats.woordenboek && !lemma) {
+            console.warn(`Kaart: woordenboeklemma "${plaats.woordenboek}" niet gevonden.`);
+        }
+        woordEl.dataset.term = lemma ? lemma.term : "";
+        woordEl.style.display = lemma ? "" : "none";
+    }
     venster.style.display = "flex";
+}
+
+// Een lemma uit het woordenboek op term (een verwijzing naar elders volgt hij).
+function vindWoordenboekLemma(term) {
+    let e = ONTDEK_WOORDENBOEK.find((d) => d.term === term);
+    if (e && e.verwijstNaar) {
+        const doel = vindOntdekOnderwerp(e.verwijstNaar);
+        e = doel && (doel.inhoud || []).find((d) => d.term === term && !d.verwijstNaar);
+    }
+    return e || null;
+}
+
+// Opent één woordenboeklemma in het gewone detailscherm. Het venstertje gaat
+// dicht; Terug (navigatiestack) brengt het kind weer bij de kaart.
+function openWoordenboekLemma(term) {
+    const lemma = vindWoordenboekLemma(term);
+    if (!lemma) return;
+    sluitKaartVenster();
+    const titel = document.getElementById("ontdek-detail-titel");
+    if (titel) titel.textContent = "Woordenboek";
+    const houder = document.getElementById("ontdek-detail");
+    if (houder) houder.innerHTML = rendeerOntdekInhoud({ type: "lexicon", inhoud: [lemma] });
+    gaNaarScherm("ontdek-detail-scherm");
+    const box = document.querySelector("#ontdek-detail-scherm .quiz-box");
+    if (box) box.scrollTop = 0;
 }
 function sluitKaartVenster() {
     const venster = document.getElementById("kaart-venster");
@@ -9394,6 +9429,8 @@ function sluitKaartVenster() {
     // Klik op de donkere achtergrond (niet in het vak) sluit; het kruisje ook.
     venster.addEventListener("click", (e) => {
         if (e.target === venster || e.target.closest(".kaart-venster-sluit")) sluitKaartVenster();
+        const woord = e.target.closest(".kaart-venster-woord");
+        if (woord && woord.dataset.term) openWoordenboekLemma(woord.dataset.term);
     });
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && venster.style.display !== "none") sluitKaartVenster();
@@ -9510,7 +9547,8 @@ function initKaartAfstel() {
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
                 ', tekst: ' + JSON.stringify(p.tekst || "") +
-                (p.bijbelplaats ? ', bijbelplaats: ' + JSON.stringify(p.bijbelplaats) : '') + ' }';
+                (p.bijbelplaats ? ', bijbelplaats: ' + JSON.stringify(p.bijbelplaats) : '') +
+                (p.woordenboek ? ', woordenboek: ' + JSON.stringify(p.woordenboek) : '') + ' }';
         });
         uitvoerEl.value = regels.join(",\n");
         uitvoerEl.style.display = "block";
