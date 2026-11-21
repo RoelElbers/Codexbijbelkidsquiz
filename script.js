@@ -9310,6 +9310,9 @@ function openOntdekKaart(kaart) {
     bouwKaart(document.getElementById("ontdek-kaart"), kaart);
     sluitKaartVenster();
     gaNaarScherm("ontdek-kaart-scherm");
+    zetKaartZoom(1, 0, 0);
+    const zoomKnoppen = document.getElementById("kaart-zoom");
+    if (zoomKnoppen) zoomKnoppen.style.display = afstelModus ? "none" : "";
     if (afstelModus) initKaartAfstel();
 }
 
@@ -9343,8 +9346,18 @@ function bouwKaart(houder, kaart) {
             });
         }
         el.className = "kaart-plaats kaart-" + plaats.soort + (heeftTekst ? " kaart-klikbaar" : "");
-        el.style.left = pos.x + "%";
-        el.style.top = pos.y + "%";
+        // Buiten de afstelmodus volgen de posities de zoom: --kz (factor) en
+        // --kx/--ky (verschuiving in % van de kaart) staan op de houder. Zo
+        // vergroot alleen de kaart; de namen blijven even groot en schuiven
+        // bij inzoomen uit elkaar. In afstelmodus is er geen zoom en blijft
+        // de positie een gewoon percentage (dat leest het afstelpaneel).
+        if (afstelModus) {
+            el.style.left = pos.x + "%";
+            el.style.top = pos.y + "%";
+        } else {
+            el.style.left = "calc(var(--kx) + var(--kz) * " + pos.x + "%)";
+            el.style.top = "calc(var(--ky) + var(--kz) * " + pos.y + "%)";
+        }
         el.dataset.naam = plaats.naam;
 
         // Stad: rondje; berg: driehoekje; water met merk: blauw rondje. Die
@@ -9425,6 +9438,157 @@ function sluitKaartVenster() {
     const venster = document.getElementById("kaart-venster");
     if (venster) venster.style.display = "none";
 }
+// --- Kaart: inzoomen en schuiven ---------------------------------------------
+// Alleen de afbeelding vergroot (transform); de namen staan op berekende
+// posities (zie bouwKaart) en blijven dus even groot. De stand staat in
+// kaartZoom: z = factor (1 tot KAART_ZOOM_MAX), x en y = verschuiving van de
+// kaart in procenten van zijn eigen breedte en hoogte (0 of negatief). In
+// procenten, zodat de stand klopt als het scherm van grootte verandert.
+//
+// Bediening: muiswiel = zoomen rond de muis, slepen = schuiven; op een
+// aanraakscherm knijpen met twee vingers = zoomen, één vinger = schuiven.
+// Knoppen + / − / Hele kaart rechtsonder. Een beweging van meer dan een paar
+// pixels telt als slepen; de klik die daarna volgt, wordt opgevangen, zodat
+// slepen nooit per ongeluk een naam opent. In afstelmodus staat de zoom uit.
+const KAART_ZOOM_MAX = 3;
+const kaartZoom = { z: 1, x: 0, y: 0 };
+
+function zetKaartZoom(z, x, y, anim) {
+    const houder = document.getElementById("ontdek-kaart");
+    if (!houder) return;
+    z = Math.min(KAART_ZOOM_MAX, Math.max(1, z));
+    // Nooit buiten de kaart: de linker-/bovenrand blijft op of links/boven
+    // de rand van het vlak, de rechter-/onderrand op of rechts/onder ervan.
+    x = Math.min(0, Math.max(100 * (1 - z), x));
+    y = Math.min(0, Math.max(100 * (1 - z), y));
+    kaartZoom.z = z; kaartZoom.x = x; kaartZoom.y = y;
+    houder.classList.toggle("kaart-anim", !!anim);
+    houder.style.setProperty("--kz", z);
+    houder.style.setProperty("--kx", x + "%");
+    houder.style.setProperty("--ky", y + "%");
+    houder.classList.toggle("kaart-ingezoomd", z > 1.001);
+    const knoppen = document.getElementById("kaart-zoom");
+    if (knoppen) {
+        knoppen.querySelector('[data-zoom="in"]').disabled = z >= KAART_ZOOM_MAX - 0.001;
+        knoppen.querySelector('[data-zoom="uit"]').disabled = z <= 1.001;
+        knoppen.querySelector('[data-zoom="heel"]').disabled = z <= 1.001;
+    }
+}
+
+// Zoomt naar factor z, zo dat het punt (px, py) — in pixels binnen de kaart —
+// op dezelfde plek op het scherm blijft.
+function zoomKaartRond(z, px, py, anim) {
+    const houder = document.getElementById("ontdek-kaart");
+    if (!houder) return;
+    const r = houder.getBoundingClientRect();
+    const fx = px / r.width * 100, fy = py / r.height * 100;
+    const cx = (fx - kaartZoom.x) / kaartZoom.z, cy = (fy - kaartZoom.y) / kaartZoom.z;
+    z = Math.min(KAART_ZOOM_MAX, Math.max(1, z));
+    zetKaartZoom(z, fx - cx * z, fy - cy * z, anim);
+}
+
+(function koppelKaartZoom() {
+    const houder = document.getElementById("ontdek-kaart");
+    if (!houder) return;
+
+    // Muiswiel: zoomen rond de muispositie.
+    houder.addEventListener("wheel", (e) => {
+        if (afstelModus) return;
+        e.preventDefault();
+        const stap = e.deltaMode === 1 ? e.deltaY * 33 : e.deltaY;
+        const r = houder.getBoundingClientRect();
+        zoomKaartRond(kaartZoom.z * Math.exp(-stap * 0.0015), e.clientX - r.left, e.clientY - r.top);
+    }, { passive: false });
+
+    // Slepen en knijpen via pointer events (muis, vinger en pen).
+    const wijzers = new Map();     // pointerId -> { x, y }
+    let gebaar = null;
+    let gesleept = false;
+
+    function startGebaar() {
+        const r = houder.getBoundingClientRect();
+        const p = [...wijzers.values()];
+        if (p.length === 1) {
+            gebaar = { soort: "schuif", sx: p[0].x, sy: p[0].y, x0: kaartZoom.x, y0: kaartZoom.y, r };
+        } else if (p.length >= 2) {
+            gebaar = {
+                soort: "knijp", r, z0: kaartZoom.z, x0: kaartZoom.x, y0: kaartZoom.y,
+                d0: Math.max(1, Math.hypot(p[1].x - p[0].x, p[1].y - p[0].y)),
+                mx0: (p[0].x + p[1].x) / 2 - r.left, my0: (p[0].y + p[1].y) / 2 - r.top
+            };
+        } else {
+            gebaar = null;
+        }
+    }
+
+    houder.addEventListener("pointerdown", (e) => {
+        if (afstelModus) return;
+        if (e.pointerType === "mouse" && e.button !== 0) return;
+        if (wijzers.size === 0) gesleept = false;
+        wijzers.set(e.pointerId, { x: e.clientX, y: e.clientY, soort: e.pointerType });
+        startGebaar();
+    });
+
+    houder.addEventListener("pointermove", (e) => {
+        if (!wijzers.has(e.pointerId) || !gebaar) return;
+        wijzers.set(e.pointerId, { x: e.clientX, y: e.clientY, soort: e.pointerType });
+        if (gebaar.soort === "schuif") {
+            const dx = e.clientX - gebaar.sx, dy = e.clientY - gebaar.sy;
+            if (!gesleept) {
+                // Drempel: een klein trillen bij een tik telt niet als slepen.
+                const drempel = e.pointerType === "mouse" ? 4 : 10;
+                if (Math.hypot(dx, dy) < drempel) return;
+                gesleept = true;
+                try { houder.setPointerCapture(e.pointerId); } catch (err) { /* niet nodig */ }
+            }
+            houder.classList.add("kaart-sleept");
+            zetKaartZoom(kaartZoom.z, gebaar.x0 + dx / gebaar.r.width * 100, gebaar.y0 + dy / gebaar.r.height * 100);
+        } else {
+            gesleept = true;
+            try { houder.setPointerCapture(e.pointerId); } catch (err) { /* niet nodig */ }
+            const p = [...wijzers.values()];
+            const d = Math.hypot(p[1].x - p[0].x, p[1].y - p[0].y);
+            const mx = (p[0].x + p[1].x) / 2 - gebaar.r.left, my = (p[0].y + p[1].y) / 2 - gebaar.r.top;
+            const z = Math.min(KAART_ZOOM_MAX, Math.max(1, gebaar.z0 * d / gebaar.d0));
+            // Het kaartpunt dat onder het begin-midden lag, blijft onder de vingers.
+            const cx = (gebaar.mx0 / gebaar.r.width * 100 - gebaar.x0) / gebaar.z0;
+            const cy = (gebaar.my0 / gebaar.r.height * 100 - gebaar.y0) / gebaar.z0;
+            zetKaartZoom(z, mx / gebaar.r.width * 100 - cx * z, my / gebaar.r.height * 100 - cy * z);
+        }
+    });
+
+    function laatLos(e) {
+        if (!wijzers.has(e.pointerId)) return;
+        wijzers.delete(e.pointerId);
+        // Blijft er één vinger over na het knijpen, dan schuift die verder.
+        startGebaar();
+        if (wijzers.size === 0) houder.classList.remove("kaart-sleept");
+    }
+    houder.addEventListener("pointerup", laatLos);
+    houder.addEventListener("pointercancel", laatLos);
+
+    // Na slepen of knijpen geen klik: een naam opent alleen bij een echte tik.
+    houder.addEventListener("click", (e) => {
+        if (gesleept) {
+            e.stopPropagation();
+            e.preventDefault();
+            gesleept = false;
+        }
+    }, true);
+
+    // Knoppen + / − / Hele kaart.
+    const knoppen = document.getElementById("kaart-zoom");
+    if (knoppen) {
+        knoppen.addEventListener("click", (e) => {
+            const b = e.target.closest("button[data-zoom]");
+            if (!b || afstelModus) return;
+            const r = houder.getBoundingClientRect();
+            if (b.dataset.zoom === "heel") zetKaartZoom(1, 0, 0, true);
+            else zoomKaartRond(kaartZoom.z * (b.dataset.zoom === "in" ? 1.5 : 1 / 1.5), r.width / 2, r.height / 2, true);
+        });
+    }
+})();
+
 (function koppelKaartVenster() {
     const venster = document.getElementById("kaart-venster");
     if (!venster) return;

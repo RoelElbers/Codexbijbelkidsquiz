@@ -5841,17 +5841,69 @@ a.tekst-link { width: fit-content; text-align: center; }
     aspect-ratio: 1672 / 941;
     flex: none;
 }
+/* Inzoomen en schuiven (koppelKaartZoom in script.js): --kz is de factor,
+   --kx/--ky de verschuiving in % van de kaart. Alleen de afbeelding schaalt;
+   de namen rekenen hun positie uit met dezelfde variabelen. Wat buiten het
+   vlak valt, wordt afgesneden. touch-action: none, anders knijpt en schuift
+   de browser zelf mee. */
 .ontdek-kaart {
     position: absolute;
     inset: 0;
     container-type: inline-size;
+    overflow: hidden;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    --kz: 1;
+    --kx: 0%;
+    --ky: 0%;
 }
+.ontdek-kaart.kaart-ingezoomd { cursor: grab; }
+.ontdek-kaart.kaart-sleept,
+.ontdek-kaart.kaart-sleept .kaart-plaats { cursor: grabbing; }
 .ontdek-kaart-beeld {
     display: block;
     width: 100%;
     height: 100%;
     user-select: none;
+    transform-origin: 0 0;
+    transform: translate(var(--kx), var(--ky)) scale(var(--kz));
 }
+/* Alleen bij de knoppen glijdt de kaart; slepen en knijpen volgen direct. */
+.ontdek-kaart.kaart-anim .ontdek-kaart-beeld {
+    transition: transform 0.25s ease;
+}
+.ontdek-kaart.kaart-anim .kaart-plaats {
+    transition: left 0.25s ease, top 0.25s ease;
+}
+
+/* Zoomknoppen rechtsonder op de kaart, boven de voetnoot. */
+.kaart-zoom {
+    position: absolute;
+    right: 1.2%;
+    bottom: 4.5%;
+    z-index: 3;
+    display: flex;
+    gap: 6px;
+}
+.kaart-zoom button {
+    min-width: 40px;
+    height: 40px;
+    padding: 0 10px;
+    border: 2px solid rgba(255, 215, 120, 0.7);
+    border-radius: 20px;
+    background: rgba(10, 20, 55, 0.88);
+    color: #ffd86b;
+    font: 700 1.5rem/1 Georgia, 'Times New Roman', serif;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.kaart-zoom button.kaart-zoom-heel {
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+.kaart-zoom button:hover:not(:disabled) { background: rgba(25, 45, 100, 0.95); }
+.kaart-zoom button:disabled { opacity: 0.45; cursor: default; }
 
 /* Terug linksboven, in de lucht. */
 .kaart-vlak .kaart-terug {
@@ -6166,6 +6218,18 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     .kaart-vlak .kaart-terug {
         padding: 5px 12px;
         font-size: 0.85rem;
+    }
+    .kaart-zoom {
+        gap: 5px;
+        bottom: 6%;
+    }
+    .kaart-zoom button {
+        min-width: 34px;
+        height: 34px;
+        font-size: 1.25rem;
+    }
+    .kaart-zoom button.kaart-zoom-heel {
+        font-size: 0.8rem;
     }
     /* Water: kleinere ondergrens, anders raakt de Jordaan de rivier. */
     .kaart-water {
