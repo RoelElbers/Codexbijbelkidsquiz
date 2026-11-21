@@ -5903,10 +5903,6 @@ a.tekst-link { width: fit-content; text-align: center; }
     pointer-events: auto;
     cursor: pointer;
 }
-.kaart-plaats.kaart-klikbaar .kaart-naam {
-    text-decoration: underline dotted;
-    text-underline-offset: 0.18em;
-}
 .kaart-plaats.kaart-klikbaar:hover .kaart-naam,
 .kaart-plaats.kaart-klikbaar:focus-visible .kaart-naam {
     color: #6b3a00;
