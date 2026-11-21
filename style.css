@@ -6156,4 +6156,24 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
         padding: 5px 12px;
         font-size: 0.85rem;
     }
+    /* Titel en uitlegregel naar de lucht rechtsboven, rechts uitgelijnd:
+       in het midden raakten ze Hermon, Tyrus en Caesarea Filippi. */
+    .kaart-kop {
+        left: auto;
+        right: 1.5%;
+        transform: none;
+        text-align: right;
+        /* Smal houden: links van x 77% staan Hermon en Caesarea Filippi.
+           De tekst loopt daarom over een paar regels. */
+        width: 21%;
+        white-space: normal;
+    }
+    .kaart-titel {
+        font-size: 13px;
+        line-height: 1.15;
+    }
+    .kaart-uitleg {
+        font-size: 11.5px;
+        line-height: 1.2;
+    }
 }
