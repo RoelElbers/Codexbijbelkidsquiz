@@ -536,7 +536,7 @@ const ONTDEK_KAART_GALILEA = {
         { naam: "Hermon",                soort: "berg",   x: 79.7,  y: 4.2,   kant: "links", tekstVan: "kaart-land" },
         { naam: "Tabor",                 soort: "berg",   x: 44.81, y: 76.3,  kant: "onder", tekstVan: "kaart-land" },
         { naam: "Karmel",                soort: "berg",   x: 25.0,  y: 72.9 },
-        { naam: "berg van de\nzaligsprekingen", soort: "berg", x: 46.5, y: 49.0, kant: "links" },
+        { naam: "berg van de\nzaligsprekingen", soort: "berg", x: 45.5, y: 52.0, kant: "links" },
         // water
         { naam: "meer van Galilea",      soort: "water",  x: 53.9,  y: 67.4,  tekstVan: "kaart-land" },
         { naam: "Hulemeer",              soort: "water",  x: 53.5,  y: 29.9,  merk: true },
