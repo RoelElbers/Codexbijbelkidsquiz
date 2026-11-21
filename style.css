@@ -6276,6 +6276,13 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
         width: 21%;
         white-space: normal;
     }
+    /* Per kaart instelbaar (kopTelefoon: "links"): linksboven, onder Terug. */
+    .kaart-vlak.kop-links .kaart-kop {
+        left: 1.5%;
+        right: auto;
+        top: 14%;
+        text-align: left;
+    }
     .kaart-titel {
         font-size: 13px;
         line-height: 1.15;

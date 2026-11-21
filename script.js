@@ -9352,6 +9352,8 @@ function openOntdekKaart(kaart, opties) {
     if (vlak) {
         vlak.style.setProperty("--kaart-b", kaart.breedte);
         vlak.style.setProperty("--kaart-h", kaart.hoogte);
+        // Titelblok op telefoonformaat linksboven of rechtsboven (CSS).
+        vlak.classList.toggle("kop-links", kaart.kopTelefoon === "links");
     }
 
     const titel = document.getElementById("ontdek-kaart-titel");

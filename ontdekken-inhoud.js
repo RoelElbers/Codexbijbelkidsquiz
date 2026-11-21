@@ -415,7 +415,10 @@ const ONTDEK_SCHAT = [
 
 // --- Waar gebeurde het: kaart 1, het land in de tijd van Jezus --------------
 // Eén kaart = afbeelding + titel + plaatsen, met optioneel een regel onder de
-// titel (uitleg) en een kleine grijze regel onder de kaart (voetnoot). Per plaats:
+// titel (uitleg) en een kleine grijze regel onder de kaart (voetnoot).
+// Optioneel kopTelefoon: waar titel en uitleg op telefoonformaat staan,
+// "rechts" (rechtsboven, standaard) of "links" (linksboven, onder Terug).
+// Per plaats:
 //   naam    zoals hij op de kaart staat; "\n" in de naam geeft op de kaart
 //           een nieuwe regel (in het venstertje en het afstelpaneel een spatie)
 //   soort   "streek" | "stad" | "water" | "berg" — bepaalt de weergave
@@ -505,6 +508,7 @@ const ONTDEK_KAART_GALILEA = {
     breedte: 2560,
     hoogte: 1440,
     titel: "Galilea en het noorden",
+    kopTelefoon: "links",           // op de telefoon boven de zee, vrij van de Hermon
     uitleg: "Tik op een naam om meer te ontdekken.",
     voetnoot: "De grenzen van de streken zijn bij benadering getekend.",
     plaatsen: [
@@ -521,7 +525,7 @@ const ONTDEK_KAART_GALILEA = {
         { naam: "Magdala",               soort: "stad",   x: 46.0,  y: 56.3,  kant: "links" },
         { naam: "Tiberias",              soort: "stad",   x: 47.07, y: 62.5,  kant: "links" },
         { naam: "Kana",                  soort: "stad",   x: 40.7,  y: 68.0,  tekstVan: "kaart-land" },
-        { naam: "Nazaret",               soort: "stad",   x: 40.56, y: 75.0,  tekstVan: "kaart-land" },
+        { naam: "Nazaret",               soort: "stad",   x: 40.56, y: 75.0,  kant: "links", tekstVan: "kaart-land" },
         { naam: "Naïn",                  soort: "stad",   x: 42.83, y: 82.0 },
         { naam: "Gadara",                soort: "stad",   x: 61.3,  y: 72.9 },
         { naam: "Tyrus",                 soort: "stad",   x: 34.2,  y: 18.1,  tekstVan: "kaart-land" },
@@ -532,7 +536,7 @@ const ONTDEK_KAART_GALILEA = {
         { naam: "Hermon",                soort: "berg",   x: 79.7,  y: 4.2,   kant: "links", tekstVan: "kaart-land" },
         { naam: "Tabor",                 soort: "berg",   x: 44.81, y: 76.3,  kant: "onder", tekstVan: "kaart-land" },
         { naam: "Karmel",                soort: "berg",   x: 25.0,  y: 72.9 },
-        { naam: "berg van de\nzaligsprekingen", soort: "berg", x: 48.24, y: 50.0, kant: "boven" },
+        { naam: "berg van de\nzaligsprekingen", soort: "berg", x: 46.5, y: 49.0, kant: "links" },
         // water
         { naam: "meer van Galilea",      soort: "water",  x: 53.9,  y: 67.4,  tekstVan: "kaart-land" },
         { naam: "Hulemeer",              soort: "water",  x: 53.5,  y: 29.9,  merk: true },
