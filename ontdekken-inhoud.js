@@ -436,6 +436,14 @@ const ONTDEK_SCHAT = [
 //   kant    optioneel, bij stad, berg en water met merk: waar de naam staat
 //           ten opzichte van het rondje of driehoekje: "rechts" (standaard),
 //           "links", "boven" of "onder". Het merkje zelf blijft op x/y.
+//   naarKaart  optioneel; { id, tekst }: id van een andere kaart (een
+//           onderwerp in "Waar gebeurde het"). Gevuld = onder de bijbelplaats
+//           een link met die tekst, die de andere kaart opent; Terug op die
+//           kaart brengt weer hier.
+//   tekstVan  optioneel; id van een andere kaart. Tekst, bijbelplaats en
+//           woordenboek komen dan van de plaats met precies dezelfde naam op
+//           die kaart, zodat ze maar op één plek staan. (naarKaart gaat niet
+//           mee.)
 // Startwaarden uit kladblok/geografie/kaarten/onderleggers/overzicht-posities.csv
 // (soort "onzeker" staat hier als "stad"). Fijn afstellen met ?afstel=aan.
 // Betanië staat bewust niet op deze overzichtskaart: te dicht bij Jeruzalem;
@@ -452,7 +460,7 @@ const ONTDEK_KAART_LAND = {
     voetnoot: "De grenzen van de streken zijn bij benadering getekend.",
     plaatsen: [
         // streken
-        { naam: "Galilea",               soort: "streek", x: 48.8,  y: 17.5,  tekst: "Het groene noorden, met heuvels, akkers en het meer. Hier groeide Jezus op, en hier deed Hij veel van wat de evangeliën vertellen. Hij gaf er onderwijs, genas zieken en riep aan het meer Zijn eerste leerlingen om Hem te volgen: de vissers Petrus, Andreas, Jakobus en Johannes.", bijbelplaats: "Matteüs 4:12-25 · Marcus 1:16-20" },
+        { naam: "Galilea",               soort: "streek", x: 48.8,  y: 17.5,  tekst: "Het groene noorden, met heuvels, akkers en het meer. Hier groeide Jezus op, en hier deed Hij veel van wat de evangeliën vertellen. Hij gaf er onderwijs, genas zieken en riep aan het meer Zijn eerste leerlingen om Hem te volgen: de vissers Petrus, Andreas, Jakobus en Johannes.", bijbelplaats: "Matteüs 4:12-25 · Marcus 1:16-20", naarKaart: { id: "kaart-galilea", tekst: "Bekijk de kaart van Galilea" } },
         { naam: "Samaria",               soort: "streek", x: 45.5,  y: 44.0,  tekst: "Het heuvelland tussen Galilea en Judea, met akkers en olijfbomen. De Samaritanen geloofden net als de Joden in de God van Abraham, maar ze waren het oneens over waar je God moest aanbidden: in Jeruzalem of op hun eigen berg, de Gerizim. Door dat verschil en door een lange, moeilijke geschiedenis waren er vaak spanningen tussen Joden en Samaritanen. Toch vertelde Jezus juist over een Samaritaan die een ander helpt.", bijbelplaats: "Johannes 4:9, 20 · Lucas 10:30-37" },
         { naam: "Judea",                 soort: "streek", x: 37.3,  y: 71.0,  tekst: "Het zuiden, met Jeruzalem en Betlehem. In het westen liggen heuvels met olijfgaarden, in het oosten een kale woestijn die afloopt naar de Dode Zee. In die woestijn trad Johannes de Doper op.", bijbelplaats: "Matteüs 3:1" },
         { naam: "Idumea",                soort: "streek", x: 42.2,  y: 84.9,  tekst: "Het droge land ten zuiden van Judea. De naam Idumea komt van Edom, het volk dat afstamde van Esau, de broer van Jakob. Ook koning Herodes de Grote kwam uit een Idumese familie. Toen Jezus bekend werd, kwamen er zelfs uit Idumea mensen naar Hem toe.", bijbelplaats: "Marcus 3:8 · Genesis 36:1" },
@@ -483,5 +491,52 @@ const ONTDEK_KAART_LAND = {
         { naam: "Jordaan",               soort: "water",  x: 53.5,  y: 55.0,  merk: true, kant: "links",  tekst: "De belangrijkste rivier van het land. Hij stroomt van de Hermon door het meer van Galilea naar de Dode Zee. In de Jordaan doopte Johannes de mensen, en ook Jezus liet Zich hier dopen.", bijbelplaats: "Matteüs 3:5-6, 13-17" },
         { naam: "Dode Zee",              soort: "water",  x: 52.8,  y: 78.43, tekst: "Een meer met zulk zout water dat je erin blijft drijven, zonder te zwemmen. Er kunnen geen vissen in leven; daarom heet het de Dode Zee. In de Bijbel heet het de Zoutzee. In de tijd van Jezus was het groter dan nu. Daarom is het op deze kaart langer dan op een kaart van vandaag.", bijbelplaats: "Genesis 14:3" },
         { naam: "Middellandse Zee",      soort: "water",  x: 29.47, y: 47.06, tekst: "De grote zee aan de westkant. In de Bijbel heet hij gewoon de Grote Zee. Over deze zee maakte Paulus zijn lange reizen om overal over Jezus te vertellen, en een keer leed hij er zelfs schipbreuk.", bijbelplaats: "Jozua 1:4 · Handelingen 27:39-44" }
+    ]
+};
+
+// --- Waar gebeurde het: kaart 2, Galilea en het noorden ---------------------
+// Zelfde velden als kaart 1. Plaatsen die ook op kaart 1 staan, halen hun
+// tekst, bijbelplaats en woordenboek daar vandaan (tekstVan), zodat die maar
+// op één plek staan. De nieuwe plaatsen en het Hulemeer hebben nog geen
+// tekst en zijn dus nog niet aanklikbaar.
+const ONTDEK_KAART_GALILEA = {
+    // ?v=1: omhoog als de kaart onder dezelfde bestandsnaam wordt vervangen.
+    afbeelding: "images/kaarten/kaart2-galilea.webp?v=1",
+    breedte: 2560,
+    hoogte: 1440,
+    titel: "Galilea en het noorden",
+    uitleg: "Tik op een naam om meer te ontdekken.",
+    voetnoot: "De grenzen van de streken zijn bij benadering getekend.",
+    plaatsen: [
+        // streken
+        { naam: "Galilea",               soort: "streek", x: 39.0,  y: 45.0,  tekstVan: "kaart-land" },
+        { naam: "Fenicië",               soort: "streek", x: 37.1,  y: 22.9,  tekstVan: "kaart-land" },
+        { naam: "gebied van\nFilippus",  soort: "streek", x: 78.1,  y: 45.1,  tekstVan: "kaart-land" },
+        { naam: "Dekapolis",             soort: "streek", x: 70.3,  y: 79.9,  tekstVan: "kaart-land" },
+        { naam: "Samaria",               soort: "streek", x: 25.4,  y: 90.3,  tekstVan: "kaart-land" },
+        // steden
+        { naam: "Kafarnaüm",             soort: "stad",   x: 51.56, y: 50.7,  kant: "links", tekstVan: "kaart-land" },
+        { naam: "Betsaïda",              soort: "stad",   x: 55.86, y: 50.8,  tekstVan: "kaart-land" },
+        { naam: "Chorazin",              soort: "stad",   x: 50.98, y: 45.1 },
+        { naam: "Magdala",               soort: "stad",   x: 46.0,  y: 56.3,  kant: "links" },
+        { naam: "Tiberias",              soort: "stad",   x: 47.07, y: 62.5,  kant: "links" },
+        { naam: "Kana",                  soort: "stad",   x: 40.7,  y: 68.0,  tekstVan: "kaart-land" },
+        { naam: "Nazaret",               soort: "stad",   x: 40.56, y: 75.0,  tekstVan: "kaart-land" },
+        { naam: "Naïn",                  soort: "stad",   x: 42.83, y: 82.0 },
+        { naam: "Gadara",                soort: "stad",   x: 61.3,  y: 72.9 },
+        { naam: "Tyrus",                 soort: "stad",   x: 34.2,  y: 18.1,  tekstVan: "kaart-land" },
+        { naam: "Ptolemaïs",             soort: "stad",   x: 27.9,  y: 52.8 },
+        { naam: "Caesarea",              soort: "stad",   x: 17.8,  y: 95.0,  tekstVan: "kaart-land" },
+        { naam: "Caesarea Filippi",      soort: "stad",   x: 59.4,  y: 16.0,  tekstVan: "kaart-land" },
+        // bergen
+        { naam: "Hermon",                soort: "berg",   x: 79.7,  y: 4.2,   kant: "links", tekstVan: "kaart-land" },
+        { naam: "Tabor",                 soort: "berg",   x: 44.81, y: 76.3,  kant: "onder", tekstVan: "kaart-land" },
+        { naam: "Karmel",                soort: "berg",   x: 25.0,  y: 72.9 },
+        { naam: "berg van de\nzaligsprekingen", soort: "berg", x: 48.24, y: 50.0, kant: "boven" },
+        // water
+        { naam: "meer van Galilea",      soort: "water",  x: 53.9,  y: 67.4,  tekstVan: "kaart-land" },
+        { naam: "Hulemeer",              soort: "water",  x: 53.5,  y: 29.9,  merk: true },
+        { naam: "Jordaan",               soort: "water",  x: 51.95, y: 79.9,  merk: true, tekstVan: "kaart-land" },
+        { naam: "Middellandse Zee",      soort: "water",  x: 9.8,   y: 69.4,  tekstVan: "kaart-land" }
     ]
 };

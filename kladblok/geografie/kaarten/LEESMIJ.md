@@ -6,6 +6,8 @@ van Natural Earth (publiek domein): kustlijn, meren, rivieren.
 ## Definitieve kaarten
 - `kaart1-definitief.webp` — de definitieve kaart 1 (ChatGPT, 20 nov 2026,
   ligging gecontroleerd met de onderlegger).
+- `kaart2-definitief.webp` — de definitieve kaart 2, Galilea en het noorden
+  (21 nov 2026, 2560x1440; in de game als `images/kaarten/kaart2-galilea.webp`).
 
 ## onderleggers/
 - `kaart1-onderlegger-zonder-namen.png` — kaart 1 (overzicht van het land in
@@ -16,6 +18,9 @@ van Natural Earth (publiek domein): kustlijn, meren, rivieren.
 - `overzicht-posities.csv` — positie van elke plaats op kaart 1 in procenten
   van breedte en hoogte (x_procent, y_procent), voor de klikpunten en namen in
   de game.
+- `kaart2-onderlegger-zonder-namen.png`, `kaart2-orientatie-met-namen.png`
+  en `kaart2-posities.csv` — onderlegger, oriëntatie en posities van kaart 2
+  (Galilea en het noorden); gemaakt met `scripts/kaart2.py`.
 - `galilea-*` en `judea-*` — de onderleggers en posities voor kaart 2
   (Galilea en het noorden) en kaart 3 (Judea en Samaria), nog zonder kleuren.
 - `kaart1-chatgpt-ronde1-controle.jpg` — eerste kaart van ChatGPT met de

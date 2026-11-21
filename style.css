@@ -5823,8 +5823,9 @@ a.tekst-link { width: fit-content; text-align: center; }
    (text-shadow), zodat ze op elke kleur van de kaart te lezen zijn.
 ========================================================================= */
 /* Het scherm: geen kader, de kaart vult het hele scherm met behoud van de
-   verhouding 1672/941. De rand die overblijft krijgt het donkerblauw van de
-   game. .kaart-vlak is precies zo groot als de kaart; Terug, titel en
+   verhouding van de kaart (--kaart-b / --kaart-h, gezet door
+   openOntdekKaart; standaard die van kaart 1, 1672/941). De rand die
+   overblijft krijgt het donkerblauw van de game. .kaart-vlak is precies zo groot als de kaart; Terug, titel en
    voetnoot liggen daar in procenten overheen. */
 #ontdek-kaart-scherm {
     background: #102a5c;
@@ -5836,9 +5837,11 @@ a.tekst-link { width: fit-content; text-align: center; }
 .kaart-vlak {
     position: relative;
     container-type: inline-size;
-    width: min(100vw, 100vh * 1672 / 941);
-    width: min(100vw, 100dvh * 1672 / 941);
-    aspect-ratio: 1672 / 941;
+    --kaart-b: 1672;
+    --kaart-h: 941;
+    width: min(100vw, 100vh * var(--kaart-b) / var(--kaart-h));
+    width: min(100vw, 100dvh * var(--kaart-b) / var(--kaart-h));
+    aspect-ratio: var(--kaart-b) / var(--kaart-h);
     flex: none;
 }
 /* Inzoomen en schuiven (koppelKaartZoom in script.js): --kz is de factor,
@@ -6138,6 +6141,11 @@ a.tekst-link { width: fit-content; text-align: center; }
 .kaart-venster-woord:hover,
 .kaart-venster-woord:focus-visible {
     color: #fff1c2;
+}
+/* Link naar een andere kaart: op een eigen regel, ook onder de
+   woordenboeklink. */
+.kaart-venster-kaart {
+    display: block;
 }
 .kaart-venster-sluit {
     position: absolute;

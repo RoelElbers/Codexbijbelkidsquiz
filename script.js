@@ -9027,13 +9027,14 @@ const ontdekRubrieken = [
           { id: "wie-beroepen", naam: "Beroepen en werk", type: "lexicon", inhoud: ONTDEK_WIE_BEROEPEN },
           { id: "wie-huishouden", naam: "Huishouden en dienst", type: "lexicon", inhoud: ONTDEK_WIE_HUISHOUDEN }
       ] },
-    // Op slot tot WAAR_GEBEURDE_HET_OPEN (hierboven) op true staat. Eén
-    // onderwerp, dus de knop opent meteen de kaart.
+    // Op slot tot WAAR_GEBEURDE_HET_OPEN (hierboven) op true staat. De ids
+    // worden ook gebruikt door naarKaart en tekstVan in de kaartgegevens.
     { id: "waar", naam: "Waar gebeurde het",
       slot: () => WAAR_GEBEURDE_HET_OPEN || afstelModus,
       slotHint: "Binnenkort",
       onderwerpen: [
-          { id: "kaart-land", naam: "Het land in de tijd van Jezus", type: "kaart", kaart: ONTDEK_KAART_LAND }
+          { id: "kaart-land", naam: "Het land in de tijd van Jezus", type: "kaart", kaart: ONTDEK_KAART_LAND },
+          { id: "kaart-galilea", naam: "Galilea en het noorden", type: "kaart", kaart: ONTDEK_KAART_GALILEA }
       ] },
 
     { id: "hoe", naam: "Hoe leefden ze toen",
@@ -9177,8 +9178,10 @@ function openOntdekOnderwerp(id) {
     }
     if (!onderwerp) return;
 
-    // Een kaart heeft een eigen, breder scherm.
+    // Een kaart heeft een eigen, breder scherm. Vanuit de lijst begint de
+    // reeks kaarten opnieuw (zie volgKaartLink).
     if (onderwerp.type === "kaart") {
+        kaartTerugStapel.length = 0;
         openOntdekKaart(onderwerp.kaart);
         return;
     }
@@ -9261,6 +9264,50 @@ const KAART_AFSTEL_OPSLAG = "afstel_kaartposities_v1";
 // De kaart die nu openstaat; nodig voor de afstel-export.
 let actieveKaart = null;
 
+// Kaarten die via een link (naarKaart) zijn verlaten, met hun zoomstand.
+// Terug op het kaartscherm haalt eerst de bovenste hiervan terug; pas als de
+// stapel leeg is, gaat Terug naar het vorige scherm (gaTerug).
+const kaartTerugStapel = [];
+
+// De kaart van een onderwerp in "Waar gebeurde het", op id.
+function vindKaart(id) {
+    const o = vindOntdekOnderwerp(id);
+    return o && o.type === "kaart" ? o.kaart : null;
+}
+
+// Een plaats met tekstVan krijgt tekst, bijbelplaats en woordenboek van de
+// plaats met dezelfde naam op die andere kaart. Eigen velden gaan voor.
+function kaartPlaatsInfo(plaats) {
+    if (!plaats.tekstVan) return plaats;
+    const bronKaart = vindKaart(plaats.tekstVan);
+    const bron = bronKaart && bronKaart.plaatsen.find((p) => p.naam === plaats.naam);
+    if (!bron) {
+        console.warn(`Kaart: tekstVan "${plaats.tekstVan}" heeft geen plaats "${kaartNaamPlat(plaats.naam)}".`);
+        return plaats;
+    }
+    const info = Object.assign({}, plaats);
+    ["tekst", "bijbelplaats", "woordenboek"].forEach((veld) => {
+        if (!info[veld] && bron[veld]) info[veld] = bron[veld];
+    });
+    return info;
+}
+
+// Link in het venstertje naar een andere kaart: de huidige kaart (met zijn
+// zoomstand) gaat op de stapel, het scherm blijft hetzelfde.
+function volgKaartLink(id) {
+    const kaart = vindKaart(id);
+    if (!kaart) return;
+    kaartTerugStapel.push({ kaart: actieveKaart, zoom: Object.assign({}, kaartZoom) });
+    openOntdekKaart(kaart, { zelfdeScherm: true });
+}
+
+// Terug-knop van het kaartscherm.
+function kaartTerug() {
+    const vorige = kaartTerugStapel.pop();
+    if (vorige) openOntdekKaart(vorige.kaart, { zelfdeScherm: true, zoom: vorige.zoom });
+    else gaTerug();
+}
+
 function leesKaartAfstel() {
     try { return JSON.parse(localStorage.getItem(KAART_AFSTEL_OPSLAG)) || {}; }
     catch (e) { return {}; }
@@ -9292,9 +9339,20 @@ function heeftKaartMerk(plaats) {
         (plaats.soort === "water" && plaats.merk === true);
 }
 
-function openOntdekKaart(kaart) {
+// opties.zelfdeScherm: het kaartscherm staat al open (link naar een andere
+// kaart of terug daarvan), dus geen nieuwe stap in de navigatiestack.
+// opties.zoom: de zoomstand om mee te beginnen (standaard de hele kaart).
+function openOntdekKaart(kaart, opties) {
     if (!kaart) return;
+    opties = opties || {};
     actieveKaart = kaart;
+
+    // Het vlak krijgt de verhouding van deze kaart.
+    const vlak = document.querySelector("#ontdek-kaart-scherm .kaart-vlak");
+    if (vlak) {
+        vlak.style.setProperty("--kaart-b", kaart.breedte);
+        vlak.style.setProperty("--kaart-h", kaart.hoogte);
+    }
 
     const titel = document.getElementById("ontdek-kaart-titel");
     if (titel) titel.textContent = kaart.titel;
@@ -9309,8 +9367,10 @@ function openOntdekKaart(kaart) {
 
     bouwKaart(document.getElementById("ontdek-kaart"), kaart);
     sluitKaartVenster();
-    gaNaarScherm("ontdek-kaart-scherm");
-    zetKaartZoom(1, 0, 0);
+    if (!opties.zelfdeScherm) gaNaarScherm("ontdek-kaart-scherm");
+    const z = opties.zoom;
+    if (z) zetKaartZoom(z.z, z.x, z.y);
+    else zetKaartZoom(1, 0, 0);
     const zoomKnoppen = document.getElementById("kaart-zoom");
     if (zoomKnoppen) zoomKnoppen.style.display = afstelModus ? "none" : "";
     if (afstelModus) initKaartAfstel();
@@ -9333,7 +9393,8 @@ function bouwKaart(houder, kaart) {
     kaart.plaatsen.forEach((plaats) => {
         // Een afgestelde positie (en kant) gaat voor de config.
         const pos = Object.assign({}, plaats, afstel[kaartAfstelSleutel(kaart, plaats)] || {});
-        const heeftTekst = !!(plaats.tekst && plaats.tekst.trim());
+        const info = kaartPlaatsInfo(plaats);
+        const heeftTekst = !!(info.tekst && info.tekst.trim());
 
         // Met tekst een knop (aanklikbaar), zonder een gewone span.
         const el = document.createElement(heeftTekst ? "button" : "span");
@@ -9342,7 +9403,7 @@ function bouwKaart(houder, kaart) {
             el.addEventListener("click", (e) => {
                 if (afstelModus) return;            // in afstelmodus is klikken slepen
                 e.stopPropagation();
-                openKaartVenster(plaats);
+                openKaartVenster(info);
             });
         }
         el.className = "kaart-plaats kaart-" + plaats.soort + (heeftTekst ? " kaart-klikbaar" : "");
@@ -9406,6 +9467,17 @@ function openKaartVenster(plaats) {
         }
         woordEl.dataset.term = lemma ? lemma.term : "";
         woordEl.style.display = lemma ? "" : "none";
+    }
+    // Link naar een andere kaart; alleen als die kaart echt bestaat.
+    const kaartEl = document.getElementById("kaart-venster-kaart");
+    if (kaartEl) {
+        const doel = plaats.naarKaart && vindKaart(plaats.naarKaart.id);
+        if (plaats.naarKaart && !doel) {
+            console.warn(`Kaart: naarKaart "${plaats.naarKaart.id}" niet gevonden.`);
+        }
+        kaartEl.dataset.kaart = doel ? plaats.naarKaart.id : "";
+        kaartEl.textContent = doel ? plaats.naarKaart.tekst + " \u2192" : "";
+        kaartEl.style.display = doel ? "" : "none";
     }
     venster.style.display = "flex";
 }
@@ -9691,8 +9763,10 @@ function zoomKaartRond(z, px, py, anim) {
     // Klik op de donkere achtergrond (niet in het vak) sluit; het kruisje ook.
     venster.addEventListener("click", (e) => {
         if (e.target === venster || e.target.closest(".kaart-venster-sluit")) sluitKaartVenster();
-        const woord = e.target.closest(".kaart-venster-woord");
+        const woord = e.target.closest("#kaart-venster-woord");
         if (woord && woord.dataset.term) openWoordenboekLemma(woord.dataset.term);
+        const naar = e.target.closest("#kaart-venster-kaart");
+        if (naar && naar.dataset.kaart) volgKaartLink(naar.dataset.kaart);
     });
     document.addEventListener("keydown", (e) => {
         if (e.key === "Escape" && venster.style.display !== "none") sluitKaartVenster();
@@ -9810,9 +9884,11 @@ function initKaartAfstel() {
                 ', x: ' + (+pos.x) + ', y: ' + (+pos.y) +
                 (p.soort === "water" && p.merk === true ? ', merk: true' : '') +
                 (kant !== "rechts" ? ', kant: ' + JSON.stringify(kant) : '') +
-                ', tekst: ' + JSON.stringify(p.tekst || "") +
+                (p.tekstVan ? ', tekstVan: ' + JSON.stringify(p.tekstVan) : '') +
+                (p.tekst || !p.tekstVan ? ', tekst: ' + JSON.stringify(p.tekst || "") : '') +
                 (p.bijbelplaats ? ', bijbelplaats: ' + JSON.stringify(p.bijbelplaats) : '') +
-                (p.woordenboek ? ', woordenboek: ' + JSON.stringify(p.woordenboek) : '') + ' }';
+                (p.woordenboek ? ', woordenboek: ' + JSON.stringify(p.woordenboek) : '') +
+                (p.naarKaart ? ', naarKaart: { id: ' + JSON.stringify(p.naarKaart.id) + ', tekst: ' + JSON.stringify(p.naarKaart.tekst) + ' }' : '') + ' }';
         });
         uitvoerEl.value = regels.join(",\n");
         uitvoerEl.style.display = "block";
