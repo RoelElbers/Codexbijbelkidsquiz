@@ -239,7 +239,7 @@ const ONTDEK_WIE_HERODES = [
             ["vanaf 50 n.Chr.", "Agrippa II, zijn zoon", "koning in het noorden", "Handelingen&nbsp;25:13"]
         ]
     } },
-    { noot: "Drie van hen heten in de Bijbel gewoon Herodes. Kijk dus bij elk verhaal goed welke Herodes er bedoeld wordt." }
+    { noot: "Drie van hen heten in de Bijbel gewoon Herodes: Herodes de Grote, Herodes Antipas en Herodes Agrippa. Kijk dus bij elk verhaal goed welke Herodes er bedoeld wordt." }
 ];
 
 // --- Hoe leefden ze toen ----------------------------------------------------
