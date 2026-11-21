@@ -6167,6 +6167,10 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
         padding: 5px 12px;
         font-size: 0.85rem;
     }
+    /* Water: kleinere ondergrens, anders raakt de Jordaan de rivier. */
+    .kaart-water {
+        font-size: max(10.5px, 1.1cqw);
+    }
     /* Titel en uitlegregel naar de lucht rechtsboven, rechts uitgelijnd:
        in het midden raakten ze Hermon, Tyrus en Caesarea Filippi. */
     .kaart-kop {
