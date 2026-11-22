@@ -25,6 +25,8 @@ elke nieuwe stad" zegt; Handelingen 17:2 noemt het als Paulus' gewoonte.
 het begin van een sessie tonen; bij 'werkstand opslaan' de aangeleverde tekst
 erin zetten (vorige stand vervangen) en committen.
 
+kladblok/ideeen.md bevat ideeën voor later. Noem ze als Roel vraagt wat er nog ligt of wat er nog gedaan moet worden.
+
 ## Commits
 
 - **Geen `Co-Authored-By`-trailer.** Deze repository gebruikt die conventie niet.
