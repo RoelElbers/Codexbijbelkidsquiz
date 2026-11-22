@@ -549,6 +549,40 @@ const ONTDEK_KAART_GALILEA = {
 // Geen plaatsen maar gebieden per tijd (tijden > gebieden > vlakken). Nog
 // achter de vlag HEERSERS_KAART_OPEN in script.js; te bekijken met
 // ?heersers=aan. Inhoud letterlijk zoals aangeleverd.
+//
+// Streeknamen en legenda staan hier apart, vóór de aangeleverde config, zodat
+// die in zijn geheel vervangen kan worden. script.js voegt ze samen.
+//   streken  vaste namen op de kaart, in alle tijden gelijk (x/y in procenten,
+//            "\n" = nieuwe regel, klein: true = iets kleinere letters)
+//   legenda  per tijd-id de regels van de legenda: kleur en tekst
+const ONTDEK_KAART_HEERSERS_LAGEN = {
+    streken: [
+        { naam: "Fenicië",                  x: 49.4, y: 10.6, klein: true },
+        { naam: "Galilea",                  x: 47.6, y: 29.5 },
+        { naam: "Samaria",                  x: 47.8, y: 47.2 },
+        { naam: "Judea",                    x: 41.7, y: 63.3 },
+        { naam: "Idumea",                   x: 44.1, y: 85.2 },
+        { naam: "Perea",                    x: 56.1, y: 57.1, klein: true },
+        { naam: "Dekapolis",                x: 61.4, y: 37.4 },
+        { naam: "Iturea en\nTrachonitis",   x: 58.7, y: 18.1, klein: true }
+    ],
+    legenda: {
+        geboorte: [
+            { kleur: "#8E44AD", tekst: "Koning Herodes de Grote" },
+            { kleur: "#D9534F", tekst: "Rome bestuurde zelf" }
+        ],
+        volwassen: [
+            { kleur: "#D9534F", tekst: "Rome bestuurde zelf (in Judea: stadhouder Pilatus)" },
+            { kleur: "#2E86DE", tekst: "Viervorst Herodes Antipas" },
+            { kleur: "#F39C12", tekst: "Viervorst Filippus" }
+        ],
+        handelingen: [
+            { kleur: "#8E44AD", tekst: "Koning Herodes Agrippa" },
+            { kleur: "#D9534F", tekst: "Rome bestuurde zelf" }
+        ]
+    }
+};
+
 // Kaart "Wie regeerde waar?" — teksten goedgekeurd door Roel (22 nov 2026), na controle door ChatGPT en Magisterium.
 // Vlakken: x/y in procenten van de kaart (projectie van kaart 1), grenzen bij benadering.
 const ONTDEK_KAART_HEERSERS = {

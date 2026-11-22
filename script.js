@@ -9043,7 +9043,10 @@ const ontdekRubrieken = [
           { id: "kaart-land", naam: "Het land in de tijd van Jezus", type: "kaart", kaart: ONTDEK_KAART_LAND },
           { id: "kaart-galilea", naam: "Galilea en het noorden", type: "kaart", kaart: ONTDEK_KAART_GALILEA },
           ...(heersersKaartZichtbaar
-              ? [{ id: "kaart-heersers", naam: "Wie regeerde waar?", type: "kaart", kaart: ONTDEK_KAART_HEERSERS }]
+              // Streeknamen en legenda staan los van de aangeleverde config
+              // (die wordt in zijn geheel vervangen) en komen er hier bij.
+              ? [{ id: "kaart-heersers", naam: "Wie regeerde waar?", type: "kaart",
+                   kaart: Object.assign(ONTDEK_KAART_HEERSERS, ONTDEK_KAART_HEERSERS_LAGEN) }]
               : [])
       ] },
 
@@ -9423,6 +9426,26 @@ function bouwKaart(houder, kaart) {
         laag.appendChild(gebieden);
         toonKaartTijd(kaart, 0);
     }
+    // Vaste streeknamen (veld streken), in alle tijden hetzelfde. Ze liggen
+    // boven de vlakken, maar laten tikken door naar het vlak eronder.
+    (kaart.streken || []).forEach((s) => {
+        const el = document.createElement("span");
+        el.className = "kaart-plaats kaart-streek kaart-vaste-streek" + (s.klein ? " kaart-streek-klein" : "");
+        el.style.left = s.x + "%";
+        el.style.top = s.y + "%";
+        el.dataset.naam = s.naam;
+        const naam = document.createElement("span");
+        naam.className = "kaart-naam";
+        // "\n" in de naam = nieuwe regel op de kaart.
+        s.naam.split("\n").forEach((regel, n) => {
+            if (n > 0) naam.appendChild(document.createElement("br"));
+            naam.appendChild(document.createTextNode(regel));
+        });
+        el.appendChild(naam);
+        laag.appendChild(el);
+    });
+    const legendaEl = document.getElementById("kaart-legenda");
+    if (legendaEl && !kaart.legenda) legendaEl.style.display = "none";
 
     const afstel = leesKaartAfstel();
     (kaart.plaatsen || []).forEach((plaats) => {
@@ -9474,10 +9497,11 @@ function bouwKaart(houder, kaart) {
 // --- Kaart met tijden: "Wie regeerde waar?" -----------------------------------
 // Bovenaan een knop per tijd (veld knop); de eerste is actief bij openen. Per
 // tijd gebieden: SVG-vlakken (vlakken: lijsten van [x, y] in procenten van de
-// kaart) in de kleur van het gebied, met de naam als vaste streeknaam op het
-// punt uit label. De SVG staat in .kaart-laag, dus de vlakken groeien mee bij
-// zoomen, net als de namen. Tikken op een vlak opent het gewone venstertje,
-// met vensterTitel als kop.
+// kaart) in de kleur van het gebied, en een legenda (veld legenda, per tijd-id)
+// in zee. Daaroverheen vaste streeknamen (veld streken), in alle tijden gelijk.
+// De SVG staat in .kaart-laag, dus de vlakken groeien mee bij zoomen, net als
+// de namen. Tikken op een vlak opent het gewone venstertje, met vensterTitel
+// als kop.
 const SVG_NS = "http://www.w3.org/2000/svg";
 let actieveKaartTijd = 0;
 
@@ -9532,25 +9556,28 @@ function toonKaartTijd(kaart, i, overgang) {
             });
             svg.appendChild(poly);
         });
-        // Vaste naam op het gebied, in de stijl van een streek. Klikken gaan
-        // erdoorheen naar het vlak eronder.
-        if (gebied.label) {
-            const el = document.createElement("span");
-            el.className = "kaart-plaats kaart-streek kaart-gebied-naam";
-            el.style.left = gebied.label[0] + "%";
-            el.style.top = gebied.label[1] + "%";
-            el.dataset.naam = gebied.naam;
-            const naam = document.createElement("span");
-            naam.className = "kaart-naam";
-            // "\n" in de naam = nieuwe regel op de kaart.
-            gebied.naam.split("\n").forEach((regel, n) => {
-                if (n > 0) naam.appendChild(document.createElement("br"));
-                naam.appendChild(document.createTextNode(regel));
-            });
-            el.appendChild(naam);
-            laag.appendChild(el);
-        }
+        // De heersersnaam (veld label) staat bewust niet op de kaart: de
+        // legenda en het venster (vensterTitel) noemen hem al.
     });
+
+    // Legenda voor deze tijd: per regel een kleurvlakje met tekst.
+    const legenda = document.getElementById("kaart-legenda");
+    const regels = kaart.legenda && kaart.legenda[tijd.id];
+    if (legenda) {
+        legenda.innerHTML = "";
+        legenda.style.display = regels ? "" : "none";
+        (regels || []).forEach((r) => {
+            const regel = document.createElement("div");
+            regel.className = "kaart-legenda-regel";
+            const vlakje = document.createElement("span");
+            vlakje.className = "kaart-legenda-kleur";
+            vlakje.style.setProperty("--gebied-kleur", r.kleur);
+            const tekst = document.createElement("span");
+            tekst.textContent = r.tekst;
+            regel.append(vlakje, tekst);
+            legenda.appendChild(regel);
+        });
+    }
 
     laag.classList.remove("kaart-tijd-in");
     if (overgang) {

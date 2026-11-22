@@ -6003,6 +6003,49 @@ a.tekst-link { width: fit-content; text-align: center; }
     z-index: 3;
 }
 
+/* Vaste streeknamen op de kaart "Wie regeerde waar?"; "klein" iets kleiner
+   dan een gewone streek. */
+.kaart-streek.kaart-streek-klein {
+    font-size: max(12px, 1.5cqw);
+}
+
+/* Legenda in zee, onder de tijdknoppen, in de stijl van de knoppen. Hij vangt
+   geen tikken: slepen en knijpen gaan door naar de kaart. */
+.kaart-legenda {
+    position: absolute;
+    left: 24.5%;
+    top: 43%;
+    width: 13.2%;
+    z-index: 3;
+    box-sizing: border-box;
+    padding: 0.55em 0.75em;
+    border: 2px solid rgba(255, 215, 120, 0.7);
+    border-radius: 14px;
+    background: rgba(10, 20, 55, 0.88);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    color: #f3ecd8;
+    font: 400 max(11px, 0.72cqw)/1.25 Georgia, 'Times New Roman', serif;
+    pointer-events: none;
+}
+.kaart-legenda-regel {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5em;
+}
+.kaart-legenda-regel + .kaart-legenda-regel {
+    margin-top: 0.4em;
+}
+/* Het kleurvlakje: dezelfde kleur als de vlakken op de kaart. */
+.kaart-legenda-kleur {
+    flex: none;
+    width: 0.95em;
+    height: 0.95em;
+    margin-top: 0.12em;
+    border-radius: 3px;
+    background: var(--gebied-kleur);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
 /* Terug linksboven, in de lucht. */
 .kaart-vlak .kaart-terug {
     position: absolute;
@@ -6413,6 +6456,18 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     }
     .kaart-vlak .kaart-artikel {
         bottom: 6%;
+    }
+    /* Legenda: onder de tijdknoppen is hier geen plaats meer in zee (de kust
+       buigt naar links). Daarom rechts in de lege woestijn, tussen de titel
+       en de kamelen. */
+    .kaart-legenda {
+        left: auto;
+        right: 2.5%;
+        top: 30%;
+        width: 24%;
+        padding: 5px 8px;
+        border-radius: 10px;
+        font-size: 10.5px;
     }
     /* Water: kleinere ondergrens, anders raakt de Jordaan de rivier. */
     .kaart-water {
