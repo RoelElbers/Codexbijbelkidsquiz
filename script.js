@@ -9010,6 +9010,13 @@ function kiesNalezen() {
 // staat hij ook nu al open, om de namen op de kaart te kunnen afstellen.
 const WAAR_GEBEURDE_HET_OPEN = true;
 
+// De kaart "Wie regeerde waar?" staat achter een eigen vlag, tot hij is
+// goedgekeurd. Op true zetten = zichtbaar voor iedereen. Met ?heersers=aan in
+// de adresbalk is hij nu al te bekijken (alleen op dat moment, niets bewaard).
+const HEERSERS_KAART_OPEN = false;
+const heersersKaartZichtbaar = HEERSERS_KAART_OPEN ||
+    new URLSearchParams(window.location.search).get("heersers") === "aan";
+
 const ontdekRubrieken = [
     { id: "woorden", naam: "Woordenboek",
       onderwerpen: [
@@ -9034,7 +9041,10 @@ const ontdekRubrieken = [
       slotHint: "Binnenkort",
       onderwerpen: [
           { id: "kaart-land", naam: "Het land in de tijd van Jezus", type: "kaart", kaart: ONTDEK_KAART_LAND },
-          { id: "kaart-galilea", naam: "Galilea en het noorden", type: "kaart", kaart: ONTDEK_KAART_GALILEA }
+          { id: "kaart-galilea", naam: "Galilea en het noorden", type: "kaart", kaart: ONTDEK_KAART_GALILEA },
+          ...(heersersKaartZichtbaar
+              ? [{ id: "kaart-heersers", naam: "Wie regeerde waar?", type: "kaart", kaart: ONTDEK_KAART_HEERSERS }]
+              : [])
       ] },
 
     { id: "hoe", naam: "Hoe leefden ze toen",
@@ -9346,6 +9356,7 @@ function openOntdekKaart(kaart, opties) {
     if (!kaart) return;
     opties = opties || {};
     actieveKaart = kaart;
+    actieveKaartTijd = 0;               // kaart met tijden: de eerste is actief
 
     // Het vlak krijgt de verhouding van deze kaart.
     const vlak = document.querySelector("#ontdek-kaart-scherm .kaart-vlak");
@@ -9368,6 +9379,13 @@ function openOntdekKaart(kaart, opties) {
     });
 
     bouwKaart(document.getElementById("ontdek-kaart"), kaart);
+    bouwKaartTijden(kaart);
+    // Knop naar een artikel (artikelLink); zonder dat veld weg.
+    const artikelEl = document.getElementById("kaart-artikel");
+    if (artikelEl) {
+        artikelEl.textContent = kaart.artikelLink ? kaart.artikelLink.tekst : "";
+        artikelEl.style.display = kaart.artikelLink ? "" : "none";
+    }
     sluitKaartVenster();
     if (!opties.zelfdeScherm) gaNaarScherm("ontdek-kaart-scherm");
     const z = opties.zoom;
@@ -9397,8 +9415,17 @@ function bouwKaart(houder, kaart) {
     img.draggable = false;
     laag.appendChild(img);
 
+    // Een kaart met tijden ("Wie regeerde waar?") heeft gebieden in plaats
+    // van plaatsen; die tekent toonKaartTijd, in dezelfde laag.
+    if (kaart.tijden) {
+        const gebieden = document.createElement("div");
+        gebieden.className = "kaart-gebieden";
+        laag.appendChild(gebieden);
+        toonKaartTijd(kaart, 0);
+    }
+
     const afstel = leesKaartAfstel();
-    kaart.plaatsen.forEach((plaats) => {
+    (kaart.plaatsen || []).forEach((plaats) => {
         // Een afgestelde positie (en kant) gaat voor de config.
         const pos = Object.assign({}, plaats, afstel[kaartAfstelSleutel(kaart, plaats)] || {});
         const info = kaartPlaatsInfo(plaats);
@@ -9444,6 +9471,98 @@ function bouwKaart(houder, kaart) {
     });
 }
 
+// --- Kaart met tijden: "Wie regeerde waar?" -----------------------------------
+// Bovenaan een knop per tijd (veld knop); de eerste is actief bij openen. Per
+// tijd gebieden: SVG-vlakken (vlakken: lijsten van [x, y] in procenten van de
+// kaart) in de kleur van het gebied, met de naam als vaste streeknaam op het
+// punt uit label. De SVG staat in .kaart-laag, dus de vlakken groeien mee bij
+// zoomen, net als de namen. Tikken op een vlak opent het gewone venstertje,
+// met vensterTitel als kop.
+const SVG_NS = "http://www.w3.org/2000/svg";
+let actieveKaartTijd = 0;
+
+function bouwKaartTijden(kaart) {
+    const houder = document.getElementById("kaart-tijden");
+    if (!houder) return;
+    houder.innerHTML = "";
+    houder.style.display = kaart.tijden ? "" : "none";
+    if (!kaart.tijden) return;
+    kaart.tijden.forEach((tijd, i) => {
+        const knop = document.createElement("button");
+        knop.type = "button";
+        knop.className = "kaart-tijd-knop" + (i === actieveKaartTijd ? " actief" : "");
+        knop.textContent = tijd.knop;
+        knop.setAttribute("aria-pressed", i === actieveKaartTijd ? "true" : "false");
+        knop.addEventListener("click", () => {
+            if (i === actieveKaartTijd) return;
+            sluitKaartVenster();
+            toonKaartTijd(kaart, i, true);
+        });
+        houder.appendChild(knop);
+    });
+}
+
+// Tekent de gebieden van tijd nr. i. overgang = kort invagen (bij wisselen).
+function toonKaartTijd(kaart, i, overgang) {
+    const laag = document.querySelector("#ontdek-kaart .kaart-gebieden");
+    const tijd = kaart.tijden && kaart.tijden[i];
+    if (!laag || !tijd) return;
+    actieveKaartTijd = i;
+    laag.innerHTML = "";
+
+    const svg = document.createElementNS(SVG_NS, "svg");
+    svg.setAttribute("class", "kaart-vlakken");
+    svg.setAttribute("viewBox", "0 0 100 100");
+    svg.setAttribute("preserveAspectRatio", "none");
+    svg.setAttribute("aria-hidden", "true");
+    laag.appendChild(svg);
+
+    tijd.gebieden.forEach((gebied) => {
+        const info = { naam: gebied.vensterTitel || gebied.naam, tekst: gebied.tekst,
+            bijbelplaats: gebied.bijbelplaats, woordenboek: gebied.woordenboek };
+        gebied.vlakken.forEach((vlak) => {
+            const poly = document.createElementNS(SVG_NS, "polygon");
+            poly.setAttribute("points", vlak.map((p) => p[0] + "," + p[1]).join(" "));
+            poly.setAttribute("class", "kaart-vlak-gebied");
+            poly.style.setProperty("--gebied-kleur", gebied.kleur);
+            poly.dataset.gebied = gebied.id;
+            poly.addEventListener("click", (e) => {
+                e.stopPropagation();
+                openKaartVenster(info);
+            });
+            svg.appendChild(poly);
+        });
+        // Vaste naam op het gebied, in de stijl van een streek. Klikken gaan
+        // erdoorheen naar het vlak eronder.
+        if (gebied.label) {
+            const el = document.createElement("span");
+            el.className = "kaart-plaats kaart-streek kaart-gebied-naam";
+            el.style.left = gebied.label[0] + "%";
+            el.style.top = gebied.label[1] + "%";
+            el.dataset.naam = gebied.naam;
+            const naam = document.createElement("span");
+            naam.className = "kaart-naam";
+            // "\n" in de naam = nieuwe regel op de kaart.
+            gebied.naam.split("\n").forEach((regel, n) => {
+                if (n > 0) naam.appendChild(document.createElement("br"));
+                naam.appendChild(document.createTextNode(regel));
+            });
+            el.appendChild(naam);
+            laag.appendChild(el);
+        }
+    });
+
+    laag.classList.remove("kaart-tijd-in");
+    if (overgang) {
+        void laag.offsetWidth;          // animatie opnieuw laten beginnen
+        laag.classList.add("kaart-tijd-in");
+    }
+    document.querySelectorAll("#kaart-tijden .kaart-tijd-knop").forEach((k, n) => {
+        k.classList.toggle("actief", n === i);
+        k.setAttribute("aria-pressed", n === i ? "true" : "false");
+    });
+}
+
 // Het venstertje bij een plaats met tekst. Sluiten: kruisje, klik ernaast of Esc.
 function openKaartVenster(plaats) {
     const venster = document.getElementById("kaart-venster");
@@ -9482,11 +9601,23 @@ function openKaartVenster(plaats) {
 }
 
 // Een lemma uit het woordenboek op term (een verwijzing naar elders volgt hij).
+// Staat de term niet in het woordenboek zelf, dan zoekt hij in de andere
+// lexicons (Wie is wie), zoals "Keizer" en "Koning (onder Rome)" bij Bestuur
+// en rechtspraak.
 function vindWoordenboekLemma(term) {
     let e = ONTDEK_WOORDENBOEK.find((d) => d.term === term);
     if (e && e.verwijstNaar) {
         const doel = vindOntdekOnderwerp(e.verwijstNaar);
         e = doel && (doel.inhoud || []).find((d) => d.term === term && !d.verwijstNaar);
+    }
+    if (!e) {
+        for (const rubriek of ontdekRubrieken) {
+            for (const o of rubriek.onderwerpen || []) {
+                if (o.type !== "lexicon") continue;
+                e = (o.inhoud || []).find((d) => d.term === term && !d.verwijstNaar);
+                if (e) return e;
+            }
+        }
     }
     return e || null;
 }

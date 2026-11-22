@@ -349,7 +349,7 @@
          van de vier is gewijzigd. Nooit per bestand ophogen, nooit terug in nummer.
          Lees het huidige nummer hier uit het bestand. De favicons hierboven staan
          hier los van (eigen ?v=). -->
-    <link rel="stylesheet" href="style.css?v=477">
+    <link rel="stylesheet" href="style.css?v=478">
 
     <!-- VIJFDE, LOSSE TELLER — de albumafbeeldingen, nu ?v=4.
          Acht verwijzingen dragen samen dit eigen nummer:
@@ -987,6 +987,12 @@
                     <h2 id="ontdek-kaart-titel" class="kaart-titel"></h2>
                     <p id="ontdek-kaart-uitleg" class="kaart-uitleg"></p>
                 </div>
+                <!-- Kaart met tijden ("Wie regeerde waar?"): een knop per tijd,
+                     gevuld door bouwKaartTijden(); bij andere kaarten leeg en weg. -->
+                <div id="kaart-tijden" class="kaart-tijden" style="display: none;"></div>
+                <!-- Knop naar een artikel; de tekst komt uit artikelLink in de kaartconfig,
+                     het doel is De familie Herodes (wie-herodes). -->
+                <button type="button" id="kaart-artikel" class="kaart-artikel" style="display: none;" onclick="openOntdekOnderwerp('wie-herodes')"></button>
                 <div id="kaart-zoom" class="kaart-zoom">
                     <button type="button" data-zoom="in" aria-label="Inzoomen">+</button>
                     <button type="button" data-zoom="uit" aria-label="Uitzoomen">&minus;</button>
@@ -1279,9 +1285,9 @@
     <!-- ?v=N gelijk houden met style.css in de <head> — zie toelichting daar.
          ontdekken-inhoud.js levert de teksten van de Ontdekken-hub en moet vóór
          script.js staan, want ontdekRubrieken verwijst ernaar. -->
-    <script src="lang/nl.js?v=477"></script>
-    <script src="ontdekken-inhoud.js?v=477"></script>
-    <script src="script.js?v=477"></script>
+    <script src="lang/nl.js?v=478"></script>
+    <script src="ontdekken-inhoud.js?v=478"></script>
+    <script src="script.js?v=478"></script>
 
 </body>
 

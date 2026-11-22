@@ -5909,6 +5909,91 @@ a.tekst-link { width: fit-content; text-align: center; }
 .kaart-zoom button:hover:not(:disabled) { background: rgba(25, 45, 100, 0.95); }
 .kaart-zoom button:disabled { opacity: 0.45; cursor: default; }
 
+/* Kaart met tijden ("Wie regeerde waar?", bouwKaartTijden en toonKaartTijd
+   in script.js). De gebieden zitten in .kaart-laag, dus ze groeien mee bij
+   zoomen. Alleen de vlakken zelf vangen klikken; de SVG eromheen en de
+   namen erop laten ze door. */
+.kaart-gebieden {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+.kaart-gebieden.kaart-tijd-in {
+    animation: kaart-tijd-in 0.25s ease;
+}
+@keyframes kaart-tijd-in {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+.kaart-vlakken {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+/* Vulling in de kleur van het gebied met ongeveer 55% dekking, rand in
+   dezelfde kleur. De rand houdt zijn dikte, ook al is het viewBox 0-100. */
+.kaart-vlak-gebied {
+    fill: var(--gebied-kleur);
+    fill-opacity: 0.55;
+    stroke: var(--gebied-kleur);
+    stroke-width: 2px;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+    pointer-events: visiblePainted;
+    cursor: pointer;
+}
+.ontdek-kaart.kaart-sleept .kaart-vlak-gebied { cursor: grabbing; }
+
+/* De tijdknoppen linksboven onder Terug, in de zee, en de knop naar het
+   artikel linksonder. Zelfde look als de zoomknoppen; de algemene button-
+   regels (zweven, vergroten bij hover) gelden hier niet, zodat ze stil staan.
+   De actieve tijd is goud gevuld. */
+.kaart-tijden {
+    position: absolute;
+    left: 1.2%;
+    top: 10.5%;
+    z-index: 3;
+    display: flex;
+    gap: 8px;
+}
+.kaart-tijd-knop,
+.kaart-vlak .kaart-artikel {
+    margin: 0;
+    padding: 7px 16px;
+    border: 2px solid rgba(255, 215, 120, 0.7);
+    border-radius: 20px;
+    background: rgba(10, 20, 55, 0.88);
+    color: #ffd86b;
+    font: 600 1rem/1.2 Georgia, 'Times New Roman', serif;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    animation: none;
+    transition: background 0.15s ease, color 0.15s ease;
+}
+.kaart-tijd-knop:hover,
+.kaart-vlak .kaart-artikel:hover {
+    transform: none;
+    background: rgba(25, 45, 100, 0.95);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.kaart-tijd-knop.actief,
+.kaart-tijd-knop.actief:hover {
+    background: #ffd86b;
+    border-color: #ffd86b;
+    color: #1a1205;
+    cursor: default;
+}
+.kaart-vlak .kaart-artikel {
+    position: absolute;
+    left: 1.2%;
+    bottom: 4.5%;
+    z-index: 3;
+}
+
 /* Terug linksboven, in de lucht. */
 .kaart-vlak .kaart-terug {
     position: absolute;
@@ -6298,6 +6383,21 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     }
     .kaart-zoom button.kaart-zoom-heel {
         font-size: 0.8rem;
+    }
+    /* Tijdknoppen onder elkaar, in de zee. */
+    .kaart-tijden {
+        top: 13%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+    .kaart-tijd-knop,
+    .kaart-vlak .kaart-artikel {
+        padding: 4px 10px;
+        font-size: 0.78rem;
+    }
+    .kaart-vlak .kaart-artikel {
+        bottom: 6%;
     }
     /* Water: kleinere ondergrens, anders raakt de Jordaan de rivier. */
     .kaart-water {
