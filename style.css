@@ -5947,16 +5947,19 @@ a.tekst-link { width: fit-content; text-align: center; }
 }
 .ontdek-kaart.kaart-sleept .kaart-vlak-gebied { cursor: grabbing; }
 
-/* De tijdknoppen linksboven onder Terug, in de zee, en de knop naar het
-   artikel linksonder. Zelfde look als de zoomknoppen; de algemene button-
+/* De tijdknoppen als kolom in open zee, tussen het schip en de kust (vrij
+   van kompasroos, schip, dolfijnen en vissen), en de knop naar het artikel
+   linksonder. Zelfde look als de zoomknoppen; de algemene button-
    regels (zweven, vergroten bij hover) gelden hier niet, zodat ze stil staan.
    De actieve tijd is goud gevuld. */
 .kaart-tijden {
     position: absolute;
-    left: 1.2%;
-    top: 10.5%;
+    left: 24.5%;
+    top: 28%;
     z-index: 3;
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
     gap: 8px;
 }
 .kaart-tijd-knop,
@@ -5979,6 +5982,12 @@ a.tekst-link { width: fit-content; text-align: center; }
     transform: none;
     background: rgba(25, 45, 100, 0.95);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+/* De tijdknoppen schalen mee met de kaartbreedte (cqw), zodat de kolom op
+   elk scherm tussen schip en kust past. */
+.kaart-tijd-knop {
+    padding: 0.44em 1em;
+    font-size: max(12px, 0.83cqw);
 }
 .kaart-tijd-knop.actief,
 .kaart-tijd-knop.actief:hover {
@@ -6384,14 +6393,20 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
     .kaart-zoom button.kaart-zoom-heel {
         font-size: 0.8rem;
     }
-    /* Tijdknoppen onder elkaar, in de zee. */
+    /* Tijdknoppen: smaller, tekst over twee regels, zodat de kolom tussen
+       schip en kust past. */
     .kaart-tijden {
-        top: 13%;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
+        left: 24%;
+        top: 27.5%;
+        width: 13.5%;
+        gap: 3px;
     }
-    .kaart-tijd-knop,
+    .kaart-tijd-knop {
+        padding: 2px 5px;
+        font-size: 10.5px;
+        line-height: 1.15;
+        white-space: normal;
+    }
     .kaart-vlak .kaart-artikel {
         padding: 4px 10px;
         font-size: 0.78rem;
