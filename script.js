@@ -9013,7 +9013,7 @@ const WAAR_GEBEURDE_HET_OPEN = true;
 // De kaart "Wie regeerde waar?" staat achter een eigen vlag, tot hij is
 // goedgekeurd. Op true zetten = zichtbaar voor iedereen. Met ?heersers=aan in
 // de adresbalk is hij nu al te bekijken (alleen op dat moment, niets bewaard).
-const HEERSERS_KAART_OPEN = false;
+const HEERSERS_KAART_OPEN = true;
 const heersersKaartZichtbaar = HEERSERS_KAART_OPEN ||
     new URLSearchParams(window.location.search).get("heersers") === "aan";
 
