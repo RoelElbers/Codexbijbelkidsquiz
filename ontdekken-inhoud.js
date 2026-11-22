@@ -562,7 +562,7 @@ const ONTDEK_KAART_HEERSERS_LAGEN = {
         { naam: "Samaria",                  x: 47.8, y: 47.2 },
         { naam: "Judea",                    x: 41.7, y: 63.3 },
         { naam: "Idumea",                   x: 44.1, y: 85.2 },
-        { naam: "Perea",                    x: 56.6, y: 57.1, klein: true },
+        { naam: "Perea",                    x: 56.3, y: 57.1, klein: true },
         { naam: "Dekapolis",                x: 61.4, y: 37.4 },
         { naam: "Iturea en\nTrachonitis",   x: 63.0, y: 17.0, klein: true }
     ],
