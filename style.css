@@ -5918,7 +5918,10 @@ a.tekst-link { width: fit-content; text-align: center; }
     inset: 0;
     pointer-events: none;
 }
-.kaart-gebieden.kaart-tijd-in {
+/* Invagen bij wisselen per onderdeel, niet op de houder zelf: opacity op de
+   houder zou hem tijdens de overgang isoleren, en dan mengt de vulling niet
+   met de tekening (mix-blend-mode) en verspringt de tint aan het eind. */
+.kaart-gebieden.kaart-tijd-in > * {
     animation: kaart-tijd-in 0.25s ease;
 }
 @keyframes kaart-tijd-in {
@@ -5933,17 +5936,34 @@ a.tekst-link { width: fit-content; text-align: center; }
     height: 100%;
     pointer-events: none;
 }
-/* Vulling in de kleur van het gebied met ongeveer 55% dekking, rand in
-   dezelfde kleur. De rand houdt zijn dikte, ook al is het viewBox 0-100. */
+/* Vulling: ongeveer 85% dekking, gemengd met mix-blend-mode: color. Dan
+   neemt elk gebied de tint van zijn kleur aan en houdt de tekening haar eigen
+   licht en donker: over groen land en over zand dezelfde tint, en de
+   tekening blijft zichtbaar. De vulling vangt de tikken. */
+.kaart-vlakken-vulling {
+    mix-blend-mode: color;
+}
 .kaart-vlak-gebied {
     fill: var(--gebied-kleur);
-    fill-opacity: 0.55;
+    fill-opacity: 0.85;
+    stroke: none;
+    pointer-events: visiblePainted;
+    cursor: pointer;
+}
+/* Randen in een eigen SVG erboven, in de gewone kleur (niet gemengd). Ze
+   houden hun dikte, ook al is het viewBox 0-100. */
+.kaart-vlak-rand {
+    fill: none;
     stroke: var(--gebied-kleur);
     stroke-width: 2px;
     stroke-linejoin: round;
     vector-effect: non-scaling-stroke;
-    pointer-events: visiblePainted;
-    cursor: pointer;
+    pointer-events: none;
+}
+/* Kent de browser mix-blend-mode: color niet: gewone vulling met 75%. */
+@supports not (mix-blend-mode: color) {
+    .kaart-vlakken-vulling { mix-blend-mode: normal; }
+    .kaart-vlak-gebied { fill-opacity: 0.75; }
 }
 .ontdek-kaart.kaart-sleept .kaart-vlak-gebied { cursor: grabbing; }
 
@@ -6003,17 +6023,60 @@ a.tekst-link { width: fit-content; text-align: center; }
     z-index: 3;
 }
 
-/* Vaste streeknamen op de kaart "Wie regeerde waar?"; "klein" iets kleiner
-   dan een gewone streek. */
-.kaart-streek.kaart-streek-klein {
-    font-size: max(12px, 1.5cqw);
+/* Streeklabels op de kaart "Wie regeerde waar?". Het label zelf is een punt
+   zonder afmeting op (x, y): de streeknaam staat erboven (zijn onderkant op
+   het punt), de heerser eronder. Niet aanklikbaar. */
+.kaart-streeklabel {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+}
+.kaart-streeklabel-naam,
+.kaart-streeklabel-heerser {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+}
+/* Streeknaam: stijl van de streken op kaart 1, in hoofdletters. */
+.kaart-streeklabel-naam {
+    bottom: 0;
+    font-family: 'Cinzel', 'Palatino Linotype', 'Book Antiqua', serif;
+    font-weight: 700;
+    font-size: max(12px, 1.15cqw);
+    line-height: 1.05;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #4a2a08;
+    text-shadow:
+        0 0 2px #fff8e8,
+        0 0 4px #fff8e8,
+        0 0 8px rgba(255, 248, 232, 0.9);
+}
+/* Heerser: vet schreefloos, kleiner, wit met een donkere rand in de kleur
+   van zijn gebied. */
+.kaart-streeklabel-heerser {
+    top: 0;
+    padding-top: 1px;
+    --rand: color-mix(in srgb, var(--gebied-kleur, #333) 55%, #000);
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: max(9px, 0.8cqw);
+    line-height: 1.1;
+    color: #ffffff;
+    text-shadow:
+        1px 0 0 var(--rand), -1px 0 0 var(--rand), 0 1px 0 var(--rand), 0 -1px 0 var(--rand),
+        1px 1px 0 var(--rand), -1px 1px 0 var(--rand), 1px -1px 0 var(--rand), -1px -1px 0 var(--rand),
+        0 0 3px var(--rand);
 }
 
 /* Legenda in zee, onder de tijdknoppen, in de stijl van de knoppen. Hij vangt
    geen tikken: slepen en knijpen gaan door naar de kaart. */
 .kaart-legenda {
     position: absolute;
-    left: 24.5%;
+    left: 23.5%;
     top: 43%;
     width: 13.2%;
     z-index: 3;
@@ -6024,7 +6087,7 @@ a.tekst-link { width: fit-content; text-align: center; }
     background: rgba(10, 20, 55, 0.88);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     color: #f3ecd8;
-    font: 400 max(11px, 0.72cqw)/1.25 Georgia, 'Times New Roman', serif;
+    font: 400 max(13px, 0.95cqw)/1.25 Georgia, 'Times New Roman', serif;
     pointer-events: none;
 }
 .kaart-legenda-regel {
@@ -6464,10 +6527,9 @@ body:has(#ontdek-kaart-scherm[style*="flex"]) #afstel-paneel {
         left: auto;
         right: 2.5%;
         top: 30%;
-        width: 24%;
+        width: 26%;
         padding: 5px 8px;
         border-radius: 10px;
-        font-size: 10.5px;
     }
     /* Water: kleinere ondergrens, anders raakt de Jordaan de rivier. */
     .kaart-water {

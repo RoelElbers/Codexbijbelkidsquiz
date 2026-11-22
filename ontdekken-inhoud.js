@@ -550,35 +550,61 @@ const ONTDEK_KAART_GALILEA = {
 // achter de vlag HEERSERS_KAART_OPEN in script.js; te bekijken met
 // ?heersers=aan. Inhoud letterlijk zoals aangeleverd.
 //
-// Streeknamen en legenda staan hier apart, vóór de aangeleverde config, zodat
+// Streeklabels en legenda staan hier apart, vóór de aangeleverde config, zodat
 // die in zijn geheel vervangen kan worden. script.js voegt ze samen.
-//   streken  vaste namen op de kaart, in alle tijden gelijk (x/y in procenten,
-//            "\n" = nieuwe regel, klein: true = iets kleinere letters)
+//   streken  vaste labels op de kaart (x/y in procenten = de onderkant van de
+//            streeknaam; de heerser staat er direct onder). heersers: per
+//            tijd-id [tekst, gebied-id]; de tekst wisselt mee met de tijd en
+//            krijgt de kleur van dat gebied. "\n" = nieuwe regel.
 //   legenda  per tijd-id de regels van de legenda: kleur en tekst
 const ONTDEK_KAART_HEERSERS_LAGEN = {
     streken: [
-        { naam: "Fenicië",                  x: 49.4, y: 10.6, klein: true },
-        { naam: "Galilea",                  x: 47.6, y: 29.5 },
-        { naam: "Samaria",                  x: 47.8, y: 47.2 },
-        { naam: "Judea",                    x: 41.7, y: 63.3 },
-        { naam: "Idumea",                   x: 44.1, y: 85.2 },
-        { naam: "Perea",                    x: 56.3, y: 57.1, klein: true },
-        { naam: "Dekapolis",                x: 61.4, y: 37.4 },
-        { naam: "Iturea en\nTrachonitis",   x: 63.0, y: 17.0, klein: true }
+        { naam: "Fenicië", x: 49.4, y: 10.0, heersers: {
+            geboorte:    ["stadhouder\nvan Syrië", "rome"],
+            volwassen:   ["stadhouder\nvan Syrië", "rome"],
+            handelingen: ["stadhouder\nvan Syrië", "rome"] } },
+        { naam: "Galilea", x: 47.9, y: 27.5, heersers: {
+            geboorte:    ["Herodes de Grote", "herodes-de-grote"],
+            volwassen:   ["Herodes\nAntipas", "antipas"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } },
+        { naam: "Samaria", x: 47.8, y: 46.5, heersers: {
+            geboorte:    ["Herodes de Grote", "herodes-de-grote"],
+            volwassen:   ["stadhouder\nPilatus", "pilatus"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } },
+        { naam: "Judea", x: 42.0, y: 62.5, heersers: {
+            geboorte:    ["Herodes de Grote", "herodes-de-grote"],
+            volwassen:   ["stadhouder\nPilatus", "pilatus"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } },
+        { naam: "Idumea", x: 44.1, y: 84.0, heersers: {
+            geboorte:    ["Herodes de Grote", "herodes-de-grote"],
+            volwassen:   ["stadhouder\nPilatus", "pilatus"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } },
+        { naam: "Perea", x: 56.4, y: 54.0, heersers: {
+            geboorte:    ["Herodes\nde Grote", "herodes-de-grote"],
+            volwassen:   ["Herodes\nAntipas", "antipas"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } },
+        { naam: "Dekapolis", x: 61.4, y: 37.0, heersers: {
+            geboorte:    ["stadhouder\nvan Syrië", "rome"],
+            volwassen:   ["stadhouder\nvan Syrië", "rome"],
+            handelingen: ["stadhouder\nvan Syrië", "rome"] } },
+        { naam: "Iturea en\nTrachonitis", x: 63.0, y: 16.0, heersers: {
+            geboorte:    ["Herodes de Grote", "herodes-de-grote"],
+            volwassen:   ["Filippus", "filippus"],
+            handelingen: ["Herodes\nAgrippa", "agrippa"] } }
     ],
     legenda: {
         geboorte: [
-            { kleur: "#8E44AD", tekst: "Koning Herodes de Grote" },
-            { kleur: "#D9534F", tekst: "Rome bestuurde zelf" }
+            { kleur: "#8E44AD", tekst: "Koning uit de familie Herodes" },
+            { kleur: "#D9534F", tekst: "Rome, met een stadhouder" }
         ],
         volwassen: [
-            { kleur: "#D9534F", tekst: "Rome bestuurde zelf (in Judea: stadhouder Pilatus)" },
+            { kleur: "#D9534F", tekst: "Rome, met een stadhouder" },
             { kleur: "#2E86DE", tekst: "Viervorst Herodes Antipas" },
             { kleur: "#F39C12", tekst: "Viervorst Filippus" }
         ],
         handelingen: [
-            { kleur: "#8E44AD", tekst: "Koning Herodes Agrippa" },
-            { kleur: "#D9534F", tekst: "Rome bestuurde zelf" }
+            { kleur: "#8E44AD", tekst: "Koning uit de familie Herodes" },
+            { kleur: "#D9534F", tekst: "Rome, met een stadhouder" }
         ]
     }
 };

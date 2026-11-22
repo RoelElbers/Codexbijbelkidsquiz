@@ -9426,24 +9426,6 @@ function bouwKaart(houder, kaart) {
         laag.appendChild(gebieden);
         toonKaartTijd(kaart, 0);
     }
-    // Vaste streeknamen (veld streken), in alle tijden hetzelfde. Ze liggen
-    // boven de vlakken, maar laten tikken door naar het vlak eronder.
-    (kaart.streken || []).forEach((s) => {
-        const el = document.createElement("span");
-        el.className = "kaart-plaats kaart-streek kaart-vaste-streek" + (s.klein ? " kaart-streek-klein" : "");
-        el.style.left = s.x + "%";
-        el.style.top = s.y + "%";
-        el.dataset.naam = s.naam;
-        const naam = document.createElement("span");
-        naam.className = "kaart-naam";
-        // "\n" in de naam = nieuwe regel op de kaart.
-        s.naam.split("\n").forEach((regel, n) => {
-            if (n > 0) naam.appendChild(document.createElement("br"));
-            naam.appendChild(document.createTextNode(regel));
-        });
-        el.appendChild(naam);
-        laag.appendChild(el);
-    });
     const legendaEl = document.getElementById("kaart-legenda");
     if (legendaEl && !kaart.legenda) legendaEl.style.display = "none";
 
@@ -9497,11 +9479,13 @@ function bouwKaart(houder, kaart) {
 // --- Kaart met tijden: "Wie regeerde waar?" -----------------------------------
 // Bovenaan een knop per tijd (veld knop); de eerste is actief bij openen. Per
 // tijd gebieden: SVG-vlakken (vlakken: lijsten van [x, y] in procenten van de
-// kaart) in de kleur van het gebied, en een legenda (veld legenda, per tijd-id)
-// in zee. Daaroverheen vaste streeknamen (veld streken), in alle tijden gelijk.
-// De SVG staat in .kaart-laag, dus de vlakken groeien mee bij zoomen, net als
-// de namen. Tikken op een vlak opent het gewone venstertje, met vensterTitel
-// als kop.
+// kaart) in de kleur van het gebied, en een legenda (veld legenda, per tijd-id).
+// De vulling staat in een eigen SVG met mix-blend-mode: color (zie style.css),
+// de randen in een tweede SVG erboven, in de gewone kleur. Daaroverheen per
+// streek een label (veld streken): de streeknaam, met daaronder de heerser van
+// de actieve tijd in de kleur van zijn gebied. Alles staat in .kaart-laag, dus
+// het groeit mee bij zoomen. Tikken op een vlak (ook door een label heen)
+// opent het gewone venstertje, met vensterTitel als kop.
 const SVG_NS = "http://www.w3.org/2000/svg";
 let actieveKaartTijd = 0;
 
@@ -9534,12 +9518,17 @@ function toonKaartTijd(kaart, i, overgang) {
     actieveKaartTijd = i;
     laag.innerHTML = "";
 
-    const svg = document.createElementNS(SVG_NS, "svg");
-    svg.setAttribute("class", "kaart-vlakken");
-    svg.setAttribute("viewBox", "0 0 100 100");
-    svg.setAttribute("preserveAspectRatio", "none");
-    svg.setAttribute("aria-hidden", "true");
-    laag.appendChild(svg);
+    function maakSvg(klasse) {
+        const s = document.createElementNS(SVG_NS, "svg");
+        s.setAttribute("class", "kaart-vlakken " + klasse);
+        s.setAttribute("viewBox", "0 0 100 100");
+        s.setAttribute("preserveAspectRatio", "none");
+        s.setAttribute("aria-hidden", "true");
+        laag.appendChild(s);
+        return s;
+    }
+    const svg = maakSvg("kaart-vlakken-vulling");     // vangt de tikken
+    const randen = maakSvg("kaart-vlakken-randen");
 
     tijd.gebieden.forEach((gebied) => {
         const info = { naam: gebied.vensterTitel || gebied.naam, tekst: gebied.tekst,
@@ -9555,9 +9544,42 @@ function toonKaartTijd(kaart, i, overgang) {
                 openKaartVenster(info);
             });
             svg.appendChild(poly);
+            const rand = poly.cloneNode(false);
+            rand.setAttribute("class", "kaart-vlak-rand");
+            randen.appendChild(rand);
         });
-        // De heersersnaam (veld label) staat bewust niet op de kaart: de
-        // legenda en het venster (vensterTitel) noemen hem al.
+        // De losse heersersnaam (veld label) staat bewust niet op de kaart:
+        // de streeklabels hieronder en het venster (vensterTitel) noemen hem.
+    });
+
+    // Streeklabels: het ankerpunt (x, y) is de onderkant van de streeknaam,
+    // de heerser staat er direct onder. Klikken gaan erdoorheen.
+    const metRegels = (el, tekst) => String(tekst).split("\n").forEach((regel, n) => {
+        if (n > 0) el.appendChild(document.createElement("br"));
+        el.appendChild(document.createTextNode(regel));
+    });
+    (kaart.streken || []).forEach((s) => {
+        const label = document.createElement("div");
+        label.className = "kaart-streeklabel";
+        label.style.left = s.x + "%";
+        label.style.top = s.y + "%";
+        label.dataset.naam = s.naam;
+        const naam = document.createElement("span");
+        naam.className = "kaart-streeklabel-naam";
+        metRegels(naam, s.naam);
+        label.appendChild(naam);
+        const h = s.heersers && s.heersers[tijd.id];
+        if (h) {
+            const gebied = tijd.gebieden.find((g) => g.id === h[1]);
+            const heerser = document.createElement("span");
+            heerser.className = "kaart-streeklabel-heerser";
+            heerser.dataset.gebied = h[1];
+            if (gebied) heerser.style.setProperty("--gebied-kleur", gebied.kleur);
+            else console.warn(`Kaart: streek "${kaartNaamPlat(s.naam)}" noemt onbekend gebied "${h[1]}".`);
+            metRegels(heerser, h[0]);
+            label.appendChild(heerser);
+        }
+        laag.appendChild(label);
     });
 
     // Legenda voor deze tijd: per regel een kleurvlakje met tekst.
