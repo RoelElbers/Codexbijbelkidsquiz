@@ -1,48 +1,62 @@
-# Werkstand — 20 november 2026
+## Werkstand 22-23 november 2026
 
-## Waar we mee bezig zijn
-De Ontdekken-rubriek "Waar gebeurde het": kaarten van de plaatsen en
-streken uit het Nieuwe Testament. De rubriek staat op slot tot de kaarten
-er zijn (bad9ef5). Eerder op 19 nov is de game nagelopen voor de
-nieuwsbrief van de Carlo Acutis-stichting; dat is afgerond en gepusht.
+### Waar we mee bezig waren
+Rubriek "Waar gebeurde het" (Ontdekken). Drie kaarten staan live (?v=483):
+1. Het land in de tijd van Jezus
+2. Galilea en het noorden
+3. Wie regeerde waar? (nieuw)
 
-## Besloten
-- Eerst drie kaarten van het land in de tijd van Jezus: een overzicht, en
-  twee detailkaarten (Galilea en het noorden; Judea en Samaria). Tik op een
-  streek in het overzicht → de detailkaart opent.
-- Later: Jeruzalem in de tijd van Jezus, de reizen van Paulus (één kaart per
-  reis, ook de reis naar Rome), de volken van Pinksteren, de zeven gemeenten,
-  het land van de Bijbel nu (landschap en steden, geen grenzen getekend) en
-  een kaart met buurvolken (nog te kiezen: tijd van het NT of van het OT).
-- Werkwijze: Claude tekent per kaart een onderlegger op echte kaartgegevens
-  (kladblok/geografie/kaarten/). ChatGPT tekent daar een kleurrijke,
-  geïllustreerde kinderkaart overheen in precies dezelfde uitsnede, zonder
-  tekst en zonder plaatsmarkeringen. De game zet de namen en klikpunten er
-  zelf op (posities in *-posities.csv). Elke kaart van ChatGPT wordt eerst
-  gecontroleerd door de onderlegger eroverheen te leggen.
-- Elke streek een eigen kleur, met zachte randen (grenzen bij benadering).
-  Een gouden lijn is de omtrek van het land in de tijd van Jezus (Galilea,
-  Samaria, Judea, Idumea, Perea), geen grenzen van nu.
-- De Dode Zee in de vorm van toen: groter en één geheel.
-- Omstreden plaatsen (Kana, Betsaïda, Emmaüs): één punt op de kaart en één
-  eerlijke zin. Bij Emmaüs vertellen wat de Bijbel zegt: ongeveer elf
-  kilometer van Jeruzalem.
-- Myra in de game zonder eeuwtal bij Sint-Nicolaas (Sinterklaas-geheim):
-  "Hier stapte Paulus over op een schip uit Alexandrië dat naar Italië voer.
-  In Myra was later ook Sint-Nicolaas bisschop."
-- Dekapolis blijft met een k (Willibrord nagekeken).
+### Wat er gedaan en besloten is
+Kaart 2 (Galilea):
+- Teksten voor Magdala, Chorazin, Tiberias, Naïn, Gadara, Ptolemaïs,
+  Karmel en berg van de zaligsprekingen, na controle door ChatGPT (twee
+  keer Deep Search) en Magisterium. Ook het Hulemeer heeft een tekst:
+  elke naam op een kaart krijgt een tekst.
+- Kafarnaüm (kaart 1, ook op kaart 2): "Matteüs noemt het zelfs Zijn eigen
+  stad" (alleen Matteüs zegt dat).
+- Gevonden en opgelost: de zweef-animatie van alle knoppen zette
+  aanklikbare namen tot 119 px naast hun punt. Namen staan nu stil.
+- Namen groeien mee bij zoomen; zoom tot 2x; titel, uitleg en voetnoot
+  vervagen bij inzoomen.
+- Berg van de zaligsprekingen vrijgemaakt (oplossing B: Ptolemaïs kant
+  links, Kafarnaüm kant boven, kleine verschuivingen).
 
-## Nog niet verwerkt
-- Kaart 1: ChatGPT ronde 1 is goed (ligging klopt, zie
-  onderleggers/kaart1-chatgpt-ronde1-controle.jpg). Ronde 2 moet nog, met:
-  palmbomen naar Jericho (westkant van de Jordaan, in Judea); Samaria
-  vruchtbaar heuvelland in plaats van woestijn; oostelijk Judea richting de
-  Dode Zee als woestijn van Judea; het gebied van Filippus weer een eigen
-  kleur. De prompt staat in het gesprek van 20 nov.
-- De grenzen van de streken nakijken met tabblad A van het register.
-- Kiezen welke plek op de kaart komt voor Kana, Betsaïda en Emmaüs.
-- Kaart 2 en 3: onderleggers liggen klaar, nog zonder kleuren.
+Kaart 3 (Wie regeerde waar?):
+- Drie tijden: Toen Jezus geboren werd / Toen Jezus volwassen was / In de
+  tijd van Handelingen.
+- Teksten per heerser (Herodes de Grote, Augustus, Pilatus, Antipas,
+  Filippus, Tiberius, Agrippa, Claudius) na controle door ChatGPT en
+  Magisterium.
+- Tekening: kaart-heersers.webp, een bewerking van kaart 1 door ChatGPT
+  (streekkleuren en grenzen weg), zodat de vlakken passen.
+- Kleuren:
+  - paars: koning uit de familie Herodes;
+  - rood: Rome, met een stadhouder (Pilatus; stadhouder van Syrië voor
+    Fenicië en de Dekapolis);
+  - blauw: Antipas;
+  - oranje: Filippus.
+  Kleurmenging met mix-blend-mode: color, zodat elk gebied één tint heeft
+  op groen land en op zand.
+- Bij elke streek staan de streeknaam en de heerser voor die tijd. In het
+  noordoosten heet het hier "Iturea en Trachonitis" (Lucas 3:1).
+- Legenda per tijd in zee (op de telefoon in de woestijn). Knop "Wie is
+  wie? De familie Herodes" naar het artikel.
+- Lemma Stadhouder vernieuwd: Archelaüs afgezet, prefect volgens de
+  Pilatussteen, 41-44 Agrippa, Felix en Festus, Willem van Oranje in 1559
+  aangesteld ("hetzelfde woord, maar een ander ambt").
+- Schrijfregels van vandaag:
+  - "Lucas vertelt", niet "volgens Lucas";
+  - de kindermoord in Betlehem niet bij naam noemen;
+  - Quirinius weglaten.
 
-## Volgende stap
-Ronde 2 van kaart 1 bij ChatGPT; de beste variant samen met de onderlegger
-in het gesprek met Claude laten controleren.
+### Wat nog niet verwerkt is
+- Kleuren van kaart 3 nog niet getest in Safari op een iPhone (Roel heeft
+  er geen). Gaat het daar mis, terugvallen op 75% dekking zonder blend.
+- Op de telefoon vallen sommige labels op kaart 3 een stukje buiten hun
+  vlak (vooral Perea). Bewust zo gelaten; daar is de zoom voor.
+- Roel noemde twee nieuwe ideeën voor kaarten; het tweede heeft hij nog
+  niet verteld.
+
+### Volgende stap
+Het tweede kaartidee van Roel bespreken, of verder met een ander
+onderdeel van de game.
