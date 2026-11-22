@@ -9384,12 +9384,18 @@ function bouwKaart(houder, kaart) {
     houder.classList.toggle("afstel", afstelModus);
     houder.style.aspectRatio = kaart.breedte + " / " + kaart.hoogte;
 
+    // Afbeelding en namen samen in één laag; die laag krijgt de zoom
+    // (transform, zie .kaart-laag), zodat de namen meegroeien met de kaart.
+    const laag = document.createElement("div");
+    laag.className = "kaart-laag";
+    houder.appendChild(laag);
+
     const img = document.createElement("img");
     img.className = "ontdek-kaart-beeld";
     img.src = kaart.afbeelding;
     img.alt = kaart.titel;
     img.draggable = false;
-    houder.appendChild(img);
+    laag.appendChild(img);
 
     const afstel = leesKaartAfstel();
     kaart.plaatsen.forEach((plaats) => {
@@ -9409,18 +9415,9 @@ function bouwKaart(houder, kaart) {
             });
         }
         el.className = "kaart-plaats kaart-" + plaats.soort + (heeftTekst ? " kaart-klikbaar" : "");
-        // Buiten de afstelmodus volgen de posities de zoom: --kz (factor) en
-        // --kx/--ky (verschuiving in % van de kaart) staan op de houder. Zo
-        // vergroot alleen de kaart; de namen blijven even groot en schuiven
-        // bij inzoomen uit elkaar. In afstelmodus is er geen zoom en blijft
-        // de positie een gewoon percentage (dat leest het afstelpaneel).
-        if (afstelModus) {
-            el.style.left = pos.x + "%";
-            el.style.top = pos.y + "%";
-        } else {
-            el.style.left = "calc(var(--kx) + var(--kz) * " + pos.x + "%)";
-            el.style.top = "calc(var(--ky) + var(--kz) * " + pos.y + "%)";
-        }
+        // Een gewoon percentage van de kaart; de zoom zit op de laag.
+        el.style.left = pos.x + "%";
+        el.style.top = pos.y + "%";
         el.dataset.naam = plaats.naam;
 
         // Stad: rondje; berg: driehoekje; water met merk: blauw rondje. Die
@@ -9443,7 +9440,7 @@ function bouwKaart(houder, kaart) {
         });
         el.appendChild(naam);
 
-        houder.appendChild(el);
+        laag.appendChild(el);
     });
 }
 
@@ -9513,8 +9510,8 @@ function sluitKaartVenster() {
     if (venster) venster.style.display = "none";
 }
 // --- Kaart: inzoomen en schuiven ---------------------------------------------
-// Alleen de afbeelding vergroot (transform); de namen staan op berekende
-// posities (zie bouwKaart) en blijven dus even groot. De stand staat in
+// De laag met afbeelding en namen vergroot (transform op .kaart-laag), dus
+// de namen groeien mee en blijven precies op hun plek. De stand staat in
 // kaartZoom: z = factor (1 tot KAART_ZOOM_MAX), x en y = verschuiving van de
 // kaart in procenten van zijn eigen breedte en hoogte (0 of negatief). In
 // procenten, zodat de stand klopt als het scherm van grootte verandert.
@@ -9524,7 +9521,7 @@ function sluitKaartVenster() {
 // Knoppen + / − / Hele kaart rechtsonder. Een beweging van meer dan een paar
 // pixels telt als slepen; de klik die daarna volgt, wordt opgevangen, zodat
 // slepen nooit per ongeluk een naam opent. In afstelmodus staat de zoom uit.
-const KAART_ZOOM_MAX = 3;
+const KAART_ZOOM_MAX = 2;
 const kaartZoom = { z: 1, x: 0, y: 0 };
 
 function zetKaartZoom(z, x, y, anim) {
