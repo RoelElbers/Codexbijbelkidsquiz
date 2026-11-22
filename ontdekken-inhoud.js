@@ -559,7 +559,7 @@ const ONTDEK_KAART_GALILEA = {
 //   legenda  per tijd-id de regels van de legenda: kleur en tekst
 const ONTDEK_KAART_HEERSERS_LAGEN = {
     streken: [
-        { naam: "Fenicië", x: 49.4, y: 10.0, heersers: {
+        { naam: "Fenicië", x: 49.4, y: 11.0, heersers: {
             geboorte:    ["stadhouder\nvan Syrië", "rome"],
             volwassen:   ["stadhouder\nvan Syrië", "rome"],
             handelingen: ["stadhouder\nvan Syrië", "rome"] } },
