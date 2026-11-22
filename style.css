@@ -5930,6 +5930,15 @@ a.tekst-link { width: fit-content; text-align: center; }
     pointer-events: none;
     color: #ffffff;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55), 0 0 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.25s ease;
+}
+/* Ingezoomd: titel, uitleg en voetnoot vervagen (en vangen niets af); bij
+   1x en na "Hele kaart" komen ze terug. .kaart-ingezoomd staat op
+   #ontdek-kaart, dat in .kaart-vlak vóór kop en voetnoot staat. */
+.ontdek-kaart.kaart-ingezoomd ~ .kaart-kop,
+.ontdek-kaart.kaart-ingezoomd ~ .kaart-voetnoot {
+    opacity: 0;
+    pointer-events: none;
 }
 .kaart-titel {
     margin: 0;
@@ -5958,6 +5967,7 @@ a.tekst-link { width: fit-content; text-align: center; }
     color: #3a2508;
     text-shadow: 0 0 2px #fff8e8, 0 0 4px #fff8e8;
     pointer-events: none;
+    transition: opacity 0.25s ease;
 }
 
 /* Eén naam op de kaart. Standaard gecentreerd op zijn punt (streek, water);
@@ -5982,13 +5992,41 @@ a.tekst-link { width: fit-content; text-align: center; }
     transform: translate(-50%, -50%);
     pointer-events: none;
 }
+/* Een aanklikbare naam is een <button>. De algemene button-regels (zweef-
+   animatie, vergroten bij hover, gloed, overgang) mogen hier niet gelden:
+   die vervangen de transform waarmee de naam op zijn punt staat, en dan
+   staat hij een halve naam verschoven of springt hij weg. In rust en in
+   elke staat (hover, active, focus) dus dezelfde transform als hierboven
+   (stad, berg en water met merk gebruiken dezelfde), zonder schaduw. */
 .kaart-plaats.kaart-klikbaar {
     pointer-events: auto;
     cursor: pointer;
+    animation: none;
+    transition: none;
+    box-shadow: none;
 }
-.kaart-plaats.kaart-klikbaar:hover .kaart-naam,
+.kaart-plaats.kaart-klikbaar:hover,
+.kaart-plaats.kaart-klikbaar:active,
+.kaart-plaats.kaart-klikbaar:focus,
+.kaart-plaats.kaart-klikbaar:focus-visible {
+    transform: translate(-50%, -50%);
+    box-shadow: none;
+    outline: none;
+}
+/* Alleen met een muis (hover: hover) licht een naam bij aanwijzen op met een
+   onderstreping, zonder te bewegen. Op een aanraakscherm geen hover-staat.
+   Met het toetsenbord (focus-visible) dezelfde onderstreping. */
+@media (hover: hover) {
+    .kaart-plaats.kaart-klikbaar:hover .kaart-naam {
+        text-decoration: underline;
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+    }
+}
 .kaart-plaats.kaart-klikbaar:focus-visible .kaart-naam {
-    color: #6b3a00;
+    text-decoration: underline;
+    text-decoration-thickness: 0.08em;
+    text-underline-offset: 0.18em;
 }
 
 /* Streek: groot, Cinzel, geen punt. */
