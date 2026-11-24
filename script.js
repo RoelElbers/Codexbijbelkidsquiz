@@ -12582,17 +12582,19 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 
 // --- Plakboek, fase 3b: de pagina's in het opengeslagen boek -----------------
 // Het album bestaat uit hoofdstukken: een id, een titel en een geordende rij
-// plaatjes { id, naam, bestand }, met bestand = het pad vanaf images/album/.
+// plaatjes { id, naam, breed }. breed is het pad (vanaf images/album/) van het
+// beeld: een 16:9-webp in images/album/plaatjes-breed/ (kwaliteit 82, de maat
+// van de bron, meestal 1672 × 941). Het venster toont dat bestand, het boek de
+// kleine versie met dezelfde naam uit plaatjes-breed-klein/ (640 × 360,
+// gemaakt door tools/album-klein.py); zie albumBeeld. De bron van elk plaatje
+// staat buiten de repo, als png onder dezelfde naam (kladblok/album-hernoemlijst.md).
+// Een plaatje zonder breed heeft bestand: een vierkant webp in
+// images/album/plaatjes/ of dieren/, bijgesneden tot 16:9 (object-fit: cover).
+// Dat geldt nog voor bo-011-02, bo-057-02, het ezelsveulen en de leeuw van
+// Juda, tot daar een brede versie van is.
 // Optioneel per plaatje: bijbelplaats en tekst (alinea's gescheiden door een
 // lege regel, dus "\n\n"). Die staan in het venster onder het grote plaatje
-// (openAlbumVenster); zonder tekst staat daar alleen de naam. Ook optioneel:
-// breed, het pad (vanaf images/album/) van het brede beeld (16:9), in
-// images/album/plaatjes-breed/ als webp van 1920 × 1080 (kwaliteit 82). Dat is
-// voortaan het plaatje, in het boek én in het venster (albumBeeld): het boek
-// laadt de kleine versie met dezelfde naam uit plaatjes-breed-klein/ (640 ×
-// 360, gemaakt door tools/album-klein.py), het venster de grote. Een plaatje
-// zonder breed toont tijdelijk het oude vierkante bestand, bijgesneden tot
-// 16:9 (object-fit: cover).
+// (openAlbumVenster); zonder tekst staat daar alleen de naam.
 // De dubbele pagina's rekent de game zelf uit (albumDubbelePaginas): elk
 // hoofdstuk begint op een nieuwe dubbele pagina, met 2 kolommen × 3 rijen
 // vakken per pagina, dus 12 per dubbele pagina (eerst de linkerpagina, per rij
@@ -12602,15 +12604,15 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // even plek, zodat het samen één rij vult (bewaakt door
 // controleer-consistentie.py). De bestanden vallen onder de albumteller
 // (ALBUM_VERSIE). Een nieuw plaatje = een regel hier, geen nieuwe HTML of CSS.
-const ALBUM_VERSIE = 4;
+const ALBUM_VERSIE = 5;
 const albumHoofdstukken = [
     {
         id: "dieren",
         titel: "De dieren van de Bijbel",
         plaatjes: [
-            { id: "os-en-ezel", naam: "De os en de ezel", bestand: "dieren/os-en-ezel.webp" },
-            { id: "duif-bij-de-doop", naam: "De duif bij de doop", bestand: "dieren/duif-bij-de-doop.webp" },
-            { id: "lam-van-god", naam: "Het Lam van God", bestand: "dieren/lam-van-god.webp" },
+            { id: "os-en-ezel", naam: "De os en de ezel", breed: "plaatjes-breed/os-en-ezel.webp" },
+            { id: "duif-bij-de-doop", naam: "De duif bij de doop", breed: "plaatjes-breed/duif-bij-de-doop.webp" },
+            { id: "lam-van-god", naam: "Het Lam van God", breed: "plaatjes-breed/lam-van-god.webp" },
             { id: "ezelsveulen", naam: "Het ezelsveulen", bestand: "dieren/ezelsveulen.webp" },
             { id: "leeuw-van-juda", naam: "De leeuw van Juda", bestand: "dieren/leeuw-van-juda.webp" }
         ]
@@ -12619,12 +12621,11 @@ const albumHoofdstukken = [
         id: "op-het-land",
         titel: "Op het land",
         plaatjes: [
-            { id: "bo-006-01", naam: "De ploeg", bestand: "plaatjes/bo-006-01-ploeg-voorwerp.webp" },
-            { id: "bo-006-02", naam: "Ploegen met ossen", bestand: "plaatjes/bo-006-02-ploeg-in-gebruik.webp",
-              breed: "plaatjes-breed/bo-006-02-ploeg-in-gebruik.webp" },
-            { id: "bo-007-01", naam: "Aren lezen", bestand: "plaatjes/bo-007-01-aren-lezen-overzicht.webp" },
-            { id: "bo-007-02", naam: "Aren lezen van dichtbij", bestand: "plaatjes/bo-007-02-aren-lezen-closeup.webp" },
-            { id: "bo-016-01", naam: "Een olijftak enten", bestand: "plaatjes/bo-016-01-olijftak-enten.webp" }
+            { id: "bo-006-01", naam: "De ploeg", breed: "plaatjes-breed/bo-006-01-ploeg-voorwerp.webp" },
+            { id: "bo-006-02", naam: "Ploegen met ossen", breed: "plaatjes-breed/bo-006-02-ploeg-in-gebruik.webp" },
+            { id: "bo-007-01", naam: "Aren lezen", breed: "plaatjes-breed/bo-007-01-aren-lezen-overzicht.webp" },
+            { id: "bo-007-02", naam: "Aren lezen van dichtbij", breed: "plaatjes-breed/bo-007-02-aren-lezen-closeup.webp" },
+            { id: "bo-016-01", naam: "Een olijftak enten", breed: "plaatjes-breed/bo-016-01-wilde-olijftak-enten.webp" }
         ]
     },
     {
@@ -12638,7 +12639,7 @@ const albumHoofdstukken = [
         id: "herders-en-vissers",
         titel: "Herders en vissers",
         plaatjes: [
-            { id: "bo-057-01", naam: "De schaapskooi", bestand: "plaatjes/bo-057-01-schaapskooi-overzicht.webp" },
+            { id: "bo-057-01", naam: "De schaapskooi", breed: "plaatjes-breed/bo-057-01-schaapskooi-overzicht.webp" },
             { id: "bo-057-02", naam: "De herder bij de schaapskooi", bestand: "plaatjes/bo-057-02-schaapskooi-in-gebruik.webp" }
         ]
     },
@@ -12646,9 +12647,9 @@ const albumHoofdstukken = [
         id: "strijders-en-wapens",
         titel: "Strijders en wapens",
         plaatjes: [
-            { id: "bo-036-01", naam: "De slinger van David", bestand: "plaatjes/bo-036-01-slinger-van-david-voorwerp.webp" },
-            { id: "bo-036-02", naam: "Werpen met de slinger", bestand: "plaatjes/bo-036-02-slinger-in-gebruik.webp" },
-            { id: "bo-040-01", naam: "De oorlogsolifant", bestand: "plaatjes/bo-040-01-oorlogsolifant-in-judea.webp" }
+            { id: "bo-036-01", naam: "De slinger van David", breed: "plaatjes-breed/bo-036-01-slinger-voorwerp.webp" },
+            { id: "bo-036-02", naam: "Werpen met de slinger", breed: "plaatjes-breed/bo-036-02-slinger-in-gebruik.webp" },
+            { id: "bo-040-01", naam: "De oorlogsolifant", breed: "plaatjes-breed/bo-040-01-oorlogsolifant.webp" }
         ]
     },
     {
@@ -12660,29 +12661,29 @@ const albumHoofdstukken = [
         id: "feesten-en-gebruiken",
         titel: "Feesten en gebruiken",
         plaatjes: [
-            { id: "bo-032-01", naam: "De loofhut", bestand: "plaatjes/bo-032-01-loofhut-voorwerp.webp" },
-            { id: "bo-032-02", naam: "Feest in de loofhut", bestand: "plaatjes/bo-032-02-loofhut-in-gebruik.webp" },
-            { id: "bo-037-01", naam: "De sandaal bij de stadspoort", bestand: "plaatjes/bo-037-01-sandaaloverdracht-bij-boaz.webp" }
+            { id: "bo-032-01", naam: "De loofhut", breed: "plaatjes-breed/bo-032-01-loofhut-voorwerp.webp" },
+            { id: "bo-032-02", naam: "Feest in de loofhut", breed: "plaatjes-breed/bo-032-02-loofhut-in-gebruik.webp" },
+            { id: "bo-037-01", naam: "De sandaal bij de stadspoort", breed: "plaatjes-breed/bo-037-01-sandaal-uittrekken.webp" }
         ]
     },
     {
         id: "priesters-en-eredienst",
         titel: "De priesters en de eredienst",
         plaatjes: [
-            { id: "bo-023-01", naam: "De tentpennen", bestand: "plaatjes/bo-023-01-tentpennen-in-gebruik.webp" },
-            { id: "bo-026-01", naam: "De hogepriester", bestand: "plaatjes/bo-026-01-hogepriester-met-efod-en-borststuk.webp" },
-            { id: "bo-022-01", naam: "Reukwerk maken", bestand: "plaatjes/bo-022-01-reukwerk-bereiden.webp" },
-            { id: "bo-022-02", naam: "Reukwerk op het gouden altaar", bestand: "plaatjes/bo-022-02-reukwerk-in-gebruik.webp" },
-            { id: "bo-042-01", naam: "De lier en de harp", bestand: "plaatjes/bo-042-01-bijbelse-lier-en-harp.webp" },
-            { id: "bo-042-02", naam: "Spelen op de lier", bestand: "plaatjes/bo-042-02-vrouw-bespeelt-bijbelse-lier.webp" }
+            { id: "bo-023-01", naam: "De tentpinnen", breed: "plaatjes-breed/bo-023-01-tentpinnen.webp" },
+            { id: "bo-026-01", naam: "De hogepriester", breed: "plaatjes-breed/bo-026-01-hogepriester.webp" },
+            { id: "bo-022-01", naam: "Reukwerk maken", breed: "plaatjes-breed/bo-022-01-reukwerk-bereiden.webp" },
+            { id: "bo-022-02", naam: "Reukwerk op het gouden altaar", breed: "plaatjes-breed/bo-022-02-reukwerk-in-gebruik.webp" },
+            { id: "bo-042-01", naam: "De lier en de harp", breed: "plaatjes-breed/bo-042-01-lier-en-harp-voorwerp.webp" },
+            { id: "bo-042-02", naam: "Spelen op de lier", breed: "plaatjes-breed/bo-042-02-lier-in-gebruik.webp" }
         ]
     },
     {
         id: "van-pasen-tot-de-hemel",
         titel: "Van Pasen tot de hemel",
         plaatjes: [
-            { id: "bo-021-01", naam: "Kostbare nardusolie", bestand: "plaatjes/bo-021-01-nardusolie-flesje.webp" },
-            { id: "bo-054-01", naam: "Het graf met de rolsteen", bestand: "plaatjes/bo-054-01-rotsgraf-met-rolsteen.webp" }
+            { id: "bo-021-01", naam: "Kostbare nardusolie", breed: "plaatjes-breed/bo-021-01-nardusolie-voorwerp.webp" },
+            { id: "bo-054-01", naam: "Het graf met de rolsteen", breed: "plaatjes-breed/bo-054-01-rotsgraf.webp" }
         ]
     }
 ];
@@ -12778,7 +12779,7 @@ function albumRasterMaat() {
 }
 
 // Het beeld van een plaatje: het brede beeld (16:9) als het er is, anders
-// tijdelijk het oude vierkante plaatje (bijgesneden met object-fit: cover).
+// het vierkante bestand (bijgesneden met object-fit: cover).
 // groot = het venster (plaatjes-breed/), anders het boek: de kleine versie met
 // dezelfde naam in plaatjes-breed-klein/ (tools/album-klein.py).
 function albumBeeld(plaatje, groot) {

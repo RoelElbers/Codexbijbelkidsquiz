@@ -1383,8 +1383,12 @@ def controle_album(bron):
             aantal += 1
             pid = plaatje.get("id")
             plekken.setdefault(pid, []).append((hid, positie))
-            bestand = plaatje.get("bestand", "")
-            if not os.path.isfile(os.path.join(ALBUM_MAP, *bestand.split("/"))):
+            # bestand (het vierkante plaatje) is alleen nodig zonder breed; staat
+            # het er wel, dan moet het ook bestaan.
+            bestand = plaatje.get("bestand")
+            if bestand is None and not plaatje.get("breed"):
+                probleem("albumplaatje '%s' (%s): heeft geen breed en geen bestand" % (pid, hid))
+            elif bestand is not None and not os.path.isfile(os.path.join(ALBUM_MAP, *bestand.split("/"))):
                 probleem("albumplaatje '%s' (%s): bestand images/album/%s bestaat niet"
                          % (pid, hid, bestand))
             # Het brede beeld en zijn kleine versie (tools/album-klein.py): het
