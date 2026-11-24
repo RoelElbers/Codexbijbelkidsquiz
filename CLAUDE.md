@@ -101,10 +101,9 @@ de teller staat ook boven in `index.html`, naast die van de scèneplaten.
 
 De afbeeldingen van het Bijbelkidsalbum in `images/album/` (`achtergrond.webp`,
 `boek.webp`, `boek-open.webp`, `kaft-voor.webp` en `lantaarn-terug.webp`) en de
-plaatjes van de albumpagina's in de submappen (nu `images/album/dieren/`:
-`os-en-ezel.webp`, `duif-bij-de-doop.webp`, `lam-van-god.webp`,
-`ezelsveulen.webp` en `leeuw-van-juda.webp`) dragen ook een **eigen
-`?v=`-teller**, los van de cache-buster en los van de avatarteller.
+plaatjes van de albumpagina's (de brede in `images/album/plaatjes-breed/` en
+hun kleine versies in `images/album/plaatjes-breed-klein/`) dragen ook een
+**eigen `?v=`-teller**, los van de cache-buster en los van de avatarteller.
 
 | teller | gaat omhoog zodra |
 | --- | --- |
@@ -115,9 +114,10 @@ zonder ophoging blijft een bezoeker de oude uit zijn browsercache zien.
 
 **Acht plekken, altijd samen.** `boek-open.webp` staat er drie keer in: het
 hele open boek, de rechterhelft en de achterkant van de kaft (de linkerhelft).
-De plaatjes van de pagina's hebben samen één plek: `bouwAlbumPagina()` plakt
-`ALBUM_VERSIE` achter elk bestand uit `albumHoofdstukken`. Een nieuwe pagina krijgt
-dus vanzelf de teller mee.
+De plaatjes van de pagina's hebben samen één plek: `albumBeeld()` plakt
+`ALBUM_VERSIE` achter elk plaatje uit `albumHoofdstukken`, zowel achter de
+kleine versie in het boek als achter de brede in het venster. Een nieuw
+plaatje krijgt dus vanzelf de teller mee.
 
 ```
 style.css    achtergrond.webp (.album-zaal)
