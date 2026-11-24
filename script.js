@@ -12588,10 +12588,9 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // kleine versie met dezelfde naam uit plaatjes-breed-klein/ (640 × 360,
 // gemaakt door tools/album-klein.py); zie albumBeeld. De bron van elk plaatje
 // staat buiten de repo, als png onder dezelfde naam (kladblok/album-hernoemlijst.md).
-// Een plaatje zonder breed heeft bestand: een vierkant webp in
-// images/album/plaatjes/ of dieren/, bijgesneden tot 16:9 (object-fit: cover).
-// Dat geldt nog voor bo-011-02, bo-057-02, het ezelsveulen en de leeuw van
-// Juda, tot daar een brede versie van is.
+// Elk plaatje heeft breed; de vierkante plaatjes van vroeger zijn weg. albumBeeld
+// valt nog terug op bestand (een vierkant webp, bijgesneden met object-fit:
+// cover) als een plaatje geen breed heeft, maar dat komt nu niet meer voor.
 // Optioneel per plaatje: bijbelplaats en tekst (alinea's gescheiden door een
 // lege regel, dus "\n\n"). Die staan in het venster onder het grote plaatje
 // (openAlbumVenster); zonder tekst staat daar alleen de naam.
@@ -12604,7 +12603,7 @@ function initDoorgangAfstel(zaalEl, scherm, zaal) {
 // even plek, zodat het samen één rij vult (bewaakt door
 // controleer-consistentie.py). De bestanden vallen onder de albumteller
 // (ALBUM_VERSIE). Een nieuw plaatje = een regel hier, geen nieuwe HTML of CSS.
-const ALBUM_VERSIE = 5;
+const ALBUM_VERSIE = 6;
 const albumHoofdstukken = [
     {
         id: "dieren",
@@ -12613,8 +12612,8 @@ const albumHoofdstukken = [
             { id: "os-en-ezel", naam: "De os en de ezel", breed: "plaatjes-breed/os-en-ezel.webp" },
             { id: "duif-bij-de-doop", naam: "De duif bij de doop", breed: "plaatjes-breed/duif-bij-de-doop.webp" },
             { id: "lam-van-god", naam: "Het Lam van God", breed: "plaatjes-breed/lam-van-god.webp" },
-            { id: "ezelsveulen", naam: "Het ezelsveulen", bestand: "dieren/ezelsveulen.webp" },
-            { id: "leeuw-van-juda", naam: "De leeuw van Juda", bestand: "dieren/leeuw-van-juda.webp" }
+            { id: "ezelsveulen", naam: "Het ezelsveulen", breed: "plaatjes-breed/ezelsveulen.webp" },
+            { id: "leeuw-van-juda", naam: "De leeuw van Juda", breed: "plaatjes-breed/leeuw-van-juda.webp" }
         ]
     },
     {
@@ -12632,7 +12631,7 @@ const albumHoofdstukken = [
         id: "in-huis",
         titel: "In huis",
         plaatjes: [
-            { id: "bo-011-02", naam: "De vijzel", bestand: "plaatjes/bo-011-02-vijzel-in-gebruik.webp" }
+            { id: "bo-011-02", naam: "De vijzel", breed: "plaatjes-breed/bo-011-02-vijzel-in-gebruik.webp" }
         ]
     },
     {
@@ -12640,7 +12639,7 @@ const albumHoofdstukken = [
         titel: "Herders en vissers",
         plaatjes: [
             { id: "bo-057-01", naam: "De schaapskooi", breed: "plaatjes-breed/bo-057-01-schaapskooi-overzicht.webp" },
-            { id: "bo-057-02", naam: "De herder bij de schaapskooi", bestand: "plaatjes/bo-057-02-schaapskooi-in-gebruik.webp" }
+            { id: "bo-057-02", naam: "De herder bij de schaapskooi", breed: "plaatjes-breed/bo-057-02-schaapskooi-in-gebruik.webp" }
         ]
     },
     {

@@ -114,7 +114,7 @@ Map: `opgeslagen game/Afbeeldingen Bijbelkidsquiz album/Goedgekeurde afbeeldinge
 | 102 | `draagjuk-02-in-gebruik-16-9.png` | `bo-334-02-draagjuk-in-gebruik.webp` |  |
 | 103 | `Een imker haalt een honingraat uit de korf.png` | `bo-335-01-honingraat.webp` |  |
 | 104 | `eennetknopen.png` | `bo-336-01-netten-herstellen.webp` | Marcus 1:19. |
-| 105 | `Ezel bij de stadspoort.png` | `bo-337-01-ezel-bij-de-stadspoort.webp` |  |
+| 105 | `Ezel bij de stadspoort.png` | `ezelsveulen.webp` | Eerst bo-337-01-ezel-bij-de-stadspoort; staat nu in het album als het ezelsveulen (dieren, id ezelsveulen). **Nummer bo-337 blijft ongebruikt**: voeg dit plaatje niet nog eens als los plaatje toe. |
 | 106 | `geboorte-jezus-os-en-ezel-16-9.png` | *nog niet hernoemd* | Zelfde afbeelding als images/album/dieren/os-en-ezel (daar vierkant). Staat al in het album. |
 | 107 | `Graan scheppen op de oude dorsvloer.png` | `bo-339-01-dorsvloer.webp` |  |
 | 108 | `Graan wannen en zeven.png` | `bo-340-01-graan-wannen.webp` |  |
@@ -186,12 +186,22 @@ Map: `opgeslagen game/Afbeeldingen Bijbelkidsquiz album/Goedgekeurde afbeeldinge
 ## Controle
 
 - **Aantal afbeeldingen:** 173 bestanden in 172 regels (85 en 86 staan samen op één regel).
-  - 167 krijgen een nieuwe naam.
+  - 167 krijgen een nieuwe naam: 166 met een BO-nummer, en 105 heet `ezelsveulen`.
   - 3 vervallen en gaan naar het archief: 85 en 86 (vervangen door bo-144) en 118 (dubbel van 71).
   - 3 worden nog niet hernoemd, omdat ze al in het album staan: 106 (os en ezel), 128 (lam) en 170 (duif).
 - **Hoogste gebruikte BO-nummer:** `bo-398`.
-  - Vrij gebleven nummers, doordat os en ezel, lam en duif nog niet hernoemd worden: 338, 359 en 395.
+  - Ongebruikt, omdat het plaatje bij de dieren staat: 337 (ezelsveulen), 338 (os en ezel), 359 (lam) en 395 (duif). Deze nummers worden niet opnieuw uitgegeven.
   - Vrij gehouden voor een partner in 'aanpassingen nodig': 301-01, 306-02, 312-02, 322-02, 324-01, 352-01, 366-01, 372-01, 373-01, 379-01 en 391-02.
 - **Unieke namen:** de 167 nieuwe namen zijn met een script nagelopen. Geen enkele naam komt twee keer voor. Geen BO-nummer heeft meer dan twee afbeeldingen, en elke naam volgt het patroon `bo-NNN-NN-naam`.
 - **Ploeg en juk:** twee onderwerpen, elk een eigen nummer: `bo-006` (ploeg) en `bo-350` (juk).
 - **Jaspismuur:** de identieke kopie `bo-219-01-de-jaspismuur-16-9.png` uit 'nog even nakijken' is naar het archief verplaatst.
+
+## Later toegevoegd
+
+Nieuwe brede versies van plaatjes die eerst alleen vierkant in de game stonden. Ze staan in de bronmap onder hun gamenaam:
+
+| bron (oude naam) | nieuwe naam | toelichting |
+| --- | --- | --- |
+| `BO-011-02 · Vijzel in gebruik.png` | `bo-011-02-vijzel-in-gebruik.webp` | Vervangt het vierkante plaatje. |
+| `BO-057-02 · Schaapskooi in gebruik.png` | `bo-057-02-schaapskooi-in-gebruik.webp` | Vervangt het vierkante plaatje. |
+| `deleeuwvanjuda.png` | `leeuw-van-juda.webp` | Dieren, id leeuw-van-juda. De boekrol heeft zeven zegels. |
