@@ -15,7 +15,7 @@ Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die v
 
 ## Niet op zichzelf staand (18)
 
-- **#2** Matteüs · beginner · vraag 14 — B: "Jezus zei tegen hen": wie "hen" zijn (Petrus en Andreas) staat alleen in de vraag.
+- **#2** Matteüs · beginner · vraag 14 — B: "Jezus zei tegen hen": wie "hen" zijn (Petrus en Andreas) staat alleen in de vraag. ✓ Afgehandeld (27 nov 2026).
 - **#4** Matteüs · beginner · vraag 18 — B: "Met dit verhaal" verwijst naar de gelijkenis in de vraag.
 - **#5** Matteüs · expert · vraag 14 — B: Begint met het antwoord als uitroep ("Jakob!"); dat werkt alleen direct na de vraag.
 - **#9** Marcus · gevorderd · vraag 6 — B: "Die muntjes" en "haar" verwijzen naar het antwoord en de weduwe uit de vraag.
@@ -48,13 +48,15 @@ Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die v
 
 ### #2 — Matteüs · beginner · vraag 14 (131 tekens) ⚠
 
-**Vraag:** Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?
+**Vraag:** Wat waren Petrus en Andreas van beroep voordat ze Jezus volgden?
 
 **Antwoorden:** **Vissers** · Boeren · Soldaten · Bakkers
 
 **Uitleg:** Jezus zei tegen hen: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee.
 
 ⚠ **Niet op zichzelf staand (B):** "Jezus zei tegen hen": wie "hen" zijn (Petrus en Andreas) staat alleen in de vraag.
+
+✓ **Afgehandeld (27 nov 2026):** de uitleg begint nu met "Jezus zei tegen Petrus en Andreas".
 
 ### #3 — Matteüs · beginner · vraag 16 (183 tekens)
 

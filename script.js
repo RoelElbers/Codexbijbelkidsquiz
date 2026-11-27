@@ -513,7 +513,7 @@ const vragenData = {
                 antwoorden: ["Vissers", "Boeren", "Soldaten", "Bakkers"],
                 correct: "Vissers",
                 bijbelplaats: "Matteüs 4:18-20",
-                uitleg: "Jezus zei tegen hen: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
+                uitleg: "Jezus zei tegen Petrus en Andreas: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee."
             },
             {
                 vraag: "Wat zei Jezus toen Zijn leerlingen de kinderen bij Hem wilden weghouden?",
