@@ -509,7 +509,7 @@ const vragenData = {
                 uitleg: "Onze kalender is bedóeld om vanaf de geboorte van Jezus te tellen. Hij is pas veel later bedacht, door een monnik die Dionysius heette, in het jaar 525. Het exacte geboortejaar klopt net niet: Jezus werd een paar jaar eerder geboren, toen koning Herodes nog leefde. Maar we tellen onze jaren nog altijd vanaf Zíjn geboorte."
             },
             {
-                vraag: "Wat was het werk van Petrus en Andreas voordat ze Jezus volgden?",
+                vraag: "Wat waren Petrus en Andreas van beroep voordat ze Jezus volgden?",
                 antwoorden: ["Vissers", "Boeren", "Soldaten", "Bakkers"],
                 correct: "Vissers",
                 bijbelplaats: "Matteüs 4:18-20",
