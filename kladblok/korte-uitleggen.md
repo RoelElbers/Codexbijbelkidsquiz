@@ -46,13 +46,13 @@ Telmethode: HTML-tags weggelaten en witruimte samengevoegd; de tekens zijn die v
 
 *Opmerking:* Los van de zelfstandigheid: "vanaf zíjn geboorte" verwijst naar Jezus en hoort volgens de hoofdletterregel "Zíjn" te zijn.
 
-### #2 — Matteüs · beginner · vraag 14 (131 tekens) ⚠
+### #2 — Matteüs · beginner · vraag 14 (145 tekens) ⚠
 
 **Vraag:** Wat waren Petrus en Andreas van beroep voordat ze Jezus volgden?
 
 **Antwoorden:** **Vissers** · Boeren · Soldaten · Bakkers
 
-**Uitleg:** Jezus zei tegen hen: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee.
+**Uitleg:** Jezus zei tegen Petrus en Andreas: 'Kom, volg Mij, dan zal Ik jullie vissers van mensen maken.' Ze lieten meteen hun netten achter en gingen mee.
 
 ⚠ **Niet op zichzelf staand (B):** "Jezus zei tegen hen": wie "hen" zijn (Petrus en Andreas) staat alleen in de vraag.
 
